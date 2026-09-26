@@ -1,0 +1,86 @@
+{
+  "name": "whiteout-survival-data",
+  "version": "0.1.0",
+  "description": "A comprehensive, fully-typed dataset for Whiteout Survival: structured JSON data, image assets, and a chainable query builder API.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./data/*": "./data/*",
+    "./images/*": "./images/*"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit && eslint .",
+    "format": "prettier --write \"**/*.ts\" \"**/*.md\" \"**/*.json\"",
+    "format:check": "prettier --check \"**/*.ts\" \"**/*.md\" \"**/*.json\"",
+    "sample": "tsx sample/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "whiteout-survival",
+    "game-data",
+    "json",
+    "dataset",
+    "typescript",
+    "query-builder"
+  ],
+  "author": "Christopher Pezza",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiefpansancolt/whiteout-survival-data.git"
+  },
+  "homepage": "https://github.com/chiefpansancolt/whiteout-survival-data#readme",
+  "bugs": {
+    "url": "https://github.com/chiefpansancolt/whiteout-survival-data/issues"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.2",
+    "@typescript-eslint/eslint-plugin": "^8.70.0",
+    "@typescript-eslint/parser": "^8.70.0",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "jest": "^30.5.2",
+    "prettier": "^3.9.8",
+    "ts-jest": "^29.4.12",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3"
+  },
+  "files": [
+    "dist",
+    "data",
+    "images",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "unrs-resolver"
+    ],
+    "overrides": {
+      "esbuild": "^0.28.2"
+    }
+  }
+}
