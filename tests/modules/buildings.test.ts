@@ -298,3 +298,36 @@ describe.each([
     expect(fc1.cost.some((c) => c.name === 'Fire Crystals')).toBe(false);
   });
 });
+
+describe.each([
+  ['Clinic', [4, 5, 6]],
+  ['Cookhouse', [1, 5, 6]],
+  ['Shelter', [1, 5, 6]],
+])('%s levels', (name, [level1Floor, level5Floor, level6Floor]) => {
+  const building = buildings().findByName(name)!;
+
+  it('has 10 standard levels plus a single bonus FC 1 level', () => {
+    expect(building.levels).toHaveLength(11);
+    expect(building.maxLevelLabel).toBe('FC 1');
+    expect(building.fireCrystalImg).toBeUndefined();
+  });
+
+  it('gates Level 1, Level 5, and Level 6 against the expected Furnace floor', () => {
+    const level1 = building.levels.find((l) => l.label === '1')!;
+    const level5 = building.levels.find((l) => l.label === '5')!;
+    const level6 = building.levels.find((l) => l.label === '6')!;
+    expect(level1.prerequisites).toEqual([{ building: 'Furnace', level: level1Floor }]);
+    expect(level5.prerequisites).toEqual([{ building: 'Furnace', level: level5Floor }]);
+    expect(level6.prerequisites).toEqual([{ building: 'Furnace', level: level6Floor }]);
+  });
+
+  it('has a sole FC 1 level requiring Furnace FC 1 (matching, unlike the production buildings) and its own Level 10', () => {
+    const fc1 = building.levels.find((l) => l.label === 'FC 1')!;
+    expect(fc1.tier).toBe('fireCrystal');
+    expect(fc1.fcStage).toBe(1);
+    expect(fc1.prerequisites).toEqual([
+      { building: name, level: 10 },
+      { building: 'Furnace', level: 'FC 1' },
+    ]);
+  });
+});

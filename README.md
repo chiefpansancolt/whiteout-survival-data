@@ -66,7 +66,7 @@ Every query builder provides these 6 terminal methods:
 
 | Module    | Factory       | Items | Description                                       |
 | --------- | ------------- | ----- | ------------------------------------------------- |
-| buildings | `buildings()` | 15    | Buildings with full per-level upgrade progression |
+| buildings | `buildings()` | 18    | Buildings with full per-level upgrade progression |
 
 Each `Building` nests its full level-by-level progression under `levels`. Most buildings follow an
 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then
@@ -133,6 +133,17 @@ derived rather than scraped for this range, self-referencing the building by nam
   They differ from each other only in their standard Furnace prerequisite floor — Sawmill and
   Hunter's Hut track the Furnace level exactly from Level 1, Coal Mine's Levels 1–3 all just require
   Furnace Lv.3, and Iron Mine's Levels 1–5 all just require Furnace Lv.5.
+- **Clinic / Cookhouse / Shelter** — three small buildings absent from `wostools.net` entirely (only
+  `whiteoutsurvival.wiki` covers them, cross-checked against its raw HTML rather than an
+  AI-summarized fetch, since a sole bonus level is easy for a summary to drop). All three cap at
+  just Level 10, then get one bonus `FC 1` level — unlike the four production buildings, this one
+  correctly requires Furnace **FC 1** (matching, no tier skip) plus the building's own Level 10.
+  Cookhouse and Shelter track the Furnace level exactly from Level 1; Clinic's Levels 1–4 all just
+  require Furnace Lv.4. Clinic and Cookhouse share an identical cost/power/time curve; Shelter's is
+  its own, generally cheaper curve. `Shelter` is modeled as a single building (matching how the wiki
+  itself scopes the page), even though players can construct up to eight — the Furnace's own
+  `prerequisites` text separately references specific numbered instances (e.g. `"Shelter 1"`,
+  `"Shelter 3"`) as plain strings, not tied to this entry.
 
 ---
 

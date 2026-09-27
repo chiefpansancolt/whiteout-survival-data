@@ -56,6 +56,9 @@ for (const name of [
   'Sawmill',
   'Coal Mine',
   'Iron Mine',
+  'Clinic',
+  'Cookhouse',
+  'Shelter',
 ]) {
   const b = buildings().findByName(name)!;
   console.log(`${name} levels tracked:`, b.levels.length);

@@ -59,6 +59,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   unrendered markup of all four pages, not just the summarized fetch. Added it as a genuine sole
   `FC 1` level on all four buildings (`maxLevelLabel` is now `"FC 1"`, not `"30"`), still requiring
   Furnace FC 2 and no Fire Crystals in its cost, exactly as scraped.
+- Clinic, Cookhouse, and Shelter added to the `buildings()` dataset — absent from wostools.net, so
+  sourced and cross-checked entirely against whiteoutsurvival.wiki's raw HTML. All three cap at
+  Level 10 plus one bonus `FC 1` level, which correctly requires Furnace FC 1 (unlike the production
+  buildings' FC 2 tier-skip). `Shelter` is modeled as a single building, matching the wiki's own
+  page scope, even though players can build up to eight.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

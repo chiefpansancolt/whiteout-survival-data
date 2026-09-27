@@ -29796,5 +29796,870 @@
         "power": 31618
       }
     ]
+  },
+  {
+    "id": "clinic",
+    "name": "Clinic",
+    "img": "/images/buildings/Clinic.png",
+    "description": "Where sick Survivors go to recover. Levels 1-4 all just require Furnace Lv.4, then it tracks the Furnace level exactly from Level 5 on. Caps at Level 10 plus a single bonus FC 1 level.",
+    "maxLevelLabel": "FC 1",
+    "levels": [
+      {
+        "id": "clinic-1",
+        "label": "1",
+        "order": 1,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [],
+        "buildTimeSeconds": 2,
+        "power": 100
+      },
+      {
+        "id": "clinic-2",
+        "label": "2",
+        "order": 2,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 50
+          }
+        ],
+        "buildTimeSeconds": 9,
+        "power": 190
+      },
+      {
+        "id": "clinic-3",
+        "label": "3",
+        "order": 3,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 240
+          }
+        ],
+        "buildTimeSeconds": 45,
+        "power": 325
+      },
+      {
+        "id": "clinic-4",
+        "label": "4",
+        "order": 4,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 540
+          },
+          {
+            "name": "Coal",
+            "count": 105
+          }
+        ],
+        "buildTimeSeconds": 135,
+        "power": 505
+      },
+      {
+        "id": "clinic-5",
+        "label": "5",
+        "order": 5,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 2200
+          },
+          {
+            "name": "Coal",
+            "count": 455
+          }
+        ],
+        "buildTimeSeconds": 270,
+        "power": 775
+      },
+      {
+        "id": "clinic-6",
+        "label": "6",
+        "order": 6,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 6
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 5700
+          },
+          {
+            "name": "Coal",
+            "count": 1100
+          },
+          {
+            "name": "Iron",
+            "count": 285
+          }
+        ],
+        "buildTimeSeconds": 540,
+        "power": 1180
+      },
+      {
+        "id": "clinic-7",
+        "label": "7",
+        "order": 7,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 7
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 20000
+          },
+          {
+            "name": "Coal",
+            "count": 4100
+          },
+          {
+            "name": "Iron",
+            "count": 1000
+          }
+        ],
+        "buildTimeSeconds": 1080,
+        "power": 1765
+      },
+      {
+        "id": "clinic-8",
+        "label": "8",
+        "order": 8,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 8
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 37000
+          },
+          {
+            "name": "Coal",
+            "count": 7500
+          },
+          {
+            "name": "Iron",
+            "count": 1800
+          }
+        ],
+        "buildTimeSeconds": 1620,
+        "power": 2350
+      },
+      {
+        "id": "clinic-9",
+        "label": "9",
+        "order": 9,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 78000
+          },
+          {
+            "name": "Coal",
+            "count": 15000
+          },
+          {
+            "name": "Iron",
+            "count": 3900
+          }
+        ],
+        "buildTimeSeconds": 2430,
+        "power": 2935
+      },
+      {
+        "id": "clinic-10",
+        "label": "10",
+        "order": 10,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 10
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 130000
+          },
+          {
+            "name": "Coal",
+            "count": 27000
+          },
+          {
+            "name": "Iron",
+            "count": 6900
+          }
+        ],
+        "buildTimeSeconds": 3240,
+        "power": 3785
+      },
+      {
+        "id": "clinic-fc1",
+        "label": "FC 1",
+        "order": 11,
+        "tier": "fireCrystal",
+        "fcStage": 1,
+        "prerequisites": [
+          {
+            "building": "Clinic",
+            "level": 10
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 1"
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 390000
+          },
+          {
+            "name": "Coal",
+            "count": 79000
+          },
+          {
+            "name": "Iron",
+            "count": 19000
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 4635
+      }
+    ]
+  },
+  {
+    "id": "cookhouse",
+    "name": "Cookhouse",
+    "img": "/images/buildings/Cookhouse.png",
+    "description": "Feeds Survivors to keep them healthy and happy; consumes Meat produced by the Hunter's Hut. Its Furnace prerequisite tracks the Furnace level exactly from Level 1. Caps at Level 10 plus a single bonus FC 1 level.",
+    "maxLevelLabel": "FC 1",
+    "levels": [
+      {
+        "id": "cookhouse-1",
+        "label": "1",
+        "order": 1,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 35
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 100
+      },
+      {
+        "id": "cookhouse-2",
+        "label": "2",
+        "order": 2,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 50
+          }
+        ],
+        "buildTimeSeconds": 9,
+        "power": 190
+      },
+      {
+        "id": "cookhouse-3",
+        "label": "3",
+        "order": 3,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 240
+          }
+        ],
+        "buildTimeSeconds": 45,
+        "power": 325
+      },
+      {
+        "id": "cookhouse-4",
+        "label": "4",
+        "order": 4,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 540
+          },
+          {
+            "name": "Coal",
+            "count": 105
+          }
+        ],
+        "buildTimeSeconds": 135,
+        "power": 505
+      },
+      {
+        "id": "cookhouse-5",
+        "label": "5",
+        "order": 5,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 2200
+          },
+          {
+            "name": "Coal",
+            "count": 455
+          }
+        ],
+        "buildTimeSeconds": 270,
+        "power": 775
+      },
+      {
+        "id": "cookhouse-6",
+        "label": "6",
+        "order": 6,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 6
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 5700
+          },
+          {
+            "name": "Coal",
+            "count": 1100
+          },
+          {
+            "name": "Iron",
+            "count": 285
+          }
+        ],
+        "buildTimeSeconds": 540,
+        "power": 1180
+      },
+      {
+        "id": "cookhouse-7",
+        "label": "7",
+        "order": 7,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 7
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 20000
+          },
+          {
+            "name": "Coal",
+            "count": 4100
+          },
+          {
+            "name": "Iron",
+            "count": 1000
+          }
+        ],
+        "buildTimeSeconds": 1080,
+        "power": 1765
+      },
+      {
+        "id": "cookhouse-8",
+        "label": "8",
+        "order": 8,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 8
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 37000
+          },
+          {
+            "name": "Coal",
+            "count": 7500
+          },
+          {
+            "name": "Iron",
+            "count": 1800
+          }
+        ],
+        "buildTimeSeconds": 1620,
+        "power": 2350
+      },
+      {
+        "id": "cookhouse-9",
+        "label": "9",
+        "order": 9,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 78000
+          },
+          {
+            "name": "Coal",
+            "count": 15000
+          },
+          {
+            "name": "Iron",
+            "count": 3900
+          }
+        ],
+        "buildTimeSeconds": 2430,
+        "power": 2935
+      },
+      {
+        "id": "cookhouse-10",
+        "label": "10",
+        "order": 10,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 10
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 130000
+          },
+          {
+            "name": "Coal",
+            "count": 27000
+          },
+          {
+            "name": "Iron",
+            "count": 6900
+          }
+        ],
+        "buildTimeSeconds": 3240,
+        "power": 3785
+      },
+      {
+        "id": "cookhouse-fc1",
+        "label": "FC 1",
+        "order": 11,
+        "tier": "fireCrystal",
+        "fcStage": 1,
+        "prerequisites": [
+          {
+            "building": "Cookhouse",
+            "level": 10
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 1"
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 390000
+          },
+          {
+            "name": "Coal",
+            "count": 79000
+          },
+          {
+            "name": "Iron",
+            "count": 19000
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 4635
+      }
+    ]
+  },
+  {
+    "id": "shelter",
+    "name": "Shelter",
+    "img": "/images/buildings/Shelter.png",
+    "description": "Residential housing where Survivors rest, relax, and sleep; also where sick Survivors recover until a Clinic is built. Its Furnace prerequisite tracks the Furnace level exactly from Level 1. Caps at Level 10 plus a single bonus FC 1 level.",
+    "maxLevelLabel": "FC 1",
+    "levels": [
+      {
+        "id": "shelter-1",
+        "label": "1",
+        "order": 1,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 20
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 60
+      },
+      {
+        "id": "shelter-2",
+        "label": "2",
+        "order": 2,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 35
+          }
+        ],
+        "buildTimeSeconds": 6,
+        "power": 114
+      },
+      {
+        "id": "shelter-3",
+        "label": "3",
+        "order": 3,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 160
+          }
+        ],
+        "buildTimeSeconds": 30,
+        "power": 195
+      },
+      {
+        "id": "shelter-4",
+        "label": "4",
+        "order": 4,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 360
+          },
+          {
+            "name": "Coal",
+            "count": 70
+          }
+        ],
+        "buildTimeSeconds": 90,
+        "power": 303
+      },
+      {
+        "id": "shelter-5",
+        "label": "5",
+        "order": 5,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1500
+          },
+          {
+            "name": "Coal",
+            "count": 300
+          }
+        ],
+        "buildTimeSeconds": 270,
+        "power": 465
+      },
+      {
+        "id": "shelter-6",
+        "label": "6",
+        "order": 6,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 6
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 3800
+          },
+          {
+            "name": "Coal",
+            "count": 765
+          },
+          {
+            "name": "Iron",
+            "count": 190
+          }
+        ],
+        "buildTimeSeconds": 360,
+        "power": 708
+      },
+      {
+        "id": "shelter-7",
+        "label": "7",
+        "order": 7,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 7
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 13000
+          },
+          {
+            "name": "Coal",
+            "count": 2700
+          },
+          {
+            "name": "Iron",
+            "count": 690
+          }
+        ],
+        "buildTimeSeconds": 720,
+        "power": 1059
+      },
+      {
+        "id": "shelter-8",
+        "label": "8",
+        "order": 8,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 8
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 25000
+          },
+          {
+            "name": "Coal",
+            "count": 5000
+          },
+          {
+            "name": "Iron",
+            "count": 1200
+          }
+        ],
+        "buildTimeSeconds": 1080,
+        "power": 1410
+      },
+      {
+        "id": "shelter-9",
+        "label": "9",
+        "order": 9,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 52000
+          },
+          {
+            "name": "Coal",
+            "count": 10000
+          },
+          {
+            "name": "Iron",
+            "count": 2600
+          }
+        ],
+        "buildTimeSeconds": 1620,
+        "power": 1761
+      },
+      {
+        "id": "shelter-10",
+        "label": "10",
+        "order": 10,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 10
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 92000
+          },
+          {
+            "name": "Coal",
+            "count": 18000
+          },
+          {
+            "name": "Iron",
+            "count": 4600
+          }
+        ],
+        "buildTimeSeconds": 2160,
+        "power": 2271
+      },
+      {
+        "id": "shelter-fc1",
+        "label": "FC 1",
+        "order": 11,
+        "tier": "fireCrystal",
+        "fcStage": 1,
+        "prerequisites": [
+          {
+            "building": "Shelter",
+            "level": 10
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 1"
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 260000
+          },
+          {
+            "name": "Coal",
+            "count": 52000
+          },
+          {
+            "name": "Iron",
+            "count": 13000
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 2781
+      }
+    ]
   }
 ]
