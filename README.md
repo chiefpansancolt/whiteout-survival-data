@@ -66,13 +66,18 @@ Every query builder provides these 6 terminal methods:
 
 | Module    | Factory       | Items | Description                                       |
 | --------- | ------------- | ----- | ------------------------------------------------- |
-| buildings | `buildings()` | 1     | Buildings with full per-level upgrade progression |
+| buildings | `buildings()` | 2     | Buildings with full per-level upgrade progression |
 
-Each `Building` nests its full level-by-level progression under `levels`. The Furnace tracks all 80
-levels: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then `FC 1`
-through `FC 9` — each with a base row and four sub-levels `FC N-1..FC N-4` — ending at `FC 10`
-alone, the max level). Fire Crystal levels have no prerequisites column and add Fire Crystals (from
-`FC 1`) and Refined Fire Crystals (from `FC 5-1`) to the cost.
+Each `Building` nests its full level-by-level progression under `levels`. Every tracked building
+follows the same 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension
+(`30-1..30-4`, then `FC 1` through `FC 9` — each with a base row and four sub-levels
+`FC N-1..FC N-4` — ending at `FC 10` alone, the max level). Fire Crystal levels have no
+prerequisites column and add Fire Crystals (from `FC 1`) and Refined Fire Crystals (from `FC 5-1`)
+to the cost.
+
+- **Furnace** — the town HQ; caps every other building's max level.
+- **Embassy** — stores Alliance reinforcements and gates Alliance assistance; every standard level
+  requires the Furnace at the matching level (Levels 1–8 all just require Furnace Lv.8).
 
 ---
 

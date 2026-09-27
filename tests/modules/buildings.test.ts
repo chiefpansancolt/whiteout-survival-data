@@ -47,3 +47,23 @@ describe('Furnace levels', () => {
     expect(orders).toEqual([...orders].sort((a, b) => a - b));
   });
 });
+
+describe('Embassy levels', () => {
+  const embassy = buildings().findByName('Embassy')!;
+
+  it('tracks all 80 levels', () => {
+    expect(embassy.levels).toHaveLength(80);
+  });
+
+  it('requires Furnace as a prerequisite at every standard level', () => {
+    const standardLevels = embassy.levels.filter((l) => l.tier === 'standard');
+    expect(standardLevels.every((l) => l.prerequisites?.[0].building === 'Furnace')).toBe(true);
+  });
+
+  it('caps out at FC 10 with no prerequisites column', () => {
+    const fc10 = embassy.levels.find((l) => l.label === 'FC 10')!;
+    expect(fc10.tier).toBe('fireCrystal');
+    expect(fc10.fcStage).toBe(10);
+    expect(fc10.prerequisites).toBeUndefined();
+  });
+});

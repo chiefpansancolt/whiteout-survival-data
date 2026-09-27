@@ -10,3 +10,10 @@ console.log(
   'Furnace total power at max:',
   furnace.levels.reduce((sum, l) => sum + l.power, 0),
 );
+
+const embassy = buildings().findByName('Embassy')!;
+console.log('Embassy levels tracked:', embassy.levels.length);
+console.log(
+  'Embassy total power at max:',
+  embassy.levels.reduce((sum, l) => sum + l.power, 0),
+);
