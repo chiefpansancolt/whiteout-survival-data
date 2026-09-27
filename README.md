@@ -145,6 +145,29 @@ derived rather than scraped for this range, self-referencing the building by nam
   `prerequisites` text separately references specific numbered instances (e.g. `"Shelter 1"`,
   `"Shelter 3"`) as plain strings, not tied to this entry.
 
+### 🏛️ Facilities
+
+| Module     | Factory        | Items | Description                               |
+| ---------- | -------------- | ----- | ----------------------------------------- |
+| facilities | `facilities()` | 8     | Buildings with no levels, power, or costs |
+
+A handful of buildings are purely functional gameplay hubs — no upgrade levels, no power
+contribution, no build cost. Forcing them into `Building` would leave `levels`, `power`, and
+`maxLevelLabel` all meaningless, so they get their own minimal shape instead:
+
+```ts
+export interface Facility {
+  id: string;
+  name: string;
+  img: string;
+  description: string;
+}
+```
+
+**Hero Hall**, **Dawn Academy**, **Beast Cage**, **Lighthouse**, **Arena**, **Chief's House**,
+**Explorer's Cabin**, and **Suggestion Box** — each is a single entry with just a name, icon, and a
+description of what it does in-game (recruiting heroes, PvP ranking, edicts, and so on).
+
 ---
 
 ## 📋 Raw Data Access

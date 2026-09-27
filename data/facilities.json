@@ -1,0 +1,50 @@
+[
+  {
+    "id": "hero-hall",
+    "name": "Hero Hall",
+    "img": "/images/facilities/HeroHall.png",
+    "description": "Where you use Platinum and Gold keys to recruit Heroes to your team. Platinum keys open Advanced chests and Gold keys open Epic chests, both yielding heroes, hero shards, exploration and expedition manuals, hero XP, and speedups or resources."
+  },
+  {
+    "id": "dawn-academy",
+    "name": "Dawn Academy",
+    "img": "/images/facilities/DawnAcademy.png",
+    "description": "An Expert System building, unlocked at Furnace Level 25 (Fire Crystal Level 5 era), where Experts recruited during Tundra Trek settle and hold lectures teaching townspeople and soldiers their specialty, providing skill-based town bonuses. Also distributes Trek Supplies daily (20 units at 00:00 UTC, plus 10 more at 08:00 and 16:00 UTC)."
+  },
+  {
+    "id": "beast-cage",
+    "name": "Beast Cage",
+    "img": "/images/facilities/BeastCage.png",
+    "description": "Where beasts captured from the Wilderness are kept (only one of each type can be captured). Tamed pets can be upgraded, advanced, and dispatched on Wilderness treasure hunts; reaching Pet Lv.10 and completing advancement unlocks a special Talent Skill."
+  },
+  {
+    "id": "lighthouse",
+    "name": "Lighthouse",
+    "img": "/images/facilities/Lighthouse.png",
+    "description": "Hosts Intelligence missions — rescuing Survivors, hunting beasts, or sending Heroes to investigate a building. Its Searchlight can be upgraded (to a maximum of Level 20) by completing missions, increasing both the quantity and quality of missions available at each refresh."
+  },
+  {
+    "id": "arena",
+    "name": "Arena",
+    "img": "/images/facilities/Arena.png",
+    "description": "The PvP combat facility where Chiefs challenge each other and climb the ranks. Arena points are earned only by initiating and winning a challenge; losing a challenge you initiated costs no points, and being challenged by someone else never changes your points either way. Wins also earn Arena Tokens for a dedicated store, with rewards on daily and weekly schedules and a weekly seasonal reset."
+  },
+  {
+    "id": "chiefs-house",
+    "name": "Chief's House",
+    "img": "/images/facilities/ChiefsHouse.png",
+    "description": "Houses Edicts, special town-wide abilities activated by spending Contentment (earned by working Survivors, or purchased with Diamonds): Urgent Mobilization, Rush Job, Comprehensive Care, Double Time, Productivity Day, and Festivities, each with its own Contentment cost and cooldown."
+  },
+  {
+    "id": "explorers-cabin",
+    "name": "Explorer's Cabin",
+    "img": "/images/facilities/ExplorersCabin.png",
+    "description": "Collects offline Idle rewards once your maximum Idle time is reached (a chest appears above it for direct collection), and otherwise serves as the entry point into Exploration mode."
+  },
+  {
+    "id": "suggestion-box",
+    "name": "Suggestion Box",
+    "img": "/images/facilities/SuggestionBox.png",
+    "description": "Tracks Survivor satisfaction through two tabs: Suggestions, where unresolved unhappiness lowers Public Opinion Rating (POR), and SOS, where resolving decision-based town scenarios raises or lowers POR depending on your choices. Keeping POR high keeps Survivors happy and improves daily rewards."
+  }
+]

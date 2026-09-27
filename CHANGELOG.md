@@ -64,6 +64,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Level 10 plus one bonus `FC 1` level, which correctly requires Furnace FC 1 (unlike the production
   buildings' FC 2 tier-skip). `Shelter` is modeled as a single building, matching the wiki's own
   page scope, even though players can build up to eight.
+- `facilities()`: new data module for buildings with no upgrade levels, power, or cost — Hero Hall,
+  Dawn Academy, Beast Cage, Lighthouse, Arena, Chief's House, Explorer's Cabin, and Suggestion Box.
+  Each is a `Facility` (`id`, `name`, `img`, `description`) rather than a `Building`, since forcing
+  them into the leveled shape would leave `levels`/`power`/`maxLevelLabel` meaningless.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

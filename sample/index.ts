@@ -1,4 +1,4 @@
-import { buildings } from '../src';
+import { buildings, facilities } from '../src';
 
 console.log('--- Buildings ---');
 console.log('total buildings:', buildings().count());
@@ -67,3 +67,7 @@ for (const name of [
     b.levels.reduce((sum, l) => sum + l.power, 0),
   );
 }
+
+console.log('\n--- Facilities ---');
+console.log('total facilities:', facilities().count());
+console.log('Arena description:', facilities().findByName('Arena')?.description);
