@@ -16,6 +16,8 @@ export interface BuildingLevel {
   cost: Resource[];
   buildTimeSeconds: number;
   power: number;
+  rallyCapacity?: number;
+  marchCapacity?: number;
 }
 
 export interface Building {

@@ -106,3 +106,31 @@ describe('Research Center levels', () => {
     );
   });
 });
+
+describe('Command Center levels', () => {
+  const commandCenter = buildings().findByName('Command Center')!;
+
+  it('tracks all 80 levels and rally/march capacity at standard levels', () => {
+    expect(commandCenter.levels).toHaveLength(80);
+    const level1 = commandCenter.levels.find((l) => l.label === '1')!;
+    expect(level1.rallyCapacity).toBe(1500);
+    expect(level1.marchCapacity).toBe(400);
+  });
+
+  it('requires both Furnace and Embassy at standard levels', () => {
+    const level1 = commandCenter.levels.find((l) => l.label === '1')!;
+    expect(level1.prerequisites).toEqual([
+      { building: 'Furnace', level: 10 },
+      { building: 'Embassy', level: 1 },
+    ]);
+  });
+
+  it('gates Fire Crystal levels behind matching Furnace and Embassy FC tiers, on top of its own chain', () => {
+    const fc21 = commandCenter.levels.find((l) => l.label === 'FC 2-1')!;
+    expect(fc21.prerequisites).toEqual([
+      { building: 'Command Center', level: 'FC 1' },
+      { building: 'Furnace', level: 'FC 3' },
+      { building: 'Embassy', level: 'FC 3' },
+    ]);
+  });
+});

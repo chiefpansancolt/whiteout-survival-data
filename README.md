@@ -66,7 +66,7 @@ Every query builder provides these 6 terminal methods:
 
 | Module    | Factory       | Items | Description                                       |
 | --------- | ------------- | ----- | ------------------------------------------------- |
-| buildings | `buildings()` | 3     | Buildings with full per-level upgrade progression |
+| buildings | `buildings()` | 4     | Buildings with full per-level upgrade progression |
 
 Each `Building` nests its full level-by-level progression under `levels`. Most buildings follow an
 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then
@@ -93,6 +93,12 @@ derived rather than scraped for this range, self-referencing the building by nam
 - **Research Center** — unlocks Growth, Economy, and Battle research; caps at Level 30 with no Fire
   Crystal tier. Levels 1–9 all just require Furnace Lv.9, then it tracks the Furnace level for level
   10 on.
+- **Command Center** — increases Rally and March troop capacity (`rallyCapacity`/`marchCapacity` on
+  each level) alongside power. Every standard level requires both Furnace (Lv.10 minimum, then
+  matching from Level 11 on) and Embassy at the matching level. Unlike Furnace/Embassy, its Fire
+  Crystal levels also carry an explicit cross-building gate straight from the wiki: every level in a
+  group of 5 (a tier's 4 sub-levels plus the next tier's base row) requires Furnace and Embassy at a
+  matching Fire Crystal tier, in addition to Command Center's own derived same-building chain.
 
 ---
 

@@ -21,6 +21,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   both Furnace and Embassy — see the README for the exact chain rule.
 - Research Center added to the `buildings()` dataset. Caps at standard Level 30 with no Fire Crystal
   tier, so `Building.fireCrystalImg` is now optional.
+- Command Center added to the `buildings()` dataset. Adds `rallyCapacity`/`marchCapacity` to
+  `BuildingLevel` (optional, Command-Center-specific for now). Its Fire Crystal levels are the first
+  to carry an explicit, wiki-sourced cross-building `prerequisites` entry (Furnace and Embassy at a
+  matching FC tier), alongside the derived same-building chain used for every other building.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
