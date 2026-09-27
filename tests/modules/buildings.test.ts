@@ -271,9 +271,9 @@ describe.each([
 ])('%s levels', (name, [level1Floor, level5Floor, level6Floor]) => {
   const building = buildings().findByName(name)!;
 
-  it('caps at Level 30 with no Fire Crystal tier', () => {
-    expect(building.levels).toHaveLength(30);
-    expect(building.maxLevelLabel).toBe('30');
+  it('has 30 standard levels plus a single bonus FC 1 level', () => {
+    expect(building.levels).toHaveLength(31);
+    expect(building.maxLevelLabel).toBe('FC 1');
     expect(building.fireCrystalImg).toBeUndefined();
   });
 
@@ -284,5 +284,17 @@ describe.each([
     expect(level1.prerequisites).toEqual([{ building: 'Furnace', level: level1Floor }]);
     expect(level5.prerequisites).toEqual([{ building: 'Furnace', level: level5Floor }]);
     expect(level6.prerequisites).toEqual([{ building: 'Furnace', level: level6Floor }]);
+  });
+
+  it('has a sole FC 1 level requiring Furnace FC 2 (not FC 1) and its own Level 30', () => {
+    const fc1 = building.levels.find((l) => l.label === 'FC 1')!;
+    expect(fc1.tier).toBe('fireCrystal');
+    expect(fc1.fcStage).toBe(1);
+    expect(fc1.fcSubLevel).toBeUndefined();
+    expect(fc1.prerequisites).toEqual([
+      { building: name, level: 30 },
+      { building: 'Furnace', level: 'FC 2' },
+    ]);
+    expect(fc1.cost.some((c) => c.name === 'Fire Crystals')).toBe(false);
   });
 });

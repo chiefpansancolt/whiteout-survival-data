@@ -26066,7 +26066,7 @@
     "name": "Hunter's Hut",
     "img": "/images/buildings/HuntersHut.png",
     "description": "Produces Meat, the second production building unlocked. Its Furnace prerequisite tracks the Furnace level exactly from Level 1 on.",
-    "maxLevelLabel": "30",
+    "maxLevelLabel": "FC 1",
     "levels": [
       {
         "id": "hunters-hut-1",
@@ -26955,6 +26955,43 @@
         ],
         "buildTimeSeconds": 138840,
         "power": 30470
+      },
+      {
+        "id": "hunters-hut-fc1",
+        "label": "FC 1",
+        "order": 31,
+        "tier": "fireCrystal",
+        "fcStage": 1,
+        "prerequisites": [
+          {
+            "building": "Hunter's Hut",
+            "level": 30
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 6000000
+          },
+          {
+            "name": "Coal",
+            "count": 1200000
+          },
+          {
+            "name": "Iron",
+            "count": 300000
+          },
+          {
+            "name": "Meat",
+            "count": 6000000
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 31618
       }
     ]
   },
@@ -26963,7 +27000,7 @@
     "name": "Sawmill",
     "img": "/images/buildings/Sawmill.png",
     "description": "Produces Wood, the first production building unlocked. Its Furnace prerequisite tracks the Furnace level exactly from Level 1 on.",
-    "maxLevelLabel": "30",
+    "maxLevelLabel": "FC 1",
     "levels": [
       {
         "id": "sawmill-1",
@@ -27852,6 +27889,43 @@
         ],
         "buildTimeSeconds": 138840,
         "power": 30470
+      },
+      {
+        "id": "sawmill-fc1",
+        "label": "FC 1",
+        "order": 31,
+        "tier": "fireCrystal",
+        "fcStage": 1,
+        "prerequisites": [
+          {
+            "building": "Sawmill",
+            "level": 30
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 6000000
+          },
+          {
+            "name": "Coal",
+            "count": 1200000
+          },
+          {
+            "name": "Iron",
+            "count": 300000
+          },
+          {
+            "name": "Meat",
+            "count": 6000000
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 31618
       }
     ]
   },
@@ -27860,7 +27934,7 @@
     "name": "Coal Mine",
     "img": "/images/buildings/CoalMine.png",
     "description": "Produces Coal, the third production building unlocked. Levels 1-3 all just require Furnace Lv.3, then it tracks the Furnace level exactly from Level 4 on.",
-    "maxLevelLabel": "30",
+    "maxLevelLabel": "FC 1",
     "levels": [
       {
         "id": "coal-mine-1",
@@ -28749,6 +28823,43 @@
         ],
         "buildTimeSeconds": 138840,
         "power": 30470
+      },
+      {
+        "id": "coal-mine-fc1",
+        "label": "FC 1",
+        "order": 31,
+        "tier": "fireCrystal",
+        "fcStage": 1,
+        "prerequisites": [
+          {
+            "building": "Coal Mine",
+            "level": 30
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 6000000
+          },
+          {
+            "name": "Coal",
+            "count": 1200000
+          },
+          {
+            "name": "Iron",
+            "count": 300000
+          },
+          {
+            "name": "Meat",
+            "count": 6000000
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 31618
       }
     ]
   },
@@ -28757,7 +28868,7 @@
     "name": "Iron Mine",
     "img": "/images/buildings/IronMine.png",
     "description": "Produces Iron, the fourth production building unlocked. Levels 1-5 all just require Furnace Lv.5, then it tracks the Furnace level exactly from Level 6 on.",
-    "maxLevelLabel": "30",
+    "maxLevelLabel": "FC 1",
     "levels": [
       {
         "id": "iron-mine-1",
@@ -29646,6 +29757,43 @@
         ],
         "buildTimeSeconds": 138840,
         "power": 30470
+      },
+      {
+        "id": "iron-mine-fc1",
+        "label": "FC 1",
+        "order": 31,
+        "tier": "fireCrystal",
+        "fcStage": 1,
+        "prerequisites": [
+          {
+            "building": "Iron Mine",
+            "level": 30
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 6000000
+          },
+          {
+            "name": "Coal",
+            "count": 1200000
+          },
+          {
+            "name": "Iron",
+            "count": 300000
+          },
+          {
+            "name": "Meat",
+            "count": 6000000
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 31618
       }
     ]
   }

@@ -51,12 +51,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   point to 84,000), and Infirmary FC 4-1 through FC 4-4 power values, where whiteoutsurvival.wiki's
   precise figures form a clean arithmetic progression that wostools.net's rounded figures did not.
 - Hunter's Hut, Sawmill, Coal Mine, and Iron Mine added to the `buildings()` dataset. All four share
-  an identical cost/power/time curve and cap at Level 30 with no Fire Crystal tier, differing only
-  in their Furnace prerequisite floor. Excluded a stray "FC 1" row that appeared on
-  whiteoutsurvival.wiki's Sawmill/Coal Mine/Iron Mine pages — byte-identical across all three
-  buildings and citing the wrong Furnace FC tier for a first FC level — as a templating artifact,
-  consistent with wostools.net's explicit confirmation that none of the four has a Fire Crystal
-  tier.
+  an identical cost/power/time curve through Level 30, differing only in their Furnace prerequisite
+  floor, then each gets one bonus `FC 1` level beyond that (see next entry).
+- Corrected course on the "FC 1" row on these four buildings' pages: initially dismissed as a
+  whiteoutsurvival.wiki templating artifact (byte-identical values across buildings, citing Furnace
+  FC 2 rather than FC 1). Raw HTML confirms it is real, deliberate data — present identically in the
+  unrendered markup of all four pages, not just the summarized fetch. Added it as a genuine sole
+  `FC 1` level on all four buildings (`maxLevelLabel` is now `"FC 1"`, not `"30"`), still requiring
+  Furnace FC 2 and no Fire Crystals in its cost, exactly as scraped.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

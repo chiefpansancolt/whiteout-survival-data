@@ -125,14 +125,14 @@ derived rather than scraped for this range, self-referencing the building by nam
   buildings). Its remaining levels skip several Furnace levels between gates (e.g. Level 2 needs
   only Furnace Lv.7, Level 3 needs Lv.10) rather than tracking every Furnace level.
 - **Hunter's Hut / Sawmill / Coal Mine / Iron Mine** — the four basic resource-production buildings
-  (Meat, Wood, Coal, and Iron respectively). All four share an identical cost/power/time curve and
-  cap at Level 30 with no Fire Crystal tier; they differ only in their Furnace prerequisite floor —
-  Sawmill and Hunter's Hut track the Furnace level exactly from Level 1, Coal Mine's Levels 1–3 all
-  just require Furnace Lv.3, and Iron Mine's Levels 1–5 all just require Furnace Lv.5. Both source
-  wikis explicitly confirm none of the four has a Fire Crystal tier — a stray "FC 1" row appearing
-  on whiteoutsurvival.wiki's Sawmill/Coal Mine/Iron Mine pages was excluded as a templating artifact
-  (byte-identical values across all three buildings, and its "Furnace FC 2" prerequisite would be
-  the wrong tier for a first FC level, which should require FC 1).
+  (Meat, Wood, Coal, and Iron respectively). All four share an identical cost/power/time curve
+  through Level 30, then each gets exactly one bonus level beyond that: a sole `FC 1`,
+  byte-identical across all four buildings (6,000,000 Wood/Meat, 1,200,000 Coal, 300,000 Iron, 2
+  seconds, 31,618 power) and requiring Furnace **FC 2** (not FC 1) plus their own Level 30 — no Fire
+  Crystals in its cost despite the label. `maxLevelLabel` is `"FC 1"` for these four, not `"30"`.
+  They differ from each other only in their standard Furnace prerequisite floor — Sawmill and
+  Hunter's Hut track the Furnace level exactly from Level 1, Coal Mine's Levels 1–3 all just require
+  Furnace Lv.3, and Iron Mine's Levels 1–5 all just require Furnace Lv.5.
 
 ---
 
