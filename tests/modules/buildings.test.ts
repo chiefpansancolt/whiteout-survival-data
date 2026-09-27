@@ -175,3 +175,34 @@ describe.each([
     ]);
   });
 });
+
+describe('War Academy levels', () => {
+  const warAcademy = buildings().findByName('War Academy')!;
+
+  it('has no standard tier: all 46 levels are fireCrystal', () => {
+    expect(warAcademy.levels).toHaveLength(46);
+    expect(warAcademy.levels.every((l) => l.tier === 'fireCrystal')).toBe(true);
+    expect(warAcademy.fireCrystalImg).toBeUndefined();
+  });
+
+  it('starts at FC 1 with only a Furnace FC 1 requirement, no self-chain', () => {
+    const fc1 = warAcademy.levels.find((l) => l.label === 'FC 1')!;
+    expect(fc1.fcStage).toBe(1);
+    expect(fc1.fcSubLevel).toBeUndefined();
+    expect(fc1.prerequisites).toEqual([{ building: 'Furnace', level: 'FC 1' }]);
+    expect(fc1.cost).toEqual([]);
+  });
+
+  it('has FC 1-1 require FC 1 directly, since there is no tier 0 to jump back to', () => {
+    const fc11 = warAcademy.levels.find((l) => l.label === 'FC 1-1')!;
+    expect(fc11.prerequisites).toEqual([
+      { building: 'War Academy', level: 'FC 1' },
+      { building: 'Furnace', level: 'FC 2' },
+    ]);
+  });
+
+  it('carries a research speed bonus on every level, unlike the sparse training speed bonus', () => {
+    expect(warAcademy.levels.every((l) => l.researchSpeedBonusPercent !== undefined)).toBe(true);
+    expect(warAcademy.levels.find((l) => l.label === 'FC 10')!.researchSpeedBonusPercent).toBe(15);
+  });
+});

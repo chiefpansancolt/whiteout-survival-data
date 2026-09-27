@@ -66,7 +66,7 @@ Every query builder provides these 6 terminal methods:
 
 | Module    | Factory       | Items | Description                                       |
 | --------- | ------------- | ----- | ------------------------------------------------- |
-| buildings | `buildings()` | 7     | Buildings with full per-level upgrade progression |
+| buildings | `buildings()` | 8     | Buildings with full per-level upgrade progression |
 
 Each `Building` nests its full level-by-level progression under `levels`. Most buildings follow an
 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then
@@ -107,6 +107,14 @@ derived rather than scraped for this range, self-referencing the building by nam
   tier base rows (`FC 1`..`FC 10`), matching the wiki, which shows no value on sub-levels or the
   pre-FC stage. Fire Crystal levels carry a Furnace-only cross-building gate (no Embassy), on top of
   the same derived same-building chain as Command Center.
+- **War Academy** — researches Marksman/Infantry/Lancer technologies and unlocks T11 units. The one
+  building so far with no standard tier and no pre-FC stage at all: it unlocks directly at `FC 1`
+  (zero cost) once the Furnace reaches Fire Crystal Level 1, tracking the Furnace FC tier throughout
+  (46 levels total, not 80). `fireCrystalImg` is omitted, matching Research Center's precedent,
+  since there's no separate base/FC visual distinction to make. `FC 1` itself has no same-building
+  `prerequisites` entry (nothing precedes it), and `FC 1-1` requires `FC 1` directly rather than the
+  usual "previous tier's base" rule, since there's no tier 0 to jump back to. Every level (not just
+  FC tier base rows) carries a `researchSpeedBonusPercent`.
 
 ---
 

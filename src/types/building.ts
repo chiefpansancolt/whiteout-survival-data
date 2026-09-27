@@ -20,6 +20,7 @@ export interface BuildingLevel {
   marchCapacity?: number;
   trainingCapacity?: number;
   trainingSpeedBonusPercent?: number;
+  researchSpeedBonusPercent?: number;
 }
 
 export interface Building {

@@ -33,6 +33,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Corrected a wostools.net data error at standard Level 23 (Iron cost) shared by all three troop
   camps: it listed 490,000, but the surrounding progression (630,000 at Level 22, 1,000,000 at
   Level 24) and whiteoutsurvival.wiki both point to 780,000.
+- War Academy added to the `buildings()` dataset. Adds `researchSpeedBonusPercent` to
+  `BuildingLevel`, set on every level (unlike the sparse `trainingSpeedBonusPercent` on the troop
+  camps). This is the first building with no standard tier at all — it has 46 levels, starting
+  directly at `FC 1`, with no `fireCrystalImg` since there is no separate base/FC visual state.
+  Corrected another wostools.net data error, at FC 9-1 through FC 10 (Iron cost): it listed
+  7,200,000, but the surrounding progression (3,600,000 at FC 8-4) and whiteoutsurvival.wiki both
+  point to 4,200,000.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

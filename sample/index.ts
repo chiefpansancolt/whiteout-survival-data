@@ -40,3 +40,10 @@ for (const campName of ['Infantry Camp', 'Marksman Camp', 'Lancer Camp']) {
     camp.levels.reduce((sum, l) => sum + l.power, 0),
   );
 }
+
+const warAcademy = buildings().findByName('War Academy')!;
+console.log('War Academy levels tracked:', warAcademy.levels.length);
+console.log(
+  'War Academy total power at max:',
+  warAcademy.levels.reduce((sum, l) => sum + l.power, 0),
+);
