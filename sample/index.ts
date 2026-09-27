@@ -17,3 +17,10 @@ console.log(
   'Embassy total power at max:',
   embassy.levels.reduce((sum, l) => sum + l.power, 0),
 );
+
+const researchCenter = buildings().findByName('Research Center')!;
+console.log('Research Center max level:', researchCenter.maxLevelLabel);
+console.log(
+  'Research Center total power at max:',
+  researchCenter.levels.reduce((sum, l) => sum + l.power, 0),
+);

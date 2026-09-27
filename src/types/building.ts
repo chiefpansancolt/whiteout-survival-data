@@ -22,7 +22,7 @@ export interface Building {
   id: string;
   name: string;
   img: string;
-  fireCrystalImg: string;
+  fireCrystalImg?: string;
   description?: string;
   maxLevelLabel: string;
   levels: BuildingLevel[];

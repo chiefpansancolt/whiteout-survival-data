@@ -19,6 +19,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   self-reference a prior level by its label (e.g. `"FC 1"`, `"30-4"`). Fire Crystal levels now carry
   a derived `prerequisites` chain (the source wikis show no Prerequisites column for that range) for
   both Furnace and Embassy — see the README for the exact chain rule.
+- Research Center added to the `buildings()` dataset. Caps at standard Level 30 with no Fire Crystal
+  tier, so `Building.fireCrystalImg` is now optional.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

@@ -66,13 +66,15 @@ Every query builder provides these 6 terminal methods:
 
 | Module    | Factory       | Items | Description                                       |
 | --------- | ------------- | ----- | ------------------------------------------------- |
-| buildings | `buildings()` | 2     | Buildings with full per-level upgrade progression |
+| buildings | `buildings()` | 3     | Buildings with full per-level upgrade progression |
 
-Each `Building` nests its full level-by-level progression under `levels`. Every tracked building
-follows the same 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension
-(`30-1..30-4`, then `FC 1` through `FC 9` — each with a base row and four sub-levels
-`FC N-1..FC N-4` — ending at `FC 10` alone, the max level). Fire Crystal levels add Fire Crystals
-(from `FC 1`) and Refined Fire Crystals (from `FC 5-1`) to the cost.
+Each `Building` nests its full level-by-level progression under `levels`. Most buildings follow an
+80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then
+`FC 1` through `FC 9` — each with a base row and four sub-levels `FC N-1..FC N-4` — ending at
+`FC 10` alone, the max level). Fire Crystal levels add Fire Crystals (from `FC 1`) and Refined Fire
+Crystals (from `FC 5-1`) to the cost. Some buildings (e.g. Research Center) cap out at standard
+Level 30 with no Fire Crystal tier at all — for those, `fireCrystalImg` is omitted and
+`maxLevelLabel` is just the final numeric level.
 
 The source wikis show no Prerequisites column for Fire Crystal levels, but each one still requires
 the previous Fire Crystal level of that same building to be complete first — `prerequisites` is
@@ -88,6 +90,9 @@ derived rather than scraped for this range, self-referencing the building by nam
 - **Furnace** — the town HQ; caps every other building's max level.
 - **Embassy** — stores Alliance reinforcements and gates Alliance assistance; every standard level
   requires the Furnace at the matching level (Levels 1–8 all just require Furnace Lv.8).
+- **Research Center** — unlocks Growth, Economy, and Battle research; caps at Level 30 with no Fire
+  Crystal tier. Levels 1–9 all just require Furnace Lv.9, then it tracks the Furnace level for level
+  10 on.
 
 ---
 

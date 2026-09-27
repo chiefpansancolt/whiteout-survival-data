@@ -5860,5 +5860,902 @@
         ]
       }
     ]
+  },
+  {
+    "id": "research-center",
+    "name": "Research Center",
+    "img": "/images/buildings/ResearchCenter.png",
+    "description": "Where players research new technologies across three tabs (Growth, Economy, and Battle) to strengthen their town. Caps out at Level 30 with no Fire Crystal tier.",
+    "maxLevelLabel": "30",
+    "levels": [
+      {
+        "id": "research-center-1",
+        "label": "1",
+        "order": 1,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 105
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 440
+      },
+      {
+        "id": "research-center-2",
+        "label": "2",
+        "order": 2,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 160
+          }
+        ],
+        "buildTimeSeconds": 9,
+        "power": 836
+      },
+      {
+        "id": "research-center-3",
+        "label": "3",
+        "order": 3,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 725
+          }
+        ],
+        "buildTimeSeconds": 45,
+        "power": 1430
+      },
+      {
+        "id": "research-center-4",
+        "label": "4",
+        "order": 4,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1600
+          },
+          {
+            "name": "Coal",
+            "count": 320
+          }
+        ],
+        "buildTimeSeconds": 135,
+        "power": 2222
+      },
+      {
+        "id": "research-center-5",
+        "label": "5",
+        "order": 5,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 6800
+          },
+          {
+            "name": "Coal",
+            "count": 1300
+          }
+        ],
+        "buildTimeSeconds": 270,
+        "power": 3410
+      },
+      {
+        "id": "research-center-6",
+        "label": "6",
+        "order": 6,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000
+          },
+          {
+            "name": "Coal",
+            "count": 3400
+          },
+          {
+            "name": "Iron",
+            "count": 860
+          }
+        ],
+        "buildTimeSeconds": 540,
+        "power": 5192
+      },
+      {
+        "id": "research-center-7",
+        "label": "7",
+        "order": 7,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 62000
+          },
+          {
+            "name": "Coal",
+            "count": 12000
+          },
+          {
+            "name": "Iron",
+            "count": 3100
+          }
+        ],
+        "buildTimeSeconds": 1080,
+        "power": 7766
+      },
+      {
+        "id": "research-center-8",
+        "label": "8",
+        "order": 8,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 22000
+          },
+          {
+            "name": "Iron",
+            "count": 5600
+          }
+        ],
+        "buildTimeSeconds": 1620,
+        "power": 10340
+      },
+      {
+        "id": "research-center-9",
+        "label": "9",
+        "order": 9,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 230000
+          },
+          {
+            "name": "Coal",
+            "count": 47000
+          },
+          {
+            "name": "Iron",
+            "count": 11000
+          }
+        ],
+        "buildTimeSeconds": 2430,
+        "power": 12914
+      },
+      {
+        "id": "research-center-10",
+        "label": "10",
+        "order": 10,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 10
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 410000
+          },
+          {
+            "name": "Coal",
+            "count": 82000
+          },
+          {
+            "name": "Iron",
+            "count": 20000
+          }
+        ],
+        "buildTimeSeconds": 3240,
+        "power": 16654
+      },
+      {
+        "id": "research-center-11",
+        "label": "11",
+        "order": 11,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 11
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 520000
+          },
+          {
+            "name": "Coal",
+            "count": 100000
+          },
+          {
+            "name": "Iron",
+            "count": 26000
+          },
+          {
+            "name": "Meat",
+            "count": 520000
+          }
+        ],
+        "buildTimeSeconds": 4050,
+        "power": 20394
+      },
+      {
+        "id": "research-center-12",
+        "label": "12",
+        "order": 12,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 12
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 670000
+          },
+          {
+            "name": "Coal",
+            "count": 130000
+          },
+          {
+            "name": "Iron",
+            "count": 33000
+          },
+          {
+            "name": "Meat",
+            "count": 670000
+          }
+        ],
+        "buildTimeSeconds": 4860,
+        "power": 24134
+      },
+      {
+        "id": "research-center-13",
+        "label": "13",
+        "order": 13,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 13
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 950000
+          },
+          {
+            "name": "Coal",
+            "count": 190000
+          },
+          {
+            "name": "Iron",
+            "count": 47000
+          },
+          {
+            "name": "Meat",
+            "count": 950000
+          }
+        ],
+        "buildTimeSeconds": 5940,
+        "power": 30448
+      },
+      {
+        "id": "research-center-14",
+        "label": "14",
+        "order": 14,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 14
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1200000
+          },
+          {
+            "name": "Coal",
+            "count": 250000
+          },
+          {
+            "name": "Iron",
+            "count": 63000
+          },
+          {
+            "name": "Meat",
+            "count": 1200000
+          }
+        ],
+        "buildTimeSeconds": 7560,
+        "power": 36762
+      },
+      {
+        "id": "research-center-15",
+        "label": "15",
+        "order": 15,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1800000
+          },
+          {
+            "name": "Coal",
+            "count": 370000
+          },
+          {
+            "name": "Iron",
+            "count": 93000
+          },
+          {
+            "name": "Meat",
+            "count": 1800000
+          }
+        ],
+        "buildTimeSeconds": 9720,
+        "power": 43076
+      },
+      {
+        "id": "research-center-16",
+        "label": "16",
+        "order": 16,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 16
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 2300000
+          },
+          {
+            "name": "Coal",
+            "count": 470000
+          },
+          {
+            "name": "Iron",
+            "count": 110000
+          },
+          {
+            "name": "Meat",
+            "count": 2300000
+          }
+        ],
+        "buildTimeSeconds": 16440,
+        "power": 51964
+      },
+      {
+        "id": "research-center-17",
+        "label": "17",
+        "order": 17,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 17
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 3700000
+          },
+          {
+            "name": "Coal",
+            "count": 740000
+          },
+          {
+            "name": "Iron",
+            "count": 180000
+          },
+          {
+            "name": "Meat",
+            "count": 3700000
+          }
+        ],
+        "buildTimeSeconds": 19740,
+        "power": 60852
+      },
+      {
+        "id": "research-center-18",
+        "label": "18",
+        "order": 18,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 18
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 5000000
+          },
+          {
+            "name": "Coal",
+            "count": 1000000
+          },
+          {
+            "name": "Iron",
+            "count": 250000
+          },
+          {
+            "name": "Meat",
+            "count": 5000000
+          }
+        ],
+        "buildTimeSeconds": 23700,
+        "power": 69740
+      },
+      {
+        "id": "research-center-19",
+        "label": "19",
+        "order": 19,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 19
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 6200000
+          },
+          {
+            "name": "Coal",
+            "count": 1200000
+          },
+          {
+            "name": "Iron",
+            "count": 310000
+          },
+          {
+            "name": "Meat",
+            "count": 6200000
+          }
+        ],
+        "buildTimeSeconds": 35550,
+        "power": 82368
+      },
+      {
+        "id": "research-center-20",
+        "label": "20",
+        "order": 20,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 20
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 8600000
+          },
+          {
+            "name": "Coal",
+            "count": 1700000
+          },
+          {
+            "name": "Iron",
+            "count": 430000
+          },
+          {
+            "name": "Meat",
+            "count": 8600000
+          }
+        ],
+        "buildTimeSeconds": 44430,
+        "power": 94996
+      },
+      {
+        "id": "research-center-21",
+        "label": "21",
+        "order": 21,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 21
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 10000000
+          },
+          {
+            "name": "Coal",
+            "count": 2100000
+          },
+          {
+            "name": "Iron",
+            "count": 540000
+          },
+          {
+            "name": "Meat",
+            "count": 10000000
+          }
+        ],
+        "buildTimeSeconds": 57750,
+        "power": 107624
+      },
+      {
+        "id": "research-center-22",
+        "label": "22",
+        "order": 22,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 22
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 14000000
+          },
+          {
+            "name": "Coal",
+            "count": 2800000
+          },
+          {
+            "name": "Iron",
+            "count": 720000
+          },
+          {
+            "name": "Meat",
+            "count": 14000000
+          }
+        ],
+        "buildTimeSeconds": 86640,
+        "power": 126566
+      },
+      {
+        "id": "research-center-23",
+        "label": "23",
+        "order": 23,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 23
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000000
+          },
+          {
+            "name": "Coal",
+            "count": 3500000
+          },
+          {
+            "name": "Iron",
+            "count": 890000
+          },
+          {
+            "name": "Meat",
+            "count": 17000000
+          }
+        ],
+        "buildTimeSeconds": 121320,
+        "power": 145508
+      },
+      {
+        "id": "research-center-24",
+        "label": "24",
+        "order": 24,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 24
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 24000000
+          },
+          {
+            "name": "Coal",
+            "count": 4800000
+          },
+          {
+            "name": "Iron",
+            "count": 1200000
+          },
+          {
+            "name": "Meat",
+            "count": 24000000
+          }
+        ],
+        "buildTimeSeconds": 169800,
+        "power": 164450
+      },
+      {
+        "id": "research-center-25",
+        "label": "25",
+        "order": 25,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 25
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 32000000
+          },
+          {
+            "name": "Coal",
+            "count": 6500000
+          },
+          {
+            "name": "Iron",
+            "count": 1600000
+          },
+          {
+            "name": "Meat",
+            "count": 32000000
+          }
+        ],
+        "buildTimeSeconds": 237780,
+        "power": 183392
+      },
+      {
+        "id": "research-center-26",
+        "label": "26",
+        "order": 26,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 26
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 42000000
+          },
+          {
+            "name": "Coal",
+            "count": 8400000
+          },
+          {
+            "name": "Iron",
+            "count": 2100000
+          },
+          {
+            "name": "Meat",
+            "count": 42000000
+          }
+        ],
+        "buildTimeSeconds": 273420,
+        "power": 211222
+      },
+      {
+        "id": "research-center-27",
+        "label": "27",
+        "order": 27,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 27
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 59000000
+          },
+          {
+            "name": "Coal",
+            "count": 11000000
+          },
+          {
+            "name": "Iron",
+            "count": 2900000
+          },
+          {
+            "name": "Meat",
+            "count": 59000000
+          }
+        ],
+        "buildTimeSeconds": 328140,
+        "power": 239052
+      },
+      {
+        "id": "research-center-28",
+        "label": "28",
+        "order": 28,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 28
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 79000000
+          },
+          {
+            "name": "Coal",
+            "count": 15000000
+          },
+          {
+            "name": "Iron",
+            "count": 3900000
+          },
+          {
+            "name": "Meat",
+            "count": 79000000
+          }
+        ],
+        "buildTimeSeconds": 377340,
+        "power": 266882
+      },
+      {
+        "id": "research-center-29",
+        "label": "29",
+        "order": 29,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 29
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 98000000
+          },
+          {
+            "name": "Coal",
+            "count": 19000000
+          },
+          {
+            "name": "Iron",
+            "count": 4900000
+          },
+          {
+            "name": "Meat",
+            "count": 98000000
+          }
+        ],
+        "buildTimeSeconds": 433980,
+        "power": 294712
+      },
+      {
+        "id": "research-center-30",
+        "label": "30",
+        "order": 30,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 30
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 120000000
+          },
+          {
+            "name": "Coal",
+            "count": 24000000
+          },
+          {
+            "name": "Iron",
+            "count": 6000000
+          },
+          {
+            "name": "Meat",
+            "count": 120000000
+          }
+        ],
+        "buildTimeSeconds": 520800,
+        "power": 335170
+      }
+    ]
   }
 ]

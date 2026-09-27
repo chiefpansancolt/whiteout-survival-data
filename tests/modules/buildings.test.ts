@@ -89,3 +89,20 @@ describe('Embassy levels', () => {
     expect(fc10.prerequisites).toEqual([{ building: 'Embassy', level: 'FC 9-4' }]);
   });
 });
+
+describe('Research Center levels', () => {
+  const researchCenter = buildings().findByName('Research Center')!;
+
+  it('caps at Level 30 with no Fire Crystal tier', () => {
+    expect(researchCenter.levels).toHaveLength(30);
+    expect(researchCenter.maxLevelLabel).toBe('30');
+    expect(researchCenter.levels.every((l) => l.tier === 'standard')).toBe(true);
+    expect(researchCenter.fireCrystalImg).toBeUndefined();
+  });
+
+  it('requires Furnace as a prerequisite at every level', () => {
+    expect(researchCenter.levels.every((l) => l.prerequisites?.[0].building === 'Furnace')).toBe(
+      true,
+    );
+  });
+});
