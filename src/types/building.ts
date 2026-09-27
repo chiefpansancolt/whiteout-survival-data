@@ -21,6 +21,7 @@ export interface BuildingLevel {
   trainingCapacity?: number;
   trainingSpeedBonusPercent?: number;
   researchSpeedBonusPercent?: number;
+  infirmaryCapacity?: number;
 }
 
 export interface Building {

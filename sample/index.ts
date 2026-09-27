@@ -47,3 +47,12 @@ console.log(
   'War Academy total power at max:',
   warAcademy.levels.reduce((sum, l) => sum + l.power, 0),
 );
+
+for (const name of ['Infirmary', 'Storehouse', 'Barricade']) {
+  const b = buildings().findByName(name)!;
+  console.log(`${name} levels tracked:`, b.levels.length);
+  console.log(
+    `${name} total power at max:`,
+    b.levels.reduce((sum, l) => sum + l.power, 0),
+  );
+}

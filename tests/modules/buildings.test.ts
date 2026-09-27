@@ -206,3 +206,59 @@ describe('War Academy levels', () => {
     expect(warAcademy.levels.find((l) => l.label === 'FC 10')!.researchSpeedBonusPercent).toBe(15);
   });
 });
+
+describe('Infirmary levels', () => {
+  const infirmary = buildings().findByName('Infirmary')!;
+
+  it('tracks all 80 levels with capacity only on standard levels and FC tier base rows', () => {
+    expect(infirmary.levels).toHaveLength(80);
+    const level1 = infirmary.levels.find((l) => l.label === '1')!;
+    const fc1 = infirmary.levels.find((l) => l.label === 'FC 1')!;
+    const fc11 = infirmary.levels.find((l) => l.label === 'FC 1-1')!;
+    expect(level1.infirmaryCapacity).toBe(200);
+    expect(fc1.infirmaryCapacity).toBe(72000);
+    expect(fc11.infirmaryCapacity).toBeUndefined();
+  });
+
+  it('requires Furnace Lv.8 at Level 1, then tracks the matching Furnace level from Level 8 on', () => {
+    const level1 = infirmary.levels.find((l) => l.label === '1')!;
+    expect(level1.prerequisites).toEqual([{ building: 'Furnace', level: 8 }]);
+  });
+});
+
+describe('Storehouse levels', () => {
+  const storehouse = buildings().findByName('Storehouse')!;
+
+  it('caps at Level 30 with no Fire Crystal tier', () => {
+    expect(storehouse.levels).toHaveLength(30);
+    expect(storehouse.maxLevelLabel).toBe('30');
+    expect(storehouse.fireCrystalImg).toBeUndefined();
+  });
+
+  it('requires Furnace Lv.9 at Level 1, then tracks the matching Furnace level from Level 9 on', () => {
+    const level1 = storehouse.levels.find((l) => l.label === '1')!;
+    expect(level1.prerequisites).toEqual([{ building: 'Furnace', level: 9 }]);
+  });
+});
+
+describe('Barricade levels', () => {
+  const barricade = buildings().findByName('Barricade')!;
+
+  it('caps at Level 10 with no Fire Crystal tier', () => {
+    expect(barricade.levels).toHaveLength(10);
+    expect(barricade.maxLevelLabel).toBe('10');
+    expect(barricade.fireCrystalImg).toBeUndefined();
+  });
+
+  it('has no prerequisite at Level 1, unlike every other tracked building', () => {
+    const level1 = barricade.levels.find((l) => l.label === '1')!;
+    expect(level1.prerequisites).toBeUndefined();
+  });
+
+  it('skips several Furnace levels between its own levels rather than gating every one', () => {
+    const level2 = barricade.levels.find((l) => l.label === '2')!;
+    const level3 = barricade.levels.find((l) => l.label === '3')!;
+    expect(level2.prerequisites).toEqual([{ building: 'Furnace', level: 7 }]);
+    expect(level3.prerequisites).toEqual([{ building: 'Furnace', level: 10 }]);
+  });
+});

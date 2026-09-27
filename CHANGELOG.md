@@ -40,6 +40,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Corrected another wostools.net data error, at FC 9-1 through FC 10 (Iron cost): it listed
   7,200,000, but the surrounding progression (3,600,000 at FC 8-4) and whiteoutsurvival.wiki both
   point to 4,200,000.
+- Infirmary, Storehouse, and Barricade added to the `buildings()` dataset. Adds `infirmaryCapacity`
+  to `BuildingLevel` (sparse, like the troop camps' speed bonus). Storehouse caps at Level 30 with
+  an identical cost/power/time curve to Embassy's (Furnace Lv.9 floor). Barricade caps at Level 10
+  and is the first building with no prerequisite at Level 1, and the first whose Furnace gate skips
+  levels between its own (e.g. Level 2 needs only Furnace Lv.7, Level 3 needs Lv.10) instead of
+  tracking every level.
+- Corrected two more wostools.net data errors: Infirmary Level 12 Coal listed as 54,000 (the
+  surrounding progression — 65,000 at Level 11, 110,000 at Level 13 — and whiteoutsurvival.wiki both
+  point to 84,000), and Infirmary FC 4-1 through FC 4-4 power values, where whiteoutsurvival.wiki's
+  precise figures form a clean arithmetic progression that wostools.net's rounded figures did not.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

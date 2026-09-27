@@ -66,7 +66,7 @@ Every query builder provides these 6 terminal methods:
 
 | Module    | Factory       | Items | Description                                       |
 | --------- | ------------- | ----- | ------------------------------------------------- |
-| buildings | `buildings()` | 8     | Buildings with full per-level upgrade progression |
+| buildings | `buildings()` | 11    | Buildings with full per-level upgrade progression |
 
 Each `Building` nests its full level-by-level progression under `levels`. Most buildings follow an
 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then
@@ -115,6 +115,15 @@ derived rather than scraped for this range, self-referencing the building by nam
   `prerequisites` entry (nothing precedes it), and `FC 1-1` requires `FC 1` directly rather than the
   usual "previous tier's base" rule, since there's no tier 0 to jump back to. Every level (not just
   FC tier base rows) carries a `researchSpeedBonusPercent`.
+- **Infirmary** — heals injured troops; if it fills up, troops die in battle instead. Standard shape
+  (80 levels, Furnace-only gate, Lv.8 floor). Carries `infirmaryCapacity`, sparse like the troop
+  camps' speed bonus (every standard level, then only FC tier base rows).
+- **Storehouse** — protects resources beyond plunder up to its capacity. Caps at Level 30 with no
+  Fire Crystal tier (Furnace Lv.9 floor); its cost/power/time curve is identical to Embassy's.
+- **Barricade** — strengthens city defense durability. The shortest tracked building by far: caps at
+  Level 10 with no Fire Crystal tier, and Level 1 has no prerequisite at all (unique among tracked
+  buildings). Its remaining levels skip several Furnace levels between gates (e.g. Level 2 needs
+  only Furnace Lv.7, Level 3 needs Lv.10) rather than tracking every Furnace level.
 
 ---
 
