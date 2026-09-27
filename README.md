@@ -234,6 +234,42 @@ recruitment-cost field is stored — it would just be redundant, derivable data.
 
 ---
 
+### 🐾 Pets
+
+| Module | Factory  | Items | Description                                              |
+| ------ | -------- | ----- | -------------------------------------------------------- |
+| pets   | `pets()` | 14    | Beast Cage pets with a troop bonus skill and level table |
+
+The 14 pets tamed at the Beast Cage (see the `facilities` module), across 5 rarities: Common (1),
+Uncommon (2), Rare (2), Epic (2), and Legendary (7). `maxLevel` varies with rarity
+(50/60/70/80/100), and each pet's single `skill` scales in tiers of `maxLevel / 10` — the same
+every-10-levels milestones that drive the level table's "Advancement" rows.
+
+`unlockRequirement` always carries a `daysRequired` gate (days since server start), plus either a
+`furnaceLevel` (the three earliest pets, all requiring Furnace Lv.18) or a `prerequisitePet` (every
+later pet, requiring a specific level on the pet immediately before it in a single linear chain —
+not branched by rarity). `Troop Attack` and `Troop Defense` are tracked as independent fields on
+every level, but are identical at every level for every pet in the current roster.
+
+Each `PetLevel` carries a `troopAttack`/`troopDefense`/`troopsPower` triple, each a
+`{ value, refinedValue? }` pair — `refinedValue` appears only at levels divisible by 10, the same
+rows that carry `advancementMaterials` (the items spent to earn that jump). A `maxRefinementPercent`
+field is stored per pet (e.g. Cave Hyena: 6.70%) — it is consistently about 4/3 of the per-level
+table's own max refined value, but neither source wiki documents the underlying mechanic, so it's
+kept as a flat scraped field rather than a derived one.
+
+Most skills have a `values` array that scales with the effect's own percentage or flat number (e.g.
+Cave Hyena's Construction Speed bonus) and a flat `cooldownSeconds`. A few pets (Musk Ox, Giant Elk)
+have a skill with no numeric effect to scale — instead, the _cooldown itself_ shortens per tier,
+tracked in `cooldownSecondsByTier` and mirrored into `values` so the tier count still lines up with
+every other pet's shape.
+
+Frost Gorilla and Frostscale Chameleon have no portrait image on either source wiki (a genuine
+roster-wide asset gap, not a scraping miss — confirmed via both wikis' raw HTML and their `og:image`
+placeholders) — `img` is `""` for these two rather than a broken link.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

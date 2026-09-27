@@ -94,5 +94,26 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   (`maxLevel` defaults to `1`, not `0`, for these). Confirmed via raw HTML that this variance is
   real per-skill data, not a parsing gap, before extending the schema.
 
+- `pets()`: new data module covering the full roster of 14 Beast Cage pets across 5 rarities. Adds
+  `Pet`, `PetSkill`, `PetUnlockRequirement`, `PetLevel`, and `PetStatValue` types. `maxLevel` varies
+  by rarity (50/60/70/80/100); each pet's skill scales in tiers of `maxLevel / 10`, aligning with
+  the same every-10-levels milestones as the level table's refinement jumps. `unlockRequirement`
+  models either a `furnaceLevel` gate (the three earliest pets) or a `prerequisitePet` gate (every
+  later pet) — verified as a single linear unlock chain across the whole roster, not branched by
+  rarity.
+- `PetSkill.cooldownSeconds` is optional, and a new optional `cooldownSecondsByTier` field was added
+  to cover Musk Ox and Giant Elk: their skills have no numeric effect that scales per tier, so the
+  cooldown itself shortens instead — the per-tier cooldown values are also mirrored into `values` so
+  the tier count still lines up with every other pet's shape.
+- Confirmed that Troop Attack and Troop Defense are identical at every level for every pet in the
+  current roster (an initial inventory pass had assumed some pets diverge; raw data across the full
+  14-pet roster showed no divergence anywhere).
+- Frost Gorilla and Frostscale Chameleon have no portrait image on either source wiki — confirmed
+  via raw HTML that this is a genuine roster-wide asset gap (both wikis fall back to the same
+  generic `og:image` placeholder), not a scraping miss. `img` is `""` for these two rather than a
+  broken link or placeholder URL. Their `unlockRequirement.prerequisitePet` values were also missing
+  from whiteoutsurvival.wiki (truncated unlock text) and were cross-sourced from wostools.net
+  instead.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

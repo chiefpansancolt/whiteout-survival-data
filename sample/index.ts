@@ -1,4 +1,4 @@
-import { buildings, experts, facilities, heroes } from '../src';
+import { buildings, experts, facilities, heroes, pets } from '../src';
 
 console.log('--- Buildings ---');
 console.log('total buildings:', buildings().count());
@@ -82,3 +82,9 @@ console.log('\n--- Experts ---');
 console.log('total experts:', experts().count());
 console.log('Generation 1 experts:', experts().byGeneration(1).count());
 console.log('Agnes talent:', experts().findByName('Agnes')?.talent.name);
+
+console.log('\n--- Pets ---');
+console.log('total pets:', pets().count());
+console.log('Legendary pets:', pets().byRarity('Legendary').count());
+console.log('Cave Lion skill tiers:', pets().findByName('Cave Lion')?.skill.values.length);
+console.log('Cave Lion unlock requirement:', pets().findByName('Cave Lion')?.unlockRequirement);
