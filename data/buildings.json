@@ -1011,7 +1011,13 @@
           }
         ],
         "buildTimeSeconds": 604800,
-        "power": 1600000
+        "power": 1600000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 30
+          }
+        ]
       },
       {
         "id": "furnace-30-2",
@@ -1043,7 +1049,13 @@
           }
         ],
         "buildTimeSeconds": 604800,
-        "power": 1600000
+        "power": 1600000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "30-1"
+          }
+        ]
       },
       {
         "id": "furnace-30-3",
@@ -1075,7 +1087,13 @@
           }
         ],
         "buildTimeSeconds": 604800,
-        "power": 1700000
+        "power": 1700000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "30-2"
+          }
+        ]
       },
       {
         "id": "furnace-30-4",
@@ -1107,7 +1125,13 @@
           }
         ],
         "buildTimeSeconds": 604800,
-        "power": 1800000
+        "power": 1800000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "30-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc1",
@@ -1138,7 +1162,13 @@
           }
         ],
         "buildTimeSeconds": 604800,
-        "power": 1800000
+        "power": 1800000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "30-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc1-1",
@@ -1170,7 +1200,13 @@
           }
         ],
         "buildTimeSeconds": 777600,
-        "power": 1900000
+        "power": 1900000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 30
+          }
+        ]
       },
       {
         "id": "furnace-fc1-2",
@@ -1202,7 +1238,13 @@
           }
         ],
         "buildTimeSeconds": 777600,
-        "power": 1900000
+        "power": 1900000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 1-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc1-3",
@@ -1234,7 +1276,13 @@
           }
         ],
         "buildTimeSeconds": 777600,
-        "power": 2000000
+        "power": 2000000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 1-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc1-4",
@@ -1266,7 +1314,13 @@
           }
         ],
         "buildTimeSeconds": 777600,
-        "power": 2000000
+        "power": 2000000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 1-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc2",
@@ -1297,7 +1351,13 @@
           }
         ],
         "buildTimeSeconds": 777600,
-        "power": 2100000
+        "power": 2100000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 1-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc2-1",
@@ -1329,7 +1389,13 @@
           }
         ],
         "buildTimeSeconds": 950400,
-        "power": 2200000
+        "power": 2200000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 1"
+          }
+        ]
       },
       {
         "id": "furnace-fc2-2",
@@ -1361,7 +1427,13 @@
           }
         ],
         "buildTimeSeconds": 950400,
-        "power": 2200000
+        "power": 2200000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 2-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc2-3",
@@ -1393,7 +1465,13 @@
           }
         ],
         "buildTimeSeconds": 950400,
-        "power": 2300000
+        "power": 2300000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 2-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc2-4",
@@ -1425,7 +1503,13 @@
           }
         ],
         "buildTimeSeconds": 950400,
-        "power": 2300000
+        "power": 2300000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 2-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc3",
@@ -1456,7 +1540,13 @@
           }
         ],
         "buildTimeSeconds": 950400,
-        "power": 2400000
+        "power": 2400000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 2-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc3-1",
@@ -1488,7 +1578,13 @@
           }
         ],
         "buildTimeSeconds": 1036800,
-        "power": 2400000
+        "power": 2400000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 2"
+          }
+        ]
       },
       {
         "id": "furnace-fc3-2",
@@ -1520,7 +1616,13 @@
           }
         ],
         "buildTimeSeconds": 1036800,
-        "power": 2500000
+        "power": 2500000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 3-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc3-3",
@@ -1552,7 +1654,13 @@
           }
         ],
         "buildTimeSeconds": 1036800,
-        "power": 2600000
+        "power": 2600000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 3-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc3-4",
@@ -1584,7 +1692,13 @@
           }
         ],
         "buildTimeSeconds": 1036800,
-        "power": 2600000
+        "power": 2600000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 3-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc4",
@@ -1615,7 +1729,13 @@
           }
         ],
         "buildTimeSeconds": 1036800,
-        "power": 2700000
+        "power": 2700000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 3-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc4-1",
@@ -1647,7 +1767,13 @@
           }
         ],
         "buildTimeSeconds": 1209600,
-        "power": 2800000
+        "power": 2800000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 3"
+          }
+        ]
       },
       {
         "id": "furnace-fc4-2",
@@ -1679,7 +1805,13 @@
           }
         ],
         "buildTimeSeconds": 1209600,
-        "power": 2800000
+        "power": 2800000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 4-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc4-3",
@@ -1711,7 +1843,13 @@
           }
         ],
         "buildTimeSeconds": 1209600,
-        "power": 2900000
+        "power": 2900000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 4-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc4-4",
@@ -1743,7 +1881,13 @@
           }
         ],
         "buildTimeSeconds": 1209600,
-        "power": 3000000
+        "power": 3000000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 4-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc5",
@@ -1774,7 +1918,13 @@
           }
         ],
         "buildTimeSeconds": 1209600,
-        "power": 3000000
+        "power": 3000000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 4-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc5-1",
@@ -1810,7 +1960,13 @@
           }
         ],
         "buildTimeSeconds": 1296000,
-        "power": 3100000
+        "power": 3100000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 4"
+          }
+        ]
       },
       {
         "id": "furnace-fc5-2",
@@ -1846,7 +2002,13 @@
           }
         ],
         "buildTimeSeconds": 1296000,
-        "power": 3200000
+        "power": 3200000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 5-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc5-3",
@@ -1882,7 +2044,13 @@
           }
         ],
         "buildTimeSeconds": 1296000,
-        "power": 3200000
+        "power": 3200000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 5-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc5-4",
@@ -1918,7 +2086,13 @@
           }
         ],
         "buildTimeSeconds": 1296000,
-        "power": 3300000
+        "power": 3300000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 5-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc6",
@@ -1953,7 +2127,13 @@
           }
         ],
         "buildTimeSeconds": 1296000,
-        "power": 3400000
+        "power": 3400000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 5-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc6-1",
@@ -1989,7 +2169,13 @@
           }
         ],
         "buildTimeSeconds": 1555200,
-        "power": 3400000
+        "power": 3400000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 5"
+          }
+        ]
       },
       {
         "id": "furnace-fc6-2",
@@ -2025,7 +2211,13 @@
           }
         ],
         "buildTimeSeconds": 1555200,
-        "power": 3500000
+        "power": 3500000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 6-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc6-3",
@@ -2061,7 +2253,13 @@
           }
         ],
         "buildTimeSeconds": 1555200,
-        "power": 3600000
+        "power": 3600000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 6-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc6-4",
@@ -2097,7 +2295,13 @@
           }
         ],
         "buildTimeSeconds": 1555200,
-        "power": 3600000
+        "power": 3600000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 6-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc7",
@@ -2132,7 +2336,13 @@
           }
         ],
         "buildTimeSeconds": 1555200,
-        "power": 3700000
+        "power": 3700000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 6-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc7-1",
@@ -2168,7 +2378,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 3800000
+        "power": 3800000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 6"
+          }
+        ]
       },
       {
         "id": "furnace-fc7-2",
@@ -2204,7 +2420,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 3800000
+        "power": 3800000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 7-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc7-3",
@@ -2240,7 +2462,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 3900000
+        "power": 3900000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 7-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc7-4",
@@ -2276,7 +2504,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 4000000
+        "power": 4000000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 7-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc8",
@@ -2311,7 +2545,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 4000000
+        "power": 4000000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 7-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc8-1",
@@ -2347,7 +2587,13 @@
           }
         ],
         "buildTimeSeconds": 1123200,
-        "power": 4100000
+        "power": 4100000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 7"
+          }
+        ]
       },
       {
         "id": "furnace-fc8-2",
@@ -2383,7 +2629,13 @@
           }
         ],
         "buildTimeSeconds": 1123200,
-        "power": 4200000
+        "power": 4200000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 8-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc8-3",
@@ -2419,7 +2671,13 @@
           }
         ],
         "buildTimeSeconds": 1123200,
-        "power": 4200000
+        "power": 4200000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 8-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc8-4",
@@ -2455,7 +2713,13 @@
           }
         ],
         "buildTimeSeconds": 1123200,
-        "power": 4300000
+        "power": 4300000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 8-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc9",
@@ -2490,7 +2754,13 @@
           }
         ],
         "buildTimeSeconds": 1123200,
-        "power": 4400000
+        "power": 4400000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 8-4"
+          }
+        ]
       },
       {
         "id": "furnace-fc9-1",
@@ -2526,7 +2796,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 4500000
+        "power": 4500000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 8"
+          }
+        ]
       },
       {
         "id": "furnace-fc9-2",
@@ -2562,7 +2838,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 4500000
+        "power": 4500000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 9-1"
+          }
+        ]
       },
       {
         "id": "furnace-fc9-3",
@@ -2598,7 +2880,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 4600000
+        "power": 4600000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 9-2"
+          }
+        ]
       },
       {
         "id": "furnace-fc9-4",
@@ -2634,7 +2922,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 4700000
+        "power": 4700000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 9-3"
+          }
+        ]
       },
       {
         "id": "furnace-fc10",
@@ -2669,7 +2963,13 @@
           }
         ],
         "buildTimeSeconds": 1728000,
-        "power": 4800000
+        "power": 4800000,
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": "FC 9-4"
+          }
+        ]
       }
     ]
   },
@@ -3599,7 +3899,13 @@
           }
         ],
         "buildTimeSeconds": 399120,
-        "power": 347798
+        "power": 347798,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": 30
+          }
+        ]
       },
       {
         "id": "embassy-30-2",
@@ -3631,7 +3937,13 @@
           }
         ],
         "buildTimeSeconds": 399120,
-        "power": 360426
+        "power": 360426,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "30-1"
+          }
+        ]
       },
       {
         "id": "embassy-30-3",
@@ -3663,7 +3975,13 @@
           }
         ],
         "buildTimeSeconds": 399120,
-        "power": 373054
+        "power": 373054,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "30-2"
+          }
+        ]
       },
       {
         "id": "embassy-30-4",
@@ -3695,7 +4013,13 @@
           }
         ],
         "buildTimeSeconds": 399120,
-        "power": 385682
+        "power": 385682,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "30-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc1",
@@ -3726,7 +4050,13 @@
           }
         ],
         "buildTimeSeconds": 399120,
-        "power": 398310
+        "power": 398310,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "30-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc1-1",
@@ -3758,7 +4088,13 @@
           }
         ],
         "buildTimeSeconds": 513180,
-        "power": 410938
+        "power": 410938,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": 30
+          }
+        ]
       },
       {
         "id": "embassy-fc1-2",
@@ -3790,7 +4126,13 @@
           }
         ],
         "buildTimeSeconds": 513180,
-        "power": 423566
+        "power": 423566,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 1-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc1-3",
@@ -3822,7 +4164,13 @@
           }
         ],
         "buildTimeSeconds": 513180,
-        "power": 436194
+        "power": 436194,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 1-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc1-4",
@@ -3854,7 +4202,13 @@
           }
         ],
         "buildTimeSeconds": 513180,
-        "power": 448822
+        "power": 448822,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 1-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc2",
@@ -3885,7 +4239,13 @@
           }
         ],
         "buildTimeSeconds": 513180,
-        "power": 461450
+        "power": 461450,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 1-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc2-1",
@@ -3917,7 +4277,13 @@
           }
         ],
         "buildTimeSeconds": 627240,
-        "power": 474078
+        "power": 474078,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 1"
+          }
+        ]
       },
       {
         "id": "embassy-fc2-2",
@@ -3949,7 +4315,13 @@
           }
         ],
         "buildTimeSeconds": 627240,
-        "power": 486706
+        "power": 486706,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 2-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc2-3",
@@ -3981,7 +4353,13 @@
           }
         ],
         "buildTimeSeconds": 627240,
-        "power": 499334
+        "power": 499334,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 2-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc2-4",
@@ -4013,7 +4391,13 @@
           }
         ],
         "buildTimeSeconds": 627240,
-        "power": 511962
+        "power": 511962,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 2-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc3",
@@ -4044,7 +4428,13 @@
           }
         ],
         "buildTimeSeconds": 627240,
-        "power": 524590
+        "power": 524590,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 2-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc3-1",
@@ -4076,7 +4466,13 @@
           }
         ],
         "buildTimeSeconds": 684240,
-        "power": 538494
+        "power": 538494,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 2"
+          }
+        ]
       },
       {
         "id": "embassy-fc3-2",
@@ -4108,7 +4504,13 @@
           }
         ],
         "buildTimeSeconds": 684240,
-        "power": 552398
+        "power": 552398,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 3-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc3-3",
@@ -4140,7 +4542,13 @@
           }
         ],
         "buildTimeSeconds": 684240,
-        "power": 566302
+        "power": 566302,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 3-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc3-4",
@@ -4172,7 +4580,13 @@
           }
         ],
         "buildTimeSeconds": 684240,
-        "power": 580206
+        "power": 580206,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 3-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc4",
@@ -4203,7 +4617,13 @@
           }
         ],
         "buildTimeSeconds": 684240,
-        "power": 594110
+        "power": 594110,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 3-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc4-1",
@@ -4235,7 +4655,13 @@
           }
         ],
         "buildTimeSeconds": 798300,
-        "power": 608014
+        "power": 608014,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 3"
+          }
+        ]
       },
       {
         "id": "embassy-fc4-2",
@@ -4267,7 +4693,13 @@
           }
         ],
         "buildTimeSeconds": 798300,
-        "power": 621918
+        "power": 621918,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 4-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc4-3",
@@ -4299,7 +4731,13 @@
           }
         ],
         "buildTimeSeconds": 798300,
-        "power": 635822
+        "power": 635822,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 4-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc4-4",
@@ -4331,7 +4769,13 @@
           }
         ],
         "buildTimeSeconds": 798300,
-        "power": 649726
+        "power": 649726,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 4-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc5",
@@ -4362,7 +4806,13 @@
           }
         ],
         "buildTimeSeconds": 798300,
-        "power": 663630
+        "power": 663630,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 4-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc5-1",
@@ -4398,7 +4848,13 @@
           }
         ],
         "buildTimeSeconds": 855360,
-        "power": 678502
+        "power": 678502,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 4"
+          }
+        ]
       },
       {
         "id": "embassy-fc5-2",
@@ -4434,7 +4890,13 @@
           }
         ],
         "buildTimeSeconds": 855360,
-        "power": 693374
+        "power": 693374,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 5-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc5-3",
@@ -4470,7 +4932,13 @@
           }
         ],
         "buildTimeSeconds": 855360,
-        "power": 708246
+        "power": 708246,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 5-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc5-4",
@@ -4506,7 +4974,13 @@
           }
         ],
         "buildTimeSeconds": 855360,
-        "power": 723118
+        "power": 723118,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 5-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc6",
@@ -4541,7 +5015,13 @@
           }
         ],
         "buildTimeSeconds": 855360,
-        "power": 737990
+        "power": 737990,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 5-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc6-1",
@@ -4577,7 +5057,13 @@
           }
         ],
         "buildTimeSeconds": 1026420,
-        "power": 752862
+        "power": 752862,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 5"
+          }
+        ]
       },
       {
         "id": "embassy-fc6-2",
@@ -4613,7 +5099,13 @@
           }
         ],
         "buildTimeSeconds": 1026420,
-        "power": 767734
+        "power": 767734,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 6-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc6-3",
@@ -4649,7 +5141,13 @@
           }
         ],
         "buildTimeSeconds": 1026420,
-        "power": 782606
+        "power": 782606,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 6-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc6-4",
@@ -4685,7 +5183,13 @@
           }
         ],
         "buildTimeSeconds": 1026420,
-        "power": 797478
+        "power": 797478,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 6-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc7",
@@ -4720,7 +5224,13 @@
           }
         ],
         "buildTimeSeconds": 1026420,
-        "power": 812350
+        "power": 812350,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 6-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc7-1",
@@ -4756,7 +5266,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 827222
+        "power": 827222,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 6"
+          }
+        ]
       },
       {
         "id": "embassy-fc7-2",
@@ -4792,7 +5308,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 842094
+        "power": 842094,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 7-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc7-3",
@@ -4828,7 +5350,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 856966
+        "power": 856966,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 7-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc7-4",
@@ -4864,7 +5392,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 871838
+        "power": 871838,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 7-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc8",
@@ -4899,7 +5433,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 886710
+        "power": 886710,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 7-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc8-1",
@@ -4935,7 +5475,13 @@
           }
         ],
         "buildTimeSeconds": 741300,
-        "power": 902638
+        "power": 902638,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 7"
+          }
+        ]
       },
       {
         "id": "embassy-fc8-2",
@@ -4971,7 +5517,13 @@
           }
         ],
         "buildTimeSeconds": 741300,
-        "power": 918566
+        "power": 918566,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 8-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc8-3",
@@ -5007,7 +5559,13 @@
           }
         ],
         "buildTimeSeconds": 741300,
-        "power": 934494
+        "power": 934494,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 8-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc8-4",
@@ -5043,7 +5601,13 @@
           }
         ],
         "buildTimeSeconds": 741300,
-        "power": 950422
+        "power": 950422,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 8-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc9",
@@ -5078,7 +5642,13 @@
           }
         ],
         "buildTimeSeconds": 741300,
-        "power": 966350
+        "power": 966350,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 8-4"
+          }
+        ]
       },
       {
         "id": "embassy-fc9-1",
@@ -5114,7 +5684,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 982278
+        "power": 982278,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 8"
+          }
+        ]
       },
       {
         "id": "embassy-fc9-2",
@@ -5150,7 +5726,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 998206
+        "power": 998206,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 9-1"
+          }
+        ]
       },
       {
         "id": "embassy-fc9-3",
@@ -5186,7 +5768,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 1014134
+        "power": 1014134,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 9-2"
+          }
+        ]
       },
       {
         "id": "embassy-fc9-4",
@@ -5222,7 +5810,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 1030062
+        "power": 1030062,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 9-3"
+          }
+        ]
       },
       {
         "id": "embassy-fc10",
@@ -5257,7 +5851,13 @@
           }
         ],
         "buildTimeSeconds": 1140480,
-        "power": 1045990
+        "power": 1045990,
+        "prerequisites": [
+          {
+            "building": "Embassy",
+            "level": "FC 9-4"
+          }
+        ]
       }
     ]
   }

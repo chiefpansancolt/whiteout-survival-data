@@ -2,7 +2,7 @@ import { Resource } from './common';
 
 export interface BuildingRequirement {
   building: string;
-  level: number;
+  level: number | string;
 }
 
 export interface BuildingLevel {

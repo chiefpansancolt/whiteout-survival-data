@@ -15,6 +15,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `whiteoutsurvival.wiki` (images and cross-checks).
 - Embassy added to the `buildings()` dataset, with the same 80-level shape as the Furnace. Every
   standard level requires the Furnace at a matching or higher level.
+- `BuildingRequirement.level` now accepts a string as well as a number, so Fire Crystal levels can
+  self-reference a prior level by its label (e.g. `"FC 1"`, `"30-4"`). Fire Crystal levels now carry
+  a derived `prerequisites` chain (the source wikis show no Prerequisites column for that range) for
+  both Furnace and Embassy — see the README for the exact chain rule.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

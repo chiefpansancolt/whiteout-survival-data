@@ -27,12 +27,34 @@ describe('Furnace levels', () => {
     expect(level1.prerequisites).toBeUndefined();
   });
 
-  it('caps out at FC 10 with no prerequisites column', () => {
+  it('caps out at FC 10, requiring FC 9-4', () => {
     const fc10 = furnace.levels.find((l) => l.label === 'FC 10')!;
     expect(fc10.tier).toBe('fireCrystal');
     expect(fc10.fcStage).toBe(10);
     expect(fc10.fcSubLevel).toBeUndefined();
-    expect(fc10.prerequisites).toBeUndefined();
+    expect(fc10.prerequisites).toEqual([{ building: 'Furnace', level: 'FC 9-4' }]);
+  });
+
+  it("has a tier base row require the previous tier's last sub-level", () => {
+    const fc2 = furnace.levels.find((l) => l.label === 'FC 2')!;
+    expect(fc2.prerequisites).toEqual([{ building: 'Furnace', level: 'FC 1-4' }]);
+  });
+
+  it("has a tier's first sub-level require the previous tier's base row", () => {
+    const fc21 = furnace.levels.find((l) => l.label === 'FC 2-1')!;
+    expect(fc21.prerequisites).toEqual([{ building: 'Furnace', level: 'FC 1' }]);
+  });
+
+  it('has FC 1-1 require standard Level 30, since tier 0 has no base row', () => {
+    const fc11 = furnace.levels.find((l) => l.label === 'FC 1-1')!;
+    expect(fc11.prerequisites).toEqual([{ building: 'Furnace', level: 30 }]);
+  });
+
+  it('chains the pre-FC stage (30-1..30-4) off standard Level 30', () => {
+    const thirtyOne = furnace.levels.find((l) => l.label === '30-1')!;
+    const thirtyTwo = furnace.levels.find((l) => l.label === '30-2')!;
+    expect(thirtyOne.prerequisites).toEqual([{ building: 'Furnace', level: 30 }]);
+    expect(thirtyTwo.prerequisites).toEqual([{ building: 'Furnace', level: '30-1' }]);
   });
 
   it('introduces Refined Fire Crystals starting at FC 5-1', () => {
@@ -60,10 +82,10 @@ describe('Embassy levels', () => {
     expect(standardLevels.every((l) => l.prerequisites?.[0].building === 'Furnace')).toBe(true);
   });
 
-  it('caps out at FC 10 with no prerequisites column', () => {
+  it('caps out at FC 10, requiring FC 9-4', () => {
     const fc10 = embassy.levels.find((l) => l.label === 'FC 10')!;
     expect(fc10.tier).toBe('fireCrystal');
     expect(fc10.fcStage).toBe(10);
-    expect(fc10.prerequisites).toBeUndefined();
+    expect(fc10.prerequisites).toEqual([{ building: 'Embassy', level: 'FC 9-4' }]);
   });
 });

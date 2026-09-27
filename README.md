@@ -71,9 +71,19 @@ Every query builder provides these 6 terminal methods:
 Each `Building` nests its full level-by-level progression under `levels`. Every tracked building
 follows the same 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension
 (`30-1..30-4`, then `FC 1` through `FC 9` — each with a base row and four sub-levels
-`FC N-1..FC N-4` — ending at `FC 10` alone, the max level). Fire Crystal levels have no
-prerequisites column and add Fire Crystals (from `FC 1`) and Refined Fire Crystals (from `FC 5-1`)
-to the cost.
+`FC N-1..FC N-4` — ending at `FC 10` alone, the max level). Fire Crystal levels add Fire Crystals
+(from `FC 1`) and Refined Fire Crystals (from `FC 5-1`) to the cost.
+
+The source wikis show no Prerequisites column for Fire Crystal levels, but each one still requires
+the previous Fire Crystal level of that same building to be complete first — `prerequisites` is
+derived rather than scraped for this range, self-referencing the building by name:
+
+- A tier's base row (`FC N`) requires the previous tier's last sub-level (`FC (N-1)-4`).
+- A tier's first sub-level (`FC N-1`) requires the previous tier's base row (`FC (N-1)`).
+- A tier's remaining sub-levels (`FC N-2..4`) each require the one directly before them.
+- The pre-FC stage (`30-1..30-4`) chains off the building's own standard Level 30.
+- `FC 1-1` is the one exception: since the pre-FC stage has no separate base row, it requires
+  standard Level 30 directly instead of a "tier 0" base.
 
 - **Furnace** — the town HQ; caps every other building's max level.
 - **Embassy** — stores Alliance reinforcements and gates Alliance assistance; every standard level
