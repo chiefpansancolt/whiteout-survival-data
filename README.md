@@ -199,6 +199,41 @@ generation-by-generation approach used for buildings.
 
 ---
 
+### 🧑‍🏫 Experts
+
+| Module  | Factory     | Items | Description                                            |
+| ------- | ----------- | ----- | ------------------------------------------------------ |
+| experts | `experts()` | 10    | Dawn Academy Experts with skills, talent, and affinity |
+
+The 10 Experts recruited during Tundra Trek and stationed at the Dawn Academy (see the `facilities`
+module), across 3 generations (4/4/2). Each has a `title` (narrative epithet, e.g. "Elite
+Politician") and a separate `specialty` (mechanical category, e.g. "City Economy") — genuinely
+different fields sourced from different wikis, not the same value scraped twice.
+
+`baseBonuses` is 1–2 stat bonuses (the value reached at Affinity Level 100). `skills` is always 4
+entries plus a separate `talent`, both sharing the same `ExpertSkill` shape — but that shape covers
+several distinct in-game mechanics found while transcribing the full roster, not just one:
+
+- Most skills/talents have one or more `progressions` (a named value that scales per level, e.g.
+  Agnes's talent has both `"Chest Gain"` and `"Daily Cap"` scaling independently) plus a `costs`
+  table (EXP/Books per level).
+- Some have `milestoneRewards` instead — a flat, non-scaling base value where leveling unlocks a
+  fixed one-time item bundle at specific levels (e.g. Baldur's "Blazing Sunrise" grants a fixed
+  reward set at levels 1, 6, and 10) rather than a continuously increasing stat.
+- Some have a `lootTable` (a random-reward chest, on either a skill or the talent — confirmed
+  present on both, not talent-exclusive).
+- A few are entirely flat with no `progressions`, `milestoneRewards`, or `lootTable` at all (e.g.
+  Baldur's talent "Master Negotiator") — `maxLevel` defaults to `1` for these rather than `0`, since
+  the ability is still active, just not further upgradeable.
+
+`affinityLevels` is a 100-row table (`level`, `affinityRequired`, an optional `advancementCost` —
+present only at levels divisible by 10 — and the resulting `statBonus`). `advancementCost` is the
+per-milestone "Sigil" cost; summing the column reproduces the aggregate "Total Sigils" figure
+reported elsewhere for every expert checked (e.g. Agnes: 5+10+...+50 = 275), so no separate
+recruitment-cost field is stored — it would just be redundant, derivable data.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

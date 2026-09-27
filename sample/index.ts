@@ -1,4 +1,4 @@
-import { buildings, facilities, heroes } from '../src';
+import { buildings, experts, facilities, heroes } from '../src';
 
 console.log('--- Buildings ---');
 console.log('total buildings:', buildings().count());
@@ -77,3 +77,8 @@ console.log('total heroes:', heroes().count());
 console.log('Rare heroes:', heroes().byRarity('Rare').count());
 console.log('Infantry heroes:', heroes().byClass('Infantry').count());
 console.log('Smith exploration skills:', heroes().findByName('Smith')?.skills.exploration.length);
+
+console.log('\n--- Experts ---');
+console.log('total experts:', experts().count());
+console.log('Generation 1 experts:', experts().byGeneration(1).count());
+console.log('Agnes talent:', experts().findByName('Agnes')?.talent.name);

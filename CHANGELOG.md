@@ -79,6 +79,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Resolved a locale-routing quirk on two Generation 0 heroes' pages (Cloris, Ling Xue), where the
   bare URL slug intermittently served French or German content instead of English; fetched their
   correct English-locale slugs instead of guessing field values from translated text.
+- `experts()`: new data module covering the full roster of 10 Dawn Academy Experts across 3
+  generations. Adds `Expert`, `ExpertSkill`, `ExpertProgression`, `ExpertMilestoneReward`,
+  `ExpertLootTableEntry`, and `ExpertAffinityLevel` types. `title` (narrative) and `specialty`
+  (mechanical category) are separate fields from separate sources, not the same value scraped twice.
+  Data extracted from hidden hover-tooltip tables in whiteoutsurvival.wiki's raw HTML (the visible
+  page text only shows a value range like "2 → 8"); cross-validated per expert by summing the
+  Affinity table's `advancementCost` column against wostools.net's independently reported "Total
+  Sigils" figure — an exact match for all 10 experts.
+- Discovered mid-build that `ExpertSkill` needed to cover more than the initially planned
+  continuous-scaling shape: some skills/talents use fixed milestone item-tier rewards instead of a
+  scaling value (`milestoneRewards`), some use a random-reward chest on either a skill or the talent
+  (`lootTable`, not talent-exclusive), and a few are entirely flat with none of the above
+  (`maxLevel` defaults to `1`, not `0`, for these). Confirmed via raw HTML that this variance is
+  real per-skill data, not a parsing gap, before extending the schema.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
