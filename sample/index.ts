@@ -48,7 +48,15 @@ console.log(
   warAcademy.levels.reduce((sum, l) => sum + l.power, 0),
 );
 
-for (const name of ['Infirmary', 'Storehouse', 'Barricade']) {
+for (const name of [
+  'Infirmary',
+  'Storehouse',
+  'Barricade',
+  "Hunter's Hut",
+  'Sawmill',
+  'Coal Mine',
+  'Iron Mine',
+]) {
   const b = buildings().findByName(name)!;
   console.log(`${name} levels tracked:`, b.levels.length);
   console.log(

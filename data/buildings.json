@@ -26060,5 +26060,3593 @@
         "power": 304700
       }
     ]
+  },
+  {
+    "id": "hunters-hut",
+    "name": "Hunter's Hut",
+    "img": "/images/buildings/HuntersHut.png",
+    "description": "Produces Meat, the second production building unlocked. Its Furnace prerequisite tracks the Furnace level exactly from Level 1 on.",
+    "maxLevelLabel": "30",
+    "levels": [
+      {
+        "id": "hunters-hut-1",
+        "label": "1",
+        "order": 1,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 30
+          }
+        ],
+        "buildTimeSeconds": 1,
+        "power": 40
+      },
+      {
+        "id": "hunters-hut-2",
+        "label": "2",
+        "order": 2,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 45
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 76
+      },
+      {
+        "id": "hunters-hut-3",
+        "label": "3",
+        "order": 3,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 200
+          }
+        ],
+        "buildTimeSeconds": 10,
+        "power": 130
+      },
+      {
+        "id": "hunters-hut-4",
+        "label": "4",
+        "order": 4,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 450
+          },
+          {
+            "name": "Coal",
+            "count": 90
+          }
+        ],
+        "buildTimeSeconds": 35,
+        "power": 202
+      },
+      {
+        "id": "hunters-hut-5",
+        "label": "5",
+        "order": 5,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1900
+          },
+          {
+            "name": "Coal",
+            "count": 380
+          }
+        ],
+        "buildTimeSeconds": 70,
+        "power": 310
+      },
+      {
+        "id": "hunters-hut-6",
+        "label": "6",
+        "order": 6,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 6
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 4800
+          },
+          {
+            "name": "Coal",
+            "count": 960
+          },
+          {
+            "name": "Iron",
+            "count": 240
+          }
+        ],
+        "buildTimeSeconds": 140,
+        "power": 472
+      },
+      {
+        "id": "hunters-hut-7",
+        "label": "7",
+        "order": 7,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 7
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000
+          },
+          {
+            "name": "Coal",
+            "count": 3400
+          },
+          {
+            "name": "Iron",
+            "count": 865
+          }
+        ],
+        "buildTimeSeconds": 285,
+        "power": 706
+      },
+      {
+        "id": "hunters-hut-8",
+        "label": "8",
+        "order": 8,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 8
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 31000
+          },
+          {
+            "name": "Coal",
+            "count": 6300
+          },
+          {
+            "name": "Iron",
+            "count": 1500
+          }
+        ],
+        "buildTimeSeconds": 430,
+        "power": 940
+      },
+      {
+        "id": "hunters-hut-9",
+        "label": "9",
+        "order": 9,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 65000
+          },
+          {
+            "name": "Coal",
+            "count": 13000
+          },
+          {
+            "name": "Iron",
+            "count": 3200
+          }
+        ],
+        "buildTimeSeconds": 630,
+        "power": 1174
+      },
+      {
+        "id": "hunters-hut-10",
+        "label": "10",
+        "order": 10,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 10
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 23000
+          },
+          {
+            "name": "Iron",
+            "count": 5700
+          }
+        ],
+        "buildTimeSeconds": 840,
+        "power": 1514
+      },
+      {
+        "id": "hunters-hut-11",
+        "label": "11",
+        "order": 11,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 11
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 23000
+          },
+          {
+            "name": "Iron",
+            "count": 5900
+          },
+          {
+            "name": "Meat",
+            "count": 110000
+          }
+        ],
+        "buildTimeSeconds": 1080,
+        "power": 1854
+      },
+      {
+        "id": "hunters-hut-12",
+        "label": "12",
+        "order": 12,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 12
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 150000
+          },
+          {
+            "name": "Coal",
+            "count": 30000
+          },
+          {
+            "name": "Iron",
+            "count": 7500
+          },
+          {
+            "name": "Meat",
+            "count": 150000
+          }
+        ],
+        "buildTimeSeconds": 1290,
+        "power": 2194
+      },
+      {
+        "id": "hunters-hut-13",
+        "label": "13",
+        "order": 13,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 13
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 210000
+          },
+          {
+            "name": "Coal",
+            "count": 42000
+          },
+          {
+            "name": "Iron",
+            "count": 10000
+          },
+          {
+            "name": "Meat",
+            "count": 210000
+          }
+        ],
+        "buildTimeSeconds": 1560,
+        "power": 2768
+      },
+      {
+        "id": "hunters-hut-14",
+        "label": "14",
+        "order": 14,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 14
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 280000
+          },
+          {
+            "name": "Coal",
+            "count": 56000
+          },
+          {
+            "name": "Iron",
+            "count": 14000
+          },
+          {
+            "name": "Meat",
+            "count": 280000
+          }
+        ],
+        "buildTimeSeconds": 2010,
+        "power": 3342
+      },
+      {
+        "id": "hunters-hut-15",
+        "label": "15",
+        "order": 15,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 410000
+          },
+          {
+            "name": "Coal",
+            "count": 83000
+          },
+          {
+            "name": "Iron",
+            "count": 20000
+          },
+          {
+            "name": "Meat",
+            "count": 410000
+          }
+        ],
+        "buildTimeSeconds": 2580,
+        "power": 3916
+      },
+      {
+        "id": "hunters-hut-16",
+        "label": "16",
+        "order": 16,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 16
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 530000
+          },
+          {
+            "name": "Coal",
+            "count": 100000
+          },
+          {
+            "name": "Iron",
+            "count": 26000
+          },
+          {
+            "name": "Meat",
+            "count": 530000
+          }
+        ],
+        "buildTimeSeconds": 4380,
+        "power": 4724
+      },
+      {
+        "id": "hunters-hut-17",
+        "label": "17",
+        "order": 17,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 17
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 830000
+          },
+          {
+            "name": "Coal",
+            "count": 160000
+          },
+          {
+            "name": "Iron",
+            "count": 41000
+          },
+          {
+            "name": "Meat",
+            "count": 830000
+          }
+        ],
+        "buildTimeSeconds": 5250,
+        "power": 5532
+      },
+      {
+        "id": "hunters-hut-18",
+        "label": "18",
+        "order": 18,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 18
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1100000
+          },
+          {
+            "name": "Coal",
+            "count": 220000
+          },
+          {
+            "name": "Iron",
+            "count": 56000
+          },
+          {
+            "name": "Meat",
+            "count": 1100000
+          }
+        ],
+        "buildTimeSeconds": 6300,
+        "power": 6340
+      },
+      {
+        "id": "hunters-hut-19",
+        "label": "19",
+        "order": 19,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 19
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1400000
+          },
+          {
+            "name": "Coal",
+            "count": 280000
+          },
+          {
+            "name": "Iron",
+            "count": 70000
+          },
+          {
+            "name": "Meat",
+            "count": 1400000
+          }
+        ],
+        "buildTimeSeconds": 9480,
+        "power": 7488
+      },
+      {
+        "id": "hunters-hut-20",
+        "label": "20",
+        "order": 20,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 20
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1900000
+          },
+          {
+            "name": "Coal",
+            "count": 380000
+          },
+          {
+            "name": "Iron",
+            "count": 96000
+          },
+          {
+            "name": "Meat",
+            "count": 1900000
+          }
+        ],
+        "buildTimeSeconds": 11850,
+        "power": 8636
+      },
+      {
+        "id": "hunters-hut-21",
+        "label": "21",
+        "order": 21,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 21
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 2400000
+          },
+          {
+            "name": "Coal",
+            "count": 490000
+          },
+          {
+            "name": "Iron",
+            "count": 120000
+          },
+          {
+            "name": "Meat",
+            "count": 2400000
+          }
+        ],
+        "buildTimeSeconds": 15390,
+        "power": 9784
+      },
+      {
+        "id": "hunters-hut-22",
+        "label": "22",
+        "order": 22,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 22
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 3200000
+          },
+          {
+            "name": "Coal",
+            "count": 640000
+          },
+          {
+            "name": "Iron",
+            "count": 160000
+          },
+          {
+            "name": "Meat",
+            "count": 3200000
+          }
+        ],
+        "buildTimeSeconds": 23100,
+        "power": 11506
+      },
+      {
+        "id": "hunters-hut-23",
+        "label": "23",
+        "order": 23,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 23
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 4000000
+          },
+          {
+            "name": "Coal",
+            "count": 800000
+          },
+          {
+            "name": "Iron",
+            "count": 200000
+          },
+          {
+            "name": "Meat",
+            "count": 4000000
+          }
+        ],
+        "buildTimeSeconds": 32340,
+        "power": 13228
+      },
+      {
+        "id": "hunters-hut-24",
+        "label": "24",
+        "order": 24,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 24
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 5400000
+          },
+          {
+            "name": "Coal",
+            "count": 1000000
+          },
+          {
+            "name": "Iron",
+            "count": 270000
+          },
+          {
+            "name": "Meat",
+            "count": 5400000
+          }
+        ],
+        "buildTimeSeconds": 45270,
+        "power": 14950
+      },
+      {
+        "id": "hunters-hut-25",
+        "label": "25",
+        "order": 25,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 25
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 7300000
+          },
+          {
+            "name": "Coal",
+            "count": 1400000
+          },
+          {
+            "name": "Iron",
+            "count": 360000
+          },
+          {
+            "name": "Meat",
+            "count": 7300000
+          }
+        ],
+        "buildTimeSeconds": 63390,
+        "power": 16672
+      },
+      {
+        "id": "hunters-hut-26",
+        "label": "26",
+        "order": 26,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 26
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 9400000
+          },
+          {
+            "name": "Coal",
+            "count": 1800000
+          },
+          {
+            "name": "Iron",
+            "count": 470000
+          },
+          {
+            "name": "Meat",
+            "count": 9400000
+          }
+        ],
+        "buildTimeSeconds": 72900,
+        "power": 19202
+      },
+      {
+        "id": "hunters-hut-27",
+        "label": "27",
+        "order": 27,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 27
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 13000000
+          },
+          {
+            "name": "Coal",
+            "count": 2600000
+          },
+          {
+            "name": "Iron",
+            "count": 670000
+          },
+          {
+            "name": "Meat",
+            "count": 13000000
+          }
+        ],
+        "buildTimeSeconds": 87480,
+        "power": 21732
+      },
+      {
+        "id": "hunters-hut-28",
+        "label": "28",
+        "order": 28,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 28
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000000
+          },
+          {
+            "name": "Coal",
+            "count": 3500000
+          },
+          {
+            "name": "Iron",
+            "count": 890000
+          },
+          {
+            "name": "Meat",
+            "count": 17000000
+          }
+        ],
+        "buildTimeSeconds": 100620,
+        "power": 24262
+      },
+      {
+        "id": "hunters-hut-29",
+        "label": "29",
+        "order": 29,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 29
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 22000000
+          },
+          {
+            "name": "Coal",
+            "count": 4400000
+          },
+          {
+            "name": "Iron",
+            "count": 1100000
+          },
+          {
+            "name": "Meat",
+            "count": 22000000
+          }
+        ],
+        "buildTimeSeconds": 115680,
+        "power": 26792
+      },
+      {
+        "id": "hunters-hut-30",
+        "label": "30",
+        "order": 30,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 30
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 27000000
+          },
+          {
+            "name": "Coal",
+            "count": 5400000
+          },
+          {
+            "name": "Iron",
+            "count": 1300000
+          },
+          {
+            "name": "Meat",
+            "count": 27000000
+          }
+        ],
+        "buildTimeSeconds": 138840,
+        "power": 30470
+      }
+    ]
+  },
+  {
+    "id": "sawmill",
+    "name": "Sawmill",
+    "img": "/images/buildings/Sawmill.png",
+    "description": "Produces Wood, the first production building unlocked. Its Furnace prerequisite tracks the Furnace level exactly from Level 1 on.",
+    "maxLevelLabel": "30",
+    "levels": [
+      {
+        "id": "sawmill-1",
+        "label": "1",
+        "order": 1,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 30
+          }
+        ],
+        "buildTimeSeconds": 1,
+        "power": 40
+      },
+      {
+        "id": "sawmill-2",
+        "label": "2",
+        "order": 2,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 45
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 76
+      },
+      {
+        "id": "sawmill-3",
+        "label": "3",
+        "order": 3,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 200
+          }
+        ],
+        "buildTimeSeconds": 10,
+        "power": 130
+      },
+      {
+        "id": "sawmill-4",
+        "label": "4",
+        "order": 4,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 450
+          },
+          {
+            "name": "Coal",
+            "count": 90
+          }
+        ],
+        "buildTimeSeconds": 35,
+        "power": 202
+      },
+      {
+        "id": "sawmill-5",
+        "label": "5",
+        "order": 5,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1900
+          },
+          {
+            "name": "Coal",
+            "count": 380
+          }
+        ],
+        "buildTimeSeconds": 70,
+        "power": 310
+      },
+      {
+        "id": "sawmill-6",
+        "label": "6",
+        "order": 6,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 6
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 4800
+          },
+          {
+            "name": "Coal",
+            "count": 960
+          },
+          {
+            "name": "Iron",
+            "count": 240
+          }
+        ],
+        "buildTimeSeconds": 140,
+        "power": 472
+      },
+      {
+        "id": "sawmill-7",
+        "label": "7",
+        "order": 7,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 7
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000
+          },
+          {
+            "name": "Coal",
+            "count": 3400
+          },
+          {
+            "name": "Iron",
+            "count": 865
+          }
+        ],
+        "buildTimeSeconds": 285,
+        "power": 706
+      },
+      {
+        "id": "sawmill-8",
+        "label": "8",
+        "order": 8,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 8
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 31000
+          },
+          {
+            "name": "Coal",
+            "count": 6300
+          },
+          {
+            "name": "Iron",
+            "count": 1500
+          }
+        ],
+        "buildTimeSeconds": 430,
+        "power": 940
+      },
+      {
+        "id": "sawmill-9",
+        "label": "9",
+        "order": 9,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 65000
+          },
+          {
+            "name": "Coal",
+            "count": 13000
+          },
+          {
+            "name": "Iron",
+            "count": 3200
+          }
+        ],
+        "buildTimeSeconds": 630,
+        "power": 1174
+      },
+      {
+        "id": "sawmill-10",
+        "label": "10",
+        "order": 10,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 10
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 23000
+          },
+          {
+            "name": "Iron",
+            "count": 5700
+          }
+        ],
+        "buildTimeSeconds": 840,
+        "power": 1514
+      },
+      {
+        "id": "sawmill-11",
+        "label": "11",
+        "order": 11,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 11
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 23000
+          },
+          {
+            "name": "Iron",
+            "count": 5900
+          },
+          {
+            "name": "Meat",
+            "count": 110000
+          }
+        ],
+        "buildTimeSeconds": 1080,
+        "power": 1854
+      },
+      {
+        "id": "sawmill-12",
+        "label": "12",
+        "order": 12,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 12
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 150000
+          },
+          {
+            "name": "Coal",
+            "count": 30000
+          },
+          {
+            "name": "Iron",
+            "count": 7500
+          },
+          {
+            "name": "Meat",
+            "count": 150000
+          }
+        ],
+        "buildTimeSeconds": 1290,
+        "power": 2194
+      },
+      {
+        "id": "sawmill-13",
+        "label": "13",
+        "order": 13,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 13
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 210000
+          },
+          {
+            "name": "Coal",
+            "count": 42000
+          },
+          {
+            "name": "Iron",
+            "count": 10000
+          },
+          {
+            "name": "Meat",
+            "count": 210000
+          }
+        ],
+        "buildTimeSeconds": 1560,
+        "power": 2768
+      },
+      {
+        "id": "sawmill-14",
+        "label": "14",
+        "order": 14,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 14
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 280000
+          },
+          {
+            "name": "Coal",
+            "count": 56000
+          },
+          {
+            "name": "Iron",
+            "count": 14000
+          },
+          {
+            "name": "Meat",
+            "count": 280000
+          }
+        ],
+        "buildTimeSeconds": 2010,
+        "power": 3342
+      },
+      {
+        "id": "sawmill-15",
+        "label": "15",
+        "order": 15,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 410000
+          },
+          {
+            "name": "Coal",
+            "count": 83000
+          },
+          {
+            "name": "Iron",
+            "count": 20000
+          },
+          {
+            "name": "Meat",
+            "count": 410000
+          }
+        ],
+        "buildTimeSeconds": 2580,
+        "power": 3916
+      },
+      {
+        "id": "sawmill-16",
+        "label": "16",
+        "order": 16,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 16
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 530000
+          },
+          {
+            "name": "Coal",
+            "count": 100000
+          },
+          {
+            "name": "Iron",
+            "count": 26000
+          },
+          {
+            "name": "Meat",
+            "count": 530000
+          }
+        ],
+        "buildTimeSeconds": 4380,
+        "power": 4724
+      },
+      {
+        "id": "sawmill-17",
+        "label": "17",
+        "order": 17,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 17
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 830000
+          },
+          {
+            "name": "Coal",
+            "count": 160000
+          },
+          {
+            "name": "Iron",
+            "count": 41000
+          },
+          {
+            "name": "Meat",
+            "count": 830000
+          }
+        ],
+        "buildTimeSeconds": 5250,
+        "power": 5532
+      },
+      {
+        "id": "sawmill-18",
+        "label": "18",
+        "order": 18,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 18
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1100000
+          },
+          {
+            "name": "Coal",
+            "count": 220000
+          },
+          {
+            "name": "Iron",
+            "count": 56000
+          },
+          {
+            "name": "Meat",
+            "count": 1100000
+          }
+        ],
+        "buildTimeSeconds": 6300,
+        "power": 6340
+      },
+      {
+        "id": "sawmill-19",
+        "label": "19",
+        "order": 19,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 19
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1400000
+          },
+          {
+            "name": "Coal",
+            "count": 280000
+          },
+          {
+            "name": "Iron",
+            "count": 70000
+          },
+          {
+            "name": "Meat",
+            "count": 1400000
+          }
+        ],
+        "buildTimeSeconds": 9480,
+        "power": 7488
+      },
+      {
+        "id": "sawmill-20",
+        "label": "20",
+        "order": 20,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 20
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1900000
+          },
+          {
+            "name": "Coal",
+            "count": 380000
+          },
+          {
+            "name": "Iron",
+            "count": 96000
+          },
+          {
+            "name": "Meat",
+            "count": 1900000
+          }
+        ],
+        "buildTimeSeconds": 11850,
+        "power": 8636
+      },
+      {
+        "id": "sawmill-21",
+        "label": "21",
+        "order": 21,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 21
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 2400000
+          },
+          {
+            "name": "Coal",
+            "count": 490000
+          },
+          {
+            "name": "Iron",
+            "count": 120000
+          },
+          {
+            "name": "Meat",
+            "count": 2400000
+          }
+        ],
+        "buildTimeSeconds": 15390,
+        "power": 9784
+      },
+      {
+        "id": "sawmill-22",
+        "label": "22",
+        "order": 22,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 22
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 3200000
+          },
+          {
+            "name": "Coal",
+            "count": 640000
+          },
+          {
+            "name": "Iron",
+            "count": 160000
+          },
+          {
+            "name": "Meat",
+            "count": 3200000
+          }
+        ],
+        "buildTimeSeconds": 23100,
+        "power": 11506
+      },
+      {
+        "id": "sawmill-23",
+        "label": "23",
+        "order": 23,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 23
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 4000000
+          },
+          {
+            "name": "Coal",
+            "count": 800000
+          },
+          {
+            "name": "Iron",
+            "count": 200000
+          },
+          {
+            "name": "Meat",
+            "count": 4000000
+          }
+        ],
+        "buildTimeSeconds": 32340,
+        "power": 13228
+      },
+      {
+        "id": "sawmill-24",
+        "label": "24",
+        "order": 24,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 24
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 5400000
+          },
+          {
+            "name": "Coal",
+            "count": 1000000
+          },
+          {
+            "name": "Iron",
+            "count": 270000
+          },
+          {
+            "name": "Meat",
+            "count": 5400000
+          }
+        ],
+        "buildTimeSeconds": 45270,
+        "power": 14950
+      },
+      {
+        "id": "sawmill-25",
+        "label": "25",
+        "order": 25,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 25
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 7300000
+          },
+          {
+            "name": "Coal",
+            "count": 1400000
+          },
+          {
+            "name": "Iron",
+            "count": 360000
+          },
+          {
+            "name": "Meat",
+            "count": 7300000
+          }
+        ],
+        "buildTimeSeconds": 63390,
+        "power": 16672
+      },
+      {
+        "id": "sawmill-26",
+        "label": "26",
+        "order": 26,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 26
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 9400000
+          },
+          {
+            "name": "Coal",
+            "count": 1800000
+          },
+          {
+            "name": "Iron",
+            "count": 470000
+          },
+          {
+            "name": "Meat",
+            "count": 9400000
+          }
+        ],
+        "buildTimeSeconds": 72900,
+        "power": 19202
+      },
+      {
+        "id": "sawmill-27",
+        "label": "27",
+        "order": 27,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 27
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 13000000
+          },
+          {
+            "name": "Coal",
+            "count": 2600000
+          },
+          {
+            "name": "Iron",
+            "count": 670000
+          },
+          {
+            "name": "Meat",
+            "count": 13000000
+          }
+        ],
+        "buildTimeSeconds": 87480,
+        "power": 21732
+      },
+      {
+        "id": "sawmill-28",
+        "label": "28",
+        "order": 28,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 28
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000000
+          },
+          {
+            "name": "Coal",
+            "count": 3500000
+          },
+          {
+            "name": "Iron",
+            "count": 890000
+          },
+          {
+            "name": "Meat",
+            "count": 17000000
+          }
+        ],
+        "buildTimeSeconds": 100620,
+        "power": 24262
+      },
+      {
+        "id": "sawmill-29",
+        "label": "29",
+        "order": 29,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 29
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 22000000
+          },
+          {
+            "name": "Coal",
+            "count": 4400000
+          },
+          {
+            "name": "Iron",
+            "count": 1100000
+          },
+          {
+            "name": "Meat",
+            "count": 22000000
+          }
+        ],
+        "buildTimeSeconds": 115680,
+        "power": 26792
+      },
+      {
+        "id": "sawmill-30",
+        "label": "30",
+        "order": 30,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 30
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 27000000
+          },
+          {
+            "name": "Coal",
+            "count": 5400000
+          },
+          {
+            "name": "Iron",
+            "count": 1300000
+          },
+          {
+            "name": "Meat",
+            "count": 27000000
+          }
+        ],
+        "buildTimeSeconds": 138840,
+        "power": 30470
+      }
+    ]
+  },
+  {
+    "id": "coal-mine",
+    "name": "Coal Mine",
+    "img": "/images/buildings/CoalMine.png",
+    "description": "Produces Coal, the third production building unlocked. Levels 1-3 all just require Furnace Lv.3, then it tracks the Furnace level exactly from Level 4 on.",
+    "maxLevelLabel": "30",
+    "levels": [
+      {
+        "id": "coal-mine-1",
+        "label": "1",
+        "order": 1,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 30
+          }
+        ],
+        "buildTimeSeconds": 1,
+        "power": 40
+      },
+      {
+        "id": "coal-mine-2",
+        "label": "2",
+        "order": 2,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 45
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 76
+      },
+      {
+        "id": "coal-mine-3",
+        "label": "3",
+        "order": 3,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 200
+          }
+        ],
+        "buildTimeSeconds": 10,
+        "power": 130
+      },
+      {
+        "id": "coal-mine-4",
+        "label": "4",
+        "order": 4,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 450
+          },
+          {
+            "name": "Coal",
+            "count": 90
+          }
+        ],
+        "buildTimeSeconds": 35,
+        "power": 202
+      },
+      {
+        "id": "coal-mine-5",
+        "label": "5",
+        "order": 5,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1900
+          },
+          {
+            "name": "Coal",
+            "count": 380
+          }
+        ],
+        "buildTimeSeconds": 70,
+        "power": 310
+      },
+      {
+        "id": "coal-mine-6",
+        "label": "6",
+        "order": 6,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 6
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 4800
+          },
+          {
+            "name": "Coal",
+            "count": 960
+          },
+          {
+            "name": "Iron",
+            "count": 240
+          }
+        ],
+        "buildTimeSeconds": 140,
+        "power": 472
+      },
+      {
+        "id": "coal-mine-7",
+        "label": "7",
+        "order": 7,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 7
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000
+          },
+          {
+            "name": "Coal",
+            "count": 3400
+          },
+          {
+            "name": "Iron",
+            "count": 865
+          }
+        ],
+        "buildTimeSeconds": 285,
+        "power": 706
+      },
+      {
+        "id": "coal-mine-8",
+        "label": "8",
+        "order": 8,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 8
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 31000
+          },
+          {
+            "name": "Coal",
+            "count": 6300
+          },
+          {
+            "name": "Iron",
+            "count": 1500
+          }
+        ],
+        "buildTimeSeconds": 430,
+        "power": 940
+      },
+      {
+        "id": "coal-mine-9",
+        "label": "9",
+        "order": 9,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 65000
+          },
+          {
+            "name": "Coal",
+            "count": 13000
+          },
+          {
+            "name": "Iron",
+            "count": 3200
+          }
+        ],
+        "buildTimeSeconds": 630,
+        "power": 1174
+      },
+      {
+        "id": "coal-mine-10",
+        "label": "10",
+        "order": 10,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 10
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 23000
+          },
+          {
+            "name": "Iron",
+            "count": 5700
+          }
+        ],
+        "buildTimeSeconds": 840,
+        "power": 1514
+      },
+      {
+        "id": "coal-mine-11",
+        "label": "11",
+        "order": 11,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 11
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 23000
+          },
+          {
+            "name": "Iron",
+            "count": 5900
+          },
+          {
+            "name": "Meat",
+            "count": 110000
+          }
+        ],
+        "buildTimeSeconds": 1080,
+        "power": 1854
+      },
+      {
+        "id": "coal-mine-12",
+        "label": "12",
+        "order": 12,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 12
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 150000
+          },
+          {
+            "name": "Coal",
+            "count": 30000
+          },
+          {
+            "name": "Iron",
+            "count": 7500
+          },
+          {
+            "name": "Meat",
+            "count": 150000
+          }
+        ],
+        "buildTimeSeconds": 1290,
+        "power": 2194
+      },
+      {
+        "id": "coal-mine-13",
+        "label": "13",
+        "order": 13,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 13
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 210000
+          },
+          {
+            "name": "Coal",
+            "count": 42000
+          },
+          {
+            "name": "Iron",
+            "count": 10000
+          },
+          {
+            "name": "Meat",
+            "count": 210000
+          }
+        ],
+        "buildTimeSeconds": 1560,
+        "power": 2768
+      },
+      {
+        "id": "coal-mine-14",
+        "label": "14",
+        "order": 14,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 14
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 280000
+          },
+          {
+            "name": "Coal",
+            "count": 56000
+          },
+          {
+            "name": "Iron",
+            "count": 14000
+          },
+          {
+            "name": "Meat",
+            "count": 280000
+          }
+        ],
+        "buildTimeSeconds": 2010,
+        "power": 3342
+      },
+      {
+        "id": "coal-mine-15",
+        "label": "15",
+        "order": 15,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 410000
+          },
+          {
+            "name": "Coal",
+            "count": 83000
+          },
+          {
+            "name": "Iron",
+            "count": 20000
+          },
+          {
+            "name": "Meat",
+            "count": 410000
+          }
+        ],
+        "buildTimeSeconds": 2580,
+        "power": 3916
+      },
+      {
+        "id": "coal-mine-16",
+        "label": "16",
+        "order": 16,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 16
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 530000
+          },
+          {
+            "name": "Coal",
+            "count": 100000
+          },
+          {
+            "name": "Iron",
+            "count": 26000
+          },
+          {
+            "name": "Meat",
+            "count": 530000
+          }
+        ],
+        "buildTimeSeconds": 4380,
+        "power": 4724
+      },
+      {
+        "id": "coal-mine-17",
+        "label": "17",
+        "order": 17,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 17
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 830000
+          },
+          {
+            "name": "Coal",
+            "count": 160000
+          },
+          {
+            "name": "Iron",
+            "count": 41000
+          },
+          {
+            "name": "Meat",
+            "count": 830000
+          }
+        ],
+        "buildTimeSeconds": 5250,
+        "power": 5532
+      },
+      {
+        "id": "coal-mine-18",
+        "label": "18",
+        "order": 18,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 18
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1100000
+          },
+          {
+            "name": "Coal",
+            "count": 220000
+          },
+          {
+            "name": "Iron",
+            "count": 56000
+          },
+          {
+            "name": "Meat",
+            "count": 1100000
+          }
+        ],
+        "buildTimeSeconds": 6300,
+        "power": 6340
+      },
+      {
+        "id": "coal-mine-19",
+        "label": "19",
+        "order": 19,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 19
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1400000
+          },
+          {
+            "name": "Coal",
+            "count": 280000
+          },
+          {
+            "name": "Iron",
+            "count": 70000
+          },
+          {
+            "name": "Meat",
+            "count": 1400000
+          }
+        ],
+        "buildTimeSeconds": 9480,
+        "power": 7488
+      },
+      {
+        "id": "coal-mine-20",
+        "label": "20",
+        "order": 20,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 20
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1900000
+          },
+          {
+            "name": "Coal",
+            "count": 380000
+          },
+          {
+            "name": "Iron",
+            "count": 96000
+          },
+          {
+            "name": "Meat",
+            "count": 1900000
+          }
+        ],
+        "buildTimeSeconds": 11850,
+        "power": 8636
+      },
+      {
+        "id": "coal-mine-21",
+        "label": "21",
+        "order": 21,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 21
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 2400000
+          },
+          {
+            "name": "Coal",
+            "count": 490000
+          },
+          {
+            "name": "Iron",
+            "count": 120000
+          },
+          {
+            "name": "Meat",
+            "count": 2400000
+          }
+        ],
+        "buildTimeSeconds": 15390,
+        "power": 9784
+      },
+      {
+        "id": "coal-mine-22",
+        "label": "22",
+        "order": 22,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 22
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 3200000
+          },
+          {
+            "name": "Coal",
+            "count": 640000
+          },
+          {
+            "name": "Iron",
+            "count": 160000
+          },
+          {
+            "name": "Meat",
+            "count": 3200000
+          }
+        ],
+        "buildTimeSeconds": 23100,
+        "power": 11506
+      },
+      {
+        "id": "coal-mine-23",
+        "label": "23",
+        "order": 23,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 23
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 4000000
+          },
+          {
+            "name": "Coal",
+            "count": 800000
+          },
+          {
+            "name": "Iron",
+            "count": 200000
+          },
+          {
+            "name": "Meat",
+            "count": 4000000
+          }
+        ],
+        "buildTimeSeconds": 32340,
+        "power": 13228
+      },
+      {
+        "id": "coal-mine-24",
+        "label": "24",
+        "order": 24,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 24
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 5400000
+          },
+          {
+            "name": "Coal",
+            "count": 1000000
+          },
+          {
+            "name": "Iron",
+            "count": 270000
+          },
+          {
+            "name": "Meat",
+            "count": 5400000
+          }
+        ],
+        "buildTimeSeconds": 45270,
+        "power": 14950
+      },
+      {
+        "id": "coal-mine-25",
+        "label": "25",
+        "order": 25,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 25
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 7300000
+          },
+          {
+            "name": "Coal",
+            "count": 1400000
+          },
+          {
+            "name": "Iron",
+            "count": 360000
+          },
+          {
+            "name": "Meat",
+            "count": 7300000
+          }
+        ],
+        "buildTimeSeconds": 63390,
+        "power": 16672
+      },
+      {
+        "id": "coal-mine-26",
+        "label": "26",
+        "order": 26,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 26
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 9400000
+          },
+          {
+            "name": "Coal",
+            "count": 1800000
+          },
+          {
+            "name": "Iron",
+            "count": 470000
+          },
+          {
+            "name": "Meat",
+            "count": 9400000
+          }
+        ],
+        "buildTimeSeconds": 72900,
+        "power": 19202
+      },
+      {
+        "id": "coal-mine-27",
+        "label": "27",
+        "order": 27,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 27
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 13000000
+          },
+          {
+            "name": "Coal",
+            "count": 2600000
+          },
+          {
+            "name": "Iron",
+            "count": 670000
+          },
+          {
+            "name": "Meat",
+            "count": 13000000
+          }
+        ],
+        "buildTimeSeconds": 87480,
+        "power": 21732
+      },
+      {
+        "id": "coal-mine-28",
+        "label": "28",
+        "order": 28,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 28
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000000
+          },
+          {
+            "name": "Coal",
+            "count": 3500000
+          },
+          {
+            "name": "Iron",
+            "count": 890000
+          },
+          {
+            "name": "Meat",
+            "count": 17000000
+          }
+        ],
+        "buildTimeSeconds": 100620,
+        "power": 24262
+      },
+      {
+        "id": "coal-mine-29",
+        "label": "29",
+        "order": 29,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 29
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 22000000
+          },
+          {
+            "name": "Coal",
+            "count": 4400000
+          },
+          {
+            "name": "Iron",
+            "count": 1100000
+          },
+          {
+            "name": "Meat",
+            "count": 22000000
+          }
+        ],
+        "buildTimeSeconds": 115680,
+        "power": 26792
+      },
+      {
+        "id": "coal-mine-30",
+        "label": "30",
+        "order": 30,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 30
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 27000000
+          },
+          {
+            "name": "Coal",
+            "count": 5400000
+          },
+          {
+            "name": "Iron",
+            "count": 1300000
+          },
+          {
+            "name": "Meat",
+            "count": 27000000
+          }
+        ],
+        "buildTimeSeconds": 138840,
+        "power": 30470
+      }
+    ]
+  },
+  {
+    "id": "iron-mine",
+    "name": "Iron Mine",
+    "img": "/images/buildings/IronMine.png",
+    "description": "Produces Iron, the fourth production building unlocked. Levels 1-5 all just require Furnace Lv.5, then it tracks the Furnace level exactly from Level 6 on.",
+    "maxLevelLabel": "30",
+    "levels": [
+      {
+        "id": "iron-mine-1",
+        "label": "1",
+        "order": 1,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 30
+          }
+        ],
+        "buildTimeSeconds": 1,
+        "power": 40
+      },
+      {
+        "id": "iron-mine-2",
+        "label": "2",
+        "order": 2,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 45
+          }
+        ],
+        "buildTimeSeconds": 2,
+        "power": 76
+      },
+      {
+        "id": "iron-mine-3",
+        "label": "3",
+        "order": 3,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 200
+          }
+        ],
+        "buildTimeSeconds": 10,
+        "power": 130
+      },
+      {
+        "id": "iron-mine-4",
+        "label": "4",
+        "order": 4,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 450
+          },
+          {
+            "name": "Coal",
+            "count": 90
+          }
+        ],
+        "buildTimeSeconds": 35,
+        "power": 202
+      },
+      {
+        "id": "iron-mine-5",
+        "label": "5",
+        "order": 5,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1900
+          },
+          {
+            "name": "Coal",
+            "count": 380
+          }
+        ],
+        "buildTimeSeconds": 70,
+        "power": 310
+      },
+      {
+        "id": "iron-mine-6",
+        "label": "6",
+        "order": 6,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 6
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 4800
+          },
+          {
+            "name": "Coal",
+            "count": 960
+          },
+          {
+            "name": "Iron",
+            "count": 240
+          }
+        ],
+        "buildTimeSeconds": 140,
+        "power": 472
+      },
+      {
+        "id": "iron-mine-7",
+        "label": "7",
+        "order": 7,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 7
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000
+          },
+          {
+            "name": "Coal",
+            "count": 3400
+          },
+          {
+            "name": "Iron",
+            "count": 865
+          }
+        ],
+        "buildTimeSeconds": 285,
+        "power": 706
+      },
+      {
+        "id": "iron-mine-8",
+        "label": "8",
+        "order": 8,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 8
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 31000
+          },
+          {
+            "name": "Coal",
+            "count": 6300
+          },
+          {
+            "name": "Iron",
+            "count": 1500
+          }
+        ],
+        "buildTimeSeconds": 430,
+        "power": 940
+      },
+      {
+        "id": "iron-mine-9",
+        "label": "9",
+        "order": 9,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 9
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 65000
+          },
+          {
+            "name": "Coal",
+            "count": 13000
+          },
+          {
+            "name": "Iron",
+            "count": 3200
+          }
+        ],
+        "buildTimeSeconds": 630,
+        "power": 1174
+      },
+      {
+        "id": "iron-mine-10",
+        "label": "10",
+        "order": 10,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 10
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 23000
+          },
+          {
+            "name": "Iron",
+            "count": 5700
+          }
+        ],
+        "buildTimeSeconds": 840,
+        "power": 1514
+      },
+      {
+        "id": "iron-mine-11",
+        "label": "11",
+        "order": 11,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 11
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 110000
+          },
+          {
+            "name": "Coal",
+            "count": 23000
+          },
+          {
+            "name": "Iron",
+            "count": 5900
+          },
+          {
+            "name": "Meat",
+            "count": 110000
+          }
+        ],
+        "buildTimeSeconds": 1080,
+        "power": 1854
+      },
+      {
+        "id": "iron-mine-12",
+        "label": "12",
+        "order": 12,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 12
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 150000
+          },
+          {
+            "name": "Coal",
+            "count": 30000
+          },
+          {
+            "name": "Iron",
+            "count": 7500
+          },
+          {
+            "name": "Meat",
+            "count": 150000
+          }
+        ],
+        "buildTimeSeconds": 1290,
+        "power": 2194
+      },
+      {
+        "id": "iron-mine-13",
+        "label": "13",
+        "order": 13,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 13
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 210000
+          },
+          {
+            "name": "Coal",
+            "count": 42000
+          },
+          {
+            "name": "Iron",
+            "count": 10000
+          },
+          {
+            "name": "Meat",
+            "count": 210000
+          }
+        ],
+        "buildTimeSeconds": 1560,
+        "power": 2768
+      },
+      {
+        "id": "iron-mine-14",
+        "label": "14",
+        "order": 14,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 14
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 280000
+          },
+          {
+            "name": "Coal",
+            "count": 56000
+          },
+          {
+            "name": "Iron",
+            "count": 14000
+          },
+          {
+            "name": "Meat",
+            "count": 280000
+          }
+        ],
+        "buildTimeSeconds": 2010,
+        "power": 3342
+      },
+      {
+        "id": "iron-mine-15",
+        "label": "15",
+        "order": 15,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 410000
+          },
+          {
+            "name": "Coal",
+            "count": 83000
+          },
+          {
+            "name": "Iron",
+            "count": 20000
+          },
+          {
+            "name": "Meat",
+            "count": 410000
+          }
+        ],
+        "buildTimeSeconds": 2580,
+        "power": 3916
+      },
+      {
+        "id": "iron-mine-16",
+        "label": "16",
+        "order": 16,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 16
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 530000
+          },
+          {
+            "name": "Coal",
+            "count": 100000
+          },
+          {
+            "name": "Iron",
+            "count": 26000
+          },
+          {
+            "name": "Meat",
+            "count": 530000
+          }
+        ],
+        "buildTimeSeconds": 4380,
+        "power": 4724
+      },
+      {
+        "id": "iron-mine-17",
+        "label": "17",
+        "order": 17,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 17
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 830000
+          },
+          {
+            "name": "Coal",
+            "count": 160000
+          },
+          {
+            "name": "Iron",
+            "count": 41000
+          },
+          {
+            "name": "Meat",
+            "count": 830000
+          }
+        ],
+        "buildTimeSeconds": 5250,
+        "power": 5532
+      },
+      {
+        "id": "iron-mine-18",
+        "label": "18",
+        "order": 18,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 18
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1100000
+          },
+          {
+            "name": "Coal",
+            "count": 220000
+          },
+          {
+            "name": "Iron",
+            "count": 56000
+          },
+          {
+            "name": "Meat",
+            "count": 1100000
+          }
+        ],
+        "buildTimeSeconds": 6300,
+        "power": 6340
+      },
+      {
+        "id": "iron-mine-19",
+        "label": "19",
+        "order": 19,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 19
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1400000
+          },
+          {
+            "name": "Coal",
+            "count": 280000
+          },
+          {
+            "name": "Iron",
+            "count": 70000
+          },
+          {
+            "name": "Meat",
+            "count": 1400000
+          }
+        ],
+        "buildTimeSeconds": 9480,
+        "power": 7488
+      },
+      {
+        "id": "iron-mine-20",
+        "label": "20",
+        "order": 20,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 20
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 1900000
+          },
+          {
+            "name": "Coal",
+            "count": 380000
+          },
+          {
+            "name": "Iron",
+            "count": 96000
+          },
+          {
+            "name": "Meat",
+            "count": 1900000
+          }
+        ],
+        "buildTimeSeconds": 11850,
+        "power": 8636
+      },
+      {
+        "id": "iron-mine-21",
+        "label": "21",
+        "order": 21,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 21
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 2400000
+          },
+          {
+            "name": "Coal",
+            "count": 490000
+          },
+          {
+            "name": "Iron",
+            "count": 120000
+          },
+          {
+            "name": "Meat",
+            "count": 2400000
+          }
+        ],
+        "buildTimeSeconds": 15390,
+        "power": 9784
+      },
+      {
+        "id": "iron-mine-22",
+        "label": "22",
+        "order": 22,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 22
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 3200000
+          },
+          {
+            "name": "Coal",
+            "count": 640000
+          },
+          {
+            "name": "Iron",
+            "count": 160000
+          },
+          {
+            "name": "Meat",
+            "count": 3200000
+          }
+        ],
+        "buildTimeSeconds": 23100,
+        "power": 11506
+      },
+      {
+        "id": "iron-mine-23",
+        "label": "23",
+        "order": 23,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 23
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 4000000
+          },
+          {
+            "name": "Coal",
+            "count": 800000
+          },
+          {
+            "name": "Iron",
+            "count": 200000
+          },
+          {
+            "name": "Meat",
+            "count": 4000000
+          }
+        ],
+        "buildTimeSeconds": 32340,
+        "power": 13228
+      },
+      {
+        "id": "iron-mine-24",
+        "label": "24",
+        "order": 24,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 24
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 5400000
+          },
+          {
+            "name": "Coal",
+            "count": 1000000
+          },
+          {
+            "name": "Iron",
+            "count": 270000
+          },
+          {
+            "name": "Meat",
+            "count": 5400000
+          }
+        ],
+        "buildTimeSeconds": 45270,
+        "power": 14950
+      },
+      {
+        "id": "iron-mine-25",
+        "label": "25",
+        "order": 25,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 25
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 7300000
+          },
+          {
+            "name": "Coal",
+            "count": 1400000
+          },
+          {
+            "name": "Iron",
+            "count": 360000
+          },
+          {
+            "name": "Meat",
+            "count": 7300000
+          }
+        ],
+        "buildTimeSeconds": 63390,
+        "power": 16672
+      },
+      {
+        "id": "iron-mine-26",
+        "label": "26",
+        "order": 26,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 26
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 9400000
+          },
+          {
+            "name": "Coal",
+            "count": 1800000
+          },
+          {
+            "name": "Iron",
+            "count": 470000
+          },
+          {
+            "name": "Meat",
+            "count": 9400000
+          }
+        ],
+        "buildTimeSeconds": 72900,
+        "power": 19202
+      },
+      {
+        "id": "iron-mine-27",
+        "label": "27",
+        "order": 27,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 27
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 13000000
+          },
+          {
+            "name": "Coal",
+            "count": 2600000
+          },
+          {
+            "name": "Iron",
+            "count": 670000
+          },
+          {
+            "name": "Meat",
+            "count": 13000000
+          }
+        ],
+        "buildTimeSeconds": 87480,
+        "power": 21732
+      },
+      {
+        "id": "iron-mine-28",
+        "label": "28",
+        "order": 28,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 28
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 17000000
+          },
+          {
+            "name": "Coal",
+            "count": 3500000
+          },
+          {
+            "name": "Iron",
+            "count": 890000
+          },
+          {
+            "name": "Meat",
+            "count": 17000000
+          }
+        ],
+        "buildTimeSeconds": 100620,
+        "power": 24262
+      },
+      {
+        "id": "iron-mine-29",
+        "label": "29",
+        "order": 29,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 29
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 22000000
+          },
+          {
+            "name": "Coal",
+            "count": 4400000
+          },
+          {
+            "name": "Iron",
+            "count": 1100000
+          },
+          {
+            "name": "Meat",
+            "count": 22000000
+          }
+        ],
+        "buildTimeSeconds": 115680,
+        "power": 26792
+      },
+      {
+        "id": "iron-mine-30",
+        "label": "30",
+        "order": 30,
+        "tier": "standard",
+        "prerequisites": [
+          {
+            "building": "Furnace",
+            "level": 30
+          }
+        ],
+        "cost": [
+          {
+            "name": "Wood",
+            "count": 27000000
+          },
+          {
+            "name": "Coal",
+            "count": 5400000
+          },
+          {
+            "name": "Iron",
+            "count": 1300000
+          },
+          {
+            "name": "Meat",
+            "count": 27000000
+          }
+        ],
+        "buildTimeSeconds": 138840,
+        "power": 30470
+      }
+    ]
   }
 ]

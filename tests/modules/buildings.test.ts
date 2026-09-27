@@ -262,3 +262,27 @@ describe('Barricade levels', () => {
     expect(level3.prerequisites).toEqual([{ building: 'Furnace', level: 10 }]);
   });
 });
+
+describe.each([
+  ["Hunter's Hut", [1, 5, 6]],
+  ['Sawmill', [1, 5, 6]],
+  ['Coal Mine', [3, 5, 6]],
+  ['Iron Mine', [5, 5, 6]],
+])('%s levels', (name, [level1Floor, level5Floor, level6Floor]) => {
+  const building = buildings().findByName(name)!;
+
+  it('caps at Level 30 with no Fire Crystal tier', () => {
+    expect(building.levels).toHaveLength(30);
+    expect(building.maxLevelLabel).toBe('30');
+    expect(building.fireCrystalImg).toBeUndefined();
+  });
+
+  it('gates Level 1, Level 5, and Level 6 against the expected Furnace floor', () => {
+    const level1 = building.levels.find((l) => l.label === '1')!;
+    const level5 = building.levels.find((l) => l.label === '5')!;
+    const level6 = building.levels.find((l) => l.label === '6')!;
+    expect(level1.prerequisites).toEqual([{ building: 'Furnace', level: level1Floor }]);
+    expect(level5.prerequisites).toEqual([{ building: 'Furnace', level: level5Floor }]);
+    expect(level6.prerequisites).toEqual([{ building: 'Furnace', level: level6Floor }]);
+  });
+});

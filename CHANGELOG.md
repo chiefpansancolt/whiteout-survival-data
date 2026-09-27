@@ -50,6 +50,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   surrounding progression — 65,000 at Level 11, 110,000 at Level 13 — and whiteoutsurvival.wiki both
   point to 84,000), and Infirmary FC 4-1 through FC 4-4 power values, where whiteoutsurvival.wiki's
   precise figures form a clean arithmetic progression that wostools.net's rounded figures did not.
+- Hunter's Hut, Sawmill, Coal Mine, and Iron Mine added to the `buildings()` dataset. All four share
+  an identical cost/power/time curve and cap at Level 30 with no Fire Crystal tier, differing only
+  in their Furnace prerequisite floor. Excluded a stray "FC 1" row that appeared on
+  whiteoutsurvival.wiki's Sawmill/Coal Mine/Iron Mine pages — byte-identical across all three
+  buildings and citing the wrong Furnace FC tier for a first FC level — as a templating artifact,
+  consistent with wostools.net's explicit confirmation that none of the four has a Fire Crystal
+  tier.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
