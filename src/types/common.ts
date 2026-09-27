@@ -4,3 +4,9 @@ export interface Base {
   name: string;
   img: string;
 }
+
+/** A named, counted item, typically a cost, drop, or ingredient. */
+export interface Resource {
+  name: string;
+  count: number;
+}

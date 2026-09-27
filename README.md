@@ -25,12 +25,11 @@ pnpm add whiteout-survival-data
 Every module exports a **factory function** that returns a chainable query builder.
 
 ```ts
-import { heroes } from "whiteout-survival-data";
+import { buildings } from "whiteout-survival-data";
 
-heroes().findByName("Jeronimo");
+const furnace = buildings().findByName("Furnace");
+furnace.levels.find((l) => l.label === "FC 10");
 ```
-
-_(placeholder — modules are being built out; see below)_
 
 ---
 
@@ -63,18 +62,26 @@ Every query builder provides these 6 terminal methods:
 
 ## 📚 Modules
 
-No data modules yet — this repository is currently just the base scaffold (build tooling, lint,
-tests, and the shared `QueryBase<T>` query builder). Modules will be added and listed here as they
-are built out.
+### 🏠 Buildings
+
+| Module    | Factory       | Items | Description                                       |
+| --------- | ------------- | ----- | ------------------------------------------------- |
+| buildings | `buildings()` | 1     | Buildings with full per-level upgrade progression |
+
+Each `Building` nests its full level-by-level progression under `levels`. The Furnace tracks all 80
+levels: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then `FC 1`
+through `FC 9` — each with a base row and four sub-levels `FC N-1..FC N-4` — ending at `FC 10`
+alone, the max level). Fire Crystal levels have no prerequisites column and add Fire Crystals (from
+`FC 1`) and Refined Fire Crystals (from `FC 5-1`) to the cost.
 
 ---
 
 ## 📋 Raw Data Access
 
-Once modules exist, JSON data files can be imported directly, without importing the JS/TS package:
+JSON data files can be imported directly, without importing the JS/TS package:
 
 ```ts
-import heroes from "whiteout-survival-data/data/heroes.json";
+import buildings from "whiteout-survival-data/data/buildings.json";
 ```
 
 ---

@@ -1,7 +1,7 @@
 import * as whiteoutSurvivalData from '../src';
 
 describe('package entry point', () => {
-  it('exposes the shared type barrel', () => {
-    expect(whiteoutSurvivalData).toBeDefined();
+  it('re-exports every module', () => {
+    expect(whiteoutSurvivalData.buildings().count()).toBeGreaterThan(0);
   });
 });
