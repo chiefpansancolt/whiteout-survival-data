@@ -68,6 +68,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Dawn Academy, Beast Cage, Lighthouse, Arena, Chief's House, Explorer's Cabin, and Suggestion Box.
   Each is a `Facility` (`id`, `name`, `img`, `description`) rather than a `Building`, since forcing
   them into the leveled shape would leave `levels`/`power`/`maxLevelLabel` meaningless.
+- `heroes()`: new data module, covering Generation 0 (the 13 pre-Legendary heroes). Adds `Hero`,
+  `HeroSkill`, `HeroStats`, `ExclusiveWeapon`, and `HeroShardTier` types. `subClass`
+  (`Growth`/`Combat`) is stored per hero rather than derived from rarity/class, since it doesn't
+  follow a strict rule (confirmed via raw HTML: Gina and Jasser are both Epic Marksman but differ).
+  `exclusiveWeapon` is Legendary-only (confirmed structurally: Rare/Epic pages have no `#special`
+  section at all). Data sourced and verified entirely against whiteoutsurvival.wiki's raw HTML,
+  parsed with BeautifulSoup rather than trusting AI-summarized fetches, which invented a nonexistent
+  stat block during initial research on this module.
+- Resolved a locale-routing quirk on two Generation 0 heroes' pages (Cloris, Ling Xue), where the
+  bare URL slug intermittently served French or German content instead of English; fetched their
+  correct English-locale slugs instead of guessing field values from translated text.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

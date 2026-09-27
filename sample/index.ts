@@ -1,4 +1,4 @@
-import { buildings, facilities } from '../src';
+import { buildings, facilities, heroes } from '../src';
 
 console.log('--- Buildings ---');
 console.log('total buildings:', buildings().count());
@@ -71,3 +71,9 @@ for (const name of [
 console.log('\n--- Facilities ---');
 console.log('total facilities:', facilities().count());
 console.log('Arena description:', facilities().findByName('Arena')?.description);
+
+console.log('\n--- Heroes ---');
+console.log('total heroes:', heroes().count());
+console.log('Rare heroes:', heroes().byRarity('Rare').count());
+console.log('Infantry heroes:', heroes().byClass('Infantry').count());
+console.log('Smith exploration skills:', heroes().findByName('Smith')?.skills.exploration.length);

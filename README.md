@@ -170,6 +170,35 @@ description of what it does in-game (recruiting heroes, PvP ranking, edicts, and
 
 ---
 
+### 🦸 Heroes
+
+| Module | Factory    | Items | Description                                        |
+| ------ | ---------- | ----- | -------------------------------------------------- |
+| heroes | `heroes()` | 13    | Heroes with stats, skills, and shard-upgrade costs |
+
+Every hero has a `rarity` (`Rare`/`Epic`/`Legendary`), a `class` (`Infantry`/`Lancer`/`Marksman`),
+and a `subClass` (`Growth`/`Combat`) — `subClass` is stored per hero rather than derived, since it
+doesn't follow a strict rule from rarity or class (e.g. Gina and Jasser are both Epic Marksman, but
+Gina is `Combat` and Jasser is `Growth`).
+
+Stats have two groups: `exploration` (flat `attack`/`defense`/`health`) and `expedition`
+(`attack`/`defense` as percentages). Skills are grouped the same way a hero's in-game skill tabs
+are: `skills.exploration[]`, `skills.expedition[]`, and an optional `skills.talent` — Talent exists
+only on some Legendary heroes (the tab is present on every Legendary page, but empty on newer
+generations that shifted the mechanic into the Exclusive Weapon instead).
+
+`exclusiveWeapon` is present only on Legendary heroes. It carries its own bonus stat block — using
+`lethality`/`health` percentages for its Expedition stats, a different stat pair than the hero's own
+Expedition block — plus a `power` rating and two of its own skills. `shardCosts` is a 5-star ×
+6-tier cost table present on every hero; the per-tier costs are identical across rarities except
+Star 1's total (10 for Rare/Epic, 30 for Legendary, in every hero checked so far).
+
+Currently covers **Generation 0** (the 13 pre-Legendary heroes: 4 Rare, 9 Epic). Later generations
+(1–17, all Legendary, 3 per generation) will be added incrementally, the same
+generation-by-generation approach used for buildings.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

@@ -1,0 +1,996 @@
+[
+  {
+    "id": "smith",
+    "name": "Smith",
+    "img": "/images/heroes/Smith.png",
+    "rarity": "Rare",
+    "class": "Infantry",
+    "subClass": "Growth",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1106,
+        "defense": 2220,
+        "health": 21644
+      },
+      "expedition": {
+        "attack": 90.07,
+        "defense": 90.07
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Hammer Burn",
+          "img": "/images/heroes/skills/hero_skill_icon_500011.png",
+          "description": "Smith swings his hammer forward in a devastating arc, dealing Attack 200%/220%/240%/260%/280% damage."
+        },
+        {
+          "name": "Armor Enhancement",
+          "img": "/images/heroes/skills/hero_skill_icon_500012.png",
+          "description": "Smith upgrades his armor to reduce damage taken by 10%/15%/20%/25%/30%."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Burnished Iron",
+          "img": "/images/heroes/skills/hero_skill_icon_500014.png",
+          "description": "Smith's contagious passion for the art of crafting has raised City Iron Mine Output by 5%/10%/15%/20%/25%."
+        },
+        {
+          "name": "Craftsmanship",
+          "img": "/images/heroes/skills/hero_skill_icon_500015.png",
+          "description": "Smith has an extraordinary sixth sense when it comes to iron. +5%/10%/15%/20%/25% Iron Gathering Speed on the map."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "eugene",
+    "name": "Eugene",
+    "img": "/images/heroes/Eugene.png",
+    "rarity": "Rare",
+    "class": "Infantry",
+    "subClass": "Growth",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1106,
+        "defense": 2220,
+        "health": 21644
+      },
+      "expedition": {
+        "attack": 90.07,
+        "defense": 90.07
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Axe Whirl",
+          "img": "/images/heroes/skills/hero_skill_icon_500001.png",
+          "description": "Eugene's axe pirouette deals damage of Attack *80%/88%/96%/104%/110% per 0.5s to nearby enemies for 3s."
+        },
+        {
+          "name": "Razor Sharp",
+          "img": "/images/heroes/skills/hero_skill_icon_500002.png",
+          "description": "Eugene's sharpened axe deals 10%/15%/20%/25%/30% more damage per second."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Woodland Inheritor",
+          "img": "/images/heroes/skills/hero_skill_icon_500004.png",
+          "description": "Eugene's consummate knowledge of timber processing has raised City Sawmill Output by 5%/10%/15%/20%/25%."
+        },
+        {
+          "name": "Master Woodcutter",
+          "img": "/images/heroes/skills/hero_skill_icon_500005.png",
+          "description": "Eugene is always focused on achieving the perfect logging technique. +5%/10%/15%/20%/25% Wood Gathering Speed on the map."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "charlie",
+    "name": "Charlie",
+    "img": "/images/heroes/Charlie.png",
+    "rarity": "Rare",
+    "class": "Lancer",
+    "subClass": "Growth",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1442,
+        "defense": 2220,
+        "health": 14430
+      },
+      "expedition": {
+        "attack": 90.07,
+        "defense": 90.07
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Shrapnel Load",
+          "img": "/images/heroes/skills/hero_skill_icon_500021.png",
+          "description": "Charlie throws out a homemade explosive, dealing Attack 140%/154%/168%/182%/196% Area of Effect Damage to the target and its nearby enemies."
+        },
+        {
+          "name": "Grenadier",
+          "img": "/images/heroes/skills/hero_skill_icon_500022.png",
+          "description": "Charlie's grenades have a 10%/15%/15%/20%/20% chance of stunning targets for 0.5/0.5/1/1/1.5s."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Demolitions Expert",
+          "img": "/images/heroes/skills/hero_skill_icon_500024.png",
+          "description": "Charlie's precise demolition experience has raised City Coal Mine Output by 5%/10%/15%/20%/25%."
+        },
+        {
+          "name": "Coal Extraction",
+          "img": "/images/heroes/skills/hero_skill_icon_500025.png",
+          "description": "Charlie is an old hand at coal mining. +5%/10%/15%/20%/25% Coal Gathering Speed on the map."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "cloris",
+    "name": "Cloris",
+    "img": "/images/heroes/Cloris.png",
+    "rarity": "Rare",
+    "class": "Marksman",
+    "subClass": "Growth",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1752,
+        "defense": 2220,
+        "health": 10822
+      },
+      "expedition": {
+        "attack": 90.07,
+        "defense": 90.07
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Rain of Arrows",
+          "img": "/images/heroes/skills/hero_skill_icon_500031.png",
+          "description": "Cloris launches a hail of arrows, dealing Attack180%/198%/216%/234%/252% Area of Effect Damage around the target."
+        },
+        {
+          "name": "Hunter's Mark",
+          "img": "/images/heroes/skills/hero_skill_icon_500032.png",
+          "description": "Cloris paints a bullseye on a target, raising damage inflicted on the target by 10%/15%/20%/25%/30% for this attack."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Top Hunter",
+          "img": "/images/heroes/skills/hero_skill_icon_500034.png",
+          "description": "Cloris, the tundra's best hunter, has single-handedly raised City Hunter's Hut Output by 5%/10%/15%/20%/25%."
+        },
+        {
+          "name": "Predator",
+          "img": "/images/heroes/skills/hero_skill_icon_500035.png",
+          "description": "Cloris knows the ecosystem like the back of her hand. +5%/10%/15%/20%/25% Meat Gathering Speed on the map."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "sergey",
+    "name": "Sergey",
+    "img": "/images/heroes/Sergey.png",
+    "rarity": "Epic",
+    "class": "Infantry",
+    "subClass": "Combat",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1361,
+        "defense": 2220,
+        "health": 26640
+      },
+      "expedition": {
+        "attack": 140.11,
+        "defense": 140.11
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Shielded Strike",
+          "img": "/images/heroes/skills/hero_skill_icon_500041.png",
+          "description": "Sergey gives an enemy a solid whack with his heavy shield, knocking the target back while dealing Attack*200%/220%/240%/260%/280% Area of Effect damage."
+        },
+        {
+          "name": "Joint Defense",
+          "img": "/images/heroes/skills/hero_skill_icon_500042.png",
+          "description": "Sergey can organize strong perimeters, increasing all friendly hero Defense by 5%/7.5%/10%/12.5%/15%"
+        },
+        {
+          "name": "Shield Block",
+          "img": "/images/heroes/skills/hero_skill_icon_500043.png",
+          "description": "Sergey trades in his shield for an upgraded model, reducing damage taken by 10%/15%/20%/25%/30%."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Defenders' Edge",
+          "img": "/images/heroes/skills/hero_skill_icon_500044.png",
+          "description": "Sergey's guards our troops with his shield, reducing damage taken by 4%/8%/12%/16%/20% for all troops."
+        },
+        {
+          "name": "Weaken",
+          "img": "/images/heroes/skills/hero_skill_icon_500045.png",
+          "description": "Sergey's intimidating presence reduces Attack by 4%/8%/12%/16%/20% for all enemy troops."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "jessie",
+    "name": "Jessie",
+    "img": "/images/heroes/Jessie.png",
+    "rarity": "Epic",
+    "class": "Lancer",
+    "subClass": "Combat",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1776,
+        "defense": 2220,
+        "health": 17760
+      },
+      "expedition": {
+        "attack": 140.11,
+        "defense": 140.11
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Burst Fire",
+          "img": "/images/heroes/skills/hero_skill_icon_500071.png",
+          "description": "Jessie sprays enemies in a forward arc with her machine gun, dealing Attack*55%/60%/65%/70%/75% damage every 0.5s for 2s."
+        },
+        {
+          "name": "Defense Upgrade",
+          "img": "/images/heroes/skills/hero_skill_icon_500072.png",
+          "description": "Jessie upgrades her armor, increasing Defense by 25%/37.5%/50%/62.5%/70%."
+        },
+        {
+          "name": "Weapon Upgrade",
+          "img": "/images/heroes/skills/hero_skill_icon_500073.png",
+          "description": "Jessie's upgraded weapon boosts Attack by 8%/12%/16%/20%/24%."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Stand of Arms",
+          "img": "/images/heroes/skills/hero_skill_icon_500074.png",
+          "description": "Jessie implement advanced weaponry for our troops, increasing damage dealt by 5%/10%/15%/20%/25% for all troops."
+        },
+        {
+          "name": "Bulwarks",
+          "img": "/images/heroes/skills/hero_skill_icon_500075.png",
+          "description": "With a keen engineering eye, Jessie enhances troops armor, reducing damage taken by 4%/8%/12%/16%/20% for all troops."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 50
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "patrick",
+    "name": "Patrick",
+    "img": "/images/heroes/Patrick.png",
+    "rarity": "Epic",
+    "class": "Lancer",
+    "subClass": "Combat",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1776,
+        "defense": 2220,
+        "health": 17760
+      },
+      "expedition": {
+        "attack": 140.11,
+        "defense": 140.11
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "BBQ Feast",
+          "img": "/images/heroes/skills/hero_skill_icon_500051.png",
+          "description": "Patrick prepares a lavish feast, restoring Health by Attack*200%/220%/240%/260%/280% to all troops and increasing Attack by 5%/5.5%/6%/6.5%/7% for all troops for 4s."
+        },
+        {
+          "name": "Thick Belly",
+          "img": "/images/heroes/skills/hero_skill_icon_500052.png",
+          "description": "Patrick's protective blubber reduces damage taken by 10%/15%/20%/25%/30%."
+        },
+        {
+          "name": "Emergency Snack",
+          "img": "/images/heroes/skills/hero_skill_icon_500053.png",
+          "description": "Patrick's regular snacking restores Health equal to Attack*50%/55%/60%/65%/70% every 5s."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Super Nutrients",
+          "img": "/images/heroes/skills/hero_skill_icon_500054.png",
+          "description": "Patrick's culinary masterpieces invigorate our troops, increasing Health by 5%/10%/15%/20%/25% for all troops."
+        },
+        {
+          "name": "Caloric Booster",
+          "img": "/images/heroes/skills/hero_skill_icon_500055.png",
+          "description": "Patrick's gourmet meals motivate and unleash the potential of our soldiers, increasing Attack by 5%/10%/15%/20%/25% for all troops."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "lumak-bokan",
+    "name": "Lumak Bokan",
+    "img": "/images/heroes/LumakBokan.png",
+    "rarity": "Epic",
+    "class": "Lancer",
+    "subClass": "Combat",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1776,
+        "defense": 2220,
+        "health": 17760
+      },
+      "expedition": {
+        "attack": 140.11,
+        "defense": 140.11
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Earthshake",
+          "img": "/images/heroes/skills/hero_skill_icon_500291.png",
+          "description": "Lumak Bokan lets out an intimidating war cry, reducing Attack by 1%/2%/3%/4%/5% for all enemy troops for 2s."
+        },
+        {
+          "name": "Echoing Boost",
+          "img": "/images/heroes/skills/hero_skill_icon_500292.png",
+          "description": "Beyond intimidating enemies, Lumak Bokan’s war cry invigorates allies. Upon casting Earthshake, increases his and nearby friendly troops’ Attack by 15%/20%/25%/30%/35% for 2s."
+        },
+        {
+          "name": "Jungle-Born Agility",
+          "img": "/images/heroes/skills/hero_skill_icon_500293.png",
+          "description": "Years of fighting in the jungles and mountains grant Lumak Bokan swift agility, increasing Attack Speed by 10%/15%/20%/25%/30%."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Tactical Deception",
+          "img": "/images/heroes/skills/hero_skill_icon_500294.png",
+          "description": "With Lumak Bokan's expert guerrilla tactics, all enemy troops' damage dealt is reduced by 4%/8%/12%/16%/20%."
+        },
+        {
+          "name": "Emerald Warrior",
+          "img": "/images/heroes/skills/hero_skill_icon_500295.png",
+          "description": "Lumak Bokan passes his people's traditional techniques to the soldiers, increasing Hunting March Speed by 20%/40%/60%/80%/100%."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "ling-xue",
+    "name": "Ling Xue",
+    "img": "/images/heroes/LingXue.jpg",
+    "rarity": "Epic",
+    "class": "Lancer",
+    "subClass": "Growth",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 1776,
+        "defense": 2220,
+        "health": 17760
+      },
+      "expedition": {
+        "attack": 140.11,
+        "defense": 140.11
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Hurricane Whirl",
+          "img": "/images/heroes/skills/凌雪1.png",
+          "description": "Ling Xue slashes the area ahead with stormlike fury, dealing Attack*300%/330%/360%/390%/420% damage."
+        },
+        {
+          "name": "Galeforce",
+          "img": "/images/heroes/skills/凌雪3.png",
+          "description": "Ling Xue commands the Iron Eagles with strength and honor, increasing Attack by 16%/24%/32%/40%/48% when over 50% Health."
+        },
+        {
+          "name": "Desperate Measures",
+          "img": "/images/heroes/skills/凌雪4.png",
+          "description": "Ling Xue is at her most cunning when cornered, gaining 50%/75%/100%/125%/150% Defense when under 50% Health."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Fearsome Aura",
+          "img": "/images/heroes/skills/凌雪5.png",
+          "description": "Ling Xue's withering assault has disturbed enemies' formation, reducing all enemy Troops' Attack by 4%/8%/12%/16%/20%."
+        },
+        {
+          "name": "Total Control",
+          "img": "/images/heroes/skills/凌雪2.png",
+          "description": "Ling Xue's hands-on, disciplined instruction increases Training Speed by 4%/8%/12%/16%/20%."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "gina",
+    "name": "Gina",
+    "img": "/images/heroes/Gina.png",
+    "rarity": "Epic",
+    "class": "Marksman",
+    "subClass": "Combat",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 2157,
+        "defense": 2220,
+        "health": 13320
+      },
+      "expedition": {
+        "attack": 110.08,
+        "defense": 110.08
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Incendiary Arrow",
+          "img": "/images/heroes/skills/hero_skill_icon_500081.png",
+          "description": "Gina’s Incendiary Shot deals Attack*210%/230%/250%/270%/290% damage to an enemy target as well as Attack*70%/77%/84%/91%/98% damage to others nearby."
+        },
+        {
+          "name": "Windtalker",
+          "img": "/images/heroes/skills/hero_skill_icon_500082.png",
+          "description": "Gina improves the design of her crossbow, increasing Attack Speed by 10%/15%/20%/25%/30%."
+        },
+        {
+          "name": "Eagle Eyes",
+          "img": "/images/heroes/skills/hero_skill_icon_500083.png",
+          "description": "Gina can quickly latch onto an enemy's weakness, increasing Crit Rate by 7%/10%/13%/16%/20%."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Endurance Training",
+          "img": "/images/heroes/skills/hero_skill_icon_500084.png",
+          "description": "Gina's strict Governor training regimen can be counted upon to reduce Stamina cost by 10%/12%/15%/18%/20%."
+        },
+        {
+          "name": "Quick Paced",
+          "img": "/images/heroes/skills/hero_skill_icon_500085.png",
+          "description": "Gina is a fast and aggressive wilderness rider, boosting Wilderness March Speed by 20%/40%/60%/80%/100%."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "bahiti",
+    "name": "Bahiti",
+    "img": "/images/heroes/Bahiti.png",
+    "rarity": "Epic",
+    "class": "Marksman",
+    "subClass": "Combat",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 2157,
+        "defense": 2220,
+        "health": 13320
+      },
+      "expedition": {
+        "attack": 140.11,
+        "defense": 140.11
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Precise Shot",
+          "img": "/images/heroes/skills/hero_skill_icon_500061.png",
+          "description": "Bahiti targets enemy weak points with devastating precision, dealing Attack*400%/440%/480%/520%/560% damage."
+        },
+        {
+          "name": "Quick Shot",
+          "img": "/images/heroes/skills/hero_skill_icon_500062.png",
+          "description": "Bahiti gains +10%/15%/20%/25%/30% Attack Speed as he is very experienced in wilderness survival."
+        },
+        {
+          "name": "Pathfinder Vision",
+          "img": "/images/heroes/skills/hero_skill_icon_500063.png",
+          "description": "Bahiti deals 10%/15%/20%/25%/30% extra damage."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Sixth Sense",
+          "img": "/images/heroes/skills/hero_skill_icon_500064.png",
+          "description": "Bahiti's senses for dangers ahead, reducing damage taken by 4%/8%/12%/16%/20% for all troops."
+        },
+        {
+          "name": "Fluorescence",
+          "img": "/images/heroes/skills/hero_skill_icon_500065.png",
+          "description": "Bahiti's battlefield instinct grants all troops' attack a 50% chance of increasing damage dealt by 10%/20%/30%/40%/50%."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "jasser",
+    "name": "Jasser",
+    "img": "/images/heroes/Jasser.jpg",
+    "rarity": "Epic",
+    "class": "Marksman",
+    "subClass": "Growth",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 2157,
+        "defense": 2220,
+        "health": 13320
+      },
+      "expedition": {
+        "attack": 140.11,
+        "defense": 140.11
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Triple Volley",
+          "img": "/images/heroes/skills/hero_skill_icon_500281.png",
+          "description": "Jasser precisely aims and fires three consecutive bullets, dealing Attack*100%, Attack *125%/137.5%/150%/162.5%/175%, and Attack*150%/165%/180%/195%/210% damage respectively, with the third being area of effect damage."
+        },
+        {
+          "name": "Suppressive Fire",
+          "img": "/images/heroes/skills/hero_skill_icon_500282.png",
+          "description": "Jasser relies on masterful marksmanship and overwhelming firepower to suppress the enemy, dealing Attack*100%/110%/120%/130%/140% damage and reducing the target's Attack Speed by 30%/35%/40%/45%/50% for 2s."
+        },
+        {
+          "name": "Natural Precision",
+          "img": "/images/heroes/skills/hero_skill_icon_500283.png",
+          "description": "Jasser's impeccable marksmanship has become second nature, increasing Attack by 8%/12%/16%/20%/24%."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Tactical Genius",
+          "img": "/images/heroes/skills/hero_skill_icon_500284.png",
+          "description": "Jasser's combination of courage and wisdom enriches the army, increasing damage dealt by 5%/10%/15%/20%/25% for all troops."
+        },
+        {
+          "name": "Enlightened Warfare",
+          "img": "/images/heroes/skills/hero_skill_icon_500285.png",
+          "description": "Jasser's profound knowledge increases the city's Research Speed by 3%/6%/9%/12%/15%."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  },
+  {
+    "id": "seo-yoon",
+    "name": "Seo-yoon",
+    "img": "/images/heroes/SeoYoon.jpg",
+    "rarity": "Epic",
+    "class": "Marksman",
+    "subClass": "Growth",
+    "generation": 0,
+    "stats": {
+      "exploration": {
+        "attack": 2157,
+        "defense": 2220,
+        "health": 13320
+      },
+      "expedition": {
+        "attack": 140.11,
+        "defense": 140.11
+      }
+    },
+    "skills": {
+      "exploration": [
+        {
+          "name": "Heartbeat of Valor",
+          "img": "/images/heroes/skills/hero_skill_icon_500271.png",
+          "description": "Seo-yoon lifts the army's spirits with invigorating drum beats, increasing all troops' Attack by 1.5%/2%/2.5%/3%/3.5% and Attack Speed by 2.5%/3%/3.5%/4%/4.5% for 4s."
+        },
+        {
+          "name": "Bullseye Bash",
+          "img": "/images/heroes/skills/hero_skill_icon_500272.png",
+          "description": "Seo-yoon aims for the enemy's weak spot and hurls the drumstick with full force, dealing Attack*150%/165%/180%/195%/210% damage."
+        },
+        {
+          "name": "Gale's Pulse",
+          "img": "/images/heroes/skills/hero_skill_icon_500273.png",
+          "description": "Seo-yoon dances to the rhythm, sharpening her assault. For every 3 basic attacks, increases Attack Speed by 1%/2%/3%/4%/5%. Lasts until the end of the battle."
+        }
+      ],
+      "expedition": [
+        {
+          "name": "Rallying Beat",
+          "img": "/images/heroes/skills/hero_skill_icon_500274.png",
+          "description": "Seo-yoon beats the war drum to boost morale, increasing Troops Attack by 5%/10%/15%/20%/25%."
+        },
+        {
+          "name": "Soothing Dance",
+          "img": "/images/heroes/skills/hero_skill_icon_500275.png",
+          "description": "Seo-yoon treats wounded troops with traditional medicine, increasing Healing speed in the infirmary by 10%/20%/30%/40%/50%."
+        }
+      ]
+    },
+    "shardCosts": [
+      {
+        "star": 1,
+        "tierCosts": [1, 1, 2, 2, 2, 2],
+        "total": 10
+      },
+      {
+        "star": 2,
+        "tierCosts": [5, 5, 5, 5, 5, 15],
+        "total": 40
+      },
+      {
+        "star": 3,
+        "tierCosts": [15, 15, 15, 15, 15, 40],
+        "total": 115
+      },
+      {
+        "star": 4,
+        "tierCosts": [40, 40, 40, 40, 40, 100],
+        "total": 300
+      },
+      {
+        "star": 5,
+        "tierCosts": [100, 100, 100, 100, 100, 100],
+        "total": 600
+      }
+    ]
+  }
+]
