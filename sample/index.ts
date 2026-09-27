@@ -31,3 +31,12 @@ console.log(
   'Command Center total power at max:',
   commandCenter.levels.reduce((sum, l) => sum + l.power, 0),
 );
+
+for (const campName of ['Infantry Camp', 'Marksman Camp', 'Lancer Camp']) {
+  const camp = buildings().findByName(campName)!;
+  console.log(`${campName} levels tracked:`, camp.levels.length);
+  console.log(
+    `${campName} total power at max:`,
+    camp.levels.reduce((sum, l) => sum + l.power, 0),
+  );
+}

@@ -25,6 +25,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `BuildingLevel` (optional, Command-Center-specific for now). Its Fire Crystal levels are the first
   to carry an explicit, wiki-sourced cross-building `prerequisites` entry (Furnace and Embassy at a
   matching FC tier), alongside the derived same-building chain used for every other building.
+- Infantry Camp, Marksman Camp, and Lancer Camp added to the `buildings()` dataset. Adds
+  `trainingCapacity`/`trainingSpeedBonusPercent` to `BuildingLevel`. All three buildings share
+  identical cost/power/Fire Crystal curves, differing only in their Furnace prerequisite floor
+  (Lv.7/8/9) and troop type; their Fire Crystal levels carry a Furnace-only cross-building gate
+  (unlike Command Center's Furnace-and-Embassy gate).
+- Corrected a wostools.net data error at standard Level 23 (Iron cost) shared by all three troop
+  camps: it listed 490,000, but the surrounding progression (630,000 at Level 22, 1,000,000 at
+  Level 24) and whiteoutsurvival.wiki both point to 780,000.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

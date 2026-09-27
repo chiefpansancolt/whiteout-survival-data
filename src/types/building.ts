@@ -18,6 +18,8 @@ export interface BuildingLevel {
   power: number;
   rallyCapacity?: number;
   marchCapacity?: number;
+  trainingCapacity?: number;
+  trainingSpeedBonusPercent?: number;
 }
 
 export interface Building {

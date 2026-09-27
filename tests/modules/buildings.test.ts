@@ -134,3 +134,44 @@ describe('Command Center levels', () => {
     ]);
   });
 });
+
+describe.each([
+  ['Infantry Camp', 7],
+  ['Marksman Camp', 8],
+  ['Lancer Camp', 9],
+])('%s levels', (name, furnaceFloor) => {
+  const camp = buildings().findByName(name)!;
+
+  it('tracks all 80 levels with training capacity and speed bonus at standard levels', () => {
+    expect(camp.levels).toHaveLength(80);
+    const level1 = camp.levels.find((l) => l.label === '1')!;
+    expect(level1.trainingCapacity).toBe(17);
+    expect(level1.trainingSpeedBonusPercent).toBe(0.3);
+  });
+
+  it(`requires Furnace Lv.${furnaceFloor} at Level 1, then tracks the matching Furnace level from Level ${furnaceFloor} on`, () => {
+    const level1 = camp.levels.find((l) => l.label === '1')!;
+    const atFloor = camp.levels.find((l) => l.label === String(furnaceFloor))!;
+    const oneAboveFloor = camp.levels.find((l) => l.label === String(furnaceFloor + 1))!;
+    expect(level1.prerequisites).toEqual([{ building: 'Furnace', level: furnaceFloor }]);
+    expect(atFloor.prerequisites).toEqual([{ building: 'Furnace', level: furnaceFloor }]);
+    expect(oneAboveFloor.prerequisites).toEqual([{ building: 'Furnace', level: furnaceFloor + 1 }]);
+  });
+
+  it('carries a training speed bonus only on standard levels and FC tier base rows', () => {
+    const fc1 = camp.levels.find((l) => l.label === 'FC 1')!;
+    const fc11 = camp.levels.find((l) => l.label === 'FC 1-1')!;
+    const thirtyOne = camp.levels.find((l) => l.label === '30-1')!;
+    expect(fc1.trainingSpeedBonusPercent).toBe(8.3);
+    expect(fc11.trainingSpeedBonusPercent).toBeUndefined();
+    expect(thirtyOne.trainingSpeedBonusPercent).toBeUndefined();
+  });
+
+  it('gates Fire Crystal levels behind a matching Furnace FC tier, on top of its own chain', () => {
+    const fc21 = camp.levels.find((l) => l.label === 'FC 2-1')!;
+    expect(fc21.prerequisites).toEqual([
+      { building: name, level: 'FC 1' },
+      { building: 'Furnace', level: 'FC 3' },
+    ]);
+  });
+});

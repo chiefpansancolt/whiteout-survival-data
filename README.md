@@ -66,7 +66,7 @@ Every query builder provides these 6 terminal methods:
 
 | Module    | Factory       | Items | Description                                       |
 | --------- | ------------- | ----- | ------------------------------------------------- |
-| buildings | `buildings()` | 4     | Buildings with full per-level upgrade progression |
+| buildings | `buildings()` | 7     | Buildings with full per-level upgrade progression |
 
 Each `Building` nests its full level-by-level progression under `levels`. Most buildings follow an
 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then
@@ -99,6 +99,14 @@ derived rather than scraped for this range, self-referencing the building by nam
   Crystal levels also carry an explicit cross-building gate straight from the wiki: every level in a
   group of 5 (a tier's 4 sub-levels plus the next tier's base row) requires Furnace and Embassy at a
   matching Fire Crystal tier, in addition to Command Center's own derived same-building chain.
+- **Infantry Camp / Marksman Camp / Lancer Camp** — train and upgrade their respective troop type;
+  identical cost, power, and Fire Crystal progression across all three, differing only in their
+  Furnace prerequisite floor (Lv.7, Lv.8, and Lv.9 respectively, then matching from one level above
+  the floor on) and troop type. Each level carries `trainingCapacity` and
+  `trainingSpeedBonusPercent` — the latter is set on every standard level but only on Fire Crystal
+  tier base rows (`FC 1`..`FC 10`), matching the wiki, which shows no value on sub-levels or the
+  pre-FC stage. Fire Crystal levels carry a Furnace-only cross-building gate (no Embassy), on top of
+  the same derived same-building chain as Command Center.
 
 ---
 
