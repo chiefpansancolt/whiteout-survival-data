@@ -12,5 +12,6 @@ describe('package entry point', () => {
     expect(whiteoutSurvivalData.chiefGearSlots().count()).toBeGreaterThan(0);
     expect(whiteoutSurvivalData.chiefGear().count()).toBeGreaterThan(0);
     expect(whiteoutSurvivalData.chiefCharm().count()).toBeGreaterThan(0);
+    expect(whiteoutSurvivalData.research().count()).toBeGreaterThan(0);
   });
 });

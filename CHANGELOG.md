@@ -160,5 +160,35 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - The 3-piece/6-piece same-quality Chief Gear set bonus mentioned in the page's prose isn't modeled
   — the wiki only describes the mechanic (`"raise ... by x%"`) and never gives real numbers for it.
 
+- `research()`: new data module covering the full Research Center tech tree — 263 nodes across 9
+  categories (Battle, Growth, Economy, T11/T12 Infantry, T11/T12 Marksman, T11/T12 Lancer), sourced
+  page-per-node like `items()` rather than a shared table like Chief Gear/Charm. Adds
+  `ResearchNode`, `ResearchLevel`, `ResearchRequirement`, `ResearchCost`, and `ResearchBonus` types.
+- `ResearchCost.itemId` resolves to a real `items()` slug, confirmed by direct visual inspection of
+  the resource icons rather than guessed from filenames — `item_icon_102/103/104/105/106` are Meat,
+  Wood, Coal, Iron, and Steel respectively (the last sharing its artwork with the `steel` item's
+  current icon under an older cached URL), with later T11/T12 tiers drawing on Fire Crystal Shard
+  and Refined Fire Crystal.
+- `ResearchRequirement` is tagged with `type: "building" | "research" | "unreleased"` plus a
+  look-up-able `id`: building gates (`Research Center 7`, `War Academy FC10`) resolve to the real
+  `buildings()` slug with `level` normalized to match that building's own `BuildingLevel.label`
+  exactly (so `"FC10"` becomes `"FC 10"` and round-trips into `buildings().find(id)!.levels`);
+  cross-references to another node's level resolve to this dataset's own slug.
+- Discovered and correctly handled 12 forward references (across `Molten Lance II` and eleven
+  sibling T11/T12 tech lines) to research nodes the wiki describes in prerequisite text but hasn't
+  published a detail page for yet (confirmed via a direct 404 check, not assumed) — these get
+  `type: "unreleased"` with a slugified `id` that intentionally does not resolve against
+  `research()`, rather than crashing the parse or silently dropping the reference.
+- Corrected several confirmed spelling inconsistencies on the source wiki via an explicit,
+  manifest-verified alias list rather than fuzzy matching: `Assault Techniques` (the real node is
+  `Assaut Techniques`), `Bulwark Formation` → `Bulwark Formations`, `Coal Minning`/`Ion Mining`/
+  `Iorn Mining` → `Coal Mining`/`Iron Mining`, `Marskman Armor` → `Marksman Armor`,
+  `Helios Marksmen` → `Helios Marksman`, and `Survival Expansion` → `Survival Techniques`. Also
+  resolved several tech lines that reference a sibling node by a bare name with no Roman-numeral
+  suffix (e.g. `Weapons Prep 1`, meaning `Weapons Prep I`) by inferring the numeral from the
+  referencing node's own tier.
+- `ResearchLevel.researchTimeSeconds` is optional — a few T12 nodes (e.g. `Exalted Blunderbuss`)
+  genuinely have no Time value on their source page.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

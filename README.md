@@ -362,6 +362,48 @@ table exactly rather than assuming a fixed three-material set throughout.
 
 ---
 
+### 🔬 Research
+
+| Module   | Factory      | Items | Description                                                  |
+| -------- | ------------ | ----- | ------------------------------------------------------------ |
+| research | `research()` | 263   | The full Research Center tech tree, one node per level table |
+
+The Research Center's tech tree, sourced page-per-node like `items()` rather than as a shared table
+like Chief Gear/Charm — each named research line has its own detail page with its own per-level
+cost, time, and bonus table, closely mirroring `BuildingLevel`'s shape. `category` is one of 9
+values (`Battle`, `Growth`, `Economy`, `T11 Infantry`, `T11 Marksman`, `T11 Lancer`, `T12 Infantry`,
+`T12 Marksman`, `T12 Lancer`), and `tier` is the node's position within that category's own tier
+count (6 for Battle, 7 for Growth, 8 for T12 lines, and so on).
+
+`cost` references items already cataloged by `items()` — every research cost draws from the same
+resource set as building costs (Meat, Wood, Coal, Iron, Steel) plus, on the latest T11/T12 tiers,
+Fire Crystal Shard and Refined Fire Crystal — resolved to a real `itemId` the same way Chief
+Gear/Charm materials are, by matching each cost icon's source filename against a cataloged item's
+own icon.
+
+`prerequisites` is a flat list, but each entry is tagged with where it resolves: `type: "building"`
+for a gate like `Research Center 7` or `War Academy FC 10` (with `id` set to that building's real
+`buildings()` slug, and `level` normalized to match its `BuildingLevel.label` exactly, so it
+round-trips into `buildings().find(id)!.levels`), or `type: "research"` for a cross-reference to
+another node's specific level (`id` set to that node's own slug in this dataset). A handful of very
+late T12 tiers reference tech lines the wiki describes in prose but hasn't published a page for yet
+(`Molten Lance II`, and eleven siblings across the other T11/T12 troop lines) — these get
+`type: "unreleased"` with a best-effort slugified `id` that intentionally does not resolve against
+`research()`, rather than being silently dropped or pointed at the wrong node.
+
+Several prerequisite names only resolve after correcting confirmed spelling inconsistencies on the
+source wiki itself (`Assault Techniques` → the node is actually named `Assaut Techniques`;
+`Bulwark Formation` → `Bulwark Formations`; `Coal Minning`/`Ion Mining`/`Iorn Mining` →
+`Coal Mining`/`Iron Mining`; `Marskman Armor` → `Marksman Armor`; `Helios Marksmen` →
+`Helios Marksman`; `Survival Expansion` → `Survival Techniques`) — corrected via an explicit alias
+list built by cross-referencing every node name in the manifest, not fuzzy-matched.
+
+`researchTimeSeconds` is optional — a few T12 nodes (e.g. `Exalted Blunderbuss`) genuinely have no
+Time value on their source page. `bonus` is an array rather than a single value, since the shape
+allows a compound bonus even though every node checked so far only grants one stat per level.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

@@ -8,6 +8,7 @@ import {
   heroes,
   items,
   pets,
+  research,
   skins,
 } from '../src';
 
@@ -125,3 +126,11 @@ console.log(
 console.log('\n--- Chief Charm ---');
 console.log('charm upgrade rows:', chiefCharm().count());
 console.log('level 11 stage count:', chiefCharm().byLevel(11).count());
+
+console.log('\n--- Research ---');
+console.log('total research nodes:', research().count());
+console.log('Battle research nodes:', research().byCategory('Battle').count());
+console.log(
+  'Lancer Armor I prerequisites:',
+  research().find('lancer-armor-i')?.levels[0].prerequisites,
+);

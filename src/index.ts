@@ -8,3 +8,4 @@ export * from './modules/items';
 export * from './modules/skins';
 export * from './modules/chief-gear';
 export * from './modules/chief-charm';
+export * from './modules/research';
