@@ -248,4 +248,33 @@ describe('Research tech tree', () => {
       ).toBe(true);
     });
   });
+
+  it("gates each tier-2 Molten I item on its own troop type's Exalted capstone at Level 1 (user-supplied, not scraped)", () => {
+    // The wiki's Prerequisites column for these 12 nodes only lists the War
+    // Academy Fire Crystal gate — confirmed directly from in-game knowledge
+    // that each also requires its own troop type's Exalted capstone.
+    const cases: [string, string][] = [
+      ['molten-blades-i', 'exalted-infantry'],
+      ['molten-guard-i', 'exalted-infantry'],
+      ['molten-plating-i', 'exalted-infantry'],
+      ['molten-shields-i', 'exalted-infantry'],
+      ['molten-shot-i', 'exalted-marksman'],
+      ['molten-sharpshooting-i', 'exalted-marksman'],
+      ['molten-scales-i', 'exalted-marksman'],
+      ['molten-grips-i', 'exalted-marksman'],
+      ['molten-lance-i', 'exalted-lancer'],
+      ['molten-tactics-i', 'exalted-lancer'],
+      ['molten-helmets-i', 'exalted-lancer'],
+      ['molten-vambrace-i', 'exalted-lancer'],
+    ];
+
+    cases.forEach(([nodeId, capstoneId]) => {
+      const node = research().find(nodeId)!;
+      expect(node.levels[0].prerequisites).toContainEqual({
+        type: 'research',
+        id: capstoneId,
+        level: 1,
+      });
+    });
+  });
 });

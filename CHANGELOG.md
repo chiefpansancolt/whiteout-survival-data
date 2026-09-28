@@ -249,5 +249,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   items, since the wiki's own tier numbering for these categories was never strictly sequential to
   begin with (Infantry's own tier jumps straight from 5 to 7 with no tier 6 at all).
 
+- Gated each T12 troop type's 4 tier-2 Molten I items on that troop type's own Exalted capstone at
+  Level 1, confirmed directly from in-game knowledge rather than scraped — the wiki's Prerequisites
+  column for these 12 nodes lists only the War Academy Fire Crystal gate and omits the capstone
+  requirement. Applied as an explicit `research`-type prerequisite (`level: 1`) added to each node's
+  Level 1, alongside its existing `building`-type War Academy requirement.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

@@ -44176,6 +44176,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-infantry",
+            "level": 1
           }
         ],
         "cost": [
@@ -45031,6 +45036,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-infantry",
+            "level": 1
           }
         ],
         "cost": [
@@ -45886,6 +45896,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-infantry",
+            "level": 1
           }
         ],
         "cost": [
@@ -46741,6 +46756,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-infantry",
+            "level": 1
           }
         ],
         "cost": [
@@ -50594,6 +50614,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-lancer",
+            "level": 1
           }
         ],
         "cost": [
@@ -51449,6 +51474,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-lancer",
+            "level": 1
           }
         ],
         "cost": [
@@ -52304,6 +52334,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-lancer",
+            "level": 1
           }
         ],
         "cost": [
@@ -53159,6 +53194,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-lancer",
+            "level": 1
           }
         ],
         "cost": [
@@ -57012,6 +57052,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-marksman",
+            "level": 1
           }
         ],
         "cost": [
@@ -57867,6 +57912,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-marksman",
+            "level": 1
           }
         ],
         "cost": [
@@ -58722,6 +58772,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-marksman",
+            "level": 1
           }
         ],
         "cost": [
@@ -59577,6 +59632,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-marksman",
+            "level": 1
           }
         ],
         "cost": [

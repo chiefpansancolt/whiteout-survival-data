@@ -409,6 +409,10 @@ level, 8,000,000 power, and no known cost or bonus data (both empty arrays, not 
 `img` is `""` for these three, same treatment as Pets' Frost Gorilla/Frostscale Chameleon gap, since
 no icon exists anywhere to reference.
 
+Each troop type's 4 tier-2 Molten I items also require that troop type's own Exalted capstone at
+Level 1, alongside their existing War Academy building gate — also confirmed from in-game knowledge
+rather than scraped, since the wiki's Prerequisites column for these 12 nodes omits it.
+
 ---
 
 ### 🛡️ Hero Gear
