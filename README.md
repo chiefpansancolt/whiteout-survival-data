@@ -366,7 +366,7 @@ table exactly rather than assuming a fixed three-material set throughout.
 
 | Module   | Factory      | Items | Description                                                  |
 | -------- | ------------ | ----- | ------------------------------------------------------------ |
-| research | `research()` | 263   | The full Research Center tech tree, one node per level table |
+| research | `research()` | 266   | The full Research Center tech tree, one node per level table |
 
 The Research Center's tech tree, sourced page-per-node like `items()` rather than as a shared table
 like Chief Gear/Charm — each named research line has its own detail page with its own per-level
@@ -401,6 +401,13 @@ list built by cross-referencing every node name in the manifest, not fuzzy-match
 `researchTimeSeconds` is optional — a few T12 nodes (e.g. `Exalted Blunderbuss`) genuinely have no
 Time value on their source page. `bonus` is an array rather than a single value, since the shape
 allows a compound bonus even though every node checked so far only grants one stat per level.
+
+Three nodes — `exalted-infantry`, `exalted-marksman`, and `exalted-lancer` — don't exist on the wiki
+at all yet. They were added from in-game knowledge rather than scraped: each is a capstone that
+unlocks once all 5 of its own T12 troop type's tier-1 Exalted items reach Level 5, with a single
+level, 8,000,000 power, and no known cost or bonus data (both empty arrays, not guessed values).
+`img` is `""` for these three, same treatment as Pets' Frost Gorilla/Frostscale Chameleon gap, since
+no icon exists anywhere to reference.
 
 ---
 

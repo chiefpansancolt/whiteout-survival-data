@@ -239,5 +239,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   each node's Level 1, matching the FC-level ordering (5 → 7 → 8 → 9 → 10) already present in the
   scraped data for these same nodes.
 
+- Added `exalted-infantry`, `exalted-marksman`, and `exalted-lancer`: a new capstone node per T12
+  troop type that does not exist on the wiki at all yet, confirmed directly from in-game knowledge.
+  Each requires all 5 of its own troop type's tier-1 Exalted items at Level 5 (no other
+  requirement), has a single level, and 8,000,000 power. No cost or bonus data is known yet, so both
+  are empty arrays rather than guessed values, and `img` is `""` rather than a broken link, since no
+  icon exists anywhere to reference — the same treatment used for Pets' Frost Gorilla/Frostscale
+  Chameleon gap. Placed at `tier: 2` for each troop type, alongside that tier's existing Molten
+  items, since the wiki's own tier numbering for these categories was never strictly sequential to
+  begin with (Infantry's own tier jumps straight from 5 to 7 with no tier 6 at all).
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

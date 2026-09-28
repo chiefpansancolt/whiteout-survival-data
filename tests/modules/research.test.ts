@@ -29,17 +29,17 @@ describe('ResearchQuery', () => {
 });
 
 describe('Research tech tree', () => {
-  it('tracks 263 nodes across 9 categories', () => {
-    expect(research().count()).toBe(263);
+  it('tracks 266 nodes across 9 categories', () => {
+    expect(research().count()).toBe(266);
     expect(research().byCategory('Battle').count()).toBe(102);
     expect(research().byCategory('Growth').count()).toBe(45);
     expect(research().byCategory('Economy').count()).toBe(44);
     expect(research().byCategory('T11 Infantry').count()).toBe(10);
     expect(research().byCategory('T11 Marksman').count()).toBe(10);
     expect(research().byCategory('T11 Lancer').count()).toBe(10);
-    expect(research().byCategory('T12 Infantry').count()).toBe(14);
-    expect(research().byCategory('T12 Marksman').count()).toBe(14);
-    expect(research().byCategory('T12 Lancer').count()).toBe(14);
+    expect(research().byCategory('T12 Infantry').count()).toBe(15);
+    expect(research().byCategory('T12 Marksman').count()).toBe(15);
+    expect(research().byCategory('T12 Lancer').count()).toBe(15);
   });
 
   it('resolves a building-type prerequisite into buildings()', () => {
@@ -190,6 +190,62 @@ describe('Research tech tree', () => {
     chainStarts.forEach((nodeId) => {
       const node = research().find(nodeId)!;
       expect(node.levels[0].prerequisites.some((p) => p.type === 'research')).toBe(false);
+    });
+  });
+
+  it('adds an Exalted capstone per T12 troop type requiring all 5 chain items at Level 5 (user-supplied, not scraped)', () => {
+    // No page for these exists on the wiki at all — confirmed directly from
+    // in-game knowledge. Each has a single level, no cost/bonus data (none is
+    // known yet), and no icon (img is "" rather than a broken link, matching
+    // the Pets module's precedent for a genuine missing-asset gap).
+    const cases: [string, string, string[]][] = [
+      [
+        'exalted-infantry',
+        'T12 Infantry',
+        [
+          'exalted-armament',
+          'exalted-bastion',
+          'exalted-helm',
+          'exalted-shoulderguard',
+          'exalted-trek',
+        ],
+      ],
+      [
+        'exalted-marksman',
+        'T12 Marksman',
+        [
+          'exalted-blunderbuss',
+          'exalted-cadence',
+          'exalted-mantle',
+          'exalted-veil',
+          'exalted-war-grab',
+        ],
+      ],
+      [
+        'exalted-lancer',
+        'T12 Lancer',
+        [
+          'exalted-pauldron',
+          'exalted-pike',
+          'exalted-platemail',
+          'exalted-warcrown',
+          'exalted-warpath',
+        ],
+      ],
+    ];
+
+    cases.forEach(([id, category, chain]) => {
+      const node = research().find(id)!;
+      expect(node.category).toBe(category);
+      expect(node.img).toBe('');
+      expect(node.levels).toHaveLength(1);
+      expect(node.levels[0].power).toBe(8000000);
+      expect(node.levels[0].cost).toEqual([]);
+      expect(node.levels[0].bonus).toEqual([]);
+      expect(node.levels[0].prerequisites.map((p) => p.id).sort()).toEqual([...chain].sort());
+      expect(
+        node.levels[0].prerequisites.every((p) => p.type === 'research' && p.level === 5),
+      ).toBe(true);
     });
   });
 });
