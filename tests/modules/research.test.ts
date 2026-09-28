@@ -157,4 +157,39 @@ describe('Research tech tree', () => {
     );
     expect(leaked).toEqual([]);
   });
+
+  it('chains T12 tier-1 items in their real in-game unlock order (user-supplied, not scraped)', () => {
+    // The wiki's Prerequisites column for these 15 nodes only lists the War
+    // Academy Fire Crystal gate and omits that each item's own Level 5 also
+    // unlocks the next item in the troop type's chain — confirmed directly
+    // from in-game knowledge, not present on the source page.
+    const chains: [string, string][] = [
+      ['exalted-mantle', 'exalted-veil'],
+      ['exalted-war-grab', 'exalted-mantle'],
+      ['exalted-cadence', 'exalted-war-grab'],
+      ['exalted-blunderbuss', 'exalted-cadence'],
+      ['exalted-pauldron', 'exalted-warcrown'],
+      ['exalted-platemail', 'exalted-pauldron'],
+      ['exalted-warpath', 'exalted-platemail'],
+      ['exalted-pike', 'exalted-warpath'],
+      ['exalted-shoulderguard', 'exalted-helm'],
+      ['exalted-bastion', 'exalted-shoulderguard'],
+      ['exalted-trek', 'exalted-bastion'],
+      ['exalted-armament', 'exalted-trek'],
+    ];
+    chains.forEach(([nodeId, priorId]) => {
+      const node = research().find(nodeId)!;
+      expect(node.levels[0].prerequisites).toContainEqual({
+        type: 'research',
+        id: priorId,
+        level: 5,
+      });
+    });
+
+    const chainStarts = ['exalted-veil', 'exalted-warcrown', 'exalted-helm'];
+    chainStarts.forEach((nodeId) => {
+      const node = research().find(nodeId)!;
+      expect(node.levels[0].prerequisites.some((p) => p.type === 'research')).toBe(false);
+    });
+  });
 });

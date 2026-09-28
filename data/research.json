@@ -43408,6 +43408,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-trek",
+            "level": 5
           }
         ],
         "cost": [
@@ -43548,6 +43553,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 8"
+          },
+          {
+            "type": "research",
+            "id": "exalted-shoulderguard",
+            "level": 5
           }
         ],
         "cost": [
@@ -43834,6 +43844,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 7"
+          },
+          {
+            "type": "research",
+            "id": "exalted-helm",
+            "level": 5
           }
         ],
         "cost": [
@@ -43974,6 +43989,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 9"
+          },
+          {
+            "type": "research",
+            "id": "exalted-bastion",
+            "level": 5
           }
         ],
         "cost": [
@@ -49764,6 +49784,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 7"
+          },
+          {
+            "type": "research",
+            "id": "exalted-warcrown",
+            "level": 5
           }
         ],
         "cost": [
@@ -49904,6 +49929,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-warpath",
+            "level": 5
           }
         ],
         "cost": [
@@ -50044,6 +50074,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 8"
+          },
+          {
+            "type": "research",
+            "id": "exalted-pauldron",
+            "level": 5
           }
         ],
         "cost": [
@@ -50330,6 +50365,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 9"
+          },
+          {
+            "type": "research",
+            "id": "exalted-platemail",
+            "level": 5
           }
         ],
         "cost": [
@@ -56120,6 +56160,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-cadence",
+            "level": 5
           }
         ],
         "cost": [
@@ -56260,6 +56305,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 9"
+          },
+          {
+            "type": "research",
+            "id": "exalted-war-grab",
+            "level": 5
           }
         ],
         "cost": [
@@ -56400,6 +56450,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 7"
+          },
+          {
+            "type": "research",
+            "id": "exalted-veil",
+            "level": 5
           }
         ],
         "cost": [
@@ -56686,6 +56741,11 @@
             "type": "building",
             "id": "war-academy",
             "level": "FC 8"
+          },
+          {
+            "type": "research",
+            "id": "exalted-mantle",
+            "level": 5
           }
         ],
         "cost": [

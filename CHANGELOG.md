@@ -230,5 +230,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   explicit, individually-verified override rather than a general rule, since this is a one-off
   content error on three specific pages, not a pattern.
 
+- Added a manually-supplied unlock chain for each T12 troop type's 5 tier-1 items (Marksman: Veil →
+  Mantle → War Grab → Cadence → Blunderbuss; Lancer: Warcrown → Pauldron → Platemail → Warpath →
+  Pike; Infantry: Helm → Shoulderguard → Bastion → Trek → Armament), confirmed directly from in-game
+  knowledge rather than scraped — the wiki's Prerequisites column for these 15 nodes lists only the
+  War Academy Fire Crystal gate and omits that each item's own Level 5 also unlocks the next item in
+  its troop type's chain. Applied as an explicit `research`-type prerequisite (`level: 5`) added to
+  each node's Level 1, matching the FC-level ordering (5 → 7 → 8 → 9 → 10) already present in the
+  scraped data for these same nodes.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
