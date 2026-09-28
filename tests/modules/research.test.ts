@@ -110,4 +110,51 @@ describe('Research tech tree', () => {
       heliosInfantry.levels[0].prerequisites.find((p) => p.id === 'flame-legion-2'),
     ).toBeDefined();
   });
+
+  it('corrects confirmed wiki copy-paste errors that reference the wrong troop type by node name', () => {
+    // Flame Legion (Marksman), Helios Marksman, and Helios Lancer each reuse
+    // Infantry's prerequisite text verbatim on their own pages ("Flame Strike",
+    // "Flame Shield", "Flame Tomahawk", "Flame Protection" — all real nodes,
+    // but Infantry's own). Verified against each correct node's own page,
+    // which names the referencing node as its own real prerequisite (e.g.
+    // Crystal Arrow's page requires "Crystal Vision 6").
+    const researchIds = (n: { levels: { prerequisites: { type: string; id: string }[] }[] }) =>
+      n.levels[0].prerequisites
+        .filter((p) => p.type === 'research')
+        .map((p) => p.id)
+        .sort();
+
+    const marksmanFlameLegion = research().find('flame-legion')!;
+    expect(researchIds(marksmanFlameLegion)).toEqual(['crystal-armor', 'crystal-vision']);
+
+    const heliosMarksman = research().find('helios-marksman')!;
+    expect(researchIds(heliosMarksman)).toEqual([
+      'crystal-arrow',
+      'crystal-protection',
+      'flame-legion',
+    ]);
+
+    const heliosLancer = research().find('helios-lancer')!;
+    expect(researchIds(heliosLancer)).toEqual([
+      'blazing-guardian',
+      'blazing-lance',
+      'flame-legion-3',
+    ]);
+
+    // none of Marksman's or Lancer's levels should still reference Infantry's
+    // node names anywhere in the chain
+    const infantryOnlyIds = new Set([
+      'flame-strike',
+      'flame-shield',
+      'flame-tomahawk',
+      'flame-protection',
+    ]);
+    const crossTroopNodes = research()
+      .get()
+      .filter((n) => n.category === 'T11 Marksman' || n.category === 'T11 Lancer');
+    const leaked = crossTroopNodes.flatMap((n) =>
+      n.levels.flatMap((l) => l.prerequisites.filter((p) => infantryOnlyIds.has(p.id))),
+    );
+    expect(leaked).toEqual([]);
+  });
 });

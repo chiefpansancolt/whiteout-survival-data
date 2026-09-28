@@ -217,10 +217,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   happened to be last in the manifest (always the Lancer node), so Infantry's and Marksman's own
   tier-2/tier-5 nodes incorrectly pointed at Lancer's `Flame Squad`/`Flame Legion` instead of their
   own. Fixed by preferring a same-category match when a prerequisite name is ambiguous, verified
-  against raw HTML for all three troop types. `Helios Marksman` and `Helios Lancer` still reference
-  `Flame Tomahawk`/ `Flame Protection` by name (Infantry's own node names) — confirmed via raw HTML
-  that this is a genuine wiki copy-paste error on those two pages, not a parsing gap, and left as
-  scraped since there's no same-category equivalent to resolve it to.
+  against raw HTML for all three troop types.
+- Fixed three further confirmed wiki copy-paste errors, found the same way: Marksman's
+  `Flame Legion` page, `Helios Marksman`, and `Helios Lancer` each reuse Infantry's prerequisite
+  text verbatim (`Flame Strike`, `Flame Shield`, `Flame Tomahawk`, `Flame Protection` — all real
+  nodes, but Infantry's own) instead of their own troop type's equivalent. Unlike the collision
+  above, these names aren't ambiguous — they resolve to one real (wrong) node, so no lookup logic
+  could catch them automatically. Verified and corrected via each correct node's own page, which
+  names the referencing node as its own genuine prerequisite (e.g. `Crystal Arrow`'s own page
+  requires "Crystal Vision 6", confirming `Crystal Vision` — not `Flame Strike` — is
+  `Helios Marksman`'s real tier-4 prerequisite alongside `Crystal Protection`). Applied as an
+  explicit, individually-verified override rather than a general rule, since this is a one-off
+  content error on three specific pages, not a pattern.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

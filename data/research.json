@@ -37899,12 +37899,12 @@
           },
           {
             "type": "research",
-            "id": "flame-tomahawk",
+            "id": "blazing-lance",
             "level": 12
           },
           {
             "type": "research",
-            "id": "flame-protection",
+            "id": "blazing-guardian",
             "level": 12
           },
           {
@@ -40352,12 +40352,12 @@
           },
           {
             "type": "research",
-            "id": "flame-strike",
+            "id": "crystal-vision",
             "level": 6
           },
           {
             "type": "research",
-            "id": "flame-shield",
+            "id": "crystal-armor",
             "level": 6
           }
         ],
@@ -40591,7 +40591,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-shield",
+            "id": "crystal-armor",
             "level": 7
           }
         ],
@@ -41825,12 +41825,12 @@
           },
           {
             "type": "research",
-            "id": "flame-tomahawk",
+            "id": "crystal-arrow",
             "level": 12
           },
           {
             "type": "research",
-            "id": "flame-protection",
+            "id": "crystal-protection",
             "level": 12
           },
           {
