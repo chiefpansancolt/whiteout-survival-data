@@ -47791,886 +47791,6 @@
     ]
   },
   {
-    "id": "exalted-infantry-first-aid",
-    "name": "Exalted Infantry First Aid",
-    "img": "/images/research/exalted-infantry-first-aid.png",
-    "category": "T12 Infantry",
-    "tier": 4,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "building",
-            "id": "war-academy",
-            "level": "FC 10"
-          },
-          {
-            "type": "research",
-            "id": "indomitable-wall",
-            "level": 1
-          }
-        ],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 16
-          },
-          {
-            "itemId": "meat",
-            "amount": 500000
-          },
-          {
-            "itemId": "wood",
-            "amount": 500000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 25000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "1.50%"
-          }
-        ],
-        "power": 10500,
-        "researchTimeSeconds": 36000
-      },
-      {
-        "level": 2,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 520000
-          },
-          {
-            "itemId": "wood",
-            "amount": 520000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 26000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "3.00%"
-          }
-        ],
-        "power": 21000,
-        "researchTimeSeconds": 37800
-      },
-      {
-        "level": 3,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 16500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 550000
-          },
-          {
-            "itemId": "wood",
-            "amount": 550000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 27000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "4.50%"
-          }
-        ],
-        "power": 31500,
-        "researchTimeSeconds": 39600
-      },
-      {
-        "level": 4,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 17250
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 18
-          },
-          {
-            "itemId": "meat",
-            "amount": 570000
-          },
-          {
-            "itemId": "wood",
-            "amount": 570000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 28000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "6.00%"
-          }
-        ],
-        "power": 42000,
-        "researchTimeSeconds": 41400
-      },
-      {
-        "level": 5,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 19
-          },
-          {
-            "itemId": "meat",
-            "amount": 600000
-          },
-          {
-            "itemId": "wood",
-            "amount": 600000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 30000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "7.50%"
-          }
-        ],
-        "power": 52500,
-        "researchTimeSeconds": 43200
-      },
-      {
-        "level": 6,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 20
-          },
-          {
-            "itemId": "meat",
-            "amount": 620000
-          },
-          {
-            "itemId": "wood",
-            "amount": 620000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 31000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "9.00%"
-          }
-        ],
-        "power": 63000,
-        "researchTimeSeconds": 45000
-      },
-      {
-        "level": 7,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 19500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 21
-          },
-          {
-            "itemId": "meat",
-            "amount": 650000
-          },
-          {
-            "itemId": "wood",
-            "amount": 650000
-          },
-          {
-            "itemId": "coal",
-            "amount": 130000
-          },
-          {
-            "itemId": "iron",
-            "amount": 32000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "10.50%"
-          }
-        ],
-        "power": 73500,
-        "researchTimeSeconds": 46800
-      },
-      {
-        "level": 8,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 21000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 22
-          },
-          {
-            "itemId": "meat",
-            "amount": 700000
-          },
-          {
-            "itemId": "wood",
-            "amount": 700000
-          },
-          {
-            "itemId": "coal",
-            "amount": 140000
-          },
-          {
-            "itemId": "iron",
-            "amount": 35000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "12.00%"
-          }
-        ],
-        "power": 84000,
-        "researchTimeSeconds": 50400
-      },
-      {
-        "level": 9,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 22500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 24
-          },
-          {
-            "itemId": "meat",
-            "amount": 750000
-          },
-          {
-            "itemId": "wood",
-            "amount": 750000
-          },
-          {
-            "itemId": "coal",
-            "amount": 150000
-          },
-          {
-            "itemId": "iron",
-            "amount": 37000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "13.50%"
-          }
-        ],
-        "power": 94500,
-        "researchTimeSeconds": 54000
-      },
-      {
-        "level": 10,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 24000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 4
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 26
-          },
-          {
-            "itemId": "meat",
-            "amount": 800000
-          },
-          {
-            "itemId": "wood",
-            "amount": 800000
-          },
-          {
-            "itemId": "coal",
-            "amount": 160000
-          },
-          {
-            "itemId": "iron",
-            "amount": 40000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Time Reduction",
-            "value": "15.00%"
-          }
-        ],
-        "power": 105000,
-        "researchTimeSeconds": 57600
-      }
-    ]
-  },
-  {
-    "id": "exalted-infantry-healing",
-    "name": "Exalted Infantry Healing",
-    "img": "/images/research/exalted-infantry-healing.png",
-    "category": "T12 Infantry",
-    "tier": 4,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "building",
-            "id": "war-academy",
-            "level": "FC 10"
-          },
-          {
-            "type": "research",
-            "id": "indomitable-wall",
-            "level": 1
-          }
-        ],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 16
-          },
-          {
-            "itemId": "meat",
-            "amount": 500000
-          },
-          {
-            "itemId": "wood",
-            "amount": 500000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 25000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "5.00%"
-          }
-        ],
-        "power": 35000,
-        "researchTimeSeconds": 36000
-      },
-      {
-        "level": 2,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 520000
-          },
-          {
-            "itemId": "wood",
-            "amount": 520000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 26000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "10.00%"
-          }
-        ],
-        "power": 70000,
-        "researchTimeSeconds": 37800
-      },
-      {
-        "level": 3,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 16500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 550000
-          },
-          {
-            "itemId": "wood",
-            "amount": 550000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 27000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "15.00%"
-          }
-        ],
-        "power": 105000,
-        "researchTimeSeconds": 39600
-      },
-      {
-        "level": 4,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 17250
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 18
-          },
-          {
-            "itemId": "meat",
-            "amount": 570000
-          },
-          {
-            "itemId": "wood",
-            "amount": 570000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 28000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "20.00%"
-          }
-        ],
-        "power": 140000,
-        "researchTimeSeconds": 41400
-      },
-      {
-        "level": 5,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 19
-          },
-          {
-            "itemId": "meat",
-            "amount": 600000
-          },
-          {
-            "itemId": "wood",
-            "amount": 600000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 30000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "25.00%"
-          }
-        ],
-        "power": 175000,
-        "researchTimeSeconds": 43200
-      },
-      {
-        "level": 6,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 20
-          },
-          {
-            "itemId": "meat",
-            "amount": 620000
-          },
-          {
-            "itemId": "wood",
-            "amount": 620000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 31000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "30.00%"
-          }
-        ],
-        "power": 210000,
-        "researchTimeSeconds": 45000
-      },
-      {
-        "level": 7,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 19500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 21
-          },
-          {
-            "itemId": "meat",
-            "amount": 650000
-          },
-          {
-            "itemId": "wood",
-            "amount": 650000
-          },
-          {
-            "itemId": "coal",
-            "amount": 130000
-          },
-          {
-            "itemId": "iron",
-            "amount": 32000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "35.00%"
-          }
-        ],
-        "power": 245000,
-        "researchTimeSeconds": 46800
-      },
-      {
-        "level": 8,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 21000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 22
-          },
-          {
-            "itemId": "meat",
-            "amount": 700000
-          },
-          {
-            "itemId": "wood",
-            "amount": 700000
-          },
-          {
-            "itemId": "coal",
-            "amount": 140000
-          },
-          {
-            "itemId": "iron",
-            "amount": 35000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "40.00%"
-          }
-        ],
-        "power": 280000,
-        "researchTimeSeconds": 50400
-      },
-      {
-        "level": 9,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 22500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 24
-          },
-          {
-            "itemId": "meat",
-            "amount": 750000
-          },
-          {
-            "itemId": "wood",
-            "amount": 750000
-          },
-          {
-            "itemId": "coal",
-            "amount": 150000
-          },
-          {
-            "itemId": "iron",
-            "amount": 37000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "45.00%"
-          }
-        ],
-        "power": 315000,
-        "researchTimeSeconds": 54000
-      },
-      {
-        "level": 10,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 24000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 4
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 26
-          },
-          {
-            "itemId": "meat",
-            "amount": 800000
-          },
-          {
-            "itemId": "wood",
-            "amount": 800000
-          },
-          {
-            "itemId": "coal",
-            "amount": 160000
-          },
-          {
-            "itemId": "iron",
-            "amount": 40000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Infantry Healing Cost Reduction",
-            "value": "50.00%"
-          }
-        ],
-        "power": 350000,
-        "researchTimeSeconds": 57600
-      }
-    ]
-  },
-  {
     "id": "exalted-infantry-training",
     "name": "Exalted Infantry Training",
     "img": "/images/research/exalted-infantry-training.png",
@@ -49829,6 +48949,886 @@
         ],
         "power": 900000,
         "researchTimeSeconds": 108000
+      }
+    ]
+  },
+  {
+    "id": "exalted-infantry-first-aid",
+    "name": "Exalted Infantry First Aid",
+    "img": "/images/research/exalted-infantry-first-aid.png",
+    "category": "T12 Infantry",
+    "tier": 8,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "indomitable-wall",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 16
+          },
+          {
+            "itemId": "meat",
+            "amount": 500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 25000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "1.50%"
+          }
+        ],
+        "power": 10500,
+        "researchTimeSeconds": 36000
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 520000
+          },
+          {
+            "itemId": "wood",
+            "amount": 520000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 26000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "3.00%"
+          }
+        ],
+        "power": 21000,
+        "researchTimeSeconds": 37800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 16500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 550000
+          },
+          {
+            "itemId": "wood",
+            "amount": 550000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 27000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "4.50%"
+          }
+        ],
+        "power": 31500,
+        "researchTimeSeconds": 39600
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 17250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 18
+          },
+          {
+            "itemId": "meat",
+            "amount": 570000
+          },
+          {
+            "itemId": "wood",
+            "amount": 570000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 28000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "6.00%"
+          }
+        ],
+        "power": 42000,
+        "researchTimeSeconds": 41400
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 19
+          },
+          {
+            "itemId": "meat",
+            "amount": 600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 30000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "7.50%"
+          }
+        ],
+        "power": 52500,
+        "researchTimeSeconds": 43200
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 20
+          },
+          {
+            "itemId": "meat",
+            "amount": 620000
+          },
+          {
+            "itemId": "wood",
+            "amount": 620000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 31000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "9.00%"
+          }
+        ],
+        "power": 63000,
+        "researchTimeSeconds": 45000
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 19500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 21
+          },
+          {
+            "itemId": "meat",
+            "amount": 650000
+          },
+          {
+            "itemId": "wood",
+            "amount": 650000
+          },
+          {
+            "itemId": "coal",
+            "amount": 130000
+          },
+          {
+            "itemId": "iron",
+            "amount": 32000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "10.50%"
+          }
+        ],
+        "power": 73500,
+        "researchTimeSeconds": 46800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 21000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 22
+          },
+          {
+            "itemId": "meat",
+            "amount": 700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 140000
+          },
+          {
+            "itemId": "iron",
+            "amount": 35000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "12.00%"
+          }
+        ],
+        "power": 84000,
+        "researchTimeSeconds": 50400
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 22500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 24
+          },
+          {
+            "itemId": "meat",
+            "amount": 750000
+          },
+          {
+            "itemId": "wood",
+            "amount": 750000
+          },
+          {
+            "itemId": "coal",
+            "amount": 150000
+          },
+          {
+            "itemId": "iron",
+            "amount": 37000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "13.50%"
+          }
+        ],
+        "power": 94500,
+        "researchTimeSeconds": 54000
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 24000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 4
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 26
+          },
+          {
+            "itemId": "meat",
+            "amount": 800000
+          },
+          {
+            "itemId": "wood",
+            "amount": 800000
+          },
+          {
+            "itemId": "coal",
+            "amount": 160000
+          },
+          {
+            "itemId": "iron",
+            "amount": 40000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Time Reduction",
+            "value": "15.00%"
+          }
+        ],
+        "power": 105000,
+        "researchTimeSeconds": 57600
+      }
+    ]
+  },
+  {
+    "id": "exalted-infantry-healing",
+    "name": "Exalted Infantry Healing",
+    "img": "/images/research/exalted-infantry-healing.png",
+    "category": "T12 Infantry",
+    "tier": 8,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "indomitable-wall",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 16
+          },
+          {
+            "itemId": "meat",
+            "amount": 500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 25000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "5.00%"
+          }
+        ],
+        "power": 35000,
+        "researchTimeSeconds": 36000
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 520000
+          },
+          {
+            "itemId": "wood",
+            "amount": 520000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 26000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "10.00%"
+          }
+        ],
+        "power": 70000,
+        "researchTimeSeconds": 37800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 16500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 550000
+          },
+          {
+            "itemId": "wood",
+            "amount": 550000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 27000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "15.00%"
+          }
+        ],
+        "power": 105000,
+        "researchTimeSeconds": 39600
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 17250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 18
+          },
+          {
+            "itemId": "meat",
+            "amount": 570000
+          },
+          {
+            "itemId": "wood",
+            "amount": 570000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 28000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "20.00%"
+          }
+        ],
+        "power": 140000,
+        "researchTimeSeconds": 41400
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 19
+          },
+          {
+            "itemId": "meat",
+            "amount": 600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 30000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "25.00%"
+          }
+        ],
+        "power": 175000,
+        "researchTimeSeconds": 43200
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 20
+          },
+          {
+            "itemId": "meat",
+            "amount": 620000
+          },
+          {
+            "itemId": "wood",
+            "amount": 620000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 31000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "30.00%"
+          }
+        ],
+        "power": 210000,
+        "researchTimeSeconds": 45000
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 19500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 21
+          },
+          {
+            "itemId": "meat",
+            "amount": 650000
+          },
+          {
+            "itemId": "wood",
+            "amount": 650000
+          },
+          {
+            "itemId": "coal",
+            "amount": 130000
+          },
+          {
+            "itemId": "iron",
+            "amount": 32000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "35.00%"
+          }
+        ],
+        "power": 245000,
+        "researchTimeSeconds": 46800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 21000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 22
+          },
+          {
+            "itemId": "meat",
+            "amount": 700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 140000
+          },
+          {
+            "itemId": "iron",
+            "amount": 35000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "40.00%"
+          }
+        ],
+        "power": 280000,
+        "researchTimeSeconds": 50400
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 22500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 24
+          },
+          {
+            "itemId": "meat",
+            "amount": 750000
+          },
+          {
+            "itemId": "wood",
+            "amount": 750000
+          },
+          {
+            "itemId": "coal",
+            "amount": 150000
+          },
+          {
+            "itemId": "iron",
+            "amount": 37000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "45.00%"
+          }
+        ],
+        "power": 315000,
+        "researchTimeSeconds": 54000
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 24000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 4
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 26
+          },
+          {
+            "itemId": "meat",
+            "amount": 800000
+          },
+          {
+            "itemId": "wood",
+            "amount": 800000
+          },
+          {
+            "itemId": "coal",
+            "amount": 160000
+          },
+          {
+            "itemId": "iron",
+            "amount": 40000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Infantry Healing Cost Reduction",
+            "value": "50.00%"
+          }
+        ],
+        "power": 350000,
+        "researchTimeSeconds": 57600
       }
     ]
   },
@@ -54229,886 +54229,6 @@
     ]
   },
   {
-    "id": "exalted-lancer-first-aid",
-    "name": "Exalted Lancer First Aid",
-    "img": "/images/research/exalted-lancer-first-aid.png",
-    "category": "T12 Lancer",
-    "tier": 4,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "building",
-            "id": "war-academy",
-            "level": "FC 10"
-          },
-          {
-            "type": "research",
-            "id": "meridian-phalanx",
-            "level": 1
-          }
-        ],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 16
-          },
-          {
-            "itemId": "meat",
-            "amount": 500000
-          },
-          {
-            "itemId": "wood",
-            "amount": 500000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 25000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "1.50%"
-          }
-        ],
-        "power": 10500,
-        "researchTimeSeconds": 36000
-      },
-      {
-        "level": 2,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 520000
-          },
-          {
-            "itemId": "wood",
-            "amount": 520000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 26000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "3.00%"
-          }
-        ],
-        "power": 21000,
-        "researchTimeSeconds": 37800
-      },
-      {
-        "level": 3,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 16500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 550000
-          },
-          {
-            "itemId": "wood",
-            "amount": 550000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 27000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "4.50%"
-          }
-        ],
-        "power": 31500,
-        "researchTimeSeconds": 39600
-      },
-      {
-        "level": 4,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 17250
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 18
-          },
-          {
-            "itemId": "meat",
-            "amount": 570000
-          },
-          {
-            "itemId": "wood",
-            "amount": 570000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 28000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "6.00%"
-          }
-        ],
-        "power": 42000,
-        "researchTimeSeconds": 41400
-      },
-      {
-        "level": 5,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 19
-          },
-          {
-            "itemId": "meat",
-            "amount": 600000
-          },
-          {
-            "itemId": "wood",
-            "amount": 600000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 30000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "7.50%"
-          }
-        ],
-        "power": 52500,
-        "researchTimeSeconds": 43200
-      },
-      {
-        "level": 6,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 20
-          },
-          {
-            "itemId": "meat",
-            "amount": 620000
-          },
-          {
-            "itemId": "wood",
-            "amount": 620000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 31000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "9.00%"
-          }
-        ],
-        "power": 63000,
-        "researchTimeSeconds": 45000
-      },
-      {
-        "level": 7,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 19500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 21
-          },
-          {
-            "itemId": "meat",
-            "amount": 650000
-          },
-          {
-            "itemId": "wood",
-            "amount": 650000
-          },
-          {
-            "itemId": "coal",
-            "amount": 130000
-          },
-          {
-            "itemId": "iron",
-            "amount": 32000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "10.50%"
-          }
-        ],
-        "power": 73500,
-        "researchTimeSeconds": 46800
-      },
-      {
-        "level": 8,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 21000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 22
-          },
-          {
-            "itemId": "meat",
-            "amount": 700000
-          },
-          {
-            "itemId": "wood",
-            "amount": 700000
-          },
-          {
-            "itemId": "coal",
-            "amount": 140000
-          },
-          {
-            "itemId": "iron",
-            "amount": 35000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "12.00%"
-          }
-        ],
-        "power": 84000,
-        "researchTimeSeconds": 50400
-      },
-      {
-        "level": 9,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 22500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 24
-          },
-          {
-            "itemId": "meat",
-            "amount": 750000
-          },
-          {
-            "itemId": "wood",
-            "amount": 750000
-          },
-          {
-            "itemId": "coal",
-            "amount": 150000
-          },
-          {
-            "itemId": "iron",
-            "amount": 37000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "13.50%"
-          }
-        ],
-        "power": 94500,
-        "researchTimeSeconds": 54000
-      },
-      {
-        "level": 10,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 24000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 4
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 26
-          },
-          {
-            "itemId": "meat",
-            "amount": 800000
-          },
-          {
-            "itemId": "wood",
-            "amount": 800000
-          },
-          {
-            "itemId": "coal",
-            "amount": 160000
-          },
-          {
-            "itemId": "iron",
-            "amount": 40000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Time Reduction",
-            "value": "15.00%"
-          }
-        ],
-        "power": 105000,
-        "researchTimeSeconds": 57600
-      }
-    ]
-  },
-  {
-    "id": "exalted-lancer-healing",
-    "name": "Exalted Lancer Healing",
-    "img": "/images/research/exalted-lancer-healing.png",
-    "category": "T12 Lancer",
-    "tier": 4,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "building",
-            "id": "war-academy",
-            "level": "FC 10"
-          },
-          {
-            "type": "research",
-            "id": "meridian-phalanx",
-            "level": 1
-          }
-        ],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 16
-          },
-          {
-            "itemId": "meat",
-            "amount": 500000
-          },
-          {
-            "itemId": "wood",
-            "amount": 500000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 25000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "5.00%"
-          }
-        ],
-        "power": 35000,
-        "researchTimeSeconds": 36000
-      },
-      {
-        "level": 2,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 520000
-          },
-          {
-            "itemId": "wood",
-            "amount": 520000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 26000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "10.00%"
-          }
-        ],
-        "power": 70000,
-        "researchTimeSeconds": 37800
-      },
-      {
-        "level": 3,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 16500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 550000
-          },
-          {
-            "itemId": "wood",
-            "amount": 550000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 27000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "15.00%"
-          }
-        ],
-        "power": 105000,
-        "researchTimeSeconds": 39600
-      },
-      {
-        "level": 4,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 17250
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 18
-          },
-          {
-            "itemId": "meat",
-            "amount": 570000
-          },
-          {
-            "itemId": "wood",
-            "amount": 570000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 28000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "20.00%"
-          }
-        ],
-        "power": 140000,
-        "researchTimeSeconds": 41400
-      },
-      {
-        "level": 5,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 19
-          },
-          {
-            "itemId": "meat",
-            "amount": 600000
-          },
-          {
-            "itemId": "wood",
-            "amount": 600000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 30000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "25.00%"
-          }
-        ],
-        "power": 175000,
-        "researchTimeSeconds": 43200
-      },
-      {
-        "level": 6,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 20
-          },
-          {
-            "itemId": "meat",
-            "amount": 620000
-          },
-          {
-            "itemId": "wood",
-            "amount": 620000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 31000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "30.00%"
-          }
-        ],
-        "power": 210000,
-        "researchTimeSeconds": 45000
-      },
-      {
-        "level": 7,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 19500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 21
-          },
-          {
-            "itemId": "meat",
-            "amount": 650000
-          },
-          {
-            "itemId": "wood",
-            "amount": 650000
-          },
-          {
-            "itemId": "coal",
-            "amount": 130000
-          },
-          {
-            "itemId": "iron",
-            "amount": 32000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "35.00%"
-          }
-        ],
-        "power": 245000,
-        "researchTimeSeconds": 46800
-      },
-      {
-        "level": 8,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 21000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 22
-          },
-          {
-            "itemId": "meat",
-            "amount": 700000
-          },
-          {
-            "itemId": "wood",
-            "amount": 700000
-          },
-          {
-            "itemId": "coal",
-            "amount": 140000
-          },
-          {
-            "itemId": "iron",
-            "amount": 35000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "40.00%"
-          }
-        ],
-        "power": 280000,
-        "researchTimeSeconds": 50400
-      },
-      {
-        "level": 9,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 22500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 24
-          },
-          {
-            "itemId": "meat",
-            "amount": 750000
-          },
-          {
-            "itemId": "wood",
-            "amount": 750000
-          },
-          {
-            "itemId": "coal",
-            "amount": 150000
-          },
-          {
-            "itemId": "iron",
-            "amount": 37000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "45.00%"
-          }
-        ],
-        "power": 315000,
-        "researchTimeSeconds": 54000
-      },
-      {
-        "level": 10,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 24000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 4
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 26
-          },
-          {
-            "itemId": "meat",
-            "amount": 800000
-          },
-          {
-            "itemId": "wood",
-            "amount": 800000
-          },
-          {
-            "itemId": "coal",
-            "amount": 160000
-          },
-          {
-            "itemId": "iron",
-            "amount": 40000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Lancer Healing Cost Reduction",
-            "value": "50.00%"
-          }
-        ],
-        "power": 350000,
-        "researchTimeSeconds": 57600
-      }
-    ]
-  },
-  {
     "id": "exalted-lancer-training",
     "name": "Exalted Lancer Training",
     "img": "/images/research/exalted-lancer-training.png",
@@ -56267,6 +55387,886 @@
         ],
         "power": 900000,
         "researchTimeSeconds": 108000
+      }
+    ]
+  },
+  {
+    "id": "exalted-lancer-first-aid",
+    "name": "Exalted Lancer First Aid",
+    "img": "/images/research/exalted-lancer-first-aid.png",
+    "category": "T12 Lancer",
+    "tier": 8,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "meridian-phalanx",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 16
+          },
+          {
+            "itemId": "meat",
+            "amount": 500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 25000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "1.50%"
+          }
+        ],
+        "power": 10500,
+        "researchTimeSeconds": 36000
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 520000
+          },
+          {
+            "itemId": "wood",
+            "amount": 520000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 26000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "3.00%"
+          }
+        ],
+        "power": 21000,
+        "researchTimeSeconds": 37800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 16500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 550000
+          },
+          {
+            "itemId": "wood",
+            "amount": 550000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 27000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "4.50%"
+          }
+        ],
+        "power": 31500,
+        "researchTimeSeconds": 39600
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 17250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 18
+          },
+          {
+            "itemId": "meat",
+            "amount": 570000
+          },
+          {
+            "itemId": "wood",
+            "amount": 570000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 28000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "6.00%"
+          }
+        ],
+        "power": 42000,
+        "researchTimeSeconds": 41400
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 19
+          },
+          {
+            "itemId": "meat",
+            "amount": 600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 30000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "7.50%"
+          }
+        ],
+        "power": 52500,
+        "researchTimeSeconds": 43200
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 20
+          },
+          {
+            "itemId": "meat",
+            "amount": 620000
+          },
+          {
+            "itemId": "wood",
+            "amount": 620000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 31000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "9.00%"
+          }
+        ],
+        "power": 63000,
+        "researchTimeSeconds": 45000
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 19500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 21
+          },
+          {
+            "itemId": "meat",
+            "amount": 650000
+          },
+          {
+            "itemId": "wood",
+            "amount": 650000
+          },
+          {
+            "itemId": "coal",
+            "amount": 130000
+          },
+          {
+            "itemId": "iron",
+            "amount": 32000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "10.50%"
+          }
+        ],
+        "power": 73500,
+        "researchTimeSeconds": 46800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 21000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 22
+          },
+          {
+            "itemId": "meat",
+            "amount": 700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 140000
+          },
+          {
+            "itemId": "iron",
+            "amount": 35000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "12.00%"
+          }
+        ],
+        "power": 84000,
+        "researchTimeSeconds": 50400
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 22500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 24
+          },
+          {
+            "itemId": "meat",
+            "amount": 750000
+          },
+          {
+            "itemId": "wood",
+            "amount": 750000
+          },
+          {
+            "itemId": "coal",
+            "amount": 150000
+          },
+          {
+            "itemId": "iron",
+            "amount": 37000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "13.50%"
+          }
+        ],
+        "power": 94500,
+        "researchTimeSeconds": 54000
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 24000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 4
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 26
+          },
+          {
+            "itemId": "meat",
+            "amount": 800000
+          },
+          {
+            "itemId": "wood",
+            "amount": 800000
+          },
+          {
+            "itemId": "coal",
+            "amount": 160000
+          },
+          {
+            "itemId": "iron",
+            "amount": 40000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Time Reduction",
+            "value": "15.00%"
+          }
+        ],
+        "power": 105000,
+        "researchTimeSeconds": 57600
+      }
+    ]
+  },
+  {
+    "id": "exalted-lancer-healing",
+    "name": "Exalted Lancer Healing",
+    "img": "/images/research/exalted-lancer-healing.png",
+    "category": "T12 Lancer",
+    "tier": 8,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "meridian-phalanx",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 16
+          },
+          {
+            "itemId": "meat",
+            "amount": 500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 25000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "5.00%"
+          }
+        ],
+        "power": 35000,
+        "researchTimeSeconds": 36000
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 520000
+          },
+          {
+            "itemId": "wood",
+            "amount": 520000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 26000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "10.00%"
+          }
+        ],
+        "power": 70000,
+        "researchTimeSeconds": 37800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 16500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 550000
+          },
+          {
+            "itemId": "wood",
+            "amount": 550000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 27000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "15.00%"
+          }
+        ],
+        "power": 105000,
+        "researchTimeSeconds": 39600
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 17250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 18
+          },
+          {
+            "itemId": "meat",
+            "amount": 570000
+          },
+          {
+            "itemId": "wood",
+            "amount": 570000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 28000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "20.00%"
+          }
+        ],
+        "power": 140000,
+        "researchTimeSeconds": 41400
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 19
+          },
+          {
+            "itemId": "meat",
+            "amount": 600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 30000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "25.00%"
+          }
+        ],
+        "power": 175000,
+        "researchTimeSeconds": 43200
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 20
+          },
+          {
+            "itemId": "meat",
+            "amount": 620000
+          },
+          {
+            "itemId": "wood",
+            "amount": 620000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 31000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "30.00%"
+          }
+        ],
+        "power": 210000,
+        "researchTimeSeconds": 45000
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 19500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 21
+          },
+          {
+            "itemId": "meat",
+            "amount": 650000
+          },
+          {
+            "itemId": "wood",
+            "amount": 650000
+          },
+          {
+            "itemId": "coal",
+            "amount": 130000
+          },
+          {
+            "itemId": "iron",
+            "amount": 32000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "35.00%"
+          }
+        ],
+        "power": 245000,
+        "researchTimeSeconds": 46800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 21000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 22
+          },
+          {
+            "itemId": "meat",
+            "amount": 700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 140000
+          },
+          {
+            "itemId": "iron",
+            "amount": 35000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "40.00%"
+          }
+        ],
+        "power": 280000,
+        "researchTimeSeconds": 50400
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 22500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 24
+          },
+          {
+            "itemId": "meat",
+            "amount": 750000
+          },
+          {
+            "itemId": "wood",
+            "amount": 750000
+          },
+          {
+            "itemId": "coal",
+            "amount": 150000
+          },
+          {
+            "itemId": "iron",
+            "amount": 37000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "45.00%"
+          }
+        ],
+        "power": 315000,
+        "researchTimeSeconds": 54000
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 24000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 4
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 26
+          },
+          {
+            "itemId": "meat",
+            "amount": 800000
+          },
+          {
+            "itemId": "wood",
+            "amount": 800000
+          },
+          {
+            "itemId": "coal",
+            "amount": 160000
+          },
+          {
+            "itemId": "iron",
+            "amount": 40000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Lancer Healing Cost Reduction",
+            "value": "50.00%"
+          }
+        ],
+        "power": 350000,
+        "researchTimeSeconds": 57600
       }
     ]
   },
@@ -60667,886 +60667,6 @@
     ]
   },
   {
-    "id": "exalted-marksman-first-aid",
-    "name": "Exalted Marksman First Aid",
-    "img": "/images/research/exalted-marksman-first-aid.png",
-    "category": "T12 Marksman",
-    "tier": 4,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "building",
-            "id": "war-academy",
-            "level": "FC 10"
-          },
-          {
-            "type": "research",
-            "id": "starfire",
-            "level": 1
-          }
-        ],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 16
-          },
-          {
-            "itemId": "meat",
-            "amount": 500000
-          },
-          {
-            "itemId": "wood",
-            "amount": 500000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 25000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "1.50%"
-          }
-        ],
-        "power": 10500,
-        "researchTimeSeconds": 36000
-      },
-      {
-        "level": 2,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 520000
-          },
-          {
-            "itemId": "wood",
-            "amount": 520000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 26000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "3.00%"
-          }
-        ],
-        "power": 21000,
-        "researchTimeSeconds": 37800
-      },
-      {
-        "level": 3,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 16500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 550000
-          },
-          {
-            "itemId": "wood",
-            "amount": 550000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 27000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "4.50%"
-          }
-        ],
-        "power": 31500,
-        "researchTimeSeconds": 39600
-      },
-      {
-        "level": 4,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 17250
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 18
-          },
-          {
-            "itemId": "meat",
-            "amount": 570000
-          },
-          {
-            "itemId": "wood",
-            "amount": 570000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 28000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "6.00%"
-          }
-        ],
-        "power": 42000,
-        "researchTimeSeconds": 41400
-      },
-      {
-        "level": 5,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 19
-          },
-          {
-            "itemId": "meat",
-            "amount": 600000
-          },
-          {
-            "itemId": "wood",
-            "amount": 600000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 30000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "7.50%"
-          }
-        ],
-        "power": 52500,
-        "researchTimeSeconds": 43200
-      },
-      {
-        "level": 6,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 20
-          },
-          {
-            "itemId": "meat",
-            "amount": 620000
-          },
-          {
-            "itemId": "wood",
-            "amount": 620000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 31000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "9.00%"
-          }
-        ],
-        "power": 63000,
-        "researchTimeSeconds": 45000
-      },
-      {
-        "level": 7,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 19500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 21
-          },
-          {
-            "itemId": "meat",
-            "amount": 650000
-          },
-          {
-            "itemId": "wood",
-            "amount": 650000
-          },
-          {
-            "itemId": "coal",
-            "amount": 130000
-          },
-          {
-            "itemId": "iron",
-            "amount": 32000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "10.50%"
-          }
-        ],
-        "power": 73500,
-        "researchTimeSeconds": 46800
-      },
-      {
-        "level": 8,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 21000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 22
-          },
-          {
-            "itemId": "meat",
-            "amount": 700000
-          },
-          {
-            "itemId": "wood",
-            "amount": 700000
-          },
-          {
-            "itemId": "coal",
-            "amount": 140000
-          },
-          {
-            "itemId": "iron",
-            "amount": 35000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "12.00%"
-          }
-        ],
-        "power": 84000,
-        "researchTimeSeconds": 50400
-      },
-      {
-        "level": 9,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 22500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 24
-          },
-          {
-            "itemId": "meat",
-            "amount": 750000
-          },
-          {
-            "itemId": "wood",
-            "amount": 750000
-          },
-          {
-            "itemId": "coal",
-            "amount": 150000
-          },
-          {
-            "itemId": "iron",
-            "amount": 37000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "13.50%"
-          }
-        ],
-        "power": 94500,
-        "researchTimeSeconds": 54000
-      },
-      {
-        "level": 10,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 24000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 4
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 26
-          },
-          {
-            "itemId": "meat",
-            "amount": 800000
-          },
-          {
-            "itemId": "wood",
-            "amount": 800000
-          },
-          {
-            "itemId": "coal",
-            "amount": 160000
-          },
-          {
-            "itemId": "iron",
-            "amount": 40000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Time Reduction",
-            "value": "15.00%"
-          }
-        ],
-        "power": 105000,
-        "researchTimeSeconds": 57600
-      }
-    ]
-  },
-  {
-    "id": "exalted-marksman-healing",
-    "name": "Exalted Marksman Healing",
-    "img": "/images/research/exalted-marksman-healing.png",
-    "category": "T12 Marksman",
-    "tier": 4,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "building",
-            "id": "war-academy",
-            "level": "FC 10"
-          },
-          {
-            "type": "research",
-            "id": "starfire",
-            "level": 1
-          }
-        ],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 16
-          },
-          {
-            "itemId": "meat",
-            "amount": 500000
-          },
-          {
-            "itemId": "wood",
-            "amount": 500000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 25000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "5.00%"
-          }
-        ],
-        "power": 35000,
-        "researchTimeSeconds": 36000
-      },
-      {
-        "level": 2,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 15750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 520000
-          },
-          {
-            "itemId": "wood",
-            "amount": 520000
-          },
-          {
-            "itemId": "coal",
-            "amount": 100000
-          },
-          {
-            "itemId": "iron",
-            "amount": 26000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "10.00%"
-          }
-        ],
-        "power": 70000,
-        "researchTimeSeconds": 37800
-      },
-      {
-        "level": 3,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 16500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 17
-          },
-          {
-            "itemId": "meat",
-            "amount": 550000
-          },
-          {
-            "itemId": "wood",
-            "amount": 550000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 27000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "15.00%"
-          }
-        ],
-        "power": 105000,
-        "researchTimeSeconds": 39600
-      },
-      {
-        "level": 4,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 17250
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 2
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 18
-          },
-          {
-            "itemId": "meat",
-            "amount": 570000
-          },
-          {
-            "itemId": "wood",
-            "amount": 570000
-          },
-          {
-            "itemId": "coal",
-            "amount": 110000
-          },
-          {
-            "itemId": "iron",
-            "amount": 28000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "20.00%"
-          }
-        ],
-        "power": 140000,
-        "researchTimeSeconds": 41400
-      },
-      {
-        "level": 5,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 19
-          },
-          {
-            "itemId": "meat",
-            "amount": 600000
-          },
-          {
-            "itemId": "wood",
-            "amount": 600000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 30000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "25.00%"
-          }
-        ],
-        "power": 175000,
-        "researchTimeSeconds": 43200
-      },
-      {
-        "level": 6,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 18750
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 20
-          },
-          {
-            "itemId": "meat",
-            "amount": 620000
-          },
-          {
-            "itemId": "wood",
-            "amount": 620000
-          },
-          {
-            "itemId": "coal",
-            "amount": 120000
-          },
-          {
-            "itemId": "iron",
-            "amount": 31000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "30.00%"
-          }
-        ],
-        "power": 210000,
-        "researchTimeSeconds": 45000
-      },
-      {
-        "level": 7,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 19500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 21
-          },
-          {
-            "itemId": "meat",
-            "amount": 650000
-          },
-          {
-            "itemId": "wood",
-            "amount": 650000
-          },
-          {
-            "itemId": "coal",
-            "amount": 130000
-          },
-          {
-            "itemId": "iron",
-            "amount": 32000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "35.00%"
-          }
-        ],
-        "power": 245000,
-        "researchTimeSeconds": 46800
-      },
-      {
-        "level": 8,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 21000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 22
-          },
-          {
-            "itemId": "meat",
-            "amount": 700000
-          },
-          {
-            "itemId": "wood",
-            "amount": 700000
-          },
-          {
-            "itemId": "coal",
-            "amount": 140000
-          },
-          {
-            "itemId": "iron",
-            "amount": 35000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "40.00%"
-          }
-        ],
-        "power": 280000,
-        "researchTimeSeconds": 50400
-      },
-      {
-        "level": 9,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 22500
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 3
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 24
-          },
-          {
-            "itemId": "meat",
-            "amount": 750000
-          },
-          {
-            "itemId": "wood",
-            "amount": 750000
-          },
-          {
-            "itemId": "coal",
-            "amount": 150000
-          },
-          {
-            "itemId": "iron",
-            "amount": 37000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "45.00%"
-          }
-        ],
-        "power": 315000,
-        "researchTimeSeconds": 54000
-      },
-      {
-        "level": 10,
-        "prerequisites": [],
-        "cost": [
-          {
-            "itemId": "steel",
-            "amount": 24000
-          },
-          {
-            "itemId": "refined-fire-crystal",
-            "amount": 4
-          },
-          {
-            "itemId": "fire-crystal-shard",
-            "amount": 26
-          },
-          {
-            "itemId": "meat",
-            "amount": 800000
-          },
-          {
-            "itemId": "wood",
-            "amount": 800000
-          },
-          {
-            "itemId": "coal",
-            "amount": 160000
-          },
-          {
-            "itemId": "iron",
-            "amount": 40000
-          }
-        ],
-        "bonus": [
-          {
-            "stat": "Exalted Marksman Healing Cost Reduction",
-            "value": "50.00%"
-          }
-        ],
-        "power": 350000,
-        "researchTimeSeconds": 57600
-      }
-    ]
-  },
-  {
     "id": "exalted-marksman-training",
     "name": "Exalted Marksman Training",
     "img": "/images/research/exalted-marksman-training.png",
@@ -62705,6 +61825,886 @@
         ],
         "power": 900000,
         "researchTimeSeconds": 108000
+      }
+    ]
+  },
+  {
+    "id": "exalted-marksman-first-aid",
+    "name": "Exalted Marksman First Aid",
+    "img": "/images/research/exalted-marksman-first-aid.png",
+    "category": "T12 Marksman",
+    "tier": 8,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "starfire",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 16
+          },
+          {
+            "itemId": "meat",
+            "amount": 500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 25000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "1.50%"
+          }
+        ],
+        "power": 10500,
+        "researchTimeSeconds": 36000
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 520000
+          },
+          {
+            "itemId": "wood",
+            "amount": 520000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 26000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "3.00%"
+          }
+        ],
+        "power": 21000,
+        "researchTimeSeconds": 37800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 16500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 550000
+          },
+          {
+            "itemId": "wood",
+            "amount": 550000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 27000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "4.50%"
+          }
+        ],
+        "power": 31500,
+        "researchTimeSeconds": 39600
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 17250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 18
+          },
+          {
+            "itemId": "meat",
+            "amount": 570000
+          },
+          {
+            "itemId": "wood",
+            "amount": 570000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 28000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "6.00%"
+          }
+        ],
+        "power": 42000,
+        "researchTimeSeconds": 41400
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 19
+          },
+          {
+            "itemId": "meat",
+            "amount": 600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 30000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "7.50%"
+          }
+        ],
+        "power": 52500,
+        "researchTimeSeconds": 43200
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 20
+          },
+          {
+            "itemId": "meat",
+            "amount": 620000
+          },
+          {
+            "itemId": "wood",
+            "amount": 620000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 31000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "9.00%"
+          }
+        ],
+        "power": 63000,
+        "researchTimeSeconds": 45000
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 19500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 21
+          },
+          {
+            "itemId": "meat",
+            "amount": 650000
+          },
+          {
+            "itemId": "wood",
+            "amount": 650000
+          },
+          {
+            "itemId": "coal",
+            "amount": 130000
+          },
+          {
+            "itemId": "iron",
+            "amount": 32000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "10.50%"
+          }
+        ],
+        "power": 73500,
+        "researchTimeSeconds": 46800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 21000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 22
+          },
+          {
+            "itemId": "meat",
+            "amount": 700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 140000
+          },
+          {
+            "itemId": "iron",
+            "amount": 35000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "12.00%"
+          }
+        ],
+        "power": 84000,
+        "researchTimeSeconds": 50400
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 22500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 24
+          },
+          {
+            "itemId": "meat",
+            "amount": 750000
+          },
+          {
+            "itemId": "wood",
+            "amount": 750000
+          },
+          {
+            "itemId": "coal",
+            "amount": 150000
+          },
+          {
+            "itemId": "iron",
+            "amount": 37000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "13.50%"
+          }
+        ],
+        "power": 94500,
+        "researchTimeSeconds": 54000
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 24000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 4
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 26
+          },
+          {
+            "itemId": "meat",
+            "amount": 800000
+          },
+          {
+            "itemId": "wood",
+            "amount": 800000
+          },
+          {
+            "itemId": "coal",
+            "amount": 160000
+          },
+          {
+            "itemId": "iron",
+            "amount": 40000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Time Reduction",
+            "value": "15.00%"
+          }
+        ],
+        "power": 105000,
+        "researchTimeSeconds": 57600
+      }
+    ]
+  },
+  {
+    "id": "exalted-marksman-healing",
+    "name": "Exalted Marksman Healing",
+    "img": "/images/research/exalted-marksman-healing.png",
+    "category": "T12 Marksman",
+    "tier": 8,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "starfire",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 16
+          },
+          {
+            "itemId": "meat",
+            "amount": 500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 25000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "5.00%"
+          }
+        ],
+        "power": 35000,
+        "researchTimeSeconds": 36000
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 15750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 520000
+          },
+          {
+            "itemId": "wood",
+            "amount": 520000
+          },
+          {
+            "itemId": "coal",
+            "amount": 100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 26000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "10.00%"
+          }
+        ],
+        "power": 70000,
+        "researchTimeSeconds": 37800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 16500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 17
+          },
+          {
+            "itemId": "meat",
+            "amount": 550000
+          },
+          {
+            "itemId": "wood",
+            "amount": 550000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 27000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "15.00%"
+          }
+        ],
+        "power": 105000,
+        "researchTimeSeconds": 39600
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 17250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 2
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 18
+          },
+          {
+            "itemId": "meat",
+            "amount": 570000
+          },
+          {
+            "itemId": "wood",
+            "amount": 570000
+          },
+          {
+            "itemId": "coal",
+            "amount": 110000
+          },
+          {
+            "itemId": "iron",
+            "amount": 28000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "20.00%"
+          }
+        ],
+        "power": 140000,
+        "researchTimeSeconds": 41400
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 19
+          },
+          {
+            "itemId": "meat",
+            "amount": 600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 30000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "25.00%"
+          }
+        ],
+        "power": 175000,
+        "researchTimeSeconds": 43200
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 18750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 20
+          },
+          {
+            "itemId": "meat",
+            "amount": 620000
+          },
+          {
+            "itemId": "wood",
+            "amount": 620000
+          },
+          {
+            "itemId": "coal",
+            "amount": 120000
+          },
+          {
+            "itemId": "iron",
+            "amount": 31000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "30.00%"
+          }
+        ],
+        "power": 210000,
+        "researchTimeSeconds": 45000
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 19500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 21
+          },
+          {
+            "itemId": "meat",
+            "amount": 650000
+          },
+          {
+            "itemId": "wood",
+            "amount": 650000
+          },
+          {
+            "itemId": "coal",
+            "amount": 130000
+          },
+          {
+            "itemId": "iron",
+            "amount": 32000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "35.00%"
+          }
+        ],
+        "power": 245000,
+        "researchTimeSeconds": 46800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 21000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 22
+          },
+          {
+            "itemId": "meat",
+            "amount": 700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 140000
+          },
+          {
+            "itemId": "iron",
+            "amount": 35000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "40.00%"
+          }
+        ],
+        "power": 280000,
+        "researchTimeSeconds": 50400
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 22500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 3
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 24
+          },
+          {
+            "itemId": "meat",
+            "amount": 750000
+          },
+          {
+            "itemId": "wood",
+            "amount": 750000
+          },
+          {
+            "itemId": "coal",
+            "amount": 150000
+          },
+          {
+            "itemId": "iron",
+            "amount": 37000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "45.00%"
+          }
+        ],
+        "power": 315000,
+        "researchTimeSeconds": 54000
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 24000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 4
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 26
+          },
+          {
+            "itemId": "meat",
+            "amount": 800000
+          },
+          {
+            "itemId": "wood",
+            "amount": 800000
+          },
+          {
+            "itemId": "coal",
+            "amount": 160000
+          },
+          {
+            "itemId": "iron",
+            "amount": 40000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Exalted Marksman Healing Cost Reduction",
+            "value": "50.00%"
+          }
+        ],
+        "power": 350000,
+        "researchTimeSeconds": 57600
       }
     ]
   }

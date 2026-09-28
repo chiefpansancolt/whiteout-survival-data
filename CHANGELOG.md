@@ -254,5 +254,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   requirement. Applied as an explicit `research`-type prerequisite (`level: 1`) added to each node's
   Level 1, alongside its existing `building`-type War Academy requirement.
 
+- Reassigned each T12 troop type's `[Troop] First Aid` and `[Troop] Healing` nodes from `tier: 4` to
+  `tier: 8` as a placeholder, freeing `tier: 4` for that troop type's actual next tier of content
+  (pending). Their prerequisites and every other node's references to them are unchanged, since
+  those resolve by id rather than by tier.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
