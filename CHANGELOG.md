@@ -245,9 +245,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   requirement), has a single level, and 8,000,000 power. No cost or bonus data is known yet, so both
   are empty arrays rather than guessed values, and `img` is `""` rather than a broken link, since no
   icon exists anywhere to reference — the same treatment used for Pets' Frost Gorilla/Frostscale
-  Chameleon gap. Placed at `tier: 2` for each troop type, alongside that tier's existing Molten
-  items, since the wiki's own tier numbering for these categories was never strictly sequential to
-  begin with (Infantry's own tier jumps straight from 5 to 7 with no tier 6 at all).
+  Chameleon gap. Placed at `tier: 1` for each troop type, grouping it with the 5 items it gates on
+  rather than the tier-2 Molten items it unlocks.
 
 - Gated each T12 troop type's 4 tier-2 Molten I items on that troop type's own Exalted capstone at
   Level 1, confirmed directly from in-game knowledge rather than scraped — the wiki's Prerequisites

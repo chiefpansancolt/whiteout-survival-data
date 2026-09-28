@@ -43831,6 +43831,48 @@
     ]
   },
   {
+    "id": "exalted-infantry",
+    "name": "Exalted Infantry",
+    "img": "",
+    "category": "T12 Infantry",
+    "tier": 1,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "research",
+            "id": "exalted-armament",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-bastion",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-helm",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-shoulderguard",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-trek",
+            "level": 5
+          }
+        ],
+        "cost": [],
+        "bonus": [],
+        "power": 8000000
+      }
+    ]
+  },
+  {
     "id": "exalted-shoulderguard",
     "name": "Exalted Shoulderguard",
     "img": "/images/research/exalted-shoulderguard.png",
@@ -44117,48 +44159,6 @@
           }
         ],
         "power": 750000
-      }
-    ]
-  },
-  {
-    "id": "exalted-infantry",
-    "name": "Exalted Infantry",
-    "img": "",
-    "category": "T12 Infantry",
-    "tier": 2,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "research",
-            "id": "exalted-armament",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-bastion",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-helm",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-shoulderguard",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-trek",
-            "level": 5
-          }
-        ],
-        "cost": [],
-        "bonus": [],
-        "power": 8000000
       }
     ]
   },
@@ -49833,6 +49833,48 @@
     ]
   },
   {
+    "id": "exalted-lancer",
+    "name": "Exalted Lancer",
+    "img": "",
+    "category": "T12 Lancer",
+    "tier": 1,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "research",
+            "id": "exalted-pauldron",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-pike",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-platemail",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-warcrown",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-warpath",
+            "level": 5
+          }
+        ],
+        "cost": [],
+        "bonus": [],
+        "power": 8000000
+      }
+    ]
+  },
+  {
     "id": "exalted-pauldron",
     "name": "Exalted Pauldron",
     "img": "/images/research/exalted-pauldron.png",
@@ -50555,48 +50597,6 @@
           }
         ],
         "power": 750000
-      }
-    ]
-  },
-  {
-    "id": "exalted-lancer",
-    "name": "Exalted Lancer",
-    "img": "",
-    "category": "T12 Lancer",
-    "tier": 2,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "research",
-            "id": "exalted-pauldron",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-pike",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-platemail",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-warcrown",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-warpath",
-            "level": 5
-          }
-        ],
-        "cost": [],
-        "bonus": [],
-        "power": 8000000
       }
     ]
   },
@@ -56706,6 +56706,48 @@
     ]
   },
   {
+    "id": "exalted-marksman",
+    "name": "Exalted Marksman",
+    "img": "",
+    "category": "T12 Marksman",
+    "tier": 1,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "research",
+            "id": "exalted-blunderbuss",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-cadence",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-mantle",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-veil",
+            "level": 5
+          },
+          {
+            "type": "research",
+            "id": "exalted-war-grab",
+            "level": 5
+          }
+        ],
+        "cost": [],
+        "bonus": [],
+        "power": 8000000
+      }
+    ]
+  },
+  {
     "id": "exalted-veil",
     "name": "Exalted Veil",
     "img": "/images/research/exalted-veil.png",
@@ -56993,48 +57035,6 @@
           }
         ],
         "power": 750000
-      }
-    ]
-  },
-  {
-    "id": "exalted-marksman",
-    "name": "Exalted Marksman",
-    "img": "",
-    "category": "T12 Marksman",
-    "tier": 2,
-    "levels": [
-      {
-        "level": 1,
-        "prerequisites": [
-          {
-            "type": "research",
-            "id": "exalted-blunderbuss",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-cadence",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-mantle",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-veil",
-            "level": 5
-          },
-          {
-            "type": "research",
-            "id": "exalted-war-grab",
-            "level": 5
-          }
-        ],
-        "cost": [],
-        "bonus": [],
-        "power": 8000000
       }
     ]
   },

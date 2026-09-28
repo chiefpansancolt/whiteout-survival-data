@@ -237,6 +237,7 @@ describe('Research tech tree', () => {
     cases.forEach(([id, category, chain]) => {
       const node = research().find(id)!;
       expect(node.category).toBe(category);
+      expect(node.tier).toBe(1);
       expect(node.img).toBe('');
       expect(node.levels).toHaveLength(1);
       expect(node.levels[0].power).toBe(8000000);
