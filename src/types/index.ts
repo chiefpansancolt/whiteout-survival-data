@@ -4,3 +4,5 @@ export * from './facility';
 export * from './hero';
 export * from './expert';
 export * from './pet';
+export * from './item';
+export * from './skin';

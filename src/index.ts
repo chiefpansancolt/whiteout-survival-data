@@ -4,3 +4,5 @@ export * from './modules/facilities';
 export * from './modules/heroes';
 export * from './modules/experts';
 export * from './modules/pets';
+export * from './modules/items';
+export * from './modules/skins';

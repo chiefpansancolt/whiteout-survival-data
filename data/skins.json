@@ -1,0 +1,2122 @@
+[
+  {
+    "id": "abundance-scent",
+    "name": "Abundance Scent",
+    "img": "/images/skins/abundance-scent.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Abundance Scent Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Thanksgiving Event Pack"]
+  },
+  {
+    "id": "autumn-reverie",
+    "name": "Autumn Reverie",
+    "img": "/images/skins/autumn-reverie.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Autumn Reverie Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Thanksgiving 2025 Event"]
+  },
+  {
+    "id": "bear-party",
+    "name": "Bear Party",
+    "img": "/images/skins/bear-party.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Bear Party Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["2nd Anniversary (Snapshot of Time: Letter)"]
+  },
+  {
+    "id": "birthday-avatar-frame",
+    "name": "Birthday Avatar Frame",
+    "img": "/images/skins/birthday-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants [Birthday Avatar Frame](30-days). Unlocked after completing a survey received upon reaching a $1,000 top-up milestone. Delivered on your birthday every year.",
+    "sources": ["Birthday Gift Pack"]
+  },
+  {
+    "id": "blue-flame-avatar-frame",
+    "name": "Blue Flame Avatar Frame",
+    "img": "/images/skins/blue-flame-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Blue Flame Avatar Frame](14 Days). Awarded to players who rank in the top 5 in Frostfire Mine Event.",
+    "sources": ["Frostfire Mine"]
+  },
+  {
+    "id": "budding-life",
+    "name": "Budding Life",
+    "img": "/images/skins/budding-life.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Budding Life Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Springtime Blessing Pack"]
+  },
+  {
+    "id": "childhood-painting",
+    "name": "Childhood Painting",
+    "img": "/images/skins/childhood-painting.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Childhood Painting Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Childhood Memory Festival"]
+  },
+  {
+    "id": "chilly-beginnings",
+    "name": "Chilly Beginnings",
+    "img": "/images/skins/chilly-beginnings.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Chilly Beginnings Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["1st Anniversary"]
+  },
+  {
+    "id": "christmas-carol",
+    "name": "Christmas Carol",
+    "img": "/images/skins/christmas-carol.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Christmas Carol Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Christmas Pack 2023"]
+  },
+  {
+    "id": "chrono-flow",
+    "name": "Chrono Flow",
+    "img": "/images/skins/chrono-flow.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Chrono Flow Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["3rd Anniversary (Pack)"]
+  },
+  {
+    "id": "crescent-wish",
+    "name": "Crescent Wish",
+    "img": "/images/skins/crescent-wish.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Crescent Wish Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Ramadan Event 2025 (Purchase Pack)"]
+  },
+  {
+    "id": "cupids-arrow-avatar-frame",
+    "name": "Cupid’s Arrow Avatar Frame",
+    "img": "/images/skins/cupids-arrow-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Cupid's Arrow Avatar Frame](Permanent). Bonus: Troops Defense +1.5%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+1.5%"
+    },
+    "sources": ["Valentine's Event"]
+  },
+  {
+    "id": "dragons-blessing-2",
+    "name": "Dragon’s Blessing",
+    "img": "/images/skins/dragons-blessing-2.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Dragon's Blessing Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Chinese New Year 2024"]
+  },
+  {
+    "id": "dream-keeper-2",
+    "name": "Dream Keeper",
+    "img": "/images/skins/dream-keeper-2.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Dream Keeper Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Christmas 2025 Event"]
+  },
+  {
+    "id": "dream-odyssey",
+    "name": "Dream Odyssey",
+    "img": "/images/skins/dream-odyssey.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Dream Odyssey Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Recall Road (Dreamscape Memory)"]
+  },
+  {
+    "id": "dreamlike-fantasy",
+    "name": "Dreamlike Fantasy",
+    "img": "/images/skins/dreamlike-fantasy.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Dreamlike Fantasy Avatar Frame] (Permanent / 30d / 14d / 7d). Bonus: Without Bonus",
+    "sources": ["Artist Incentive Plan"]
+  },
+  {
+    "id": "easter-egg-party-avatar-frame",
+    "name": "Easter Eggs Party Avatar Frame",
+    "img": "/images/skins/easter-egg-party-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Easter Egg Avatar Frame] (Permanent). Bonus: Troop Defense +2%",
+    "bonus": {
+      "stat": "Troop Defense",
+      "value": "+2%"
+    },
+    "sources": ["Pack (Easter Event)"]
+  },
+  {
+    "id": "egg-topia",
+    "name": "Egg-topia",
+    "img": "/images/skins/egg-topia.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Egg-topia Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Easter Event 2024"]
+  },
+  {
+    "id": "enchanting-power",
+    "name": "Enchanting Power",
+    "img": "/images/skins/enchanting-power.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Enchanting Power Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Children's Day 2024"]
+  },
+  {
+    "id": "endless-bounty-2",
+    "name": "Endless Bounty",
+    "img": "/images/skins/endless-bounty-2.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Endless Bounty Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Glided Jade 2026"]
+  },
+  {
+    "id": "fantasy-mushroom-avatar-frame",
+    "name": "Fantasy Mushroom Avatar Frame",
+    "img": "/images/skins/fantasy-mushroom-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Fantasy Mushroom Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Skin Shop"]
+  },
+  {
+    "id": "feast-of-fidelity",
+    "name": "Feast of Fidelity",
+    "img": "/images/skins/feast-of-fidelity.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Feast of Fidelity Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Banquet Stall"]
+  },
+  {
+    "id": "flame-dance",
+    "name": "Flame Dance",
+    "img": "/images/skins/flame-dance.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Flame Dance Avatar Frame](Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": []
+  },
+  {
+    "id": "frost-domain-avatar-frame",
+    "name": "Frost Domain Avatar Frame",
+    "img": "/images/skins/frost-domain-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Frost Domain Avatar Frame] (30-Days). Exclusive to VIP Club members. Received as a welcome gift upon $10,000 top-up, then renewed monthly with $1,000 top-up. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["VIP Club"]
+  },
+  {
+    "id": "frostwing-avatar-frame",
+    "name": "Frostwing Avatar Frame",
+    "img": "/images/skins/frostwing-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Gives [Frostwing Avatar Frame] for 30 days. Supreme Frostdragon Tyrant's Benefits for the chief to dominate the Capital longest. Bonus: Troops Defense +3%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+3%"
+    },
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "garden-of-delights-2",
+    "name": "Garden of Delights",
+    "img": "/images/skins/garden-of-delights-2.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Garden of Delights Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Children's Event 2025"]
+  },
+  {
+    "id": "gleaming-crescent",
+    "name": "Gleaming Crescent",
+    "img": "/images/skins/gleaming-crescent.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Gleaming Crescent Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Ramadan 2024 Pack"]
+  },
+  {
+    "id": "golden-symphony",
+    "name": "Golden Symphony",
+    "img": "/images/skins/golden-symphony.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Golden Symphony Avatar Frame](Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Aurora Melody"]
+  },
+  {
+    "id": "halloween-fright-night",
+    "name": "Halloween Fright Night",
+    "img": "/images/skins/halloween-fright-night.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Halloween Fright Night Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Halloween Event 2023"]
+  },
+  {
+    "id": "harvest-hymn",
+    "name": "Harvest Hymn",
+    "img": "/images/skins/harvest-hymn.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Harvest Hymn Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Thanksgiving 2023"]
+  },
+  {
+    "id": "helios-lion-avatar-frame",
+    "name": "Helios Lion Avatar Frame",
+    "img": "/images/skins/helios-lion-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Gives [Helios Lion Avatar Frame] for (7/14/30)days. Obtained by ranking Top 100 in the King of Icefield event.",
+    "sources": ["King of Icefield"]
+  },
+  {
+    "id": "ice-age-avatar-frame",
+    "name": "Ice Age Avatar Frame",
+    "img": "/images/skins/ice-age-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Ice Age Avatar Frame](Permanent). VIP 12 Prestige-exclusive, available in the Prestige Shop once Prestige Benefits are unlocked. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Prestige Shop"]
+  },
+  {
+    "id": "jarred-universe",
+    "name": "Jarred Universe",
+    "img": "/images/skins/jarred-universe.png",
+    "skinType": "Avatar Frame",
+    "description": "Can be obtained through Social Media events, Discord activities, or Content Creator rewards. Bonus: Without Bonus",
+    "sources": []
+  },
+  {
+    "id": "jubilee-pact",
+    "name": "Jubilee Pact",
+    "img": "/images/skins/jubilee-pact.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Jubilee Pact Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["New Year's Prelude 2026 pack"]
+  },
+  {
+    "id": "knights-glory-avatar-frame",
+    "name": "Knight’s Glory Avatar Frame",
+    "img": "/images/skins/knights-glory-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Knight's Glory Avatar Frame] (14 days) after battling in the Ultimate tier of the Alliance Championship.",
+    "sources": ["Alliance Championship"]
+  },
+  {
+    "id": "love-melody-avatar-frame",
+    "name": "Love Melody Avatar Frame",
+    "img": "/images/skins/love-melody-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Love Melody Avatar Frame](Permanent). Bonus: Troops Defense +1.5%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+1.5%"
+    },
+    "sources": ["Valentine's Event"]
+  },
+  {
+    "id": "loves-offering",
+    "name": "Love’s Offering",
+    "img": "/images/skins/loves-offering.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Chilly Beginnings Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Valentine's Day 2024"]
+  },
+  {
+    "id": "luminous-waves",
+    "name": "Luminous Waves",
+    "img": "/images/skins/luminous-waves.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Luminous Waves Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Blessing of Daylight"]
+  },
+  {
+    "id": "marry-christmas",
+    "name": "Marry Christmas",
+    "img": "/images/skins/marry-christmas.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Marry Christmas Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Christmas Party Pack 2023"]
+  },
+  {
+    "id": "master-artisan",
+    "name": "Master Artisan",
+    "img": "/images/skins/master-artisan.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Master Artisan Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Dream Miracle (Iron Forger Fantasia) May 2026"]
+  },
+  {
+    "id": "master-builder",
+    "name": "Master Builder",
+    "img": "/images/skins/master-builder.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Master Builder Avatar Frame] (Permanent). Bonus: Construction Speed +1%.",
+    "bonus": {
+      "stat": "Construction Speed",
+      "value": "+1%"
+    },
+    "sources": []
+  },
+  {
+    "id": "master-of-the-seas-avatar-frame",
+    "name": "Master of the Seas Avatar Frame",
+    "img": "/images/skins/master-of-the-seas-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Master of the Seas Avatar Frame] (Permanent) Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Fishing event"]
+  },
+  {
+    "id": "medal-of-dawn",
+    "name": "Medal Of Dawn",
+    "img": "/images/skins/medal-of-dawn.png",
+    "skinType": "Avatar Frame",
+    "description": "Can be obtained through Social Media events, Discord activities, or Content Creator rewards. Bonus: Without Bonus",
+    "sources": []
+  },
+  {
+    "id": "moonlight-milkyway",
+    "name": "Moonlight Milkyway",
+    "img": "/images/skins/moonlight-milkyway.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Moonlight Milkyway Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Moonlight Festival 2023"]
+  },
+  {
+    "id": "naver-honorary-player-avatar-frame",
+    "name": "Naver Honorary Player Avatar Frame",
+    "img": "/images/skins/naver-honorary-player-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Naver Honorary Player Avatar Frame] (7/30 - Days). Earned by participating in official Naver community events.",
+    "sources": ["Community Event"]
+  },
+  {
+    "id": "new-year-celebration",
+    "name": "New Year Celebration",
+    "img": "/images/skins/new-year-celebration.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [New Year Celebration Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["New Year 2023"]
+  },
+  {
+    "id": "new-year-flame",
+    "name": "New Year Flame",
+    "img": "/images/skins/new-year-flame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [New Year Flame Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["New Year 2024 (Pessage of Time Pack)"]
+  },
+  {
+    "id": "o-holy-night",
+    "name": "O Holy Night",
+    "img": "/images/skins/o-holy-night.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [O Holy Night Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["New Years (Purchase Pack)"]
+  },
+  {
+    "id": "phantom-magician",
+    "name": "Phantom Magician",
+    "img": "/images/skins/phantom-magician.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Phantom Magician Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Halloween Event Pack"]
+  },
+  {
+    "id": "pious-soul",
+    "name": "Pious Soul",
+    "img": "/images/skins/pious-soul.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Pious Soul Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Eid al-Adha 2025 (Purchase Pack)"]
+  },
+  {
+    "id": "pumpkin-head-2",
+    "name": "Pumpkin Head",
+    "img": "/images/skins/pumpkin-head-2.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Pumpkin Head Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Halloween Event 2025"]
+  },
+  {
+    "id": "romantic-gentleman-avatar-frame",
+    "name": "Romantic Gentleman Avatar Frame",
+    "img": "/images/skins/romantic-gentleman-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Romantic Gentleman Avatar Frame](Permanent). Bonus: Troops Defense +1.5%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+1.5%"
+    },
+    "sources": ["Pack (Valentine's Event 2025)"]
+  },
+  {
+    "id": "rose-lady-avatar-frame",
+    "name": "Rose Lady Avatar Frame",
+    "img": "/images/skins/rose-lady-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Rose Lady Avatar Frame](Permanent). Bonus: Troops Defense +1.5%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+1.5%"
+    },
+    "sources": ["Pack (Valentine's Event 2025)"]
+  },
+  {
+    "id": "scarlet-lion",
+    "name": "Scarlet Lion",
+    "img": "/images/skins/scarlet-lion.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Scarlet Lion Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Chinese New Year's Event 2025 (Purchase Pack)"]
+  },
+  {
+    "id": "sky-roamer",
+    "name": "Sky Roamer",
+    "img": "/images/skins/sky-roamer.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants [Sky Roamer Avatar Frame](30-days).",
+    "sources": ["Canyon Clash"]
+  },
+  {
+    "id": "snow-kiss",
+    "name": "Snow Kiss",
+    "img": "/images/skins/snow-kiss.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Snow Kiss Avatar Frame] (Permanent). Bonus: Troops Defense +1.5%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+1.5%"
+    },
+    "sources": ["Top-up Points Gift"]
+  },
+  {
+    "id": "snowbuster-squad-avatar-frame",
+    "name": "Snowbuster Squad Avatar Frame",
+    "img": "/images/skins/snowbuster-squad-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Snowbusters Squad Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Snowbusters"]
+  },
+  {
+    "id": "snowhare-scholar-avatar-frame",
+    "name": "Snowhare Scholar",
+    "img": "/images/skins/snowhare-scholar-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Snowhare Scholar Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Radiant Melody 2026"]
+  },
+  {
+    "id": "song-of-ocean-avatar-frame",
+    "name": "Song of Ocean Avatar Frame",
+    "img": "/images/skins/song-of-ocean-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Song of Ocean Avatar Frame] (30 Days). Awarded to the Top 50 players in the Fishing Event. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "steam-mania-avatar-frame",
+    "name": "Steam Mania Avatar Frame",
+    "img": "/images/skins/steam-mania-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Steam Mania Avatar Frame] (3/7/30 days). Alliance members receive season rewards based on the Alliance’s season points from Fortress Battle.",
+    "sources": ["Fortress Battle"]
+  },
+  {
+    "id": "sweet-bliss",
+    "name": "Sweet Bliss",
+    "img": "/images/skins/sweet-bliss.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Sweet Bliss Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Valentine's Day 2024"]
+  },
+  {
+    "id": "top-fan-avatar-frame",
+    "name": "Top Fan Avatar Frame",
+    "img": "/images/skins/top-fan-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants [Top Fan Avatar Frame](7-days). Earned by participating in official Facebook community events.",
+    "sources": ["Community Event"]
+  },
+  {
+    "id": "torchbright",
+    "name": "Torchbright",
+    "img": "/images/skins/torchbright.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Torchbright Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["3rd Anniversary (Snapshot of Time : Red letter)"]
+  },
+  {
+    "id": "winged-dreams",
+    "name": "Winged Dreams",
+    "img": "/images/skins/winged-dreams.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Winged Dreams Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["2nd Anniversary (Purchase Pack)"]
+  },
+  {
+    "id": "wings-of-victory-avatar-frame",
+    "name": "Wings of Victory Avatar Frame",
+    "img": "/images/skins/wings-of-victory-avatar-frame.png",
+    "skinType": "Avatar Frame",
+    "description": "Gives [Wings of Victory Avatar Frame] for 7 days. This exclusive item can only be purchased by winners of the [State of Power] event shop.",
+    "sources": ["State of Power Shop"]
+  },
+  {
+    "id": "winter-triumph",
+    "name": "Winter Triumph",
+    "img": "/images/skins/winter-triumph.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Winter Triumph Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Tundra Games Event"]
+  },
+  {
+    "id": "wispwafter",
+    "name": "Wispwafter",
+    "img": "/images/skins/wispwafter.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Wispwafter Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Harvest Moonlight Blessing Pack 2024"]
+  },
+  {
+    "id": "top-fan-avatar-frame-2",
+    "name": "X Honorary Player Avatar Frame",
+    "img": "/images/skins/top-fan-avatar-frame-2.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants [X Honorary Player Avatar Frame](7-days). Earned by participating in official X (Twitter) community events.",
+    "sources": ["Community Event"]
+  },
+  {
+    "id": "yuletide-glee",
+    "name": "Yuletide Glee",
+    "img": "/images/skins/yuletide-glee.png",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Yuletide Glee Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "value": "+2%"
+    },
+    "sources": ["Christmas event 2024 (Curiosity Shop)"]
+  },
+  {
+    "id": "dragon-dominion",
+    "name": "Dragon Dominion",
+    "img": "/images/skins/dragon-dominion.png",
+    "skinType": "Chief Profile",
+    "description": "Grants the [Dragon Dominion Chief Profile Skin](30 day). Bonus: Troops Health+2.5%.",
+    "bonus": {
+      "stat": "Troops Health",
+      "value": "+2.5%"
+    },
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "star-radiance",
+    "name": "Star Radiance",
+    "img": "/images/skins/star-radiance.png",
+    "skinType": "Chief Profile",
+    "description": "Grants the [ٍStar Radiance Chief Profile Skin](Permanent). Bonus: Troops Health+2%.",
+    "bonus": {
+      "stat": "Troops Health",
+      "value": "+2%"
+    },
+    "sources": ["Prestige Merit Shop 300M Points (VIP 12)"]
+  },
+  {
+    "id": "arena-of-stars",
+    "name": "Arena of Stars",
+    "img": "/images/skins/arena-of-stars.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Arena of Stars](7 days). Awarded exclusively to the top 3 players in the Arena’s final weekly rankings. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Arena"]
+  },
+  {
+    "id": "bountiful-dream",
+    "name": "Bountiful Dream",
+    "img": "/images/skins/bountiful-dream.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Bountiful Dream City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Thanksgiving 2025 Event"]
+  },
+  {
+    "id": "cloud-fantasy",
+    "name": "Cloud Fantasy",
+    "img": "/images/skins/cloud-fantasy.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Cloud Fantasy City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Recall Road (Dreamscape Memory)"]
+  },
+  {
+    "id": "dancing-lion",
+    "name": "Dancing Lion",
+    "img": "/images/skins/dancing-lion.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Dancing Lion City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Gilded Jade"]
+  },
+  {
+    "id": "deep-connection",
+    "name": "Deep Connection",
+    "img": "/images/skins/deep-connection.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Deep Connection City Skin] (Permanent / 30 days). — awarded based on personal ranking in event: Rank 1–15: Permanent Rank 16–30: 30 days Bonus: Troop Attack +2%. Couple Perks: ( Sweet Memories & Deep Connection ): Trigger the special effect by placing both cities exactly as shown below . Swapping positions or any misalignment will cause the effect to fail.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Event (Valentine's Day 2025)"]
+  },
+  {
+    "id": "dragonhold",
+    "name": "Dragonhold",
+    "img": "/images/skins/dragonhold.png",
+    "skinType": "City Skin",
+    "description": "Gives [Dragonhold City Skin] for (30 days). Supreme Frostdragon Tyrant's Benefits for the chief to dominate the Capital longest. Bonus: Troops Attack +5%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+5%"
+    },
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "dragons-blessing",
+    "name": "Dragon’s Blessing",
+    "img": "/images/skins/dragons-blessing.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Dragon's Blessing City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Adventue Caravan"]
+  },
+  {
+    "id": "dream-of-atlantis",
+    "name": "Dream of Atlantis",
+    "img": "/images/skins/dream-of-atlantis.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Dream of Atlantis](30 Days). Awarded to the Top 15 players in the Fishing Event. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "dreamheart",
+    "name": "Dreamheart",
+    "img": "/images/skins/dreamheart.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Dreamheart City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Seasonal Sweetness (Valentine 2024)", "Adventue Caravan"]
+  },
+  {
+    "id": "easter-egg-plant",
+    "name": "Easter Egg-Plant",
+    "img": "/images/skins/easter-egg-plant.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Easter Egg-Plant City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Easter Event"]
+  },
+  {
+    "id": "emperor-penguin-slopes",
+    "name": "Emperor Penguin Slopes",
+    "img": "/images/skins/emperor-penguin-slopes.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Emperor Penguin Slopes City Skin] (Permanent / 30 days). — awarded based on personal ranking in event: Rank 1–10: Permanent Rank 11–25: 30 days Bonus: Troop Attack +2%.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Tundra Games Event"]
+  },
+  {
+    "id": "fiery-melody",
+    "name": "Fiery Melody",
+    "img": "/images/skins/fiery-melody.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Fiery Melody City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Aurora Melody"]
+  },
+  {
+    "id": "forgetown",
+    "name": "Forgetown",
+    "img": "/images/skins/forgetown.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Forgetown City Skin] (Permanent). Bonus: Troop Attack +2%.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Emporium of Enigma Shop (Frosty Fortune)"]
+  },
+  {
+    "id": "frost-sphere",
+    "name": "Frost Sphere",
+    "img": "/images/skins/frost-sphere.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Frost Sphere City Skin] (Permanent). Prestige-exclusive skin unlocked at VIP 12. Submit 100 puzzle pieces in the Prestige Shop to claim it. Bonus: Troops Attack +5.0% Domain Effect: Nearby cities affected: 8 Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Bonus: Allies within 2 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +5.0% - Defender Troops Defense When Defending Own City +5.0% - Training Speed +2.0% - Resource Gathering Speed +5.0%",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+5.0%"
+    },
+    "sources": ["Prestige Shop"]
+  },
+  {
+    "id": "frost-sphere-ii",
+    "name": "Frost Sphere II",
+    "img": "/images/skins/frost-sphere-ii.png",
+    "skinType": "City Skin",
+    "description": "Bonus: Troops Attack +10.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 8 Domain Bonus: Allies within 2 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +10.0% - Defender Troops Defense When Defending Own City +10.0% - Training Speed +4.0% - Resource Gathering Speed +10.0%",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+10.0%"
+    },
+    "sources": ["Prestige Merit Shop 75M Points"]
+  },
+  {
+    "id": "frost-sphere-iii",
+    "name": "Frost Sphere III",
+    "img": "/images/skins/frost-sphere-iii.png",
+    "skinType": "City Skin",
+    "description": "Bonus: Troops Attack +20.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 24 Domain Bonus: Allies within 4 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +15% - Defender Troops Defense When Defending Own City +15% - Training Speed +6% - Resource Gathering Speed +15%",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+20.0%"
+    },
+    "sources": ["Prestige Merit Shop 150M Points"]
+  },
+  {
+    "id": "frost-sphere-iv",
+    "name": "Frost Sphere IV",
+    "img": "/images/skins/frost-sphere-iv.png",
+    "skinType": "City Skin",
+    "description": "Bonus: Troops Attack +30.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 24 Domain Bonus: Allies within 4 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +20% - Defender Troops Defense When Defending Own City +20% - Training Speed +9% - Resource Gathering Speed +20%",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+30.0%"
+    },
+    "sources": ["Prestige Merit Shop 225M Points"]
+  },
+  {
+    "id": "frost-sphere-v",
+    "name": "Frost Sphere V",
+    "img": "/images/skins/frost-sphere-v.png",
+    "skinType": "City Skin",
+    "description": "Bonus: Troops Attack +40.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 24 Domain Bonus: Allies within 4 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +25% - Defender Troops Defense When Defending Own City +25% - Training Speed +12% - Resource Gathering Speed +25%",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+40.0%"
+    },
+    "sources": ["Prestige Merit Shop 300M Points"]
+  },
+  {
+    "id": "frost-sphere-vi",
+    "name": "Frost Sphere VI",
+    "img": "/images/skins/frost-sphere-vi.png",
+    "skinType": "City Skin",
+    "description": "Bonus: Troops Attack +50.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 48 Domain Bonus: Allies within 6 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +30% - Defender Troops Defense When Defending Own City +30% - Training Speed +15% - Resource Gathering Speed +30%",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+50.0%"
+    },
+    "sources": ["Prestige Merit Shop 375M Points"]
+  },
+  {
+    "id": "gilded-dragonboat",
+    "name": "Gilded Dragonboat",
+    "img": "/images/skins/gilded-dragonboat.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Gilded Dragonboat City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Dream Miracle (Silverfrost Shop) may 2026"]
+  },
+  {
+    "id": "high-diver",
+    "name": "High Diver",
+    "img": "/images/skins/high-diver.png",
+    "skinType": "City Skin",
+    "description": "Grants the [High Diver City Skin] (Permanent / 30 days). — awarded based on personal ranking in event: Rank 1–10: Permanent Rank 11–25: 30 days Bonus: Troop Attack +2%.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Tundra Games Event"]
+  },
+  {
+    "id": "knight-of-the-watch",
+    "name": "Knight of the Watch",
+    "img": "/images/skins/knight-of-the-watch.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Knight of the Watch](14 days) after battling in the Ultimate tier of the Alliance Championship.",
+    "sources": ["Alliance Championship"]
+  },
+  {
+    "id": "leaping-koi",
+    "name": "Leaping Koi",
+    "img": "/images/skins/leaping-koi.png",
+    "skinType": "City Skin",
+    "description": "Grants the [leaping Koi City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Glided Jade 2026"]
+  },
+  {
+    "id": "lost-city",
+    "name": "Lost City",
+    "img": "/images/skins/lost-city.png",
+    "skinType": "City Skin",
+    "description": "Grants [Lost City Skin] (Permanent). Can be obtained from the Adventure Caravan Shop during the Tundra Adventure event. Bonus: Troop Attack +2%.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Adventure Caravan Shop"]
+  },
+  {
+    "id": "pyrois",
+    "name": "Pyrois",
+    "img": "/images/skins/pyrois.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Pyrois City Skin](14 days). a President-exclusive reward, awarded only to the State President.",
+    "sources": ["Sunfire Castle Battle"]
+  },
+  {
+    "id": "snowman-rhapsody",
+    "name": "Snowman Rhapsody",
+    "img": "/images/skins/snowman-rhapsody.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Snowman Rhapsody City Skin] (Permanent). Bonus: Troop Attack +2%.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Snowbusters Event"]
+  },
+  {
+    "id": "snowy-bells",
+    "name": "Snowy Bells",
+    "img": "/images/skins/snowy-bells.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Snowy Bells City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Christmas 2025 Event (Curiosity Shop)"]
+  },
+  {
+    "id": "sporehaven",
+    "name": "Sporehaven",
+    "img": "/images/skins/sporehaven.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Sporehaven](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Skin Shop"]
+  },
+  {
+    "id": "spring-watcher",
+    "name": "Spring Watcher",
+    "img": "/images/skins/spring-watcher.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Spring Watcher City Skin](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Radiant Melody 2026 (Radiant Bazaar Shop)"]
+  },
+  {
+    "id": "stromhold-fortress",
+    "name": "Stormhold Fortress",
+    "img": "/images/skins/stromhold-fortress.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Stormhold Fortress](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "sweet-memories",
+    "name": "Sweet Memories",
+    "img": "/images/skins/sweet-memories.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Sweet Memories City Skin] (Permanent / 30 days). — awarded based on personal ranking in event: Rank 1–15: Permanent Rank 16–30: 30 days Bonus: Troop Attack +2%. Couple Perks: ( Sweet Memories & Deep Connection ): Trigger the special effect by placing both cities exactly as shown below . Swapping positions or any misalignment will cause the effect to fail.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Event (Valentine's Day 2025)"]
+  },
+  {
+    "id": "treasure-stronghold",
+    "name": "Treasure Stronghold",
+    "img": "/images/skins/treasure-stronghold.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Treasure Stronghold](Permanent). Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "value": "+2%"
+    },
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "windmill-village",
+    "name": "Windmill Village",
+    "img": "/images/skins/windmill-village.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Windmill Village City Skin] (Permanent). Bonus: Troop Attack +2%.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Emporium of Enigma Shop (Frosty Fortune)"]
+  },
+  {
+    "id": "winter-watcher",
+    "name": "Winter Watcher",
+    "img": "/images/skins/winter-watcher.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Winter Watcher City Skin] (14/30 days) — awarded based on occupation ranking (by total personal occupation time): Rank 2–3: 30 days Rank 4–10: 14 days Bonus: Troop Attack +2%.",
+    "bonus": {
+      "stat": "Troop Attack",
+      "value": "+2%"
+    },
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "winter-of-plenty",
+    "name": "Winter of Plenty",
+    "img": "/images/skins/winter-of-plenty.png",
+    "skinType": "City Skin",
+    "description": "Grants the [Winter of Plenty City Skin] (Permanent). Rookie Growth exclusive reward, one time event available at the beginning of the game. Reach 4M Power within 7 days by completing daily tasks to claim it. Bonus: Resource Gathering Speed +5%.",
+    "bonus": {
+      "stat": "Resource Gathering Speed",
+      "value": "+5%"
+    },
+    "sources": ["Rookie's Growth"]
+  },
+  {
+    "id": "ace-adventure",
+    "name": "Ace Adventure",
+    "img": "/images/skins/ace-adventure.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Ace Adventure March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Dawn Feast 2025 (Top-up Benefits)"]
+  },
+  {
+    "id": "auspicious-beast",
+    "name": "Auspicious Beast",
+    "img": "/images/skins/auspicious-beast.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Auspicious Beast March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Adventure Caravan"]
+  },
+  {
+    "id": "blazing-metro",
+    "name": "Blazing Meteor",
+    "img": "/images/skins/blazing-metro.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Blazing Meteor March Skin] (Permanent). Prestige-exclusive skin unlocked at VIP 12. Submit 100 puzzle pieces in the Prestige Shop to claim it. Bonus: Hunting March Speed +10%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+10%"
+    },
+    "sources": ["Prestige Shop"]
+  },
+  {
+    "id": "blazing-meteor-ii",
+    "name": "Blazing Meteor II",
+    "img": "/images/skins/blazing-meteor-ii.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Blazing Meteor II March Skin] (Permanent). Bonus: Hunting March Speed +10%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+10%"
+    },
+    "sources": ["Prestige Merit Shop 225M Points"]
+  },
+  {
+    "id": "brute-mammamoth",
+    "name": "Brute Mammoth",
+    "img": "/images/skins/brute-mammamoth.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Brute Mammoth March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Emporium of Enigma Shop (Frosty Fortune)"]
+  },
+  {
+    "id": "bubble-fantasy",
+    "name": "Bubble Fantasy",
+    "img": "/images/skins/bubble-fantasy.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Bubble Fantasy March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["WOS 3rd Anniversary"]
+  },
+  {
+    "id": "bunny-special-forces",
+    "name": "Bunny Special Forces",
+    "img": "/images/skins/bunny-special-forces.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Bunny Special Forces March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Easter Event 2023"]
+  },
+  {
+    "id": "candy-kaboom",
+    "name": "Candy Kaboom",
+    "img": "/images/skins/candy-kaboom.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Candy Kaboom March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["WOS 1st Anniversary"]
+  },
+  {
+    "id": "cupid-patrol",
+    "name": "Cupid Patrol",
+    "img": "/images/skins/cupid-patrol.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Cupid Patrol March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Valentine's Day"]
+  },
+  {
+    "id": "cyclone-runner",
+    "name": "Cyclone Runner",
+    "img": "/images/skins/cyclone-runner.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Cyclone Runner March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Tundra Games Event"]
+  },
+  {
+    "id": "egg-pert",
+    "name": "Egg-pert",
+    "img": "/images/skins/egg-pert.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Egg-pert March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Colorful Easter 2024 (Top-up Benefits)"]
+  },
+  {
+    "id": "fireclaw-hunter",
+    "name": "Fireclaw Hunter",
+    "img": "/images/skins/fireclaw-hunter.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Fireclaw Hunter March Skin] (30 day,14 day). Bonus: Hunting March Speed +5%",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Tundra Arms League"]
+  },
+  {
+    "id": "freeze-patrol",
+    "name": "Freeze Patrol",
+    "img": "/images/skins/freeze-patrol.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Freeze Patrol Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Snowbusters"]
+  },
+  {
+    "id": "frost-dragon",
+    "name": "Frost Dragon",
+    "img": "/images/skins/frost-dragon.png",
+    "skinType": "March Skin",
+    "description": "Gives [Frost Dragon March Skin] for (30 days). Supreme Frostdragon Tyrant's Benefits for the chief to dominate the Capital longest. Bonus: Hunting March Speed +10%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+10%"
+    },
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "honeymoon-trip",
+    "name": "Honeymoon Trip",
+    "img": "/images/skins/honeymoon-trip.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Honeymoon Trip March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Event Shop (Valentine's Day 2025)"]
+  },
+  {
+    "id": "hornwrath-herald",
+    "name": "Hornwrath Herald",
+    "img": "/images/skins/hornwrath-herald.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Hornwrath Herald March Skin] (30 Day). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Tundra Arms League"]
+  },
+  {
+    "id": "hymn-of-the-aurora",
+    "name": "Hymn of the Aurora",
+    "img": "/images/skins/hymn-of-the-aurora.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Hymn of the Aurora March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Christmas 2025 Event"]
+  },
+  {
+    "id": "ice-journey",
+    "name": "Ice Journey",
+    "img": "/images/skins/ice-journey.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Ice Journey March Skin](Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "incubus-knight",
+    "name": "Incubus Knight",
+    "img": "/images/skins/incubus-knight.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Incubus Knight March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Halloween 2025"]
+  },
+  {
+    "id": "knight-of-conquest",
+    "name": "Knight of Conquest",
+    "img": "/images/skins/knight-of-conquest.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Knight of Conquest March Skin](14 days) after battling in the Ultimate tier of the Alliance Championship.",
+    "sources": ["Alliance Championship"]
+  },
+  {
+    "id": "koi-lantern",
+    "name": "Koi Lantern",
+    "img": "/images/skins/koi-lantern.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Koi Lantern March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Glided Jade 2026"]
+  },
+  {
+    "id": "lotus-lanternshine",
+    "name": "Lotus Lanternshine",
+    "img": "/images/skins/lotus-lanternshine.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Lotus Lanternshine March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Moonlight Festival 2024"]
+  },
+  {
+    "id": "magic-teddy",
+    "name": "Magic Teddy",
+    "img": "/images/skins/magic-teddy.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Magic Teddy March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Children's Day 2024"]
+  },
+  {
+    "id": "mecha-pincer",
+    "name": "Mecha Pincer",
+    "img": "/images/skins/mecha-pincer.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Mecha Pincer March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Tundra Adventure 2025"]
+  },
+  {
+    "id": "moonlight-serenade",
+    "name": "Moonlight Serenade",
+    "img": "/images/skins/moonlight-serenade.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Moonlight Serenade March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Moonlight Festival"]
+  },
+  {
+    "id": "mushroom-fairy",
+    "name": "Mushroom Fairy",
+    "img": "/images/skins/mushroom-fairy.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Mushroom Fairy March Skin](Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Skin Shop"]
+  },
+  {
+    "id": "nightmare-jack-o-mobile",
+    "name": "Nightmare Jack-o-Mobile",
+    "img": "/images/skins/nightmare-jack-o-mobile.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Nightmare Jack-o-Mobile March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Halloween"]
+  },
+  {
+    "id": "ninja-meow",
+    "name": "Ninja Meow",
+    "img": "/images/skins/ninja-meow.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Ninja Meow March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Recall Road (Dreamscape Memory)"]
+  },
+  {
+    "id": "panda-fury",
+    "name": "Panda Fury",
+    "img": "/images/skins/panda-fury.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Panda Fury March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Gilded Jade"]
+  },
+  {
+    "id": "phantom-envoy",
+    "name": "Phantom Envoy",
+    "img": "/images/skins/phantom-envoy.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Phantom Envoy March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Halloween 2024"]
+  },
+  {
+    "id": "phlegon",
+    "name": "Phlegon",
+    "img": "/images/skins/phlegon.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Phlegon March Skin](14 days). a President-exclusive reward, awarded only to the State President.",
+    "sources": ["Sunfire Castle Battle"]
+  },
+  {
+    "id": "rainbow-unicorn",
+    "name": "Rainbow Unicorn",
+    "img": "/images/skins/rainbow-unicorn.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Rainbow Unicorn March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Children's Day 2023"]
+  },
+  {
+    "id": "santas-reindeer",
+    "name": "Santa’s Reindeer",
+    "img": "/images/skins/santas-reindeer.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Santa's Reindeer March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Christmas Festival 2025"]
+  },
+  {
+    "id": "snow-sovereign",
+    "name": "Snow Sovereign",
+    "img": "/images/skins/snow-sovereign.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Snow Sovereign March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Tundra Games Event"]
+  },
+  {
+    "id": "snowmobile",
+    "name": "Snowmobile",
+    "img": "/images/skins/snowmobile.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Snowmobile March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Emporium of Enigma Shop (Frosty Fortune)"]
+  },
+  {
+    "id": "sunseeker-express",
+    "name": "Sunseeker Express",
+    "img": "/images/skins/sunseeker-express.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Sunseeker Express March Skin](7 days). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["State of Power Shop"]
+  },
+  {
+    "id": "supersonic-bunny",
+    "name": "Supersonic Bunny",
+    "img": "/images/skins/supersonic-bunny.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Supersonic Bunny March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Radiant Melody 2026 (Top-up Benefits)"]
+  },
+  {
+    "id": "symphonic-parade",
+    "name": "Symphonic Parade",
+    "img": "/images/skins/symphonic-parade.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Symphonic Parade March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Aurora Melody"]
+  },
+  {
+    "id": "toy-army",
+    "name": "Toy Army",
+    "img": "/images/skins/toy-army.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Toy Army March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Childhood Memory Festival 2025 (Top-up Benefits)"]
+  },
+  {
+    "id": "tundra-adventure",
+    "name": "Tundra Adventure",
+    "img": "/images/skins/tundra-adventure.png",
+    "skinType": "March Skin",
+    "description": "Grants [Tundra Adventure March Skin] (Permanent). Can be obtained from the Adventure Caravan Shop during the Tundra Adventure event. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Adventure Caravan Shop"]
+  },
+  {
+    "id": "tundra-cannon",
+    "name": "Tundra Cannon",
+    "img": "/images/skins/tundra-cannon.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Tundra Cannon March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Labor Day 2023 (Top-up Benefits)"]
+  },
+  {
+    "id": "turkey-dash",
+    "name": "Turkey Dash",
+    "img": "/images/skins/turkey-dash.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Turkey Dash March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Thanksgiving"]
+  },
+  {
+    "id": "turkey-tornado",
+    "name": "Turkey Tornado",
+    "img": "/images/skins/turkey-tornado.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Turkey Tornado March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Thanksgiving"]
+  },
+  {
+    "id": "whale-waves",
+    "name": "Whale Waves",
+    "img": "/images/skins/whale-waves.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Whale Waves March Skin](30 Days). Awarded to the Top 6 players in the Fishing Event. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "wilderness-warrior",
+    "name": "Wilderness Warrior",
+    "img": "/images/skins/wilderness-warrior.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Wilderness Warrior March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Thanksgiving 2025 Event"]
+  },
+  {
+    "id": "wind-charger",
+    "name": "Wind Charger",
+    "img": "/images/skins/wind-charger.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Wind Charger March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Dream Miracle (Silverfrost Shop) May 2026"]
+  },
+  {
+    "id": "wing-of-the-icy-wind",
+    "name": "Wing of the Icy Wind",
+    "img": "/images/skins/wing-of-the-icy-wind.png",
+    "skinType": "March Skin",
+    "description": "50,000 Top-up points Grants the [Wing of the Icy Wind March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": ["Top-up Gift"]
+  },
+  {
+    "id": "wish-express",
+    "name": "Wish Express",
+    "img": "/images/skins/wish-express.png",
+    "skinType": "March Skin",
+    "description": "Grants the [Wish Express March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "value": "+5%"
+    },
+    "sources": []
+  },
+  {
+    "id": "autumn-reverie-3",
+    "name": "Autumn Reverie",
+    "img": "/images/skins/autumn-reverie-3.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Autumn Reverie Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Thanksgiving 2025 Event"]
+  },
+  {
+    "id": "dream-keeper-3",
+    "name": "Dream Keeper",
+    "img": "/images/skins/dream-keeper-3.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Dream Keeper Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Christmas 2025 Event"]
+  },
+  {
+    "id": "endless-bounty",
+    "name": "Endless Bounty",
+    "img": "/images/skins/endless-bounty.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Endless Bounty Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Glided Jade 2026"]
+  },
+  {
+    "id": "festive-moment",
+    "name": "Festive Moment",
+    "img": "/images/skins/festive-moment.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Festive Moment Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["2nd Anniversary"]
+  },
+  {
+    "id": "garden-of-delights",
+    "name": "Garden of Delights",
+    "img": "/images/skins/garden-of-delights.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Garden of Delights Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Childhood Memory Festival 2025"]
+  },
+  {
+    "id": "golden-symphony-2",
+    "name": "Golden Symphony",
+    "img": "/images/skins/golden-symphony-2.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Golden Symphony Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Aurora Melody 2025"]
+  },
+  {
+    "id": "luminous-waves-2",
+    "name": "Luminous Waves",
+    "img": "/images/skins/luminous-waves-2.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Luminous Waves Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Blessing of Daylight"]
+  },
+  {
+    "id": "perpetual-treads",
+    "name": "Perpetual Treads",
+    "img": "/images/skins/perpetual-treads.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Perpetual Treads Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Tundra Games 2025"]
+  },
+  {
+    "id": "pumpkin-head",
+    "name": "Pumpkin Head",
+    "img": "/images/skins/pumpkin-head.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Pumpkin Head Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Halloween Event 2025"]
+  },
+  {
+    "id": "snowhare-scholar",
+    "name": "Snowhare Scholar",
+    "img": "/images/skins/snowhare-scholar.png",
+    "skinType": "Name Card",
+    "description": "Grants the [Snowhare Scholar Name Card](Permanent/7 days/3 days). — awarded based on personal ranking in event: Rank 1–25: Permanent Rank 26–50: 7 days Rank 51-100: 3 days Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+1.5%"
+    },
+    "sources": ["Radiant Melody 2026 (Eggciting Fiesta)"]
+  },
+  {
+    "id": "autumn-reverie-2",
+    "name": "Autumn Reverie",
+    "img": "/images/skins/autumn-reverie-2.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Autumn Reverie Nameplate](Permanent).",
+    "sources": ["Thanksgiving 2025 Event"]
+  },
+  {
+    "id": "birthday-nameplate",
+    "name": "Birthday Nameplate",
+    "img": "/images/skins/birthday-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants [Birthday Nameplate](30-days). Unlocked after completing a survey received upon reaching a $1,000 top-up milestone. Delivered on your birthday every year.",
+    "sources": ["Birthday Gift Pack"]
+  },
+  {
+    "id": "dream-keeper",
+    "name": "Dream Keeper",
+    "img": "/images/skins/dream-keeper.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Dream Keeper Nameplate](Permanent).",
+    "sources": ["Christmas 2025 Event (Curiosity Shop)"]
+  },
+  {
+    "id": "easter-bunny-nameplate",
+    "name": "Easter Bunny Nameplate",
+    "img": "/images/skins/easter-bunny-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Easter Bunny Nameplate](Permanent).",
+    "sources": ["Pack (Easter Event 2023)"]
+  },
+  {
+    "id": "endless-bounty-3",
+    "name": "Endless Bounty",
+    "img": "/images/skins/endless-bounty-3.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Endless Bounty Nameplate](Permanent).",
+    "sources": ["Glided Jade 2026"]
+  },
+  {
+    "id": "fantasy-mushroom-nameplate",
+    "name": "Fantasy Mushroom Nameplate",
+    "img": "/images/skins/fantasy-mushroom-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Fantasy Mushroom Nameplate] (Permanent).",
+    "sources": ["Skin Shop"]
+  },
+  {
+    "id": "frostwing-nameplate",
+    "name": "Frostwing Nameplate",
+    "img": "/images/skins/frostwing-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Gives [Frostwing Nameplate] for 30 days. Supreme Frostdragon Tyrant's Benefits for the chief to dominate the Capital longest.",
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "golden-symphony-nameplate",
+    "name": "Golden Symphony Nameplate",
+    "img": "/images/skins/golden-symphony-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Golden Symphony Nameplate](Permanent).",
+    "sources": ["Aurora Melody"]
+  },
+  {
+    "id": "honor-feather-nameplate",
+    "name": "Honor Feather Nameplate",
+    "img": "/images/skins/honor-feather-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Gives [Honor Feather Nameplate] for 7 days.",
+    "sources": ["State of Power Shop"]
+  },
+  {
+    "id": "ice-age-nameplate",
+    "name": "Ice Age Nameplate",
+    "img": "/images/skins/ice-age-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Ice Age Nameplate](Permanent). VIP 12 Prestige-exclusive, available in the Prestige Shop once Prestige Benefits are unlocked.",
+    "sources": ["Prestige Shop"]
+  },
+  {
+    "id": "jubilee-pact-2",
+    "name": "Jubilee Pact",
+    "img": "/images/skins/jubilee-pact-2.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Jubilee Pact Nameplate](Permanent).",
+    "sources": ["Silverfrost Shop"]
+  },
+  {
+    "id": "knights-glory-nameplate",
+    "name": "Knight’s Glory Nameplate",
+    "img": "/images/skins/knights-glory-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Knight's Glory Nameplate] (14 days) after battling in the Ultimate tier of the Alliance Championship.",
+    "sources": ["Alliance Championship"]
+  },
+  {
+    "id": "master-of-the-seas-nameplate",
+    "name": "Master of the Seas Nameplate",
+    "img": "/images/skins/master-of-the-seas-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Master of the Seas Nameplate] (Permanent). Collect all sunken chests to claim this nameplate in Fishing Event.",
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "new-years-wish",
+    "name": "New Year’s Wish",
+    "img": "/images/skins/new-years-wish.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [New Year's Wish Nameplate](Permanent).",
+    "sources": ["New Year 2023"]
+  },
+  {
+    "id": "romantic-gentleman-nameplate",
+    "name": "Romantic Gentleman Nameplate",
+    "img": "/images/skins/romantic-gentleman-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Romantic Gentleman Nameplate](Permanent).",
+    "sources": ["Pack (Valentine's Event 2025)"]
+  },
+  {
+    "id": "rose-lady-nameplate",
+    "name": "Rose Lady Nameplate",
+    "img": "/images/skins/rose-lady-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Rose Lady Nameplate](Permanent).",
+    "sources": ["Pack (Valentine's Event 2025)"]
+  },
+  {
+    "id": "snowbusters-squad-nameplate",
+    "name": "Snowbusters Squad Nameplate",
+    "img": "/images/skins/snowbusters-squad-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Snowbusters Squad Nameplate](Permanent).",
+    "sources": ["Snowbusters Event"]
+  },
+  {
+    "id": "song-of-ocean-nameplate",
+    "name": "Song of Ocean Nameplate",
+    "img": "/images/skins/song-of-ocean-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Song of Ocean Nameplate](Permanent).",
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "steam-mania-nameplate",
+    "name": "Steam Mania Nameplate",
+    "img": "/images/skins/steam-mania-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Grants the [Steam Mania Nameplate] (Permanent).",
+    "sources": []
+  },
+  {
+    "id": "sun-crown-nameplate",
+    "name": "Sun Crown Nameplate",
+    "img": "/images/skins/sun-crown-nameplate.png",
+    "skinType": "Nameplate",
+    "description": "Gives the [Sun Crown Nameplate] for (7/14/30) days. Obtained by ranking Top 300 in the King of Icefield event.",
+    "sources": ["King of Icefield"]
+  },
+  {
+    "id": "gate-of-time",
+    "name": "Gate of Time",
+    "img": "/images/skins/gate-of-time.png",
+    "skinType": "Teleport Skin",
+    "description": "Grants the [Gate of Time Teleport Skin](Permanent). Bonus: Troops Lethality +2.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+2.5%"
+    },
+    "sources": ["Prestige Merit Shop 150M Points"]
+  },
+  {
+    "id": "petal-rain",
+    "name": "Petal Rain",
+    "img": "/images/skins/petal-rain.png",
+    "skinType": "Teleport Skin",
+    "description": "Grants the [Petal Rain Teleport Skin](Permanent). Bonus: Troops Lethality +2%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+2%"
+    },
+    "sources": ["Silver Shell Event Shop"]
+  },
+  {
+    "id": "storm-of-destruction",
+    "name": "Storm of Destruction",
+    "img": "/images/skins/storm-of-destruction.png",
+    "skinType": "Teleport Skin",
+    "description": "Grants the [Storm of Destruction Teleport Skin](Permanent). Bonus: Troops Lethality +2%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+2%"
+    },
+    "sources": ["Tundra Arms League — Champion Shop"]
+  },
+  {
+    "id": "sword-of-ice",
+    "name": "Sword of Ice",
+    "img": "/images/skins/sword-of-ice.png",
+    "skinType": "Teleport Skin",
+    "description": "Grants the [Sword of Ice Teleport Skin](Permanent). Bonus: Troops Lethality +2%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+2%"
+    },
+    "sources": ["Silver Shell Event Shop"]
+  },
+  {
+    "id": "thunder-summon",
+    "name": "Thunder Summon",
+    "img": "/images/skins/thunder-summon.png",
+    "skinType": "Teleport Skin",
+    "description": "Grants the [Thunder Summon Teleport Skin](Permanent). Bonus: Troops Lethality +2%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "value": "+2%"
+    },
+    "sources": ["Silver Shell Event Shop"]
+  }
+]

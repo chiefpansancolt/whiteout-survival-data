@@ -270,6 +270,58 @@ placeholders) — `img` is `""` for these two rather than a broken link.
 
 ---
 
+### 📦 Items
+
+| Module | Factory   | Items | Description                                                       |
+| ------ | --------- | ----- | ----------------------------------------------------------------- |
+| items  | `items()` | 226   | Functional items — resources, currencies, chests, buffs, and more |
+
+Sourced from the wiki's master item catalog page, which covers 415 items across 18 category tabs.
+Birthday Card entries are skipped (a yearly login freebie with no gameplay data worth tracking), and
+the remaining 17 tabs split into two modules by kind: functional items go here, cosmetic skins go to
+`skins()` below.
+
+`category` is one of 10 values (`Hero Items`, `Pet`, `Gear Materials`, `Chest`, `Buff`,
+`Fire Crystal`, `Experts`, `Teleporter`, `Others`, `Event`), taken directly from the wiki's own tab
+labels. Five items are tagged under more than one tab on the source site (all involving Chest, e.g.
+Seeker's Chest is tagged both `Chest` and `Experts`) — `Chest` wins as the resolved category in
+every case, since it's the more specific classification. `id` is the item's own wiki URL slug rather
+than a freshly-slugified name, since several names repeat across categories (e.g. "Garden of
+Delights" exists as both an Avatar Frame skin and a Name Card skin) and the source slugs are already
+unique.
+
+`sources` is a plain list of where an item drops from (shops, events, activities) — often empty,
+when the wiki doesn't document one. Chest items (50 total) additionally carry an optional
+`rewardRates` loot table (`{ reward, amount, probabilityPercent }[]`), parsed from whichever of two
+structured shapes the page uses — a "Reward Rates" bullet list or an actual
+`Item`/`Quantity`/`Chance` table with the item name cell spanning several tiers — but only 8 of the
+50 chests present their rewards in either structured shape; the rest are prose-only descriptions and
+get no `rewardRates` at all.
+
+---
+
+### 🎨 Skins
+
+| Module | Factory   | Items | Description                                                        |
+| ------ | --------- | ----- | ------------------------------------------------------------------ |
+| skins  | `skins()` | 189   | Cosmetic skins — avatar frames, nameplates, and vehicle/city skins |
+
+The cosmetic half of the same item catalog, across 7 skin types: Avatar Frame (69), March Skin (48),
+City Skin (35), Nameplate (20), Name Card (10), Teleport Skin (5), and Chief Profile (2). Every
+skin's description follows a consistent pattern on the wiki —
+`Grants the [X <Skin Type>] (<duration>).` — but duration itself is too inconsistent to model as a
+structured field (`Permanent`, `30 day`, or a rank-dependent breakdown like
+`Permanent/7 days/3 days` with its own conditional list) and is kept as part of the free-text
+`description` instead.
+
+`bonus` is parsed out separately when the page has a clean `Bonus: <stat> +<value>` line (152 of 189
+skins) — `undefined` when a skin genuinely grants no stat bonus, not just when parsing fails. A
+handful of City Skins (e.g. Frost Sphere VI) have much larger "Domain Bonus" text describing an
+area-of-effect mechanic for nearby allies; that stays in `description` only, since it doesn't reduce
+to a single stat/value pair.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

@@ -1,0 +1,2384 @@
+[
+  {
+    "id": "rechargeable-protection-shield-8h",
+    "name": "(Rechargeable) Protection Shield (8h)",
+    "img": "/images/items/24h-shield.png",
+    "category": "Buff",
+    "description": "Refresh attemps with time; Protects your City from all ennemy attacks and scouting for 8h after it's used. 5 shield Coolddown: 7d to gain a shield.",
+    "sources": []
+  },
+  {
+    "id": "24h-counter-recon",
+    "name": "24h Counter-Recon",
+    "img": "/images/items/24h-counter-recon.png",
+    "category": "Buff",
+    "description": "Prevents enemies from scounting your city for 24h.",
+    "sources": []
+  },
+  {
+    "id": "24h-shield",
+    "name": "24h Shield",
+    "img": "/images/items/24h-shield.png",
+    "category": "Buff",
+    "description": "Protects your City from all ennemy attacks and scouting for 24h.",
+    "sources": []
+  },
+  {
+    "id": "counter-recon",
+    "name": "2h Counter-Recon",
+    "img": "/images/items/24h-counter-recon.png",
+    "category": "Buff",
+    "description": "Prevents enemies from scounting your city for 2h.",
+    "sources": []
+  },
+  {
+    "id": "2h-shield",
+    "name": "2h Shield",
+    "img": "/images/items/24h-shield.png",
+    "category": "Buff",
+    "description": "Protects your City from all ennemy attacks and scouting for 2h.",
+    "sources": []
+  },
+  {
+    "id": "72h-shield",
+    "name": "72h Shield",
+    "img": "/images/items/24h-shield.png",
+    "category": "Buff",
+    "description": "Protects your City from all ennemy attacks and scouting for 72h.",
+    "sources": []
+  },
+  {
+    "id": "8h-counter-recon",
+    "name": "8h Counter-recon",
+    "img": "/images/items/24h-counter-recon.png",
+    "category": "Buff",
+    "description": "Prevents enemies from scounting your city for 8h.",
+    "sources": []
+  },
+  {
+    "id": "8h-shield",
+    "name": "8h Shield",
+    "img": "/images/items/24h-shield.png",
+    "category": "Buff",
+    "description": "Protects your City from all ennemy attacks and scouting for 8h.",
+    "sources": []
+  },
+  {
+    "id": "deployment-capacity-boost-i-2hrs",
+    "name": "Deployment Capacity Boost I (2hrs)",
+    "img": "/images/items/deployment-capacity-boost-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Deployment Capacity by 10% for 2 hours",
+    "sources": []
+  },
+  {
+    "id": "deployment-capacity-boost-ii-12hrs",
+    "name": "Deployment Capacity Boost II (12hrs)",
+    "img": "/images/items/deployment-capacity-boost-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Deployment Capacity by 20% for 12 hours",
+    "sources": []
+  },
+  {
+    "id": "enemy-attack",
+    "name": "Enemy Troops Attack Down I (2hrs)",
+    "img": "/images/items/enemy-attack.png",
+    "category": "Buff",
+    "description": "Lowers enemy Troops Attack by 10% for 2 hours",
+    "sources": []
+  },
+  {
+    "id": "enemy-troops-attack-down-ii-12hrs",
+    "name": "Enemy Troops Attack Down II (12hrs)",
+    "img": "/images/items/enemy-attack.png",
+    "category": "Buff",
+    "description": "Lowers enemy Troops Attack by 20% for 12 hours",
+    "sources": []
+  },
+  {
+    "id": "enemy-troops-defense-down-i-2hrs",
+    "name": "Enemy Troops Defense Down I (2hrs)",
+    "img": "/images/items/enemy-troops-defense-down-i-2hrs.png",
+    "category": "Buff",
+    "description": "Lowers enemy Troops Defense by 10% for 2 hours",
+    "sources": []
+  },
+  {
+    "id": "enemy-troops-defense-down-ii-12hrs",
+    "name": "Enemy Troops Defense Down II (12hrs)",
+    "img": "/images/items/enemy-troops-defense-down-i-2hrs.png",
+    "category": "Buff",
+    "description": "Lowers enemy Troops Defense by 20% for 12 hours",
+    "sources": []
+  },
+  {
+    "id": "expedition",
+    "name": "Expedition",
+    "img": "/images/items/expedition.png",
+    "category": "Buff",
+    "description": "Recalls troops on Marching to destination.",
+    "sources": ["Alliance Shop", "Mystery Shop", "Packs (Conqueror, Glacial Traveller)"]
+  },
+  {
+    "id": "frostdragon-battlefield-rally-speedup-i",
+    "name": "Frostdragon Battlefield Rally Speedup I",
+    "img": "/images/items/frostdragon-battlefield-rally-speedup-i.png",
+    "category": "Buff",
+    "description": "Reduces remaining Rally March Time by 25%",
+    "sources": ["5k Gems"]
+  },
+  {
+    "id": "frostdragon-battlefield-rally-speedup-ii",
+    "name": "Frostdragon Battlefield Rally Speedup II",
+    "img": "/images/items/frostdragon-battlefield-rally-speedup-i.png",
+    "category": "Buff",
+    "description": "Reduces remaining Rally March Time by 50%",
+    "sources": ["Pack (Frostdragon Battlefield Rally Speedup)", "10k Gems"]
+  },
+  {
+    "id": "gathering-speed-boost-24h",
+    "name": "Gathering Speed Boost (24h)",
+    "img": "/images/items/gathering-speed-boost-24h.png",
+    "category": "Buff",
+    "description": "Doubles resource Gathering Speed for 24 hours",
+    "sources": []
+  },
+  {
+    "id": "gathering-speed-boost-8h",
+    "name": "Gathering Speed Boost (8h)",
+    "img": "/images/items/gathering-speed-boost-24h.png",
+    "category": "Buff",
+    "description": "Doubles resource Gathering Speed for 8 hours",
+    "sources": []
+  },
+  {
+    "id": "march-accelerator-i",
+    "name": "March Accelerator I",
+    "img": "/images/items/march-accelerator-i.png",
+    "category": "Buff",
+    "description": "Reduces remaining March Time by 25%",
+    "sources": ["Alliance Shop", "Mystery Shop", "SVS", "Pack (Conqueror Pack)"]
+  },
+  {
+    "id": "march-accelerator-ii",
+    "name": "March Accelerator II",
+    "img": "/images/items/march-accelerator-ii.png",
+    "category": "Buff",
+    "description": "Reduces remaining March Time by 50%",
+    "sources": ["Alliance Shop", "Mystery Shop", "Pack (Glacial Traveller)"]
+  },
+  {
+    "id": "rally",
+    "name": "Rally",
+    "img": "/images/items/rally.png",
+    "category": "Buff",
+    "description": "Only the Rally Captain can recall troops Marching to destination. You can buy using 2000 gems.",
+    "sources": ["Buy Using Gems"]
+  },
+  {
+    "id": "training-capacity-enhance-2h",
+    "name": "Training Capacity Enhance (2h)",
+    "img": "/images/items/training-capacity-enhance-2h.png",
+    "category": "Buff",
+    "description": "Increases the Training Capacity and times for all Troops by 200% for 2 hour(s)",
+    "sources": []
+  },
+  {
+    "id": "troops-attack-up-i-2hrs",
+    "name": "Troops Attack Up I (2hrs)",
+    "img": "/images/items/troops-attack-up-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Troops Attack by 10% for 2 hours",
+    "sources": []
+  },
+  {
+    "id": "troops-attack-up-ii-12hrs",
+    "name": "Troops Attack Up II (12hrs)",
+    "img": "/images/items/troops-attack-up-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Troops Attack by 20% for 12 hours",
+    "sources": []
+  },
+  {
+    "id": "troops-damage-up-i-2hrs",
+    "name": "Troops Damage Up I (2hrs)",
+    "img": "/images/items/troops-damage-up-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Troops Lethality by 10% for 2 hours",
+    "sources": []
+  },
+  {
+    "id": "troops-damage-up-ii-12hrs",
+    "name": "Troops Damage Up II (12hrs)",
+    "img": "/images/items/troops-damage-up-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Troops Lethality by 20% for 12 hours.",
+    "sources": []
+  },
+  {
+    "id": "troops-defense-up-i-2hrs",
+    "name": "Troops Defense Up I (2hrs)",
+    "img": "/images/items/troops-defense-up-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Troops Defense by 10% for 2 hours",
+    "sources": []
+  },
+  {
+    "id": "troops-defense-up-ii-12hrs",
+    "name": "Troops Defense Up II (12hrs)",
+    "img": "/images/items/troops-defense-up-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Troops Defense by 20% for 12 hours",
+    "sources": []
+  },
+  {
+    "id": "troops-health-up-i-2hrs",
+    "name": "Troops Health Up I (2hrs)",
+    "img": "/images/items/troops-health-up-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Troops Health by 10% for 2 hours",
+    "sources": []
+  },
+  {
+    "id": "troops-health-up-ii-12hrs",
+    "name": "Troops Health Up II (12hrs)",
+    "img": "/images/items/troops-health-up-i-2hrs.png",
+    "category": "Buff",
+    "description": "Increases Troops Health by 20% for 12 hours",
+    "sources": []
+  },
+  {
+    "id": "allys-chest",
+    "name": "Ally’s Chest",
+    "img": "/images/items/allys-chest.png",
+    "category": "Chest",
+    "description": "Rewards for all members of the alliance whose chief defeated [Phaethon Mercenaries] in the Fortress Battle. Contains: 2x 100 Gems, 60x 5m Construction Speedups, 60x 5m Research Speedups, 400x 1k (Meat & Wood), 80x 1k Coal and 20x 1k Iron.",
+    "sources": ["Fortress Battle"]
+  },
+  {
+    "id": "arena-star-chest",
+    "name": "Arena Star Chest",
+    "img": "/images/items/arena-star-chest.png",
+    "category": "Chest",
+    "description": "Unlock Holger for a chance to get Arena Star Chests with every Arena battle. Open them for a chance at Mythic Hero Shards, Essence Stones, and other rewards. Reward Rates-Contains one from below- Mythic General Hero Shards ×1…4.0% Essence Stones ×1…6.0% 100 Enhancement XP Component ×1…8.0% 10 Enhancement XP Component ×2…20.0% 1h General Speedup ×1…10.0% 5m General Speedup ×1…52.0%",
+    "sources": ["Arena"],
+    "rewardRates": [
+      {
+        "reward": "Mythic General Hero Shards",
+        "amount": 1,
+        "probabilityPercent": 4.0
+      },
+      {
+        "reward": "Essence Stones",
+        "amount": 1,
+        "probabilityPercent": 6.0
+      },
+      {
+        "reward": "100 Enhancement XP Component",
+        "amount": 1,
+        "probabilityPercent": 8.0
+      },
+      {
+        "reward": "10 Enhancement XP Component",
+        "amount": 2,
+        "probabilityPercent": 20.0
+      },
+      {
+        "reward": "1h General Speedup",
+        "amount": 1,
+        "probabilityPercent": 10.0
+      },
+      {
+        "reward": "5m General Speedup",
+        "amount": 1,
+        "probabilityPercent": 52.0
+      }
+    ]
+  },
+  {
+    "id": "chief-gear-materials-chest",
+    "name": "Chief Gear Materials Chest",
+    "img": "/images/items/chief-gear-materials-chest.png",
+    "category": "Chest",
+    "description": "Contains Chief Gear upgrade items Contains: 1 design plan, 4 polishing solution, 400 Hardened alloy",
+    "sources": ["Crazy Joe", "Mercenary Prestige"]
+  },
+  {
+    "id": "chief-gear-variety-chest",
+    "name": "Chief Gear Variety Chest",
+    "img": "/images/items/chief-gear-variety-chest.png",
+    "category": "Chest",
+    "description": "Contains a random Chief Gear upgrade material Item Quantity Chance Hardened Alloy 5000 0.5% 2500 3% 1200 15% 600 31.5% Polishing Solution 50 0.25% 25 1.5% 12 7.5% 6 15.75% Design Plans 50 0.25% 20 1.5% 10 7.5% 5 15.75%",
+    "sources": [],
+    "rewardRates": [
+      {
+        "reward": "Hardened Alloy",
+        "amount": 5000,
+        "probabilityPercent": 0.5
+      },
+      {
+        "reward": "Hardened Alloy",
+        "amount": 2500,
+        "probabilityPercent": 3
+      },
+      {
+        "reward": "Hardened Alloy",
+        "amount": 1200,
+        "probabilityPercent": 15
+      },
+      {
+        "reward": "Hardened Alloy",
+        "amount": 600,
+        "probabilityPercent": 31.5
+      },
+      {
+        "reward": "Polishing Solution",
+        "amount": 50,
+        "probabilityPercent": 0.25
+      },
+      {
+        "reward": "Polishing Solution",
+        "amount": 25,
+        "probabilityPercent": 1.5
+      },
+      {
+        "reward": "Polishing Solution",
+        "amount": 12,
+        "probabilityPercent": 7.5
+      },
+      {
+        "reward": "Polishing Solution",
+        "amount": 6,
+        "probabilityPercent": 15.75
+      },
+      {
+        "reward": "Design Plans",
+        "amount": 50,
+        "probabilityPercent": 0.25
+      },
+      {
+        "reward": "Design Plans",
+        "amount": 20,
+        "probabilityPercent": 1.5
+      },
+      {
+        "reward": "Design Plans",
+        "amount": 10,
+        "probabilityPercent": 7.5
+      },
+      {
+        "reward": "Design Plans",
+        "amount": 5,
+        "probabilityPercent": 15.75
+      }
+    ]
+  },
+  {
+    "id": "common-radiance-treasure",
+    "name": "Common Radiance Treasure",
+    "img": "/images/items/common-radiance-treasure.png",
+    "category": "Chest",
+    "description": "3 Common Radiance Treasure chests can be assembled into 1 Premium Radiance Treasure chest, and contains: 100 gems (x2), 10 enhancement xp component (x5), 5 mins general speeds (x10)",
+    "sources": ["Journey of Light"]
+  },
+  {
+    "id": "controllers-chest",
+    "name": "Controller’s Chest",
+    "img": "/images/items/controllers-chest.png",
+    "category": "Chest",
+    "description": "Rewards for members of the alliance that took control of a Facility. Contains: 1x Golden Key, 1x Platinum Key, and 2x 5000 Hero Xp.",
+    "sources": ["Fortress Battle"]
+  },
+  {
+    "id": "custom-city-skin-chest",
+    "name": "Custom City Skin Chest",
+    "img": "/images/items/custom-city-skin-chest.png",
+    "category": "Chest",
+    "description": "Contains 6x Different City Skins and 100 Mythic General Hero Shards . Select one item of your choice.",
+    "sources": ["Sliverfrost Shop"]
+  },
+  {
+    "id": "custom-epic-hero-gear-chest",
+    "name": "Custom Epic Hero Gear Chest",
+    "img": "/images/items/custom-epic-hero-gear-chest.png",
+    "category": "Chest",
+    "description": "Grants an Epic Hero Gear of your choice",
+    "sources": ["Arena Shop"]
+  },
+  {
+    "id": "custom-epic-hero-shard-chest",
+    "name": "Custom Epic Hero Shard Chest",
+    "img": "/images/items/custom-epic-hero-shard-chest.png",
+    "category": "Chest",
+    "description": "Grant your choice of the shard for an Epic Hero between Sergey, Patrick, Bahiti, Jessie, or Gina",
+    "sources": []
+  },
+  {
+    "id": "custom-march-skin-chest",
+    "name": "Custom March Skin Chest",
+    "img": "/images/items/custom-march-skin-chest.png",
+    "category": "Chest",
+    "description": "Contains 7x Different March Skins and 20 Mythic General Hero Shards . Select one item of your choice.",
+    "sources": ["Sliverfrost Shop"]
+  },
+  {
+    "id": "custom-mythic-hero-gear-chest",
+    "name": "Custom Mythic Hero Gear Chest",
+    "img": "/images/items/custom-mythic-hero-gear-chest.png",
+    "category": "Chest",
+    "description": "Grants a Mythic Hero Gear of your choice",
+    "sources": ["Arena Shop"]
+  },
+  {
+    "id": "custom-teleport-skin-chest",
+    "name": "Custom Teleport Skin Chest",
+    "img": "/images/items/custom-teleport-skin-chest.png",
+    "category": "Chest",
+    "description": "Contains Thunder Summon (Permanent) , Sword of Ice (Permanent) teleport skins, and 20 Mythic General Hero Shards . Select one item of your choice.",
+    "sources": ["Sliverfrost Shop"]
+  },
+  {
+    "id": "dazzling-radiance-treasure",
+    "name": "Dazzling Radiance Treasure",
+    "img": "/images/items/dazzling-radiance-treasure.png",
+    "category": "Chest",
+    "description": "Dazzling Radiance Treasure contains: mythic general hero shard (x10), lucky hero gear chest (x10), 1 hour general speeds (x10)",
+    "sources": ["Journey of Light"]
+  },
+  {
+    "id": "exquisite-radiance-treasure",
+    "name": "Exquisite Radiance Treasure",
+    "img": "/images/items/exquisite-radiance-treasure.png",
+    "category": "Chest",
+    "description": "Exquisite Radiance Treasure contains: mythic general hero shard (x2), lucky hero gear chest (x2), 1 hour general speeds (x2)",
+    "sources": ["Journey of Light"]
+  },
+  {
+    "id": "fyre-crystal-chest",
+    "name": "Fire Crystal Chest",
+    "img": "/images/items/fyre-crystal-chest.png",
+    "category": "Chest",
+    "description": "Open to randomly receive Fire Crystals Item Quantity Chance Fire Crystals 5 55% 10 27% 20 10.5% 50 5.5% 100 1.5% 200 0.5%",
+    "sources": [],
+    "rewardRates": [
+      {
+        "reward": "Fire Crystals",
+        "amount": 5,
+        "probabilityPercent": 55
+      },
+      {
+        "reward": "Fire Crystals",
+        "amount": 10,
+        "probabilityPercent": 27
+      },
+      {
+        "reward": "Fire Crystals",
+        "amount": 20,
+        "probabilityPercent": 10.5
+      },
+      {
+        "reward": "Fire Crystals",
+        "amount": 50,
+        "probabilityPercent": 5.5
+      },
+      {
+        "reward": "Fire Crystals",
+        "amount": 100,
+        "probabilityPercent": 1.5
+      },
+      {
+        "reward": "Fire Crystals",
+        "amount": 200,
+        "probabilityPercent": 0.5
+      }
+    ]
+  },
+  {
+    "id": "frostsea-chief-chest",
+    "name": "Frostsea Chief Chest",
+    "img": "/images/items/frostsea-chief-chest.png",
+    "category": "Chest",
+    "description": "Randomly contains 2, 3, or 5 Design Plans",
+    "sources": []
+  },
+  {
+    "id": "frostsea-construction-chest",
+    "name": "Frostsea Construction Chest",
+    "img": "/images/items/frostsea-construction-chest.png",
+    "category": "Chest",
+    "description": "Randomly contain 5 5m Construction Speedups or 1h Construction Speedup. 90% chance for 5 5m Construction Speedup 10% chance for 1h Construction Speedup",
+    "sources": ["Fishing Tournament"]
+  },
+  {
+    "id": "frostsea-fishing-chest",
+    "name": "Frostsea Fishing Chest",
+    "img": "/images/items/frostsea-fishing-chest.png",
+    "category": "Chest",
+    "description": "Randomly contains 1 Reel Stabilizer, Lantern, or Ocean Scanner.",
+    "sources": []
+  },
+  {
+    "id": "frostsea-gear-chest",
+    "name": "Frostsea Gear Chest",
+    "img": "/images/items/frostsea-gear-chest.png",
+    "category": "Chest",
+    "description": "Randomly contains 5 10 Enhancement XP Components, 1 100 Enhancement XP Components, or 2 100 Enhancement XP Component.",
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "frostsea-hero-chest",
+    "name": "Frostsea Hero Chest",
+    "img": "/images/items/frostsea-hero-chest.png",
+    "category": "Chest",
+    "description": "Randomly contain 2 Epic General Hero Shards, 1 mythic General Hero Shard, or 2 Mythic General Hero Shards.",
+    "sources": []
+  },
+  {
+    "id": "frostsea-mastery-chest",
+    "name": "Frostsea Mastery Chest",
+    "img": "/images/items/frostsea-mastery-chest.png",
+    "category": "Chest",
+    "description": "Randomly contains 1 Essence Stone or 2 Essence Stones.",
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "frostsea-speedup-chest",
+    "name": "Frostsea Speedup Chest",
+    "img": "/images/items/frostsea-speedup-chest.png",
+    "category": "Chest",
+    "description": "Randomly contains 5 5m General Speedups, 1 1h General Speedup, or 1 3h General Speedup.",
+    "sources": ["Fishing Event"]
+  },
+  {
+    "id": "frostsea-tech-chest",
+    "name": "Frostsea Tech Chest",
+    "img": "/images/items/frostsea-tech-chest.png",
+    "category": "Chest",
+    "description": "Randomly contain 5 5m Research Speedups or 1 1h Research Speedup.",
+    "sources": []
+  },
+  {
+    "id": "frostsea-training-chest",
+    "name": "Frostsea Training Chest",
+    "img": "/images/items/frostsea-training-chest.png",
+    "category": "Chest",
+    "description": "Randomly contain 5 5m Training Speedups or 1h Training Speedup.",
+    "sources": []
+  },
+  {
+    "id": "frostsea-xp-chest",
+    "name": "Frostsea XP Chest",
+    "img": "/images/items/frostsea-xp-chest.png",
+    "category": "Chest",
+    "description": "Randomly contains 1 10,000 Hero CP or 2 10,000 Hero XP.",
+    "sources": []
+  },
+  {
+    "id": "fuel-supply-chest",
+    "name": "Fuel Supply Chest",
+    "img": "/images/items/fuel-supply-chest.png",
+    "category": "Chest",
+    "description": "A chest with 100 Fuel, perfect for clearing snow in the [Snowbusters] event.",
+    "sources": ["Snowbuster"]
+  },
+  {
+    "id": "hunter-pouch",
+    "name": "Hunter Pouch",
+    "img": "/images/items/hunter-pouch.png",
+    "category": "Chest",
+    "description": "Can be obtained by defeating beast during the Gina's Revenge event. Use it to receive ressources. Chance to obtain :100 GemsX1 20% / 10 GemsX(1-3) 50% / Chief Stamina X1 15% / 5m General Speedup X(1-2) 100% / 1.000 Hero XP X1 100%",
+    "sources": ["defeating beast during the Gina's Revenge event"]
+  },
+  {
+    "id": "labyrinth-treasure",
+    "name": "Labyrinth Treasure",
+    "img": "/images/items/labyrinth-treasure.png",
+    "category": "Chest",
+    "description": "A treasure found in the labyrinth. Open it for a chance to obtain items such as underground-themed decorations, Mythic General Hero Shard. Reward Rates-Contains one from below- Luminari Citadel ×1…1.0% Mythic General Hero Shard ×1…0.3% 10 Enhancement XP Component ×5…10.0% Gems ×10…20.0% 5m General Speedup ×1…68.7%",
+    "sources": ["The Labyrinth"],
+    "rewardRates": [
+      {
+        "reward": "Luminari Citadel",
+        "amount": 1,
+        "probabilityPercent": 1.0
+      },
+      {
+        "reward": "Mythic General Hero Shard",
+        "amount": 1,
+        "probabilityPercent": 0.3
+      },
+      {
+        "reward": "10 Enhancement XP Component",
+        "amount": 5,
+        "probabilityPercent": 10.0
+      },
+      {
+        "reward": "Gems",
+        "amount": 10,
+        "probabilityPercent": 20.0
+      },
+      {
+        "reward": "5m General Speedup",
+        "amount": 1,
+        "probabilityPercent": 68.7
+      }
+    ]
+  },
+  {
+    "id": "loot-2",
+    "name": "Loot",
+    "img": "/images/items/loot-2.png",
+    "category": "Chest",
+    "description": "Some of the loot plundered by the [Reapers] are accidentally dropped and scattered all around. Obtained by defeating beasts during the [Hero's Mission] event.",
+    "sources": []
+  },
+  {
+    "id": "lucky-hero-gear-chest",
+    "name": "Lucky Hero Gear Chest",
+    "img": "/images/items/lucky-hero-gear-chest.png",
+    "category": "Chest",
+    "description": "Grant a Hero Gear of Rare or higher Tier. (You also stand a chance to obtain Mythic Gear!) 1% chance for mythic gear 10% chance for epic gear 89% chance for rare gear",
+    "sources": ["Foundry"]
+  },
+  {
+    "id": "lv-1-custom-ressource-chest",
+    "name": "Lv.1 Custom Ressource Chest",
+    "img": "/images/items/lv-1-custom-ressource-chest.png",
+    "category": "Chest",
+    "description": "Grants your choice of 10K Meat, 10K Wood, 2K Coal or 500 Iron",
+    "sources": []
+  },
+  {
+    "id": "lv-2-custom-ressource-chest",
+    "name": "Lv.2 Custom Ressource Chest",
+    "img": "/images/items/lv-1-custom-ressource-chest.png",
+    "category": "Chest",
+    "description": "Grants your choice of 10K Meat, 100K Wood, 20K Coal or 5K Iron.",
+    "sources": []
+  },
+  {
+    "id": "lv-3-custom-ressource-chest",
+    "name": "Lv.3 Custom Ressource Chest",
+    "img": "/images/items/lv-3-custom-ressource-chest.png",
+    "category": "Chest",
+    "description": "Grant your choice of 1M Meat, 1M Wood, 200K Coal or 50K Iron.",
+    "sources": []
+  },
+  {
+    "id": "mercenary-help-chest",
+    "name": "Mercenary Help Chest",
+    "img": "/images/items/mercenary-help-chest.png",
+    "category": "Chest",
+    "description": "It is your reward after helping your allies to complete the Mercenary Challenge in the [Mercenary Prestige] event. It is a testimony to your courage and friendship with your allies. Contains: Mythic General Hero Shard 5% Epic General Hero Shard 20% 100 Gems 25% 1h General Speedup 20% 5m General Speedup x2 100%",
+    "sources": []
+  },
+  {
+    "id": "mobilization-chest",
+    "name": "Mobilization Chest",
+    "img": "/images/items/mobilization-chest.png",
+    "category": "Chest",
+    "description": "This supply chest is prepared for Alliance Mobilization and contains a random reward. Reward Rates-Contains one from below- Mythic General Hero Shard ×1…3.0% Lucky Hero Gear Chest ×1…4.0% 1,000 Gems ×1…6.0% 100 Enhancement XP Component ×1…10.0% 5m General Speedup ×2…37.0% 100 Gems ×1…40.0%",
+    "sources": ["Alliance mobilization"],
+    "rewardRates": [
+      {
+        "reward": "Mythic General Hero Shard",
+        "amount": 1,
+        "probabilityPercent": 3.0
+      },
+      {
+        "reward": "Lucky Hero Gear Chest",
+        "amount": 1,
+        "probabilityPercent": 4.0
+      },
+      {
+        "reward": "1,000 Gems",
+        "amount": 1,
+        "probabilityPercent": 6.0
+      },
+      {
+        "reward": "100 Enhancement XP Component",
+        "amount": 1,
+        "probabilityPercent": 10.0
+      },
+      {
+        "reward": "5m General Speedup",
+        "amount": 2,
+        "probabilityPercent": 37.0
+      },
+      {
+        "reward": "100 Gems",
+        "amount": 1,
+        "probabilityPercent": 40.0
+      }
+    ]
+  },
+  {
+    "id": "pet-advancement-materials-custom-chest",
+    "name": "Pet Advancement Materials Custom Chest",
+    "img": "/images/items/pet-advancement-materials-custom-chest.png",
+    "category": "Chest",
+    "description": "Gives one of the following rewards of your choice: Taming Manual *7, Energizing Potion *2, Strengthening Serum *1.",
+    "sources": ["Mystery Shop", "Alliance Shop", "Stronghold"]
+  },
+  {
+    "id": "premium-radiance-treasure",
+    "name": "Premium Radiance Treasure",
+    "img": "/images/items/premium-radiance-treasure.png",
+    "category": "Chest",
+    "description": "3x Premium Radiance Treasure chests can be assembled into 1x Exquisite Radiance Treasure chest (75% chance) or 1x Dazzling Radiance Treasure chest (25% chance), and contains: 100 gems (x5), 100 enhancement xp component (x2), 1 hour general speeds (x2)",
+    "sources": ["Journey of Light"]
+  },
+  {
+    "id": "random-chief-charm-material-chest",
+    "name": "Random Chief Charm Material Chest",
+    "img": "/images/items/random-chief-charm-material-chest.png",
+    "category": "Chest",
+    "description": "Contains a random Chief Charm upgrade material Item Quantity Chance Charm Guides 2 31.5% 4 15% 8 3% 15 0.5% Charm Designs 2 31.5% 4 15% 8 3% 15 0.5%",
+    "sources": [],
+    "rewardRates": [
+      {
+        "reward": "Charm Guides",
+        "amount": 2,
+        "probabilityPercent": 31.5
+      },
+      {
+        "reward": "Charm Guides",
+        "amount": 4,
+        "probabilityPercent": 15
+      },
+      {
+        "reward": "Charm Guides",
+        "amount": 8,
+        "probabilityPercent": 3
+      },
+      {
+        "reward": "Charm Guides",
+        "amount": 15,
+        "probabilityPercent": 0.5
+      },
+      {
+        "reward": "Charm Designs",
+        "amount": 2,
+        "probabilityPercent": 31.5
+      },
+      {
+        "reward": "Charm Designs",
+        "amount": 4,
+        "probabilityPercent": 15
+      },
+      {
+        "reward": "Charm Designs",
+        "amount": 8,
+        "probabilityPercent": 3
+      },
+      {
+        "reward": "Charm Designs",
+        "amount": 15,
+        "probabilityPercent": 0.5
+      }
+    ]
+  },
+  {
+    "id": "ressource-chest",
+    "name": "Resource Chest",
+    "img": "/images/items/ressource-chest.png",
+    "category": "Chest",
+    "description": "There are 2 different types of chest, divided into 2 other categories: Resources Supply Chest (contain: 10K meat 25% - 10K wood 25% - 10K coal 25% - 10K iron 25%) and the other contain: (1K meat 25% - 1K wood 25% - 1K coal 25% - 1K iron 25%. The other categories allows you to choose between the following choices per chest: (100K meat - 100K wood - 20K coal - 5K iron) or (1M meat - 1M wood - 200K coal - 50K iron)",
+    "sources": []
+  },
+  {
+    "id": "ressources-supply-chest",
+    "name": "Ressources Supply Chest",
+    "img": "/images/items/ressource-chest.png",
+    "category": "Chest",
+    "description": "They are 3 chest: - 1K Resources Supply Chest: Grants 1K Meat, Wood, Coal, or Iron resources - 10K Resources Supply Chest: Grants 10K Meat, Wood, Coal, or Iron resources - 100K Resources Supply Chest: Grants 100K Meat, Wood, Coal, or Iron resources",
+    "sources": []
+  },
+  {
+    "id": "rulers-chest",
+    "name": "Ruler’s Chest",
+    "img": "/images/items/rulers-chest.png",
+    "category": "Chest",
+    "description": "Allocable Rewards for the alliance with chiefs that defeated [Phaethon Mercenaries] in Fortress Battle. These rewards can be shared with any chief in the alliance. Contains: 2x Platinum Key, 10x 5m General Speedups, and 200x 1k (Meat, Wood, Coal, and Iron).",
+    "sources": ["Fortress Battle"]
+  },
+  {
+    "id": "scattered-supplies",
+    "name": "Scattered Supplies",
+    "img": "/images/items/scattered-supplies.png",
+    "category": "Chest",
+    "description": "The plunder of despicable bandits. These supplies are scattered all over the tundra after a certain incident. Open these to obtain Mythic Hero Shard, Skill Manual, and other goodies.",
+    "sources": []
+  },
+  {
+    "id": "seekers-chest",
+    "name": "Seeker’s Chest",
+    "img": "/images/items/seekers-chest.png",
+    "category": "Chest",
+    "description": "Unlock Agnes for a chance to get Seeker's Chests through Gathering. Open them for a chance at Fire Crystals, Gems, and other Rewards. Reward Rates-Contains one from below- Fire Crystal ×10 …1.0% Fire Crystal ×1 …20.0% 1,000 Gems ×…2.0% 10 Gems ×1…20.0% 100 Enhancement XP Component ×1…3.0% 10 Enhancement XP Component ×1…20.0% 1h General Speedup ×1…4.0% 5m General Speedup ×1…30.0%",
+    "sources": ["gathering resources"],
+    "rewardRates": [
+      {
+        "reward": "Fire Crystal",
+        "amount": 10,
+        "probabilityPercent": 1.0
+      },
+      {
+        "reward": "Fire Crystal",
+        "amount": 1,
+        "probabilityPercent": 20.0
+      },
+      {
+        "reward": "10 Gems",
+        "amount": 1,
+        "probabilityPercent": 20.0
+      },
+      {
+        "reward": "100 Enhancement XP Component",
+        "amount": 1,
+        "probabilityPercent": 3.0
+      },
+      {
+        "reward": "10 Enhancement XP Component",
+        "amount": 1,
+        "probabilityPercent": 20.0
+      },
+      {
+        "reward": "1h General Speedup",
+        "amount": 1,
+        "probabilityPercent": 4.0
+      },
+      {
+        "reward": "5m General Speedup",
+        "amount": 1,
+        "probabilityPercent": 30.0
+      }
+    ]
+  },
+  {
+    "id": "snowbuster-toolkit-chest",
+    "name": "Snowbuster Toolkit Chest",
+    "img": "/images/items/snowbuster-toolkit-chest.png",
+    "category": "Chest",
+    "description": "Contains 100 Snowbuster Toolkits for upgrading [Snowbuster] Gear in the event.",
+    "sources": ["Snowbusters"]
+  },
+  {
+    "id": "splendid-labyrinth-treasure",
+    "name": "Splendid Labyrinth Treasure",
+    "img": "/images/items/labyrinth-treasure.png",
+    "category": "Chest",
+    "description": "A magnificent relic from ancient civilizations. Open it for a chance to obtain items such as underground-themed decorations, Mythic General Hero Shards, and others. Reward Rates-Contains one from below- Luminari Citadel ×1…3.0% Mythic General Hero Shard ×10…0.3% 100 Enhancement XP Component ×1…20.0% Gems ×50…20.0% 5m General Speedup ×1…56.7%",
+    "sources": ["The Labyrinth"],
+    "rewardRates": [
+      {
+        "reward": "Luminari Citadel",
+        "amount": 1,
+        "probabilityPercent": 3.0
+      },
+      {
+        "reward": "Mythic General Hero Shard",
+        "amount": 10,
+        "probabilityPercent": 0.3
+      },
+      {
+        "reward": "100 Enhancement XP Component",
+        "amount": 1,
+        "probabilityPercent": 20.0
+      },
+      {
+        "reward": "Gems",
+        "amount": 50,
+        "probabilityPercent": 20.0
+      },
+      {
+        "reward": "5m General Speedup",
+        "amount": 1,
+        "probabilityPercent": 56.7
+      }
+    ]
+  },
+  {
+    "id": "treasure-box",
+    "name": "Treasure Box",
+    "img": "/images/items/treasure-box.png",
+    "category": "Chest",
+    "description": "A secret treasure box containing a random surprise.",
+    "sources": ["Alliance Championship"]
+  },
+  {
+    "id": "treasure-hunt-chest",
+    "name": "Treasure Hunt Chest",
+    "img": "/images/items/treasure-hunt-chest.png",
+    "category": "Chest",
+    "description": "Chest of the Treasure Keeper, treasure such as Gem of Enigma can be found in it.",
+    "sources": []
+  },
+  {
+    "id": "war-chant-custom-chest",
+    "name": "War Chant Custom Chest",
+    "img": "/images/items/war-chant-custom-chest.png",
+    "category": "Chest",
+    "description": "Gives one of the following rewards of your choice: 2x Mythic General Hero Shard 8x 1h General Speedup 5x 100 Enhancement XP Component 3x Essence Stones 3x Chief Gear Variety 6x Design Plan 4x Charm Guide 4x Charm Design",
+    "sources": ["Vision of Dawn"]
+  },
+  {
+    "id": "warriors-chest",
+    "name": "Warrior’s Chest",
+    "img": "/images/items/warriors-chest.png",
+    "category": "Chest",
+    "description": "Rewards for the chiefs that defeated [Phaethon Mercenaries] in Fortress Battle. Contains: 4x 100 Gems, 10x 1h Training Speedups, 10x 1h Healing Speedups, and 5x 5000 Hero Xp.",
+    "sources": ["Fortress Battle"]
+  },
+  {
+    "id": "ahmose-lucky-chest",
+    "name": "[Hero] Lucky Box",
+    "img": "/images/items/ahmose-lucky-chest.png",
+    "category": "Chest",
+    "description": "Contains 1-10 [Hero] Shards for the specific daily deal hero or 1 General Mythic Shard Contains: 1x [Hero] Shard 70% 2x [Hero] Shard 10% 3x [Hero] Shard 5% 4x [Hero] Shard 3% 5x [Hero] Shard 1.6% 6x [Hero] Shard 1% 7x [Hero] Shard 0.6% 8x [Hero] Shard 0.5% 9x [Hero] Shard 0.2% 10x [Hero] Shard 0.1% 1x General Mythic Shard 8%",
+    "sources": ["Daily Deal Packs"]
+  },
+  {
+    "id": "adventure-coin",
+    "name": "Adventure Coin",
+    "img": "/images/items/adventure-coin.png",
+    "category": "Event",
+    "description": "Ancient coin found in the snowy terrain. Can be exchanged for various rewards from the Adventure Caravan. Will be converted into a 1K Meat at the end of the event.",
+    "sources": ["Tundra Adventure"]
+  },
+  {
+    "id": "alliance-showdown-points",
+    "name": "Alliance Showdown Points",
+    "img": "/images/items/alliance-showdown-points.png",
+    "category": "Event",
+    "description": "The points earned by achieving daily objectives during [Alliance Showdown]. The points can be used to unlock Points Chests, secure daily victories for your alliance, and contribute to your alliance's ranking.",
+    "sources": ["Alliance Showdown", "Tundra Trade Route"]
+  },
+  {
+    "id": "alliance-token",
+    "name": "Alliance Token",
+    "img": "/images/items/alliance-token.png",
+    "category": "Event",
+    "description": "Alliance Tokens are owned individually by members and can be spent in the Alliance Shop for items. Alliance Tokens are retained when transitioning between Alliances.",
+    "sources": [
+      "Earn more with Alliance Tech Contributions",
+      "Triumph",
+      "Crazy Joe",
+      "Alliance Mobilization",
+      "Alliance Showdown"
+    ]
+  },
+  {
+    "id": "arena-token",
+    "name": "Arena Token",
+    "img": "/images/items/arena-token.png",
+    "category": "Event",
+    "description": "Redeem prizes in the Arena Shop. Obtained by fighting in the Arena.",
+    "sources": ["Arena"]
+  },
+  {
+    "id": "arsenal-tokens",
+    "name": "Arsenal Tokens",
+    "img": "/images/items/arsenal-tokens.png",
+    "category": "Event",
+    "description": "Redeem for items in Foundry Shop.",
+    "sources": ["Foundry Battle"]
+  },
+  {
+    "id": "celebration-firework",
+    "name": "Celebration Firework",
+    "img": "/images/items/celebration-firework.png",
+    "category": "Event",
+    "description": "Fireworks bloom like a myriad of stars, igniting hope! Use to set off fireworks above a City for 1 minute.",
+    "sources": ["1st Anniversary"]
+  },
+  {
+    "id": "celebration-firework-2nd-anniversary",
+    "name": "Celebration Firework (2nd Anniversary)",
+    "img": "/images/items/celebration-firework-2nd-anniversary.png",
+    "category": "Event",
+    "description": "Incandescent fireworks for a night of celebration! Use to set off fireworks above a City for 1 minute.",
+    "sources": ["2nd Anniversary"]
+  },
+  {
+    "id": "champion-stake",
+    "name": "Champion Stake",
+    "img": "/images/items/champion-stake.png",
+    "category": "Event",
+    "description": "Used to predict a Champion Winner in the Tundra Arms League or exchange for items in the Prediction Shop.",
+    "sources": ["Tundra Arms League"]
+  },
+  {
+    "id": "championship-badge",
+    "name": "Championship Badge",
+    "img": "/images/items/championship-badge.png",
+    "category": "Event",
+    "description": "A badge earned in the Alliance Championship that may be exchanged for rewards. Sign up to earn.",
+    "sources": ["Alliance Championship"]
+  },
+  {
+    "id": "crystallite-core",
+    "name": "Crystallite Core",
+    "img": "/images/items/crystallite-core.png",
+    "category": "Event",
+    "description": "Complete Ligththouse Intel for Crystallite Core, which may be redeemed for cool item! For more information look the event : flame and fang . Converted to 10k meat if unused at the end of the event",
+    "sources": []
+  },
+  {
+    "id": "custom-mission-voucher",
+    "name": "Custom Mission Voucher",
+    "img": "/images/items/custom-mission-voucher.png",
+    "category": "Event",
+    "description": "Used to select an exclusive mission in the Alliance Mobilization event.",
+    "sources": ["Packs", "Alliance Mobilization"]
+  },
+  {
+    "id": "disguise-wand",
+    "name": "Disguise Wand",
+    "img": "/images/items/disguise-wand.png",
+    "category": "Event",
+    "description": "Use it to change the look of your or other Chief's City for 5 minute. (Will be recycled after the event)",
+    "sources": ["Halloween Event"]
+  },
+  {
+    "id": "dragonmark",
+    "name": "Dragonmark",
+    "img": "/images/items/dragonmark.png",
+    "category": "Event",
+    "description": "Used for Championship Predictions or Prediction Shop Purchases.",
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "dream-fishbit",
+    "name": "Dream Fishbit",
+    "img": "/images/items/dream-fishbit.png",
+    "category": "Event",
+    "description": "Use Dream Fishbits to begin a chapter challenge in Dreamscape Memory. Unused Fishbits will be removed at the end of the event.",
+    "sources": ["Dreamscape Memory"]
+  },
+  {
+    "id": "dream-mark",
+    "name": "Dream Mark",
+    "img": "/images/items/dream-mark.png",
+    "category": "Event",
+    "description": "Used to redeem rewards at Kasia's Shop",
+    "sources": ["Events"]
+  },
+  {
+    "id": "dreambell",
+    "name": "Dreambell",
+    "img": "/images/items/dreambell.png",
+    "category": "Event",
+    "description": "A Kitten Bell that seems to possess a strange power. Used in [Dreamscape Memory] to add extra Challenge Time.",
+    "sources": ["Dreamscape Memory"]
+  },
+  {
+    "id": "recall-xp",
+    "name": "EXP de Souvenir",
+    "img": "/images/items/recall-xp.png",
+    "category": "Event",
+    "description": "S'obtient en terminant les défis du Chapitre [Souvenir Onirique] et sert à monter le niveau de la [Voie du Souvenir].",
+    "sources": ["Souvenir Onirique (Voie du Souvenir)"]
+  },
+  {
+    "id": "fortune-token",
+    "name": "Fortune Token",
+    "img": "/images/items/fortune-token.png",
+    "category": "Event",
+    "description": "[Mia's Fortune Hut] is open! Fancy telling your fortune? For more information look in category Event : Mia Fortune",
+    "sources": []
+  },
+  {
+    "id": "frostjade",
+    "name": "Frostjade",
+    "img": "/images/items/frostjade.png",
+    "category": "Event",
+    "description": "This coin embedded with frost-like jade can provide Wu Ming with energy to tackle the Nian in the \"Attack of the Nian\" event. (Will be converted into a 1K Secured Resource Supply Chest at the end of the event.)",
+    "sources": [
+      "Spring Celebration Pack",
+      "Symphony of the New Year",
+      "King of Spring",
+      "Jade Quest",
+      "Attack of the Nian"
+    ]
+  },
+  {
+    "id": "frosty-prospector",
+    "name": "Frosty Prospector",
+    "img": "/images/items/frosty-prospector.png",
+    "category": "Event",
+    "description": "With this item, during the Fishing Tournament event, you will be able to fish in Frosty Prospector",
+    "sources": []
+  },
+  {
+    "id": "gem-of-enigma",
+    "name": "Gem of Enigma",
+    "img": "/images/items/gem-of-enigma.png",
+    "category": "Event",
+    "description": "Stone with engraving of mystery on it, used to pen chest in [Frosty Fortune].",
+    "sources": []
+  },
+  {
+    "id": "generosity-emblem",
+    "name": "Generosity Emblem",
+    "img": "/images/items/generosity-emblem.png",
+    "category": "Event",
+    "description": "Used to purchase items at the [Generosity Bazaar].",
+    "sources": ["Ramadan Event"]
+  },
+  {
+    "id": "glowstone",
+    "name": "Glowstone",
+    "img": "/images/items/glowstone.png",
+    "category": "Event",
+    "description": "A rare, glowing crystal that can be used to redeem items in the Labyrinth Shop.",
+    "sources": ["The Labyrinth"]
+  },
+  {
+    "id": "horn-of-poseidon",
+    "name": "Horn of Poseidon",
+    "img": "/images/items/horn-of-poseidon.png",
+    "category": "Event",
+    "description": "Use the Horn of Poseidon to summon a designated fish species, and a guaranteed catch",
+    "sources": []
+  },
+  {
+    "id": "horn-of-the-cryptid",
+    "name": "Horn of the Cryptid",
+    "img": "/images/items/horn-of-the-cryptid.png",
+    "category": "Event",
+    "description": "Can be obtained by defeating beast during the Gina's Revenge event. Use it to track down 'Berserk Cryptid'",
+    "sources": ["Defeating beast during the Gina's Revenge"]
+  },
+  {
+    "id": "icefisher-voucher",
+    "name": "Icefisher Voucher",
+    "img": "/images/items/icefisher-voucher.png",
+    "category": "Event",
+    "description": "Grants a 1.5x [Fishing Token] and [Fishing Points] bonus for the round.",
+    "sources": ["Fish Tournament"]
+  },
+  {
+    "id": "labyrinth-core",
+    "name": "Labyrinth Core",
+    "img": "/images/items/labyrinth-core.png",
+    "category": "Event",
+    "description": "An ancient machinery part that can be used to unlock milestone rewards in The Labyrinth.",
+    "sources": ["The Labyrinth"]
+  },
+  {
+    "id": "lantern",
+    "name": "Lantern",
+    "img": "/images/items/lantern.png",
+    "category": "Event",
+    "description": "Depth reaching 300m are considered deep ocean, lantern illuminates the surroundings. This item is for fishing event.",
+    "sources": []
+  },
+  {
+    "id": "lost-coin",
+    "name": "Lost Coin",
+    "img": "/images/items/lost-coin.png",
+    "category": "Event",
+    "description": "Redeem for items in Canyon Shop of Canyon Clash.",
+    "sources": ["Canyon Clash"]
+  },
+  {
+    "id": "lucky-chip",
+    "name": "Lucky Chip",
+    "img": "/images/items/lucky-chip.png",
+    "category": "Event",
+    "description": "Used in Lucky Wheel to drawn prize. For more information on how to get it and use it watch the event Lucky Wheel.",
+    "sources": []
+  },
+  {
+    "id": "lucky-pouch",
+    "name": "Lucky Pouch",
+    "img": "/images/items/lucky-pouch.png",
+    "category": "Event",
+    "description": "Shares one Lucky Pouch in the Alliance Chat Channel upon use. Tap the Lucky Bag to claim a reward of 500 to 5,000 Gems! When used, the Lucky Pouch can be shared in chat channels for other Chiefs to claim. The Lucky Pouch remains valid for 24 hours, after which it expires and cannot be claimed. You can claim up to 10 Lucky Pouches shared by others each day. If you successfully share a pouch, you'll receive a pouch reward for yourself that does not count toward your daily claim limit. When sharing a Lucky Pouch, you can choose whether to share it to the World Channel. Bonus Lucky Pouches won't use up your items but only have a 50% chance of sharing successfully. World Channel Lucky Bags require a Lv. 10 Furnace to claim and cannot be sent or claimed in the Cross-State World Channel. When you successfully claim a Lucky Pouch, you will receive a reward of 500 to 5,000 Gems.",
+    "sources": ["Kasia's Wish House"]
+  },
+  {
+    "id": "magicians-cloak",
+    "name": "Magician’s Cloak",
+    "img": "/images/items/magicians-cloak.png",
+    "category": "Event",
+    "description": "Removes the interaction effect and grants immunity to interaction items for 8 hours. (Will be recycled after the event)",
+    "sources": ["Halloween Event"]
+  },
+  {
+    "id": "map-fragment",
+    "name": "Map Fragment",
+    "img": "/images/items/map-fragment.png",
+    "category": "Event",
+    "description": "Given by dismantling the Snowbuster Map. Used to obtain random maps or other items in Map Search.",
+    "sources": ["Snowbusters"]
+  },
+  {
+    "id": "mark-of-valor",
+    "name": "Mark Of Valor",
+    "img": "/images/items/mark-of-valor.png",
+    "category": "Event",
+    "description": "Used to redeem Mythic Hero Shard in the Hall of Heroes, the heros varies depending on your hero generation",
+    "sources": ["Buy with Gems"]
+  },
+  {
+    "id": "match-stake",
+    "name": "Match Stake",
+    "img": "/images/items/match-stake.png",
+    "category": "Event",
+    "description": "Used to predict a Match Winner in the Tundra Arms League or exchange for items in the Prediction Shop.",
+    "sources": ["Tundra Arms League"]
+  },
+  {
+    "id": "medal-of-honor",
+    "name": "Medal of Honor",
+    "img": "/images/items/medal-of-honor.png",
+    "category": "Event",
+    "description": "Used to claim the Medal of Honor progress rewards in [King of Icefield].",
+    "sources": ["King of Icefield"]
+  },
+  {
+    "id": "ocean-scanner",
+    "name": "Ocean Scanner",
+    "img": "/images/items/ocean-scanner.png",
+    "category": "Event",
+    "description": "Monitors nearby fish and tells you the direction and distance to the rare species around.",
+    "sources": ["Fishing Event", "Fishing Packs"]
+  },
+  {
+    "id": "pickaxe",
+    "name": "Pickaxe",
+    "img": "/images/items/pickaxe.png",
+    "category": "Event",
+    "description": "A sturdy pickaxe. The perfect tool for treasure hunt.",
+    "sources": ["Treasure Hunter Event"]
+  },
+  {
+    "id": "pocket-watch",
+    "name": "Pocket Watch",
+    "img": "/images/items/pocket-watch.png",
+    "category": "Event",
+    "description": "Used to shorten the duration of an expedition by 1 hour in the [Journey of Light] event.",
+    "sources": ["Journey of Light event."]
+  },
+  {
+    "id": "reel-stabilizer",
+    "name": "Reel Stabilizer",
+    "img": "/images/items/reel-stabilizer.png",
+    "category": "Event",
+    "description": "A stabilizer prevents your line from retracting if you accidentaly nump into a fish during descent ( protection +2). This item is for fishing event.",
+    "sources": []
+  },
+  {
+    "id": "scaled-crystal",
+    "name": "Scaled Crystal",
+    "img": "/images/items/scaled-crystal.png",
+    "category": "Event",
+    "description": "Crystals formed in dragon lairs, almost priceless. Used to purchase items in the Dragonborn’s Truck Shop.",
+    "sources": ["Frostdragon Tyrant", "Packs"]
+  },
+  {
+    "id": "scattered-parts",
+    "name": "Scattered Parts",
+    "img": "/images/items/scattered-parts.png",
+    "category": "Event",
+    "description": "Obtained by defeating beast during the [Hero's Mission] event to trace the [Reapers]",
+    "sources": []
+  },
+  {
+    "id": "shot-token",
+    "name": "Shot Token",
+    "img": "/images/items/shot-token.png",
+    "category": "Event",
+    "description": "Used in the [Dead Shot] event.",
+    "sources": [
+      "State of Power",
+      "King of Icefield",
+      "Armament Competition",
+      "Officer Project",
+      "Defeat nearby Beasts",
+      "Frostfire Mine",
+      "foundry battle"
+    ]
+  },
+  {
+    "id": "silver-shell",
+    "name": "Silver Shell",
+    "img": "/images/items/silver-shell.png",
+    "category": "Event",
+    "description": "A valuable decoration used to redeem items in the [Sliverfrost Shop] event",
+    "sources": ["Sliver Shell Event", "Silver Shell Packs"]
+  },
+  {
+    "id": "skin-token",
+    "name": "Skin Token",
+    "img": "/images/items/skin-token.png",
+    "category": "Event",
+    "description": "Used to purchase skins in [Skin Shop].",
+    "sources": [
+      "Daily Missions",
+      "Prestige Shop (VIP 12 Shop)",
+      "Activity Production: Predicted output from carrying out specified activities."
+    ]
+  },
+  {
+    "id": "snapshot-of-time-2025",
+    "name": "Snapshot of Time 2025",
+    "img": "/images/items/snapshot-of-time-2025.png",
+    "category": "Event",
+    "description": "Each thread in our journey creates a precious tapestry of time.",
+    "sources": ["2nd Anniversary"]
+  },
+  {
+    "id": "snow-shovel",
+    "name": "Snow Shovel",
+    "img": "/images/items/snow-shovel.png",
+    "category": "Event",
+    "description": "A shovel for removing ice and snow that can be used in the [Lost Loot] event.",
+    "sources": ["Lost Loot event"]
+  },
+  {
+    "id": "sunfire-token",
+    "name": "Sunfire Token",
+    "img": "/images/items/sunfire-token.png",
+    "category": "Event",
+    "description": "Obtained as rewards in [State of Power] and used to purchase items in [State of Power Shop].",
+    "sources": ["State of Power"]
+  },
+  {
+    "id": "thorn-of-enigma",
+    "name": "Thorn of Enigma",
+    "img": "/images/items/thorn-of-enigma.png",
+    "category": "Event",
+    "description": "Use Thorn of Enigma to exchange for exquisite prize in the shop of thie event Emporion of Enigma.",
+    "sources": []
+  },
+  {
+    "id": "trade-voucher",
+    "name": "Trade Voucher",
+    "img": "/images/items/trade-voucher.png",
+    "category": "Event",
+    "description": "Used to purchase item in [Trading Station Shop]. For more details, look in the category Event : Tundra Trading Station",
+    "sources": []
+  },
+  {
+    "id": "transfer-pass",
+    "name": "Transfer Pass",
+    "img": "/images/items/transfer-pass.png",
+    "category": "Event",
+    "description": "A universally recognized pass across all states. Use it within event period to transfert to other states! (Usable during State Transfert)",
+    "sources": [
+      "Alliance shop (1 per week for 150k)",
+      "Packs1 for $5 USD2 for $10 USD3 for $20 USD4 for $50 USD5 for $100 USD",
+      "1 for $5 USD",
+      "2 for $10 USD",
+      "3 for $20 USD",
+      "4 for $50 USD",
+      "5 for $100 USD"
+    ]
+  },
+  {
+    "id": "treasure-hunt-points",
+    "name": "Treasure Hunt Points",
+    "img": "/images/items/treasure-hunt-points.png",
+    "category": "Event",
+    "description": "Points rewarded for your great treasure hunting skill, used to unlock rewards in the “Treasure Hunt Drill” event.",
+    "sources": ["Treasure Hunt Daily Mission"]
+  },
+  {
+    "id": "truck-voucher",
+    "name": "Truck Voucher",
+    "img": "/images/items/truck-voucher.png",
+    "category": "Event",
+    "description": "Used to refresh the trucks to be escorted in the [Tundra Trade Route] event.",
+    "sources": ["Tundra Trade Route"]
+  },
+  {
+    "id": "vivid-falmes",
+    "name": "Vivid Flames",
+    "img": "/images/items/vivid-falmes.png",
+    "category": "Event",
+    "description": "A fiery emblem woven upon evening's canvas. Use to set off fireworks above a City for 1 minute.",
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "wish-voucher",
+    "name": "Wish Voucher",
+    "img": "/images/items/wish-voucher.png",
+    "category": "Event",
+    "description": "Used to unlock random Kasia's Wish House rewards",
+    "sources": ["Kasia's Event", "Packs"]
+  },
+  {
+    "id": "agnes-sigil",
+    "name": "Agnes Sigil",
+    "img": "/images/items/agnes-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Agnes. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "baldurs-sigil",
+    "name": "Baldur’s Sigil",
+    "img": "/images/items/baldurs-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Baldur. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "book-of-knowledge",
+    "name": "Book of Knowledge",
+    "img": "/images/items/book-of-knowledge.png",
+    "category": "Experts",
+    "description": "Used to Enhance Skill Levels taught by Experts.",
+    "sources": [
+      "Tundra & Frontier Treks",
+      "Endless Wayfarer Event",
+      "Packs",
+      "Alliance Championship Shop"
+    ]
+  },
+  {
+    "id": "common-expert-sigil",
+    "name": "Common Expert Sigil",
+    "img": "/images/items/common-expert-sigil.png",
+    "category": "Experts",
+    "description": "Convert Common Expert Sigils into your choice of Expert Sigils, which can be used to advance Expert relationships.",
+    "sources": [
+      "Packs",
+      "Endless Wayfarer Event",
+      "Alliance Championship Shop",
+      "Achievements",
+      "Alliance Showdown (Bonus Rewards from Baldur skills)"
+    ]
+  },
+  {
+    "id": "compass",
+    "name": "Compass",
+    "img": "/images/items/compass.png",
+    "category": "Experts",
+    "description": "An exquisite commpass to gift to a resident Expert for +10 Affinity.",
+    "sources": ["Tundra & Frontier Treks"]
+  },
+  {
+    "id": "cyrille-sigil",
+    "name": "Cyrille Sigil",
+    "img": "/images/items/cyrille-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Cyrille. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "fabian-sigil",
+    "name": "Fabian Sigil",
+    "img": "/images/items/fabian-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Fabian. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "fiery-heart",
+    "name": "Fiery Heart",
+    "img": "/images/items/fiery-heart.png",
+    "category": "Experts",
+    "description": "A precious Ruby Pendant to gift to a resident Expert for +100 Affinity.",
+    "sources": ["Tundra & Frontier Treks", "Endless Wayfarer Event", "Packs"]
+  },
+  {
+    "id": "frontier-supply",
+    "name": "Frontier Supply",
+    "img": "/images/items/frontier-supply.png",
+    "category": "Experts",
+    "description": "A Frontier Trek essential that can be used to trigger 1 Frontier Trek encounter.",
+    "sources": ["Endless Wayfarer Event", "Packs", "VIP Shop"]
+  },
+  {
+    "id": "holger-sigil",
+    "name": "Holger Sigil",
+    "img": "/images/items/holger-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Holger. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "kathy-sigil",
+    "name": "Kathy Sigil",
+    "img": "/images/items/kathy-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Kathy. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "romulus-sigil",
+    "name": "Romulus Sigil",
+    "img": "/images/items/romulus-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Romulus. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "ronne-sigil",
+    "name": "Ronne Sigil",
+    "img": "/images/items/ronne-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Ronne. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "sail-of-conquest",
+    "name": "Sail of Conquest",
+    "img": "/images/items/sail-of-conquest.png",
+    "category": "Experts",
+    "description": "A stunning sailboat ornament to gift to a resident Expert for +1000 Affinity.",
+    "sources": ["Tundra & Frontier Treks", "Endless Wayfarer Event", "Packs"]
+  },
+  {
+    "id": "trek-supplies",
+    "name": "Trek Supplies",
+    "img": "/images/items/trek-supplies.png",
+    "category": "Experts",
+    "description": "A Tundra Trek essential that can be used to trigger 1 Tundra Trek encounter. You will receive 20 Trek Supplies automatically at 00:00 UTC. Claim 10 additional Trek Supplies manually at 08:00 and 16:00 UTC each day. You can also spend 1,000 Gems to purchase 5 Trek Supplies (limit: 4 purchases per day).",
+    "sources": ["Claim for Free", "Buy Using Gems"]
+  },
+  {
+    "id": "valeria-sigil",
+    "name": "Valeria Sigil",
+    "img": "/images/items/valeria-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Valeria. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
+    "id": "fire-crystal",
+    "name": "Fire Crystal",
+    "img": "/images/items/fire-crystal.png",
+    "category": "Fire Crystal",
+    "description": "It is a mysterious crystal that is alive and contains unimaginably strong power. Allows you to improve the furnace after level 30.",
+    "sources": [
+      "Daily Missions",
+      "Intel",
+      "SVS shop",
+      "Flame and Fangs Event",
+      "Mercenary Prestige",
+      "SVS Battle Phase",
+      "KOI",
+      "Alliance Mobilization"
+    ]
+  },
+  {
+    "id": "fire-crystal-ember-2",
+    "name": "Fire Crystal Ember",
+    "img": "/images/items/fire-crystal-ember-2.png",
+    "category": "Fire Crystal",
+    "description": "Redeem for rewards (including Fire Crystals) during the [Crystal Reactivation] event.",
+    "sources": []
+  },
+  {
+    "id": "fire-crystal-shard",
+    "name": "Fire Crystal Shard",
+    "img": "/images/items/fire-crystal-shard.png",
+    "category": "Fire Crystal",
+    "description": "Fire Crystal in the form of Shard. Can be used to research Fire Crystal Tech in War Academy.",
+    "sources": [
+      "Packs",
+      "Converting 5k steel to 1 FC shard (limit 20 per day)",
+      "Converting 10 FC to 13 FC shards(limit 200 per day)",
+      "Weekly Fire Crystal Shards"
+    ]
+  },
+  {
+    "id": "refined-fire-crystal",
+    "name": "Refined Fire Crystal",
+    "img": "/images/items/refined-fire-crystal.png",
+    "category": "Fire Crystal",
+    "description": "A purified Fire Crystal which is more powerful. Used for upgrading to FC6-10",
+    "sources": ["Fire crystal laboratory"]
+  },
+  {
+    "id": "charm-design",
+    "name": "Charm Design",
+    "img": "/images/items/charm-design.png",
+    "category": "Gear Materials",
+    "description": "After hitting Furnace 25, the Chief Gear Charm feature will be unlocked. The Charm Guide is used to upgrade Chief Charm.",
+    "sources": [
+      "Intel Missions",
+      "Castle Battle",
+      "Frostdragon Tyrant",
+      "Foundry Shop",
+      "Canyon Shop",
+      "SVS Shop",
+      "Frostfire Mine",
+      "Tundra Trading Station",
+      "Chests",
+      "Packs"
+    ]
+  },
+  {
+    "id": "charm-guide",
+    "name": "Charm Guide",
+    "img": "/images/items/charm-guide.png",
+    "category": "Gear Materials",
+    "description": "After hitting Furnace 25, the Chief Gear Charm feature will be unlocked. The Charm Guide is used to upgrade Chief Charm.",
+    "sources": [
+      "Intel Missions",
+      "Castle Battle",
+      "Frostdragon Tyrant",
+      "Foundry Shop",
+      "SVS Shop",
+      "Canyon Shop",
+      "Frostfire Mine",
+      "Tundra Trading Station",
+      "Chests",
+      "Packs"
+    ]
+  },
+  {
+    "id": "charm-secrets",
+    "name": "Charm Secrets",
+    "img": "/images/items/charm-secrets.png",
+    "category": "Gear Materials",
+    "description": "used to upgrade Chief Charm after Level 11. Exchange Ratio: 40 Charm Guide = 1 Charm Secrets , 40 Charm Design = 1 Charm Secrets",
+    "sources": ["Chief Charm Material Exchange", "Purchase Packs"]
+  },
+  {
+    "id": "design-plans",
+    "name": "Design Plans",
+    "img": "/images/items/design-plans.png",
+    "category": "Gear Materials",
+    "description": "After hitting Furnace 22, the Chief Gear feature will be unlocked. The Design Plans are used to upgrade Chief Gears.",
+    "sources": [
+      "Intel Missions",
+      "Foundry Shop",
+      "SVS Shop",
+      "Canyon Shop",
+      "Tundra Trading Station",
+      "Alliance Championshio Shop (Gen4+)",
+      "Crazy Joe (Gen4+)",
+      "Chests",
+      "Packs"
+    ]
+  },
+  {
+    "id": "enhancement-xp-component",
+    "name": "Enhancement XP Component",
+    "img": "/images/items/enhancement-xp-component.png",
+    "category": "Gear Materials",
+    "description": "10 & 100 Enhancement XP Components are used to upgrade hero gears. After hitting Furnace 15, the hero gear will be unlocked.",
+    "sources": [
+      "Bear Trap",
+      "Intel Missions",
+      "Frostdragon Tyrant",
+      "VIP Shop",
+      "Foundry Shop",
+      "Labyrinth Shop",
+      "Canyon Shop",
+      "Tundra Trading Station",
+      "Frosty Fortune",
+      "Mia Fortune",
+      "Journey of Light",
+      "Chests",
+      "Packs"
+    ]
+  },
+  {
+    "id": "essence-stones",
+    "name": "Essence Stones",
+    "img": "/images/items/essence-stones.png",
+    "category": "Gear Materials",
+    "description": "After hitting Furnace 20, the Mastery Forging feature will be unlocked. The essence stone it's used to levels up Mythic Hero Gear Mastery for an added gear boost. (Level up beyond Lv.20 to unlock Mastery Forging)",
+    "sources": [
+      "Bear Hunt",
+      "Intel Missions",
+      "Growth Missions",
+      "Mystery Shop",
+      "Foundry Shop",
+      "Arena Shop",
+      "VIP Shop",
+      "Frostdragon Tyrant Shop",
+      "Canyon Shop",
+      "Tundra Trading Station",
+      "Alliance Mobilization",
+      "Mia Fortune",
+      "Chests",
+      "Packs"
+    ]
+  },
+  {
+    "id": "hardened-alloy",
+    "name": "Hardened Alloy",
+    "img": "/images/items/hardened-alloy.png",
+    "category": "Gear Materials",
+    "description": "A chief Gear upgrade material. For more details, look in the category Chief Gear",
+    "sources": [
+      "Polar Terror",
+      "Intel Missions",
+      "Crazy Joe",
+      "Foundry Shop",
+      "Canyon Shop",
+      "Alliance Championship Shop",
+      "Sign-in & Earn it",
+      "lvl 22-30 Beasts",
+      "Chests",
+      "Packs"
+    ]
+  },
+  {
+    "id": "lunar-amber",
+    "name": "Lunar Amber",
+    "img": "/images/items/lunar-amber.png",
+    "category": "Gear Materials",
+    "description": "An emblem of celestial elegance capable of enhancing Legendary Chief Gear.",
+    "sources": ["Chief Gear Exchange Shop", "Packs"]
+  },
+  {
+    "id": "mithril",
+    "name": "Mithril",
+    "img": "/images/items/mithril.png",
+    "category": "Gear Materials",
+    "description": "A mysterious metal that imbues Hero gear with extraordinary power. You will need Mithril to continue leveling up your hero gear. How much will you need? Mythril is used for Hero gear ascension. After your hero gear reaches level 100 and level 10 mastery forging you can spend 2 mythic gear to make it red. After its red you have to enhance it to level 19 and level 11 mastery forging . then you can make the first enhancement with mythril. It will cost 10 mithril and 3 mythic gear . The first enhancement will give you 20 percent attack or defense in expedition depening on which hero gear you decide to upgrade. After you upgrade your gear will be level 20 . You then have to bring it to level 39 and mastery forging level 12 to enhance it again with mythril. Upgarde will cost 5 mythic gear and 20 mithril . The next upgrade will either give you 7.5% hero health or lethality for exploration depending on which gear you chose. After your upgrade your gear will be level 40 and you have to bring it to level 59 and mastery forging level 13 to enhance it again with Mythril. The upgrade will cost 30 mithril and 5 mythic gear . Your upgrade will either give you 30 percent defense or attack depending on which gear you chose. After your upgrade your gear will be level 60 and you have to bring it to level 79 and mastery forging level 14 to enhance it again with mythril. Your upgrade will cost 40 mithril and 10 mythic gear . If you decide to upgrade it further with mythril your upgrade will give you either 15 % hero attack or defense for exploration. After your upgrade your gear will be level 80 . You have to again enhance it to level 99 and mastery forging level 15 to make your next upgrade with myhril. The upgrade will cost 50 mithril and 10 mythic gear . It will either give you 50 percent attack or defense for expedition . After your upgrade the gear will be level 100 and maxed out for mythril upgrades How to get Mithril? Mithril is one of the most expensive items in the game. You can get 3 Mithril each week in the Arena and Labyrinth shops. Prioritize obtaining this item over others. You can also obtain it through certain events that appear on your calendar. We recommend prioritizing obtaining Mithril through these events. There are packs available in the store where you can purchase 1 Mithril from 5,99€ and the following packs will scale in the usual way. Packages are reset weekly Tips: Everyone can follow their own strategy, but we recommend first upgrade the hero gear that each hero is designed for. Infantry will play a significant role in defense, so increasing their defense and health stats will be a priority. In the case of Markmen and Lancers, we recommend increasing lethality first. The order to carry out these increases, our recommendation is to start with the infantry, then markmen and finally lancers. Infantry: gauntlets, belt , Marksmen: goggles, boots , Lancer: goggles, boots",
+    "sources": [
+      "Frostdragon Tyrant",
+      "Arena Shop",
+      "Labyrinth Shop",
+      "Journey of Light",
+      "Seasonal Events Shop",
+      "Packs"
+    ]
+  },
+  {
+    "id": "polishing-solution",
+    "name": "Polishing Solution",
+    "img": "/images/items/polishing-solution.png",
+    "category": "Gear Materials",
+    "description": "After hitting Furnace 22, the Chief Gear feature will be unlocked. The Polishing Solution is used to upgrade Chief Gears.",
+    "sources": [
+      "Intel Missions",
+      "Crazy Joe",
+      "Alliance Championship Shop",
+      "Foundry Shop",
+      "Canyon Shop",
+      "Chests",
+      "Packs"
+    ]
+  },
+  {
+    "id": "epic-expedition-skill-manual",
+    "name": "Epic Expedition Skill Manual",
+    "img": "/images/items/epic-expedition-skill-manual.png",
+    "category": "Hero Items",
+    "description": "The manuals will be used to improve hero skills. There are 3 levels of rarity : Mythic / Epic / Rare",
+    "sources": [
+      "Nomadic Merchant",
+      "Arena Shop",
+      "Vip Shop",
+      "Lighthouse Intel Missions",
+      "Growth Missions"
+    ]
+  },
+  {
+    "id": "epic-exploration-skill-manual",
+    "name": "Epic Exploration Skill Manual",
+    "img": "/images/items/epic-exploration-skill-manual.png",
+    "category": "Hero Items",
+    "description": "The manuals will be used to improve hero skills. There are 3 levels of rarity : Mythic / Epic / Rare",
+    "sources": [
+      "Nomadic Merchant",
+      "Arena Shop",
+      "Vip Shop",
+      "Lighthouse Intel Missions",
+      "Growth Missions"
+    ]
+  },
+  {
+    "id": "epic-general-hero-shard",
+    "name": "Epic General Hero Shard",
+    "img": "/images/items/epic-general-hero-shard.png",
+    "category": "Hero Items",
+    "description": "Use to get an Epic Hero Shard for a hero you already own.",
+    "sources": []
+  },
+  {
+    "id": "hero-xp",
+    "name": "Hero XP",
+    "img": "/images/items/hero-xp.png",
+    "category": "Hero Items",
+    "description": "Increases a Hero's level. Gives 1k, 5k, 10k, and 50k Hero XP.",
+    "sources": [
+      "Lighthouse Intel",
+      "Alliance Gift Chests",
+      "Beast Slay",
+      "Exploration Battle",
+      "Hero Recruitment",
+      "Gem Shop",
+      "Arena Shop",
+      "Vip Shop",
+      "Foundry Shop",
+      "Nomadic Merchant Shop",
+      "Events",
+      "Packs"
+    ]
+  },
+  {
+    "id": "mythic-expedition-skill-manual",
+    "name": "Mythic Expedition Skill Manual",
+    "img": "/images/items/mythic-expedition-skill-manual.png",
+    "category": "Hero Items",
+    "description": "The manuals will be used to improve hero skills. There are 3 levels of rarity : Mythic / Epic / Rare",
+    "sources": [
+      "Nomadic Merchant",
+      "Arena Shop",
+      "Vip Shop",
+      "SVS Shop",
+      "Lighthouse Intel Missions",
+      "Daily Missions",
+      "Hero Recruitment",
+      "Growth Missions"
+    ]
+  },
+  {
+    "id": "mythic-exploration-skill-manual",
+    "name": "Mythic Exploration Skill Manual",
+    "img": "/images/items/mythic-exploration-skill-manual.png",
+    "category": "Hero Items",
+    "description": "The manuals will be used to improve hero skills. There are 3 levels of rarity : Mythic / Epic / Rare",
+    "sources": [
+      "Nomadic Merchant",
+      "Arena Shop",
+      "Vip Shop",
+      "SVS Shop",
+      "Lighthouse Intel Missions",
+      "Daily Missions",
+      "Hero Recruitment",
+      "Growth Missions"
+    ]
+  },
+  {
+    "id": "mythic-general-hero-shard",
+    "name": "Mythic General Hero Shard",
+    "img": "/images/items/mythic-general-hero-shard.png",
+    "category": "Hero Items",
+    "description": "Reddem for shard of a summoned Legendray Hero (excluding Natalia and Jeronimo).",
+    "sources": []
+  },
+  {
+    "id": "rare-expedition-skill-manual",
+    "name": "Rare Expedition Skill Manual",
+    "img": "/images/items/rare-expedition-skill-manual.png",
+    "category": "Hero Items",
+    "description": "The manuals will be used to improve hero skills. There are 3 levels of rarity : Mythic / Epic / Rare",
+    "sources": [
+      "Nomadic Merchant",
+      "Arena Shop",
+      "Vip Shop",
+      "Lighthouse Intel Missions",
+      "Growth Missions"
+    ]
+  },
+  {
+    "id": "rare-exploration-skill-manual",
+    "name": "Rare Exploration Skill Manual",
+    "img": "/images/items/rare-exploration-skill-manual.png",
+    "category": "Hero Items",
+    "description": "The manuals will be used to improve hero skills. There are 3 levels of rarity : Mythic / Epic / Rare",
+    "sources": [
+      "Nomadic Merchant",
+      "Arena Shop",
+      "Vip Shop",
+      "Lighthouse Intel Missions",
+      "Growth Missions"
+    ]
+  },
+  {
+    "id": "rare-general-hero-shard",
+    "name": "Rare General Hero Shard",
+    "img": "/images/items/rare-general-hero-shard.png",
+    "category": "Hero Items",
+    "description": "Use to get a Rare Hero Shard for a hero you already own.",
+    "sources": []
+  },
+  {
+    "id": "1st-anniversary-badge",
+    "name": "1st Anniversary Badge",
+    "img": "/images/items/1st-anniversary-badge.png",
+    "category": "Others",
+    "description": "A special collectible badge commemorating Whiteout Survival's 1st anniversary and a year of journeying together through the blizzard.",
+    "sources": ["1st Anniversary"]
+  },
+  {
+    "id": "2nd-anniversary-badge",
+    "name": "2nd Anniversary Badge",
+    "img": "/images/items/2nd-anniversary-badge.png",
+    "category": "Others",
+    "description": "A badge commemorating the triumphant second anniversary of Whiteout Survival and glories yet to come.",
+    "sources": ["2nd Anniversary"]
+  },
+  {
+    "id": "3rd-anniversary-badge",
+    "name": "3rd Anniversary Badge",
+    "img": "/images/items/3rd-anniversary-badge.png",
+    "category": "Others",
+    "description": "A badge forged in happy commemoration of Whiteout Survival's third anniversary and a symbol of civilization, hope, and uncommon honor.",
+    "sources": ["3rd Anniversary"]
+  },
+  {
+    "id": "authority",
+    "name": "Authority",
+    "img": "/images/items/authority.png",
+    "category": "Others",
+    "description": "Whenever Chiefs within the State claim Daily Mission Chests or gather resources, the President gains [Authority]. President Skills expend [Authority]. The President/Supreme President can register for State-enhancing skills.",
+    "sources": ["Daily Mission Chests", "Gather Resources"]
+  },
+  {
+    "id": "blazing-meteor-puzzle-piece",
+    "name": "Blazing Meteor Puzzle Piece",
+    "img": "/images/items/blazing-meteor-puzzle-piece.png",
+    "category": "Others",
+    "description": "Use to complete the puzzle and get the [Blazing Meteor] Skin.",
+    "sources": ["Prestige Spinner"]
+  },
+  {
+    "id": "chief-charm",
+    "name": "Chief Charm",
+    "img": "/images/items/chief-charm.png",
+    "category": "Others",
+    "description": "Chief Charm unlocked at Furnace Lv.25.",
+    "sources": []
+  },
+  {
+    "id": "chief-rename-card",
+    "name": "Chief Rename Card",
+    "img": "/images/items/chief-rename-card.png",
+    "category": "Others",
+    "description": "Used to change your Chief's name",
+    "sources": ["Alliance Shop"]
+  },
+  {
+    "id": "chief-stamina",
+    "name": "Chief Stamina",
+    "img": "/images/items/chief-stamina.png",
+    "category": "Others",
+    "description": "Used for daily events like troops deployment. 1 Stamina is restored every 5 minutes. Obtain more via VIP shop, Ultra Value Monthly, Deal Hero Rally, Buy Packs or Buy with Gems. Notes : I don't recommend buying stamina using DIAMONDS or GEMS Additional info You can buy stamina can on VIP SHOP (unlock vip lv 2) with 100 gems for 1 can, you have 5 chances can",
+    "sources": []
+  },
+  {
+    "id": "coal",
+    "name": "Coal",
+    "img": "/images/items/coal.png",
+    "category": "Others",
+    "description": "The coal will be used to improve your buildings, do research and train your troops. You can obtain it by gathering, in events or by purchasing it. In your bag you will be able to see your different packs of coal available.",
+    "sources": []
+  },
+  {
+    "id": "epic-general-scene-fragment-pack",
+    "name": "Epic General Scene Fragment Pack",
+    "img": "/images/items/epic-general-scene-fragment-pack.png",
+    "category": "Others",
+    "description": "Use to obtain 5 Scene Fragments of random themes. Star Rating Probabilities ⭐⭐⭐⭐ 10.000% ⭐⭐⭐ 20.000% ⭐⭐ 40.000% ⭐ 30.000%",
+    "sources": ["Album Missions", "Recycle Shop"]
+  },
+  {
+    "id": "explosive-arrowhead",
+    "name": "Explosive Arrowhead",
+    "img": "/images/items/explosive-arrowhead.png",
+    "category": "Others",
+    "description": "This item can be earned via Lighthouse Intel Missions. Arrows can then be used to improve the bear trap. There are 5 levels of improvement possible in the bear traps, to increase the damage done to the bear by up to 25%.",
+    "sources": ["Lighthouse Intel Missions"]
+  },
+  {
+    "id": "frost-sphere-puzzle-piece",
+    "name": "Frost Sphere Puzzle Piece",
+    "img": "/images/items/frost-sphere-puzzle-piece.png",
+    "category": "Others",
+    "description": "Use to complete the puzzle and get the [Frost Sphere] Skin.",
+    "sources": ["Prestige Spinner"]
+  },
+  {
+    "id": "frost-star",
+    "name": "Frost Star",
+    "img": "/images/items/frost-star.png",
+    "category": "Others",
+    "description": "The universal currency of the Tundra. Can be used to purchase packs.",
+    "sources": ["https://pay.whiteoutsurvival.com/"]
+  },
+  {
+    "id": "gems",
+    "name": "Gems",
+    "img": "/images/items/gems.png",
+    "category": "Others",
+    "description": "Gems can be obtained in many different ways, via events, missions, beasts, pack purchases, and more. They will be used to purchase different items in shop, as well as in events such as the Wheel of Fortune and others.",
+    "sources": []
+  },
+  {
+    "id": "general-accessory-construction-contract",
+    "name": "General Accessory Construction Contract",
+    "img": "/images/items/general-accessory-construction-contract.png",
+    "category": "Others",
+    "description": "Used to redeem blueprints that can upgrade the accessories on Daybreak Island.",
+    "sources": [
+      "Daybreak Island Shop",
+      "Purchase Accessory Construction Contract (Regular Pack)",
+      "Some Events rewards (King Of Icefield)"
+    ]
+  },
+  {
+    "id": "general-master-fragment",
+    "name": "General Master Fragment",
+    "img": "/images/items/general-master-fragment.png",
+    "category": "Others",
+    "description": "Use to obtain 1 random themed Scene Fragments that you have not obtain at highest quality.",
+    "sources": ["Album Missions", "Recycle Shop"]
+  },
+  {
+    "id": "gold-key",
+    "name": "Gold key",
+    "img": "/images/items/gold-key.png",
+    "category": "Others",
+    "description": "Can be used to perform 1 epic recruitment to obtain Hero Shard, Hero, Manual, Hero XP, Speedup, RSS",
+    "sources": [
+      "Gem Shop",
+      "Exploration",
+      "Event",
+      "Daily Missions",
+      "Growth Missions",
+      "Chapter Missions"
+    ]
+  },
+  {
+    "id": "harbor-of-hope-blueprint",
+    "name": "Harbor of Hope Blueprint",
+    "img": "/images/items/harbor-of-hope-blueprint.png",
+    "category": "Others",
+    "description": "Accessory Harbor of Hope will be unlocked on first acquisition , subsequent blueprints can upgrade it.",
+    "sources": ["Redeem 10 General Accessory Construction Contracts", "Silver Shell Event Shop"]
+  },
+  {
+    "id": "iron",
+    "name": "Iron",
+    "img": "/images/items/iron.png",
+    "category": "Others",
+    "description": "The iron will be used to improve your buildings, do research and train your troops. You can obtain it by gathering, in events or by purchasing it. In your bag you will be able to see your different packs of iron available.",
+    "sources": []
+  },
+  {
+    "id": "island-prosperity",
+    "name": "Island Prosperity",
+    "img": "/images/items/island-prosperity.png",
+    "category": "Others",
+    "description": "The Prosperity Bonus of an decoration will only be beneficial to Island Prosperity when placed on the Daybreak Island. The bonus will be affected by the [Type Limit].",
+    "sources": [
+      "Places a decoration on the Daybreak Island.",
+      "Upgrades a decoration on the Daybreak Island."
+    ]
+  },
+  {
+    "id": "life-essence",
+    "name": "Life Essence",
+    "img": "/images/items/life-essence.png",
+    "category": "Others",
+    "description": "Crystallized from the energy of Tree of Life and can be used to upgrade or purchase decorations on Daybreak Island.",
+    "sources": [
+      "Tree of Life",
+      "Lumber Camp",
+      "Timbermill",
+      "Island Treasure",
+      "Assist Allies",
+      "Alliance Showdown"
+    ]
+  },
+  {
+    "id": "loyalty",
+    "name": "Loyalty",
+    "img": "/images/items/loyalty.png",
+    "category": "Others",
+    "description": "Used to Enlist Troops at the Enlistment Office.",
+    "sources": ["Enlistment Office", "Daily Missions", "Gathering Resources"]
+  },
+  {
+    "id": "loyalty-tag",
+    "name": "Loyalty Tag",
+    "img": "/images/items/loyalty-tag.png",
+    "category": "Others",
+    "description": "Loyalty that can be used to enlist troops.",
+    "sources": []
+  },
+  {
+    "id": "marvelous-tile-reconstruct",
+    "name": "Marvelous Tile: Reconstruct",
+    "img": "/images/items/marvelous-tile-reconstruct.png",
+    "category": "Others",
+    "description": "Shuffles all tile position randomly.",
+    "sources": ["Packs (Marvelous Boost)", "Marvelous Fantasia"]
+  },
+  {
+    "id": "marvelous-tile-remove",
+    "name": "Marvelous Tile: Remove",
+    "img": "/images/items/marvelous-tile-remove.png",
+    "category": "Others",
+    "description": "Move the three front-most tiles to the Storage Zone.",
+    "sources": ["Packs (Marvelous Boost)", "Marvelous Fantasia"]
+  },
+  {
+    "id": "marvelous-tile-withdraw",
+    "name": "Marvelous Tile: Withdraw",
+    "img": "/images/items/marvelous-tile-withdraw.png",
+    "category": "Others",
+    "description": "Returns the last moved tile from the elimination zone to its original position.",
+    "sources": ["Packs (Marvelous Boost)", "Marvelous Fantasia"]
+  },
+  {
+    "id": "meat",
+    "name": "Meat",
+    "img": "/images/items/meat.png",
+    "category": "Others",
+    "description": "The meat will be used to improve your buildings, do research and train your troops. You can obtain it by gathering, in events or by purchasing it. In your bag you will be able to see your different packs of meat available.",
+    "sources": []
+  },
+  {
+    "id": "mystery-badge",
+    "name": "Mystery Badge",
+    "img": "/images/items/mystery-badge.png",
+    "category": "Others",
+    "description": "Mysterious Badge can be used for trding in the Mystery Shop. Obtained via Daily Mission or Buy Pack",
+    "sources": []
+  },
+  {
+    "id": "mythic-general-decoration-component",
+    "name": "Mythic General Decoration Component",
+    "img": "/images/items/mythic-general-decoration-component.png",
+    "category": "Others",
+    "description": "Used to upgrade certain Mythic decorations.",
+    "sources": ["Daybreak Island Shop", "Events Ranking Rewards", "Labyrinth Shop"]
+  },
+  {
+    "id": "mythic-general-scene-fragment-pack",
+    "name": "Mythic General Scene Fragment Pack",
+    "img": "/images/items/mythic-general-scene-fragment-pack.png",
+    "category": "Others",
+    "description": "Use to obtain 6 Scene Fragments of random themes. Star Rating Probabilities ⭐⭐⭐⭐⭐ 10.000% ⭐⭐⭐⭐ 30.000% ⭐⭐⭐ 30.000% ⭐⭐ 20.000% ⭐ 10.000%",
+    "sources": ["Album Missions", "Daily Missions", "Recycle Shop"]
+  },
+  {
+    "id": "platinum-key",
+    "name": "Platinum Key",
+    "img": "/images/items/platinum-key.png",
+    "category": "Others",
+    "description": "Can be used to perform 1 advanced recruitment to obtain Hero Shard, Hero, Manual, Hero XP, Speedup, RSS",
+    "sources": [
+      "Exploration",
+      "Event",
+      "Gem Shop",
+      "Daily Missions",
+      "Growth Missions",
+      "Chapter Missions"
+    ]
+  },
+  {
+    "id": "prestige-badge",
+    "name": "Prestige Badge",
+    "img": "/images/items/prestige-badge.png",
+    "category": "Others",
+    "description": "Used to purchase items in Prestige Shop.",
+    "sources": ["Prestige Spinner"]
+  },
+  {
+    "id": "rare-general-scene-fragment-pack",
+    "name": "Rare General Scene Fragment Pack",
+    "img": "/images/items/rare-general-scene-fragment-pack.webp",
+    "category": "Others",
+    "description": "Use to obtain 4 Scene Fragments of random themes. Star Rating Probabilities ⭐⭐⭐ 10.000% ⭐⭐ 40.000% ⭐ 50.000%",
+    "sources": ["Album Missions", "Recycle Shop"]
+  },
+  {
+    "id": "short-token",
+    "name": "Shot Token",
+    "img": "/images/items/short-token.webp",
+    "category": "Others",
+    "description": "Used in the [Dead Shot] event.",
+    "sources": [
+      "Dead Shot (Sign-in Rewards)",
+      "Foundry Battle",
+      "King of Icefield",
+      "Officer Project",
+      "Castle Battle"
+    ]
+  },
+  {
+    "id": "starry-lighthouse-blueprint",
+    "name": "Starry Lighthouse Blueprint",
+    "img": "/images/items/starry-lighthouse-blueprint.png",
+    "category": "Others",
+    "description": "When you obtain this blueprint for the first time, Starry Lighthouse will be unlocked on Daybreak Island. Extra blueprints acquired subsequently can then be used to upgrade Starry Lighthouse.",
+    "sources": ["Redeem 10 General Accessory Construction Contracts"]
+  },
+  {
+    "id": "steel",
+    "name": "Steel",
+    "img": "/images/items/steel.png",
+    "category": "Others",
+    "description": "Essential material for upgrading furniture and technology. Obtained from Exploration.",
+    "sources": []
+  },
+  {
+    "id": "vip-xp",
+    "name": "VIP Points",
+    "img": "/images/items/vip-xp.png",
+    "category": "Others",
+    "description": "VIP Points upgrade your Benefits level. There are different amount of vip xp : 10 - 100 - 1.000 - 10.000.",
+    "sources": []
+  },
+  {
+    "id": "vip-time",
+    "name": "VIP Time",
+    "img": "/images/items/vip-time.png",
+    "category": "Others",
+    "description": "Gives (24h, 7d, or 30d) of VIP Time. Activate to get VIP Benefits.",
+    "sources": ["Buy using Gems", "Pack (Ultra Value Monthly Card)"]
+  },
+  {
+    "id": "warhymn-testament",
+    "name": "Warhymn Testament",
+    "img": "/images/items/warhymn-testament.png",
+    "category": "Others",
+    "description": "A sigil of honor earned in the flames of battle, redeemable for items at the Icefire Warhymn League Shop, or to Predict matches of the same.",
+    "sources": ["League Matches", "League Missions", "League Predictions"]
+  },
+  {
+    "id": "wood",
+    "name": "Wood",
+    "img": "/images/items/wood.png",
+    "category": "Others",
+    "description": "The wood will be used to improve your buildings, do research and train your troops. You can obtain it by gathering, in events or by purchasing it. In your bag you will be able to see your different packs of wood available.",
+    "sources": []
+  },
+  {
+    "id": "advanced-wild-mark",
+    "name": "Advanced Wild Mark",
+    "img": "/images/items/advanced-wild-mark.png",
+    "category": "Pet",
+    "description": "A stone imbued with a subtle touch of the wild, which can fully unleash a pet's potential. Used for pet refinement.",
+    "sources": [
+      "Lv. 3 Treasure Spots",
+      "Ally Treasure Chests",
+      "Tundra Trading Station",
+      "Arena Shop",
+      "Canyon Shop",
+      "Beast Whisperer Event",
+      "Packs"
+    ]
+  },
+  {
+    "id": "common-wild-mark",
+    "name": "Common Wild Mark",
+    "img": "/images/items/common-wild-mark.png",
+    "category": "Pet",
+    "description": "A stone imbued with a subtle touch of the wild, which can stir a pet's instincts to some extent. Used for pet refinement.",
+    "sources": ["Gem Shop", "Pet Adventure", "Growth Missions", "Beast Whisperer Event", "Packs"]
+  },
+  {
+    "id": "energizing-potion",
+    "name": "Energizing potion",
+    "img": "/images/items/energizing-potion.png",
+    "category": "Pet",
+    "description": "A rejuvenating potion. Can be used for pet advancement.",
+    "sources": [
+      "Growth Missions",
+      "Treasure Spots",
+      "Ally Treasure Chests",
+      "Arena Shop",
+      "Canyon Shop",
+      "Tundra Trading Station Shop",
+      "Beast Whisperer Event",
+      "Chest (Pet Advancement Material Custom Chest)",
+      "Packs"
+    ]
+  },
+  {
+    "id": "pet-food",
+    "name": "Pet Food",
+    "img": "/images/items/pet-food.png",
+    "category": "Pet",
+    "description": "Nutrient-rich, great for leveling up your pet.",
+    "sources": [
+      "Pet Skill (Natural Intuition)",
+      "Growth Missions",
+      "Pet Adventure",
+      "Beast Whisperer Event",
+      "Packs"
+    ]
+  },
+  {
+    "id": "strengthening-serum",
+    "name": "Strengthening Serum",
+    "img": "/images/items/strengthening-serum.png",
+    "category": "Pet",
+    "description": "Extracted from the mightiest creatures, Can be used for pet advancement.",
+    "sources": [
+      "Arena Shop",
+      "Alliance Championship Shop",
+      "Canyon Shop",
+      "Tundra Trading Station",
+      "Chest (Pet Advancement Material Custom Chest)",
+      "Packs"
+    ]
+  },
+  {
+    "id": "taming-manual",
+    "name": "Taming Manual",
+    "img": "/images/items/taming-manual.png",
+    "category": "Pet",
+    "description": "A manual with diligent beast taming notes that can be used for pet advancement.",
+    "sources": [
+      "Pet Adventure",
+      "Arena Shop",
+      "Alliance Championship Shop",
+      "Canyon Shop",
+      "Tundra Trading Station Shop",
+      "Beast Whisperer Event",
+      "Chest (Pet Advancement Material Custom Chest)",
+      "Packs"
+    ]
+  },
+  {
+    "id": "advanced-teleporter",
+    "name": "Advanced Teleporter",
+    "img": "/images/items/advanced-teleporter.png",
+    "category": "Teleporter",
+    "description": "This Teleport brings you to a place that you choose. If you don't have the item the teleportation will cost 4.000 Gems instead.",
+    "sources": [
+      "Alliance Shop",
+      "Nomadic Merchant Shop",
+      "VIP Shop",
+      "Fortress Fights",
+      "State of Power (SVS)"
+    ]
+  },
+  {
+    "id": "alliance-teleporter",
+    "name": "Alliance Teleporter",
+    "img": "/images/items/alliance-teleporter.png",
+    "category": "Teleporter",
+    "description": "This Teleport will place you closest to where your R5 is located, no matter if they are in an Alliance Area or not. Keep that in mind when using the teleport if you want to move to your hive, as the alliance territory gives bonuses but only when your Furnace is placed on the alliance territory!",
+    "sources": ["Alliance Shop"]
+  },
+  {
+    "id": "random-teleporter",
+    "name": "Random Teleporter",
+    "img": "/images/items/random-teleporter.png",
+    "category": "Teleporter",
+    "description": "The Random Teleporter is quite self explanatory. It will send you to a random place on the map.",
+    "sources": [
+      "Via the little arrow icon below your avatar image in the UI. You have some rechargeable random teleports in here as well. After use they recover over time.",
+      "Via Alliance Shop (Random content every day)",
+      "With some luck via the Normadic Shop"
+    ]
+  },
+  {
+    "id": "territory-teleporter",
+    "name": "Territory Teleporter",
+    "img": "/images/items/territory-teleporter.png",
+    "category": "Teleporter",
+    "description": "This Teleport will place you close to your HQ. If your alliance already has built the Tundra HQ, it will chose that HQ.",
+    "sources": ["Alliance Shop"]
+  }
+]

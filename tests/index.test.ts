@@ -7,5 +7,7 @@ describe('package entry point', () => {
     expect(whiteoutSurvivalData.heroes().count()).toBeGreaterThan(0);
     expect(whiteoutSurvivalData.experts().count()).toBeGreaterThan(0);
     expect(whiteoutSurvivalData.pets().count()).toBeGreaterThan(0);
+    expect(whiteoutSurvivalData.items().count()).toBeGreaterThan(0);
+    expect(whiteoutSurvivalData.skins().count()).toBeGreaterThan(0);
   });
 });

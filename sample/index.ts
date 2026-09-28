@@ -1,4 +1,4 @@
-import { buildings, experts, facilities, heroes, pets } from '../src';
+import { buildings, experts, facilities, heroes, items, pets, skins } from '../src';
 
 console.log('--- Buildings ---');
 console.log('total buildings:', buildings().count());
@@ -88,3 +88,16 @@ console.log('total pets:', pets().count());
 console.log('Legendary pets:', pets().byRarity('Legendary').count());
 console.log('Cave Lion skill tiers:', pets().findByName('Cave Lion')?.skill.values.length);
 console.log('Cave Lion unlock requirement:', pets().findByName('Cave Lion')?.unlockRequirement);
+
+console.log('\n--- Items ---');
+console.log('total items:', items().count());
+console.log('Chest items:', items().byCategory('Chest').count());
+console.log(
+  'Splendid Labyrinth Treasure reward rates:',
+  items().find('splendid-labyrinth-treasure')?.rewardRates?.length,
+);
+
+console.log('\n--- Skins ---');
+console.log('total skins:', skins().count());
+console.log('Avatar Frame skins:', skins().bySkinType('Avatar Frame').count());
+console.log('Gilded Dragonboat bonus:', skins().find('gilded-dragonboat')?.bonus);

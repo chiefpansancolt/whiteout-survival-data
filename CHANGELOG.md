@@ -115,5 +115,28 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   from whiteoutsurvival.wiki (truncated unlock text) and were cross-sourced from wostools.net
   instead.
 
+- `items()` and `skins()`: two new data modules sourced from the wiki's master item catalog page
+  (415 items across 18 category tabs, Birthday Card entries skipped). Split by kind rather than one
+  module: 226 functional items (`items()`, adds `Item` and `ItemRewardRate` types) and 189 cosmetic
+  skins (`skins()`, adds `Skin` and `SkinBonus` types).
+- `Item.id` and `Skin.id` use the item's own wiki URL slug rather than a freshly-slugified name,
+  since several names repeat across categories (e.g. "Garden of Delights" is both an Avatar Frame
+  and a Name Card) and the source slugs are already unique. 5 items tagged under more than one wiki
+  tab (all involving Chest) resolve to `Chest` as the single stored category, the more specific of
+  the two.
+- `Item.rewardRates` is an optional loot-table field for Chest items, parsed from whichever of two
+  structured page shapes is present — a "Reward Rates" bullet list or an `Item`/`Quantity`/`Chance`
+  table with the item-name cell spanning several tiers via `rowspan`. Only 8 of 50 chests present
+  their rewards in either structured shape; the rest are prose-only and get no `rewardRates`.
+- `Skin.bonus` is parsed from a clean `Bonus: <stat> +<value>` line where present (152 of 189
+  skins); left `undefined` — not a broken parse — for skins that genuinely grant no stat bonus, and
+  for the handful of City Skins (e.g. Frost Sphere VI) whose bonus text describes a multi-part
+  "Domain Bonus" area effect that doesn't reduce to a single stat/value pair.
+- Skin duration (`Permanent`, `30 day`, or a rank-dependent breakdown like
+  `Permanent/7 days/3 days`) proved too inconsistent to model as a structured field and is kept in
+  the free-text `description` instead, following the same judgment call as Pet's
+  `maxRefinementPercent` — store what the source actually gives cleanly, not a shape the data
+  doesn't support.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
