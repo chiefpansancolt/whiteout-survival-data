@@ -85,4 +85,29 @@ describe('Research tech tree', () => {
     expect(unreleasedReq.id).toBe('molten-lance-ii');
     expect(research().find(unreleasedReq.id)).toBeUndefined();
   });
+
+  it("disambiguates a same-named prerequisite to the referencing node's own troop type", () => {
+    // "Flame Squad" and "Flame Legion" each exist as three separate nodes, one
+    // per T11 troop type, and the source text never distinguishes which one it
+    // means — every troop type's own chain must resolve to its own node.
+    const flameShield = research().find('flame-shield')!; // T11 Infantry
+    expect(flameShield.levels[0].prerequisites).toEqual([
+      { type: 'research', id: 'flame-squad-2', level: 3 },
+    ]);
+
+    const crystalArmor = research().find('crystal-armor')!; // T11 Marksman
+    expect(crystalArmor.levels[0].prerequisites).toEqual([
+      { type: 'research', id: 'flame-squad-4', level: 3 },
+    ]);
+
+    const blazingArmor = research().find('blazing-armor')!; // T11 Lancer
+    expect(blazingArmor.levels[0].prerequisites).toEqual([
+      { type: 'research', id: 'flame-squad-3', level: 3 },
+    ]);
+
+    const heliosInfantry = research().find('helios-infantry')!;
+    expect(
+      heliosInfantry.levels[0].prerequisites.find((p) => p.id === 'flame-legion-2'),
+    ).toBeDefined();
+  });
 });

@@ -31963,7 +31963,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-2",
             "level": 3
           }
         ],
@@ -32089,7 +32089,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-2",
             "level": 4
           }
         ],
@@ -32138,7 +32138,7 @@
           },
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-2",
             "level": 5
           }
         ],
@@ -32317,7 +32317,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-2",
             "level": 3
           }
         ],
@@ -32443,7 +32443,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-2",
             "level": 4
           }
         ],
@@ -32492,7 +32492,7 @@
           },
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-2",
             "level": 5
           }
         ],
@@ -34181,7 +34181,7 @@
           },
           {
             "type": "research",
-            "id": "flame-legion-3",
+            "id": "flame-legion-2",
             "level": 12
           }
         ],
@@ -39685,7 +39685,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-4",
             "level": 3
           }
         ],
@@ -39849,7 +39849,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-4",
             "level": 5
           }
         ],
@@ -40016,7 +40016,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-4",
             "level": 3
           }
         ],
@@ -40180,7 +40180,7 @@
         "prerequisites": [
           {
             "type": "research",
-            "id": "flame-squad-3",
+            "id": "flame-squad-4",
             "level": 5
           }
         ],
@@ -41835,7 +41835,7 @@
           },
           {
             "type": "research",
-            "id": "flame-legion-3",
+            "id": "flame-legion",
             "level": 12
           }
         ],

@@ -209,5 +209,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   couldn't be independently verified from the source, so the gap is documented rather than guessed
   at.
 
+- Fixed a name-collision bug in `research()` discovered while building a local review diagram: three
+  T11 troop lines (Infantry, Marksman, Lancer) each have their own tech node literally named "Flame
+  Squad" and their own named "Flame Legion", and the source page text never distinguishes which one
+  a prerequisite reference means (e.g. Infantry's `Flame Shield` page just says "Flame Squad Lv.
+  3"). The parser's name lookup silently resolved every ambiguous reference to whichever node
+  happened to be last in the manifest (always the Lancer node), so Infantry's and Marksman's own
+  tier-2/tier-5 nodes incorrectly pointed at Lancer's `Flame Squad`/`Flame Legion` instead of their
+  own. Fixed by preferring a same-category match when a prerequisite name is ambiguous, verified
+  against raw HTML for all three troop types. `Helios Marksman` and `Helios Lancer` still reference
+  `Flame Tomahawk`/ `Flame Protection` by name (Infantry's own node names) — confirmed via raw HTML
+  that this is a genuine wiki copy-paste error on those two pages, not a parsing gap, and left as
+  scraped since there's no same-category equivalent to resolve it to.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
