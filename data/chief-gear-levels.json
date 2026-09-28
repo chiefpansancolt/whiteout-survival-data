@@ -1,0 +1,4024 @@
+[
+  {
+    "id": "common-star-0",
+    "name": "Common Star 0",
+    "tier": "Common",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 1500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 15
+      }
+    ],
+    "statTotalPercent": 9.35,
+    "powerTotal": 224400
+  },
+  {
+    "id": "common-star-1",
+    "name": "Common Star 1",
+    "tier": "Common",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 3800
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 40
+      }
+    ],
+    "statTotalPercent": 12.75,
+    "powerTotal": 306000
+  },
+  {
+    "id": "rare-star-0",
+    "name": "Rare Star 0",
+    "tier": "Rare",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 7000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 70
+      }
+    ],
+    "statTotalPercent": 17.0,
+    "powerTotal": 408000
+  },
+  {
+    "id": "rare-star-1",
+    "name": "Rare Star 1",
+    "tier": "Rare",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 9700
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 95
+      }
+    ],
+    "statTotalPercent": 21.25,
+    "powerTotal": 510000
+  },
+  {
+    "id": "rare-star-2",
+    "name": "Rare Star 2",
+    "tier": "Rare",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "design-plans",
+        "amount": 45
+      }
+    ],
+    "statTotalPercent": 25.5,
+    "powerTotal": 612000
+  },
+  {
+    "id": "rare-star-3",
+    "name": "Rare Star 3",
+    "tier": "Rare",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "design-plans",
+        "amount": 50
+      }
+    ],
+    "statTotalPercent": 29.75,
+    "powerTotal": 714000
+  },
+  {
+    "id": "epic-star-0",
+    "name": "Epic Star 0",
+    "tier": "Epic",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "design-plans",
+        "amount": 60
+      }
+    ],
+    "statTotalPercent": 34.0,
+    "powerTotal": 816000
+  },
+  {
+    "id": "epic-star-1",
+    "name": "Epic Star 1",
+    "tier": "Epic",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "design-plans",
+        "amount": 70
+      }
+    ],
+    "statTotalPercent": 36.89,
+    "powerTotal": 885360
+  },
+  {
+    "id": "epic-star-2",
+    "name": "Epic Star 2",
+    "tier": "Epic",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 6500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 65
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 40
+      }
+    ],
+    "statTotalPercent": 39.78,
+    "powerTotal": 954720
+  },
+  {
+    "id": "epic-star-3",
+    "name": "Epic Star 3",
+    "tier": "Epic",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 8000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 80
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 50
+      }
+    ],
+    "statTotalPercent": 42.67,
+    "powerTotal": 1024080
+  },
+  {
+    "id": "epic-t1-star-0",
+    "name": "Epic T1 Star 0",
+    "tier": "EpicT1",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 10000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 95
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 60
+      }
+    ],
+    "statTotalPercent": 45.56,
+    "powerTotal": 1093440
+  },
+  {
+    "id": "epic-t1-star-1",
+    "name": "Epic T1 Star 1",
+    "tier": "EpicT1",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 11000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 110
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 70
+      }
+    ],
+    "statTotalPercent": 48.45,
+    "powerTotal": 1162800
+  },
+  {
+    "id": "epic-t1-star-2",
+    "name": "Epic T1 Star 2",
+    "tier": "EpicT1",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 130
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 85
+      }
+    ],
+    "statTotalPercent": 51.34,
+    "powerTotal": 1232160
+  },
+  {
+    "id": "epic-t1-star-3",
+    "name": "Epic T1 Star 3",
+    "tier": "EpicT1",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 160
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 100
+      }
+    ],
+    "statTotalPercent": 54.23,
+    "powerTotal": 1301520
+  },
+  {
+    "id": "mythic-star-0",
+    "name": "Mythic Star 0",
+    "tier": "Mythic",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 22000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 220
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 40
+      }
+    ],
+    "statTotalPercent": 56.78,
+    "powerTotal": 1362720
+  },
+  {
+    "id": "mythic-star-1",
+    "name": "Mythic Star 1",
+    "tier": "Mythic",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 23000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 230
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 40
+      }
+    ],
+    "statTotalPercent": 59.33,
+    "powerTotal": 1423920
+  },
+  {
+    "id": "mythic-star-2",
+    "name": "Mythic Star 2",
+    "tier": "Mythic",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 25000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 250
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 45
+      }
+    ],
+    "statTotalPercent": 61.88,
+    "powerTotal": 1485120
+  },
+  {
+    "id": "mythic-star-3",
+    "name": "Mythic Star 3",
+    "tier": "Mythic",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 26000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 260
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 45
+      }
+    ],
+    "statTotalPercent": 64.43,
+    "powerTotal": 1546320
+  },
+  {
+    "id": "mythic-t1-star-0",
+    "name": "Mythic T1 Star 0",
+    "tier": "MythicT1",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 28000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 280
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 45
+      }
+    ],
+    "statTotalPercent": 66.98,
+    "powerTotal": 1607520
+  },
+  {
+    "id": "mythic-t1-star-1",
+    "name": "Mythic T1 Star 1",
+    "tier": "MythicT1",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 30000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 300
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      }
+    ],
+    "statTotalPercent": 69.53,
+    "powerTotal": 1668720
+  },
+  {
+    "id": "mythic-t1-star-2",
+    "name": "Mythic T1 Star 2",
+    "tier": "MythicT1",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 32000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 320
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      }
+    ],
+    "statTotalPercent": 72.08,
+    "powerTotal": 1729920
+  },
+  {
+    "id": "mythic-t1-star-3",
+    "name": "Mythic T1 Star 3",
+    "tier": "MythicT1",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 35000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 340
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      }
+    ],
+    "statTotalPercent": 74.63,
+    "powerTotal": 1791120
+  },
+  {
+    "id": "mythic-t2-star-0",
+    "name": "Mythic T2 Star 0",
+    "tier": "MythicT2",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 38000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 360
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      }
+    ],
+    "statTotalPercent": 77.18,
+    "powerTotal": 1852320
+  },
+  {
+    "id": "mythic-t2-star-1",
+    "name": "Mythic T2 Star 1",
+    "tier": "MythicT2",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 43000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 430
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 75
+      }
+    ],
+    "statTotalPercent": 79.73,
+    "powerTotal": 1913520
+  },
+  {
+    "id": "mythic-t2-star-2",
+    "name": "Mythic T2 Star 2",
+    "tier": "MythicT2",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 45000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 460
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 80
+      }
+    ],
+    "statTotalPercent": 82.28,
+    "powerTotal": 1974720
+  },
+  {
+    "id": "mythic-t2-star-3-stage-0",
+    "name": "Mythic T2 Star 3 Stage 0",
+    "tier": "MythicT2",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 48000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 500
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 85
+      }
+    ],
+    "statTotalPercent": 85.0,
+    "powerTotal": 2040000
+  },
+  {
+    "id": "mythic-t2-star-3-stage-1",
+    "name": "Mythic T2 Star 3 Stage 1",
+    "tier": "MythicT2",
+    "stars": 3,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 12500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 132
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 21
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 86.06,
+    "powerTotal": 2064000,
+    "troopsDeploymentCapacity": 10
+  },
+  {
+    "id": "mythic-t2-star-3-stage-2",
+    "name": "Mythic T2 Star 3 Stage 2",
+    "tier": "MythicT2",
+    "stars": 3,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 12500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 132
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 21
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 87.12,
+    "powerTotal": 2088000,
+    "troopsDeploymentCapacity": 20
+  },
+  {
+    "id": "mythic-t2-star-3-stage-3",
+    "name": "Mythic T2 Star 3 Stage 3",
+    "tier": "MythicT2",
+    "stars": 3,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 12500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 132
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 21
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 88.18,
+    "powerTotal": 2112000,
+    "troopsDeploymentCapacity": 30
+  },
+  {
+    "id": "legendary-star-0-stage-0",
+    "name": "Legendary Star 0 Stage 0",
+    "tier": "Legendary",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 12500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 134
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 22
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 4
+      }
+    ],
+    "statTotalPercent": 89.25,
+    "powerTotal": 2142000,
+    "troopsDeploymentCapacity": 40
+  },
+  {
+    "id": "legendary-star-0-stage-1",
+    "name": "Legendary Star 0 Stage 1",
+    "tier": "Legendary",
+    "stars": 0,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 140
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 22
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 90.31,
+    "powerTotal": 2166000,
+    "troopsDeploymentCapacity": 50
+  },
+  {
+    "id": "legendary-star-0-stage-2",
+    "name": "Legendary Star 0 Stage 2",
+    "tier": "Legendary",
+    "stars": 0,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 140
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 22
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 91.37,
+    "powerTotal": 2190000,
+    "troopsDeploymentCapacity": 60
+  },
+  {
+    "id": "legendary-star-0-stage-3",
+    "name": "Legendary Star 0 Stage 3",
+    "tier": "Legendary",
+    "stars": 0,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 140
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 22
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 92.43,
+    "powerTotal": 2214000,
+    "troopsDeploymentCapacity": 70
+  },
+  {
+    "id": "legendary-star-1-stage-0",
+    "name": "Legendary Star 1 Stage 0",
+    "tier": "Legendary",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 140
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 24
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 4
+      }
+    ],
+    "statTotalPercent": 93.5,
+    "powerTotal": 2244000,
+    "troopsDeploymentCapacity": 80
+  },
+  {
+    "id": "legendary-star-1-stage-1",
+    "name": "Legendary Star 1 Stage 1",
+    "tier": "Legendary",
+    "stars": 1,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 147
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 23
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 94.56,
+    "powerTotal": 2268000,
+    "troopsDeploymentCapacity": 90
+  },
+  {
+    "id": "legendary-star-1-stage-2",
+    "name": "Legendary Star 1 Stage 2",
+    "tier": "Legendary",
+    "stars": 1,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 147
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 23
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 95.62,
+    "powerTotal": 2292000,
+    "troopsDeploymentCapacity": 100
+  },
+  {
+    "id": "legendary-star-1-stage-3",
+    "name": "Legendary Star 1 Stage 3",
+    "tier": "Legendary",
+    "stars": 1,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 147
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 23
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 96.68,
+    "powerTotal": 2316000,
+    "troopsDeploymentCapacity": 110
+  },
+  {
+    "id": "legendary-star-2-stage-0",
+    "name": "Legendary Star 2 Stage 0",
+    "tier": "Legendary",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 13500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 149
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 26
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 4
+      }
+    ],
+    "statTotalPercent": 97.75,
+    "powerTotal": 2346000,
+    "troopsDeploymentCapacity": 120
+  },
+  {
+    "id": "legendary-star-2-stage-1",
+    "name": "Legendary Star 2 Stage 1",
+    "tier": "Legendary",
+    "stars": 2,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 14000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 155
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 25
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 98.81,
+    "powerTotal": 2370000,
+    "troopsDeploymentCapacity": 130
+  },
+  {
+    "id": "legendary-star-2-stage-2",
+    "name": "Legendary Star 2 Stage 2",
+    "tier": "Legendary",
+    "stars": 2,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 14000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 155
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 25
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 99.87,
+    "powerTotal": 2394000,
+    "troopsDeploymentCapacity": 140
+  },
+  {
+    "id": "legendary-star-2-stage-3",
+    "name": "Legendary Star 2 Stage 3",
+    "tier": "Legendary",
+    "stars": 2,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 14000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 155
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 25
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 2
+      }
+    ],
+    "statTotalPercent": 100.93,
+    "powerTotal": 2418000,
+    "troopsDeploymentCapacity": 150
+  },
+  {
+    "id": "legendary-star-3-stage-0",
+    "name": "Legendary Star 3 Stage 0",
+    "tier": "Legendary",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 14000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 155
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 25
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 4
+      }
+    ],
+    "statTotalPercent": 102.0,
+    "powerTotal": 2448000,
+    "troopsDeploymentCapacity": 160
+  },
+  {
+    "id": "legendary-star-3-stage-1",
+    "name": "Legendary Star 3 Stage 1",
+    "tier": "Legendary",
+    "stars": 3,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 14750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 167
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 27
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 103.06,
+    "powerTotal": 2472000,
+    "troopsDeploymentCapacity": 260
+  },
+  {
+    "id": "legendary-star-3-stage-2",
+    "name": "Legendary Star 3 Stage 2",
+    "tier": "Legendary",
+    "stars": 3,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 14750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 167
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 27
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 104.12,
+    "powerTotal": 2496000,
+    "troopsDeploymentCapacity": 270
+  },
+  {
+    "id": "legendary-star-3-stage-3",
+    "name": "Legendary Star 3 Stage 3",
+    "tier": "Legendary",
+    "stars": 3,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 14750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 167
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 27
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 105.18,
+    "powerTotal": 2520000,
+    "troopsDeploymentCapacity": 280
+  },
+  {
+    "id": "legendary-t1-star-0-stage-0",
+    "name": "Legendary T1 Star 0 Stage 0",
+    "tier": "LegendaryT1",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 14750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 169
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 29
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 106.25,
+    "powerTotal": 2550000,
+    "troopsDeploymentCapacity": 290
+  },
+  {
+    "id": "legendary-t1-star-0-stage-1",
+    "name": "Legendary T1 Star 0 Stage 1",
+    "tier": "LegendaryT1",
+    "stars": 0,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 175
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 28
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 107.31,
+    "powerTotal": 2574000,
+    "troopsDeploymentCapacity": 300
+  },
+  {
+    "id": "legendary-t1-star-0-stage-2",
+    "name": "Legendary T1 Star 0 Stage 2",
+    "tier": "LegendaryT1",
+    "stars": 0,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 175
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 28
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 108.37,
+    "powerTotal": 2598000,
+    "troopsDeploymentCapacity": 310
+  },
+  {
+    "id": "legendary-t1-star-0-stage-3",
+    "name": "Legendary T1 Star 0 Stage 3",
+    "tier": "LegendaryT1",
+    "stars": 0,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 175
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 28
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 109.43,
+    "powerTotal": 2622000,
+    "troopsDeploymentCapacity": 320
+  },
+  {
+    "id": "legendary-t1-star-1-stage-0",
+    "name": "Legendary T1 Star 1 Stage 0",
+    "tier": "LegendaryT1",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 175
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 31
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 110.5,
+    "powerTotal": 2652000,
+    "troopsDeploymentCapacity": 330
+  },
+  {
+    "id": "legendary-t1-star-1-stage-1",
+    "name": "Legendary T1 Star 1 Stage 1",
+    "tier": "LegendaryT1",
+    "stars": 1,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 182
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 30
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 111.56,
+    "powerTotal": 2676000,
+    "troopsDeploymentCapacity": 340
+  },
+  {
+    "id": "legendary-t1-star-1-stage-2",
+    "name": "Legendary T1 Star 1 Stage 2",
+    "tier": "LegendaryT1",
+    "stars": 1,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 182
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 30
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 112.62,
+    "powerTotal": 2700000,
+    "troopsDeploymentCapacity": 350
+  },
+  {
+    "id": "legendary-t1-star-1-stage-3",
+    "name": "Legendary T1 Star 1 Stage 3",
+    "tier": "LegendaryT1",
+    "stars": 1,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 182
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 30
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 113.68,
+    "powerTotal": 2724000,
+    "troopsDeploymentCapacity": 360
+  },
+  {
+    "id": "legendary-t1-star-2-stage-0",
+    "name": "Legendary T1 Star 2 Stage 0",
+    "tier": "LegendaryT1",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 15750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 184
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 30
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 114.75,
+    "powerTotal": 2754000,
+    "troopsDeploymentCapacity": 370
+  },
+  {
+    "id": "legendary-t1-star-2-stage-1",
+    "name": "Legendary T1 Star 2 Stage 1",
+    "tier": "LegendaryT1",
+    "stars": 2,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 16250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 190
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 31
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 115.81,
+    "powerTotal": 2778000,
+    "troopsDeploymentCapacity": 380
+  },
+  {
+    "id": "legendary-t1-star-2-stage-2",
+    "name": "Legendary T1 Star 2 Stage 2",
+    "tier": "LegendaryT1",
+    "stars": 2,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 16250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 190
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 31
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 116.87,
+    "powerTotal": 2802000,
+    "troopsDeploymentCapacity": 390
+  },
+  {
+    "id": "legendary-t1-star-2-stage-3",
+    "name": "Legendary T1 Star 2 Stage 3",
+    "tier": "LegendaryT1",
+    "stars": 2,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 16250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 190
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 31
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 3
+      }
+    ],
+    "statTotalPercent": 117.93,
+    "powerTotal": 2826000,
+    "troopsDeploymentCapacity": 400
+  },
+  {
+    "id": "legendary-t1-star-3-stage-0",
+    "name": "Legendary T1 Star 3 Stage 0",
+    "tier": "LegendaryT1",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 16250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 190
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 32
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 119.0,
+    "powerTotal": 2856000,
+    "troopsDeploymentCapacity": 410
+  },
+  {
+    "id": "legendary-t1-star-3-stage-1",
+    "name": "Legendary T1 Star 3 Stage 1",
+    "tier": "LegendaryT1",
+    "stars": 3,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 17000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 202
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 33
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 120.06,
+    "powerTotal": 2881000,
+    "troopsDeploymentCapacity": 510
+  },
+  {
+    "id": "legendary-t1-star-3-stage-2",
+    "name": "Legendary T1 Star 3 Stage 2",
+    "tier": "LegendaryT1",
+    "stars": 3,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 17000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 202
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 33
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 121.12,
+    "powerTotal": 2906000,
+    "troopsDeploymentCapacity": 520
+  },
+  {
+    "id": "legendary-t1-star-3-stage-3",
+    "name": "Legendary T1 Star 3 Stage 3",
+    "tier": "LegendaryT1",
+    "stars": 3,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 17000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 202
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 33
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 122.18,
+    "powerTotal": 2931000,
+    "troopsDeploymentCapacity": 530
+  },
+  {
+    "id": "legendary-t2-star-0-stage-0",
+    "name": "Legendary T2 Star 0 Stage 0",
+    "tier": "LegendaryT2",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 17000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 204
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 36
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 123.25,
+    "powerTotal": 2958000,
+    "troopsDeploymentCapacity": 540
+  },
+  {
+    "id": "legendary-t2-star-0-stage-1",
+    "name": "Legendary T2 Star 0 Stage 1",
+    "tier": "LegendaryT2",
+    "stars": 0,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 17500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 210
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 35
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 124.31,
+    "powerTotal": 2983000,
+    "troopsDeploymentCapacity": 550
+  },
+  {
+    "id": "legendary-t2-star-0-stage-2",
+    "name": "Legendary T2 Star 0 Stage 2",
+    "tier": "LegendaryT2",
+    "stars": 0,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 17500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 210
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 35
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 125.37,
+    "powerTotal": 3008000,
+    "troopsDeploymentCapacity": 560
+  },
+  {
+    "id": "legendary-t2-star-0-stage-3",
+    "name": "Legendary T2 Star 0 Stage 3",
+    "tier": "LegendaryT2",
+    "stars": 0,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 17500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 210
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 35
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 126.43,
+    "powerTotal": 3033000,
+    "troopsDeploymentCapacity": 570
+  },
+  {
+    "id": "legendary-t2-star-1-stage-0",
+    "name": "Legendary T2 Star 1 Stage 0",
+    "tier": "LegendaryT2",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 17500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 210
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 35
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 127.5,
+    "powerTotal": 3060000,
+    "troopsDeploymentCapacity": 580
+  },
+  {
+    "id": "legendary-t2-star-1-stage-1",
+    "name": "Legendary T2 Star 1 Stage 1",
+    "tier": "LegendaryT2",
+    "stars": 1,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 18000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 217
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 36
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 128.56,
+    "powerTotal": 3085000,
+    "troopsDeploymentCapacity": 590
+  },
+  {
+    "id": "legendary-t2-star-1-stage-2",
+    "name": "Legendary T2 Star 1 Stage 2",
+    "tier": "LegendaryT2",
+    "stars": 1,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 18000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 217
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 36
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 129.62,
+    "powerTotal": 3110000,
+    "troopsDeploymentCapacity": 600
+  },
+  {
+    "id": "legendary-t2-star-1-stage-3",
+    "name": "Legendary T2 Star 1 Stage 3",
+    "tier": "LegendaryT2",
+    "stars": 1,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 18000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 217
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 36
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 130.68,
+    "powerTotal": 3135000,
+    "troopsDeploymentCapacity": 610
+  },
+  {
+    "id": "legendary-t2-star-2-stage-0",
+    "name": "Legendary T2 Star 2 Stage 0",
+    "tier": "LegendaryT2",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 18000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 219
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 37
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 131.75,
+    "powerTotal": 3162000,
+    "troopsDeploymentCapacity": 620
+  },
+  {
+    "id": "legendary-t2-star-2-stage-1",
+    "name": "Legendary T2 Star 2 Stage 1",
+    "tier": "LegendaryT2",
+    "stars": 2,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 18500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 225
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 37
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 132.81,
+    "powerTotal": 3187000,
+    "troopsDeploymentCapacity": 630
+  },
+  {
+    "id": "legendary-t2-star-2-stage-2",
+    "name": "Legendary T2 Star 2 Stage 2",
+    "tier": "LegendaryT2",
+    "stars": 2,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 18500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 225
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 37
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 133.87,
+    "powerTotal": 3212000,
+    "troopsDeploymentCapacity": 640
+  },
+  {
+    "id": "legendary-t2-star-2-stage-3",
+    "name": "Legendary T2 Star 2 Stage 3",
+    "tier": "LegendaryT2",
+    "stars": 2,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 18500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 225
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 37
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 134.93,
+    "powerTotal": 3237000,
+    "troopsDeploymentCapacity": 650
+  },
+  {
+    "id": "legendary-t2-star-3-stage-0",
+    "name": "Legendary T2 Star 3 Stage 0",
+    "tier": "LegendaryT2",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 18500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 225
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 39
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 5
+      }
+    ],
+    "statTotalPercent": 136.0,
+    "powerTotal": 3264000,
+    "troopsDeploymentCapacity": 660
+  },
+  {
+    "id": "legendary-t2-star-3-stage-1",
+    "name": "Legendary T2 Star 3 Stage 1",
+    "tier": "LegendaryT2",
+    "stars": 3,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 19250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 237
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 40
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 137.06,
+    "powerTotal": 3289000,
+    "troopsDeploymentCapacity": 760
+  },
+  {
+    "id": "legendary-t2-star-3-stage-2",
+    "name": "Legendary T2 Star 3 Stage 2",
+    "tier": "LegendaryT2",
+    "stars": 3,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 19250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 237
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 40
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 138.12,
+    "powerTotal": 3314000,
+    "troopsDeploymentCapacity": 770
+  },
+  {
+    "id": "legendary-t2-star-3-stage-3",
+    "name": "Legendary T2 Star 3 Stage 3",
+    "tier": "LegendaryT2",
+    "stars": 3,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 19250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 237
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 40
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 139.18,
+    "powerTotal": 3339000,
+    "troopsDeploymentCapacity": 780
+  },
+  {
+    "id": "legendary-t3-star-0-stage-0",
+    "name": "Legendary T3 Star 0 Stage 0",
+    "tier": "LegendaryT3",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 19250
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 239
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 40
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 7
+      }
+    ],
+    "statTotalPercent": 140.25,
+    "powerTotal": 3366000,
+    "troopsDeploymentCapacity": 790
+  },
+  {
+    "id": "legendary-t3-star-0-stage-1",
+    "name": "Legendary T3 Star 0 Stage 1",
+    "tier": "LegendaryT3",
+    "stars": 0,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 20000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 247
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 41
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 141.31,
+    "powerTotal": 3391000,
+    "troopsDeploymentCapacity": 800
+  },
+  {
+    "id": "legendary-t3-star-0-stage-2",
+    "name": "Legendary T3 Star 0 Stage 2",
+    "tier": "LegendaryT3",
+    "stars": 0,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 20000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 247
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 41
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 142.37,
+    "powerTotal": 3416000,
+    "troopsDeploymentCapacity": 810
+  },
+  {
+    "id": "legendary-t3-star-0-stage-3",
+    "name": "Legendary T3 Star 0 Stage 3",
+    "tier": "LegendaryT3",
+    "stars": 0,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 20000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 247
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 41
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 143.43,
+    "powerTotal": 3441000,
+    "troopsDeploymentCapacity": 820
+  },
+  {
+    "id": "legendary-t3-star-1-stage-0",
+    "name": "Legendary T3 Star 1 Stage 0",
+    "tier": "LegendaryT3",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 20000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 249
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 42
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 7
+      }
+    ],
+    "statTotalPercent": 144.5,
+    "powerTotal": 3468000,
+    "troopsDeploymentCapacity": 830
+  },
+  {
+    "id": "legendary-t3-star-1-stage-1",
+    "name": "Legendary T3 Star 1 Stage 1",
+    "tier": "LegendaryT3",
+    "stars": 1,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 20750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 257
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 42
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 145.56,
+    "powerTotal": 3493000,
+    "troopsDeploymentCapacity": 840
+  },
+  {
+    "id": "legendary-t3-star-1-stage-2",
+    "name": "Legendary T3 Star 1 Stage 2",
+    "tier": "LegendaryT3",
+    "stars": 1,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 20750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 257
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 42
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 146.62,
+    "powerTotal": 3518000,
+    "troopsDeploymentCapacity": 850
+  },
+  {
+    "id": "legendary-t3-star-1-stage-3",
+    "name": "Legendary T3 Star 1 Stage 3",
+    "tier": "LegendaryT3",
+    "stars": 1,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 20750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 257
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 42
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 147.68,
+    "powerTotal": 3543000,
+    "troopsDeploymentCapacity": 860
+  },
+  {
+    "id": "legendary-t3-star-2-stage-0",
+    "name": "Legendary T3 Star 2 Stage 0",
+    "tier": "LegendaryT3",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 20750
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 259
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 44
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 7
+      }
+    ],
+    "statTotalPercent": 148.75,
+    "powerTotal": 3570000,
+    "troopsDeploymentCapacity": 870
+  },
+  {
+    "id": "legendary-t3-star-2-stage-1",
+    "name": "Legendary T3 Star 2 Stage 1",
+    "tier": "LegendaryT3",
+    "stars": 2,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 21500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 267
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 45
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 149.81,
+    "powerTotal": 3595000,
+    "troopsDeploymentCapacity": 880
+  },
+  {
+    "id": "legendary-t3-star-2-stage-2",
+    "name": "Legendary T3 Star 2 Stage 2",
+    "tier": "LegendaryT3",
+    "stars": 2,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 21500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 267
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 45
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 150.87,
+    "powerTotal": 3620000,
+    "troopsDeploymentCapacity": 890
+  },
+  {
+    "id": "legendary-t3-star-2-stage-3",
+    "name": "Legendary T3 Star 2 Stage 3",
+    "tier": "LegendaryT3",
+    "stars": 2,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 21500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 267
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 45
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 6
+      }
+    ],
+    "statTotalPercent": 151.93,
+    "powerTotal": 3645000,
+    "troopsDeploymentCapacity": 900
+  },
+  {
+    "id": "legendary-t3-star-3-stage-0",
+    "name": "Legendary T3 Star 3 Stage 0",
+    "tier": "LegendaryT3",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 21500
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 269
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 45
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 7
+      }
+    ],
+    "statTotalPercent": 153.0,
+    "powerTotal": 3672000,
+    "troopsDeploymentCapacity": 910
+  },
+  {
+    "id": "legendary-t3-star-3-stage-1",
+    "name": "Legendary T3 Star 3 Stage 1",
+    "tier": "LegendaryT3",
+    "stars": 3,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 24000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 300
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 50
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 154.7,
+    "powerTotal": 3712000,
+    "troopsDeploymentCapacity": 1010
+  },
+  {
+    "id": "legendary-t3-star-3-stage-2",
+    "name": "Legendary T3 Star 3 Stage 2",
+    "tier": "LegendaryT3",
+    "stars": 3,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 24000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 300
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 50
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 156.4,
+    "powerTotal": 3753000,
+    "troopsDeploymentCapacity": 1020
+  },
+  {
+    "id": "legendary-t3-star-3-stage-3",
+    "name": "Legendary T3 Star 3 Stage 3",
+    "tier": "LegendaryT3",
+    "stars": 3,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 24000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 300
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 50
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 158.1,
+    "powerTotal": 3794000,
+    "troopsDeploymentCapacity": 1030
+  },
+  {
+    "id": "legendary-t3-star-3-stage-4",
+    "name": "Legendary T3 Star 3 Stage 4",
+    "tier": "LegendaryT3",
+    "stars": 3,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 24000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 300
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 50
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 159.8,
+    "powerTotal": 3835000,
+    "troopsDeploymentCapacity": 1040
+  },
+  {
+    "id": "legendary-t4-star-0-stage-0",
+    "name": "Legendary T4 Star 0 Stage 0",
+    "tier": "LegendaryT4",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 24000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 300
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 50
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 161.5,
+    "powerTotal": 3876000,
+    "troopsDeploymentCapacity": 1050
+  },
+  {
+    "id": "legendary-t4-star-0-stage-1",
+    "name": "Legendary T4 Star 0 Stage 1",
+    "tier": "LegendaryT4",
+    "stars": 0,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 28000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 330
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 163.2,
+    "powerTotal": 3916000,
+    "troopsDeploymentCapacity": 1060
+  },
+  {
+    "id": "legendary-t4-star-0-stage-2",
+    "name": "Legendary T4 Star 0 Stage 2",
+    "tier": "LegendaryT4",
+    "stars": 0,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 28000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 330
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 164.9,
+    "powerTotal": 3957000,
+    "troopsDeploymentCapacity": 1070
+  },
+  {
+    "id": "legendary-t4-star-0-stage-3",
+    "name": "Legendary T4 Star 0 Stage 3",
+    "tier": "LegendaryT4",
+    "stars": 0,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 28000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 330
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 166.6,
+    "powerTotal": 3998000,
+    "troopsDeploymentCapacity": 1080
+  },
+  {
+    "id": "legendary-t4-star-0-stage-4",
+    "name": "Legendary T4 Star 0 Stage 4",
+    "tier": "LegendaryT4",
+    "stars": 0,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 28000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 330
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 168.3,
+    "powerTotal": 4039000,
+    "troopsDeploymentCapacity": 1090
+  },
+  {
+    "id": "legendary-t4-star-1-stage-0",
+    "name": "Legendary T4 Star 1 Stage 0",
+    "tier": "LegendaryT4",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 28000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 330
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 55
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 170.0,
+    "powerTotal": 4080000,
+    "troopsDeploymentCapacity": 1100
+  },
+  {
+    "id": "legendary-t4-star-1-stage-1",
+    "name": "Legendary T4 Star 1 Stage 1",
+    "tier": "LegendaryT4",
+    "stars": 1,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 32000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 360
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 60
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 171.7,
+    "powerTotal": 4120000,
+    "troopsDeploymentCapacity": 1110
+  },
+  {
+    "id": "legendary-t4-star-1-stage-2",
+    "name": "Legendary T4 Star 1 Stage 2",
+    "tier": "LegendaryT4",
+    "stars": 1,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 32000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 360
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 60
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 173.4,
+    "powerTotal": 4161000,
+    "troopsDeploymentCapacity": 1120
+  },
+  {
+    "id": "legendary-t4-star-1-stage-3",
+    "name": "Legendary T4 Star 1 Stage 3",
+    "tier": "LegendaryT4",
+    "stars": 1,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 32000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 360
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 60
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 175.1,
+    "powerTotal": 4202000,
+    "troopsDeploymentCapacity": 1130
+  },
+  {
+    "id": "legendary-t4-star-1-stage-4",
+    "name": "Legendary T4 Star 1 Stage 4",
+    "tier": "LegendaryT4",
+    "stars": 1,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 32000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 360
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 60
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 176.8,
+    "powerTotal": 4243000,
+    "troopsDeploymentCapacity": 1140
+  },
+  {
+    "id": "legendary-t4-star-2-stage-0",
+    "name": "Legendary T4 Star 2 Stage 0",
+    "tier": "LegendaryT4",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 32000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 360
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 60
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 178.5,
+    "powerTotal": 4284000,
+    "troopsDeploymentCapacity": 1150
+  },
+  {
+    "id": "legendary-t4-star-2-stage-1",
+    "name": "Legendary T4 Star 2 Stage 1",
+    "tier": "LegendaryT4",
+    "stars": 2,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 36000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 390
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 65
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 180.2,
+    "powerTotal": 4324000,
+    "troopsDeploymentCapacity": 1160
+  },
+  {
+    "id": "legendary-t4-star-2-stage-2",
+    "name": "Legendary T4 Star 2 Stage 2",
+    "tier": "LegendaryT4",
+    "stars": 2,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 36000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 390
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 65
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 181.9,
+    "powerTotal": 4365000,
+    "troopsDeploymentCapacity": 1170
+  },
+  {
+    "id": "legendary-t4-star-2-stage-3",
+    "name": "Legendary T4 Star 2 Stage 3",
+    "tier": "LegendaryT4",
+    "stars": 2,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 36000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 390
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 65
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 183.6,
+    "powerTotal": 4406000,
+    "troopsDeploymentCapacity": 1180
+  },
+  {
+    "id": "legendary-t4-star-2-stage-4",
+    "name": "Legendary T4 Star 2 Stage 4",
+    "tier": "LegendaryT4",
+    "stars": 2,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 36000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 390
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 65
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 185.3,
+    "powerTotal": 4447000,
+    "troopsDeploymentCapacity": 1190
+  },
+  {
+    "id": "legendary-t4-star-3-stage-0",
+    "name": "Legendary T4 Star 3 Stage 0",
+    "tier": "LegendaryT4",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 36000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 390
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 65
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 8
+      }
+    ],
+    "statTotalPercent": 187.0,
+    "powerTotal": 4488000,
+    "troopsDeploymentCapacity": 1200
+  },
+  {
+    "id": "legendary-t4-star-3-stage-1",
+    "name": "Legendary T4 Star 3 Stage 1",
+    "tier": "LegendaryT4",
+    "stars": 3,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 40000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 420
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 70
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 188.7,
+    "powerTotal": 4528000,
+    "troopsDeploymentCapacity": 1300
+  },
+  {
+    "id": "legendary-t4-star-3-stage-2",
+    "name": "Legendary T4 Star 3 Stage 2",
+    "tier": "LegendaryT4",
+    "stars": 3,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 40000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 420
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 70
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 190.4,
+    "powerTotal": 4569000,
+    "troopsDeploymentCapacity": 1310
+  },
+  {
+    "id": "legendary-t4-star-3-stage-3",
+    "name": "Legendary T4 Star 3 Stage 3",
+    "tier": "LegendaryT4",
+    "stars": 3,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 40000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 420
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 70
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 192.1,
+    "powerTotal": 4610000,
+    "troopsDeploymentCapacity": 1320
+  },
+  {
+    "id": "legendary-t4-star-3-stage-4",
+    "name": "Legendary T4 Star 3 Stage 4",
+    "tier": "LegendaryT4",
+    "stars": 3,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 40000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 420
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 70
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 193.8,
+    "powerTotal": 4651000,
+    "troopsDeploymentCapacity": 1330
+  },
+  {
+    "id": "legendary-t5-star-0-stage-0",
+    "name": "Legendary T5 Star 0 Stage 0",
+    "tier": "LegendaryT5",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 40000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 420
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 70
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 195.5,
+    "powerTotal": 4692000,
+    "troopsDeploymentCapacity": 1340
+  },
+  {
+    "id": "legendary-t5-star-0-stage-1",
+    "name": "Legendary T5 Star 0 Stage 1",
+    "tier": "LegendaryT5",
+    "stars": 0,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 44000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 450
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 75
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 197.2,
+    "powerTotal": 4732000,
+    "troopsDeploymentCapacity": 1350
+  },
+  {
+    "id": "legendary-t5-star-0-stage-2",
+    "name": "Legendary T5 Star 0 Stage 2",
+    "tier": "LegendaryT5",
+    "stars": 0,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 44000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 450
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 75
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 198.9,
+    "powerTotal": 4773000,
+    "troopsDeploymentCapacity": 1360
+  },
+  {
+    "id": "legendary-t5-star-0-stage-3",
+    "name": "Legendary T5 Star 0 Stage 3",
+    "tier": "LegendaryT5",
+    "stars": 0,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 44000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 450
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 75
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 200.6,
+    "powerTotal": 4814000,
+    "troopsDeploymentCapacity": 1370
+  },
+  {
+    "id": "legendary-t5-star-0-stage-4",
+    "name": "Legendary T5 Star 0 Stage 4",
+    "tier": "LegendaryT5",
+    "stars": 0,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 44000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 450
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 75
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 202.3,
+    "powerTotal": 4855000,
+    "troopsDeploymentCapacity": 1380
+  },
+  {
+    "id": "legendary-t5-star-1-stage-0",
+    "name": "Legendary T5 Star 1 Stage 0",
+    "tier": "LegendaryT5",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 44000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 450
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 75
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 204.0,
+    "powerTotal": 4896000,
+    "troopsDeploymentCapacity": 1390
+  },
+  {
+    "id": "legendary-t5-star-1-stage-1",
+    "name": "Legendary T5 Star 1 Stage 1",
+    "tier": "LegendaryT5",
+    "stars": 1,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 48000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 480
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 80
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 205.7,
+    "powerTotal": 4936000,
+    "troopsDeploymentCapacity": 1400
+  },
+  {
+    "id": "legendary-t5-star-1-stage-2",
+    "name": "Legendary T5 Star 1 Stage 2",
+    "tier": "LegendaryT5",
+    "stars": 1,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 48000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 480
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 80
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 207.4,
+    "powerTotal": 4977000,
+    "troopsDeploymentCapacity": 1410
+  },
+  {
+    "id": "legendary-t5-star-1-stage-3",
+    "name": "Legendary T5 Star 1 Stage 3",
+    "tier": "LegendaryT5",
+    "stars": 1,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 48000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 480
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 80
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 209.1,
+    "powerTotal": 5018000,
+    "troopsDeploymentCapacity": 1420
+  },
+  {
+    "id": "legendary-t5-star-1-stage-4",
+    "name": "Legendary T5 Star 1 Stage 4",
+    "tier": "LegendaryT5",
+    "stars": 1,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 48000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 480
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 80
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 210.8,
+    "powerTotal": 5059000,
+    "troopsDeploymentCapacity": 1430
+  },
+  {
+    "id": "legendary-t5-star-2-stage-0",
+    "name": "Legendary T5 Star 2 Stage 0",
+    "tier": "LegendaryT5",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 48000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 480
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 80
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 212.5,
+    "powerTotal": 5100000,
+    "troopsDeploymentCapacity": 1440
+  },
+  {
+    "id": "legendary-t5-star-2-stage-1",
+    "name": "Legendary T5 Star 2 Stage 1",
+    "tier": "LegendaryT5",
+    "stars": 2,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 52000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 510
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 85
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 214.2,
+    "powerTotal": 5140000,
+    "troopsDeploymentCapacity": 1450
+  },
+  {
+    "id": "legendary-t5-star-2-stage-2",
+    "name": "Legendary T5 Star 2 Stage 2",
+    "tier": "LegendaryT5",
+    "stars": 2,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 52000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 510
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 85
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 215.9,
+    "powerTotal": 5181000,
+    "troopsDeploymentCapacity": 1460
+  },
+  {
+    "id": "legendary-t5-star-2-stage-3",
+    "name": "Legendary T5 Star 2 Stage 3",
+    "tier": "LegendaryT5",
+    "stars": 2,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 52000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 510
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 85
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 217.6,
+    "powerTotal": 5222000,
+    "troopsDeploymentCapacity": 1470
+  },
+  {
+    "id": "legendary-t5-star-2-stage-4",
+    "name": "Legendary T5 Star 2 Stage 4",
+    "tier": "LegendaryT5",
+    "stars": 2,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 52000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 510
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 85
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 219.3,
+    "powerTotal": 5263000,
+    "troopsDeploymentCapacity": 1480
+  },
+  {
+    "id": "legendary-t5-star-3-stage-0",
+    "name": "Legendary T5 Star 3 Stage 0",
+    "tier": "LegendaryT5",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 52000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 510
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 85
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 12
+      }
+    ],
+    "statTotalPercent": 221.0,
+    "powerTotal": 5304000,
+    "troopsDeploymentCapacity": 1490
+  },
+  {
+    "id": "legendary-t5-star-3-stage-1",
+    "name": "Legendary T5 Star 3 Stage 1",
+    "tier": "LegendaryT5",
+    "stars": 3,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 56000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 540
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 90
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 222.7,
+    "powerTotal": 5344000,
+    "troopsDeploymentCapacity": 1590
+  },
+  {
+    "id": "legendary-t5-star-3-stage-2",
+    "name": "Legendary T5 Star 3 Stage 2",
+    "tier": "LegendaryT5",
+    "stars": 3,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 56000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 540
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 90
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 224.4,
+    "powerTotal": 5385000,
+    "troopsDeploymentCapacity": 1600
+  },
+  {
+    "id": "legendary-t5-star-3-stage-3",
+    "name": "Legendary T5 Star 3 Stage 3",
+    "tier": "LegendaryT5",
+    "stars": 3,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 56000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 540
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 90
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 226.1,
+    "powerTotal": 5426000,
+    "troopsDeploymentCapacity": 1610
+  },
+  {
+    "id": "legendary-t5-star-3-stage-4",
+    "name": "Legendary T5 Star 3 Stage 4",
+    "tier": "LegendaryT5",
+    "stars": 3,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 56000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 540
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 90
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 227.8,
+    "powerTotal": 5467000,
+    "troopsDeploymentCapacity": 1620
+  },
+  {
+    "id": "legendary-t6-star-0-stage-0",
+    "name": "Legendary T6 Star 0 Stage 0",
+    "tier": "LegendaryT6",
+    "stars": 0,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 56000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 540
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 90
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 229.5,
+    "powerTotal": 5508000,
+    "troopsDeploymentCapacity": 1630
+  },
+  {
+    "id": "legendary-t6-star-0-stage-1",
+    "name": "Legendary T6 Star 0 Stage 1",
+    "tier": "LegendaryT6",
+    "stars": 0,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 60000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 570
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 95
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 231.2,
+    "powerTotal": 5548000,
+    "troopsDeploymentCapacity": 1640
+  },
+  {
+    "id": "legendary-t6-star-0-stage-2",
+    "name": "Legendary T6 Star 0 Stage 2",
+    "tier": "LegendaryT6",
+    "stars": 0,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 60000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 570
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 95
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 232.9,
+    "powerTotal": 5589000,
+    "troopsDeploymentCapacity": 1650
+  },
+  {
+    "id": "legendary-t6-star-0-stage-3",
+    "name": "Legendary T6 Star 0 Stage 3",
+    "tier": "LegendaryT6",
+    "stars": 0,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 60000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 570
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 95
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 234.6,
+    "powerTotal": 5630000,
+    "troopsDeploymentCapacity": 1660
+  },
+  {
+    "id": "legendary-t6-star-0-stage-4",
+    "name": "Legendary T6 Star 0 Stage 4",
+    "tier": "LegendaryT6",
+    "stars": 0,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 60000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 570
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 95
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 236.3,
+    "powerTotal": 5671000,
+    "troopsDeploymentCapacity": 1670
+  },
+  {
+    "id": "legendary-t6-star-1-stage-0",
+    "name": "Legendary T6 Star 1 Stage 0",
+    "tier": "LegendaryT6",
+    "stars": 1,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 60000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 570
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 95
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 238.0,
+    "powerTotal": 5712000,
+    "troopsDeploymentCapacity": 1680
+  },
+  {
+    "id": "legendary-t6-star-1-stage-1",
+    "name": "Legendary T6 Star 1 Stage 1",
+    "tier": "LegendaryT6",
+    "stars": 1,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 64000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 600
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 100
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 239.7,
+    "powerTotal": 5752000,
+    "troopsDeploymentCapacity": 1690
+  },
+  {
+    "id": "legendary-t6-star-1-stage-2",
+    "name": "Legendary T6 Star 1 Stage 2",
+    "tier": "LegendaryT6",
+    "stars": 1,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 64000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 600
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 100
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 241.4,
+    "powerTotal": 5793000,
+    "troopsDeploymentCapacity": 1700
+  },
+  {
+    "id": "legendary-t6-star-1-stage-3",
+    "name": "Legendary T6 Star 1 Stage 3",
+    "tier": "LegendaryT6",
+    "stars": 1,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 64000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 600
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 100
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 243.1,
+    "powerTotal": 5834000,
+    "troopsDeploymentCapacity": 1710
+  },
+  {
+    "id": "legendary-t6-star-1-stage-4",
+    "name": "Legendary T6 Star 1 Stage 4",
+    "tier": "LegendaryT6",
+    "stars": 1,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 64000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 600
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 100
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 244.8,
+    "powerTotal": 5875000,
+    "troopsDeploymentCapacity": 1720
+  },
+  {
+    "id": "legendary-t6-star-2-stage-0",
+    "name": "Legendary T6 Star 2 Stage 0",
+    "tier": "LegendaryT6",
+    "stars": 2,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 64000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 600
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 100
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 246.5,
+    "powerTotal": 5916000,
+    "troopsDeploymentCapacity": 1730
+  },
+  {
+    "id": "legendary-t6-star-2-stage-1",
+    "name": "Legendary T6 Star 2 Stage 1",
+    "tier": "LegendaryT6",
+    "stars": 2,
+    "stage": 1,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 68000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 630
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 105
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 248.2,
+    "powerTotal": 5956000,
+    "troopsDeploymentCapacity": 1740
+  },
+  {
+    "id": "legendary-t6-star-2-stage-2",
+    "name": "Legendary T6 Star 2 Stage 2",
+    "tier": "LegendaryT6",
+    "stars": 2,
+    "stage": 2,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 68000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 630
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 105
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 249.9,
+    "powerTotal": 5997000,
+    "troopsDeploymentCapacity": 1750
+  },
+  {
+    "id": "legendary-t6-star-2-stage-3",
+    "name": "Legendary T6 Star 2 Stage 3",
+    "tier": "LegendaryT6",
+    "stars": 2,
+    "stage": 3,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 68000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 630
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 105
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 251.6,
+    "powerTotal": 6038000,
+    "troopsDeploymentCapacity": 1760
+  },
+  {
+    "id": "legendary-t6-star-2-stage-4",
+    "name": "Legendary T6 Star 2 Stage 4",
+    "tier": "LegendaryT6",
+    "stars": 2,
+    "stage": 4,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 68000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 630
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 105
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 253.3,
+    "powerTotal": 6079000,
+    "troopsDeploymentCapacity": 1770
+  },
+  {
+    "id": "legendary-t6-star-3-stage-0",
+    "name": "Legendary T6 Star 3 Stage 0",
+    "tier": "LegendaryT6",
+    "stars": 3,
+    "stage": 0,
+    "materials": [
+      {
+        "itemId": "hardened-alloy",
+        "amount": 68000
+      },
+      {
+        "itemId": "polishing-solution",
+        "amount": 630
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 105
+      },
+      {
+        "itemId": "lunar-amber",
+        "amount": 16
+      }
+    ],
+    "statTotalPercent": 255.0,
+    "powerTotal": 6120000,
+    "troopsDeploymentCapacity": 1780
+  }
+]

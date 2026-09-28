@@ -1,4 +1,15 @@
-import { buildings, experts, facilities, heroes, items, pets, skins } from '../src';
+import {
+  buildings,
+  chiefCharm,
+  chiefGear,
+  chiefGearSlots,
+  experts,
+  facilities,
+  heroes,
+  items,
+  pets,
+  skins,
+} from '../src';
 
 console.log('--- Buildings ---');
 console.log('total buildings:', buildings().count());
@@ -101,3 +112,16 @@ console.log('\n--- Skins ---');
 console.log('total skins:', skins().count());
 console.log('Avatar Frame skins:', skins().bySkinType('Avatar Frame').count());
 console.log('Gilded Dragonboat bonus:', skins().find('gilded-dragonboat')?.bonus);
+
+console.log('\n--- Chief Gear ---');
+console.log('gear slots:', chiefGearSlots().count());
+console.log('Lancer slots:', chiefGearSlots().byTroopType('Lancer').count());
+console.log('gear upgrade rows:', chiefGear().count());
+console.log(
+  'Mythic T2 Star 3 Stage 1 deployment capacity:',
+  chiefGear().find('mythic-t2-star-3-stage-1')?.troopsDeploymentCapacity,
+);
+
+console.log('\n--- Chief Charm ---');
+console.log('charm upgrade rows:', chiefCharm().count());
+console.log('level 11 stage count:', chiefCharm().byLevel(11).count());

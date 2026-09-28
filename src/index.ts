@@ -6,3 +6,5 @@ export * from './modules/experts';
 export * from './modules/pets';
 export * from './modules/items';
 export * from './modules/skins';
+export * from './modules/chief-gear';
+export * from './modules/chief-charm';

@@ -6,3 +6,5 @@ export * from './expert';
 export * from './pet';
 export * from './item';
 export * from './skin';
+export * from './chief-gear';
+export * from './chief-charm';

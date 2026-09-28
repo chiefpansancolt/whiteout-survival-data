@@ -322,6 +322,46 @@ to a single stat/value pair.
 
 ---
 
+### ⚔️ Chief Gear
+
+| Module         | Factory            | Items | Description                                                  |
+| -------------- | ------------------ | ----- | ------------------------------------------------------------ |
+| chiefGearSlots | `chiefGearSlots()` | 6     | The 6 equip slots, paired by which troop type they buff      |
+| chiefGear      | `chiefGear()`      | 150   | The shared upgrade table every gear piece progresses through |
+
+Unlike every other module, Chief Gear isn't a roster of uniquely-named things — every equipped piece
+progresses through the exact same 150-row upgrade table, so `chiefGear()` queries that shared table
+directly rather than a set of named items. `tier` uses the wiki's own internal labels verbatim
+(`Common`, `Rare`, `Epic`, `EpicT1`, `Mythic`, `MythicT1`, `MythicT2`, `Legendary`, `LegendaryT1`
+through `LegendaryT6`), and `stars`/`stage` reset within each tier rather than counting up globally.
+
+`materials` references items already cataloged by `items()` — Hardened Alloy, Polishing Solution,
+Design Plans, and Lunar Amber — by their real `items()` slug (`itemId`), confirmed by matching each
+material's icon filename against the icon already downloaded for that item.
+`troopsDeploymentCapacity` is left unset for the table's first 26 rows; the wiki only starts
+awarding it once a piece reaches Mythic T2 star 3 stage 1.
+
+`chiefGearSlots()` covers the 6 equip slots (Cap, Watch, Coat, Pants, Ring, Weapon), hand-entered
+from the page's prose rather than scraped from a table, since no table lists them: Cap/Watch buff
+Lancer, Coat/Pants buff Infantry, and Ring/Weapon buff Marksman. The 3-piece/6-piece same-quality
+set bonus mentioned on the page isn't modeled — the wiki only describes the mechanic in prose
+(`"raise ... by x%"`) and never gives real numbers for it.
+
+---
+
+### 📿 Chief Charm
+
+| Module     | Factory        | Items | Description                                                   |
+| ---------- | -------------- | ----- | ------------------------------------------------------------- |
+| chiefCharm | `chiefCharm()` | 75    | The shared upgrade table every chief charm progresses through |
+
+Same shape as `chiefGear()`, minus the equip-slot and deployment-capacity concepts (charms have no
+stated slot breakdown on the source page). `materials` are Charm Guide, Charm Design, and Charm
+Secrets — the last one only appears starting at level 11 stage 1, not from level 1, matching the raw
+table exactly rather than assuming a fixed three-material set throughout.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

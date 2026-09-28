@@ -138,5 +138,27 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `maxRefinementPercent` — store what the source actually gives cleanly, not a shape the data
   doesn't support.
 
+- `chiefGear()`/`chiefGearSlots()` and `chiefCharm()`: two new data modules sourced from
+  `https://www.whiteoutsurvival.wiki/chief-gear/chief-gear/`. Unlike every prior module, this page
+  describes a shared upgrade progression, not a roster of uniquely-named things — every equipped
+  gear piece and every charm progresses through the exact same table, so `chiefGear()` (150 rows)
+  and `chiefCharm()` (75 rows) query those tables directly. Adds `ChiefGearSlot`, `ChiefGearLevel`,
+  `ChiefGearMaterial`, `ChiefCharmLevel`, and `ChiefCharmMaterial` types.
+- `chiefGearSlots()` covers the 6 equip slots (Cap, Watch, Coat, Pants, Ring, Weapon), hand-entered
+  from the page's prose rather than scraped from a table (no table lists them) — Cap/Watch buff
+  Lancer, Coat/Pants buff Infantry, Ring/Weapon buff Marksman.
+- Every `materials[].itemId` in both tables (Hardened Alloy, Polishing Solution, Design Plans, and
+  Lunar Amber for gear; Charm Guide, Charm Design, and Charm Secrets for charms) resolves to a real
+  slug in last session's `items()` catalog, confirmed by matching each material's source icon
+  filename against the icon already downloaded for that item — verified with a test asserting every
+  material id resolves via `items().find(id)`.
+- Caught and fixed a parsing bug while building the Chief Gear table: bs4's `NavigableString` also
+  exposes a `get_text()` method, so a naive `hasattr(node, "get_text")` check to skip whitespace
+  text nodes between an `<img>` tag and its quantity `<span>` matched the whitespace node itself and
+  returned an empty string, producing a material quantity of 0 for every row. Fixed by checking
+  `isinstance(node, Tag)` instead.
+- The 3-piece/6-piece same-quality Chief Gear set bonus mentioned in the page's prose isn't modeled
+  — the wiki only describes the mechanic (`"raise ... by x%"`) and never gives real numbers for it.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
