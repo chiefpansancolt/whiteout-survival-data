@@ -6,6 +6,9 @@ import {
   experts,
   facilities,
   heroes,
+  heroGearEmpowerment,
+  heroGearEnhancement,
+  heroGearMasteryForging,
   items,
   pets,
   research,
@@ -134,3 +137,10 @@ console.log(
   'Lancer Armor I prerequisites:',
   research().find('lancer-armor-i')?.levels[0].prerequisites,
 );
+
+console.log('\n--- Hero Gear ---');
+console.log('enhancement levels:', heroGearEnhancement().count());
+console.log('empowerment levels:', heroGearEmpowerment().count());
+console.log('mastery forging rows:', heroGearMasteryForging().count());
+console.log('empowerment level 1 cost:', heroGearEmpowerment().find('level-1')?.cost);
+console.log('empowerment level 100 cost:', heroGearEmpowerment().find('level-100')?.cost);

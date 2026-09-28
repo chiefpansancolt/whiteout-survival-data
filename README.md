@@ -404,6 +404,35 @@ allows a compound bonus even though every node checked so far only grants one st
 
 ---
 
+### 🛡️ Hero Gear
+
+| Module                 | Factory                    | Items | Description                                                          |
+| ---------------------- | -------------------------- | ----- | -------------------------------------------------------------------- |
+| heroGearEnhancement    | `heroGearEnhancement()`    | 100   | The shared base leveling table every piece of Hero Gear uses         |
+| heroGearEmpowerment    | `heroGearEmpowerment()`    | 100   | A second 100-level shared table with no explanatory text on the wiki |
+| heroGearMasteryForging | `heroGearMasteryForging()` | 84    | The Gold-quality-exclusive Mastery Forging table                     |
+
+Like Chief Gear/Charm, the Hero Gear page describes shared upgrade progressions rather than a
+catalog of individually-named pieces — there is no per-item detail page for Hero Gear anywhere on
+the wiki. Exclusive Gear (the Legendary-hero-specific piece) is already captured per-hero as
+`Hero.exclusiveWeapon` in the `heroes()` module; a proposed gear-quality reference list (Grey/Green/
+Blue/Purple/Gold) was left out, since it isn't a real, independently useful entity.
+
+`heroGearEnhancement()` is the base 100-level curve every piece of gear climbs, costing Enhancement
+XP Component at every level. `heroGearMasteryForging()` covers the Gold-quality-exclusive system
+described in the page's prose — 20 levels with 0–4 sub-stages each, costing Essence Stones, with a
+Custom Mythic Hero Gear Chest added to the cost from Level 19 on.
+
+`heroGearEmpowerment()` is also a 100-level table, but **the wiki gives it no explanatory paragraph
+at all** — unlike Enhancement and Mastery Forging, which both have one. It's modeled directly from
+the table as scraped (Level 1 costs 2× a Custom Mythic Hero Gear Chest, Levels 2–99 cost Enhancement
+XP Component like the base table, and Level 100 costs both a Custom Mythic Hero Gear Chest and
+Mithril), with this documentation gap called out rather than guessed at — the cost items are
+confirmed real matches against `items()`, but what in-game action actually uses this table isn't
+independently verifiable from the source.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

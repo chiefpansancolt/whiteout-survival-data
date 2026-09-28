@@ -13,5 +13,8 @@ describe('package entry point', () => {
     expect(whiteoutSurvivalData.chiefGear().count()).toBeGreaterThan(0);
     expect(whiteoutSurvivalData.chiefCharm().count()).toBeGreaterThan(0);
     expect(whiteoutSurvivalData.research().count()).toBeGreaterThan(0);
+    expect(whiteoutSurvivalData.heroGearEnhancement().count()).toBeGreaterThan(0);
+    expect(whiteoutSurvivalData.heroGearEmpowerment().count()).toBeGreaterThan(0);
+    expect(whiteoutSurvivalData.heroGearMasteryForging().count()).toBeGreaterThan(0);
   });
 });

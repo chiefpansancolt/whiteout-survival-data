@@ -9,3 +9,6 @@ export * from './modules/skins';
 export * from './modules/chief-gear';
 export * from './modules/chief-charm';
 export * from './modules/research';
+export * from './modules/hero-gear-enhancement';
+export * from './modules/hero-gear-empowerment';
+export * from './modules/hero-gear-mastery-forging';

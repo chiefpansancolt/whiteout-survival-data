@@ -9,3 +9,4 @@ export * from './skin';
 export * from './chief-gear';
 export * from './chief-charm';
 export * from './research';
+export * from './hero-gear';

@@ -1,0 +1,1222 @@
+[
+  {
+    "id": "level-1",
+    "name": "Level 1",
+    "level": 1,
+    "cost": [
+      {
+        "itemId": "custom-mythic-hero-gear-chest",
+        "amount": 2
+      }
+    ],
+    "power": 1118000
+  },
+  {
+    "id": "level-2",
+    "name": "Level 2",
+    "level": 2,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2500
+      }
+    ],
+    "power": 1149300
+  },
+  {
+    "id": "level-3",
+    "name": "Level 3",
+    "level": 3,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2550
+      }
+    ],
+    "power": 1180600
+  },
+  {
+    "id": "level-4",
+    "name": "Level 4",
+    "level": 4,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2600
+      }
+    ],
+    "power": 1211900
+  },
+  {
+    "id": "level-5",
+    "name": "Level 5",
+    "level": 5,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2650
+      }
+    ],
+    "power": 1243200
+  },
+  {
+    "id": "level-6",
+    "name": "Level 6",
+    "level": 6,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2700
+      }
+    ],
+    "power": 1274500
+  },
+  {
+    "id": "level-7",
+    "name": "Level 7",
+    "level": 7,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2750
+      }
+    ],
+    "power": 1305800
+  },
+  {
+    "id": "level-8",
+    "name": "Level 8",
+    "level": 8,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2800
+      }
+    ],
+    "power": 1337100
+  },
+  {
+    "id": "level-9",
+    "name": "Level 9",
+    "level": 9,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2850
+      }
+    ],
+    "power": 1368400
+  },
+  {
+    "id": "level-10",
+    "name": "Level 10",
+    "level": 10,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2900
+      }
+    ],
+    "power": 1399700
+  },
+  {
+    "id": "level-11",
+    "name": "Level 11",
+    "level": 11,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 2950
+      }
+    ],
+    "power": 1431000
+  },
+  {
+    "id": "level-12",
+    "name": "Level 12",
+    "level": 12,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3000
+      }
+    ],
+    "power": 1462300
+  },
+  {
+    "id": "level-13",
+    "name": "Level 13",
+    "level": 13,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3050
+      }
+    ],
+    "power": 1493600
+  },
+  {
+    "id": "level-14",
+    "name": "Level 14",
+    "level": 14,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3100
+      }
+    ],
+    "power": 1524900
+  },
+  {
+    "id": "level-15",
+    "name": "Level 15",
+    "level": 15,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3150
+      }
+    ],
+    "power": 1556200
+  },
+  {
+    "id": "level-16",
+    "name": "Level 16",
+    "level": 16,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3200
+      }
+    ],
+    "power": 1587500
+  },
+  {
+    "id": "level-17",
+    "name": "Level 17",
+    "level": 17,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3250
+      }
+    ],
+    "power": 1618800
+  },
+  {
+    "id": "level-18",
+    "name": "Level 18",
+    "level": 18,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3300
+      }
+    ],
+    "power": 1650100
+  },
+  {
+    "id": "level-19",
+    "name": "Level 19",
+    "level": 19,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3350
+      }
+    ],
+    "power": 1681400
+  },
+  {
+    "id": "level-20",
+    "name": "Level 20",
+    "level": 20,
+    "cost": [
+      {
+        "itemId": "custom-mythic-hero-gear-chest",
+        "amount": 3
+      },
+      {
+        "itemId": "mithril",
+        "amount": 10
+      }
+    ],
+    "power": 1712700
+  },
+  {
+    "id": "level-21",
+    "name": "Level 21",
+    "level": 21,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3450
+      }
+    ],
+    "power": 1744000
+  },
+  {
+    "id": "level-22",
+    "name": "Level 22",
+    "level": 22,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3500
+      }
+    ],
+    "power": 1775300
+  },
+  {
+    "id": "level-23",
+    "name": "Level 23",
+    "level": 23,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3550
+      }
+    ],
+    "power": 1806600
+  },
+  {
+    "id": "level-24",
+    "name": "Level 24",
+    "level": 24,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3600
+      }
+    ],
+    "power": 1837900
+  },
+  {
+    "id": "level-25",
+    "name": "Level 25",
+    "level": 25,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3650
+      }
+    ],
+    "power": 1869200
+  },
+  {
+    "id": "level-26",
+    "name": "Level 26",
+    "level": 26,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3700
+      }
+    ],
+    "power": 1900500
+  },
+  {
+    "id": "level-27",
+    "name": "Level 27",
+    "level": 27,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3750
+      }
+    ],
+    "power": 1931800
+  },
+  {
+    "id": "level-28",
+    "name": "Level 28",
+    "level": 28,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3800
+      }
+    ],
+    "power": 1963100
+  },
+  {
+    "id": "level-29",
+    "name": "Level 29",
+    "level": 29,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3850
+      }
+    ],
+    "power": 1994400
+  },
+  {
+    "id": "level-30",
+    "name": "Level 30",
+    "level": 30,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3900
+      }
+    ],
+    "power": 2025700
+  },
+  {
+    "id": "level-31",
+    "name": "Level 31",
+    "level": 31,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 3950
+      }
+    ],
+    "power": 2057000
+  },
+  {
+    "id": "level-32",
+    "name": "Level 32",
+    "level": 32,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4000
+      }
+    ],
+    "power": 2088300
+  },
+  {
+    "id": "level-33",
+    "name": "Level 33",
+    "level": 33,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4050
+      }
+    ],
+    "power": 2119600
+  },
+  {
+    "id": "level-34",
+    "name": "Level 34",
+    "level": 34,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4100
+      }
+    ],
+    "power": 2150900
+  },
+  {
+    "id": "level-35",
+    "name": "Level 35",
+    "level": 35,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4150
+      }
+    ],
+    "power": 2182200
+  },
+  {
+    "id": "level-36",
+    "name": "Level 36",
+    "level": 36,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4200
+      }
+    ],
+    "power": 2213500
+  },
+  {
+    "id": "level-37",
+    "name": "Level 37",
+    "level": 37,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4250
+      }
+    ],
+    "power": 2244800
+  },
+  {
+    "id": "level-38",
+    "name": "Level 38",
+    "level": 38,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4300
+      }
+    ],
+    "power": 2276100
+  },
+  {
+    "id": "level-39",
+    "name": "Level 39",
+    "level": 39,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4350
+      }
+    ],
+    "power": 2307400
+  },
+  {
+    "id": "level-40",
+    "name": "Level 40",
+    "level": 40,
+    "cost": [
+      {
+        "itemId": "custom-mythic-hero-gear-chest",
+        "amount": 5
+      },
+      {
+        "itemId": "mithril",
+        "amount": 20
+      }
+    ],
+    "power": 2338700
+  },
+  {
+    "id": "level-41",
+    "name": "Level 41",
+    "level": 41,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4450
+      }
+    ],
+    "power": 2370000
+  },
+  {
+    "id": "level-42",
+    "name": "Level 42",
+    "level": 42,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4500
+      }
+    ],
+    "power": 2401300
+  },
+  {
+    "id": "level-43",
+    "name": "Level 43",
+    "level": 43,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4550
+      }
+    ],
+    "power": 2432600
+  },
+  {
+    "id": "level-44",
+    "name": "Level 44",
+    "level": 44,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4600
+      }
+    ],
+    "power": 2463900
+  },
+  {
+    "id": "level-45",
+    "name": "Level 45",
+    "level": 45,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4650
+      }
+    ],
+    "power": 2495200
+  },
+  {
+    "id": "level-46",
+    "name": "Level 46",
+    "level": 46,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4700
+      }
+    ],
+    "power": 2526500
+  },
+  {
+    "id": "level-47",
+    "name": "Level 47",
+    "level": 47,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4750
+      }
+    ],
+    "power": 2557800
+  },
+  {
+    "id": "level-48",
+    "name": "Level 48",
+    "level": 48,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4800
+      }
+    ],
+    "power": 2589100
+  },
+  {
+    "id": "level-49",
+    "name": "Level 49",
+    "level": 49,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4850
+      }
+    ],
+    "power": 2620400
+  },
+  {
+    "id": "level-50",
+    "name": "Level 50",
+    "level": 50,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4900
+      }
+    ],
+    "power": 2651700
+  },
+  {
+    "id": "level-51",
+    "name": "Level 51",
+    "level": 51,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 4950
+      }
+    ],
+    "power": 2683000
+  },
+  {
+    "id": "level-52",
+    "name": "Level 52",
+    "level": 52,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5000
+      }
+    ],
+    "power": 2714300
+  },
+  {
+    "id": "level-53",
+    "name": "Level 53",
+    "level": 53,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5050
+      }
+    ],
+    "power": 2745600
+  },
+  {
+    "id": "level-54",
+    "name": "Level 54",
+    "level": 54,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5100
+      }
+    ],
+    "power": 2776900
+  },
+  {
+    "id": "level-55",
+    "name": "Level 55",
+    "level": 55,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5150
+      }
+    ],
+    "power": 2808200
+  },
+  {
+    "id": "level-56",
+    "name": "Level 56",
+    "level": 56,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5200
+      }
+    ],
+    "power": 2839500
+  },
+  {
+    "id": "level-57",
+    "name": "Level 57",
+    "level": 57,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5250
+      }
+    ],
+    "power": 2870800
+  },
+  {
+    "id": "level-58",
+    "name": "Level 58",
+    "level": 58,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5300
+      }
+    ],
+    "power": 2902100
+  },
+  {
+    "id": "level-59",
+    "name": "Level 59",
+    "level": 59,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5350
+      }
+    ],
+    "power": 2933400
+  },
+  {
+    "id": "level-60",
+    "name": "Level 60",
+    "level": 60,
+    "cost": [
+      {
+        "itemId": "custom-mythic-hero-gear-chest",
+        "amount": 5
+      },
+      {
+        "itemId": "mithril",
+        "amount": 30
+      }
+    ],
+    "power": 2964700
+  },
+  {
+    "id": "level-61",
+    "name": "Level 61",
+    "level": 61,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5500
+      }
+    ],
+    "power": 2996000
+  },
+  {
+    "id": "level-62",
+    "name": "Level 62",
+    "level": 62,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5600
+      }
+    ],
+    "power": 3027300
+  },
+  {
+    "id": "level-63",
+    "name": "Level 63",
+    "level": 63,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5700
+      }
+    ],
+    "power": 3058600
+  },
+  {
+    "id": "level-64",
+    "name": "Level 64",
+    "level": 64,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5800
+      }
+    ],
+    "power": 3089900
+  },
+  {
+    "id": "level-65",
+    "name": "Level 65",
+    "level": 65,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 5900
+      }
+    ],
+    "power": 3121200
+  },
+  {
+    "id": "level-66",
+    "name": "Level 66",
+    "level": 66,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6000
+      }
+    ],
+    "power": 3152500
+  },
+  {
+    "id": "level-67",
+    "name": "Level 67",
+    "level": 67,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6100
+      }
+    ],
+    "power": 3183800
+  },
+  {
+    "id": "level-68",
+    "name": "Level 68",
+    "level": 68,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6200
+      }
+    ],
+    "power": 3215100
+  },
+  {
+    "id": "level-69",
+    "name": "Level 69",
+    "level": 69,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6300
+      }
+    ],
+    "power": 3246400
+  },
+  {
+    "id": "level-70",
+    "name": "Level 70",
+    "level": 70,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6400
+      }
+    ],
+    "power": 3277700
+  },
+  {
+    "id": "level-71",
+    "name": "Level 71",
+    "level": 71,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6500
+      }
+    ],
+    "power": 3309000
+  },
+  {
+    "id": "level-72",
+    "name": "Level 72",
+    "level": 72,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6600
+      }
+    ],
+    "power": 3340300
+  },
+  {
+    "id": "level-73",
+    "name": "Level 73",
+    "level": 73,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6700
+      }
+    ],
+    "power": 3371600
+  },
+  {
+    "id": "level-74",
+    "name": "Level 74",
+    "level": 74,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6800
+      }
+    ],
+    "power": 3402900
+  },
+  {
+    "id": "level-75",
+    "name": "Level 75",
+    "level": 75,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 6900
+      }
+    ],
+    "power": 3434200
+  },
+  {
+    "id": "level-76",
+    "name": "Level 76",
+    "level": 76,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7000
+      }
+    ],
+    "power": 3465500
+  },
+  {
+    "id": "level-77",
+    "name": "Level 77",
+    "level": 77,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7100
+      }
+    ],
+    "power": 3496800
+  },
+  {
+    "id": "level-78",
+    "name": "Level 78",
+    "level": 78,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7200
+      }
+    ],
+    "power": 3528100
+  },
+  {
+    "id": "level-79",
+    "name": "Level 79",
+    "level": 79,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7300
+      }
+    ],
+    "power": 3559400
+  },
+  {
+    "id": "level-80",
+    "name": "Level 80",
+    "level": 80,
+    "cost": [
+      {
+        "itemId": "custom-mythic-hero-gear-chest",
+        "amount": 10
+      },
+      {
+        "itemId": "mithril",
+        "amount": 40
+      }
+    ],
+    "power": 3590700
+  },
+  {
+    "id": "level-81",
+    "name": "Level 81",
+    "level": 81,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7500
+      }
+    ],
+    "power": 3622000
+  },
+  {
+    "id": "level-82",
+    "name": "Level 82",
+    "level": 82,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7600
+      }
+    ],
+    "power": 3653300
+  },
+  {
+    "id": "level-83",
+    "name": "Level 83",
+    "level": 83,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7700
+      }
+    ],
+    "power": 3684600
+  },
+  {
+    "id": "level-84",
+    "name": "Level 84",
+    "level": 84,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7800
+      }
+    ],
+    "power": 3715900
+  },
+  {
+    "id": "level-85",
+    "name": "Level 85",
+    "level": 85,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 7900
+      }
+    ],
+    "power": 3747200
+  },
+  {
+    "id": "level-86",
+    "name": "Level 86",
+    "level": 86,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8000
+      }
+    ],
+    "power": 3778500
+  },
+  {
+    "id": "level-87",
+    "name": "Level 87",
+    "level": 87,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8100
+      }
+    ],
+    "power": 3809800
+  },
+  {
+    "id": "level-88",
+    "name": "Level 88",
+    "level": 88,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8200
+      }
+    ],
+    "power": 3841100
+  },
+  {
+    "id": "level-89",
+    "name": "Level 89",
+    "level": 89,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8300
+      }
+    ],
+    "power": 3872400
+  },
+  {
+    "id": "level-90",
+    "name": "Level 90",
+    "level": 90,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8400
+      }
+    ],
+    "power": 3903700
+  },
+  {
+    "id": "level-91",
+    "name": "Level 91",
+    "level": 91,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8500
+      }
+    ],
+    "power": 3935000
+  },
+  {
+    "id": "level-92",
+    "name": "Level 92",
+    "level": 92,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8600
+      }
+    ],
+    "power": 3966300
+  },
+  {
+    "id": "level-93",
+    "name": "Level 93",
+    "level": 93,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8700
+      }
+    ],
+    "power": 3997600
+  },
+  {
+    "id": "level-94",
+    "name": "Level 94",
+    "level": 94,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8800
+      }
+    ],
+    "power": 4028900
+  },
+  {
+    "id": "level-95",
+    "name": "Level 95",
+    "level": 95,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 8900
+      }
+    ],
+    "power": 4060200
+  },
+  {
+    "id": "level-96",
+    "name": "Level 96",
+    "level": 96,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 9000
+      }
+    ],
+    "power": 4091500
+  },
+  {
+    "id": "level-97",
+    "name": "Level 97",
+    "level": 97,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 9100
+      }
+    ],
+    "power": 4122800
+  },
+  {
+    "id": "level-98",
+    "name": "Level 98",
+    "level": 98,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 9200
+      }
+    ],
+    "power": 4154100
+  },
+  {
+    "id": "level-99",
+    "name": "Level 99",
+    "level": 99,
+    "cost": [
+      {
+        "itemId": "enhancement-xp-component",
+        "amount": 9300
+      }
+    ],
+    "power": 4185400
+  },
+  {
+    "id": "level-100",
+    "name": "Level 100",
+    "level": 100,
+    "cost": [
+      {
+        "itemId": "custom-mythic-hero-gear-chest",
+        "amount": 10
+      },
+      {
+        "itemId": "mithril",
+        "amount": 50
+      }
+    ],
+    "power": 4216700
+  }
+]

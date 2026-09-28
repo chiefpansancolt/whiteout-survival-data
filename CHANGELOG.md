@@ -190,5 +190,24 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `ResearchLevel.researchTimeSeconds` is optional — a few T12 nodes (e.g. `Exalted Blunderbuss`)
   genuinely have no Time value on their source page.
 
+- `heroGearEnhancement()`, `heroGearEmpowerment()`, and `heroGearMasteryForging()`: three new data
+  modules sourced from `https://www.whiteoutsurvival.wiki/hero-gears/hero-gear/`. Like Chief
+  Gear/Charm, this page has no per-item catalog — three separate shared upgrade tables instead. Adds
+  `HeroGearCost`, `HeroGearEnhancementLevel`, `HeroGearEmpowermentLevel`, and
+  `HeroGearMasteryForgingLevel` types. A proposed fourth module for the Grey/Green/Blue/Purple
+  gear-quality reference list mentioned in the page's prose was dropped, since it isn't a real,
+  independently useful entity.
+- `heroGearEnhancement()` (100 levels) costs Enhancement XP Component at every level, matching the
+  page's own description of the mechanic. `heroGearMasteryForging()` (84 rows across 20 levels with
+  0–4 sub-stages) costs Essence Stones, also matching its own description, with a Custom Mythic Hero
+  Gear Chest added to the cost from Level 19 on.
+- `heroGearEmpowerment()` (100 levels) is modeled directly from its table even though **the wiki
+  gives this mechanic no explanatory prose at all**, unlike Enhancement and Mastery Forging. Its
+  cost composition changes across the table (2× Custom Mythic Hero Gear Chest at Level 1,
+  Enhancement XP Component through Levels 2–99, then both a Chest and Mithril at Level 100) — every
+  cost item is a confirmed real match against `items()`, but what in-game action consumes this table
+  couldn't be independently verified from the source, so the gap is documented rather than guessed
+  at.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
