@@ -275,11 +275,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   nodes to `tier: 7`, and each troop type's Solar Supremacy node to `tier: 5` (from `tier: 7`),
   confirmed directly from in-game knowledge, freeing `tier: 6` for the next Molten tier and emptying
   `tier: 8` entirely.
-- Added 8 of the 12 tier-6 Molten X III nodes (Marksman and Lancer; Infantry's 4 links are still
-  pending). Same shape as Molten X II: 50 levels, published under the wiki's Unicode Roman numeral
-  URL slug (`molten-grips-Ⅲ`, not `-iii`). Each requires its own troop type's Solar Supremacy node
-  at Level 15, rather than the tier-3 capstone Molten X II uses, since tier 5 (Solar Supremacy) now
-  sits directly above tier 6.
+- Added the 12 tier-6 Molten X III nodes. Same shape as Molten X II: 50 levels, published under the
+  wiki's Unicode Roman numeral URL slug (`molten-grips-Ⅲ`, not `-iii`). Each requires its own troop
+  type's Solar Supremacy node at Level 15, rather than the tier-3 capstone Molten X II uses, since
+  tier 5 (Solar Supremacy) now sits directly above tier 6.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

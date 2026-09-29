@@ -366,7 +366,7 @@ table exactly rather than assuming a fixed three-material set throughout.
 
 | Module   | Factory      | Items | Description                                                  |
 | -------- | ------------ | ----- | ------------------------------------------------------------ |
-| research | `research()` | 286   | The full Research Center tech tree, one node per level table |
+| research | `research()` | 290   | The full Research Center tech tree, one node per level table |
 
 The Research Center's tech tree, sourced page-per-node like `items()` rather than as a shared table
 like Chief Gear/Charm — each named research line has its own detail page with its own per-level
@@ -419,9 +419,8 @@ Each troop type's 4 tier-4 Molten X II items (`Molten Blades II`, etc.) similarl
 type's own tier-3 node (`indomitable-wall`, `starfire`, or `meridian-phalanx`) at Level 1 — this one
 is scraped directly from each node's own page, not user-supplied.
 
-Marksman's and Lancer's 4 tier-6 Molten X III items each require that troop type's own Solar
-Supremacy node at Level 15 (also scraped, not user-supplied). Infantry's 4 tier-6 Molten X III items
-are not in this dataset yet.
+Each troop type's 4 tier-6 Molten X III items require that troop type's own Solar Supremacy node at
+Level 15 (also scraped, not user-supplied).
 
 ---
 

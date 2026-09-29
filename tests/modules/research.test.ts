@@ -29,17 +29,15 @@ describe('ResearchQuery', () => {
 });
 
 describe('Research tech tree', () => {
-  it('tracks 286 nodes across 9 categories', () => {
-    expect(research().count()).toBe(286);
+  it('tracks 290 nodes across 9 categories', () => {
+    expect(research().count()).toBe(290);
     expect(research().byCategory('Battle').count()).toBe(102);
     expect(research().byCategory('Growth').count()).toBe(45);
     expect(research().byCategory('Economy').count()).toBe(44);
     expect(research().byCategory('T11 Infantry').count()).toBe(10);
     expect(research().byCategory('T11 Marksman').count()).toBe(10);
     expect(research().byCategory('T11 Lancer').count()).toBe(10);
-    // Infantry's tier-6 Molten X III items are still pending from the user
-    // as of this dataset, so it lags Marksman/Lancer by 4 nodes.
-    expect(research().byCategory('T12 Infantry').count()).toBe(19);
+    expect(research().byCategory('T12 Infantry').count()).toBe(23);
     expect(research().byCategory('T12 Marksman').count()).toBe(23);
     expect(research().byCategory('T12 Lancer').count()).toBe(23);
   });
@@ -325,11 +323,12 @@ describe('Research tech tree', () => {
     });
   });
 
-  it("adds each tier-6 Molten X III item (Marksman/Lancer so far), gated on its own troop type's Solar Supremacy at Level 15", () => {
-    // Infantry's 4 tier-6 Molten X III items are still pending as of this
-    // dataset (one duplicate link and one missing link in what was
-    // supplied), so only Marksman and Lancer are covered here.
+  it("adds each tier-6 Molten X III item, gated on its own troop type's Solar Supremacy at Level 15", () => {
     const cases: [string, string, string][] = [
+      ['molten-blades-iii', 'T12 Infantry', 'solar-supremacy'],
+      ['molten-guard-iii', 'T12 Infantry', 'solar-supremacy'],
+      ['molten-plating-iii', 'T12 Infantry', 'solar-supremacy'],
+      ['molten-shields-iii', 'T12 Infantry', 'solar-supremacy'],
       ['molten-grips-iii', 'T12 Marksman', 'solar-supremacy-mm'],
       ['molten-scales-iii', 'T12 Marksman', 'solar-supremacy-mm'],
       ['molten-sharpshooting-iii', 'T12 Marksman', 'solar-supremacy-mm'],

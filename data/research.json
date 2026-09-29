@@ -57076,6 +57076,8486 @@
     ]
   },
   {
+    "id": "molten-blades-iii",
+    "name": "Molten Blades III",
+    "img": "/images/research/molten-blades-iii.png",
+    "category": "T12 Infantry",
+    "tier": 6,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "solar-supremacy",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "1.00%"
+          }
+        ],
+        "power": 50000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "2.00%"
+          }
+        ],
+        "power": 100000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "3.00%"
+          }
+        ],
+        "power": 150000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "4.00%"
+          }
+        ],
+        "power": 200000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "5.00%"
+          }
+        ],
+        "power": 250000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "6.00%"
+          }
+        ],
+        "power": 300000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "7.00%"
+          }
+        ],
+        "power": 350000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "8.00%"
+          }
+        ],
+        "power": 400000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "9.00%"
+          }
+        ],
+        "power": 450000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "10.00%"
+          }
+        ],
+        "power": 500000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 11,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "11.00%"
+          }
+        ],
+        "power": 550000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 12,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "12.00%"
+          }
+        ],
+        "power": 600000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 13,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "13.00%"
+          }
+        ],
+        "power": 650000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 14,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "14.00%"
+          }
+        ],
+        "power": 700000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 15,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "15.00%"
+          }
+        ],
+        "power": 750000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 16,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "16.00%"
+          }
+        ],
+        "power": 800000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 17,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "17.00%"
+          }
+        ],
+        "power": 850000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 18,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "18.00%"
+          }
+        ],
+        "power": 900000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 19,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "19.00%"
+          }
+        ],
+        "power": 950000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 20,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "20.00%"
+          }
+        ],
+        "power": 1000000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 21,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "21.00%"
+          }
+        ],
+        "power": 1050000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 22,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "22.00%"
+          }
+        ],
+        "power": 1100000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 23,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "23.00%"
+          }
+        ],
+        "power": 1150000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 24,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "24.00%"
+          }
+        ],
+        "power": 1200000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 25,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "25.00%"
+          }
+        ],
+        "power": 1250000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 26,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "26.00%"
+          }
+        ],
+        "power": 1300000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 27,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "27.00%"
+          }
+        ],
+        "power": 1350000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 28,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "28.00%"
+          }
+        ],
+        "power": 1400000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 29,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "29.00%"
+          }
+        ],
+        "power": 1450000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 30,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "30.00%"
+          }
+        ],
+        "power": 1500000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 31,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "31.00%"
+          }
+        ],
+        "power": 1550000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 32,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "32.00%"
+          }
+        ],
+        "power": 1600000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 33,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "33.00%"
+          }
+        ],
+        "power": 1650000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 34,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "34.00%"
+          }
+        ],
+        "power": 1700000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 35,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "35.00%"
+          }
+        ],
+        "power": 1750000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 36,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "36.00%"
+          }
+        ],
+        "power": 1800000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 37,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "37.00%"
+          }
+        ],
+        "power": 1850000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 38,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "38.00%"
+          }
+        ],
+        "power": 1900000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 39,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "39.00%"
+          }
+        ],
+        "power": 1950000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 40,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "40.00%"
+          }
+        ],
+        "power": 2000000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 41,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "41.00%"
+          }
+        ],
+        "power": 2050000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 42,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "42.00%"
+          }
+        ],
+        "power": 2100000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 43,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "43.00%"
+          }
+        ],
+        "power": 2150000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 44,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "44.00%"
+          }
+        ],
+        "power": 2200000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 45,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "45.00%"
+          }
+        ],
+        "power": 2250000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 46,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "46.00%"
+          }
+        ],
+        "power": 2300000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 47,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "47.00%"
+          }
+        ],
+        "power": 2350000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 48,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "48.00%"
+          }
+        ],
+        "power": 2400000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 49,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "49.00%"
+          }
+        ],
+        "power": 2450000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 50,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Attack",
+            "value": "50.00%"
+          }
+        ],
+        "power": 2500000,
+        "researchTimeSeconds": 345600
+      }
+    ]
+  },
+  {
+    "id": "molten-guard-iii",
+    "name": "Molten Guard III",
+    "img": "/images/research/molten-guard-iii.png",
+    "category": "T12 Infantry",
+    "tier": 6,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "solar-supremacy",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "1.00%"
+          }
+        ],
+        "power": 50000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "2.00%"
+          }
+        ],
+        "power": 100000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "3.00%"
+          }
+        ],
+        "power": 150000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "4.00%"
+          }
+        ],
+        "power": 200000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "5.00%"
+          }
+        ],
+        "power": 250000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "6.00%"
+          }
+        ],
+        "power": 300000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "7.00%"
+          }
+        ],
+        "power": 350000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "8.00%"
+          }
+        ],
+        "power": 400000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "9.00%"
+          }
+        ],
+        "power": 450000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "10.00%"
+          }
+        ],
+        "power": 500000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 11,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "11.00%"
+          }
+        ],
+        "power": 550000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 12,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "12.00%"
+          }
+        ],
+        "power": 600000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 13,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "13.00%"
+          }
+        ],
+        "power": 650000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 14,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "14.00%"
+          }
+        ],
+        "power": 700000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 15,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "15.00%"
+          }
+        ],
+        "power": 750000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 16,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "16.00%"
+          }
+        ],
+        "power": 800000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 17,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "17.00%"
+          }
+        ],
+        "power": 850000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 18,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "18.00%"
+          }
+        ],
+        "power": 900000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 19,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "19.00%"
+          }
+        ],
+        "power": 950000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 20,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "20.00%"
+          }
+        ],
+        "power": 1000000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 21,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "21.00%"
+          }
+        ],
+        "power": 1050000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 22,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "22.00%"
+          }
+        ],
+        "power": 1100000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 23,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "23.00%"
+          }
+        ],
+        "power": 1150000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 24,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "24.00%"
+          }
+        ],
+        "power": 1200000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 25,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "25.00%"
+          }
+        ],
+        "power": 1250000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 26,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "26.00%"
+          }
+        ],
+        "power": 1300000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 27,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "27.00%"
+          }
+        ],
+        "power": 1350000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 28,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "28.00%"
+          }
+        ],
+        "power": 1400000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 29,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "29.00%"
+          }
+        ],
+        "power": 1450000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 30,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "30.00%"
+          }
+        ],
+        "power": 1500000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 31,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "31.00%"
+          }
+        ],
+        "power": 1550000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 32,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "32.00%"
+          }
+        ],
+        "power": 1600000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 33,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "33.00%"
+          }
+        ],
+        "power": 1650000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 34,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "34.00%"
+          }
+        ],
+        "power": 1700000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 35,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "35.00%"
+          }
+        ],
+        "power": 1750000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 36,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "36.00%"
+          }
+        ],
+        "power": 1800000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 37,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "37.00%"
+          }
+        ],
+        "power": 1850000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 38,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "38.00%"
+          }
+        ],
+        "power": 1900000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 39,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "39.00%"
+          }
+        ],
+        "power": 1950000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 40,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "40.00%"
+          }
+        ],
+        "power": 2000000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 41,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "41.00%"
+          }
+        ],
+        "power": 2050000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 42,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "42.00%"
+          }
+        ],
+        "power": 2100000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 43,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "43.00%"
+          }
+        ],
+        "power": 2150000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 44,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "44.00%"
+          }
+        ],
+        "power": 2200000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 45,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "45.00%"
+          }
+        ],
+        "power": 2250000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 46,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "46.00%"
+          }
+        ],
+        "power": 2300000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 47,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "47.00%"
+          }
+        ],
+        "power": 2350000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 48,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "48.00%"
+          }
+        ],
+        "power": 2400000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 49,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "49.00%"
+          }
+        ],
+        "power": 2450000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 50,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Lethality",
+            "value": "50.00%"
+          }
+        ],
+        "power": 2500000,
+        "researchTimeSeconds": 345600
+      }
+    ]
+  },
+  {
+    "id": "molten-plating-iii",
+    "name": "Molten Plating III",
+    "img": "/images/research/molten-plating-iii.png",
+    "category": "T12 Infantry",
+    "tier": 6,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "solar-supremacy",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "1.00%"
+          }
+        ],
+        "power": 50000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "2.00%"
+          }
+        ],
+        "power": 100000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "3.00%"
+          }
+        ],
+        "power": 150000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "4.00%"
+          }
+        ],
+        "power": 200000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "5.00%"
+          }
+        ],
+        "power": 250000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "6.00%"
+          }
+        ],
+        "power": 300000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "7.00%"
+          }
+        ],
+        "power": 350000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "8.00%"
+          }
+        ],
+        "power": 400000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "9.00%"
+          }
+        ],
+        "power": 450000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "10.00%"
+          }
+        ],
+        "power": 500000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 11,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "11.00%"
+          }
+        ],
+        "power": 550000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 12,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "12.00%"
+          }
+        ],
+        "power": 600000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 13,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "13.00%"
+          }
+        ],
+        "power": 650000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 14,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "14.00%"
+          }
+        ],
+        "power": 700000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 15,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "15.00%"
+          }
+        ],
+        "power": 750000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 16,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "16.00%"
+          }
+        ],
+        "power": 800000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 17,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "17.00%"
+          }
+        ],
+        "power": 850000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 18,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "18.00%"
+          }
+        ],
+        "power": 900000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 19,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "19.00%"
+          }
+        ],
+        "power": 950000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 20,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "20.00%"
+          }
+        ],
+        "power": 1000000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 21,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "21.00%"
+          }
+        ],
+        "power": 1050000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 22,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "22.00%"
+          }
+        ],
+        "power": 1100000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 23,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "23.00%"
+          }
+        ],
+        "power": 1150000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 24,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "24.00%"
+          }
+        ],
+        "power": 1200000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 25,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "25.00%"
+          }
+        ],
+        "power": 1250000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 26,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "26.00%"
+          }
+        ],
+        "power": 1300000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 27,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "27.00%"
+          }
+        ],
+        "power": 1350000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 28,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "28.00%"
+          }
+        ],
+        "power": 1400000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 29,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "29.00%"
+          }
+        ],
+        "power": 1450000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 30,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "30.00%"
+          }
+        ],
+        "power": 1500000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 31,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "31.00%"
+          }
+        ],
+        "power": 1550000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 32,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "32.00%"
+          }
+        ],
+        "power": 1600000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 33,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "33.00%"
+          }
+        ],
+        "power": 1650000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 34,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "34.00%"
+          }
+        ],
+        "power": 1700000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 35,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "35.00%"
+          }
+        ],
+        "power": 1750000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 36,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "36.00%"
+          }
+        ],
+        "power": 1800000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 37,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "37.00%"
+          }
+        ],
+        "power": 1850000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 38,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "38.00%"
+          }
+        ],
+        "power": 1900000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 39,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "39.00%"
+          }
+        ],
+        "power": 1950000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 40,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "40.00%"
+          }
+        ],
+        "power": 2000000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 41,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "41.00%"
+          }
+        ],
+        "power": 2050000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 42,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "42.00%"
+          }
+        ],
+        "power": 2100000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 43,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "43.00%"
+          }
+        ],
+        "power": 2150000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 44,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "44.00%"
+          }
+        ],
+        "power": 2200000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 45,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "45.00%"
+          }
+        ],
+        "power": 2250000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 46,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "46.00%"
+          }
+        ],
+        "power": 2300000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 47,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "47.00%"
+          }
+        ],
+        "power": 2350000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 48,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "48.00%"
+          }
+        ],
+        "power": 2400000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 49,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "49.00%"
+          }
+        ],
+        "power": 2450000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 50,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Health",
+            "value": "50.00%"
+          }
+        ],
+        "power": 2500000,
+        "researchTimeSeconds": 345600
+      }
+    ]
+  },
+  {
+    "id": "molten-shields-iii",
+    "name": "Molten Shields III",
+    "img": "/images/research/molten-shields-iii.png",
+    "category": "T12 Infantry",
+    "tier": 6,
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "solar-supremacy",
+            "level": 15
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "1.00%"
+          }
+        ],
+        "power": 50000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "2.00%"
+          }
+        ],
+        "power": 100000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "3.00%"
+          }
+        ],
+        "power": 150000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "4.00%"
+          }
+        ],
+        "power": 200000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "5.00%"
+          }
+        ],
+        "power": 250000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 6,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "6.00%"
+          }
+        ],
+        "power": 300000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 7,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "7.00%"
+          }
+        ],
+        "power": 350000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 8,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "8.00%"
+          }
+        ],
+        "power": 400000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 9,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "9.00%"
+          }
+        ],
+        "power": 450000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 10,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 25000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 5
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 125
+          },
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 50000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "10.00%"
+          }
+        ],
+        "power": 500000,
+        "researchTimeSeconds": 172800
+      },
+      {
+        "level": 11,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "11.00%"
+          }
+        ],
+        "power": 550000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 12,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "12.00%"
+          }
+        ],
+        "power": 600000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 13,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "13.00%"
+          }
+        ],
+        "power": 650000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 14,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "14.00%"
+          }
+        ],
+        "power": 700000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 15,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "15.00%"
+          }
+        ],
+        "power": 750000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 16,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "16.00%"
+          }
+        ],
+        "power": 800000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 17,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "17.00%"
+          }
+        ],
+        "power": 850000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 18,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "18.00%"
+          }
+        ],
+        "power": 900000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 19,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "19.00%"
+          }
+        ],
+        "power": 950000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 20,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 31250
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 6
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 156
+          },
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 250000
+          },
+          {
+            "itemId": "iron",
+            "amount": 62000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "20.00%"
+          }
+        ],
+        "power": 1000000,
+        "researchTimeSeconds": 216000
+      },
+      {
+        "level": 21,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "21.00%"
+          }
+        ],
+        "power": 1050000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 22,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "22.00%"
+          }
+        ],
+        "power": 1100000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 23,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "23.00%"
+          }
+        ],
+        "power": 1150000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 24,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "24.00%"
+          }
+        ],
+        "power": 1200000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 25,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "25.00%"
+          }
+        ],
+        "power": 1250000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 26,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "26.00%"
+          }
+        ],
+        "power": 1300000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 27,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "27.00%"
+          }
+        ],
+        "power": 1350000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 28,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "28.00%"
+          }
+        ],
+        "power": 1400000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 29,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "29.00%"
+          }
+        ],
+        "power": 1450000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 30,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 37500
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 7
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 187
+          },
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 300000
+          },
+          {
+            "itemId": "iron",
+            "amount": 75000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "30.00%"
+          }
+        ],
+        "power": 1500000,
+        "researchTimeSeconds": 259200
+      },
+      {
+        "level": 31,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "31.00%"
+          }
+        ],
+        "power": 1550000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 32,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "32.00%"
+          }
+        ],
+        "power": 1600000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 33,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "33.00%"
+          }
+        ],
+        "power": 1650000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 34,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "34.00%"
+          }
+        ],
+        "power": 1700000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 35,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "35.00%"
+          }
+        ],
+        "power": 1750000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 36,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "36.00%"
+          }
+        ],
+        "power": 1800000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 37,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "37.00%"
+          }
+        ],
+        "power": 1850000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 38,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "38.00%"
+          }
+        ],
+        "power": 1900000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 39,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "39.00%"
+          }
+        ],
+        "power": 1950000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 40,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 43750
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 8
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 218
+          },
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 350000
+          },
+          {
+            "itemId": "iron",
+            "amount": 87000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "40.00%"
+          }
+        ],
+        "power": 2000000,
+        "researchTimeSeconds": 302400
+      },
+      {
+        "level": 41,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "41.00%"
+          }
+        ],
+        "power": 2050000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 42,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "42.00%"
+          }
+        ],
+        "power": 2100000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 43,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "43.00%"
+          }
+        ],
+        "power": 2150000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 44,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "44.00%"
+          }
+        ],
+        "power": 2200000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 45,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "45.00%"
+          }
+        ],
+        "power": 2250000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 46,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "46.00%"
+          }
+        ],
+        "power": 2300000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 47,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "47.00%"
+          }
+        ],
+        "power": 2350000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 48,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "48.00%"
+          }
+        ],
+        "power": 2400000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 49,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "49.00%"
+          }
+        ],
+        "power": 2450000,
+        "researchTimeSeconds": 345600
+      },
+      {
+        "level": 50,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "steel",
+            "amount": 50000
+          },
+          {
+            "itemId": "refined-fire-crystal",
+            "amount": 10
+          },
+          {
+            "itemId": "fire-crystal-shard",
+            "amount": 250
+          },
+          {
+            "itemId": "meat",
+            "amount": 2000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 400000
+          },
+          {
+            "itemId": "iron",
+            "amount": 100000
+          }
+        ],
+        "bonus": [
+          {
+            "stat": "Infantry Defense",
+            "value": "50.00%"
+          }
+        ],
+        "power": 2500000,
+        "researchTimeSeconds": 345600
+      }
+    ]
+  },
+  {
     "id": "exalted-infantry-first-aid",
     "name": "Exalted Infantry First Aid",
     "img": "/images/research/exalted-infantry-first-aid.png",
