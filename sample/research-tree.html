@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Tech Tree</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --gate: #c99fef;
+    --hub: #ffb84f;
+    --ghost: #5a6675;
+    --line: #3a86c8;
+    --node-bg: #1c2e42;
+    --node-border: #2f4b68;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .tab {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .tab.active {
+    background: var(--accent);
+    color: #06222e;
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+  .meta { color: var(--text-dim); font-size: 0.82rem; margin-bottom: 16px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.78rem; color: var(--text-dim); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+  .scroll-wrap {
+    overflow: auto;
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    background: var(--panel);
+    padding: 24px;
+  }
+  .tree-canvas { position: relative; }
+  .tree-canvas svg { position: absolute; top: 0; left: 0; overflow: visible; }
+  .node {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 76px;
+  }
+  .node.up { flex-direction: column-reverse; }
+  .node-tier {
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    background: var(--accent);
+    color: #06222e;
+    font-size: 0.6rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .node.up .node-tier { top: auto; bottom: -6px; }
+  .node-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    border: 2px solid var(--node-border);
+    background: var(--node-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .node-icon img { width: 100%; height: 100%; object-fit: cover; }
+  .node-icon.hub { width: 60px; height: 60px; border-color: var(--hub); box-shadow: 0 0 14px rgba(255,184,79,0.6); }
+  .node-ghost {
+    width: 60px;
+    height: 52px;
+    border-radius: 12px;
+    border: 2px dashed var(--ghost);
+    background: transparent;
+    color: var(--ghost);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .node-name {
+    margin-top: 4px;
+    font-size: 0.62rem;
+    text-align: center;
+    line-height: 1.15;
+    color: var(--text);
+    max-width: 76px;
+  }
+  .node-levels {
+    margin-top: 2px;
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 1px 6px;
+  }
+</style>
+</head>
+<body>
+  <h1>Research Tech Tree</h1>
+  <p class="sub">Local review file — full dependency tree per category, matching the in-game Tech Research screen's layout. Hover a node for details. Not part of the published package.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="meta" id="meta"></div>
+  <div class="legend" id="legend"></div>
+  <div class="scroll-wrap"><div class="tree-canvas" id="canvas"></div></div>
+
+<script>
+const DATA = {"Battle":{"nodes":[{"id":"assaut-techniques-i","name":"Assaut Techniques I","img":"/images/research/assaut-techniques-i.png","tier":1,"levelCount":3},{"id":"bulwark-formations-i","name":"Bulwark Formations I","img":"/images/research/bulwark-formations-i.png","tier":1,"levelCount":3},{"id":"close-combat-i","name":"Close Combat I","img":"/images/research/close-combat-i.png","tier":1,"levelCount":3},{"id":"defensive-formation-i","name":"Defensive Formation I","img":"/images/research/defensive-formation-i.png","tier":1,"levelCount":3},{"id":"lancer-armor-i","name":"Lancer Armor I","img":"/images/research/lancer-armor-i.png","tier":1,"levelCount":3},{"id":"lancer-upgrade-i","name":"Lancer Upgrade I","img":"/images/research/lancer-upgrade-i.png","tier":1,"levelCount":3},{"id":"marksman-armor-i","name":"Marksman Armor I","img":"/images/research/marksman-armor-i.png","tier":1,"levelCount":3},{"id":"picket-lines-i","name":"Picket Lines I","img":"/images/research/picket-lines-i.png","tier":1,"levelCount":3},{"id":"precision-targeting-i","name":"Precision Targeting I","img":"/images/research/precision-targeting-i.png","tier":1,"levelCount":3},{"id":"regimental-expansion-i","name":"Regimental Expansion I","img":"/images/research/regimental-expansion-i.png","tier":1,"levelCount":3},{"id":"reprisal-tactics-i","name":"Reprisal Tactics I","img":"/images/research/reprisal-tactics-i.png","tier":1,"levelCount":3},{"id":"shield-upgrade-i","name":"Shield Upgrade I","img":"/images/research/shield-upgrade-i.png","tier":1,"levelCount":3},{"id":"skirmishing-i","name":"Skirmishing I","img":"/images/research/skirmishing-i.png","tier":1,"levelCount":3},{"id":"special-defensive-training-i","name":"Special Defensive Training I","img":"/images/research/special-defensive-training-i.png","tier":1,"levelCount":3},{"id":"survival-techniques-i","name":"Survival Techniques I","img":"/images/research/survival-techniques-i.png","tier":1,"levelCount":3},{"id":"targeted-sniping-i","name":"Targeted Sniping I","img":"/images/research/targeted-sniping-i.png","tier":1,"levelCount":3},{"id":"weapons-prep-i","name":"Weapons Prep I","img":"/images/research/weapons-prep-i.png","tier":1,"levelCount":3},{"id":"assaut-techniques-ii","name":"Assaut Techniques II","img":"/images/research/assaut-techniques-i.png","tier":2,"levelCount":3},{"id":"bulwark-formations-ii","name":"Bulwark Formations II","img":"/images/research/bulwark-formations-i.png","tier":2,"levelCount":3},{"id":"close-combat-ii","name":"Close Combat II","img":"/images/research/close-combat-i.png","tier":2,"levelCount":3},{"id":"defensive-formation-ii","name":"Defensive Formation II","img":"/images/research/defensive-formation-i.png","tier":2,"levelCount":3},{"id":"lancer-armor-ii","name":"Lancer Armor II","img":"/images/research/lancer-armor-i.png","tier":2,"levelCount":3},{"id":"lancer-upgrade-ii","name":"Lancer Upgrade II","img":"/images/research/lancer-upgrade-i.png","tier":2,"levelCount":3},{"id":"marksman-armor-ii","name":"Marksman Armor II","img":"/images/research/marksman-armor-i.png","tier":2,"levelCount":3},{"id":"picket-lines-ii","name":"Picket Lines II","img":"/images/research/picket-lines-i.png","tier":2,"levelCount":3},{"id":"precision-targeting-ii","name":"Precision Targeting II","img":"/images/research/precision-targeting-i.png","tier":2,"levelCount":3},{"id":"regimental-expansion-ii","name":"Regimental Expansion II","img":"/images/research/regimental-expansion-i.png","tier":2,"levelCount":3},{"id":"reprisal-tactics-ii","name":"Reprisal Tactics II","img":"/images/research/reprisal-tactics-i.png","tier":2,"levelCount":3},{"id":"shield-upgrade-ii","name":"Shield Upgrade II","img":"/images/research/shield-upgrade-i.png","tier":2,"levelCount":3},{"id":"skirmishing-ii","name":"Skirmishing II","img":"/images/research/skirmishing-i.png","tier":2,"levelCount":3},{"id":"special-defensive-training-ii","name":"Special Defensive Training II","img":"/images/research/special-defensive-training-i.png","tier":2,"levelCount":3},{"id":"survival-techniques-ii","name":"Survival Techniques II","img":"/images/research/survival-techniques-i.png","tier":2,"levelCount":3},{"id":"targeted-sniping-ii","name":"Targeted Sniping II","img":"/images/research/targeted-sniping-i.png","tier":2,"levelCount":3},{"id":"weapons-prep-ii","name":"Weapons Prep II","img":"/images/research/weapons-prep-i.png","tier":2,"levelCount":3},{"id":"assaut-techniques-iii","name":"Assaut Techniques III","img":"/images/research/assaut-techniques-i.png","tier":3,"levelCount":4},{"id":"bulwark-formations-iii","name":"Bulwark Formations III","img":"/images/research/bulwark-formations-i.png","tier":3,"levelCount":4},{"id":"close-combat-iii","name":"Close Combat III","img":"/images/research/close-combat-i.png","tier":3,"levelCount":4},{"id":"defensive-formation-iii","name":"Defensive Formation III","img":"/images/research/defensive-formation-i.png","tier":3,"levelCount":4},{"id":"lancer-armor-iii","name":"Lancer Armor III","img":"/images/research/lancer-armor-i.png","tier":3,"levelCount":4},{"id":"lancer-upgrade-iii","name":"Lancer Upgrade III","img":"/images/research/lancer-upgrade-i.png","tier":3,"levelCount":4},{"id":"marksman-armor-iii","name":"Marksman Armor III","img":"/images/research/marksman-armor-i.png","tier":3,"levelCount":4},{"id":"picket-lines-iii","name":"Picket Lines III","img":"/images/research/picket-lines-i.png","tier":3,"levelCount":4},{"id":"precision-targeting-iii","name":"Precision Targeting III","img":"/images/research/precision-targeting-i.png","tier":3,"levelCount":4},{"id":"regimental-expansion-iii","name":"Regimental Expansion III","img":"/images/research/regimental-expansion-i.png","tier":3,"levelCount":4},{"id":"reprisal-tactics-iii","name":"Reprisal Tactics III","img":"/images/research/reprisal-tactics-i.png","tier":3,"levelCount":4},{"id":"shield-upgrade-iii","name":"Shield Upgrade III","img":"/images/research/shield-upgrade-i.png","tier":3,"levelCount":4},{"id":"skirmishing-iii","name":"Skirmishing III","img":"/images/research/skirmishing-i.png","tier":3,"levelCount":4},{"id":"special-defensive-training-iii","name":"Special Defensive Training III","img":"/images/research/special-defensive-training-i.png","tier":3,"levelCount":4},{"id":"survival-techniques-iii","name":"Survival Techniques III","img":"/images/research/survival-techniques-i.png","tier":3,"levelCount":4},{"id":"targeted-sniping-iii","name":"Targeted Sniping III","img":"/images/research/targeted-sniping-i.png","tier":3,"levelCount":4},{"id":"weapons-prep-iii","name":"Weapons Prep III","img":"/images/research/weapons-prep-i.png","tier":3,"levelCount":4},{"id":"assaut-techniques-iv","name":"Assaut Techniques IV","img":"/images/research/assaut-techniques-i.png","tier":4,"levelCount":5},{"id":"bulwark-formations-iv","name":"Bulwark Formations IV","img":"/images/research/bulwark-formations-i.png","tier":4,"levelCount":5},{"id":"close-combat-iv","name":"Close Combat IV","img":"/images/research/close-combat-i.png","tier":4,"levelCount":5},{"id":"defensive-formation-iv","name":"Defensive Formation IV","img":"/images/research/defensive-formation-i.png","tier":4,"levelCount":5},{"id":"lancer-armor-iv","name":"Lancer Armor IV","img":"/images/research/lancer-armor-i.png","tier":4,"levelCount":5},{"id":"lancer-upgrade-iv","name":"Lancer Upgrade IV","img":"/images/research/lancer-upgrade-i.png","tier":4,"levelCount":5},{"id":"marksman-armor-iv","name":"Marksman Armor IV","img":"/images/research/marksman-armor-i.png","tier":4,"levelCount":5},{"id":"picket-lines-iv","name":"Picket Lines IV","img":"/images/research/picket-lines-i.png","tier":4,"levelCount":5},{"id":"precision-targeting-iv","name":"Precision Targeting IV","img":"/images/research/precision-targeting-i.png","tier":4,"levelCount":5},{"id":"regimental-expansion-iv","name":"Regimental Expansion IV","img":"/images/research/regimental-expansion-i.png","tier":4,"levelCount":5},{"id":"reprisal-tactics-iv","name":"Reprisal Tactics IV","img":"/images/research/reprisal-tactics-i.png","tier":4,"levelCount":5},{"id":"shield-upgrade-iv","name":"Shield Upgrade IV","img":"/images/research/shield-upgrade-i.png","tier":4,"levelCount":5},{"id":"skirmishing-iv","name":"Skirmishing IV","img":"/images/research/skirmishing-i.png","tier":4,"levelCount":5},{"id":"special-defensive-training-iv","name":"Special Defensive Training IV","img":"/images/research/special-defensive-training-i.png","tier":4,"levelCount":5},{"id":"survival-techniques-iv","name":"Survival Techniques IV","img":"/images/research/survival-techniques-i.png","tier":4,"levelCount":5},{"id":"targeted-sniping-iv","name":"Targeted Sniping IV","img":"/images/research/targeted-sniping-i.png","tier":4,"levelCount":5},{"id":"weapons-prep-iv","name":"Weapons Prep IV","img":"/images/research/weapons-prep-i.png","tier":4,"levelCount":5},{"id":"assaut-techniques-v","name":"Assaut Techniques V","img":"/images/research/assaut-techniques-i.png","tier":5,"levelCount":6},{"id":"bulwark-formations-v","name":"Bulwark Formations V","img":"/images/research/bulwark-formations-i.png","tier":5,"levelCount":6},{"id":"close-combat-v","name":"Close Combat V","img":"/images/research/close-combat-i.png","tier":5,"levelCount":6},{"id":"defensive-formation-v","name":"Defensive Formation V","img":"/images/research/defensive-formation-i.png","tier":5,"levelCount":6},{"id":"lancer-armor-v","name":"Lancer Armor V","img":"/images/research/lancer-armor-i.png","tier":5,"levelCount":6},{"id":"lancer-upgrade-v","name":"Lancer Upgrade V","img":"/images/research/lancer-upgrade-i.png","tier":5,"levelCount":6},{"id":"marksman-armor-v","name":"Marksman Armor V","img":"/images/research/marksman-armor-i.png","tier":5,"levelCount":6},{"id":"picket-lines-v","name":"Picket Lines V","img":"/images/research/picket-lines-i.png","tier":5,"levelCount":6},{"id":"precision-targeting-v","name":"Precision Targeting V","img":"/images/research/precision-targeting-i.png","tier":5,"levelCount":6},{"id":"regimental-expansion-v","name":"Regimental Expansion V","img":"/images/research/regimental-expansion-i.png","tier":5,"levelCount":6},{"id":"reprisal-tactics-v","name":"Reprisal Tactics V","img":"/images/research/reprisal-tactics-i.png","tier":5,"levelCount":6},{"id":"shield-upgrade-v","name":"Shield Upgrade V","img":"/images/research/shield-upgrade-i.png","tier":5,"levelCount":6},{"id":"skirmishing-v","name":"Skirmishing V","img":"/images/research/skirmishing-i.png","tier":5,"levelCount":6},{"id":"special-defensive-training-v","name":"Special Defensive Training V","img":"/images/research/special-defensive-training-i.png","tier":5,"levelCount":6},{"id":"survival-techniques-v","name":"Survival Techniques V","img":"/images/research/survival-techniques-i.png","tier":5,"levelCount":6},{"id":"targeted-sniping-v","name":"Targeted Sniping V","img":"/images/research/targeted-sniping-i.png","tier":5,"levelCount":6},{"id":"weapons-prep-v","name":"Weapons Prep V","img":"/images/research/weapons-prep-i.png","tier":5,"levelCount":6},{"id":"assaut-techniques-vi","name":"Assaut Techniques VI","img":"/images/research/assaut-techniques-i.png","tier":6,"levelCount":6},{"id":"bulwark-formations-vi","name":"Bulwark Formations VI","img":"/images/research/bulwark-formations-i.png","tier":6,"levelCount":6},{"id":"close-combat-vi","name":"Close Combat VI","img":"/images/research/close-combat-i.png","tier":6,"levelCount":6},{"id":"defensive-formation-vi","name":"Defensive Formation VI","img":"/images/research/defensive-formation-i.png","tier":6,"levelCount":6},{"id":"lancer-armor-vi","name":"Lancer Armor VI","img":"/images/research/lancer-armor-i.png","tier":6,"levelCount":6},{"id":"lancer-upgrade-vi","name":"Lancer Upgrade VI","img":"/images/research/lancer-upgrade-i.png","tier":6,"levelCount":6},{"id":"marksman-armor-vi","name":"Marksman Armor VI","img":"/images/research/marksman-armor-i.png","tier":6,"levelCount":6},{"id":"picket-lines-vi","name":"Picket Lines VI","img":"/images/research/picket-lines-i.png","tier":6,"levelCount":6},{"id":"precision-targeting-vi","name":"Precision Targeting VI","img":"/images/research/precision-targeting-i.png","tier":6,"levelCount":6},{"id":"regimental-expansion-vi","name":"Regimental Expansion VI","img":"/images/research/regimental-expansion-i.png","tier":6,"levelCount":6},{"id":"reprisal-tactics-vi","name":"Reprisal Tactics VI","img":"/images/research/reprisal-tactics-i.png","tier":6,"levelCount":6},{"id":"shield-upgrade-vi","name":"Shield Upgrade VI","img":"/images/research/shield-upgrade-i.png","tier":6,"levelCount":6},{"id":"skirmishing-vi","name":"Skirmishing VI","img":"/images/research/skirmishing-i.png","tier":6,"levelCount":6},{"id":"special-defensive-training-vi","name":"Special Defensive Training VI","img":"/images/research/special-defensive-training-i.png","tier":6,"levelCount":6},{"id":"survival-techniques-vi","name":"Survival Techniques VI","img":"/images/research/survival-techniques-i.png","tier":6,"levelCount":6},{"id":"targeted-sniping-vi","name":"Targeted Sniping VI","img":"/images/research/targeted-sniping-i.png","tier":6,"levelCount":6},{"id":"weapons-prep-vi","name":"Weapons Prep VI","img":"/images/research/weapons-prep-i.png","tier":6,"levelCount":6}],"edges":[{"from":"special-defensive-training-i","to":"assaut-techniques-i"},{"from":"skirmishing-i","to":"bulwark-formations-i"},{"from":"regimental-expansion-i","to":"close-combat-i"},{"from":"reprisal-tactics-i","to":"defensive-formation-i"},{"from":"lancer-upgrade-i","to":"lancer-armor-i"},{"from":"survival-techniques-i","to":"lancer-upgrade-i"},{"from":"targeted-sniping-i","to":"marksman-armor-i"},{"from":"precision-targeting-i","to":"picket-lines-i"},{"from":"weapons-prep-i","to":"precision-targeting-i"},{"from":"survival-techniques-i","to":"regimental-expansion-i"},{"from":"assaut-techniques-i","to":"regimental-expansion-i"},{"from":"weapons-prep-i","to":"reprisal-tactics-i"},{"from":"close-combat-i","to":"shield-upgrade-i"},{"from":"weapons-prep-i","to":"skirmishing-i"},{"from":"defensive-formation-i","to":"special-defensive-training-i"},{"from":"picket-lines-i","to":"special-defensive-training-i"},{"from":"bulwark-formations-i","to":"special-defensive-training-i"},{"from":"special-defensive-training-i","to":"survival-techniques-i"},{"from":"regimental-expansion-i","to":"targeted-sniping-i"},{"from":"special-defensive-training-ii","to":"assaut-techniques-ii"},{"from":"skirmishing-ii","to":"bulwark-formations-ii"},{"from":"regimental-expansion-ii","to":"close-combat-ii"},{"from":"reprisal-tactics-ii","to":"defensive-formation-ii"},{"from":"lancer-upgrade-ii","to":"lancer-armor-ii"},{"from":"survival-techniques-ii","to":"lancer-upgrade-ii"},{"from":"targeted-sniping-ii","to":"marksman-armor-ii"},{"from":"precision-targeting-ii","to":"picket-lines-ii"},{"from":"weapons-prep-ii","to":"precision-targeting-ii"},{"from":"survival-techniques-ii","to":"regimental-expansion-ii"},{"from":"assaut-techniques-ii","to":"regimental-expansion-ii"},{"from":"weapons-prep-ii","to":"reprisal-tactics-ii"},{"from":"close-combat-ii","to":"shield-upgrade-ii"},{"from":"weapons-prep-ii","to":"skirmishing-ii"},{"from":"defensive-formation-ii","to":"special-defensive-training-ii"},{"from":"picket-lines-ii","to":"special-defensive-training-ii"},{"from":"bulwark-formations-ii","to":"special-defensive-training-ii"},{"from":"special-defensive-training-ii","to":"survival-techniques-ii"},{"from":"regimental-expansion-ii","to":"targeted-sniping-ii"},{"from":"shield-upgrade-i","to":"weapons-prep-ii"},{"from":"marksman-armor-i","to":"weapons-prep-ii"},{"from":"lancer-armor-i","to":"weapons-prep-ii"},{"from":"special-defensive-training-iii","to":"assaut-techniques-iii"},{"from":"skirmishing-iii","to":"bulwark-formations-iii"},{"from":"regimental-expansion-iii","to":"close-combat-iii"},{"from":"reprisal-tactics-iii","to":"defensive-formation-iii"},{"from":"lancer-upgrade-iii","to":"lancer-armor-iii"},{"from":"survival-techniques-iii","to":"lancer-upgrade-iii"},{"from":"targeted-sniping-iii","to":"marksman-armor-iii"},{"from":"precision-targeting-iii","to":"picket-lines-iii"},{"from":"weapons-prep-iii","to":"precision-targeting-iii"},{"from":"survival-techniques-iii","to":"regimental-expansion-iii"},{"from":"assaut-techniques-iii","to":"regimental-expansion-iii"},{"from":"weapons-prep-iii","to":"reprisal-tactics-iii"},{"from":"close-combat-iii","to":"shield-upgrade-iii"},{"from":"weapons-prep-iii","to":"skirmishing-iii"},{"from":"defensive-formation-iii","to":"special-defensive-training-iii"},{"from":"picket-lines-iii","to":"special-defensive-training-iii"},{"from":"bulwark-formations-iii","to":"special-defensive-training-iii"},{"from":"special-defensive-training-iii","to":"survival-techniques-iii"},{"from":"regimental-expansion-iii","to":"targeted-sniping-iii"},{"from":"shield-upgrade-ii","to":"weapons-prep-iii"},{"from":"marksman-armor-ii","to":"weapons-prep-iii"},{"from":"lancer-armor-ii","to":"weapons-prep-iii"},{"from":"special-defensive-training-iv","to":"assaut-techniques-iv"},{"from":"skirmishing-iv","to":"bulwark-formations-iv"},{"from":"regimental-expansion-iv","to":"close-combat-iv"},{"from":"reprisal-tactics-iv","to":"defensive-formation-iv"},{"from":"lancer-upgrade-iv","to":"lancer-armor-iv"},{"from":"survival-techniques-iv","to":"lancer-upgrade-iv"},{"from":"targeted-sniping-iv","to":"marksman-armor-iv"},{"from":"precision-targeting-iv","to":"picket-lines-iv"},{"from":"weapons-prep-iv","to":"precision-targeting-iv"},{"from":"survival-techniques-iv","to":"regimental-expansion-iv"},{"from":"assaut-techniques-iv","to":"regimental-expansion-iv"},{"from":"weapons-prep-iv","to":"reprisal-tactics-iv"},{"from":"close-combat-iv","to":"shield-upgrade-iv"},{"from":"weapons-prep-iv","to":"skirmishing-iv"},{"from":"defensive-formation-iv","to":"special-defensive-training-iv"},{"from":"picket-lines-iv","to":"special-defensive-training-iv"},{"from":"bulwark-formations-iv","to":"special-defensive-training-iv"},{"from":"special-defensive-training-iv","to":"survival-techniques-iv"},{"from":"regimental-expansion-iv","to":"targeted-sniping-iv"},{"from":"shield-upgrade-iii","to":"weapons-prep-iv"},{"from":"marksman-armor-iii","to":"weapons-prep-iv"},{"from":"lancer-armor-iii","to":"weapons-prep-iv"},{"from":"special-defensive-training-v","to":"assaut-techniques-v"},{"from":"skirmishing-v","to":"bulwark-formations-v"},{"from":"regimental-expansion-v","to":"close-combat-v"},{"from":"reprisal-tactics-v","to":"defensive-formation-v"},{"from":"lancer-upgrade-v","to":"lancer-armor-v"},{"from":"survival-techniques-v","to":"lancer-upgrade-v"},{"from":"targeted-sniping-v","to":"marksman-armor-v"},{"from":"precision-targeting-v","to":"picket-lines-v"},{"from":"weapons-prep-v","to":"precision-targeting-v"},{"from":"survival-techniques-v","to":"regimental-expansion-v"},{"from":"assaut-techniques-v","to":"regimental-expansion-v"},{"from":"weapons-prep-v","to":"reprisal-tactics-v"},{"from":"close-combat-v","to":"shield-upgrade-v"},{"from":"weapons-prep-v","to":"skirmishing-v"},{"from":"defensive-formation-v","to":"special-defensive-training-v"},{"from":"picket-lines-v","to":"special-defensive-training-v"},{"from":"bulwark-formations-v","to":"special-defensive-training-v"},{"from":"special-defensive-training-v","to":"survival-techniques-v"},{"from":"regimental-expansion-v","to":"targeted-sniping-v"},{"from":"shield-upgrade-iv","to":"weapons-prep-v"},{"from":"marksman-armor-iv","to":"weapons-prep-v"},{"from":"lancer-armor-iv","to":"weapons-prep-v"},{"from":"special-defensive-training-vi","to":"assaut-techniques-vi"},{"from":"skirmishing-vi","to":"bulwark-formations-vi"},{"from":"regimental-expansion-vi","to":"close-combat-vi"},{"from":"reprisal-tactics-vi","to":"defensive-formation-vi"},{"from":"lancer-upgrade-vi","to":"lancer-armor-vi"},{"from":"survival-techniques-vi","to":"lancer-upgrade-vi"},{"from":"targeted-sniping-vi","to":"marksman-armor-vi"},{"from":"precision-targeting-vi","to":"picket-lines-vi"},{"from":"weapons-prep-vi","to":"precision-targeting-vi"},{"from":"survival-techniques-vi","to":"regimental-expansion-vi"},{"from":"assaut-techniques-vi","to":"regimental-expansion-vi"},{"from":"weapons-prep-vi","to":"reprisal-tactics-vi"},{"from":"close-combat-vi","to":"shield-upgrade-vi"},{"from":"weapons-prep-vi","to":"skirmishing-vi"},{"from":"defensive-formation-vi","to":"special-defensive-training-vi"},{"from":"picket-lines-vi","to":"special-defensive-training-vi"},{"from":"bulwark-formations-vi","to":"special-defensive-training-vi"},{"from":"special-defensive-training-vi","to":"survival-techniques-vi"},{"from":"regimental-expansion-vi","to":"targeted-sniping-vi"},{"from":"shield-upgrade-v","to":"weapons-prep-vi"},{"from":"marksman-armor-v","to":"weapons-prep-vi"},{"from":"lancer-armor-v","to":"weapons-prep-vi"}]},"Growth":{"nodes":[{"id":"bandaging-i","name":"Bandaging I","img":"/images/research/bandaging-i.png","tier":1,"levelCount":3},{"id":"camp-expansion-i","name":"Camp Expansion I","img":"/images/research/camp-expansion-i.png","tier":1,"levelCount":3},{"id":"command-tactics-i","name":"Command Tactics I","img":"/images/research/command-tactics-i.png","tier":1,"levelCount":1},{"id":"tool-enhancement-i","name":"Tool Enhancement I","img":"/images/research/tool-enhancement-i.png","tier":1,"levelCount":3},{"id":"tooling-up-i","name":"Tooling Up I","img":"/images/research/tooling-up-i.png","tier":1,"levelCount":3},{"id":"trainer-tools-i","name":"Trainer Tools I","img":"/images/research/trainer-tools-i.png","tier":1,"levelCount":3},{"id":"ward-expansion-i","name":"Ward Expansion I","img":"/images/research/ward-expansion-i.png","tier":1,"levelCount":3},{"id":"bandaging-ii","name":"Bandaging II","img":"/images/research/bandaging-i.png","tier":2,"levelCount":3},{"id":"camp-expansion-ii","name":"Camp Expansion II","img":"/images/research/camp-expansion-i.png","tier":2,"levelCount":3},{"id":"command-tactics-ii","name":"Command Tactics II","img":"/images/research/command-tactics-i.png","tier":2,"levelCount":1},{"id":"tool-enhancement-ii","name":"Tool Enhancement II","img":"/images/research/tool-enhancement-i.png","tier":2,"levelCount":3},{"id":"tooling-up-ii","name":"Tooling Up II","img":"/images/research/tooling-up-ii.png","tier":2,"levelCount":3},{"id":"trainer-tools-ii","name":"Trainer Tools II","img":"/images/research/trainer-tools-i.png","tier":2,"levelCount":3},{"id":"ward-expansion-ii","name":"Ward Expansion II","img":"/images/research/ward-expansion-i.png","tier":2,"levelCount":3},{"id":"bandaging-iii","name":"Bandaging III","img":"/images/research/bandaging-i.png","tier":3,"levelCount":3},{"id":"camp-expansion-iii","name":"Camp Expansion III","img":"/images/research/camp-expansion-i.png","tier":3,"levelCount":3},{"id":"command-tactics-iii","name":"Command Tactics III","img":"/images/research/command-tactics-i.png","tier":3,"levelCount":1},{"id":"tool-enhancement-iii","name":"Tool Enhancement III","img":"/images/research/tool-enhancement-i.png","tier":3,"levelCount":3},{"id":"tooling-up-iii","name":"Tooling Up III","img":"/images/research/tooling-up-ii.png","tier":3,"levelCount":3},{"id":"trainer-tools-iii","name":"Trainer Tools III","img":"/images/research/trainer-tools-i.png","tier":3,"levelCount":3},{"id":"ward-expansion-iii","name":"Ward Expansion III","img":"/images/research/ward-expansion-i.png","tier":3,"levelCount":3},{"id":"bandaging-iv","name":"Bandaging IV","img":"/images/research/bandaging-i.png","tier":4,"levelCount":3},{"id":"camp-expansion-iv","name":"Camp Expansion IV","img":"/images/research/camp-expansion-i.png","tier":4,"levelCount":3},{"id":"tool-enhancement-iv","name":"Tool Enhancement IV","img":"/images/research/tool-enhancement-i.png","tier":4,"levelCount":3},{"id":"tooling-up-iv","name":"Tooling Up IV","img":"/images/research/tooling-up-ii.png","tier":4,"levelCount":3},{"id":"trainer-tools-iv","name":"Trainer Tools IV","img":"/images/research/trainer-tools-i.png","tier":4,"levelCount":3},{"id":"ward-expansion-iv","name":"Ward Expansion IV","img":"/images/research/ward-expansion-i.png","tier":4,"levelCount":3},{"id":"bandaging-v","name":"Bandaging V","img":"/images/research/bandaging-i.png","tier":5,"levelCount":3},{"id":"camp-expansion-v","name":"Camp Expansion V","img":"/images/research/camp-expansion-i.png","tier":5,"levelCount":3},{"id":"tool-enhancement-v","name":"Tool Enhancement V","img":"/images/research/tool-enhancement-i.png","tier":5,"levelCount":3},{"id":"tooling-up-v","name":"Tooling Up V","img":"/images/research/tooling-up-ii.png","tier":5,"levelCount":3},{"id":"trainer-tools-v","name":"Trainer Tools V","img":"/images/research/trainer-tools-i.png","tier":5,"levelCount":3},{"id":"ward-expansion-v","name":"Ward Expansion V","img":"/images/research/ward-expansion-i.png","tier":5,"levelCount":3},{"id":"bandaging-vi","name":"Bandaging VI","img":"/images/research/bandaging-i.png","tier":6,"levelCount":3},{"id":"camp-expansion-vi","name":"Camp Expansion VI","img":"/images/research/camp-expansion-i.png","tier":6,"levelCount":3},{"id":"tool-enhancement-vi","name":"Tool Enhancement VI","img":"/images/research/tool-enhancement-i.png","tier":6,"levelCount":3},{"id":"tooling-up-vi","name":"Tooling Up VI","img":"/images/research/tooling-up-ii.png","tier":6,"levelCount":3},{"id":"trainer-tools-vi","name":"Trainer Tools VI","img":"/images/research/trainer-tools-i.png","tier":6,"levelCount":3},{"id":"ward-expansion-vi","name":"Ward Expansion VI","img":"/images/research/ward-expansion-i.png","tier":6,"levelCount":3},{"id":"bandaging-vii","name":"Bandaging VII","img":"/images/research/bandaging-i.png","tier":7,"levelCount":3},{"id":"camp-expansion-vii","name":"Camp Expansion VII","img":"/images/research/camp-expansion-i.png","tier":7,"levelCount":3},{"id":"tool-enhancement-vii","name":"Tool Enhancement VII","img":"/images/research/tool-enhancement-i.png","tier":7,"levelCount":3},{"id":"tooling-up-vii","name":"Tooling Up VII","img":"/images/research/tooling-up-ii.png","tier":7,"levelCount":3},{"id":"trainer-tools-vii","name":"Trainer Tools VII","img":"/images/research/trainer-tools-i.png","tier":7,"levelCount":3},{"id":"ward-expansion-vi-2","name":"Ward Expansion VII","img":"/images/research/ward-expansion-i.png","tier":7,"levelCount":3}],"edges":[{"from":"tool-enhancement-i","to":"bandaging-i"},{"from":"bandaging-i","to":"command-tactics-i"},{"from":"trainer-tools-i","to":"command-tactics-i"},{"from":"ward-expansion-i","to":"tool-enhancement-i"},{"from":"camp-expansion-i","to":"tool-enhancement-i"},{"from":"tool-enhancement-i","to":"trainer-tools-i"},{"from":"tool-enhancement-ii","to":"bandaging-ii"},{"from":"tooling-up-ii","to":"camp-expansion-ii"},{"from":"bandaging-iii","to":"command-tactics-ii"},{"from":"trainer-tools-iii","to":"command-tactics-ii"},{"from":"ward-expansion-ii","to":"tool-enhancement-ii"},{"from":"camp-expansion-ii","to":"tool-enhancement-ii"},{"from":"command-tactics-i","to":"tooling-up-ii"},{"from":"tool-enhancement-ii","to":"trainer-tools-ii"},{"from":"tooling-up-ii","to":"ward-expansion-ii"},{"from":"tool-enhancement-iii","to":"bandaging-iii"},{"from":"tooling-up-iii","to":"camp-expansion-iii"},{"from":"bandaging-iv","to":"command-tactics-iii"},{"from":"trainer-tools-iv","to":"command-tactics-iii"},{"from":"ward-expansion-iii","to":"tool-enhancement-iii"},{"from":"camp-expansion-iii","to":"tool-enhancement-iii"},{"from":"bandaging-ii","to":"tooling-up-iii"},{"from":"trainer-tools-ii","to":"tooling-up-iii"},{"from":"tool-enhancement-iii","to":"trainer-tools-iii"},{"from":"tooling-up-iii","to":"ward-expansion-iii"},{"from":"tool-enhancement-iv","to":"bandaging-iv"},{"from":"tooling-up-iv","to":"camp-expansion-iv"},{"from":"ward-expansion-iv","to":"tool-enhancement-iv"},{"from":"camp-expansion-iv","to":"tool-enhancement-iv"},{"from":"command-tactics-ii","to":"tooling-up-iv"},{"from":"tool-enhancement-iv","to":"trainer-tools-iv"},{"from":"tooling-up-iv","to":"ward-expansion-iv"},{"from":"tool-enhancement-v","to":"bandaging-v"},{"from":"tooling-up-v","to":"camp-expansion-v"},{"from":"ward-expansion-v","to":"tool-enhancement-v"},{"from":"camp-expansion-v","to":"tool-enhancement-v"},{"from":"command-tactics-iii","to":"tooling-up-v"},{"from":"tool-enhancement-v","to":"trainer-tools-v"},{"from":"tooling-up-v","to":"ward-expansion-v"},{"from":"tool-enhancement-vi","to":"bandaging-vi"},{"from":"tooling-up-vi","to":"camp-expansion-vi"},{"from":"ward-expansion-vi","to":"tool-enhancement-vi"},{"from":"camp-expansion-vi","to":"tool-enhancement-vi"},{"from":"bandaging-v","to":"tooling-up-vi"},{"from":"trainer-tools-v","to":"tooling-up-vi"},{"from":"tool-enhancement-vi","to":"trainer-tools-vi"},{"from":"tooling-up-vi","to":"ward-expansion-vi"},{"from":"tool-enhancement-vii","to":"bandaging-vii"},{"from":"tooling-up-vii","to":"camp-expansion-vii"},{"from":"ward-expansion-vi-2","to":"tool-enhancement-vii"},{"from":"camp-expansion-vii","to":"tool-enhancement-vii"},{"from":"bandaging-vi","to":"tooling-up-vii"},{"from":"trainer-tools-vi","to":"tooling-up-vii"},{"from":"tool-enhancement-vii","to":"trainer-tools-vii"},{"from":"tooling-up-vii","to":"ward-expansion-vi-2"}]},"Economy":{"nodes":[{"id":"coal-mining-i","name":"Coal Mining I","img":"/images/research/coal-mining-i.png","tier":1,"levelCount":3},{"id":"coal-output-i","name":"Coal Output I","img":"/images/research/coal-output-i.png","tier":1,"levelCount":3},{"id":"food-gathering-i","name":"Food Gathering I","img":"/images/research/food-gathering-i.png","tier":1,"levelCount":3},{"id":"iron-mining-i","name":"Iron Mining I","img":"/images/research/iron-mining-i.png","tier":1,"levelCount":3},{"id":"iron-output-i","name":"Iron Output I","img":"/images/research/iron-output-i.png","tier":1,"levelCount":3},{"id":"meat-output-i","name":"Meat Output I","img":"/images/research/meat-output-i.png","tier":1,"levelCount":3},{"id":"wood-gathering-i","name":"Wood Gathering I","img":"/images/research/wood-gathering-i.png","tier":1,"levelCount":3},{"id":"wood-output-i","name":"Wood Output I","img":"/images/research/wood-output-i.png","tier":1,"levelCount":3},{"id":"coal-mining-ii","name":"Coal Mining II","img":"/images/research/coal-mining-i.png","tier":2,"levelCount":3},{"id":"coal-output-ii","name":"Coal Output II","img":"/images/research/coal-output-i.png","tier":2,"levelCount":3},{"id":"food-gathering-ii","name":"Food Gathering II","img":"/images/research/food-gathering-i.png","tier":2,"levelCount":3},{"id":"iron-mining-ii","name":"Iron Mining II","img":"/images/research/iron-mining-i.png","tier":2,"levelCount":3},{"id":"iron-output-ii","name":"Iron Output II","img":"/images/research/iron-output-i.png","tier":2,"levelCount":3},{"id":"meat-output-ii","name":"Meat Output II","img":"/images/research/meat-output-i.png","tier":2,"levelCount":3},{"id":"wood-gathering-ii","name":"Wood Gathering II","img":"/images/research/wood-gathering-i.png","tier":2,"levelCount":3},{"id":"wood-output-ii","name":"Wood Output II","img":"/images/research/wood-output-i.png","tier":2,"levelCount":3},{"id":"coal-mining-iii","name":"Coal Mining III","img":"/images/research/coal-mining-i.png","tier":3,"levelCount":3},{"id":"coal-output-iii","name":"Coal Output III","img":"/images/research/coal-output-i.png","tier":3,"levelCount":3},{"id":"food-gathering-iii","name":"Food Gathering III","img":"/images/research/food-gathering-i.png","tier":3,"levelCount":3},{"id":"iron-mining-iii","name":"Iron Mining III","img":"/images/research/iron-mining-i.png","tier":3,"levelCount":3},{"id":"iron-output-iii","name":"Iron Output III","img":"/images/research/iron-output-i.png","tier":3,"levelCount":3},{"id":"meat-output-iii","name":"Meat Output III","img":"/images/research/meat-output-i.png","tier":3,"levelCount":3},{"id":"wood-gathering-iii","name":"Wood Gathering III","img":"/images/research/wood-gathering-i.png","tier":3,"levelCount":3},{"id":"wood-output-iii","name":"Wood Output III","img":"/images/research/wood-output-i.png","tier":3,"levelCount":3},{"id":"coal-mining-iv","name":"Coal Mining IV","img":"/images/research/coal-mining-i.png","tier":4,"levelCount":3},{"id":"coal-output-iv","name":"Coal Output IV","img":"/images/research/coal-output-i.png","tier":4,"levelCount":3},{"id":"food-gathering-iv","name":"Food Gathering IV","img":"/images/research/food-gathering-i.png","tier":4,"levelCount":3},{"id":"iron-mining-iv","name":"Iron Mining IV","img":"/images/research/iron-mining-i.png","tier":4,"levelCount":3},{"id":"iron-output-iv","name":"Iron Output IV","img":"/images/research/iron-output-i.png","tier":4,"levelCount":3},{"id":"meat-output-iv","name":"Meat Output IV","img":"/images/research/meat-output-i.png","tier":4,"levelCount":3},{"id":"wood-gathering-iv","name":"Wood Gathering IV","img":"/images/research/wood-gathering-i.png","tier":4,"levelCount":3},{"id":"wood-output-iv","name":"Wood Output IV","img":"/images/research/wood-output-i.png","tier":4,"levelCount":3},{"id":"coal-mining-v","name":"Coal Mining V","img":"/images/research/coal-mining-i.png","tier":5,"levelCount":3},{"id":"coal-output-v","name":"Coal Output V","img":"/images/research/coal-output-i.png","tier":5,"levelCount":3},{"id":"food-gathering-v","name":"Food Gathering V","img":"/images/research/food-gathering-i.png","tier":5,"levelCount":3},{"id":"iron-mining-v","name":"Iron Mining V","img":"/images/research/iron-mining-i.png","tier":5,"levelCount":3},{"id":"iron-output-v","name":"Iron Output V","img":"/images/research/iron-output-i.png","tier":5,"levelCount":3},{"id":"meat-output-v","name":"Meat Output V","img":"/images/research/meat-output-i.png","tier":5,"levelCount":3},{"id":"wood-gathering-v","name":"Wood Gathering V","img":"/images/research/wood-gathering-i.png","tier":5,"levelCount":3},{"id":"wood-output-v","name":"Wood Output V","img":"/images/research/wood-output-i.png","tier":5,"levelCount":3},{"id":"food-gathering-vi","name":"Food Gathering VI","img":"/images/research/food-gathering-i.png","tier":6,"levelCount":3},{"id":"meat-output-vi","name":"Meat Output VI","img":"/images/research/meat-output-i.png","tier":6,"levelCount":3},{"id":"wood-gathering-vi","name":"Wood Gathering VI","img":"/images/research/wood-gathering-i.png","tier":6,"levelCount":3},{"id":"wood-output-vi","name":"Wood Output VI","img":"/images/research/wood-output-i.png","tier":6,"levelCount":3}],"edges":[{"from":"coal-output-i","to":"coal-mining-i"},{"from":"food-gathering-i","to":"coal-output-i"},{"from":"wood-gathering-i","to":"coal-output-i"},{"from":"wood-output-i","to":"food-gathering-i"},{"from":"food-gathering-ii","to":"iron-mining-i"},{"from":"wood-gathering-ii","to":"iron-mining-i"},{"from":"meat-output-ii","to":"iron-output-i"},{"from":"wood-output-ii","to":"iron-output-i"},{"from":"wood-output-i","to":"wood-gathering-i"},{"from":"meat-output-i","to":"wood-output-i"},{"from":"iron-output-ii","to":"coal-mining-ii"},{"from":"iron-mining-i","to":"coal-output-ii"},{"from":"iron-output-i","to":"food-gathering-ii"},{"from":"food-gathering-iii","to":"iron-mining-ii"},{"from":"coal-mining-ii","to":"iron-mining-ii"},{"from":"wood-gathering-iii","to":"iron-mining-ii"},{"from":"meat-output-iii","to":"iron-output-ii"},{"from":"coal-output-ii","to":"iron-output-ii"},{"from":"wood-output-iii","to":"iron-output-ii"},{"from":"coal-mining-i","to":"meat-output-ii"},{"from":"iron-output-i","to":"wood-gathering-ii"},{"from":"coal-mining-i","to":"wood-output-ii"},{"from":"iron-output-iii","to":"coal-mining-iii"},{"from":"iron-mining-ii","to":"coal-output-iii"},{"from":"iron-output-ii","to":"food-gathering-iii"},{"from":"food-gathering-iv","to":"iron-mining-iii"},{"from":"coal-mining-iii","to":"iron-mining-iii"},{"from":"wood-gathering-iv","to":"iron-mining-iii"},{"from":"meat-output-iv","to":"iron-output-iii"},{"from":"coal-output-iii","to":"iron-output-iii"},{"from":"wood-output-iv","to":"iron-output-iii"},{"from":"iron-mining-i","to":"meat-output-iii"},{"from":"iron-output-ii","to":"wood-gathering-iii"},{"from":"iron-mining-i","to":"wood-output-iii"},{"from":"iron-output-iv","to":"coal-mining-iv"},{"from":"iron-mining-iii","to":"coal-output-iv"},{"from":"iron-output-iii","to":"food-gathering-iv"},{"from":"food-gathering-v","to":"iron-mining-iv"},{"from":"coal-mining-iv","to":"iron-mining-iv"},{"from":"wood-gathering-v","to":"iron-mining-iv"},{"from":"meat-output-v","to":"iron-output-iv"},{"from":"coal-output-iv","to":"iron-output-iv"},{"from":"wood-output-v","to":"iron-output-iv"},{"from":"iron-mining-ii","to":"meat-output-iv"},{"from":"iron-output-iii","to":"wood-gathering-iv"},{"from":"iron-mining-ii","to":"wood-output-iv"},{"from":"iron-output-v","to":"coal-mining-v"},{"from":"iron-mining-iv","to":"coal-output-v"},{"from":"iron-output-iv","to":"food-gathering-v"},{"from":"food-gathering-vi","to":"iron-mining-v"},{"from":"coal-mining-v","to":"iron-mining-v"},{"from":"wood-gathering-vi","to":"iron-mining-v"},{"from":"meat-output-vi","to":"iron-output-v"},{"from":"coal-output-v","to":"iron-output-v"},{"from":"wood-output-vi","to":"iron-output-v"},{"from":"iron-mining-iii","to":"meat-output-v"},{"from":"iron-output-iv","to":"wood-gathering-v"},{"from":"iron-mining-iii","to":"wood-output-v"},{"from":"iron-output-v","to":"food-gathering-vi"},{"from":"iron-mining-iv","to":"meat-output-vi"},{"from":"iron-output-v","to":"wood-gathering-vi"},{"from":"iron-mining-iv","to":"wood-output-vi"}]},"T12 Infantry":{"nodes":[{"id":"exalted-armament","name":"Exalted Armament","img":"/images/research/exalted-armament.png","tier":1,"levelCount":5},{"id":"exalted-bastion","name":"Exalted Bastion","img":"/images/research/exalted-bastion.png","tier":1,"levelCount":5},{"id":"exalted-helm","name":"Exalted Helm","img":"/images/research/exalted-helm.png","tier":1,"levelCount":5},{"id":"exalted-infantry","name":"Exalted Infantry","img":"","tier":1,"levelCount":1},{"id":"exalted-shoulderguard","name":"Exalted Shoulderguard","img":"/images/research/exalted-shoulderguard.png","tier":1,"levelCount":5},{"id":"exalted-trek","name":"Exalted Trek","img":"/images/research/exalted-trek.png","tier":1,"levelCount":5},{"id":"molten-blades-i","name":"Molten Blades I","img":"/images/research/molten-blades-i.png","tier":2,"levelCount":20},{"id":"molten-guard-i","name":"Molten Guard I","img":"/images/research/molten-guard-i.png","tier":2,"levelCount":20},{"id":"molten-plating-i","name":"Molten Plating I","img":"/images/research/molten-plating-i.png","tier":2,"levelCount":20},{"id":"molten-shields-i","name":"Molten Shields I","img":"/images/research/molten-shields-i.png","tier":2,"levelCount":20},{"id":"indomitable-wall","name":"Indomitable Wall","img":"/images/research/indomitable-wall.png","tier":3,"levelCount":3},{"id":"molten-blades-ii","name":"Molten Blades II","img":"/images/research/molten-blades-ii.png","tier":4,"levelCount":50},{"id":"molten-guard-ii","name":"Molten Guard II","img":"/images/research/molten-guard-ii.png","tier":4,"levelCount":50},{"id":"molten-plating-ii","name":"Molten Plating II","img":"/images/research/molten-plating-ii.png","tier":4,"levelCount":50},{"id":"molten-shields-ii","name":"Molten Shields II","img":"/images/research/molten-shields-ii.png","tier":4,"levelCount":50},{"id":"solar-supremacy","name":"Solar Supremacy","img":"/images/research/solar-supremacy.png","tier":5,"levelCount":15},{"id":"molten-blades-iii","name":"Molten Blades III","img":"/images/research/molten-blades-iii.png","tier":6,"levelCount":50},{"id":"molten-guard-iii","name":"Molten Guard III","img":"/images/research/molten-guard-iii.png","tier":6,"levelCount":50},{"id":"molten-plating-iii","name":"Molten Plating III","img":"/images/research/molten-plating-iii.png","tier":6,"levelCount":50},{"id":"molten-shields-iii","name":"Molten Shields III","img":"/images/research/molten-shields-iii.png","tier":6,"levelCount":50},{"id":"exalted-infantry-first-aid","name":"Exalted Infantry First Aid","img":"/images/research/exalted-infantry-first-aid.png","tier":7,"levelCount":10},{"id":"exalted-infantry-healing","name":"Exalted Infantry Healing","img":"/images/research/exalted-infantry-healing.png","tier":7,"levelCount":10},{"id":"exalted-infantry-training","name":"Exalted Infantry Training","img":"/images/research/exalted-infantry-training.png","tier":8,"levelCount":10}],"edges":[{"from":"exalted-trek","to":"exalted-armament"},{"from":"exalted-shoulderguard","to":"exalted-bastion"},{"from":"exalted-helm","to":"exalted-shoulderguard"},{"from":"exalted-bastion","to":"exalted-trek"}],"orientation":"horizontal","capstoneId":"exalted-infantry","capstoneEdges":[{"from":"exalted-armament","to":"exalted-infantry"},{"from":"exalted-bastion","to":"exalted-infantry"},{"from":"exalted-helm","to":"exalted-infantry"},{"from":"exalted-shoulderguard","to":"exalted-infantry"},{"from":"exalted-trek","to":"exalted-infantry"}],"tier2Edges":[{"from":"exalted-infantry","to":"molten-blades-i"},{"from":"exalted-infantry","to":"molten-guard-i"},{"from":"exalted-infantry","to":"molten-plating-i"},{"from":"exalted-infantry","to":"molten-shields-i"}],"tier3Edges":[{"from":"molten-blades-i","to":"indomitable-wall"},{"from":"molten-guard-i","to":"indomitable-wall"},{"from":"molten-plating-i","to":"indomitable-wall"},{"from":"molten-shields-i","to":"indomitable-wall"}],"tier4Edges":[{"from":"indomitable-wall","to":"molten-blades-ii"},{"from":"indomitable-wall","to":"molten-guard-ii"},{"from":"indomitable-wall","to":"molten-plating-ii"},{"from":"indomitable-wall","to":"molten-shields-ii"}],"tier5Edges":[{"from":"molten-blades-ii","to":"solar-supremacy"},{"from":"molten-guard-ii","to":"solar-supremacy"},{"from":"molten-plating-ii","to":"solar-supremacy"},{"from":"molten-shields-ii","to":"solar-supremacy"}],"tier6Edges":[{"from":"solar-supremacy","to":"molten-blades-iii"},{"from":"solar-supremacy","to":"molten-guard-iii"},{"from":"solar-supremacy","to":"molten-plating-iii"},{"from":"solar-supremacy","to":"molten-shields-iii"}],"tier7Edges":[{"from":"indomitable-wall","to":"exalted-infantry-first-aid"},{"from":"indomitable-wall","to":"exalted-infantry-healing"}],"tier8Edges":[{"from":"exalted-infantry-healing","to":"exalted-infantry-training"},{"from":"exalted-infantry-first-aid","to":"exalted-infantry-training"}]},"T12 Marksman":{"nodes":[{"id":"exalted-blunderbuss","name":"Exalted Blunderbuss","img":"/images/research/exalted-blunderbuss.png","tier":1,"levelCount":5},{"id":"exalted-cadence","name":"Exalted Cadence","img":"/images/research/exalted-cadence.png","tier":1,"levelCount":5},{"id":"exalted-mantle","name":"Exalted Mantle","img":"/images/research/exalted-mantle.png","tier":1,"levelCount":5},{"id":"exalted-marksman","name":"Exalted Marksman","img":"","tier":1,"levelCount":1},{"id":"exalted-veil","name":"Exalted Veil","img":"/images/research/exalted-veil.png","tier":1,"levelCount":5},{"id":"exalted-war-grab","name":"Exalted War Garb","img":"/images/research/exalted-war-grab.png","tier":1,"levelCount":5},{"id":"molten-grips-i","name":"Molten Grips I","img":"/images/research/molten-grips-i.png","tier":2,"levelCount":20},{"id":"molten-scales-i","name":"Molten Scales I","img":"/images/research/molten-scales-i.png","tier":2,"levelCount":20},{"id":"molten-sharpshooting-i","name":"Molten Sharpshooting I","img":"/images/research/molten-sharpshooting-i.png","tier":2,"levelCount":20},{"id":"molten-shot-i","name":"Molten Shot I","img":"/images/research/molten-shot-i.png","tier":2,"levelCount":20},{"id":"starfire","name":"Starfire","img":"/images/research/starfire.png","tier":3,"levelCount":3},{"id":"molten-grips-ii","name":"Molten Grips II","img":"/images/research/molten-grips-ii.png","tier":4,"levelCount":50},{"id":"molten-scales-ii","name":"Molten Scales II","img":"/images/research/molten-scales-ii.png","tier":4,"levelCount":50},{"id":"molten-sharpshooting-ii","name":"Molten Sharpshooting II","img":"/images/research/molten-sharpshooting-ii.png","tier":4,"levelCount":50},{"id":"molten-shot-ii","name":"Molten Shot II","img":"/images/research/molten-shot-ii.png","tier":4,"levelCount":50},{"id":"solar-supremacy-mm","name":"Solar Supremacy","img":"/images/research/solar-supremacy-mm.png","tier":5,"levelCount":15},{"id":"molten-grips-iii","name":"Molten Grips III","img":"/images/research/molten-grips-iii.png","tier":6,"levelCount":50},{"id":"molten-scales-iii","name":"Molten Scales III","img":"/images/research/molten-scales-iii.png","tier":6,"levelCount":50},{"id":"molten-sharpshooting-iii","name":"Molten Sharpshooting III","img":"/images/research/molten-sharpshooting-iii.png","tier":6,"levelCount":50},{"id":"molten-shot-iii","name":"Molten Shot III","img":"/images/research/molten-shot-iii.png","tier":6,"levelCount":50},{"id":"exalted-marksman-first-aid","name":"Exalted Marksman First Aid","img":"/images/research/exalted-marksman-first-aid.png","tier":7,"levelCount":10},{"id":"exalted-marksman-healing","name":"Exalted Marksman Healing","img":"/images/research/exalted-marksman-healing.png","tier":7,"levelCount":10},{"id":"exalted-marksman-training","name":"Exalted Marksman Training","img":"/images/research/exalted-marksman-training.png","tier":8,"levelCount":10}],"edges":[{"from":"exalted-cadence","to":"exalted-blunderbuss"},{"from":"exalted-war-grab","to":"exalted-cadence"},{"from":"exalted-veil","to":"exalted-mantle"},{"from":"exalted-mantle","to":"exalted-war-grab"}],"orientation":"horizontal","capstoneId":"exalted-marksman","capstoneEdges":[{"from":"exalted-blunderbuss","to":"exalted-marksman"},{"from":"exalted-cadence","to":"exalted-marksman"},{"from":"exalted-mantle","to":"exalted-marksman"},{"from":"exalted-veil","to":"exalted-marksman"},{"from":"exalted-war-grab","to":"exalted-marksman"}],"tier2Edges":[{"from":"exalted-marksman","to":"molten-grips-i"},{"from":"exalted-marksman","to":"molten-scales-i"},{"from":"exalted-marksman","to":"molten-sharpshooting-i"},{"from":"exalted-marksman","to":"molten-shot-i"}],"tier3Edges":[{"from":"molten-shot-i","to":"starfire"},{"from":"molten-sharpshooting-i","to":"starfire"},{"from":"molten-scales-i","to":"starfire"},{"from":"molten-grips-i","to":"starfire"}],"tier4Edges":[{"from":"starfire","to":"molten-grips-ii"},{"from":"starfire","to":"molten-scales-ii"},{"from":"starfire","to":"molten-sharpshooting-ii"},{"from":"starfire","to":"molten-shot-ii"}],"tier5Edges":[{"from":"molten-shot-ii","to":"solar-supremacy-mm"},{"from":"molten-sharpshooting-ii","to":"solar-supremacy-mm"},{"from":"molten-scales-ii","to":"solar-supremacy-mm"},{"from":"molten-grips-ii","to":"solar-supremacy-mm"}],"tier6Edges":[{"from":"solar-supremacy-mm","to":"molten-grips-iii"},{"from":"solar-supremacy-mm","to":"molten-scales-iii"},{"from":"solar-supremacy-mm","to":"molten-sharpshooting-iii"},{"from":"solar-supremacy-mm","to":"molten-shot-iii"}],"tier7Edges":[{"from":"starfire","to":"exalted-marksman-first-aid"},{"from":"starfire","to":"exalted-marksman-healing"}],"tier8Edges":[{"from":"exalted-marksman-healing","to":"exalted-marksman-training"},{"from":"exalted-marksman-first-aid","to":"exalted-marksman-training"}]},"T12 Lancer":{"nodes":[{"id":"exalted-lancer","name":"Exalted Lancer","img":"","tier":1,"levelCount":1},{"id":"exalted-pauldron","name":"Exalted Pauldron","img":"/images/research/exalted-pauldron.png","tier":1,"levelCount":5},{"id":"exalted-pike","name":"Exalted Pike","img":"/images/research/exalted-pike.png","tier":1,"levelCount":5},{"id":"exalted-platemail","name":"Exalted Platemail","img":"/images/research/exalted-platemail.png","tier":1,"levelCount":5},{"id":"exalted-warcrown","name":"Exalted Warcrown","img":"/images/research/exalted-warcrown.png","tier":1,"levelCount":5},{"id":"exalted-warpath","name":"Exalted Warpath","img":"/images/research/exalted-warpath.png","tier":1,"levelCount":5},{"id":"molten-helmets-i","name":"Molten Helmets I","img":"/images/research/molten-helmets-i.png","tier":2,"levelCount":20},{"id":"molten-lance-i","name":"Molten Lance I","img":"/images/research/molten-lance-i.png","tier":2,"levelCount":20},{"id":"molten-tactics-i","name":"Molten Tactics I","img":"/images/research/molten-tactics-i.png","tier":2,"levelCount":20},{"id":"molten-vambrace-i","name":"Molten Vambrace I","img":"/images/research/molten-vambrace-i.png","tier":2,"levelCount":20},{"id":"meridian-phalanx","name":"Meridian Phalanx","img":"/images/research/meridian-phalanx.png","tier":3,"levelCount":3},{"id":"molten-helmets-ii","name":"Molten Helmets II","img":"/images/research/molten-helmets-ii.png","tier":4,"levelCount":50},{"id":"molten-lance-ii","name":"Molten Lance II","img":"/images/research/molten-lance-ii.png","tier":4,"levelCount":50},{"id":"molten-tactics-ii","name":"Molten Tactics II","img":"/images/research/molten-tactics-ii.png","tier":4,"levelCount":50},{"id":"molten-vambrace-ii","name":"Molten Vambrace II","img":"/images/research/molten-vambrace-ii.png","tier":4,"levelCount":50},{"id":"solar-supremacy-lanc","name":"Solar Supremacy","img":"/images/research/solar-supremacy-lanc.png","tier":5,"levelCount":15},{"id":"molten-helmets-iii","name":"Molten Helmets III","img":"/images/research/molten-helmets-iii.png","tier":6,"levelCount":50},{"id":"molten-lance-iii","name":"Molten Lance III","img":"/images/research/molten-lance-iii.png","tier":6,"levelCount":50},{"id":"molten-tactics-iii","name":"Molten Tactics III","img":"/images/research/molten-tactics-iii.png","tier":6,"levelCount":50},{"id":"molten-vambrace-iii","name":"Molten Vambrace III","img":"/images/research/molten-vambrace-iii.png","tier":6,"levelCount":50},{"id":"exalted-lancer-first-aid","name":"Exalted Lancer First Aid","img":"/images/research/exalted-lancer-first-aid.png","tier":7,"levelCount":10},{"id":"exalted-lancer-healing","name":"Exalted Lancer Healing","img":"/images/research/exalted-lancer-healing.png","tier":7,"levelCount":10},{"id":"exalted-lancer-training","name":"Exalted Lancer Training","img":"/images/research/exalted-lancer-training.png","tier":8,"levelCount":10}],"edges":[{"from":"exalted-warcrown","to":"exalted-pauldron"},{"from":"exalted-warpath","to":"exalted-pike"},{"from":"exalted-pauldron","to":"exalted-platemail"},{"from":"exalted-platemail","to":"exalted-warpath"}],"orientation":"horizontal","capstoneId":"exalted-lancer","capstoneEdges":[{"from":"exalted-pauldron","to":"exalted-lancer"},{"from":"exalted-pike","to":"exalted-lancer"},{"from":"exalted-platemail","to":"exalted-lancer"},{"from":"exalted-warcrown","to":"exalted-lancer"},{"from":"exalted-warpath","to":"exalted-lancer"}],"tier2Edges":[{"from":"exalted-lancer","to":"molten-helmets-i"},{"from":"exalted-lancer","to":"molten-lance-i"},{"from":"exalted-lancer","to":"molten-tactics-i"},{"from":"exalted-lancer","to":"molten-vambrace-i"}],"tier3Edges":[{"from":"molten-lance-i","to":"meridian-phalanx"},{"from":"molten-tactics-i","to":"meridian-phalanx"},{"from":"molten-helmets-i","to":"meridian-phalanx"},{"from":"molten-vambrace-i","to":"meridian-phalanx"}],"tier4Edges":[{"from":"meridian-phalanx","to":"molten-helmets-ii"},{"from":"meridian-phalanx","to":"molten-lance-ii"},{"from":"meridian-phalanx","to":"molten-tactics-ii"},{"from":"meridian-phalanx","to":"molten-vambrace-ii"}],"tier5Edges":[{"from":"molten-lance-ii","to":"solar-supremacy-lanc"},{"from":"molten-tactics-ii","to":"solar-supremacy-lanc"},{"from":"molten-helmets-ii","to":"solar-supremacy-lanc"},{"from":"molten-vambrace-ii","to":"solar-supremacy-lanc"}],"tier6Edges":[{"from":"solar-supremacy-lanc","to":"molten-helmets-iii"},{"from":"solar-supremacy-lanc","to":"molten-lance-iii"},{"from":"solar-supremacy-lanc","to":"molten-tactics-iii"},{"from":"solar-supremacy-lanc","to":"molten-vambrace-iii"}],"tier7Edges":[{"from":"meridian-phalanx","to":"exalted-lancer-first-aid"},{"from":"meridian-phalanx","to":"exalted-lancer-healing"}],"tier8Edges":[{"from":"exalted-lancer-healing","to":"exalted-lancer-training"},{"from":"exalted-lancer-first-aid","to":"exalted-lancer-training"}]},"War Academy Troops":{"hub":{"id":"fire-crystal-shard-hub","name":"Fire Crystal Shard","img":"/images/items/fire-crystal-shard.png","kind":"hub"},"branches":[{"orientation":"horizontal","rootId":"flame-squad-2","nodes":[{"id":"flame-legion-2","name":"Flame Legion","img":"/images/research/flame-legion-2.png","tier":3,"levelCount":12,"kind":"research"},{"id":"flame-protection","name":"Flame Protection","img":"/images/research/flame-protection.png","tier":4,"levelCount":12,"kind":"research"},{"id":"flame-shield","name":"Flame Shield","img":"/images/research/flame-shield.png","tier":2,"levelCount":8,"kind":"research"},{"id":"flame-squad-2","name":"Flame Squad","img":"/images/research/flame-squad-2.png","tier":1,"levelCount":5,"kind":"research"},{"id":"flame-strike","name":"Flame Strike","img":"/images/research/flame-strike.png","tier":2,"levelCount":8,"kind":"research"},{"id":"flame-tomahawk","name":"Flame Tomahawk","img":"/images/research/flame-tomahawk.png","tier":4,"levelCount":12,"kind":"research"},{"id":"helios-infantry","name":"Helios Infantry","img":"/images/research/helios-infantry.png","tier":5,"levelCount":1,"kind":"research"},{"id":"helios-infantry-first-aid","name":"Helios Infantry First Aid","img":"/images/research/helios-infantry-first-aid.png","tier":6,"levelCount":10,"kind":"research"},{"id":"helios-infantry-healing","name":"Helios Infantry Healing","img":"/images/research/helios-infantry-healing.png","tier":6,"levelCount":10,"kind":"research"},{"id":"helios-infantry-training","name":"Helios Infantry Training","img":"/images/research/helios-infantry-training.png","tier":7,"levelCount":10,"kind":"research"}],"edges":[{"from":"flame-strike","to":"flame-legion-2"},{"from":"flame-shield","to":"flame-legion-2"},{"from":"flame-squad-2","to":"flame-strike"},{"from":"flame-squad-2","to":"flame-shield"},{"from":"flame-shield","to":"flame-protection"},{"from":"flame-strike","to":"flame-tomahawk"},{"from":"helios-infantry","to":"helios-infantry-healing"},{"from":"helios-infantry","to":"helios-infantry-first-aid"},{"from":"helios-infantry","to":"helios-infantry-training"},{"from":"flame-tomahawk","to":"helios-infantry"},{"from":"flame-protection","to":"helios-infantry"},{"from":"flame-legion-2","to":"helios-infantry"}]},{"orientation":"vertical","rootId":"flame-squad-3","nodes":[{"id":"blazing-armor","name":"Blazing Armor","img":"/images/research/blazing-armor.png","tier":2,"levelCount":8,"kind":"research"},{"id":"blazing-charge","name":"Blazing Charge","img":"/images/research/blazing-charge.png","tier":2,"levelCount":8,"kind":"research"},{"id":"blazing-guardian","name":"Blazing Guardian","img":"/images/research/blazing-guardian.png","tier":4,"levelCount":12,"kind":"research"},{"id":"blazing-lance","name":"Blazing Lance","img":"/images/research/blazing-lance.png","tier":4,"levelCount":12,"kind":"research"},{"id":"flame-legion-3","name":"Flame Legion","img":"/images/research/flame-legion-3.png","tier":3,"levelCount":12,"kind":"research"},{"id":"flame-squad-3","name":"Flame Squad","img":"/images/research/flame-squad-3.png","tier":1,"levelCount":5,"kind":"research"},{"id":"helios-lancer","name":"Helios Lancer","img":"/images/research/helios-lancer.png","tier":5,"levelCount":1,"kind":"research"},{"id":"helios-lancer-first-aid","name":"Helios Lancer First Aid","img":"/images/research/helios-lancer-first-aid.png","tier":6,"levelCount":10,"kind":"research"},{"id":"helios-lancer-healing","name":"Helios Lancer Healing","img":"/images/research/helios-lancer-healing.png","tier":6,"levelCount":10,"kind":"research"},{"id":"helios-lancer-training","name":"Helios Lancer Training","img":"/images/research/helios-lancer-training.png","tier":7,"levelCount":10,"kind":"research"}],"edges":[{"from":"blazing-lance","to":"helios-lancer"},{"from":"blazing-guardian","to":"helios-lancer"},{"from":"flame-legion-3","to":"helios-lancer"},{"from":"flame-squad-3","to":"blazing-armor"},{"from":"flame-squad-3","to":"blazing-charge"},{"from":"helios-lancer","to":"helios-lancer-first-aid"},{"from":"helios-lancer","to":"helios-lancer-training"},{"from":"blazing-charge","to":"blazing-lance"},{"from":"helios-lancer","to":"helios-lancer-healing"},{"from":"blazing-armor","to":"blazing-guardian"},{"from":"blazing-armor","to":"flame-legion-3"},{"from":"blazing-charge","to":"flame-legion-3"}]},{"orientation":"up","rootId":"flame-squad-4","nodes":[{"id":"crystal-armor","name":"Crystal Armor","img":"/images/research/crystal-armor.png","tier":2,"levelCount":8,"kind":"research"},{"id":"crystal-arrow","name":"Crystal Arrow","img":"/images/research/crystal-arrow.png","tier":4,"levelCount":12,"kind":"research"},{"id":"crystal-protection","name":"Crystal Protection","img":"/images/research/crystal-protection.png","tier":4,"levelCount":12,"kind":"research"},{"id":"crystal-vision","name":"Crystal Vision","img":"/images/research/crystal-vision.png","tier":2,"levelCount":8,"kind":"research"},{"id":"flame-legion","name":"Flame Legion","img":"/images/research/flame-legion.png","tier":3,"levelCount":12,"kind":"research"},{"id":"flame-squad-4","name":"Flame Squad","img":"/images/research/flame-squad-4.png","tier":1,"levelCount":5,"kind":"research"},{"id":"helios-marksman","name":"Helios Marksman","img":"/images/research/helios-marksman.png","tier":5,"levelCount":1,"kind":"research"},{"id":"helios-marksman-first-aid","name":"Helios Marksman First Aid","img":"/images/research/helios-marksman-first-aid.png","tier":6,"levelCount":10,"kind":"research"},{"id":"helios-marksman-healing","name":"Helios Marksman Healing","img":"/images/research/helios-marksman-healing.png","tier":6,"levelCount":10,"kind":"research"},{"id":"helios-marksman-training","name":"Helios Marksman Training","img":"/images/research/helios-marksman-training.png","tier":7,"levelCount":10,"kind":"research"}],"edges":[{"from":"crystal-vision","to":"flame-legion"},{"from":"crystal-armor","to":"flame-legion"},{"from":"helios-marksman","to":"helios-marksman-healing"},{"from":"flame-squad-4","to":"crystal-armor"},{"from":"helios-marksman","to":"helios-marksman-training"},{"from":"helios-marksman","to":"helios-marksman-first-aid"},{"from":"crystal-vision","to":"crystal-arrow"},{"from":"crystal-armor","to":"crystal-protection"},{"from":"crystal-arrow","to":"helios-marksman"},{"from":"crystal-protection","to":"helios-marksman"},{"from":"flame-legion","to":"helios-marksman"},{"from":"flame-squad-4","to":"crystal-vision"}]}]}};
+const CATEGORIES = [
+  "Battle", "Growth", "Economy", "War Academy Troops",
+  "T12 Infantry", "T12 Marksman", "T12 Lancer",
+];
+let active = "Battle";
+
+const RANK_GAP = 150;  // spacing along the flow direction (top->bottom, or left->right)
+const LANE_GAP = 96;   // spacing across the flow direction
+const NODE_W = 76;
+const NODE_H = 52;
+const NODE_LABEL_H = 42; // icon + name text + level pill below it
+const BRANCH_LANE_GAP = NODE_H + NODE_LABEL_H + 30; // vertical spacing within a side branch's own stack
+
+function computeRanks(nodes, parents) {
+  const rank = new Map();
+  function computeRank(id, seen) {
+    if (rank.has(id)) return rank.get(id);
+    if (seen.has(id)) return 0;
+    seen.add(id);
+    const ps = parents.get(id);
+    const r = ps.length === 0 ? 0 : Math.max(...ps.map(p => computeRank(p, seen))) + 1;
+    rank.set(id, r);
+    return r;
+  }
+  nodes.forEach(n => computeRank(n.id, new Set()));
+  return rank;
+}
+
+// Pure layout over an explicit node/edge set — returns LOCAL positions
+// (rank 0 starts near the origin), independent of any particular tab.
+function layoutGraph(nodes, edges, orientation) {
+  const horizontal = orientation === 'horizontal';
+  const nodeIds = new Set(nodes.map(n => n.id));
+  const parents = new Map(nodes.map(n => [n.id, []]));
+  const children = new Map(nodes.map(n => [n.id, []]));
+  edges.forEach(e => {
+    if (!nodeIds.has(e.from) || !nodeIds.has(e.to)) return;
+    children.get(e.from).push(e.to);
+    parents.get(e.to).push(e.from);
+  });
+
+  const rank = computeRanks(nodes, parents);
+  const maxRank = Math.max(...nodes.map(n => rank.get(n.id)));
+  const ranks = [];
+  for (let r = 0; r <= maxRank; r++) {
+    ranks.push(nodes.filter(n => rank.get(n.id) === r).map(n => n.id));
+  }
+  ranks.forEach(group => group.sort());
+
+  const along = new Map();
+  const across = new Map();
+  ranks.forEach((group, r) => {
+    group.forEach((id, i) => {
+      along.set(id, r * RANK_GAP + RANK_GAP / 2);
+      across.set(id, i * LANE_GAP + LANE_GAP / 2);
+    });
+  });
+
+  function barycenterPass(forward) {
+    const order = forward ? ranks.slice(1) : ranks.slice(0, -1).reverse();
+    order.forEach(group => {
+      const scored = group.map(id => {
+        const neighbors = forward ? parents.get(id) : children.get(id);
+        const vals = neighbors.map(p => across.get(p)).filter(v => v !== undefined);
+        const avg = vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : across.get(id);
+        return { id, avg };
+      });
+      scored.sort((a, b) => a.avg - b.avg);
+      scored.forEach((s, i) => across.set(s.id, i * LANE_GAP + LANE_GAP / 2));
+    });
+  }
+  for (let pass = 0; pass < 4; pass++) {
+    barycenterPass(true);
+    barycenterPass(false);
+  }
+
+  const maxLanes = Math.max(...ranks.map(group => group.length));
+  const acrossExtent = maxLanes * LANE_GAP;
+  ranks.forEach(group => {
+    const groupExtent = group.length * LANE_GAP;
+    const offset = (acrossExtent - groupExtent) / 2;
+    group.forEach((id, i) => across.set(id, offset + i * LANE_GAP + LANE_GAP / 2));
+  });
+
+  const pos = new Map();
+  nodes.forEach(n => {
+    const a = along.get(n.id);
+    const c = across.get(n.id);
+    pos.set(n.id, horizontal ? { x: a, y: c } : { x: c, y: a });
+  });
+
+  const flowExtent = (maxRank + 1) * RANK_GAP;
+  return {
+    pos,
+    width: horizontal ? flowExtent : acrossExtent,
+    height: horizontal ? acrossExtent : flowExtent,
+  };
+}
+
+function edgePath(p1, p2, orientation, fromIsUp, toIsUp, splitFraction) {
+  if (orientation === 'horizontal') {
+    const x1 = p1.x + NODE_W / 2;
+    const x2 = p2.x - NODE_W / 2;
+    const midX = x1 + (x2 - x1) * (splitFraction === undefined ? 0.5 : splitFraction);
+    return `M ${x1} ${p1.y} H ${midX} V ${p2.y} H ${x2}`;
+  }
+  if (orientation === 'up') {
+    // labels sit ABOVE the icon for 'up'-styled nodes, so a line only needs
+    // to clear a label on the side that actually has one there (the hub
+    // itself, feeding into an 'up' branch, keeps its normal label-below
+    // style, so its own side needs no extra clearance)
+    const y1 = p1.y - NODE_H / 2 - (fromIsUp ? NODE_LABEL_H : 0);
+    const y2 = p2.y + NODE_H / 2 + (toIsUp ? 0 : NODE_LABEL_H);
+    const midY = (y1 + y2) / 2;
+    return `M ${p1.x} ${y1} V ${midY} H ${p2.x} V ${y2}`;
+  }
+  const y1 = p1.y + NODE_H / 2 + (fromIsUp ? 0 : NODE_LABEL_H);
+  const y2 = p2.y - NODE_H / 2;
+  const midY = (y1 + y2) / 2;
+  return `M ${p1.x} ${y1} V ${midY} H ${p2.x} V ${y2}`;
+}
+
+function renderNode(canvas, node, p, orientation) {
+  const kind = node.kind || 'research';
+  const isUp = orientation === 'up';
+  const nodeEl = document.createElement('div');
+  nodeEl.className = 'node' + (isUp ? ' up' : '');
+  nodeEl.style.left = (p.x - NODE_W / 2) + 'px';
+  nodeEl.style.top = (isUp ? p.y - NODE_H / 2 - NODE_LABEL_H : p.y - NODE_H / 2) + 'px';
+
+  if (kind === 'research' || kind === 'hub') {
+    nodeEl.title = kind === 'hub'
+      ? node.name
+      : `${node.name}\n${node.levelCount} level${node.levelCount === 1 ? '' : 's'}` +
+        (node.external ? '\n(real prerequisite from another troop line)' : '') +
+        (node.img ? '' : '\n(no icon published yet)');
+
+    if (node.tier !== undefined) {
+      const tierEl = document.createElement('div');
+      tierEl.className = 'node-tier';
+      tierEl.textContent = 'T' + node.tier;
+      nodeEl.appendChild(tierEl);
+    }
+
+    const iconEl = document.createElement('div');
+    iconEl.className = 'node-icon' + (kind === 'hub' ? ' hub' : '');
+    if (node.external) iconEl.style.borderColor = 'var(--gate)';
+    if (node.img) {
+      const img = document.createElement('img');
+      img.src = '..' + node.img;
+      img.alt = node.name;
+      img.loading = 'lazy';
+      iconEl.appendChild(img);
+    } else {
+      // no icon exists anywhere to reference (e.g. brand-new, not-yet-published content)
+      iconEl.style.borderStyle = 'dashed';
+      iconEl.style.borderColor = 'var(--ghost)';
+      iconEl.textContent = '?';
+      iconEl.style.color = 'var(--ghost)';
+      iconEl.style.fontSize = '1.2rem';
+    }
+    nodeEl.appendChild(iconEl);
+
+    const nameEl = document.createElement('div');
+    nameEl.className = 'node-name';
+    nameEl.textContent = node.name;
+    nodeEl.appendChild(nameEl);
+
+    if (kind === 'research') {
+      const levelsEl = document.createElement('div');
+      levelsEl.className = 'node-levels';
+      levelsEl.textContent = `Lv 1–${node.levelCount}`;
+      nodeEl.appendChild(levelsEl);
+    }
+  } else {
+    const known = node.levelCount !== undefined;
+    nodeEl.title = node.name + (known
+      ? `\nLevel ${node.levelCount}\n(not yet published on the wiki — user-confirmed)`
+      : '\n(referenced in prerequisite text, no page published yet)');
+    const ghostEl = document.createElement('div');
+    ghostEl.className = 'node-ghost';
+    ghostEl.textContent = '?';
+    nodeEl.appendChild(ghostEl);
+
+    const nameEl = document.createElement('div');
+    nameEl.className = 'node-name';
+    nameEl.textContent = node.name;
+    nodeEl.appendChild(nameEl);
+
+    if (known) {
+      const levelsEl = document.createElement('div');
+      levelsEl.className = 'node-levels';
+      levelsEl.textContent = `Lv ${node.levelCount}`;
+      nodeEl.appendChild(levelsEl);
+    }
+  }
+
+  canvas.appendChild(nodeEl);
+}
+
+function renderSingleTree(category) {
+  const { nodes, edges, orientation, capstoneId, capstoneEdges } = DATA[category];
+  // Tiers 2-6 hang off exactly the row above them alone, stacked below the
+  // chain in tier order, each centered under the row above it. Tiers 7-8
+  // branch sideways off the tier-3 node instead, so they're kept separate.
+  const extraTierEdgeSets = ['tier2Edges', 'tier3Edges', 'tier4Edges', 'tier5Edges', 'tier6Edges']
+    .map(key => DATA[category][key])
+    .filter(Boolean);
+  const extraTierIds = extraTierEdgeSets.map(edgeSet => [...new Set(edgeSet.map(e => e.to))].sort());
+  const branchTierEdgeSets = ['tier7Edges', 'tier8Edges']
+    .map(key => DATA[category][key])
+    .filter(Boolean);
+  const branchTierIds = branchTierEdgeSets.map(edgeSet => [...new Set(edgeSet.map(e => e.to))].sort());
+  const skipIds = new Set(
+    [capstoneId, ...extraTierIds.flat(), ...branchTierIds.flat()].filter(Boolean),
+  );
+  const mainNodes = capstoneId ? nodes.filter(n => !skipIds.has(n.id)) : nodes;
+  const { pos } = layoutGraph(mainNodes, edges, orientation);
+
+  if (capstoneId) {
+    // the capstone sits on its own row below the chain, centered under it,
+    // rather than continuing along the same rank progression
+    const xs = mainNodes.map(n => pos.get(n.id).x);
+    const centerX = (Math.min(...xs) + Math.max(...xs)) / 2;
+    const rowY = Math.max(...mainNodes.map(n => pos.get(n.id).y));
+    const capstoneY = rowY + RANK_GAP;
+    pos.set(capstoneId, { x: centerX, y: capstoneY });
+
+    let rowTop = capstoneY;
+    extraTierIds.forEach(ids => {
+      if (!ids.length) return;
+      rowTop += RANK_GAP;
+      const totalWidth = (ids.length - 1) * LANE_GAP;
+      const startX = centerX - totalWidth / 2;
+      ids.forEach((id, i) => pos.set(id, { x: startX + i * LANE_GAP, y: rowTop }));
+    });
+
+    // tier 7/8 branch off the tier-3 node itself, extending to the right —
+    // this does not touch the tier 2-6 vertical stack's positions at all
+    const tier3Edges = DATA[category].tier3Edges || [];
+    const tier3Id = tier3Edges.length ? tier3Edges[0].to : null;
+    const tier3Anchor = tier3Id ? pos.get(tier3Id) : null;
+    if (tier3Anchor) {
+      // clear past the widest row in the tier 2-6 stack below (e.g. 4 Molten
+      // items spread across LANE_GAP) before the branch's first elbow, so
+      // the connector line doesn't cut through it
+      const stackHalfWidth = Math.max(
+        0,
+        ...extraTierIds.map(ids => ((ids.length - 1) * LANE_GAP) / 2),
+      );
+      let branchX = tier3Anchor.x + stackHalfWidth;
+      let priorIds = null;
+      branchTierIds.forEach(ids => {
+        if (!ids.length) return;
+        branchX += RANK_GAP;
+        if (priorIds) {
+          const ys = priorIds.map(id => pos.get(id).y);
+          const centerY = (Math.min(...ys) + Math.max(...ys)) / 2;
+          const totalHeight = (ids.length - 1) * BRANCH_LANE_GAP;
+          const startY = centerY - totalHeight / 2;
+          ids.forEach((id, i) => pos.set(id, { x: branchX, y: startY + i * BRANCH_LANE_GAP }));
+        } else {
+          const totalHeight = (ids.length - 1) * BRANCH_LANE_GAP;
+          const startY = tier3Anchor.y - totalHeight / 2;
+          ids.forEach((id, i) => pos.set(id, { x: branchX, y: startY + i * BRANCH_LANE_GAP }));
+        }
+        priorIds = ids;
+      });
+    }
+  }
+
+  const allIds = [
+    ...mainNodes.map(n => n.id), ...(capstoneId ? [capstoneId] : []),
+    ...extraTierIds.flat(), ...branchTierIds.flat(),
+  ];
+  let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+  allIds.forEach(id => {
+    const p = pos.get(id);
+    minX = Math.min(minX, p.x - NODE_W / 2);
+    maxX = Math.max(maxX, p.x + NODE_W / 2);
+    minY = Math.min(minY, p.y - NODE_H / 2);
+    maxY = Math.max(maxY, p.y + NODE_H / 2 + NODE_LABEL_H);
+  });
+  const dx = -minX + 20;
+  const dy = -minY + 20;
+  allIds.forEach(id => pos.set(id, { x: pos.get(id).x + dx, y: pos.get(id).y + dy }));
+  const canvasWidth = maxX - minX + 40;
+  const canvasHeight = maxY - minY + 40;
+
+  const canvas = document.getElementById('canvas');
+  canvas.style.width = canvasWidth + 'px';
+  canvas.style.height = canvasHeight + 'px';
+  canvas.innerHTML = '';
+
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', canvasWidth);
+  svg.setAttribute('height', canvasHeight);
+  const isUp = orientation === 'up';
+  edges.forEach(e => {
+    const p1 = pos.get(e.from);
+    const p2 = pos.get(e.to);
+    if (!p1 || !p2) return;
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', edgePath(p1, p2, orientation, isUp, isUp));
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', '#3a86c8');
+    path.setAttribute('stroke-width', '2');
+    svg.appendChild(path);
+  });
+  (capstoneEdges || [])
+    .concat(['tier2Edges', 'tier3Edges', 'tier4Edges', 'tier5Edges', 'tier6Edges'].flatMap(key => DATA[category][key] || []))
+    .forEach(e => {
+      const p1 = pos.get(e.from);
+      const p2 = pos.get(e.to);
+      if (!p1 || !p2) return;
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', edgePath(p1, p2, 'vertical', false, false));
+      path.setAttribute('fill', 'none');
+      path.setAttribute('stroke', '#3a86c8');
+      path.setAttribute('stroke-width', '2');
+      svg.appendChild(path);
+    });
+  // the tier 7/8 branch runs left-to-right off the tier-3 node, so it uses
+  // the same elbow shape as the main horizontal chain, not the vertical drop
+  // the tier 2-6 stack uses. Tier 3 -> tier 7 keeps one long shared trunk
+  // that splits late, right before First Aid/Healing, rather than splitting
+  // at the halfway point.
+  [{ key: 'tier7Edges', splitFraction: 0.85 }, { key: 'tier8Edges', splitFraction: 0.5 }]
+    .flatMap(({ key, splitFraction }) => (DATA[category][key] || []).map(e => ({ ...e, splitFraction })))
+    .forEach(e => {
+      const p1 = pos.get(e.from);
+      const p2 = pos.get(e.to);
+      if (!p1 || !p2) return;
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', edgePath(p1, p2, 'horizontal', false, false, e.splitFraction));
+      path.setAttribute('fill', 'none');
+      path.setAttribute('stroke', '#3a86c8');
+      path.setAttribute('stroke-width', '2');
+      svg.appendChild(path);
+    });
+  canvas.appendChild(svg);
+
+  mainNodes.forEach(node => {
+    const p = pos.get(node.id);
+    if (p) renderNode(canvas, node, p, orientation);
+  });
+  if (capstoneId) {
+    const capstoneNode = nodes.find(n => n.id === capstoneId);
+    renderNode(canvas, capstoneNode, pos.get(capstoneId));
+  }
+  [...extraTierIds.flat(), ...branchTierIds.flat()].forEach(id => {
+    const node = nodes.find(n => n.id === id);
+    if (node) renderNode(canvas, node, pos.get(id));
+  });
+}
+
+// Independent trees (one per troop line) hanging off one shared hub icon —
+// each branch is laid out on its own, then transformed so its own root sits
+// immediately next to the hub in that branch's own flow direction.
+function renderHubView(category) {
+  const { hub, branches } = DATA[category];
+
+  const hubX = NODE_W / 2 + 20;
+  const hubY = NODE_H / 2 + 20;
+  const allPos = new Map([[hub.id, { x: hubX, y: hubY }]]);
+  const nodeOrientation = new Map();
+  const allNodes = [hub];
+  const allEdges = [];
+
+  branches.forEach(branch => {
+    // 'up' reuses the same axis mapping as 'vertical' for its local layout
+    // (along -> y, across -> x); only the final placement direction differs
+    const layoutOrientation = branch.orientation === 'up' ? 'vertical' : branch.orientation;
+    const { pos: localPos } = layoutGraph(branch.nodes, branch.edges, layoutOrientation);
+    const rootLocal = localPos.get(branch.rootId);
+
+    let transform;
+    if (branch.orientation === 'horizontal') {
+      const shiftX = (hubX + NODE_W / 2 + RANK_GAP) - rootLocal.x;
+      const shiftY = hubY - rootLocal.y;
+      transform = p => ({ x: p.x + shiftX, y: p.y + shiftY });
+    } else if (branch.orientation === 'vertical') {
+      const shiftX = hubX - rootLocal.x;
+      const shiftY = (hubY + NODE_H / 2 + RANK_GAP) - rootLocal.y;
+      transform = p => ({ x: p.x + shiftX, y: p.y + shiftY });
+    } else { // 'up': flip the along-axis so deeper ranks move further up
+      const shiftX = hubX - rootLocal.x;
+      const c = (hubY - NODE_H / 2 - RANK_GAP) + rootLocal.y;
+      transform = p => ({ x: p.x + shiftX, y: c - p.y });
+    }
+
+    branch.nodes.forEach(n => {
+      allPos.set(n.id, transform(localPos.get(n.id)));
+      nodeOrientation.set(n.id, branch.orientation);
+    });
+    allNodes.push(...branch.nodes);
+    branch.edges.forEach(e => allEdges.push({ ...e, orientation: branch.orientation }));
+    allEdges.push({ from: hub.id, to: branch.rootId, orientation: branch.orientation });
+  });
+
+  // normalize so nothing sits at a negative coordinate (a wide lane, or an
+  // 'up' branch's label sitting above its icon, can push past the hub's edge)
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  allPos.forEach((p, id) => {
+    const isUp = nodeOrientation.get(id) === 'up';
+    minX = Math.min(minX, p.x - NODE_W / 2);
+    minY = Math.min(minY, isUp ? p.y - NODE_H / 2 - NODE_LABEL_H : p.y - NODE_H / 2);
+    maxX = Math.max(maxX, p.x + NODE_W / 2);
+    maxY = Math.max(maxY, isUp ? p.y + NODE_H / 2 : p.y + NODE_H / 2 + NODE_LABEL_H);
+  });
+  const dx = -minX + 20;
+  const dy = -minY + 20;
+  allPos.forEach((p, id) => allPos.set(id, { x: p.x + dx, y: p.y + dy }));
+  const width = maxX - minX + 40;
+  const height = maxY - minY + 40;
+
+  const canvas = document.getElementById('canvas');
+  canvas.style.width = width + 'px';
+  canvas.style.height = height + 'px';
+  canvas.innerHTML = '';
+
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('width', width);
+  svg.setAttribute('height', height);
+  allEdges.forEach(e => {
+    const p1 = allPos.get(e.from);
+    const p2 = allPos.get(e.to);
+    if (!p1 || !p2) return;
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const fromIsUp = nodeOrientation.get(e.from) === 'up';
+    const toIsUp = nodeOrientation.get(e.to) === 'up';
+    path.setAttribute('d', edgePath(p1, p2, e.orientation, fromIsUp, toIsUp));
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', '#3a86c8');
+    path.setAttribute('stroke-width', '2');
+    svg.appendChild(path);
+  });
+  canvas.appendChild(svg);
+
+  allNodes.forEach(node => {
+    const p = allPos.get(node.id);
+    if (p) renderNode(canvas, node, p, nodeOrientation.get(node.id));
+  });
+
+  return { totalNodes: allNodes.length, totalEdges: allEdges.length };
+}
+
+function render() {
+  const tabsEl = document.getElementById('tabs');
+  tabsEl.innerHTML = '';
+  CATEGORIES.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'tab' + (cat === active ? ' active' : '');
+    btn.textContent = cat;
+    btn.onclick = () => { active = cat; render(); };
+    tabsEl.appendChild(btn);
+  });
+
+  const data = DATA[active];
+  const legendEl = document.getElementById('legend');
+
+  if (data.hub) {
+    const { totalNodes, totalEdges } = renderHubView(active);
+    const hasExternal = data.branches.some(b => b.nodes.some(n => n.external));
+    document.getElementById('meta').textContent = `${totalNodes} nodes, ${totalEdges} links`;
+    let html =
+      '<span><i style="background:var(--node-bg);border:2px solid var(--node-border)"></i>Research node</span>' +
+      '<span><i style="background:var(--node-bg);border:2px solid var(--hub)"></i>Fire Crystal Shard (shared visual root)</span>';
+    if (hasExternal) {
+      html += '<span><i style="background:var(--node-bg);border:2px solid var(--gate)"></i>Real prerequisite from another troop line</span>';
+    }
+    legendEl.innerHTML = html;
+  } else {
+    const ghostCount = data.nodes.filter(n => n.kind === 'unreleased').length;
+    const totalEdges = data.edges.length +
+      ['capstoneEdges', 'tier2Edges', 'tier3Edges', 'tier4Edges', 'tier5Edges', 'tier6Edges', 'tier7Edges', 'tier8Edges']
+        .reduce((sum, key) => sum + (data[key] ? data[key].length : 0), 0);
+    document.getElementById('meta').textContent =
+      `${data.nodes.length} nodes${ghostCount ? ` (${ghostCount} unreleased)` : ''}, ${totalEdges} prerequisite links`;
+    legendEl.innerHTML = ghostCount
+      ? '<span><i style="border:2px dashed var(--ghost)"></i>Not yet published on the wiki — user-confirmed, name TBD where noted</span>'
+      : '';
+    renderSingleTree(active);
+  }
+}
+
+render();
+</script>
+</body>
+</html>
