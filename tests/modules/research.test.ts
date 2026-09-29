@@ -29,17 +29,19 @@ describe('ResearchQuery', () => {
 });
 
 describe('Research tech tree', () => {
-  it('tracks 278 nodes across 9 categories', () => {
-    expect(research().count()).toBe(278);
+  it('tracks 286 nodes across 9 categories', () => {
+    expect(research().count()).toBe(286);
     expect(research().byCategory('Battle').count()).toBe(102);
     expect(research().byCategory('Growth').count()).toBe(45);
     expect(research().byCategory('Economy').count()).toBe(44);
     expect(research().byCategory('T11 Infantry').count()).toBe(10);
     expect(research().byCategory('T11 Marksman').count()).toBe(10);
     expect(research().byCategory('T11 Lancer').count()).toBe(10);
+    // Infantry's tier-6 Molten X III items are still pending from the user
+    // as of this dataset, so it lags Marksman/Lancer by 4 nodes.
     expect(research().byCategory('T12 Infantry').count()).toBe(19);
-    expect(research().byCategory('T12 Marksman').count()).toBe(19);
-    expect(research().byCategory('T12 Lancer').count()).toBe(19);
+    expect(research().byCategory('T12 Marksman').count()).toBe(23);
+    expect(research().byCategory('T12 Lancer').count()).toBe(23);
   });
 
   it('resolves a building-type prerequisite into buildings()', () => {
@@ -319,6 +321,34 @@ describe('Research tech tree', () => {
         type: 'research',
         id: capstoneId,
         level: 1,
+      });
+    });
+  });
+
+  it("adds each tier-6 Molten X III item (Marksman/Lancer so far), gated on its own troop type's Solar Supremacy at Level 15", () => {
+    // Infantry's 4 tier-6 Molten X III items are still pending as of this
+    // dataset (one duplicate link and one missing link in what was
+    // supplied), so only Marksman and Lancer are covered here.
+    const cases: [string, string, string][] = [
+      ['molten-grips-iii', 'T12 Marksman', 'solar-supremacy-mm'],
+      ['molten-scales-iii', 'T12 Marksman', 'solar-supremacy-mm'],
+      ['molten-sharpshooting-iii', 'T12 Marksman', 'solar-supremacy-mm'],
+      ['molten-shot-iii', 'T12 Marksman', 'solar-supremacy-mm'],
+      ['molten-helmets-iii', 'T12 Lancer', 'solar-supremacy-lanc'],
+      ['molten-lance-iii', 'T12 Lancer', 'solar-supremacy-lanc'],
+      ['molten-tactics-iii', 'T12 Lancer', 'solar-supremacy-lanc'],
+      ['molten-vambrace-iii', 'T12 Lancer', 'solar-supremacy-lanc'],
+    ];
+
+    cases.forEach(([nodeId, category, solarSupremacyId]) => {
+      const node = research().find(nodeId)!;
+      expect(node.category).toBe(category);
+      expect(node.tier).toBe(6);
+      expect(node.levels).toHaveLength(50);
+      expect(node.levels[0].prerequisites).toContainEqual({
+        type: 'research',
+        id: solarSupremacyId,
+        level: 15,
       });
     });
   });
