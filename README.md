@@ -565,6 +565,78 @@ themselves.
 
 ---
 
+### 🏝️ Daybreak Island
+
+| Module     | Factory        | Items | Description                                                    |
+| ---------- | -------------- | ----- | -------------------------------------------------------------- |
+| lumberCamp | `lumberCamp()` | 10    | The shared Lumber Camp upgrade table                           |
+| treeOfLife | `treeOfLife()` | 10    | The Tree of Life upgrade table (requirements + buff per level) |
+| decoration | `decoration()` | 102   | Every Daybreak Island decoration across 8 categories           |
+
+Sourced from `https://onechilledgamer.com/whiteout-survival-daybreak-island-guide/` — a third-party
+fan site rather than `whiteoutsurvival.wiki`, but one with genuine `<table>` markup (12 tables,
+parsed from raw HTML). Unlocked at Furnace Level 19 (builds the Dock, which discovers the island
+after ~3 real-time days). All three factories live flat at `@/modules/daybreak-island`, a third
+top-level grouping alongside `alliance/` and `chief/`.
+
+`lumberCamp()` covers the 2 identical Lumber Camps built to clear the island's starting forest (each
+tree cleared has a chance to drop Life Essence, Hero Shards, or Gear). Once fully cleared, a
+separate **Timbermill** building takes over Life Essence production — it isn't leveled and has no
+table, just two flat facts from the source (40 Life Essence/hour per worker, 2,000 capacity), so it
+isn't modeled as its own queryable data.
+
+`treeOfLife()` is the island's centerpiece — its `buff` field alternates between a repeating
+"Healing Speed +30%" on odd levels and an escalating combat/capacity stat on most even levels (the
+pattern breaks at Levels 9-10, which is why `buff` is scraped per-level rather than derived). `buff`
+is shaped like `VipBonus` — `stat`/`value` for display (`"Troops Deployment Capacity"`/`"+1K"`) plus
+a parsed `amount`/`unit` pair (`1000`/`'flat'`) for aggregation, rather than a single opaque string.
+
+`decoration()` covers all 102 named decorations across 8 categories, each shaped differently (see
+`DecorationCategory`) — not every `Decoration` field applies to every category:
+
+- **Basic** (9) and **Vegetation** (5): purely cosmetic. Have `cost` (a named resource — Gems, Wood,
+  or Meat — resolved to a real `items()` id) and `limit` (max placeable count). No `levels`.
+- **Common** (10) and **Uncommon** (6): can't be upgraded and grant no buff, but have a fixed
+  `prosperityAtMaxLevel`, a `limit`, and a flat `lifeEssenceCost` (1,000 / 2,000 — stated once in
+  the source's prose per rarity, not a per-item table column).
+- **Rare** (12), **Epic** (11), **Mythic** (47): each has a `levels` array
+  (`{ level, cost, prosperity, buff }` — `cost` is the numeric level-up requirement at that level,
+  and `buff` is shaped like `VipBonus`, one stat per level). The original source only ever showed
+  the buff/Prosperity at max level, so the full per-level breakdown for these categories was
+  gathered separately by the user and imported wholesale — `limit` (max placeable count) came from
+  the same pass and is confirmed at 1 for every item checked so far. Rare/Epic/Mythic's
+  `lifeEssenceCost` is stated once per rarity in prose (3,000, 5,000, 10,000) — except **Snow
+  Castle** (Mythic), a confirmed exception at 12,000. **Limited isn't a rarity of its own** — it's a
+  `limited?: boolean` flag on a decoration that's otherwise a normal Epic (4 items, max level 5) or
+  Mythic (41 items, max level 10), reflecting how it's actually obtained (a shop rotation, an event
+  pack, a ranking reward) rather than the standard Life Essence upgrade path. `limited` is omitted
+  (not `false`) on every non-limited decoration. Limited decorations have no `lifeEssenceCost` at
+  all, since Life Essence isn't how they're obtained; a handful (mostly unreleased or newly
+  obtainable ones) also have confirmed `cost`/`prosperity` per level but no buff data yet — those
+  levels carry a blank buff (`stat: ''`, `value: '+0'`, `amount: 0`, `unit: 'flat'`) rather than
+  being left out of the array.
+- **Unique** (2): decorations with no standard rarity progression at all, so `limited` doesn't apply
+  to them either. The **Starry Lighthouse** is a single one-of-a-kind decoration unlocked at Tree of
+  Life Level 10 (50,000 Life Essence blueprint), upgradeable to Level 10; its `levels` follow the
+  same `{ level, cost, prosperity, buff }` shape as the other leveled categories, but with different
+  underlying currencies: `cost` is General Accessory Construction Contracts required at that level
+  (0 through 180) rather than Life Essence, and `buff` combines its two simultaneous stats into one
+  entry (`"Troops' Lethality, Troops' Health"`, +1% per level, same convention as Serpent
+  Sanctuary's four-stat buff). `prosperity` climbs a flat 2,000 per level, to 20,000 at Level 10.
+  **Harbor of Hope** is obtained from the Silverfrost Shop on a recurring, sporadic basis rather
+  than a one-off event pack or ranking reward — closer to Starry Lighthouse's standing availability
+  than to a true limited-time Epic/Mythic, hence `Unique` rather than `limited: true`.
+
+Names and buff text are transcribed exactly as the source shows them, including a few likely
+fan-site typos with no second source to verify against ("Marskman Attack" on Clock Hut, "Floating
+Markert", "Marksman Defence" on Fisherman's Chalet, "Hero's Sanctun") — kept verbatim rather than
+guessed at. The level-data import correctly spelled this last one "Hero's Sanctum," but rather than
+rename the stored entry (and risk breaking anything referencing the original id), it was reconciled
+back onto the existing `hero-s-sanctun` id — so `decoration().find('heros-sanctum')` returns
+nothing, while `decoration().find('hero-s-sanctun')` has the full imported level data.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

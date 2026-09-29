@@ -1,0 +1,142 @@
+[
+  {
+    "id": "tree-of-life-level-1",
+    "name": "Tree of Life Level 1",
+    "level": 1,
+    "prosperityRequired": 0,
+    "lifeEssenceRequired": 0,
+    "lifeEssencePerHour": 120,
+    "buff": {
+      "stat": "Healing Speed",
+      "value": "+30%",
+      "amount": 30,
+      "unit": "percent"
+    }
+  },
+  {
+    "id": "tree-of-life-level-2",
+    "name": "Tree of Life Level 2",
+    "level": 2,
+    "prosperityRequired": 150,
+    "lifeEssenceRequired": 500,
+    "lifeEssencePerHour": 150,
+    "buff": {
+      "stat": "Troops Deployment Capacity",
+      "value": "+1K",
+      "amount": 1000,
+      "unit": "flat"
+    }
+  },
+  {
+    "id": "tree-of-life-level-3",
+    "name": "Tree of Life Level 3",
+    "level": 3,
+    "prosperityRequired": 600,
+    "lifeEssenceRequired": 1000,
+    "lifeEssencePerHour": 180,
+    "buff": {
+      "stat": "Healing Speed",
+      "value": "+30%",
+      "amount": 30,
+      "unit": "percent"
+    }
+  },
+  {
+    "id": "tree-of-life-level-4",
+    "name": "Tree of Life Level 4",
+    "level": 4,
+    "prosperityRequired": 1200,
+    "lifeEssenceRequired": 5000,
+    "lifeEssencePerHour": 210,
+    "buff": {
+      "stat": "Troops Defense",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    }
+  },
+  {
+    "id": "tree-of-life-level-5",
+    "name": "Tree of Life Level 5",
+    "level": 5,
+    "prosperityRequired": 2400,
+    "lifeEssenceRequired": 10000,
+    "lifeEssencePerHour": 240,
+    "buff": {
+      "stat": "Healing Speed",
+      "value": "+30%",
+      "amount": 30,
+      "unit": "percent"
+    }
+  },
+  {
+    "id": "tree-of-life-level-6",
+    "name": "Tree of Life Level 6",
+    "level": 6,
+    "prosperityRequired": 4000,
+    "lifeEssenceRequired": 20000,
+    "lifeEssencePerHour": 270,
+    "buff": {
+      "stat": "Troops Attack",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    }
+  },
+  {
+    "id": "tree-of-life-level-7",
+    "name": "Tree of Life Level 7",
+    "level": 7,
+    "prosperityRequired": 7000,
+    "lifeEssenceRequired": 30000,
+    "lifeEssencePerHour": 300,
+    "buff": {
+      "stat": "Healing Speed",
+      "value": "+30%",
+      "amount": 30,
+      "unit": "percent"
+    }
+  },
+  {
+    "id": "tree-of-life-level-8",
+    "name": "Tree of Life Level 8",
+    "level": 8,
+    "prosperityRequired": 10000,
+    "lifeEssenceRequired": 50000,
+    "lifeEssencePerHour": 330,
+    "buff": {
+      "stat": "Troops Deployment Capacity",
+      "value": "+3K",
+      "amount": 3000,
+      "unit": "flat"
+    }
+  },
+  {
+    "id": "tree-of-life-level-9",
+    "name": "Tree of Life Level 9",
+    "level": 9,
+    "prosperityRequired": 15000,
+    "lifeEssenceRequired": 70000,
+    "lifeEssencePerHour": 360,
+    "buff": {
+      "stat": "Troops Health",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    }
+  },
+  {
+    "id": "tree-of-life-level-10",
+    "name": "Tree of Life Level 10",
+    "level": 10,
+    "prosperityRequired": 20000,
+    "lifeEssenceRequired": 100000,
+    "lifeEssencePerHour": 390,
+    "buff": {
+      "stat": "Troops Lethality",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    }
+  }
+]

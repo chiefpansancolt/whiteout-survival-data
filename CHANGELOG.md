@@ -37,6 +37,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   in each of 14 game modes, sourced from a user-provided screenshot rather than any wiki page.
 - `vip()`: the full VIP 1-12 progression (XP cost and unlocked bonuses per level), sourced from the
   wiki's official infographic image, since that page has no HTML table either.
+- `lumberCamp()`, `treeOfLife()`, and `decoration()`: the full Daybreak Island feature — Lumber Camp
+  and Tree of Life upgrade tables, and all 102 named decorations across 8 categories, including the
+  Starry Lighthouse and Harbor of Hope (folded in as the two `Unique` decorations, since neither
+  follows a standard rarity progression). Sourced from a third-party guide site rather than the
+  official wiki, which has no page for this feature. The Rare/Epic/Mythic/ Unique categories' full
+  per-level cost/Prosperity/buff breakdown, plus 33 additional limited-availability decorations from
+  shop rotations and event packs, were researched and supplied directly by the package maintainer.
+  "Limited" isn't its own category — it's a `limited` boolean on a decoration's real Epic/Mythic
+  tier, reflecting how it's obtained rather than a separate rarity.
 
 ### Fixed
 

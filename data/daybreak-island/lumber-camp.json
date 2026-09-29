@@ -1,0 +1,92 @@
+[
+  {
+    "id": "lumber-camp-level-1",
+    "name": "Lumber Camp Level 1",
+    "level": 1,
+    "workers": 1,
+    "ratePerSecond": 6,
+    "treeOfLifeLevelRequired": 1,
+    "lifeEssenceRequired": 0
+  },
+  {
+    "id": "lumber-camp-level-2",
+    "name": "Lumber Camp Level 2",
+    "level": 2,
+    "workers": 1,
+    "ratePerSecond": 7,
+    "treeOfLifeLevelRequired": 1,
+    "lifeEssenceRequired": 100
+  },
+  {
+    "id": "lumber-camp-level-3",
+    "name": "Lumber Camp Level 3",
+    "level": 3,
+    "workers": 1,
+    "ratePerSecond": 8,
+    "treeOfLifeLevelRequired": 2,
+    "lifeEssenceRequired": 400
+  },
+  {
+    "id": "lumber-camp-level-4",
+    "name": "Lumber Camp Level 4",
+    "level": 4,
+    "workers": 2,
+    "ratePerSecond": 9,
+    "treeOfLifeLevelRequired": 2,
+    "lifeEssenceRequired": 600
+  },
+  {
+    "id": "lumber-camp-level-5",
+    "name": "Lumber Camp Level 5",
+    "level": 5,
+    "workers": 2,
+    "ratePerSecond": 10,
+    "treeOfLifeLevelRequired": 4,
+    "lifeEssenceRequired": 1000
+  },
+  {
+    "id": "lumber-camp-level-6",
+    "name": "Lumber Camp Level 6",
+    "level": 6,
+    "workers": 2,
+    "ratePerSecond": 11,
+    "treeOfLifeLevelRequired": 4,
+    "lifeEssenceRequired": 1600
+  },
+  {
+    "id": "lumber-camp-level-7",
+    "name": "Lumber Camp Level 7",
+    "level": 7,
+    "workers": 2,
+    "ratePerSecond": 12,
+    "treeOfLifeLevelRequired": 5,
+    "lifeEssenceRequired": 2100
+  },
+  {
+    "id": "lumber-camp-level-8",
+    "name": "Lumber Camp Level 8",
+    "level": 8,
+    "workers": 2,
+    "ratePerSecond": 13,
+    "treeOfLifeLevelRequired": 5,
+    "lifeEssenceRequired": 3000
+  },
+  {
+    "id": "lumber-camp-level-9",
+    "name": "Lumber Camp Level 9",
+    "level": 9,
+    "workers": 2,
+    "ratePerSecond": 14,
+    "treeOfLifeLevelRequired": 6,
+    "lifeEssenceRequired": 4000
+  },
+  {
+    "id": "lumber-camp-level-10",
+    "name": "Lumber Camp Level 10",
+    "level": 10,
+    "workers": 2,
+    "ratePerSecond": 15,
+    "treeOfLifeLevelRequired": 6,
+    "lifeEssenceRequired": 5000
+  }
+]

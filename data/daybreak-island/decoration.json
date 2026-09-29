@@ -1,0 +1,7599 @@
+[
+  {
+    "id": "city-walkway",
+    "name": "City Walkway",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "enchanted-path",
+    "name": "Enchanted Path",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "heated-pool",
+    "name": "Heated Pool",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "gems",
+        "amount": 200
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "lush-elegy",
+    "name": "Lush Elegy",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "palisade",
+    "name": "Palisade",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "song-of-the-sun",
+    "name": "Song of the Sun",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "streetlight",
+    "name": "Streetlight",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "wood",
+        "amount": 1000
+      }
+    ],
+    "limit": 200
+  },
+  {
+    "id": "town-path",
+    "name": "Town Path",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "tranquil-path",
+    "name": "Tranquil Path",
+    "category": "Basic",
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "basic-stove",
+    "name": "Basic Stove",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "bonfire",
+    "name": "Bonfire",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "camping-tent",
+    "name": "Camping Tent",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "cargo-pile",
+    "name": "Cargo Pile",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "igloo",
+    "name": "Igloo",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "mr-snowman",
+    "name": "Mr. Snowman",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "outdoor-bench",
+    "name": "Outdoor Bench",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 4,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "swing",
+    "name": "Swing",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 4,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "table-chair",
+    "name": "Table & Chair",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 4,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "urban-billboard",
+    "name": "Urban Billboard",
+    "category": "Common",
+    "lifeEssenceCost": 1000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 50
+  },
+  {
+    "id": "clock-hut",
+    "name": "Clock Hut",
+    "category": "Epic",
+    "lifeEssenceCost": 5000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+0.5%",
+          "amount": 0.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+1.5%",
+          "amount": 1.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+2.5%",
+          "amount": 2.5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "crystal-garden",
+    "name": "Crystal Garden",
+    "category": "Epic",
+    "lifeEssenceCost": 5000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+0.5%",
+          "amount": 0.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+1.5%",
+          "amount": 1.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+2.5%",
+          "amount": 2.5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "fisherman-s-chalet",
+    "name": "Fisherman’s Chalet",
+    "category": "Epic",
+    "lifeEssenceCost": 5000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+0.5%",
+          "amount": 0.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+1.5%",
+          "amount": 1.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+2.5%",
+          "amount": 2.5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "hero-s-sanctun",
+    "name": "Hero’s Sanctun",
+    "category": "Epic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+0.5%",
+          "amount": 0.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1.5%",
+          "amount": 1.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2.5%",
+          "amount": 2.5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "oak-tavern",
+    "name": "Oak Tavern",
+    "category": "Epic",
+    "lifeEssenceCost": 5000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+1.2%",
+          "amount": 1.2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+2.4%",
+          "amount": 2.4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+3.6%",
+          "amount": 3.6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+4.8%",
+          "amount": 4.8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "rural-mill",
+    "name": "Rural Mill",
+    "category": "Epic",
+    "lifeEssenceCost": 5000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+0.5%",
+          "amount": 0.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+1.5%",
+          "amount": 1.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+2.5%",
+          "amount": 2.5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "sailor-s-cottage",
+    "name": "Sailor’s Cottage",
+    "category": "Epic",
+    "lifeEssenceCost": 5000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+0.5%",
+          "amount": 0.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+1.5%",
+          "amount": 1.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+2.5%",
+          "amount": 2.5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "sea-shanty-inn",
+    "name": "Sea Shanty Inn",
+    "category": "Epic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+0.5%",
+          "amount": 0.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1.5%",
+          "amount": 1.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2.5%",
+          "amount": 2.5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "skating-rink",
+    "name": "Skating Rink",
+    "category": "Epic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "ski-resort",
+    "name": "Ski Resort",
+    "category": "Epic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+12%",
+          "amount": 12,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+15%",
+          "amount": 15,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "warm-greenhouse",
+    "name": "Warm Greenhouse",
+    "category": "Epic",
+    "lifeEssenceCost": 5000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 500,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+0.5%",
+          "amount": 0.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 1500,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+1.5%",
+          "amount": 1.5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 2500,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+2.5%",
+          "amount": 2.5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "abundant-feast",
+    "name": "Abundant Feast",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "amphitheatre",
+    "name": "Amphitheatre",
+    "category": "Mythic",
+    "lifeEssenceCost": 10000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Lancer Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "art-gallery",
+    "name": "Art Gallery",
+    "category": "Mythic",
+    "lifeEssenceCost": 10000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Marksman Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "astral-lake",
+    "name": "Astral Lake",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "battlefield-tyrant",
+    "name": "Battlefield Tyrant",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "bear-polarium",
+    "name": "Bear Polarium",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "carousel",
+    "name": "Carousel",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "christmas-carol",
+    "name": "Christmas Carol",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "christmas-procession",
+    "name": "Christmas Procession",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "conquering-sword",
+    "name": "Conquering Sword",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "crossroads-of-worlds",
+    "name": "Crossroads of Worlds",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "dragon-pagoda",
+    "name": "Dragon Pagoda",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "dream-nest",
+    "name": "Dream Nest",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "echoes-of-time",
+    "name": "Echoes of Time",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "elegant-villa",
+    "name": "Elegant Villa",
+    "category": "Mythic",
+    "lifeEssenceCost": 10000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Lancer Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "enchanted-garden",
+    "name": "Enchanted Garden",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "fantasy-aquarium",
+    "name": "Fantasy Aquarium",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "ferris-wheel",
+    "name": "Ferris Wheel",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "floating-markert",
+    "name": "Floating Markert",
+    "category": "Mythic",
+    "lifeEssenceCost": 10000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Infantry Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "forest-wonderland",
+    "name": "Forest Wonderland",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "fountain-of-inspiration",
+    "name": "Fountain of Inspiration",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "frostflame-gloria",
+    "name": "Frostflame Gloria",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "furious-sea-fortress",
+    "name": "Furious Sea Fortress",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "ghoul-tree",
+    "name": "Ghoul Tree",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "giant-horn",
+    "name": "Giant Horn",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "gloomy-castle",
+    "name": "Gloomy Castle",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "glory-arena",
+    "name": "Glory Arena",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "golden-koi",
+    "name": "Golden Koi",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "icefire-way",
+    "name": "Icefire Way",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "jolly-melody",
+    "name": "Jolly Melody",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "lamp-of-devotion",
+    "name": "Lamp of Devotion",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "lovestruck",
+    "name": "Lovestruck",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "luminari-citadel",
+    "name": "Luminari Citadel",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "moonlit-paradise",
+    "name": "Moonlit Paradise",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "mushroom-domain",
+    "name": "Mushroom Domain",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "new-year-bell",
+    "name": "New Year Bell",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "observation-deck",
+    "name": "Observation Deck",
+    "category": "Mythic",
+    "lifeEssenceCost": 10000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Marksman Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "ocean-paradise",
+    "name": "Ocean Paradise",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "serpent-sanctuary",
+    "name": "Serpent Sanctuary",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+12%",
+          "amount": 12,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+14%",
+          "amount": 14,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+16%",
+          "amount": 16,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+18%",
+          "amount": 18,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack, Defense, Health, Lethality",
+          "value": "+20%",
+          "amount": 20,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "snow-castle",
+    "name": "Snow Castle",
+    "category": "Mythic",
+    "lifeEssenceCost": 12000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1200,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2400,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3600,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4800,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 7200,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 8400,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 9600,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 10800,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 12000,
+        "buff": {
+          "stat": "Infantry Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "snowbuster-arena",
+    "name": "Snowbuster Arena",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "soaring-steed",
+    "name": "Soaring Steed",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "song-of-the-sky",
+    "name": "Song of the Sky",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Attack",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "sports-field-apex",
+    "name": "Sports Field Apex",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "tundra-truck",
+    "name": "Tundra Truck",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "turkey-crown",
+    "name": "Turkey Crown",
+    "category": "Mythic",
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Defense",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1,
+    "limited": true
+  },
+  {
+    "id": "war-chariot",
+    "name": "War Chariot",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
+    "id": "barbecue-stand",
+    "name": "Barbecue Stand",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Training Speed",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "basic-dock",
+    "name": "Basic Dock",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Troop Deployment Capacity",
+          "value": "+200",
+          "amount": 200,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Troop Deployment Capacity",
+          "value": "+400",
+          "amount": 400,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Troop Deployment Capacity",
+          "value": "+600",
+          "amount": 600,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Troop Deployment Capacity",
+          "value": "+800",
+          "amount": 800,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troop Deployment Capacity",
+          "value": "+1K",
+          "amount": 1000,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "blacksmith",
+    "name": "Blacksmith",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Iron Gathering Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Iron Gathering Speed",
+          "value": "+12%",
+          "amount": 12,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Iron Gathering Speed",
+          "value": "+18%",
+          "amount": 18,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Iron Gathering Speed",
+          "value": "+24%",
+          "amount": 24,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Iron Gathering Speed",
+          "value": "+30%",
+          "amount": 30,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "brewery",
+    "name": "Brewery",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Healing Speed",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Healing Speed",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Healing Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Healing Speed",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Healing Speed",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "bustling-bazaar",
+    "name": "Bustling Bazaar",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Resource Gathering Speed",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Resource Gathering Speed",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Resource Gathering Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Resource Gathering Speed",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Resource Gathering Speed",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "deluxe-restaurant",
+    "name": "Deluxe Restaurant",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Meat Gathering Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Meat Gathering Speed",
+          "value": "+12%",
+          "amount": 12,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Meat Gathering Speed",
+          "value": "+18%",
+          "amount": 18,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Meat Gathering Speed",
+          "value": "+24%",
+          "amount": 24,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Meat Gathering Speed",
+          "value": "+30%",
+          "amount": 30,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "flower-s-secret",
+    "name": "Flower’s Secret",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Wood Gathering Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Wood Gathering Speed",
+          "value": "+12%",
+          "amount": 12,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Wood Gathering Speed",
+          "value": "+18%",
+          "amount": 18,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Wood Gathering Speed",
+          "value": "+24%",
+          "amount": 24,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Wood Gathering Speed",
+          "value": "+30%",
+          "amount": 30,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "fountain-of-joy",
+    "name": "Fountain of Joy",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+0.8%",
+          "amount": 0.8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+1.6%",
+          "amount": 1.6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+2.4%",
+          "amount": 2.4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+3.2%",
+          "amount": 3.2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Construction Speed",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "glistening-ice-sculpture",
+    "name": "Glistening Ice Sculpture",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Hunting March Speed",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Hunting March Speed",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Hunting March Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Hunting March Speed",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Hunting March Speed",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "mini-heater",
+    "name": "Mini Heater",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Coal Gathering Speed",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Coal Gathering Speed",
+          "value": "+12%",
+          "amount": 12,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Coal Gathering Speed",
+          "value": "+18%",
+          "amount": 18,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Coal Gathering Speed",
+          "value": "+24%",
+          "amount": 24,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Coal Gathering Speed",
+          "value": "+30%",
+          "amount": 30,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "natural-hot-spring",
+    "name": "Natural Hot Spring",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+0.8%",
+          "amount": 0.8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+1.6%",
+          "amount": 1.6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+2.4%",
+          "amount": 2.4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+3.2%",
+          "amount": 3.2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Research Speed",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "rock-outpost",
+    "name": "Rock Outpost",
+    "category": "Rare",
+    "lifeEssenceCost": 3000,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 200,
+        "buff": {
+          "stat": "Troop March Speed",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 400,
+        "buff": {
+          "stat": "Troop March Speed",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 600,
+        "buff": {
+          "stat": "Troop March Speed",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 800,
+        "buff": {
+          "stat": "Troop March Speed",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troop March Speed",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      }
+    ],
+    "limit": 1
+  },
+  {
+    "id": "basic-farmhouse",
+    "name": "Basic Farmhouse",
+    "category": "Uncommon",
+    "lifeEssenceCost": 2000,
+    "limit": 4,
+    "prosperityAtMaxLevel": 100
+  },
+  {
+    "id": "fine-wine",
+    "name": "Fine Wine",
+    "category": "Uncommon",
+    "lifeEssenceCost": 2000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 100
+  },
+  {
+    "id": "merchant-caravan",
+    "name": "Merchant Caravan",
+    "category": "Uncommon",
+    "lifeEssenceCost": 2000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 100
+  },
+  {
+    "id": "rustic-slide",
+    "name": "Rustic Slide",
+    "category": "Uncommon",
+    "lifeEssenceCost": 2000,
+    "limit": 2,
+    "prosperityAtMaxLevel": 100
+  },
+  {
+    "id": "townhouse",
+    "name": "Townhouse",
+    "category": "Uncommon",
+    "lifeEssenceCost": 2000,
+    "limit": 4,
+    "prosperityAtMaxLevel": 100
+  },
+  {
+    "id": "warrior-s-flag",
+    "name": "Warrior’s Flag",
+    "category": "Uncommon",
+    "lifeEssenceCost": 2000,
+    "limit": 5,
+    "prosperityAtMaxLevel": 100
+  },
+  {
+    "id": "harbor-of-hope",
+    "name": "Harbor of Hope",
+    "category": "Unique",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ]
+  },
+  {
+    "id": "starry-lighthouse",
+    "name": "Starry Lighthouse",
+    "category": "Unique",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 0,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 20,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 40,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 60,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 80,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 100,
+        "prosperity": 12000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 120,
+        "prosperity": 14000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 140,
+        "prosperity": 16000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 160,
+        "prosperity": 18000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 180,
+        "prosperity": 20000,
+        "buff": {
+          "stat": "Troops' Lethality, Troops' Health",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pine-tree-i",
+    "name": "Pine Tree I",
+    "category": "Vegetation",
+    "cost": [
+      {
+        "itemId": "wood",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "pine-tree-ii",
+    "name": "Pine Tree II",
+    "category": "Vegetation",
+    "cost": [
+      {
+        "itemId": "wood",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "pine-tree-iii",
+    "name": "Pine Tree III",
+    "category": "Vegetation",
+    "cost": [
+      {
+        "itemId": "wood",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "pine-tree-iv",
+    "name": "Pine Tree IV",
+    "category": "Vegetation",
+    "cost": [
+      {
+        "itemId": "wood",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  },
+  {
+    "id": "pine-tree-v",
+    "name": "Pine Tree V",
+    "category": "Vegetation",
+    "cost": [
+      {
+        "itemId": "wood",
+        "amount": 1000
+      }
+    ],
+    "limit": 500
+  }
+]
