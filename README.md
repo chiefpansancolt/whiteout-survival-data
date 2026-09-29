@@ -455,24 +455,48 @@ independently verifiable from the source.
 
 ### 🚩 Alliance
 
-| Module         | Factory            | Items | Description                                                     |
-| -------------- | ------------------ | ----- | --------------------------------------------------------------- |
-| allianceBanner | `allianceBanner()` | 37    | The Alliance Territory banner's build-cost table by level range |
+| Module         | Factory            | Items | Description                                                        |
+| -------------- | ------------------ | ----- | ------------------------------------------------------------------ |
+| allianceBanner | `allianceBanner()` | 37    | The Alliance Territory banner's build-cost table by level range    |
+| allianceTech   | `allianceTech()`   | 59    | The full Alliance Technology tree across Growth, Territory, Battle |
 
-Sourced from `https://www.whiteoutsurvival.wiki/territory/alliance-territory/`. Unlike every prior
-module, this page has no per-level table — banners are built and leveled up within level _ranges_
-(e.g. Levels 11-15 all cost the same to build), so `AllianceBannerLevel` stores
-`minLevel`/`maxLevel` instead of a single `level`. Use `allianceBanner().atLevel(n)` to find the
-range a given banner level falls into.
+Both modules live nested under `@/modules/alliance/` rather than flat like every other module.
+
+`allianceBanner()` is sourced from
+`https://www.whiteoutsurvival.wiki/territory/alliance-territory/`. Unlike every prior module, this
+page has no per-level table — banners are built and leveled up within level _ranges_ (e.g. Levels
+11-15 all cost the same to build), so `AllianceBannerLevel` stores `minLevel`/`maxLevel` instead of
+a single `level`. Use `allianceBanner().atLevel(n)` to find the range a given banner level falls
+into.
 
 Meat and Wood are always required in equal amounts; Coal is added starting at Level 121-130, and
 Iron at Level 146-150. The wiki's Level 51-60 row lists the Meat icon twice instead of Meat then
 Wood — the amounts are already equal either way, but the itemId is corrected to `wood` for the
 second entry rather than trusted literally.
 
-This module lives at `@/modules/alliance/territory`, nested under an `alliance/` folder rather than
-flat like every other module — the first of what will be a small family of Alliance-specific
-modules.
+`allianceTech()` is sourced page-per-node like `research()`, from
+`https://www.whiteoutsurvival.wiki/alliance-tech/`, covering 3 categories (Growth, Territory,
+Battle) each split into 3 tiers. Adds `AllianceTechNode`, `AllianceTechLevel`,
+`AllianceTechRequirement`, and `AllianceTechCost` types. Unlike `research()`, there's no `power`
+column on this page at all, and every prerequisite is a cross-reference to another Alliance Tech
+node (no building-type gate exists anywhere in the tree). Each node also carries a single
+`description` naming the stat it affects; the per-level `bonus` is just that stat's raw value at
+that level (e.g. `"3%"`), left `undefined` for the handful of one-off unlock nodes with no stat
+effect (e.g. Tundra Surveying).
+
+`AllianceTechLevel.timeSeconds` mixes two time formats on the same page — under an hour is `M:S`
+(e.g. `30:00`), an hour or more is `H:M:S` (e.g. `01:00:00`) — both are normalized to seconds.
+
+Two confirmed wiki content errors, found and corrected the same way as the equivalent `research()`
+fixes: Cooperative Protocols I and Alliance Regimentation I's Level column literally repeats their
+own name and level (`"Cooperative Protocols I 1"`) instead of a bare number, for every row —
+normalized by reading the trailing number rather than trusted literally. Marksman Attack I's own
+page keeps listing "Rally Expansion I" Levels 4 and 5 as prerequisites for its own Levels 4-5, but
+Rally Expansion I only has 3 levels; Infantry Attack I and Lancer Attack I (otherwise identical
+pages) correctly leave their own Levels 4-5 with no prerequisite, so Marksman Attack I's are dropped
+to match. Tundra Surveying's sole prerequisite is "Alliance Regimentation II" with no level number
+at all (every other cross-reference on the site includes one) — inferred as Level 5, the full
+completion of that 5-level line, matching Tundra Surveying's role as a one-off unlock gate.
 
 ---
 

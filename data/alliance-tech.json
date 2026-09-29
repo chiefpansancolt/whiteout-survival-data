@@ -1,0 +1,7927 @@
+[
+  {
+    "id": "infantry-attack-i",
+    "name": "Infantry Attack I",
+    "img": "/images/alliance-tech/infantry-attack-i.png",
+    "category": "Battle",
+    "tier": 1,
+    "description": "Enhances Infantry Troop Attack.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 22800
+          },
+          {
+            "itemId": "wood",
+            "amount": 22800
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 27400
+          },
+          {
+            "itemId": "wood",
+            "amount": 27400
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 34200
+          },
+          {
+            "itemId": "wood",
+            "amount": 34200
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 41000
+          },
+          {
+            "itemId": "wood",
+            "amount": 41000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 45600
+          },
+          {
+            "itemId": "wood",
+            "amount": 45600
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "lancer-attack-i",
+    "name": "Lancer Attack I",
+    "img": "/images/alliance-tech/lancer-attack-i.png",
+    "category": "Battle",
+    "tier": 1,
+    "description": "Enhances Lancer Attack.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 22800
+          },
+          {
+            "itemId": "wood",
+            "amount": 22800
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 27400
+          },
+          {
+            "itemId": "wood",
+            "amount": 27400
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 34200
+          },
+          {
+            "itemId": "wood",
+            "amount": 34200
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 41000
+          },
+          {
+            "itemId": "wood",
+            "amount": 41000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 45600
+          },
+          {
+            "itemId": "wood",
+            "amount": 45600
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "marksman-attack-i",
+    "name": "Marksman Attack I",
+    "img": "/images/alliance-tech/marksman-attack-i.png",
+    "category": "Battle",
+    "tier": 1,
+    "description": "Enhances Marksman Attack.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 22800
+          },
+          {
+            "itemId": "wood",
+            "amount": 22800
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 27400
+          },
+          {
+            "itemId": "wood",
+            "amount": 27400
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 34200
+          },
+          {
+            "itemId": "wood",
+            "amount": 34200
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 41000
+          },
+          {
+            "itemId": "wood",
+            "amount": 41000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 45600
+          },
+          {
+            "itemId": "wood",
+            "amount": 45600
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "rally-expansion-i",
+    "name": "Rally Expansion I",
+    "img": "/images/alliance-tech/rally-expansion-i.png",
+    "category": "Battle",
+    "tier": 1,
+    "description": "Increases rally governor cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 10000
+          },
+          {
+            "itemId": "wood",
+            "amount": 10000
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1"
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 20000
+          },
+          {
+            "itemId": "wood",
+            "amount": 20000
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2"
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 30000
+          },
+          {
+            "itemId": "wood",
+            "amount": 30000
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3"
+      }
+    ]
+  },
+  {
+    "id": "troops-attack-i",
+    "name": "Troops Attack I",
+    "img": "/images/alliance-tech/troops-attack-i.png",
+    "category": "Battle",
+    "tier": 1,
+    "description": "Enhances all Troops’ Attack.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "infantry-attack-i",
+            "level": 1
+          },
+          {
+            "id": "lancer-attack-i",
+            "level": 1
+          },
+          {
+            "id": "marksman-attack-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 22800
+          },
+          {
+            "itemId": "wood",
+            "amount": 22800
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "infantry-attack-i",
+            "level": 2
+          },
+          {
+            "id": "lancer-attack-i",
+            "level": 2
+          },
+          {
+            "id": "marksman-attack-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 27400
+          },
+          {
+            "itemId": "wood",
+            "amount": 27400
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "infantry-attack-i",
+            "level": 3
+          },
+          {
+            "id": "lancer-attack-i",
+            "level": 3
+          },
+          {
+            "id": "marksman-attack-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 34200
+          },
+          {
+            "itemId": "wood",
+            "amount": 34200
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "infantry-attack-i",
+            "level": 4
+          },
+          {
+            "id": "lancer-attack-i",
+            "level": 4
+          },
+          {
+            "id": "marksman-attack-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 41000
+          },
+          {
+            "itemId": "wood",
+            "amount": 41000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "infantry-attack-i",
+            "level": 5
+          },
+          {
+            "id": "lancer-attack-i",
+            "level": 5
+          },
+          {
+            "id": "marksman-attack-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 45600
+          },
+          {
+            "itemId": "wood",
+            "amount": 45600
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "infantry-defense-i",
+    "name": "Infantry Defense I",
+    "img": "/images/alliance-tech/infantry-defense-i.png",
+    "category": "Battle",
+    "tier": 2,
+    "description": "Enhances Infantry Defense.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 91600
+          },
+          {
+            "itemId": "wood",
+            "amount": 91600
+          },
+          {
+            "itemId": "coal",
+            "amount": 29600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 109900
+          },
+          {
+            "itemId": "wood",
+            "amount": 109900
+          },
+          {
+            "itemId": "coal",
+            "amount": 64300
+          },
+          {
+            "itemId": "iron",
+            "amount": 14200
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 137500
+          },
+          {
+            "itemId": "wood",
+            "amount": 137500
+          },
+          {
+            "itemId": "coal",
+            "amount": 83300
+          },
+          {
+            "itemId": "iron",
+            "amount": 16600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 165000
+          },
+          {
+            "itemId": "wood",
+            "amount": 165000
+          },
+          {
+            "itemId": "coal",
+            "amount": 95200
+          },
+          {
+            "itemId": "iron",
+            "amount": 47600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 183300
+          },
+          {
+            "itemId": "wood",
+            "amount": 183300
+          },
+          {
+            "itemId": "coal",
+            "amount": 107000
+          },
+          {
+            "itemId": "iron",
+            "amount": 53500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "lancer-defense-i",
+    "name": "Lancer Defense I",
+    "img": "/images/alliance-tech/lancer-defense-i.png",
+    "category": "Battle",
+    "tier": 2,
+    "description": "Enhances Lancer Defense.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 91600
+          },
+          {
+            "itemId": "wood",
+            "amount": 91600
+          },
+          {
+            "itemId": "coal",
+            "amount": 29600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 109900
+          },
+          {
+            "itemId": "wood",
+            "amount": 109900
+          },
+          {
+            "itemId": "coal",
+            "amount": 64300
+          },
+          {
+            "itemId": "iron",
+            "amount": 14200
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 137500
+          },
+          {
+            "itemId": "wood",
+            "amount": 137500
+          },
+          {
+            "itemId": "coal",
+            "amount": 83300
+          },
+          {
+            "itemId": "iron",
+            "amount": 16600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 165000
+          },
+          {
+            "itemId": "wood",
+            "amount": 165000
+          },
+          {
+            "itemId": "coal",
+            "amount": 95200
+          },
+          {
+            "itemId": "iron",
+            "amount": 47600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 183300
+          },
+          {
+            "itemId": "wood",
+            "amount": 183300
+          },
+          {
+            "itemId": "coal",
+            "amount": 107000
+          },
+          {
+            "itemId": "iron",
+            "amount": 53500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "marksman-defense-i",
+    "name": "Marksman Defense I",
+    "img": "/images/alliance-tech/marksman-defense-i.png",
+    "category": "Battle",
+    "tier": 2,
+    "description": "Enhances Marksman Defense.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 91600
+          },
+          {
+            "itemId": "wood",
+            "amount": 91600
+          },
+          {
+            "itemId": "coal",
+            "amount": 29600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 109900
+          },
+          {
+            "itemId": "wood",
+            "amount": 109900
+          },
+          {
+            "itemId": "coal",
+            "amount": 64300
+          },
+          {
+            "itemId": "iron",
+            "amount": 14200
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 137500
+          },
+          {
+            "itemId": "wood",
+            "amount": 137500
+          },
+          {
+            "itemId": "coal",
+            "amount": 83300
+          },
+          {
+            "itemId": "iron",
+            "amount": 16600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 165000
+          },
+          {
+            "itemId": "wood",
+            "amount": 165000
+          },
+          {
+            "itemId": "coal",
+            "amount": 95200
+          },
+          {
+            "itemId": "iron",
+            "amount": 47600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 183300
+          },
+          {
+            "itemId": "wood",
+            "amount": 183300
+          },
+          {
+            "itemId": "coal",
+            "amount": 107000
+          },
+          {
+            "itemId": "iron",
+            "amount": 53500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "rally-expansion-ii",
+    "name": "Rally Expansion II",
+    "img": "/images/alliance-tech/rally-expansion-i.png",
+    "category": "Battle",
+    "tier": 2,
+    "description": "Increases rally governor cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "troops-attack-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 50000
+          },
+          {
+            "itemId": "wood",
+            "amount": 50000
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "troops-attack-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 70000
+          },
+          {
+            "itemId": "wood",
+            "amount": 70000
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "2"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "troops-attack-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 100000
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "3"
+      }
+    ]
+  },
+  {
+    "id": "troops-defense-i",
+    "name": "Troops Defense I",
+    "img": "/images/alliance-tech/troops-defense-i.png",
+    "category": "Battle",
+    "tier": 2,
+    "description": "Enhances all Troops’ Defense.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "infantry-defense-i",
+            "level": 1
+          },
+          {
+            "id": "lancer-defense-i",
+            "level": 1
+          },
+          {
+            "id": "marksman-defense-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 91600
+          },
+          {
+            "itemId": "wood",
+            "amount": 91600
+          },
+          {
+            "itemId": "coal",
+            "amount": 29600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "infantry-defense-i",
+            "level": 2
+          },
+          {
+            "id": "lancer-defense-i",
+            "level": 2
+          },
+          {
+            "id": "marksman-defense-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 109900
+          },
+          {
+            "itemId": "wood",
+            "amount": 109900
+          },
+          {
+            "itemId": "coal",
+            "amount": 64300
+          },
+          {
+            "itemId": "iron",
+            "amount": 14200
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "infantry-defense-i",
+            "level": 3
+          },
+          {
+            "id": "lancer-defense-i",
+            "level": 3
+          },
+          {
+            "id": "marksman-defense-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 137500
+          },
+          {
+            "itemId": "wood",
+            "amount": 137500
+          },
+          {
+            "itemId": "coal",
+            "amount": 83300
+          },
+          {
+            "itemId": "iron",
+            "amount": 16600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "infantry-defense-i",
+            "level": 4
+          },
+          {
+            "id": "lancer-defense-i",
+            "level": 4
+          },
+          {
+            "id": "marksman-defense-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 165000
+          },
+          {
+            "itemId": "wood",
+            "amount": 165000
+          },
+          {
+            "itemId": "coal",
+            "amount": 95200
+          },
+          {
+            "itemId": "iron",
+            "amount": 47600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "infantry-defense-i",
+            "level": 5
+          },
+          {
+            "id": "lancer-defense-i",
+            "level": 5
+          },
+          {
+            "id": "marksman-defense-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 183300
+          },
+          {
+            "itemId": "wood",
+            "amount": 183300
+          },
+          {
+            "itemId": "coal",
+            "amount": 107000
+          },
+          {
+            "itemId": "iron",
+            "amount": 53500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "infantry-health-i",
+    "name": "Infantry Health I",
+    "img": "/images/alliance-tech/infantry-health-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Enhances Infantry Health.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 752200
+          },
+          {
+            "itemId": "wood",
+            "amount": 752200
+          },
+          {
+            "itemId": "coal",
+            "amount": 558100
+          },
+          {
+            "itemId": "iron",
+            "amount": 161100
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 902700
+          },
+          {
+            "itemId": "wood",
+            "amount": 902700
+          },
+          {
+            "itemId": "coal",
+            "amount": 639200
+          },
+          {
+            "itemId": "iron",
+            "amount": 311100
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1100000
+          },
+          {
+            "itemId": "coal",
+            "amount": 757100
+          },
+          {
+            "itemId": "iron",
+            "amount": 320900
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 982100
+          },
+          {
+            "itemId": "iron",
+            "amount": 616600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 831900
+          },
+          {
+            "itemId": "iron",
+            "amount": 505300
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "infantry-lethality-i",
+    "name": "Infantry Lethality I",
+    "img": "/images/alliance-tech/infantry-lethality-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Enhances Infantry Lethality.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 697600
+          },
+          {
+            "itemId": "wood",
+            "amount": 697600
+          },
+          {
+            "itemId": "coal",
+            "amount": 419100
+          },
+          {
+            "itemId": "iron",
+            "amount": 154000
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 837100
+          },
+          {
+            "itemId": "wood",
+            "amount": 837100
+          },
+          {
+            "itemId": "coal",
+            "amount": 606700
+          },
+          {
+            "itemId": "iron",
+            "amount": 396500
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 671300
+          },
+          {
+            "itemId": "iron",
+            "amount": 427700
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 876500
+          },
+          {
+            "itemId": "iron",
+            "amount": 581300
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 936200
+          },
+          {
+            "itemId": "iron",
+            "amount": 592700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "lancer-health-i",
+    "name": "Lancer Health I",
+    "img": "/images/alliance-tech/lancer-health-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Enhances Lancer Health.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 752200
+          },
+          {
+            "itemId": "wood",
+            "amount": 752200
+          },
+          {
+            "itemId": "coal",
+            "amount": 558100
+          },
+          {
+            "itemId": "iron",
+            "amount": 161100
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 902700
+          },
+          {
+            "itemId": "wood",
+            "amount": 902700
+          },
+          {
+            "itemId": "coal",
+            "amount": 639200
+          },
+          {
+            "itemId": "iron",
+            "amount": 311100
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1100000
+          },
+          {
+            "itemId": "coal",
+            "amount": 757100
+          },
+          {
+            "itemId": "iron",
+            "amount": 320900
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 982100
+          },
+          {
+            "itemId": "iron",
+            "amount": 616600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 831900
+          },
+          {
+            "itemId": "iron",
+            "amount": 505300
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "lancer-lethality-i",
+    "name": "Lancer Lethality I",
+    "img": "/images/alliance-tech/lancer-lethality-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Enhances Lancer Lethality.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 697600
+          },
+          {
+            "itemId": "wood",
+            "amount": 697600
+          },
+          {
+            "itemId": "coal",
+            "amount": 419100
+          },
+          {
+            "itemId": "iron",
+            "amount": 154000
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 837100
+          },
+          {
+            "itemId": "wood",
+            "amount": 837100
+          },
+          {
+            "itemId": "coal",
+            "amount": 606700
+          },
+          {
+            "itemId": "iron",
+            "amount": 396500
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 671300
+          },
+          {
+            "itemId": "iron",
+            "amount": 427700
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 876500
+          },
+          {
+            "itemId": "iron",
+            "amount": 581300
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 936200
+          },
+          {
+            "itemId": "iron",
+            "amount": 592700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "long-live-our-alliance",
+    "name": "Long Live Our Alliance",
+    "img": "/images/alliance-tech/fertile-land-expedition.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Permanent Alliance Tech Contributions",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "troops-health-i",
+            "level": 1
+          }
+        ],
+        "cost": [],
+        "timeSeconds": 0,
+        "bonus": "0%"
+      }
+    ]
+  },
+  {
+    "id": "marksman-health-i",
+    "name": "Marksman Health I",
+    "img": "/images/alliance-tech/marksman-health-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Enhances Marksman Health.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 752200
+          },
+          {
+            "itemId": "wood",
+            "amount": 752200
+          },
+          {
+            "itemId": "coal",
+            "amount": 558100
+          },
+          {
+            "itemId": "iron",
+            "amount": 161100
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 902700
+          },
+          {
+            "itemId": "wood",
+            "amount": 902700
+          },
+          {
+            "itemId": "coal",
+            "amount": 639200
+          },
+          {
+            "itemId": "iron",
+            "amount": 311100
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1100000
+          },
+          {
+            "itemId": "coal",
+            "amount": 757100
+          },
+          {
+            "itemId": "iron",
+            "amount": 320900
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 982100
+          },
+          {
+            "itemId": "iron",
+            "amount": 616600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "troops-lethality-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 831900
+          },
+          {
+            "itemId": "iron",
+            "amount": 505300
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "marksman-lethality-i",
+    "name": "Marksman Lethality I",
+    "img": "/images/alliance-tech/marksman-lethality-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Enhances Marksman Lethality.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 697600
+          },
+          {
+            "itemId": "wood",
+            "amount": 697600
+          },
+          {
+            "itemId": "coal",
+            "amount": 419100
+          },
+          {
+            "itemId": "iron",
+            "amount": 154000
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 837100
+          },
+          {
+            "itemId": "wood",
+            "amount": 837100
+          },
+          {
+            "itemId": "coal",
+            "amount": 606700
+          },
+          {
+            "itemId": "iron",
+            "amount": 396500
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rally-expansion-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 671300
+          },
+          {
+            "itemId": "iron",
+            "amount": 427700
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 876500
+          },
+          {
+            "itemId": "iron",
+            "amount": 581300
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 936200
+          },
+          {
+            "itemId": "iron",
+            "amount": 592700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "rally-expansion-iii",
+    "name": "Rally Expansion III",
+    "img": "/images/alliance-tech/rally-expansion-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Increases rally governor cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "troops-defense-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 681100
+          },
+          {
+            "itemId": "wood",
+            "amount": 681100
+          },
+          {
+            "itemId": "coal",
+            "amount": 512200
+          },
+          {
+            "itemId": "iron",
+            "amount": 165100
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "1"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "troops-defense-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 817300
+          },
+          {
+            "itemId": "wood",
+            "amount": 817300
+          },
+          {
+            "itemId": "coal",
+            "amount": 690500
+          },
+          {
+            "itemId": "iron",
+            "amount": 198000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "2"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "troops-defense-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 806200
+          },
+          {
+            "itemId": "iron",
+            "amount": 530900
+          }
+        ],
+        "timeSeconds": 10800,
+        "bonus": "3"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "troops-defense-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 635200
+          },
+          {
+            "itemId": "iron",
+            "amount": 385900
+          }
+        ],
+        "timeSeconds": 14400,
+        "bonus": "4"
+      }
+    ]
+  },
+  {
+    "id": "troops-health-i",
+    "name": "Troops Health I",
+    "img": "/images/alliance-tech/troops-health-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Enhances all Troops’ Health.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "infantry-health-i",
+            "level": 1
+          },
+          {
+            "id": "lancer-health-i",
+            "level": 1
+          },
+          {
+            "id": "marksman-health-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 752200
+          },
+          {
+            "itemId": "wood",
+            "amount": 752200
+          },
+          {
+            "itemId": "coal",
+            "amount": 558100
+          },
+          {
+            "itemId": "iron",
+            "amount": 161100
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "infantry-health-i",
+            "level": 2
+          },
+          {
+            "id": "lancer-health-i",
+            "level": 2
+          },
+          {
+            "id": "marksman-health-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 902700
+          },
+          {
+            "itemId": "wood",
+            "amount": 902700
+          },
+          {
+            "itemId": "coal",
+            "amount": 639200
+          },
+          {
+            "itemId": "iron",
+            "amount": 311100
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "infantry-health-i",
+            "level": 3
+          },
+          {
+            "id": "lancer-health-i",
+            "level": 3
+          },
+          {
+            "id": "marksman-health-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1100000
+          },
+          {
+            "itemId": "coal",
+            "amount": 757100
+          },
+          {
+            "itemId": "iron",
+            "amount": 320900
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "infantry-health-i",
+            "level": 4
+          },
+          {
+            "id": "lancer-health-i",
+            "level": 4
+          },
+          {
+            "id": "marksman-health-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 982100
+          },
+          {
+            "itemId": "iron",
+            "amount": 616600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "infantry-health-i",
+            "level": 5
+          },
+          {
+            "id": "lancer-health-i",
+            "level": 5
+          },
+          {
+            "id": "marksman-health-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 831900
+          },
+          {
+            "itemId": "iron",
+            "amount": 505300
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "troops-lethality-i",
+    "name": "Troops Lethality I",
+    "img": "/images/alliance-tech/troops-lethality-i.png",
+    "category": "Battle",
+    "tier": 3,
+    "description": "Enhances all Troops’ Lethality.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "infantry-lethality-i",
+            "level": 1
+          },
+          {
+            "id": "lancer-lethality-i",
+            "level": 1
+          },
+          {
+            "id": "marksman-lethality-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 697600
+          },
+          {
+            "itemId": "wood",
+            "amount": 697600
+          },
+          {
+            "itemId": "coal",
+            "amount": 419100
+          },
+          {
+            "itemId": "iron",
+            "amount": 154000
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "infantry-lethality-i",
+            "level": 2
+          },
+          {
+            "id": "lancer-lethality-i",
+            "level": 2
+          },
+          {
+            "id": "marksman-lethality-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 837100
+          },
+          {
+            "itemId": "wood",
+            "amount": 837100
+          },
+          {
+            "itemId": "coal",
+            "amount": 606700
+          },
+          {
+            "itemId": "iron",
+            "amount": 396500
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "infantry-lethality-i",
+            "level": 3
+          },
+          {
+            "id": "lancer-lethality-i",
+            "level": 3
+          },
+          {
+            "id": "marksman-lethality-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 671300
+          },
+          {
+            "itemId": "iron",
+            "amount": 427700
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "infantry-lethality-i",
+            "level": 4
+          },
+          {
+            "id": "lancer-lethality-i",
+            "level": 4
+          },
+          {
+            "id": "marksman-lethality-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 876500
+          },
+          {
+            "itemId": "iron",
+            "amount": 581300
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "infantry-lethality-i",
+            "level": 5
+          },
+          {
+            "id": "lancer-lethality-i",
+            "level": 5
+          },
+          {
+            "id": "marksman-lethality-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 936200
+          },
+          {
+            "itemId": "iron",
+            "amount": 592700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-tools-i",
+    "name": "Adaptive Tools I",
+    "img": "/images/alliance-tech/adaptive-tools-i.png",
+    "category": "Growth",
+    "tier": 1,
+    "description": "Accelerates City construction for alliance members.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 30700
+          },
+          {
+            "itemId": "wood",
+            "amount": 30700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 36800
+          },
+          {
+            "itemId": "wood",
+            "amount": 36800
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 46000
+          },
+          {
+            "itemId": "wood",
+            "amount": 46000
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 55200
+          },
+          {
+            "itemId": "wood",
+            "amount": 55200
+          },
+          {
+            "itemId": "coal",
+            "amount": 15400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 61400
+          },
+          {
+            "itemId": "wood",
+            "amount": 61400
+          },
+          {
+            "itemId": "coal",
+            "amount": 19100
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "advanced-training-i",
+    "name": "Advanced Training I",
+    "img": "/images/alliance-tech/advanced-training-i.png",
+    "category": "Growth",
+    "tier": 1,
+    "description": "Accelerates training for all alliance member troop types.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "treaties-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 30700
+          },
+          {
+            "itemId": "wood",
+            "amount": 30700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "treaties-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 36800
+          },
+          {
+            "itemId": "wood",
+            "amount": 36800
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "treaties-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 46000
+          },
+          {
+            "itemId": "wood",
+            "amount": 46000
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "treaties-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 55200
+          },
+          {
+            "itemId": "wood",
+            "amount": 55200
+          },
+          {
+            "itemId": "coal",
+            "amount": 15400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "treaties-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 61400
+          },
+          {
+            "itemId": "wood",
+            "amount": 61400
+          },
+          {
+            "itemId": "coal",
+            "amount": 19100
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "alliance-regimentation-i",
+    "name": "Alliance Regimentation I",
+    "img": "/images/alliance-tech/alliance-regimentation-i.png",
+    "category": "Growth",
+    "tier": 1,
+    "description": "Increases alliance membership cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1700
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "2"
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 2000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "4"
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 2500
+          },
+          {
+            "itemId": "wood",
+            "amount": 2500
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "6"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 3000
+          },
+          {
+            "itemId": "wood",
+            "amount": 3000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "8"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 3400
+          },
+          {
+            "itemId": "wood",
+            "amount": 3400
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "10"
+      }
+    ]
+  },
+  {
+    "id": "cooperative-protocols-i",
+    "name": "Cooperative Protocols I",
+    "img": "/images/alliance-tech/cooperative-protocols-i.png",
+    "category": "Growth",
+    "tier": 1,
+    "description": "Alliance Help will reduce more time.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1700
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "30"
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 2000
+          },
+          {
+            "itemId": "wood",
+            "amount": 2000
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "60"
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 2500
+          },
+          {
+            "itemId": "wood",
+            "amount": 2500
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "90"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 3000
+          },
+          {
+            "itemId": "wood",
+            "amount": 3000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "120"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 3400
+          },
+          {
+            "itemId": "wood",
+            "amount": 3400
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "150"
+      }
+    ]
+  },
+  {
+    "id": "mechanisms-i",
+    "name": "Mechanisms I",
+    "img": "/images/alliance-tech/mechanisms-i.png",
+    "category": "Growth",
+    "tier": 1,
+    "description": "Speeds up alliance members’ research.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 30700
+          },
+          {
+            "itemId": "wood",
+            "amount": 30700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 36800
+          },
+          {
+            "itemId": "wood",
+            "amount": 36800
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 46000
+          },
+          {
+            "itemId": "wood",
+            "amount": 46000
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 55200
+          },
+          {
+            "itemId": "wood",
+            "amount": 55200
+          },
+          {
+            "itemId": "coal",
+            "amount": 15400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 61400
+          },
+          {
+            "itemId": "wood",
+            "amount": 61400
+          },
+          {
+            "itemId": "coal",
+            "amount": 19100
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "treaties-i",
+    "name": "Treaties I",
+    "img": "/images/alliance-tech/treaties-i.png",
+    "category": "Growth",
+    "tier": 1,
+    "description": "Raises the Alliance Help cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "cooperative-protocols-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 30700
+          },
+          {
+            "itemId": "wood",
+            "amount": 30700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "cooperative-protocols-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 36800
+          },
+          {
+            "itemId": "wood",
+            "amount": 36800
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "cooperative-protocols-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 46000
+          },
+          {
+            "itemId": "wood",
+            "amount": 46000
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "cooperative-protocols-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 55200
+          },
+          {
+            "itemId": "wood",
+            "amount": 55200
+          },
+          {
+            "itemId": "coal",
+            "amount": 15400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "cooperative-protocols-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 61400
+          },
+          {
+            "itemId": "wood",
+            "amount": 61400
+          },
+          {
+            "itemId": "coal",
+            "amount": 19100
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5"
+      }
+    ]
+  },
+  {
+    "id": "alliance-regimentation-ii",
+    "name": "Alliance Regimentation II",
+    "img": "/images/alliance-tech/alliance-regimentation-i.png",
+    "category": "Growth",
+    "tier": 2,
+    "description": "Increases alliance membership cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "mechanisms-i",
+            "level": 1
+          },
+          {
+            "id": "advanced-training-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 71100
+          },
+          {
+            "itemId": "wood",
+            "amount": 71100
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "4"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "mechanisms-i",
+            "level": 2
+          },
+          {
+            "id": "advanced-training-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 85300
+          },
+          {
+            "itemId": "wood",
+            "amount": 85300
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "8"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "mechanisms-i",
+            "level": 3
+          },
+          {
+            "id": "advanced-training-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 106600
+          },
+          {
+            "itemId": "wood",
+            "amount": 106600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "12"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "mechanisms-i",
+            "level": 4
+          },
+          {
+            "id": "advanced-training-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 127900
+          },
+          {
+            "itemId": "wood",
+            "amount": 127900
+          },
+          {
+            "itemId": "coal",
+            "amount": 24000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "16"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "mechanisms-i",
+            "level": 5
+          },
+          {
+            "id": "advanced-training-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 142200
+          },
+          {
+            "itemId": "wood",
+            "amount": 142200
+          },
+          {
+            "itemId": "coal",
+            "amount": 30100
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "20"
+      }
+    ]
+  },
+  {
+    "id": "coal-mining-i",
+    "name": "Coal Mining I",
+    "img": "/images/alliance-tech/coal-mining-i.png",
+    "category": "Growth",
+    "tier": 2,
+    "description": "Speeds up alliance members’ Coal mining in the wilderness.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "food-gathering-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 188200
+          },
+          {
+            "itemId": "wood",
+            "amount": 188200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "food-gathering-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 225800
+          },
+          {
+            "itemId": "wood",
+            "amount": 225800
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "food-gathering-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 282300
+          },
+          {
+            "itemId": "wood",
+            "amount": 282300
+          },
+          {
+            "itemId": "coal",
+            "amount": 101600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "food-gathering-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 338800
+          },
+          {
+            "itemId": "wood",
+            "amount": 338800
+          },
+          {
+            "itemId": "coal",
+            "amount": 208200
+          },
+          {
+            "itemId": "iron",
+            "amount": 46400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "food-gathering-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 376400
+          },
+          {
+            "itemId": "wood",
+            "amount": 376400
+          },
+          {
+            "itemId": "coal",
+            "amount": 234100
+          },
+          {
+            "itemId": "iron",
+            "amount": 130700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "food-gathering-i",
+    "name": "Food Gathering I",
+    "img": "/images/alliance-tech/food-gathering-i.png",
+    "category": "Growth",
+    "tier": 2,
+    "description": "Speeds up alliance members’ Meat gathering in the wilderness.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 188200
+          },
+          {
+            "itemId": "wood",
+            "amount": 188200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 225800
+          },
+          {
+            "itemId": "wood",
+            "amount": 225800
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 282300
+          },
+          {
+            "itemId": "wood",
+            "amount": 282300
+          },
+          {
+            "itemId": "coal",
+            "amount": 101600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 338800
+          },
+          {
+            "itemId": "wood",
+            "amount": 338800
+          },
+          {
+            "itemId": "coal",
+            "amount": 208200
+          },
+          {
+            "itemId": "iron",
+            "amount": 46400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 376400
+          },
+          {
+            "itemId": "wood",
+            "amount": 376400
+          },
+          {
+            "itemId": "coal",
+            "amount": 234100
+          },
+          {
+            "itemId": "iron",
+            "amount": 130700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "iron-mining-i",
+    "name": "Iron Mining I",
+    "img": "/images/alliance-tech/iron-mining-i.png",
+    "category": "Growth",
+    "tier": 2,
+    "description": "Speeds up alliance members’ Iron mining in the wilderness.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 188200
+          },
+          {
+            "itemId": "wood",
+            "amount": 188200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 225800
+          },
+          {
+            "itemId": "wood",
+            "amount": 225800
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 282300
+          },
+          {
+            "itemId": "wood",
+            "amount": 282300
+          },
+          {
+            "itemId": "coal",
+            "amount": 101600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 338800
+          },
+          {
+            "itemId": "wood",
+            "amount": 338800
+          },
+          {
+            "itemId": "coal",
+            "amount": 208200
+          },
+          {
+            "itemId": "iron",
+            "amount": 46400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 376400
+          },
+          {
+            "itemId": "wood",
+            "amount": 376400
+          },
+          {
+            "itemId": "coal",
+            "amount": 234100
+          },
+          {
+            "itemId": "iron",
+            "amount": 130700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "tundra-surveying",
+    "name": "Tundra Surveying",
+    "img": "/images/alliance-tech/tundra-surveying.png",
+    "category": "Growth",
+    "tier": 2,
+    "description": "Alliance may place Alliance buildings on Tundra.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 253700
+          },
+          {
+            "itemId": "wood",
+            "amount": 253700
+          },
+          {
+            "itemId": "coal",
+            "amount": 58600
+          }
+        ],
+        "timeSeconds": 1800
+      }
+    ]
+  },
+  {
+    "id": "wood-gathering-i",
+    "name": "Wood Gathering I",
+    "img": "/images/alliance-tech/wood-gathering-i.png",
+    "category": "Growth",
+    "tier": 2,
+    "description": "Speeds up alliance members’ Wood gathering in the wilderness.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 188200
+          },
+          {
+            "itemId": "wood",
+            "amount": 188200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 225800
+          },
+          {
+            "itemId": "wood",
+            "amount": 225800
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 282300
+          },
+          {
+            "itemId": "wood",
+            "amount": 282300
+          },
+          {
+            "itemId": "coal",
+            "amount": 101600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 338800
+          },
+          {
+            "itemId": "wood",
+            "amount": 338800
+          },
+          {
+            "itemId": "coal",
+            "amount": 208200
+          },
+          {
+            "itemId": "iron",
+            "amount": 46400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 376400
+          },
+          {
+            "itemId": "wood",
+            "amount": 376400
+          },
+          {
+            "itemId": "coal",
+            "amount": 234100
+          },
+          {
+            "itemId": "iron",
+            "amount": 130700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "adaptive-tools-ii",
+    "name": "Adaptive Tools II",
+    "img": "/images/alliance-tech/adaptive-tools-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Accelerates City construction for alliance members.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 831300
+          },
+          {
+            "itemId": "wood",
+            "amount": 831300
+          },
+          {
+            "itemId": "coal",
+            "amount": 566600
+          },
+          {
+            "itemId": "iron",
+            "amount": 344200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 997500
+          },
+          {
+            "itemId": "wood",
+            "amount": 997500
+          },
+          {
+            "itemId": "coal",
+            "amount": 639900
+          },
+          {
+            "itemId": "iron",
+            "amount": 388700
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 807300
+          },
+          {
+            "itemId": "iron",
+            "amount": 547100
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1400000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1400000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1000000
+          },
+          {
+            "itemId": "iron",
+            "amount": 662900
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1000000
+          },
+          {
+            "itemId": "iron",
+            "amount": 659300
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "advanced-training-ii",
+    "name": "Advanced Training II",
+    "img": "/images/alliance-tech/advanced-training-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Accelerates training for all alliance member troop types.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "treaties-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 462900
+          },
+          {
+            "itemId": "wood",
+            "amount": 462900
+          },
+          {
+            "itemId": "coal",
+            "amount": 350900
+          },
+          {
+            "itemId": "iron",
+            "amount": 246200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "treaties-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 555500
+          },
+          {
+            "itemId": "wood",
+            "amount": 555500
+          },
+          {
+            "itemId": "coal",
+            "amount": 415100
+          },
+          {
+            "itemId": "iron",
+            "amount": 281300
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "treaties-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 694400
+          },
+          {
+            "itemId": "wood",
+            "amount": 694400
+          },
+          {
+            "itemId": "coal",
+            "amount": 572700
+          },
+          {
+            "itemId": "iron",
+            "amount": 347900
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "treaties-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 833300
+          },
+          {
+            "itemId": "wood",
+            "amount": 833300
+          },
+          {
+            "itemId": "coal",
+            "amount": 578600
+          },
+          {
+            "itemId": "iron",
+            "amount": 351500
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "treaties-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 925900
+          },
+          {
+            "itemId": "wood",
+            "amount": 925900
+          },
+          {
+            "itemId": "coal",
+            "amount": 440000
+          },
+          {
+            "itemId": "iron",
+            "amount": 267300
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "alliance-regimentation-iii",
+    "name": "Alliance Regimentation III",
+    "img": "/images/alliance-tech/alliance-regimentation-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Increases alliance membership cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "coal-mining-i",
+            "level": 1
+          },
+          {
+            "id": "iron-mining-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 402100
+          },
+          {
+            "itemId": "wood",
+            "amount": 402100
+          },
+          {
+            "itemId": "coal",
+            "amount": 179000
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "4"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "coal-mining-i",
+            "level": 2
+          },
+          {
+            "id": "iron-mining-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 482500
+          },
+          {
+            "itemId": "wood",
+            "amount": 482500
+          },
+          {
+            "itemId": "coal",
+            "amount": 214700
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "8"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "coal-mining-i",
+            "level": 3
+          },
+          {
+            "id": "iron-mining-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 603100
+          },
+          {
+            "itemId": "wood",
+            "amount": 603100
+          },
+          {
+            "itemId": "coal",
+            "amount": 500700
+          },
+          {
+            "itemId": "iron",
+            "amount": 100100
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "12"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "coal-mining-i",
+            "level": 4
+          },
+          {
+            "id": "iron-mining-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 723800
+          },
+          {
+            "itemId": "wood",
+            "amount": 723800
+          },
+          {
+            "itemId": "coal",
+            "amount": 328500
+          },
+          {
+            "itemId": "iron",
+            "amount": 209400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "16"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "coal-mining-i",
+            "level": 5
+          },
+          {
+            "id": "iron-mining-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 804200
+          },
+          {
+            "itemId": "wood",
+            "amount": 804200
+          },
+          {
+            "itemId": "coal",
+            "amount": 369500
+          },
+          {
+            "itemId": "iron",
+            "amount": 235500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "20"
+      }
+    ]
+  },
+  {
+    "id": "coal-mining-ii",
+    "name": "Coal Mining II",
+    "img": "/images/alliance-tech/coal-mining-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Speeds up alliance members’ Coal mining in the wilderness.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "food-gathering-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 849000
+          },
+          {
+            "itemId": "wood",
+            "amount": 849000
+          },
+          {
+            "itemId": "coal",
+            "amount": 664400
+          },
+          {
+            "itemId": "iron",
+            "amount": 410600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "food-gathering-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 749100
+          },
+          {
+            "itemId": "iron",
+            "amount": 464000
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "food-gathering-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 970600
+          },
+          {
+            "itemId": "iron",
+            "amount": 582600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "food-gathering-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 966000
+          },
+          {
+            "itemId": "iron",
+            "amount": 604900
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "food-gathering-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 990400
+          },
+          {
+            "itemId": "iron",
+            "amount": 619700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "fertile-land-expedition",
+    "name": "Fertile Land Expedition",
+    "img": "/images/alliance-tech/fertile-land-expedition.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Alliance may place Alliance buildings on Fertile Land.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1100000
+          },
+          {
+            "itemId": "coal",
+            "amount": 765200
+          },
+          {
+            "itemId": "iron",
+            "amount": 501600
+          }
+        ],
+        "timeSeconds": 3600
+      }
+    ]
+  },
+  {
+    "id": "first-aid-techniques-i",
+    "name": "First Aid Techniques I",
+    "img": "/images/alliance-tech/first-aid-techniques-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Speeds up alliance members’ troop healing.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "mechanisms-ii",
+            "level": 1
+          },
+          {
+            "id": "advanced-training-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 504900
+          },
+          {
+            "itemId": "wood",
+            "amount": 504900
+          },
+          {
+            "itemId": "coal",
+            "amount": 285900
+          },
+          {
+            "itemId": "iron",
+            "amount": 173700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "4%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "mechanisms-ii",
+            "level": 2
+          },
+          {
+            "id": "advanced-training-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 605900
+          },
+          {
+            "itemId": "wood",
+            "amount": 605900
+          },
+          {
+            "itemId": "coal",
+            "amount": 342900
+          },
+          {
+            "itemId": "iron",
+            "amount": 208300
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "8%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "mechanisms-ii",
+            "level": 3
+          },
+          {
+            "id": "advanced-training-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 757400
+          },
+          {
+            "itemId": "wood",
+            "amount": 757400
+          },
+          {
+            "itemId": "coal",
+            "amount": 399800
+          },
+          {
+            "itemId": "iron",
+            "amount": 242900
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "12%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "mechanisms-ii",
+            "level": 4
+          },
+          {
+            "id": "advanced-training-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 908900
+          },
+          {
+            "itemId": "wood",
+            "amount": 908900
+          },
+          {
+            "itemId": "coal",
+            "amount": 755500
+          },
+          {
+            "itemId": "iron",
+            "amount": 475700
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "16%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "mechanisms-ii",
+            "level": 5
+          },
+          {
+            "id": "advanced-training-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 849700
+          },
+          {
+            "itemId": "iron",
+            "amount": 535000
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "20%"
+      }
+    ]
+  },
+  {
+    "id": "food-gathering-ii",
+    "name": "Food Gathering II",
+    "img": "/images/alliance-tech/food-gathering-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Speeds up alliance members’ Meat gathering in the wilderness.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 849000
+          },
+          {
+            "itemId": "wood",
+            "amount": 849000
+          },
+          {
+            "itemId": "coal",
+            "amount": 664400
+          },
+          {
+            "itemId": "iron",
+            "amount": 410600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 749100
+          },
+          {
+            "itemId": "iron",
+            "amount": 464000
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 970600
+          },
+          {
+            "itemId": "iron",
+            "amount": 582600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 966000
+          },
+          {
+            "itemId": "iron",
+            "amount": 604900
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 990400
+          },
+          {
+            "itemId": "iron",
+            "amount": 619700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "iron-mining-ii",
+    "name": "Iron Mining II",
+    "img": "/images/alliance-tech/iron-mining-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Speeds up alliance members’ Iron mining in the wilderness.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 849000
+          },
+          {
+            "itemId": "wood",
+            "amount": 849000
+          },
+          {
+            "itemId": "coal",
+            "amount": 664400
+          },
+          {
+            "itemId": "iron",
+            "amount": 410600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 749100
+          },
+          {
+            "itemId": "iron",
+            "amount": 464000
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 970600
+          },
+          {
+            "itemId": "iron",
+            "amount": 582600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 966000
+          },
+          {
+            "itemId": "iron",
+            "amount": 604900
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "wood-gathering-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 990400
+          },
+          {
+            "itemId": "iron",
+            "amount": 619700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "mechanisms-ii",
+    "name": "Mechanisms II",
+    "img": "/images/alliance-tech/mechanisms-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Speeds up alliance members’ research.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 591400
+          },
+          {
+            "itemId": "wood",
+            "amount": 591400
+          },
+          {
+            "itemId": "coal",
+            "amount": 350900
+          },
+          {
+            "itemId": "iron",
+            "amount": 246200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 709600
+          },
+          {
+            "itemId": "wood",
+            "amount": 709600
+          },
+          {
+            "itemId": "coal",
+            "amount": 384200
+          },
+          {
+            "itemId": "iron",
+            "amount": 233400
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 887100
+          },
+          {
+            "itemId": "wood",
+            "amount": 887100
+          },
+          {
+            "itemId": "coal",
+            "amount": 623500
+          },
+          {
+            "itemId": "iron",
+            "amount": 378700
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 623500
+          },
+          {
+            "itemId": "iron",
+            "amount": 378800
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "adaptive-tools-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1100000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1000000
+          },
+          {
+            "itemId": "iron",
+            "amount": 600800
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "treaties-ii",
+    "name": "Treaties II",
+    "img": "/images/alliance-tech/treaties-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Raises the Alliance Help cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 789700
+          },
+          {
+            "itemId": "wood",
+            "amount": 789700
+          },
+          {
+            "itemId": "coal",
+            "amount": 586900
+          },
+          {
+            "itemId": "iron",
+            "amount": 411800
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "2"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 947700
+          },
+          {
+            "itemId": "wood",
+            "amount": 947700
+          },
+          {
+            "itemId": "coal",
+            "amount": 639900
+          },
+          {
+            "itemId": "iron",
+            "amount": 388700
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "4"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1100000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1000000
+          },
+          {
+            "itemId": "iron",
+            "amount": 632000
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "6"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1400000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1400000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1000000
+          },
+          {
+            "itemId": "iron",
+            "amount": 632000
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "8"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "alliance-regimentation-iii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 734100
+          },
+          {
+            "itemId": "iron",
+            "amount": 445900
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "10"
+      }
+    ]
+  },
+  {
+    "id": "wood-gathering-ii",
+    "name": "Wood Gathering II",
+    "img": "/images/alliance-tech/wood-gathering-i.png",
+    "category": "Growth",
+    "tier": 3,
+    "description": "Speeds up alliance members’ Wood gathering in the wilderness.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 849000
+          },
+          {
+            "itemId": "wood",
+            "amount": 849000
+          },
+          {
+            "itemId": "coal",
+            "amount": 664400
+          },
+          {
+            "itemId": "iron",
+            "amount": 410600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 749100
+          },
+          {
+            "itemId": "iron",
+            "amount": 464000
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 970600
+          },
+          {
+            "itemId": "iron",
+            "amount": 582600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 966000
+          },
+          {
+            "itemId": "iron",
+            "amount": 604900
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "first-aid-techniques-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 990400
+          },
+          {
+            "itemId": "iron",
+            "amount": 619700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "alliance-building-durability-i",
+    "name": "Alliance Building Durability I",
+    "img": "/images/alliance-tech/alliance-building-durability-i.png",
+    "category": "Territory",
+    "tier": 1,
+    "description": "Enhances Alliance Building Durability.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 29100
+          },
+          {
+            "itemId": "wood",
+            "amount": 29100
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1000"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 35700
+          },
+          {
+            "itemId": "wood",
+            "amount": 35700
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2000"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 43600
+          },
+          {
+            "itemId": "wood",
+            "amount": 43600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3000"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 52400
+          },
+          {
+            "itemId": "wood",
+            "amount": 52400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4000"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 58200
+          },
+          {
+            "itemId": "wood",
+            "amount": 58200
+          },
+          {
+            "itemId": "coal",
+            "amount": 21800
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5000"
+      }
+    ]
+  },
+  {
+    "id": "alliance-engineering-i",
+    "name": "Alliance Engineering I",
+    "img": "/images/alliance-tech/alliance-engineering-i.png",
+    "category": "Territory",
+    "tier": 1,
+    "description": "Enhances Alliance Construction Speed.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 50700
+          },
+          {
+            "itemId": "wood",
+            "amount": 50700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "2%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 60900
+          },
+          {
+            "itemId": "wood",
+            "amount": 60900
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "4%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 76100
+          },
+          {
+            "itemId": "wood",
+            "amount": 76100
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "6%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 91300
+          },
+          {
+            "itemId": "wood",
+            "amount": 91300
+          },
+          {
+            "itemId": "coal",
+            "amount": 21400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "8%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 101400
+          },
+          {
+            "itemId": "wood",
+            "amount": 101400
+          },
+          {
+            "itemId": "coal",
+            "amount": 24500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "10%"
+      }
+    ]
+  },
+  {
+    "id": "incendiary-bullets-i",
+    "name": "Incendiary Bullets I",
+    "img": "/images/alliance-tech/incendiary-bullets-i.png",
+    "category": "Territory",
+    "tier": 1,
+    "description": "Accelerates Enemy Alliance Building Destruction",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 50400
+          },
+          {
+            "itemId": "wood",
+            "amount": 50400
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "2%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 60500
+          },
+          {
+            "itemId": "wood",
+            "amount": 60500
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "4%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 75600
+          },
+          {
+            "itemId": "wood",
+            "amount": 75600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "6%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 90700
+          },
+          {
+            "itemId": "wood",
+            "amount": 90700
+          },
+          {
+            "itemId": "coal",
+            "amount": 21400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "8%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 100800
+          },
+          {
+            "itemId": "wood",
+            "amount": 100800
+          },
+          {
+            "itemId": "coal",
+            "amount": 24000
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "10%"
+      }
+    ]
+  },
+  {
+    "id": "rapid-deployment-i",
+    "name": "Rapid Deployment I",
+    "img": "/images/alliance-tech/rapid-deployment-i.png",
+    "category": "Territory",
+    "tier": 1,
+    "description": "Troops March Speed",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 5300
+          },
+          {
+            "itemId": "wood",
+            "amount": 5300
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 6300
+          },
+          {
+            "itemId": "wood",
+            "amount": 6300
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 7900
+          },
+          {
+            "itemId": "wood",
+            "amount": 7900
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 9500
+          },
+          {
+            "itemId": "wood",
+            "amount": 9500
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 10600
+          },
+          {
+            "itemId": "wood",
+            "amount": 10600
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5%"
+      }
+    ]
+  },
+  {
+    "id": "storehouse-expansion-i",
+    "name": "Storehouse Expansion I",
+    "img": "/images/alliance-tech/storehouse-expansion-i.png",
+    "category": "Territory",
+    "tier": 1,
+    "description": "Increases Alliance Storehouse Capacity.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 50400
+          },
+          {
+            "itemId": "wood",
+            "amount": 50400
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "50%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 60500
+          },
+          {
+            "itemId": "wood",
+            "amount": 60500
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "100%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 75600
+          },
+          {
+            "itemId": "wood",
+            "amount": 75600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "200%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 90800
+          },
+          {
+            "itemId": "wood",
+            "amount": 90800
+          },
+          {
+            "itemId": "coal",
+            "amount": 21400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "300%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 100900
+          },
+          {
+            "itemId": "wood",
+            "amount": 100900
+          },
+          {
+            "itemId": "coal",
+            "amount": 24000
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "400%"
+      }
+    ]
+  },
+  {
+    "id": "tactical-expansion-i",
+    "name": "Tactical Expansion I",
+    "img": "/images/alliance-tech/tactical-expansion-i.png",
+    "category": "Territory",
+    "tier": 1,
+    "description": "Increases Alliance Banner cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "rapid-deployment-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 10200
+          },
+          {
+            "itemId": "wood",
+            "amount": 10200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "18"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "rapid-deployment-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 12300
+          },
+          {
+            "itemId": "wood",
+            "amount": 12300
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "36"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "rapid-deployment-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 15400
+          },
+          {
+            "itemId": "wood",
+            "amount": 15400
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "54"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "rapid-deployment-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 18500
+          },
+          {
+            "itemId": "wood",
+            "amount": 18500
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "72"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "rapid-deployment-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 20500
+          },
+          {
+            "itemId": "wood",
+            "amount": 20500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "90"
+      }
+    ]
+  },
+  {
+    "id": "alliance-building-durability-ii",
+    "name": "Alliance Building Durability II",
+    "img": "/images/alliance-tech/alliance-building-durability-i.png",
+    "category": "Territory",
+    "tier": 2,
+    "description": "Enhances Alliance Building Durability.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 296700
+          },
+          {
+            "itemId": "wood",
+            "amount": 296700
+          },
+          {
+            "itemId": "coal",
+            "amount": 181000
+          },
+          {
+            "itemId": "iron",
+            "amount": 48600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1000"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 356000
+          },
+          {
+            "itemId": "wood",
+            "amount": 356000
+          },
+          {
+            "itemId": "coal",
+            "amount": 285600
+          },
+          {
+            "itemId": "iron",
+            "amount": 58500
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2000"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 473200
+          },
+          {
+            "itemId": "wood",
+            "amount": 473200
+          },
+          {
+            "itemId": "coal",
+            "amount": 342500
+          },
+          {
+            "itemId": "iron",
+            "amount": 68500
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3000"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 550100
+          },
+          {
+            "itemId": "wood",
+            "amount": 550100
+          },
+          {
+            "itemId": "coal",
+            "amount": 271400
+          },
+          {
+            "itemId": "iron",
+            "amount": 78100
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4000"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 611200
+          },
+          {
+            "itemId": "wood",
+            "amount": 611200
+          },
+          {
+            "itemId": "coal",
+            "amount": 422300
+          },
+          {
+            "itemId": "iron",
+            "amount": 220000
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5000"
+      }
+    ]
+  },
+  {
+    "id": "alliance-engineering-ii",
+    "name": "Alliance Engineering II",
+    "img": "/images/alliance-tech/alliance-engineering-i.png",
+    "category": "Territory",
+    "tier": 2,
+    "description": "Enhances Alliance Construction Speed.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 315500
+          },
+          {
+            "itemId": "wood",
+            "amount": 315500
+          },
+          {
+            "itemId": "coal",
+            "amount": 181000
+          },
+          {
+            "itemId": "iron",
+            "amount": 48600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "2%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 366700
+          },
+          {
+            "itemId": "wood",
+            "amount": 366700
+          },
+          {
+            "itemId": "coal",
+            "amount": 212600
+          },
+          {
+            "itemId": "iron",
+            "amount": 31900
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "4%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 473200
+          },
+          {
+            "itemId": "wood",
+            "amount": 473200
+          },
+          {
+            "itemId": "coal",
+            "amount": 342500
+          },
+          {
+            "itemId": "iron",
+            "amount": 68500
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "6%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 550100
+          },
+          {
+            "itemId": "wood",
+            "amount": 550100
+          },
+          {
+            "itemId": "coal",
+            "amount": 271400
+          },
+          {
+            "itemId": "iron",
+            "amount": 78100
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "8%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 611200
+          },
+          {
+            "itemId": "wood",
+            "amount": 611200
+          },
+          {
+            "itemId": "coal",
+            "amount": 422300
+          },
+          {
+            "itemId": "iron",
+            "amount": 220000
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "10%"
+      }
+    ]
+  },
+  {
+    "id": "incendiary-bullets-ii",
+    "name": "Incendiary Bullets II",
+    "img": "/images/alliance-tech/incendiary-bullets-i.png",
+    "category": "Territory",
+    "tier": 2,
+    "description": "Accelerates Enemy Alliance Building Destruction",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 305600
+          },
+          {
+            "itemId": "wood",
+            "amount": 305600
+          },
+          {
+            "itemId": "coal",
+            "amount": 181000
+          },
+          {
+            "itemId": "iron",
+            "amount": 48600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "2%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 374500
+          },
+          {
+            "itemId": "wood",
+            "amount": 374500
+          },
+          {
+            "itemId": "coal",
+            "amount": 234200
+          },
+          {
+            "itemId": "iron",
+            "amount": 58500
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "4%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 473200
+          },
+          {
+            "itemId": "wood",
+            "amount": 473200
+          },
+          {
+            "itemId": "coal",
+            "amount": 342500
+          },
+          {
+            "itemId": "iron",
+            "amount": 68500
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "6%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 550100
+          },
+          {
+            "itemId": "wood",
+            "amount": 550100
+          },
+          {
+            "itemId": "coal",
+            "amount": 271400
+          },
+          {
+            "itemId": "iron",
+            "amount": 78100
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "8%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 624100
+          },
+          {
+            "itemId": "wood",
+            "amount": 624100
+          },
+          {
+            "itemId": "coal",
+            "amount": 440100
+          },
+          {
+            "itemId": "iron",
+            "amount": 220000
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "10%"
+      }
+    ]
+  },
+  {
+    "id": "storehouse-expansion-ii",
+    "name": "Storehouse Expansion II",
+    "img": "/images/alliance-tech/storehouse-expansion-i.png",
+    "category": "Territory",
+    "tier": 2,
+    "description": "Increases Alliance Storehouse Capacity.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 315500
+          },
+          {
+            "itemId": "wood",
+            "amount": 315500
+          },
+          {
+            "itemId": "coal",
+            "amount": 181000
+          },
+          {
+            "itemId": "iron",
+            "amount": 48600
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "50%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 366700
+          },
+          {
+            "itemId": "wood",
+            "amount": 366700
+          },
+          {
+            "itemId": "coal",
+            "amount": 212600
+          },
+          {
+            "itemId": "iron",
+            "amount": 31900
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2000"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 473200
+          },
+          {
+            "itemId": "wood",
+            "amount": 473200
+          },
+          {
+            "itemId": "coal",
+            "amount": 342500
+          },
+          {
+            "itemId": "iron",
+            "amount": 68500
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "100%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 550100
+          },
+          {
+            "itemId": "wood",
+            "amount": 550100
+          },
+          {
+            "itemId": "coal",
+            "amount": 271400
+          },
+          {
+            "itemId": "iron",
+            "amount": 78100
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "300%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 611200
+          },
+          {
+            "itemId": "wood",
+            "amount": 611200
+          },
+          {
+            "itemId": "coal",
+            "amount": 422300
+          },
+          {
+            "itemId": "iron",
+            "amount": 220000
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "400%"
+      }
+    ]
+  },
+  {
+    "id": "tactical-expansion-ii",
+    "name": "Tactical Expansion II",
+    "img": "/images/alliance-tech/tactical-expansion-i.png",
+    "category": "Territory",
+    "tier": 2,
+    "description": "Increases Alliance Banner cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-i",
+            "level": 1
+          },
+          {
+            "id": "alliance-engineering-i",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 316400
+          },
+          {
+            "itemId": "wood",
+            "amount": 316400
+          },
+          {
+            "itemId": "coal",
+            "amount": 64100
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "20"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-i",
+            "level": 2
+          },
+          {
+            "id": "alliance-engineering-i",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 379700
+          },
+          {
+            "itemId": "wood",
+            "amount": 379700
+          },
+          {
+            "itemId": "coal",
+            "amount": 96100
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "40"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-i",
+            "level": 3
+          },
+          {
+            "id": "alliance-engineering-i",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 474600
+          },
+          {
+            "itemId": "wood",
+            "amount": 474600
+          },
+          {
+            "itemId": "coal",
+            "amount": 154160
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "60"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-i",
+            "level": 4
+          },
+          {
+            "id": "alliance-engineering-i",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 569600
+          },
+          {
+            "itemId": "wood",
+            "amount": 569600
+          },
+          {
+            "itemId": "coal",
+            "amount": 173400
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "80"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-i",
+            "level": 5
+          },
+          {
+            "id": "alliance-engineering-i",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 632900
+          },
+          {
+            "itemId": "wood",
+            "amount": 632900
+          },
+          {
+            "itemId": "coal",
+            "amount": 192700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "100"
+      }
+    ]
+  },
+  {
+    "id": "alliance-building-durability-iii",
+    "name": "Alliance Building Durability III",
+    "img": "/images/alliance-tech/alliance-building-durability-i.png",
+    "category": "Territory",
+    "tier": 3,
+    "description": "Enhances Alliance Building Durability.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 850000
+          },
+          {
+            "itemId": "wood",
+            "amount": 850000
+          },
+          {
+            "itemId": "coal",
+            "amount": 917000
+          },
+          {
+            "itemId": "iron",
+            "amount": 570100
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "1000"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1000000
+          },
+          {
+            "itemId": "iron",
+            "amount": 621600
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "2000"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1000000
+          },
+          {
+            "itemId": "iron",
+            "amount": 614600
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "3000"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1600000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1600000
+          },
+          {
+            "itemId": "coal",
+            "amount": 949500
+          },
+          {
+            "itemId": "iron",
+            "amount": 576800
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "4000"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1700000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1700000
+          },
+          {
+            "itemId": "coal",
+            "amount": 949300
+          },
+          {
+            "itemId": "iron",
+            "amount": 576700
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "5000"
+      }
+    ]
+  },
+  {
+    "id": "alliance-engineering-iii",
+    "name": "Alliance Engineering III",
+    "img": "/images/alliance-tech/alliance-engineering-i.png",
+    "category": "Territory",
+    "tier": 3,
+    "description": "Enhances Alliance Construction Speed.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 774100
+          },
+          {
+            "itemId": "iron",
+            "amount": 509700
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "2%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 948600
+          },
+          {
+            "itemId": "iron",
+            "amount": 576200
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "4%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 948500
+          },
+          {
+            "itemId": "iron",
+            "amount": 576200
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "6%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-iii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1900000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1900000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1600000
+          },
+          {
+            "itemId": "iron",
+            "amount": 981700
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "8%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "storehouse-expansion-iii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 998400
+          },
+          {
+            "itemId": "iron",
+            "amount": 657500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "10%"
+      }
+    ]
+  },
+  {
+    "id": "incendiary-bullets-iii",
+    "name": "Incendiary Bullets III",
+    "img": "/images/alliance-tech/incendiary-bullets-i.png",
+    "category": "Territory",
+    "tier": 3,
+    "description": "Accelerates Enemy Alliance Building Destruction",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 792000
+          },
+          {
+            "itemId": "wood",
+            "amount": 792000
+          },
+          {
+            "itemId": "coal",
+            "amount": 640700
+          },
+          {
+            "itemId": "iron",
+            "amount": 389200
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "2%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 950500
+          },
+          {
+            "itemId": "wood",
+            "amount": 950500
+          },
+          {
+            "itemId": "coal",
+            "amount": 652100
+          },
+          {
+            "itemId": "iron",
+            "amount": 396100
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "4%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1125000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1125000
+          },
+          {
+            "itemId": "coal",
+            "amount": 949500
+          },
+          {
+            "itemId": "iron",
+            "amount": 576800
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "6%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-iii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1400000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1400000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1100000
+          },
+          {
+            "itemId": "iron",
+            "amount": 748100
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "8%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "alliance-building-durability-iii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 998400
+          },
+          {
+            "itemId": "iron",
+            "amount": 657500
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "10%"
+      }
+    ]
+  },
+  {
+    "id": "storehouse-expansion-iii",
+    "name": "Storehouse Expansion III",
+    "img": "/images/alliance-tech/storehouse-expansion-i.png",
+    "category": "Territory",
+    "tier": 3,
+    "description": "Increases Alliance Storehouse Capacity.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 767400
+          },
+          {
+            "itemId": "wood",
+            "amount": 767400
+          },
+          {
+            "itemId": "coal",
+            "amount": 583600
+          },
+          {
+            "itemId": "iron",
+            "amount": 384300
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "400%"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 920900
+          },
+          {
+            "itemId": "wood",
+            "amount": 920900
+          },
+          {
+            "itemId": "coal",
+            "amount": 715400
+          },
+          {
+            "itemId": "iron",
+            "amount": 434600
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "800%"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1100000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1100000
+          },
+          {
+            "itemId": "coal",
+            "amount": 1200000
+          },
+          {
+            "itemId": "iron",
+            "amount": 801000
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "1200%"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1350000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1350000
+          },
+          {
+            "itemId": "coal",
+            "amount": 715400
+          },
+          {
+            "itemId": "iron",
+            "amount": 434600
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "1600%"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "tactical-expansion-iii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1500000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1500000
+          },
+          {
+            "itemId": "coal",
+            "amount": 714600
+          },
+          {
+            "itemId": "iron",
+            "amount": 434100
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "2000%"
+      }
+    ]
+  },
+  {
+    "id": "tactical-expansion-iii",
+    "name": "Tactical Expansion III",
+    "img": "/images/alliance-tech/tactical-expansion-i.png",
+    "category": "Territory",
+    "tier": 3,
+    "description": "Increases Alliance Banner cap.",
+    "levels": [
+      {
+        "level": 1,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-ii",
+            "level": 1
+          },
+          {
+            "id": "alliance-engineering-ii",
+            "level": 1
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 670000
+          },
+          {
+            "itemId": "wood",
+            "amount": 670000
+          },
+          {
+            "itemId": "coal",
+            "amount": 329100
+          },
+          {
+            "itemId": "iron",
+            "amount": 164500
+          }
+        ],
+        "timeSeconds": 1800,
+        "bonus": "30"
+      },
+      {
+        "level": 2,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-ii",
+            "level": 2
+          },
+          {
+            "id": "alliance-engineering-ii",
+            "level": 2
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 804000
+          },
+          {
+            "itemId": "wood",
+            "amount": 804000
+          },
+          {
+            "itemId": "coal",
+            "amount": 486300
+          },
+          {
+            "itemId": "iron",
+            "amount": 366200
+          }
+        ],
+        "timeSeconds": 3600,
+        "bonus": "60"
+      },
+      {
+        "level": 3,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-ii",
+            "level": 3
+          },
+          {
+            "id": "alliance-engineering-ii",
+            "level": 3
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1000000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1000000
+          },
+          {
+            "itemId": "coal",
+            "amount": 787100
+          },
+          {
+            "itemId": "iron",
+            "amount": 570100
+          }
+        ],
+        "timeSeconds": 5400,
+        "bonus": "65"
+      },
+      {
+        "level": 4,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-ii",
+            "level": 4
+          },
+          {
+            "id": "alliance-engineering-ii",
+            "level": 4
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1200000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1200000
+          },
+          {
+            "itemId": "coal",
+            "amount": 898600
+          },
+          {
+            "itemId": "iron",
+            "amount": 650900
+          }
+        ],
+        "timeSeconds": 7200,
+        "bonus": "70"
+      },
+      {
+        "level": 5,
+        "prerequisites": [
+          {
+            "id": "incendiary-bullets-ii",
+            "level": 5
+          },
+          {
+            "id": "alliance-engineering-ii",
+            "level": 5
+          }
+        ],
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1300000
+          },
+          {
+            "itemId": "wood",
+            "amount": 1300000
+          },
+          {
+            "itemId": "coal",
+            "amount": 823600
+          },
+          {
+            "itemId": "iron",
+            "amount": 504400
+          }
+        ],
+        "timeSeconds": 9000,
+        "bonus": "75"
+      }
+    ]
+  }
+]
