@@ -1,0 +1,446 @@
+[
+  {
+    "id": "vip-1",
+    "name": "VIP 1",
+    "level": 1,
+    "xpRequired": 0,
+    "bonuses": [
+      {
+        "stat": "Resource Production Speed",
+        "value": "+2%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+100K",
+        "amount": 100000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-2",
+    "name": "VIP 2",
+    "level": 2,
+    "xpRequired": 2500,
+    "bonuses": [
+      {
+        "stat": "Resource Production Speed",
+        "value": "+4%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+150K",
+        "amount": 150000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-3",
+    "name": "VIP 3",
+    "level": 3,
+    "xpRequired": 5000,
+    "bonuses": [
+      {
+        "stat": "Resource Production Speed",
+        "value": "+6%",
+        "amount": 6,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+200K",
+        "amount": 200000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-4",
+    "name": "VIP 4",
+    "level": 4,
+    "xpRequired": 12500,
+    "bonuses": [
+      {
+        "stat": "Construction Speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+8%",
+        "amount": 8,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+300K",
+        "amount": 300000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-5",
+    "name": "VIP 5",
+    "level": 5,
+    "xpRequired": 30000,
+    "bonuses": [
+      {
+        "stat": "Troop Formation",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Construction Speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+400K",
+        "amount": 400000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-6",
+    "name": "VIP 6",
+    "level": 6,
+    "xpRequired": 40000,
+    "bonuses": [
+      {
+        "stat": "March Queue",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Troop Formation",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Construction Speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+12%",
+        "amount": 12,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+500K",
+        "amount": 500000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-7",
+    "name": "VIP 7",
+    "level": 7,
+    "xpRequired": 60000,
+    "bonuses": [
+      {
+        "stat": "March Queue",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Troop Formation",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Construction Speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+14%",
+        "amount": 14,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+600K",
+        "amount": 600000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-8",
+    "name": "VIP 8",
+    "level": 8,
+    "xpRequired": 100000,
+    "bonuses": [
+      {
+        "stat": "March Queue",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Troop Formation",
+        "value": "+2",
+        "amount": 2,
+        "unit": "flat"
+      },
+      {
+        "stat": "Construction Speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+16%",
+        "amount": 16,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+700K",
+        "amount": 700000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-9",
+    "name": "VIP 9",
+    "level": 9,
+    "xpRequired": 350000,
+    "bonuses": [
+      {
+        "stat": "Troops Defense",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "March Queue",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Troop Formation",
+        "value": "+2",
+        "amount": 2,
+        "unit": "flat"
+      },
+      {
+        "stat": "Construction Speed",
+        "value": "+20%",
+        "amount": 20,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+18%",
+        "amount": 18,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+800K",
+        "amount": 800000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-10",
+    "name": "VIP 10",
+    "level": 10,
+    "xpRequired": 600000,
+    "bonuses": [
+      {
+        "stat": "Troops Attack",
+        "value": "+12%",
+        "amount": 12,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Defense",
+        "value": "+12%",
+        "amount": 12,
+        "unit": "percent"
+      },
+      {
+        "stat": "March Queue",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Troop Formation",
+        "value": "+2",
+        "amount": 2,
+        "unit": "flat"
+      },
+      {
+        "stat": "Construction Speed",
+        "value": "+20%",
+        "amount": 20,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+20%",
+        "amount": 20,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+900K",
+        "amount": 900000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-11",
+    "name": "VIP 11",
+    "level": 11,
+    "xpRequired": 1200000,
+    "bonuses": [
+      {
+        "stat": "Troops Health",
+        "value": "+14%",
+        "amount": 14,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Attack",
+        "value": "+14%",
+        "amount": 14,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Defense",
+        "value": "+14%",
+        "amount": 14,
+        "unit": "percent"
+      },
+      {
+        "stat": "March Queue",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Troop Formation",
+        "value": "+2",
+        "amount": 2,
+        "unit": "flat"
+      },
+      {
+        "stat": "Construction Speed",
+        "value": "+20%",
+        "amount": 20,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+22%",
+        "amount": 22,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+1M",
+        "amount": 1000000,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "vip-12",
+    "name": "VIP 12",
+    "level": 12,
+    "xpRequired": 2400000,
+    "bonuses": [
+      {
+        "stat": "Troops Lethality",
+        "value": "+16%",
+        "amount": 16,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Health",
+        "value": "+16%",
+        "amount": 16,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Attack",
+        "value": "+16%",
+        "amount": 16,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Defense",
+        "value": "+16%",
+        "amount": 16,
+        "unit": "percent"
+      },
+      {
+        "stat": "March Queue",
+        "value": "+1",
+        "amount": 1,
+        "unit": "flat"
+      },
+      {
+        "stat": "Troop Formation",
+        "value": "+2",
+        "amount": 2,
+        "unit": "flat"
+      },
+      {
+        "stat": "Construction Speed",
+        "value": "+20%",
+        "amount": 20,
+        "unit": "percent"
+      },
+      {
+        "stat": "Resource Production Speed",
+        "value": "+24%",
+        "amount": 24,
+        "unit": "percent"
+      },
+      {
+        "stat": "Storehouse Capacity",
+        "value": "+1.1M",
+        "amount": 1100000,
+        "unit": "flat"
+      }
+    ]
+  }
+]

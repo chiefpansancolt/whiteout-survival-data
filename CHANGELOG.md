@@ -35,6 +35,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   at all.
 - `eventBuff()`: which of 11 buff sources (Pet Skills, President Skills, Facility Buff, etc.) apply
   in each of 14 game modes, sourced from a user-provided screenshot rather than any wiki page.
+- `vip()`: the full VIP 1-12 progression (XP cost and unlocked bonuses per level), sourced from the
+  wiki's official infographic image, since that page has no HTML table either.
 
 ### Fixed
 

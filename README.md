@@ -539,6 +539,32 @@ deny almost everything else.
 
 ---
 
+### 👑 VIP
+
+| Module | Factory | Items | Description                                        |
+| ------ | ------- | ----- | -------------------------------------------------- |
+| vip    | `vip()` | 12    | The full VIP 1-12 progression: XP cost and unlocks |
+
+Sourced from `https://www.whiteoutsurvival.wiki/vip/` — like Alliance Territory/Facility, this page
+has no HTML table; the data is a single official infographic image. Unlike the user-provided
+screenshots used for Alliance Facility and Event Buff, this one is complete and precise for all 12
+levels, so there's no documented gap here.
+
+`VipLevel.xpRequired` is the cumulative XP needed to reach that level (`0` for VIP 1, which the
+source image shows as `-`). `bonuses` lists the _total_ bonuses active at that level, not the delta
+from the previous one — e.g. Resource Production Speed appears at every level with an increasing
+value, and Storehouse Capacity, March Queue, and Troop Formation accumulate the same way. Combat
+stat bonuses (Troops Defense/Attack/Health/Lethality) don't appear at all until VIP 9. Use
+`vip().atXp(n)` to find the highest level reachable with a given amount of total XP.
+
+Each `VipBonus` keeps the original display string in `value` (`"+16%"`, `"+1"`, `"+1.1M"`) alongside
+a parsed `amount`/`unit` pair (`16`/`'percent'`, `1`/`'flat'`, `1100000`/`'flat'`) — abbreviated
+`K`/ `M` capacity amounts are expanded to their full number. `value` stays the source of truth for
+display; `amount`/`unit` exist so consumers can sum or compare bonuses without re-parsing the string
+themselves.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:
