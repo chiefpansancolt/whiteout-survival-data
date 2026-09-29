@@ -66440,7 +66440,7 @@
     "name": "Exalted Infantry Training",
     "img": "/images/research/exalted-infantry-training.png",
     "category": "T12 Infantry",
-    "tier": 7,
+    "tier": 8,
     "levels": [
       {
         "level": 1,
@@ -89926,7 +89926,7 @@
     "name": "Exalted Lancer Training",
     "img": "/images/research/exalted-lancer-training.png",
     "category": "T12 Lancer",
-    "tier": 7,
+    "tier": 8,
     "levels": [
       {
         "level": 1,
@@ -113412,7 +113412,7 @@
     "name": "Exalted Marksman Training",
     "img": "/images/research/exalted-marksman-training.png",
     "category": "T12 Marksman",
-    "tier": 7,
+    "tier": 8,
     "levels": [
       {
         "level": 1,

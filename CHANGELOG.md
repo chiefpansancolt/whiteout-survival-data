@@ -271,10 +271,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Molten X II items (at Level 30, 40, and 50 respectively) were `unreleased`-type forward references
   before those pages existed; now that they are real nodes, all 24 references resolve as normal
   `research`-type prerequisites.
-- Reassigned each T12 troop type's `[Troop] First Aid`, `[Troop] Healing`, and `[Troop] Training`
-  nodes to `tier: 7`, and each troop type's Solar Supremacy node to `tier: 5` (from `tier: 7`),
-  confirmed directly from in-game knowledge, freeing `tier: 6` for the next Molten tier and emptying
-  `tier: 8` entirely.
+- Reassigned each T12 troop type's `[Troop] First Aid` and `[Troop] Healing` nodes to `tier: 7`,
+  `[Troop] Training` to `tier: 8`, and each troop type's Solar Supremacy node to `tier: 5` (from
+  `tier: 7`), confirmed directly from in-game knowledge, freeing `tier: 6` for the next Molten tier.
 - Added the 12 tier-6 Molten X III nodes. Same shape as Molten X II: 50 levels, published under the
   wiki's Unicode Roman numeral URL slug (`molten-grips-Ⅲ`, not `-iii`). Each requires its own troop
   type's Solar Supremacy node at Level 15, rather than the tier-3 capstone Molten X II uses, since
