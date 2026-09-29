@@ -254,10 +254,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   requirement. Applied as an explicit `research`-type prerequisite (`level: 1`) added to each node's
   Level 1, alongside its existing `building`-type War Academy requirement.
 
-- Reassigned each T12 troop type's `[Troop] First Aid` and `[Troop] Healing` nodes from `tier: 4` to
-  `tier: 8` as a placeholder, freeing `tier: 4` for that troop type's actual next tier of content
-  (pending). Their prerequisites and every other node's references to them are unchanged, since
-  those resolve by id rather than by tier.
+- Reassigned each T12 troop type's `[Troop] First Aid`, `[Troop] Healing`, and `[Troop] Training`
+  nodes to `tier: 7`, and each troop type's Solar Supremacy node to `tier: 5` (from `tier: 7`),
+  confirmed directly from in-game knowledge. `[Troop] First Aid`/`Healing` passed through a
+  `tier: 8` placeholder in between, while `tier: 4` was reserved for the (now-added) Molten X II
+  nodes. Their prerequisites and every other node's references to them are unchanged, since those
+  resolve by id rather than by tier.
 
 - Added the 12 tier-4 Molten X II nodes (`Molten Blades II`, `Molten Grips II`, etc.), filling the
   `tier: 4` slot freed above. Published under the wiki's Unicode Roman numeral URL slug (e.g.
