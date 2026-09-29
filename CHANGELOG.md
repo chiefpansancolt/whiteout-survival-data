@@ -259,5 +259,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   (pending). Their prerequisites and every other node's references to them are unchanged, since
   those resolve by id rather than by tier.
 
+- Added the 12 tier-4 Molten X II nodes (`Molten Blades II`, `Molten Grips II`, etc.), filling the
+  `tier: 4` slot freed above. Published under the wiki's Unicode Roman numeral URL slug (e.g.
+  `molten-blades-Ⅱ`, not the ASCII `-ii` this package's own ids use) rather than the plain
+  `research/` index, which is why they were initially missed. Each has 50 levels and requires its
+  own troop type's tier-3 capstone (`indomitable-wall`, `starfire`, or `meridian-phalanx`) at Level
+  1, alongside the existing War Academy Fire Crystal gate.
+- Resolved each troop type's Solar Supremacy node: its Level 1, 6, and 11 requirements for the 4
+  Molten X II items (at Level 30, 40, and 50 respectively) were `unreleased`-type forward references
+  before those pages existed; now that they are real nodes, all 24 references resolve as normal
+  `research`-type prerequisites.
+
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

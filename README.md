@@ -366,7 +366,7 @@ table exactly rather than assuming a fixed three-material set throughout.
 
 | Module   | Factory      | Items | Description                                                  |
 | -------- | ------------ | ----- | ------------------------------------------------------------ |
-| research | `research()` | 266   | The full Research Center tech tree, one node per level table |
+| research | `research()` | 278   | The full Research Center tech tree, one node per level table |
 
 The Research Center's tech tree, sourced page-per-node like `items()` rather than as a shared table
 like Chief Gear/Charm — each named research line has its own detail page with its own per-level
@@ -385,11 +385,13 @@ own icon.
 for a gate like `Research Center 7` or `War Academy FC 10` (with `id` set to that building's real
 `buildings()` slug, and `level` normalized to match its `BuildingLevel.label` exactly, so it
 round-trips into `buildings().find(id)!.levels`), or `type: "research"` for a cross-reference to
-another node's specific level (`id` set to that node's own slug in this dataset). A handful of very
-late T12 tiers reference tech lines the wiki describes in prose but hasn't published a page for yet
-(`Molten Lance II`, and eleven siblings across the other T11/T12 troop lines) — these get
-`type: "unreleased"` with a best-effort slugified `id` that intentionally does not resolve against
-`research()`, rather than being silently dropped or pointed at the wrong node.
+another node's specific level (`id` set to that node's own slug in this dataset). A
+`type: "unreleased"` entry is also supported, for a tech line the wiki describes in prose but hasn't
+published a page for yet — its best-effort slugified `id` intentionally does not resolve against
+`research()`, rather than being silently dropped or pointed at the wrong node. No node in the
+current dataset uses it: the 12 Molten X II nodes (`Molten Blades II`, and eleven siblings across
+T12's three troop lines) briefly needed it until their pages went live under the wiki's Unicode
+Roman numeral URL slug (`molten-blades-Ⅱ`, not the ASCII `-ii` this package's own ids use).
 
 Several prerequisite names only resolve after correcting confirmed spelling inconsistencies on the
 source wiki itself (`Assault Techniques` → the node is actually named `Assaut Techniques`;
@@ -412,6 +414,10 @@ no icon exists anywhere to reference.
 Each troop type's 4 tier-2 Molten I items also require that troop type's own Exalted capstone at
 Level 1, alongside their existing War Academy building gate — also confirmed from in-game knowledge
 rather than scraped, since the wiki's Prerequisites column for these 12 nodes omits it.
+
+Each troop type's 4 tier-4 Molten X II items (`Molten Blades II`, etc.) similarly require that troop
+type's own tier-3 node (`indomitable-wall`, `starfire`, or `meridian-phalanx`) at Level 1 — this one
+is scraped directly from each node's own page, not user-supplied.
 
 ---
 

@@ -29,17 +29,17 @@ describe('ResearchQuery', () => {
 });
 
 describe('Research tech tree', () => {
-  it('tracks 266 nodes across 9 categories', () => {
-    expect(research().count()).toBe(266);
+  it('tracks 278 nodes across 9 categories', () => {
+    expect(research().count()).toBe(278);
     expect(research().byCategory('Battle').count()).toBe(102);
     expect(research().byCategory('Growth').count()).toBe(45);
     expect(research().byCategory('Economy').count()).toBe(44);
     expect(research().byCategory('T11 Infantry').count()).toBe(10);
     expect(research().byCategory('T11 Marksman').count()).toBe(10);
     expect(research().byCategory('T11 Lancer').count()).toBe(10);
-    expect(research().byCategory('T12 Infantry').count()).toBe(15);
-    expect(research().byCategory('T12 Marksman').count()).toBe(15);
-    expect(research().byCategory('T12 Lancer').count()).toBe(15);
+    expect(research().byCategory('T12 Infantry').count()).toBe(19);
+    expect(research().byCategory('T12 Marksman').count()).toBe(19);
+    expect(research().byCategory('T12 Lancer').count()).toBe(19);
   });
 
   it('resolves a building-type prerequisite into buildings()', () => {
@@ -77,13 +77,25 @@ describe('Research tech tree', () => {
     expect(exaltedBlunderbuss.levels[0].researchTimeSeconds).toBeUndefined();
   });
 
-  it('marks a forward reference to an unpublished tech line as unreleased instead of failing', () => {
+  it("resolves Solar Supremacy's Molten X II references now that those pages are published", () => {
+    // These were forward references to unpublished tech lines (type
+    // 'unreleased') until the Molten X II nodes were added; now that they
+    // exist, every one of Solar Supremacy's 3 gated levels (1, 6, 11) should
+    // resolve as a normal research-type prerequisite.
     const solarSupremacyLancer = research().find('solar-supremacy-lanc')!;
-    const unreleasedReq = solarSupremacyLancer.levels[0].prerequisites.find(
-      (p) => p.type === 'unreleased',
-    )!;
-    expect(unreleasedReq.id).toBe('molten-lance-ii');
-    expect(research().find(unreleasedReq.id)).toBeUndefined();
+    const gatedLevels = solarSupremacyLancer.levels.filter((l) => l.prerequisites.length > 0);
+    expect(gatedLevels.map((l) => l.level)).toEqual([1, 6, 11]);
+    gatedLevels.forEach((level) => {
+      const researchReqs = level.prerequisites.filter((p) => p.type === 'research');
+      expect(researchReqs).toHaveLength(4);
+      researchReqs.forEach((req) => expect(research().find(req.id)).toBeDefined());
+    });
+
+    const allNodes = research().get();
+    const hasUnreleased = allNodes.some((n) =>
+      n.levels.some((l) => l.prerequisites.some((p) => p.type === 'unreleased')),
+    );
+    expect(hasUnreleased).toBe(false);
   });
 
   it("disambiguates a same-named prerequisite to the referencing node's own troop type", () => {
@@ -271,6 +283,38 @@ describe('Research tech tree', () => {
 
     cases.forEach(([nodeId, capstoneId]) => {
       const node = research().find(nodeId)!;
+      expect(node.levels[0].prerequisites).toContainEqual({
+        type: 'research',
+        id: capstoneId,
+        level: 1,
+      });
+    });
+  });
+
+  it("adds each tier-4 Molten X II item, gated on its own troop type's tier-3 capstone at Level 1", () => {
+    // Published under the wiki's Unicode Roman numeral slug (e.g.
+    // molten-blades-Ⅱ), not the ASCII "-ii" this package uses for its
+    // own ids — the name is normalized to ASCII on the way in.
+    const cases: [string, string, string][] = [
+      ['molten-blades-ii', 'T12 Infantry', 'indomitable-wall'],
+      ['molten-guard-ii', 'T12 Infantry', 'indomitable-wall'],
+      ['molten-plating-ii', 'T12 Infantry', 'indomitable-wall'],
+      ['molten-shields-ii', 'T12 Infantry', 'indomitable-wall'],
+      ['molten-grips-ii', 'T12 Marksman', 'starfire'],
+      ['molten-scales-ii', 'T12 Marksman', 'starfire'],
+      ['molten-sharpshooting-ii', 'T12 Marksman', 'starfire'],
+      ['molten-shot-ii', 'T12 Marksman', 'starfire'],
+      ['molten-helmets-ii', 'T12 Lancer', 'meridian-phalanx'],
+      ['molten-lance-ii', 'T12 Lancer', 'meridian-phalanx'],
+      ['molten-tactics-ii', 'T12 Lancer', 'meridian-phalanx'],
+      ['molten-vambrace-ii', 'T12 Lancer', 'meridian-phalanx'],
+    ];
+
+    cases.forEach(([nodeId, category, capstoneId]) => {
+      const node = research().find(nodeId)!;
+      expect(node.category).toBe(category);
+      expect(node.tier).toBe(4);
+      expect(node.levels).toHaveLength(50);
       expect(node.levels[0].prerequisites).toContainEqual({
         type: 'research',
         id: capstoneId,
