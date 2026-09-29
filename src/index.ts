@@ -12,3 +12,4 @@ export * from './modules/research';
 export * from './modules/hero-gear-enhancement';
 export * from './modules/hero-gear-empowerment';
 export * from './modules/hero-gear-mastery-forging';
+export * from './modules/alliance/territory';

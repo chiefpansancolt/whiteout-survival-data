@@ -1,0 +1,761 @@
+[
+  {
+    "id": "level-0-10",
+    "name": "Level 0-10",
+    "minLevel": 0,
+    "maxLevel": 10,
+    "cost": []
+  },
+  {
+    "id": "level-11-15",
+    "name": "Level 11-15",
+    "minLevel": 11,
+    "maxLevel": 15,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 5000
+      },
+      {
+        "itemId": "wood",
+        "amount": 5000
+      }
+    ]
+  },
+  {
+    "id": "level-16-20",
+    "name": "Level 16-20",
+    "minLevel": 16,
+    "maxLevel": 20,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 10000
+      },
+      {
+        "itemId": "wood",
+        "amount": 10000
+      }
+    ]
+  },
+  {
+    "id": "level-21-30",
+    "name": "Level 21-30",
+    "minLevel": 21,
+    "maxLevel": 30,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 15000
+      },
+      {
+        "itemId": "wood",
+        "amount": 15000
+      }
+    ]
+  },
+  {
+    "id": "level-31-40",
+    "name": "Level 31-40",
+    "minLevel": 31,
+    "maxLevel": 40,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 20000
+      },
+      {
+        "itemId": "wood",
+        "amount": 20000
+      }
+    ]
+  },
+  {
+    "id": "level-41-50",
+    "name": "Level 41-50",
+    "minLevel": 41,
+    "maxLevel": 50,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 22500
+      },
+      {
+        "itemId": "wood",
+        "amount": 22500
+      }
+    ]
+  },
+  {
+    "id": "level-51-60",
+    "name": "Level 51-60",
+    "minLevel": 51,
+    "maxLevel": 60,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 25000
+      },
+      {
+        "itemId": "wood",
+        "amount": 25000
+      }
+    ]
+  },
+  {
+    "id": "level-61-70",
+    "name": "Level 61-70",
+    "minLevel": 61,
+    "maxLevel": 70,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 27500
+      },
+      {
+        "itemId": "wood",
+        "amount": 27500
+      }
+    ]
+  },
+  {
+    "id": "level-71-80",
+    "name": "Level 71-80",
+    "minLevel": 71,
+    "maxLevel": 80,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 30000
+      },
+      {
+        "itemId": "wood",
+        "amount": 30000
+      }
+    ]
+  },
+  {
+    "id": "level-81-90",
+    "name": "Level 81-90",
+    "minLevel": 81,
+    "maxLevel": 90,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 32500
+      },
+      {
+        "itemId": "wood",
+        "amount": 32500
+      }
+    ]
+  },
+  {
+    "id": "level-91-100",
+    "name": "Level 91-100",
+    "minLevel": 91,
+    "maxLevel": 100,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 36000
+      },
+      {
+        "itemId": "wood",
+        "amount": 36000
+      }
+    ]
+  },
+  {
+    "id": "level-101-110",
+    "name": "Level 101-110",
+    "minLevel": 101,
+    "maxLevel": 110,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 40500
+      },
+      {
+        "itemId": "wood",
+        "amount": 40500
+      }
+    ]
+  },
+  {
+    "id": "level-111-120",
+    "name": "Level 111-120",
+    "minLevel": 111,
+    "maxLevel": 120,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 45000
+      },
+      {
+        "itemId": "wood",
+        "amount": 45000
+      }
+    ]
+  },
+  {
+    "id": "level-121-130",
+    "name": "Level 121-130",
+    "minLevel": 121,
+    "maxLevel": 130,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 49500
+      },
+      {
+        "itemId": "wood",
+        "amount": 49500
+      },
+      {
+        "itemId": "coal",
+        "amount": 10000
+      }
+    ]
+  },
+  {
+    "id": "level-131-135",
+    "name": "Level 131-135",
+    "minLevel": 131,
+    "maxLevel": 135,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 54000
+      },
+      {
+        "itemId": "wood",
+        "amount": 54000
+      },
+      {
+        "itemId": "coal",
+        "amount": 11000
+      }
+    ]
+  },
+  {
+    "id": "level-136-140",
+    "name": "Level 136-140",
+    "minLevel": 136,
+    "maxLevel": 140,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 58500
+      },
+      {
+        "itemId": "wood",
+        "amount": 58500
+      },
+      {
+        "itemId": "coal",
+        "amount": 12000
+      }
+    ]
+  },
+  {
+    "id": "level-141-145",
+    "name": "Level 141-145",
+    "minLevel": 141,
+    "maxLevel": 145,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 62500
+      },
+      {
+        "itemId": "wood",
+        "amount": 62500
+      },
+      {
+        "itemId": "coal",
+        "amount": 15000
+      }
+    ]
+  },
+  {
+    "id": "level-146-150",
+    "name": "Level 146-150",
+    "minLevel": 146,
+    "maxLevel": 150,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 64600
+      },
+      {
+        "itemId": "wood",
+        "amount": 64600
+      },
+      {
+        "itemId": "coal",
+        "amount": 34000
+      },
+      {
+        "itemId": "iron",
+        "amount": 6800
+      }
+    ]
+  },
+  {
+    "id": "level-151-155",
+    "name": "Level 151-155",
+    "minLevel": 151,
+    "maxLevel": 155,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 66500
+      },
+      {
+        "itemId": "wood",
+        "amount": 66500
+      },
+      {
+        "itemId": "coal",
+        "amount": 38000
+      },
+      {
+        "itemId": "iron",
+        "amount": 19000
+      }
+    ]
+  },
+  {
+    "id": "level-156-160",
+    "name": "Level 156-160",
+    "minLevel": 156,
+    "maxLevel": 160,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 73500
+      },
+      {
+        "itemId": "wood",
+        "amount": 73500
+      },
+      {
+        "itemId": "coal",
+        "amount": 42000
+      },
+      {
+        "itemId": "iron",
+        "amount": 21000
+      }
+    ]
+  },
+  {
+    "id": "level-161-165",
+    "name": "Level 161-165",
+    "minLevel": 161,
+    "maxLevel": 165,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 80500
+      },
+      {
+        "itemId": "wood",
+        "amount": 80500
+      },
+      {
+        "itemId": "coal",
+        "amount": 46000
+      },
+      {
+        "itemId": "iron",
+        "amount": 23000
+      }
+    ]
+  },
+  {
+    "id": "level-166-170",
+    "name": "Level 166-170",
+    "minLevel": 166,
+    "maxLevel": 170,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 87500
+      },
+      {
+        "itemId": "wood",
+        "amount": 87500
+      },
+      {
+        "itemId": "coal",
+        "amount": 50000
+      },
+      {
+        "itemId": "iron",
+        "amount": 25000
+      }
+    ]
+  },
+  {
+    "id": "level-171-175",
+    "name": "Level 171-175",
+    "minLevel": 171,
+    "maxLevel": 175,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 94500
+      },
+      {
+        "itemId": "wood",
+        "amount": 94500
+      },
+      {
+        "itemId": "coal",
+        "amount": 54000
+      },
+      {
+        "itemId": "iron",
+        "amount": 27000
+      }
+    ]
+  },
+  {
+    "id": "level-176-180",
+    "name": "Level 176-180",
+    "minLevel": 176,
+    "maxLevel": 180,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 101500
+      },
+      {
+        "itemId": "wood",
+        "amount": 101500
+      },
+      {
+        "itemId": "coal",
+        "amount": 58000
+      },
+      {
+        "itemId": "iron",
+        "amount": 29000
+      }
+    ]
+  },
+  {
+    "id": "level-181-185",
+    "name": "Level 181-185",
+    "minLevel": 181,
+    "maxLevel": 185,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 108500
+      },
+      {
+        "itemId": "wood",
+        "amount": 108500
+      },
+      {
+        "itemId": "coal",
+        "amount": 62000
+      },
+      {
+        "itemId": "iron",
+        "amount": 31000
+      }
+    ]
+  },
+  {
+    "id": "level-186-190",
+    "name": "Level 186-190",
+    "minLevel": 186,
+    "maxLevel": 190,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 115500
+      },
+      {
+        "itemId": "wood",
+        "amount": 115500
+      },
+      {
+        "itemId": "coal",
+        "amount": 66000
+      },
+      {
+        "itemId": "iron",
+        "amount": 33000
+      }
+    ]
+  },
+  {
+    "id": "level-191-195",
+    "name": "Level 191-195",
+    "minLevel": 191,
+    "maxLevel": 195,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 122500
+      },
+      {
+        "itemId": "wood",
+        "amount": 122500
+      },
+      {
+        "itemId": "coal",
+        "amount": 70000
+      },
+      {
+        "itemId": "iron",
+        "amount": 35000
+      }
+    ]
+  },
+  {
+    "id": "level-196-200",
+    "name": "Level 196-200",
+    "minLevel": 196,
+    "maxLevel": 200,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 129500
+      },
+      {
+        "itemId": "wood",
+        "amount": 129500
+      },
+      {
+        "itemId": "iron",
+        "amount": 74000
+      },
+      {
+        "itemId": "coal",
+        "amount": 37000
+      }
+    ]
+  },
+  {
+    "id": "level-201-205",
+    "name": "Level 201-205",
+    "minLevel": 201,
+    "maxLevel": 205,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 136500
+      },
+      {
+        "itemId": "wood",
+        "amount": 136500
+      },
+      {
+        "itemId": "coal",
+        "amount": 78000
+      },
+      {
+        "itemId": "iron",
+        "amount": 39000
+      }
+    ]
+  },
+  {
+    "id": "level-206-210",
+    "name": "Level 206-210",
+    "minLevel": 206,
+    "maxLevel": 210,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 135300
+      },
+      {
+        "itemId": "wood",
+        "amount": 135300
+      },
+      {
+        "itemId": "coal",
+        "amount": 90200
+      },
+      {
+        "itemId": "iron",
+        "amount": 49200
+      }
+    ]
+  },
+  {
+    "id": "level-211-225",
+    "name": "Level 211-225",
+    "minLevel": 211,
+    "maxLevel": 225,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 151800
+      },
+      {
+        "itemId": "wood",
+        "amount": 151800
+      },
+      {
+        "itemId": "coal",
+        "amount": 101200
+      },
+      {
+        "itemId": "iron",
+        "amount": 55200
+      }
+    ]
+  },
+  {
+    "id": "level-226-235",
+    "name": "Level 226-235",
+    "minLevel": 226,
+    "maxLevel": 235,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 168300
+      },
+      {
+        "itemId": "wood",
+        "amount": 168300
+      },
+      {
+        "itemId": "coal",
+        "amount": 112200
+      },
+      {
+        "itemId": "iron",
+        "amount": 61200
+      }
+    ]
+  },
+  {
+    "id": "level-236-245",
+    "name": "Level 236-245",
+    "minLevel": 236,
+    "maxLevel": 245,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 184800
+      },
+      {
+        "itemId": "wood",
+        "amount": 184800
+      },
+      {
+        "itemId": "coal",
+        "amount": 123000
+      },
+      {
+        "itemId": "iron",
+        "amount": 67000
+      }
+    ]
+  },
+  {
+    "id": "level-246-255",
+    "name": "Level 246-255",
+    "minLevel": 246,
+    "maxLevel": 255,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 201300
+      },
+      {
+        "itemId": "wood",
+        "amount": 201300
+      },
+      {
+        "itemId": "coal",
+        "amount": 134200
+      },
+      {
+        "itemId": "iron",
+        "amount": 73200
+      }
+    ]
+  },
+  {
+    "id": "level-256-265",
+    "name": "Level 256-265",
+    "minLevel": 256,
+    "maxLevel": 265,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 217800
+      },
+      {
+        "itemId": "wood",
+        "amount": 217800
+      },
+      {
+        "itemId": "coal",
+        "amount": 145200
+      },
+      {
+        "itemId": "iron",
+        "amount": 79200
+      }
+    ]
+  },
+  {
+    "id": "level-266-275",
+    "name": "Level 266-275",
+    "minLevel": 266,
+    "maxLevel": 275,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 234300
+      },
+      {
+        "itemId": "wood",
+        "amount": 234300
+      },
+      {
+        "itemId": "coal",
+        "amount": 156200
+      },
+      {
+        "itemId": "iron",
+        "amount": 85200
+      }
+    ]
+  },
+  {
+    "id": "level-276-285",
+    "name": "Level 276-285",
+    "minLevel": 276,
+    "maxLevel": 285,
+    "cost": [
+      {
+        "itemId": "meat",
+        "amount": 250800
+      },
+      {
+        "itemId": "wood",
+        "amount": 250800
+      },
+      {
+        "itemId": "coal",
+        "amount": 167200
+      },
+      {
+        "itemId": "iron",
+        "amount": 91200
+      }
+    ]
+  }
+]

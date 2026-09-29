@@ -26,6 +26,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Added the T12 troop tech that wasn't yet published anywhere else: the Exalted capstone unlocking
   each troop's advanced research, plus the Molten II and Molten III item tiers, gated in the right
   in-game order.
+- `allianceBanner()`: the Alliance Territory banner's build-cost table, 37 level ranges from 0-10 up
+  to 276-285.
 
 ### Fixed
 

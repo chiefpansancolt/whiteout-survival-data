@@ -453,6 +453,29 @@ independently verifiable from the source.
 
 ---
 
+### 🚩 Alliance
+
+| Module         | Factory            | Items | Description                                                     |
+| -------------- | ------------------ | ----- | --------------------------------------------------------------- |
+| allianceBanner | `allianceBanner()` | 37    | The Alliance Territory banner's build-cost table by level range |
+
+Sourced from `https://www.whiteoutsurvival.wiki/territory/alliance-territory/`. Unlike every prior
+module, this page has no per-level table — banners are built and leveled up within level _ranges_
+(e.g. Levels 11-15 all cost the same to build), so `AllianceBannerLevel` stores
+`minLevel`/`maxLevel` instead of a single `level`. Use `allianceBanner().atLevel(n)` to find the
+range a given banner level falls into.
+
+Meat and Wood are always required in equal amounts; Coal is added starting at Level 121-130, and
+Iron at Level 146-150. The wiki's Level 51-60 row lists the Meat icon twice instead of Meat then
+Wood — the amounts are already equal either way, but the itemId is corrected to `wood` for the
+second entry rather than trusted literally.
+
+This module lives at `@/modules/alliance/territory`, nested under an `alliance/` folder rather than
+flat like every other module — the first of what will be a small family of Alliance-specific
+modules.
+
+---
+
 ## 📋 Raw Data Access
 
 JSON data files can be imported directly, without importing the JS/TS package:

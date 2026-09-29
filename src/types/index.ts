@@ -10,3 +10,4 @@ export * from './chief-gear';
 export * from './chief-charm';
 export * from './research';
 export * from './hero-gear';
+export * from './alliance-territory';
