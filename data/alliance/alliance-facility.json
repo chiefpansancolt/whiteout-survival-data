@@ -1,0 +1,64 @@
+[
+  {
+    "id": "construction",
+    "name": "Construction",
+    "bonusStat": "Construction Speed",
+    "levels": [
+      { "level": 1, "boosterPercent": 5, "heavilyInjuredPercent": 10, "lossesPercent": 0 },
+      { "level": 3, "boosterPercent": 8, "heavilyInjuredPercent": 20, "lossesPercent": 0 }
+    ]
+  },
+  {
+    "id": "defense",
+    "name": "Defense",
+    "bonusStat": "Troop Defense Boost",
+    "levels": [
+      { "level": 2, "boosterPercent": 5, "heavilyInjuredPercent": 20, "lossesPercent": 0 },
+      { "level": 4, "boosterPercent": 8, "heavilyInjuredPercent": 30, "lossesPercent": 10 }
+    ]
+  },
+  {
+    "id": "expedition",
+    "name": "Expedition",
+    "bonusStat": "Marching Speed",
+    "levels": [
+      { "level": 3, "boosterPercent": 15, "heavilyInjuredPercent": 30, "lossesPercent": 10 }
+    ]
+  },
+  {
+    "id": "gathering",
+    "name": "Gathering",
+    "bonusStat": "Resources Gathering Speed",
+    "levels": [{ "level": 1, "boosterPercent": 5, "heavilyInjuredPercent": 10, "lossesPercent": 0 }]
+  },
+  {
+    "id": "production",
+    "name": "Production",
+    "bonusStat": "Resources Production Speed",
+    "levels": [{ "level": 1, "boosterPercent": 5, "heavilyInjuredPercent": 10, "lossesPercent": 0 }]
+  },
+  {
+    "id": "tech",
+    "name": "Tech",
+    "bonusStat": "Research Speed",
+    "levels": [
+      { "level": 1, "boosterPercent": 5, "heavilyInjuredPercent": 10, "lossesPercent": 0 },
+      { "level": 3, "boosterPercent": 8, "heavilyInjuredPercent": 30, "lossesPercent": 10 }
+    ]
+  },
+  {
+    "id": "training",
+    "name": "Training",
+    "bonusStat": "Training Troops Speed",
+    "levels": [{ "level": 2, "boosterPercent": 5, "heavilyInjuredPercent": 20, "lossesPercent": 0 }]
+  },
+  {
+    "id": "weapons",
+    "name": "Weapons",
+    "bonusStat": "Troop Attack Boost",
+    "levels": [
+      { "level": 2, "boosterPercent": 5, "heavilyInjuredPercent": 20, "lossesPercent": 0 },
+      { "level": 4, "boosterPercent": 8, "heavilyInjuredPercent": 30, "lossesPercent": 10 }
+    ]
+  }
+]

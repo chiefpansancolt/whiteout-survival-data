@@ -12,3 +12,5 @@ export * from './research';
 export * from './hero-gear';
 export * from './alliance-territory';
 export * from './alliance-tech';
+export * from './alliance-facility';
+export * from './event-buff';

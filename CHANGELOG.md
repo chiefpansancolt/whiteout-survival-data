@@ -30,6 +30,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   to 276-285.
 - `allianceTech()`: the full Alliance Technology tree, 59 tech lines across Growth, Territory, and
   Battle.
+- `allianceFacility()`: the 8 map-based Alliance Facility types and their per-level bonuses. Sourced
+  from a user-provided screenshot rather than the wiki, which has no structured data for this page
+  at all.
+- `eventBuff()`: which of 11 buff sources (Pet Skills, President Skills, Facility Buff, etc.) apply
+  in each of 14 game modes, sourced from a user-provided screenshot rather than any wiki page.
 
 ### Fixed
 

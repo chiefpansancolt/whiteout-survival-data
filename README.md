@@ -455,12 +455,13 @@ independently verifiable from the source.
 
 ### 🚩 Alliance
 
-| Module         | Factory            | Items | Description                                                        |
-| -------------- | ------------------ | ----- | ------------------------------------------------------------------ |
-| allianceBanner | `allianceBanner()` | 37    | The Alliance Territory banner's build-cost table by level range    |
-| allianceTech   | `allianceTech()`   | 59    | The full Alliance Technology tree across Growth, Territory, Battle |
+| Module           | Factory              | Items | Description                                                         |
+| ---------------- | -------------------- | ----- | ------------------------------------------------------------------- |
+| allianceBanner   | `allianceBanner()`   | 37    | The Alliance Territory banner's build-cost table by level range     |
+| allianceTech     | `allianceTech()`     | 59    | The full Alliance Technology tree across Growth, Territory, Battle  |
+| allianceFacility | `allianceFacility()` | 8     | The 8 map-based Alliance Facility types and their per-level bonuses |
 
-Both modules live nested under `@/modules/alliance/` rather than flat like every other module.
+All three modules live nested under `@/modules/alliance/` rather than flat like every other module.
 
 `allianceBanner()` is sourced from
 `https://www.whiteoutsurvival.wiki/territory/alliance-territory/`. Unlike every prior module, this
@@ -497,6 +498,44 @@ pages) correctly leave their own Levels 4-5 with no prerequisite, so Marksman At
 to match. Tundra Surveying's sole prerequisite is "Alliance Regimentation II" with no level number
 at all (every other cross-reference on the site includes one) — inferred as Level 5, the full
 completion of that 5-level line, matching Tundra Surveying's role as a one-off unlock gate.
+
+`allianceFacility()` covers the wiki page
+`https://www.whiteoutsurvival.wiki/alliance-facility/facility/`, which — unlike every other page
+this package sources from — has **no structured data at all**: no facility types, no table, none of
+this wiki's usual `#table table` markup, just prose about capture mechanics (30-minute capture,
+3-day control, stacking rules, a 12-facility cap). The 8 facility types and their per-level bonuses
+(`AllianceFacility.levels`) are transcribed instead from a user-provided screenshot of the in-game
+map info, which itself only documents some levels per facility (e.g. `defense` has Levels 2 and 4,
+`gathering` has only Level 1) — those are left as genuine gaps rather than guessed at, the same
+judgment call as Pets' Frost Gorilla/Frostscale Chameleon image gap.
+
+---
+
+### 🎯 Event Buffs
+
+| Module    | Factory       | Items | Description                                                    |
+| --------- | ------------- | ----- | -------------------------------------------------------------- |
+| eventBuff | `eventBuff()` | 14    | Which of 11 buff sources apply in each of 14 game modes/events |
+
+Sourced from a user-provided "Applicable Buff List" screenshot (not from any wiki page) — an
+11-column × 14-row matrix crossing buff sources (City Bonus/Wars Buffs, Deployment Capacity, Pet
+Skills, Daybreak Island, President Skills, Minister Buff, Territory Bonuses, Facility Buff, March
+Accelerator, Frostdragon Tyrant Titles, Frost Sphere Domain Bonus) against game modes (Bear Hunt,
+Crazy Joe, Alliance Championship, Foundry Battle, Canyon Clash, Fortress Battle, Facility, Castle
+Battle, Tundra Trade Route, Frostfire Mine, Frostdragon Tyrant, Tundra Arms League, Icefire Warhymn
+League, Winter Siege). Deliberately not nested under `alliance/`, since most of these buff sources
+(Pet Skills, President Skills, Frostdragon Tyrant, Frost Sphere) belong to other systems entirely.
+
+Each `EventBuff` field is a `BuffApplicability` (`'yes' | 'no' | 'partial'`) rather than a plain
+boolean — several cells in the source image show a warning icon (e.g. "March Accelerator: not
+applicable for rally") rather than a clean check or X, so `'partial'` preserves that distinction
+instead of forcing it to one side. `notes` carries the source image's footnote text verbatim where
+present, and is `undefined` for modes with no caveats (e.g. Crazy Joe). Use
+`eventBuff().appliesFor('facilityBuff')` (defaults to `'yes'`) to filter by any one buff source.
+
+Pet Skills, Daybreak Island, and Facility Buff are the only three sources that apply in literally
+every tracked mode, including the two PvP league modes (Icefire Warhymn League, Winter Siege) that
+deny almost everything else.
 
 ---
 

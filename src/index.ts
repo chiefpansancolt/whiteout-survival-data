@@ -14,3 +14,5 @@ export * from './modules/hero-gear-empowerment';
 export * from './modules/hero-gear-mastery-forging';
 export * from './modules/alliance/territory';
 export * from './modules/alliance/tech';
+export * from './modules/alliance/facility';
+export * from './modules/event-buff';
