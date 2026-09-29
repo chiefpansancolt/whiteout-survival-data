@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/hero-gear-mastery-forging.json';
+import data from '@/data/chief/hero-gear-mastery-forging.json';
 import { HeroGearMasteryForgingLevel } from '@/types';
 
 const heroGearMasteryForgingData: HeroGearMasteryForgingLevel[] =

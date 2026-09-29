@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/heroes.json';
+import data from '@/data/chief/heroes.json';
 import { Hero, HeroClass, HeroRarity } from '@/types';
 
 const heroData: Hero[] = data as Hero[];

@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/alliance-tech.json';
+import data from '@/data/alliance/alliance-tech.json';
 import { AllianceTechCategory, AllianceTechNode } from '@/types';
 
 const allianceTechData: AllianceTechNode[] = data as AllianceTechNode[];

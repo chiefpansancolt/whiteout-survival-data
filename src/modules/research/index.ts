@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/research.json';
+import data from '@/data/chief/research.json';
 import { ResearchCategory, ResearchNode } from '@/types';
 
 const researchData: ResearchNode[] = data as ResearchNode[];

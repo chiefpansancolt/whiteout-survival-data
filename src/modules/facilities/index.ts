@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/facilities.json';
+import data from '@/data/chief/facilities.json';
 import { Facility } from '@/types';
 
 const facilityData: Facility[] = data as Facility[];

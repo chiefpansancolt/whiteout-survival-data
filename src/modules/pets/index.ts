@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/pets.json';
+import data from '@/data/chief/pets.json';
 import { Pet, PetRarity } from '@/types';
 
 const petData: Pet[] = data as Pet[];

@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/chief-charm-levels.json';
+import data from '@/data/chief/charm-levels.json';
 import { ChiefCharmLevel } from '@/types';
 
 const chiefCharmLevelData: ChiefCharmLevel[] = data as ChiefCharmLevel[];

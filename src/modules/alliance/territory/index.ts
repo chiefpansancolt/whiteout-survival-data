@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/alliance-territory.json';
+import data from '@/data/alliance/alliance-territory.json';
 import { AllianceBannerLevel } from '@/types';
 
 const allianceBannerData: AllianceBannerLevel[] = data as AllianceBannerLevel[];

@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/hero-gear-empowerment.json';
+import data from '@/data/chief/hero-gear-empowerment.json';
 import { HeroGearEmpowermentLevel } from '@/types';
 
 const heroGearEmpowermentData: HeroGearEmpowermentLevel[] = data as HeroGearEmpowermentLevel[];

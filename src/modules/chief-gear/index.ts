@@ -1,6 +1,6 @@
 import { QueryBase } from '@/common/query-base';
-import levelData from '@/data/chief-gear-levels.json';
-import slotData from '@/data/chief-gear-slots.json';
+import levelData from '@/data/chief/gear-levels.json';
+import slotData from '@/data/chief/gear-slots.json';
 import { ChiefGearLevel, ChiefGearSlot, ChiefGearTroopType } from '@/types';
 
 const chiefGearSlotData: ChiefGearSlot[] = slotData as ChiefGearSlot[];

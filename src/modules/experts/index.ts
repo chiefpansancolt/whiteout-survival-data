@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/experts.json';
+import data from '@/data/chief/experts.json';
 import { Expert } from '@/types';
 
 const expertData: Expert[] = data as Expert[];

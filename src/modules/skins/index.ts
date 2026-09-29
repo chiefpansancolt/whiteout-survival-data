@@ -1,5 +1,5 @@
 import { QueryBase } from '@/common/query-base';
-import data from '@/data/skins.json';
+import data from '@/data/chief/skins.json';
 import { Skin, SkinType } from '@/types';
 
 const skinData: Skin[] = data as Skin[];

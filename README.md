@@ -505,7 +505,7 @@ completion of that 5-level line, matching Tundra Surveying's role as a one-off u
 JSON data files can be imported directly, without importing the JS/TS package:
 
 ```ts
-import buildings from "whiteout-survival-data/data/buildings.json";
+import buildings from "whiteout-survival-data/data/chief/buildings.json";
 ```
 
 ---
