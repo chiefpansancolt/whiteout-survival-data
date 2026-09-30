@@ -9607,26 +9607,26 @@
       {
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
-        "total": 30,
-        "power": 23910
+        "total": 10,
+        "power": 8120
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 55790
+        "power": 40599
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 147446
+        "power": 133975
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 386547
+        "power": 377567
       },
       {
         "star": 5,

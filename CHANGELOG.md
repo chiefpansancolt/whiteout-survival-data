@@ -52,11 +52,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   every skill and Special-item image is now named `<Hero>-<SkillName>.<ext>` instead of the source's
   opaque numeric filenames, for all 65 heroes. Confirmed Molly's and Zinman's `shardCosts[].power`
   (6,496/32,479/107,180/302,054/691,800 for Stars 1-5), the same cumulative shard-weighted
-  distribution used for Rare and Epic. Jeronimo is a confirmed individual exception on two fronts:
-  his `levels[].power` uses its own start value (6,250, not Gen 1's shared 5,000), reaching 233,250
-  at Level 80 instead of 186,600; and his `shardCosts[].power`
-  (23,910/55,790/147,446/386,547/864,750) is weighted over his own 1,085 total shards (his confirmed
-  Star 1 exception adds 20 more than the standard 1,065). Confirmed Natalia's `shardCosts[].power`
+  distribution used for Rare and Epic. Jeronimo's `levels[].power` uses its own start value (6,250,
+  not Gen 1's shared 5,000), reaching 233,250 at Level 80 instead of 186,600; his
+  `shardCosts[].power` (8,120/40,599/133,975/377,567/864,750) uses the same standard cumulative
+  distribution over 1,065 shards as every other hero. Confirmed Natalia's `shardCosts[].power`
   (7,145/35,727/117,898/332,259/760,980), the standard cumulative distribution over 1,065 shards.
   Confirmed the same for every Generation 2-4 hero: Generation 2's max-star Power is 830,160
   (7,795/38,975/128,616/362,464/830,160), Generation 3's is 1,037,700
@@ -116,6 +115,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   points at the correct node.
 - Fixed Jessie's Star 1 shard `total` (was `50`, but her `tierCosts` sum to `10` like every other
   hero).
+- Fixed Jeronimo's Star 1 shard `total` (was `30`, but his `tierCosts` sum to `10` like every other
+  hero), and recomputed his `shardCosts[].power` over the standard 1,065-shard total instead of the
+  1,085 the incorrect total had implied.
 - Fixed Furnace's 50 Fire Crystal level `power` values, which had been rounded to the nearest
   100,000 (sourced from wostools rather than the wiki's own dedicated Fire Crystal Furnace page,
   which spells out the exact figures). Cross-checked every other Fire Crystal building (Embassy,

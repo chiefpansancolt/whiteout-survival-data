@@ -10343,8 +10343,8 @@
           2,
           2
         ],
-        "total": 30,
-        "power": 23910
+        "total": 10,
+        "power": 8120
       },
       {
         "star": 2,
@@ -10357,7 +10357,7 @@
           15
         ],
         "total": 40,
-        "power": 55790
+        "power": 40599
       },
       {
         "star": 3,
@@ -10370,7 +10370,7 @@
           40
         ],
         "total": 115,
-        "power": 147446
+        "power": 133975
       },
       {
         "star": 4,
@@ -10383,7 +10383,7 @@
           100
         ],
         "total": 300,
-        "power": 386547
+        "power": 377567
       },
       {
         "star": 5,
@@ -53490,6 +53490,13 @@
     return skill.levels[skill.levels.length - 1].powerGain;
   }
 
+  function totalManuals(skills) {
+    return skills.reduce(
+      (sum, skill) => sum + skill.levels.reduce((s, l) => s + l.manualsRequired, 0),
+      0,
+    );
+  }
+
   function maxLevelPower(hero) {
     return hero.levels[hero.levels.length - 1].power;
   }
@@ -53541,6 +53548,11 @@
       ? `<div class="section"><h3>Talent</h3>${skillBlock(hero.skills.talent)}</div>`
       : '';
 
+    const explorationManuals = totalManuals(hero.skills.exploration);
+    const expeditionManuals = totalManuals(hero.skills.expedition);
+    const talentManuals = hero.skills.talent ? totalManuals([hero.skills.talent]) : 0;
+    const totalManualsRequired = explorationManuals + expeditionManuals + talentManuals;
+
     el.innerHTML = `
       <div class="detail-header">
         <div class="detail-header-left">
@@ -53580,6 +53592,16 @@
         <div class="stat-grid">
           <div class="stat-box"><div class="stat-label">Attack</div><div class="stat-value">${hero.stats.expedition.attack}%</div></div>
           <div class="stat-box"><div class="stat-label">Defense</div><div class="stat-value">${hero.stats.expedition.defense}%</div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Manuals Required</h3>
+        <div class="stat-grid">
+          <div class="stat-box"><div class="stat-label">Exploration Manuals</div><div class="stat-value">${fmt(explorationManuals)}</div></div>
+          <div class="stat-box"><div class="stat-label">Expedition Manuals</div><div class="stat-value">${fmt(expeditionManuals)}</div></div>
+          ${hero.skills.talent ? `<div class="stat-box"><div class="stat-label">Talent Manuals</div><div class="stat-value">${fmt(talentManuals)}</div></div>` : ''}
+          <div class="stat-box"><div class="stat-label">Total Manuals</div><div class="stat-value">${fmt(totalManualsRequired)}</div></div>
         </div>
       </div>
 

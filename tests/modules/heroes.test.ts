@@ -58,21 +58,13 @@ describe('Generation 0 heroes', () => {
     expect(smith.shardCosts[4].total).toBe(600);
   });
 
-  it('every shard tier total matches the sum of its own tierCosts, except the confirmed Jeronimo Star 1 exception', () => {
+  it('every shard tier total matches the sum of its own tierCosts', () => {
     heroes()
       .get()
       .forEach((h) => {
         h.shardCosts.forEach((tier) => {
           const tierCostSum = tier.tierCosts.reduce((sum, cost) => sum + cost, 0);
-          if (h.id === 'jeronimo' && tier.star === 1) {
-            // Jeronimo's Star 1 costs 30 total shards despite the tier costs only summing to
-            // 10 -- confirmed on his own wiki page, not a transcription error. Every other
-            // Legendary hero's Star 1 total matches its tier costs like Rare/Epic.
-            expect(tier.total).toBe(30);
-            expect(tierCostSum).toBe(10);
-          } else {
-            expect(tier.total).toBe(tierCostSum);
-          }
+          expect(tier.total).toBe(tierCostSum);
         });
       });
   });
@@ -117,10 +109,8 @@ describe('Generation 0 heroes', () => {
     });
   });
 
-  it('accumulates Jeronimo shard tier power, weighted by his own Star 1 exception, up to the confirmed 864,750 at max star', () => {
-    // Jeronimo's own tier costs sum to 30/40/115/300/600 (Star 1's confirmed 30-shard exception),
-    // so the weighting denominator is 1,085, not the standard 1,065.
-    const cumulativePowerByStar = { 1: 23910, 2: 55790, 3: 147446, 4: 386547, 5: 864750 };
+  it('accumulates Jeronimo shard tier power, weighted by shard count, up to the confirmed 864,750 at max star', () => {
+    const cumulativePowerByStar = { 1: 8120, 2: 40599, 3: 133975, 4: 377567, 5: 864750 };
     const jeronimo = heroes().findByName('Jeronimo')!;
     jeronimo.shardCosts.forEach((tier) => {
       expect(tier.power).toBe(
@@ -446,8 +436,8 @@ describe('Generation 1-17 heroes (Legendary)', () => {
     expect(jeronimo.shardCosts[0]).toEqual({
       star: 1,
       tierCosts: [1, 1, 2, 2, 2, 2],
-      total: 30,
-      power: 23910,
+      total: 10,
+      power: 8120,
     });
     expect(jeronimo.shardCosts[4].total).toBe(600);
     expect(jeronimo.shardCosts[4].power).toBe(864750);

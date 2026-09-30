@@ -243,16 +243,13 @@ once the Special item reaches `unlockLevel` (most state this on the wiki as a "(
 handful of newer heroes' pages omit it, so `unlockLevel` is left unset rather than guessed).
 
 `shardCosts` is a 5-star × 6-tier cost table present on every hero; the per-tier costs are identical
-across rarities, and so are the Total column values — **except Jeronimo's Star 1**, a confirmed
-exception at 30 total shards despite his own tier costs summing to only 10, exactly like Snow
-Castle's Life Essence exception in Daybreak Island. Each star tier also carries a `power` field —
-the total Power accumulated once that star is reached, not the increment gained at that tier alone.
-Confirmed for Rare and Epic, and for every Legendary hero through Generation 4: the source only
-states the total Power at max star, so each tier's `power` is that total distributed cumulatively by
-its share of the shards needed to reach max star, on the assumption that every shard contributes
-equally. Molly, Zinman, Natalia, and every Generation 2–4 hero split evenly over the standard 1,065
-shards; **Jeronimo's split uses his own 1,085** instead (his Star 1 exception adds 20 more). Stars
-1–5, cumulative:
+across rarities, and so are the Total column values, which always match the sum of that tier's own
+costs. Each star tier also carries a `power` field — the total Power accumulated once that star is
+reached, not the increment gained at that tier alone. Confirmed for Rare and Epic, and for every
+Legendary hero through Generation 4: the source only states the total Power at max star, so each
+tier's `power` is that total distributed cumulatively by its share of the shards needed to reach max
+star (the standard 1,065 total), on the assumption that every shard contributes equally. Stars 1–5,
+cumulative:
 
 | Rarity / Hero  | Star 1 | Star 2 | Star 3  | Star 4  | Star 5 (max) |
 | -------------- | ------ | ------ | ------- | ------- | ------------ |
@@ -260,7 +257,7 @@ shards; **Jeronimo's split uses his own 1,085** instead (his Star 1 exception ad
 | Epic           | 5,197  | 25,983 | 85,744  | 241,643 | 553,440      |
 | Molly / Zinman | 6,496  | 32,479 | 107,180 | 302,054 | 691,800      |
 | Natalia        | 7,145  | 35,727 | 117,898 | 332,259 | 760,980      |
-| Jeronimo       | 23,910 | 55,790 | 147,446 | 386,547 | 864,750      |
+| Jeronimo       | 8,120  | 40,599 | 133,975 | 377,567 | 864,750      |
 | Generation 2   | 7,795  | 38,975 | 128,616 | 362,464 | 830,160      |
 | Generation 3   | 9,744  | 48,718 | 160,770 | 453,080 | 1,037,700    |
 | Generation 4   | 12,017 | 60,086 | 198,284 | 558,799 | 1,279,830    |
