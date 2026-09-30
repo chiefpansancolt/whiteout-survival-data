@@ -220,11 +220,26 @@ across rarities, and so are the Total column values — **except Jeronimo's Star
 exception at 30 total shards despite his own tier costs summing to only 10, exactly like Snow
 Castle's Life Essence exception in Daybreak Island. Each star tier also carries a `power` field —
 the total Power accumulated once that star is reached, not the increment gained at that tier alone.
-It's `0` on every Legendary hero pending real values, but confirmed for both Rare and Epic: the
-source only states the total Power at max star (449,670 for Rare, 553,440 for Epic), so each tier's
-`power` is that total distributed cumulatively by its share of the 1,065 shards needed to reach max
-star (Rare: 4,222 / 21,111 / 69,667 / 196,335 / 449,670 — Epic: 5,197 / 25,983 / 85,744 / 241,643 /
-553,440 — for Stars 1–5), on the assumption that every shard contributes equally.
+Confirmed for Rare and Epic, and for every Legendary hero through Generation 4: the source only
+states the total Power at max star, so each tier's `power` is that total distributed cumulatively by
+its share of the shards needed to reach max star, on the assumption that every shard contributes
+equally. Molly, Zinman, Natalia, and every Generation 2–4 hero split evenly over the standard 1,065
+shards; **Jeronimo's split uses his own 1,085** instead (his Star 1 exception adds 20 more). Stars
+1–5, cumulative:
+
+| Rarity / Hero  | Star 1 | Star 2 | Star 3  | Star 4  | Star 5 (max) |
+| -------------- | ------ | ------ | ------- | ------- | ------------ |
+| Rare           | 4,222  | 21,111 | 69,667  | 196,335 | 449,670      |
+| Epic           | 5,197  | 25,983 | 85,744  | 241,643 | 553,440      |
+| Molly / Zinman | 6,496  | 32,479 | 107,180 | 302,054 | 691,800      |
+| Natalia        | 7,145  | 35,727 | 117,898 | 332,259 | 760,980      |
+| Jeronimo       | 23,910 | 55,790 | 147,446 | 386,547 | 864,750      |
+| Generation 2   | 7,795  | 38,975 | 128,616 | 362,464 | 830,160      |
+| Generation 3   | 9,744  | 48,718 | 160,770 | 453,080 | 1,037,700    |
+| Generation 4   | 12,017 | 60,086 | 198,284 | 558,799 | 1,279,830    |
+
+Legendary Generations 5–17 have no confirmed max-star Power yet, so `power` stays a `0` placeholder
+for those heroes.
 
 `shardSources` lists where a hero's shards can be obtained (e.g. `["VIP Packs"]`,
 `["Hall of Heroes", "Daily Deals"]`) — transcribed verbatim from each hero's own "Sources" section
@@ -246,7 +261,9 @@ jump at Level 80) is identical across all of them. This reproduces the spec's ch
 exactly for every rarity/generation it covers (e.g. Rare Level 10/40/80: 9,945 / 42,185 / 121,290;
 Legendary Gen 1: 15,300 / 64,900 / 186,600). Legendary Generations 6–17 have no confirmed start
 value yet, so `power` stays a `0` placeholder for those — the spec explicitly warns against
-extrapolating one.
+extrapolating one. **Jeronimo is a confirmed individual exception** to his own generation's shared
+value: his start is 6,250 (not Gen 1's 5,000), giving a Level 80 total of 233,250 instead of 186,600
+— everything else about the curve (the `base` array, the formula) is identical.
 
 Covers all 65 heroes released so far: **Generation 0** (13 pre-Legendary heroes: 4 Rare, 9 Epic) and
 **Legendary Generations 1–17** (52 heroes — Generation 1 has 4, since two of its heroes, Jeronimo

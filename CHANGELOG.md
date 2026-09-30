@@ -50,7 +50,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   yet sourced either. Reorganized `images/heroes/` into one folder per hero
   (`images/heroes/<Hero>/`), with the portrait alongside `skills/` and `weapons/` subfolders --
   every skill and Special-item image is now named `<Hero>-<SkillName>.<ext>` instead of the source's
-  opaque numeric filenames, for all 65 heroes.
+  opaque numeric filenames, for all 65 heroes. Confirmed Molly's and Zinman's `shardCosts[].power`
+  (6,496/32,479/107,180/302,054/691,800 for Stars 1-5), the same cumulative shard-weighted
+  distribution used for Rare and Epic. Jeronimo is a confirmed individual exception on two fronts:
+  his `levels[].power` uses its own start value (6,250, not Gen 1's shared 5,000), reaching 233,250
+  at Level 80 instead of 186,600; and his `shardCosts[].power`
+  (23,910/55,790/147,446/386,547/864,750) is weighted over his own 1,085 total shards (his confirmed
+  Star 1 exception adds 20 more than the standard 1,065). Confirmed Natalia's `shardCosts[].power`
+  (7,145/35,727/117,898/332,259/760,980), the standard cumulative distribution over 1,065 shards.
+  Confirmed the same for every Generation 2-4 hero: Generation 2's max-star Power is 830,160
+  (7,795/38,975/128,616/362,464/830,160), Generation 3's is 1,037,700
+  (9,744/48,718/160,770/453,080/1,037,700), and Generation 4's is 1,279,830
+  (12,017/60,086/198,284/558,799/1,279,830).
 - `experts()`: all 10 Dawn Academy Experts across 3 generations, with their skills and progression.
 - `pets()`: all 14 Beast Cage pets, with their skills, levels, and unlock chain.
 - `items()` and `skins()`: the full item catalog (226 items and 189 cosmetic skins).

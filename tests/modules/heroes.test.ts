@@ -77,15 +77,87 @@ describe('Generation 0 heroes', () => {
       });
   });
 
-  it('carries a power placeholder on every Legendary shard tier, pending real values', () => {
+  const CONFIRMED_LEGENDARY_STAR_POWER = [
+    'Molly',
+    'Zinman',
+    'Jeronimo',
+    'Natalia',
+    'Flint',
+    'Philly',
+    'Alonso',
+    'Logan',
+    'Mia',
+    'Greg',
+    'Ahmose',
+    'Reina',
+    'Lynn',
+  ];
+
+  it('carries a power placeholder on every Legendary shard tier, except the confirmed Generation 1-4 curves', () => {
     heroes()
       .get()
-      .filter((h) => h.rarity === 'Legendary')
+      .filter((h) => h.rarity === 'Legendary' && !CONFIRMED_LEGENDARY_STAR_POWER.includes(h.name))
       .forEach((h) => {
         h.shardCosts.forEach((tier) => {
           expect(tier.power).toBe(0);
         });
       });
+  });
+
+  it('accumulates Molly and Zinman shard tier power, weighted by shard count, up to the confirmed 691,800 at max star', () => {
+    const cumulativePowerByStar = { 1: 6496, 2: 32479, 3: 107180, 4: 302054, 5: 691800 };
+    ['Molly', 'Zinman'].forEach((name) => {
+      const h = heroes().findByName(name)!;
+      h.shardCosts.forEach((tier) => {
+        expect(tier.power).toBe(
+          cumulativePowerByStar[tier.star as keyof typeof cumulativePowerByStar],
+        );
+      });
+      expect(h.shardCosts[h.shardCosts.length - 1].power).toBe(691800);
+    });
+  });
+
+  it('accumulates Jeronimo shard tier power, weighted by his own Star 1 exception, up to the confirmed 864,750 at max star', () => {
+    // Jeronimo's own tier costs sum to 30/40/115/300/600 (Star 1's confirmed 30-shard exception),
+    // so the weighting denominator is 1,085, not the standard 1,065.
+    const cumulativePowerByStar = { 1: 23910, 2: 55790, 3: 147446, 4: 386547, 5: 864750 };
+    const jeronimo = heroes().findByName('Jeronimo')!;
+    jeronimo.shardCosts.forEach((tier) => {
+      expect(tier.power).toBe(
+        cumulativePowerByStar[tier.star as keyof typeof cumulativePowerByStar],
+      );
+    });
+    expect(jeronimo.shardCosts[jeronimo.shardCosts.length - 1].power).toBe(864750);
+  });
+
+  it('accumulates Natalia shard tier power, weighted by shard count, up to the confirmed 760,980 at max star', () => {
+    const cumulativePowerByStar = { 1: 7145, 2: 35727, 3: 117898, 4: 332259, 5: 760980 };
+    const natalia = heroes().findByName('Natalia')!;
+    natalia.shardCosts.forEach((tier) => {
+      expect(tier.power).toBe(
+        cumulativePowerByStar[tier.star as keyof typeof cumulativePowerByStar],
+      );
+    });
+    expect(natalia.shardCosts[natalia.shardCosts.length - 1].power).toBe(760980);
+  });
+
+  it('accumulates Generation 2-4 shard tier power, weighted by shard count, up to each generation’s confirmed max star', () => {
+    const cumulativePowerByGenAndStar: Record<number, Record<number, number>> = {
+      2: { 1: 7795, 2: 38975, 3: 128616, 4: 362464, 5: 830160 },
+      3: { 1: 9744, 2: 48718, 3: 160770, 4: 453080, 5: 1037700 },
+      4: { 1: 12017, 2: 60086, 3: 198284, 4: 558799, 5: 1279830 },
+    };
+    Object.entries(cumulativePowerByGenAndStar).forEach(([gen, cumulativePowerByStar]) => {
+      heroes()
+        .get()
+        .filter((h) => h.generation === Number(gen))
+        .forEach((h) => {
+          h.shardCosts.forEach((tier) => {
+            expect(tier.power).toBe(cumulativePowerByStar[tier.star]);
+          });
+          expect(h.shardCosts[h.shardCosts.length - 1].power).toBe(cumulativePowerByStar[5]);
+        });
+    });
   });
 
   it('accumulates Rare shard tier power, weighted by shard count, up to the confirmed 449,670 at max star', () => {
@@ -375,9 +447,10 @@ describe('Generation 1-17 heroes (Legendary)', () => {
       star: 1,
       tierCosts: [1, 1, 2, 2, 2, 2],
       total: 30,
-      power: 0,
+      power: 23910,
     });
     expect(jeronimo.shardCosts[4].total).toBe(600);
+    expect(jeronimo.shardCosts[4].power).toBe(864750);
   });
 
   it('omits unlockLevel on the handful of exclusive weapon skills whose wiki page states no "(Lv. N)" requirement', () => {
@@ -399,13 +472,21 @@ describe('Generation 1-17 heroes (Legendary)', () => {
     for (let gen = 1; gen <= 5; gen++) {
       heroes()
         .get()
-        .filter((h) => h.generation === gen)
+        .filter((h) => h.generation === gen && h.name !== 'Jeronimo')
         .forEach((h) => {
           expect(h.levels[79].power).toBe(maxPowerByGen[gen]);
           for (let i = 1; i < h.levels.length; i++) {
             expect(h.levels[i].power).toBeGreaterThan(h.levels[i - 1].power);
           }
         });
+    }
+
+    // Jeronimo is a confirmed exception to Generation 1's shared start value: his own Level 80
+    // total is 233,250 (start 6,250), not the shared Gen 1 total of 186,600 (start 5,000).
+    const jeronimo = heroes().findByName('Jeronimo')!;
+    expect(jeronimo.levels[79].power).toBe(233250);
+    for (let i = 1; i < jeronimo.levels.length; i++) {
+      expect(jeronimo.levels[i].power).toBeGreaterThan(jeronimo.levels[i - 1].power);
     }
     for (let gen = 6; gen <= 17; gen++) {
       heroes()

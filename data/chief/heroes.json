@@ -9608,31 +9608,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 30,
-        "power": 0
+        "power": 23910
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 55790
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 147446
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 386547
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 864750
       }
     ],
     "shardSources": ["VIP Packs"],
@@ -9641,481 +9641,481 @@
         "level": 1,
         "furnaceLevelRequired": 4,
         "xpRequired": 0,
-        "power": 5000
+        "power": 6250
       },
       {
         "level": 2,
         "furnaceLevelRequired": 4,
         "xpRequired": 480,
-        "power": 6100
+        "power": 7625
       },
       {
         "level": 3,
         "furnaceLevelRequired": 4,
         "xpRequired": 690,
-        "power": 7100
+        "power": 8875
       },
       {
         "level": 4,
         "furnaceLevelRequired": 4,
         "xpRequired": 920,
-        "power": 8200
+        "power": 10250
       },
       {
         "level": 5,
         "furnaceLevelRequired": 4,
         "xpRequired": 1200,
-        "power": 9400
+        "power": 11750
       },
       {
         "level": 6,
         "furnaceLevelRequired": 4,
         "xpRequired": 1500,
-        "power": 10500
+        "power": 13125
       },
       {
         "level": 7,
         "furnaceLevelRequired": 4,
         "xpRequired": 1800,
-        "power": 11700
+        "power": 14625
       },
       {
         "level": 8,
         "furnaceLevelRequired": 4,
         "xpRequired": 2200,
-        "power": 12900
+        "power": 16125
       },
       {
         "level": 9,
         "furnaceLevelRequired": 4,
         "xpRequired": 2600,
-        "power": 14100
+        "power": 17625
       },
       {
         "level": 10,
         "furnaceLevelRequired": 4,
         "xpRequired": 3100,
-        "power": 15300
+        "power": 19125
       },
       {
         "level": 11,
         "furnaceLevelRequired": 4,
         "xpRequired": 3800,
-        "power": 16600
+        "power": 20750
       },
       {
         "level": 12,
         "furnaceLevelRequired": 4,
         "xpRequired": 4200,
-        "power": 17900
+        "power": 22375
       },
       {
         "level": 13,
         "furnaceLevelRequired": 4,
         "xpRequired": 5100,
-        "power": 19200
+        "power": 24000
       },
       {
         "level": 14,
         "furnaceLevelRequired": 4,
         "xpRequired": 5700,
-        "power": 20500
+        "power": 25625
       },
       {
         "level": 15,
         "furnaceLevelRequired": 4,
         "xpRequired": 6800,
-        "power": 21800
+        "power": 27250
       },
       {
         "level": 16,
         "furnaceLevelRequired": 4,
         "xpRequired": 7800,
-        "power": 23200
+        "power": 29000
       },
       {
         "level": 17,
         "furnaceLevelRequired": 4,
         "xpRequired": 8900,
-        "power": 24600
+        "power": 30750
       },
       {
         "level": 18,
         "furnaceLevelRequired": 4,
         "xpRequired": 10000,
-        "power": 26100
+        "power": 32625
       },
       {
         "level": 19,
         "furnaceLevelRequired": 4,
         "xpRequired": 12000,
-        "power": 27500
+        "power": 34375
       },
       {
         "level": 20,
         "furnaceLevelRequired": 4,
         "xpRequired": 13000,
-        "power": 29000
+        "power": 36250
       },
       {
         "level": 21,
         "furnaceLevelRequired": 10,
         "xpRequired": 14000,
-        "power": 30500
+        "power": 38125
       },
       {
         "level": 22,
         "furnaceLevelRequired": 10,
         "xpRequired": 15000,
-        "power": 32000
+        "power": 40000
       },
       {
         "level": 23,
         "furnaceLevelRequired": 11,
         "xpRequired": 16000,
-        "power": 33600
+        "power": 42000
       },
       {
         "level": 24,
         "furnaceLevelRequired": 11,
         "xpRequired": 17000,
-        "power": 35200
+        "power": 44000
       },
       {
         "level": 25,
         "furnaceLevelRequired": 11,
         "xpRequired": 18000,
-        "power": 36800
+        "power": 46000
       },
       {
         "level": 26,
         "furnaceLevelRequired": 12,
         "xpRequired": 19000,
-        "power": 38500
+        "power": 48125
       },
       {
         "level": 27,
         "furnaceLevelRequired": 12,
         "xpRequired": 20000,
-        "power": 40200
+        "power": 50250
       },
       {
         "level": 28,
         "furnaceLevelRequired": 12,
         "xpRequired": 21000,
-        "power": 41900
+        "power": 52375
       },
       {
         "level": 29,
         "furnaceLevelRequired": 13,
         "xpRequired": 22000,
-        "power": 43600
+        "power": 54500
       },
       {
         "level": 30,
         "furnaceLevelRequired": 13,
         "xpRequired": 24000,
-        "power": 45400
+        "power": 56750
       },
       {
         "level": 31,
         "furnaceLevelRequired": 13,
         "xpRequired": 26000,
-        "power": 47200
+        "power": 59000
       },
       {
         "level": 32,
         "furnaceLevelRequired": 14,
         "xpRequired": 28000,
-        "power": 49000
+        "power": 61250
       },
       {
         "level": 33,
         "furnaceLevelRequired": 14,
         "xpRequired": 30000,
-        "power": 50900
+        "power": 63625
       },
       {
         "level": 34,
         "furnaceLevelRequired": 14,
         "xpRequired": 32000,
-        "power": 52800
+        "power": 66000
       },
       {
         "level": 35,
         "furnaceLevelRequired": 15,
         "xpRequired": 36000,
-        "power": 54700
+        "power": 68375
       },
       {
         "level": 36,
         "furnaceLevelRequired": 15,
         "xpRequired": 40000,
-        "power": 56700
+        "power": 70875
       },
       {
         "level": 37,
         "furnaceLevelRequired": 15,
         "xpRequired": 44000,
-        "power": 58700
+        "power": 73375
       },
       {
         "level": 38,
         "furnaceLevelRequired": 16,
         "xpRequired": 48000,
-        "power": 60700
+        "power": 75875
       },
       {
         "level": 39,
         "furnaceLevelRequired": 16,
         "xpRequired": 52000,
-        "power": 62800
+        "power": 78500
       },
       {
         "level": 40,
         "furnaceLevelRequired": 16,
         "xpRequired": 58000,
-        "power": 64900
+        "power": 81125
       },
       {
         "level": 41,
         "furnaceLevelRequired": 17,
         "xpRequired": 64000,
-        "power": 67000
+        "power": 83750
       },
       {
         "level": 42,
         "furnaceLevelRequired": 17,
         "xpRequired": 70000,
-        "power": 69200
+        "power": 86500
       },
       {
         "level": 43,
         "furnaceLevelRequired": 17,
         "xpRequired": 76000,
-        "power": 71400
+        "power": 89250
       },
       {
         "level": 44,
         "furnaceLevelRequired": 18,
         "xpRequired": 82000,
-        "power": 73600
+        "power": 92000
       },
       {
         "level": 45,
         "furnaceLevelRequired": 18,
         "xpRequired": 90000,
-        "power": 75900
+        "power": 94875
       },
       {
         "level": 46,
         "furnaceLevelRequired": 18,
         "xpRequired": 98000,
-        "power": 78200
+        "power": 97750
       },
       {
         "level": 47,
         "furnaceLevelRequired": 19,
         "xpRequired": 100000,
-        "power": 80600
+        "power": 100750
       },
       {
         "level": 48,
         "furnaceLevelRequired": 19,
         "xpRequired": 110000,
-        "power": 83000
+        "power": 103750
       },
       {
         "level": 49,
         "furnaceLevelRequired": 19,
         "xpRequired": 120000,
-        "power": 85400
+        "power": 106750
       },
       {
         "level": 50,
         "furnaceLevelRequired": 20,
         "xpRequired": 130000,
-        "power": 87900
+        "power": 109875
       },
       {
         "level": 51,
         "furnaceLevelRequired": 20,
         "xpRequired": 140000,
-        "power": 90500
+        "power": 113125
       },
       {
         "level": 52,
         "furnaceLevelRequired": 20,
         "xpRequired": 150000,
-        "power": 93000
+        "power": 116250
       },
       {
         "level": 53,
         "furnaceLevelRequired": 20,
         "xpRequired": 160000,
-        "power": 95600
+        "power": 119500
       },
       {
         "level": 54,
         "furnaceLevelRequired": 20,
         "xpRequired": 170000,
-        "power": 98300
+        "power": 122875
       },
       {
         "level": 55,
         "furnaceLevelRequired": 21,
         "xpRequired": 190000,
-        "power": 101000
+        "power": 126250
       },
       {
         "level": 56,
         "furnaceLevelRequired": 21,
         "xpRequired": 210000,
-        "power": 103700
+        "power": 129625
       },
       {
         "level": 57,
         "furnaceLevelRequired": 21,
         "xpRequired": 230000,
-        "power": 106500
+        "power": 133125
       },
       {
         "level": 58,
         "furnaceLevelRequired": 21,
         "xpRequired": 250000,
-        "power": 109300
+        "power": 136625
       },
       {
         "level": 59,
         "furnaceLevelRequired": 21,
         "xpRequired": 270000,
-        "power": 112200
+        "power": 140250
       },
       {
         "level": 60,
         "furnaceLevelRequired": 22,
         "xpRequired": 300000,
-        "power": 115100
+        "power": 143875
       },
       {
         "level": 61,
         "furnaceLevelRequired": 22,
         "xpRequired": 330000,
-        "power": 118100
+        "power": 147625
       },
       {
         "level": 62,
         "furnaceLevelRequired": 22,
         "xpRequired": 360000,
-        "power": 121100
+        "power": 151375
       },
       {
         "level": 63,
         "furnaceLevelRequired": 22,
         "xpRequired": 390000,
-        "power": 124200
+        "power": 155250
       },
       {
         "level": 64,
         "furnaceLevelRequired": 22,
         "xpRequired": 420000,
-        "power": 127300
+        "power": 159125
       },
       {
         "level": 65,
         "furnaceLevelRequired": 23,
         "xpRequired": 470000,
-        "power": 130400
+        "power": 163000
       },
       {
         "level": 66,
         "furnaceLevelRequired": 23,
         "xpRequired": 520000,
-        "power": 133700
+        "power": 167125
       },
       {
         "level": 67,
         "furnaceLevelRequired": 23,
         "xpRequired": 570000,
-        "power": 136900
+        "power": 171125
       },
       {
         "level": 68,
         "furnaceLevelRequired": 23,
         "xpRequired": 620000,
-        "power": 140200
+        "power": 175250
       },
       {
         "level": 69,
         "furnaceLevelRequired": 23,
         "xpRequired": 670000,
-        "power": 143600
+        "power": 179500
       },
       {
         "level": 70,
         "furnaceLevelRequired": 24,
         "xpRequired": 770000,
-        "power": 147000
+        "power": 183750
       },
       {
         "level": 71,
         "furnaceLevelRequired": 24,
         "xpRequired": 870000,
-        "power": 150500
+        "power": 188125
       },
       {
         "level": 72,
         "furnaceLevelRequired": 24,
         "xpRequired": 970000,
-        "power": 154000
+        "power": 192500
       },
       {
         "level": 73,
         "furnaceLevelRequired": 24,
         "xpRequired": 1000000,
-        "power": 157600
+        "power": 197000
       },
       {
         "level": 74,
         "furnaceLevelRequired": 24,
         "xpRequired": 1100000,
-        "power": 161300
+        "power": 201625
       },
       {
         "level": 75,
         "furnaceLevelRequired": 25,
         "xpRequired": 1300000,
-        "power": 165000
+        "power": 206250
       },
       {
         "level": 76,
         "furnaceLevelRequired": 25,
         "xpRequired": 1500000,
-        "power": 168700
+        "power": 210875
       },
       {
         "level": 77,
         "furnaceLevelRequired": 25,
         "xpRequired": 1700000,
-        "power": 172500
+        "power": 215625
       },
       {
         "level": 78,
         "furnaceLevelRequired": 25,
         "xpRequired": 1900000,
-        "power": 176400
+        "power": 220500
       },
       {
         "level": 79,
         "furnaceLevelRequired": 25,
         "xpRequired": 2100000,
-        "power": 180400
+        "power": 225500
       },
       {
         "level": 80,
         "furnaceLevelRequired": 26,
         "xpRequired": 2400000,
-        "power": 186600
+        "power": 233250
       }
     ]
   },
@@ -10438,31 +10438,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 7145
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 35727
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 117898
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 332259
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 760980
       }
     ],
     "shardSources": ["1st Purchase", "VIP Packs"],
@@ -11231,31 +11231,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 6496
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 32479
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 107180
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 302054
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 691800
       }
     ],
     "shardSources": [
@@ -12030,31 +12030,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 6496
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 32479
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 107180
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 302054
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 691800
       }
     ],
     "shardSources": ["Lucky Wheel", "Daily Deals", "Mythic General Hero Shard"],
@@ -12823,31 +12823,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 7795
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 38975
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 128616
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 362464
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 830160
       }
     ],
     "shardSources": ["Lucky Wheel"],
@@ -13616,31 +13616,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 7795
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 38975
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 128616
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 362464
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 830160
       }
     ],
     "shardSources": ["King of Icefield", "State of Power", "Daily Deals"],
@@ -14409,31 +14409,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 7795
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 38975
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 128616
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 362464
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 830160
       }
     ],
     "shardSources": ["Hall of Heroes", "Daily Deals"],
@@ -15202,31 +15202,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 9744
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 48718
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 160770
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 453080
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1037700
       }
     ],
     "shardSources": ["Hall of Heroes", "Daily Deals"],
@@ -15995,31 +15995,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 9744
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 48718
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 160770
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 453080
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1037700
       }
     ],
     "shardSources": ["Lucky Wheel", "Daily Deals"],
@@ -16788,31 +16788,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 9744
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 48718
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 160770
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 453080
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1037700
       }
     ],
     "shardSources": ["King of Icefield", "State of Power", "Daily Deals"],
@@ -17581,31 +17581,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 12017
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 60086
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 198284
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 558799
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1279830
       }
     ],
     "shardSources": ["King of Icefield", "State of Power", "Daily Deals"],
@@ -18374,31 +18374,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 12017
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 60086
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 198284
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 558799
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1279830
       }
     ],
     "shardSources": ["Hall of Heroes", "Daily Deals"],
@@ -19167,31 +19167,31 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0
+        "power": 12017
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0
+        "power": 60086
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0
+        "power": 198284
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 558799
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1279830
       }
     ],
     "shardSources": ["Lucky Wheel"],
