@@ -13,8 +13,8 @@ describe('FacilityQuery', () => {
     expect(new FacilityQuery().count()).toBeGreaterThan(0);
   });
 
-  it('tracks all 8 descriptive facilities', () => {
-    expect(facilities().count()).toBe(8);
+  it('tracks all 9 descriptive facilities', () => {
+    expect(facilities().count()).toBe(9);
   });
 
   it('has a non-empty description for every facility', () => {

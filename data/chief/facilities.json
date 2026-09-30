@@ -46,5 +46,11 @@
     "name": "Suggestion Box",
     "img": "/images/facilities/SuggestionBox.png",
     "description": "Tracks Survivor satisfaction through two tabs: Suggestions, where unresolved unhappiness lowers Public Opinion Rating (POR), and SOS, where resolving decision-based town scenarios raises or lowers POR depending on your choices. Keeping POR high keeps Survivors happy and improves daily rewards."
+  },
+  {
+    "id": "enlistment-office",
+    "name": "Enlistment Office",
+    "img": "/images/facilities/EnlistmentOffice.png",
+    "description": "Recruits reserve Troops to replace battle losses once the Infirmary's injured-Troops capacity is exceeded, drawing on accumulated Loyalty (capacity 4x the Infirmary's own). Loyalty accumulates faster the lower it currently is, the fewer severely injured Troops sit in the Infirmary, and the more reserves are waiting to be recruited, stopping once it hits its cap. It's earned from daily mission and gathering rewards (more as Furnace level rises), but only while the Enlistment Office's reserve isn't empty."
   }
 ]

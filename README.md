@@ -149,7 +149,7 @@ derived rather than scraped for this range, self-referencing the building by nam
 
 | Module     | Factory        | Items | Description                               |
 | ---------- | -------------- | ----- | ----------------------------------------- |
-| facilities | `facilities()` | 8     | Buildings with no levels, power, or costs |
+| facilities | `facilities()` | 9     | Buildings with no levels, power, or costs |
 
 A handful of buildings are purely functional gameplay hubs — no upgrade levels, no power
 contribution, no build cost. Forcing them into `Building` would leave `levels`, `power`, and
@@ -165,8 +165,11 @@ export interface Facility {
 ```
 
 **Hero Hall**, **Dawn Academy**, **Beast Cage**, **Lighthouse**, **Arena**, **Chief's House**,
-**Explorer's Cabin**, and **Suggestion Box** — each is a single entry with just a name, icon, and a
-description of what it does in-game (recruiting heroes, PvP ranking, edicts, and so on).
+**Explorer's Cabin**, **Suggestion Box**, and **Enlistment Office** — each is a single entry with
+just a name, icon, and a description of what it does in-game (recruiting heroes, PvP ranking,
+edicts, and so on). Enlistment Office replaces Troops lost in battle from a reserve pool once the
+Infirmary's injured-Troops capacity is exceeded, gated by accumulated Loyalty (capacity 4x the
+Infirmary's own).
 
 ---
 

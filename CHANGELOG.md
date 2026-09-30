@@ -13,7 +13,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Command Center, Infantry/Marksman/Lancer Camp, War Academy, Infirmary, Storehouse, Barricade,
   Hunter's Hut, Sawmill, Coal Mine, Iron Mine, Clinic, Cookhouse, and Shelter.
 - `facilities()`: buildings with no upgrade levels — Hero Hall, Dawn Academy, Beast Cage,
-  Lighthouse, Arena, Chief's House, Explorer's Cabin, and Suggestion Box.
+  Lighthouse, Arena, Chief's House, Explorer's Cabin, Suggestion Box, and Enlistment Office.
 - `heroes()`: all 13 Generation 0 heroes, with their skills, stats, and exclusive weapons. Every
   skill now carries its own 5-level `levels` table (`manualsRequired`, `powerGain`, `starRequired`).
   `manualsRequired` is confirmed and shared across every skill (0/10/30/50/75 for Levels 1-5);
