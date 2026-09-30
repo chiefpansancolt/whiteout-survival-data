@@ -47,7 +47,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   (900/3,380/6,300/10,710/16,920 for Levels 1-5) for the 6 leveled Exploration/Expedition skills.
   Jeronimo's and Natalia's Talent skill needs no Manuals (`manualsRequired` is `0` at every level)
   and has no confirmed Power yet (`powerGain` stays `0`); its `starRequired` is a real gate but not
-  yet sourced either.
+  yet sourced either. Reorganized `images/heroes/` into one folder per hero
+  (`images/heroes/<Hero>/`), with the portrait alongside `skills/` and `weapons/` subfolders --
+  every skill and Special-item image is now named `<Hero>-<SkillName>.<ext>` instead of the source's
+  opaque numeric filenames, for all 65 heroes.
 - `experts()`: all 10 Dawn Academy Experts across 3 generations, with their skills and progression.
 - `pets()`: all 14 Beast Cage pets, with their skills, levels, and unlock chain.
 - `items()` and `skins()`: the full item catalog (226 items and 189 cosmetic skins).

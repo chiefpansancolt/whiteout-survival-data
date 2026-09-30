@@ -357,14 +357,14 @@ describe('Generation 1-17 heroes (Legendary)', () => {
     expect(jeronimo.exclusiveWeapon!.skills).toEqual([
       {
         name: 'Shield of Swords',
-        img: '/images/heroes/weapons/hero_skill_icon_500117.png',
+        img: '/images/heroes/Jeronimo/weapons/Jeronimo-ShieldOfSwords.png',
         description:
           "When attacking, Jeronimo's sword energy forms a shield, reducing his damage received by 30%.",
         unlockLevel: 5,
       },
       {
         name: 'Discernment',
-        img: '/images/heroes/weapons/hero_skill_icon_500118.png',
+        img: '/images/heroes/Jeronimo/weapons/Jeronimo-Discernment.png',
         description:
           "Jeronimo attacks with a sword formation, increasing Rally Troops' attack by 15%.",
         unlockLevel: 5,
