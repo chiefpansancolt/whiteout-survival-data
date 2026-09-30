@@ -62,6 +62,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   (7,795/38,975/128,616/362,464/830,160), Generation 3's is 1,037,700
   (9,744/48,718/160,770/453,080/1,037,700), and Generation 4's is 1,279,830
   (12,017/60,086/198,284/558,799/1,279,830).
+- `buildings()`: every `BuildingLevel` now carries a `developmentIndex`, the score each level
+  contributes toward the SvS Wish Station event, sourced from the package maintainer's own in-game
+  data rather than either wiki (neither documents this metric). Also added
+  `allyAssists`/`allyHelpTimeSeconds`/`reinforceCapacity` to Embassy, `researchSpeedBonusPercent` to
+  Research Center, `storehouseCapacity` to Storehouse, and `barricadeDurability` to Barricade, from
+  the same source.
+- `buildings()`: added 9 entertainment buildings with no upgrade path (The Bakery, The Vinyl Shop,
+  Tea Milk Shop, Cinema, Cafe, Gym, Farm, Yoga Studio, Climbing Gym), each a single `levels` entry
+  gated behind a Furnace Fire Crystal level, sourced from the package maintainer's own in-game data.
+  `Building.img` is now optional, since none of these nine have a published portrait yet. `Resource`
+  gained an optional `pricePerItem`, and `BuildingLevel` gained an optional
+  `troopDeploymentCapacity`, both used by these nine buildings.
+- `buildings()`: added `category` (`Military`/`Inner City`/`Entertainment`) to every `Building`,
+  plus a `byCategory()` filter on `BuildingQuery`.
 - `experts()`: all 10 Dawn Academy Experts across 3 generations, with their skills and progression.
 - `pets()`: all 14 Beast Cage pets, with their skills, levels, and unlock chain.
 - `items()` and `skins()`: the full item catalog (226 items and 189 cosmetic skins).
@@ -102,6 +116,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   points at the correct node.
 - Fixed Jessie's Star 1 shard `total` (was `50`, but her `tierCosts` sum to `10` like every other
   hero).
+- Fixed Furnace's 50 Fire Crystal level `power` values, which had been rounded to the nearest
+  100,000 (sourced from wostools rather than the wiki's own dedicated Fire Crystal Furnace page,
+  which spells out the exact figures). Cross-checked every other Fire Crystal building (Embassy,
+  Command Center, Infantry/Marksman/Lancer Camp, Infirmary, War Academy, and the four
+  single-FC-level resource buildings) against the wiki and found no other discrepancies.
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.

@@ -66,7 +66,12 @@ Every query builder provides these 6 terminal methods:
 
 | Module    | Factory       | Items | Description                                       |
 | --------- | ------------- | ----- | ------------------------------------------------- |
-| buildings | `buildings()` | 18    | Buildings with full per-level upgrade progression |
+| buildings | `buildings()` | 27    | Buildings with full per-level upgrade progression |
+
+Every `Building` carries a `category` — `Military` (Furnace, Embassy, Research Center, Command
+Center, the three Camps, War Academy, Infirmary, Storehouse, Barricade), `Inner City` (Hunter's Hut,
+Sawmill, Coal Mine, Iron Mine, Clinic, Cookhouse, Shelter), or `Entertainment` (the nine buildings
+below) — filterable via `buildings().byCategory(...)`.
 
 Each `Building` nests its full level-by-level progression under `levels`. Most buildings follow an
 80-level shape: standard Levels 1–30, then a 50-entry Fire Crystal extension (`30-1..30-4`, then
@@ -87,12 +92,18 @@ derived rather than scraped for this range, self-referencing the building by nam
 - `FC 1-1` is the one exception: since the pre-FC stage has no separate base row, it requires
   standard Level 30 directly instead of a "tier 0" base.
 
+Every `BuildingLevel` carries a `developmentIndex` — the score each level contributes toward the SvS
+Wish Station event, confirmed for every level of every building from the package maintainer's own
+in-game data (not sourced from either wiki, which don't document this metric).
+
 - **Furnace** — the town HQ; caps every other building's max level.
 - **Embassy** — stores Alliance reinforcements and gates Alliance assistance; every standard level
-  requires the Furnace at the matching level (Levels 1–8 all just require Furnace Lv.8).
+  requires the Furnace at the matching level (Levels 1–8 all just require Furnace Lv.8). Carries
+  `allyAssists`, `allyHelpTimeSeconds`, and `reinforceCapacity` at every level, from the
+  maintainer's in-game data.
 - **Research Center** — unlocks Growth, Economy, and Battle research; caps at Level 30 with no Fire
   Crystal tier. Levels 1–9 all just require Furnace Lv.9, then it tracks the Furnace level for level
-  10 on.
+  10 on. Carries `researchSpeedBonusPercent` at every level.
 - **Command Center** — increases Rally and March troop capacity (`rallyCapacity`/`marchCapacity` on
   each level) alongside power. Every standard level requires both Furnace (Lv.10 minimum, then
   matching from Level 11 on) and Embassy at the matching level. Unlike Furnace/Embassy, its Fire
@@ -120,10 +131,12 @@ derived rather than scraped for this range, self-referencing the building by nam
   camps' speed bonus (every standard level, then only FC tier base rows).
 - **Storehouse** — protects resources beyond plunder up to its capacity. Caps at Level 30 with no
   Fire Crystal tier (Furnace Lv.9 floor); its cost/power/time curve is identical to Embassy's.
+  Carries `storehouseCapacity` at every level.
 - **Barricade** — strengthens city defense durability. The shortest tracked building by far: caps at
   Level 10 with no Fire Crystal tier, and Level 1 has no prerequisite at all (unique among tracked
   buildings). Its remaining levels skip several Furnace levels between gates (e.g. Level 2 needs
-  only Furnace Lv.7, Level 3 needs Lv.10) rather than tracking every Furnace level.
+  only Furnace Lv.7, Level 3 needs Lv.10) rather than tracking every Furnace level. Carries
+  `barricadeDurability` at every level.
 - **Hunter's Hut / Sawmill / Coal Mine / Iron Mine** — the four basic resource-production buildings
   (Meat, Wood, Coal, and Iron respectively). All four share an identical cost/power/time curve
   through Level 30, then each gets exactly one bonus level beyond that: a sole `FC 1`,
@@ -144,6 +157,17 @@ derived rather than scraped for this range, self-referencing the building by nam
   itself scopes the page), even though players can construct up to eight — the Furnace's own
   `prerequisites` text separately references specific numbered instances (e.g. `"Shelter 1"`,
   `"Shelter 3"`) as plain strings, not tied to this entry.
+
+**The Bakery, The Vinyl Shop, Tea Milk Shop, Cinema, Cafe, Gym, Farm, Yoga Studio, and Climbing
+Gym** are entertainment buildings with no upgrade path — a single `levels` entry each
+(`maxLevelLabel: "1"`), gated behind a Furnace Fire Crystal level (FC 3, FC 4, or FC 5 depending on
+the building) rather than a standard-level Furnace floor. Sourced from the package maintainer's own
+in-game data rather than either wiki. None have a published portrait yet, so `img` is omitted
+entirely for these nine rather than carrying a placeholder — `Building.img` is optional for this
+reason. Their `cost` entries are furniture pieces (not raw materials) and carry a `pricePerItem` the
+other buildings' costs don't, since these are purchased individually rather than built from a single
+resource pool. Every level also carries `troopDeploymentCapacity`, alongside the `power` and
+`developmentIndex` every building tracks.
 
 ### 🏛️ Facilities
 

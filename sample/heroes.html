@@ -91,6 +91,7 @@
     border-radius: 50%;
     flex-shrink: 0;
   }
+  .hero-row img { width: 32px; height: 32px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
   .hero-row .meta { color: var(--text-dim); font-size: 0.72rem; }
 
   .detail {
@@ -112,6 +113,8 @@
     padding-bottom: 16px;
     border-bottom: 1px solid var(--panel-border);
   }
+  .detail-header-left { display: flex; gap: 14px; align-items: center; }
+  .detail-header-left img { width: 72px; height: 72px; object-fit: cover; border-radius: 10px; border: 1px solid var(--panel-border); flex-shrink: 0; }
   .badge {
     display: inline-block;
     padding: 2px 8px;
@@ -157,7 +160,9 @@
     padding: 12px 14px;
     margin-bottom: 10px;
   }
-  .skill-name { font-weight: 600; margin-bottom: 4px; }
+  .skill-name-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .skill-name-row img { width: 28px; height: 28px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+  .skill-name { font-weight: 600; }
   .skill-desc { font-size: 0.82rem; color: var(--text-dim); margin-bottom: 10px; }
 
   table { border-collapse: collapse; width: 100%; font-size: 0.8rem; }
@@ -53383,6 +53388,7 @@
     el.innerHTML = rows
       .map(
         (h) => `<div class="hero-row${h.id === activeId ? ' active' : ''}" data-id="${h.id}">
+          <img src="..${h.img}" alt="" onerror="this.style.visibility='hidden'">
           <span class="swatch" style="background:${RARITY_COLOR[h.rarity] || '#888'}"></span>
           <div>
             <div>${h.name}</div>
@@ -53427,7 +53433,10 @@
 
   function skillBlock(skill) {
     return `<div class="skill">
-      <div class="skill-name">${skill.name}</div>
+      <div class="skill-name-row">
+        <img src="..${skill.img}" alt="" onerror="this.style.visibility='hidden'">
+        <div class="skill-name">${skill.name}</div>
+      </div>
       <div class="skill-desc">${skill.description}</div>
       ${skillLevelsTable(skill)}
     </div>`;
@@ -53435,7 +53444,10 @@
 
   function weaponSkillBlock(skill) {
     return `<div class="skill">
-      <div class="skill-name">${skill.name}${skill.unlockLevel !== undefined ? ` <span class="empty">(Unlocks at Lv. ${skill.unlockLevel})</span>` : ''}</div>
+      <div class="skill-name-row">
+        <img src="..${skill.img}" alt="" onerror="this.style.visibility='hidden'">
+        <div class="skill-name">${skill.name}${skill.unlockLevel !== undefined ? ` <span class="empty">(Unlocks at Lv. ${skill.unlockLevel})</span>` : ''}</div>
+      </div>
       <div class="skill-desc">${skill.description}</div>
     </div>`;
   }
@@ -53508,7 +53520,10 @@
       ? `<div class="section">
           <h3>Exclusive Weapon</h3>
           <div class="weapon-box">
-            <div class="skill-name">${hero.exclusiveWeapon.name}</div>
+            <div class="skill-name-row">
+              <img src="..${hero.exclusiveWeapon.img}" alt="" onerror="this.style.visibility='hidden'">
+              <div class="skill-name">${hero.exclusiveWeapon.name}</div>
+            </div>
             <div class="stat-grid">
               <div class="stat-box"><div class="stat-label">Power</div><div class="stat-value">${numCell(hero.exclusiveWeapon.power)}</div></div>
               <div class="stat-box"><div class="stat-label">Exploration Attack</div><div class="stat-value">${fmt(hero.exclusiveWeapon.stats.exploration.attack)}</div></div>
@@ -53528,12 +53543,15 @@
 
     el.innerHTML = `
       <div class="detail-header">
-        <div>
-          <h2>${hero.name}</h2>
-          <span class="badge rarity-${hero.rarity}">${hero.rarity}</span>
-          <span class="badge">${hero.class}</span>
-          <span class="badge">${hero.subClass}</span>
-          <span class="badge">Gen ${hero.generation}</span>
+        <div class="detail-header-left">
+          <img src="..${hero.img}" alt="" onerror="this.style.visibility='hidden'">
+          <div>
+            <h2>${hero.name}</h2>
+            <span class="badge rarity-${hero.rarity}">${hero.rarity}</span>
+            <span class="badge">${hero.class}</span>
+            <span class="badge">${hero.subClass}</span>
+            <span class="badge">Gen ${hero.generation}</span>
+          </div>
         </div>
         <div class="power-block-group">
           <div class="power-block">

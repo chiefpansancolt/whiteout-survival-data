@@ -1,3 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Buildings Data Explorer</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --row-hover: #1c2e42;
+    --fc: #ffb84f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 0 0 2px; }
+  h3 { font-size: 0.85rem; margin: 0 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    min-width: 110px;
+  }
+  .card .value { font-size: 1.3rem; font-weight: 700; }
+  .card .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .card.total { border-color: var(--accent); }
+  .card.total .value { color: var(--accent); }
+
+  .layout {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .sidebar {
+    flex: 0 0 240px;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #search {
+    width: 100%;
+    background: var(--row-alt);
+    border: none;
+    border-bottom: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+  #search:focus { outline: none; background: var(--row-hover); }
+  #category-filter {
+    width: 100%;
+    background: var(--row-alt);
+    border: none;
+    border-bottom: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+  #category-filter:focus { outline: none; background: var(--row-hover); }
+  .building-list { max-height: 640px; overflow-y: auto; }
+  .building-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--panel-border);
+    font-size: 0.85rem;
+  }
+  .building-row:hover { background: var(--row-hover); }
+  .building-row.active { background: var(--row-hover); border-left: 3px solid var(--accent); }
+  .building-row img { width: 28px; height: 28px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+  .building-row .meta { color: var(--text-dim); font-size: 0.72rem; }
+
+  .detail {
+    flex: 1;
+    min-width: 0;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .detail-header-left { display: flex; gap: 14px; align-items: center; }
+  .detail-header-left img { width: 64px; height: 64px; object-fit: cover; border-radius: 10px; border: 1px solid var(--panel-border); }
+  .detail-desc { color: var(--text-dim); font-size: 0.82rem; margin-top: 4px; max-width: 520px; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: var(--row-hover);
+    border: 1px solid var(--panel-border);
+    margin-right: 6px;
+  }
+  .badge.fc { border-color: var(--fc); color: var(--fc); }
+
+  .stat-block { text-align: right; }
+  .stat-block .value { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+  .stat-block .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat-group { display: flex; gap: 20px; }
+  .stat-divider { width: 1px; align-self: stretch; background: var(--panel-border); }
+
+  .section { margin-bottom: 24px; }
+
+  .levels-table-wrap {
+    max-height: 520px;
+    overflow: auto;
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+  }
+  table { border-collapse: collapse; width: 100%; font-size: 0.8rem; min-width: 720px; }
+  thead th {
+    text-align: left;
+    padding: 8px 10px;
+    color: var(--text-dim);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--panel-border);
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background: var(--panel);
+    z-index: 1;
+  }
+  tbody td {
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--panel-border);
+    white-space: nowrap;
+  }
+  tbody tr:nth-child(even) { background: var(--row-alt); }
+  tbody tr:hover { background: var(--row-hover); }
+  td.prereqs, td.cost { white-space: normal; max-width: 260px; }
+  .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    background: var(--row-hover);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    padding: 1px 6px;
+    margin: 1px 2px 1px 0;
+  }
+  tr.fc-row td:first-child { border-left: 2px solid var(--fc); }
+  .empty { color: var(--text-dim); }
+
+  .empty-detail {
+    color: var(--text-dim);
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  @media (max-width: 760px) {
+    .layout { flex-direction: column; }
+    .sidebar { flex-basis: auto; width: 100%; }
+    .building-list { max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Buildings Data Explorer</h1>
+<p class="sub">Full <code>buildings()</code> data suite for validation &mdash; every level's cost, build time, power, and building-specific bonuses.</p>
+
+<div class="summary" id="summary"></div>
+
+<div class="layout">
+  <div class="sidebar">
+    <input type="text" id="search" placeholder="Search buildings..." />
+    <select id="category-filter">
+      <option value="">All Categories</option>
+      <option value="Military">Military</option>
+      <option value="Inner City">Inner City</option>
+      <option value="Entertainment">Entertainment</option>
+    </select>
+    <div class="building-list" id="building-list"></div>
+  </div>
+  <div class="detail" id="detail"></div>
+</div>
+
+<script id="building-data" type="application/json">
 [
   {
     "id": "furnace",
@@ -32332,3 +32549,273 @@
     ]
   }
 ]
+</script>
+
+<script>
+  const DATA = JSON.parse(document.getElementById('building-data').textContent);
+
+  let searchTerm = '';
+  let categoryFilter = '';
+  let activeId = DATA[0] ? DATA[0].id : null;
+
+  function fmt(value) {
+    return typeof value === 'number' ? value.toLocaleString() : value;
+  }
+
+  function sigilCost(level) {
+    return level.cost.reduce(
+      (sum, c) => sum + (c.pricePerItem !== undefined ? c.count * c.pricePerItem : 0),
+      0,
+    );
+  }
+
+  function buildingSigilCost(building) {
+    return building.levels.reduce((sum, l) => sum + sigilCost(l), 0);
+  }
+
+  function formatDuration(totalSeconds) {
+    if (totalSeconds === 0) return '<span class="empty">Instant</span>';
+    let remaining = totalSeconds;
+    const days = Math.floor(remaining / 86400);
+    remaining -= days * 86400;
+    const hours = Math.floor(remaining / 3600);
+    remaining -= hours * 3600;
+    const minutes = Math.floor(remaining / 60);
+    remaining -= minutes * 60;
+    const seconds = remaining;
+    const parts = [];
+    if (days) parts.push(`${days}d`);
+    if (hours) parts.push(`${hours}h`);
+    if (minutes) parts.push(`${minutes}m`);
+    if (seconds || parts.length === 0) parts.push(`${seconds}s`);
+    return parts.join(' ');
+  }
+
+  function buildSummary() {
+    const el = document.getElementById('summary');
+    const fcCount = DATA.filter((b) => b.fireCrystalImg).length;
+    const totalLevels = DATA.reduce((sum, b) => sum + b.levels.length, 0);
+    const totalMaxPower = DATA.reduce((sum, b) => sum + b.levels[b.levels.length - 1].power, 0);
+    const totalMaxDevelopmentIndex = DATA.reduce(
+      (sum, b) => sum + b.levels[b.levels.length - 1].developmentIndex,
+      0,
+    );
+    const totalEntertainmentSigilCost = DATA.filter((b) => b.category === 'Entertainment').reduce(
+      (sum, b) => sum + buildingSigilCost(b),
+      0,
+    );
+    const counts = {};
+    DATA.forEach((b) => (counts[b.category] = (counts[b.category] || 0) + 1));
+    const cards = [
+      `<div class="card total"><div class="value">${fmt(DATA.length)}</div><div class="label">Total Buildings</div></div>`,
+      ...Object.keys(counts).map(
+        (category) =>
+          `<div class="card"><div class="value">${fmt(counts[category])}</div><div class="label">${category}</div></div>`,
+      ),
+      `<div class="card"><div class="value">${fmt(fcCount)}</div><div class="label">With Fire Crystal Tier</div></div>`,
+      `<div class="card"><div class="value">${fmt(totalLevels)}</div><div class="label">Total Levels Tracked</div></div>`,
+      `<div class="card"><div class="value">${fmt(totalMaxPower)}</div><div class="label">Combined Max Power</div></div>`,
+      `<div class="card"><div class="value">${fmt(totalMaxDevelopmentIndex)}</div><div class="label">Combined Max Development Index</div></div>`,
+      `<div class="card"><div class="value">${fmt(totalEntertainmentSigilCost)}</div><div class="label">Wish Sigil Cost</div></div>`,
+    ];
+    el.innerHTML = cards.join('');
+  }
+
+  function getFiltered() {
+    const term = searchTerm.toLowerCase();
+    return DATA.filter(
+      (b) =>
+        (!term || b.name.toLowerCase().includes(term)) &&
+        (!categoryFilter || b.category === categoryFilter),
+    );
+  }
+
+  function renderList() {
+    const el = document.getElementById('building-list');
+    const rows = getFiltered();
+    if (rows.length === 0) {
+      el.innerHTML = '<div class="building-row" style="cursor:default;color:var(--text-dim)">No buildings match.</div>';
+      return;
+    }
+    el.innerHTML = rows
+      .map(
+        (b) => `<div class="building-row${b.id === activeId ? ' active' : ''}" data-id="${b.id}">
+          ${buildingImgTag(b.img)}
+          <div>
+            <div>${b.name}</div>
+            <div class="meta">${b.category} &middot; ${b.levels.length} levels &middot; Max ${b.maxLevelLabel}</div>
+          </div>
+        </div>`,
+      )
+      .join('');
+    el.querySelectorAll('.building-row[data-id]').forEach((row) => {
+      row.addEventListener('click', () => {
+        activeId = row.dataset.id;
+        renderList();
+        renderDetail();
+      });
+    });
+  }
+
+  const EXTRA_FIELDS = [
+    { key: 'rallyCapacity', label: 'Rally Capacity' },
+    { key: 'marchCapacity', label: 'March Capacity' },
+    { key: 'trainingCapacity', label: 'Training Capacity' },
+    { key: 'trainingSpeedBonusPercent', label: 'Training Speed %' },
+    { key: 'researchSpeedBonusPercent', label: 'Research Speed %' },
+    { key: 'infirmaryCapacity', label: 'Infirmary Capacity' },
+    { key: 'allyAssists', label: 'Ally Assists' },
+    { key: 'allyHelpTimeSeconds', label: 'Ally Help Time (s)' },
+    { key: 'reinforceCapacity', label: 'Reinforce Capacity' },
+    { key: 'storehouseCapacity', label: 'Storehouse Capacity' },
+    { key: 'barricadeDurability', label: 'Barricade Durability' },
+    { key: 'troopDeploymentCapacity', label: 'Troop Deployment Capacity' },
+  ];
+
+  function buildingImgTag(img) {
+    return img ? `<img src="..${img}" alt="" onerror="this.style.visibility='hidden'">` : '';
+  }
+
+  function prereqTags(level) {
+    if (!level.prerequisites || level.prerequisites.length === 0) {
+      return '<span class="empty">&mdash;</span>';
+    }
+    return level.prerequisites
+      .map((p) => `<span class="tag">${p.building} ${p.level}</span>`)
+      .join('');
+  }
+
+  function costTags(level) {
+    if (!level.cost || level.cost.length === 0) {
+      return '<span class="empty">&mdash;</span>';
+    }
+    return level.cost
+      .map(
+        (c) =>
+          `<span class="tag">${fmt(c.count)} ${c.name}${c.pricePerItem !== undefined ? ` (${fmt(c.pricePerItem)}/ea)` : ''}</span>`,
+      )
+      .join('');
+  }
+
+  function levelsTable(building) {
+    const activeExtras = EXTRA_FIELDS.filter((f) =>
+      building.levels.some((l) => l[f.key] !== undefined),
+    );
+
+    const headerCells = [
+      '<th>Level</th>',
+      '<th>Order</th>',
+      '<th>Tier</th>',
+      '<th>Prerequisites</th>',
+      '<th>Cost</th>',
+      '<th>Build Time</th>',
+      '<th>Power</th>',
+      '<th>Development Index</th>',
+      ...activeExtras.map((f) => `<th>${f.label}</th>`),
+    ].join('');
+
+    const rows = building.levels
+      .map((l) => {
+        const tierLabel =
+          l.tier === 'fireCrystal'
+            ? `FC${l.fcStage !== undefined ? ` ${l.fcStage}` : ''}${l.fcSubLevel !== undefined ? `-${l.fcSubLevel}` : ''}`
+            : 'Standard';
+        const extraCells = activeExtras
+          .map((f) => `<td>${l[f.key] !== undefined ? fmt(l[f.key]) + (f.key.endsWith('Percent') ? '%' : '') : '<span class="empty">&mdash;</span>'}</td>`)
+          .join('');
+        return `<tr class="${l.tier === 'fireCrystal' ? 'fc-row' : ''}">
+          <td>${l.label}</td>
+          <td>${l.order}</td>
+          <td>${tierLabel}</td>
+          <td class="prereqs">${prereqTags(l)}</td>
+          <td class="cost">${costTags(l)}</td>
+          <td>${formatDuration(l.buildTimeSeconds)}</td>
+          <td>${fmt(l.power)}</td>
+          <td>${fmt(l.developmentIndex)}</td>
+          ${extraCells}
+        </tr>`;
+      })
+      .join('');
+
+    return `<div class="levels-table-wrap"><table>
+      <thead><tr>${headerCells}</tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
+  }
+
+  function renderDetail() {
+    const el = document.getElementById('detail');
+    const building = DATA.find((b) => b.id === activeId);
+    if (!building) {
+      el.innerHTML = '<div class="empty-detail">Select a building from the list.</div>';
+      return;
+    }
+
+    const maxLevel = building.levels[building.levels.length - 1];
+    const totalBuildTime = building.levels.reduce((sum, l) => sum + l.buildTimeSeconds, 0);
+    const sigilCostTotal = buildingSigilCost(building);
+
+    el.innerHTML = `
+      <div class="detail-header">
+        <div class="detail-header-left">
+          ${buildingImgTag(building.img)}
+          <div>
+            <h2>${building.name}</h2>
+            <span class="badge">${building.category}</span>
+            <span class="badge">${building.levels.length} levels</span>
+            <span class="badge">Max ${building.maxLevelLabel}</span>
+            ${building.fireCrystalImg ? '<span class="badge fc">Fire Crystal Tier</span>' : ''}
+            ${building.description ? `<div class="detail-desc">${building.description}</div>` : ''}
+          </div>
+        </div>
+        <div class="stat-group">
+          <div class="stat-block">
+            <div class="value">${fmt(maxLevel.power)}</div>
+            <div class="label">Power at Max</div>
+          </div>
+          ${
+            sigilCostTotal > 0
+              ? `<div class="stat-divider"></div>
+          <div class="stat-block">
+            <div class="value">${fmt(sigilCostTotal)}</div>
+            <div class="label">Sigil Cost</div>
+          </div>`
+              : ''
+          }
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <div class="value">${fmt(maxLevel.developmentIndex)}</div>
+            <div class="label">Development Index at Max</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <div class="value">${formatDuration(totalBuildTime)}</div>
+            <div class="label">Total Build Time</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Levels</h3>
+        ${levelsTable(building)}
+      </div>
+    `;
+  }
+
+  document.getElementById('search').addEventListener('input', (e) => {
+    searchTerm = e.target.value;
+    renderList();
+  });
+
+  document.getElementById('category-filter').addEventListener('change', (e) => {
+    categoryFilter = e.target.value;
+    renderList();
+  });
+
+  buildSummary();
+  renderList();
+  renderDetail();
+</script>
+
+</body>
+</html>

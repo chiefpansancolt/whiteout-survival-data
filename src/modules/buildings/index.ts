@@ -1,6 +1,6 @@
 import { QueryBase } from '@/common/query-base';
 import data from '@/data/chief/buildings.json';
-import { Building } from '@/types';
+import { Building, BuildingCategory } from '@/types';
 
 const buildingData: Building[] = data as Building[];
 
@@ -8,6 +8,11 @@ const buildingData: Building[] = data as Building[];
 export class BuildingQuery extends QueryBase<Building> {
   constructor(data: Building[] = buildingData) {
     super(data);
+  }
+
+  /** Filter to buildings of the given category. */
+  byCategory(category: BuildingCategory): BuildingQuery {
+    return new BuildingQuery(this.data.filter((b) => b.category === category));
   }
 }
 

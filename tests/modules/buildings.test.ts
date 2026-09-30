@@ -12,6 +12,76 @@ describe('BuildingQuery', () => {
   it('uses default data when constructed without arguments', () => {
     expect(new BuildingQuery().count()).toBeGreaterThan(0);
   });
+
+  it('filters by category', () => {
+    expect(buildings().byCategory('Military').count()).toBe(11);
+    expect(buildings().byCategory('Inner City').count()).toBe(7);
+    expect(buildings().byCategory('Entertainment').count()).toBe(9);
+  });
+
+  it('assigns every building the expected category', () => {
+    const categoryByName: Record<string, string> = {
+      Furnace: 'Military',
+      Embassy: 'Military',
+      'Research Center': 'Military',
+      'Command Center': 'Military',
+      'Infantry Camp': 'Military',
+      'Marksman Camp': 'Military',
+      'Lancer Camp': 'Military',
+      'War Academy': 'Military',
+      Infirmary: 'Military',
+      Storehouse: 'Military',
+      Barricade: 'Military',
+      "Hunter's Hut": 'Inner City',
+      Sawmill: 'Inner City',
+      'Coal Mine': 'Inner City',
+      'Iron Mine': 'Inner City',
+      Clinic: 'Inner City',
+      Cookhouse: 'Inner City',
+      Shelter: 'Inner City',
+      'The Bakery': 'Entertainment',
+      'The Vinyl Shop': 'Entertainment',
+      'Tea Milk Shop': 'Entertainment',
+      Cinema: 'Entertainment',
+      Cafe: 'Entertainment',
+      Gym: 'Entertainment',
+      Farm: 'Entertainment',
+      'Yoga Studio': 'Entertainment',
+      'Climbing Gym': 'Entertainment',
+    };
+    Object.entries(categoryByName).forEach(([name, category]) => {
+      expect(buildings().findByName(name)!.category).toBe(category);
+    });
+  });
+});
+
+describe('Development Index', () => {
+  it('is a positive, non-decreasing value across every level of every building', () => {
+    buildings()
+      .get()
+      .forEach((building) => {
+        building.levels.forEach((level) => {
+          expect(level.developmentIndex).toBeGreaterThan(0);
+        });
+        const values = building.levels.map((l) => l.developmentIndex);
+        expect(values).toEqual([...values].sort((a, b) => a - b));
+      });
+  });
+
+  it('matches the SvS Wish Station values supplied for Furnace', () => {
+    const furnace = buildings().findByName('Furnace')!;
+    const developmentIndexByLabel: Record<string, number> = {
+      '1': 1000,
+      'FC 1': 836800,
+      'FC 5': 1361800,
+      'FC 10': 2118400,
+    };
+    Object.entries(developmentIndexByLabel).forEach(([label, developmentIndex]) => {
+      expect(furnace.levels.find((l) => l.label === label)!.developmentIndex).toBe(
+        developmentIndex,
+      );
+    });
+  });
 });
 
 describe('Furnace levels', () => {
@@ -64,6 +134,24 @@ describe('Furnace levels', () => {
     expect(fc51.cost.some((c) => c.name === 'Refined Fire Crystals')).toBe(true);
   });
 
+  it("uses the wiki's exact Fire Crystal Power values, not wostools's rounded ones", () => {
+    // Regression guard: these were previously rounded to the nearest 100,000
+    // (e.g. "30-1" was 1,600,000 instead of the wiki's exact 1,580,900).
+    const exactPowerByLabel: Record<string, number> = {
+      '30-1': 1580900,
+      '30-2': 1638300,
+      '30-3': 1695700,
+      '30-4': 1753100,
+      'FC 1': 1810500,
+      'FC 5': 3016500,
+      'FC 5-1': 3084100,
+      'FC 10': 4754500,
+    };
+    Object.entries(exactPowerByLabel).forEach(([label, power]) => {
+      expect(furnace.levels.find((l) => l.label === label)!.power).toBe(power);
+    });
+  });
+
   it('has levels in ascending order', () => {
     const orders = furnace.levels.map((l) => l.order);
     expect(orders).toEqual([...orders].sort((a, b) => a - b));
@@ -88,6 +176,13 @@ describe('Embassy levels', () => {
     expect(fc10.fcStage).toBe(10);
     expect(fc10.prerequisites).toEqual([{ building: 'Embassy', level: 'FC 9-4' }]);
   });
+
+  it('tracks Ally Assists, Ally Help Time, and Reinforce Capacity at every level', () => {
+    const level1 = embassy.levels.find((l) => l.label === '1')!;
+    expect(level1.allyAssists).toBe(1);
+    expect(level1.allyHelpTimeSeconds).toBe(10);
+    expect(level1.reinforceCapacity).toBe(1500);
+  });
 });
 
 describe('Research Center levels', () => {
@@ -104,6 +199,11 @@ describe('Research Center levels', () => {
     expect(researchCenter.levels.every((l) => l.prerequisites?.[0].building === 'Furnace')).toBe(
       true,
     );
+  });
+
+  it('carries a research speed bonus at every level', () => {
+    const level1 = researchCenter.levels.find((l) => l.label === '1')!;
+    expect(level1.researchSpeedBonusPercent).toBe(0.1);
   });
 });
 
@@ -239,6 +339,11 @@ describe('Storehouse levels', () => {
     const level1 = storehouse.levels.find((l) => l.label === '1')!;
     expect(level1.prerequisites).toEqual([{ building: 'Furnace', level: 9 }]);
   });
+
+  it('tracks storage capacity at every level', () => {
+    const level1 = storehouse.levels.find((l) => l.label === '1')!;
+    expect(level1.storehouseCapacity).toBe(100000);
+  });
 });
 
 describe('Barricade levels', () => {
@@ -260,6 +365,11 @@ describe('Barricade levels', () => {
     const level3 = barricade.levels.find((l) => l.label === '3')!;
     expect(level2.prerequisites).toEqual([{ building: 'Furnace', level: 7 }]);
     expect(level3.prerequisites).toEqual([{ building: 'Furnace', level: 10 }]);
+  });
+
+  it('tracks durability at every level', () => {
+    const level1 = barricade.levels.find((l) => l.label === '1')!;
+    expect(level1.barricadeDurability).toBe(1000);
   });
 });
 
@@ -296,6 +406,55 @@ describe.each([
       { building: 'Furnace', level: 'FC 2' },
     ]);
     expect(fc1.cost.some((c) => c.name === 'Fire Crystals')).toBe(false);
+  });
+});
+
+describe.each([
+  ['The Bakery', 'FC 3'],
+  ['The Vinyl Shop', 'FC 3'],
+  ['Tea Milk Shop', 'FC 3'],
+  ['Cinema', 'FC 4'],
+  ['Cafe', 'FC 4'],
+  ['Gym', 'FC 4'],
+  ['Farm', 'FC 5'],
+  ['Yoga Studio', 'FC 5'],
+  ['Climbing Gym', 'FC 5'],
+])('%s (entertainment building)', (name, furnaceFcGate) => {
+  const building = buildings().findByName(name)!;
+
+  it('has a single standard-tier level and no portrait yet', () => {
+    expect(building.levels).toHaveLength(1);
+    expect(building.maxLevelLabel).toBe('1');
+    expect(building.img).toBeUndefined();
+    expect(building.levels[0].tier).toBe('standard');
+  });
+
+  it(`requires Furnace ${furnaceFcGate}`, () => {
+    expect(building.levels[0].prerequisites).toEqual([
+      { building: 'Furnace', level: furnaceFcGate },
+    ]);
+  });
+
+  it('carries instant build time, Power, Development Index, and Troop Deployment Capacity', () => {
+    const level = building.levels[0];
+    expect(level.buildTimeSeconds).toBe(0);
+    expect(level.power).toBe(30000);
+    expect(level.developmentIndex).toBe(100000);
+    expect(level.troopDeploymentCapacity).toBe(100);
+  });
+});
+
+describe('The Bakery cost', () => {
+  it('matches the exact furniture list, quantities, and per-item price', () => {
+    const bakery = buildings().findByName('The Bakery')!;
+    expect(bakery.levels[0].cost).toEqual([
+      { name: 'Blueprint', count: 1, pricePerItem: 3000 },
+      { name: 'Counter', count: 1, pricePerItem: 2500 },
+      { name: 'Oven', count: 1, pricePerItem: 2000 },
+      { name: 'Dough Maker', count: 1, pricePerItem: 1500 },
+      { name: 'Proofing Cabinet', count: 1, pricePerItem: 1500 },
+      { name: 'Table & Chair Set', count: 2, pricePerItem: 1000 },
+    ]);
   });
 });
 
