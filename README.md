@@ -174,7 +174,7 @@ description of what it does in-game (recruiting heroes, PvP ranking, edicts, and
 
 | Module | Factory    | Items | Description                                        |
 | ------ | ---------- | ----- | -------------------------------------------------- |
-| heroes | `heroes()` | 13    | Heroes with stats, skills, and shard-upgrade costs |
+| heroes | `heroes()` | 65    | Heroes with stats, skills, and shard-upgrade costs |
 
 Every hero has a `rarity` (`Rare`/`Epic`/`Legendary`), a `class` (`Infantry`/`Lancer`/`Marksman`),
 and a `subClass` (`Growth`/`Combat`) — `subClass` is stored per hero rather than derived, since it
@@ -183,19 +183,75 @@ Gina is `Combat` and Jasser is `Growth`).
 
 Stats have two groups: `exploration` (flat `attack`/`defense`/`health`) and `expedition`
 (`attack`/`defense` as percentages). Skills are grouped the same way a hero's in-game skill tabs
-are: `skills.exploration[]`, `skills.expedition[]`, and an optional `skills.talent` — Talent exists
-only on some Legendary heroes (the tab is present on every Legendary page, but empty on newer
-generations that shifted the mechanic into the Exclusive Weapon instead).
+are: `skills.exploration[]`, `skills.expedition[]`, and an optional `skills.talent`. Rare/Epic
+heroes have 2 Exploration + 2 Expedition skills and no Talent; every Legendary hero has 3 + 3, but
+the Talent tab is empty on the wiki for every Legendary hero except **Jeronimo** and **Natalia**
+(Generation 1's two Infantry heroes) — `skills.talent` is `undefined` for every other Legendary hero
+rather than a fabricated empty entry.
 
-`exclusiveWeapon` is present only on Legendary heroes. It carries its own bonus stat block — using
-`lethality`/`health` percentages for its Expedition stats, a different stat pair than the hero's own
-Expedition block — plus a `power` rating and two of its own skills. `shardCosts` is a 5-star ×
-6-tier cost table present on every hero; the per-tier costs are identical across rarities except
-Star 1's total (10 for Rare/Epic, 30 for Legendary, in every hero checked so far).
+Every `HeroSkill` carries its own `levels` array — 5 entries
+(`{ level, manualsRequired, powerGain, starRequired }`), matching the 5 slash-separated values in
+that skill's `description` (e.g. Smith's Hammer Burn: "200%/220%/240%/260%/280%"). `manualsRequired`
+is confirmed and identical across every Exploration/Expedition skill and hero (0 / 10 / 30 / 50 / 75
+for Levels 1–5) — except Jeronimo's and Natalia's Talent skill, which needs no Manuals at all, so
+`manualsRequired` is `0` at every level. `starRequired` — the hero star tier needed before that
+skill level unlocks — is also confirmed for Exploration/Expedition, and varies by skill _slot_
+rather than skill identity: a hero's 1st/2nd/3rd Exploration skill and 1st/2nd Expedition skill each
+follow their own star curve (e.g. a 1st Exploration skill unlocks its levels at Stars 0/1/2/3/4,
+while a 3rd Exploration or 2nd Expedition skill needs Stars 2/2/2/3/4). The Talent skill's
+`starRequired` is real (a star tier does gate it) but not yet sourced, so it stays a `0` placeholder
+for Jeronimo and Natalia pending the real curve. `powerGain` is confirmed for every
+Exploration/Expedition skill regardless of rarity — identical across every skill regardless of slot
+(Rare: 540 / 2,030 / 3,780 / 6,426 / 10,152; Epic: 720 / 2,707 / 5,040 / 8,568 / 13,536; Legendary:
+900 / 3,380 / 6,300 / 10,710 / 16,920 for Levels 1–5). The Talent skill's `powerGain` remains a `0`
+placeholder, since the source states Power per Legendary hero level as "all 6 skills," excluding
+Talent.
 
-Currently covers **Generation 0** (the 13 pre-Legendary heroes: 4 Rare, 9 Epic). Later generations
-(1–17, all Legendary, 3 per generation) will be added incrementally, the same
-generation-by-generation approach used for buildings.
+`exclusiveWeapon` is present only on Legendary heroes — the wiki calls this the hero's "Special"
+item. It carries its own bonus stat block — using `lethality`/`health` percentages for its
+Expedition stats, a different stat pair than the hero's own Expedition block — plus a `power` rating
+and two `ExclusiveWeaponSkill` entries (`{ name, img, description, unlockLevel? }`). Unlike a
+regular `HeroSkill`, these don't scale across 5 levels; each has one fixed effect that activates
+once the Special item reaches `unlockLevel` (most state this on the wiki as a "(Lv. N)" suffix; a
+handful of newer heroes' pages omit it, so `unlockLevel` is left unset rather than guessed).
+
+`shardCosts` is a 5-star × 6-tier cost table present on every hero; the per-tier costs are identical
+across rarities, and so are the Total column values — **except Jeronimo's Star 1**, a confirmed
+exception at 30 total shards despite his own tier costs summing to only 10, exactly like Snow
+Castle's Life Essence exception in Daybreak Island. Each star tier also carries a `power` field —
+the total Power accumulated once that star is reached, not the increment gained at that tier alone.
+It's `0` on every Legendary hero pending real values, but confirmed for both Rare and Epic: the
+source only states the total Power at max star (449,670 for Rare, 553,440 for Epic), so each tier's
+`power` is that total distributed cumulatively by its share of the 1,065 shards needed to reach max
+star (Rare: 4,222 / 21,111 / 69,667 / 196,335 / 449,670 — Epic: 5,197 / 25,983 / 85,744 / 241,643 /
+553,440 — for Stars 1–5), on the assumption that every shard contributes equally.
+
+`shardSources` lists where a hero's shards can be obtained (e.g. `["VIP Packs"]`,
+`["Hall of Heroes", "Daily Deals"]`) — transcribed verbatim from each hero's own "Sources" section
+on the wiki. Empty for the one Gen 0 hero (Ling Xue) whose page has no Sources section at all.
+
+`Hero.levels` is the 80-level Furnace/XP/Power progression, replacing the old flat `levelPower`
+field. `furnaceLevelRequired` (the Furnace level needed to reach that hero level) and `xpRequired`
+(Hero XP needed from the previous level, `0` at Level 1) are identical across every hero — the same
+curve regardless of rarity, class, or generation.
+
+`power` (the total Power accumulated once that level is reached, not the increment) is confirmed via
+a single shared 80-entry curve, documented in `HeroLevelPowerCurve.md`: the gain at level L is
+`start * base[L] / 250` (integer division, exact for every known start value), and `power` is the
+running total of those gains. Only the Level-1 `start` value differs by rarity/generation — 3,250
+for Rare, 4,000 for Epic, and 5,000/6,000/7,500/9,250/11,100 for Legendary Generations 1–5
+(Generations 3–5's start values are themselves marked "projected" in that spec, not measured
+in-game) — while `base` (summing to 9,330, with intentional dips at Levels 3, 19, 52, and 67 and a
+jump at Level 80) is identical across all of them. This reproduces the spec's checkpoint table
+exactly for every rarity/generation it covers (e.g. Rare Level 10/40/80: 9,945 / 42,185 / 121,290;
+Legendary Gen 1: 15,300 / 64,900 / 186,600). Legendary Generations 6–17 have no confirmed start
+value yet, so `power` stays a `0` placeholder for those — the spec explicitly warns against
+extrapolating one.
+
+Covers all 65 heroes released so far: **Generation 0** (13 pre-Legendary heroes: 4 Rare, 9 Epic) and
+**Legendary Generations 1–17** (52 heroes — Generation 1 has 4, since two of its heroes, Jeronimo
+and Natalia, are both Infantry; every other generation has exactly 1 Infantry, 1 Lancer, and 1
+Marksman). Later generations will be added once the source wiki publishes them.
 
 ---
 

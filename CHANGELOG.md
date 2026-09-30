@@ -14,7 +14,40 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Hunter's Hut, Sawmill, Coal Mine, Iron Mine, Clinic, Cookhouse, and Shelter.
 - `facilities()`: buildings with no upgrade levels — Hero Hall, Dawn Academy, Beast Cage,
   Lighthouse, Arena, Chief's House, Explorer's Cabin, and Suggestion Box.
-- `heroes()`: all 13 Generation 0 heroes, with their skills, stats, and exclusive weapons.
+- `heroes()`: all 13 Generation 0 heroes, with their skills, stats, and exclusive weapons. Every
+  skill now carries its own 5-level `levels` table (`manualsRequired`, `powerGain`, `starRequired`).
+  `manualsRequired` is confirmed and shared across every skill (0/10/30/50/75 for Levels 1-5);
+  `starRequired` is confirmed per skill slot (a hero's 1st/2nd/3rd Exploration skill and 1st/2nd
+  Expedition skill each follow their own star curve); `powerGain` is confirmed for Rare and Epic
+  skills (Rare: 540/2,030/3,780/6,426/10,152; Epic: 720/2,707/5,040/8,568/13,536 for Levels 1-5,
+  identical across every skill) and remains a `0` placeholder for Legendary. Every hero's
+  `shardCosts` star tier carries a `power` field (the total Power accumulated once that star is
+  reached): `0` for Legendary pending real values, but confirmed for Rare and Epic by distributing
+  their known max-star Power (449,670 Rare, 553,440 Epic) cumulatively across tiers by shard count.
+  Replaced the flat `levelPower` field with `Hero.levels`, the 80-level Furnace/XP/Power progression
+  (`furnaceLevelRequired`/`xpRequired` identical across every hero). `power` is now confirmed for
+  every level of Rare and Epic, per `HeroLevelPowerCurve.md`'s shared 80-entry curve (gain(L) =
+  start * base\[L\] / 250, running total) -- only the Level-1 start value differs by rarity (Rare
+  3,250, Epic 4,000) -- verified against the spec's checkpoint table (Rare/Epic Level 80: 121,290 /
+  149,280). Legendary's `power` remains a `0` placeholder pending its own start value.
+- `heroes()`: added all 52 Legendary heroes across Generations 1-17 (Gen 1 has 4 -- Jeronimo and
+  Natalia are both Infantry -- every other generation has 1 Infantry/Lancer/Marksman), scraped from
+  the same wiki as Generation 0. Legendary heroes carry 3 Exploration + 3 Expedition skills (vs.
+  Rare/Epic's 2 + 2), and every one has a populated `exclusiveWeapon` (the wiki's "Special" item).
+  Only Jeronimo and Natalia have a Talent skill -- the tab is empty on every other Legendary hero's
+  page, so `skills.talent` is `undefined` for the rest rather than a fabricated empty entry.
+  `exclusiveWeapon.skills` now uses a new `ExclusiveWeaponSkill` type
+  (`{ name, img, description, unlockLevel? }`) instead of `HeroSkill`, since these skills have one
+  fixed effect rather than scaling across 5 levels. Added a `shardSources` field to `Hero` (e.g.
+  `["VIP Packs"]`), backfilled for the existing 13 Generation 0 heroes too. `Hero.levels[].power` is
+  now confirmed through Legendary Generation 5 via the shared curve in `HeroLevelPowerCurve.md`
+  (Generations 3-5's start values are themselves projected in that spec); Generations 6-17 have no
+  known start value yet and stay `0` placeholders. Also downloaded portrait, skill, and Special-item
+  images for all 52 heroes into `images/heroes/`. Confirmed Legendary skill `powerGain`
+  (900/3,380/6,300/10,710/16,920 for Levels 1-5) for the 6 leveled Exploration/Expedition skills.
+  Jeronimo's and Natalia's Talent skill needs no Manuals (`manualsRequired` is `0` at every level)
+  and has no confirmed Power yet (`powerGain` stays `0`); its `starRequired` is a real gate but not
+  yet sourced either.
 - `experts()`: all 10 Dawn Academy Experts across 3 generations, with their skills and progression.
 - `pets()`: all 14 Beast Cage pets, with their skills, levels, and unlock chain.
 - `items()` and `skins()`: the full item catalog (226 items and 189 cosmetic skins).
@@ -53,6 +86,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   copy-pasted prerequisites that pointed at the wrong troop type).
 - Cleaned up a few name mismatches and missing links in the research tech tree so every prerequisite
   points at the correct node.
+- Fixed Jessie's Star 1 shard `total` (was `50`, but her `tierCosts` sum to `10` like every other
+  hero).
 
 Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
 `QueryBase<T>` query builder.
