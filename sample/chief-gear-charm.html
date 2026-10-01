@@ -185,6 +185,7 @@
 <div class="tabs">
   <button class="tab active" data-tab="gear">Chief Gear</button>
   <button class="tab" data-tab="charm">Chief Charm</button>
+  <button class="tab" data-tab="converters">Converters</button>
 </div>
 
 <div class="panel" id="gear-panel">
@@ -203,6 +204,19 @@
   <div id="charm-detail"></div>
 </div>
 
+<div class="panel" id="converters-panel" style="display:none">
+  <div class="section">
+    <h3>Chief Gear Converter</h3>
+    <p class="section-note">Backed by <code>chiefGearConverter()</code> &mdash; cross-check each rate and weekly limit against the in-game converter.</p>
+    <div id="gear-converter-table"></div>
+  </div>
+  <div class="section">
+    <h3>Chief Charm Converter</h3>
+    <p class="section-note">Backed by <code>chiefCharmConverter()</code> &mdash; no weekly limit on this converter.</p>
+    <div id="charm-converter-table"></div>
+  </div>
+</div>
+
 <script id="gear-slot-data" type="application/json">
 [{"id": "cap", "name": "Cap", "troopType": "Lancer", "images": {"Common": "/images/chief-gear/Cap-Common.png", "Rare": "/images/chief-gear/Cap-Rare.png", "Epic": "/images/chief-gear/Cap-Epic.png", "Mythic": "/images/chief-gear/Cap-Mythic.png", "Legendary": "/images/chief-gear/Cap-Legendary.png"}}, {"id": "watch", "name": "Watch", "troopType": "Lancer", "images": {"Common": "/images/chief-gear/Watch-Common.png", "Rare": "/images/chief-gear/Watch-Rare.png", "Epic": "/images/chief-gear/Watch-Epic.png", "Mythic": "/images/chief-gear/Watch-Mythic.png", "Legendary": "/images/chief-gear/Watch-Legendary.png"}}, {"id": "coat", "name": "Coat", "troopType": "Infantry", "images": {"Common": "/images/chief-gear/Coat-Common.png", "Rare": "/images/chief-gear/Coat-Rare.png", "Epic": "/images/chief-gear/Coat-Epic.png", "Mythic": "/images/chief-gear/Coat-Mythic.png", "Legendary": "/images/chief-gear/Coat-Legendary.png"}}, {"id": "pants", "name": "Pants", "troopType": "Infantry", "images": {"Common": "/images/chief-gear/Pants-Common.png", "Rare": "/images/chief-gear/Pants-Rare.png", "Epic": "/images/chief-gear/Pants-Epic.png", "Mythic": "/images/chief-gear/Pants-Mythic.png", "Legendary": "/images/chief-gear/Pants-Legendary.png"}}, {"id": "ring", "name": "Ring", "troopType": "Marksman", "images": {"Common": "/images/chief-gear/Ring-Common.png", "Rare": "/images/chief-gear/Ring-Rare.png", "Epic": "/images/chief-gear/Ring-Epic.png", "Mythic": "/images/chief-gear/Ring-Mythic.png", "Legendary": "/images/chief-gear/Ring-Legendary.png"}}, {"id": "weapon", "name": "Weapon", "troopType": "Marksman", "images": {"Common": "/images/chief-gear/Weapon-Common.png", "Rare": "/images/chief-gear/Weapon-Rare.png", "Epic": "/images/chief-gear/Weapon-Epic.png", "Mythic": "/images/chief-gear/Weapon-Mythic.png", "Legendary": "/images/chief-gear/Weapon-Legendary.png"}}]
 </script>
@@ -218,12 +232,20 @@
 <script id="materials-data" type="application/json">
 {"charm-design": {"name": "Charm Design", "img": "/images/items/charm-design.png"}, "charm-guide": {"name": "Charm Guide", "img": "/images/items/charm-guide.png"}, "charm-secrets": {"name": "Charm Secrets", "img": "/images/items/charm-secrets.png"}, "design-plans": {"name": "Design Plans", "img": "/images/items/design-plans.png"}, "hardened-alloy": {"name": "Hardened Alloy", "img": "/images/items/hardened-alloy.png"}, "lunar-amber": {"name": "Lunar Amber", "img": "/images/items/lunar-amber.png"}, "polishing-solution": {"name": "Polishing Solution", "img": "/images/items/polishing-solution.png"}}
 </script>
+<script id="gear-converter-data" type="application/json">
+[{"id": "design-plans-to-lunar-amber", "name": "Design Plans → Lunar Amber", "fromItemId": "design-plans", "fromQuantity": 10, "toItemId": "lunar-amber", "toQuantity": 1, "weeklyLimit": 500}, {"id": "design-plans-to-polishing-solution", "name": "Design Plans → Polishing Solution", "fromItemId": "design-plans", "fromQuantity": 1, "toItemId": "polishing-solution", "toQuantity": 3, "weeklyLimit": 500}, {"id": "design-plans-to-hardened-alloy", "name": "Design Plans → Hardened Alloy", "fromItemId": "design-plans", "fromQuantity": 1, "toItemId": "hardened-alloy", "toQuantity": 300, "weeklyLimit": 500}, {"id": "polishing-solution-to-design-plans", "name": "Polishing Solution → Design Plans", "fromItemId": "polishing-solution", "fromQuantity": 10, "toItemId": "design-plans", "toQuantity": 1, "weeklyLimit": 50}, {"id": "polishing-solution-to-hardened-alloy", "name": "Polishing Solution → Hardened Alloy", "fromItemId": "polishing-solution", "fromQuantity": 1, "toItemId": "hardened-alloy", "toQuantity": 50, "weeklyLimit": 1000}, {"id": "hardened-alloy-to-design-plans", "name": "Hardened Alloy → Design Plans", "fromItemId": "hardened-alloy", "fromQuantity": 1000, "toItemId": "design-plans", "toQuantity": 1, "weeklyLimit": 50}, {"id": "hardened-alloy-to-polishing-solution", "name": "Hardened Alloy → Polishing Solution", "fromItemId": "hardened-alloy", "fromQuantity": 200, "toItemId": "polishing-solution", "toQuantity": 1, "weeklyLimit": 500}]
+</script>
+<script id="charm-converter-data" type="application/json">
+[{"id": "charm-guide-to-charm-design", "name": "Charm Guides → Charm Designs", "fromItemId": "charm-guide", "fromQuantity": 2, "toItemId": "charm-design", "toQuantity": 1}, {"id": "charm-design-to-charm-guide", "name": "Charm Designs → Charm Guides", "fromItemId": "charm-design", "fromQuantity": 2, "toItemId": "charm-guide", "toQuantity": 1}, {"id": "charm-guide-to-charm-secrets", "name": "Charm Guides → Charm Secrets", "fromItemId": "charm-guide", "fromQuantity": 40, "toItemId": "charm-secrets", "toQuantity": 1}, {"id": "charm-design-to-charm-secrets", "name": "Charm Designs → Charm Secrets", "fromItemId": "charm-design", "fromQuantity": 40, "toItemId": "charm-secrets", "toQuantity": 1}]
+</script>
 
 <script>
   const GEAR_SLOTS = JSON.parse(document.getElementById('gear-slot-data').textContent);
   const GEAR_LEVELS = JSON.parse(document.getElementById('gear-level-data').textContent);
   const CHARM_SLOTS = JSON.parse(document.getElementById('charm-slot-data').textContent);
   const CHARM_LEVELS = JSON.parse(document.getElementById('charm-level-data').textContent);
+  const GEAR_CONVERTER = JSON.parse(document.getElementById('gear-converter-data').textContent);
+  const CHARM_CONVERTER = JSON.parse(document.getElementById('charm-converter-data').textContent);
   const MATERIALS = JSON.parse(document.getElementById('materials-data').textContent);
 
   function fmt(value) {
@@ -299,6 +321,26 @@
     </table>`;
   }
 
+  function converterTable(conversions) {
+    const hasLimit = conversions.some((c) => c.weeklyLimit !== undefined);
+    const rows = conversions
+      .map((c) => {
+        const fromItem = MATERIALS[c.fromItemId];
+        const toItem = MATERIALS[c.toItemId];
+        return `<tr>
+          <td><div class="material-row"><img src="..${fromItem.img}" alt="" onerror="this.style.visibility='hidden'">${fmt(c.fromQuantity)} ${fromItem.name}</div></td>
+          <td>&rarr;</td>
+          <td><div class="material-row"><img src="..${toItem.img}" alt="" onerror="this.style.visibility='hidden'">${fmt(c.toQuantity)} ${toItem.name}</div></td>
+          ${hasLimit ? `<td>${c.weeklyLimit !== undefined ? fmt(c.weeklyLimit) : '<span class="empty">&mdash;</span>'}</td>` : ''}
+        </tr>`;
+      })
+      .join('');
+    return `<table>
+      <thead><tr><th>From</th><th></th><th>To</th>${hasLimit ? '<th>Weekly Limit</th>' : ''}</tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+  }
+
   function buildSummary() {
     const el = document.getElementById('summary');
     el.innerHTML = [
@@ -306,6 +348,8 @@
       `<div class="card"><div class="value">${fmt(GEAR_LEVELS.length)}</div><div class="label">Gear Levels</div></div>`,
       `<div class="card total"><div class="value">${fmt(CHARM_SLOTS.length)}</div><div class="label">Charm Slots</div></div>`,
       `<div class="card"><div class="value">${fmt(CHARM_LEVELS.length)}</div><div class="label">Charm Levels</div></div>`,
+      `<div class="card"><div class="value">${fmt(GEAR_CONVERTER.length)}</div><div class="label">Gear Conversions</div></div>`,
+      `<div class="card"><div class="value">${fmt(CHARM_CONVERTER.length)}</div><div class="label">Charm Conversions</div></div>`,
     ].join('');
   }
 
@@ -429,12 +473,16 @@
       btn.classList.add('active');
       document.getElementById('gear-panel').style.display = btn.dataset.tab === 'gear' ? '' : 'none';
       document.getElementById('charm-panel').style.display = btn.dataset.tab === 'charm' ? '' : 'none';
+      document.getElementById('converters-panel').style.display =
+        btn.dataset.tab === 'converters' ? '' : 'none';
     });
   });
 
   buildSummary();
   renderGearDetail();
   renderCharmDetail();
+  document.getElementById('gear-converter-table').innerHTML = converterTable(GEAR_CONVERTER);
+  document.getElementById('charm-converter-table').innerHTML = converterTable(CHARM_CONVERTER);
 </script>
 
 </body>

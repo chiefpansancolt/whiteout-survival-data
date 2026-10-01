@@ -473,6 +473,20 @@ Marksman); `chiefCharmImage(slot, level)` resolves a slot straight to the icon f
 
 ---
 
+### 🔄 Converters
+
+| Module              | Factory                 | Items | Description                                         |
+| ------------------- | ----------------------- | ----- | --------------------------------------------------- |
+| chiefGearConverter  | `chiefGearConverter()`  | 7     | The Chief Gear material converter's exchange rates  |
+| chiefCharmConverter | `chiefCharmConverter()` | 4     | The Chief Charm material converter's exchange rates |
+
+Both converters share the `ItemConversion` shape (`fromItemId`/`fromQuantity` → `toItemId`/
+`toQuantity`, both resolving to real `items()` entries) and the same `byFromItem()`/`byToItem()`
+filters. The Chief Gear converter also carries a `weeklyLimit` — the maximum number of times that
+exchange can be used per week — which the Chief Charm converter doesn't have.
+
+---
+
 ### 🔬 Research
 
 | Module   | Factory      | Items | Description                                                  |

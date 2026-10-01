@@ -18,3 +18,5 @@ export * from './modules/alliance/facility';
 export * from './modules/event-buff';
 export * from './modules/vip';
 export * from './modules/daybreak-island';
+export * from './modules/chief-gear-converter';
+export * from './modules/chief-charm-converter';

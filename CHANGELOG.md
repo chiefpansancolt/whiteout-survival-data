@@ -85,6 +85,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `chiefCharmSlots()`: the 3 troop-type charms (Infantry, Lancer, Marksman), each carrying an
   18-entry `images` array (one icon per charm level, 54 total) plus a `chiefCharmImage()` helper to
   resolve a slot straight to the icon for a given level.
+- `chiefGearConverter()` and `chiefCharmConverter()`: the first two entries under a new `converters`
+  data folder, modeling fixed item-exchange rates (`ItemConversion`: `fromItemId`/`fromQuantity` →
+  `toItemId`/`toQuantity`), each with `byFromItem()`/`byToItem()` filters. Chief Gear has 7 exchange
+  rates with a `weeklyLimit` on each; Chief Charm has 4 with no limit. The source table's "Jewel
+  Secrets" is the same item as the existing `charm-secrets` catalog entry, just a different name on
+  that particular screen.
 - `research()`: the full Research Center tech tree, covering Battle, Growth, Economy, and both T11
   and T12 troop research for Infantry, Marksman, and Lancer.
 - `heroGearEnhancement()`, `heroGearEmpowerment()`, and `heroGearMasteryForging()`: the three Hero

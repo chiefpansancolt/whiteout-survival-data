@@ -1,0 +1,34 @@
+[
+  {
+    "id": "charm-guide-to-charm-design",
+    "name": "Charm Guides → Charm Designs",
+    "fromItemId": "charm-guide",
+    "fromQuantity": 2,
+    "toItemId": "charm-design",
+    "toQuantity": 1
+  },
+  {
+    "id": "charm-design-to-charm-guide",
+    "name": "Charm Designs → Charm Guides",
+    "fromItemId": "charm-design",
+    "fromQuantity": 2,
+    "toItemId": "charm-guide",
+    "toQuantity": 1
+  },
+  {
+    "id": "charm-guide-to-charm-secrets",
+    "name": "Charm Guides → Charm Secrets",
+    "fromItemId": "charm-guide",
+    "fromQuantity": 40,
+    "toItemId": "charm-secrets",
+    "toQuantity": 1
+  },
+  {
+    "id": "charm-design-to-charm-secrets",
+    "name": "Charm Designs → Charm Secrets",
+    "fromItemId": "charm-design",
+    "fromQuantity": 40,
+    "toItemId": "charm-secrets",
+    "toQuantity": 1
+  }
+]

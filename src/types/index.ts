@@ -16,3 +16,4 @@ export * from './alliance-facility';
 export * from './event-buff';
 export * from './vip';
 export * from './daybreak-island';
+export * from './converter';

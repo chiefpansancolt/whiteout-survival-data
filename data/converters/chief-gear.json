@@ -1,0 +1,65 @@
+[
+  {
+    "id": "design-plans-to-lunar-amber",
+    "name": "Design Plans → Lunar Amber",
+    "fromItemId": "design-plans",
+    "fromQuantity": 10,
+    "toItemId": "lunar-amber",
+    "toQuantity": 1,
+    "weeklyLimit": 500
+  },
+  {
+    "id": "design-plans-to-polishing-solution",
+    "name": "Design Plans → Polishing Solution",
+    "fromItemId": "design-plans",
+    "fromQuantity": 1,
+    "toItemId": "polishing-solution",
+    "toQuantity": 3,
+    "weeklyLimit": 500
+  },
+  {
+    "id": "design-plans-to-hardened-alloy",
+    "name": "Design Plans → Hardened Alloy",
+    "fromItemId": "design-plans",
+    "fromQuantity": 1,
+    "toItemId": "hardened-alloy",
+    "toQuantity": 300,
+    "weeklyLimit": 500
+  },
+  {
+    "id": "polishing-solution-to-design-plans",
+    "name": "Polishing Solution → Design Plans",
+    "fromItemId": "polishing-solution",
+    "fromQuantity": 10,
+    "toItemId": "design-plans",
+    "toQuantity": 1,
+    "weeklyLimit": 50
+  },
+  {
+    "id": "polishing-solution-to-hardened-alloy",
+    "name": "Polishing Solution → Hardened Alloy",
+    "fromItemId": "polishing-solution",
+    "fromQuantity": 1,
+    "toItemId": "hardened-alloy",
+    "toQuantity": 50,
+    "weeklyLimit": 1000
+  },
+  {
+    "id": "hardened-alloy-to-design-plans",
+    "name": "Hardened Alloy → Design Plans",
+    "fromItemId": "hardened-alloy",
+    "fromQuantity": 1000,
+    "toItemId": "design-plans",
+    "toQuantity": 1,
+    "weeklyLimit": 50
+  },
+  {
+    "id": "hardened-alloy-to-polishing-solution",
+    "name": "Hardened Alloy → Polishing Solution",
+    "fromItemId": "hardened-alloy",
+    "fromQuantity": 200,
+    "toItemId": "polishing-solution",
+    "toQuantity": 1,
+    "weeklyLimit": 500
+  }
+]
