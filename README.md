@@ -8,6 +8,11 @@
 
 </div>
 
+> ⚠️ **Work in progress.** This package has not had a first release yet. Data is still being
+> gathered, cross-checked, and corrected, so some fields are placeholders, some values may be wrong,
+> and the API surface can still change without notice. Treat everything here as unstable until the
+> first tagged release.
+
 ---
 
 ## 📦 Installation
