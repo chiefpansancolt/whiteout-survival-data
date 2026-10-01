@@ -79,6 +79,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `pets()`: all 14 Beast Cage pets, with their skills, levels, and unlock chain.
 - `items()` and `skins()`: the full item catalog (226 items and 189 cosmetic skins).
 - `chiefGear()`, `chiefGearSlots()`, and `chiefCharm()`: Chief Gear and Chief Charm upgrade tables.
+- `chiefGearSlots()`: added `images`, one icon per rarity per slot (30 total), plus
+  `chiefGearRarity()` and `chiefGearImage()` helpers to resolve a `ChiefGearLevel`'s `T`-suffixed
+  sub-tier down to the right icon.
+- `chiefCharmSlots()`: the 3 troop-type charms (Infantry, Lancer, Marksman), each carrying an
+  18-entry `images` array (one icon per charm level, 54 total) plus a `chiefCharmImage()` helper to
+  resolve a slot straight to the icon for a given level.
 - `research()`: the full Research Center tech tree, covering Battle, Growth, Economy, and both T11
   and T12 troop research for Infantry, Marksman, and Lancer.
 - `heroGearEnhancement()`, `heroGearEmpowerment()`, and `heroGearMasteryForging()`: the three Hero

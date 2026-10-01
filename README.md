@@ -444,18 +444,32 @@ Lancer, Coat/Pants buff Infantry, and Ring/Weapon buff Marksman. The 3-piece/6-p
 set bonus mentioned on the page isn't modeled — the wiki only describes the mechanic in prose
 (`"raise ... by x%"`) and never gives real numbers for it.
 
+Each `ChiefGearSlot` carries `images`, one icon per rarity (`Common`/`Rare`/`Epic`/`Mythic`/
+`Legendary`) — a piece's appearance only changes at these 5 points, not at every one of the 150
+table rows: every `T`-suffixed sub-tier (`EpicT1`, `MythicT1`/`MythicT2`, `LegendaryT1`–`T6`) reuses
+its base rarity's icon, and the star/stage counters shown on the source calculator are a UI overlay
+on top of that icon, not separate image assets. `chiefGearRarity(tier)` strips a level's `T\d+`
+suffix down to its base rarity, and `chiefGearImage(slot, level)` resolves a `ChiefGearLevel`
+straight to the right `ChiefGearSlot` icon.
+
 ---
 
 ### 📿 Chief Charm
 
-| Module     | Factory        | Items | Description                                                   |
-| ---------- | -------------- | ----- | ------------------------------------------------------------- |
-| chiefCharm | `chiefCharm()` | 75    | The shared upgrade table every chief charm progresses through |
+| Module          | Factory             | Items | Description                                                   |
+| --------------- | ------------------- | ----- | ------------------------------------------------------------- |
+| chiefCharm      | `chiefCharm()`      | 75    | The shared upgrade table every chief charm progresses through |
+| chiefCharmSlots | `chiefCharmSlots()` | 3     | The 3 troop-type charms (Infantry, Lancer, Marksman)          |
 
-Same shape as `chiefGear()`, minus the equip-slot and deployment-capacity concepts (charms have no
-stated slot breakdown on the source page). `materials` are Charm Guide, Charm Design, and Charm
-Secrets — the last one only appears starting at level 11 stage 1, not from level 1, matching the raw
-table exactly rather than assuming a fixed three-material set throughout.
+Same shape as `chiefGear()` for the level table, minus the deployment-capacity concept. `materials`
+are Charm Guide, Charm Design, and Charm Secrets — the last one only appears starting at level 11
+stage 1, not from level 1, matching the raw table exactly rather than assuming a fixed
+three-material set throughout.
+
+Unlike gear, a charm's appearance changes at every one of its 18 levels rather than collapsing to a
+handful of rarity icons, so `ChiefCharmSlot.images` is a plain 18-entry array (`images[level - 1]`)
+instead of a rarity-keyed map. `chiefCharmSlots()` covers the 3 troop-type charms (Infantry, Lancer,
+Marksman); `chiefCharmImage(slot, level)` resolves a slot straight to the icon for a given level.
 
 ---
 

@@ -1,8 +1,32 @@
-import { chiefCharm, ChiefCharmLevelQuery } from '@/modules/chief-charm';
+import {
+  chiefCharm,
+  chiefCharmImage,
+  ChiefCharmLevelQuery,
+  ChiefCharmSlotQuery,
+  chiefCharmSlots,
+} from '@/modules/chief-charm';
 import { items } from '@/modules/items';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('chiefCharm', () => chiefCharm());
+testQueryBaseContract('chiefCharmSlots', () => chiefCharmSlots());
+
+describe('ChiefCharmSlotQuery', () => {
+  it('accepts an explicit source array', () => {
+    const subset = chiefCharmSlots().get().slice(0, 1);
+    expect(new ChiefCharmSlotQuery(subset).count()).toBe(1);
+  });
+
+  it('uses default data when constructed without arguments', () => {
+    expect(new ChiefCharmSlotQuery().count()).toBeGreaterThan(0);
+  });
+
+  it('byTroopType() filters to the given troop type', () => {
+    const infantry = chiefCharmSlots().byTroopType('Infantry');
+    expect(infantry.count()).toBe(1);
+    expect(infantry.first()!.name).toBe('Infantry');
+  });
+});
 
 describe('ChiefCharmLevelQuery', () => {
   it('accepts an explicit source array', () => {
@@ -44,5 +68,23 @@ describe('Chief Charm system', () => {
       'charm-design',
       'charm-secrets',
     ]);
+  });
+
+  it('has 3 troop-type slots, one icon per level 1-18', () => {
+    expect(chiefCharmSlots().count()).toBe(3);
+    chiefCharmSlots()
+      .get()
+      .forEach((slot) => {
+        expect(slot.images).toHaveLength(18);
+        slot.images.forEach((img, index) => {
+          expect(img).toBe(`/images/chief-charm/${slot.name}-${index + 1}.png`);
+        });
+      });
+  });
+
+  it('chiefCharmImage() resolves a slot to its icon for a given level', () => {
+    const infantry = chiefCharmSlots().byTroopType('Infantry').first()!;
+    expect(chiefCharmImage(infantry, 1)).toBe('/images/chief-charm/Infantry-1.png');
+    expect(chiefCharmImage(infantry, 18)).toBe('/images/chief-charm/Infantry-18.png');
   });
 });

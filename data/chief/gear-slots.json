@@ -1,8 +1,74 @@
 [
-  { "id": "cap", "name": "Cap", "troopType": "Lancer" },
-  { "id": "watch", "name": "Watch", "troopType": "Lancer" },
-  { "id": "coat", "name": "Coat", "troopType": "Infantry" },
-  { "id": "pants", "name": "Pants", "troopType": "Infantry" },
-  { "id": "ring", "name": "Ring", "troopType": "Marksman" },
-  { "id": "weapon", "name": "Weapon", "troopType": "Marksman" }
+  {
+    "id": "cap",
+    "name": "Cap",
+    "troopType": "Lancer",
+    "images": {
+      "Common": "/images/chief-gear/Cap-Common.png",
+      "Rare": "/images/chief-gear/Cap-Rare.png",
+      "Epic": "/images/chief-gear/Cap-Epic.png",
+      "Mythic": "/images/chief-gear/Cap-Mythic.png",
+      "Legendary": "/images/chief-gear/Cap-Legendary.png"
+    }
+  },
+  {
+    "id": "watch",
+    "name": "Watch",
+    "troopType": "Lancer",
+    "images": {
+      "Common": "/images/chief-gear/Watch-Common.png",
+      "Rare": "/images/chief-gear/Watch-Rare.png",
+      "Epic": "/images/chief-gear/Watch-Epic.png",
+      "Mythic": "/images/chief-gear/Watch-Mythic.png",
+      "Legendary": "/images/chief-gear/Watch-Legendary.png"
+    }
+  },
+  {
+    "id": "coat",
+    "name": "Coat",
+    "troopType": "Infantry",
+    "images": {
+      "Common": "/images/chief-gear/Coat-Common.png",
+      "Rare": "/images/chief-gear/Coat-Rare.png",
+      "Epic": "/images/chief-gear/Coat-Epic.png",
+      "Mythic": "/images/chief-gear/Coat-Mythic.png",
+      "Legendary": "/images/chief-gear/Coat-Legendary.png"
+    }
+  },
+  {
+    "id": "pants",
+    "name": "Pants",
+    "troopType": "Infantry",
+    "images": {
+      "Common": "/images/chief-gear/Pants-Common.png",
+      "Rare": "/images/chief-gear/Pants-Rare.png",
+      "Epic": "/images/chief-gear/Pants-Epic.png",
+      "Mythic": "/images/chief-gear/Pants-Mythic.png",
+      "Legendary": "/images/chief-gear/Pants-Legendary.png"
+    }
+  },
+  {
+    "id": "ring",
+    "name": "Ring",
+    "troopType": "Marksman",
+    "images": {
+      "Common": "/images/chief-gear/Ring-Common.png",
+      "Rare": "/images/chief-gear/Ring-Rare.png",
+      "Epic": "/images/chief-gear/Ring-Epic.png",
+      "Mythic": "/images/chief-gear/Ring-Mythic.png",
+      "Legendary": "/images/chief-gear/Ring-Legendary.png"
+    }
+  },
+  {
+    "id": "weapon",
+    "name": "Weapon",
+    "troopType": "Marksman",
+    "images": {
+      "Common": "/images/chief-gear/Weapon-Common.png",
+      "Rare": "/images/chief-gear/Weapon-Rare.png",
+      "Epic": "/images/chief-gear/Weapon-Epic.png",
+      "Mythic": "/images/chief-gear/Weapon-Mythic.png",
+      "Legendary": "/images/chief-gear/Weapon-Legendary.png"
+    }
+  }
 ]

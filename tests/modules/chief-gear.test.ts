@@ -1,6 +1,8 @@
 import {
   chiefGear,
+  chiefGearImage,
   ChiefGearLevelQuery,
+  chiefGearRarity,
   ChiefGearSlotQuery,
   chiefGearSlots,
 } from '@/modules/chief-gear';
@@ -70,5 +72,34 @@ describe('Chief Gear system', () => {
       .flatMap((l) => l.materials.map((m) => m.itemId));
     expect(allMaterialIds.length).toBeGreaterThan(0);
     expect(allMaterialIds.every((id) => items().find(id) !== undefined)).toBe(true);
+  });
+
+  it('gives every slot one icon per rarity', () => {
+    chiefGearSlots()
+      .get()
+      .forEach((slot) => {
+        (['Common', 'Rare', 'Epic', 'Mythic', 'Legendary'] as const).forEach((rarity) => {
+          expect(slot.images[rarity]).toMatch(
+            new RegExp(`/images/chief-gear/${slot.name}-${rarity}\\.png$`),
+          );
+        });
+      });
+  });
+
+  it('chiefGearRarity() strips a "T" sub-tier suffix down to the base rarity', () => {
+    expect(chiefGearRarity('Common')).toBe('Common');
+    expect(chiefGearRarity('Epic')).toBe('Epic');
+    expect(chiefGearRarity('EpicT1')).toBe('Epic');
+    expect(chiefGearRarity('MythicT2')).toBe('Mythic');
+    expect(chiefGearRarity('LegendaryT6')).toBe('Legendary');
+  });
+
+  it('chiefGearImage() resolves a level to its slot icon by rarity, sharing one icon across all Legendary sub-tiers', () => {
+    const cap = chiefGearSlots().find('cap')!;
+    const legendary = chiefGear().byTier('Legendary').first()!;
+    const legendaryT6 = chiefGear().find('legendary-t6-star-3-stage-0')!;
+    expect(legendaryT6.tier).toBe('LegendaryT6');
+    expect(chiefGearImage(cap, legendary)).toBe(cap.images.Legendary);
+    expect(chiefGearImage(cap, legendaryT6)).toBe(cap.images.Legendary);
   });
 });

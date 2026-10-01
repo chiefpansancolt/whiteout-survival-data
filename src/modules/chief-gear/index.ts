@@ -1,10 +1,20 @@
 import { QueryBase } from '@/common/query-base';
 import levelData from '@/data/chief/gear-levels.json';
 import slotData from '@/data/chief/gear-slots.json';
-import { ChiefGearLevel, ChiefGearSlot, ChiefGearTroopType } from '@/types';
+import { ChiefGearLevel, ChiefGearRarity, ChiefGearSlot, ChiefGearTroopType } from '@/types';
 
 const chiefGearSlotData: ChiefGearSlot[] = slotData as ChiefGearSlot[];
 const chiefGearLevelData: ChiefGearLevel[] = levelData as ChiefGearLevel[];
+
+/** Strips a "T" sub-tier suffix (e.g. "EpicT1" -> "Epic") to get a level's base rarity. */
+export function chiefGearRarity(tier: string): ChiefGearRarity {
+  return tier.replace(/T\d+$/, '') as ChiefGearRarity;
+}
+
+/** Returns the icon for a slot at a given level's rarity (sub-tiers share their base rarity's icon). */
+export function chiefGearImage(slot: ChiefGearSlot, level: ChiefGearLevel): string {
+  return slot.images[chiefGearRarity(level.tier)];
+}
 
 /** Query builder for ChiefGearSlot data. All filter methods return a new ChiefGearSlotQuery for chaining. */
 export class ChiefGearSlotQuery extends QueryBase<ChiefGearSlot> {

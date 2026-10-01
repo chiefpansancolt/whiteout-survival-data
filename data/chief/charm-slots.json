@@ -1,0 +1,77 @@
+[
+  {
+    "id": "infantry",
+    "name": "Infantry",
+    "troopType": "Infantry",
+    "images": [
+      "/images/chief-charm/Infantry-1.png",
+      "/images/chief-charm/Infantry-2.png",
+      "/images/chief-charm/Infantry-3.png",
+      "/images/chief-charm/Infantry-4.png",
+      "/images/chief-charm/Infantry-5.png",
+      "/images/chief-charm/Infantry-6.png",
+      "/images/chief-charm/Infantry-7.png",
+      "/images/chief-charm/Infantry-8.png",
+      "/images/chief-charm/Infantry-9.png",
+      "/images/chief-charm/Infantry-10.png",
+      "/images/chief-charm/Infantry-11.png",
+      "/images/chief-charm/Infantry-12.png",
+      "/images/chief-charm/Infantry-13.png",
+      "/images/chief-charm/Infantry-14.png",
+      "/images/chief-charm/Infantry-15.png",
+      "/images/chief-charm/Infantry-16.png",
+      "/images/chief-charm/Infantry-17.png",
+      "/images/chief-charm/Infantry-18.png"
+    ]
+  },
+  {
+    "id": "lancer",
+    "name": "Lancer",
+    "troopType": "Lancer",
+    "images": [
+      "/images/chief-charm/Lancer-1.png",
+      "/images/chief-charm/Lancer-2.png",
+      "/images/chief-charm/Lancer-3.png",
+      "/images/chief-charm/Lancer-4.png",
+      "/images/chief-charm/Lancer-5.png",
+      "/images/chief-charm/Lancer-6.png",
+      "/images/chief-charm/Lancer-7.png",
+      "/images/chief-charm/Lancer-8.png",
+      "/images/chief-charm/Lancer-9.png",
+      "/images/chief-charm/Lancer-10.png",
+      "/images/chief-charm/Lancer-11.png",
+      "/images/chief-charm/Lancer-12.png",
+      "/images/chief-charm/Lancer-13.png",
+      "/images/chief-charm/Lancer-14.png",
+      "/images/chief-charm/Lancer-15.png",
+      "/images/chief-charm/Lancer-16.png",
+      "/images/chief-charm/Lancer-17.png",
+      "/images/chief-charm/Lancer-18.png"
+    ]
+  },
+  {
+    "id": "marksman",
+    "name": "Marksman",
+    "troopType": "Marksman",
+    "images": [
+      "/images/chief-charm/Marksman-1.png",
+      "/images/chief-charm/Marksman-2.png",
+      "/images/chief-charm/Marksman-3.png",
+      "/images/chief-charm/Marksman-4.png",
+      "/images/chief-charm/Marksman-5.png",
+      "/images/chief-charm/Marksman-6.png",
+      "/images/chief-charm/Marksman-7.png",
+      "/images/chief-charm/Marksman-8.png",
+      "/images/chief-charm/Marksman-9.png",
+      "/images/chief-charm/Marksman-10.png",
+      "/images/chief-charm/Marksman-11.png",
+      "/images/chief-charm/Marksman-12.png",
+      "/images/chief-charm/Marksman-13.png",
+      "/images/chief-charm/Marksman-14.png",
+      "/images/chief-charm/Marksman-15.png",
+      "/images/chief-charm/Marksman-16.png",
+      "/images/chief-charm/Marksman-17.png",
+      "/images/chief-charm/Marksman-18.png"
+    ]
+  }
+]
