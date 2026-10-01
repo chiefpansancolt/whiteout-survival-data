@@ -1,3 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Experts Data Explorer</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --row-hover: #1c2e42;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 0 0 2px; }
+  h3 { font-size: 0.85rem; margin: 0 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    min-width: 110px;
+  }
+  .card .value { font-size: 1.3rem; font-weight: 700; }
+  .card .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .card.total { border-color: var(--accent); }
+  .card.total .value { color: var(--accent); }
+
+  .layout {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .sidebar {
+    flex: 0 0 260px;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #search {
+    width: 100%;
+    background: var(--row-alt);
+    border: none;
+    border-bottom: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+  #search:focus { outline: none; background: var(--row-hover); }
+  .expert-list { max-height: 640px; overflow-y: auto; }
+  .expert-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--panel-border);
+    font-size: 0.85rem;
+  }
+  .expert-row:hover { background: var(--row-hover); }
+  .expert-row.active { background: var(--row-hover); border-left: 3px solid var(--accent); }
+  .expert-row img { width: 36px; height: 36px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+  .expert-row .meta { color: var(--text-dim); font-size: 0.72rem; }
+
+  .detail {
+    flex: 1;
+    min-width: 0;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .detail-header-left { display: flex; gap: 14px; align-items: center; }
+  .detail-header-left img { width: 72px; height: 72px; object-fit: cover; border-radius: 10px; border: 1px solid var(--panel-border); }
+
+  .stat-group { display: flex; gap: 20px; flex-wrap: wrap; }
+  .stat-block { text-align: right; }
+  .stat-block .value { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+  .stat-block .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat-divider { width: 1px; align-self: stretch; background: var(--panel-border); }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: var(--row-hover);
+    border: 1px solid var(--panel-border);
+    margin-right: 6px;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .stat-box {
+    background: var(--row-alt);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .stat-box .stat-label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; }
+  .stat-box .stat-value { font-size: 1.05rem; font-weight: 600; }
+
+  .section { margin-bottom: 24px; }
+
+  .skill {
+    background: var(--row-alt);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+  }
+  .skill-name-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .skill-name-row img { width: 28px; height: 28px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+  .skill-name { font-weight: 600; }
+  .skill-desc { font-size: 0.82rem; color: var(--text-dim); margin-bottom: 10px; }
+  .extra-list { font-size: 0.78rem; color: var(--text-dim); margin: 8px 0 0; padding-left: 18px; }
+
+  .levels-table-wrap { max-height: 320px; overflow: auto; border: 1px solid var(--panel-border); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.8rem; }
+  thead th {
+    text-align: left;
+    padding: 6px 10px;
+    color: var(--text-dim);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--panel-border);
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background: var(--row-alt);
+  }
+  tbody td { padding: 6px 10px; border-bottom: 1px solid var(--panel-border); white-space: nowrap; }
+  tbody tr:nth-child(even) { background: var(--bg); }
+  .empty { color: var(--text-dim); }
+
+  .empty-detail { color: var(--text-dim); text-align: center; padding: 60px 20px; }
+
+  @media (max-width: 760px) {
+    .layout { flex-direction: column; }
+    .sidebar { flex-basis: auto; width: 100%; }
+    .expert-list { max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Experts Data Explorer</h1>
+<p class="sub">Full <code>experts()</code> data suite for validation &mdash; base bonuses, skills, talent, and the 100-level affinity table.</p>
+
+<div class="summary" id="summary"></div>
+
+<div class="layout">
+  <div class="sidebar">
+    <input type="text" id="search" placeholder="Search experts..." />
+    <div class="expert-list" id="expert-list"></div>
+  </div>
+  <div class="detail" id="detail"></div>
+</div>
+
+<script id="expert-data" type="application/json">
 [
   {
     "id": "cyrille",
@@ -21,7 +220,18 @@
         "progressions": [
           {
             "label": "Rally Capacity",
-            "values": [30000, 60000, 90000, 120000, 150000, 180000, 210000, 240000, 270000, 300000]
+            "values": [
+              30000,
+              60000,
+              90000,
+              120000,
+              150000,
+              180000,
+              210000,
+              240000,
+              270000,
+              300000
+            ]
           }
         ],
         "costs": [
@@ -85,7 +295,13 @@
         "progressions": [
           {
             "label": "Item Quantity",
-            "values": [1, 2, 3, 4, 5]
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
           }
         ],
         "costs": [
@@ -124,7 +340,13 @@
         "progressions": [
           {
             "label": "Essence Stones",
-            "values": [1, 2, 3, 4, 5]
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
           }
         ],
         "costs": [
@@ -163,7 +385,18 @@
         "progressions": [
           {
             "label": "Deployment Capacity",
-            "values": [3000, 6000, 9000, 12000, 15000, 18000, 21000, 24000, 27000, 30000]
+            "values": [
+              3000,
+              6000,
+              9000,
+              12000,
+              15000,
+              18000,
+              21000,
+              24000,
+              27000,
+              30000
+            ]
           }
         ],
         "costs": [
@@ -228,7 +461,19 @@
       "progressions": [
         {
           "label": "Point Boost",
-          "values": [2, 4, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+          "values": [
+            2,
+            4,
+            6,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24,
+            27,
+            30
+          ]
         }
       ],
       "costs": []
@@ -768,7 +1013,13 @@
         "progressions": [
           {
             "label": "Intel Gain",
-            "values": [2, 3, 4, 6, 8]
+            "values": [
+              2,
+              3,
+              4,
+              6,
+              8
+            ]
           }
         ],
         "costs": [
@@ -807,7 +1058,13 @@
         "progressions": [
           {
             "label": "Chief Stamina",
-            "values": [10, 15, 20, 30, 40]
+            "values": [
+              10,
+              15,
+              20,
+              30,
+              40
+            ]
           }
         ],
         "costs": [
@@ -846,7 +1103,13 @@
         "progressions": [
           {
             "label": "Speed Boost (Hours)",
-            "values": [2, 3, 4, 6, 8]
+            "values": [
+              2,
+              3,
+              4,
+              6,
+              8
+            ]
           }
         ],
         "costs": [
@@ -885,11 +1148,33 @@
         "progressions": [
           {
             "label": "Item Gain",
-            "values": [20, 30, 40, 50, 60, 70, 80, 90, 100, 120]
+            "values": [
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90,
+              100,
+              120
+            ]
           },
           {
             "label": "Refreshes",
-            "values": [1, 1, 1, 2, 2, 2, 3, 3, 3, 4]
+            "values": [
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4
+            ]
           }
         ],
         "costs": [
@@ -954,11 +1239,35 @@
       "progressions": [
         {
           "label": "Chest Gain",
-          "values": [1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+          "values": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5,
+            5
+          ]
         },
         {
           "label": "Daily Cap",
-          "values": [10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
+          "values": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30
+          ]
         }
       ],
       "costs": [],
@@ -1536,7 +1845,18 @@
         "progressions": [
           {
             "label": "Escort Boost",
-            "values": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+            "values": [
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16,
+              18,
+              20
+            ]
           }
         ],
         "costs": [
@@ -1600,7 +1920,18 @@
         "progressions": [
           {
             "label": "Arena Token Gain",
-            "values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50
+            ]
           }
         ],
         "costs": [
@@ -1664,11 +1995,33 @@
         "progressions": [
           {
             "label": "Shop Items",
-            "values": [1, 1, 1, 1, 1, 2, 2, 2, 2, 3]
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              2,
+              3
+            ]
           },
           {
             "label": "Price Drop",
-            "values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50
+            ]
           }
         ],
         "costs": [
@@ -1732,7 +2085,18 @@
         "progressions": [
           {
             "label": "Hero Stats Up",
-            "values": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+            "values": [
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16,
+              18,
+              20
+            ]
           }
         ],
         "costs": [
@@ -1797,11 +2161,35 @@
       "progressions": [
         {
           "label": "Reward Chance",
-          "values": [50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
+          "values": [
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90,
+            95,
+            100
+          ]
         },
         {
           "label": "Chests",
-          "values": [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3]
+          "values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3
+          ]
         }
       ],
       "costs": [],
@@ -2371,11 +2759,33 @@
         "progressions": [
           {
             "label": "Troops",
-            "values": [150, 200, 250, 300, 350, 400, 450, 500, 550, 600]
+            "values": [
+              150,
+              200,
+              250,
+              300,
+              350,
+              400,
+              450,
+              500,
+              550,
+              600
+            ]
           },
           {
             "label": "Loyalty Tag",
-            "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
           }
         ],
         "costs": [
@@ -2439,7 +2849,28 @@
         "progressions": [
           {
             "label": "Troop Attack",
-            "values": [5, 1, 15, 2, 25, 3, 35, 4, 45, 5, 55, 6, 65, 7, 75, 8, 85, 9, 95, 10]
+            "values": [
+              5,
+              1,
+              15,
+              2,
+              25,
+              3,
+              35,
+              4,
+              45,
+              5,
+              55,
+              6,
+              65,
+              7,
+              75,
+              8,
+              85,
+              9,
+              95,
+              10
+            ]
           }
         ],
         "costs": [
@@ -2553,7 +2984,28 @@
         "progressions": [
           {
             "label": "Troop Lethality",
-            "values": [5, 1, 15, 2, 25, 3, 35, 4, 45, 5, 55, 6, 65, 7, 75, 8, 85, 9, 95, 10]
+            "values": [
+              5,
+              1,
+              15,
+              2,
+              25,
+              3,
+              35,
+              4,
+              45,
+              5,
+              55,
+              6,
+              65,
+              7,
+              75,
+              8,
+              85,
+              9,
+              95,
+              10
+            ]
           }
         ],
         "costs": [
@@ -2668,8 +3120,26 @@
           {
             "label": "Rally Capacity",
             "values": [
-              5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000, 55000, 60000,
-              65000, 70000, 75000, 80000, 85000, 90000, 95000, 100000
+              5000,
+              10000,
+              15000,
+              20000,
+              25000,
+              30000,
+              35000,
+              40000,
+              45000,
+              50000,
+              55000,
+              60000,
+              65000,
+              70000,
+              75000,
+              80000,
+              85000,
+              90000,
+              95000,
+              100000
             ]
           }
         ],
@@ -2785,7 +3255,19 @@
       "progressions": [
         {
           "label": "Deployment Capacity",
-          "values": [300, 600, 1000, 1500, 2000, 3000, 4000, 5500, 7000, 8500, 10000]
+          "values": [
+            300,
+            600,
+            1000,
+            1500,
+            2000,
+            3000,
+            4000,
+            5500,
+            7000,
+            8500,
+            10000
+          ]
         }
       ],
       "costs": []
@@ -4266,7 +4748,18 @@
         "progressions": [
           {
             "label": "Arsenal Tokens Up",
-            "values": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+            "values": [
+              10,
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90,
+              100
+            ]
           }
         ],
         "costs": [
@@ -4331,7 +4824,16 @@
           {
             "label": "Free Heals",
             "values": [
-              100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000
+              100000,
+              200000,
+              300000,
+              400000,
+              500000,
+              600000,
+              700000,
+              800000,
+              900000,
+              1000000
             ]
           }
         ],
@@ -4397,13 +4899,51 @@
           {
             "label": "Troop Lethality",
             "values": [
-              15, 3, 45, 6, 75, 9, 105, 12, 135, 15, 165, 18, 195, 21, 225, 24, 255, 27, 285, 30
+              15,
+              3,
+              45,
+              6,
+              75,
+              9,
+              105,
+              12,
+              135,
+              15,
+              165,
+              18,
+              195,
+              21,
+              225,
+              24,
+              255,
+              27,
+              285,
+              30
             ]
           },
           {
             "label": "Troop Health",
             "values": [
-              15, 3, 45, 6, 75, 9, 105, 12, 135, 15, 165, 18, 195, 21, 225, 24, 255, 27, 285, 30
+              15,
+              3,
+              45,
+              6,
+              75,
+              9,
+              105,
+              12,
+              135,
+              15,
+              165,
+              18,
+              195,
+              21,
+              225,
+              24,
+              255,
+              27,
+              285,
+              30
             ]
           }
         ],
@@ -4519,8 +5059,26 @@
           {
             "label": "Rally Capacity",
             "values": [
-              7500, 15000, 22500, 30000, 37500, 45000, 52500, 60000, 67500, 75000, 82500, 90000,
-              97500, 105000, 112500, 120000, 127500, 135000, 142500, 150000
+              7500,
+              15000,
+              22500,
+              30000,
+              37500,
+              45000,
+              52500,
+              60000,
+              67500,
+              75000,
+              82500,
+              90000,
+              97500,
+              105000,
+              112500,
+              120000,
+              127500,
+              135000,
+              142500,
+              150000
             ]
           }
         ],
@@ -4636,11 +5194,35 @@
       "progressions": [
         {
           "label": "Troop Attack",
-          "values": [2, 4, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+          "values": [
+            2,
+            4,
+            6,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24,
+            27,
+            30
+          ]
         },
         {
           "label": "Troop Defense",
-          "values": [2, 4, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+          "values": [
+            2,
+            4,
+            6,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24,
+            27,
+            30
+          ]
         }
       ],
       "costs": []
@@ -6154,11 +6736,33 @@
         "progressions": [
           {
             "label": "Rapid Travel Free",
-            "values": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+            "values": [
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16,
+              18,
+              20
+            ]
           },
           {
             "label": "Attempts",
-            "values": [1, 1, 1, 1, 1, 2, 2, 2, 2, 3]
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              2,
+              3
+            ]
           }
         ],
         "costs": [
@@ -6222,7 +6826,18 @@
         "progressions": [
           {
             "label": "Reward Chance",
-            "values": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+            "values": [
+              10,
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90,
+              100
+            ]
           }
         ],
         "costs": [
@@ -6286,11 +6901,33 @@
         "progressions": [
           {
             "label": "Recovery Chance",
-            "values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50
+            ]
           },
           {
             "label": "Chests",
-            "values": [0, 0, 0, 0, 0, 1, 1, 1, 1, 2]
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              2
+            ]
           }
         ],
         "costs": [
@@ -6354,7 +6991,18 @@
         "progressions": [
           {
             "label": "Completions",
-            "values": [12, 11, 10, 9, 8, 7, 6, 5, 4, 4]
+            "values": [
+              12,
+              11,
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              4
+            ]
           }
         ],
         "costs": [
@@ -6419,7 +7067,19 @@
       "progressions": [
         {
           "label": "Troop Attack",
-          "values": [2, 4, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+          "values": [
+            2,
+            4,
+            6,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24,
+            27,
+            30
+          ]
         }
       ],
       "costs": []
@@ -6963,7 +7623,18 @@
         "progressions": [
           {
             "label": "Extra XP",
-            "values": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+            "values": [
+              5,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45,
+              50
+            ]
           }
         ],
         "costs": [
@@ -7027,11 +7698,33 @@
         "progressions": [
           {
             "label": "Deployment Capacity",
-            "values": [5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000]
+            "values": [
+              5000,
+              10000,
+              15000,
+              20000,
+              25000,
+              30000,
+              35000,
+              40000,
+              45000,
+              50000
+            ]
           },
           {
             "label": "Rapid Recovery",
-            "values": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60]
+            "values": [
+              6,
+              12,
+              18,
+              24,
+              30,
+              36,
+              42,
+              48,
+              54,
+              60
+            ]
           }
         ],
         "costs": [
@@ -7095,7 +7788,18 @@
         "progressions": [
           {
             "label": "Item Gain",
-            "values": [6, 12, 18, 24, 30, 36, 42, 48, 54, 60]
+            "values": [
+              6,
+              12,
+              18,
+              24,
+              30,
+              36,
+              42,
+              48,
+              54,
+              60
+            ]
           }
         ],
         "costs": [
@@ -7159,11 +7863,33 @@
         "progressions": [
           {
             "label": "Income Per Minute",
-            "values": [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000]
+            "values": [
+              500,
+              1000,
+              1500,
+              2000,
+              2500,
+              3000,
+              3500,
+              4000,
+              4500,
+              5000
+            ]
           },
           {
             "label": "Item Gain",
-            "values": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+            "values": [
+              10,
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90,
+              100
+            ]
           }
         ],
         "costs": [
@@ -7228,7 +7954,19 @@
       "progressions": [
         {
           "label": "Troop Lethality",
-          "values": [2, 4, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+          "values": [
+            2,
+            4,
+            6,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24,
+            27,
+            30
+          ]
         }
       ],
       "costs": []
@@ -7772,11 +8510,33 @@
         "progressions": [
           {
             "label": "Daily Cap",
-            "values": [6, 8, 10, 12, 16, 18, 20, 22, 24, 30]
+            "values": [
+              6,
+              8,
+              10,
+              12,
+              16,
+              18,
+              20,
+              22,
+              24,
+              30
+            ]
           },
           {
             "label": "Chests",
-            "values": [1, 1, 1, 1, 2, 2, 2, 2, 2, 3]
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3
+            ]
           }
         ],
         "costs": [
@@ -7840,7 +8600,28 @@
         "progressions": [
           {
             "label": "Troops' Defense",
-            "values": [1, 2, 3, 4, 5, 7, 9, 11, 13, 15, 18, 21, 24, 27, 30, 34, 38, 42, 46, 50]
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              18,
+              21,
+              24,
+              27,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50
+            ]
           }
         ],
         "costs": [
@@ -7954,7 +8735,28 @@
         "progressions": [
           {
             "label": "Troops' Health",
-            "values": [1, 2, 3, 4, 5, 7, 9, 11, 13, 15, 18, 21, 24, 27, 30, 34, 38, 42, 46, 50]
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              18,
+              21,
+              24,
+              27,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50
+            ]
           }
         ],
         "costs": [
@@ -8069,7 +8871,26 @@
           {
             "label": "Lethality Down",
             "values": [
-              25, 5, 75, 1, 125, 15, 175, 2, 225, 25, 275, 3, 325, 35, 375, 4, 425, 45, 475, 5
+              25,
+              5,
+              75,
+              1,
+              125,
+              15,
+              175,
+              2,
+              225,
+              25,
+              275,
+              3,
+              325,
+              35,
+              375,
+              4,
+              425,
+              45,
+              475,
+              5
             ]
           }
         ],
@@ -8186,12 +9007,34 @@
         {
           "label": "Infirmary Capacity",
           "values": [
-            50000, 65000, 80000, 95000, 110000, 125000, 140000, 155000, 170000, 185000, 200000
+            50000,
+            65000,
+            80000,
+            95000,
+            110000,
+            125000,
+            140000,
+            155000,
+            170000,
+            185000,
+            200000
           ]
         },
         {
           "label": "Healing Speed",
-          "values": [3, 6, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+          "values": [
+            3,
+            6,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50
+          ]
         }
       ],
       "costs": []
@@ -8710,3 +9553,230 @@
     ]
   }
 ]
+</script>
+
+<script>
+  const DATA = JSON.parse(document.getElementById('expert-data').textContent);
+
+  let searchTerm = '';
+  let activeId = DATA[0] ? DATA[0].id : null;
+
+  function fmt(value) {
+    return typeof value === 'number' ? value.toLocaleString() : value;
+  }
+
+  function buildSummary() {
+    const el = document.getElementById('summary');
+    const generations = new Set(DATA.map((e) => e.generation));
+    const totalSkills = DATA.reduce((sum, e) => sum + e.skills.length, 0);
+    const maxAffinityLevel = Math.max(...DATA.flatMap((e) => e.affinityLevels.map((a) => a.level)));
+    const cards = [
+      `<div class="card total"><div class="value">${fmt(DATA.length)}</div><div class="label">Total Experts</div></div>`,
+      `<div class="card"><div class="value">${fmt(generations.size)}</div><div class="label">Generations</div></div>`,
+      `<div class="card"><div class="value">${fmt(totalSkills)}</div><div class="label">Skills Tracked</div></div>`,
+      `<div class="card"><div class="value">${fmt(maxAffinityLevel)}</div><div class="label">Max Affinity Level</div></div>`,
+    ];
+    el.innerHTML = cards.join('');
+  }
+
+  function getFiltered() {
+    if (!searchTerm) return DATA;
+    const term = searchTerm.toLowerCase();
+    return DATA.filter(
+      (e) =>
+        e.name.toLowerCase().includes(term) ||
+        e.title.toLowerCase().includes(term) ||
+        e.specialty.toLowerCase().includes(term),
+    );
+  }
+
+  function renderList() {
+    const el = document.getElementById('expert-list');
+    const rows = getFiltered();
+    if (rows.length === 0) {
+      el.innerHTML = '<div class="expert-row" style="cursor:default;color:var(--text-dim)">No experts match.</div>';
+      return;
+    }
+    el.innerHTML = rows
+      .map(
+        (e) => `<div class="expert-row${e.id === activeId ? ' active' : ''}" data-id="${e.id}">
+          <img src="..${e.img}" alt="" onerror="this.style.visibility='hidden'">
+          <div>
+            <div>${e.name}</div>
+            <div class="meta">${e.title} &middot; Gen ${e.generation}</div>
+          </div>
+        </div>`,
+      )
+      .join('');
+    el.querySelectorAll('.expert-row[data-id]').forEach((row) => {
+      row.addEventListener('click', () => {
+        activeId = row.dataset.id;
+        renderList();
+        renderDetail();
+      });
+    });
+  }
+
+  function skillTable(skill) {
+    const hasCosts = skill.costs.length > 0;
+    const headerCells = [
+      '<th>Level</th>',
+      ...(hasCosts ? ['<th>EXP</th>', '<th>Books</th>'] : []),
+      ...skill.progressions.map((p) => `<th>${p.label}</th>`),
+    ].join('');
+    const rows = [];
+    for (let i = 0; i < skill.maxLevel; i++) {
+      const level = i + 1;
+      const cost = skill.costs.find((c) => c.level === level);
+      const cells = [
+        `<td>${level}</td>`,
+        ...(hasCosts
+          ? [`<td>${cost ? fmt(cost.exp) : '<span class="empty">&mdash;</span>'}</td>`, `<td>${cost ? fmt(cost.books) : '<span class="empty">&mdash;</span>'}</td>`]
+          : []),
+        ...skill.progressions.map((p) => `<td>${fmt(p.values[i])}</td>`),
+      ].join('');
+      rows.push(`<tr>${cells}</tr>`);
+    }
+    return `<div class="levels-table-wrap"><table>
+      <thead><tr>${headerCells}</tr></thead>
+      <tbody>${rows.join('')}</tbody>
+    </table></div>`;
+  }
+
+  function milestoneRewardsList(skill) {
+    if (!skill.milestoneRewards) return '';
+    const items = skill.milestoneRewards
+      .map(
+        (m) =>
+          `<li>Level ${m.levelRequired}: ${m.rewards.map((r) => `${fmt(r.amount)}x ${r.item}`).join(', ')}</li>`,
+      )
+      .join('');
+    return `<ul class="extra-list">${items}</ul>`;
+  }
+
+  function lootTableList(skill) {
+    if (!skill.lootTable) return '';
+    const items = skill.lootTable
+      .map((l) => `<li>${l.reward} &mdash; ${l.probabilityPercent}%</li>`)
+      .join('');
+    return `<ul class="extra-list">${items}</ul>`;
+  }
+
+  function skillBlock(skill) {
+    const totalExp = skill.costs.reduce((sum, c) => sum + c.exp, 0);
+    const totalBooks = skill.costs.reduce((sum, c) => sum + c.books, 0);
+    return `<div class="skill">
+      <div class="skill-name-row">
+        <img src="..${skill.img}" alt="" onerror="this.style.visibility='hidden'">
+        <div class="skill-name">${skill.name}</div>
+        <span class="badge">Max Lv.${skill.maxLevel}</span>
+        ${skill.costs.length > 0 ? `<span class="badge">${fmt(totalExp)} EXP</span><span class="badge">${fmt(totalBooks)} Books</span>` : ''}
+      </div>
+      <div class="skill-desc">${skill.description}</div>
+      ${skillTable(skill)}
+      ${milestoneRewardsList(skill)}
+      ${lootTableList(skill)}
+    </div>`;
+  }
+
+  function affinityTable(affinityLevels) {
+    const rows = affinityLevels
+      .map(
+        (a) => `<tr>
+          <td>${a.level}</td>
+          <td>${fmt(a.affinityRequired)}</td>
+          <td>${a.advancementCost !== undefined ? fmt(a.advancementCost) : '<span class="empty">&mdash;</span>'}</td>
+          <td>${a.statBonus}%</td>
+        </tr>`,
+      )
+      .join('');
+    return `<div class="levels-table-wrap"><table>
+      <thead><tr><th>Level</th><th>Affinity Required</th><th>Sigils</th><th>Stat Bonus</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
+  }
+
+  function expertTotals(expert) {
+    const totalSigils = expert.affinityLevels.reduce((sum, a) => sum + (a.advancementCost ?? 0), 0);
+    const totalAffinity = expert.affinityLevels.reduce((sum, a) => sum + a.affinityRequired, 0);
+    const totalBooks = [...expert.skills, expert.talent]
+      .flatMap((s) => s.costs)
+      .reduce((sum, c) => sum + c.books, 0);
+    return { totalSigils, totalAffinity, totalBooks };
+  }
+
+  function renderDetail() {
+    const el = document.getElementById('detail');
+    const expert = DATA.find((e) => e.id === activeId);
+    if (!expert) {
+      el.innerHTML = '<div class="empty-detail">Select an expert from the list.</div>';
+      return;
+    }
+
+    const { totalSigils, totalAffinity, totalBooks } = expertTotals(expert);
+
+    el.innerHTML = `
+      <div class="detail-header">
+        <div class="detail-header-left">
+          <img src="..${expert.img}" alt="" onerror="this.style.visibility='hidden'">
+          <div>
+            <h2>${expert.name}</h2>
+            <span class="badge">${expert.title}</span>
+            <span class="badge">${expert.specialty}</span>
+            <span class="badge">Gen ${expert.generation}</span>
+          </div>
+        </div>
+        <div class="stat-group">
+          <div class="stat-block">
+            <div class="value">${fmt(totalSigils)}</div>
+            <div class="label">Total Sigils</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <div class="value">${fmt(totalAffinity)}</div>
+            <div class="label">Total Affinity</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <div class="value">${fmt(totalBooks)}</div>
+            <div class="label">Total Books</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Base Bonuses</h3>
+        <div class="stat-grid">
+          ${expert.baseBonuses.map((b) => `<div class="stat-box"><div class="stat-label">${b.stat}</div><div class="stat-value">+${b.value}%</div></div>`).join('')}
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Skills</h3>
+        ${expert.skills.map(skillBlock).join('')}
+      </div>
+
+      <div class="section">
+        <h3>Talent</h3>
+        ${skillBlock(expert.talent)}
+      </div>
+
+      <div class="section">
+        <h3>Affinity (1-${expert.affinityLevels.length})</h3>
+        ${affinityTable(expert.affinityLevels)}
+      </div>
+    `;
+  }
+
+  document.getElementById('search').addEventListener('input', (e) => {
+    searchTerm = e.target.value;
+    renderList();
+  });
+
+  buildSummary();
+  renderList();
+  renderDetail();
+</script>
+
+</body>
+</html>

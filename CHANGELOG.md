@@ -130,6 +130,27 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed Jeronimo's Star 1 shard `total` (was `30`, but his `tierCosts` sum to `10` like every other
   hero), and recomputed his `shardCosts[].power` over the standard 1,065-shard total instead of the
   1,085 the incorrect total had implied.
+- Fixed `VipLevel.xpRequired` being treated as a cumulative running total; it's actually the XP
+  needed for that level alone, so `vip().atXp(n)` now sums every level's `xpRequired` in order
+  instead of comparing `n` against a single level's own value (e.g. reaching VIP 12 needs the sum of
+  all 12 levels, 4,800,000 total XP, not VIP 12's own 2,400,000).
+- Fixed leaked tooltip JS/CSS appended to 5 `ExpertSkill`/`ExpertTalent` descriptions (Romulus's
+  Last Line, Spirit of Aeetis, and One Heart; Fabian's Heightened Firepower and Battle Bulwark) -- a
+  scraping artifact from the source page's hover-preview script, trimmed down to the real
+  description sentence.
+- Fixed all 14 `pets()` portraits, which had been sourced from each pet's larger in-page splash art
+  (or, for Frost Gorilla/Frostscale Chameleon, left as `""` with no image at all) instead of the
+  wiki's own top-left profile portrait (`post_image`) -- re-downloaded all 14 as PNGs from the
+  correct source, and reorganized `images/pets/` into one folder per pet (`images/pets/<Pet>/`),
+  portrait alongside a `skills/` subfolder, matching the `images/heroes/` convention -- each skill
+  image is now named `<Pet>-<SkillName>.<ext>`.
+- Fixed `PetLevel.advancementMaterials[].itemId` using the source page's raw numeric icon IDs
+  (`600043`/`600044`/`600045`) instead of the matching `items()` catalog entries
+  (`taming-manual`/`energizing-potion`/`strengthening-serum`) across all 267 references.
+- Reorganized `images/experts/` into one folder per expert (`images/experts/<Expert>/`), portrait
+  alongside a `skills/` subfolder covering all 4 skills plus the talent, matching the
+  `images/heroes/`/`images/pets/` convention -- each is now named `<Expert>-<SkillName>.<ext>`
+  instead of the source's opaque numeric filenames.
 - Fixed Furnace's 50 Fire Crystal level `power` values, which had been rounded to the nearest
   100,000 (sourced from wostools rather than the wiki's own dedicated Fire Crystal Furnace page,
   which spells out the exact figures). Cross-checked every other Fire Crystal building (Embassy,

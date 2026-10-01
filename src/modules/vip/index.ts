@@ -17,8 +17,14 @@ export class VipQuery extends QueryBase<VipLevel> {
 
   /** Filter to the highest VIP level reachable with the given total XP. */
   atXp(totalXp: number): VipQuery {
-    const unlocked = this.data.filter((l) => l.xpRequired <= totalXp);
-    return new VipQuery(unlocked.length ? [unlocked[unlocked.length - 1]] : []);
+    let cumulativeXp = 0;
+    let reached: VipLevel | undefined;
+    for (const level of this.data) {
+      cumulativeXp += level.xpRequired;
+      if (cumulativeXp > totalXp) break;
+      reached = level;
+    }
+    return new VipQuery(reached ? [reached] : []);
   }
 }
 

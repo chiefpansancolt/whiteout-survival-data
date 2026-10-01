@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VIP Progression Explorer</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --row-hover: #1c2e42;
+    --new: #52d17a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h3 { font-size: 0.85rem; margin: 0 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    min-width: 110px;
+  }
+  .card .value { font-size: 1.3rem; font-weight: 700; }
+  .card .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .card.total { border-color: var(--accent); }
+  .card.total .value { color: var(--accent); }
+
+  .layout {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .sidebar {
+    flex: 0 0 200px;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .level-list { max-height: 640px; overflow-y: auto; }
+  .level-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--panel-border);
+    font-size: 0.85rem;
+  }
+  .level-row:hover { background: var(--row-hover); }
+  .level-row.active { background: var(--row-hover); border-left: 3px solid var(--accent); }
+  .level-row .xp { color: var(--text-dim); font-size: 0.72rem; }
+
+  .detail {
+    flex: 1;
+    min-width: 0;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .detail-header h2 { font-size: 1.2rem; margin: 0; }
+
+  .stat-group { display: flex; gap: 20px; }
+  .stat-block { text-align: right; }
+  .stat-block .value { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+  .stat-block .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .section { margin-bottom: 24px; }
+  .section-note { color: var(--text-dim); font-size: 0.78rem; margin: -4px 0 12px; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  thead th {
+    text-align: left;
+    padding: 8px 10px;
+    color: var(--text-dim);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  tbody td { padding: 8px 10px; border-bottom: 1px solid var(--panel-border); }
+  tbody tr:nth-child(even) { background: var(--row-alt); }
+  .value-cell { color: var(--accent); font-weight: 600; }
+  .badge-new {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 6px;
+    border-radius: 999px;
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: var(--new);
+    border: 1px solid var(--new);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  @media (max-width: 700px) {
+    .layout { flex-direction: column; }
+    .sidebar { flex-basis: auto; width: 100%; }
+    .level-list { max-height: 220px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>VIP Progression Explorer</h1>
+<p class="sub">Pick a VIP level to see everything unlocked at that level &mdash; backed by <code>vip()</code>. Each level's bonus list is cumulative, so it includes every bonus active from VIP 1 up through the selected level.</p>
+
+<div class="summary" id="summary"></div>
+
+<div class="layout">
+  <div class="sidebar">
+    <div class="level-list" id="level-list"></div>
+  </div>
+  <div class="detail" id="detail"></div>
+</div>
+
+<script id="vip-data" type="application/json">
+[{"id": "vip-1", "name": "VIP 1", "level": 1, "xpRequired": 0, "bonuses": [{"stat": "Resource Production Speed", "value": "+2%", "amount": 2, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+100K", "amount": 100000, "unit": "flat"}]}, {"id": "vip-2", "name": "VIP 2", "level": 2, "xpRequired": 2500, "bonuses": [{"stat": "Resource Production Speed", "value": "+4%", "amount": 4, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+150K", "amount": 150000, "unit": "flat"}]}, {"id": "vip-3", "name": "VIP 3", "level": 3, "xpRequired": 5000, "bonuses": [{"stat": "Resource Production Speed", "value": "+6%", "amount": 6, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+200K", "amount": 200000, "unit": "flat"}]}, {"id": "vip-4", "name": "VIP 4", "level": 4, "xpRequired": 12500, "bonuses": [{"stat": "Construction Speed", "value": "+10%", "amount": 10, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+8%", "amount": 8, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+300K", "amount": 300000, "unit": "flat"}]}, {"id": "vip-5", "name": "VIP 5", "level": 5, "xpRequired": 30000, "bonuses": [{"stat": "Troop Formation", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Construction Speed", "value": "+10%", "amount": 10, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+10%", "amount": 10, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+400K", "amount": 400000, "unit": "flat"}]}, {"id": "vip-6", "name": "VIP 6", "level": 6, "xpRequired": 40000, "bonuses": [{"stat": "March Queue", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Troop Formation", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Construction Speed", "value": "+10%", "amount": 10, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+12%", "amount": 12, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+500K", "amount": 500000, "unit": "flat"}]}, {"id": "vip-7", "name": "VIP 7", "level": 7, "xpRequired": 60000, "bonuses": [{"stat": "March Queue", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Troop Formation", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Construction Speed", "value": "+10%", "amount": 10, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+14%", "amount": 14, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+600K", "amount": 600000, "unit": "flat"}]}, {"id": "vip-8", "name": "VIP 8", "level": 8, "xpRequired": 100000, "bonuses": [{"stat": "March Queue", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Troop Formation", "value": "+2", "amount": 2, "unit": "flat"}, {"stat": "Construction Speed", "value": "+10%", "amount": 10, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+16%", "amount": 16, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+700K", "amount": 700000, "unit": "flat"}]}, {"id": "vip-9", "name": "VIP 9", "level": 9, "xpRequired": 350000, "bonuses": [{"stat": "Troops Defense", "value": "+10%", "amount": 10, "unit": "percent"}, {"stat": "March Queue", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Troop Formation", "value": "+2", "amount": 2, "unit": "flat"}, {"stat": "Construction Speed", "value": "+20%", "amount": 20, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+18%", "amount": 18, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+800K", "amount": 800000, "unit": "flat"}]}, {"id": "vip-10", "name": "VIP 10", "level": 10, "xpRequired": 600000, "bonuses": [{"stat": "Troops Attack", "value": "+12%", "amount": 12, "unit": "percent"}, {"stat": "Troops Defense", "value": "+12%", "amount": 12, "unit": "percent"}, {"stat": "March Queue", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Troop Formation", "value": "+2", "amount": 2, "unit": "flat"}, {"stat": "Construction Speed", "value": "+20%", "amount": 20, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+20%", "amount": 20, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+900K", "amount": 900000, "unit": "flat"}]}, {"id": "vip-11", "name": "VIP 11", "level": 11, "xpRequired": 1200000, "bonuses": [{"stat": "Troops Health", "value": "+14%", "amount": 14, "unit": "percent"}, {"stat": "Troops Attack", "value": "+14%", "amount": 14, "unit": "percent"}, {"stat": "Troops Defense", "value": "+14%", "amount": 14, "unit": "percent"}, {"stat": "March Queue", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Troop Formation", "value": "+2", "amount": 2, "unit": "flat"}, {"stat": "Construction Speed", "value": "+20%", "amount": 20, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+22%", "amount": 22, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+1M", "amount": 1000000, "unit": "flat"}]}, {"id": "vip-12", "name": "VIP 12", "level": 12, "xpRequired": 2400000, "bonuses": [{"stat": "Troops Lethality", "value": "+16%", "amount": 16, "unit": "percent"}, {"stat": "Troops Health", "value": "+16%", "amount": 16, "unit": "percent"}, {"stat": "Troops Attack", "value": "+16%", "amount": 16, "unit": "percent"}, {"stat": "Troops Defense", "value": "+16%", "amount": 16, "unit": "percent"}, {"stat": "March Queue", "value": "+1", "amount": 1, "unit": "flat"}, {"stat": "Troop Formation", "value": "+2", "amount": 2, "unit": "flat"}, {"stat": "Construction Speed", "value": "+20%", "amount": 20, "unit": "percent"}, {"stat": "Resource Production Speed", "value": "+24%", "amount": 24, "unit": "percent"}, {"stat": "Storehouse Capacity", "value": "+1.1M", "amount": 1100000, "unit": "flat"}]}]
+</script>
+
+<script>
+  const LEVELS = JSON.parse(document.getElementById('vip-data').textContent);
+  let activeLevel = LEVELS[0] ? LEVELS[0].level : null;
+
+  function fmt(value) {
+    return typeof value === 'number' ? value.toLocaleString() : value;
+  }
+
+  function buildSummary() {
+    const el = document.getElementById('summary');
+    const maxXp = LEVELS.reduce((sum, l) => sum + l.xpRequired, 0);
+    const uniqueStats = new Set();
+    LEVELS.forEach((l) => l.bonuses.forEach((b) => uniqueStats.add(b.stat)));
+    el.innerHTML = [
+      `<div class="card total"><div class="value">${fmt(LEVELS.length)}</div><div class="label">VIP Levels</div></div>`,
+      `<div class="card total"><div class="value">${fmt(maxXp)}</div><div class="label">Total XP Needed (VIP 1 &rarr; 12)</div></div>`,
+      `<div class="card"><div class="value">${fmt(uniqueStats.size)}</div><div class="label">Bonus Stats Tracked</div></div>`,
+    ].join('');
+  }
+
+  function renderList() {
+    const el = document.getElementById('level-list');
+    el.innerHTML = LEVELS.map(
+      (l) => `<div class="level-row${l.level === activeLevel ? ' active' : ''}" data-level="${l.level}">
+        <div>${l.name}</div>
+        <div class="xp">${l.xpRequired === 0 ? 'No XP' : fmt(l.xpRequired) + ' XP'}</div>
+      </div>`,
+    ).join('');
+    el.querySelectorAll('.level-row').forEach((row) => {
+      row.addEventListener('click', () => {
+        activeLevel = Number(row.dataset.level);
+        renderList();
+        renderDetail();
+      });
+    });
+  }
+
+  function renderDetail() {
+    const el = document.getElementById('detail');
+    const level = LEVELS.find((l) => l.level === activeLevel);
+    const previous = LEVELS.find((l) => l.level === activeLevel - 1);
+    const previousStats = new Set((previous ? previous.bonuses : []).map((b) => b.stat));
+
+    const rows = level.bonuses
+      .map(
+        (b) => `<tr>
+          <td>${b.stat}${!previousStats.has(b.stat) ? '<span class="badge-new">New</span>' : ''}</td>
+          <td class="value-cell">${b.value}</td>
+        </tr>`,
+      )
+      .join('');
+
+    el.innerHTML = `
+      <div class="detail-header">
+        <h2>${level.name}</h2>
+        <div class="stat-group">
+          <div class="stat-block">
+            <div class="value">${level.xpRequired === 0 ? 'None' : fmt(level.xpRequired)}</div>
+            <div class="label">Total XP Required</div>
+          </div>
+          <div class="stat-block">
+            <div class="value">${fmt(level.bonuses.length)}</div>
+            <div class="label">Bonuses Unlocked</div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Unlocked at ${level.name}</h3>
+        <p class="section-note">Cumulative bonuses active once you reach this level. "New" marks a bonus that first appears here.</p>
+        <table>
+          <thead><tr><th>Bonus</th><th>Value</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  buildSummary();
+  renderList();
+  renderDetail();
+</script>
+
+</body>
+</html>

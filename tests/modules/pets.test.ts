@@ -1,3 +1,4 @@
+import { items } from '@/modules/items';
 import { PetQuery, pets } from '@/modules/pets';
 import { testQueryBaseContract } from '../helpers';
 
@@ -77,10 +78,31 @@ describe('Pet roster', () => {
     expect(muskOx.skill.values).toEqual(muskOx.skill.cooldownSecondsByTier);
   });
 
-  it('has no portrait image for the two pets with a genuine asset gap on both source wikis', () => {
-    const frostGorilla = pets().findByName('Frost Gorilla')!;
-    const frostscaleChameleon = pets().findByName('Frostscale Chameleon')!;
-    expect(frostGorilla.img).toBe('');
-    expect(frostscaleChameleon.img).toBe('');
+  it('has a portrait for every pet, including Frost Gorilla and Frostscale Chameleon', () => {
+    pets()
+      .get()
+      .forEach((p) => {
+        expect(p.img.length).toBeGreaterThan(0);
+      });
+  });
+
+  it('resolves every advancementMaterials itemId against a real cataloged item', () => {
+    const allMaterialIds = pets()
+      .get()
+      .flatMap((p) => p.levels)
+      .flatMap((l) => l.advancementMaterials ?? [])
+      .map((m) => m.itemId);
+    expect(allMaterialIds.length).toBeGreaterThan(0);
+    expect(allMaterialIds.every((id) => items().find(id) !== undefined)).toBe(true);
+  });
+
+  it("uses the real catalog ids for Cave Hyena's Level 50 advancement materials, not raw numeric ids", () => {
+    const caveHyena = pets().findByName('Cave Hyena')!;
+    const level50 = caveHyena.levels.find((l) => l.level === 50)!;
+    expect(level50.advancementMaterials).toEqual([
+      { itemId: 'taming-manual', amount: 90 },
+      { itemId: 'energizing-potion', amount: 30 },
+      { itemId: 'strengthening-serum', amount: 10 },
+    ]);
   });
 });

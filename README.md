@@ -329,6 +329,10 @@ per-milestone "Sigil" cost; summing the column reproduces the aggregate "Total S
 reported elsewhere for every expert checked (e.g. Agnes: 5+10+...+50 = 275), so no separate
 recruitment-cost field is stored — it would just be redundant, derivable data.
 
+Images are organized one folder per expert (`images/experts/<Expert>/`), portrait alongside a
+`skills/` subfolder covering all 4 skills plus the talent, the same convention `images/heroes/` and
+`images/pets/` use — each is named `<Expert>-<SkillName>.<ext>`.
+
 ---
 
 ### 🐾 Pets
@@ -361,9 +365,11 @@ have a skill with no numeric effect to scale — instead, the _cooldown itself_ 
 tracked in `cooldownSecondsByTier` and mirrored into `values` so the tier count still lines up with
 every other pet's shape.
 
-Frost Gorilla and Frostscale Chameleon have no portrait image on either source wiki (a genuine
-roster-wide asset gap, not a scraping miss — confirmed via both wikis' raw HTML and their `og:image`
-placeholders) — `img` is `""` for these two rather than a broken link.
+Every pet's `img` is the page's own top-left profile portrait (the wiki's `post_image`), not the
+larger splash art embedded further down in each page's description — the two are different assets,
+and only the profile portrait matches the compact style used by every other pet's image. Images are
+organized one folder per pet (`images/pets/<Pet>/`), portrait alongside a `skills/` subfolder, the
+same convention `images/heroes/` uses — the single skill image is named `<Pet>-<SkillName>.<ext>`.
 
 ---
 
@@ -533,8 +539,7 @@ Three nodes — `exalted-infantry`, `exalted-marksman`, and `exalted-lancer` —
 at all yet. They were added from in-game knowledge rather than scraped: each is a capstone that
 unlocks once all 5 of its own T12 troop type's tier-1 Exalted items reach Level 5, with a single
 level, 8,000,000 power, and no known cost or bonus data (both empty arrays, not guessed values).
-`img` is `""` for these three, same treatment as Pets' Frost Gorilla/Frostscale Chameleon gap, since
-no icon exists anywhere to reference.
+`img` is `""` for these three, since no icon exists anywhere to reference.
 
 Each troop type's 4 tier-2 Molten I items also require that troop type's own Exalted capstone at
 Level 1, alongside their existing War Academy building gate — also confirmed from in-game knowledge
@@ -631,8 +636,7 @@ this wiki's usual `#table table` markup, just prose about capture mechanics (30-
 3-day control, stacking rules, a 12-facility cap). The 8 facility types and their per-level bonuses
 (`AllianceFacility.levels`) are transcribed instead from a user-provided screenshot of the in-game
 map info, which itself only documents some levels per facility (e.g. `defense` has Levels 2 and 4,
-`gathering` has only Level 1) — those are left as genuine gaps rather than guessed at, the same
-judgment call as Pets' Frost Gorilla/Frostscale Chameleon image gap.
+`gathering` has only Level 1) — those are left as genuine gaps rather than guessed at.
 
 ---
 
@@ -675,12 +679,14 @@ has no HTML table; the data is a single official infographic image. Unlike the u
 screenshots used for Alliance Facility and Event Buff, this one is complete and precise for all 12
 levels, so there's no documented gap here.
 
-`VipLevel.xpRequired` is the cumulative XP needed to reach that level (`0` for VIP 1, which the
-source image shows as `-`). `bonuses` lists the _total_ bonuses active at that level, not the delta
-from the previous one — e.g. Resource Production Speed appears at every level with an increasing
-value, and Storehouse Capacity, March Queue, and Troop Formation accumulate the same way. Combat
-stat bonuses (Troops Defense/Attack/Health/Lethality) don't appear at all until VIP 9. Use
-`vip().atXp(n)` to find the highest level reachable with a given amount of total XP.
+`VipLevel.xpRequired` is the XP needed to go from the previous level to that one, not a running
+total (`0` for VIP 1, which the source image shows as `-`) — summing every level's `xpRequired`
+gives the 4,800,000 total XP needed to reach VIP 12 from scratch. `bonuses` lists the _total_
+bonuses active at that level, not the delta from the previous one — e.g. Resource Production Speed
+appears at every level with an increasing value, and Storehouse Capacity, March Queue, and Troop
+Formation accumulate the same way. Combat stat bonuses (Troops Defense/Attack/Health/Lethality)
+don't appear at all until VIP 9. `vip().atXp(n)` sums each level's `xpRequired` in order and returns
+the highest level reachable with a given amount of total XP.
 
 Each `VipBonus` keeps the original display string in `value` (`"+16%"`, `"+1"`, `"+1.1M"`) alongside
 a parsed `amount`/`unit` pair (`16`/`'percent'`, `1`/`'flat'`, `1100000`/`'flat'`) — abbreviated

@@ -11,6 +11,7 @@ export interface VipLevel {
   id: string;
   name: string;
   level: number;
+  /** XP needed to go from the previous level to this one, not a running total. */
   xpRequired: number;
   bonuses: VipBonus[];
 }

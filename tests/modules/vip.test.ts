@@ -19,10 +19,14 @@ describe('VipQuery', () => {
     expect(vip5.first()!.id).toBe('vip-5');
   });
 
-  it('atXp() returns the highest level reachable with the given XP', () => {
+  it('atXp() returns the highest level reachable with the given XP, summing per-level costs', () => {
+    // Per-level costs: 0, 2500, 5000, 12500, 30000, 40000, ... -- cumulative: 0, 2500, 7500,
+    // 20000, 50000, 90000, ... VIP 6 needs 90000 total, not its own 40000.
     expect(vip().atXp(0).first()!.id).toBe('vip-1');
     expect(vip().atXp(2499).first()!.id).toBe('vip-1');
     expect(vip().atXp(2500).first()!.id).toBe('vip-2');
+    expect(vip().atXp(89999).first()!.id).toBe('vip-5');
+    expect(vip().atXp(90000).first()!.id).toBe('vip-6');
     expect(vip().atXp(99999999).first()!.id).toBe('vip-12');
   });
 
@@ -39,9 +43,13 @@ describe('VIP progression', () => {
     }
   });
 
-  it('requires no XP for VIP 1 and 2,400,000 cumulative XP for VIP 12', () => {
+  it('requires no XP for VIP 1 and sums per-level costs to 4,800,000 total XP for VIP 12', () => {
     expect(vip().find('vip-1')!.xpRequired).toBe(0);
     expect(vip().find('vip-12')!.xpRequired).toBe(2400000);
+    const totalXp = vip()
+      .get()
+      .reduce((sum, l) => sum + l.xpRequired, 0);
+    expect(totalXp).toBe(4800000);
   });
 
   it('lists cumulative bonuses active at each level, not per-level deltas', () => {

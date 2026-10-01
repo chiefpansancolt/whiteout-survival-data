@@ -1,3 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pets Data Explorer</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --row-hover: #1c2e42;
+    --common: #9fb0bf;
+    --uncommon: #52d17a;
+    --rare: #4fc3f7;
+    --epic: #c38fff;
+    --legendary: #ffb84f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 0 0 2px; }
+  h3 { font-size: 0.85rem; margin: 0 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    min-width: 110px;
+  }
+  .card .value { font-size: 1.3rem; font-weight: 700; }
+  .card .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .card.total { border-color: var(--accent); }
+  .card.total .value { color: var(--accent); }
+
+  .layout {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .sidebar {
+    flex: 0 0 260px;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #search {
+    width: 100%;
+    background: var(--row-alt);
+    border: none;
+    border-bottom: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+  #search:focus { outline: none; background: var(--row-hover); }
+  #rarity-filter {
+    width: 100%;
+    background: var(--row-alt);
+    border: none;
+    border-bottom: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+  #rarity-filter:focus { outline: none; background: var(--row-hover); }
+  .pet-list { max-height: 600px; overflow-y: auto; }
+  .pet-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--panel-border);
+    font-size: 0.85rem;
+  }
+  .pet-row:hover { background: var(--row-hover); }
+  .pet-row.active { background: var(--row-hover); border-left: 3px solid var(--accent); }
+  .pet-row img { width: 36px; height: 36px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+  .pet-row .swatch {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .pet-row .meta { color: var(--text-dim); font-size: 0.72rem; }
+
+  .detail {
+    flex: 1;
+    min-width: 0;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--panel-border);
+  }
+  .detail-header-left { display: flex; gap: 14px; align-items: center; }
+  .detail-header-left img { width: 72px; height: 72px; object-fit: cover; border-radius: 10px; border: 1px solid var(--panel-border); }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: var(--row-hover);
+    border: 1px solid var(--panel-border);
+    margin-right: 6px;
+  }
+  .badge.rarity-Common { border-color: var(--common); color: var(--common); }
+  .badge.rarity-Uncommon { border-color: var(--uncommon); color: var(--uncommon); }
+  .badge.rarity-Rare { border-color: var(--rare); color: var(--rare); }
+  .badge.rarity-Epic { border-color: var(--epic); color: var(--epic); }
+  .badge.rarity-Legendary { border-color: var(--legendary); color: var(--legendary); }
+
+  .stat-group { display: flex; gap: 20px; flex-wrap: wrap; }
+  .stat-block { text-align: right; }
+  .stat-block .value { font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+  .stat-block .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat-divider { width: 1px; align-self: stretch; background: var(--panel-border); }
+
+  .section { margin-bottom: 24px; }
+  .section-note { color: var(--text-dim); font-size: 0.78rem; margin: -4px 0 12px; }
+
+  .skill {
+    background: var(--row-alt);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .skill-name-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .skill-name-row img { width: 28px; height: 28px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
+  .skill-name { font-weight: 600; }
+  .skill-desc { font-size: 0.82rem; color: var(--text-dim); margin-bottom: 8px; }
+  .skill-values { display: flex; gap: 6px; flex-wrap: wrap; }
+  .skill-values .tag {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    background: var(--bg);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    padding: 2px 8px;
+  }
+
+  .material-row { display: inline-flex; align-items: center; gap: 4px; margin: 1px 6px 1px 0; }
+  .material-row img { width: 20px; height: 20px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
+
+  .levels-table-wrap { max-height: 480px; overflow: auto; border: 1px solid var(--panel-border); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.8rem; }
+  thead th {
+    text-align: left;
+    padding: 6px 10px;
+    color: var(--text-dim);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--panel-border);
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background: var(--row-alt);
+  }
+  tbody td { padding: 6px 10px; border-bottom: 1px solid var(--panel-border); white-space: nowrap; }
+  tbody tr:nth-child(even) { background: var(--bg); }
+  .refined { color: var(--accent); font-size: 0.72rem; margin-left: 4px; }
+  .empty { color: var(--text-dim); }
+
+  .empty-detail { color: var(--text-dim); text-align: center; padding: 60px 20px; }
+
+  @media (max-width: 760px) {
+    .layout { flex-direction: column; }
+    .sidebar { flex-basis: auto; width: 100%; }
+    .pet-list { max-height: 260px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Pets Data Explorer</h1>
+<p class="sub">Full <code>pets()</code> data suite for validation &mdash; unlock chain, skill, and per-level stats/materials.</p>
+
+<div class="summary" id="summary"></div>
+
+<div class="layout">
+  <div class="sidebar">
+    <input type="text" id="search" placeholder="Search pets..." />
+    <select id="rarity-filter">
+      <option value="">All Rarities</option>
+      <option value="Common">Common</option>
+      <option value="Uncommon">Uncommon</option>
+      <option value="Rare">Rare</option>
+      <option value="Epic">Epic</option>
+      <option value="Legendary">Legendary</option>
+    </select>
+    <div class="pet-list" id="pet-list"></div>
+  </div>
+  <div class="detail" id="detail"></div>
+</div>
+
+<script id="pet-data" type="application/json">
 [
   {
     "id": "cave-hyena",
@@ -14,7 +244,13 @@
       "name": "Builder's Aide",
       "img": "/images/pets/CaveHyena/skills/CaveHyena-BuilderSAide.png",
       "description": "Skill Effect: Skilled Hyenas adeptly deliver tools to the architect, increasing Construction Speed by 5.00% / 7.00% / 9.00% / 12.00% / 15.00% for 5 minutes.",
-      "values": [5.0, 7.0, 9.0, 12.0, 15.0],
+      "values": [
+        5.0,
+        7.0,
+        9.0,
+        12.0,
+        15.0
+      ],
       "cooldownSeconds": 82800,
       "durationSeconds": 300
     },
@@ -746,7 +982,14 @@
       "name": "Arctic Embrace",
       "img": "/images/pets/ArcticWolf/skills/ArcticWolf-ArcticEmbrace.png",
       "description": "Skill Effect: The Arctic Wolf's comforting presence rejuvenates weary spirits, instantly restoring 35 / 40 / 45 / 50 / 55 / 60 Chief Stamina.",
-      "values": [35.0, 40.0, 45.0, 50.0, 55.0, 60.0],
+      "values": [
+        35.0,
+        40.0,
+        45.0,
+        50.0,
+        55.0,
+        60.0
+      ],
       "cooldownSeconds": 82800
     },
     "levels": [
@@ -1625,8 +1868,22 @@
       "name": "Burden Bearer",
       "img": "/images/pets/MuskOx/skills/MuskOx-BurdenBearer.png",
       "description": "Skill Effect: Harnessing the Musk Ox's formidable strength and endurance, instantly complete the gathering upon reaching the next wilderness resources tile (excludes Secured Alliance Gathering Nodes).",
-      "values": [126000, 111600, 97200, 82800, 68400, 54000],
-      "cooldownSecondsByTier": [126000, 111600, 97200, 82800, 68400, 54000]
+      "values": [
+        126000,
+        111600,
+        97200,
+        82800,
+        68400,
+        54000
+      ],
+      "cooldownSecondsByTier": [
+        126000,
+        111600,
+        97200,
+        82800,
+        68400,
+        54000
+      ]
     },
     "levels": [
       {
@@ -2507,7 +2764,15 @@
       "name": "Natural Intuition",
       "img": "/images/pets/GiantTapir/skills/GiantTapir-NaturalIntuition.png",
       "description": "Skill Effect: Despite its docile appearance, the Giant Tapir's keen senses allow it to instantly locate 200 / 250 / 300 / 350 / 400 / 450 / 500 Pet Food.",
-      "values": [200.0, 250.0, 300.0, 350.0, 400.0, 450.0, 500.0],
+      "values": [
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        450.0,
+        500.0
+      ],
       "cooldownSeconds": 82800
     },
     "levels": [
@@ -3535,7 +3800,15 @@
       "name": "Razorbeak",
       "img": "/images/pets/TitanRoc/skills/TitanRoc-Razorbeak.png",
       "description": "Skill Effect: The formidable Titan Roc's beak is indestructible, reducing enemy Health by 1.50% / 2.00% / 2.50% / 3.00% / 3.50% / 4.00% / 5.00% for 2h.",
-      "values": [1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0],
+      "values": [
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        5.0
+      ],
       "cooldownSeconds": 72000
     },
     "levels": [
@@ -4563,8 +4836,26 @@
       "name": "Mystical Finding",
       "img": "/images/pets/GiantElk/skills/GiantElk-MysticalFinding.png",
       "description": "Skill Effect: Guided by its mystical intuition, the Giant Elk unearths an item lost on the Tundra.",
-      "values": [183600, 169200, 154800, 140400, 126000, 111600, 97200, 82800],
-      "cooldownSecondsByTier": [183600, 169200, 154800, 140400, 126000, 111600, 97200, 82800]
+      "values": [
+        183600,
+        169200,
+        154800,
+        140400,
+        126000,
+        111600,
+        97200,
+        82800
+      ],
+      "cooldownSecondsByTier": [
+        183600,
+        169200,
+        154800,
+        140400,
+        126000,
+        111600,
+        97200,
+        82800
+      ]
     },
     "levels": [
       {
@@ -5739,7 +6030,16 @@
       "name": "Lightning Raid",
       "img": "/images/pets/SnowLeopard/skills/SnowLeopard-LightningRaid.png",
       "description": "Skill Effect: Known for its speed, the Snow Leopard increases March speed by 15.00% / 17.00% / 19.00% / 21.00% / 23.00% / 25.00% / 27.00% / 30.00% and reduces enemy Troops Lethality by 1.50% / 2.00% / 2.50% / 3.00% / 3.50% / 4.00% / 4.50% / 5.00% for 2 hours.",
-      "values": [15.0, 17.0, 19.0, 21.0, 23.0, 25.0, 27.0, 30.0],
+      "values": [
+        15.0,
+        17.0,
+        19.0,
+        21.0,
+        23.0,
+        25.0,
+        27.0,
+        30.0
+      ],
       "cooldownSeconds": 72000,
       "durationSeconds": 7200
     },
@@ -6916,7 +7216,18 @@
       "name": "Feral Anthem",
       "img": "/images/pets/CaveLion/skills/CaveLion-FeralAnthem.png",
       "description": "Skill Effect: With its majestic aura, the Cave Lion's roar increases all troops' attack by 2.50% / 3.00% / 3.50% / 4.00% / 5.00% / 6.00% / 7.00% / 8.00% / 9.00% / 10.00% for 2 hours.",
-      "values": [2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0],
+      "values": [
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
       "cooldownSeconds": 72000,
       "durationSeconds": 7200
     },
@@ -8388,7 +8699,16 @@
       "img": "/images/pets/SnowApe/skills/SnowApe-TumblingPower.png",
       "description": "Skill Effect: The Snow Ape boosts the entire army's morale, increasing Squad Capacity by 1,500 / 3,000 / 4,500 / 6,000 / 7,500 / 9,000 / 10,500 / 12,000 / 13,500 / 15,000 for 2 hours.",
       "values": [
-        1500.0, 3000.0, 4500.0, 6000.0, 7500.0, 9000.0, 10500.0, 12000.0, 13500.0, 15000.0
+        1500.0,
+        3000.0,
+        4500.0,
+        6000.0,
+        7500.0,
+        9000.0,
+        10500.0,
+        12000.0,
+        13500.0,
+        15000.0
       ],
       "cooldownSeconds": 72000,
       "durationSeconds": 7200
@@ -9861,7 +10181,15 @@
       "img": "/images/pets/IronRhino/skills/IronRhino-RallyingBeasts.png",
       "description": "Skill Effect: Inspired by the stampeding beasts, Rally Capacity is increased by 60,000 / 70,000 / 80,000 / 90,000 / 100,000 / 110,000 / 120,000 / 130,000 / 140,000 / 150,000 for 2 hours.",
       "values": [
-        60000.0, 70000.0, 80000.0, 90000.0, 100000.0, 110000.0, 120000.0, 130000.0, 140000.0,
+        60000.0,
+        70000.0,
+        80000.0,
+        90000.0,
+        100000.0,
+        110000.0,
+        120000.0,
+        130000.0,
+        140000.0,
         150000.0
       ],
       "cooldownSeconds": 72000,
@@ -11334,7 +11662,18 @@
       "name": "Apex Assault",
       "img": "/images/pets/SaberToothTiger/skills/SaberToothTiger-ApexAssault.png",
       "description": "Skill Effect: Elite predators join the ranks, increasing Troops Lethality by 2.50% / 3.00% / 3.50% / 4.00% / 5.00% / 6.00%/ 7.00% / 8.00% / 9.00% / 10.00% for 2 hours.",
-      "values": [2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0],
+      "values": [
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
       "cooldownSeconds": 72000,
       "durationSeconds": 7200
     },
@@ -12805,7 +13144,18 @@
       "name": "Hardened Skin",
       "img": "/images/pets/Mammoth/skills/Mammoth-HardenedSkin.png",
       "description": "Skill Effect: The towering Mammoths act as shields, increasing Troops Defense by 2.50% / 3.00% / 3.50% / 4.00% / 5.00% / 6.00% / 7.00% / 8.00% / 9.00% / 10.00% for 2 hours.",
-      "values": [2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0],
+      "values": [
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
       "cooldownSeconds": 72000,
       "durationSeconds": 7200
     },
@@ -14276,7 +14626,18 @@
       "name": "Earthbound Vigor",
       "img": "/images/pets/FrostGorilla/skills/FrostGorilla-EarthboundVigor.png",
       "description": "Channeling a symbiotic bond with the earth, Troops Health is increased by2.50%/3%/3.50%/4%/5%/6%/7%/8%/9%/10%for 2 hours. Cooldown：20:00:00",
-      "values": [2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0],
+      "values": [
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
       "durationSeconds": 7200
     },
     "levels": [
@@ -15746,7 +16107,18 @@
       "name": "Earthbound Vigor",
       "img": "/images/pets/FrostscaleChameleon/skills/FrostscaleChameleon-EarthboundVigor.png",
       "description": "Skill Effect: Exhales an icy shroud to corrode enemy armor, reducing enemy Troops' Defense by 2.5%/3%/3.5%/4%/5%/6%/7%/8%/9% / 10% for 2 hours.",
-      "values": [2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0],
+      "values": [
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
       "cooldownSeconds": 72000,
       "durationSeconds": 7200
     },
@@ -17200,3 +17572,238 @@
     ]
   }
 ]
+</script>
+<script id="materials-data" type="application/json">
+{"energizing-potion": {"name": "Energizing potion", "img": "/images/items/energizing-potion.png"}, "strengthening-serum": {"name": "Strengthening Serum", "img": "/images/items/strengthening-serum.png"}, "taming-manual": {"name": "Taming Manual", "img": "/images/items/taming-manual.png"}}
+</script>
+
+<script>
+  const DATA = JSON.parse(document.getElementById('pet-data').textContent);
+  const MATERIALS = JSON.parse(document.getElementById('materials-data').textContent);
+  const RARITY_COLOR = {
+    Common: 'var(--common)',
+    Uncommon: 'var(--uncommon)',
+    Rare: 'var(--rare)',
+    Epic: 'var(--epic)',
+    Legendary: 'var(--legendary)',
+  };
+
+  let searchTerm = '';
+  let rarityFilter = '';
+  let activeId = DATA[0] ? DATA[0].id : null;
+
+  function fmt(value) {
+    return typeof value === 'number' ? value.toLocaleString() : value;
+  }
+
+  function buildSummary() {
+    const el = document.getElementById('summary');
+    const counts = {};
+    DATA.forEach((p) => (counts[p.rarity] = (counts[p.rarity] || 0) + 1));
+    const maxLevel = Math.max(...DATA.map((p) => p.maxLevel));
+    const cards = [
+      `<div class="card total"><div class="value">${fmt(DATA.length)}</div><div class="label">Total Pets</div></div>`,
+      ...Object.keys(counts).map(
+        (rarity) =>
+          `<div class="card"><div class="value">${fmt(counts[rarity])}</div><div class="label">${rarity}</div></div>`,
+      ),
+      `<div class="card"><div class="value">${fmt(maxLevel)}</div><div class="label">Max Level Tracked</div></div>`,
+    ];
+    el.innerHTML = cards.join('');
+  }
+
+  function getFiltered() {
+    const term = searchTerm.toLowerCase();
+    return DATA.filter(
+      (p) => (!term || p.name.toLowerCase().includes(term)) && (!rarityFilter || p.rarity === rarityFilter),
+    );
+  }
+
+  function renderList() {
+    const el = document.getElementById('pet-list');
+    const rows = getFiltered();
+    if (rows.length === 0) {
+      el.innerHTML = '<div class="pet-row" style="cursor:default;color:var(--text-dim)">No pets match.</div>';
+      return;
+    }
+    el.innerHTML = rows
+      .map(
+        (p) => `<div class="pet-row${p.id === activeId ? ' active' : ''}" data-id="${p.id}">
+          <img src="..${p.img}" alt="" onerror="this.style.visibility='hidden'">
+          <span class="swatch" style="background:${RARITY_COLOR[p.rarity] || '#888'}"></span>
+          <div>
+            <div>${p.name}</div>
+            <div class="meta">${p.rarity} &middot; Max Lv.${p.maxLevel}</div>
+          </div>
+        </div>`,
+      )
+      .join('');
+    el.querySelectorAll('.pet-row[data-id]').forEach((row) => {
+      row.addEventListener('click', () => {
+        activeId = row.dataset.id;
+        renderList();
+        renderDetail();
+      });
+    });
+  }
+
+  function unlockRequirementText(req) {
+    const parts = [`${fmt(req.daysRequired)} days`];
+    if (req.furnaceLevel !== undefined) {
+      parts.push(`Furnace Lv.${req.furnaceLevel}`);
+    }
+    if (req.prerequisitePet) {
+      parts.push(`${req.prerequisitePet.name} Lv.${req.prerequisitePet.level}`);
+    }
+    return parts.join(' &middot; ');
+  }
+
+  function skillBlock(skill) {
+    const cooldowns = skill.cooldownSecondsByTier
+      ? skill.cooldownSecondsByTier.map((c) => `${fmt(c)}s`).join(' / ')
+      : skill.cooldownSeconds !== undefined
+        ? `${fmt(skill.cooldownSeconds)}s`
+        : null;
+    return `<div class="skill">
+      <div class="skill-name-row">
+        <img src="..${skill.img}" alt="" onerror="this.style.visibility='hidden'">
+        <div class="skill-name">${skill.name}</div>
+      </div>
+      <div class="skill-desc">${skill.description}</div>
+      <div class="skill-values">
+        <span class="tag">Values: ${skill.values.map(fmt).join(' / ')}</span>
+        ${skill.durationSeconds !== undefined ? `<span class="tag">Duration: ${fmt(skill.durationSeconds)}s</span>` : ''}
+        ${cooldowns ? `<span class="tag">Cooldown: ${cooldowns}</span>` : ''}
+      </div>
+    </div>`;
+  }
+
+  function statCell(stat) {
+    return `${stat.value}${stat.refinedValue !== undefined ? `<span class="refined">(${stat.refinedValue} refined)</span>` : ''}`;
+  }
+
+  function materialsCell(materials) {
+    if (!materials || materials.length === 0) return '<span class="empty">&mdash;</span>';
+    return materials
+      .map((m) => {
+        const item = MATERIALS[m.itemId];
+        return `<span class="material-row" title="${item.name}"><img src="..${item.img}" alt="${item.name}" onerror="this.style.visibility='hidden'">${fmt(m.amount)}x</span>`;
+      })
+      .join('');
+  }
+
+  function petMaterialTotals(pet) {
+    const totals = {};
+    pet.levels.forEach((l) => {
+      (l.advancementMaterials ?? []).forEach((m) => {
+        totals[m.itemId] = (totals[m.itemId] || 0) + m.amount;
+      });
+    });
+    return totals;
+  }
+
+  function materialTotalsRow(totals) {
+    const itemIds = Object.keys(totals);
+    if (itemIds.length === 0) return '<span class="empty">&mdash;</span>';
+    return itemIds
+      .map((id) => {
+        const item = MATERIALS[id];
+        return `<span class="material-row" title="${item.name}"><img src="..${item.img}" alt="${item.name}" onerror="this.style.visibility='hidden'">${fmt(totals[id])}x</span>`;
+      })
+      .join('');
+  }
+
+  function levelsTable(pet) {
+    const rows = pet.levels
+      .map(
+        (l) => `<tr>
+          <td>${l.level}</td>
+          <td>${fmt(l.petFoodCost)}</td>
+          <td>${statCell(l.troopAttack)}%</td>
+          <td>${statCell(l.troopDefense)}%</td>
+          <td>${statCell(l.troopsPower)}</td>
+          <td>${materialsCell(l.advancementMaterials)}</td>
+        </tr>`,
+      )
+      .join('');
+    return `<div class="levels-table-wrap"><table>
+      <thead><tr><th>Level</th><th>Pet Food</th><th>Troop Attack</th><th>Troop Defense</th><th>Troops Power</th><th>Advancement Materials</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
+  }
+
+  function renderDetail() {
+    const el = document.getElementById('detail');
+    const pet = DATA.find((p) => p.id === activeId);
+    if (!pet) {
+      el.innerHTML = '<div class="empty-detail">Select a pet from the list.</div>';
+      return;
+    }
+
+    const maxLevelRow = pet.levels[pet.levels.length - 1];
+    const totalPetFood = pet.levels.reduce((sum, l) => sum + l.petFoodCost, 0);
+
+    el.innerHTML = `
+      <div class="detail-header">
+        <div class="detail-header-left">
+          <img src="..${pet.img}" alt="" onerror="this.style.visibility='hidden'">
+          <div>
+            <h2>${pet.name}</h2>
+            <span class="badge rarity-${pet.rarity}">${pet.rarity}</span>
+            <span class="badge">Max Lv.${pet.maxLevel}</span>
+            <span class="badge">${pet.maxRefinementPercent}% Max Refinement</span>
+          </div>
+        </div>
+        <div class="stat-group">
+          <div class="stat-block">
+            <div class="value">${fmt(maxLevelRow.troopsPower.value)}</div>
+            <div class="label">Troops Power at Max</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <div class="value">${fmt(totalPetFood)}</div>
+            <div class="label">Total Pet Food</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Unlock Requirement</h3>
+        <p>${unlockRequirementText(pet.unlockRequirement)}</p>
+      </div>
+
+      <div class="section">
+        <h3>Skill</h3>
+        ${skillBlock(pet.skill)}
+      </div>
+
+      <div class="section">
+        <h3>Total Resources Needed (Level 1-${pet.maxLevel})</h3>
+        <p class="section-note">Summed across every advancement row to max this pet from scratch.</p>
+        <p>${materialTotalsRow(petMaterialTotals(pet))}</p>
+      </div>
+
+      <div class="section">
+        <h3>Levels (1-${pet.maxLevel})</h3>
+        ${levelsTable(pet)}
+      </div>
+    `;
+  }
+
+  document.getElementById('search').addEventListener('input', (e) => {
+    searchTerm = e.target.value;
+    renderList();
+  });
+
+  document.getElementById('rarity-filter').addEventListener('change', (e) => {
+    rarityFilter = e.target.value;
+    renderList();
+  });
+
+  buildSummary();
+  renderList();
+  renderDetail();
+</script>
+
+</body>
+</html>

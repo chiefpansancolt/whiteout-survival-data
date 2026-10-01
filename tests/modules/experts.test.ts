@@ -76,4 +76,25 @@ describe('Expert roster', () => {
     expect(baldur.talent.maxLevel).toBe(1);
     expect(baldur.talent.progressions).toHaveLength(0);
   });
+
+  it('has no leaked tooltip JS/CSS in any skill or talent description', () => {
+    experts()
+      .get()
+      .flatMap((e) => [...e.skills, e.talent])
+      .forEach((s) => {
+        expect(s.description).not.toMatch(/var talentTimer|function show|scrollbar/);
+      });
+  });
+
+  it("cleaned Romulus's and Fabian's descriptions down to just the real sentence", () => {
+    const romulus = experts().findByName('Romulus')!;
+    expect(romulus.skills.find((s) => s.name === 'Last Line')!.description).toBe(
+      "Solaris' tactics didn't save the empire, but Romulus can rework them to protect you. Troops' Attack and Defense +0.5% → 10%.",
+    );
+
+    const fabian = experts().findByName('Fabian')!;
+    expect(fabian.skills.find((s) => s.name === 'Battle Bulwark')!.description).toBe(
+      "Weapons production is subset of Fabian's expertise, giving squads greater focus in Foundry Battle and Tundra Hellfire with +7,500 → 150,000 Rally Capacity.",
+    );
+  });
 });
