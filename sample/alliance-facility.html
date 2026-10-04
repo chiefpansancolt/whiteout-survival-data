@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Alliance Facility Map</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+  .layout { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+  .legend {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 12px;
+    min-width: 240px;
+  }
+  .legend label { display: flex; align-items: center; gap: 8px; margin: 6px 0; cursor: pointer; font-size: 0.9rem; }
+  .legend .count { color: var(--text-dim); margin-left: auto; font-size: 0.8rem; }
+  .swatch { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+  .map-wrap { flex: 1 1 520px; max-width: 760px; }
+  svg { width: 100%; height: auto; display: block; background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; }
+  .grid line { stroke: var(--panel-border); stroke-width: 1; }
+  .axis { fill: var(--text-dim); font-size: 22px; }
+  .marker text { fill: #0f1720; font-size: 30px; font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+  .marker circle { stroke: var(--bg); stroke-width: 3; }
+  .marker:hover circle { stroke: var(--text); }
+</style>
+</head>
+<body>
+<h1>Alliance Facility Map</h1>
+<p class="sub">Hover a marker for its coordinates. The number inside is the facility level.</p>
+
+<div class="layout">
+  <div class="legend" id="legend"></div>
+  <div class="map-wrap">
+    <svg id="map" viewBox="-60 -60 1320 1320" role="img" aria-label="Alliance facility locations"></svg>
+  </div>
+</div>
+
+<script id="facility-data" type="application/json">[{"id":"construction","name":"Construction","bonusStat":"Construction Speed","levels":[{"level":1,"boosterPercent":5,"heavilyInjuredPercent":10,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":1068,"y":138},{"x":537,"y":138},{"x":138,"y":138},{"x":138,"y":666},{"x":138,"y":1038},{"x":666,"y":1068},{"x":1068,"y":567},{"x":1068,"y":1068}]},{"level":3,"boosterPercent":8,"heavilyInjuredPercent":20,"lossesPercent":0,"ownLimit":1,"available":4,"locations":[{"x":486,"y":327},{"x":768,"y":867},{"x":867,"y":567},{"x":327,"y":666}]}]},{"id":"defense","name":"Defense","bonusStat":"Troop Defense Boost","levels":[{"level":2,"boosterPercent":5,"heavilyInjuredPercent":20,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":666,"y":138},{"x":438,"y":267},{"x":138,"y":537},{"x":237,"y":768},{"x":537,"y":1038},{"x":738,"y":957},{"x":1068,"y":666},{"x":957,"y":438}]},{"level":4,"boosterPercent":8,"heavilyInjuredPercent":30,"lossesPercent":10,"ownLimit":1,"available":3,"locations":[{"x":816,"y":717},{"x":387,"y":717},{"x":588,"y":327}]}]},{"id":"expedition","name":"Expedition","bonusStat":"Marching Speed","levels":[{"level":3,"boosterPercent":15,"heavilyInjuredPercent":30,"lossesPercent":10,"ownLimit":1,"available":4,"locations":[{"x":768,"y":327},{"x":327,"y":567},{"x":486,"y":867},{"x":867,"y":666}]}]},{"id":"gathering","name":"Gathering","bonusStat":"Resources Gathering Speed","levels":[{"level":1,"boosterPercent":5,"heavilyInjuredPercent":10,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":957,"y":138},{"x":537,"y":87},{"x":138,"y":237},{"x":87,"y":666},{"x":267,"y":1068},{"x":636,"y":1137},{"x":1137,"y":567},{"x":1068,"y":936}]}]},{"id":"production","name":"Production","bonusStat":"Resources Production Speed","levels":[{"level":1,"boosterPercent":5,"heavilyInjuredPercent":10,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":1068,"y":237},{"x":768,"y":138},{"x":237,"y":138},{"x":138,"y":327},{"x":138,"y":957},{"x":327,"y":1038},{"x":1068,"y":747},{"x":957,"y":1068}]}]},{"id":"tech","name":"Tech","bonusStat":"Research Speed","levels":[{"level":1,"boosterPercent":5,"heavilyInjuredPercent":10,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":957,"y":237},{"x":666,"y":267},{"x":237,"y":237},{"x":267,"y":537},{"x":237,"y":957},{"x":537,"y":936},{"x":936,"y":537},{"x":957,"y":957}]},{"level":3,"boosterPercent":8,"heavilyInjuredPercent":30,"lossesPercent":10,"ownLimit":1,"available":4,"locations":[{"x":867,"y":327},{"x":327,"y":327},{"x":327,"y":867},{"x":867,"y":867}]}]},{"id":"training","name":"Training","bonusStat":"Training Troops Speed","levels":[{"level":2,"boosterPercent":5,"heavilyInjuredPercent":20,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":237,"y":486},{"x":138,"y":747},{"x":486,"y":957},{"x":768,"y":1038},{"x":957,"y":747},{"x":1068,"y":486},{"x":486,"y":138},{"x":768,"y":237}]}]},{"id":"weapons","name":"Weapons","bonusStat":"Troop Attack Boost","levels":[{"level":2,"boosterPercent":5,"heavilyInjuredPercent":20,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":867,"y":138},{"x":366,"y":138},{"x":138,"y":438},{"x":138,"y":867},{"x":438,"y":1068},{"x":1068,"y":327},{"x":1068,"y":867},{"x":867,"y":1068}]},{"level":4,"boosterPercent":8,"heavilyInjuredPercent":30,"lossesPercent":10,"ownLimit":1,"available":3,"locations":[{"x":816,"y":486},{"x":387,"y":486},{"x":588,"y":867}]}]}]</script>
+<script>
+  const FACILITIES = JSON.parse(document.getElementById('facility-data').textContent);
+  const MAP_SIZE = 1200;
+  const GRID_STEP = 200;
+  const COLORS = {
+    construction: '#f6b94c',
+    defense: '#4fc3f7',
+    expedition: '#ff7a8a',
+    gathering: '#52d17a',
+    production: '#c58bf2',
+    tech: '#7aa2ff',
+    training: '#ff9f5a',
+    weapons: '#e0e0e0',
+  };
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const map = document.getElementById('map');
+  const legend = document.getElementById('legend');
+
+  function svgElement(name, attributes) {
+    const element = document.createElementNS(SVG_NS, name);
+    for (const [key, value] of Object.entries(attributes)) element.setAttribute(key, value);
+    return element;
+  }
+
+  function drawGrid() {
+    const grid = svgElement('g', { class: 'grid' });
+    for (let v = 0; v <= MAP_SIZE; v += GRID_STEP) {
+      grid.append(svgElement('line', { x1: v, y1: 0, x2: v, y2: MAP_SIZE }));
+      grid.append(svgElement('line', { x1: 0, y1: v, x2: MAP_SIZE, y2: v }));
+      const xLabel = svgElement('text', { class: 'axis', x: v, y: -18, 'text-anchor': 'middle' });
+      xLabel.textContent = v;
+      const yLabel = svgElement('text', { class: 'axis', x: -14, y: v, 'text-anchor': 'end', 'dominant-baseline': 'central' });
+      yLabel.textContent = v;
+      grid.append(xLabel, yLabel);
+    }
+    map.append(grid);
+  }
+
+  const layers = {};
+
+  function drawFacility(facility) {
+    const layer = svgElement('g', {});
+    for (const level of facility.levels) {
+      for (const { x, y } of level.locations) {
+        const marker = svgElement('g', { class: 'marker', transform: `translate(${x} ${y})` });
+        const title = svgElement('title', {});
+        title.textContent = `${facility.name} Lv.${level.level} (${x}, ${y})`;
+        const circle = svgElement('circle', { r: 32, fill: COLORS[facility.id] });
+        const label = svgElement('text', {});
+        label.textContent = level.level;
+        marker.append(title, circle, label);
+        layer.append(marker);
+      }
+    }
+    layers[facility.id] = layer;
+    map.append(layer);
+  }
+
+  function drawLegendEntry(facility) {
+    const total = facility.levels.reduce((sum, level) => sum + level.available, 0);
+    const label = document.createElement('label');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = true;
+    checkbox.addEventListener('change', () => {
+      layers[facility.id].style.display = checkbox.checked ? '' : 'none';
+    });
+    const swatch = document.createElement('span');
+    swatch.className = 'swatch';
+    swatch.style.background = COLORS[facility.id];
+    const name = document.createElement('span');
+    name.textContent = `${facility.name} (${facility.bonusStat})`;
+    const count = document.createElement('span');
+    count.className = 'count';
+    count.textContent = total;
+    label.append(checkbox, swatch, name, count);
+    legend.append(label);
+  }
+
+  drawGrid();
+  FACILITIES.forEach(drawFacility);
+  FACILITIES.forEach(drawLegendEntry);
+</script>
+</body>
+</html>
