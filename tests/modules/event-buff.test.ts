@@ -83,3 +83,17 @@ describe('Event Buff applicability', () => {
     expect(eventBuff().find('crazy-joe')!.notes).toBeUndefined();
   });
 });
+
+describe('Event Buff pet skill auto-apply', () => {
+  it('auto-applies pet skills in Alliance Championship, Icefire Warhymn League, and Winter Siege only', () => {
+    const autoApplied = eventBuff()
+      .get()
+      .filter((e) => e.petSkillsAutoApplied)
+      .map((e) => e.id);
+    expect(autoApplied).toEqual([
+      'alliance-championship',
+      'icefire-warhymn-league',
+      'winter-siege',
+    ]);
+  });
+});

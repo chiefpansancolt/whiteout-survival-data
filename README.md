@@ -673,8 +673,10 @@ Each `EventBuff` field is a `BuffApplicability` (`'yes' | 'no' | 'partial'`) rat
 boolean — several cells in the source image show a warning icon (e.g. "March Accelerator: not
 applicable for rally") rather than a clean check or X, so `'partial'` preserves that distinction
 instead of forcing it to one side. `notes` carries the source image's footnote text verbatim where
-present, and is `undefined` for modes with no caveats (e.g. Crazy Joe). Use
-`eventBuff().appliesFor('facilityBuff')` (defaults to `'yes'`) to filter by any one buff source.
+present, and is `undefined` for modes with no caveats (e.g. Crazy Joe). `petSkillsAutoApplied` is
+`true` where pet skills take effect without player activation: Alliance Championship, Icefire
+Warhymn League, and Winter Siege. Use `eventBuff().appliesFor('facilityBuff')` (defaults to `'yes'`)
+to filter by any one buff source.
 
 Pet Skills, Daybreak Island, and Facility Buff are the only three sources that apply in literally
 every tracked mode, including the two PvP league modes (Icefire Warhymn League, Winter Siege) that

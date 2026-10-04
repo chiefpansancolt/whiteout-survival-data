@@ -13,6 +13,7 @@
     "marchAccelerator": "partial",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "no",
+    "petSkillsAutoApplied": false,
     "notes": "Health and Defense buffs/debuffs has little impact on damage. March Accelerator is not applicable for rally."
   },
   {
@@ -28,7 +29,8 @@
     "facilityBuff": "yes",
     "marchAccelerator": "yes",
     "frostdragonTyrantTitles": "yes",
-    "frostSphereDomainBonus": "yes"
+    "frostSphereDomainBonus": "yes",
+    "petSkillsAutoApplied": false
   },
   {
     "id": "alliance-championship",
@@ -44,6 +46,7 @@
     "marchAccelerator": "no",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "no",
+    "petSkillsAutoApplied": true,
     "notes": "Buffs need to be activated during the registration phase."
   },
   {
@@ -60,6 +63,7 @@
     "marchAccelerator": "yes",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "yes",
+    "petSkillsAutoApplied": false,
     "notes": "Forced Exile & State Search won't work."
   },
   {
@@ -76,6 +80,7 @@
     "marchAccelerator": "yes",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "no",
+    "petSkillsAutoApplied": false,
     "notes": "Buffs need to be activated when battle starts, not during the registration phase. Troop Rally Deployment Capacity and March Speed buff won't work. Forced Exile & State Search won't work."
   },
   {
@@ -92,6 +97,7 @@
     "marchAccelerator": "partial",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "no",
+    "petSkillsAutoApplied": false,
     "notes": "March Accelerator is not applicable for rally."
   },
   {
@@ -108,6 +114,7 @@
     "marchAccelerator": "partial",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "no",
+    "petSkillsAutoApplied": false,
     "notes": "March Accelerator is not applicable for rally."
   },
   {
@@ -124,6 +131,7 @@
     "marchAccelerator": "partial",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "yes",
+    "petSkillsAutoApplied": false,
     "notes": "March Accelerator is not applicable for rally."
   },
   {
@@ -140,6 +148,7 @@
     "marchAccelerator": "no",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "no",
+    "petSkillsAutoApplied": false,
     "notes": "All buffs and stat changes occur on server, and is not fixed at the time of deployments of the 3 turns."
   },
   {
@@ -156,6 +165,7 @@
     "marchAccelerator": "yes",
     "frostdragonTyrantTitles": "no",
     "frostSphereDomainBonus": "yes",
+    "petSkillsAutoApplied": false,
     "notes": "March Speed & Gathering bonuses won't work."
   },
   {
@@ -172,6 +182,7 @@
     "marchAccelerator": "yes",
     "frostdragonTyrantTitles": "no",
     "frostSphereDomainBonus": "yes",
+    "petSkillsAutoApplied": false,
     "notes": "Gathering bonuses won't work. Only Medical Advancement President Skills work."
   },
   {
@@ -188,6 +199,7 @@
     "marchAccelerator": "yes",
     "frostdragonTyrantTitles": "yes",
     "frostSphereDomainBonus": "yes",
+    "petSkillsAutoApplied": false,
     "notes": "Gathering Bonus won't work. Forced Exile & State Search won't work."
   },
   {
@@ -204,7 +216,8 @@
     "marchAccelerator": "no",
     "frostdragonTyrantTitles": "no",
     "frostSphereDomainBonus": "no",
-    "notes": "Pet skills are active by default; active skill effects do not stack."
+    "petSkillsAutoApplied": true,
+    "notes": "Active skill effects do not stack."
   },
   {
     "id": "winter-siege",
@@ -220,6 +233,7 @@
     "marchAccelerator": "no",
     "frostdragonTyrantTitles": "no",
     "frostSphereDomainBonus": "no",
-    "notes": "Pet skills are active by default; active skill effects do not stack."
+    "petSkillsAutoApplied": true,
+    "notes": "Active skill effects do not stack."
   }
 ]

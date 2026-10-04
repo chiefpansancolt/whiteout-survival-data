@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Event Buffs</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --row-hover: #1c2e42;
+    --yes: #52d17a;
+    --no: #ff6b6b;
+    --partial: #ffb84f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; font-size: 0.8rem; color: var(--text-dim); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .scroll-wrap {
+    overflow: auto;
+    max-height: calc(100vh - 170px);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    background: var(--panel);
+  }
+  table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 0.85rem; }
+  th, td { padding: 8px 12px; border-bottom: 1px solid var(--panel-border); text-align: center; }
+  thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--panel);
+    color: var(--text-dim);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    vertical-align: bottom;
+    cursor: pointer;
+    user-select: none;
+  }
+  thead th:hover { color: var(--text); }
+  thead th.active { color: var(--accent); }
+  th.mode, td.mode {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--panel);
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  thead th.mode { z-index: 3; }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  tbody tr:hover td { background: var(--row-hover); }
+  .auto-applied { color: var(--accent); }
+  td.cell { font-size: 1rem; font-weight: 700; }
+  td.yes { color: var(--yes); }
+  td.no { color: var(--no); }
+  td.partial { color: var(--partial); }
+  td.notes { text-align: left; color: var(--text-dim); font-size: 0.78rem; min-width: 260px; }
+</style>
+</head>
+<body>
+  <h1>Event Buffs</h1>
+  <p class="sub">Which buff sources apply in each game mode. Click a column header to show only the modes where that buff applies; click again to clear.</p>
+  <div class="legend">
+    <span><b style="color: var(--yes)">✓</b> Applies</span>
+    <span><b style="color: var(--partial)">!</b> Partial (see notes)</span>
+    <span><b style="color: var(--no)">✗</b> Does not apply</span>
+    <span><b class="auto-applied">*</b> Applies automatically, no activation needed</span>
+  </div>
+  <div class="scroll-wrap"><table id="table"></table></div>
+
+<script id="buff-data" type="application/json">[{"id": "bear-hunt", "name": "Bear Hunt", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "partial", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "no", "petSkillsAutoApplied": false, "notes": "Health and Defense buffs/debuffs has little impact on damage. March Accelerator is not applicable for rally."}, {"id": "crazy-joe", "name": "Crazy Joe", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "yes", "facilityBuff": "yes", "marchAccelerator": "yes", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "yes", "petSkillsAutoApplied": false}, {"id": "alliance-championship", "name": "Alliance Championship", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "no", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "no", "petSkillsAutoApplied": true, "notes": "Buffs need to be activated during the registration phase."}, {"id": "foundry-battle", "name": "Foundry Battle", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "yes", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "yes", "petSkillsAutoApplied": false, "notes": "Forced Exile & State Search won't work."}, {"id": "canyon-clash", "name": "Canyon Clash", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "no", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "yes", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "no", "petSkillsAutoApplied": false, "notes": "Buffs need to be activated when battle starts, not during the registration phase. Troop Rally Deployment Capacity and March Speed buff won't work. Forced Exile & State Search won't work."}, {"id": "fortress-battle", "name": "Fortress Battle", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "partial", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "no", "petSkillsAutoApplied": false, "notes": "March Accelerator is not applicable for rally."}, {"id": "facility", "name": "Facility", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "partial", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "no", "petSkillsAutoApplied": false, "notes": "March Accelerator is not applicable for rally."}, {"id": "castle-battle", "name": "Castle Battle", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "no", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "partial", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "yes", "petSkillsAutoApplied": false, "notes": "March Accelerator is not applicable for rally."}, {"id": "tundra-trade-route", "name": "Tundra Trade Route", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "no", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "no", "petSkillsAutoApplied": false, "notes": "All buffs and stat changes occur on server, and is not fixed at the time of deployments of the 3 turns."}, {"id": "frostfire-mine", "name": "Frostfire Mine", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "no", "ministerBuff": "no", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "yes", "frostdragonTyrantTitles": "no", "frostSphereDomainBonus": "yes", "petSkillsAutoApplied": false, "notes": "March Speed & Gathering bonuses won't work."}, {"id": "frostdragon-tyrant", "name": "Frostdragon Tyrant", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "no", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "yes", "frostdragonTyrantTitles": "no", "frostSphereDomainBonus": "yes", "petSkillsAutoApplied": false, "notes": "Gathering bonuses won't work. Only Medical Advancement President Skills work."}, {"id": "tundra-arms-league", "name": "Tundra Arms League", "cityBonusWarsBuffs": "yes", "deploymentCapacity": "yes", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "yes", "ministerBuff": "yes", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "yes", "frostdragonTyrantTitles": "yes", "frostSphereDomainBonus": "yes", "petSkillsAutoApplied": false, "notes": "Gathering Bonus won't work. Forced Exile & State Search won't work."}, {"id": "icefire-warhymn-league", "name": "Icefire Warhymn League", "cityBonusWarsBuffs": "no", "deploymentCapacity": "no", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "no", "ministerBuff": "no", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "no", "frostdragonTyrantTitles": "no", "frostSphereDomainBonus": "no", "petSkillsAutoApplied": true, "notes": "Active skill effects do not stack."}, {"id": "winter-siege", "name": "Winter Siege", "cityBonusWarsBuffs": "no", "deploymentCapacity": "no", "petSkills": "yes", "daybreakIsland": "yes", "presidentSkills": "no", "ministerBuff": "no", "territoryBonuses": "no", "facilityBuff": "yes", "marchAccelerator": "no", "frostdragonTyrantTitles": "no", "frostSphereDomainBonus": "no", "petSkillsAutoApplied": true, "notes": "Active skill effects do not stack."}]</script>
+<script>
+  const MODES = JSON.parse(document.getElementById('buff-data').textContent);
+  const SOURCES = [
+    ['cityBonusWarsBuffs', 'City Bonus / Wars Buffs'],
+    ['deploymentCapacity', 'Deployment Capacity'],
+    ['petSkills', 'Pet Skills'],
+    ['daybreakIsland', 'Daybreak Island'],
+    ['presidentSkills', 'President Skills'],
+    ['ministerBuff', 'Minister Buff'],
+    ['territoryBonuses', 'Territory Bonuses'],
+    ['facilityBuff', 'Facility Buff'],
+    ['marchAccelerator', 'March Accelerator'],
+    ['frostdragonTyrantTitles', 'Frostdragon Tyrant Titles'],
+    ['frostSphereDomainBonus', 'Frost Sphere Domain Bonus'],
+  ];
+  const SYMBOLS = { yes: '✓', no: '✗', partial: '!' };
+  const table = document.getElementById('table');
+  let filterKey = null;
+
+  function appendCell(row, tag, text, className) {
+    const cell = document.createElement(tag);
+    if (className) cell.className = className;
+    cell.textContent = text;
+    row.append(cell);
+    return cell;
+  }
+
+  function renderHeader() {
+    const head = table.createTHead();
+    const row = head.insertRow();
+    appendCell(row, 'th', 'Mode', 'mode');
+    SOURCES.forEach(([key, label]) => {
+      const th = appendCell(row, 'th', label, key === filterKey ? 'active' : '');
+      th.addEventListener('click', () => {
+        filterKey = filterKey === key ? null : key;
+        render();
+      });
+    });
+    appendCell(row, 'th', 'Notes');
+  }
+
+  function renderBody() {
+    const body = table.createTBody();
+    const visible = filterKey ? MODES.filter((mode) => mode[filterKey] !== 'no') : MODES;
+    visible.forEach((mode) => {
+      const row = body.insertRow();
+      appendCell(row, 'td', mode.name, 'mode');
+      SOURCES.forEach(([key]) => {
+        const cell = appendCell(row, 'td', SYMBOLS[mode[key]], `cell ${mode[key]}`);
+        if (key === 'petSkills' && mode.petSkillsAutoApplied) {
+          const marker = document.createElement('span');
+          marker.className = 'auto-applied';
+          marker.textContent = '*';
+          cell.append(marker);
+        }
+        cell.title = mode[key];
+      });
+      appendCell(row, 'td', mode.notes ?? '', 'notes');
+    });
+  }
+
+  function render() {
+    table.replaceChildren();
+    renderHeader();
+    renderBody();
+  }
+
+  render();
+</script>
+</body>
+</html>
