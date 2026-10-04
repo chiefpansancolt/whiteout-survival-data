@@ -19,47 +19,59 @@
     background: var(--bg);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    padding: 20px 16px 60px;
+    padding: 16px 16px 24px;
   }
   h1 { font-size: 1.3rem; margin: 0 0 4px; }
-  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
-  .layout { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+  p.sub { color: var(--text-dim); margin: 0 0 12px; font-size: 0.85rem; }
   .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+    width: 100%;
     background: var(--panel);
     border: 1px solid var(--panel-border);
     border-radius: 10px;
-    padding: 12px;
-    min-width: 240px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
   }
-  .legend label { display: flex; align-items: center; gap: 8px; margin: 6px 0; cursor: pointer; font-size: 0.9rem; }
-  .legend .count { color: var(--text-dim); margin-left: auto; font-size: 0.8rem; }
-  .swatch { width: 12px; height: 12px; border-radius: 50%; flex: none; }
-  .map-wrap { flex: 1 1 520px; max-width: 760px; }
-  svg { width: 100%; height: auto; display: block; background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; }
+  .legend label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.85rem; white-space: nowrap; }
+  .legend .count { color: var(--text-dim); font-size: 0.8rem; }
+  .swatch { width: 12px; height: 12px; flex: none; }
+  .swatch.circle { border-radius: 50%; }
+  .swatch.diamond { transform: rotate(45deg) scale(0.85); }
+  .swatch.star { clip-path: polygon(50% 0, 62% 35%, 100% 38%, 70% 60%, 80% 100%, 50% 76%, 20% 100%, 30% 60%, 0 38%, 38% 35%); width: 16px; height: 16px; }
+  svg {
+    display: block;
+    width: min(100%, calc(100vh - 150px));
+    height: auto;
+    margin: 0 auto;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+  }
   .grid line { stroke: var(--panel-border); stroke-width: 1; }
   .axis { fill: var(--text-dim); font-size: 22px; }
   .marker text { fill: #0f1720; font-size: 30px; font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
-  .marker circle { stroke: var(--bg); stroke-width: 3; }
-  .marker:hover circle { stroke: var(--text); }
+  .marker .shape { stroke: var(--bg); stroke-width: 3; }
+  .marker:hover .shape { stroke: var(--text); }
 </style>
 </head>
 <body>
 <h1>Alliance Facility Map</h1>
-<p class="sub">Hover a marker for its coordinates. The number inside is the facility level.</p>
+<p class="sub">Hover a marker for its coordinates. Facilities show their level; strongholds and fortresses show their number and phase rewards.</p>
 
-<div class="layout">
-  <div class="legend" id="legend"></div>
-  <div class="map-wrap">
-    <svg id="map" viewBox="-60 -60 1320 1320" role="img" aria-label="Alliance facility locations"></svg>
-  </div>
-</div>
+<div class="legend" id="legend"></div>
+<svg id="map" viewBox="-60 -60 1320 1320" role="img" aria-label="Alliance facility locations"></svg>
 
 <script id="facility-data" type="application/json">[{"id":"construction","name":"Construction","bonusStat":"Construction Speed","levels":[{"level":1,"boosterPercent":5,"heavilyInjuredPercent":10,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":1068,"y":138},{"x":537,"y":138},{"x":138,"y":138},{"x":138,"y":666},{"x":138,"y":1038},{"x":666,"y":1068},{"x":1068,"y":567},{"x":1068,"y":1068}]},{"level":3,"boosterPercent":8,"heavilyInjuredPercent":20,"lossesPercent":0,"ownLimit":1,"available":4,"locations":[{"x":486,"y":327},{"x":768,"y":867},{"x":867,"y":567},{"x":327,"y":666}]}]},{"id":"defense","name":"Defense","bonusStat":"Troop Defense Boost","levels":[{"level":2,"boosterPercent":5,"heavilyInjuredPercent":20,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":666,"y":138},{"x":438,"y":267},{"x":138,"y":537},{"x":237,"y":768},{"x":537,"y":1038},{"x":738,"y":957},{"x":1068,"y":666},{"x":957,"y":438}]},{"level":4,"boosterPercent":8,"heavilyInjuredPercent":30,"lossesPercent":10,"ownLimit":1,"available":3,"locations":[{"x":816,"y":717},{"x":387,"y":717},{"x":588,"y":327}]}]},{"id":"expedition","name":"Expedition","bonusStat":"Marching Speed","levels":[{"level":3,"boosterPercent":15,"heavilyInjuredPercent":30,"lossesPercent":10,"ownLimit":1,"available":4,"locations":[{"x":768,"y":327},{"x":327,"y":567},{"x":486,"y":867},{"x":867,"y":666}]}]},{"id":"gathering","name":"Gathering","bonusStat":"Resources Gathering Speed","levels":[{"level":1,"boosterPercent":5,"heavilyInjuredPercent":10,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":957,"y":138},{"x":537,"y":87},{"x":138,"y":237},{"x":87,"y":666},{"x":267,"y":1068},{"x":636,"y":1137},{"x":1137,"y":567},{"x":1068,"y":936}]}]},{"id":"production","name":"Production","bonusStat":"Resources Production Speed","levels":[{"level":1,"boosterPercent":5,"heavilyInjuredPercent":10,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":1068,"y":237},{"x":768,"y":138},{"x":237,"y":138},{"x":138,"y":327},{"x":138,"y":957},{"x":327,"y":1038},{"x":1068,"y":747},{"x":957,"y":1068}]}]},{"id":"tech","name":"Tech","bonusStat":"Research Speed","levels":[{"level":1,"boosterPercent":5,"heavilyInjuredPercent":10,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":957,"y":237},{"x":666,"y":267},{"x":237,"y":237},{"x":267,"y":537},{"x":237,"y":957},{"x":537,"y":936},{"x":936,"y":537},{"x":957,"y":957}]},{"level":3,"boosterPercent":8,"heavilyInjuredPercent":30,"lossesPercent":10,"ownLimit":1,"available":4,"locations":[{"x":867,"y":327},{"x":327,"y":327},{"x":327,"y":867},{"x":867,"y":867}]}]},{"id":"training","name":"Training","bonusStat":"Training Troops Speed","levels":[{"level":2,"boosterPercent":5,"heavilyInjuredPercent":20,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":237,"y":486},{"x":138,"y":747},{"x":486,"y":957},{"x":768,"y":1038},{"x":957,"y":747},{"x":1068,"y":486},{"x":486,"y":138},{"x":768,"y":237}]}]},{"id":"weapons","name":"Weapons","bonusStat":"Troop Attack Boost","levels":[{"level":2,"boosterPercent":5,"heavilyInjuredPercent":20,"lossesPercent":0,"ownLimit":1,"available":8,"locations":[{"x":867,"y":138},{"x":366,"y":138},{"x":138,"y":438},{"x":138,"y":867},{"x":438,"y":1068},{"x":1068,"y":327},{"x":1068,"y":867},{"x":867,"y":1068}]},{"level":4,"boosterPercent":8,"heavilyInjuredPercent":30,"lossesPercent":10,"ownLimit":1,"available":3,"locations":[{"x":816,"y":486},{"x":387,"y":486},{"x":588,"y":867}]}]}]</script>
+<script id="fortress-data" type="application/json">[{"id":"castle","name":"Castle","kind":"castle","x":597,"y":597,"rewards":[]},{"id":"stronghold-1","name":"Stronghold 1","kind":"stronghold","x":597,"y":800,"rewards":[{"phase":1,"reward":"Shards"},{"phase":2,"reward":"Pet Chest"},{"phase":3,"reward":"Hero Gear"},{"phase":4,"reward":"Shards"},{"phase":5,"reward":"Shards"},{"phase":6,"reward":"Pet Chest"},{"phase":7,"reward":"Hero Gear"},{"phase":8,"reward":"Shards"}]},{"id":"stronghold-2","name":"Stronghold 2","kind":"stronghold","x":400,"y":597,"rewards":[{"phase":1,"reward":"Fire Crystal"},{"phase":2,"reward":"Shards"},{"phase":3,"reward":"Pet Chest"},{"phase":4,"reward":"Fire Crystal"},{"phase":5,"reward":"Fire Crystal"},{"phase":6,"reward":"Shards"},{"phase":7,"reward":"Pet Chest"},{"phase":8,"reward":"Fire Crystal"}]},{"id":"stronghold-3","name":"Stronghold 3","kind":"stronghold","x":597,"y":400,"rewards":[{"phase":1,"reward":"Hero Gear"},{"phase":2,"reward":"Fire Crystal"},{"phase":3,"reward":"Shards"},{"phase":4,"reward":"Pet Chest"},{"phase":5,"reward":"Hero Gear"},{"phase":6,"reward":"Fire Crystal"},{"phase":7,"reward":"Fire Crystal"},{"phase":8,"reward":"Pet Chest"}]},{"id":"stronghold-4","name":"Stronghold 4","kind":"stronghold","x":800,"y":597,"rewards":[{"phase":1,"reward":"Pet Chest"},{"phase":2,"reward":"Hero Gear"},{"phase":3,"reward":"Fire Crystal"},{"phase":4,"reward":"Shards"},{"phase":5,"reward":"Pet Chest"},{"phase":6,"reward":"Hero Gear"},{"phase":7,"reward":"Shards"},{"phase":8,"reward":"Shards"}]},{"id":"fortress-1","name":"Fortress 1","kind":"fortress","x":237,"y":828,"rewards":[{"phase":1,"reward":"Shards"},{"phase":2,"reward":"Health Buff"},{"phase":3,"reward":"Speedups"},{"phase":4,"reward":"Advanced Teleport"},{"phase":5,"reward":"Pet Stone"},{"phase":6,"reward":"Health Buff"},{"phase":7,"reward":"Speedups"},{"phase":8,"reward":"Hero Gear XP"}]},{"id":"fortress-2","name":"Fortress 2","kind":"fortress","x":237,"y":606,"rewards":[{"phase":1,"reward":"Advanced Teleport"},{"phase":2,"reward":"Shards"},{"phase":3,"reward":"Health Buff"},{"phase":4,"reward":"Hero Gear XP"},{"phase":5,"reward":"Hero Gear XP"},{"phase":6,"reward":"Pet Stone"},{"phase":7,"reward":"Health Buff"},{"phase":8,"reward":"Speedups"}]},{"id":"fortress-3","name":"Fortress 3","kind":"fortress","x":237,"y":348,"rewards":[{"phase":1,"reward":"Speedups"},{"phase":2,"reward":"Advanced Teleport"},{"phase":3,"reward":"Shards"},{"phase":4,"reward":"Health Buff"},{"phase":5,"reward":"Speedups"},{"phase":6,"reward":"Hero Gear XP"},{"phase":7,"reward":"Pet Stone"},{"phase":8,"reward":"Health Buff"}]},{"id":"fortress-4","name":"Fortress 4","kind":"fortress","x":366,"y":237,"rewards":[{"phase":1,"reward":"Health Buff"},{"phase":2,"reward":"Speedups"},{"phase":3,"reward":"Advanced Teleport"},{"phase":4,"reward":"Expedition Manual"},{"phase":5,"reward":"Advanced Teleport"},{"phase":6,"reward":"Speedups"},{"phase":7,"reward":"Hero Gear XP"},{"phase":8,"reward":"Pet Stone"}]},{"id":"fortress-5","name":"Fortress 5","kind":"fortress","x":588,"y":237,"rewards":[{"phase":1,"reward":"Shards"},{"phase":2,"reward":"Damage Buff"},{"phase":3,"reward":"Speedups"},{"phase":4,"reward":"Expedition Manual"},{"phase":5,"reward":"Pet Stone"},{"phase":6,"reward":"Damage Buff"},{"phase":7,"reward":"Speedups"},{"phase":8,"reward":"Hero Gear XP"}]},{"id":"fortress-6","name":"Fortress 6","kind":"fortress","x":846,"y":237,"rewards":[{"phase":1,"reward":"Advanced Teleport"},{"phase":2,"reward":"Shards"},{"phase":3,"reward":"Damage Buff"},{"phase":4,"reward":"Speedups"},{"phase":5,"reward":"Hero Gear XP"},{"phase":6,"reward":"Pet Stone"},{"phase":7,"reward":"Damage Buff"},{"phase":8,"reward":"Speedups"}]},{"id":"fortress-7","name":"Fortress 7","kind":"fortress","x":957,"y":348,"rewards":[{"phase":1,"reward":"Speedups"},{"phase":2,"reward":"Advanced Teleport"},{"phase":3,"reward":"Shards"},{"phase":4,"reward":"Advanced Teleport"},{"phase":5,"reward":"Speedups"},{"phase":6,"reward":"Hero Gear XP"},{"phase":7,"reward":"Pet Stone"},{"phase":8,"reward":"Damage Buff"}]},{"id":"fortress-8","name":"Fortress 8","kind":"fortress","x":957,"y":606,"rewards":[{"phase":1,"reward":"Damage Buff"},{"phase":2,"reward":"Speedups"},{"phase":3,"reward":"Advanced Teleport"},{"phase":4,"reward":"Hero Gear XP"},{"phase":5,"reward":"Advanced Teleport"},{"phase":6,"reward":"Speedups"},{"phase":7,"reward":"Hero Gear XP"},{"phase":8,"reward":"Pet Stone"}]},{"id":"fortress-9","name":"Fortress 9","kind":"fortress","x":957,"y":828,"rewards":[{"phase":1,"reward":"Shards"},{"phase":2,"reward":"Deployment"},{"phase":3,"reward":"Speedups"},{"phase":4,"reward":"Damage Buff"},{"phase":5,"reward":"Pet Stone"},{"phase":6,"reward":"Deployment"},{"phase":7,"reward":"Speedups"},{"phase":8,"reward":"Hero Gear XP"}]},{"id":"fortress-10","name":"Fortress 10","kind":"fortress","x":846,"y":957,"rewards":[{"phase":1,"reward":"Advanced Teleport"},{"phase":2,"reward":"Shards"},{"phase":3,"reward":"Deployment"},{"phase":4,"reward":"Expedition Manual"},{"phase":5,"reward":"Hero Gear XP"},{"phase":6,"reward":"Pet Stone"},{"phase":7,"reward":"Deployment"},{"phase":8,"reward":"Speedups"}]},{"id":"fortress-11","name":"Fortress 11","kind":"fortress","x":606,"y":957,"rewards":[{"phase":1,"reward":"Speedups"},{"phase":2,"reward":"Advanced Teleport"},{"phase":3,"reward":"Shards"},{"phase":4,"reward":"Expedition Manual"},{"phase":5,"reward":"Speedups"},{"phase":6,"reward":"Hero Gear XP"},{"phase":7,"reward":"Pet Stone"},{"phase":8,"reward":"Deployment"}]},{"id":"fortress-12","name":"Fortress 12","kind":"fortress","x":366,"y":957,"rewards":[{"phase":1,"reward":"Deployment"},{"phase":2,"reward":"Speedups"},{"phase":3,"reward":"Advanced Teleport"},{"phase":4,"reward":"Speedups"},{"phase":5,"reward":"Advanced Teleport"},{"phase":6,"reward":"Speedups"},{"phase":7,"reward":"Hero Gear XP"},{"phase":8,"reward":"Pet Stone"}]}]</script>
 <script>
   const FACILITIES = JSON.parse(document.getElementById('facility-data').textContent);
+  const FORTRESSES = JSON.parse(document.getElementById('fortress-data').textContent);
   const MAP_SIZE = 1200;
   const GRID_STEP = 200;
-  const COLORS = {
+  const MARKER_RADIUS = 32;
+  const FACILITY_COLORS = {
     construction: '#f6b94c',
     defense: '#4fc3f7',
     expedition: '#ff7a8a',
@@ -69,14 +81,49 @@
     training: '#ff9f5a',
     weapons: '#e0e0e0',
   };
+  const FORTRESS_KINDS = [
+    { kind: 'castle', label: 'Castle', color: '#ffeb3b', shape: 'star' },
+    { kind: 'stronghold', label: 'Strongholds', color: '#26e0c8', shape: 'square' },
+    { kind: 'fortress', label: 'Fortresses', color: '#ffffff', shape: 'diamond' },
+  ];
   const SVG_NS = 'http://www.w3.org/2000/svg';
   const map = document.getElementById('map');
   const legend = document.getElementById('legend');
+  const layers = {};
 
   function svgElement(name, attributes) {
     const element = document.createElementNS(SVG_NS, name);
     for (const [key, value] of Object.entries(attributes)) element.setAttribute(key, value);
     return element;
+  }
+
+  function starPoints(radius) {
+    const points = [];
+    for (let i = 0; i < 10; i++) {
+      const length = i % 2 === 0 ? radius : radius * 0.45;
+      const angle = (Math.PI / 5) * i - Math.PI / 2;
+      points.push(`${(Math.cos(angle) * length).toFixed(1)},${(Math.sin(angle) * length).toFixed(1)}`);
+    }
+    return points.join(' ');
+  }
+
+  function shapeElement(shape, color) {
+    const r = MARKER_RADIUS;
+    const attributes = { class: 'shape', fill: color };
+    if (shape === 'circle') return svgElement('circle', { ...attributes, r });
+    if (shape === 'square') return svgElement('rect', { ...attributes, x: -r, y: -r, width: r * 2, height: r * 2, rx: 4 });
+    if (shape === 'diamond') return svgElement('polygon', { ...attributes, points: `0,${-r * 1.3} ${r * 1.3},0 0,${r * 1.3} ${-r * 1.3},0` });
+    return svgElement('polygon', { ...attributes, points: starPoints(r * 1.9) });
+  }
+
+  function drawMarker({ x, y, shape, color, text, tooltip }) {
+    const marker = svgElement('g', { class: 'marker', transform: `translate(${x} ${y})` });
+    const title = svgElement('title', {});
+    title.textContent = tooltip;
+    const label = svgElement('text', {});
+    label.textContent = text;
+    marker.append(title, shapeElement(shape, color), label);
+    return marker;
   }
 
   function drawGrid() {
@@ -93,50 +140,83 @@
     map.append(grid);
   }
 
-  const layers = {};
-
-  function drawFacility(facility) {
+  function drawFacilityLayer(facility) {
     const layer = svgElement('g', {});
     for (const level of facility.levels) {
       for (const { x, y } of level.locations) {
-        const marker = svgElement('g', { class: 'marker', transform: `translate(${x} ${y})` });
-        const title = svgElement('title', {});
-        title.textContent = `${facility.name} Lv.${level.level} (${x}, ${y})`;
-        const circle = svgElement('circle', { r: 32, fill: COLORS[facility.id] });
-        const label = svgElement('text', {});
-        label.textContent = level.level;
-        marker.append(title, circle, label);
-        layer.append(marker);
+        layer.append(drawMarker({
+          x, y,
+          shape: 'circle',
+          color: FACILITY_COLORS[facility.id],
+          text: level.level,
+          tooltip: `${facility.name} Lv.${level.level} (${x}, ${y})`,
+        }));
       }
     }
     layers[facility.id] = layer;
     map.append(layer);
   }
 
-  function drawLegendEntry(facility) {
-    const total = facility.levels.reduce((sum, level) => sum + level.available, 0);
-    const label = document.createElement('label');
+  function rewardLines(structure) {
+    return structure.rewards.map(({ phase, reward }) => `Phase ${phase}: ${reward}`).join('\n');
+  }
+
+  function drawFortressLayer({ kind, color, shape }) {
+    const layer = svgElement('g', {});
+    for (const structure of FORTRESSES.filter((s) => s.kind === kind)) {
+      const number = structure.name.split(' ')[1] ?? '';
+      const rewards = structure.rewards.length ? `\n${rewardLines(structure)}` : '';
+      layer.append(drawMarker({
+        x: structure.x,
+        y: structure.y,
+        shape,
+        color,
+        text: number,
+        tooltip: `${structure.name} (${structure.x}, ${structure.y})${rewards}`,
+      }));
+    }
+    layers[kind] = layer;
+    map.append(layer);
+  }
+
+  function drawLegendEntry({ layerId, label, color, shape, count }) {
+    const entry = document.createElement('label');
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.checked = true;
     checkbox.addEventListener('change', () => {
-      layers[facility.id].style.display = checkbox.checked ? '' : 'none';
+      layers[layerId].style.display = checkbox.checked ? '' : 'none';
     });
     const swatch = document.createElement('span');
-    swatch.className = 'swatch';
-    swatch.style.background = COLORS[facility.id];
+    swatch.className = `swatch ${shape === 'circle' ? 'circle' : shape === 'diamond' ? 'diamond' : shape === 'star' ? 'star' : ''}`;
+    swatch.style.background = color;
     const name = document.createElement('span');
-    name.textContent = `${facility.name} (${facility.bonusStat})`;
-    const count = document.createElement('span');
-    count.className = 'count';
-    count.textContent = total;
-    label.append(checkbox, swatch, name, count);
-    legend.append(label);
+    name.textContent = label;
+    const total = document.createElement('span');
+    total.className = 'count';
+    total.textContent = count;
+    entry.append(checkbox, swatch, name, total);
+    legend.append(entry);
   }
 
   drawGrid();
-  FACILITIES.forEach(drawFacility);
-  FACILITIES.forEach(drawLegendEntry);
+  FACILITIES.forEach(drawFacilityLayer);
+  FORTRESS_KINDS.forEach(drawFortressLayer);
+
+  FACILITIES.forEach((facility) => drawLegendEntry({
+    layerId: facility.id,
+    label: `${facility.name} (${facility.bonusStat})`,
+    color: FACILITY_COLORS[facility.id],
+    shape: 'circle',
+    count: facility.levels.reduce((sum, level) => sum + level.available, 0),
+  }));
+  FORTRESS_KINDS.forEach(({ kind, label, color, shape }) => drawLegendEntry({
+    layerId: kind,
+    label,
+    color,
+    shape,
+    count: FORTRESSES.filter((s) => s.kind === kind).length,
+  }));
 </script>
 </body>
 </html>
