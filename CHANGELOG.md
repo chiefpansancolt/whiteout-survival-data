@@ -107,13 +107,22 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   at all. Each level lists its `available` count, an `ownLimit` of 1, and the map `locations`.
 - `allianceFortress()`: the castle, 4 strongholds, and 12 fortresses with map coordinates and the
   reward each gives in each of the 8 phases, sourced from user-provided images.
+- `events()`: game events, one data file each under `data/events/`, with frequency, duration,
+  requirements, phases, rewards, and tips. The first batch covers 10 alliance and solo events.
+- `items()`: a `Speedups` category with 21 speedup items (General, Construction, Troop Training,
+  Research, Learning, and Troop Healing) and their icons under `images/items/speedups/`.
+- `items()`: the Frostdragon Tyrant trophies Triumph of Tyrant, Glory of Kings, and Trail of Heroes,
+  with icons cropped from the wiki's reward image.
+- `decoration()`: an optional `img` on decorations, set for Dragon Pagoda, Serpent Sanctuary, War
+  Chariot, and Cannon, with icons under `images/daybreak-island/`. Event rewards can link a
+  decoration with `decorationId`.
 - `eventBuff()`: which of 11 buff sources (Pet Skills, President Skills, Facility Buff, etc.) apply
   in each of 14 game modes, sourced from a user-provided screenshot rather than any wiki page.
   `petSkillsAutoApplied` marks the modes where pet skills apply without player activation.
 - `vip()`: the full VIP 1-12 progression (XP cost and unlocked bonuses per level), sourced from the
   wiki's official infographic image, since that page has no HTML table either.
 - `lumberCamp()`, `treeOfLife()`, and `decoration()`: the full Daybreak Island feature — Lumber Camp
-  and Tree of Life upgrade tables, and all 102 named decorations across 8 categories, including the
+  and Tree of Life upgrade tables, and all 103 named decorations across 8 categories, including the
   Starry Lighthouse and Harbor of Hope (folded in as the two `Unique` decorations, since neither
   follows a standard rarity progression). Sourced from a third-party guide site rather than the
   official wiki, which has no page for this feature. The Rare/Epic/Mythic/ Unique categories' full

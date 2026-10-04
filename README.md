@@ -382,21 +382,23 @@ same convention `images/heroes/` uses — the single skill image is named `<Pet>
 
 | Module | Factory   | Items | Description                                                       |
 | ------ | --------- | ----- | ----------------------------------------------------------------- |
-| items  | `items()` | 226   | Functional items — resources, currencies, chests, buffs, and more |
+| items  | `items()` | 250   | Functional items — resources, currencies, chests, buffs, and more |
 
 Sourced from the wiki's master item catalog page, which covers 415 items across 18 category tabs.
 Birthday Card entries are skipped (a yearly login freebie with no gameplay data worth tracking), and
 the remaining 17 tabs split into two modules by kind: functional items go here, cosmetic skins go to
 `skins()` below.
 
-`category` is one of 10 values (`Hero Items`, `Pet`, `Gear Materials`, `Chest`, `Buff`,
-`Fire Crystal`, `Experts`, `Teleporter`, `Others`, `Event`), taken directly from the wiki's own tab
-labels. Five items are tagged under more than one tab on the source site (all involving Chest, e.g.
-Seeker's Chest is tagged both `Chest` and `Experts`) — `Chest` wins as the resolved category in
-every case, since it's the more specific classification. `id` is the item's own wiki URL slug rather
-than a freshly-slugified name, since several names repeat across categories (e.g. "Garden of
-Delights" exists as both an Avatar Frame skin and a Name Card skin) and the source slugs are already
-unique.
+`category` is one of 11 values (`Hero Items`, `Pet`, `Gear Materials`, `Chest`, `Buff`,
+`Fire Crystal`, `Experts`, `Teleporter`, `Others`, `Event`, `Speedups`). The first 10 are taken
+directly from the wiki's own tab labels. `Speedups` holds the 21 general and type-specific speedup
+items (1m to 8h), which the wiki catalog does not list. Their icons are cropped from in-game
+Backpack screenshots, and the 3h and 8h icons for most types are not added yet. Five items are
+tagged under more than one tab on the source site (all involving Chest, e.g. Seeker's Chest is
+tagged both `Chest` and `Experts`) — `Chest` wins as the resolved category in every case, since it's
+the more specific classification. `id` is the item's own wiki URL slug rather than a
+freshly-slugified name, since several names repeat across categories (e.g. "Garden of Delights"
+exists as both an Avatar Frame skin and a Name Card skin) and the source slugs are already unique.
 
 `sources` is a plain list of where an item drops from (shops, events, activities) — often empty,
 when the wiki doesn't document one. Chest items (50 total) additionally carry an optional
@@ -654,6 +656,36 @@ structure type.
 
 ---
 
+### 📅 Events
+
+| Module | Factory    | Items | Description                                                           |
+| ------ | ---------- | ----- | --------------------------------------------------------------------- |
+| events | `events()` | 10    | Game events with frequency, duration, requirements, rewards, and tips |
+
+Sourced from `https://www.whiteoutsurvival.wiki/events/` (67 events listed, added in batches). Event
+pages are prose and screenshots with no tables, so each event's text is transcribed from its page
+and rewards that exist only as images are added from user-provided screenshots. Each event is its
+own file under `data/events/`. Every detail field except `description` is optional and left out when
+the wiki does not state it. `eventBuffId` links an event to its `eventBuff()` row; the two share the
+same id. Use `.byCategory('alliance')` to filter by wiki category (`solo`, `alliance`, `rookie`,
+`holiday`). `tiers` lists an event's ranking tiers from lowest to highest, each with an optional
+`scoreTotal`, tier-wide `rewards`, and per-placement `rankings` (star change and rewards). Alliance
+Championship has all 6 tiers with rewards for each of its 4 placement groups, taken from a community
+guide that lists them as text. Canyon Clash uses `tiers` for personal merit ranges, each with
+rewards per legion rank, and `allianceRankings` for alliance rewards, both read from wiki images.
+Frostdragon Tyrant has `personalRankings` (one table per thing a placement is based on, such as
+capital occupation time and personal points) and uses `tiers` for its personal points milestones.
+Tundra Arms League uses all three: `allianceRankings`, `personalRankings` (legion ranking and legion
+result), and `tiers` by Personal Arsenal Points with Winner and Defeat rankings for the Elimination
+and Championship phases. Its rewards come from in-game screenshots on outof.games. Crazy Joe has
+`waves` (target, rule, and details for each of its 20 waves, from a community guide) and uses
+`tiers` for its 21 difficulties, with the Alliance Defense Points needed to unlock each, read from a
+wiki image. The first batch covers Bear Hunt, Crazy Joe, Alliance Championship, Foundry Battle,
+Canyon Clash, Frostfire Mine, Frostdragon Tyrant, Tundra Arms League, Icefire Warhymn League, and
+Tundra Trade Route.
+
+---
+
 ### 🎯 Event Buffs
 
 | Module    | Factory       | Items | Description                                                    |
@@ -718,7 +750,7 @@ themselves.
 | ---------- | -------------- | ----- | -------------------------------------------------------------- |
 | lumberCamp | `lumberCamp()` | 10    | The shared Lumber Camp upgrade table                           |
 | treeOfLife | `treeOfLife()` | 10    | The Tree of Life upgrade table (requirements + buff per level) |
-| decoration | `decoration()` | 102   | Every Daybreak Island decoration across 8 categories           |
+| decoration | `decoration()` | 103   | Every Daybreak Island decoration across 8 categories           |
 
 Sourced from `https://onechilledgamer.com/whiteout-survival-daybreak-island-guide/` — a third-party
 fan site rather than `whiteoutsurvival.wiki`, but one with genuine `<table>` markup (12 tables,
@@ -738,7 +770,7 @@ pattern breaks at Levels 9-10, which is why `buff` is scraped per-level rather t
 is shaped like `VipBonus` — `stat`/`value` for display (`"Troops Deployment Capacity"`/`"+1K"`) plus
 a parsed `amount`/`unit` pair (`1000`/`'flat'`) for aggregation, rather than a single opaque string.
 
-`decoration()` covers all 102 named decorations across 8 categories, each shaped differently (see
+`decoration()` covers all 103 named decorations across 8 categories, each shaped differently (see
 `DecorationCategory`) — not every `Decoration` field applies to every category:
 
 - **Basic** (9) and **Vegetation** (5): purely cosmetic. Have `cost` (a named resource — Gems, Wood,
@@ -746,7 +778,7 @@ a parsed `amount`/`unit` pair (`1000`/`'flat'`) for aggregation, rather than a s
 - **Common** (10) and **Uncommon** (6): can't be upgraded and grant no buff, but have a fixed
   `prosperityAtMaxLevel`, a `limit`, and a flat `lifeEssenceCost` (1,000 / 2,000 — stated once in
   the source's prose per rarity, not a per-item table column).
-- **Rare** (12), **Epic** (11), **Mythic** (47): each has a `levels` array
+- **Rare** (12), **Epic** (11), **Mythic** (48): each has a `levels` array
   (`{ level, cost, prosperity, buff }` — `cost` is the numeric level-up requirement at that level,
   and `buff` is shaped like `VipBonus`, one stat per level). The original source only ever showed
   the buff/Prosperity at max level, so the full per-level breakdown for these categories was
@@ -755,7 +787,7 @@ a parsed `amount`/`unit` pair (`1000`/`'flat'`) for aggregation, rather than a s
   `lifeEssenceCost` is stated once per rarity in prose (3,000, 5,000, 10,000) — except **Snow
   Castle** (Mythic), a confirmed exception at 12,000. **Limited isn't a rarity of its own** — it's a
   `limited?: boolean` flag on a decoration that's otherwise a normal Epic (4 items, max level 5) or
-  Mythic (41 items, max level 10), reflecting how it's actually obtained (a shop rotation, an event
+  Mythic (42 items, max level 10), reflecting how it's actually obtained (a shop rotation, an event
   pack, a ranking reward) rather than the standard Life Essence upgrade path. `limited` is omitted
   (not `false`) on every non-limited decoration. Limited decorations have no `lifeEssenceCost` at
   all, since Life Essence isn't how they're obtained; a handful (mostly unreleased or newly
@@ -781,6 +813,12 @@ guessed at. The level-data import correctly spelled this last one "Hero's Sanctu
 rename the stored entry (and risk breaking anything referencing the original id), it was reconciled
 back onto the existing `hero-s-sanctun` id — so `decoration().find('heros-sanctum')` returns
 nothing, while `decoration().find('hero-s-sanctun')` has the full imported level data.
+
+`img` is optional on `Decoration` and set only where a picture has been added so far: Dragon Pagoda
+and Serpent Sanctuary (cropped from heaven-guardian.com guide images), and War Chariot and Cannon
+(cropped from the Tundra Arms League legion rewards screenshot on outof.games). They are stored
+under `images/daybreak-island/`. Cannon's per-level buffs are not documented, so its levels carry
+blank buffs.
 
 ---
 
