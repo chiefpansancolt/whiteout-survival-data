@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Alliance Tech Tree</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --line: #3a86c8;
+    --line-dim: #2a3a4c;
+    --node-bg: #1c2e42;
+    --node-border: #2f4b68;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .tab {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .tab.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  .meta { color: var(--text-dim); font-size: 0.82rem; margin-bottom: 16px; }
+  .scroll-wrap {
+    overflow: auto;
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    background: var(--panel);
+    padding: 24px;
+  }
+  .tree-canvas { position: relative; margin: 0 auto; }
+  .tree-canvas svg { position: absolute; top: 0; left: 0; overflow: visible; }
+  .edge { fill: none; stroke: var(--line); stroke-width: 2; opacity: 0.55; }
+  .tree-canvas.focus .edge { stroke: var(--line-dim); opacity: 1; }
+  .tree-canvas.focus .edge.lit { stroke: var(--accent); }
+  .node { position: absolute; display: flex; flex-direction: column; align-items: center; width: 76px; }
+  .tree-canvas.focus .node { opacity: 0.35; }
+  .tree-canvas.focus .node.lit { opacity: 1; }
+  .node-tier {
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    background: var(--accent);
+    color: #06222e;
+    font-size: 0.6rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .node-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    border: 2px solid var(--node-border);
+    background: var(--node-bg);
+    overflow: hidden;
+    z-index: 1;
+  }
+  .node-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .node-name { margin-top: 4px; font-size: 0.62rem; text-align: center; line-height: 1.15; max-width: 76px; }
+  .node-levels {
+    margin-top: 2px;
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 1px 6px;
+  }
+</style>
+</head>
+<body>
+  <h1>Alliance Tech Tree</h1>
+  <p class="sub">Prerequisite tree per category. Hover a node to highlight everything it needs and everything it unlocks, and for its details.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="meta" id="meta"></div>
+  <div class="scroll-wrap"><div class="tree-canvas" id="canvas"></div></div>
+<script id="tech-data" type="application/json">[{"id":"infantry-attack-i","name":"Infantry Attack I","img":"/images/alliance-tech/infantry-attack-i.png","category":"Battle","tier":1,"description":"Enhances Infantry Troop Attack.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"lancer-attack-i","name":"Lancer Attack I","img":"/images/alliance-tech/lancer-attack-i.png","category":"Battle","tier":1,"description":"Enhances Lancer Attack.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"marksman-attack-i","name":"Marksman Attack I","img":"/images/alliance-tech/marksman-attack-i.png","category":"Battle","tier":1,"description":"Enhances Marksman Attack.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"rally-expansion-i","name":"Rally Expansion I","img":"/images/alliance-tech/rally-expansion-i.png","category":"Battle","tier":1,"description":"Increases rally governor cap.","levels":[{"level":1,"prerequisites":[],"bonus":"1"},{"level":2,"prerequisites":[],"bonus":"2"},{"level":3,"prerequisites":[],"bonus":"3"}]},{"id":"troops-attack-i","name":"Troops Attack I","img":"/images/alliance-tech/troops-attack-i.png","category":"Battle","tier":1,"description":"Enhances all Troops’ Attack.","levels":[{"level":1,"prerequisites":[{"id":"infantry-attack-i","level":1},{"id":"lancer-attack-i","level":1},{"id":"marksman-attack-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"infantry-attack-i","level":2},{"id":"lancer-attack-i","level":2},{"id":"marksman-attack-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"infantry-attack-i","level":3},{"id":"lancer-attack-i","level":3},{"id":"marksman-attack-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"infantry-attack-i","level":4},{"id":"lancer-attack-i","level":4},{"id":"marksman-attack-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"infantry-attack-i","level":5},{"id":"lancer-attack-i","level":5},{"id":"marksman-attack-i","level":5}],"bonus":"5%"}]},{"id":"infantry-defense-i","name":"Infantry Defense I","img":"/images/alliance-tech/infantry-defense-i.png","category":"Battle","tier":2,"description":"Enhances Infantry Defense.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"lancer-defense-i","name":"Lancer Defense I","img":"/images/alliance-tech/lancer-defense-i.png","category":"Battle","tier":2,"description":"Enhances Lancer Defense.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"marksman-defense-i","name":"Marksman Defense I","img":"/images/alliance-tech/marksman-defense-i.png","category":"Battle","tier":2,"description":"Enhances Marksman Defense.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"rally-expansion-ii","name":"Rally Expansion II","img":"/images/alliance-tech/rally-expansion-i.png","category":"Battle","tier":2,"description":"Increases rally governor cap.","levels":[{"level":1,"prerequisites":[{"id":"troops-attack-i","level":1}],"bonus":"1"},{"level":2,"prerequisites":[{"id":"troops-attack-i","level":2}],"bonus":"2"},{"level":3,"prerequisites":[{"id":"troops-attack-i","level":3}],"bonus":"3"}]},{"id":"troops-defense-i","name":"Troops Defense I","img":"/images/alliance-tech/troops-defense-i.png","category":"Battle","tier":2,"description":"Enhances all Troops’ Defense.","levels":[{"level":1,"prerequisites":[{"id":"infantry-defense-i","level":1},{"id":"lancer-defense-i","level":1},{"id":"marksman-defense-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"infantry-defense-i","level":2},{"id":"lancer-defense-i","level":2},{"id":"marksman-defense-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"infantry-defense-i","level":3},{"id":"lancer-defense-i","level":3},{"id":"marksman-defense-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"infantry-defense-i","level":4},{"id":"lancer-defense-i","level":4},{"id":"marksman-defense-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"infantry-defense-i","level":5},{"id":"lancer-defense-i","level":5},{"id":"marksman-defense-i","level":5}],"bonus":"5%"}]},{"id":"infantry-health-i","name":"Infantry Health I","img":"/images/alliance-tech/infantry-health-i.png","category":"Battle","tier":3,"description":"Enhances Infantry Health.","levels":[{"level":1,"prerequisites":[{"id":"troops-lethality-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"troops-lethality-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"troops-lethality-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"troops-lethality-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"troops-lethality-i","level":5}],"bonus":"5%"}]},{"id":"infantry-lethality-i","name":"Infantry Lethality I","img":"/images/alliance-tech/infantry-lethality-i.png","category":"Battle","tier":3,"description":"Enhances Infantry Lethality.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-iii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-iii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-iii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"lancer-health-i","name":"Lancer Health I","img":"/images/alliance-tech/lancer-health-i.png","category":"Battle","tier":3,"description":"Enhances Lancer Health.","levels":[{"level":1,"prerequisites":[{"id":"troops-lethality-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"troops-lethality-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"troops-lethality-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"troops-lethality-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"troops-lethality-i","level":5}],"bonus":"5%"}]},{"id":"lancer-lethality-i","name":"Lancer Lethality I","img":"/images/alliance-tech/lancer-lethality-i.png","category":"Battle","tier":3,"description":"Enhances Lancer Lethality.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-iii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-iii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-iii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"long-live-our-alliance","name":"Long Live Our Alliance","img":"/images/alliance-tech/fertile-land-expedition.png","category":"Battle","tier":3,"description":"Permanent Alliance Tech Contributions","levels":[{"level":1,"prerequisites":[{"id":"troops-health-i","level":1}],"bonus":"0%"}]},{"id":"marksman-health-i","name":"Marksman Health I","img":"/images/alliance-tech/marksman-health-i.png","category":"Battle","tier":3,"description":"Enhances Marksman Health.","levels":[{"level":1,"prerequisites":[{"id":"troops-lethality-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"troops-lethality-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"troops-lethality-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"troops-lethality-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"troops-lethality-i","level":5}],"bonus":"5%"}]},{"id":"marksman-lethality-i","name":"Marksman Lethality I","img":"/images/alliance-tech/marksman-lethality-i.png","category":"Battle","tier":3,"description":"Enhances Marksman Lethality.","levels":[{"level":1,"prerequisites":[{"id":"rally-expansion-iii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"rally-expansion-iii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"rally-expansion-iii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"rally-expansion-iii","name":"Rally Expansion III","img":"/images/alliance-tech/rally-expansion-i.png","category":"Battle","tier":3,"description":"Increases rally governor cap.","levels":[{"level":1,"prerequisites":[{"id":"troops-defense-i","level":1}],"bonus":"1"},{"level":2,"prerequisites":[{"id":"troops-defense-i","level":2}],"bonus":"2"},{"level":3,"prerequisites":[{"id":"troops-defense-i","level":3}],"bonus":"3"},{"level":4,"prerequisites":[{"id":"troops-defense-i","level":4}],"bonus":"4"}]},{"id":"troops-health-i","name":"Troops Health I","img":"/images/alliance-tech/troops-health-i.png","category":"Battle","tier":3,"description":"Enhances all Troops’ Health.","levels":[{"level":1,"prerequisites":[{"id":"infantry-health-i","level":1},{"id":"lancer-health-i","level":1},{"id":"marksman-health-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"infantry-health-i","level":2},{"id":"lancer-health-i","level":2},{"id":"marksman-health-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"infantry-health-i","level":3},{"id":"lancer-health-i","level":3},{"id":"marksman-health-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"infantry-health-i","level":4},{"id":"lancer-health-i","level":4},{"id":"marksman-health-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"infantry-health-i","level":5},{"id":"lancer-health-i","level":5},{"id":"marksman-health-i","level":5}],"bonus":"5%"}]},{"id":"troops-lethality-i","name":"Troops Lethality I","img":"/images/alliance-tech/troops-lethality-i.png","category":"Battle","tier":3,"description":"Enhances all Troops’ Lethality.","levels":[{"level":1,"prerequisites":[{"id":"infantry-lethality-i","level":1},{"id":"lancer-lethality-i","level":1},{"id":"marksman-lethality-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"infantry-lethality-i","level":2},{"id":"lancer-lethality-i","level":2},{"id":"marksman-lethality-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"infantry-lethality-i","level":3},{"id":"lancer-lethality-i","level":3},{"id":"marksman-lethality-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"infantry-lethality-i","level":4},{"id":"lancer-lethality-i","level":4},{"id":"marksman-lethality-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"infantry-lethality-i","level":5},{"id":"lancer-lethality-i","level":5},{"id":"marksman-lethality-i","level":5}],"bonus":"5%"}]},{"id":"adaptive-tools-i","name":"Adaptive Tools I","img":"/images/alliance-tech/adaptive-tools-i.png","category":"Growth","tier":1,"description":"Accelerates City construction for alliance members.","levels":[{"level":1,"prerequisites":[{"id":"alliance-regimentation-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"alliance-regimentation-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"alliance-regimentation-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"alliance-regimentation-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"alliance-regimentation-i","level":5}],"bonus":"5%"}]},{"id":"advanced-training-i","name":"Advanced Training I","img":"/images/alliance-tech/advanced-training-i.png","category":"Growth","tier":1,"description":"Accelerates training for all alliance member troop types.","levels":[{"level":1,"prerequisites":[{"id":"treaties-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"treaties-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"treaties-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"treaties-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"treaties-i","level":5}],"bonus":"5%"}]},{"id":"alliance-regimentation-i","name":"Alliance Regimentation I","img":"/images/alliance-tech/alliance-regimentation-i.png","category":"Growth","tier":1,"description":"Increases alliance membership cap.","levels":[{"level":1,"prerequisites":[],"bonus":"2"},{"level":2,"prerequisites":[],"bonus":"4"},{"level":3,"prerequisites":[],"bonus":"6"},{"level":4,"prerequisites":[],"bonus":"8"},{"level":5,"prerequisites":[],"bonus":"10"}]},{"id":"cooperative-protocols-i","name":"Cooperative Protocols I","img":"/images/alliance-tech/cooperative-protocols-i.png","category":"Growth","tier":1,"description":"Alliance Help will reduce more time.","levels":[{"level":1,"prerequisites":[],"bonus":"30"},{"level":2,"prerequisites":[],"bonus":"60"},{"level":3,"prerequisites":[],"bonus":"90"},{"level":4,"prerequisites":[],"bonus":"120"},{"level":5,"prerequisites":[],"bonus":"150"}]},{"id":"mechanisms-i","name":"Mechanisms I","img":"/images/alliance-tech/mechanisms-i.png","category":"Growth","tier":1,"description":"Speeds up alliance members’ research.","levels":[{"level":1,"prerequisites":[{"id":"adaptive-tools-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"adaptive-tools-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"adaptive-tools-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"adaptive-tools-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"adaptive-tools-i","level":5}],"bonus":"5%"}]},{"id":"treaties-i","name":"Treaties I","img":"/images/alliance-tech/treaties-i.png","category":"Growth","tier":1,"description":"Raises the Alliance Help cap.","levels":[{"level":1,"prerequisites":[{"id":"cooperative-protocols-i","level":1}],"bonus":"1"},{"level":2,"prerequisites":[{"id":"cooperative-protocols-i","level":2}],"bonus":"2"},{"level":3,"prerequisites":[{"id":"cooperative-protocols-i","level":3}],"bonus":"3"},{"level":4,"prerequisites":[{"id":"cooperative-protocols-i","level":4}],"bonus":"4"},{"level":5,"prerequisites":[{"id":"cooperative-protocols-i","level":5}],"bonus":"5"}]},{"id":"alliance-regimentation-ii","name":"Alliance Regimentation II","img":"/images/alliance-tech/alliance-regimentation-i.png","category":"Growth","tier":2,"description":"Increases alliance membership cap.","levels":[{"level":1,"prerequisites":[{"id":"mechanisms-i","level":1},{"id":"advanced-training-i","level":1}],"bonus":"4"},{"level":2,"prerequisites":[{"id":"mechanisms-i","level":2},{"id":"advanced-training-i","level":2}],"bonus":"8"},{"level":3,"prerequisites":[{"id":"mechanisms-i","level":3},{"id":"advanced-training-i","level":3}],"bonus":"12"},{"level":4,"prerequisites":[{"id":"mechanisms-i","level":4},{"id":"advanced-training-i","level":4}],"bonus":"16"},{"level":5,"prerequisites":[{"id":"mechanisms-i","level":5},{"id":"advanced-training-i","level":5}],"bonus":"20"}]},{"id":"coal-mining-i","name":"Coal Mining I","img":"/images/alliance-tech/coal-mining-i.png","category":"Growth","tier":2,"description":"Speeds up alliance members’ Coal mining in the wilderness.","levels":[{"level":1,"prerequisites":[{"id":"food-gathering-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"food-gathering-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"food-gathering-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"food-gathering-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"food-gathering-i","level":5}],"bonus":"5%"}]},{"id":"food-gathering-i","name":"Food Gathering I","img":"/images/alliance-tech/food-gathering-i.png","category":"Growth","tier":2,"description":"Speeds up alliance members’ Meat gathering in the wilderness.","levels":[{"level":1,"prerequisites":[{"id":"alliance-regimentation-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"alliance-regimentation-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"alliance-regimentation-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"alliance-regimentation-ii","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"alliance-regimentation-ii","level":5}],"bonus":"5%"}]},{"id":"iron-mining-i","name":"Iron Mining I","img":"/images/alliance-tech/iron-mining-i.png","category":"Growth","tier":2,"description":"Speeds up alliance members’ Iron mining in the wilderness.","levels":[{"level":1,"prerequisites":[{"id":"wood-gathering-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"wood-gathering-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"wood-gathering-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"wood-gathering-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"wood-gathering-i","level":5}],"bonus":"5%"}]},{"id":"tundra-surveying","name":"Tundra Surveying","img":"/images/alliance-tech/tundra-surveying.png","category":"Growth","tier":2,"description":"Alliance may place Alliance buildings on Tundra.","levels":[{"level":1,"prerequisites":[{"id":"alliance-regimentation-ii","level":5}]}]},{"id":"wood-gathering-i","name":"Wood Gathering I","img":"/images/alliance-tech/wood-gathering-i.png","category":"Growth","tier":2,"description":"Speeds up alliance members’ Wood gathering in the wilderness.","levels":[{"level":1,"prerequisites":[{"id":"alliance-regimentation-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"alliance-regimentation-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"alliance-regimentation-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"alliance-regimentation-ii","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"alliance-regimentation-ii","level":5}],"bonus":"5%"}]},{"id":"adaptive-tools-ii","name":"Adaptive Tools II","img":"/images/alliance-tech/adaptive-tools-i.png","category":"Growth","tier":3,"description":"Accelerates City construction for alliance members.","levels":[{"level":1,"prerequisites":[{"id":"alliance-regimentation-iii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"alliance-regimentation-iii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"alliance-regimentation-iii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"alliance-regimentation-iii","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"alliance-regimentation-iii","level":5}],"bonus":"5%"}]},{"id":"advanced-training-ii","name":"Advanced Training II","img":"/images/alliance-tech/advanced-training-i.png","category":"Growth","tier":3,"description":"Accelerates training for all alliance member troop types.","levels":[{"level":1,"prerequisites":[{"id":"treaties-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"treaties-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"treaties-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"treaties-ii","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"treaties-ii","level":5}],"bonus":"5%"}]},{"id":"alliance-regimentation-iii","name":"Alliance Regimentation III","img":"/images/alliance-tech/alliance-regimentation-i.png","category":"Growth","tier":3,"description":"Increases alliance membership cap.","levels":[{"level":1,"prerequisites":[{"id":"coal-mining-i","level":1},{"id":"iron-mining-i","level":1}],"bonus":"4"},{"level":2,"prerequisites":[{"id":"coal-mining-i","level":2},{"id":"iron-mining-i","level":2}],"bonus":"8"},{"level":3,"prerequisites":[{"id":"coal-mining-i","level":3},{"id":"iron-mining-i","level":3}],"bonus":"12"},{"level":4,"prerequisites":[{"id":"coal-mining-i","level":4},{"id":"iron-mining-i","level":4}],"bonus":"16"},{"level":5,"prerequisites":[{"id":"coal-mining-i","level":5},{"id":"iron-mining-i","level":5}],"bonus":"20"}]},{"id":"coal-mining-ii","name":"Coal Mining II","img":"/images/alliance-tech/coal-mining-i.png","category":"Growth","tier":3,"description":"Speeds up alliance members’ Coal mining in the wilderness.","levels":[{"level":1,"prerequisites":[{"id":"food-gathering-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"food-gathering-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"food-gathering-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"food-gathering-ii","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"food-gathering-ii","level":5}],"bonus":"5%"}]},{"id":"fertile-land-expedition","name":"Fertile Land Expedition","img":"/images/alliance-tech/fertile-land-expedition.png","category":"Growth","tier":3,"description":"Alliance may place Alliance buildings on Fertile Land.","levels":[{"level":1,"prerequisites":[{"id":"alliance-regimentation-iii","level":5}]}]},{"id":"first-aid-techniques-i","name":"First Aid Techniques I","img":"/images/alliance-tech/first-aid-techniques-i.png","category":"Growth","tier":3,"description":"Speeds up alliance members’ troop healing.","levels":[{"level":1,"prerequisites":[{"id":"mechanisms-ii","level":1},{"id":"advanced-training-ii","level":1}],"bonus":"4%"},{"level":2,"prerequisites":[{"id":"mechanisms-ii","level":2},{"id":"advanced-training-ii","level":2}],"bonus":"8%"},{"level":3,"prerequisites":[{"id":"mechanisms-ii","level":3},{"id":"advanced-training-ii","level":3}],"bonus":"12%"},{"level":4,"prerequisites":[{"id":"mechanisms-ii","level":4},{"id":"advanced-training-ii","level":4}],"bonus":"16%"},{"level":5,"prerequisites":[{"id":"mechanisms-ii","level":5},{"id":"advanced-training-ii","level":5}],"bonus":"20%"}]},{"id":"food-gathering-ii","name":"Food Gathering II","img":"/images/alliance-tech/food-gathering-i.png","category":"Growth","tier":3,"description":"Speeds up alliance members’ Meat gathering in the wilderness.","levels":[{"level":1,"prerequisites":[{"id":"first-aid-techniques-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"first-aid-techniques-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"first-aid-techniques-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"first-aid-techniques-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"first-aid-techniques-i","level":5}],"bonus":"5%"}]},{"id":"iron-mining-ii","name":"Iron Mining II","img":"/images/alliance-tech/iron-mining-i.png","category":"Growth","tier":3,"description":"Speeds up alliance members’ Iron mining in the wilderness.","levels":[{"level":1,"prerequisites":[{"id":"wood-gathering-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"wood-gathering-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"wood-gathering-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"wood-gathering-ii","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"wood-gathering-ii","level":5}],"bonus":"5%"}]},{"id":"mechanisms-ii","name":"Mechanisms II","img":"/images/alliance-tech/mechanisms-i.png","category":"Growth","tier":3,"description":"Speeds up alliance members’ research.","levels":[{"level":1,"prerequisites":[{"id":"adaptive-tools-ii","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"adaptive-tools-ii","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"adaptive-tools-ii","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"adaptive-tools-ii","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"adaptive-tools-ii","level":5}],"bonus":"5%"}]},{"id":"treaties-ii","name":"Treaties II","img":"/images/alliance-tech/treaties-i.png","category":"Growth","tier":3,"description":"Raises the Alliance Help cap.","levels":[{"level":1,"prerequisites":[{"id":"alliance-regimentation-iii","level":1}],"bonus":"2"},{"level":2,"prerequisites":[{"id":"alliance-regimentation-iii","level":2}],"bonus":"4"},{"level":3,"prerequisites":[{"id":"alliance-regimentation-iii","level":3}],"bonus":"6"},{"level":4,"prerequisites":[{"id":"alliance-regimentation-iii","level":4}],"bonus":"8"},{"level":5,"prerequisites":[{"id":"alliance-regimentation-iii","level":5}],"bonus":"10"}]},{"id":"wood-gathering-ii","name":"Wood Gathering II","img":"/images/alliance-tech/wood-gathering-i.png","category":"Growth","tier":3,"description":"Speeds up alliance members’ Wood gathering in the wilderness.","levels":[{"level":1,"prerequisites":[{"id":"first-aid-techniques-i","level":1}],"bonus":"1%"},{"level":2,"prerequisites":[{"id":"first-aid-techniques-i","level":2}],"bonus":"2%"},{"level":3,"prerequisites":[{"id":"first-aid-techniques-i","level":3}],"bonus":"3%"},{"level":4,"prerequisites":[{"id":"first-aid-techniques-i","level":4}],"bonus":"4%"},{"level":5,"prerequisites":[{"id":"first-aid-techniques-i","level":5}],"bonus":"5%"}]},{"id":"alliance-building-durability-i","name":"Alliance Building Durability I","img":"/images/alliance-tech/alliance-building-durability-i.png","category":"Territory","tier":1,"description":"Enhances Alliance Building Durability.","levels":[{"level":1,"prerequisites":[{"id":"tactical-expansion-i","level":1}],"bonus":"1000"},{"level":2,"prerequisites":[{"id":"tactical-expansion-i","level":2}],"bonus":"2000"},{"level":3,"prerequisites":[{"id":"tactical-expansion-i","level":3}],"bonus":"3000"},{"level":4,"prerequisites":[{"id":"tactical-expansion-i","level":4}],"bonus":"4000"},{"level":5,"prerequisites":[{"id":"tactical-expansion-i","level":5}],"bonus":"5000"}]},{"id":"alliance-engineering-i","name":"Alliance Engineering I","img":"/images/alliance-tech/alliance-engineering-i.png","category":"Territory","tier":1,"description":"Enhances Alliance Construction Speed.","levels":[{"level":1,"prerequisites":[{"id":"storehouse-expansion-i","level":1}],"bonus":"2%"},{"level":2,"prerequisites":[{"id":"storehouse-expansion-i","level":2}],"bonus":"4%"},{"level":3,"prerequisites":[{"id":"storehouse-expansion-i","level":3}],"bonus":"6%"},{"level":4,"prerequisites":[{"id":"storehouse-expansion-i","level":4}],"bonus":"8%"},{"level":5,"prerequisites":[{"id":"storehouse-expansion-i","level":5}],"bonus":"10%"}]},{"id":"incendiary-bullets-i","name":"Incendiary Bullets I","img":"/images/alliance-tech/incendiary-bullets-i.png","category":"Territory","tier":1,"description":"Accelerates Enemy Alliance Building Destruction","levels":[{"level":1,"prerequisites":[{"id":"alliance-building-durability-i","level":1}],"bonus":"2%"},{"level":2,"prerequisites":[{"id":"alliance-building-durability-i","level":2}],"bonus":"4%"},{"level":3,"prerequisites":[{"id":"alliance-building-durability-i","level":3}],"bonus":"6%"},{"level":4,"prerequisites":[{"id":"alliance-building-durability-i","level":4}],"bonus":"8%"},{"level":5,"prerequisites":[{"id":"alliance-building-durability-i","level":5}],"bonus":"10%"}]},{"id":"rapid-deployment-i","name":"Rapid Deployment I","img":"/images/alliance-tech/rapid-deployment-i.png","category":"Territory","tier":1,"description":"Troops March Speed","levels":[{"level":1,"prerequisites":[],"bonus":"1%"},{"level":2,"prerequisites":[],"bonus":"2%"},{"level":3,"prerequisites":[],"bonus":"3%"},{"level":4,"prerequisites":[],"bonus":"4%"},{"level":5,"prerequisites":[],"bonus":"5%"}]},{"id":"storehouse-expansion-i","name":"Storehouse Expansion I","img":"/images/alliance-tech/storehouse-expansion-i.png","category":"Territory","tier":1,"description":"Increases Alliance Storehouse Capacity.","levels":[{"level":1,"prerequisites":[{"id":"tactical-expansion-i","level":1}],"bonus":"50%"},{"level":2,"prerequisites":[{"id":"tactical-expansion-i","level":2}],"bonus":"100%"},{"level":3,"prerequisites":[{"id":"tactical-expansion-i","level":3}],"bonus":"200%"},{"level":4,"prerequisites":[{"id":"tactical-expansion-i","level":4}],"bonus":"300%"},{"level":5,"prerequisites":[{"id":"tactical-expansion-i","level":5}],"bonus":"400%"}]},{"id":"tactical-expansion-i","name":"Tactical Expansion I","img":"/images/alliance-tech/tactical-expansion-i.png","category":"Territory","tier":1,"description":"Increases Alliance Banner cap.","levels":[{"level":1,"prerequisites":[{"id":"rapid-deployment-i","level":1}],"bonus":"18"},{"level":2,"prerequisites":[{"id":"rapid-deployment-i","level":2}],"bonus":"36"},{"level":3,"prerequisites":[{"id":"rapid-deployment-i","level":3}],"bonus":"54"},{"level":4,"prerequisites":[{"id":"rapid-deployment-i","level":4}],"bonus":"72"},{"level":5,"prerequisites":[{"id":"rapid-deployment-i","level":5}],"bonus":"90"}]},{"id":"alliance-building-durability-ii","name":"Alliance Building Durability II","img":"/images/alliance-tech/alliance-building-durability-i.png","category":"Territory","tier":2,"description":"Enhances Alliance Building Durability.","levels":[{"level":1,"prerequisites":[{"id":"tactical-expansion-ii","level":1}],"bonus":"1000"},{"level":2,"prerequisites":[{"id":"tactical-expansion-ii","level":2}],"bonus":"2000"},{"level":3,"prerequisites":[{"id":"tactical-expansion-ii","level":3}],"bonus":"3000"},{"level":4,"prerequisites":[{"id":"tactical-expansion-ii","level":4}],"bonus":"4000"},{"level":5,"prerequisites":[{"id":"tactical-expansion-ii","level":5}],"bonus":"5000"}]},{"id":"alliance-engineering-ii","name":"Alliance Engineering II","img":"/images/alliance-tech/alliance-engineering-i.png","category":"Territory","tier":2,"description":"Enhances Alliance Construction Speed.","levels":[{"level":1,"prerequisites":[{"id":"storehouse-expansion-ii","level":1}],"bonus":"2%"},{"level":2,"prerequisites":[{"id":"storehouse-expansion-ii","level":2}],"bonus":"4%"},{"level":3,"prerequisites":[{"id":"storehouse-expansion-ii","level":3}],"bonus":"6%"},{"level":4,"prerequisites":[{"id":"storehouse-expansion-ii","level":4}],"bonus":"8%"},{"level":5,"prerequisites":[{"id":"storehouse-expansion-ii","level":5}],"bonus":"10%"}]},{"id":"incendiary-bullets-ii","name":"Incendiary Bullets II","img":"/images/alliance-tech/incendiary-bullets-i.png","category":"Territory","tier":2,"description":"Accelerates Enemy Alliance Building Destruction","levels":[{"level":1,"prerequisites":[{"id":"alliance-building-durability-ii","level":1}],"bonus":"2%"},{"level":2,"prerequisites":[{"id":"alliance-building-durability-ii","level":2}],"bonus":"4%"},{"level":3,"prerequisites":[{"id":"alliance-building-durability-ii","level":3}],"bonus":"6%"},{"level":4,"prerequisites":[{"id":"alliance-building-durability-ii","level":4}],"bonus":"8%"},{"level":5,"prerequisites":[{"id":"alliance-building-durability-ii","level":5}],"bonus":"10%"}]},{"id":"storehouse-expansion-ii","name":"Storehouse Expansion II","img":"/images/alliance-tech/storehouse-expansion-i.png","category":"Territory","tier":2,"description":"Increases Alliance Storehouse Capacity.","levels":[{"level":1,"prerequisites":[{"id":"tactical-expansion-ii","level":1}],"bonus":"50%"},{"level":2,"prerequisites":[{"id":"tactical-expansion-ii","level":2}],"bonus":"2000"},{"level":3,"prerequisites":[{"id":"tactical-expansion-ii","level":3}],"bonus":"100%"},{"level":4,"prerequisites":[{"id":"tactical-expansion-ii","level":4}],"bonus":"300%"},{"level":5,"prerequisites":[{"id":"tactical-expansion-ii","level":5}],"bonus":"400%"}]},{"id":"tactical-expansion-ii","name":"Tactical Expansion II","img":"/images/alliance-tech/tactical-expansion-i.png","category":"Territory","tier":2,"description":"Increases Alliance Banner cap.","levels":[{"level":1,"prerequisites":[{"id":"incendiary-bullets-i","level":1},{"id":"alliance-engineering-i","level":1}],"bonus":"20"},{"level":2,"prerequisites":[{"id":"incendiary-bullets-i","level":2},{"id":"alliance-engineering-i","level":2}],"bonus":"40"},{"level":3,"prerequisites":[{"id":"incendiary-bullets-i","level":3},{"id":"alliance-engineering-i","level":3}],"bonus":"60"},{"level":4,"prerequisites":[{"id":"incendiary-bullets-i","level":4},{"id":"alliance-engineering-i","level":4}],"bonus":"80"},{"level":5,"prerequisites":[{"id":"incendiary-bullets-i","level":5},{"id":"alliance-engineering-i","level":5}],"bonus":"100"}]},{"id":"alliance-building-durability-iii","name":"Alliance Building Durability III","img":"/images/alliance-tech/alliance-building-durability-i.png","category":"Territory","tier":3,"description":"Enhances Alliance Building Durability.","levels":[{"level":1,"prerequisites":[{"id":"tactical-expansion-iii","level":1}],"bonus":"1000"},{"level":2,"prerequisites":[{"id":"tactical-expansion-iii","level":2}],"bonus":"2000"},{"level":3,"prerequisites":[{"id":"tactical-expansion-iii","level":3}],"bonus":"3000"},{"level":4,"prerequisites":[{"id":"tactical-expansion-iii","level":4}],"bonus":"4000"},{"level":5,"prerequisites":[{"id":"tactical-expansion-iii","level":5}],"bonus":"5000"}]},{"id":"alliance-engineering-iii","name":"Alliance Engineering III","img":"/images/alliance-tech/alliance-engineering-i.png","category":"Territory","tier":3,"description":"Enhances Alliance Construction Speed.","levels":[{"level":1,"prerequisites":[{"id":"storehouse-expansion-iii","level":1}],"bonus":"2%"},{"level":2,"prerequisites":[{"id":"storehouse-expansion-iii","level":2}],"bonus":"4%"},{"level":3,"prerequisites":[{"id":"storehouse-expansion-iii","level":3}],"bonus":"6%"},{"level":4,"prerequisites":[{"id":"storehouse-expansion-iii","level":4}],"bonus":"8%"},{"level":5,"prerequisites":[{"id":"storehouse-expansion-iii","level":5}],"bonus":"10%"}]},{"id":"incendiary-bullets-iii","name":"Incendiary Bullets III","img":"/images/alliance-tech/incendiary-bullets-i.png","category":"Territory","tier":3,"description":"Accelerates Enemy Alliance Building Destruction","levels":[{"level":1,"prerequisites":[{"id":"alliance-building-durability-iii","level":1}],"bonus":"2%"},{"level":2,"prerequisites":[{"id":"alliance-building-durability-iii","level":2}],"bonus":"4%"},{"level":3,"prerequisites":[{"id":"alliance-building-durability-iii","level":3}],"bonus":"6%"},{"level":4,"prerequisites":[{"id":"alliance-building-durability-iii","level":4}],"bonus":"8%"},{"level":5,"prerequisites":[{"id":"alliance-building-durability-iii","level":5}],"bonus":"10%"}]},{"id":"storehouse-expansion-iii","name":"Storehouse Expansion III","img":"/images/alliance-tech/storehouse-expansion-i.png","category":"Territory","tier":3,"description":"Increases Alliance Storehouse Capacity.","levels":[{"level":1,"prerequisites":[{"id":"tactical-expansion-iii","level":1}],"bonus":"400%"},{"level":2,"prerequisites":[{"id":"tactical-expansion-iii","level":2}],"bonus":"800%"},{"level":3,"prerequisites":[{"id":"tactical-expansion-iii","level":3}],"bonus":"1200%"},{"level":4,"prerequisites":[{"id":"tactical-expansion-iii","level":4}],"bonus":"1600%"},{"level":5,"prerequisites":[{"id":"tactical-expansion-iii","level":5}],"bonus":"2000%"}]},{"id":"tactical-expansion-iii","name":"Tactical Expansion III","img":"/images/alliance-tech/tactical-expansion-i.png","category":"Territory","tier":3,"description":"Increases Alliance Banner cap.","levels":[{"level":1,"prerequisites":[{"id":"incendiary-bullets-ii","level":1},{"id":"alliance-engineering-ii","level":1}],"bonus":"30"},{"level":2,"prerequisites":[{"id":"incendiary-bullets-ii","level":2},{"id":"alliance-engineering-ii","level":2}],"bonus":"60"},{"level":3,"prerequisites":[{"id":"incendiary-bullets-ii","level":3},{"id":"alliance-engineering-ii","level":3}],"bonus":"65"},{"level":4,"prerequisites":[{"id":"incendiary-bullets-ii","level":4},{"id":"alliance-engineering-ii","level":4}],"bonus":"70"},{"level":5,"prerequisites":[{"id":"incendiary-bullets-ii","level":5},{"id":"alliance-engineering-ii","level":5}],"bonus":"75"}]}]</script>
+<script>
+  const TECH = JSON.parse(document.getElementById('tech-data').textContent);
+  const CATEGORIES = ['Growth', 'Territory', 'Battle'];
+  const RANK_GAP = 150;
+  const LANE_GAP = 96;
+  const NODE_W = 76;
+  const NODE_H = 52;
+  const NODE_LABEL_H = 42;
+  const LAYOUT_PASSES = 4;
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  const tabs = document.getElementById('tabs');
+  const meta = document.getElementById('meta');
+  const canvas = document.getElementById('canvas');
+  let active = CATEGORIES[0];
+  let activeGraph;
+
+  function prerequisiteIds(node) {
+    return [...new Set(node.levels.flatMap((level) => level.prerequisites.map((p) => p.id)))];
+  }
+
+  function buildGraph(nodes) {
+    const parents = new Map(nodes.map((n) => [n.id, prerequisiteIds(n)]));
+    const children = new Map(nodes.map((n) => [n.id, []]));
+    parents.forEach((ids, id) => ids.forEach((parent) => children.get(parent).push(id)));
+    return { parents, children };
+  }
+
+  function computeRanks(nodes, parents) {
+    const rank = new Map();
+    function rankOf(id) {
+      if (!rank.has(id)) {
+        const ids = parents.get(id);
+        rank.set(id, ids.length === 0 ? 0 : Math.max(...ids.map(rankOf)) + 1);
+      }
+      return rank.get(id);
+    }
+    nodes.forEach((n) => rankOf(n.id));
+    return rank;
+  }
+
+  function layout(nodes, graph) {
+    const rank = computeRanks(nodes, graph.parents);
+    const maxRank = Math.max(...rank.values());
+    const ranks = Array.from({ length: maxRank + 1 }, (_, r) =>
+      nodes.filter((n) => rank.get(n.id) === r).map((n) => n.id).sort());
+    const across = new Map();
+    ranks.forEach((group) => group.forEach((id, i) => across.set(id, i * LANE_GAP + LANE_GAP / 2)));
+
+    function pass(forward) {
+      const order = forward ? ranks.slice(1) : ranks.slice(0, -1).reverse();
+      order.forEach((group) => {
+        const scored = group.map((id) => {
+          const neighbors = (forward ? graph.parents : graph.children).get(id);
+          const avg = neighbors.length
+            ? neighbors.reduce((sum, n) => sum + across.get(n), 0) / neighbors.length
+            : across.get(id);
+          return { id, avg };
+        });
+        scored.sort((a, b) => a.avg - b.avg || across.get(a.id) - across.get(b.id));
+        scored.forEach((s, i) => across.set(s.id, i * LANE_GAP + LANE_GAP / 2));
+      });
+    }
+    for (let i = 0; i < LAYOUT_PASSES; i++) { pass(true); pass(false); }
+
+    const width = Math.max(...ranks.map((g) => g.length)) * LANE_GAP;
+    ranks.forEach((group) => {
+      const offset = (width - group.length * LANE_GAP) / 2;
+      const ordered = [...group].sort((a, b) => across.get(a) - across.get(b));
+      ordered.forEach((id, i) => across.set(id, offset + i * LANE_GAP + LANE_GAP / 2));
+    });
+    const pos = new Map(nodes.map((n) => [n.id, { x: across.get(n.id), y: rank.get(n.id) * RANK_GAP + RANK_GAP / 2 }]));
+    return { pos, width, height: (maxRank + 1) * RANK_GAP };
+  }
+
+  function relatives(id, edgeMap) {
+    const seen = new Set();
+    const stack = [id];
+    while (stack.length) {
+      edgeMap.get(stack.pop()).forEach((next) => {
+        if (!seen.has(next)) { seen.add(next); stack.push(next); }
+      });
+    }
+    return seen;
+  }
+
+  function tooltip(node) {
+    const last = node.levels[node.levels.length - 1];
+    const lines = [node.name, node.description, `${node.levels.length} level${node.levels.length === 1 ? '' : 's'}`];
+    if (last.bonus) lines.push(`Max bonus: ${last.bonus}`);
+    return lines.join('\n');
+  }
+
+  function renderNode(node, p) {
+    const el = document.createElement('div');
+    el.className = 'node';
+    el.dataset.id = node.id;
+    el.style.left = `${p.x - NODE_W / 2}px`;
+    el.style.top = `${p.y - NODE_H / 2}px`;
+    el.title = tooltip(node);
+
+    const tier = document.createElement('div');
+    tier.className = 'node-tier';
+    tier.textContent = `T${node.tier}`;
+    const icon = document.createElement('div');
+    icon.className = 'node-icon';
+    const img = document.createElement('img');
+    img.src = `..${node.img}`;
+    img.alt = node.name;
+    img.loading = 'lazy';
+    icon.append(img);
+    const name = document.createElement('div');
+    name.className = 'node-name';
+    name.textContent = node.name;
+    const levels = document.createElement('div');
+    levels.className = 'node-levels';
+    levels.textContent = `Lv 1–${node.levels.length}`;
+    el.append(tier, icon, name, levels);
+    return el;
+  }
+
+  function renderEdges(nodes, graph, pos, size) {
+    const svg = document.createElementNS(SVG_NS, 'svg');
+    svg.setAttribute('width', size.width);
+    svg.setAttribute('height', size.height);
+    nodes.forEach((node) => graph.parents.get(node.id).forEach((parentId) => {
+      const from = pos.get(parentId);
+      const to = pos.get(node.id);
+      const y1 = from.y + NODE_H / 2 + NODE_LABEL_H;
+      const y2 = to.y - NODE_H / 2;
+      const midY = (y1 + y2) / 2;
+      const path = document.createElementNS(SVG_NS, 'path');
+      path.setAttribute('class', 'edge');
+      path.setAttribute('d', `M ${from.x} ${y1} V ${midY} H ${to.x} V ${y2}`);
+      path.dataset.from = parentId;
+      path.dataset.to = node.id;
+      svg.append(path);
+    }));
+    return svg;
+  }
+
+  function highlightOnHover() {
+    canvas.addEventListener('mouseover', (event) => {
+      const nodeEl = event.target.closest('.node');
+      if (!nodeEl) return;
+      const id = nodeEl.dataset.id;
+      const lit = new Set([id, ...relatives(id, activeGraph.parents), ...relatives(id, activeGraph.children)]);
+      canvas.classList.add('focus');
+      canvas.querySelectorAll('.node').forEach((el) => el.classList.toggle('lit', lit.has(el.dataset.id)));
+      canvas.querySelectorAll('.edge').forEach((el) =>
+        el.classList.toggle('lit', lit.has(el.dataset.from) && lit.has(el.dataset.to)));
+    });
+    canvas.addEventListener('mouseout', (event) => {
+      if (event.target.closest('.node')) canvas.classList.remove('focus');
+    });
+  }
+
+  function renderTree() {
+    const nodes = TECH.filter((n) => n.category === active);
+    const graph = buildGraph(nodes);
+    const size = layout(nodes, graph);
+    canvas.replaceChildren();
+    canvas.classList.remove('focus');
+    canvas.style.width = `${size.width}px`;
+    canvas.style.height = `${size.height + NODE_LABEL_H}px`;
+    canvas.append(renderEdges(nodes, graph, size.pos, size));
+    nodes.forEach((node) => canvas.append(renderNode(node, size.pos.get(node.id))));
+    meta.textContent = `${nodes.length} tech lines`;
+    activeGraph = graph;
+  }
+
+  highlightOnHover();
+
+  function renderTabs() {
+    tabs.replaceChildren();
+    CATEGORIES.forEach((category) => {
+      const button = document.createElement('button');
+      button.className = `tab${category === active ? ' active' : ''}`;
+      button.textContent = category;
+      button.addEventListener('click', () => { active = category; renderTabs(); renderTree(); });
+      tabs.append(button);
+    });
+  }
+
+  renderTabs();
+  renderTree();
+</script>
+</body>
+</html>
