@@ -1,0 +1,282 @@
+[
+  {
+    "id": "castle",
+    "name": "Castle",
+    "kind": "castle",
+    "x": 597,
+    "y": 597,
+    "rewards": []
+  },
+  {
+    "id": "stronghold-1",
+    "name": "Stronghold 1",
+    "kind": "stronghold",
+    "x": 597,
+    "y": 800,
+    "rewards": [
+      { "phase": 1, "reward": "Shards" },
+      { "phase": 2, "reward": "Pet Chest" },
+      { "phase": 3, "reward": "Hero Gear" },
+      { "phase": 4, "reward": "Shards" },
+      { "phase": 5, "reward": "Shards" },
+      { "phase": 6, "reward": "Pet Chest" },
+      { "phase": 7, "reward": "Hero Gear" },
+      { "phase": 8, "reward": "Shards" }
+    ]
+  },
+  {
+    "id": "stronghold-2",
+    "name": "Stronghold 2",
+    "kind": "stronghold",
+    "x": 400,
+    "y": 597,
+    "rewards": [
+      { "phase": 1, "reward": "Fire Crystal" },
+      { "phase": 2, "reward": "Shards" },
+      { "phase": 3, "reward": "Pet Chest" },
+      { "phase": 4, "reward": "Fire Crystal" },
+      { "phase": 5, "reward": "Fire Crystal" },
+      { "phase": 6, "reward": "Shards" },
+      { "phase": 7, "reward": "Pet Chest" },
+      { "phase": 8, "reward": "Fire Crystal" }
+    ]
+  },
+  {
+    "id": "stronghold-3",
+    "name": "Stronghold 3",
+    "kind": "stronghold",
+    "x": 597,
+    "y": 400,
+    "rewards": [
+      { "phase": 1, "reward": "Hero Gear" },
+      { "phase": 2, "reward": "Fire Crystal" },
+      { "phase": 3, "reward": "Shards" },
+      { "phase": 4, "reward": "Pet Chest" },
+      { "phase": 5, "reward": "Hero Gear" },
+      { "phase": 6, "reward": "Fire Crystal" },
+      { "phase": 7, "reward": "Fire Crystal" },
+      { "phase": 8, "reward": "Pet Chest" }
+    ]
+  },
+  {
+    "id": "stronghold-4",
+    "name": "Stronghold 4",
+    "kind": "stronghold",
+    "x": 800,
+    "y": 597,
+    "rewards": [
+      { "phase": 1, "reward": "Pet Chest" },
+      { "phase": 2, "reward": "Hero Gear" },
+      { "phase": 3, "reward": "Fire Crystal" },
+      { "phase": 4, "reward": "Shards" },
+      { "phase": 5, "reward": "Pet Chest" },
+      { "phase": 6, "reward": "Hero Gear" },
+      { "phase": 7, "reward": "Shards" },
+      { "phase": 8, "reward": "Shards" }
+    ]
+  },
+  {
+    "id": "fortress-1",
+    "name": "Fortress 1",
+    "kind": "fortress",
+    "x": 237,
+    "y": 828,
+    "rewards": [
+      { "phase": 1, "reward": "Shards" },
+      { "phase": 2, "reward": "Health Buff" },
+      { "phase": 3, "reward": "Speedups" },
+      { "phase": 4, "reward": "Advanced Teleport" },
+      { "phase": 5, "reward": "Pet Stone" },
+      { "phase": 6, "reward": "Health Buff" },
+      { "phase": 7, "reward": "Speedups" },
+      { "phase": 8, "reward": "Hero Gear XP" }
+    ]
+  },
+  {
+    "id": "fortress-2",
+    "name": "Fortress 2",
+    "kind": "fortress",
+    "x": 237,
+    "y": 606,
+    "rewards": [
+      { "phase": 1, "reward": "Advanced Teleport" },
+      { "phase": 2, "reward": "Shards" },
+      { "phase": 3, "reward": "Health Buff" },
+      { "phase": 4, "reward": "Hero Gear XP" },
+      { "phase": 5, "reward": "Hero Gear XP" },
+      { "phase": 6, "reward": "Pet Stone" },
+      { "phase": 7, "reward": "Health Buff" },
+      { "phase": 8, "reward": "Speedups" }
+    ]
+  },
+  {
+    "id": "fortress-3",
+    "name": "Fortress 3",
+    "kind": "fortress",
+    "x": 237,
+    "y": 348,
+    "rewards": [
+      { "phase": 1, "reward": "Speedups" },
+      { "phase": 2, "reward": "Advanced Teleport" },
+      { "phase": 3, "reward": "Shards" },
+      { "phase": 4, "reward": "Health Buff" },
+      { "phase": 5, "reward": "Speedups" },
+      { "phase": 6, "reward": "Hero Gear XP" },
+      { "phase": 7, "reward": "Pet Stone" },
+      { "phase": 8, "reward": "Health Buff" }
+    ]
+  },
+  {
+    "id": "fortress-4",
+    "name": "Fortress 4",
+    "kind": "fortress",
+    "x": 366,
+    "y": 237,
+    "rewards": [
+      { "phase": 1, "reward": "Health Buff" },
+      { "phase": 2, "reward": "Speedups" },
+      { "phase": 3, "reward": "Advanced Teleport" },
+      { "phase": 4, "reward": "Expedition Manual" },
+      { "phase": 5, "reward": "Advanced Teleport" },
+      { "phase": 6, "reward": "Speedups" },
+      { "phase": 7, "reward": "Hero Gear XP" },
+      { "phase": 8, "reward": "Pet Stone" }
+    ]
+  },
+  {
+    "id": "fortress-5",
+    "name": "Fortress 5",
+    "kind": "fortress",
+    "x": 588,
+    "y": 237,
+    "rewards": [
+      { "phase": 1, "reward": "Shards" },
+      { "phase": 2, "reward": "Damage Buff" },
+      { "phase": 3, "reward": "Speedups" },
+      { "phase": 4, "reward": "Expedition Manual" },
+      { "phase": 5, "reward": "Pet Stone" },
+      { "phase": 6, "reward": "Damage Buff" },
+      { "phase": 7, "reward": "Speedups" },
+      { "phase": 8, "reward": "Hero Gear XP" }
+    ]
+  },
+  {
+    "id": "fortress-6",
+    "name": "Fortress 6",
+    "kind": "fortress",
+    "x": 846,
+    "y": 237,
+    "rewards": [
+      { "phase": 1, "reward": "Advanced Teleport" },
+      { "phase": 2, "reward": "Shards" },
+      { "phase": 3, "reward": "Damage Buff" },
+      { "phase": 4, "reward": "Speedups" },
+      { "phase": 5, "reward": "Hero Gear XP" },
+      { "phase": 6, "reward": "Pet Stone" },
+      { "phase": 7, "reward": "Damage Buff" },
+      { "phase": 8, "reward": "Speedups" }
+    ]
+  },
+  {
+    "id": "fortress-7",
+    "name": "Fortress 7",
+    "kind": "fortress",
+    "x": 957,
+    "y": 348,
+    "rewards": [
+      { "phase": 1, "reward": "Speedups" },
+      { "phase": 2, "reward": "Advanced Teleport" },
+      { "phase": 3, "reward": "Shards" },
+      { "phase": 4, "reward": "Advanced Teleport" },
+      { "phase": 5, "reward": "Speedups" },
+      { "phase": 6, "reward": "Hero Gear XP" },
+      { "phase": 7, "reward": "Pet Stone" },
+      { "phase": 8, "reward": "Damage Buff" }
+    ]
+  },
+  {
+    "id": "fortress-8",
+    "name": "Fortress 8",
+    "kind": "fortress",
+    "x": 957,
+    "y": 606,
+    "rewards": [
+      { "phase": 1, "reward": "Damage Buff" },
+      { "phase": 2, "reward": "Speedups" },
+      { "phase": 3, "reward": "Advanced Teleport" },
+      { "phase": 4, "reward": "Hero Gear XP" },
+      { "phase": 5, "reward": "Advanced Teleport" },
+      { "phase": 6, "reward": "Speedups" },
+      { "phase": 7, "reward": "Hero Gear XP" },
+      { "phase": 8, "reward": "Pet Stone" }
+    ]
+  },
+  {
+    "id": "fortress-9",
+    "name": "Fortress 9",
+    "kind": "fortress",
+    "x": 957,
+    "y": 828,
+    "rewards": [
+      { "phase": 1, "reward": "Shards" },
+      { "phase": 2, "reward": "Deployment" },
+      { "phase": 3, "reward": "Speedups" },
+      { "phase": 4, "reward": "Damage Buff" },
+      { "phase": 5, "reward": "Pet Stone" },
+      { "phase": 6, "reward": "Deployment" },
+      { "phase": 7, "reward": "Speedups" },
+      { "phase": 8, "reward": "Hero Gear XP" }
+    ]
+  },
+  {
+    "id": "fortress-10",
+    "name": "Fortress 10",
+    "kind": "fortress",
+    "x": 846,
+    "y": 957,
+    "rewards": [
+      { "phase": 1, "reward": "Advanced Teleport" },
+      { "phase": 2, "reward": "Shards" },
+      { "phase": 3, "reward": "Deployment" },
+      { "phase": 4, "reward": "Expedition Manual" },
+      { "phase": 5, "reward": "Hero Gear XP" },
+      { "phase": 6, "reward": "Pet Stone" },
+      { "phase": 7, "reward": "Deployment" },
+      { "phase": 8, "reward": "Speedups" }
+    ]
+  },
+  {
+    "id": "fortress-11",
+    "name": "Fortress 11",
+    "kind": "fortress",
+    "x": 606,
+    "y": 957,
+    "rewards": [
+      { "phase": 1, "reward": "Speedups" },
+      { "phase": 2, "reward": "Advanced Teleport" },
+      { "phase": 3, "reward": "Shards" },
+      { "phase": 4, "reward": "Expedition Manual" },
+      { "phase": 5, "reward": "Speedups" },
+      { "phase": 6, "reward": "Hero Gear XP" },
+      { "phase": 7, "reward": "Pet Stone" },
+      { "phase": 8, "reward": "Deployment" }
+    ]
+  },
+  {
+    "id": "fortress-12",
+    "name": "Fortress 12",
+    "kind": "fortress",
+    "x": 366,
+    "y": 957,
+    "rewards": [
+      { "phase": 1, "reward": "Deployment" },
+      { "phase": 2, "reward": "Speedups" },
+      { "phase": 3, "reward": "Advanced Teleport" },
+      { "phase": 4, "reward": "Speedups" },
+      { "phase": 5, "reward": "Advanced Teleport" },
+      { "phase": 6, "reward": "Speedups" },
+      { "phase": 7, "reward": "Hero Gear XP" },
+      { "phase": 8, "reward": "Pet Stone" }
+    ]
+  }
+]

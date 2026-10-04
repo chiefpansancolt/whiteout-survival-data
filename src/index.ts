@@ -15,6 +15,7 @@ export * from './modules/hero-gear-mastery-forging';
 export * from './modules/alliance/territory';
 export * from './modules/alliance/tech';
 export * from './modules/alliance/facility';
+export * from './modules/alliance/fortress';
 export * from './modules/event-buff';
 export * from './modules/vip';
 export * from './modules/daybreak-island';

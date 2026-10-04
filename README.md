@@ -590,13 +590,14 @@ independently verifiable from the source.
 
 ### 🚩 Alliance
 
-| Module           | Factory              | Items | Description                                                         |
-| ---------------- | -------------------- | ----- | ------------------------------------------------------------------- |
-| allianceBanner   | `allianceBanner()`   | 37    | The Alliance Territory banner's build-cost table by level range     |
-| allianceTech     | `allianceTech()`     | 59    | The full Alliance Technology tree across Growth, Territory, Battle  |
-| allianceFacility | `allianceFacility()` | 8     | The 8 map-based Alliance Facility types and their per-level bonuses |
+| Module           | Factory              | Items | Description                                                                             |
+| ---------------- | -------------------- | ----- | --------------------------------------------------------------------------------------- |
+| allianceBanner   | `allianceBanner()`   | 37    | The Alliance Territory banner's build-cost table by level range                         |
+| allianceTech     | `allianceTech()`     | 59    | The full Alliance Technology tree across Growth, Territory, Battle                      |
+| allianceFacility | `allianceFacility()` | 8     | The 8 map-based Alliance Facility types and their per-level bonuses                     |
+| allianceFortress | `allianceFortress()` | 17    | The castle, 4 strongholds, and 12 fortresses with map coordinates and per-phase rewards |
 
-All three modules live nested under `@/modules/alliance/` rather than flat like every other module.
+All four modules live nested under `@/modules/alliance/` rather than flat like every other module.
 
 `allianceBanner()` is sourced from
 `https://www.whiteoutsurvival.wiki/territory/alliance-territory/`. Unlike every prior module, this
@@ -644,6 +645,12 @@ map info, which itself only documents some levels per facility (e.g. `defense` h
 `gathering` has only Level 1) — those are left as genuine gaps rather than guessed at. Each level
 also carries `available` (facilities of that level on the map), `ownLimit` (1 per level), and
 `locations` (the `{ x, y }` map coordinates, read from the same screenshot).
+
+`allianceFortress()` lists the single castle (597, 597), the 4 strongholds, and the 12 fortresses
+with their `x`/`y` map coordinates. Each stronghold and fortress has 8 `rewards`, one per phase,
+transcribed from a user-provided "Stronghold & Fortress Rewards" rotation image. The castle's
+rewards are not documented, so its `rewards` array is empty. Use `.ofKind('fortress')` to filter by
+structure type.
 
 ---
 
