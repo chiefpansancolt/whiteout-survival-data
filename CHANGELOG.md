@@ -104,7 +104,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Battle.
 - `allianceFacility()`: the 8 map-based Alliance Facility types and their per-level bonuses. Sourced
   from a user-provided screenshot rather than the wiki, which has no structured data for this page
-  at all.
+  at all. Each level lists its `available` count, an `ownLimit` of 1, and the map `locations`.
 - `eventBuff()`: which of 11 buff sources (Pet Skills, President Skills, Facility Buff, etc.) apply
   in each of 14 game modes, sourced from a user-provided screenshot rather than any wiki page.
 - `vip()`: the full VIP 1-12 progression (XP cost and unlocked bonuses per level), sourced from the

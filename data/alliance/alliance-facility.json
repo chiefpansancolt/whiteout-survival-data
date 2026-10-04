@@ -4,8 +4,38 @@
     "name": "Construction",
     "bonusStat": "Construction Speed",
     "levels": [
-      { "level": 1, "boosterPercent": 5, "heavilyInjuredPercent": 10, "lossesPercent": 0 },
-      { "level": 3, "boosterPercent": 8, "heavilyInjuredPercent": 20, "lossesPercent": 0 }
+      {
+        "level": 1,
+        "boosterPercent": 5,
+        "heavilyInjuredPercent": 10,
+        "lossesPercent": 0,
+        "ownLimit": 1,
+        "available": 8,
+        "locations": [
+          { "x": 1068, "y": 138 },
+          { "x": 537, "y": 138 },
+          { "x": 138, "y": 138 },
+          { "x": 138, "y": 666 },
+          { "x": 138, "y": 1038 },
+          { "x": 666, "y": 1068 },
+          { "x": 1068, "y": 567 },
+          { "x": 1068, "y": 1068 }
+        ]
+      },
+      {
+        "level": 3,
+        "boosterPercent": 8,
+        "heavilyInjuredPercent": 20,
+        "lossesPercent": 0,
+        "ownLimit": 1,
+        "available": 4,
+        "locations": [
+          { "x": 486, "y": 327 },
+          { "x": 768, "y": 867 },
+          { "x": 867, "y": 567 },
+          { "x": 327, "y": 666 }
+        ]
+      }
     ]
   },
   {
@@ -13,8 +43,37 @@
     "name": "Defense",
     "bonusStat": "Troop Defense Boost",
     "levels": [
-      { "level": 2, "boosterPercent": 5, "heavilyInjuredPercent": 20, "lossesPercent": 0 },
-      { "level": 4, "boosterPercent": 8, "heavilyInjuredPercent": 30, "lossesPercent": 10 }
+      {
+        "level": 2,
+        "boosterPercent": 5,
+        "heavilyInjuredPercent": 20,
+        "lossesPercent": 0,
+        "ownLimit": 1,
+        "available": 8,
+        "locations": [
+          { "x": 666, "y": 138 },
+          { "x": 438, "y": 267 },
+          { "x": 138, "y": 537 },
+          { "x": 237, "y": 768 },
+          { "x": 537, "y": 1038 },
+          { "x": 738, "y": 957 },
+          { "x": 1068, "y": 666 },
+          { "x": 957, "y": 438 }
+        ]
+      },
+      {
+        "level": 4,
+        "boosterPercent": 8,
+        "heavilyInjuredPercent": 30,
+        "lossesPercent": 10,
+        "ownLimit": 1,
+        "available": 3,
+        "locations": [
+          { "x": 816, "y": 717 },
+          { "x": 387, "y": 717 },
+          { "x": 588, "y": 327 }
+        ]
+      }
     ]
   },
   {
@@ -22,43 +81,172 @@
     "name": "Expedition",
     "bonusStat": "Marching Speed",
     "levels": [
-      { "level": 3, "boosterPercent": 15, "heavilyInjuredPercent": 30, "lossesPercent": 10 }
+      {
+        "level": 3,
+        "boosterPercent": 15,
+        "heavilyInjuredPercent": 30,
+        "lossesPercent": 10,
+        "ownLimit": 1,
+        "available": 4,
+        "locations": [
+          { "x": 768, "y": 327 },
+          { "x": 327, "y": 567 },
+          { "x": 486, "y": 867 },
+          { "x": 867, "y": 666 }
+        ]
+      }
     ]
   },
   {
     "id": "gathering",
     "name": "Gathering",
     "bonusStat": "Resources Gathering Speed",
-    "levels": [{ "level": 1, "boosterPercent": 5, "heavilyInjuredPercent": 10, "lossesPercent": 0 }]
+    "levels": [
+      {
+        "level": 1,
+        "boosterPercent": 5,
+        "heavilyInjuredPercent": 10,
+        "lossesPercent": 0,
+        "ownLimit": 1,
+        "available": 8,
+        "locations": [
+          { "x": 957, "y": 138 },
+          { "x": 537, "y": 87 },
+          { "x": 138, "y": 237 },
+          { "x": 87, "y": 666 },
+          { "x": 267, "y": 1068 },
+          { "x": 636, "y": 1137 },
+          { "x": 1137, "y": 567 },
+          { "x": 1068, "y": 936 }
+        ]
+      }
+    ]
   },
   {
     "id": "production",
     "name": "Production",
     "bonusStat": "Resources Production Speed",
-    "levels": [{ "level": 1, "boosterPercent": 5, "heavilyInjuredPercent": 10, "lossesPercent": 0 }]
+    "levels": [
+      {
+        "level": 1,
+        "boosterPercent": 5,
+        "heavilyInjuredPercent": 10,
+        "lossesPercent": 0,
+        "ownLimit": 1,
+        "available": 8,
+        "locations": [
+          { "x": 1068, "y": 237 },
+          { "x": 768, "y": 138 },
+          { "x": 237, "y": 138 },
+          { "x": 138, "y": 327 },
+          { "x": 138, "y": 957 },
+          { "x": 327, "y": 1038 },
+          { "x": 1068, "y": 747 },
+          { "x": 957, "y": 1068 }
+        ]
+      }
+    ]
   },
   {
     "id": "tech",
     "name": "Tech",
     "bonusStat": "Research Speed",
     "levels": [
-      { "level": 1, "boosterPercent": 5, "heavilyInjuredPercent": 10, "lossesPercent": 0 },
-      { "level": 3, "boosterPercent": 8, "heavilyInjuredPercent": 30, "lossesPercent": 10 }
+      {
+        "level": 1,
+        "boosterPercent": 5,
+        "heavilyInjuredPercent": 10,
+        "lossesPercent": 0,
+        "ownLimit": 1,
+        "available": 8,
+        "locations": [
+          { "x": 957, "y": 237 },
+          { "x": 666, "y": 267 },
+          { "x": 237, "y": 237 },
+          { "x": 267, "y": 537 },
+          { "x": 237, "y": 957 },
+          { "x": 537, "y": 936 },
+          { "x": 936, "y": 537 },
+          { "x": 957, "y": 957 }
+        ]
+      },
+      {
+        "level": 3,
+        "boosterPercent": 8,
+        "heavilyInjuredPercent": 30,
+        "lossesPercent": 10,
+        "ownLimit": 1,
+        "available": 4,
+        "locations": [
+          { "x": 867, "y": 327 },
+          { "x": 327, "y": 327 },
+          { "x": 327, "y": 867 },
+          { "x": 867, "y": 867 }
+        ]
+      }
     ]
   },
   {
     "id": "training",
     "name": "Training",
     "bonusStat": "Training Troops Speed",
-    "levels": [{ "level": 2, "boosterPercent": 5, "heavilyInjuredPercent": 20, "lossesPercent": 0 }]
+    "levels": [
+      {
+        "level": 2,
+        "boosterPercent": 5,
+        "heavilyInjuredPercent": 20,
+        "lossesPercent": 0,
+        "ownLimit": 1,
+        "available": 8,
+        "locations": [
+          { "x": 237, "y": 486 },
+          { "x": 138, "y": 747 },
+          { "x": 486, "y": 957 },
+          { "x": 768, "y": 1038 },
+          { "x": 957, "y": 747 },
+          { "x": 1068, "y": 486 },
+          { "x": 486, "y": 138 },
+          { "x": 768, "y": 237 }
+        ]
+      }
+    ]
   },
   {
     "id": "weapons",
     "name": "Weapons",
     "bonusStat": "Troop Attack Boost",
     "levels": [
-      { "level": 2, "boosterPercent": 5, "heavilyInjuredPercent": 20, "lossesPercent": 0 },
-      { "level": 4, "boosterPercent": 8, "heavilyInjuredPercent": 30, "lossesPercent": 10 }
+      {
+        "level": 2,
+        "boosterPercent": 5,
+        "heavilyInjuredPercent": 20,
+        "lossesPercent": 0,
+        "ownLimit": 1,
+        "available": 8,
+        "locations": [
+          { "x": 867, "y": 138 },
+          { "x": 366, "y": 138 },
+          { "x": 138, "y": 438 },
+          { "x": 138, "y": 867 },
+          { "x": 438, "y": 1068 },
+          { "x": 1068, "y": 327 },
+          { "x": 1068, "y": 867 },
+          { "x": 867, "y": 1068 }
+        ]
+      },
+      {
+        "level": 4,
+        "boosterPercent": 8,
+        "heavilyInjuredPercent": 30,
+        "lossesPercent": 10,
+        "ownLimit": 1,
+        "available": 3,
+        "locations": [
+          { "x": 816, "y": 486 },
+          { "x": 387, "y": 486 },
+          { "x": 588, "y": 867 }
+        ]
+      }
     ]
   }
 ]

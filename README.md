@@ -641,7 +641,9 @@ this wiki's usual `#table table` markup, just prose about capture mechanics (30-
 3-day control, stacking rules, a 12-facility cap). The 8 facility types and their per-level bonuses
 (`AllianceFacility.levels`) are transcribed instead from a user-provided screenshot of the in-game
 map info, which itself only documents some levels per facility (e.g. `defense` has Levels 2 and 4,
-`gathering` has only Level 1) — those are left as genuine gaps rather than guessed at.
+`gathering` has only Level 1) — those are left as genuine gaps rather than guessed at. Each level
+also carries `available` (facilities of that level on the map), `ownLimit` (1 per level), and
+`locations` (the `{ x, y }` map coordinates, read from the same screenshot).
 
 ---
 

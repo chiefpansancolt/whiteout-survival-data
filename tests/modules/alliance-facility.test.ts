@@ -36,14 +36,45 @@ describe('Alliance Facilities', () => {
     // that only documents some levels per facility.
     const defense = allianceFacility().find('defense')!;
     expect(defense.bonusStat).toBe('Troop Defense Boost');
-    expect(defense.levels).toEqual([
+    expect(
+      defense.levels.map(({ level, boosterPercent, heavilyInjuredPercent, lossesPercent }) => ({
+        level,
+        boosterPercent,
+        heavilyInjuredPercent,
+        lossesPercent,
+      })),
+    ).toEqual([
       { level: 2, boosterPercent: 5, heavilyInjuredPercent: 20, lossesPercent: 0 },
       { level: 4, boosterPercent: 8, heavilyInjuredPercent: 30, lossesPercent: 10 },
     ]);
 
     const gathering = allianceFacility().find('gathering')!;
-    expect(gathering.levels).toEqual([
-      { level: 1, boosterPercent: 5, heavilyInjuredPercent: 10, lossesPercent: 0 },
+    expect(gathering.levels.map((l) => l.level)).toEqual([1]);
+  });
+
+  it('limits ownership to 1 facility per level', () => {
+    allianceFacility()
+      .get()
+      .forEach((f) => f.levels.forEach((l) => expect(l.ownLimit).toBe(1)));
+  });
+
+  it('lists one map location per available facility', () => {
+    allianceFacility()
+      .get()
+      .forEach((f) => f.levels.forEach((l) => expect(l.locations).toHaveLength(l.available)));
+    const defense = allianceFacility().find('defense')!;
+    expect(defense.levels.map((l) => l.available)).toEqual([8, 3]);
+    expect(defense.levels[1].locations).toEqual([
+      { x: 816, y: 717 },
+      { x: 387, y: 717 },
+      { x: 588, y: 327 },
     ]);
+  });
+
+  it('places no two facilities on the same coordinates', () => {
+    const keys = allianceFacility()
+      .get()
+      .flatMap((f) => f.levels.flatMap((l) => l.locations.map(({ x, y }) => `${x};${y}`)));
+    expect(new Set(keys).size).toBe(keys.length);
   });
 });
