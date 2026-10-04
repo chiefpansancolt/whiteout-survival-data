@@ -15,6 +15,7 @@ export * from './alliance-tech';
 export * from './alliance-facility';
 export * from './alliance-fortress';
 export * from './event-buff';
+export * from './event';
 export * from './vip';
 export * from './daybreak-island';
 export * from './converter';

@@ -1,0 +1,1321 @@
+{
+  "id": "bear-hunt",
+  "name": "Bear Hunt",
+  "img": "/images/events/bear-hunt.png",
+  "category": "alliance",
+  "description": "After the kindling embers goal is achieved, alliances build the hunting trap and hunt the raging bear. Members have 30 minutes to defeat it once activated. Rewards improve with the troop damage dealt to the bear.",
+  "frequency": "An R4 or R5 can activate it every two days. An alliance can summon the bear every 47.5 hours.",
+  "duration": "30 minutes",
+  "requirements": [
+    "Alliance level 5 or higher to build the event building",
+    "R4 or R5 rank to activate the event",
+    "A player can take part again from the start of the second calendar day after their participation day (server time, UTC)"
+  ],
+  "tiers": [
+    {
+      "name": "Tier 1",
+      "scoreTotal": 10000,
+      "rewards": [
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 2
+        },
+        {
+          "name": "Alliance Tokens",
+          "itemId": "alliance-token",
+          "amount": 5000
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 2",
+      "scoreTotal": 45000,
+      "rewards": [
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 4
+        },
+        {
+          "name": "Alliance Tokens",
+          "itemId": "alliance-token",
+          "amount": 10000
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 3",
+      "scoreTotal": 100000,
+      "rewards": [
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 6
+        },
+        {
+          "name": "Alliance Tokens",
+          "itemId": "alliance-token",
+          "amount": 15000
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 4",
+      "scoreTotal": 235000,
+      "rewards": [
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 8
+        },
+        {
+          "name": "Alliance Tokens",
+          "itemId": "alliance-token",
+          "amount": 20000
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 5",
+      "scoreTotal": 500000,
+      "rewards": [
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Alliance Tokens",
+          "itemId": "alliance-token",
+          "amount": 25000
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 6",
+      "scoreTotal": 1200000,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 7",
+      "scoreTotal": 2500000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 8",
+      "scoreTotal": 5000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 9",
+      "scoreTotal": 7500000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 10",
+      "scoreTotal": 10000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 11",
+      "scoreTotal": 15000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 12",
+      "scoreTotal": 25000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 13",
+      "scoreTotal": 37000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 14",
+      "scoreTotal": 50000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 15",
+      "scoreTotal": 75000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 16",
+      "scoreTotal": 100000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 17",
+      "scoreTotal": 125000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 18",
+      "scoreTotal": 150000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 19",
+      "scoreTotal": 200000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 20",
+      "scoreTotal": 250000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 21",
+      "scoreTotal": 300000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 22",
+      "scoreTotal": 400000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 23",
+      "scoreTotal": 500000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 24",
+      "scoreTotal": 600000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 25",
+      "scoreTotal": 800000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 26",
+      "scoreTotal": 1000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 27",
+      "scoreTotal": 1200000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 28",
+      "scoreTotal": 1500000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 29",
+      "scoreTotal": 1800000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 30",
+      "scoreTotal": 2100000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 31",
+      "scoreTotal": 2400000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 32",
+      "scoreTotal": 3000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 33",
+      "scoreTotal": 3600000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 34",
+      "scoreTotal": 4200000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 35",
+      "scoreTotal": 5000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 36",
+      "scoreTotal": 6000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 37",
+      "scoreTotal": 7000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 38",
+      "scoreTotal": 8000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 39",
+      "scoreTotal": 10000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 40",
+      "scoreTotal": 12000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 41",
+      "scoreTotal": 14000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 42",
+      "scoreTotal": 16000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 43",
+      "scoreTotal": 20000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 44",
+      "scoreTotal": 24000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 45",
+      "scoreTotal": 28000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 46",
+      "scoreTotal": 32000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 47",
+      "scoreTotal": 40000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 48",
+      "scoreTotal": 48000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 49",
+      "scoreTotal": 56000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 50",
+      "scoreTotal": 64000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 51",
+      "scoreTotal": 72000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 50
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Collect arrowheads from looting beasts to raise damage by 25% (maximum level 5).",
+    "All stats and skills of the rally captain's three heroes take effect.",
+    "Troop formation composition matters by troop type.",
+    "Keep the rally window open to join faster.",
+    "Save several hero formations for flexibility.",
+    "Jessie, Jasser, and Jeronimo give a stacking 25% damage bonus."
+  ],
+  "eventBuffId": "bear-hunt"
+}

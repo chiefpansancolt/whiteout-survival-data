@@ -1,0 +1,26 @@
+{
+  "id": "tundra-trade-route",
+  "name": "Tundra Trade Route",
+  "img": "/images/events/tundra-trade-route.png",
+  "category": "solo",
+  "description": "A PvP event where players raid enemy trade carts. It can run with or without the Alliance Showdown event. When both run, players earn extra tickets to refresh their own carts for a higher tier cart and more rewards.",
+  "duration": "6 days. On day 7, loot from day 6 can be collected until 4 UTC.",
+  "rewards": [
+    {
+      "name": "Mythic shards, essence stones, alloy, polish, charms, gear XP, scrolls, pet food, and normal resources",
+      "note": "Also gives additional Alliance Showdown points"
+    }
+  ],
+  "tips": [
+    "Send 4 trucks and raid others 4 times each day.",
+    "A truck takes about 3.5 hours to travel, and rewards are collected the next day.",
+    "Assign troops to guard trucks against attackers.",
+    "Ask the alliance for help once per day to defend a truck.",
+    "Refresh truck targets for free and aim for SSR trucks.",
+    "You can raid the same player at most twice in total.",
+    "Lend your strongest troops to allies. They can be used elsewhere at the same time.",
+    "From the 6th refresh on, a Mythic Truck is guaranteed.",
+    "A successful raid on your cart can cost you up to 50% of its total rewards."
+  ],
+  "eventBuffId": "tundra-trade-route"
+}

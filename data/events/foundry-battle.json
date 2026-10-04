@@ -1,0 +1,541 @@
+{
+  "id": "foundry-battle",
+  "name": "Foundry Battle",
+  "img": "/images/events/foundry-battle.png",
+  "category": "alliance",
+  "description": "The Solaris Dynasty's Foundry still stands, and all Chiefs' eyes have turned to reactivating this military asset.",
+  "requirements": [
+    "The alliance ranks in the top 20 on the Alliance Power Leaderboard before the event begins",
+    "Members join the alliance before registration ends",
+    "Chiefs cannot have troops scouting, marching, or injured, burning Barricades, or reinforcements in the Embassy to enter the battlefield"
+  ],
+  "tiers": [
+    {
+      "name": "2,000-19,999",
+      "scoreTotal": 2000,
+      "rankings": [
+        {
+          "groupRanking": "Winner",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 2400
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 4
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 8
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "groupRanking": "Defeat",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 1200
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 2
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 6
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 2
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "20,000-41,999",
+      "scoreTotal": 20000,
+      "rankings": [
+        {
+          "groupRanking": "Winner",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 4800
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 8
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 10
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 8
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 45
+            }
+          ]
+        },
+        {
+          "groupRanking": "Defeat",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 2400
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 4
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 8
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "42,000-89,999",
+      "scoreTotal": 42000,
+      "rankings": [
+        {
+          "groupRanking": "Winner",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 7200
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 12
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 6
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 12
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 2
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 12
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "groupRanking": "Defeat",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 3600
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 6
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 10
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 6
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "90,000-179,999",
+      "scoreTotal": 90000,
+      "rankings": [
+        {
+          "groupRanking": "Winner",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 9600
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 16
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 8
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 14
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 2
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 16
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 55
+            }
+          ]
+        },
+        {
+          "groupRanking": "Defeat",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 4800
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 8
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 12
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 8
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "180,000+",
+      "scoreTotal": 180000,
+      "rankings": [
+        {
+          "groupRanking": "Winner",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 12000
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 10
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 16
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 20
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "Defeat",
+          "rewards": [
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 6000
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 10
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 5
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 14
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 2
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 10
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 35
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "allianceRankings": [
+    {
+      "groupRanking": "1",
+      "rewards": [
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 2000
+        },
+        {
+          "name": "100 Gems",
+          "itemId": "gems",
+          "amount": 6
+        },
+        {
+          "name": "Advanced Teleporter",
+          "itemId": "advanced-teleporter",
+          "amount": 2,
+          "note": "Read from a very small, blurry image. Unverified."
+        },
+        {
+          "name": "Gold Key",
+          "itemId": "gold-key",
+          "amount": 4
+        },
+        {
+          "name": "10K Meat",
+          "itemId": "meat",
+          "amount": 80,
+          "note": "Read from a very small, blurry image. Unverified."
+        },
+        {
+          "name": "10K Wood",
+          "itemId": "wood",
+          "amount": 80,
+          "note": "Read from a very small, blurry image. Unverified."
+        },
+        {
+          "name": "10K Coal",
+          "itemId": "coal",
+          "amount": 16,
+          "note": "Read from a very small, blurry image. Unverified."
+        }
+      ]
+    },
+    {
+      "groupRanking": "2",
+      "rewards": [
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 1500
+        },
+        {
+          "name": "100 Gems",
+          "itemId": "gems",
+          "amount": 3
+        },
+        {
+          "name": "Advanced Teleporter",
+          "itemId": "advanced-teleporter",
+          "amount": 1,
+          "note": "Read from a very small, blurry image. Unverified."
+        },
+        {
+          "name": "Gold Key",
+          "itemId": "gold-key",
+          "amount": 2
+        },
+        {
+          "name": "10K Meat",
+          "itemId": "meat",
+          "amount": 40,
+          "note": "Read from a very small, blurry image. Unverified."
+        },
+        {
+          "name": "10K Wood",
+          "itemId": "wood",
+          "amount": 40,
+          "note": "Read from a very small, blurry image. Unverified."
+        },
+        {
+          "name": "10K Coal",
+          "itemId": "coal",
+          "amount": 8,
+          "note": "Read from a very small, blurry image. Unverified."
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Hero fragments",
+      "note": "Shop currency refreshes every 14 days"
+    }
+  ],
+  "tips": [
+    "Reinforce allies who are under attack or contesting buildings.",
+    "Watch the mini-map for scattered points at lost buildings.",
+    "Use Mercenary Camps to attack enemy-occupied structures.",
+    "Activate all tech, VIP bonuses, and chief gear before battle.",
+    "Use teleports for quick building captures.",
+    "Save healing speedups to keep troop strength.",
+    "Leave the battlefield to fully heal troops (12-minute cooldown).",
+    "Focus on offense or defense for personal points, and balance that with the alliance victory."
+  ],
+  "eventBuffId": "foundry-battle"
+}

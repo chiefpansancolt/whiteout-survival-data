@@ -1,0 +1,262 @@
+{
+  "id": "icefire-warhymn-league",
+  "name": "Icefire Warhymn League",
+  "img": "/images/events/icefire-warhymn-league.png",
+  "category": "solo",
+  "description": "A week-long solo tournament in a half-ice, half-fire arena. Chiefs battle through the Qualifier, Elimination, and Pinnacle phases to be crowned the season champion. No real troops are lost in battles.",
+  "frequency": "One season per week, Sunday to Saturday",
+  "duration": "Competition runs Monday to Saturday, after a 24-hour Preview Phase on Sunday",
+  "requirements": ["Furnace level 30 or higher"],
+  "phases": [
+    {
+      "name": "Preview",
+      "description": "Sunday, 24 hours"
+    },
+    {
+      "name": "Qualifier",
+      "description": "Three defeats eliminate a participant"
+    },
+    {
+      "name": "Elimination"
+    },
+    {
+      "name": "Pinnacle",
+      "description": "Lineups lock one minute before each round"
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Icefire Way copy",
+      "amount": 5,
+      "note": "Season Rank 1"
+    },
+    {
+      "name": "30-day Frostflame Knight skin",
+      "amount": 1,
+      "note": "Season Rank 1"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 50000,
+      "note": "Season Rank 1"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 12000,
+      "note": "Season Rank 1"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "amount": 40,
+      "note": "Season Rank 1"
+    },
+    {
+      "name": "Icefire Way copy",
+      "amount": 4,
+      "note": "Season Rank 2"
+    },
+    {
+      "name": "14-day skin",
+      "amount": 1,
+      "note": "Season Rank 2"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 40000,
+      "note": "Season Rank 2"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 10000,
+      "note": "Season Rank 2"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "amount": 30,
+      "note": "Season Rank 2"
+    },
+    {
+      "name": "Icefire Way copy",
+      "amount": 3,
+      "note": "Season Ranks 3-4"
+    },
+    {
+      "name": "7-day skin",
+      "amount": 1,
+      "note": "Season Ranks 3-4"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 30000,
+      "note": "Season Ranks 3-4"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 8000,
+      "note": "Season Ranks 3-4"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "amount": 25,
+      "note": "Season Ranks 3-4"
+    },
+    {
+      "name": "Icefire Way copy",
+      "amount": 2,
+      "note": "Season Ranks 5-8"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 20000,
+      "note": "Season Ranks 5-8"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 6000,
+      "note": "Season Ranks 5-8"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "amount": 20,
+      "note": "Season Ranks 5-8"
+    },
+    {
+      "name": "Icefire Way copy",
+      "amount": 1,
+      "note": "Season Ranks 9-16"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 15000,
+      "note": "Season Ranks 9-16"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 4000,
+      "note": "Season Ranks 9-16"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "amount": 15,
+      "note": "Season Ranks 9-16"
+    },
+    {
+      "name": "Icefire Way copy",
+      "amount": 1,
+      "note": "Season Ranks 17-32"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 10000,
+      "note": "Season Ranks 17-32"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 2000,
+      "note": "Season Ranks 17-32"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "amount": 10,
+      "note": "Season Ranks 17-32"
+    },
+    {
+      "name": "Icefire Way copy",
+      "amount": 1,
+      "note": "Season Ranks 33-64"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 5000,
+      "note": "Season Ranks 33-64"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 1000,
+      "note": "Season Ranks 33-64"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "amount": 5,
+      "note": "Season Ranks 33-64"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 50,
+      "note": "Per Qualifier defeat"
+    },
+    {
+      "name": "Treasure Box",
+      "itemId": "treasure-box",
+      "amount": 1,
+      "note": "Per Qualifier defeat"
+    },
+    {
+      "name": "Enhancement XP Component (10)",
+      "itemId": "enhancement-xp-component",
+      "amount": 5,
+      "note": "Per Qualifier defeat"
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "amount": 100,
+      "note": "Win-count chest"
+    },
+    {
+      "name": "Lucky Hero Gear Chest",
+      "itemId": "lucky-hero-gear-chest",
+      "amount": 1,
+      "note": "Win-count chest"
+    },
+    {
+      "name": "Treasure Box",
+      "itemId": "treasure-box",
+      "amount": 1,
+      "note": "Win-count chest"
+    },
+    {
+      "name": "Enhancement XP Component (100)",
+      "itemId": "enhancement-xp-component",
+      "amount": 1,
+      "note": "Win-count chest"
+    },
+    {
+      "name": "Fire Crystals, Mythic General Hero Shards, Enhancement XP Components, and Treasure Boxes",
+      "note": "State rewards; amounts vary by competitor rank, 1 to 25 Fire Crystals"
+    }
+  ],
+  "tips": [
+    "Set up your squad lineup before the Qualifier phase locks it.",
+    "Automatic troop filling needs an initial lineup.",
+    "Qualifier ranking uses both wins and a power-based score.",
+    "Collect match rewards from mail and win-count chests separately.",
+    "Check in-game times against UTC to avoid scheduling mistakes.",
+    "Warhymn Testaments carry over between seasons.",
+    "Mail reward expiry differs from currency expiry.",
+    "Check current reward and shop values in-game before exchanging."
+  ],
+  "eventBuffId": "icefire-warhymn-league"
+}

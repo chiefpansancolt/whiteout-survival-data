@@ -1,0 +1,580 @@
+{
+  "id": "crazy-joe",
+  "name": "Crazy Joe",
+  "img": "/images/events/crazy-joe.png",
+  "category": "alliance",
+  "description": "Players earn points by sending reinforcements to alliance partners, who do the same in return. A system camp attacks cities in 20 waves: 2 target headquarters and 18 target furnaces. There are 21 difficulty levels, and shields are ineffective.",
+  "frequency": "Tuesday and Thursday during the SvS, KOI, or HoC week.",
+  "duration": "About 40 minutes",
+  "requirements": [
+    "At least one headquarters built to launch the event",
+    "R4 or R5 can schedule or manually activate the event and select the spawn headquarters",
+    "Only one Crazy Joe event per alliance at a time",
+    "To unlock a new difficulty, complete the previous difficulty at least once and reach the Alliance Defense Points listed for the new one"
+  ],
+  "waves": [
+    {
+      "wave": 1,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 2,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 3,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 4,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 5,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 6,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 7,
+      "target": "city",
+      "rule": "Elite wave targeting online Chiefs",
+      "details": "Being online gives more scoring opportunities. If you are not targeted, reinforce an online alliance member."
+    },
+    {
+      "wave": 8,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 9,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 10,
+      "target": "headquarters",
+      "rule": "Alliance Headquarters attack",
+      "details": "Recall one of your strongest reinforcement marches before the wave and send it to the Alliance HQ with a strong defensive troop composition. Send it back to an alliance member after the wave."
+    },
+    {
+      "wave": 11,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 12,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 13,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 14,
+      "target": "city",
+      "rule": "Elite wave targeting online Chiefs",
+      "details": "Being online gives more scoring opportunities. If you are not targeted, reinforce an online alliance member."
+    },
+    {
+      "wave": 15,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 16,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 17,
+      "target": "city",
+      "rule": "Elite wave targeting online Chiefs",
+      "details": "Being online gives more scoring opportunities. If you are not targeted, reinforce an online alliance member."
+    },
+    {
+      "wave": 18,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 19,
+      "target": "city",
+      "rule": "Regular city-defense wave"
+    },
+    {
+      "wave": 20,
+      "target": "headquarters",
+      "rule": "Alliance Headquarters attack",
+      "details": "Recall one of your strongest reinforcement marches before the wave and send it to the Alliance HQ with a strong defensive troop composition. Send it back to an alliance member after the wave."
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Difficulty 1",
+      "scoreTotal": 0
+    },
+    {
+      "name": "Difficulty 2",
+      "scoreTotal": 12726000
+    },
+    {
+      "name": "Difficulty 3",
+      "scoreTotal": 13362300
+    },
+    {
+      "name": "Difficulty 4",
+      "scoreTotal": 13998600
+    },
+    {
+      "name": "Difficulty 5",
+      "scoreTotal": 14634900
+    },
+    {
+      "name": "Difficulty 6",
+      "scoreTotal": 15271200
+    },
+    {
+      "name": "Difficulty 7",
+      "scoreTotal": 16437750
+    },
+    {
+      "name": "Difficulty 8",
+      "scoreTotal": 17095260
+    },
+    {
+      "name": "Difficulty 9",
+      "scoreTotal": 17752770
+    },
+    {
+      "name": "Difficulty 10",
+      "scoreTotal": 18410280
+    },
+    {
+      "name": "Difficulty 11",
+      "scoreTotal": 19067790
+    },
+    {
+      "name": "Difficulty 12",
+      "scoreTotal": 20529600
+    },
+    {
+      "name": "Difficulty 13",
+      "scoreTotal": 22454250
+    },
+    {
+      "name": "Difficulty 14",
+      "scoreTotal": 24378900
+    },
+    {
+      "name": "Difficulty 15",
+      "scoreTotal": 26303550
+    },
+    {
+      "name": "Difficulty 16",
+      "scoreTotal": 28228200
+    },
+    {
+      "name": "Difficulty 17",
+      "scoreTotal": 30152850
+    },
+    {
+      "name": "Difficulty 18",
+      "scoreTotal": 32077500
+    },
+    {
+      "name": "Difficulty 19",
+      "scoreTotal": 34002150
+    },
+    {
+      "name": "Difficulty 20",
+      "scoreTotal": 35926800
+    },
+    {
+      "name": "Difficulty 21",
+      "scoreTotal": 37851450
+    }
+  ],
+  "allianceRankings": [
+    {
+      "groupRanking": "1",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 5
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 450
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 320000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 320000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 64000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 16000
+        }
+      ]
+    },
+    {
+      "groupRanking": "2",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 4
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 400
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 280000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 280000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 56000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 14000
+        }
+      ]
+    },
+    {
+      "groupRanking": "3",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 4
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 350
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 240000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 240000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 48000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 12000
+        }
+      ]
+    },
+    {
+      "groupRanking": "4",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 3
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 300
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 210000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 210000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 42000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 10500
+        }
+      ]
+    },
+    {
+      "groupRanking": "5",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 3
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 250
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 180000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 180000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 36000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 9000
+        }
+      ]
+    },
+    {
+      "groupRanking": "6",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 2
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 200
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 140000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 140000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 28000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7000
+        }
+      ]
+    },
+    {
+      "groupRanking": "7",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 2
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 150
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 110000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 110000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 22000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5500
+        }
+      ]
+    },
+    {
+      "groupRanking": "8",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 1
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 100
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 80000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 80000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 16000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4000
+        }
+      ]
+    },
+    {
+      "groupRanking": "9",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 1
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 80
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 60000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 60000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 12000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 3000
+        }
+      ]
+    },
+    {
+      "groupRanking": "10",
+      "rewards": [
+        {
+          "name": "Polishing Solution",
+          "itemId": "polishing-solution",
+          "amount": 1
+        },
+        {
+          "name": "Hardened Alloy",
+          "itemId": "hardened-alloy",
+          "amount": 60
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2500
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Personal rewards by personal point milestones and state ranking",
+      "note": "Sent the next day at 12 UTC (Wednesday and Friday); rewards improve with server age"
+    },
+    {
+      "name": "Alliance rewards",
+      "note": "Distributed the next day at 10 UTC"
+    }
+  ],
+  "tips": [
+    "Use as many marches as possible and send troops to online alliance members for higher scores.",
+    "Send infantry first, then lancers when infantry runs out. Avoid marksmen, which add little.",
+    "At the end of waves 9 and 19, recall strong hero marches to headquarters (90% infantry, 10% lancers).",
+    "Send marches to friends with few reinforcements to gain more personal points.",
+    "Do not heal injured troops, so that internal troops do not steal kills from reinforcements.",
+    "Make sure reinforced friends have sent their own troops away to prevent kill stealing.",
+    "Activate all pets and buffs for more kills and army capacity."
+  ],
+  "eventBuffId": "crazy-joe"
+}

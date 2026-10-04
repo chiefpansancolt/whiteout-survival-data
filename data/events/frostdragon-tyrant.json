@@ -1,0 +1,829 @@
+{
+  "id": "frostdragon-tyrant",
+  "name": "Frostdragon Tyrant",
+  "img": "/images/events/frostdragon-tyrant.png",
+  "category": "alliance",
+  "description": "Chiefs of all States compete to control the Capital on the Frostdragon Battlefield during a 6-hour combat window. Only rally captains' occupation time counts toward becoming Frostdragon Tyrant.",
+  "duration": "The Tyrant title lasts 30 days after crowning",
+  "requirements": [
+    "The alliance leader or R4 members can register",
+    "Only the top-ranking alliances per Zone are eligible",
+    "Members must have joined before the sign-up phase",
+    "Participation slots are limited by Zone size"
+  ],
+  "phases": [
+    {
+      "name": "Alliance Sign-up",
+      "description": "48 hours"
+    },
+    {
+      "name": "Combatant Dispatch",
+      "description": "48 hours"
+    },
+    {
+      "name": "Eve of Battle",
+      "description": "59 hours"
+    },
+    {
+      "name": "Battlefield Opens",
+      "description": "7 hours. The Capital is vulnerable for 6 hours after a 1-hour delay."
+    },
+    {
+      "name": "Rearmament",
+      "description": "55 hours"
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Personal points 150,000",
+      "scoreTotal": 150000,
+      "rewards": [
+        {
+          "name": "1h Troop Healing Speedup",
+          "itemId": "speedup-healing-1h",
+          "amount": 30
+        },
+        {
+          "name": "10K Meat",
+          "itemId": "meat",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "name": "Personal points 350,000",
+      "scoreTotal": 350000,
+      "rewards": [
+        {
+          "name": "1h Construction Speedup",
+          "itemId": "speedup-construction-1h",
+          "amount": 10
+        },
+        {
+          "name": "10K Wood",
+          "itemId": "wood",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "name": "Personal points 500,000",
+      "scoreTotal": 500000,
+      "rewards": [
+        {
+          "name": "1h Troop Training Speedup",
+          "itemId": "speedup-troop-1h",
+          "amount": 10
+        },
+        {
+          "name": "10K Coal",
+          "itemId": "coal",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "name": "Personal points 700,000",
+      "scoreTotal": 700000,
+      "rewards": [
+        {
+          "name": "1h Research Speedup",
+          "itemId": "speedup-research-1h",
+          "amount": 10
+        },
+        {
+          "name": "10K Iron",
+          "itemId": "iron",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "Personal points 900,000",
+      "scoreTotal": 900000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 50
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Personal points 3,800,000",
+      "scoreTotal": 3800000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 50
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Personal points 6,700,000",
+      "scoreTotal": 6700000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 50
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 50
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Capital occupation time",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Triumph of Tyrant",
+              "itemId": "triumph-of-tyrant",
+              "note": "Gives 5 Honor Points on your Chief Profile."
+            },
+            {
+              "name": "Lv.1 Serpent Sanctuary",
+              "decorationId": "serpent-sanctuary",
+              "amount": 1
+            },
+            {
+              "name": "Lv.1 Dragon Pagoda",
+              "decorationId": "dragon-pagoda",
+              "amount": 3
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 5
+            },
+            {
+              "name": "Custom Mythic Hero Gear Chest",
+              "itemId": "custom-mythic-hero-gear-chest",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Glory of Kings",
+              "itemId": "glory-of-kings",
+              "note": "Gives 2 Honor Points on your Chief Profile."
+            },
+            {
+              "name": "Lv.1 Dragon Pagoda",
+              "decorationId": "dragon-pagoda",
+              "amount": 2
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 25000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 4
+            },
+            {
+              "name": "Custom Mythic Hero Gear Chest",
+              "itemId": "custom-mythic-hero-gear-chest",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Glory of Kings",
+              "itemId": "glory-of-kings",
+              "note": "Gives 2 Honor Points on your Chief Profile."
+            },
+            {
+              "name": "Lv.1 Dragon Pagoda",
+              "decorationId": "dragon-pagoda",
+              "amount": 2
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 3
+            },
+            {
+              "name": "Custom Mythic Hero Gear Chest",
+              "itemId": "custom-mythic-hero-gear-chest",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-10",
+          "rewards": [
+            {
+              "name": "Trail of Heroes",
+              "itemId": "trail-of-heroes",
+              "note": "Gives 1 Honor Point on your Chief Profile."
+            },
+            {
+              "name": "Lv.1 Dragon Pagoda",
+              "decorationId": "dragon-pagoda",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 2
+            },
+            {
+              "name": "Custom Mythic Hero Gear Chest",
+              "itemId": "custom-mythic-hero-gear-chest",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Lv.1 Dragon Pagoda",
+              "decorationId": "dragon-pagoda",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 2
+            },
+            {
+              "name": "Custom Mythic Hero Gear Chest",
+              "itemId": "custom-mythic-hero-gear-chest",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Lv.1 Dragon Pagoda",
+              "decorationId": "dragon-pagoda",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 8000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 1
+            },
+            {
+              "name": "Custom Mythic Hero Gear Chest",
+              "itemId": "custom-mythic-hero-gear-chest",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Lv.1 Dragon Pagoda",
+              "decorationId": "dragon-pagoda",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 5000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 1
+            },
+            {
+              "name": "Custom Mythic Hero Gear Chest",
+              "itemId": "custom-mythic-hero-gear-chest",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "Personal points",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 300
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 400
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 25000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 280
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 380
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 22000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 260
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 360
+            }
+          ]
+        },
+        {
+          "groupRanking": "4",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 250
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 340
+            }
+          ]
+        },
+        {
+          "groupRanking": "5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 240
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 320
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 16000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 230
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 300
+            }
+          ]
+        },
+        {
+          "groupRanking": "7",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 220
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 280
+            }
+          ]
+        },
+        {
+          "groupRanking": "8",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 14000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 200
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 260
+            }
+          ]
+        },
+        {
+          "groupRanking": "9",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 13000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 180
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 240
+            }
+          ]
+        },
+        {
+          "groupRanking": "10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 160
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 220
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 11000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 140
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 130
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 160
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 9000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 100
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 140
+            }
+          ]
+        },
+        {
+          "groupRanking": "101-150",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 8000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 90
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "groupRanking": "151-200",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 7000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 80
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "groupRanking": "201-400",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 70
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "groupRanking": "401-600",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 5000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 60
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "groupRanking": "601-800",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 50
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 70
+            }
+          ]
+        },
+        {
+          "groupRanking": "801-1,000",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 40
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "1,001+",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 30
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "1K Gems",
+      "itemId": "gems",
+      "amount": 1,
+      "note": "Alliance-wide reward for defeating the Old Guard."
+    },
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal",
+      "amount": 10,
+      "note": "Alliance-wide reward for defeating the Old Guard."
+    },
+    {
+      "name": "1h Construction Speedup",
+      "itemId": "speedup-construction-1h",
+      "amount": 5,
+      "note": "Alliance-wide reward for defeating the Old Guard."
+    },
+    {
+      "name": "1h Troop Training Speedup",
+      "itemId": "speedup-troop-1h",
+      "amount": 5,
+      "note": "Alliance-wide reward for defeating the Old Guard."
+    },
+    {
+      "name": "1h Research Speedup",
+      "itemId": "speedup-research-1h",
+      "amount": 5,
+      "note": "Alliance-wide reward for defeating the Old Guard."
+    },
+    {
+      "name": "Resource Chest",
+      "itemId": "ressource-chest",
+      "amount": 500,
+      "note": "Alliance-wide reward for defeating the Old Guard."
+    },
+    {
+      "name": "First Occupancy Reward",
+      "note": "For the first alliance to occupy the Capital"
+    },
+    {
+      "name": "Frostdragon Tyrant bonuses",
+      "note": "10% Attack, Defense, Lethality, and Health; +5,000 troop deployment capacity; exclusive title; state-wide feast; 4 titles to grant; commendation chests"
+    },
+    {
+      "name": "Gems per like from the state feast",
+      "itemId": "gems",
+      "amount": 200,
+      "note": "Maximum 5 likes per day"
+    },
+    {
+      "name": "Scaled Crystals, Dragonmarks, Chief Chests, and healing bonuses"
+    }
+  ],
+  "tips": [
+    "Shields are disabled in the Dragon Crypt and removed on entry.",
+    "Defeated cities in the Crypt teleport randomly to the Border Region.",
+    "The Capital requires defeating the Old Guard defenders.",
+    "Four Spires around the Capital give alliance-wide bonuses (30-minute battle and protection cycles).",
+    "The first player to defeat the Old Guardians wins a special reward.",
+    "Free-to-play players should keep battlefield time short and farm small building points.",
+    "Aspiring Tyrants should fill rallies with the correct troop ratios.",
+    "Alliances on the same server can coordinate to prevent counterattacks.",
+    "Heal troops in Phase 5 for a 500% healing speed boost."
+  ],
+  "eventBuffId": "frostdragon-tyrant"
+}

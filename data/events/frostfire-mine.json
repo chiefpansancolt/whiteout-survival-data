@@ -1,0 +1,40 @@
+{
+  "id": "frostfire-mine",
+  "name": "Frostfire Mine",
+  "img": "/images/events/frostfire-mine.png",
+  "category": "solo",
+  "description": "Players gather Orichalcum by occupying veins in a 30-minute battle with unlimited troops that cannot be killed.",
+  "frequency": "7 time slots: 02, 05, 11, 14, 16, 18, and 21 UTC",
+  "duration": "30 minutes",
+  "requirements": ["Furnace level 16 or higher", "Register and take part on the same day"],
+  "rewards": [
+    {
+      "name": "Orichalcum",
+      "note": "Gathered from veins; the amount varies by vein level"
+    },
+    {
+      "name": "Orichalcum",
+      "amount": 100000,
+      "note": "Ranking by occupation time, 1st place"
+    },
+    {
+      "name": "Orichalcum",
+      "amount": 20000,
+      "note": "Ranking by occupation time, 10th place"
+    },
+    {
+      "name": "Orichalcum per minute",
+      "note": "Skill bonus, 1,080 to 5,000 depending on unlocked abilities"
+    }
+  ],
+  "tips": [
+    "Stay on the outskirts of the battlefield to find more patrol guards.",
+    "Unlock skills step by step before you collect veins.",
+    "Use the 5th ability only during vein outbursts.",
+    "Use the free advanced teleporter carefully.",
+    "Watch nearby veins occupied by other players so you can loot them.",
+    "Use separate gear for killing guards and for occupying veins.",
+    "Keep one march in reserve to recall from a vein every minute."
+  ],
+  "eventBuffId": "frostfire-mine"
+}

@@ -1,0 +1,666 @@
+{
+  "id": "canyon-clash",
+  "name": "Canyon Clash",
+  "img": "/images/events/canyon-clash.png",
+  "category": "alliance",
+  "description": "Three alliances take part in cross-state matchmaking and fight a three-way battle in Lost Canyon. Players occupy buildings and fight for neutral structures to earn points, and the alliance with the most points wins.",
+  "duration": "The battle lasts 60 minutes",
+  "requirements": [
+    "Alliance in the top 20 on the power leaderboard",
+    "Alliance level 6 and 40 weekly-active members to unlock a second legion",
+    "15 or more combatants per legion",
+    "Furnace level 16 or higher",
+    "Joined the alliance before the registration deadline",
+    "Not offline for 5 or more days"
+  ],
+  "phases": [
+    {
+      "name": "Voting",
+      "description": "Monday to Tuesday"
+    },
+    {
+      "name": "Registration",
+      "description": "Wednesday to Thursday"
+    },
+    {
+      "name": "Matchmaking",
+      "description": "Friday"
+    },
+    {
+      "name": "Preparations",
+      "description": "Battle day, 3 minutes"
+    },
+    {
+      "name": "Seize & Conquer",
+      "description": "Battle day, 17 minutes"
+    },
+    {
+      "name": "Fortress Occupation",
+      "description": "Battle day, 20 minutes"
+    },
+    {
+      "name": "Citadel Onslaught",
+      "description": "Battle day, 20 minutes"
+    }
+  ],
+  "tiers": [
+    {
+      "name": "5,000-29,999",
+      "scoreTotal": 5000,
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 3600
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 1
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 12
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 2
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 2700
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 12
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 1
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 1800
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 6
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 1
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "30,000-59,999",
+      "scoreTotal": 30000,
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 7200
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 2
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 24
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 4
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 5400
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 1
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 18
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 3600
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 12
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 2
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "60,000-89,999",
+      "scoreTotal": 60000,
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 10800
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 2
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 36
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 6
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 8100
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 1
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 24
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 5400
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 18
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 4
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "90,000-119,999",
+      "scoreTotal": 90000,
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 14400
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 3
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 48
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 8
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 10800
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 2
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 36
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 7200
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 1
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 24
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "120,000+",
+      "scoreTotal": 120000,
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 18000
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 3
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 60
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 5
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 10
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 13500
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 2
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 48
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 9
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Lost Coin",
+              "itemId": "lost-coin",
+              "amount": 9000
+            },
+            {
+              "name": "Refined Fire Crystal",
+              "itemId": "refined-fire-crystal",
+              "amount": 1
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 36
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "allianceRankings": [
+    {
+      "groupRanking": "1",
+      "rewards": [
+        {
+          "name": "Lost Coin",
+          "itemId": "lost-coin",
+          "amount": 3000
+        },
+        {
+          "name": "100 Gems",
+          "itemId": "gems",
+          "amount": 6
+        },
+        {
+          "name": "Gold Key",
+          "itemId": "gold-key",
+          "amount": 4
+        },
+        {
+          "name": "10K Meat",
+          "itemId": "meat",
+          "amount": 80
+        },
+        {
+          "name": "10K Wood",
+          "itemId": "wood",
+          "amount": 80
+        }
+      ]
+    },
+    {
+      "groupRanking": "2",
+      "rewards": [
+        {
+          "name": "Lost Coin",
+          "itemId": "lost-coin",
+          "amount": 2000
+        },
+        {
+          "name": "100 Gems",
+          "itemId": "gems",
+          "amount": 3
+        },
+        {
+          "name": "Gold Key",
+          "itemId": "gold-key",
+          "amount": 2
+        },
+        {
+          "name": "10K Meat",
+          "itemId": "meat",
+          "amount": 40
+        },
+        {
+          "name": "10K Wood",
+          "itemId": "wood",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "groupRanking": "3",
+      "rewards": [
+        {
+          "name": "Lost Coin",
+          "itemId": "lost-coin",
+          "amount": 1500
+        },
+        {
+          "name": "100 Gems",
+          "itemId": "gems",
+          "amount": 2
+        },
+        {
+          "name": "Gold Key",
+          "itemId": "gold-key",
+          "amount": 1
+        },
+        {
+          "name": "10K Meat",
+          "itemId": "meat",
+          "amount": 20
+        },
+        {
+          "name": "10K Wood",
+          "itemId": "wood",
+          "amount": 20
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Shotchits",
+      "note": "Personal merit reward named in the wiki text. Not visible in the reward images."
+    }
+  ],
+  "tips": [
+    "Watch the fuel recovery rate to avoid running out mid-battle.",
+    "Check for allies at key locations before you move.",
+    "Ask for reinforcements when you face overwhelming opposition.",
+    "Prefer shorter routes to occupy buildings first.",
+    "Split forces across different fighting groups.",
+    "Appoint a skilled chief as battle leader and set up voice chat.",
+    "Keep R4 and R5 members available to assign Guardians quickly.",
+    "Defend chokepoints when the situation is unfavorable.",
+    "Prioritize keeps and ports or gates for points and raid positioning.",
+    "Spread troops evenly across the battlefield.",
+    "Send the strongest army to the Citadel once it opens.",
+    "Never attack alone. Coordinate squad movements."
+  ],
+  "eventBuffId": "canyon-clash"
+}

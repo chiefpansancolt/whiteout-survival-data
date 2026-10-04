@@ -1,0 +1,651 @@
+{
+  "id": "alliance-championship",
+  "name": "Alliance Championship",
+  "img": "/images/events/alliance-championship.png",
+  "category": "alliance",
+  "description": "A weekly alliance event where 6 alliances face each other in 5 rounds. The alliance that wins the most rounds ranks first and advances to a higher tier for better rewards.",
+  "frequency": "Weekly",
+  "duration": "Monday 00:00 UTC to Monday 00:00 UTC (one week)",
+  "requirements": [
+    "Furnace level 10 or higher",
+    "At least 10 registered alliance members for matchmaking"
+  ],
+  "tiers": [
+    {
+      "name": "Iron",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "starChange": 4,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 14
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 185
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 9500
+            }
+          ]
+        },
+        {
+          "groupRanking": "2-3",
+          "starChange": 3,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 12
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 160
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 7600
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "starChange": 2,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 11
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 140
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 5700
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "starChange": 1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 9
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 120
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 3800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bronze",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "starChange": 4,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 19
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 250
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 11900
+            }
+          ]
+        },
+        {
+          "groupRanking": "2-3",
+          "starChange": 3,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 16
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 215
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 9500
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "starChange": 2,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 14
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 190
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 7100
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "starChange": 1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 12
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 165
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 4800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Silver",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "starChange": 3,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 26
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 335
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 14300
+            }
+          ]
+        },
+        {
+          "groupRanking": "2-3",
+          "starChange": 2,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 22
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 295
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 11400
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "starChange": 1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 19
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 255
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 8600
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "starChange": 1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 17
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 220
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 5700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gold",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "starChange": 3,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 35
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 455
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 16700
+            }
+          ]
+        },
+        {
+          "groupRanking": "2-3",
+          "starChange": 2,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 30
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 395
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 13300
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "starChange": 1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 26
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 345
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 10000
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "starChange": 1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 23
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 300
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 6700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diamond",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "starChange": 3,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 35,
+              "note": "The source lists 35. Unverified."
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 615
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 20200
+            }
+          ]
+        },
+        {
+          "groupRanking": "2-3",
+          "starChange": 2,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 41
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 535
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 16200
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "starChange": 1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 35
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 465
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 12100
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "starChange": -1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 31
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 405
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 8100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ultimate",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "starChange": 2,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 63
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 830
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 23800
+            }
+          ]
+        },
+        {
+          "groupRanking": "2-3",
+          "starChange": 1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 55
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 720
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 19000
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "starChange": -1,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 48
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 625
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 14300
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "starChange": -2,
+          "rewards": [
+            {
+              "name": "5m General Speedup",
+              "itemId": "speedup-general-5m",
+              "amount": 41
+            },
+            {
+              "name": "1k Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 545
+            },
+            {
+              "name": "Championship Badge",
+              "itemId": "championship-badge",
+              "amount": 9500
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Sign-up",
+      "description": "Monday to Wednesday"
+    },
+    {
+      "name": "Matchmaking",
+      "description": "Wednesday to Thursday"
+    },
+    {
+      "name": "Preparation",
+      "description": "5 periods of 11 hours"
+    },
+    {
+      "name": "Battle",
+      "description": "5 rounds of 1 hour, ending Saturday 12:00 UTC"
+    },
+    {
+      "name": "Completion",
+      "description": "Saturday to Monday"
+    }
+  ],
+  "rewards": [
+    {
+      "name": "5-minute research speedup",
+      "itemId": "speedup-research-5m",
+      "amount": 10,
+      "note": "KO 1"
+    },
+    {
+      "name": "Meat (10k)",
+      "itemId": "meat",
+      "amount": 20,
+      "note": "KO 1"
+    },
+    {
+      "name": "Wood (10k)",
+      "itemId": "wood",
+      "amount": 20,
+      "note": "KO 1"
+    },
+    {
+      "name": "Coal (1k)",
+      "itemId": "coal",
+      "amount": 40,
+      "note": "KO 1"
+    },
+    {
+      "name": "Iron (1k)",
+      "itemId": "iron",
+      "amount": 10,
+      "note": "KO 1"
+    },
+    {
+      "name": "5-minute research speedup",
+      "itemId": "speedup-research-5m",
+      "amount": 15,
+      "note": "KO 2"
+    },
+    {
+      "name": "Meat (10k)",
+      "itemId": "meat",
+      "amount": 30,
+      "note": "KO 2"
+    },
+    {
+      "name": "Wood (10k)",
+      "itemId": "wood",
+      "amount": 30,
+      "note": "KO 2"
+    },
+    {
+      "name": "Coal (1k)",
+      "itemId": "coal",
+      "amount": 55,
+      "note": "KO 2"
+    },
+    {
+      "name": "Iron (1k)",
+      "itemId": "iron",
+      "amount": 15,
+      "note": "KO 2"
+    },
+    {
+      "name": "Alliance statue gathering boost",
+      "note": "Unlocked at Silver III. Silver 3%, Gold 5%, Diamond 7%, Ultimate 10%"
+    },
+    {
+      "name": "Knight skin bundle",
+      "amount": 1,
+      "note": "Ultimate tier, 14 days, not permanent"
+    }
+  ],
+  "tips": [
+    "A popular troop ratio is 50% infantry, 20% lancers, 30% marksmen.",
+    "Register on Tuesday or Wednesday to get the most from pet buffs (free to play) or city bonuses (spenders).",
+    "Activate PvP buffs before registering. Registering again without buffs loses all buffs.",
+    "Aim to win 2 lanes instead of all 3.",
+    "Place the 40 strongest troops in 2 lanes and the rest in the third."
+  ],
+  "eventBuffId": "alliance-championship"
+}

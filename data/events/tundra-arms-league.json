@@ -1,0 +1,1284 @@
+{
+  "id": "tundra-arms-league",
+  "name": "Tundra Arms League",
+  "img": "/images/events/tundra-arms-league.png",
+  "category": "alliance",
+  "description": "The Tundra Arms League (TAL) is the Foundry event in tournament form. Alliances register legions of 50 players (30 joiners, 20 substitutes) in an elimination tournament. Legion members can be anyone on the server.",
+  "duration": "18 days from start to finish",
+  "requirements": [
+    "An R4 or R5 selects the top three preferred battle times: 2, 7, 12, 14, or 19 UTC",
+    "Players must be in their battle alliance at the time of battle",
+    "The top 64 legions by power per zone qualify",
+    "Each alliance can submit up to two legions"
+  ],
+  "tiers": [
+    {
+      "name": "2,000-19,999",
+      "scoreTotal": 2000,
+      "rankings": [
+        {
+          "groupRanking": "Elimination: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 10
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 1000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 1,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 2
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "Elimination: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 5
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 500
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 1,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 1
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 20
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 2000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 2,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 10
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 1000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 1,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 2
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "20,000-41,999",
+      "scoreTotal": 20000,
+      "rankings": [
+        {
+          "groupRanking": "Elimination: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 20
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 2000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 2,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Elimination: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 10
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 1000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 1,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 2
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 40
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 4000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 4,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 8
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 20
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 2000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 2,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "42,000-89,999",
+      "scoreTotal": 42000,
+      "rankings": [
+        {
+          "groupRanking": "Elimination: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 30
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 3000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 3,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 6
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "groupRanking": "Elimination: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 15
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 1500
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 2,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 60
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 6000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 6,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 12
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 30
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 3000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 3,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 6
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "90,000-179,999",
+      "scoreTotal": 90000,
+      "rankings": [
+        {
+          "groupRanking": "Elimination: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 40
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 4000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 4,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 8
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "Elimination: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 20
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 2000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 2,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 80
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 8000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 8,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 16
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 40
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 4000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 4,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 8
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "180,000+",
+      "scoreTotal": 180000,
+      "rankings": [
+        {
+          "groupRanking": "Elimination: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 50
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 5000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 5,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 10
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "Elimination: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 25
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 2500
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 3,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 5
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Winner",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 100
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 10000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 10,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 20
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Defeat",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 50
+            },
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 5000
+            },
+            {
+              "name": "Unidentified troop item",
+              "amount": 5,
+              "note": "Icon of soldiers with arrows. The source image does not name it."
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 10
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "allianceRankings": [
+    {
+      "groupRanking": "1",
+      "rewards": [
+        {
+          "name": "Match Stake",
+          "itemId": "match-stake",
+          "amount": 36000
+        },
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 6000
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 6
+        },
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "groupRanking": "2",
+      "rewards": [
+        {
+          "name": "Match Stake",
+          "itemId": "match-stake",
+          "amount": 30000
+        },
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 5500
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 5
+        },
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "groupRanking": "3",
+      "rewards": [
+        {
+          "name": "Match Stake",
+          "itemId": "match-stake",
+          "amount": 24000
+        },
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 5000
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 5
+        },
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "groupRanking": "4",
+      "rewards": [
+        {
+          "name": "Match Stake",
+          "itemId": "match-stake",
+          "amount": 18000
+        },
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 4500
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 4
+        },
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "groupRanking": "5-8",
+      "rewards": [
+        {
+          "name": "Match Stake",
+          "itemId": "match-stake",
+          "amount": 12000
+        },
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 3500
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 3
+        },
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "groupRanking": "9-16",
+      "rewards": [
+        {
+          "name": "Match Stake",
+          "itemId": "match-stake",
+          "amount": 6000
+        },
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 3000
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 3
+        },
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "groupRanking": "17-32",
+      "rewards": [
+        {
+          "name": "Match Stake",
+          "itemId": "match-stake",
+          "amount": 3000
+        },
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 2500
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "groupRanking": "33+",
+      "rewards": [
+        {
+          "name": "Match Stake",
+          "itemId": "match-stake",
+          "amount": 1500
+        },
+        {
+          "name": "Arsenal Tokens",
+          "itemId": "arsenal-tokens",
+          "amount": 2000
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 1
+        },
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Legion ranking",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Hornwrath Herald March Skin (30 day)",
+              "skinId": "hornwrath-herald",
+              "amount": 1
+            },
+            {
+              "name": "Lv.1 War Chariot",
+              "decorationId": "war-chariot",
+              "amount": 1
+            },
+            {
+              "name": "Lv.1 Cannon",
+              "decorationId": "cannon",
+              "amount": 5
+            },
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 3600
+            },
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 50000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 3
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 150
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Fireclaw Hunter March Skin (30 day)",
+              "skinId": "fireclaw-hunter",
+              "amount": 1
+            },
+            {
+              "name": "Lv.1 Cannon",
+              "decorationId": "cannon",
+              "amount": 3
+            },
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 2400
+            },
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 45000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 2
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 135
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Fireclaw Hunter March Skin (14 day)",
+              "skinId": "fireclaw-hunter",
+              "amount": 1
+            },
+            {
+              "name": "Lv.1 Cannon",
+              "decorationId": "cannon",
+              "amount": 2
+            },
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 1500
+            },
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 40000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 1
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 120
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 45
+            }
+          ]
+        },
+        {
+          "groupRanking": "4",
+          "rewards": [
+            {
+              "name": "Fireclaw Hunter March Skin (14 day)",
+              "skinId": "fireclaw-hunter",
+              "amount": 1
+            },
+            {
+              "name": "Lv.1 Cannon",
+              "decorationId": "cannon",
+              "amount": 1
+            },
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 1000
+            },
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 35000
+            },
+            {
+              "name": "Mithril",
+              "itemId": "mithril",
+              "amount": 1
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 100
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "groupRanking": "5-8",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 600
+            },
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 30000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 85
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "groupRanking": "9-16",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 400
+            },
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 25000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 70
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "17-32",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 200
+            },
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 20000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 50
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "groupRanking": "33+",
+          "rewards": [
+            {
+              "name": "Champion Stake",
+              "itemId": "champion-stake",
+              "amount": 100
+            },
+            {
+              "name": "Arsenal Tokens",
+              "itemId": "arsenal-tokens",
+              "amount": 15000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 36
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "Legion result",
+      "rankings": [
+        {
+          "groupRanking": "Elimination: Winner",
+          "rewards": [
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 2000
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 6
+            },
+            {
+              "name": "Advanced Teleporter",
+              "itemId": "advanced-teleporter",
+              "amount": 2
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 4
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "Elimination: Defeat",
+          "rewards": [
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 1500
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 3
+            },
+            {
+              "name": "Advanced Teleporter",
+              "itemId": "advanced-teleporter",
+              "amount": 1
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 2
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Winner",
+          "rewards": [
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 3000
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 8
+            },
+            {
+              "name": "Advanced Teleporter",
+              "itemId": "advanced-teleporter",
+              "amount": 2
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 5
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "Championship: Defeat",
+          "rewards": [
+            {
+              "name": "Match Stake",
+              "itemId": "match-stake",
+              "amount": 2000
+            },
+            {
+              "name": "100 Gems",
+              "itemId": "gems",
+              "amount": 4
+            },
+            {
+              "name": "Advanced Teleporter",
+              "itemId": "advanced-teleporter",
+              "amount": 1
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 3
+            },
+            {
+              "name": "Lv.2 Custom Ressource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 15
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "TAL alliance statue",
+      "note": "Top 4 alliances in each zone."
+    },
+    {
+      "name": "Prestige Building: Weapons Master",
+      "note": "Top 4 alliances in each zone."
+    },
+    {
+      "name": "Alliance Banner (purple, crossed cannons logo)",
+      "note": "Top 4 alliances in each zone."
+    },
+    {
+      "name": "Upgraded TAL alliance statue",
+      "note": "Zone champion."
+    },
+    {
+      "name": "Alliance HQ Skin",
+      "note": "Zone champion."
+    },
+    {
+      "name": "Alliance Banner Skin",
+      "note": "Zone champion."
+    },
+    {
+      "name": "Prestige Building: Tundra Warlord",
+      "note": "Zone champion."
+    },
+    {
+      "name": "Alliance Banner (orange, tank logo)",
+      "note": "Zone champion."
+    }
+  ],
+  "tips": [
+    "Score as many points as possible. Total net points help set the final ranking even if your legion is eliminated.",
+    "TAL island buildings cannot be upgraded with island general shards. The actual pieces are required."
+  ],
+  "eventBuffId": "tundra-arms-league"
+}
