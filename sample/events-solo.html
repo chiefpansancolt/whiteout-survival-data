@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Solo Events</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --good: #52d17a;
+    --bad: #ff6b6b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  a { color: var(--accent); }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 0.85rem; margin: 22px 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 6px 14px 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .tab img { width: 24px; height: 24px; border-radius: 5px; }
+  .tab.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  .empty { color: var(--text-dim); font-size: 0.9rem; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 16px; }
+  .event-head { display: flex; gap: 14px; align-items: center; margin-bottom: 10px; }
+  .event-head img { width: 64px; height: 64px; border-radius: 12px; border: 1px solid var(--panel-border); object-fit: cover; }
+  .event-head h3 { margin: 0 0 6px; font-size: 1.15rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background: #0f1720; border: 1px solid var(--panel-border); border-radius: 999px; padding: 2px 10px; font-size: 0.75rem; color: var(--text-dim); }
+  .description { line-height: 1.45; font-size: 0.92rem; }
+  ul.plain { margin: 0; padding-left: 20px; font-size: 0.88rem; line-height: 1.5; }
+  .phases { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; }
+  .phase { background: var(--row-alt); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; font-size: 0.85rem; }
+  .phase b { display: block; margin-bottom: 2px; }
+  .phase span { color: var(--text-dim); font-size: 0.8rem; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .pill {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .pill.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--panel-border); text-align: left; vertical-align: middle; }
+  th { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  td.num { text-align: right; white-space: nowrap; }
+  .stars.up { color: var(--good); }
+  .stars.down { color: var(--bad); }
+  .rewards { display: flex; flex-wrap: wrap; gap: 8px; }
+  .reward { display: inline-flex; align-items: center; gap: 6px; }
+  .reward .icon { position: relative; width: 40px; height: 40px; flex: none; }
+  .reward .icon img { width: 40px; height: 40px; border-radius: 8px; display: block; }
+  .reward .icon.missing {
+    border: 1px dashed var(--text-dim);
+    border-radius: 8px;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+  }
+  .reward .qty {
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    background: rgba(6, 12, 18, 0.9);
+    border-radius: 6px;
+    padding: 0 4px;
+    font-size: 0.68rem;
+    font-weight: 700;
+  }
+  .reward .label { font-size: 0.75rem; color: var(--text-dim); max-width: 150px; line-height: 1.2; }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+  <p><a href="index.html">&larr; All sample pages</a></p>
+  <h1>Solo Events</h1>
+  <p class="sub">Solo Events and their rewards. Pick an event tab. Hover a reward for its note.</p>
+  <div class="tabs" id="tabs"></div>
+  <div id="event"></div>
+
+<script id="events-data" type="application/json">[{"id":"frostfire-mine","name":"Frostfire Mine","img":"/images/events/frostfire-mine.png","category":"solo","description":"Players gather Orichalcum by occupying veins in a 30-minute battle with unlimited troops that cannot be killed.","frequency":"7 time slots: 02, 05, 11, 14, 16, 18, and 21 UTC","duration":"30 minutes","requirements":["Furnace level 16 or higher","Register and take part on the same day"],"rewards":[{"name":"Orichalcum","note":"Gathered from veins; the amount varies by vein level"},{"name":"Orichalcum","amount":100000,"note":"Ranking by occupation time, 1st place"},{"name":"Orichalcum","amount":20000,"note":"Ranking by occupation time, 10th place"},{"name":"Orichalcum per minute","note":"Skill bonus, 1,080 to 5,000 depending on unlocked abilities"}],"tips":["Stay on the outskirts of the battlefield to find more patrol guards.","Unlock skills step by step before you collect veins.","Use the 5th ability only during vein outbursts.","Use the free advanced teleporter carefully.","Watch nearby veins occupied by other players so you can loot them.","Use separate gear for killing guards and for occupying veins.","Keep one march in reserve to recall from a vein every minute."],"eventBuffId":"frostfire-mine"},{"id":"icefire-warhymn-league","name":"Icefire Warhymn League","img":"/images/events/icefire-warhymn-league.png","category":"solo","description":"A week-long solo tournament in a half-ice, half-fire arena. Chiefs battle through the Qualifier, Elimination, and Pinnacle phases to be crowned the season champion. No real troops are lost in battles.","frequency":"One season per week, Sunday to Saturday","duration":"Competition runs Monday to Saturday, after a 24-hour Preview Phase on Sunday","requirements":["Furnace level 30 or higher"],"phases":[{"name":"Preview","description":"Sunday, 24 hours"},{"name":"Qualifier","description":"Three defeats eliminate a participant"},{"name":"Elimination"},{"name":"Pinnacle","description":"Lineups lock one minute before each round"}],"rewards":[{"name":"Icefire Way copy","amount":5,"note":"Season Rank 1"},{"name":"30-day Frostflame Knight skin","amount":1,"note":"Season Rank 1"},{"name":"Gems","itemId":"gems","amount":50000,"note":"Season Rank 1"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":12000,"note":"Season Rank 1"},{"name":"Mythic General Hero Shard","itemId":"mythic-general-hero-shard","amount":40,"note":"Season Rank 1"},{"name":"Icefire Way copy","amount":4,"note":"Season Rank 2"},{"name":"14-day skin","amount":1,"note":"Season Rank 2"},{"name":"Gems","itemId":"gems","amount":40000,"note":"Season Rank 2"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":10000,"note":"Season Rank 2"},{"name":"Mythic General Hero Shard","itemId":"mythic-general-hero-shard","amount":30,"note":"Season Rank 2"},{"name":"Icefire Way copy","amount":3,"note":"Season Ranks 3-4"},{"name":"7-day skin","amount":1,"note":"Season Ranks 3-4"},{"name":"Gems","itemId":"gems","amount":30000,"note":"Season Ranks 3-4"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":8000,"note":"Season Ranks 3-4"},{"name":"Mythic General Hero Shard","itemId":"mythic-general-hero-shard","amount":25,"note":"Season Ranks 3-4"},{"name":"Icefire Way copy","amount":2,"note":"Season Ranks 5-8"},{"name":"Gems","itemId":"gems","amount":20000,"note":"Season Ranks 5-8"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":6000,"note":"Season Ranks 5-8"},{"name":"Mythic General Hero Shard","itemId":"mythic-general-hero-shard","amount":20,"note":"Season Ranks 5-8"},{"name":"Icefire Way copy","amount":1,"note":"Season Ranks 9-16"},{"name":"Gems","itemId":"gems","amount":15000,"note":"Season Ranks 9-16"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":4000,"note":"Season Ranks 9-16"},{"name":"Mythic General Hero Shard","itemId":"mythic-general-hero-shard","amount":15,"note":"Season Ranks 9-16"},{"name":"Icefire Way copy","amount":1,"note":"Season Ranks 17-32"},{"name":"Gems","itemId":"gems","amount":10000,"note":"Season Ranks 17-32"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":2000,"note":"Season Ranks 17-32"},{"name":"Mythic General Hero Shard","itemId":"mythic-general-hero-shard","amount":10,"note":"Season Ranks 17-32"},{"name":"Icefire Way copy","amount":1,"note":"Season Ranks 33-64"},{"name":"Gems","itemId":"gems","amount":5000,"note":"Season Ranks 33-64"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":1000,"note":"Season Ranks 33-64"},{"name":"Mythic General Hero Shard","itemId":"mythic-general-hero-shard","amount":5,"note":"Season Ranks 33-64"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":50,"note":"Per Qualifier defeat"},{"name":"Treasure Box","itemId":"treasure-box","amount":1,"note":"Per Qualifier defeat"},{"name":"Enhancement XP Component (10)","itemId":"enhancement-xp-component","amount":5,"note":"Per Qualifier defeat"},{"name":"Warhymn Testament","itemId":"warhymn-testament","amount":100,"note":"Win-count chest"},{"name":"Lucky Hero Gear Chest","itemId":"lucky-hero-gear-chest","amount":1,"note":"Win-count chest"},{"name":"Treasure Box","itemId":"treasure-box","amount":1,"note":"Win-count chest"},{"name":"Enhancement XP Component (100)","itemId":"enhancement-xp-component","amount":1,"note":"Win-count chest"},{"name":"Fire Crystals, Mythic General Hero Shards, Enhancement XP Components, and Treasure Boxes","note":"State rewards; amounts vary by competitor rank, 1 to 25 Fire Crystals"}],"tips":["Set up your squad lineup before the Qualifier phase locks it.","Automatic troop filling needs an initial lineup.","Qualifier ranking uses both wins and a power-based score.","Collect match rewards from mail and win-count chests separately.","Check in-game times against UTC to avoid scheduling mistakes.","Warhymn Testaments carry over between seasons.","Mail reward expiry differs from currency expiry.","Check current reward and shop values in-game before exchanging."],"eventBuffId":"icefire-warhymn-league"},{"id":"tundra-trade-route","name":"Tundra Trade Route","img":"/images/events/tundra-trade-route.png","category":"solo","description":"A PvP event where players raid enemy trade carts. It can run with or without the Alliance Showdown event. When both run, players earn extra tickets to refresh their own carts for a higher tier cart and more rewards.","duration":"6 days. On day 7, loot from day 6 can be collected until 4 UTC.","rewards":[{"name":"Mythic shards, essence stones, alloy, polish, charms, gear XP, scrolls, pet food, and normal resources","note":"Also gives additional Alliance Showdown points"}],"tips":["Send 4 trucks and raid others 4 times each day.","A truck takes about 3.5 hours to travel, and rewards are collected the next day.","Assign troops to guard trucks against attackers.","Ask the alliance for help once per day to defend a truck.","Refresh truck targets for free and aim for SSR trucks.","You can raid the same player at most twice in total.","Lend your strongest troops to allies. They can be used elsewhere at the same time.","From the 6th refresh on, a Mythic Truck is guaranteed.","A successful raid on your cart can cost you up to 50% of its total rewards."],"eventBuffId":"tundra-trade-route"}]</script>
+<script id="items-data" type="application/json">{"gems":{"name":"Gems","img":"/images/items/gems.png"},"warhymn-testament":{"name":"Warhymn Testament","img":"/images/items/warhymn-testament.png"},"mythic-general-hero-shard":{"name":"Mythic General Hero Shard","img":"/images/items/mythic-general-hero-shard.png"},"treasure-box":{"name":"Treasure Box","img":"/images/items/treasure-box.png"},"enhancement-xp-component":{"name":"Enhancement XP Component","img":"/images/items/enhancement-xp-component.png"},"lucky-hero-gear-chest":{"name":"Lucky Hero Gear Chest","img":"/images/items/lucky-hero-gear-chest.png"}}</script>
+<script id="decorations-data" type="application/json">{}</script>
+<script id="skins-data" type="application/json">{}</script>
+<script>
+  const EVENTS = JSON.parse(document.getElementById('events-data').textContent);
+  const ITEMS = JSON.parse(document.getElementById('items-data').textContent);
+  const DECORATIONS = JSON.parse(document.getElementById('decorations-data').textContent);
+  const SKINS = JSON.parse(document.getElementById('skins-data').textContent);
+  const IMAGE_ROOT = '..';
+  const tabsEl = document.getElementById('tabs');
+  const eventEl = document.getElementById('event');
+  let activeEventId = EVENTS.length ? EVENTS[0].id : null;
+  const activeTierByEvent = {};
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function section(title, body) {
+    const wrap = el('div');
+    wrap.append(el('h2', '', title), body);
+    return wrap;
+  }
+
+  function bulletList(items) {
+    const list = el('ul', 'plain');
+    items.forEach((text) => list.append(el('li', '', text)));
+    return list;
+  }
+
+  function rewardChip(reward) {
+    const item = reward.itemId ? ITEMS[reward.itemId] : reward.decorationId ? DECORATIONS[reward.decorationId] : reward.skinId ? SKINS[reward.skinId] : undefined;
+    const chip = el('div', 'reward');
+    const icon = el('div', item && item.img ? 'icon' : 'icon missing');
+    if (item && item.img) {
+      const img = el('img');
+      img.src = `${IMAGE_ROOT}${item.img}`;
+      img.alt = item.name;
+      img.loading = 'lazy';
+      icon.append(img);
+    } else {
+      icon.textContent = '?';
+    }
+    if (reward.amount !== undefined) icon.append(el('span', 'qty', reward.amount.toLocaleString('en-US')));
+    chip.append(icon, el('span', 'label', reward.name));
+    if (reward.note) chip.title = reward.note;
+    return chip;
+  }
+
+  function rewardList(rewards) {
+    const list = el('div', 'rewards');
+    rewards.forEach((reward) => list.append(rewardChip(reward)));
+    return list;
+  }
+
+  function starCell(starChange) {
+    if (starChange === undefined) return null;
+    const direction = starChange > 0 ? 'up' : starChange < 0 ? 'down' : '';
+    return el('span', `stars ${direction}`, `${starChange > 0 ? '+' : ''}${starChange} ★`);
+  }
+
+  function rankingTable(rankings, firstColumn) {
+    const hasStars = rankings.some((r) => r.starChange !== undefined);
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    [firstColumn, ...(hasStars ? ['Stars'] : []), 'Rewards'].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    rankings.forEach((ranking) => {
+      const row = body.insertRow();
+      row.insertCell().textContent = ranking.groupRanking;
+      if (hasStars) {
+        const cell = row.insertCell();
+        const stars = starCell(ranking.starChange);
+        if (stars) cell.append(stars);
+      }
+      row.insertCell().append(rewardList(ranking.rewards));
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
+  function flatTierTable(tiers) {
+    const hasScore = tiers.some((t) => t.scoreTotal !== undefined);
+    const hasRewards = tiers.some((t) => t.rewards && t.rewards.length);
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    ['Tier', ...(hasScore ? ['Score total'] : []), ...(hasRewards ? ['Rewards'] : [])].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    tiers.forEach((tier) => {
+      const row = body.insertRow();
+      row.insertCell().textContent = tier.name;
+      if (hasScore) {
+        const cell = row.insertCell();
+        cell.className = 'num';
+        cell.textContent = tier.scoreTotal === undefined ? '' : tier.scoreTotal.toLocaleString('en-US');
+      }
+      if (hasRewards) row.insertCell().append(rewardList(tier.rewards ?? []));
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
+  function tiersSection(event) {
+    const tiers = event.tiers;
+    const hasRankings = tiers.some((t) => t.rankings);
+    if (!hasRankings) return section('Tiers', flatTierTable(tiers));
+
+    const body = el('div');
+    const selected = activeTierByEvent[event.id] ?? tiers[0].name;
+    const pills = el('div', 'pills');
+    tiers.forEach((tier) => {
+      const pill = el('button', `pill${tier.name === selected ? ' active' : ''}`, tier.name);
+      pill.addEventListener('click', () => { activeTierByEvent[event.id] = tier.name; renderEvent(); });
+      pills.append(pill);
+    });
+    const tier = tiers.find((t) => t.name === selected);
+    body.append(pills);
+    if (tier.scoreTotal !== undefined) {
+      body.append(el('p', 'sub', `Minimum score: ${tier.scoreTotal.toLocaleString('en-US')}`));
+    }
+    if (tier.rewards && tier.rewards.length) body.append(rewardList(tier.rewards));
+    body.append(rankingTable(tier.rankings, 'Placement'));
+    return section('Tiers (lowest to highest)', body);
+  }
+
+  const TARGET_LABELS = { city: 'Player cities', headquarters: 'Alliance HQ' };
+
+  function wavesTable(waves) {
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    ['Wave', 'Target', 'Rule', 'Details'].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    waves.forEach((wave) => {
+      const row = body.insertRow();
+      row.insertCell().textContent = wave.wave;
+      row.insertCell().textContent = TARGET_LABELS[wave.target];
+      row.insertCell().textContent = wave.rule;
+      row.insertCell().textContent = wave.details ?? '';
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
+  function renderEvent() {
+    eventEl.replaceChildren();
+    const event = EVENTS.find((e) => e.id === activeEventId);
+    if (!event) {
+      eventEl.append(el('p', 'empty', 'No events in this category yet.'));
+      return;
+    }
+    const card = el('div', 'card');
+    const head = el('div', 'event-head');
+    const icon = el('img');
+    icon.src = `${IMAGE_ROOT}${event.img}`;
+    icon.alt = event.name;
+    const titleWrap = el('div');
+    titleWrap.append(el('h3', '', event.name));
+    const chips = el('div', 'chips');
+    if (event.frequency) chips.append(el('span', 'chip', `Frequency: ${event.frequency}`));
+    if (event.duration) chips.append(el('span', 'chip', `Duration: ${event.duration}`));
+    titleWrap.append(chips);
+    head.append(icon, titleWrap);
+    card.append(head, el('p', 'description', event.description));
+
+    if (event.requirements) card.append(section('Requirements', bulletList(event.requirements)));
+    if (event.phases) {
+      const phases = el('div', 'phases');
+      event.phases.forEach((phase) => {
+        const box = el('div', 'phase');
+        box.append(el('b', '', phase.name));
+        if (phase.description) box.append(el('span', '', phase.description));
+        phases.append(box);
+      });
+      card.append(section('Phases', phases));
+    }
+    if (event.waves) card.append(section('Waves', wavesTable(event.waves)));
+    if (event.tiers) card.append(tiersSection(event));
+    if (event.allianceRankings) card.append(section('Alliance rewards', rankingTable(event.allianceRankings, 'Alliance rank')));
+    if (event.personalRankings) event.personalRankings.forEach((table) => card.append(section(`Personal rewards by ${table.basedOn.toLowerCase()}`, rankingTable(table.rankings, 'Rank'))));
+    if (event.rewards && event.rewards.length) card.append(section('Other rewards', rewardList(event.rewards)));
+    if (event.tips) card.append(section('Tips', bulletList(event.tips)));
+    eventEl.append(card);
+  }
+
+  function renderTabs() {
+    tabsEl.replaceChildren();
+    EVENTS.forEach((event) => {
+      const tab = el('button', `tab${event.id === activeEventId ? ' active' : ''}`);
+      const img = el('img');
+      img.src = `${IMAGE_ROOT}${event.img}`;
+      img.alt = '';
+      tab.append(img, document.createTextNode(event.name));
+      tab.addEventListener('click', () => { activeEventId = event.id; renderTabs(); renderEvent(); });
+      tabsEl.append(tab);
+    });
+  }
+
+  renderTabs();
+  renderEvent();
+</script>
+</body>
+</html>
