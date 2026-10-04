@@ -1,1566 +1,1690 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Daybreak Island Decorations</title>
-<style>
-  :root {
-    --bg: #0f1720;
-    --panel: #16202c;
-    --panel-border: #26374a;
-    --text: #e6edf5;
-    --text-dim: #8fa1b3;
-    --accent: #4fc3f7;
-    --row-alt: #131d27;
-    --row-hover: #1c2e42;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    padding: 20px 16px 60px;
-  }
-  h1 { font-size: 1.3rem; margin: 0 0 4px; }
-  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daybreak Island Decorations</title>
+    <style>
+      :root {
+        --bg: #0f1720;
+        --panel: #16202c;
+        --panel-border: #26374a;
+        --text: #e6edf5;
+        --text-dim: #8fa1b3;
+        --accent: #4fc3f7;
+        --row-alt: #131d27;
+        --row-hover: #1c2e42;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        padding: 20px 16px 60px;
+      }
+      h1 {
+        font-size: 1.3rem;
+        margin: 0 0 4px;
+      }
+      p.sub {
+        color: var(--text-dim);
+        margin: 0 0 18px;
+        font-size: 0.85rem;
+      }
 
-  .summary {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 18px;
-  }
-  .card {
-    background: var(--panel);
-    border: 1px solid var(--panel-border);
-    border-radius: 10px;
-    padding: 10px 16px;
-    min-width: 110px;
-  }
-  .card .value { font-size: 1.3rem; font-weight: 700; }
-  .card .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
-  .card.total { border-color: var(--accent); }
-  .card.total .value { color: var(--accent); }
+      .summary {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        border-radius: 10px;
+        padding: 10px 16px;
+        min-width: 110px;
+      }
+      .card .value {
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+      .card .label {
+        font-size: 0.72rem;
+        color: var(--text-dim);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      .card.total {
+        border-color: var(--accent);
+      }
+      .card.total .value {
+        color: var(--accent);
+      }
 
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: center;
-    margin-bottom: 14px;
-  }
-  .tabs { display: flex; gap: 8px; flex-wrap: wrap; }
-  .tab {
-    background: var(--panel);
-    border: 1px solid var(--panel-border);
-    color: var(--text);
-    padding: 6px 14px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 0.82rem;
-  }
-  .tab.active {
-    background: var(--accent);
-    color: #06222e;
-    border-color: var(--accent);
-    font-weight: 600;
-  }
-  #search {
-    background: var(--panel);
-    border: 1px solid var(--panel-border);
-    color: var(--text);
-    padding: 7px 12px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    margin-left: auto;
-    min-width: 200px;
-  }
-  #search:focus { outline: 1px solid var(--accent); }
+      .controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 14px;
+      }
+      .tabs {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .tab {
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        color: var(--text);
+        padding: 6px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.82rem;
+      }
+      .tab.active {
+        background: var(--accent);
+        color: #06222e;
+        border-color: var(--accent);
+        font-weight: 600;
+      }
+      #search {
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        color: var(--text);
+        padding: 7px 12px;
+        border-radius: 8px;
+        font-size: 0.85rem;
+        margin-left: auto;
+        min-width: 200px;
+      }
+      #search:focus {
+        outline: 1px solid var(--accent);
+      }
 
-  .table-wrap {
-    overflow-x: auto;
-    border: 1px solid var(--panel-border);
-    border-radius: 10px;
-    background: var(--panel);
-  }
-  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; min-width: 720px; }
-  thead th {
-    text-align: left;
-    padding: 10px 12px;
-    color: var(--text-dim);
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    border-bottom: 1px solid var(--panel-border);
-    cursor: pointer;
-    white-space: nowrap;
-  }
-  thead th:hover { color: var(--accent); }
-  thead th.sorted::after { content: " \25BE"; color: var(--accent); }
-  thead th.sorted.desc::after { content: " \25B4"; }
-  tbody td {
-    padding: 8px 12px;
-    border-bottom: 1px solid var(--panel-border);
-    white-space: nowrap;
-  }
-  tbody tr:nth-child(even) { background: var(--row-alt); }
-  tbody tr:hover { background: var(--row-hover); }
-  td.name { font-weight: 600; white-space: normal; }
-  td.buff { color: var(--accent); white-space: normal; }
-  td.empty { color: var(--text-dim); }
-  .badge {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 999px;
-    font-size: 0.72rem;
-    font-weight: 600;
-    background: var(--row-hover);
-    border: 1px solid var(--panel-border);
-  }
-  .badge.limited {
-    background: rgba(255, 184, 79, 0.15);
-    border-color: #ffb84f;
-    color: #ffb84f;
-    margin-left: 6px;
-  }
-  .filter-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.82rem;
-    color: var(--text-dim);
-    cursor: pointer;
-    user-select: none;
-  }
-  .filter-toggle input { accent-color: var(--accent); cursor: pointer; }
-  .card.limited { border-color: #ffb84f; }
-  .card.limited .value { color: #ffb84f; }
-  .card.prosperity { border-color: #6ee7a0; }
-  .card.prosperity .value { color: #6ee7a0; }
-  #empty-state {
-    padding: 20px;
-    text-align: center;
-    color: var(--text-dim);
-    display: none;
-  }
-  .meta { color: var(--text-dim); font-size: 0.78rem; margin-top: 10px; }
-</style>
-</head>
-<body>
+      .table-wrap {
+        overflow-x: auto;
+        border: 1px solid var(--panel-border);
+        border-radius: 10px;
+        background: var(--panel);
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 0.85rem;
+        min-width: 720px;
+      }
+      thead th {
+        text-align: left;
+        padding: 10px 12px;
+        color: var(--text-dim);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        border-bottom: 1px solid var(--panel-border);
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      thead th:hover {
+        color: var(--accent);
+      }
+      thead th.sorted::after {
+        content: " \25BE";
+        color: var(--accent);
+      }
+      thead th.sorted.desc::after {
+        content: " \25B4";
+      }
+      tbody td {
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--panel-border);
+        white-space: nowrap;
+      }
+      tbody tr:nth-child(even) {
+        background: var(--row-alt);
+      }
+      tbody tr:hover {
+        background: var(--row-hover);
+      }
+      td.name {
+        font-weight: 600;
+        white-space: normal;
+      }
+      td.buff {
+        color: var(--accent);
+        white-space: normal;
+      }
+      td.empty {
+        color: var(--text-dim);
+      }
+      .badge {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        font-weight: 600;
+        background: var(--row-hover);
+        border: 1px solid var(--panel-border);
+      }
+      .badge.limited {
+        background: rgba(255, 184, 79, 0.15);
+        border-color: #ffb84f;
+        color: #ffb84f;
+        margin-left: 6px;
+      }
+      .filter-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.82rem;
+        color: var(--text-dim);
+        cursor: pointer;
+        user-select: none;
+      }
+      .filter-toggle input {
+        accent-color: var(--accent);
+        cursor: pointer;
+      }
+      .card.limited {
+        border-color: #ffb84f;
+      }
+      .card.limited .value {
+        color: #ffb84f;
+      }
+      .card.prosperity {
+        border-color: #6ee7a0;
+      }
+      .card.prosperity .value {
+        color: #6ee7a0;
+      }
+      #empty-state {
+        padding: 20px;
+        text-align: center;
+        color: var(--text-dim);
+        display: none;
+      }
+      .meta {
+        color: var(--text-dim);
+        font-size: 0.78rem;
+        margin-top: 10px;
+      }
+      .thumb {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        vertical-align: middle;
+        margin-right: 8px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Daybreak Island Decorations</h1>
+    <p class="sub">
+      Every decoration from <code>decoration()</code>, with placeable count, max
+      level, and the buff/Prosperity reached at that max level. "Limited" isn't
+      its own category &mdash; it's a flag on a decoration's real Epic/Mythic
+      tier.
+    </p>
 
-<h1>Daybreak Island Decorations</h1>
-<p class="sub">Every decoration from <code>decoration()</code>, with placeable count, max level, and the buff/Prosperity reached at that max level. "Limited" isn't its own category &mdash; it's a flag on a decoration's real Epic/Mythic tier.</p>
+    <div class="summary" id="summary"></div>
 
-<div class="summary" id="summary"></div>
+    <div class="controls">
+      <div class="tabs" id="tabs"></div>
+      <label class="filter-toggle">
+        <input type="checkbox" id="limited-only" />
+        Limited only
+      </label>
+      <input type="text" id="search" placeholder="Search decorations..." />
+    </div>
 
-<div class="controls">
-  <div class="tabs" id="tabs"></div>
-  <label class="filter-toggle">
-    <input type="checkbox" id="limited-only" />
-    Limited only
-  </label>
-  <input type="text" id="search" placeholder="Search decorations..." />
-</div>
+    <div class="table-wrap">
+      <table id="table">
+        <thead>
+          <tr>
+            <th data-key="name">Name</th>
+            <th data-key="category">Category</th>
+            <th data-key="limited">Limited</th>
+            <th data-key="limit">Limit</th>
+            <th data-key="maxLevel">Max Level</th>
+            <th data-key="prosperity">Prosperity (max)</th>
+            <th data-key="buff">Buff (max)</th>
+            <th data-key="cost">Cost</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div id="empty-state">No decorations match your search.</div>
+    </div>
 
-<div class="table-wrap">
-  <table id="table">
-    <thead>
-      <tr>
-        <th data-key="name">Name</th>
-        <th data-key="category">Category</th>
-        <th data-key="limited">Limited</th>
-        <th data-key="limit">Limit</th>
-        <th data-key="maxLevel">Max Level</th>
-        <th data-key="prosperity">Prosperity (max)</th>
-        <th data-key="buff">Buff (max)</th>
-        <th data-key="cost">Cost</th>
-      </tr>
-    </thead>
-    <tbody id="tbody"></tbody>
-  </table>
-  <div id="empty-state">No decorations match your search.</div>
-</div>
+    <p class="meta" id="footer-meta"></p>
 
-<p class="meta" id="footer-meta"></p>
+    <script id="decoration-data" type="application/json">
+      [
+        {
+          "id": "city-walkway",
+          "name": "City Walkway",
+          "category": "Basic",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 meat"
+        },
+        {
+          "id": "enchanted-path",
+          "name": "Enchanted Path",
+          "category": "Basic",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 meat"
+        },
+        {
+          "id": "heated-pool",
+          "name": "Heated Pool",
+          "category": "Basic",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "200 gems"
+        },
+        {
+          "id": "lush-elegy",
+          "name": "Lush Elegy",
+          "category": "Basic",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 meat"
+        },
+        {
+          "id": "palisade",
+          "name": "Palisade",
+          "category": "Basic",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 meat"
+        },
+        {
+          "id": "song-of-the-sun",
+          "name": "Song of the Sun",
+          "category": "Basic",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 meat"
+        },
+        {
+          "id": "streetlight",
+          "name": "Streetlight",
+          "category": "Basic",
+          "limited": false,
+          "limit": 200,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 wood"
+        },
+        {
+          "id": "town-path",
+          "name": "Town Path",
+          "category": "Basic",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 meat"
+        },
+        {
+          "id": "tranquil-path",
+          "name": "Tranquil Path",
+          "category": "Basic",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 meat"
+        },
+        {
+          "id": "basic-stove",
+          "name": "Basic Stove",
+          "category": "Common",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "bonfire",
+          "name": "Bonfire",
+          "category": "Common",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "camping-tent",
+          "name": "Camping Tent",
+          "category": "Common",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "cargo-pile",
+          "name": "Cargo Pile",
+          "category": "Common",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "igloo",
+          "name": "Igloo",
+          "category": "Common",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "mr-snowman",
+          "name": "Mr. Snowman",
+          "category": "Common",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "outdoor-bench",
+          "name": "Outdoor Bench",
+          "category": "Common",
+          "limited": false,
+          "limit": 4,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "swing",
+          "name": "Swing",
+          "category": "Common",
+          "limited": false,
+          "limit": 4,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "table-chair",
+          "name": "Table & Chair",
+          "category": "Common",
+          "limited": false,
+          "limit": 4,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "urban-billboard",
+          "name": "Urban Billboard",
+          "category": "Common",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 50,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 Life Essence"
+        },
+        {
+          "id": "clock-hut",
+          "name": "Clock Hut",
+          "category": "Epic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Marksman Attack",
+          "buffValue": "+2.5%",
+          "cost": "5,000 Life Essence"
+        },
+        {
+          "id": "crystal-garden",
+          "name": "Crystal Garden",
+          "category": "Epic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Lancer Attack",
+          "buffValue": "+2.5%",
+          "cost": "5,000 Life Essence"
+        },
+        {
+          "id": "fisherman-s-chalet",
+          "name": "Fisherman\u2019s Chalet",
+          "category": "Epic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Marksman Defense",
+          "buffValue": "+2.5%",
+          "cost": "5,000 Life Essence"
+        },
+        {
+          "id": "hero-s-sanctun",
+          "name": "Hero\u2019s Sanctun",
+          "category": "Epic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+2.5%",
+          "cost": null
+        },
+        {
+          "id": "oak-tavern",
+          "name": "Oak Tavern",
+          "category": "Epic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Construction Speed",
+          "buffValue": "+6%",
+          "cost": "5,000 Life Essence"
+        },
+        {
+          "id": "rural-mill",
+          "name": "Rural Mill",
+          "category": "Epic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Infantry Attack",
+          "buffValue": "+2.5%",
+          "cost": "5,000 Life Essence"
+        },
+        {
+          "id": "sailor-s-cottage",
+          "name": "Sailor\u2019s Cottage",
+          "category": "Epic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Lancer Defense",
+          "buffValue": "+2.5%",
+          "cost": "5,000 Life Essence"
+        },
+        {
+          "id": "sea-shanty-inn",
+          "name": "Sea Shanty Inn",
+          "category": "Epic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+2.5%",
+          "cost": null
+        },
+        {
+          "id": "skating-rink",
+          "name": "Skating Rink",
+          "category": "Epic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Research Speed",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "ski-resort",
+          "name": "Ski Resort",
+          "category": "Epic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Training Speed",
+          "buffValue": "+15%",
+          "cost": null
+        },
+        {
+          "id": "warm-greenhouse",
+          "name": "Warm Greenhouse",
+          "category": "Epic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 2500,
+          "buffStat": "Infantry Defense",
+          "buffValue": "+2.5%",
+          "cost": "5,000 Life Essence"
+        },
+        {
+          "id": "abundant-feast",
+          "name": "Abundant Feast",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "amphitheatre",
+          "name": "Amphitheatre",
+          "category": "Mythic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Lancer Attack",
+          "buffValue": "+10%",
+          "cost": "10,000 Life Essence"
+        },
+        {
+          "id": "art-gallery",
+          "name": "Art Gallery",
+          "category": "Mythic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Marksman Defense",
+          "buffValue": "+10%",
+          "cost": "10,000 Life Essence"
+        },
+        {
+          "id": "astral-lake",
+          "name": "Astral Lake",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "battlefield-tyrant",
+          "name": "Battlefield Tyrant",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "bear-polarium",
+          "name": "Bear Polarium",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "cannon",
+          "name": "Cannon",
+          "img": "/images/daybreak-island/cannon.png",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "carousel",
+          "name": "Carousel",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "christmas-carol",
+          "name": "Christmas Carol",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "christmas-procession",
+          "name": "Christmas Procession",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "conquering-sword",
+          "name": "Conquering Sword",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "crossroads-of-worlds",
+          "name": "Crossroads of Worlds",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "dragon-pagoda",
+          "name": "Dragon Pagoda",
+          "img": "/images/daybreak-island/dragon-pagoda.png",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "dream-nest",
+          "name": "Dream Nest",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "echoes-of-time",
+          "name": "Echoes of Time",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "elegant-villa",
+          "name": "Elegant Villa",
+          "category": "Mythic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Lancer Defense",
+          "buffValue": "+10%",
+          "cost": "10,000 Life Essence"
+        },
+        {
+          "id": "enchanted-garden",
+          "name": "Enchanted Garden",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "fantasy-aquarium",
+          "name": "Fantasy Aquarium",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "ferris-wheel",
+          "name": "Ferris Wheel",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "floating-markert",
+          "name": "Floating Markert",
+          "category": "Mythic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Infantry Attack",
+          "buffValue": "+10%",
+          "cost": "10,000 Life Essence"
+        },
+        {
+          "id": "forest-wonderland",
+          "name": "Forest Wonderland",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "fountain-of-inspiration",
+          "name": "Fountain of Inspiration",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "frostflame-gloria",
+          "name": "Frostflame Gloria",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "furious-sea-fortress",
+          "name": "Furious Sea Fortress",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "ghoul-tree",
+          "name": "Ghoul Tree",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "giant-horn",
+          "name": "Giant Horn",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "gloomy-castle",
+          "name": "Gloomy Castle",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "glory-arena",
+          "name": "Glory Arena",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "golden-koi",
+          "name": "Golden Koi",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "icefire-way",
+          "name": "Icefire Way",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "jolly-melody",
+          "name": "Jolly Melody",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "lamp-of-devotion",
+          "name": "Lamp of Devotion",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "lovestruck",
+          "name": "Lovestruck",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "luminari-citadel",
+          "name": "Luminari Citadel",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "moonlit-paradise",
+          "name": "Moonlit Paradise",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "mushroom-domain",
+          "name": "Mushroom Domain",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "new-year-bell",
+          "name": "New Year Bell",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "observation-deck",
+          "name": "Observation Deck",
+          "category": "Mythic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Marksman Attack",
+          "buffValue": "+10%",
+          "cost": "10,000 Life Essence"
+        },
+        {
+          "id": "ocean-paradise",
+          "name": "Ocean Paradise",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "serpent-sanctuary",
+          "name": "Serpent Sanctuary",
+          "img": "/images/daybreak-island/serpent-sanctuary.png",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack, Defense, Health, Lethality",
+          "buffValue": "+20%",
+          "cost": null
+        },
+        {
+          "id": "snow-castle",
+          "name": "Snow Castle",
+          "category": "Mythic",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 12000,
+          "buffStat": "Infantry Defense",
+          "buffValue": "+10%",
+          "cost": "12,000 Life Essence"
+        },
+        {
+          "id": "snowbuster-arena",
+          "name": "Snowbuster Arena",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "soaring-steed",
+          "name": "Soaring Steed",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "song-of-the-sky",
+          "name": "Song of the Sky",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Attack",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "sports-field-apex",
+          "name": "Sports Field Apex",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "tundra-truck",
+          "name": "Tundra Truck",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "turkey-crown",
+          "name": "Turkey Crown",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Defense",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "war-chariot",
+          "name": "War Chariot",
+          "img": "/images/daybreak-island/war-chariot.png",
+          "category": "Mythic",
+          "limited": true,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "",
+          "buffValue": "+0",
+          "cost": null
+        },
+        {
+          "id": "barbecue-stand",
+          "name": "Barbecue Stand",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Training Speed",
+          "buffValue": "+5%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "basic-dock",
+          "name": "Basic Dock",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Troop Deployment Capacity",
+          "buffValue": "+1K",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "blacksmith",
+          "name": "Blacksmith",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Iron Gathering Speed",
+          "buffValue": "+30%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "brewery",
+          "name": "Brewery",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Healing Speed",
+          "buffValue": "+10%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "bustling-bazaar",
+          "name": "Bustling Bazaar",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Resource Gathering Speed",
+          "buffValue": "+10%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "deluxe-restaurant",
+          "name": "Deluxe Restaurant",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Meat Gathering Speed",
+          "buffValue": "+30%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "flower-s-secret",
+          "name": "Flower\u2019s Secret",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Wood Gathering Speed",
+          "buffValue": "+30%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "fountain-of-joy",
+          "name": "Fountain of Joy",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Construction Speed",
+          "buffValue": "+4%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "glistening-ice-sculpture",
+          "name": "Glistening Ice Sculpture",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Hunting March Speed",
+          "buffValue": "+10%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "mini-heater",
+          "name": "Mini Heater",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Coal Gathering Speed",
+          "buffValue": "+30%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "natural-hot-spring",
+          "name": "Natural Hot Spring",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Research Speed",
+          "buffValue": "+4%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "rock-outpost",
+          "name": "Rock Outpost",
+          "category": "Rare",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 5,
+          "prosperity": 1000,
+          "buffStat": "Troop March Speed",
+          "buffValue": "+5%",
+          "cost": "3,000 Life Essence"
+        },
+        {
+          "id": "basic-farmhouse",
+          "name": "Basic Farmhouse",
+          "category": "Uncommon",
+          "limited": false,
+          "limit": 4,
+          "maxLevel": 1,
+          "prosperity": 100,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "2,000 Life Essence"
+        },
+        {
+          "id": "fine-wine",
+          "name": "Fine Wine",
+          "category": "Uncommon",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 100,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "2,000 Life Essence"
+        },
+        {
+          "id": "merchant-caravan",
+          "name": "Merchant Caravan",
+          "category": "Uncommon",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 100,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "2,000 Life Essence"
+        },
+        {
+          "id": "rustic-slide",
+          "name": "Rustic Slide",
+          "category": "Uncommon",
+          "limited": false,
+          "limit": 2,
+          "maxLevel": 1,
+          "prosperity": 100,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "2,000 Life Essence"
+        },
+        {
+          "id": "townhouse",
+          "name": "Townhouse",
+          "category": "Uncommon",
+          "limited": false,
+          "limit": 4,
+          "maxLevel": 1,
+          "prosperity": 100,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "2,000 Life Essence"
+        },
+        {
+          "id": "warrior-s-flag",
+          "name": "Warrior\u2019s Flag",
+          "category": "Uncommon",
+          "limited": false,
+          "limit": 5,
+          "maxLevel": 1,
+          "prosperity": 100,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "2,000 Life Essence"
+        },
+        {
+          "id": "harbor-of-hope",
+          "name": "Harbor of Hope",
+          "category": "Unique",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 10000,
+          "buffStat": "Troops\u2019 Lethality & Health",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "starry-lighthouse",
+          "name": "Starry Lighthouse",
+          "category": "Unique",
+          "limited": false,
+          "limit": 1,
+          "maxLevel": 10,
+          "prosperity": 20000,
+          "buffStat": "Troops' Lethality, Troops' Health",
+          "buffValue": "+10%",
+          "cost": null
+        },
+        {
+          "id": "pine-tree-i",
+          "name": "Pine Tree I",
+          "category": "Vegetation",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 wood"
+        },
+        {
+          "id": "pine-tree-ii",
+          "name": "Pine Tree II",
+          "category": "Vegetation",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 wood"
+        },
+        {
+          "id": "pine-tree-iii",
+          "name": "Pine Tree III",
+          "category": "Vegetation",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 wood"
+        },
+        {
+          "id": "pine-tree-iv",
+          "name": "Pine Tree IV",
+          "category": "Vegetation",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 wood"
+        },
+        {
+          "id": "pine-tree-v",
+          "name": "Pine Tree V",
+          "category": "Vegetation",
+          "limited": false,
+          "limit": 500,
+          "maxLevel": null,
+          "prosperity": null,
+          "buffStat": null,
+          "buffValue": null,
+          "cost": "1,000 wood"
+        }
+      ]
+    </script>
 
-<script id="decoration-data" type="application/json">
-[
-  {
-    "id": "city-walkway",
-    "name": "City Walkway",
-    "category": "Basic",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 meat"
-  },
-  {
-    "id": "enchanted-path",
-    "name": "Enchanted Path",
-    "category": "Basic",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 meat"
-  },
-  {
-    "id": "heated-pool",
-    "name": "Heated Pool",
-    "category": "Basic",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "200 gems"
-  },
-  {
-    "id": "lush-elegy",
-    "name": "Lush Elegy",
-    "category": "Basic",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 meat"
-  },
-  {
-    "id": "palisade",
-    "name": "Palisade",
-    "category": "Basic",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 meat"
-  },
-  {
-    "id": "song-of-the-sun",
-    "name": "Song of the Sun",
-    "category": "Basic",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 meat"
-  },
-  {
-    "id": "streetlight",
-    "name": "Streetlight",
-    "category": "Basic",
-    "limited": false,
-    "limit": 200,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 wood"
-  },
-  {
-    "id": "town-path",
-    "name": "Town Path",
-    "category": "Basic",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 meat"
-  },
-  {
-    "id": "tranquil-path",
-    "name": "Tranquil Path",
-    "category": "Basic",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 meat"
-  },
-  {
-    "id": "basic-stove",
-    "name": "Basic Stove",
-    "category": "Common",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "bonfire",
-    "name": "Bonfire",
-    "category": "Common",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "camping-tent",
-    "name": "Camping Tent",
-    "category": "Common",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "cargo-pile",
-    "name": "Cargo Pile",
-    "category": "Common",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "igloo",
-    "name": "Igloo",
-    "category": "Common",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "mr-snowman",
-    "name": "Mr. Snowman",
-    "category": "Common",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "outdoor-bench",
-    "name": "Outdoor Bench",
-    "category": "Common",
-    "limited": false,
-    "limit": 4,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "swing",
-    "name": "Swing",
-    "category": "Common",
-    "limited": false,
-    "limit": 4,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "table-chair",
-    "name": "Table & Chair",
-    "category": "Common",
-    "limited": false,
-    "limit": 4,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "urban-billboard",
-    "name": "Urban Billboard",
-    "category": "Common",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 50,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 Life Essence"
-  },
-  {
-    "id": "clock-hut",
-    "name": "Clock Hut",
-    "category": "Epic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Marksman Attack",
-    "buffValue": "+2.5%",
-    "cost": "5,000 Life Essence"
-  },
-  {
-    "id": "crystal-garden",
-    "name": "Crystal Garden",
-    "category": "Epic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Lancer Attack",
-    "buffValue": "+2.5%",
-    "cost": "5,000 Life Essence"
-  },
-  {
-    "id": "fisherman-s-chalet",
-    "name": "Fisherman’s Chalet",
-    "category": "Epic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Marksman Defense",
-    "buffValue": "+2.5%",
-    "cost": "5,000 Life Essence"
-  },
-  {
-    "id": "hero-s-sanctun",
-    "name": "Hero’s Sanctun",
-    "category": "Epic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+2.5%",
-    "cost": null
-  },
-  {
-    "id": "oak-tavern",
-    "name": "Oak Tavern",
-    "category": "Epic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Construction Speed",
-    "buffValue": "+6%",
-    "cost": "5,000 Life Essence"
-  },
-  {
-    "id": "rural-mill",
-    "name": "Rural Mill",
-    "category": "Epic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Infantry Attack",
-    "buffValue": "+2.5%",
-    "cost": "5,000 Life Essence"
-  },
-  {
-    "id": "sailor-s-cottage",
-    "name": "Sailor’s Cottage",
-    "category": "Epic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Lancer Defense",
-    "buffValue": "+2.5%",
-    "cost": "5,000 Life Essence"
-  },
-  {
-    "id": "sea-shanty-inn",
-    "name": "Sea Shanty Inn",
-    "category": "Epic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+2.5%",
-    "cost": null
-  },
-  {
-    "id": "skating-rink",
-    "name": "Skating Rink",
-    "category": "Epic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Research Speed",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "ski-resort",
-    "name": "Ski Resort",
-    "category": "Epic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Training Speed",
-    "buffValue": "+15%",
-    "cost": null
-  },
-  {
-    "id": "warm-greenhouse",
-    "name": "Warm Greenhouse",
-    "category": "Epic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 2500,
-    "buffStat": "Infantry Defense",
-    "buffValue": "+2.5%",
-    "cost": "5,000 Life Essence"
-  },
-  {
-    "id": "abundant-feast",
-    "name": "Abundant Feast",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "amphitheatre",
-    "name": "Amphitheatre",
-    "category": "Mythic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Lancer Attack",
-    "buffValue": "+10%",
-    "cost": "10,000 Life Essence"
-  },
-  {
-    "id": "art-gallery",
-    "name": "Art Gallery",
-    "category": "Mythic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Marksman Defense",
-    "buffValue": "+10%",
-    "cost": "10,000 Life Essence"
-  },
-  {
-    "id": "astral-lake",
-    "name": "Astral Lake",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "battlefield-tyrant",
-    "name": "Battlefield Tyrant",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "bear-polarium",
-    "name": "Bear Polarium",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "carousel",
-    "name": "Carousel",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "christmas-carol",
-    "name": "Christmas Carol",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "christmas-procession",
-    "name": "Christmas Procession",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "conquering-sword",
-    "name": "Conquering Sword",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "crossroads-of-worlds",
-    "name": "Crossroads of Worlds",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "dragon-pagoda",
-    "name": "Dragon Pagoda",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "dream-nest",
-    "name": "Dream Nest",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "echoes-of-time",
-    "name": "Echoes of Time",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "elegant-villa",
-    "name": "Elegant Villa",
-    "category": "Mythic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Lancer Defense",
-    "buffValue": "+10%",
-    "cost": "10,000 Life Essence"
-  },
-  {
-    "id": "enchanted-garden",
-    "name": "Enchanted Garden",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "fantasy-aquarium",
-    "name": "Fantasy Aquarium",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "ferris-wheel",
-    "name": "Ferris Wheel",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "floating-markert",
-    "name": "Floating Markert",
-    "category": "Mythic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Infantry Attack",
-    "buffValue": "+10%",
-    "cost": "10,000 Life Essence"
-  },
-  {
-    "id": "forest-wonderland",
-    "name": "Forest Wonderland",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "fountain-of-inspiration",
-    "name": "Fountain of Inspiration",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "frostflame-gloria",
-    "name": "Frostflame Gloria",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "furious-sea-fortress",
-    "name": "Furious Sea Fortress",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "ghoul-tree",
-    "name": "Ghoul Tree",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "giant-horn",
-    "name": "Giant Horn",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "gloomy-castle",
-    "name": "Gloomy Castle",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "glory-arena",
-    "name": "Glory Arena",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "golden-koi",
-    "name": "Golden Koi",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "icefire-way",
-    "name": "Icefire Way",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "jolly-melody",
-    "name": "Jolly Melody",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "lamp-of-devotion",
-    "name": "Lamp of Devotion",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "lovestruck",
-    "name": "Lovestruck",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "luminari-citadel",
-    "name": "Luminari Citadel",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "moonlit-paradise",
-    "name": "Moonlit Paradise",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "mushroom-domain",
-    "name": "Mushroom Domain",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "new-year-bell",
-    "name": "New Year Bell",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "observation-deck",
-    "name": "Observation Deck",
-    "category": "Mythic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Marksman Attack",
-    "buffValue": "+10%",
-    "cost": "10,000 Life Essence"
-  },
-  {
-    "id": "ocean-paradise",
-    "name": "Ocean Paradise",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "serpent-sanctuary",
-    "name": "Serpent Sanctuary",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack, Defense, Health, Lethality",
-    "buffValue": "+20%",
-    "cost": null
-  },
-  {
-    "id": "snow-castle",
-    "name": "Snow Castle",
-    "category": "Mythic",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 12000,
-    "buffStat": "Infantry Defense",
-    "buffValue": "+10%",
-    "cost": "12,000 Life Essence"
-  },
-  {
-    "id": "snowbuster-arena",
-    "name": "Snowbuster Arena",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "soaring-steed",
-    "name": "Soaring Steed",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "song-of-the-sky",
-    "name": "Song of the Sky",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Attack",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "sports-field-apex",
-    "name": "Sports Field Apex",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "tundra-truck",
-    "name": "Tundra Truck",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "turkey-crown",
-    "name": "Turkey Crown",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Defense",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "war-chariot",
-    "name": "War Chariot",
-    "category": "Mythic",
-    "limited": true,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "",
-    "buffValue": "+0",
-    "cost": null
-  },
-  {
-    "id": "barbecue-stand",
-    "name": "Barbecue Stand",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Training Speed",
-    "buffValue": "+5%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "basic-dock",
-    "name": "Basic Dock",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Troop Deployment Capacity",
-    "buffValue": "+1K",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "blacksmith",
-    "name": "Blacksmith",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Iron Gathering Speed",
-    "buffValue": "+30%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "brewery",
-    "name": "Brewery",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Healing Speed",
-    "buffValue": "+10%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "bustling-bazaar",
-    "name": "Bustling Bazaar",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Resource Gathering Speed",
-    "buffValue": "+10%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "deluxe-restaurant",
-    "name": "Deluxe Restaurant",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Meat Gathering Speed",
-    "buffValue": "+30%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "flower-s-secret",
-    "name": "Flower’s Secret",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Wood Gathering Speed",
-    "buffValue": "+30%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "fountain-of-joy",
-    "name": "Fountain of Joy",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Construction Speed",
-    "buffValue": "+4%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "glistening-ice-sculpture",
-    "name": "Glistening Ice Sculpture",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Hunting March Speed",
-    "buffValue": "+10%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "mini-heater",
-    "name": "Mini Heater",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Coal Gathering Speed",
-    "buffValue": "+30%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "natural-hot-spring",
-    "name": "Natural Hot Spring",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Research Speed",
-    "buffValue": "+4%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "rock-outpost",
-    "name": "Rock Outpost",
-    "category": "Rare",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 5,
-    "prosperity": 1000,
-    "buffStat": "Troop March Speed",
-    "buffValue": "+5%",
-    "cost": "3,000 Life Essence"
-  },
-  {
-    "id": "basic-farmhouse",
-    "name": "Basic Farmhouse",
-    "category": "Uncommon",
-    "limited": false,
-    "limit": 4,
-    "maxLevel": 1,
-    "prosperity": 100,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "2,000 Life Essence"
-  },
-  {
-    "id": "fine-wine",
-    "name": "Fine Wine",
-    "category": "Uncommon",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 100,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "2,000 Life Essence"
-  },
-  {
-    "id": "merchant-caravan",
-    "name": "Merchant Caravan",
-    "category": "Uncommon",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 100,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "2,000 Life Essence"
-  },
-  {
-    "id": "rustic-slide",
-    "name": "Rustic Slide",
-    "category": "Uncommon",
-    "limited": false,
-    "limit": 2,
-    "maxLevel": 1,
-    "prosperity": 100,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "2,000 Life Essence"
-  },
-  {
-    "id": "townhouse",
-    "name": "Townhouse",
-    "category": "Uncommon",
-    "limited": false,
-    "limit": 4,
-    "maxLevel": 1,
-    "prosperity": 100,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "2,000 Life Essence"
-  },
-  {
-    "id": "warrior-s-flag",
-    "name": "Warrior’s Flag",
-    "category": "Uncommon",
-    "limited": false,
-    "limit": 5,
-    "maxLevel": 1,
-    "prosperity": 100,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "2,000 Life Essence"
-  },
-  {
-    "id": "harbor-of-hope",
-    "name": "Harbor of Hope",
-    "category": "Unique",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 10000,
-    "buffStat": "Troops’ Lethality & Health",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "starry-lighthouse",
-    "name": "Starry Lighthouse",
-    "category": "Unique",
-    "limited": false,
-    "limit": 1,
-    "maxLevel": 10,
-    "prosperity": 20000,
-    "buffStat": "Troops' Lethality, Troops' Health",
-    "buffValue": "+10%",
-    "cost": null
-  },
-  {
-    "id": "pine-tree-i",
-    "name": "Pine Tree I",
-    "category": "Vegetation",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 wood"
-  },
-  {
-    "id": "pine-tree-ii",
-    "name": "Pine Tree II",
-    "category": "Vegetation",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 wood"
-  },
-  {
-    "id": "pine-tree-iii",
-    "name": "Pine Tree III",
-    "category": "Vegetation",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 wood"
-  },
-  {
-    "id": "pine-tree-iv",
-    "name": "Pine Tree IV",
-    "category": "Vegetation",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 wood"
-  },
-  {
-    "id": "pine-tree-v",
-    "name": "Pine Tree V",
-    "category": "Vegetation",
-    "limited": false,
-    "limit": 500,
-    "maxLevel": null,
-    "prosperity": null,
-    "buffStat": null,
-    "buffValue": null,
-    "cost": "1,000 wood"
-  }
-]
-</script>
-
-<script>
-  const DATA = JSON.parse(document.getElementById('decoration-data').textContent);
-
-  const CATEGORY_ORDER = ['Basic', 'Vegetation', 'Common', 'Uncommon', 'Rare', 'Epic', 'Mythic', 'Unique'];
-
-  let activeCategory = 'All';
-  let limitedOnly = false;
-  let searchTerm = '';
-  let sortKey = 'category';
-  let sortDir = 'asc';
-
-  function buildSummary() {
-    const el = document.getElementById('summary');
-    const counts = {};
-    CATEGORY_ORDER.forEach((c) => (counts[c] = 0));
-    DATA.forEach((d) => (counts[d.category] = (counts[d.category] || 0) + 1));
-    const limitedCount = DATA.filter((d) => d.limited).length;
-    const prosperitySum = DATA.reduce((sum, d) => sum + (d.prosperity || 0), 0);
-
-    const cards = [
-      `<div class="card total"><div class="value">${DATA.length}</div><div class="label">Total Decorations</div></div>`,
-      `<div class="card prosperity"><div class="value">${prosperitySum.toLocaleString()}</div><div class="label">Prosperity Sum</div></div>`,
-    ];
-    CATEGORY_ORDER.forEach((c) => {
-      cards.push(`<div class="card"><div class="value">${counts[c]}</div><div class="label">${c}</div></div>`);
-    });
-    cards.push(`<div class="card limited"><div class="value">${limitedCount}</div><div class="label">Limited</div></div>`);
-    el.innerHTML = cards.join('');
-  }
-
-  function buildTabs() {
-    const el = document.getElementById('tabs');
-    const cats = ['All', ...CATEGORY_ORDER];
-    el.innerHTML = cats
-      .map((c) => `<div class="tab${c === activeCategory ? ' active' : ''}" data-cat="${c}">${c}</div>`)
-      .join('');
-    el.querySelectorAll('.tab').forEach((tab) => {
-      tab.addEventListener('click', () => {
-        activeCategory = tab.dataset.cat;
-        buildTabs();
-        render();
-      });
-    });
-  }
-
-  function sortValue(row, key) {
-    if (key === 'buff') return row.buffStat || '';
-    if (key === 'limited') return row.limited ? 1 : 0;
-    const v = row[key];
-    return v === null || v === undefined ? -Infinity : v;
-  }
-
-  function getFiltered() {
-    let rows = DATA;
-    if (activeCategory !== 'All') rows = rows.filter((d) => d.category === activeCategory);
-    if (limitedOnly) rows = rows.filter((d) => d.limited);
-    if (searchTerm) {
-      const term = searchTerm.toLowerCase();
-      rows = rows.filter(
-        (d) =>
-          d.name.toLowerCase().includes(term) ||
-          (d.buffStat || '').toLowerCase().includes(term) ||
-          d.category.toLowerCase().includes(term),
+    <script>
+      const DATA = JSON.parse(
+        document.getElementById("decoration-data").textContent,
       );
-    }
-    rows = rows.slice().sort((a, b) => {
-      const av = sortValue(a, sortKey);
-      const bv = sortValue(b, sortKey);
-      let cmp;
-      if (typeof av === 'number' && typeof bv === 'number') cmp = av - bv;
-      else cmp = String(av).localeCompare(String(bv));
-      return sortDir === 'asc' ? cmp : -cmp;
-    });
-    return rows;
-  }
 
-  function cell(value, unit) {
-    if (value === null || value === undefined) return '<span class="empty">&mdash;</span>';
-    return unit ? `${value} ${unit}` : value;
-  }
+      const CATEGORY_ORDER = [
+        "Basic",
+        "Vegetation",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Epic",
+        "Mythic",
+        "Unique",
+      ];
 
-  function render() {
-    const rows = getFiltered();
-    const tbody = document.getElementById('tbody');
-    const emptyState = document.getElementById('empty-state');
+      let activeCategory = "All";
+      let limitedOnly = false;
+      let searchTerm = "";
+      let sortKey = "category";
+      let sortDir = "asc";
 
-    document.querySelectorAll('thead th').forEach((th) => {
-      th.classList.toggle('sorted', th.dataset.key === sortKey);
-      th.classList.toggle('desc', th.dataset.key === sortKey && sortDir === 'desc');
-    });
+      function buildSummary() {
+        const el = document.getElementById("summary");
+        const counts = {};
+        CATEGORY_ORDER.forEach((c) => (counts[c] = 0));
+        DATA.forEach(
+          (d) => (counts[d.category] = (counts[d.category] || 0) + 1),
+        );
+        const limitedCount = DATA.filter((d) => d.limited).length;
+        const prosperitySum = DATA.reduce(
+          (sum, d) => sum + (d.prosperity || 0),
+          0,
+        );
 
-    if (rows.length === 0) {
-      tbody.innerHTML = '';
-      emptyState.style.display = 'block';
-    } else {
-      emptyState.style.display = 'none';
-      tbody.innerHTML = rows
-        .map((d) => {
-          const buff = d.buffStat
-            ? `${d.buffStat} <strong>${d.buffValue}</strong>`
-            : d.buffStat === ''
-              ? '<span class="empty">not yet documented</span>'
-              : '<span class="empty">&mdash;</span>';
-          return `<tr>
-            <td class="name">${d.name}</td>
-            <td><span class="badge">${d.category}</span>${d.limited ? '<span class="badge limited">Limited</span>' : ''}</td>
-            <td>${d.limited ? 'Yes' : '<span class="empty">&mdash;</span>'}</td>
+        const cards = [
+          `<div class="card total"><div class="value">${DATA.length}</div><div class="label">Total Decorations</div></div>`,
+          `<div class="card prosperity"><div class="value">${prosperitySum.toLocaleString()}</div><div class="label">Prosperity Sum</div></div>`,
+        ];
+        CATEGORY_ORDER.forEach((c) => {
+          cards.push(
+            `<div class="card"><div class="value">${counts[c]}</div><div class="label">${c}</div></div>`,
+          );
+        });
+        cards.push(
+          `<div class="card limited"><div class="value">${limitedCount}</div><div class="label">Limited</div></div>`,
+        );
+        el.innerHTML = cards.join("");
+      }
+
+      function buildTabs() {
+        const el = document.getElementById("tabs");
+        const cats = ["All", ...CATEGORY_ORDER];
+        el.innerHTML = cats
+          .map(
+            (c) =>
+              `<div class="tab${c === activeCategory ? " active" : ""}" data-cat="${c}">${c}</div>`,
+          )
+          .join("");
+        el.querySelectorAll(".tab").forEach((tab) => {
+          tab.addEventListener("click", () => {
+            activeCategory = tab.dataset.cat;
+            buildTabs();
+            render();
+          });
+        });
+      }
+
+      function sortValue(row, key) {
+        if (key === "buff") return row.buffStat || "";
+        if (key === "limited") return row.limited ? 1 : 0;
+        const v = row[key];
+        return v === null || v === undefined ? -Infinity : v;
+      }
+
+      function getFiltered() {
+        let rows = DATA;
+        if (activeCategory !== "All")
+          rows = rows.filter((d) => d.category === activeCategory);
+        if (limitedOnly) rows = rows.filter((d) => d.limited);
+        if (searchTerm) {
+          const term = searchTerm.toLowerCase();
+          rows = rows.filter(
+            (d) =>
+              d.name.toLowerCase().includes(term) ||
+              (d.buffStat || "").toLowerCase().includes(term) ||
+              d.category.toLowerCase().includes(term),
+          );
+        }
+        rows = rows.slice().sort((a, b) => {
+          const av = sortValue(a, sortKey);
+          const bv = sortValue(b, sortKey);
+          let cmp;
+          if (typeof av === "number" && typeof bv === "number") cmp = av - bv;
+          else cmp = String(av).localeCompare(String(bv));
+          return sortDir === "asc" ? cmp : -cmp;
+        });
+        return rows;
+      }
+
+      function cell(value, unit) {
+        if (value === null || value === undefined)
+          return '<span class="empty">&mdash;</span>';
+        return unit ? `${value} ${unit}` : value;
+      }
+
+      function render() {
+        const rows = getFiltered();
+        const tbody = document.getElementById("tbody");
+        const emptyState = document.getElementById("empty-state");
+
+        document.querySelectorAll("thead th").forEach((th) => {
+          th.classList.toggle("sorted", th.dataset.key === sortKey);
+          th.classList.toggle(
+            "desc",
+            th.dataset.key === sortKey && sortDir === "desc",
+          );
+        });
+
+        if (rows.length === 0) {
+          tbody.innerHTML = "";
+          emptyState.style.display = "block";
+        } else {
+          emptyState.style.display = "none";
+          tbody.innerHTML = rows
+            .map((d) => {
+              const buff = d.buffStat
+                ? `${d.buffStat} <strong>${d.buffValue}</strong>`
+                : d.buffStat === ""
+                  ? '<span class="empty">not yet documented</span>'
+                  : '<span class="empty">&mdash;</span>';
+              return `<tr>
+            <td class="name">${d.img ? `<img class="thumb" src="..${d.img}" alt="">` : ""}${d.name}</td>
+            <td><span class="badge">${d.category}</span>${d.limited ? '<span class="badge limited">Limited</span>' : ""}</td>
+            <td>${d.limited ? "Yes" : '<span class="empty">&mdash;</span>'}</td>
             <td>${cell(d.limit)}</td>
             <td>${cell(d.maxLevel)}</td>
             <td>${cell(d.prosperity)}</td>
             <td class="buff">${buff}</td>
             <td>${cell(d.cost)}</td>
           </tr>`;
-        })
-        .join('');
-    }
+            })
+            .join("");
+        }
 
-    document.getElementById('footer-meta').textContent =
-      `Showing ${rows.length} of ${DATA.length} decorations.`;
-  }
-
-  document.querySelectorAll('thead th').forEach((th) => {
-    th.addEventListener('click', () => {
-      const key = th.dataset.key;
-      if (sortKey === key) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-      else {
-        sortKey = key;
-        sortDir = 'asc';
+        document.getElementById("footer-meta").textContent =
+          `Showing ${rows.length} of ${DATA.length} decorations.`;
       }
+
+      document.querySelectorAll("thead th").forEach((th) => {
+        th.addEventListener("click", () => {
+          const key = th.dataset.key;
+          if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc";
+          else {
+            sortKey = key;
+            sortDir = "asc";
+          }
+          render();
+        });
+      });
+
+      document.getElementById("search").addEventListener("input", (e) => {
+        searchTerm = e.target.value;
+        render();
+      });
+
+      document
+        .getElementById("limited-only")
+        .addEventListener("change", (e) => {
+          limitedOnly = e.target.checked;
+          render();
+        });
+
+      buildSummary();
+      buildTabs();
       render();
-    });
-  });
-
-  document.getElementById('search').addEventListener('input', (e) => {
-    searchTerm = e.target.value;
-    render();
-  });
-
-  document.getElementById('limited-only').addEventListener('change', (e) => {
-    limitedOnly = e.target.checked;
-    render();
-  });
-
-  buildSummary();
-  buildTabs();
-  render();
-</script>
-
-</body>
+    </script>
+  </body>
 </html>

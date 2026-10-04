@@ -1606,6 +1606,126 @@
     "limited": true
   },
   {
+    "id": "cannon",
+    "name": "Cannon",
+    "img": "/images/daybreak-island/cannon.png",
+    "category": "Mythic",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 1000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 3000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 5000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 7000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 9000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "",
+          "value": "+0",
+          "amount": 0,
+          "unit": "flat"
+        }
+      }
+    ],
+    "limited": true
+  },
+  {
     "id": "carousel",
     "name": "Carousel",
     "category": "Mythic",
@@ -2203,6 +2323,7 @@
   {
     "id": "dragon-pagoda",
     "name": "Dragon Pagoda",
+    "img": "/images/daybreak-island/dragon-pagoda.png",
     "category": "Mythic",
     "levels": [
       {
@@ -5416,6 +5537,7 @@
   {
     "id": "serpent-sanctuary",
     "name": "Serpent Sanctuary",
+    "img": "/images/daybreak-island/serpent-sanctuary.png",
     "category": "Mythic",
     "levels": [
       {
@@ -6368,6 +6490,7 @@
   {
     "id": "war-chariot",
     "name": "War Chariot",
+    "img": "/images/daybreak-island/war-chariot.png",
     "category": "Mythic",
     "limit": 1,
     "levels": [

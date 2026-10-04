@@ -54,6 +54,8 @@ export interface DecorationLevel {
 export interface Decoration {
   id: string;
   name: string;
+  /** Icon path. Present only for decorations whose picture has been added so far. */
+  img?: string;
   category: DecorationCategory;
   cost?: DecorationCost[];
   lifeEssenceCost?: number;

@@ -7,6 +7,7 @@ export type ItemCategory =
   | 'Fire Crystal'
   | 'Experts'
   | 'Teleporter'
+  | 'Speedups'
   | 'Others'
   | 'Event';
 

@@ -7,6 +7,8 @@ import {
   TreeOfLifeQuery,
 } from '@/modules/daybreak-island';
 import { items } from '@/modules/items';
+import { existsSync } from 'fs';
+import { join } from 'path';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('lumberCamp', () => lumberCamp());
@@ -104,8 +106,8 @@ describe('Tree of Life', () => {
 });
 
 describe('Decorations', () => {
-  it('covers all 102 decorations across 8 categories', () => {
-    expect(decoration().count()).toBe(102);
+  it('covers all 103 decorations across 8 categories', () => {
+    expect(decoration().count()).toBe(103);
     const counts: [string, number][] = [
       ['Basic', 9],
       ['Vegetation', 5],
@@ -113,7 +115,7 @@ describe('Decorations', () => {
       ['Uncommon', 6],
       ['Rare', 12],
       ['Epic', 11],
-      ['Mythic', 47],
+      ['Mythic', 48],
       ['Unique', 2],
     ];
     counts.forEach(([category, count]) => {
@@ -129,7 +131,7 @@ describe('Decorations', () => {
     const limited = decoration()
       .get()
       .filter((d) => d.limited);
-    expect(limited).toHaveLength(45);
+    expect(limited).toHaveLength(46);
     expect(limited.every((d) => d.category === 'Epic' || d.category === 'Mythic')).toBe(true);
 
     const epicLimited = limited.filter((d) => d.category === 'Epic');
@@ -137,7 +139,7 @@ describe('Decorations', () => {
     expect(epicLimited.every((d) => d.levels?.length === 5)).toBe(true);
 
     const mythicLimited = limited.filter((d) => d.category === 'Mythic');
-    expect(mythicLimited).toHaveLength(41);
+    expect(mythicLimited).toHaveLength(42);
     expect(mythicLimited.every((d) => d.levels?.length === 10)).toBe(true);
 
     const blacksmith = decoration().find('blacksmith')!;
@@ -276,5 +278,18 @@ describe('Decorations', () => {
       .get()
       .map((d) => d.id);
     expect(unique.sort()).toEqual(['harbor-of-hope', 'starry-lighthouse']);
+  });
+
+  it('has an icon file for every decoration that has an img', () => {
+    const withImg = decoration()
+      .get()
+      .filter((d) => d.img !== undefined);
+    expect(withImg.map((d) => d.id)).toEqual([
+      'cannon',
+      'dragon-pagoda',
+      'serpent-sanctuary',
+      'war-chariot',
+    ]);
+    withImg.forEach((d) => expect(existsSync(join(__dirname, '../..', d.img!))).toBe(true));
   });
 });

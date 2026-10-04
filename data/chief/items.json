@@ -2380,5 +2380,197 @@
     "category": "Teleporter",
     "description": "This Teleport will place you close to your HQ. If your alliance already has built the Tundra HQ, it will chose that HQ.",
     "sources": ["Alliance Shop"]
+  },
+  {
+    "id": "speedup-general-1m",
+    "name": "1m General Speedup",
+    "img": "/images/items/speedups/speedup-general-1m.png",
+    "category": "Speedups",
+    "description": "Speeds up any queue by 1 minute.",
+    "sources": []
+  },
+  {
+    "id": "speedup-general-5m",
+    "name": "5m General Speedup",
+    "img": "/images/items/speedups/speedup-general-5m.png",
+    "category": "Speedups",
+    "description": "Speeds up any queue by 5 minutes.",
+    "sources": []
+  },
+  {
+    "id": "speedup-general-1h",
+    "name": "1h General Speedup",
+    "img": "/images/items/speedups/speedup-general-1h.png",
+    "category": "Speedups",
+    "description": "Speeds up any queue by 1 hour.",
+    "sources": []
+  },
+  {
+    "id": "speedup-general-3h",
+    "name": "3h General Speedup",
+    "img": "/images/items/speedups/speedup-general-3h.png",
+    "category": "Speedups",
+    "description": "Speeds up any queue by 3 hours.",
+    "sources": []
+  },
+  {
+    "id": "speedup-general-8h",
+    "name": "8h General Speedup",
+    "img": "/images/items/speedups/speedup-general-8h.png",
+    "category": "Speedups",
+    "description": "Speeds up any queue by 8 hours.",
+    "sources": []
+  },
+  {
+    "id": "speedup-construction-1m",
+    "name": "1m Construction Speedup",
+    "img": "/images/items/speedups/speedup-construction-1m.png",
+    "category": "Speedups",
+    "description": "Speeds up construction by 1 minute.",
+    "sources": []
+  },
+  {
+    "id": "speedup-construction-5m",
+    "name": "5m Construction Speedup",
+    "img": "/images/items/speedups/speedup-construction-5m.png",
+    "category": "Speedups",
+    "description": "Speeds up construction by 5 minutes.",
+    "sources": []
+  },
+  {
+    "id": "speedup-construction-1h",
+    "name": "1h Construction Speedup",
+    "img": "/images/items/speedups/speedup-construction-1h.png",
+    "category": "Speedups",
+    "description": "Speeds up construction by 1 hour.",
+    "sources": []
+  },
+  {
+    "id": "speedup-troop-1m",
+    "name": "1m Troop Training Speedup",
+    "img": "/images/items/speedups/speedup-troop-1m.png",
+    "category": "Speedups",
+    "description": "Speeds up troop training by 1 minute.",
+    "sources": []
+  },
+  {
+    "id": "speedup-troop-5m",
+    "name": "5m Troop Training Speedup",
+    "img": "/images/items/speedups/speedup-troop-5m.png",
+    "category": "Speedups",
+    "description": "Speeds up troop training by 5 minutes.",
+    "sources": []
+  },
+  {
+    "id": "speedup-troop-1h",
+    "name": "1h Troop Training Speedup",
+    "img": "/images/items/speedups/speedup-troop-1h.png",
+    "category": "Speedups",
+    "description": "Speeds up troop training by 1 hour.",
+    "sources": []
+  },
+  {
+    "id": "speedup-research-1m",
+    "name": "1m Research Speedup",
+    "img": "/images/items/speedups/speedup-research-1m.png",
+    "category": "Speedups",
+    "description": "Speeds up research by 1 minute.",
+    "sources": []
+  },
+  {
+    "id": "speedup-research-5m",
+    "name": "5m Research Speedup",
+    "img": "/images/items/speedups/speedup-research-5m.png",
+    "category": "Speedups",
+    "description": "Speeds up research by 5 minutes.",
+    "sources": []
+  },
+  {
+    "id": "speedup-research-1h",
+    "name": "1h Research Speedup",
+    "img": "/images/items/speedups/speedup-research-1h.png",
+    "category": "Speedups",
+    "description": "Speeds up research by 1 hour.",
+    "sources": []
+  },
+  {
+    "id": "speedup-learning-1m",
+    "name": "1m Learning Speedup",
+    "img": "/images/items/speedups/speedup-learning-1m.png",
+    "category": "Speedups",
+    "description": "Speeds up learning by 1 minute.",
+    "sources": []
+  },
+  {
+    "id": "speedup-learning-5m",
+    "name": "5m Learning Speedup",
+    "img": "/images/items/speedups/speedup-learning-5m.png",
+    "category": "Speedups",
+    "description": "Speeds up learning by 5 minutes.",
+    "sources": []
+  },
+  {
+    "id": "speedup-learning-1h",
+    "name": "1h Learning Speedup",
+    "img": "/images/items/speedups/speedup-learning-1h.png",
+    "category": "Speedups",
+    "description": "Speeds up learning by 1 hour.",
+    "sources": []
+  },
+  {
+    "id": "speedup-learning-3h",
+    "name": "3h Learning Speedup",
+    "img": "/images/items/speedups/speedup-learning-3h.png",
+    "category": "Speedups",
+    "description": "Speeds up learning by 3 hours.",
+    "sources": []
+  },
+  {
+    "id": "speedup-healing-1m",
+    "name": "1m Troop Healing Speedup",
+    "img": "/images/items/speedups/speedup-healing-1m.png",
+    "category": "Speedups",
+    "description": "Speeds up troop healing by 1 minute.",
+    "sources": []
+  },
+  {
+    "id": "speedup-healing-5m",
+    "name": "5m Troop Healing Speedup",
+    "img": "/images/items/speedups/speedup-healing-5m.png",
+    "category": "Speedups",
+    "description": "Speeds up troop healing by 5 minutes.",
+    "sources": []
+  },
+  {
+    "id": "speedup-healing-1h",
+    "name": "1h Troop Healing Speedup",
+    "img": "/images/items/speedups/speedup-healing-1h.png",
+    "category": "Speedups",
+    "description": "Speeds up troop healing by 1 hour.",
+    "sources": []
+  },
+  {
+    "id": "triumph-of-tyrant",
+    "name": "Triumph of Tyrant",
+    "img": "/images/items/triumph-of-tyrant.png",
+    "category": "Event",
+    "description": "A symbol of supreme prestige awarded to the top Chief who dominates the capital for the longest time, granting 5 Honor Points. You can view it on your Chief Profile.",
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "glory-of-kings",
+    "name": "Glory of Kings",
+    "img": "/images/items/glory-of-kings.png",
+    "category": "Event",
+    "description": "A symbol of superiority and excellence awarded to the top 2-3 Chiefs who dominate the capital for the longest time, granting 2 Honor Points. You can view it on your Chief Profile.",
+    "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "trail-of-heroes",
+    "name": "Trail of Heroes",
+    "img": "/images/items/trail-of-heroes.png",
+    "category": "Event",
+    "description": "A symbol of strength and courage awarded to the top 4-10 Chiefs who dominate the capital for the longest time, granting 1 Honor Point. You can view it on your Chief Profile.",
+    "sources": ["Frostdragon Tyrant"]
   }
 ]

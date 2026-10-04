@@ -1,4 +1,6 @@
 import { ItemQuery, items } from '@/modules/items';
+import { existsSync } from 'fs';
+import { join } from 'path';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('items', () => items());
@@ -21,8 +23,8 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 226 items across 10 categories', () => {
-    expect(items().count()).toBe(226);
+  it('tracks 250 items across 11 categories', () => {
+    expect(items().count()).toBe(250);
     expect(items().byCategory('Hero Items').count()).toBe(10);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
@@ -32,7 +34,8 @@ describe('Item catalog', () => {
     expect(items().byCategory('Experts').count()).toBe(16);
     expect(items().byCategory('Teleporter').count()).toBe(4);
     expect(items().byCategory('Others').count()).toBe(40);
-    expect(items().byCategory('Event').count()).toBe(55);
+    expect(items().byCategory('Event').count()).toBe(58);
+    expect(items().byCategory('Speedups').count()).toBe(21);
   });
 
   it('resolves items tagged under both Chest and another tab to Chest', () => {
@@ -68,5 +71,26 @@ describe('Item catalog', () => {
     const resourceChest = items().find('ressource-chest')!;
     expect(resourceChest.name).toBe('Resource Chest');
     expect(resourceChest.description).toBeDefined();
+  });
+
+  it('has an icon file for every Speedups item', () => {
+    items()
+      .byCategory('Speedups')
+      .get()
+      .forEach((item) => expect(existsSync(join(__dirname, '../..', item.img))).toBe(true));
+  });
+
+  it('names speedups by duration and type', () => {
+    const speedup = items().find('speedup-general-5m')!;
+    expect(speedup.name).toBe('5m General Speedup');
+    expect(items().find('speedup-healing-1h')!.name).toBe('1h Troop Healing Speedup');
+  });
+
+  it('has the three Frostdragon Tyrant trophies with icon files', () => {
+    ['triumph-of-tyrant', 'glory-of-kings', 'trail-of-heroes'].forEach((id) => {
+      const trophy = items().find(id)!;
+      expect(trophy.category).toBe('Event');
+      expect(existsSync(join(__dirname, '../..', trophy.img))).toBe(true);
+    });
   });
 });
