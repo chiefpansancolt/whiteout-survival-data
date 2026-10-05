@@ -11757,6 +11757,7 @@
     "id": "molly",
     "name": "Molly",
     "img": "/images/heroes/Molly/Molly.png",
+    "shardImg": "/images/heroes/Molly/Molly-Shard.png",
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -12591,6 +12592,7 @@
     "id": "zinman",
     "name": "Zinman",
     "img": "/images/heroes/Zinman/Zinman.png",
+    "shardImg": "/images/heroes/Zinman/Zinman-Shard.png",
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Growth",
@@ -13423,6 +13425,7 @@
     "id": "flint",
     "name": "Flint",
     "img": "/images/heroes/Flint/Flint.png",
+    "shardImg": "/images/heroes/Flint/Flint-Shard.png",
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -14253,6 +14256,7 @@
     "id": "philly",
     "name": "Philly",
     "img": "/images/heroes/Philly/Philly.png",
+    "shardImg": "/images/heroes/Philly/Philly-Shard.png",
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -15085,6 +15089,7 @@
     "id": "alonso",
     "name": "Alonso",
     "img": "/images/heroes/Alonso/Alonso.png",
+    "shardImg": "/images/heroes/Alonso/Alonso-Shard.png",
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Combat",
@@ -15916,6 +15921,7 @@
     "id": "logan",
     "name": "Logan",
     "img": "/images/heroes/Logan/Logan.png",
+    "shardImg": "/images/heroes/Logan/Logan-Shard.png",
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -19242,6 +19248,7 @@
     "id": "reina",
     "name": "Reina",
     "img": "/images/heroes/Reina/Reina.jpg",
+    "shardImg": "/images/heroes/Reina/Reina-Shard.png",
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -22569,6 +22576,7 @@
     "id": "gwen",
     "name": "Gwen",
     "img": "/images/heroes/Gwen/Gwen.jpg",
+    "shardImg": "/images/heroes/Gwen/Gwen-Shard.png",
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Combat",
@@ -23401,6 +23409,7 @@
     "id": "wu-ming",
     "name": "Wu Ming",
     "img": "/images/heroes/WuMing/WuMing.jpg",
+    "shardImg": "/images/heroes/WuMing/WuMing-Shard.png",
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -26729,6 +26738,7 @@
     "id": "gordon",
     "name": "Gordon",
     "img": "/images/heroes/Gordon/Gordon.jpg",
+    "shardImg": "/images/heroes/Gordon/Gordon-Shard.png",
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -30055,6 +30065,7 @@
     "id": "hendrik",
     "name": "Hendrik",
     "img": "/images/heroes/Hendrik/Hendrik.jpg",
+    "shardImg": "/images/heroes/Hendrik/Hendrik-Shard.png",
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Combat",
@@ -30886,6 +30897,7 @@
     "id": "magnus",
     "name": "Magnus",
     "img": "/images/heroes/Magnus/Magnus.jpg",
+    "shardImg": "/images/heroes/Magnus/Magnus-Shard.png",
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -53619,7 +53631,7 @@
       ${weaponSection}
 
       <div class="section">
-        <h3>Shard Costs</h3>
+        <h3>${hero.shardImg ? `<img src="..${hero.shardImg}" alt="" style="width:28px;height:28px;vertical-align:middle;margin-right:8px;border-radius:6px;">` : ''}Shard Costs</h3>
         ${shardCostsTable(hero.shardCosts)}
       </div>
 

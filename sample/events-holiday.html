@@ -503,6 +503,7 @@
     if (event.zones) card.append(section('Zones', zonesTable(event.zones)));
     if (event.refreshes) card.append(section('Refreshes', refreshesTable(event.refreshes)));
     if (event.shop) card.append(section('Shop', shopTable(event.shop, event)));
+    (event.shops ?? []).forEach((shop) => card.append(section(shop.name, shopTable(shop.offers, event))));
     if (event.missions) card.append(section('Missions', missionsTable(event.missions, event.missionPointsLabel)));
     if (event.tiers) card.append(tiersSection(event));
     if (event.allianceRankings) card.append(section(event.allianceRankingUpdates ? 'Alliance rewards (first list)' : 'Alliance rewards', rankingTable(event.allianceRankings, 'Alliance rank')));
