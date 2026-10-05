@@ -9,6 +9,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- `calculateSvs()`: a State of Power score calculator. It reads the scoring lists of the
+  `svs-state-of-power` event and returns the points for each day, each phase, and the whole event,
+  with Valeria's Well Prepared bonus when `valeriaLevel` is set. The sample page
+  `sample/calculator-svs.html` is a plug-and-play version, linked from a new Calculators section on
+  the sample index.
+- `experts()`: Valeria's Well Prepared skill now has a `progressions` entry with its Preparation
+  Phase point gain, 2% for each level up to 20%.
 - `buildings()`: every building's full upgrade progression — Furnace, Embassy, Research Center,
   Command Center, Infantry/Marksman/Lancer Camp, War Academy, Infirmary, Storehouse, Barricade,
   Hunter's Hut, Sawmill, Coal Mine, Iron Mine, Clinic, Cookhouse, and Shelter.

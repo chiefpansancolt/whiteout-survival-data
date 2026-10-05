@@ -759,6 +759,38 @@ Shining City Pack, from the wiki text. Their shops and packs are not loaded. The
 State Merger (97 Pioneering Praises missions with their rewards and the five chests), State
 Transfer, Vault of Enigma, and Tundra Star.
 
+### 🧮 Calculators
+
+Calculators are plain functions, not query builders. They read their numbers from the package data,
+so a data fix changes the result without any code change.
+
+| Function         | Description                                                          |
+| ---------------- | -------------------------------------------------------------------- |
+| `calculateSvs()` | State of Power scores for each day and the whole event, with Valeria |
+
+`calculateSvs(usage, options)` takes how many times each scoring action was done, as counts by day
+id and then by action text from the `svs-state-of-power` event, and returns the base points, the
+Valeria bonus, and the total for every day, for the Preparation Phase, for the Battle Phase, and for
+the whole event. `options.valeriaLevel` (1 to 10) turns on Valeria's Well Prepared skill, which adds
+2% for each level (read from the `progressions` of that skill) to the points of days 1 to 5. The
+bonus of a day is rounded to a whole number and never applies to the Battle Phase. A day or action
+that the event does not have, a negative count, or a level outside 1 to 10 throws an error.
+
+```ts
+import { calculateSvs } from "whiteout-survival-data";
+
+const result = calculateSvs(
+  { "4": { "Use 1 Mithril": 3 }, Battle: { "Kill 1 Lv. 11 enemy Troop.": 200 } },
+  { valeriaLevel: 10 },
+);
+result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 432,000 Preparation points
+```
+
+The sample page `sample/calculator-svs.html` is a free plug-and-play version with the same math. It
+saves nothing.
+
+---
+
 ### 🎯 Event Buffs
 
 | Module    | Factory       | Items | Description                                                    |
