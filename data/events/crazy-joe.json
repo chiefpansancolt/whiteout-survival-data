@@ -557,6 +557,1102 @@
       ]
     }
   ],
+  "allianceRankingUpdates": [
+    {
+      "name": "After the server update",
+      "note": "A later reward list for the same 10 ranks, seen in game after a server update. The first list above is the original version.",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 3
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 6
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 600
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 2
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 6
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 525
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 1
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 5
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 460
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "4",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 4
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 395
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "groupRanking": "5",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 4
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 330
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 3
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 265
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "groupRanking": "7",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 2
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 200
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 14
+            }
+          ]
+        },
+        {
+          "groupRanking": "8",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 2
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 130
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "groupRanking": "9",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 2
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 100
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "10",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 1
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 80
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Personal ranking",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 13
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 265
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 26500
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 400
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 12
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 240
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 24000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 385
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 11
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 225
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 22500
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 370
+            }
+          ]
+        },
+        {
+          "groupRanking": "4",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 9
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 210
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 21000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 345
+            }
+          ]
+        },
+        {
+          "groupRanking": "5",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 8
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 210
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 21000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 330
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 7
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 210
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 21000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 320
+            }
+          ]
+        },
+        {
+          "groupRanking": "7",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 7
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 185
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 18500
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 315
+            }
+          ]
+        },
+        {
+          "groupRanking": "8",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 6
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 185
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 18500
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 305
+            }
+          ]
+        },
+        {
+          "groupRanking": "9",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 6
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 185
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 18500
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 300
+            }
+          ]
+        },
+        {
+          "groupRanking": "10",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 4
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 185
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 18500
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 290
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-15",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 4
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 170
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 17000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 265
+            }
+          ]
+        },
+        {
+          "groupRanking": "16-20",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 3
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 160
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 16000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 240
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-25",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 3
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 130
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 13000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "groupRanking": "26-50",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 2
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 120
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 12000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 160
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 2
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 95
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 9500
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 130
+            }
+          ]
+        },
+        {
+          "groupRanking": "101-150",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 1
+            },
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 80
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 8000
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 115
+            }
+          ]
+        },
+        {
+          "groupRanking": "151-200",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 65
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 6500
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "groupRanking": "201-300",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 52
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 5200
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "groupRanking": "301-400",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 32
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 3200
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 55
+            }
+          ]
+        },
+        {
+          "groupRanking": "401-500",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 13
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 1300
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "501-1000",
+          "rewards": [
+            {
+              "name": "Polishing Solution",
+              "itemId": "polishing-solution",
+              "amount": 7
+            },
+            {
+              "name": "Hardened Alloy",
+              "itemId": "hardened-alloy",
+              "amount": 700
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 15
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pointLevels": {
+    "personalIcon": "/images/events/crazy-joe/personal-defense-points.png",
+    "allianceIcon": "/images/events/crazy-joe/alliance-defense-points.png",
+    "levels": [
+      {
+        "level": 1,
+        "personalPoints": 3000,
+        "alliancePoints": 300000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 2000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "personalPoints": 6000,
+        "alliancePoints": 900000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 3000
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "personalPoints": 12000,
+        "alliancePoints": 2400000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "personalPoints": 18000,
+        "alliancePoints": 4500000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 5000
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "personalPoints": 30000,
+        "alliancePoints": 9000000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 6000
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "personalPoints": 40000,
+        "alliancePoints": 12000000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 7000
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "personalPoints": 50000,
+        "alliancePoints": 15000000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 8000
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "personalPoints": 60000,
+        "alliancePoints": 18000000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 9000
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "personalPoints": 70000,
+        "alliancePoints": 21000000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 10000
+          }
+        ]
+      },
+      {
+        "level": 10,
+        "personalPoints": 80000,
+        "alliancePoints": 24000000,
+        "rewards": [
+          {
+            "name": "Alliance Token",
+            "itemId": "alliance-token",
+            "amount": 11000
+          }
+        ]
+      },
+      {
+        "level": 11,
+        "personalPoints": 100000,
+        "alliancePoints": 27000000,
+        "rewards": [
+          {
+            "name": "Polishing Solution",
+            "itemId": "polishing-solution",
+            "amount": 2
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "personalPoints": 150000,
+        "alliancePoints": 30000000,
+        "rewards": [
+          {
+            "name": "Hardened Alloy",
+            "itemId": "hardened-alloy",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "personalPoints": 200000,
+        "alliancePoints": 33000000,
+        "rewards": [
+          {
+            "name": "Design Plans",
+            "itemId": "design-plans",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "personalPoints": 300000,
+        "alliancePoints": 36000000,
+        "rewards": [
+          {
+            "name": "Polishing Solution",
+            "itemId": "polishing-solution",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "personalPoints": 400000,
+        "alliancePoints": 39000000,
+        "rewards": [
+          {
+            "name": "Hardened Alloy",
+            "itemId": "hardened-alloy",
+            "amount": 300
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "personalPoints": 600000,
+        "alliancePoints": 42000000,
+        "rewards": [
+          {
+            "name": "Design Plans",
+            "itemId": "design-plans",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "personalPoints": 800000,
+        "alliancePoints": 45000000,
+        "rewards": [
+          {
+            "name": "Polishing Solution",
+            "itemId": "polishing-solution",
+            "amount": 5
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "personalPoints": 1000000,
+        "alliancePoints": 48000000,
+        "rewards": [
+          {
+            "name": "Hardened Alloy",
+            "itemId": "hardened-alloy",
+            "amount": 500
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "personalPoints": 1500000,
+        "alliancePoints": 51000000,
+        "rewards": [
+          {
+            "name": "Design Plans",
+            "itemId": "design-plans",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "personalPoints": 2000000,
+        "alliancePoints": 54000000,
+        "rewards": [
+          {
+            "name": "Chief Gear Materials Chest",
+            "itemId": "chief-gear-materials-chest",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "level": 21,
+        "personalPoints": 2300000,
+        "alliancePoints": 57000000,
+        "rewards": [
+          {
+            "name": "Polishing Solution",
+            "itemId": "polishing-solution",
+            "amount": 5
+          }
+        ]
+      },
+      {
+        "level": 22,
+        "personalPoints": 2600000,
+        "alliancePoints": 60000000,
+        "rewards": [
+          {
+            "name": "Hardened Alloy",
+            "itemId": "hardened-alloy",
+            "amount": 500
+          }
+        ]
+      },
+      {
+        "level": 23,
+        "personalPoints": 2900000,
+        "alliancePoints": 63000000,
+        "rewards": [
+          {
+            "name": "Design Plans",
+            "itemId": "design-plans",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "level": 24,
+        "personalPoints": 3200000,
+        "alliancePoints": 66000000,
+        "rewards": [
+          {
+            "name": "Polishing Solution",
+            "itemId": "polishing-solution",
+            "amount": 5
+          }
+        ]
+      },
+      {
+        "level": 25,
+        "personalPoints": 3500000,
+        "alliancePoints": 69000000,
+        "rewards": [
+          {
+            "name": "Hardened Alloy",
+            "itemId": "hardened-alloy",
+            "amount": 500
+          }
+        ]
+      },
+      {
+        "level": 26,
+        "personalPoints": 3800000,
+        "alliancePoints": 72000000,
+        "rewards": [
+          {
+            "name": "Design Plans",
+            "itemId": "design-plans",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "level": 27,
+        "personalPoints": 4100000,
+        "alliancePoints": 75000000,
+        "rewards": [
+          {
+            "name": "Polishing Solution",
+            "itemId": "polishing-solution",
+            "amount": 5
+          }
+        ]
+      },
+      {
+        "level": 28,
+        "personalPoints": 4400000,
+        "alliancePoints": 78000000,
+        "rewards": [
+          {
+            "name": "Hardened Alloy",
+            "itemId": "hardened-alloy",
+            "amount": 500
+          }
+        ]
+      },
+      {
+        "level": 29,
+        "personalPoints": 4700000,
+        "alliancePoints": 81000000,
+        "rewards": [
+          {
+            "name": "Design Plans",
+            "itemId": "design-plans",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "level": 30,
+        "personalPoints": 5000000,
+        "alliancePoints": 84000000,
+        "rewards": [
+          {
+            "name": "Chief Gear Materials Chest",
+            "itemId": "chief-gear-materials-chest",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
   "rewards": [
     {
       "name": "Personal rewards by personal point milestones and state ranking",
@@ -565,6 +1661,10 @@
     {
       "name": "Alliance rewards",
       "note": "Distributed the next day at 10 UTC"
+    },
+    {
+      "name": "Baldur's Bounty",
+      "note": "Claim 1 Baldur's Bounty for every 200,000 personal defense points, up to 6 claims. The chest's contents are not shown in the game screen."
     }
   ],
   "tips": [
@@ -574,7 +1674,8 @@
     "Send marches to friends with few reinforcements to gain more personal points.",
     "Do not heal injured troops, so that internal troops do not steal kills from reinforcements.",
     "Make sure reinforced friends have sent their own troops away to prevent kill stealing.",
-    "Activate all pets and buffs for more kills and army capacity."
+    "Activate all pets and buffs for more kills and army capacity.",
+    "A defense point level needs both its personal defense points and its alliance defense points. Personal defense points are the blue coin and alliance defense points are the gold coin."
   ],
   "eventBuffId": "crazy-joe"
 }

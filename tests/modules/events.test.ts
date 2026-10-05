@@ -121,6 +121,8 @@ describe('Events data', () => {
       .flatMap((e) => [
         ...(e.rewards ?? []),
         ...(e.allianceRankings ?? []).flatMap((r) => r.rewards),
+        ...(e.allianceRankingUpdates ?? []).flatMap((u) => u.rankings).flatMap((r) => r.rewards),
+        ...(e.pointLevels?.levels ?? []).flatMap((l) => l.rewards),
         ...(e.days ?? [])
           .flatMap((d) => [...(d.milestones ?? []), ...(d.allianceMilestones ?? [])])
           .flatMap((m) => m.rewards ?? []),
@@ -690,5 +692,72 @@ describe('Events data', () => {
     expect(winners[2].rewards.map((r) => r.amount)).toEqual([5, 2000, 10, 100, 10]);
     expect(winners[3].rewards[3]).toMatchObject({ itemId: 'march-accelerator-i' });
     expect(winners[4].rewards.map((r) => r.amount)).toEqual([15, 500, 1, 1, 75]);
+  });
+
+  it('keeps the first Crazy Joe alliance reward list and adds the updated list', () => {
+    const joe = events().find('crazy-joe')!;
+    expect(joe.allianceRankings![0].rewards.map((r) => r.amount)).toEqual([
+      5, 450, 320000, 320000, 64000, 16000,
+    ]);
+    const [update] = joe.allianceRankingUpdates!;
+    expect(update.name).toBe('After the server update');
+    expect(update.rankings.map((r) => r.groupRanking)).toEqual(
+      Array.from({ length: 10 }, (_, i) => String(i + 1)),
+    );
+    expect(update.rankings[0].rewards.map((r) => [r.name, r.amount])).toEqual([
+      ['Design Plans', 3],
+      ['Polishing Solution', 6],
+      ['Hardened Alloy', 600],
+      ['Lv.2 Custom Resource Chest', 40],
+    ]);
+    expect(update.rankings[3].rewards.map((r) => r.amount)).toEqual([4, 395, 25]);
+    expect(update.rankings[9].rewards.map((r) => r.amount)).toEqual([1, 80, 8]);
+  });
+
+  it('lists Crazy Joe personal ranking rewards for 21 rank groups', () => {
+    const [ranking] = events().find('crazy-joe')!.personalRankings!;
+    expect(ranking.basedOn).toBe('Personal ranking');
+    expect(ranking.rankings.map((r) => r.groupRanking)).toEqual([
+      ...Array.from({ length: 10 }, (_, i) => String(i + 1)),
+      '11-15',
+      '16-20',
+      '21-25',
+      '26-50',
+      '51-100',
+      '101-150',
+      '151-200',
+      '201-300',
+      '301-400',
+      '401-500',
+      '501-1000',
+    ]);
+    expect(ranking.rankings[0].rewards.map((r) => r.amount)).toEqual([13, 265, 26500, 400]);
+    expect(ranking.rankings[15].rewards.map((r) => r.amount)).toEqual([1, 80, 8000, 115]);
+    expect(ranking.rankings[16].rewards.map((r) => r.name)).not.toContain('Design Plans');
+    expect(ranking.rankings[20].rewards.map((r) => [r.name, r.amount])).toEqual([
+      ['Polishing Solution', 7],
+      ['Hardened Alloy', 700],
+      ['Lv.2 Custom Resource Chest', 15],
+    ]);
+  });
+
+  it('lists 30 Crazy Joe defense point levels with personal and alliance points', () => {
+    const { levels, personalIcon, allianceIcon } = events().find('crazy-joe')!.pointLevels!;
+    expect(levels.map((l) => l.level)).toEqual(Array.from({ length: 30 }, (_, i) => i + 1));
+    expect(levels[0]).toEqual({
+      level: 1,
+      personalPoints: 3000,
+      alliancePoints: 300000,
+      rewards: [{ name: 'Alliance Token', itemId: 'alliance-token', amount: 2000 }],
+    });
+    expect(levels[19].rewards[0]).toMatchObject({ itemId: 'chief-gear-materials-chest' });
+    expect(levels[29]).toMatchObject({ personalPoints: 5000000, alliancePoints: 84000000 });
+    levels.slice(1).forEach((l, i) => {
+      expect(l.personalPoints).toBeGreaterThan(levels[i].personalPoints);
+      expect(l.alliancePoints).toBeGreaterThan(levels[i].alliancePoints);
+    });
+    [personalIcon, allianceIcon].forEach((icon) =>
+      expect(existsSync(join(__dirname, '../..', icon))).toBe(true),
+    );
   });
 });

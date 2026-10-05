@@ -91,6 +91,26 @@ export interface GameEventDay {
   note?: string;
 }
 
+export interface GameEventRankingVersion {
+  name: string;
+  note?: string;
+  rankings: GameEventRanking[];
+}
+
+export interface GameEventPointLevel {
+  level: number;
+  personalPoints: number;
+  alliancePoints: number;
+  rewards: GameEventReward[];
+}
+
+/** Levels unlocked by reaching both a personal point total and an alliance point total. */
+export interface GameEventPointLevels {
+  personalIcon: string;
+  allianceIcon: string;
+  levels: GameEventPointLevel[];
+}
+
 export interface GameEvent {
   id: string;
   name: string;
@@ -104,6 +124,10 @@ export interface GameEvent {
   tiers?: GameEventTier[];
   /** Alliance rewards by the placement of the alliance's first legion. */
   allianceRankings?: GameEventRanking[];
+  /** Later reward lists for `allianceRankings`, in the order the game replaced them. */
+  allianceRankingUpdates?: GameEventRankingVersion[];
+  /** Reward levels that need both personal and alliance points, such as Crazy Joe defense points. */
+  pointLevels?: GameEventPointLevels;
   /** Personal rewards by placement, one table for each thing the placement is based on. */
   personalRankings?: GameEventRankingTable[];
   phases?: GameEventPhase[];
