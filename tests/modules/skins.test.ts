@@ -21,12 +21,12 @@ describe('SkinQuery', () => {
 });
 
 describe('Skin catalog', () => {
-  it('tracks 189 skins across 7 skin types', () => {
-    expect(skins().count()).toBe(189);
+  it('tracks 190 skins across 7 skin types', () => {
+    expect(skins().count()).toBe(190);
     expect(skins().bySkinType('Avatar Frame').count()).toBe(69);
     expect(skins().bySkinType('Nameplate').count()).toBe(20);
     expect(skins().bySkinType('March Skin').count()).toBe(48);
-    expect(skins().bySkinType('City Skin').count()).toBe(35);
+    expect(skins().bySkinType('City Skin').count()).toBe(36);
     expect(skins().bySkinType('Teleport Skin').count()).toBe(5);
     expect(skins().bySkinType('Name Card').count()).toBe(10);
     expect(skins().bySkinType('Chief Profile').count()).toBe(2);

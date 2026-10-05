@@ -2572,5 +2572,12 @@
     "category": "Event",
     "description": "A symbol of strength and courage awarded to the top 4-10 Chiefs who dominate the capital for the longest time, granting 1 Honor Point. You can view it on your Chief Profile.",
     "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "battle-commendation-custom-chest-gen-hero",
+    "name": "Battle Commendation Custom Chest - Gen Hero",
+    "img": "/images/items/battle-commendation-custom-chest-gen-hero.png",
+    "category": "Chest",
+    "sources": ["State of Power"]
   }
 ]

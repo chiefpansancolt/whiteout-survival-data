@@ -286,8 +286,11 @@ describe('Decorations', () => {
       .filter((d) => d.img !== undefined);
     expect(withImg.map((d) => d.id)).toEqual([
       'cannon',
+      'conquering-sword',
       'dragon-pagoda',
+      'giant-horn',
       'serpent-sanctuary',
+      'tundra-truck',
       'war-chariot',
     ]);
     withImg.forEach((d) => expect(existsSync(join(__dirname, '../..', d.img!))).toBe(true));

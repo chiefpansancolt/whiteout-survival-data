@@ -2118,5 +2118,13 @@
       "value": "+2%"
     },
     "sources": ["Silver Shell Event Shop"]
+  },
+  {
+    "id": "svs-battle-city-skin",
+    "name": "7-day City Skin",
+    "img": "/images/skins/svs-battle-city-skin.png",
+    "skinType": "City Skin",
+    "description": "A 7-day City Skin given in the State of Power battle phase personal ranking, ranks 1 to 50. The skin has no name on the wiki.",
+    "sources": ["State of Power"]
   }
 ]
