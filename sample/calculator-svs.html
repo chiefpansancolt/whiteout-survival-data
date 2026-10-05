@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SvS Score Calculator</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --good: #52d17a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+    max-width: 980px;
+  }
+  a { color: var(--accent); }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 0.85rem; margin: 24px 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; line-height: 1.45; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+  .controls label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  select, input[type="number"] {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+  input[type="number"] { width: 110px; text-align: right; }
+  select:disabled { opacity: 0.45; }
+  button {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .bonus-note { color: var(--good); font-size: 0.85rem; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 10px; }
+  .pill {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .pill.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  th, td { padding: 7px 10px; border-bottom: 1px solid var(--panel-border); text-align: left; vertical-align: middle; }
+  th { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+  td.bonus { color: var(--good); }
+  .scroll { overflow-x: auto; }
+  .note { color: var(--text-dim); font-size: 0.8rem; margin: 8px 0 0; line-height: 1.4; }
+</style>
+</head>
+<body>
+  <p><a href="index.html">&larr; All sample pages</a></p>
+  <h1>SvS Score Calculator</h1>
+  <p class="sub">Enter how many times you do each action on each day of State of Power. The page adds up the points per day and for the whole event. Nothing is saved, and reloading the page clears your numbers.</p>
+
+  <div class="card">
+    <div class="controls">
+      <label><input type="checkbox" id="valeria-on" /> Use Valeria (Well Prepared)</label>
+      <label>Skill level
+        <select id="valeria-level" disabled></select>
+      </label>
+      <span class="bonus-note" id="bonus-note"></span>
+      <button type="button" id="reset">Reset all numbers</button>
+    </div>
+    <p class="note">Valeria's Well Prepared adds 2% per level to the points of every Preparation Phase day (days 1 to 5), up to 20% at level 10. It does not change the Battle Phase.</p>
+  </div>
+
+  <div class="pills" id="pills"></div>
+  <div class="card" id="day-card"></div>
+
+  <h2>Whole event</h2>
+  <div class="card scroll" id="event-card"></div>
+
+<script id="svs-data" type="application/json">{"days":[{"day":"1","name":"City Construction","note":"","scoring":[{"action":"Raise Chief Charm max score by 1","points":70},{"action":"Use 1 Refined Fire Crystal to upgrade buildings","points":30000},{"action":"Use 1 Fire Crystal to upgrade buildings","points":2000},{"action":"Use 1 Fire Crystal Shard for Research","points":1000},{"action":"Use 1m of Speedups for Construction (Gems Speedups excluded)","points":30},{"action":"Use 1m of Speedups for Research (Gems Speedups excluded)","points":30},{"action":"Use 1m of Speedups for Troop Training / Promotion (Gems Speedups excluded)","points":30},{"action":"Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)","points":30}]},{"day":"2","name":"Basic Skills Up","note":"","scoring":[{"action":"Use 1 Refined Fire Crystal to upgrade buildings","points":30000},{"action":"Use 1 Fire Crystal to upgrade buildings","points":2000},{"action":"Use 1 Fire Crystal Shard for Research","points":1000},{"action":"Use 1m of Speedups for Construction (Gems Speedups excluded)","points":30},{"action":"Use 1m of Speedups for Research (Gems Speedups excluded)","points":30},{"action":"Use 1m of Speedups for Troop Training / Promotion (Gems Speedups excluded)","points":30},{"action":"Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)","points":30},{"action":"Play Lucky Wheel 1 times","points":8000},{"action":"Use 1 Rare Hero Shard to ascend Heroes","points":350},{"action":"Use 1 Epic Hero Shard to ascend Heroes","points":1220},{"action":"Use 1 Mythic Hero Shard to ascend Heroes","points":3040},{"action":"Gather 1,000 Meat in the Wilderness","points":2},{"action":"Gather 1,000 Wood in the Wilderness","points":2},{"action":"Gather 200 Coal in the Wilderness","points":2},{"action":"Gather 50 Iron in the Wilderness","points":2},{"action":"Use any 1 Expert Sigil (excluding Common Sigils)","points":6000},{"action":"Use 1 Book of Knowledge","points":60}]},{"day":"3","name":"Beast Slay","note":"","scoring":[{"action":"Pet advancement score increases by 1","points":50},{"action":"Use 1 Advanced Wild Mark to refine pets","points":15000},{"action":"Use 1 Common Wild Mark to refine pets","points":1150},{"action":"Raise Chief Charm max score by 1","points":70},{"action":"Play Lucky Wheel 1 times","points":8000},{"action":"Use 1 Rare Hero Shard to ascend Heroes","points":350},{"action":"Use 1 Epic Hero Shard to ascend Heroes","points":1220},{"action":"Use 1 Mythic Hero Shard to ascend Heroes","points":3040},{"action":"Call Rally and hunt down 1 Polar Terror","points":30000},{"action":"Defeat 1 Lv. 1 to 10 Beast","points":9000},{"action":"Defeat 1 Lv. 11 to 15 Beast","points":9750},{"action":"Defeat 1 Lv. 16 to 20 Beast","points":10500},{"action":"Defeat 1 Lv. 20 to 25 Beast","points":11250},{"action":"Defeat 1 Lv. 26 to 30 Beast","points":12000},{"action":"Use any 1 Expert Sigil (excluding Common Sigils)","points":6000},{"action":"Use 1 Book of Knowledge","points":60}]},{"day":"4","name":"Hero Development","note":"","scoring":[{"action":"Raise Chief Charm max score by 1","points":70},{"action":"Use 1 Hero Gear Essence Stone","points":4000},{"action":"Use 1 Widget of any Hero Exclusive Gear","points":8000},{"action":"Use 1 Mithril","points":144000},{"action":"Train 1 Lv. 1 Troop","points":3},{"action":"Train 1 Lv. 2 Troop","points":4},{"action":"Train 1 Lv. 3 Troop","points":5},{"action":"Train 1 Lv. 4 Troop","points":8},{"action":"Train 1 Lv. 5 Troop","points":12},{"action":"Train 1 Lv. 6 Troop","points":18},{"action":"Train 1 Lv. 7 Troop","points":25},{"action":"Train 1 Lv. 8 Troop","points":35},{"action":"Train 1 Lv. 9 Troop","points":45},{"action":"Train 1 Lv. 10 Troop","points":60},{"action":"Train 1 Lv. 11 Troop","points":75},{"action":"Train 1 Lv. 12 Troop","points":94}]},{"day":"5","name":"Power Boost","note":"This stage runs 34 hours instead of 24 and ends at 10:00 UTC on Saturday, when the battle phase begins.","scoring":[{"action":"Pet advancement score increases by 1","points":50},{"action":"Use 1 Advanced Wild Mark to refine pets","points":15000},{"action":"Use 1 Common Wild Mark to refine pets","points":1150},{"action":"Use 1 Mithril","points":144000},{"action":"Raise max Chief Gear score by 1 (excluding Charm)","points":36},{"action":"Use 1 Hero Gear Essence Stone","points":4000},{"action":"Use 1 Widget of any Hero Exclusive Gear","points":8000},{"action":"Use 1 Refined Fire Crystal to upgrade buildings","points":30000},{"action":"Use 1 Fire Crystal to upgrade buildings","points":2000},{"action":"Use 1 Fire Crystal Shard for Research","points":1000},{"action":"Use 1m Speedups for Construction (Gems Speedups excluded)","points":30},{"action":"Use 1m Speedups for Research (Gems Speedups excluded)","points":30},{"action":"Use 1m Speedups for Troop Training / Promotion (Gems Speedups excluded)","points":30},{"action":"Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)","points":30}]},{"day":"Battle","name":"Battle Phase","note":"Kills and losses only score against Chiefs within 3 Furnace levels of yours. A rally uses the Furnace level of the rally captain.","scoring":[{"action":"Every 1,000 Power occupies Sunfire Castle or any Turret for 60 s","points":1},{"action":"Kill 1 Lv. 1 enemy Troop.","points":1},{"action":"Kill 1 Lv. 2 enemy Troop.","points":1},{"action":"Kill 1 Lv. 3 enemy Troop.","points":2},{"action":"Kill 1 Lv. 4 enemy Troop.","points":3},{"action":"Kill 1 Lv. 5 enemy Troop.","points":4},{"action":"Kill 1 Lv. 6 enemy Troop.","points":5},{"action":"Kill 1 Lv. 7 enemy Troop.","points":7},{"action":"Kill 1 Lv. 8 enemy Troop.","points":9},{"action":"Kill 1 Lv. 9 enemy Troop.","points":11},{"action":"Kill 1 Lv. 10 enemy Troop.","points":13},{"action":"Kill 1 Lv. 11 enemy Troop.","points":15},{"action":"Lost 1 Lv. 1 Troop in the battle with the opposing State.","points":1},{"action":"Lost 1 Lv. 2 Troop in the battle with the opposing State.","points":1},{"action":"Lost 1 Lv. 3 Troop in the battle with the opposing State.","points":2},{"action":"Lost 1 Lv. 4 Troop in the battle with the opposing State.","points":3},{"action":"Lost 1 Lv. 5 Troop in the battle with the opposing State.","points":4},{"action":"Lost 1 Lv. 6 Troop in the battle with the opposing State.","points":5},{"action":"Lost 1 Lv. 7 Troop in the battle with the opposing State.","points":7},{"action":"Lost 1 Lv. 8 Troop in the battle with the opposing State.","points":9},{"action":"Lost 1 Lv. 9 Troop in the battle with the opposing State.","points":11},{"action":"Lost 1 Lv. 10 Troop in the battle with the opposing State.","points":13},{"action":"Lost 1 Lv. 11 Troop in the battle with the opposing State.","points":15}]}],"valeriaPercents":[2,4,6,8,10,12,14,16,18,20]}</script>
+<script>
+(function () {
+  const DATA = JSON.parse(document.getElementById('svs-data').textContent);
+  const usage = {};
+  let activeDay = DATA.days[0].day;
+  const fmt = (n) => n.toLocaleString('en-US');
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function bonusPercent() {
+    const on = document.getElementById('valeria-on').checked;
+    if (!on) return 0;
+    const level = Number(document.getElementById('valeria-level').value);
+    return DATA.valeriaPercents[level - 1];
+  }
+
+  function count(day, action) {
+    return (usage[day] && usage[day][action]) || 0;
+  }
+
+  function calculate() {
+    const percent = bonusPercent();
+    const days = DATA.days.map((day) => {
+      const lines = day.scoring.map((s) => ({ action: s.action, points: s.points, count: count(day.day, s.action), subtotal: s.points * count(day.day, s.action) }));
+      const base = lines.reduce((sum, l) => sum + l.subtotal, 0);
+      const phase = day.day === 'Battle' ? 'battle' : 'preparation';
+      const bonus = phase === 'preparation' ? Math.round((base * percent) / 100) : 0;
+      return { day: day.day, name: day.name, phase, lines, base, bonus, total: base + bonus };
+    });
+    const sum = (list) => {
+      const base = list.reduce((s, d) => s + d.base, 0);
+      const bonus = list.reduce((s, d) => s + d.bonus, 0);
+      return { base, bonus, total: base + bonus };
+    };
+    return { percent, days, preparation: sum(days.filter((d) => d.phase === 'preparation')), battle: sum(days.filter((d) => d.phase === 'battle')), event: sum(days) };
+  }
+
+  function dayLabel(day) {
+    return /^\d/.test(day.day) ? `Day ${day.day}: ${day.name}` : day.name;
+  }
+
+  function renderPills() {
+    const pills = document.getElementById('pills');
+    pills.replaceChildren();
+    DATA.days.forEach((day) => {
+      const pill = el('button', `pill${day.day === activeDay ? ' active' : ''}`, dayLabel(day));
+      pill.type = 'button';
+      pill.addEventListener('click', () => { activeDay = day.day; render(); });
+      pills.append(pill);
+    });
+  }
+
+  function renderDay(result) {
+    const card = document.getElementById('day-card');
+    card.replaceChildren();
+    const day = result.days.find((d) => d.day === activeDay);
+    const source = DATA.days.find((d) => d.day === activeDay);
+    if (source.note) card.append(el('p', 'note', source.note));
+    const wrap = el('div', 'scroll');
+    const table = el('table');
+    const head = table.createTHead().insertRow();
+    [['Action', ''], ['Points each', 'num'], ['Times done', 'num'], ['Points', 'num']].forEach(([label, cls]) => head.append(el('th', cls, label)));
+    const body = table.createTBody();
+    const subtotals = [];
+    day.lines.forEach((line) => {
+      const row = body.insertRow();
+      row.insertCell().textContent = line.action;
+      row.insertCell().className = 'num';
+      row.cells[1].textContent = fmt(line.points);
+      const inputCell = row.insertCell();
+      inputCell.className = 'num';
+      const input = el('input');
+      input.type = 'number';
+      input.min = '0';
+      input.step = '1';
+      input.value = line.count === 0 ? '' : String(line.count);
+      input.placeholder = '0';
+      input.setAttribute('aria-label', line.action);
+      const subtotal = row.insertCell();
+      subtotal.className = 'num';
+      subtotal.textContent = fmt(line.subtotal);
+      subtotals.push(subtotal);
+      input.addEventListener('input', () => {
+        const value = Math.max(0, Math.floor(Number(input.value) || 0));
+        usage[activeDay] = usage[activeDay] || {};
+        usage[activeDay][line.action] = value;
+        renderSummaries();
+      });
+      inputCell.append(input);
+    });
+    const totals = [['Day total before Valeria', day.base, ''], ['Valeria bonus', day.bonus, 'bonus'], ['Day total', day.total, 'total']];
+    totals.forEach(([label, value, cls]) => {
+      const row = body.insertRow();
+      row.className = cls === 'total' ? 'total' : '';
+      const labelCell = row.insertCell();
+      labelCell.colSpan = 3;
+      labelCell.textContent = label;
+      const valueCell = row.insertCell();
+      valueCell.className = `num ${cls === 'bonus' ? 'bonus' : ''}`;
+      valueCell.textContent = fmt(value);
+      valueCell.dataset.role = label;
+    });
+    wrap.append(table);
+    card.append(wrap);
+  }
+
+  function renderEvent(result) {
+    const card = document.getElementById('event-card');
+    card.replaceChildren();
+    const table = el('table');
+    const head = table.createTHead().insertRow();
+    [['Day', ''], ['Points before Valeria', 'num'], ['Valeria bonus', 'num'], ['Total', 'num']].forEach(([label, cls]) => head.append(el('th', cls, label)));
+    const body = table.createTBody();
+    const addRow = (label, score, cls) => {
+      const row = body.insertRow();
+      if (cls) row.className = cls;
+      row.insertCell().textContent = label;
+      [score.base, score.bonus, score.total].forEach((value, i) => {
+        const cell = row.insertCell();
+        cell.className = `num${i === 1 ? ' bonus' : ''}`;
+        cell.textContent = fmt(value);
+      });
+    };
+    result.days.forEach((day) => addRow(dayLabel(day), day));
+    addRow('Preparation Phase (days 1 to 5)', result.preparation, 'total');
+    addRow('Battle Phase', result.battle, 'total');
+    addRow('Whole event', result.event, 'total');
+    card.append(table);
+  }
+
+  function renderSummaries() {
+    const result = calculate();
+    document.getElementById('bonus-note').textContent = result.percent > 0 ? `Valeria bonus: +${result.percent}% on Preparation days` : '';
+    renderEvent(result);
+    const current = result.days.find((d) => d.day === activeDay);
+    const card = document.getElementById('day-card');
+    const rows = card.querySelectorAll('tbody tr');
+    const lineCount = current.lines.length;
+    current.lines.forEach((line, i) => { rows[i].cells[3].textContent = fmt(line.subtotal); });
+    [current.base, current.bonus, current.total].forEach((value, i) => { rows[lineCount + i].cells[1].textContent = fmt(value); });
+  }
+
+  function render() {
+    renderPills();
+    renderDay(calculate());
+    renderSummaries();
+  }
+
+  const levelSelect = document.getElementById('valeria-level');
+  DATA.valeriaPercents.forEach((percent, i) => {
+    const option = el('option', '', `Level ${i + 1} (+${percent}%)`);
+    option.value = String(i + 1);
+    levelSelect.append(option);
+  });
+  levelSelect.value = String(DATA.valeriaPercents.length);
+  document.getElementById('valeria-on').addEventListener('change', (event) => { levelSelect.disabled = !event.target.checked; render(); });
+  levelSelect.addEventListener('change', render);
+  document.getElementById('reset').addEventListener('click', () => {
+    Object.keys(usage).forEach((day) => delete usage[day]);
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
