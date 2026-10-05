@@ -1,0 +1,15 @@
+{
+  "id": "vault-of-enigma",
+  "name": "Vault of Enigma",
+  "img": "/images/events/vault-of-enigma.png",
+  "category": "holiday",
+  "description": "A 5-day pack event. Buy one chest each day, and if you bought all 5 you can choose a reward at the end.",
+  "duration": "5 days",
+  "phases": [
+    {
+      "name": "Daily chests",
+      "description": "You must buy each chest every day. After 5 days, if you bought all 5 chests, you can choose one reward from those shown in the screenshot."
+    }
+  ],
+  "tips": ["The chest and reward lists are shown on the wiki only as images."]
+}

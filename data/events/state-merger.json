@@ -1,0 +1,3663 @@
+{
+  "id": "state-merger",
+  "name": "State Merger",
+  "img": "/images/events/state-merger.png",
+  "category": "solo",
+  "description": "When the countdown ends, all the states in a group merge into the state with the highest state code. Chiefs get Pioneering Points from missions to unlock chests, and alliances complete new monument missions.",
+  "frequency": "Irregular",
+  "duration": "5 days of Pioneering Praises missions",
+  "phases": [
+    {
+      "name": "Data adjustments",
+      "description": "City: teleported to a random place in the Icefield of the new state with a 24-hour Shield. Territory: the bonus expires and all alliance buildings are removed, with the resources refunded to the Alliance Storehouse. The Alliance HQ is ready at once in the new state. You can build 5 Alliance Banners at first, then unlock more: banners 6 to 10 take 2 hours each, 11 to 20 take 1 hour, 21 to 60 take 30 minutes, and 61 to 285 take 15 minutes. The old banner cap is not exceeded."
+    },
+    {
+      "name": "Facilities, strongholds, and fortresses",
+      "description": "All facilities become unoccupied when the countdown ends. All strongholds and fortresses become unoccupied once their occupation battles begin, and first occupation gives new rewards."
+    },
+    {
+      "name": "Castle battle and presidency",
+      "description": "Presidents and related posts become invalid and the Sunfire Castle Hall of Fame is cleared. A Castle Battle that Saturday decides the new President."
+    },
+    {
+      "name": "Other events",
+      "description": "State of Power: if it is held the week after the merge, the new state can take part. Foundry Battle and Canyon Clash: alliances that already have the right to take part keep it, and the next event is only for the top 20 alliances of the merged state. Hero Rally: rewards in your old state are settled at once, and a new season begins. With Path of Honor you get the unclaimed rewards of every tier. Without it you get the tiers you reached."
+    },
+    {
+      "name": "Names",
+      "description": "Duplicate alliance tags are reset, and R4 and R5 members can change the tag once for free. Duplicate alliance names and chief names get the state code added in front. Chiefs also get a free Chief Rename Card by mail."
+    }
+  ],
+  "missions": [
+    {
+      "group": "Day 1: Daily Login",
+      "name": "Log for 1 days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Lucky Wheel hero shard",
+          "amount": 10,
+          "note": "Shard of the current Lucky Wheel hero. Item not linked."
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Daily Login",
+      "name": "Log for 2 days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Daily Login",
+      "name": "Log for 3 days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Daily Login",
+      "name": "Log for 4 days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Daily Login",
+      "name": "Log for 5 days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Lighthouse Intel",
+      "name": "Carry Out 1 Intel Mission(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Lighthouse Intel",
+      "name": "Carry Out 5 Intel Mission(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Lighthouse Intel",
+      "name": "Carry Out 10 Intel Mission(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Lighthouse Intel",
+      "name": "Carry Out 20 Intel Mission(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Lighthouse Intel",
+      "name": "Carry Out 30 Intel Mission(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Lighthouse Intel",
+      "name": "Carry Out 50 Intel Mission(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Lighthouse Intel",
+      "name": "Carry Out 70 Intel Mission(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 500,
+          "note": "5 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Lighthouse Intel",
+      "name": "Carry Out 100 Intel Mission(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Defeat Beasts",
+      "name": "Defeat 5 Beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Defeat Beasts",
+      "name": "Defeat 10 Beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Defeat Beasts",
+      "name": "Defeat 20 Beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Defeat Beasts",
+      "name": "Defeat 30 Beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Defeat Beasts",
+      "name": "Defeat 40 Beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Defeat Beasts",
+      "name": "Defeat 60 Beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 3
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Defeat Beasts",
+      "name": "Defeat 80 Beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Energizing Potion",
+          "itemId": "energizing-potion",
+          "amount": 1
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Wilderness Rallies",
+      "name": "Call Rally and Hunt Down 1 Polar Teror(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Wilderness Rallies",
+      "name": "Call Rally and Hunt Down 3 Polar Teror(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Wilderness Rallies",
+      "name": "Call Rally and Hunt Down 6 Polar Teror(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Wilderness Rallies",
+      "name": "Call Rally and Hunt Down 10 Polar Teror(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Wilderness Rallies",
+      "name": "Call Rally and Hunt Down 15 Polar Teror(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Wilderness Rallies",
+      "name": "Call Rally and Hunt Down 20 Polar Teror(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 3
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Wilderness Rallies",
+      "name": "Call Rally and Hunt Down 25 Polar Teror(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Energizing Potion",
+          "itemId": "energizing-potion",
+          "amount": 1
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Contribution",
+      "name": "Make 20 Alliance Contribution(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Contribution",
+      "name": "Make 40 Alliance Contribution(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Contribution",
+      "name": "Make 60 Alliance Contribution(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Contribution",
+      "name": "Make 80 Alliance Contribution(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Contribution",
+      "name": "Make 100 Alliance Contribution(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Contribution",
+      "name": "Make 135 Alliance Contribution(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Contribution",
+      "name": "Make 160 Alliance Contribution(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 500,
+          "note": "5 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Help",
+      "name": "Take Part in Alliance Help 20 Time(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Help",
+      "name": "Take Part in Alliance Help 40 Time(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Help",
+      "name": "Take Part in Alliance Help 60 Time(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Help",
+      "name": "Take Part in Alliance Help 100 Time(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Help",
+      "name": "Take Part in Alliance Help 150 Time(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Alliance Help",
+      "name": "Take Part in Alliance Help 200 Time(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Spend Gems",
+      "name": "Use 100 Gem(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Healing Speedup",
+          "itemId": "speedup-healing-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Spend Gems",
+      "name": "Use 500 Gem(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Spend Gems",
+      "name": "Use 1,000 Gem(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Spend Gems",
+      "name": "Use 2,000 Gem(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Spend Gems",
+      "name": "Use 3,000 Gem(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Healing Speedup",
+          "itemId": "speedup-healing-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Spend Gems",
+      "name": "Use 4,000 Gem(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Tech Research",
+      "name": "Raise 5,000 Power Through Research",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Healing Speedup",
+          "itemId": "speedup-healing-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Tech Research",
+      "name": "Raise 10,000 Power Through Research",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Tech Research",
+      "name": "Raise 20,000 Power Through Research",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Tech Research",
+      "name": "Raise 40,000 Power Through Research",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Tech Research",
+      "name": "Raise 60,000 Power Through Research",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 500,
+          "note": "5 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Tech Research",
+      "name": "Raise 100,000 Power Through Research",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 1,000,000 Resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 2,000,000 Resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 5,000,000 Resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 10,000,000 Resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 15,000,000 Resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 20,000,000 Resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 30,000,000 Resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 500,
+          "note": "5 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Gift",
+      "name": "Claim 10 Alliance Gifts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Healing Speedup",
+          "itemId": "speedup-healing-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Gift",
+      "name": "Claim 20 Alliance Gifts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Gift",
+      "name": "Claim 30 Alliance Gifts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Gift",
+      "name": "Claim 40 Alliance Gifts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Gift",
+      "name": "Claim 50 Alliance Gifts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 500,
+          "note": "5 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Gift",
+      "name": "Claim 60 Alliance Gifts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant",
+      "name": "Do 5 Trades With Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant",
+      "name": "Do 10 Trades With Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant",
+      "name": "Do 15 Trades With Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant",
+      "name": "Do 20 Trades With Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant",
+      "name": "Do 25 Trades With Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant",
+      "name": "Do 30 Trades With Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant",
+      "name": "Do 40 Trades With Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Hero Development",
+      "name": "Recruit 5 Hero(es)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Healing Speedup",
+          "itemId": "speedup-healing-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Hero Development",
+      "name": "Recruit 10 Hero(es)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Hero Development",
+      "name": "Recruit 15 Hero(es)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Hero Development",
+      "name": "Recruit 20 Hero(es)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Hero Development",
+      "name": "Recruit 30 Hero(es)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 500,
+          "note": "5 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Hero Development",
+      "name": "Recruit 50 Hero(es)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 100m Of Any Speedups",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 100,
+          "note": "1 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 200m Of Any Speedups",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 100,
+          "note": "1 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 500m Of Any Speedups",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 200,
+          "note": "2 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 1,000m Of Any Speedups",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 200,
+          "note": "2 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 1,500m Of Any Speedups",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 300,
+          "note": "3 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 2,000m Of Any Speedups",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 500,
+          "note": "5 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 5,000 Power By Training/Promotion Troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 25,000 Power By Training/Promotion Troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 50,000 Power By Training/Promotion Troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 75,000 Power By Training/Promotion Troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 100,000 Power By Training/Promotion Troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 150,000 Power By Training/Promotion Troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 10
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 200,000 Power By Training/Promotion Troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 3 Online Reward(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Healing Speedup",
+          "itemId": "speedup-healing-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 5 Online Reward(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 50,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 10,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 10 Online Reward(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 75,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 15,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 4,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 15 Online Reward(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 20 Online Reward(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 500,
+          "note": "5 packs of 100"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 100,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 30 Online Reward(s)",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 150,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 30,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 7,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Sunset Banner: Your alliance builds 50 Alliance Banners before the countdown ends",
+      "points": 0
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Ogreslayer: Chiefs in the State slay 2,000 beasts of any level",
+      "points": 0
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Industry Heights: Your alliance occupies any 1 Lv. 1 or 2 Facility when the countdown ends",
+      "points": 0
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Fortress Avalon: Your alliance occupies any 1 Fortress or Stronghold when the countdown ends",
+      "points": 0
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Perihelion: Your alliance has full control of the Sunfire Castle before the countdown ends",
+      "points": 0
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Founderscape: Your alliance occupies any 1 Lv. 3 Facility when the countdown ends",
+      "points": 0
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Dominium: Your alliance occupies any 1 Lv. 4 Facility when the countdown ends",
+      "points": 0
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Grimbeast: Your alliance hunts Polar Terrors of any level 50 times when the countdown ends",
+      "points": 0
+    },
+    {
+      "group": "A New Beginning (alliance monument missions)",
+      "name": "Unity: Your alliance members make Alliance Contributions 2,000 times when the countdown ends",
+      "points": 0
+    }
+  ],
+  "missionPointsLabel": "Pioneering Points",
+  "tiers": [
+    {
+      "name": "Chest (5 Pioneering Points)",
+      "scoreTotal": 5,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Chest (20 Pioneering Points)",
+      "scoreTotal": 20,
+      "rewards": [
+        {
+          "name": "3h General Speedup",
+          "itemId": "speedup-general-3h",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Chest (40 Pioneering Points)",
+      "scoreTotal": 40,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 15
+        },
+        {
+          "name": "Gold key",
+          "itemId": "gold-key",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Chest (60 Pioneering Points)",
+      "scoreTotal": 60,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 2000,
+          "note": "Two 1,000 Gems pouches"
+        }
+      ]
+    },
+    {
+      "name": "Chest (80 Pioneering Points)",
+      "scoreTotal": 80,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 30
+        },
+        {
+          "name": "Mythic Exploration Skill Manual",
+          "itemId": "mythic-exploration-skill-manual",
+          "amount": 5
+        },
+        {
+          "name": "Mythic Expedition Skill Manual",
+          "itemId": "mythic-expedition-skill-manual",
+          "amount": 5
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "The Pioneering Praises missions run over 5 days: Day 1 Daily Login, Intel, and Beasts. Day 2 Rallies, Alliance Contribution, and Alliance Help. Day 3 Spend Gems, Research, and Gather Resources. Day 4 Alliance Gift, Nomadic Merchants, and Recruit Heroes. Day 5 Use Speedups, Training Troops, and Online Rewards.",
+    "Each mission gives 1 Pioneering Point plus resources and speedups. The chest rewards are based on previous transfers and may differ in future events.",
+    "All players in the merge are teleported to a random place with a 24-hour Shield.",
+    "The full rules are in the in-game event info."
+  ]
+}

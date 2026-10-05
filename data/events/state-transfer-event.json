@@ -1,0 +1,43 @@
+{
+  "id": "state-transfer-event",
+  "name": "State Transfer",
+  "img": "/images/events/state-transfer-event.png",
+  "category": "solo",
+  "description": "An event where chiefs move to another state. It happens irregularly, usually every 4 or 6 weeks. The game shows details 3 to 4 days before.",
+  "frequency": "Irregular, usually every 4 or 6 weeks",
+  "duration": "7 days in 3 phases",
+  "requirements": [
+    "States become eligible for the transfer event when they unlock FC5.",
+    "Personal: you must be under the Power Cap, have the required Furnace level (it depends on state age, up to 30), not be in combat, not be in an alliance, not be a Transfer Manager or Tyrant, have waited more than 25 days since your last transfer (1 transfer per event), and have fewer than 4 characters in the target state.",
+    "Target state: your character cannot be more than 90, 120, or 180 days (depending on state age) older than the state. The latest hero generation, the furnace era, all unlocked buildings, available beasts, and chief and hero gear must match. Use /timeline to see differences."
+  ],
+  "phases": [
+    {
+      "name": "Phase I: Pre-Transfer",
+      "description": "3 days. Presidents set a Transfer Power Cap and review requests. You cannot transfer yet. States are Ordinary or Leading. Leading states are chosen from the Transfer Scores of their top 100 chiefs. An Ordinary state holds up to 58 people: the President invites up to 38 (regular invitations stop being valid after 35 are used), and 20 spots are open to anyone under the power cap. Each Ordinary state starts with 3 Special Transfer Invitations that skip the power cap, and 1 renews on the 1st of each month at 00:00 UTC, up to 3. A Leading state holds up to 30 people: the President invites up to 20 and 10 spots are open. A state that leads for 3 transfer events in a row gets 1 special invite."
+    },
+    {
+      "name": "Phase II: Invitational Transfer",
+      "description": "2 days. Presidents invite chiefs and chiefs move to their new state. Disband troops from the Enlistment Office if needed."
+    },
+    {
+      "name": "Phase III: Open Transfer",
+      "description": "2 days. Everyone who meets the Power Cap, except the current or former President, can move without approval. Spots are limited. You still need Transfer Passes."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Transfer Pass",
+      "note": "A transfer costs 1 to 50 passes, usually 6 to 12 for a free-to-play or low-spend player. Packs: 1 pass 4.99 USD, 2 passes 9.99 USD, 3 passes 19.99 USD, 4 passes 49.99 USD, and 5 passes 99.99 USD (15 times). Later packs unlock after you buy the earlier ones and reset each month. One pass also costs 150K Alliance Tokens in the alliance store, refreshing weekly."
+    }
+  ],
+  "tips": [
+    "Your Transfer Score is your Furnace level, Chief Gear and Charms, Hero Power, Hero Gear Power, Pet Power, and Expert Power. Troop power does not count. The higher your score compared with your group rating, the more it costs.",
+    "After a move your city goes to a random place in the Icefield with a 24-hour Shield, you leave group chats, pack purchase limits reset, and you lose unsecured resources. Items stay.",
+    "Arena Points reset to 1,000 and your ranking resets. Fishing Tournament, Hero Rally, Armament Competition, Officer Project, Vault of Enigma, Mia\u2019s Fortune Hut, and Symphony of Change progress stops and unclaimed rewards are mailed.",
+    "Thorns of Enigma carry over if the new state has opened the Emporium. Otherwise they are removed, so exchange them first.",
+    "Alliance Mobilization: in a new alliance you can get all rewards again and your score counts, and personal ranking rewards are possible. Alliance Showdown: you get threshold rewards but your score does not count and you get no personal ranking rewards.",
+    "Your president cannot stop you from transferring. You cannot move your alliance, but you can join or create one in the new state.",
+    "The Power Cap rises as a state gets older."
+  ]
+}

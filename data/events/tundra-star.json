@@ -1,0 +1,14 @@
+{
+  "id": "tundra-star",
+  "name": "Tundra Star",
+  "img": "/images/events/tundra-star.png",
+  "category": "solo",
+  "description": "Raise the selected heroes to the target star rating for rewards. Unclaimed rewards are mailed when the event ends.",
+  "phases": [
+    {
+      "name": "Missions",
+      "description": "Level up chosen heroes to target star ratings. A later part gives extra hero shards."
+    }
+  ],
+  "tips": ["The missions and rewards are shown on the wiki only as images."]
+}

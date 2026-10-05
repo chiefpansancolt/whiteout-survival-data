@@ -56,6 +56,9 @@ describe('EventsQuery', () => {
       'silver-shell-events',
       'tundra-adventure',
       'tundra-album-2',
+      'state-merger',
+      'state-transfer-event',
+      'tundra-star',
     ]);
     expect(events().byCategory('alliance').count()).toBe(12);
     expect(
@@ -68,6 +71,7 @@ describe('EventsQuery', () => {
       'dreamscape-memory',
       'frosty-fortune-skin-event',
       'romance-season',
+      'vault-of-enigma',
       'vision-of-dawn',
     ]);
     expect(
@@ -1416,6 +1420,23 @@ describe('Events data', () => {
         .rewards!.some((x) => x.decorationId === 'ski-resort'),
     ).toBe(true);
     expect(events().find('shining-city-pack')!.duration).toBe('5 days');
+    const merger = events().find('state-merger')!;
+    expect(merger.missions!.filter((m) => m.rewards !== undefined)).toHaveLength(97);
+    expect(merger.missions!.filter((m) => m.group.startsWith('A New Beginning'))).toHaveLength(9);
+    expect(merger.tiers!.map((t) => t.scoreTotal)).toEqual([5, 20, 40, 60, 80]);
+    expect(merger.missions![0].rewards![0]).toMatchObject({
+      name: 'Lucky Wheel hero shard',
+      amount: 10,
+    });
+    expect(merger.missions![1].rewards!.map((r) => r.itemId)).toEqual([
+      'speedup-construction-5m',
+      'meat',
+      'wood',
+      'coal',
+      'iron',
+    ]);
+    expect(events().find('state-transfer-event')!.phases).toHaveLength(3);
+    expect(events().find('vault-of-enigma')!.duration).toBe('5 days');
     const mission = events().find('heros-mission')!;
     expect(mission.tiers!.map((t) => t.scoreTotal)).toEqual([1, 3, 5, 7, 10]);
     expect(mission.tiers![4].rewards).toContainEqual({

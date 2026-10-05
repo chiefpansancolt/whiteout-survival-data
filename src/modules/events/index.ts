@@ -43,6 +43,8 @@ import shiningCityPack from '@/data/events/shining-city-pack.json';
 import silverShellEvents from '@/data/events/silver-shell-events.json';
 import snowbusters from '@/data/events/snowbusters.json';
 import standOfArms from '@/data/events/stand-of-arms.json';
+import stateMerger from '@/data/events/state-merger.json';
+import stateTransferEvent from '@/data/events/state-transfer-event.json';
 import sunfireCastle from '@/data/events/sunfire-castle.json';
 import svsStateOfPower from '@/data/events/svs-state-of-power.json';
 import symphonyOfChange from '@/data/events/symphony-of-change.json';
@@ -54,8 +56,10 @@ import tundraAdventure from '@/data/events/tundra-adventure.json';
 import tundraAlbum2 from '@/data/events/tundra-album-2.json';
 import tundraArmsLeague from '@/data/events/tundra-arms-league.json';
 import tundraGames from '@/data/events/tundra-games.json';
+import tundraStar from '@/data/events/tundra-star.json';
 import tundraTradeRoute from '@/data/events/tundra-trade-route.json';
 import tundraTradingStationGuide from '@/data/events/tundra-trading-station-guide.json';
+import vaultOfEnigma from '@/data/events/vault-of-enigma.json';
 import visionOfDawn from '@/data/events/vision-of-dawn.json';
 import warPreparation from '@/data/events/war-preparation.json';
 import wildBrawl from '@/data/events/wild-brawl.json';
@@ -124,6 +128,10 @@ const eventsData: GameEvent[] = [
   silverShellEvents,
   tundraAdventure,
   tundraAlbum2,
+  stateMerger,
+  stateTransferEvent,
+  tundraStar,
+  vaultOfEnigma,
 ] as GameEvent[];
 
 /** Query builder for GameEvent data. All filter methods return a new EventsQuery for chaining. */
