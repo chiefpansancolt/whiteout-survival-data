@@ -349,6 +349,32 @@
     return section('Days', body);
   }
 
+  function pointLevelsTable(pointLevels) {
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    ['Level', 'Personal points', 'Alliance points', 'Rewards'].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    const pointCell = (row, icon, value) => {
+      const cell = row.insertCell();
+      cell.className = 'num';
+      const img = el('img');
+      img.src = `${IMAGE_ROOT}${icon}`;
+      img.alt = '';
+      img.style.cssText = 'width:20px;height:20px;vertical-align:middle;margin-right:6px;';
+      cell.append(img, document.createTextNode(value.toLocaleString('en-US')));
+    };
+    pointLevels.levels.forEach((level) => {
+      const row = body.insertRow();
+      row.insertCell().textContent = level.level;
+      pointCell(row, pointLevels.personalIcon, level.personalPoints);
+      pointCell(row, pointLevels.allianceIcon, level.alliancePoints);
+      row.insertCell().append(rewardList(level.rewards));
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
   const TARGET_LABELS = { city: 'Player cities', headquarters: 'Alliance HQ' };
 
   function wavesTable(waves) {
@@ -401,10 +427,17 @@
       card.append(section('Phases', phases));
     }
     if (event.waves) card.append(section('Waves', wavesTable(event.waves)));
+    if (event.pointLevels) card.append(section('Defense point levels', pointLevelsTable(event.pointLevels)));
     if (event.days) card.append(daysSection(event));
     if (event.missions) card.append(section('Missions', missionsTable(event.missions)));
     if (event.tiers) card.append(tiersSection(event));
-    if (event.allianceRankings) card.append(section('Alliance rewards', rankingTable(event.allianceRankings, 'Alliance rank')));
+    if (event.allianceRankings) card.append(section(event.allianceRankingUpdates ? 'Alliance rewards (first list)' : 'Alliance rewards', rankingTable(event.allianceRankings, 'Alliance rank')));
+    if (event.allianceRankingUpdates) event.allianceRankingUpdates.forEach((update) => {
+      const body = el('div');
+      if (update.note) body.append(el('p', 'sub', update.note));
+      body.append(rankingTable(update.rankings, 'Alliance rank'));
+      card.append(section(`Alliance rewards (${update.name.toLowerCase()})`, body));
+    });
     if (event.personalRankings) event.personalRankings.forEach((table) => card.append(section(`Personal rewards by ${table.basedOn.toLowerCase()}`, rankingTable(table.rankings, 'Rank'))));
     if (event.rewards && event.rewards.length) card.append(section('Other rewards', rewardList(event.rewards)));
     if (event.tips) card.append(section('Tips', bulletList(event.tips)));
