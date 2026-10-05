@@ -753,7 +753,9 @@ Chest and bundle offers hold their rewards in `contents`. Brothers in Arms has i
 table, four target levels, and top 100 ranking rewards. Hero's Mission lists the hero whose shards
 it gives for generations 4 to 15 in `heroByGeneration`. The eighth batch adds the first holiday
 events: Frosty Fortune, Vision of Dawn, Romance Season, and Dreamscape Memory, from the wiki text
-and the images that can be read.
+and the images that can be read. The ninth batch adds Tundra Adventure (tile chances, item tile
+levels, point targets, and the Odyssey of Adventure board), Silver Shell Events, Tundra Album, and
+Shining City Pack, from the wiki text. Their shops and packs are not loaded.
 
 ### 🎯 Event Buffs
 
