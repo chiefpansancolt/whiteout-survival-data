@@ -693,14 +693,19 @@ Alliance Mobilization has `missions` (name, group, and base points, read from th
 tables; the 120% and 200% exclusive columns and the gem purchase missions are left out). Tundra Arms
 League uses all three: `allianceRankings`, `personalRankings` (legion ranking and legion result),
 and `tiers` by Personal Arsenal Points with Winner and Defeat rankings for the Elimination and
-Championship phases. Its rewards come from in-game screenshots on outof.games. Crazy Joe has `waves`
-(target, rule, and details for each of its 20 waves, from a community guide) and uses `tiers` for
-its 21 difficulties, with the Alliance Defense Points needed to unlock each, read from a wiki image.
-The first batch covers Bear Hunt, Crazy Joe, Alliance Championship, Foundry Battle, Canyon Clash,
-Frostfire Mine, Frostdragon Tyrant, Tundra Arms League, Icefire Warhymn League, and Tundra Trade
-Route. The second batch adds Alliance Showdown, Alliance Mobilization, Mercenary Prestige, SVS -
-State of Power, King of Icefield, and Sunfire Castle, from the wiki text only (their reward amounts
-are mostly in images and are not loaded yet).
+Championship phases. Its rewards come from in-game screenshots on outof.games. Crazy Joe also keeps
+its first alliance reward list in `allianceRankings` and a later list for the same 10 ranks in
+`allianceRankingUpdates`, from in-game screenshots taken after a server update. Its
+`personalRankings` has 21 rank groups, 1 to 501-1000, from in-game screenshots. Its `pointLevels`
+lists the 30 defense point levels, each needing both personal points (blue coin) and alliance points
+(gold coin), with the reward for each level. Crazy Joe has `waves` (target, rule, and details for
+each of its 20 waves, from a community guide) and uses `tiers` for its 21 difficulties, with the
+Alliance Defense Points needed to unlock each, read from a wiki image. The first batch covers Bear
+Hunt, Crazy Joe, Alliance Championship, Foundry Battle, Canyon Clash, Frostfire Mine, Frostdragon
+Tyrant, Tundra Arms League, Icefire Warhymn League, and Tundra Trade Route. The second batch adds
+Alliance Showdown, Alliance Mobilization, Mercenary Prestige, SVS - State of Power, King of
+Icefield, and Sunfire Castle, from the wiki text only (their reward amounts are mostly in images and
+are not loaded yet).
 
 ---
 
