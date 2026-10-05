@@ -283,7 +283,7 @@
   function shopTable(shop, event) {
     const table = el('table');
     const headRow = table.createTHead().insertRow();
-    ['Offer', event.shopCurrencyItemId && ITEMS[event.shopCurrencyItemId] ? `Cost (${ITEMS[event.shopCurrencyItemId].name})` : 'Cost', 'Limit'].forEach((label) => headRow.append(el('th', '', label)));
+    ['Offer', event.shopCurrencyItemId && ITEMS[event.shopCurrencyItemId] ? `Cost (${ITEMS[event.shopCurrencyItemId].name})` : event.shopCurrencyName ? `Cost (${event.shopCurrencyName})` : 'Cost', 'Limit'].forEach((label) => headRow.append(el('th', '', label)));
     const body = table.createTBody();
     shop.forEach((offer) => {
       const row = body.insertRow();
