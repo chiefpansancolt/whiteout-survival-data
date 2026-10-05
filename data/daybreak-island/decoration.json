@@ -382,6 +382,7 @@
   {
     "id": "hero-s-sanctun",
     "name": "Hero’s Sanctun",
+    "img": "/images/daybreak-island/heros-sanctum.png",
     "category": "Epic",
     "levels": [
       {
@@ -4349,6 +4350,7 @@
   {
     "id": "icefire-way",
     "name": "Icefire Way",
+    "img": "/images/daybreak-island/icefire-way.png",
     "category": "Mythic",
     "limit": 1,
     "levels": [
@@ -4825,6 +4827,7 @@
   {
     "id": "luminari-citadel",
     "name": "Luminari Citadel",
+    "img": "/images/daybreak-island/luminari-citadel.png",
     "category": "Mythic",
     "limit": 1,
     "levels": [

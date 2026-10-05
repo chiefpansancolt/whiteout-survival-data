@@ -26,8 +26,14 @@ describe('EventsQuery', () => {
       'icefire-warhymn-league',
       'tundra-trade-route',
       'king-of-icefield',
+      'armament-competition',
+      'fishing-tournament',
+      'officer-project',
+      'the-labyrinth',
+      'treasure-hunter',
+      'tundra-trading-station-guide',
     ]);
-    expect(events().byCategory('alliance').count()).toBe(12);
+    expect(events().byCategory('alliance').count()).toBe(14);
     expect(events().byCategory('rookie').count()).toBe(0);
   });
 });
@@ -123,6 +129,7 @@ describe('Events data', () => {
         ...(e.allianceRankings ?? []).flatMap((r) => r.rewards),
         ...(e.allianceRankingUpdates ?? []).flatMap((u) => u.rankings).flatMap((r) => r.rewards),
         ...(e.pointLevels?.levels ?? []).flatMap((l) => l.rewards),
+        ...(e.shop ?? []).map((o) => o.reward),
         ...(e.days ?? [])
           .flatMap((d) => [...(d.milestones ?? []), ...(d.allianceMilestones ?? [])])
           .flatMap((m) => m.rewards ?? []),
@@ -317,6 +324,8 @@ describe('Events data', () => {
         ...(e.personalRankings ?? []).flatMap((t) => t.rankings).flatMap((r) => r.rewards),
         ...(e.allianceRankings ?? []).flatMap((r) => r.rewards),
         ...(e.tiers ?? []).flatMap((t) => (t.rankings ?? []).flatMap((r) => r.rewards)),
+        ...(e.shop ?? []).map((o) => o.reward),
+        ...(e.tiers ?? []).flatMap((t) => t.rewards ?? []),
       ])
       .map((reward) => reward.decorationId)
       .filter((id): id is string => id !== undefined);
@@ -325,6 +334,9 @@ describe('Events data', () => {
       'conquering-sword',
       'dragon-pagoda',
       'giant-horn',
+      'hero-s-sanctun',
+      'icefire-way',
+      'luminari-citadel',
       'serpent-sanctuary',
       'tundra-truck',
       'war-chariot',
@@ -759,5 +771,329 @@ describe('Events data', () => {
     [personalIcon, allianceIcon].forEach((icon) =>
       expect(existsSync(join(__dirname, '../..', icon))).toBe(true),
     );
+  });
+
+  it('transcribes the text-only events from the wiki', () => {
+    const armament = events().find('armament-competition')!;
+    expect(armament.personalRankings![0].rankings).toHaveLength(8);
+    expect(armament.personalRankings![0].rankings[0].rewards.map((r) => r.itemId)).toEqual([
+      'mythic-general-decoration-component',
+      'gems',
+      'speedup-research-1h',
+      'speedup-construction-1h',
+      'speedup-troop-1h',
+      'gold-key',
+    ]);
+    expect(armament.personalRankings![0].rankings[7].rewards[1]).toMatchObject({ amount: 25 });
+    const [gear, charm] = armament.days!;
+    expect(gear.scoring[0]).toEqual({ action: 'Use 1 Fire Crystal', points: 100 });
+    expect(charm.scoring.map((a) => a.points)).toContain(125);
+    [gear, charm].forEach((version) => {
+      expect(version.milestones!.map((m) => m.name)).toEqual([
+        'Level 1',
+        'Level 2',
+        'Level 3',
+        'Level 4',
+      ]);
+      version.milestones!.forEach((m) => expect(m.scoreTotal).toBeUndefined());
+    });
+    expect(gear.milestones![3].rewards![0].itemId).toBe('fire-crystal');
+    expect(charm.milestones![3].rewards![0].itemId).toBe('design-plans');
+    const officer = events().find('officer-project')!;
+    const [troops, heroes] = officer.days!;
+    expect([troops.name, heroes.name]).toEqual(['Troops', 'Heroes']);
+    expect(troops.scoring).toContainEqual({ action: 'Train 1 Lv. 11 Troop', points: 37 });
+    expect(heroes.scoring.map((s) => s.points)).toEqual([70, 350, 1220, 3040, 6000, 12000, 216000]);
+    expect(troops.milestones![3].rewards![0].itemId).toBe('essence-stones');
+    expect(heroes.milestones![3].rewards![0].itemId).toBe('charm-design');
+    expect(troops.milestones!.map((m) => m.scoreTotal)).toEqual([19800, 110000, 226000, 453000]);
+    heroes.milestones!.forEach((m) => expect(m.scoreTotal).toBeUndefined());
+    expect(officer.personalRankings![0].rankings[0].rewards[0]).toMatchObject({
+      itemId: 'mythic-general-decoration-component',
+      amount: 10,
+    });
+    const fishing = events().find('fishing-tournament')!;
+    expect(fishing.tiers!.map((t) => t.scoreTotal)).toEqual([250, 500, 1000, 1500, 2000]);
+    expect(fishing.tiers![4].rewards![0]).toMatchObject({ itemId: 'lucky-hero-gear-chest' });
+    expect(fishing.tiers![0].rewards!.map((r) => r.itemId)).toEqual([
+      'enhancement-xp-component',
+      'hero-xp',
+      'speedup-general-5m',
+    ]);
+    expect(fishing.personalRankings![0].rankings.map((r) => r.groupRanking)).toEqual([
+      '1',
+      '2',
+      '3',
+      '4-6',
+      '7-10',
+      '11-15',
+      '16-50',
+      '51-100',
+      '101-500',
+    ]);
+    fishing.personalRankings![0].rankings.forEach((r) =>
+      r.rewards.forEach((reward) => expect(reward.amount).toBeUndefined()),
+    );
+    const mine = events().find('frostfire-mine')!;
+    expect(mine.tiers!.map((t) => t.scoreTotal)).toEqual([
+      10000, 25000, 40000, 75000, 100000, 150000,
+    ]);
+    expect(mine.tiers![3].rewards![0]).toMatchObject({ itemId: 'charm-guide', amount: 10 });
+    const mineRankings = mine.personalRankings![0].rankings;
+    expect(mineRankings.map((r) => r.groupRanking)).toEqual([
+      '1',
+      '2',
+      '3',
+      '4-5',
+      '6-10',
+      '11-20',
+      '21-50',
+      '51-100',
+      '101-200',
+      '201-500',
+    ]);
+    expect(mineRankings[0].rewards.map((r) => r.amount)).toEqual([1, 120, 72, 5, 4000, 150]);
+    expect(mineRankings[9].rewards.map((r) => r.itemId)).toEqual([
+      'charm-design',
+      'charm-guide',
+      'shot-token',
+      'gems',
+      'lv-2-custom-ressource-chest',
+    ]);
+    const league = events().find('icefire-warhymn-league')!;
+    expect(league.personalRankings![1].rankings.map((r) => r.groupRanking)).toEqual([
+      '1',
+      '2',
+      '3-4',
+      '5-8',
+      '9-16',
+    ]);
+    expect(league.personalRankings![1].rankings[0].rewards.map((r) => r.amount)).toEqual([
+      25, 3, 5, 5,
+    ]);
+    expect(league.personalRankings![1].rankings[4].rewards.map((r) => r.itemId)).toEqual([
+      'fire-crystal',
+      'enhancement-xp-component',
+      'treasure-box',
+    ]);
+    const season = league.personalRankings![0].rankings;
+    expect(season.map((r) => r.groupRanking)).toEqual([
+      '1',
+      '2',
+      '3-4',
+      '5-8',
+      '9-16',
+      '17-32',
+      '33-64',
+    ]);
+    expect(season[0].rewards.map((r) => r.amount)).toEqual([5, 1, 50000, 12000, 40]);
+    expect(season[0].rewards[1]).toMatchObject({ skinId: 'frostflame-knight' });
+    expect(season[3].rewards.map((r) => r.skinId)).toEqual([
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+    ]);
+    expect(season.every((r) => r.rewards[0].decorationId === 'icefire-way')).toBe(true);
+    expect(skins().find('frostflame-knight')!.skinType).toBe('City Skin');
+    expect(league.shop!.map((o) => [o.cost, o.limit])).toEqual([
+      [8000, 1],
+      [2500, 2],
+      [500, 5],
+      [100, 20],
+      [160, 5],
+      [160, 5],
+      [100, 5],
+      [100, 5],
+      [100, 5],
+      [100, 5],
+      [100, 5],
+      [160, 5],
+      [120, 5],
+      [50, 15],
+      [80, 30],
+      [10, 30],
+    ]);
+    expect(league.shop!.map((o) => o.reward.itemId)).toEqual([
+      undefined,
+      'custom-mythic-hero-gear-chest',
+      'mithril',
+      'mythic-general-hero-shard',
+      'lucky-hero-gear-chest',
+      'essence-stones',
+      'charm-design',
+      'charm-guide',
+      'design-plans',
+      'polishing-solution',
+      'hardened-alloy',
+      'pet-advancement-materials-custom-chest',
+      'advanced-wild-mark',
+      'fire-crystal',
+      'speedup-general-1h',
+      'lv-3-custom-ressource-chest',
+    ]);
+    expect(league.shop![0].reward).toMatchObject({ decorationId: 'icefire-way' });
+    expect(league.missionPointsLabel).toBe('Warhymn Testaments');
+    expect(league.missions!.map((m) => m.points)).toEqual([20, 10, 10, 10, 10]);
+    league.missions!.forEach((m) => expect(m.levels).toBe(7));
+    league.missions!.forEach((m) =>
+      expect(m.levelRequirements!.map((l) => l.level)).toEqual([1, 2, 3, 4, 5, 6, 7]),
+    );
+    expect(league.missions![0].levelRequirements!.map((l) => l.requirement)).toEqual([
+      'Log in for 1 day',
+      'Log in for 2 days',
+      'Log in for 3 days',
+      'Log in for 4 days',
+      'Log in for 5 days',
+      'Log in for 6 days',
+      'Log in for 7 days',
+    ]);
+    expect(league.missions![2].levelRequirements!.map((l) => l.requirement)).toEqual([
+      'Gather 10,000,000 resources',
+      'Gather 20,000,000 resources',
+      'Gather 30,000,000 resources',
+      'Gather 40,000,000 resources',
+      'Gather 50,000,000 resources',
+      'Gather 60,000,000 resources',
+      'Gather 70,000,000 resources',
+    ]);
+    expect(league.missions![4].levelRequirements![6].requirement).toBe('Use 7,000m of any Speedup');
+    expect(league.missions![3].levelRequirements![6].requirement).toBe(
+      'Call rally and hunt down 35 Polar Terrors',
+    );
+    league.missions!.forEach((m) =>
+      m.levelRequirements!.forEach((l) => expect(l.requirement).toBeDefined()),
+    );
+    expect(league.missions!.slice(1).map((m) => m.levelRequirements![0].requirement)).toEqual([
+      'Make 20 Alliance Contributions',
+      'Gather 10,000,000 resources',
+      'Call rally and hunt down 5 Polar Terrors',
+      'Use 1,000m of any Speedup',
+    ]);
+    expect(league.missions![0].rewards!.map((r) => r.itemId)).toEqual(['gems', 'meat', 'wood']);
+    expect(league.missions![3].rewards![0]).toMatchObject({ itemId: 'lucky-hero-gear-chest' });
+    expect(league.missions![4].rewards!.map((r) => r.itemId)).toEqual([
+      'fire-crystal',
+      'enhancement-xp-component',
+      'lv-3-custom-ressource-chest',
+    ]);
+    expect(league.phases!.map((p) => p.name)).toEqual([
+      'Preview',
+      'Sign-Up',
+      'Qualifier',
+      'Elimination',
+      'Pinnacle',
+    ]);
+    const koi = events().find('king-of-icefield')!;
+    expect(koi.days!.map((d) => d.name)).toEqual([
+      'City Construction',
+      'Hero Development',
+      'Basic Skills Up',
+      'Combat Training',
+      'Basic Skills Up',
+      'Combat Training',
+      'Hero Development',
+    ]);
+    expect(koi.days![1].scoring).toContainEqual({ action: 'Use 1 Mithril', points: 40000 });
+    expect(
+      koi.days![3].scoring.filter((s) => s.action.startsWith('Train')).map((s) => s.points),
+    ).toEqual([1, 2, 3, 5, 7, 11, 16, 23, 30, 39, 49]);
+    expect(koi.days![6].scoring).toContainEqual({
+      action: 'Raise Chief Gear max score by 1',
+      points: 36,
+    });
+    expect(koi.personalRankings!.map((t) => t.rankings.length)).toEqual([3, 4, 4, 4]);
+    expect(koi.personalRankings![1].rankings[0].rewards[0]).toMatchObject({
+      itemId: 'mythic-general-hero-shard',
+      amount: 300,
+    });
+    expect(koi.personalRankings![0].rankings[0].rewards.map((r) => r.amount)).toEqual([
+      20000, 10, 3,
+    ]);
+    expect(koi.personalRankings![2].rankings[0].rewards[4]).toMatchObject({
+      itemId: 'gems',
+      amount: 80000,
+    });
+    const labyrinth = events().find('the-labyrinth')!;
+    expect(labyrinth.zones!.map((z) => [z.name, z.days.join(' and '), z.stages])).toEqual([
+      ['Land of Heroes', 'Monday and Tuesday', 600],
+      ['Cave of Monsters', 'Wednesday and Thursday', 200],
+      ['Charm Mine', 'Wednesday and Thursday', 250],
+      ['Research Center', 'Friday and Saturday', 300],
+      ['Gear Forge', 'Friday and Saturday', 250],
+      ['Gaia Heart', 'Sunday', 700],
+    ]);
+    expect(labyrinth.tiers!.map((t) => t.scoreTotal)).toEqual([
+      10, 30, 60, 100, 150, 200, 300, 400, 500, 700, 900, 1200, 1500, 1800,
+    ]);
+    expect(labyrinth.tiers![1].rewards![0]).toMatchObject({
+      decorationId: 'hero-s-sanctun',
+      amount: 1,
+    });
+    expect(labyrinth.tiers![4].rewards![0]).toMatchObject({
+      itemId: 'lucky-hero-gear-chest',
+      amount: 10,
+    });
+    expect(labyrinth.shopCurrencyItemId).toBe('glowstone');
+    expect(labyrinth.shop!.map((o) => [o.cost, o.limit])).toEqual([
+      [2500, 1],
+      [1500, 3],
+      [50, 100],
+      [500, 5],
+      [250, 20],
+      [250, 20],
+      [500, 5],
+      [50, 10],
+      [250, 5],
+      [1000, 10],
+      [400, 40],
+    ]);
+    expect(events().find('icefire-warhymn-league')!.shopCurrencyItemId).toBe('warhymn-testament');
+    [labyrinth, events().find('icefire-warhymn-league')!].forEach((e) =>
+      expect(items().find(e.shopCurrencyItemId!)).toBeDefined(),
+    );
+    const hunter = events().find('treasure-hunter')!;
+    expect(hunter.missions!.map((m) => m.points)).toEqual([5, 5, 6, 10]);
+    expect(hunter.missionPointsLabel).toBe('Pickaxes');
+    expect(hunter.tiers!.map((t) => t.scoreTotal)).toEqual([
+      2, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100,
+    ]);
+    expect(hunter.tiers![20].rewards![0]).toMatchObject({ itemId: 'mithril', amount: 20 });
+    const [common, supreme] = hunter.personalRankings![0].rankings;
+    expect(common.rewards.map((r) => r.amount)).toEqual([36, 36, 72, 70, 70]);
+    expect(supreme.rewards.map((r) => r.amount)).toEqual([72, 72, 144, 140, 140]);
+    expect(hunter.rewards!.some((r) => r.itemId === 'steel' && r.amount === 200)).toBe(true);
+    const route = events().find('tundra-trade-route')!;
+    expect(route.refreshes!.map((r) => r.gemCost)).toEqual([100, 200, 300, 400, 500, 500]);
+    route.refreshes!.forEach((r) =>
+      expect(Object.values(r.chances).reduce((sum, n) => sum + n, 0)).toBe(100),
+    );
+    expect(route.refreshes![5].chances).toEqual({ Mythic: 100 });
+    expect(route.tiers).toBeUndefined();
+    const station = events().find('tundra-trading-station-guide')!;
+    expect(station.shopCurrencyItemId).toBe('trade-voucher');
+    expect(station.shop).toHaveLength(19);
+    expect(station.shop![0]).toMatchObject({ cost: 20000, limit: 3 });
+    expect(station.shop![18]).toMatchObject({ cost: 10, limit: 99999 });
+    expect(
+      station.shop!.filter((o) => o.reward.itemId === undefined).map((o) => o.reward.name),
+    ).toEqual([
+      'Custom Hero Widget Chest (S8)',
+      'Custom Hero Widget Chest (S7)',
+      'Custom Hero Widget Chest (S6)',
+      'Unidentified tin can',
+    ]);
+    expect(station.tiers!.map((t) => t.rewards![0].amount)).toEqual([
+      6, 10, 100, 50, 200, 300, 400,
+    ]);
+    const mission = events().find('heros-mission')!;
+    expect(mission.tiers!.map((t) => t.scoreTotal)).toEqual([1, 3, 5, 7, 10]);
+    expect(mission.tiers![4].rewards).toContainEqual({
+      name: 'Lucky Hero Gear Chest',
+      itemId: 'lucky-hero-gear-chest',
+      amount: 2,
+    });
+    expect(events().find('the-labyrinth')!.phases).toHaveLength(4);
+    expect(events().find('brothers-in-arms')!.duration).toContain('Friday');
   });
 });

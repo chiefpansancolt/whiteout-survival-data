@@ -7,6 +7,512 @@
   "frequency": "7 time slots: 02, 05, 11, 14, 16, 18, and 21 UTC",
   "duration": "30 minutes",
   "requirements": ["Furnace level 16 or higher", "Register and take part on the same day"],
+  "tiers": [
+    {
+      "name": "Orichalcum Yield: 10,000",
+      "scoreTotal": 10000,
+      "rewards": [
+        {
+          "name": "1h Troop Training Speedup",
+          "itemId": "speedup-troop-1h",
+          "amount": 4
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 120,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 120,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 240,
+          "note": "Each is a 1K resource pack"
+        }
+      ],
+      "note": "The reward list is cut off in the source image. Only the visible rewards are recorded."
+    },
+    {
+      "name": "Orichalcum Yield: 25,000",
+      "scoreTotal": 25000,
+      "rewards": [
+        {
+          "name": "1h Troop Training Speedup",
+          "itemId": "speedup-troop-1h",
+          "amount": 4
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 120,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 120,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 240,
+          "note": "Each is a 1K resource pack"
+        }
+      ],
+      "note": "The reward list is cut off in the source image. Only the visible rewards are recorded."
+    },
+    {
+      "name": "Orichalcum Yield: 40,000",
+      "scoreTotal": 40000,
+      "rewards": [
+        {
+          "name": "1h Troop Training Speedup",
+          "itemId": "speedup-troop-1h",
+          "amount": 4
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 120,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 120,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 240,
+          "note": "Each is a 1K resource pack"
+        }
+      ],
+      "note": "The reward list is cut off in the source image. Only the visible rewards are recorded."
+    },
+    {
+      "name": "Orichalcum Yield: 75,000",
+      "scoreTotal": 75000,
+      "rewards": [
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "1h Troop Training Speedup",
+          "itemId": "speedup-troop-1h",
+          "amount": 4
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 160,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 160,
+          "note": "Each is a 10K resource pack"
+        }
+      ],
+      "note": "The reward list is cut off in the source image. Only the visible rewards are recorded."
+    },
+    {
+      "name": "Orichalcum Yield: 100,000",
+      "scoreTotal": 100000,
+      "rewards": [
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "1h Troop Training Speedup",
+          "itemId": "speedup-troop-1h",
+          "amount": 6
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 160,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 160,
+          "note": "Each is a 10K resource pack"
+        }
+      ],
+      "note": "The reward list is cut off in the source image. Only the visible rewards are recorded."
+    },
+    {
+      "name": "Orichalcum Yield: 150,000",
+      "scoreTotal": 150000,
+      "rewards": [
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "1h Troop Training Speedup",
+          "itemId": "speedup-troop-1h",
+          "amount": 6
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 160,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 160,
+          "note": "Each is a 10K resource pack"
+        }
+      ],
+      "note": "The reward list is cut off in the source image. Only the visible rewards are recorded."
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "occupation time ranking",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "14-day avatar frame",
+              "amount": 1,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 120
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 72
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4000
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 150
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "14-day avatar frame",
+              "amount": 1,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 85
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 58
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3800
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 135
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "14-day avatar frame",
+              "amount": 1,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 65
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 43
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3600
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 130
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "14-day avatar frame",
+              "amount": 1,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 45
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 36
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3400
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 40
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 32
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 4
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 110
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 35
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 28
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 4
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2500
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 105
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 33
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 25
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 3
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2000
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 95
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 28
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 23
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 3
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1200
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "groupRanking": "101-200",
+          "rewards": [
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 24
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 20
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 2
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "groupRanking": "201-500",
+          "rewards": [
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 12
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 12
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 600
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 75
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "rewards": [
     {
       "name": "Orichalcum",

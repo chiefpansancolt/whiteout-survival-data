@@ -6,201 +6,33 @@
   "description": "A week-long solo tournament in a half-ice, half-fire arena. Chiefs battle through the Qualifier, Elimination, and Pinnacle phases to be crowned the season champion. No real troops are lost in battles.",
   "frequency": "One season per week, Sunday to Saturday",
   "duration": "Competition runs Monday to Saturday, after a 24-hour Preview Phase on Sunday",
-  "requirements": ["Furnace level 30 or higher"],
+  "requirements": [
+    "Furnace level 30 or higher",
+    "The event begins in a state two weeks after Generation 4 heroes unlock there"
+  ],
   "phases": [
     {
       "name": "Preview",
       "description": "Sunday, 24 hours"
     },
     {
-      "name": "Qualifier",
-      "description": "Three defeats eliminate a participant"
+      "name": "Sign-Up",
+      "description": "Monday and Tuesday, 48 hours. Set up 3 formations, each with a hero and troops. A chief with no lineup loses automatically at the start of battle."
     },
     {
-      "name": "Elimination"
+      "name": "Qualifier",
+      "description": "Wednesday, up to 10 rounds between 12:00 and 21:00 UTC. Chiefs are ranked by points, and 3 defeats eliminate a chief. The Top 64 in each Zone advance. The lineup is locked until the phase ends."
+    },
+    {
+      "name": "Elimination",
+      "description": "Thursday, best of 3. Round 1 at 10:00 UTC (Top 64 to Top 32), Round 2 at 16:00 UTC (Top 32 to Top 16), and Round 3 at 22:00 UTC (Top 16 to Top 8)."
     },
     {
       "name": "Pinnacle",
-      "description": "Lineups lock one minute before each round"
+      "description": "Friday and Saturday, best of 3. Top 8 on Friday at 11:00 UTC, Top 4 on Friday at 23:00 UTC, and the Championship Final on Saturday at 11:00 UTC. Lineups lock one minute before each round."
     }
   ],
   "rewards": [
-    {
-      "name": "Icefire Way copy",
-      "amount": 5,
-      "note": "Season Rank 1"
-    },
-    {
-      "name": "30-day Frostflame Knight skin",
-      "amount": 1,
-      "note": "Season Rank 1"
-    },
-    {
-      "name": "Gems",
-      "itemId": "gems",
-      "amount": 50000,
-      "note": "Season Rank 1"
-    },
-    {
-      "name": "Warhymn Testament",
-      "itemId": "warhymn-testament",
-      "amount": 12000,
-      "note": "Season Rank 1"
-    },
-    {
-      "name": "Mythic General Hero Shard",
-      "itemId": "mythic-general-hero-shard",
-      "amount": 40,
-      "note": "Season Rank 1"
-    },
-    {
-      "name": "Icefire Way copy",
-      "amount": 4,
-      "note": "Season Rank 2"
-    },
-    {
-      "name": "14-day skin",
-      "amount": 1,
-      "note": "Season Rank 2"
-    },
-    {
-      "name": "Gems",
-      "itemId": "gems",
-      "amount": 40000,
-      "note": "Season Rank 2"
-    },
-    {
-      "name": "Warhymn Testament",
-      "itemId": "warhymn-testament",
-      "amount": 10000,
-      "note": "Season Rank 2"
-    },
-    {
-      "name": "Mythic General Hero Shard",
-      "itemId": "mythic-general-hero-shard",
-      "amount": 30,
-      "note": "Season Rank 2"
-    },
-    {
-      "name": "Icefire Way copy",
-      "amount": 3,
-      "note": "Season Ranks 3-4"
-    },
-    {
-      "name": "7-day skin",
-      "amount": 1,
-      "note": "Season Ranks 3-4"
-    },
-    {
-      "name": "Gems",
-      "itemId": "gems",
-      "amount": 30000,
-      "note": "Season Ranks 3-4"
-    },
-    {
-      "name": "Warhymn Testament",
-      "itemId": "warhymn-testament",
-      "amount": 8000,
-      "note": "Season Ranks 3-4"
-    },
-    {
-      "name": "Mythic General Hero Shard",
-      "itemId": "mythic-general-hero-shard",
-      "amount": 25,
-      "note": "Season Ranks 3-4"
-    },
-    {
-      "name": "Icefire Way copy",
-      "amount": 2,
-      "note": "Season Ranks 5-8"
-    },
-    {
-      "name": "Gems",
-      "itemId": "gems",
-      "amount": 20000,
-      "note": "Season Ranks 5-8"
-    },
-    {
-      "name": "Warhymn Testament",
-      "itemId": "warhymn-testament",
-      "amount": 6000,
-      "note": "Season Ranks 5-8"
-    },
-    {
-      "name": "Mythic General Hero Shard",
-      "itemId": "mythic-general-hero-shard",
-      "amount": 20,
-      "note": "Season Ranks 5-8"
-    },
-    {
-      "name": "Icefire Way copy",
-      "amount": 1,
-      "note": "Season Ranks 9-16"
-    },
-    {
-      "name": "Gems",
-      "itemId": "gems",
-      "amount": 15000,
-      "note": "Season Ranks 9-16"
-    },
-    {
-      "name": "Warhymn Testament",
-      "itemId": "warhymn-testament",
-      "amount": 4000,
-      "note": "Season Ranks 9-16"
-    },
-    {
-      "name": "Mythic General Hero Shard",
-      "itemId": "mythic-general-hero-shard",
-      "amount": 15,
-      "note": "Season Ranks 9-16"
-    },
-    {
-      "name": "Icefire Way copy",
-      "amount": 1,
-      "note": "Season Ranks 17-32"
-    },
-    {
-      "name": "Gems",
-      "itemId": "gems",
-      "amount": 10000,
-      "note": "Season Ranks 17-32"
-    },
-    {
-      "name": "Warhymn Testament",
-      "itemId": "warhymn-testament",
-      "amount": 2000,
-      "note": "Season Ranks 17-32"
-    },
-    {
-      "name": "Mythic General Hero Shard",
-      "itemId": "mythic-general-hero-shard",
-      "amount": 10,
-      "note": "Season Ranks 17-32"
-    },
-    {
-      "name": "Icefire Way copy",
-      "amount": 1,
-      "note": "Season Ranks 33-64"
-    },
-    {
-      "name": "Gems",
-      "itemId": "gems",
-      "amount": 5000,
-      "note": "Season Ranks 33-64"
-    },
-    {
-      "name": "Warhymn Testament",
-      "itemId": "warhymn-testament",
-      "amount": 1000,
-      "note": "Season Ranks 33-64"
-    },
-    {
-      "name": "Mythic General Hero Shard",
-      "itemId": "mythic-general-hero-shard",
-      "amount": 5,
-      "note": "Season Ranks 33-64"
-    },
     {
       "name": "Warhymn Testament",
       "itemId": "warhymn-testament",
@@ -244,8 +76,13 @@
       "note": "Win-count chest"
     },
     {
-      "name": "Fire Crystals, Mythic General Hero Shards, Enhancement XP Components, and Treasure Boxes",
-      "note": "State rewards; amounts vary by competitor rank, 1 to 25 Fire Crystals"
+      "name": "State rewards",
+      "note": "Given for a Top 16 competitor from your State if you belong to that State, logged in during the event, and have Furnace Level 20 or higher. After a State transfer, the rewards go to the State you belonged to before. Delivered by mail."
+    },
+    {
+      "name": "Warhymn Testament",
+      "itemId": "warhymn-testament",
+      "note": "Prediction: back one contender before the match begins. A correct pick returns 2 times the Testaments used. A wrong pick returns them all. Open from Elimination Round 2. A pick cannot be canceled and only chiefs in your Zone can be picked. The wiki gives up to 5 entries of 200 Testaments for each matchup, and another guide gives a maximum stake of 200 for each match."
     }
   ],
   "tips": [
@@ -256,7 +93,778 @@
     "Check in-game times against UTC to avoid scheduling mistakes.",
     "Warhymn Testaments carry over between seasons.",
     "Mail reward expiry differs from currency expiry.",
-    "Check current reward and shop values in-game before exchanging."
+    "Check current reward and shop values in-game before exchanging.",
+    "Matchmaking first considers the age of your Region, then divides Regions into Zones. Only the Top 64 chiefs in your Zone appear in the event rankings.",
+    "No real troops are lost, so use the event to test formations.",
+    "Build three formations that can win. Best-of-3 rounds need two wins, so one very strong formation is not enough.",
+    "A 50% Infantry, 20% Lancer, 30% Marksman ratio is a neutral starting point and not an official rule.",
+    "These apply in battle: troops, heroes, hero gear and exclusive gear, pets, Chief Gear, Chief Charms, research, Fire Crystal Tech, Flame Tech, Alliance Tech, Daybreak Island, skins, VIP, buildings, and Expert attributes.",
+    "These do not apply: City War buffs, Positions, President Skills, Domain buffs, and buffs for attacking or defending a city.",
+    "Each League Mission has 7 levels, and every level gives the same rewards. The requirement of level N is N times the requirement of level 1. The login mission needs 1 more day for each level.",
+    "The League Shop has 16 offers, read from in-game screenshots."
   ],
-  "eventBuffId": "icefire-warhymn-league"
+  "eventBuffId": "icefire-warhymn-league",
+  "personalRankings": [
+    {
+      "basedOn": "season ranking",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Icefire Way",
+              "decorationId": "icefire-way",
+              "amount": 5,
+              "note": "Level 1 copies"
+            },
+            {
+              "name": "Frostflame Knight (30 days)",
+              "skinId": "frostflame-knight",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 50000,
+              "note": "Shown in the game as packs of 100"
+            },
+            {
+              "name": "Warhymn Testament",
+              "itemId": "warhymn-testament",
+              "amount": 12000
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Icefire Way",
+              "decorationId": "icefire-way",
+              "amount": 4,
+              "note": "Level 1 copies"
+            },
+            {
+              "name": "Frostflame Knight (14 days)",
+              "skinId": "frostflame-knight",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 40000,
+              "note": "Shown in the game as packs of 100"
+            },
+            {
+              "name": "Warhymn Testament",
+              "itemId": "warhymn-testament",
+              "amount": 10000
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "3-4",
+          "rewards": [
+            {
+              "name": "Icefire Way",
+              "decorationId": "icefire-way",
+              "amount": 3,
+              "note": "Level 1 copies"
+            },
+            {
+              "name": "Frostflame Knight (7 days)",
+              "skinId": "frostflame-knight",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000,
+              "note": "Shown in the game as packs of 100"
+            },
+            {
+              "name": "Warhymn Testament",
+              "itemId": "warhymn-testament",
+              "amount": 8000
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "groupRanking": "5-8",
+          "rewards": [
+            {
+              "name": "Icefire Way",
+              "decorationId": "icefire-way",
+              "amount": 2,
+              "note": "Level 1 copies"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000,
+              "note": "Shown in the game as packs of 100"
+            },
+            {
+              "name": "Warhymn Testament",
+              "itemId": "warhymn-testament",
+              "amount": 6000
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "9-16",
+          "rewards": [
+            {
+              "name": "Icefire Way",
+              "decorationId": "icefire-way",
+              "amount": 1,
+              "note": "Level 1 copies"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000,
+              "note": "Shown in the game as packs of 100"
+            },
+            {
+              "name": "Warhymn Testament",
+              "itemId": "warhymn-testament",
+              "amount": 4000
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "groupRanking": "17-32",
+          "rewards": [
+            {
+              "name": "Icefire Way",
+              "decorationId": "icefire-way",
+              "amount": 1,
+              "note": "Level 1 copies"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10000,
+              "note": "Shown in the game as packs of 100"
+            },
+            {
+              "name": "Warhymn Testament",
+              "itemId": "warhymn-testament",
+              "amount": 2000
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "33-64",
+          "rewards": [
+            {
+              "name": "Icefire Way",
+              "decorationId": "icefire-way",
+              "amount": 1,
+              "note": "Level 1 copies"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 5000,
+              "note": "Shown in the game as packs of 100"
+            },
+            {
+              "name": "Warhymn Testament",
+              "itemId": "warhymn-testament",
+              "amount": 1000
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "Top 16 competitor's rank in your State (state rewards)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 5,
+              "note": "Each is a 100 Enhancement XP component"
+            },
+            {
+              "name": "Treasure Box",
+              "itemId": "treasure-box",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 4,
+              "note": "Each is a 100 Enhancement XP component"
+            },
+            {
+              "name": "Treasure Box",
+              "itemId": "treasure-box",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "3-4",
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 3,
+              "note": "Each is a 100 Enhancement XP component"
+            },
+            {
+              "name": "Treasure Box",
+              "itemId": "treasure-box",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "5-8",
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 10
+            },
+            {
+              "name": "Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 2,
+              "note": "Each is a 100 Enhancement XP component"
+            },
+            {
+              "name": "Treasure Box",
+              "itemId": "treasure-box",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "9-16",
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 5
+            },
+            {
+              "name": "Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 1,
+              "note": "Each is a 100 Enhancement XP component"
+            },
+            {
+              "name": "Treasure Box",
+              "itemId": "treasure-box",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shop": [
+    {
+      "reward": {
+        "name": "Icefire Way Lv. 1",
+        "decorationId": "icefire-way",
+        "amount": 1
+      },
+      "cost": 8000,
+      "limit": 1
+    },
+    {
+      "reward": {
+        "name": "Custom Mythic Hero Gear Chest",
+        "itemId": "custom-mythic-hero-gear-chest",
+        "amount": 1
+      },
+      "cost": 2500,
+      "limit": 2
+    },
+    {
+      "reward": {
+        "name": "Mithril",
+        "itemId": "mithril",
+        "amount": 1
+      },
+      "cost": 500,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Mythic General Hero Shard",
+        "itemId": "mythic-general-hero-shard",
+        "amount": 1
+      },
+      "cost": 100,
+      "limit": 20
+    },
+    {
+      "reward": {
+        "name": "Lucky Hero Gear Chest",
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 5
+      },
+      "cost": 160,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Essence Stones",
+        "itemId": "essence-stones",
+        "amount": 5
+      },
+      "cost": 160,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Charm Design",
+        "itemId": "charm-design",
+        "amount": 6
+      },
+      "cost": 100,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Charm Guide",
+        "itemId": "charm-guide",
+        "amount": 6
+      },
+      "cost": 100,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Design Plans",
+        "itemId": "design-plans",
+        "amount": 7
+      },
+      "cost": 100,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Polishing Solution",
+        "itemId": "polishing-solution",
+        "amount": 35
+      },
+      "cost": 100,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Hardened Alloy",
+        "itemId": "hardened-alloy",
+        "amount": 3500
+      },
+      "cost": 100,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Pet Advancement Materials Custom Chest",
+        "itemId": "pet-advancement-materials-custom-chest",
+        "amount": 3
+      },
+      "cost": 160,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Advanced Wild Mark",
+        "itemId": "advanced-wild-mark",
+        "amount": 1
+      },
+      "cost": 120,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Fire Crystal",
+        "itemId": "fire-crystal",
+        "amount": 6,
+        "note": "The wiki lists 10 Fire Crystals for this offer"
+      },
+      "cost": 50,
+      "limit": 15
+    },
+    {
+      "reward": {
+        "name": "1h General Speedup",
+        "itemId": "speedup-general-1h",
+        "amount": 5
+      },
+      "cost": 80,
+      "limit": 30
+    },
+    {
+      "reward": {
+        "name": "Lv. 3 Custom Resource Chest",
+        "itemId": "lv-3-custom-ressource-chest",
+        "amount": 1
+      },
+      "cost": 10,
+      "limit": 30
+    }
+  ],
+  "shopCurrencyItemId": "warhymn-testament",
+  "missionPointsLabel": "Warhymn Testaments",
+  "missions": [
+    {
+      "group": "League Missions",
+      "name": "Log in",
+      "points": 20,
+      "levels": 7,
+      "levelRequirements": [
+        {
+          "level": 1,
+          "requirement": "Log in for 1 day"
+        },
+        {
+          "level": 2,
+          "requirement": "Log in for 2 days"
+        },
+        {
+          "level": 3,
+          "requirement": "Log in for 3 days"
+        },
+        {
+          "level": 4,
+          "requirement": "Log in for 4 days"
+        },
+        {
+          "level": 5,
+          "requirement": "Log in for 5 days"
+        },
+        {
+          "level": 6,
+          "requirement": "Log in for 6 days"
+        },
+        {
+          "level": 7,
+          "requirement": "Log in for 7 days"
+        }
+      ],
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 1000,
+          "note": "One 1K Gems pouch"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 10,
+          "note": "Each is a 100K resource pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 10,
+          "note": "Each is a 100K resource pack"
+        }
+      ]
+    },
+    {
+      "group": "League Missions",
+      "name": "Alliance Contributions",
+      "points": 10,
+      "levels": 7,
+      "levelRequirements": [
+        {
+          "level": 1,
+          "requirement": "Make 20 Alliance Contributions"
+        },
+        {
+          "level": 2,
+          "requirement": "Make 40 Alliance Contributions"
+        },
+        {
+          "level": 3,
+          "requirement": "Make 60 Alliance Contributions"
+        },
+        {
+          "level": 4,
+          "requirement": "Make 80 Alliance Contributions"
+        },
+        {
+          "level": 5,
+          "requirement": "Make 100 Alliance Contributions"
+        },
+        {
+          "level": 6,
+          "requirement": "Make 120 Alliance Contributions"
+        },
+        {
+          "level": 7,
+          "requirement": "Make 140 Alliance Contributions"
+        }
+      ],
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 1
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 10K resource pack"
+        }
+      ],
+      "note": "The wiki lists 150 Alliance Contributions as an example milestone, while level 7 here is 140."
+    },
+    {
+      "group": "League Missions",
+      "name": "Gather resources",
+      "points": 10,
+      "levels": 7,
+      "levelRequirements": [
+        {
+          "level": 1,
+          "requirement": "Gather 10,000,000 resources"
+        },
+        {
+          "level": 2,
+          "requirement": "Gather 20,000,000 resources"
+        },
+        {
+          "level": 3,
+          "requirement": "Gather 30,000,000 resources"
+        },
+        {
+          "level": 4,
+          "requirement": "Gather 40,000,000 resources"
+        },
+        {
+          "level": 5,
+          "requirement": "Gather 50,000,000 resources"
+        },
+        {
+          "level": 6,
+          "requirement": "Gather 60,000,000 resources"
+        },
+        {
+          "level": 7,
+          "requirement": "Gather 70,000,000 resources"
+        }
+      ],
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 2
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 10,
+          "note": "Each is a 100K resource pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 10,
+          "note": "Each is a 100K resource pack"
+        }
+      ]
+    },
+    {
+      "group": "League Missions",
+      "name": "Polar Terror rallies",
+      "points": 10,
+      "levels": 7,
+      "levelRequirements": [
+        {
+          "level": 1,
+          "requirement": "Call rally and hunt down 5 Polar Terrors"
+        },
+        {
+          "level": 2,
+          "requirement": "Call rally and hunt down 10 Polar Terrors"
+        },
+        {
+          "level": 3,
+          "requirement": "Call rally and hunt down 15 Polar Terrors"
+        },
+        {
+          "level": 4,
+          "requirement": "Call rally and hunt down 20 Polar Terrors"
+        },
+        {
+          "level": 5,
+          "requirement": "Call rally and hunt down 25 Polar Terrors"
+        },
+        {
+          "level": 6,
+          "requirement": "Call rally and hunt down 30 Polar Terrors"
+        },
+        {
+          "level": 7,
+          "requirement": "Call rally and hunt down 35 Polar Terrors"
+        }
+      ],
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 10K resource pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 10K resource pack"
+        }
+      ]
+    },
+    {
+      "group": "League Missions",
+      "name": "Speedup minutes",
+      "points": 10,
+      "levels": 7,
+      "levelRequirements": [
+        {
+          "level": 1,
+          "requirement": "Use 1,000m of any Speedup"
+        },
+        {
+          "level": 2,
+          "requirement": "Use 2,000m of any Speedup"
+        },
+        {
+          "level": 3,
+          "requirement": "Use 3,000m of any Speedup"
+        },
+        {
+          "level": 4,
+          "requirement": "Use 4,000m of any Speedup"
+        },
+        {
+          "level": 5,
+          "requirement": "Use 5,000m of any Speedup"
+        },
+        {
+          "level": 6,
+          "requirement": "Use 6,000m of any Speedup"
+        },
+        {
+          "level": 7,
+          "requirement": "Use 7,000m of any Speedup"
+        }
+      ],
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 2
+        },
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 1,
+          "note": "Each is a 100 Enhancement XP component"
+        },
+        {
+          "name": "Lv. 3 Custom Resource Chest",
+          "itemId": "lv-3-custom-ressource-chest",
+          "amount": 10
+        }
+      ]
+    }
+  ]
 }

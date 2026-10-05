@@ -1,0 +1,489 @@
+{
+  "id": "fishing-tournament",
+  "name": "Fishing Tournament",
+  "img": "/images/events/fishing-tournament.png",
+  "category": "solo",
+  "description": "Players fish in seasonal waters (Winter, Spring, Summer, Autumn) to catch fish, divers, and crates.",
+  "frequency": "Once a month.",
+  "duration": "3 days.",
+  "requirements": [
+    "Drag a finger across the screen to fish. A new attempt comes every 3 hours.",
+    "Max the equipment to Level 10 before using the Sunken Treasure Hunt. Each attempt costs 1,500 points."
+  ],
+  "phases": [
+    {
+      "name": "Standard fishing",
+      "description": "Fishing with equipment upgrades from Level 1 to 10."
+    },
+    {
+      "name": "Frost Prospect",
+      "description": "Harder fishing with max-level gear and daily free maps."
+    },
+    {
+      "name": "Missions",
+      "description": "Daily missions that reset and give points."
+    },
+    {
+      "name": "Sunken Treasure Hunt",
+      "description": "Unlocks after the equipment is maxed."
+    },
+    {
+      "name": "Leaderboard",
+      "description": "Ranking of players."
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Daily mission: 250 Fishing Points",
+      "scoreTotal": 250,
+      "rewards": [
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 1,
+          "note": "Each is a 100 Enhancement XP component"
+        },
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 1,
+          "note": "Each is a 5K Hero XP item"
+        },
+        {
+          "name": "5m General Speedup",
+          "itemId": "speedup-general-5m",
+          "amount": 2
+        }
+      ],
+      "note": "Missions reset daily at server reset"
+    },
+    {
+      "name": "Daily mission: 500 Fishing Points",
+      "scoreTotal": 500,
+      "rewards": [
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 1,
+          "note": "Each is a 100 Enhancement XP component"
+        },
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 2,
+          "note": "Each is a 5K Hero XP item"
+        },
+        {
+          "name": "5m General Speedup",
+          "itemId": "speedup-general-5m",
+          "amount": 2
+        }
+      ],
+      "note": "Missions reset daily at server reset"
+    },
+    {
+      "name": "Daily mission: 1,000 Fishing Points",
+      "scoreTotal": 1000,
+      "rewards": [
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 1,
+          "note": "Each is a 100 Enhancement XP component"
+        },
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 3,
+          "note": "Each is a 5K Hero XP item"
+        },
+        {
+          "name": "5m General Speedup",
+          "itemId": "speedup-general-5m",
+          "amount": 4
+        }
+      ],
+      "note": "Missions reset daily at server reset"
+    },
+    {
+      "name": "Daily mission: 1,500 Fishing Points",
+      "scoreTotal": 1500,
+      "rewards": [
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 1,
+          "note": "Each is a 100 Enhancement XP component"
+        },
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 2,
+          "note": "Each is a 10K Hero XP item"
+        },
+        {
+          "name": "5m General Speedup",
+          "itemId": "speedup-general-5m",
+          "amount": 4
+        }
+      ],
+      "note": "Missions reset daily at server reset"
+    },
+    {
+      "name": "Daily mission: 2,000 Fishing Points",
+      "scoreTotal": 2000,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 1,
+          "note": "Each is a 100 Enhancement XP component"
+        },
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 3,
+          "note": "Each is a 10K Hero XP item"
+        },
+        {
+          "name": "5m General Speedup",
+          "itemId": "speedup-general-5m",
+          "amount": 6
+        }
+      ],
+      "note": "Missions reset daily at server reset"
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Completed collections",
+      "note": "Skins, furnace, avatar frames, and nameplates."
+    },
+    {
+      "name": "Fishing Club",
+      "note": "Special items and tokens."
+    }
+  ],
+  "tips": [
+    "Upgrade the Line and Hook before the Sinker.",
+    "The Icefisher Voucher gives a 1.5x bonus multiplier.",
+    "The Ocean Scanner alerts you to nearby rare fish.",
+    "The Lantern reveals depths beyond 300 meters.",
+    "The Reel Stabilizer gives +2 protection.",
+    "Collections stay across seasons.",
+    "The event recurs monthly with unique seasonal fish."
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Fishing Points leaderboard (read from a low-resolution wiki image, amounts not confirmed)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "30-day furnace skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day avatar frame",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day march skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "note": "Amount not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "30-day furnace skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day avatar frame",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day march skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "note": "Amount not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "30-day furnace skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day avatar frame",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day march skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "note": "Amount not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-6",
+          "rewards": [
+            {
+              "name": "30-day furnace skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day avatar frame",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day march skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "note": "Amount not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "7-10",
+          "rewards": [
+            {
+              "name": "30-day furnace skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day avatar frame",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h speedup",
+              "note": "Amount and speedup type not confirmed"
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "note": "Amount not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-15",
+          "rewards": [
+            {
+              "name": "30-day furnace skin",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "30-day avatar frame",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h speedup",
+              "note": "Amount and speedup type not confirmed"
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "note": "Amount not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "16-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "30-day avatar frame",
+              "note": "Item and amount not confirmed"
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "note": "Amount not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "note": "Amount not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "101-500",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "note": "Amount not confirmed"
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "note": "Amount not confirmed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

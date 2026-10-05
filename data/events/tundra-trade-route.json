@@ -5,10 +5,75 @@
   "category": "solo",
   "description": "A PvP event where players raid enemy trade carts. It can run with or without the Alliance Showdown event. When both run, players earn extra tickets to refresh their own carts for a higher tier cart and more rewards.",
   "duration": "6 days. On day 7, loot from day 6 can be collected until 4 UTC.",
+  "refreshes": [
+    {
+      "refresh": 1,
+      "gemCost": 100,
+      "chances": {
+        "Uncommon": 50,
+        "Rare": 35,
+        "Epic": 10,
+        "Mythic": 5
+      }
+    },
+    {
+      "refresh": 2,
+      "gemCost": 200,
+      "chances": {
+        "Uncommon": 40,
+        "Rare": 35,
+        "Epic": 15,
+        "Mythic": 10
+      }
+    },
+    {
+      "refresh": 3,
+      "gemCost": 300,
+      "chances": {
+        "Uncommon": 30,
+        "Rare": 35,
+        "Epic": 20,
+        "Mythic": 15
+      }
+    },
+    {
+      "refresh": 4,
+      "gemCost": 400,
+      "chances": {
+        "Uncommon": 20,
+        "Rare": 35,
+        "Epic": 25,
+        "Mythic": 20
+      }
+    },
+    {
+      "refresh": 5,
+      "gemCost": 500,
+      "chances": {
+        "Uncommon": 10,
+        "Rare": 35,
+        "Epic": 30,
+        "Mythic": 25
+      }
+    },
+    {
+      "refresh": 6,
+      "gemCost": 500,
+      "chances": {
+        "Mythic": 100
+      }
+    }
+  ],
   "rewards": [
     {
       "name": "Mythic shards, essence stones, alloy, polish, charms, gear XP, scrolls, pet food, and normal resources",
       "note": "Also gives additional Alliance Showdown points"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 1000,
+      "note": "Assistance reward for escorting an ally truck. Shown as a 1K Gems pouch, with a Lv. 2 resource chest \u00d75 and 5m speedup \u00d75 for the same escort."
     }
   ],
   "tips": [
@@ -20,7 +85,11 @@
     "You can raid the same player at most twice in total.",
     "Lend your strongest troops to allies. They can be used elsewhere at the same time.",
     "From the 6th refresh on, a Mythic Truck is guaranteed.",
-    "A successful raid on your cart can cost you up to 50% of its total rewards."
+    "A successful raid on your cart can cost you up to 50% of its total rewards.",
+    "Each truck counts its own refresh number, and the Mythic truck is guaranteed on the 6th refresh. A refresh costs a ticket from Alliance Showdown or Gems.",
+    "You can ask for Assisting Squads once for each trade phase, and each squad can escort one truck at a time.",
+    "Raids: 4 or 5 raids each day depending on the state. The raid screen shows 1 fire for a truck raided once, 2 fires for one that cannot be raided again, and truck names with letters belong to the alliance you face in Alliance Showdown.",
+    "Truck colors: gray, blue, purple, and orange from lowest to highest quality (older wiki text lists N, R, SR, and SSR)."
   ],
   "eventBuffId": "tundra-trade-route"
 }

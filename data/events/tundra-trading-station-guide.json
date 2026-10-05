@@ -1,0 +1,308 @@
+{
+  "id": "tundra-trading-station-guide",
+  "name": "Tundra Trading Station",
+  "img": "/images/events/tundra-trading-station-guide.png",
+  "category": "solo",
+  "description": "Exchange items you do not need for Trade Vouchers, or spend Trade Vouchers on other items at the Trading Station.",
+  "frequency": "Monthly.",
+  "duration": "2 days.",
+  "requirements": [
+    "Gen-2 hero widgets. Open the crate first, then select the specific hero widget.",
+    "Universal Shards and Expedition or Exploration Manuals for Rare and Epic heroes.",
+    "Specific hero shards only if the hero is at 5 stars before the event starts.",
+    "Heroes do not need to be fully maxed to exchange materials."
+  ],
+  "phases": [
+    {
+      "name": "Exchange",
+      "description": "Exchange eligible items for Trade Vouchers."
+    },
+    {
+      "name": "Redeem",
+      "description": "Redeem Trade Vouchers for rewards in the shop."
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Exchange: Rare hero shard",
+      "rewards": [
+        {
+          "name": "Trade Voucher",
+          "itemId": "trade-voucher",
+          "amount": 6,
+          "note": "For each shard"
+        }
+      ]
+    },
+    {
+      "name": "Exchange: Epic hero shard",
+      "rewards": [
+        {
+          "name": "Trade Voucher",
+          "itemId": "trade-voucher",
+          "amount": 10,
+          "note": "For each shard"
+        }
+      ]
+    },
+    {
+      "name": "Exchange: Mythic hero shard",
+      "rewards": [
+        {
+          "name": "Trade Voucher",
+          "itemId": "trade-voucher",
+          "amount": 100,
+          "note": "For each shard. The wiki lists 100, 150, 200, or 250 depending on the hero."
+        }
+      ]
+    },
+    {
+      "name": "Exchange: hero shard from the 3 newest generations",
+      "rewards": [
+        {
+          "name": "Trade Voucher",
+          "itemId": "trade-voucher",
+          "amount": 50,
+          "note": "Extra for each shard. The wiki lists 50, 100, or 150 extra."
+        }
+      ]
+    },
+    {
+      "name": "Exchange: Gen 8 hero widget (11 widgets)",
+      "rewards": [
+        {
+          "name": "Trade Voucher",
+          "itemId": "trade-voucher",
+          "amount": 200,
+          "note": "For each widget"
+        }
+      ]
+    },
+    {
+      "name": "Exchange: Gen 8 hero widget (3 widgets)",
+      "rewards": [
+        {
+          "name": "Trade Voucher",
+          "itemId": "trade-voucher",
+          "amount": 300,
+          "note": "For each widget"
+        }
+      ]
+    },
+    {
+      "name": "Exchange: Gen 8 hero widget (3 widgets, highest)",
+      "rewards": [
+        {
+          "name": "Trade Voucher",
+          "itemId": "trade-voucher",
+          "amount": 400,
+          "note": "For each widget"
+        }
+      ]
+    }
+  ],
+  "shopCurrencyItemId": "trade-voucher",
+  "shop": [
+    {
+      "reward": {
+        "name": "Mithril",
+        "itemId": "mithril",
+        "amount": 1
+      },
+      "cost": 20000,
+      "limit": 3
+    },
+    {
+      "reward": {
+        "name": "Custom Hero Widget Chest (S8)",
+        "amount": 1,
+        "note": "Item not linked. The three widget chests are for your current hero generation and the two before it."
+      },
+      "cost": 1000,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Custom Hero Widget Chest (S7)",
+        "amount": 1,
+        "note": "Item not linked. The three widget chests are for your current hero generation and the two before it."
+      },
+      "cost": 850,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Custom Hero Widget Chest (S6)",
+        "amount": 1,
+        "note": "Item not linked. The three widget chests are for your current hero generation and the two before it."
+      },
+      "cost": 700,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Charm Guide",
+        "itemId": "charm-guide",
+        "amount": 1
+      },
+      "cost": 350,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Mythic Exploration Skill Manual",
+        "itemId": "mythic-exploration-skill-manual",
+        "amount": 1
+      },
+      "cost": 200,
+      "limit": 100
+    },
+    {
+      "reward": {
+        "name": "Mythic Expedition Skill Manual",
+        "itemId": "mythic-expedition-skill-manual",
+        "amount": 1
+      },
+      "cost": 200,
+      "limit": 100
+    },
+    {
+      "reward": {
+        "name": "Essence Stones",
+        "itemId": "essence-stones",
+        "amount": 1
+      },
+      "cost": 500,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Strengthening Serum",
+        "itemId": "strengthening-serum",
+        "amount": 1
+      },
+      "cost": 1000,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Advanced Wild Mark",
+        "itemId": "advanced-wild-mark",
+        "amount": 1
+      },
+      "cost": 2000,
+      "limit": 2
+    },
+    {
+      "reward": {
+        "name": "Energizing Potion",
+        "itemId": "energizing-potion",
+        "amount": 1
+      },
+      "cost": 500,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Taming Manual",
+        "itemId": "taming-manual",
+        "amount": 1
+      },
+      "cost": 100,
+      "limit": 50
+    },
+    {
+      "reward": {
+        "name": "Unidentified tin can",
+        "amount": 1,
+        "note": "Orange tin can with a 10 on top"
+      },
+      "cost": 60,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Mythic General Hero Shard",
+        "itemId": "mythic-general-hero-shard",
+        "amount": 1
+      },
+      "cost": 1000,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Design Plans",
+        "itemId": "design-plans",
+        "amount": 1
+      },
+      "cost": 350,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Charm Design",
+        "itemId": "charm-design",
+        "amount": 1
+      },
+      "cost": 350,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Enhancement XP Component",
+        "itemId": "enhancement-xp-component",
+        "amount": 1,
+        "note": "Each is a 100 Enhancement XP component"
+      },
+      "cost": 100,
+      "limit": 20
+    },
+    {
+      "reward": {
+        "name": "Steel",
+        "itemId": "steel",
+        "amount": 1000
+      },
+      "cost": 200,
+      "limit": 150
+    },
+    {
+      "reward": {
+        "name": "Lv. 2 Custom Resource Chest",
+        "itemId": "lv-2-custom-ressource-chest",
+        "amount": 1
+      },
+      "cost": 10,
+      "limit": 99999
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Trade Voucher",
+      "itemId": "trade-voucher",
+      "note": "Trade Vouchers do not expire and carry over to the next event."
+    },
+    {
+      "name": "Essence Stones",
+      "itemId": "essence-stones"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard"
+    },
+    {
+      "name": "Lv. 2 Custom Resource Chest",
+      "itemId": "lv-2-custom-ressource-chest"
+    }
+  ],
+  "tips": [
+    "Focus on Intel missions and stay active.",
+    "Get Lucky Wheel heroes to 5 stars for additional tickets.",
+    "Redeemed items do not count toward consumption missions.",
+    "Widget chest rewards vary by server generation.",
+    "Every exchange has a stock limit, and the specific hero shard exchanges show 500 of 500 in stock.",
+    "Each shop offer has a stock limit shown as Left. The widget chests, pet resources, and widget exchanges change by server generation.",
+    "The exchange rows for Universal Shards and Expedition and Exploration Manuals are shown as icons only on the wiki, so their ticket amounts are not loaded.",
+    "Exchanged items do not count toward consumption missions."
+  ]
+}

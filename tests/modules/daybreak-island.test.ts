@@ -285,10 +285,13 @@ describe('Decorations', () => {
       .get()
       .filter((d) => d.img !== undefined);
     expect(withImg.map((d) => d.id)).toEqual([
+      'hero-s-sanctun',
       'cannon',
       'conquering-sword',
       'dragon-pagoda',
       'giant-horn',
+      'icefire-way',
+      'luminari-citadel',
       'serpent-sanctuary',
       'tundra-truck',
       'war-chariot',

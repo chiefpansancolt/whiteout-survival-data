@@ -1,0 +1,375 @@
+{
+  "id": "the-labyrinth",
+  "name": "The Labyrinth",
+  "img": "/images/events/the-labyrinth.png",
+  "category": "solo",
+  "description": "Unlocks at Furnace Level 19. Enter the Labyrinth through the Command Center.",
+  "frequency": "Each zone gives 5 challenge attempts per day, refreshed at 00:00 UTC. Stage progress resets on Monday.",
+  "requirements": [
+    "Furnace Level 19.",
+    "Furnace Level 22 for the Gear Forge, which needs Chief Gear.",
+    "Furnace Level 25 for the Charm Mine, which needs Chief Charm.",
+    "Pets for the Cave of Monsters."
+  ],
+  "phases": [
+    {
+      "name": "Monday and Tuesday",
+      "description": "Land of Heroes."
+    },
+    {
+      "name": "Wednesday and Thursday",
+      "description": "Cave of Monsters and Charm Mine."
+    },
+    {
+      "name": "Friday and Saturday",
+      "description": "Research Center and Gear Forge."
+    },
+    {
+      "name": "Sunday",
+      "description": "Gaia Heart, where all stats apply."
+    }
+  ],
+  "zones": [
+    {
+      "name": "Land of Heroes",
+      "days": ["Monday", "Tuesday"],
+      "statSources": "Heroes, Hero Gear, Hero Exclusive Gear",
+      "unlock": "Unlocked right away",
+      "stages": 600
+    },
+    {
+      "name": "Cave of Monsters",
+      "days": ["Wednesday", "Thursday"],
+      "statSources": "Pets, Pet Skills",
+      "unlock": "Unlocked with Pets (server age of about 54 days)",
+      "stages": 200
+    },
+    {
+      "name": "Charm Mine",
+      "days": ["Wednesday", "Thursday"],
+      "statSources": "Chief Charms",
+      "unlock": "Unlocked at Furnace Level 25 with Chief Charm",
+      "stages": 250
+    },
+    {
+      "name": "Research Center",
+      "days": ["Friday", "Saturday"],
+      "statSources": "Research Center Tech, War Academy Tech",
+      "unlock": "Unlocked right away",
+      "stages": 300
+    },
+    {
+      "name": "Gear Forge",
+      "days": ["Friday", "Saturday"],
+      "statSources": "Chief Gear",
+      "unlock": "Unlocked at Furnace Level 22 with Chief Gear",
+      "stages": 250
+    },
+    {
+      "name": "Gaia Heart",
+      "days": ["Sunday"],
+      "statSources": "All possible stat sources",
+      "unlock": "Unlocked right away",
+      "stages": 700,
+      "note": "Castle battle positions and buffs, alliance tech, territory, gem buffs, and facilities do not work here. You use your own troops without affecting your wilderness deployment or suffering casualties."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Splendid Labyrinth Treasure",
+      "itemId": "splendid-labyrinth-treasure"
+    },
+    {
+      "name": "Labyrinth Treasure",
+      "itemId": "labyrinth-treasure"
+    },
+    {
+      "name": "Luminari Citadel",
+      "decorationId": "luminari-citadel",
+      "note": "Decoration"
+    },
+    {
+      "name": "Hero's Sanctum",
+      "decorationId": "hero-s-sanctun",
+      "note": "Decoration"
+    },
+    {
+      "name": "Glowstone",
+      "itemId": "glowstone",
+      "note": "Raid reward. Spend it in the Labyrinth Shop. Clearing 49 stages of the Cave of Monsters showed 490 Glowstone, and 69 stages of the Charm Mine showed 690."
+    },
+    {
+      "name": "Labyrinth Core",
+      "itemId": "labyrinth-core",
+      "note": "Collect these to unlock the milestone rewards"
+    }
+  ],
+  "tiers": [
+    {
+      "name": "10 Labyrinth Cores",
+      "scoreTotal": 10,
+      "rewards": [
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 5,
+          "note": "Each is a 100 Enhancement XP component"
+        }
+      ]
+    },
+    {
+      "name": "30 Labyrinth Cores",
+      "scoreTotal": 30,
+      "rewards": [
+        {
+          "name": "Hero's Sanctum Lv. 1",
+          "decorationId": "hero-s-sanctun",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "60 Labyrinth Cores",
+      "scoreTotal": 60,
+      "rewards": [
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "100 Labyrinth Cores",
+      "scoreTotal": 100,
+      "rewards": [
+        {
+          "name": "Hero's Sanctum Lv. 1",
+          "decorationId": "hero-s-sanctun",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "150 Labyrinth Cores",
+      "scoreTotal": 150,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "200 Labyrinth Cores",
+      "scoreTotal": 200,
+      "rewards": [
+        {
+          "name": "Hero's Sanctum Lv. 1",
+          "decorationId": "hero-s-sanctun",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "300 Labyrinth Cores",
+      "scoreTotal": 300,
+      "rewards": [
+        {
+          "name": "Custom Mythic Hero Gear Chest",
+          "itemId": "custom-mythic-hero-gear-chest",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "400 Labyrinth Cores",
+      "scoreTotal": 400,
+      "rewards": [
+        {
+          "name": "Hero's Sanctum Lv. 1",
+          "decorationId": "hero-s-sanctun",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "500 Labyrinth Cores",
+      "scoreTotal": 500,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "name": "700 Labyrinth Cores",
+      "scoreTotal": 700,
+      "rewards": [
+        {
+          "name": "Hero's Sanctum Lv. 1",
+          "decorationId": "hero-s-sanctun",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "900 Labyrinth Cores",
+      "scoreTotal": 900,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "1,200 Labyrinth Cores",
+      "scoreTotal": 1200,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "1,500 Labyrinth Cores",
+      "scoreTotal": 1500,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 70
+        }
+      ]
+    },
+    {
+      "name": "1,800 Labyrinth Cores",
+      "scoreTotal": 1800,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 100
+        }
+      ]
+    }
+  ],
+  "shopCurrencyItemId": "glowstone",
+  "shop": [
+    {
+      "reward": {
+        "name": "Mithril",
+        "itemId": "mithril",
+        "amount": 1
+      },
+      "cost": 2500,
+      "limit": 1
+    },
+    {
+      "reward": {
+        "name": "Refined Fire Crystal",
+        "itemId": "refined-fire-crystal",
+        "amount": 1
+      },
+      "cost": 1500,
+      "limit": 3
+    },
+    {
+      "reward": {
+        "name": "Fire Crystal Shard",
+        "itemId": "fire-crystal-shard",
+        "amount": 1
+      },
+      "cost": 50,
+      "limit": 100
+    },
+    {
+      "reward": {
+        "name": "Chief Gear Materials Chest",
+        "itemId": "chief-gear-materials-chest",
+        "amount": 1
+      },
+      "cost": 500,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Charm Design",
+        "itemId": "charm-design",
+        "amount": 1
+      },
+      "cost": 250,
+      "limit": 20
+    },
+    {
+      "reward": {
+        "name": "Charm Guide",
+        "itemId": "charm-guide",
+        "amount": 1
+      },
+      "cost": 250,
+      "limit": 20
+    },
+    {
+      "reward": {
+        "name": "Mythic General Hero Shard",
+        "itemId": "mythic-general-hero-shard",
+        "amount": 1
+      },
+      "cost": 500,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Enhancement XP Component",
+        "itemId": "enhancement-xp-component",
+        "amount": 1,
+        "note": "Each is a 100 Enhancement XP component"
+      },
+      "cost": 50,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "Lucky Hero Gear Chest",
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 1
+      },
+      "cost": 250,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Mythic General Decoration Component",
+        "itemId": "mythic-general-decoration-component",
+        "amount": 1
+      },
+      "cost": 1000,
+      "limit": 10
+    },
+    {
+      "reward": {
+        "name": "1h General Speedup",
+        "itemId": "speedup-general-1h",
+        "amount": 1
+      },
+      "cost": 400,
+      "limit": 40
+    }
+  ],
+  "tips": [
+    "Most zones give Level 10 troops. In the Gaia Heart you can use your own troops without wilderness impact.",
+    "The first clear gives First Win Rewards. Later attempts give Raid Rewards.",
+    "A stage reset does not affect leaderboard ranking.",
+    "Raid unlocks after you clear stages 1 to 10 of a zone. The more stages you clear in a zone, the greater the raid rewards.",
+    "Some zones are named differently in the troop text of the wiki: Land of the Brave, Glowstone Mine, Earthlab, and Dark Forge.",
+    "If your troop level is too low or your deployment capacity is too small, the Labyrinth Explorers supply extra troops."
+  ]
+}

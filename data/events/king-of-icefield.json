@@ -41,6 +41,746 @@
       "description": "Mythic Shards reward"
     }
   ],
+  "days": [
+    {
+      "day": "1",
+      "name": "City Construction",
+      "scoring": [
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 1000
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 30000
+        },
+        {
+          "action": "Use 1m of Speedups for Construction",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Research",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Training (Training, Promotion)",
+          "points": 30
+        },
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 70
+        }
+      ],
+      "note": "The wiki image of this day cuts off after the charm row, so later rows may be missing. Chief Charm score for each level up: Lv. 1 625, Lv. 2 1,250, Lv. 3 3,125, Lv. 4 8,750, Lv. 5 11,250, Lv. 6 12,500, Lv. 7 12,500, Lv. 8 13,000, Lv. 9 14,000, Lv. 10 15,000, Lv. 11 16,000, Lv. 12 17,000, Lv. 13 18,000, Lv. 14 19,000, Lv. 15 20,000, Lv. 16 21,000."
+    },
+    {
+      "day": "2",
+      "name": "Hero Development",
+      "scoring": [
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 1000
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 30000
+        },
+        {
+          "action": "Use 1m of Speedups for Construction",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Research",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Training (Training, Promotion)",
+          "points": 30
+        },
+        {
+          "action": "Play Lucky Wheel 1 time",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 350
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 1220
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 3040
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 4000
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Mithril",
+          "points": 40000
+        }
+      ]
+    },
+    {
+      "day": "3",
+      "name": "Basic Skills Up",
+      "scoring": [
+        {
+          "action": "Pet advancement score increases by 1",
+          "points": 50
+        },
+        {
+          "action": "Use 1 Advanced Wild Mark to refine pets",
+          "points": 15000
+        },
+        {
+          "action": "Use 1 Common Wild Mark to refine pets",
+          "points": 1150
+        },
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 70
+        },
+        {
+          "action": "Play Lucky Wheel 1 time",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 350
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 1220
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 3040
+        }
+      ],
+      "note": "The wiki shows only the rows in the screenshots, so later rows may be missing. Pet advancement score when you advance a pet: Lv. 40 3,000, Lv. 50 4,500, Lv. 60 6,750, Lv. 70 10,000, Lv. 80 12,000, Lv. 90 14,500, Lv. 100 17,500. The row for Lv. 30 is cut off in the source image. Chief Charm score for each level up: Lv. 1 625, Lv. 2 1,250, Lv. 3 3,125, Lv. 4 8,750, Lv. 5 11,250, Lv. 6 12,500, Lv. 7 12,500, Lv. 8 13,000, Lv. 9 14,000, Lv. 10 15,000, Lv. 11 16,000, Lv. 12 17,000, Lv. 13 18,000, Lv. 14 19,000, Lv. 15 20,000, Lv. 16 21,000."
+    },
+    {
+      "day": "4",
+      "name": "Combat Training",
+      "scoring": [
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 70
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 4000
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Mithril",
+          "points": 40000
+        },
+        {
+          "action": "Train 1 Lv. 1 Troop",
+          "points": 1
+        },
+        {
+          "action": "Train 1 Lv. 2 Troop",
+          "points": 2
+        },
+        {
+          "action": "Train 1 Lv. 3 Troop",
+          "points": 3
+        },
+        {
+          "action": "Train 1 Lv. 4 Troop",
+          "points": 5
+        },
+        {
+          "action": "Train 1 Lv. 5 Troop",
+          "points": 7
+        },
+        {
+          "action": "Train 1 Lv. 6 Troop",
+          "points": 11
+        },
+        {
+          "action": "Train 1 Lv. 7 Troop",
+          "points": 16
+        },
+        {
+          "action": "Train 1 Lv. 8 Troop",
+          "points": 23
+        },
+        {
+          "action": "Train 1 Lv. 9 Troop",
+          "points": 30
+        },
+        {
+          "action": "Train 1 Lv. 10 Troop",
+          "points": 39
+        },
+        {
+          "action": "Train 1 Lv. 11 Troop",
+          "points": 49
+        }
+      ],
+      "note": "Points earned from promotion are the difference in points between training troops of the corresponding levels. Chief Charm score for each level up: Lv. 1 625, Lv. 2 1,250, Lv. 3 3,125, Lv. 4 8,750, Lv. 5 11,250, Lv. 6 12,500, Lv. 7 12,500, Lv. 8 13,000, Lv. 9 14,000, Lv. 10 15,000, Lv. 11 16,000, Lv. 12 17,000, Lv. 13 18,000, Lv. 14 19,000, Lv. 15 20,000, Lv. 16 21,000."
+    },
+    {
+      "day": "5",
+      "name": "Basic Skills Up",
+      "scoring": [
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 1000
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 30000
+        },
+        {
+          "action": "Use 1m of Speedups for Construction",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Research",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Training (Training, Promotion)",
+          "points": 30
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 4000
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Mithril",
+          "points": 40000
+        }
+      ]
+    },
+    {
+      "day": "6",
+      "name": "Combat Training",
+      "scoring": [
+        {
+          "action": "Train 1 Lv. 6 Troop",
+          "points": 11
+        },
+        {
+          "action": "Train 1 Lv. 7 Troop",
+          "points": 16
+        },
+        {
+          "action": "Train 1 Lv. 8 Troop",
+          "points": 23
+        },
+        {
+          "action": "Train 1 Lv. 9 Troop",
+          "points": 30
+        },
+        {
+          "action": "Train 1 Lv. 10 Troop",
+          "points": 39
+        },
+        {
+          "action": "Train 1 Lv. 11 Troop",
+          "points": 49
+        }
+      ],
+      "note": "Only the rows from Lv. 6 troops down are shown on the wiki, so the rows above them are not loaded. Chief Gear score for each level up: Uncommon 1,125, Uncommon 1-star 1,875, Rare 3,000, Rare 1-star 4,500, Rare 2-star 5,100, Rare 3-star 5,440, Epic and Epic 1-star 3,230, Epic 2-star and 3-star 3,225, Epic T1 and T1 1-star 3,440, Epic T1 2-star and 3-star 4,085, every Mythic gear up to T2 3-star 6,250, and every Legendary gear up to T3 3-star 9,560. The rows for Epic T2 and Epic T3 are cut off in the source images. Legendary gear is available around day 180 of a server."
+    },
+    {
+      "day": "7",
+      "name": "Hero Development",
+      "scoring": [
+        {
+          "action": "Pet advancement score increases by 1",
+          "points": 50
+        },
+        {
+          "action": "Use 1 Advanced Wild Mark to refine pets",
+          "points": 15000
+        },
+        {
+          "action": "Use 1 Common Wild Mark to refine pets",
+          "points": 1150
+        },
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 1000
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 30000
+        },
+        {
+          "action": "Use 1m of Speedups for Construction",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Research",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Training (Training, Promotion)",
+          "points": 30
+        },
+        {
+          "action": "Raise Chief Gear max score by 1",
+          "points": 36
+        },
+        {
+          "action": "Gather 2,000 Meat in the Wilderness",
+          "points": 3
+        },
+        {
+          "action": "Gather 2,000 Wood in the Wilderness",
+          "points": 3
+        },
+        {
+          "action": "Gather 400 Coal in the Wilderness",
+          "points": 3
+        },
+        {
+          "action": "Gather 100 Iron in the Wilderness",
+          "points": 3
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 350
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 1220
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 3040
+        }
+      ],
+      "note": "Pet advancement score when you advance a pet: Lv. 40 3,000, Lv. 50 4,500, Lv. 60 6,750, Lv. 70 10,000, Lv. 80 12,000, Lv. 90 14,500, Lv. 100 17,500. The row for Lv. 30 is cut off in the source image."
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "stage ranking in your State (top 100 chiefs in a tier with over 50,000 points; only the first 3 ranks are shown in the source image)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 10
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 7500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 6
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "total ranking in your State (top 100 chiefs; only the first 4 rank groups are shown in the source image)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 300
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 150,
+              "note": "Icon read from a small image"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 150
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 75,
+              "note": "Icon read from a small image"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 63
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 80
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 40,
+              "note": "Icon read from a small image"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10000
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 54
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 50
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 25,
+              "note": "Icon read from a small image"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4500
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "cross-state personal ranking (top 1,000 chiefs; only the first 4 rank groups are shown in the source image)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 120
+            },
+            {
+              "name": "30-day nameplate",
+              "amount": 1,
+              "note": "Item not linked; icon read from a small image"
+            },
+            {
+              "name": "30-day avatar frame",
+              "amount": 1,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 100
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 80000
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 100
+            },
+            {
+              "name": "30-day nameplate",
+              "amount": 1,
+              "note": "Item not linked; icon read from a small image"
+            },
+            {
+              "name": "30-day avatar frame",
+              "amount": 1,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 80
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 70000
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 80
+            },
+            {
+              "name": "30-day nameplate",
+              "amount": 1,
+              "note": "Item not linked; icon read from a small image"
+            },
+            {
+              "name": "30-day avatar frame",
+              "amount": 1,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 60
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 60000
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 60
+            },
+            {
+              "name": "30-day nameplate",
+              "amount": 1,
+              "note": "Item not linked; icon read from a small image"
+            },
+            {
+              "name": "30-day avatar frame",
+              "amount": 1,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 50
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 50000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "your State's rank in the cross-state ranking (chiefs with 250,000 personal points from a State in the top 6; only the first 4 ranks are shown in the source image)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 150
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 6
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 200,
+              "note": "Blue tile resource chest"
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 120
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 4
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 150,
+              "note": "Blue tile resource chest"
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 90
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 2
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 100,
+              "note": "Blue tile resource chest"
+            }
+          ]
+        },
+        {
+          "groupRanking": "4",
+          "rewards": [
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 80
+            },
+            {
+              "name": "Platinum Key",
+              "itemId": "platinum-key",
+              "amount": 4,
+              "note": "Icon read from a small image"
+            },
+            {
+              "name": "Lv. 2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 75,
+              "note": "Blue tile resource chest"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "rewards": [
     {
       "name": "Fire Crystal",
@@ -72,5 +812,10 @@
       "name": "Island scrolls"
     }
   ],
-  "tips": ["Earn 2 medals each day.", "Personal and cross-state rankings are available."]
+  "tips": [
+    "Earn 2 medals each day.",
+    "Personal and cross-state rankings are available.",
+    "Each day has its own scoring list and its own reward. The daily rewards are Fire Crystals, Essence Stones, Charm Designs, Charm Guides, Fire Crystals, Chief Designs, and Mythic Shards.",
+    "The ranking rewards are read from small wiki images that show only the first rows. Send the in-game ranking screens to load every rank."
+  ]
 }

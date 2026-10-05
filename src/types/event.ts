@@ -64,11 +64,51 @@ export interface GameEventWave {
   details?: string;
 }
 
+/** A zone of an event, such as a Labyrinth zone, with the days it is open. */
+export interface GameEventZone {
+  name: string;
+  days: string[];
+  /** Where the stats used in this zone come from. */
+  statSources: string;
+  unlock?: string;
+  /** Number of stages in the zone. */
+  stages?: number;
+  note?: string;
+}
+
+/** One refresh of an event item, such as a Tundra Trade Route truck, with its cost and the chance of each quality. */
+export interface GameEventRefresh {
+  refresh: number;
+  gemCost?: number;
+  /** Chance in percent for each quality, such as Uncommon or Mythic. */
+  chances: Record<string, number>;
+}
+
+/** One offer in an event shop, bought with the event's currency. */
+export interface GameEventShopOffer {
+  reward: GameEventReward;
+  cost: number;
+  limit: number;
+}
+
+export interface GameEventMissionLevel {
+  level: number;
+  /** Omit until the requirement is known. */
+  requirement?: string;
+}
+
 export interface GameEventMission {
   group: string;
   name: string;
   /** Base points. Exclusive missions give a bonus on top of this. */
   points: number;
+  /** Number of levels, when the mission has several levels that give the same rewards. */
+  levels?: number;
+  /** What a player must do to complete each level. */
+  levelRequirements?: GameEventMissionLevel[];
+  /** The rewards for each level besides `points`. */
+  rewards?: GameEventReward[];
+  note?: string;
 }
 
 export interface GameEventScoringAction {
@@ -84,7 +124,7 @@ export interface GameEventDay {
   victoryPoints?: number;
   /** How a player or alliance scores points during this day. */
   scoring: GameEventScoringAction[];
-  /** Personal point milestones for this day, as tiers with `scoreTotal` and `rewards`. */
+  /** Personal point milestones for this day, as tiers with `scoreTotal` and `rewards`. Omit `scoreTotal` until the points needed are known. */
   milestones?: GameEventTier[];
   /** Alliance point milestones for this day, as tiers with `scoreTotal` and `rewards`. */
   allianceMilestones?: GameEventTier[];
@@ -131,12 +171,22 @@ export interface GameEvent {
   /** Personal rewards by placement, one table for each thing the placement is based on. */
   personalRankings?: GameEventRankingTable[];
   phases?: GameEventPhase[];
-  /** Per-day details, for events that score and reward each day separately. */
+  /** Per-day details, for events that score and reward each day separately. Also used for the separate versions of an event, such as Armament Competition. */
   days?: GameEventDay[];
   /** Attack waves in order, for wave-based events. */
   waves?: GameEventWave[];
   /** Missions players can complete to earn points, for mission-based events. */
   missions?: GameEventMission[];
+  /** What the `points` of each mission count, when it is not points, such as a currency. */
+  missionPointsLabel?: string;
+  /** Item id of the currency the shop offers cost. */
+  shopCurrencyItemId?: string;
+  /** Refreshes in order, with their cost and quality chances. */
+  refreshes?: GameEventRefresh[];
+  /** Offers in the event shop. */
+  shop?: GameEventShopOffer[];
+  /** Zones with the days each one is open. */
+  zones?: GameEventZone[];
   rewards?: GameEventReward[];
   tips?: string[];
   /** Id of the matching `EventBuff` row. */

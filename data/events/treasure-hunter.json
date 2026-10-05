@@ -1,0 +1,429 @@
+{
+  "id": "treasure-hunter",
+  "name": "Treasure Hunter",
+  "img": "/images/events/treasure-hunter.png",
+  "category": "solo",
+  "description": "An irregular event that lasts for 5 days.",
+  "duration": "5 days.",
+  "requirements": [
+    "Use pickaxes to crush the ice and search a chamber.",
+    "Choose one Ultimate Treasure for each floor before you search. You can change it until you find it.",
+    "Find the Ultimate Treasure to go to the next floor."
+  ],
+  "missionPointsLabel": "Pickaxes",
+  "missions": [
+    {
+      "group": "Daily missions (reset daily)",
+      "name": "Call rally and hunt down 1 Polar Terror",
+      "points": 5
+    },
+    {
+      "group": "Daily missions (reset daily)",
+      "name": "Make 5 Alliance Contributions",
+      "points": 5
+    },
+    {
+      "group": "Daily missions (reset daily)",
+      "name": "Raise 30,000 power by training or promoting troops",
+      "points": 6
+    },
+    {
+      "group": "Daily missions (reset daily)",
+      "name": "Make any purchase 1 time",
+      "points": 10
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Total Treasure Search: 2",
+      "scoreTotal": 2,
+      "rewards": [
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 5,
+          "note": "Each is a 100 Enhancement XP component"
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 5",
+      "scoreTotal": 5,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 10",
+      "scoreTotal": 10,
+      "rewards": [
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 15",
+      "scoreTotal": 15,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 20",
+      "scoreTotal": 20,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 25",
+      "scoreTotal": 25,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 30",
+      "scoreTotal": 30,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 35",
+      "scoreTotal": 35,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 40",
+      "scoreTotal": 40,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 45",
+      "scoreTotal": 45,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 50",
+      "scoreTotal": 50,
+      "rewards": [
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 55",
+      "scoreTotal": 55,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 60",
+      "scoreTotal": 60,
+      "rewards": [
+        {
+          "name": "Mithril",
+          "itemId": "mithril",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 65",
+      "scoreTotal": 65,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 70",
+      "scoreTotal": 70,
+      "rewards": [
+        {
+          "name": "Mithril",
+          "itemId": "mithril",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 75",
+      "scoreTotal": 75,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 80",
+      "scoreTotal": 80,
+      "rewards": [
+        {
+          "name": "Mithril",
+          "itemId": "mithril",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 85",
+      "scoreTotal": 85,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 90",
+      "scoreTotal": 90,
+      "rewards": [
+        {
+          "name": "Mithril",
+          "itemId": "mithril",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 95",
+      "scoreTotal": 95,
+      "rewards": [
+        {
+          "name": "Pickaxe",
+          "itemId": "pickaxe",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "name": "Total Treasure Search: 100",
+      "scoreTotal": 100,
+      "rewards": [
+        {
+          "name": "Mithril",
+          "itemId": "mithril",
+          "amount": 20
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "chamber type (choose one Ultimate Treasure for each floor)",
+      "rankings": [
+        {
+          "groupRanking": "Common chamber",
+          "rewards": [
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 36
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 36
+            },
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 72
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 70
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 70
+            }
+          ]
+        },
+        {
+          "groupRanking": "Supreme chamber",
+          "rewards": [
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 72
+            },
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 72
+            },
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 144
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 140
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 140
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Pickaxe",
+      "itemId": "pickaxe",
+      "note": "Used to search. Daily missions give 5, 5, 6, or 10."
+    },
+    {
+      "name": "Lucky Hero Gear Chest",
+      "itemId": "lucky-hero-gear-chest",
+      "amount": 24,
+      "note": "Treasure Preview"
+    },
+    {
+      "name": "Enhancement XP Component",
+      "itemId": "enhancement-xp-component",
+      "amount": 1,
+      "note": "Treasure Preview. A 100 Enhancement XP component"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 100,
+      "note": "Treasure Preview. A pack of 100 Gems"
+    },
+    {
+      "name": "Hero XP",
+      "itemId": "hero-xp",
+      "amount": 1,
+      "note": "Treasure Preview. A 5K Hero XP item"
+    },
+    {
+      "name": "Iron",
+      "itemId": "iron",
+      "amount": 1,
+      "note": "Treasure Preview. A 10K pack"
+    },
+    {
+      "name": "Coal",
+      "itemId": "coal",
+      "amount": 4,
+      "note": "Treasure Preview. 10K packs"
+    },
+    {
+      "name": "Wood",
+      "itemId": "wood",
+      "amount": 20,
+      "note": "Treasure Preview. 10K packs"
+    },
+    {
+      "name": "Meat",
+      "itemId": "meat",
+      "amount": 20,
+      "note": "Treasure Preview. 10K packs"
+    },
+    {
+      "name": "5m Research Speedup",
+      "itemId": "speedup-research-5m",
+      "amount": 1,
+      "note": "Treasure Preview"
+    },
+    {
+      "name": "5m Troop Training Speedup",
+      "itemId": "speedup-troop-5m",
+      "amount": 1,
+      "note": "Treasure Preview"
+    },
+    {
+      "name": "5m Construction Speedup",
+      "itemId": "speedup-construction-5m",
+      "amount": 1,
+      "note": "Treasure Preview"
+    },
+    {
+      "name": "5m General Speedup",
+      "itemId": "speedup-general-5m",
+      "amount": 1,
+      "note": "Treasure Preview"
+    },
+    {
+      "name": "Steel",
+      "itemId": "steel",
+      "amount": 200,
+      "note": "Treasure Preview"
+    }
+  ],
+  "tips": [
+    "You can change the Ultimate Treasure selection before you find it without losing progress.",
+    "Searching the same chamber again raises your chance to find the treasure.",
+    "The daily mission reset gives steady pickaxes.",
+    "Supreme chambers are the room numbers that are multiples of 5, and they give bigger Ultimate Treasures.",
+    "The wiki text says the milestones are for completing floors, while the reward screen is titled Total Treasure Search Rewards."
+  ]
+}

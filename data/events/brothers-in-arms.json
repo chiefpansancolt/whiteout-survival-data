@@ -1,0 +1,35 @@
+{
+  "id": "brothers-in-arms",
+  "name": "Brothers in Arms",
+  "img": "/images/events/brothers-in-arms.png",
+  "category": "alliance",
+  "description": "Also called KE. Points come only from killing enemy troops or losing your own troops, so it is one of the deadliest events.",
+  "frequency": "Once a month, in the week of the normal Sunfire Castle battle.",
+  "duration": "Friday 00:00 UTC to Sunday 00:00 UTC (2 days).",
+  "phases": [
+    {
+      "name": "Start",
+      "description": "Friday 00:00 UTC. The event begins and gatherings reset. The game gives 24 hours of notice."
+    },
+    {
+      "name": "Sunfire Castle battle",
+      "description": "The normal Sunfire Castle battle happens during the event window."
+    },
+    {
+      "name": "End",
+      "description": "Sunday 00:00 UTC."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Ranking rewards",
+      "note": "Given to the top 100 chiefs with 4,000 or more points. Troop kills and losses give 1 to 15 points depending on troop level."
+    }
+  ],
+  "tips": [
+    "Join the Sunfire Castle battle to gain points.",
+    "Gathering during the event makes you a target. Check gatherings around alliances at the Friday 00:00 UTC reset.",
+    "Attacking cities causes troop losses.",
+    "Use a farm account or friendly battles if you do not want to take part."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "heros-mission",
+  "name": "Hero's Mission",
+  "img": "/images/events/heros-mission.png",
+  "category": "alliance",
+  "description": "Starts in generation 4 and replaces Gina's Revenge. Players defeat Reapers on the world map to get Scattered Parts and shards of the featured Mythic Heroes. Players can also join rallies started by alliance members.",
+  "frequency": "Every 2 weeks.",
+  "duration": "3 days.",
+  "requirements": ["Generation 4 or later.", "Defeat Reapers on the world map."],
+  "phases": [
+    {
+      "name": "Hunt Reapers",
+      "description": "Hunt Reapers alone to collect Scattered Parts."
+    },
+    {
+      "name": "Join rallies",
+      "description": "Join rallies started by alliance members. Up to 50 help rewards each day."
+    },
+    {
+      "name": "Open chests",
+      "description": "Open 5 chests at 1, 3, 5, 7, and 10 Reapers hunted."
+    },
+    {
+      "name": "Exchange",
+      "description": "Convert Horns and Scattered Parts into Gina Shards or loot."
+    }
+  ],
+  "tiers": [
+    {
+      "name": "1 Reaper",
+      "scoreTotal": 1,
+      "rewards": [
+        {
+          "name": "Mythic Hero Shard",
+          "amount": 1
+        },
+        {
+          "name": "Hero XP",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "name": "3 Reapers",
+      "scoreTotal": 3,
+      "rewards": [
+        {
+          "name": "Mythic Hero Shard",
+          "amount": 2
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "Hero XP",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "name": "5 Reapers",
+      "scoreTotal": 5,
+      "rewards": [
+        {
+          "name": "Mythic Hero Shard",
+          "amount": 2
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "Hero XP",
+          "amount": 10000
+        }
+      ]
+    },
+    {
+      "name": "7 Reapers",
+      "scoreTotal": 7,
+      "rewards": [
+        {
+          "name": "Mythic Hero Shard",
+          "amount": 2
+        },
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 2
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "Hero XP",
+          "amount": 10000
+        }
+      ]
+    },
+    {
+      "name": "10 Reapers",
+      "scoreTotal": 10,
+      "rewards": [
+        {
+          "name": "Mythic Hero Shard",
+          "amount": 3
+        },
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "Hero XP",
+          "amount": 20000
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Hunt Reapers one at a time with Gina for bonuses.",
+    "Join as many rallies as possible for rewards.",
+    "Scattered Parts stay after the event ends.",
+    "After 10 rallies, hunt beasts for more Scattered Parts."
+  ]
+}

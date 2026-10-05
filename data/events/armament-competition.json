@@ -1,0 +1,570 @@
+{
+  "id": "armament-competition",
+  "name": "Armament Competition",
+  "img": "/images/events/armament-competition.png",
+  "category": "solo",
+  "description": "Unlocks when you start Fire Crystal buildings, replacing City Development. It has two competition types, one for chief gear and one for chief charms.",
+  "personalRankings": [
+    {
+      "basedOn": "Personal ranking",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 10
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 50000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 20
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 20
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 20
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 6
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 15
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 15
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 15
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 4
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 13
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 13
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 13
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 3
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10800
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 9
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 9
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 9
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3800
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 60
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 60
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1900
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 35
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 35
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "days": [
+    {
+      "day": "chief-gear",
+      "name": "Chief Gear",
+      "scoring": [
+        {
+          "action": "Use 1 Fire Crystal",
+          "points": 100
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal",
+          "points": 1500
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard",
+          "points": 50
+        },
+        {
+          "action": "Raise max Chief Gear score by 1",
+          "points": 3
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 800
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 1600
+        },
+        {
+          "action": "Use 1 Mithril",
+          "points": 28800
+        },
+        {
+          "action": "Use 1m of Construction Speedup",
+          "points": 1
+        },
+        {
+          "action": "Use 1m of Research Speedup",
+          "points": 1
+        },
+        {
+          "action": "Use 1m of Training Speedup (Training, Promotion)",
+          "points": 1
+        }
+      ],
+      "note": "Refined Fire Crystal and Fire Crystal Shard points unlock based on the state age. The points needed for each level are not loaded yet.",
+      "milestones": [
+        {
+          "name": "Level 1",
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 30,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 30,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 6,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 1,
+              "note": "Each is a 10K resource pack"
+            }
+          ]
+        },
+        {
+          "name": "Level 2",
+          "rewards": [
+            {
+              "name": "Hero XP",
+              "itemId": "hero-xp",
+              "amount": 15,
+              "note": "Each is a 1K Hero XP item"
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 40
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 40
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "name": "Level 3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4200
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 255,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 255,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 60,
+              "note": "Each is a 10K resource pack"
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 17
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 12,
+              "note": "Each is a 10K resource pack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "chief-charm",
+      "name": "Chief Charm",
+      "scoring": [
+        {
+          "action": "Raise max Chief Charm score by 1",
+          "points": 5
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 800
+        },
+        {
+          "action": "Use 1 Rare Hero Shard",
+          "points": 15
+        },
+        {
+          "action": "Use 1 Epic Hero Shard",
+          "points": 50
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard",
+          "points": 125
+        },
+        {
+          "action": "Use 1m of Construction Speedup",
+          "points": 1
+        },
+        {
+          "action": "Use 1m of Research Speedup",
+          "points": 1
+        },
+        {
+          "action": "Use 1m of Training Speedup (Training, Promotion)",
+          "points": 1
+        }
+      ],
+      "note": "The points needed for each level are not loaded yet.",
+      "milestones": [
+        {
+          "name": "Level 1",
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 30,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 30,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 6,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 1,
+              "note": "Each is a 10K resource pack"
+            }
+          ]
+        },
+        {
+          "name": "Level 2",
+          "rewards": [
+            {
+              "name": "Hero XP",
+              "itemId": "hero-xp",
+              "amount": 15,
+              "note": "Each is a 1K Hero XP item"
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 40
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 40
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "name": "Level 3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4200
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 255,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 255,
+              "note": "Each is a 10K resource pack"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 60,
+              "note": "Each is a 10K resource pack"
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 20
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 12,
+              "note": "Each is a 10K resource pack"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Ranking rewards",
+      "note": "Given to the top 100 chiefs with over 4,000 points"
+    }
+  ]
+}
