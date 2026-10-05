@@ -14,11 +14,13 @@ import deadshot from '@/data/events/deadshot.json';
 import defeatNearbyBeasts from '@/data/events/defeat-nearby-beasts.json';
 import developNewTech2 from '@/data/events/develop-new-tech-2.json';
 import developNewTech from '@/data/events/develop-new-tech.json';
+import dreamscapeMemory from '@/data/events/dreamscape-memory.json';
 import fishingTournament from '@/data/events/fishing-tournament.json';
 import flameAndFang from '@/data/events/flame-and-fang.json';
 import foundryBattle from '@/data/events/foundry-battle.json';
 import frostdragonTyrant from '@/data/events/frostdragon-tyrant.json';
 import frostfireMine from '@/data/events/frostfire-mine.json';
+import frostyFortuneSkinEvent from '@/data/events/frosty-fortune-skin-event.json';
 import ginasRevenge from '@/data/events/ginas-revenge.json';
 import growYourHeroes from '@/data/events/grow-your-heroes.json';
 import hallOfChief from '@/data/events/hall-of-chief.json';
@@ -36,6 +38,7 @@ import officerProject from '@/data/events/officer-project.json';
 import planYourCity from '@/data/events/plan-your-city.json';
 import powerUp from '@/data/events/power-up.json';
 import returnToTundra from '@/data/events/return-to-tundra.json';
+import romanceSeason from '@/data/events/romance-season.json';
 import snowbusters from '@/data/events/snowbusters.json';
 import standOfArms from '@/data/events/stand-of-arms.json';
 import sunfireCastle from '@/data/events/sunfire-castle.json';
@@ -49,6 +52,7 @@ import tundraArmsLeague from '@/data/events/tundra-arms-league.json';
 import tundraGames from '@/data/events/tundra-games.json';
 import tundraTradeRoute from '@/data/events/tundra-trade-route.json';
 import tundraTradingStationGuide from '@/data/events/tundra-trading-station-guide.json';
+import visionOfDawn from '@/data/events/vision-of-dawn.json';
 import warPreparation from '@/data/events/war-preparation.json';
 import wildBrawl from '@/data/events/wild-brawl.json';
 import workingOvertime2 from '@/data/events/working-overtime-2.json';
@@ -108,6 +112,10 @@ const eventsData: GameEvent[] = [
   returnToTundra,
   symphonyOfChange,
   workingOvertime2,
+  dreamscapeMemory,
+  frostyFortuneSkinEvent,
+  romanceSeason,
+  visionOfDawn,
 ] as GameEvent[];
 
 /** Query builder for GameEvent data. All filter methods return a new EventsQuery for chaining. */

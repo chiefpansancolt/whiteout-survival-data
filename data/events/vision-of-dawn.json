@@ -1,0 +1,314 @@
+{
+  "id": "vision-of-dawn",
+  "name": "Vision of Dawn",
+  "img": "/images/events/vision-of-dawn.png",
+  "category": "holiday",
+  "description": "A 3-day event where you hit daily targets to win Hope points and unlock five Hope progress chests. Target progress resets daily.",
+  "duration": "3 days",
+  "requirements": [
+    "The last chest cannot be unlocked unless you make 1 purchase in the game. There is no minimum amount.",
+    "Recruitment missions unlock at Generation 3, about 120 days of state age."
+  ],
+  "missions": [
+    {
+      "group": "Newbie states: Easy",
+      "name": "Defeat 5 Beasts",
+      "points": 2,
+      "rewards": [
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 1,
+          "note": "Each is a 10K Hero XP item"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 10,
+          "note": "Each is a 10K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 10,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Newbie states: Easy",
+      "name": "Gather 3,000,000 resources",
+      "points": 2,
+      "rewards": [
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 1,
+          "note": "Each is a 10K Hero XP item"
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 10,
+          "note": "Each is a 10K pack"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 10,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Newbie states: Easy",
+      "name": "Call rally and hunt down 3 Polar Terrors",
+      "points": 2,
+      "rewards": [
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 1,
+          "note": "Each is a 10K Hero XP item"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Newbie states: Difficult",
+      "name": "Defeat 15 Beasts",
+      "points": 4,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 5
+        },
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "group": "Newbie states: Difficult",
+      "name": "Call rally and hunt down 10 Polar Terrors",
+      "points": 4,
+      "rewards": [
+        {
+          "name": "Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 3,
+          "note": "Each is a 100 Enhancement XP component"
+        },
+        {
+          "name": "5m General Speedup",
+          "itemId": "speedup-general-5m",
+          "amount": 5
+        },
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "group": "Newbie states: Easy",
+      "name": "Raise 50,000 Power by training or promoting troops",
+      "points": 2,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 300,
+          "note": "Three 100 Gems packs"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Fire Crystal age: Easy",
+      "name": "Use Advanced Recruitment 10 times",
+      "points": 2,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 300,
+          "note": "Three 100 Gems packs"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 20,
+          "note": "Each is a 1K pack"
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 5,
+          "note": "Each is a 1K pack"
+        }
+      ]
+    },
+    {
+      "group": "Fire Crystal age: Difficult",
+      "name": "Use Epic Recruitment 10 times",
+      "points": 4,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 10
+        },
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 10
+        },
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "group": "Fire Crystal age: Difficult",
+      "name": "Use Epic Recruitment 30 times",
+      "points": 10,
+      "rewards": [
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        {
+          "name": "Hero shard pile",
+          "amount": 5,
+          "note": "Red crystal item; not identified"
+        },
+        {
+          "name": "Resource chest",
+          "amount": 10,
+          "note": "Chest with resources; not identified"
+        }
+      ]
+    }
+  ],
+  "missionPointsLabel": "Hope points",
+  "tiers": [
+    {
+      "name": "First chest",
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 300,
+          "note": "Three 100 Gems packs"
+        },
+        {
+          "name": "Chief Stamina",
+          "itemId": "chief-stamina",
+          "amount": 2,
+          "note": "Each is a 10 stamina can"
+        }
+      ]
+    },
+    {
+      "name": "Second chest",
+      "rewards": [
+        {
+          "name": "1h General Speedup",
+          "itemId": "speedup-general-1h",
+          "amount": 2
+        },
+        {
+          "name": "Chief Stamina",
+          "itemId": "chief-stamina",
+          "amount": 2,
+          "note": "Each is a 10 stamina can"
+        }
+      ]
+    },
+    {
+      "name": "Third chest",
+      "rewards": [
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 5,
+          "note": "Each is a 10K Hero XP item"
+        },
+        {
+          "name": "Chief Stamina",
+          "itemId": "chief-stamina",
+          "amount": 3,
+          "note": "Each is a 10 stamina can"
+        }
+      ]
+    },
+    {
+      "name": "Fourth chest",
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 2000,
+          "note": "Two 1K Gems pouches"
+        },
+        {
+          "name": "Chief Stamina",
+          "itemId": "chief-stamina",
+          "amount": 3,
+          "note": "Each is a 10 stamina can"
+        }
+      ]
+    },
+    {
+      "name": "Fifth chest",
+      "rewards": [
+        {
+          "name": "War Chant Custom Chest",
+          "itemId": "war-chant-custom-chest",
+          "amount": 3
+        },
+        {
+          "name": "Chief Stamina",
+          "itemId": "chief-stamina",
+          "amount": 10,
+          "note": "Each is a 10 stamina can"
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Total Hope points with one purchase: 122. With every mission and purchase: 162.",
+    "Use the extra 240 stamina in the storehouse each day, and Gina lowers the stamina cost.",
+    "Keep your recruitment keys. They are also used in Frosty Fortune and skin events."
+  ]
+}

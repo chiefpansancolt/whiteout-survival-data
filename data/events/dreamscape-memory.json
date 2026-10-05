@@ -1,0 +1,62 @@
+{
+  "id": "dreamscape-memory",
+  "name": "Dreamscape Memory",
+  "img": "/images/events/dreamscape-memory.png",
+  "category": "holiday",
+  "description": "A recurring scavenger hunt mini game. It started in the 3rd Anniversary event.",
+  "frequency": "Recurring",
+  "phases": [
+    {
+      "name": "How to play",
+      "description": "Use Dream Fishbits to start a chapter, then start each section. Find all the items listed at the bottom, in groups of three, to finish a section. If you run out of time, spend Dreambells for extra time and 1 hint, and each later use in a section costs more. Hints do not carry to the next chapter. Finish all sections to claim the chapter rewards."
+    },
+    {
+      "name": "Failing a section",
+      "description": "Failing resets your progress and kicks you out of the chapter, and you get some Dream Fishbits back: chapter 1 gives back 10, chapter 2 gives 16, chapter 3 gives 18, chapter 4 gives 16, chapter 5 gives 10, and chapters 6 to 10 give none."
+    },
+    {
+      "name": "Rewards",
+      "description": "Daily Missions (log in, find items, and make 1 purchase), Chapter Rewards after each chapter, and Recall Road. Each section gives Recall XP that you claim when you finish a chapter and that fills the Recall Road."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Cloud Fantasy",
+      "skinId": "cloud-fantasy",
+      "note": "City skin in Recall Road"
+    },
+    {
+      "name": "Ninja Meow",
+      "skinId": "ninja-meow",
+      "note": "March skin in Recall Road"
+    },
+    {
+      "name": "Dream Odyssey",
+      "skinId": "dream-odyssey",
+      "note": "Avatar frame skin in Recall Road"
+    },
+    {
+      "name": "Dream Nest",
+      "decorationId": "dream-nest",
+      "amount": 1,
+      "note": "Event island building in Recall Road. It cannot be upgraded with island Mythic general shards, only with pieces from this event. It has levels 1, 6, and 10."
+    },
+    {
+      "name": "Dream Fishbit",
+      "itemId": "dream-fishbit",
+      "note": "Unused ones do not carry to the next event. The tins stay in your backpack."
+    },
+    {
+      "name": "Dreambell",
+      "itemId": "dreambell",
+      "note": "Stay in your backpack"
+    }
+  ],
+  "tips": [
+    "If you have a farm account, play there first to study the maps.",
+    "Maps are random. The order of chapters 2 to 10 differs between players, but items stay in the same place within a chapter.",
+    "Tapping the wrong spot costs no time. The game shows an item if you take too long, but in later levels the delay is not worth it.",
+    "Later chapters have more sections and less time for each.",
+    "The hint button is the magnifying glass above the third item."
+  ]
+}

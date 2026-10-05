@@ -1,0 +1,59 @@
+{
+  "id": "frosty-fortune-skin-event",
+  "name": "Frosty Fortune",
+  "img": "/images/events/frosty-fortune-skin-event.png",
+  "category": "holiday",
+  "description": "A skin event with three linked parts: Treasure Hunt Drill, Frosty Fortune, and the Emporium of Enigma. You earn Gems of Enigma and open chests for Thorns of Enigma and skin progress.",
+  "frequency": "Irregular",
+  "phases": [
+    {
+      "name": "Treasure Hunt Drill",
+      "description": "Two tabs, the drill and its daily missions. Drill points come from your daily tasks, and missions reset at 00:00 UTC. A 4.99 USD pack doubles the drill rewards. The drill gives Gems of Enigma and Thorns of Enigma."
+    },
+    {
+      "name": "Frosty Fortune (chests)",
+      "description": "Spend Gems of Enigma to open chests. You have 3 free refreshes, then each refresh costs 90. There are three chest types, Silver (standard), Gold (exquisite), and Red (splendid). Rewards unlock after you open 5, 10, 20, 30, and 50 chests."
+    },
+    {
+      "name": "Emporium of Enigma",
+      "description": "Spend Thorns of Enigma in the shop. There are three shops by state generation: the first for Gen 1, the second from Gen 3, and the same as the second for Gen 7 with different pet pack counts. Unused Thorns turn into resources when the event ends."
+    }
+  ],
+  "requirements": [
+    "You can reach up to 4,800 drill points as a free-to-play player, which covers the mandatory missions."
+  ],
+  "rewards": [
+    {
+      "name": "Snowmobile",
+      "skinId": "snowmobile",
+      "note": "March skin. Chance by Gems of Enigma saved: 2,800 73.28%, 3,800 97.59%, 4,800 99.77%, 5,800 99.98%, and 6,800 99.99%."
+    },
+    {
+      "name": "Brute Mammoth",
+      "skinId": "brute-mammamoth",
+      "note": "March skin. Chance by Gems of Enigma saved: 2,800 17.25%, 3,800 58.54%, 4,800 84.06%, 5,800 95.65%, 6,800 99.15%, 7,800 99.90%, and 8,800 99.99%."
+    },
+    {
+      "name": "Furnace skin",
+      "note": "Any furnace skin. Chance by Gems of Enigma saved: 15,000 24.90%, 16,000 39.82%, 17,000 55.67%, 18,000 70.83%, 19,000 83.15%, 20,000 90.98%, 22,000 98.40%, 24,000 98.82%, and 26,000 100%."
+    },
+    {
+      "name": "Gem of Enigma",
+      "itemId": "gem-of-enigma",
+      "note": "Kept in your backpack for the next event"
+    },
+    {
+      "name": "Thorn of Enigma",
+      "itemId": "thorn-of-enigma",
+      "note": "Not kept for the next event"
+    }
+  ],
+  "tips": [
+    "There are two ways to get skins: buy everything in the packs, or save Gems of Enigma over several events.",
+    "For march skins, open only Gold and Red chests and refresh otherwise. You can also open a Silver chest if it is the only one left.",
+    "For furnace skins, open only Gold and Red chests, and open Silver chests only when 3 or fewer are left.",
+    "The chances come from player simulations and may differ from the game.",
+    "The best Thorn purchases are the widget, essence stone, pet chest, and fire crystal items. Free-to-play players should save Gems of Enigma on the first event if they want a skin.",
+    "You can get a skin as a free-to-play player, but it might take 2 or more rounds."
+  ]
+}

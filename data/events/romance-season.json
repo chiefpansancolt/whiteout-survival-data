@@ -1,0 +1,44 @@
+{
+  "id": "romance-season",
+  "name": "Romance Season",
+  "img": "/images/events/romance-season.png",
+  "category": "holiday",
+  "description": "The season of love in the Tundra, with three sub events: Petals of Desire, the Silverfrost Shop, and Bloom Battle.",
+  "frequency": "Yearly, around February",
+  "duration": "02/10/2026 00:00 UTC to 02/14/2026 23:59 UTC (5 days)",
+  "phases": [
+    {
+      "name": "Petals of Desire",
+      "description": "Complete daily missions (reset at 00:00 UTC) to earn Flower Points and unlock the reward track. After all rewards are claimed, each extra 500 points gives an extra supply. The Blossoming Promise pack doubles the daily mission rewards and adds Epic rewards."
+    },
+    {
+      "name": "Silverfrost Shop",
+      "description": "The exchange hub. Destiny Points come from commissions and from packs in Petals of Desire, and unlock milestone rewards in the shop. Silver Shells come from Petals of Desire daily missions and Silver Shell Packs, and buy limited-time items. Progress clears when the event ends and unclaimed rewards are mailed."
+    },
+    {
+      "name": "Bloom Battle",
+      "description": "The Rosarion appears at random in the Wilderness and seizes roses. Defeat it to protect the roses. You get 5 attacks each day on the Rosarion, and unused attacks do not carry over. Each attack gives Rosarion Attack Rewards and points by damage. Points reset daily and rewards are sent the next day by that day\u2019s points ranking."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Flower Points",
+      "note": "Unlock rewards in Petals of Desire"
+    },
+    {
+      "name": "Destiny Points",
+      "note": "Unlock milestone rewards in the Silverfrost Shop"
+    },
+    {
+      "name": "Silver Shell",
+      "itemId": "silver-shell",
+      "note": "Exchange for limited-time items in the Silverfrost Shop"
+    }
+  ],
+  "tips": [
+    "Complete the daily missions every day to get as many Flower Points, Destiny Points, and Silver Shells as you can.",
+    "Join Bloom Battle for extra rewards.",
+    "Spend your event currencies before the event ends.",
+    "The reward track and shop amounts are shown on the wiki only as images."
+  ]
+}

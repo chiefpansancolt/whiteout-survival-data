@@ -56,6 +56,18 @@ describe('EventsQuery', () => {
     expect(events().byCategory('alliance').count()).toBe(12);
     expect(
       events()
+        .byCategory('holiday')
+        .get()
+        .map((e) => e.id)
+        .sort(),
+    ).toEqual([
+      'dreamscape-memory',
+      'frosty-fortune-skin-event',
+      'romance-season',
+      'vision-of-dawn',
+    ]);
+    expect(
+      events()
         .byCategory('rookie')
         .get()
         .map((e) => e.id)
@@ -372,6 +384,7 @@ describe('Events data', () => {
       'cannon',
       'conquering-sword',
       'dragon-pagoda',
+      'dream-nest',
       'giant-horn',
       'hero-s-sanctun',
       'icefire-way',
@@ -1346,6 +1359,33 @@ describe('Events data', () => {
     ]);
     generationHeroes.forEach((x) => expect(heroData().find(x.heroId)).toBeDefined());
     expect(generationHeroes[0].shardItemId).toBe('hero-shard-gen-2b');
+    const frosty = events().find('frosty-fortune-skin-event')!;
+    expect(frosty.shop).toBeUndefined();
+    expect(frosty.rewards!.filter((x) => x.skinId !== undefined).map((x) => x.skinId)).toEqual([
+      'snowmobile',
+      'brute-mammamoth',
+    ]);
+    const dawn = events().find('vision-of-dawn')!;
+    expect(dawn.tiers!.map((t) => t.name)).toEqual([
+      'First chest',
+      'Second chest',
+      'Third chest',
+      'Fourth chest',
+      'Fifth chest',
+    ]);
+    expect(dawn.tiers![4].rewards![0]).toMatchObject({
+      itemId: 'war-chant-custom-chest',
+      amount: 3,
+    });
+    expect(dawn.missionPointsLabel).toBe('Hope points');
+    expect(events().find('romance-season')!.phases).toHaveLength(3);
+    const dream = events().find('dreamscape-memory')!;
+    expect(dream.rewards!.map((x) => x.skinId ?? x.decorationId).filter(Boolean)).toEqual([
+      'cloud-fantasy',
+      'ninja-meow',
+      'dream-odyssey',
+      'dream-nest',
+    ]);
     const mission = events().find('heros-mission')!;
     expect(mission.tiers!.map((t) => t.scoreTotal)).toEqual([1, 3, 5, 7, 10]);
     expect(mission.tiers![4].rewards).toContainEqual({
