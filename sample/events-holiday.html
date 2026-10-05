@@ -196,8 +196,8 @@
     return wrap;
   }
 
-  function flatTierTable(tiers) {
-    const hasScore = tiers.some((t) => t.scoreTotal !== undefined);
+  function flatTierTable(tiers, alwaysShowScore = false) {
+    const hasScore = alwaysShowScore || tiers.some((t) => t.scoreTotal !== undefined);
     const hasRewards = tiers.some((t) => t.rewards && t.rewards.length);
     const table = el('table');
     const headRow = table.createTHead().insertRow();
@@ -210,7 +210,7 @@
       if (hasScore) {
         const cell = row.insertCell();
         cell.className = 'num';
-        cell.textContent = tier.scoreTotal === undefined ? '' : tier.scoreTotal.toLocaleString('en-US');
+        cell.textContent = tier.scoreTotal === undefined ? 'TBD' : tier.scoreTotal.toLocaleString('en-US');
       }
       if (hasRewards) row.insertCell().append(rewardList(tier.rewards ?? []));
     });
@@ -280,17 +280,81 @@
     return section('Tiers (lowest to highest)', body);
   }
 
-  function missionsTable(missions) {
+  function shopTable(shop, event) {
     const table = el('table');
     const headRow = table.createTHead().insertRow();
-    ['Mission', 'Base points'].forEach((label) => headRow.append(el('th', '', label)));
+    ['Offer', event.shopCurrencyItemId && ITEMS[event.shopCurrencyItemId] ? `Cost (${ITEMS[event.shopCurrencyItemId].name})` : 'Cost', 'Limit'].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    shop.forEach((offer) => {
+      const row = body.insertRow();
+      row.insertCell().append(rewardList([offer.reward]));
+      const cost = row.insertCell();
+      cost.className = 'num';
+      cost.textContent = offer.cost.toLocaleString('en-US');
+      const limit = row.insertCell();
+      limit.className = 'num';
+      limit.textContent = offer.limit;
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
+  function zonesTable(zones) {
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    ['Zone', 'Open', 'Stats from', 'Unlock', 'Stages'].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    zones.forEach((zone) => {
+      const row = body.insertRow();
+      row.insertCell().textContent = zone.name;
+      row.insertCell().textContent = zone.days.join(', ');
+      row.insertCell().textContent = zone.statSources;
+      row.insertCell().textContent = zone.unlock ?? '';
+      const stages = row.insertCell();
+      stages.className = 'num';
+      stages.textContent = zone.stages === undefined ? '' : zone.stages.toLocaleString('en-US');
+      if (zone.note) row.title = zone.note;
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
+  function refreshesTable(refreshes) {
+    const qualities = [...new Set(refreshes.flatMap((r) => Object.keys(r.chances)))];
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    ['Refresh', 'Gem cost', ...qualities.map((q) => `${q} chance`)].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    refreshes.forEach((refresh) => {
+      const row = body.insertRow();
+      row.insertCell().textContent = refresh.refresh;
+      const cost = row.insertCell();
+      cost.className = 'num';
+      cost.textContent = refresh.gemCost === undefined ? '' : refresh.gemCost.toLocaleString('en-US');
+      qualities.forEach((q) => {
+        const cell = row.insertCell();
+        cell.className = 'num';
+        cell.textContent = refresh.chances[q] === undefined ? '' : `${refresh.chances[q]}%`;
+      });
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
+  function missionsTable(missions, pointsLabel = 'Base points') {
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    ['Mission', pointsLabel, ...(missions.some((m) => m.levels) ? ['Levels'] : []), ...(missions.some((m) => m.levelRequirements) ? ['Level requirements'] : []), ...(missions.some((m) => m.rewards) ? ['Other rewards'] : [])].forEach((label) => headRow.append(el('th', '', label)));
     const body = table.createTBody();
     let lastGroup;
     missions.forEach((mission) => {
       if (mission.group !== lastGroup) {
         const groupRow = body.insertRow();
         const cell = groupRow.insertCell();
-        cell.colSpan = 2;
+        cell.colSpan = headRow.cells.length;
         cell.append(el('b', '', mission.group));
         lastGroup = mission.group;
       }
@@ -299,6 +363,13 @@
       const points = row.insertCell();
       points.className = 'num';
       points.textContent = mission.points.toLocaleString('en-US');
+      if (missions.some((m) => m.levels)) row.insertCell().textContent = mission.levels ?? '';
+      if (missions.some((m) => m.levelRequirements)) {
+        const requirements = row.insertCell();
+        (mission.levelRequirements ?? []).forEach((l) => requirements.append(el('div', '', `Level ${l.level}: ${l.requirement ?? 'TBD'}`)));
+        if (mission.note) requirements.title = mission.note;
+      }
+      if (missions.some((m) => m.rewards)) row.insertCell().append(rewardList(mission.rewards ?? []));
     });
     const wrap = el('div', 'scroll');
     wrap.append(table);
@@ -326,12 +397,12 @@
     scoringWrap.append(scoring);
     body.append(scoringWrap);
     if (day.milestones) {
-      body.append(el('p', 'sub', 'Personal point milestones and rewards'));
-      body.append(flatTierTable(day.milestones));
+      body.append(el('p', 'sub', (/^\d/.test(day.day) ? 'Personal point milestones and rewards' : 'Target point levels and rewards')));
+      body.append(flatTierTable(day.milestones, true));
     }
     if (day.allianceMilestones) {
       body.append(el('p', 'sub', 'Alliance point milestones and rewards'));
-      body.append(flatTierTable(day.allianceMilestones));
+      body.append(flatTierTable(day.allianceMilestones, true));
     }
     return body;
   }
@@ -346,7 +417,7 @@
       pills.append(pill);
     });
     body.append(pills, dayContent(event.days.find((day) => day.day === selected)));
-    return section('Days', body);
+    return section(event.days.every((day) => /^\d/.test(day.day)) ? 'Days' : 'Versions', body);
   }
 
   function pointLevelsTable(pointLevels) {
@@ -429,7 +500,10 @@
     if (event.waves) card.append(section('Waves', wavesTable(event.waves)));
     if (event.pointLevels) card.append(section('Defense point levels', pointLevelsTable(event.pointLevels)));
     if (event.days) card.append(daysSection(event));
-    if (event.missions) card.append(section('Missions', missionsTable(event.missions)));
+    if (event.zones) card.append(section('Zones', zonesTable(event.zones)));
+    if (event.refreshes) card.append(section('Refreshes', refreshesTable(event.refreshes)));
+    if (event.shop) card.append(section('Shop', shopTable(event.shop, event)));
+    if (event.missions) card.append(section('Missions', missionsTable(event.missions, event.missionPointsLabel)));
     if (event.tiers) card.append(tiersSection(event));
     if (event.allianceRankings) card.append(section(event.allianceRankingUpdates ? 'Alliance rewards (first list)' : 'Alliance rewards', rankingTable(event.allianceRankings, 'Alliance rank')));
     if (event.allianceRankingUpdates) event.allianceRankingUpdates.forEach((update) => {
