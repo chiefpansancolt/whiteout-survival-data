@@ -1,0 +1,13 @@
+{
+  "id": "home-beyond",
+  "name": "Home Beyond",
+  "img": "/images/events/home-beyond.png",
+  "category": "rookie",
+  "description": "This event lets you unlock 3 heroes and get shards. You can buy a pack with more shards, manuals, gems, and an emoticon.",
+  "rewards": [
+    {
+      "name": "Hero shards",
+      "note": "Unlocks 3 heroes"
+    }
+  ]
+}

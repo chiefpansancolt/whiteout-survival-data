@@ -1,0 +1,13 @@
+{
+  "id": "trial-event",
+  "name": "Trial Event",
+  "img": "/images/events/trial-event.png",
+  "category": "rookie",
+  "description": "Available at the beginning of the game. This event gives you Jessie, a Generation 1 hero.",
+  "rewards": [
+    {
+      "name": "Jessie",
+      "note": "Generation 1 hero"
+    }
+  ]
+}

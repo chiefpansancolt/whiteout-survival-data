@@ -42,7 +42,24 @@ describe('EventsQuery', () => {
       'wild-brawl',
     ]);
     expect(events().byCategory('alliance').count()).toBe(14);
-    expect(events().byCategory('rookie').count()).toBe(0);
+    expect(
+      events()
+        .byCategory('rookie')
+        .get()
+        .map((e) => e.id)
+        .sort(),
+    ).toEqual([
+      'city-development',
+      'develop-new-tech',
+      'develop-new-tech-2',
+      'grow-your-heroes',
+      'home-beyond',
+      'plan-your-city',
+      'power-up',
+      'trial-event',
+      'trusted-chief',
+      'war-preparation',
+    ]);
   });
 });
 
@@ -1177,6 +1194,27 @@ describe('Events data', () => {
       expect(dropTotal(n)).toBeCloseTo(100),
     );
     expect(events().find('hero-rally')!.rewards).toHaveLength(1);
+    const trusted = events().find('trusted-chief')!;
+    expect(trusted.days![0].milestones!.map((m) => m.scoreTotal)).toEqual([100, 2000, 7500, 16000]);
+    expect(trusted.days![0].scoring.map((x) => x.points)).toEqual([3, 1, 1, 1]);
+    expect(trusted.personalRankings![0].rankings).toHaveLength(8);
+    const powerUp = events().find('power-up')!;
+    expect(powerUp.days![1].milestones!.map((m) => m.scoreTotal)).toEqual([
+      1000, 150000, 290000, 450000,
+    ]);
+    expect(
+      events()
+        .find('grow-your-heroes')!
+        .days![0].scoring.map((x) => x.points),
+    ).toEqual([15, 50, 125]);
+    expect(
+      events()
+        .find('develop-new-tech')!
+        .days![0].milestones!.map((m) => m.scoreTotal),
+    ).toEqual([10, 240, 610, 1170]);
+    expect(events().find('war-preparation')!.days![0].milestones![2].rewards![0]).toMatchObject({
+      amount: 16,
+    });
     const mission = events().find('heros-mission')!;
     expect(mission.tiers!.map((t) => t.scoreTotal)).toEqual([1, 3, 5, 7, 10]);
     expect(mission.tiers![4].rewards).toContainEqual({

@@ -1,0 +1,298 @@
+{
+  "id": "develop-new-tech",
+  "name": "Develop New Tech",
+  "img": "/images/events/develop-new-tech.png",
+  "category": "rookie",
+  "description": "Spark the flame of civilization with technology.",
+  "days": [
+    {
+      "day": "develop-new-tech",
+      "name": "Develop New Tech",
+      "scoring": [
+        {
+          "action": "Use 1m of Speedups for Research",
+          "points": 1
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Level 1",
+          "rewards": [
+            {
+              "name": "Meat and Wood (1K packs)",
+              "note": "Amounts are blurred in the source image"
+            }
+          ],
+          "scoreTotal": 10
+        },
+        {
+          "name": "Level 2",
+          "rewards": [
+            {
+              "name": "Meat, Wood, Coal, and Iron (10K packs)",
+              "note": "Amounts are blurred in the source image"
+            }
+          ],
+          "scoreTotal": 240
+        },
+        {
+          "name": "Level 3",
+          "rewards": [
+            {
+              "name": "Hero XP (1K) and 5m speedups",
+              "note": "Amounts are blurred in the source image"
+            }
+          ],
+          "scoreTotal": 610
+        },
+        {
+          "name": "Level 4",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4000
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            }
+          ],
+          "scoreTotal": 1170
+        }
+      ],
+      "note": "The wiki page has two copies of this event with the same images. The ranking image shows the same rewards as other events."
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Honor Ranking (given to the top 100 chiefs over 4,000 points)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 50000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 20
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 20
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 20
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 3,
+              "note": "Purple key icon"
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 15
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 15
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 15
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 2,
+              "note": "Purple key icon"
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 13
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 13
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 13
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 1,
+              "note": "Purple key icon"
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10800
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 9
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 9
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 9
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3800
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 60
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 60
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1900
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 35
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 35
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
