@@ -2579,5 +2579,165 @@
     "img": "/images/items/battle-commendation-custom-chest-gen-hero.png",
     "category": "Chest",
     "sources": ["State of Power"]
+  },
+  {
+    "id": "hero-shard-gen-5",
+    "name": "Gwen Shard",
+    "img": "/images/heroes/Gwen/Gwen-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Gwen, the Generation 5 marksman hero sold in the Hall of Heroes. The name is matched from the portrait and a community guide, and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-chest-s1",
+    "name": "Hero Shard Chest S1",
+    "img": "/images/items/hero-shard-chest-s1.png",
+    "category": "Chest",
+    "description": "Contains hero shards. For the heroes of season 1. The name is read from the icon in the Hall of Heroes shop and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-widget-chest-s1",
+    "name": "Hero Widget Chest S1",
+    "img": "/images/items/hero-widget-chest-s1.png",
+    "category": "Chest",
+    "description": "Contains hero widgets. For the heroes of season 1. The name is read from the icon in the Hall of Heroes shop and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-chest-s2",
+    "name": "Hero Shard Chest S2",
+    "img": "/images/items/hero-shard-chest-s2.png",
+    "category": "Chest",
+    "description": "Contains hero shards. For the heroes of season 2. The name is read from the icon in the Hall of Heroes shop and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-widget-chest-s2",
+    "name": "Hero Widget Chest S2",
+    "img": "/images/items/hero-widget-chest-s2.png",
+    "category": "Chest",
+    "description": "Contains hero widgets. For the heroes of season 2. The name is read from the icon in the Hall of Heroes shop and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-chest-s3",
+    "name": "Hero Shard Chest S3",
+    "img": "/images/items/hero-shard-chest-s3.png",
+    "category": "Chest",
+    "description": "Contains hero shards. For the heroes of season 3. The name is read from the icon in the Hall of Heroes shop and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-widget-chest-s3",
+    "name": "Hero Widget Chest S3",
+    "img": "/images/items/hero-widget-chest-s3.png",
+    "category": "Chest",
+    "description": "Contains hero widgets. For the heroes of season 3. The name is read from the icon in the Hall of Heroes shop and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-chest-s4",
+    "name": "Hero Shard Chest S4",
+    "img": "/images/items/hero-shard-chest-s4.png",
+    "category": "Chest",
+    "description": "Contains hero shards. For the heroes of season 4. The name is read from the icon in the Hall of Heroes shop and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-widget-chest-s4",
+    "name": "Hero Widget Chest S4",
+    "img": "/images/items/hero-widget-chest-s4.png",
+    "category": "Chest",
+    "description": "Contains hero widgets. For the heroes of season 4. The name is read from the icon in the Hall of Heroes shop and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-1a",
+    "name": "Molly Shard",
+    "img": "/images/heroes/Molly/Molly-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Molly, a Generation 1 hero sold in the Hall of Heroes. The name is matched from the portrait and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-1b",
+    "name": "Zinman Shard",
+    "img": "/images/heroes/Zinman/Zinman-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Zinman, a Generation 1 hero sold in the Hall of Heroes. The name is matched from the portrait and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-2a",
+    "name": "Alonso Shard",
+    "img": "/images/heroes/Alonso/Alonso-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Alonso, a Generation 2 hero sold in the Hall of Heroes.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-2b",
+    "name": "Philly Shard",
+    "img": "/images/heroes/Philly/Philly-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Philly, a Generation 2 hero sold in the Hall of Heroes.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-2c",
+    "name": "Flint Shard",
+    "img": "/images/heroes/Flint/Flint-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Flint, a Generation 2 hero sold in the Hall of Heroes.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-3a",
+    "name": "Logan Shard",
+    "img": "/images/heroes/Logan/Logan-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Logan, a Generation 3 hero sold in the Hall of Heroes. The name is matched from the portrait and is not confirmed.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-4",
+    "name": "Reina Shard",
+    "img": "/images/heroes/Reina/Reina-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Reina, a Generation 4 hero sold in the Hall of Heroes.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-6",
+    "name": "Wu Ming Shard",
+    "img": "/images/heroes/WuMing/WuMing-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Wu Ming, a Generation 6 hero sold in the Hall of Heroes.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-7",
+    "name": "Gordon Shard",
+    "img": "/images/heroes/Gordon/Gordon-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Gordon, a Generation 7 hero sold in the Hall of Heroes.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-8",
+    "name": "Hendrik Shard",
+    "img": "/images/heroes/Hendrik/Hendrik-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Hendrik, a Generation 8 hero sold in the Hall of Heroes.",
+    "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "hero-shard-gen-9",
+    "name": "Magnus Shard",
+    "img": "/images/heroes/Magnus/Magnus-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Magnus, a Generation 9 hero sold in the Hall of Heroes.",
+    "sources": ["Hall of Heroes"]
   }
 ]

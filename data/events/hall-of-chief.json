@@ -1,0 +1,533 @@
+{
+  "id": "hall-of-chief",
+  "name": "Hall of Chief",
+  "img": "/images/events/hall-of-chief.png",
+  "category": "solo",
+  "description": "The first event where you compete against other chiefs of your state. You score points each day with set items to earn Gems and ranking rewards.",
+  "frequency": "Every two weeks",
+  "duration": "Season 1 lasts 6 days. Season 2 lasts 7 days.",
+  "days": [
+    {
+      "day": "s1-1",
+      "name": "Season 1, Stage 1",
+      "scoring": [
+        {
+          "action": "Raise 1 Power through Construction",
+          "points": 45
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 45
+        }
+      ],
+      "note": "The stage name is not shown on the wiki. The rank 1 chiefs of each stage also get extra rewards such as 20K Gems."
+    },
+    {
+      "day": "s1-2",
+      "name": "Season 1, Stage 2: Hero Development",
+      "scoring": [
+        {
+          "action": "Play Lucky Wheel 1 time",
+          "points": 90000
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 4000
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 14000
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 35000
+        },
+        {
+          "action": "Gather 200 Meat in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 200 Wood in the Wilderness",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "day": "s1-3",
+      "name": "Season 1, Stage 3: Train Troops",
+      "scoring": [
+        {
+          "action": "Train 1 Lv. 1 Troop",
+          "points": 90
+        },
+        {
+          "action": "Train 1 Lv. 2 Troop",
+          "points": 120
+        },
+        {
+          "action": "Train 1 Lv. 3 Troop",
+          "points": 180
+        },
+        {
+          "action": "Train 1 Lv. 4 Troop",
+          "points": 265
+        },
+        {
+          "action": "Train 1 Lv. 5 Troop",
+          "points": 385
+        },
+        {
+          "action": "Train 1 Lv. 6 Troop",
+          "points": 595
+        },
+        {
+          "action": "Train 1 Lv. 7 Troop",
+          "points": 830
+        },
+        {
+          "action": "Train 1 Lv. 8 Troop",
+          "points": 1130
+        },
+        {
+          "action": "Train 1 Lv. 9 Troop",
+          "points": 1485
+        },
+        {
+          "action": "Train 1 Lv. 10 Troop",
+          "points": 1960
+        }
+      ],
+      "note": "Points from promotion are the difference between the points of the two troop levels."
+    },
+    {
+      "day": "s1-4",
+      "name": "Season 1, Stage 4: Gather Resources",
+      "scoring": [
+        {
+          "action": "Gather 200 Meat in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 200 Wood in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 40 Coal in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 10 Iron in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 45
+        }
+      ]
+    },
+    {
+      "day": "s1-5",
+      "name": "Season 1, Stage 5: Power Boost",
+      "scoring": [
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 50000
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 100000
+        },
+        {
+          "action": "Raise 1 Power through Construction",
+          "points": 30
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 30
+        },
+        {
+          "action": "Raise 1 Power by training or promoting troops",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "day": "s1-6",
+      "name": "Season 1, Stage 6: Chief Gear Upgrade",
+      "scoring": [
+        {
+          "action": "Raise max Chief Gear score by 1 (excluding Charm)",
+          "points": 500
+        },
+        {
+          "action": "Raise 1 Power through Construction",
+          "points": 30
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 30
+        },
+        {
+          "action": "Raise 1 Power by training or promoting troops",
+          "points": 20
+        }
+      ],
+      "note": "Chief Gear score for each level up is on the wiki as a small table (Uncommon 1,125 up to Legendary 9,560)."
+    },
+    {
+      "day": "s2-1",
+      "name": "Season 2, Stage 1",
+      "scoring": [
+        {
+          "action": "Raise 1 Power through Construction",
+          "points": 30
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 30
+        },
+        {
+          "action": "Raise 1 Power by training or promoting troops",
+          "points": 20
+        }
+      ],
+      "note": "The stage name is not shown on the wiki."
+    },
+    {
+      "day": "s2-2",
+      "name": "Season 2, Stage 2: Hero Development",
+      "scoring": [
+        {
+          "action": "Play Lucky Wheel 1 time",
+          "points": 90000
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 4000
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 14000
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 35000
+        },
+        {
+          "action": "Gather 200 Meat in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 200 Wood in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 40 Coal in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 10 Iron in the Wilderness",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "day": "s2-3",
+      "name": "Season 2, Stage 3: Train Troops",
+      "scoring": [
+        {
+          "action": "Train 1 Lv. 1 Troop",
+          "points": 90
+        },
+        {
+          "action": "Train 1 Lv. 2 Troop",
+          "points": 120
+        },
+        {
+          "action": "Train 1 Lv. 3 Troop",
+          "points": 180
+        },
+        {
+          "action": "Train 1 Lv. 4 Troop",
+          "points": 265
+        },
+        {
+          "action": "Train 1 Lv. 5 Troop",
+          "points": 385
+        },
+        {
+          "action": "Train 1 Lv. 6 Troop",
+          "points": 595
+        },
+        {
+          "action": "Train 1 Lv. 7 Troop",
+          "points": 830
+        },
+        {
+          "action": "Train 1 Lv. 8 Troop",
+          "points": 1130
+        },
+        {
+          "action": "Train 1 Lv. 9 Troop",
+          "points": 1485
+        },
+        {
+          "action": "Train 1 Lv. 10 Troop",
+          "points": 1960
+        }
+      ],
+      "note": "Points from promotion are the difference between the points of the two troop levels."
+    },
+    {
+      "day": "s2-4",
+      "name": "Season 2, Stage 4: Charm Upgrade",
+      "scoring": [
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 1000
+        },
+        {
+          "action": "Gather 200 Meat in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 200 Wood in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 40 Coal in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Gather 10 Iron in the Wilderness",
+          "points": 15
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 45
+        }
+      ],
+      "note": "Chief Charm score for each level up: Lv. 1 625, Lv. 2 1,250, Lv. 3 3,125, Lv. 4 8,750, Lv. 5 11,250, Lv. 6 12,500, Lv. 7 12,500, Lv. 8 13,000, Lv. 9 14,000, Lv. 10 15,000, Lv. 11 16,000, Lv. 12 17,000, Lv. 13 18,000, Lv. 14 19,000, Lv. 15 20,000, Lv. 16 21,000."
+    },
+    {
+      "day": "s2-5",
+      "name": "Season 2, Stage 5: Power Boost",
+      "scoring": [
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 50000
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 100000
+        },
+        {
+          "action": "Raise 1 Power through Construction",
+          "points": 30
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 30
+        },
+        {
+          "action": "Raise 1 Power by training or promoting troops",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "day": "s2-6",
+      "name": "Season 2, Stage 6: Chief Gear Upgrade",
+      "scoring": [
+        {
+          "action": "Raise max Chief Gear score by 1 (excluding Charm)",
+          "points": 500
+        }
+      ]
+    },
+    {
+      "day": "s2-7",
+      "name": "Season 2, Stage 7: Hero Development",
+      "scoring": [
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 4000
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 14000
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 35000
+        },
+        {
+          "action": "Use 1m of Speedups for Construction",
+          "points": 300
+        },
+        {
+          "action": "Use 1m of Speedups for Research",
+          "points": 300
+        },
+        {
+          "action": "Use 1m of Speedups for Training or Promotion",
+          "points": 300
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "stage ranking (top 100 chiefs in a tier over 50,000 points, mailed). Read from a small image, only the first ranks are shown",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 7500,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4500,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "total ranking (top 100 chiefs, mailed). Read from a small image, only the first ranks are shown",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Season hero shards",
+              "note": "Amount not readable in the source image",
+              "itemId": "mythic-general-hero-shard"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 80000,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Season hero shards",
+              "note": "Amount not readable in the source image",
+              "itemId": "mythic-general-hero-shard"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 48000,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Season hero shards",
+              "note": "Amount not readable in the source image",
+              "itemId": "mythic-general-hero-shard"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 28800,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Season hero shards",
+              "note": "Amount not readable in the source image",
+              "itemId": "mythic-general-hero-shard"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Season hero shards",
+              "note": "Amount not readable in the source image",
+              "itemId": "mythic-general-hero-shard"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10000,
+              "note": "Read from a small image; not confirmed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Season hero shards",
+      "note": "Jeronimo in Season 1 and Philly in Season 2, given for a good total rank",
+      "itemId": "mythic-general-hero-shard"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 20000,
+      "note": "Extra for ranking first in a stage"
+    }
+  ],
+  "tips": [
+    "Coordinate with players who have many resources and plan when to spend them.",
+    "Wait until many players have spent their resources, but act before the stage resets so you rank first in the stage.",
+    "Save resources for months without upgrading. This helps free-to-play players compete."
+  ]
+}

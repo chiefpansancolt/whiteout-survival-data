@@ -90,6 +90,8 @@ export interface Hero {
   id: string;
   name: string;
   img: string;
+  /** Icon of this hero's shard. Set only for the heroes whose shard icon has been captured. */
+  shardImg?: string;
   rarity: HeroRarity;
   class: HeroClass;
   subClass: HeroSubClass;

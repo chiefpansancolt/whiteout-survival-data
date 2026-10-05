@@ -1,0 +1,1115 @@
+{
+  "id": "hall-of-heroes",
+  "name": "Hall of Heroes",
+  "img": "/images/events/hall-of-heroes.png",
+  "category": "solo",
+  "description": "A shop event that runs every other week. Marks of Valor buy hero shards and widget chests for your generation and earlier ones.",
+  "frequency": "Every other week, from Sunday to Tuesday",
+  "duration": "3 days",
+  "requirements": [
+    "The shop rewards depend on your hero generation.",
+    "Marks of Valor of the current generation can be bought. Marks of earlier generations can still be used in their old shops."
+  ],
+  "rewards": [
+    {
+      "name": "Mark of Valor",
+      "itemId": "mark-of-valor",
+      "note": "Free: 1 Mark of Valor once per event and 100 free Gems each day. The other 99 Marks cost 150 Gems each, so up to 100 Marks cost 13,850 Gems."
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "note": "12 Marks of Valor each, limit 100 in the shop"
+    }
+  ],
+  "shopCurrencyItemId": "mark-of-valor",
+  "shops": [
+    {
+      "name": "Generation 1 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Molly Shard",
+            "itemId": "hero-shard-gen-1a",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Zinman Shard",
+            "itemId": "hero-shard-gen-1b",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 420,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Generation 2 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Alonso Shard",
+            "itemId": "hero-shard-gen-2a",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 9,
+          "limit": 420,
+          "reward": {
+            "name": "Molly Shard",
+            "itemId": "hero-shard-gen-1a",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 9,
+          "limit": 420,
+          "reward": {
+            "name": "Zinman Shard",
+            "itemId": "hero-shard-gen-1b",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 18,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S1",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s1"
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 420,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Generation 3 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Logan Shard",
+            "itemId": "hero-shard-gen-3a",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Alonso Shard",
+            "itemId": "hero-shard-gen-2a",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Philly Shard",
+            "itemId": "hero-shard-gen-2b",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Flint Shard",
+            "itemId": "hero-shard-gen-2c",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 16,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S2",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s2"
+          }
+        },
+        {
+          "cost": 7,
+          "limit": 550,
+          "reward": {
+            "name": "Molly Shard",
+            "itemId": "hero-shard-gen-1a",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 7,
+          "limit": 550,
+          "reward": {
+            "name": "Zinman Shard",
+            "itemId": "hero-shard-gen-1b",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 14,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S1",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s1"
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 420,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Generation 4 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Reina Shard",
+            "itemId": "hero-shard-gen-4",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S3",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s3"
+          }
+        },
+        {
+          "cost": 16,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S3",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s3"
+          }
+        },
+        {
+          "cost": 6,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S2",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s2"
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S2",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s2"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 550,
+          "reward": {
+            "name": "Hero Shard Chest S1",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s1"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S1",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s1"
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 550,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Generation 5 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Gwen Shard",
+            "itemId": "hero-shard-gen-5",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 9,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S4",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s4"
+          }
+        },
+        {
+          "cost": 18,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S4",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s4"
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S3",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s3"
+          }
+        },
+        {
+          "cost": 16,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S3",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s3"
+          }
+        },
+        {
+          "cost": 6,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S2",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s2"
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S2",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s2"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 550,
+          "reward": {
+            "name": "Hero Shard Chest S1",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s1"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S1",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s1"
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 550,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Generation 6 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Wu Ming Shard",
+            "itemId": "hero-shard-gen-6",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 9,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S5",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 18,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S5",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S4",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s4"
+          }
+        },
+        {
+          "cost": 16,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S4",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s4"
+          }
+        },
+        {
+          "cost": 7,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S3",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s3"
+          }
+        },
+        {
+          "cost": 14,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S3",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s3"
+          }
+        },
+        {
+          "cost": 6,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S2",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s2"
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S2",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s2"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 550,
+          "reward": {
+            "name": "Hero Shard Chest S1",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s1"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S1",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s1"
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 550,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Generation 7 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Gordon Shard",
+            "itemId": "hero-shard-gen-7",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 9,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S6",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 18,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S6",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S5",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 16,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S5",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 7,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S4",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s4"
+          }
+        },
+        {
+          "cost": 14,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S4",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s4"
+          }
+        },
+        {
+          "cost": 6,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S3",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s3"
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S3",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s3"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S2",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s2"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S2",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s2"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 550,
+          "reward": {
+            "name": "Hero Shard Chest S1",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s1"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S1",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s1"
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 550,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Generation 8 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Hendrik Shard",
+            "itemId": "hero-shard-gen-8",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 9,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S7",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 18,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S7",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S6",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 16,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S6",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 7,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S5",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 14,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S5",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 6,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S4",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s4"
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S4",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s4"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S3",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s3"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S3",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s3"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 550,
+          "reward": {
+            "name": "Hero Shard Chest S2",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s2"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S2",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s2"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 550,
+          "reward": {
+            "name": "Hero Shard Chest S1",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s1"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S1",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s1"
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 550,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Generation 9 shop",
+      "offers": [
+        {
+          "cost": 10,
+          "limit": 370,
+          "reward": {
+            "name": "Magnus Shard",
+            "itemId": "hero-shard-gen-9",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 100,
+          "reward": {
+            "name": "Mythic General Hero Shard",
+            "itemId": "mythic-general-hero-shard",
+            "amount": 1,
+            "note": "Orange puzzle piece"
+          }
+        },
+        {
+          "cost": 9,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S8",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 18,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S8",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 8,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S7",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 16,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S7",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 7,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S6",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 14,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S6",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 6,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S5",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 12,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S5",
+            "amount": 1,
+            "note": "Item not linked"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S4",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s4"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S4",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s4"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 500,
+          "reward": {
+            "name": "Hero Shard Chest S3",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s3"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S3",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s3"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 550,
+          "reward": {
+            "name": "Hero Shard Chest S2",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s2"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S2",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s2"
+          }
+        },
+        {
+          "cost": 5,
+          "limit": 550,
+          "reward": {
+            "name": "Hero Shard Chest S1",
+            "amount": 1,
+            "itemId": "hero-shard-chest-s1"
+          }
+        },
+        {
+          "cost": 10,
+          "limit": 300,
+          "reward": {
+            "name": "Hero Widget Chest S1",
+            "amount": 1,
+            "itemId": "hero-widget-chest-s1"
+          }
+        },
+        {
+          "cost": 3,
+          "limit": 550,
+          "reward": {
+            "name": "Epic General Hero Shard",
+            "itemId": "epic-general-hero-shard",
+            "amount": 1
+          }
+        },
+        {
+          "cost": 1,
+          "limit": 10,
+          "reward": {
+            "name": "Hero XP",
+            "itemId": "hero-xp",
+            "amount": 1,
+            "note": "A 10K Hero XP item"
+          }
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "For widget chests, the generation before yours costs 18 Marks of Valor each, and each earlier generation costs 2 fewer, down to 10 Marks.",
+    "Each pack can be bought once a day.",
+    "Check how many Mythic General Hero Shards a hero needs before you commit to it.",
+    "Heroes of each generation unlock (days after the state starts): Gen 1 0, Gen 2 40, Gen 3 120, Gen 4 200, Gen 5 280, Gen 6 360, Gen 7 440, Gen 8 520, Gen 9 600, Gen 10 700, Gen 11 800, Gen 12 870.",
+    "Mythic General Hero Shards cost 1,800 Gems each from Lucky Wheel tickets, against 2,500 Gems in the VIP shop."
+  ]
+}

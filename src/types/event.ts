@@ -84,6 +84,12 @@ export interface GameEventRefresh {
   chances: Record<string, number>;
 }
 
+/** A named group of shop offers, such as the shop of one hero generation. */
+export interface GameEventShop {
+  name: string;
+  offers: GameEventShopOffer[];
+}
+
 /** One offer in an event shop, bought with the event's currency. */
 export interface GameEventShopOffer {
   reward: GameEventReward;
@@ -187,6 +193,8 @@ export interface GameEvent {
   refreshes?: GameEventRefresh[];
   /** Offers in the event shop. */
   shop?: GameEventShopOffer[];
+  /** Several shops, when the event has one shop for each group, such as each hero generation. */
+  shops?: GameEventShop[];
   /** Zones with the days each one is open. */
   zones?: GameEventZone[];
   rewards?: GameEventReward[];

@@ -17,18 +17,18 @@ describe('ItemQuery', () => {
 
   it('byCategory() filters to the given category', () => {
     const chests = items().byCategory('Chest');
-    expect(chests.count()).toBe(51);
+    expect(chests.count()).toBe(59);
     expect(chests.get().every((i) => i.category === 'Chest')).toBe(true);
   });
 });
 
 describe('Item catalog', () => {
-  it('tracks 251 items across 11 categories', () => {
-    expect(items().count()).toBe(251);
-    expect(items().byCategory('Hero Items').count()).toBe(10);
+  it('tracks 271 items across 11 categories', () => {
+    expect(items().count()).toBe(271);
+    expect(items().byCategory('Hero Items').count()).toBe(22);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
-    expect(items().byCategory('Chest').count()).toBe(51);
+    expect(items().byCategory('Chest').count()).toBe(59);
     expect(items().byCategory('Buff').count()).toBe(31);
     expect(items().byCategory('Fire Crystal').count()).toBe(4);
     expect(items().byCategory('Experts').count()).toBe(16);

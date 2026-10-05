@@ -17,6 +17,8 @@ import foundryBattle from '@/data/events/foundry-battle.json';
 import frostdragonTyrant from '@/data/events/frostdragon-tyrant.json';
 import frostfireMine from '@/data/events/frostfire-mine.json';
 import growYourHeroes from '@/data/events/grow-your-heroes.json';
+import hallOfChief from '@/data/events/hall-of-chief.json';
+import hallOfHeroes from '@/data/events/hall-of-heroes.json';
 import heroRally from '@/data/events/hero-rally.json';
 import herosMission from '@/data/events/heros-mission.json';
 import homeBeyond from '@/data/events/home-beyond.json';
@@ -24,6 +26,7 @@ import icefireWarhymnLeague from '@/data/events/icefire-warhymn-league.json';
 import kingOfIcefield from '@/data/events/king-of-icefield.json';
 import luckyWheel from '@/data/events/lucky-wheel.json';
 import mercenaryPrestige from '@/data/events/mercenary-prestige.json';
+import miaFortune from '@/data/events/mia-fortune.json';
 import officerProject from '@/data/events/officer-project.json';
 import planYourCity from '@/data/events/plan-your-city.json';
 import powerUp from '@/data/events/power-up.json';
@@ -86,6 +89,9 @@ const eventsData: GameEvent[] = [
   trialEvent,
   trustedChief,
   warPreparation,
+  hallOfChief,
+  hallOfHeroes,
+  miaFortune,
 ] as GameEvent[];
 
 /** Query builder for GameEvent data. All filter methods return a new EventsQuery for chaining. */

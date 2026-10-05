@@ -32,7 +32,8 @@
       "rewards": [
         {
           "name": "Mythic Hero Shard",
-          "amount": 1
+          "amount": 1,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "name": "Hero XP",
@@ -46,7 +47,8 @@
       "rewards": [
         {
           "name": "Mythic Hero Shard",
-          "amount": 2
+          "amount": 2,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "name": "Lucky Hero Gear Chest",
@@ -65,7 +67,8 @@
       "rewards": [
         {
           "name": "Mythic Hero Shard",
-          "amount": 2
+          "amount": 2,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "name": "Lucky Hero Gear Chest",
@@ -84,7 +87,8 @@
       "rewards": [
         {
           "name": "Mythic Hero Shard",
-          "amount": 2
+          "amount": 2,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "name": "Essence Stones",
@@ -108,7 +112,8 @@
       "rewards": [
         {
           "name": "Mythic Hero Shard",
-          "amount": 3
+          "amount": 3,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "name": "Essence Stones",

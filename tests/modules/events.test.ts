@@ -40,6 +40,9 @@ describe('EventsQuery', () => {
       'stand-of-arms',
       'tundra-games',
       'wild-brawl',
+      'hall-of-chief',
+      'hall-of-heroes',
+      'mia-fortune',
     ]);
     expect(events().byCategory('alliance').count()).toBe(14);
     expect(
@@ -1179,7 +1182,7 @@ describe('Events data', () => {
         .find('snowbusters')!
         .rewards!.some((r) => r.decorationId === 'snowbuster-arena'),
     ).toBe(true);
-    expect(events().find('lucky-wheel')!.shop).toHaveLength(6);
+    expect(events().find('lucky-wheel')!.shop).toBeUndefined();
     const games = events().find('tundra-games')!;
     expect(games.days).toHaveLength(7);
     expect(games.days![3].milestones!.map((m) => m.scoreTotal)).toEqual([
@@ -1215,6 +1218,64 @@ describe('Events data', () => {
     expect(events().find('war-preparation')!.days![0].milestones![2].rewards![0]).toMatchObject({
       amount: 16,
     });
+    const chief = events().find('hall-of-chief')!;
+    expect(chief.days).toHaveLength(13);
+    expect(chief.days![2].scoring.map((x) => x.points)).toEqual([
+      90, 120, 180, 265, 385, 595, 830, 1130, 1485, 1960,
+    ]);
+    const hallOfHeroes = events().find('hall-of-heroes')!;
+    expect(hallOfHeroes.shopCurrencyItemId).toBe('mark-of-valor');
+    expect(hallOfHeroes.shops!.map((x) => x.name)).toEqual(
+      [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => `Generation ${n} shop`),
+    );
+    expect(hallOfHeroes.shops![0].offers.map((o) => [o.cost, o.limit])).toEqual([
+      [10, 370],
+      [12, 100],
+      [10, 370],
+      [3, 420],
+      [1, 10],
+    ]);
+    expect(hallOfHeroes.shop).toBeUndefined();
+    expect(
+      hallOfHeroes
+        .shops![2].offers.map((o) => o.reward.itemId)
+        .filter((id) => id?.startsWith('hero-shard-gen-')),
+    ).toEqual([
+      'hero-shard-gen-3a',
+      'hero-shard-gen-2a',
+      'hero-shard-gen-2b',
+      'hero-shard-gen-2c',
+      'hero-shard-gen-1a',
+      'hero-shard-gen-1b',
+    ]);
+    expect(
+      hallOfHeroes
+        .shops![2].offers.map((o) => o.reward.itemId)
+        .filter((id) => id?.startsWith('hero-shard-gen-')),
+    ).toEqual([
+      'hero-shard-gen-3a',
+      'hero-shard-gen-2a',
+      'hero-shard-gen-2b',
+      'hero-shard-gen-2c',
+      'hero-shard-gen-1a',
+      'hero-shard-gen-1b',
+    ]);
+    expect(hallOfHeroes.shops![4].offers.map((o) => o.reward.itemId)).toEqual([
+      'hero-shard-gen-5',
+      'mythic-general-hero-shard',
+      'hero-shard-chest-s4',
+      'hero-widget-chest-s4',
+      'hero-shard-chest-s3',
+      'hero-widget-chest-s3',
+      'hero-shard-chest-s2',
+      'hero-widget-chest-s2',
+      'hero-shard-chest-s1',
+      'hero-widget-chest-s1',
+      'epic-general-hero-shard',
+      'hero-xp',
+    ]);
+    const fortune = events().find('mia-fortune')!;
+    expect(fortune.tiers!.map((t) => t.scoreTotal)).toEqual([20, 100, 250, 750]);
     const mission = events().find('heros-mission')!;
     expect(mission.tiers!.map((t) => t.scoreTotal)).toEqual([1, 3, 5, 7, 10]);
     expect(mission.tiers![4].rewards).toContainEqual({

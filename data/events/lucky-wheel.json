@@ -18,7 +18,8 @@
         {
           "name": "Hero shard of the generation",
           "amount": 5,
-          "note": "Bonus for the 5th spin, 5 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+          "note": "Bonus for the 5th spin, 5 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given.",
+          "itemId": "mythic-general-hero-shard"
         }
       ]
     },
@@ -29,7 +30,8 @@
         {
           "name": "Hero shard of the generation",
           "amount": 10,
-          "note": "Bonus for the 15th spin, 15 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+          "note": "Bonus for the 15th spin, 15 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given.",
+          "itemId": "mythic-general-hero-shard"
         }
       ]
     },
@@ -40,7 +42,8 @@
         {
           "name": "Hero shard of the generation",
           "amount": 20,
-          "note": "Bonus for the 35th spin, 35 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+          "note": "Bonus for the 35th spin, 35 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given.",
+          "itemId": "mythic-general-hero-shard"
         }
       ]
     },
@@ -51,7 +54,8 @@
         {
           "name": "Hero shard of the generation",
           "amount": 30,
-          "note": "Bonus for the 70th spin, 65 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+          "note": "Bonus for the 70th spin, 65 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given.",
+          "itemId": "mythic-general-hero-shard"
         }
       ]
     },
@@ -62,7 +66,8 @@
         {
           "name": "Hero shard of the generation",
           "amount": 50,
-          "note": "Bonus for the 120th spin, 115 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+          "note": "Bonus for the 120th spin, 115 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given.",
+          "itemId": "mythic-general-hero-shard"
         }
       ]
     }
@@ -71,12 +76,14 @@
     {
       "name": "Hero shard of the generation",
       "amount": 5,
-      "note": "4.37% chance"
+      "note": "4.37% chance",
+      "itemId": "mythic-general-hero-shard"
     },
     {
       "name": "Hero shard of the generation",
       "amount": 1,
-      "note": "32.81% chance"
+      "note": "32.81% chance",
+      "itemId": "mythic-general-hero-shard"
     },
     {
       "name": "Mystery Pack",
@@ -140,62 +147,5 @@
     "Spinning 120 times only with gems costs about 162,000 gems.",
     "Shards needed for a hero (Mythic): 1 star 10, 2 stars 40, 3 stars 115, 4 stars 300, 5 stars 600 (cumulative 10, 50, 165, 465, 1,065). Add 10 shards to unlock the hero, 20 for Jeronimo, and 40 for Jessie.",
     "The SvS Preparation State of Power tab shows a Lucky Chip reward of 5 and a Sunfire Token of 10 at the target chests."
-  ],
-  "shop": [
-    {
-      "reward": {
-        "name": "Free Lucky Chip Pack",
-        "amount": 1,
-        "note": "Gives Lucky Chip \u00d71, 10K Meat \u00d710, 10K Wood \u00d710, 10K Coal \u00d72, and 10K Iron \u00d71."
-      },
-      "cost": 0,
-      "limit": 1
-    },
-    {
-      "reward": {
-        "name": "Common Lucky Chip Pack",
-        "amount": 1,
-        "note": "Price shown in the screenshot: \u00a5320 (2540% value). Gives Lucky Chip \u00d75, Mythic Exploration and Expedition Skill Manual \u00d71 each, 5K Hero XP \u00d75, and 100K Meat and Wood pouches \u00d775 each. Daily limit 1."
-      },
-      "cost": 0,
-      "limit": 1
-    },
-    {
-      "reward": {
-        "name": "Uncommon Lucky Chip Pack",
-        "amount": 1,
-        "note": "Price shown in the screenshot: \u00a5800 (2180% value). Gives Lucky Chip \u00d710, Mythic Exploration and Expedition Skill Manual \u00d74 each, 5K Hero XP \u00d710, and 100K Meat and Wood pouches \u00d7150 each. Daily limit 1."
-      },
-      "cost": 0,
-      "limit": 1
-    },
-    {
-      "reward": {
-        "name": "Rare Lucky Chip Pack",
-        "amount": 1,
-        "note": "Price shown in the screenshot: \u00a51,600 (2140% value). Gives Lucky Chip \u00d720, Mythic Exploration and Expedition Skill Manual \u00d77 each, 5K Hero XP \u00d720, and 100K Meat and Wood pouches \u00d7300 each. Daily limit 1."
-      },
-      "cost": 0,
-      "limit": 1
-    },
-    {
-      "reward": {
-        "name": "Epic Lucky Chip Pack",
-        "amount": 1,
-        "note": "Price shown in the screenshot: \u00a53,200 (2120% value). Gives Lucky Chip \u00d740, Mythic Exploration and Expedition Skill Manual \u00d712 each, 5K Hero XP \u00d750, and 100K Meat and Wood pouches \u00d7600 each. Daily limit 1."
-      },
-      "cost": 0,
-      "limit": 1
-    },
-    {
-      "reward": {
-        "name": "Mythic Lucky Chip Pack",
-        "amount": 1,
-        "note": "Price shown in the screenshot: \u00a58,000 (2100% value). Gives Lucky Chip \u00d7100, Mythic Exploration and Expedition Skill Manual \u00d730 each, 5K Hero XP \u00d7100, and 100K Meat and Wood pouches \u00d71500 each. Daily limit 1."
-      },
-      "cost": 0,
-      "limit": 1
-    }
-  ],
-  "shopCurrencyName": "Money"
+  ]
 }

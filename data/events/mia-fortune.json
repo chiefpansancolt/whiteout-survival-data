@@ -1,0 +1,84 @@
+{
+  "id": "mia-fortune",
+  "name": "Mia Fortune",
+  "img": "/images/events/mia-fortune.png",
+  "category": "solo",
+  "description": "Pick a wish reward and find it among 10 hidden orbs, using Fortune Tokens.",
+  "frequency": "Once a month",
+  "duration": "2 days",
+  "phases": [
+    {
+      "name": "Wish",
+      "description": "Pick one wish reward for each round. New servers (before the Fire Age) choose from 12 Essence Stones, 40 hours of construction speedups, 40 hours of troop training speedups, or 40 hours of research speedups. After the Fire Age opens, the choices are Fire Crystals, Essence Stones, General Speedups, or Gems. The rewards grow with server age."
+    },
+    {
+      "name": "Reveal orbs",
+      "description": "There are 10 orbs, so you have a 1 in 10 chance on each reveal. Other orbs give side rewards (resources, speedups, chief gear and charm materials) and 2x, 3x, or 4x multipliers that apply only to the next orb. The Fortune Token cost of each reveal rises with each orb: 1, 2, 3, 4, 5, 8, 12, 15, 20, 25. It starts again at 1 after you find the wish reward. After 6 attempts it is best to reset unless a multiplier is active."
+    }
+  ],
+  "tiers": [
+    {
+      "name": "20 Fortune Tokens spent",
+      "scoreTotal": 20,
+      "rewards": [
+        {
+          "name": "Fortune Token",
+          "itemId": "fortune-token",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "100 Fortune Tokens spent",
+      "scoreTotal": 100,
+      "rewards": [
+        {
+          "name": "Fortune Token",
+          "itemId": "fortune-token",
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "name": "250 Fortune Tokens spent",
+      "scoreTotal": 250,
+      "rewards": [
+        {
+          "name": "Fire Crystal Chest",
+          "itemId": "fyre-crystal-chest",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "750 Fortune Tokens spent",
+      "scoreTotal": 750,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 100
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Essence Stones",
+      "itemId": "essence-stones",
+      "amount": 12,
+      "note": "New server wish reward"
+    },
+    {
+      "name": "Fortune Token",
+      "itemId": "fortune-token",
+      "amount": 22,
+      "note": "Daily activity chest. You also get 1 free Fortune Token in the shop tab, so up to 23 each day."
+    }
+  ],
+  "tips": [
+    "The milestone rewards shown on the wiki are for old servers.",
+    "The event repeats. When you find the wish reward you can choose again.",
+    "The magnifier icon shows the prize pool."
+  ]
+}

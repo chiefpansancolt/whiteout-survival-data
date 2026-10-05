@@ -1,4 +1,6 @@
 import { heroes, HeroQuery } from '@/modules/heroes';
+import { existsSync } from 'fs';
+import { join } from 'path';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('heroes', () => heroes());
@@ -488,5 +490,26 @@ describe('Generation 1-17 heroes (Legendary)', () => {
           });
         });
     }
+  });
+
+  it('sets an optional shardImg on the heroes whose shard icon has been captured', () => {
+    const withShard = heroes()
+      .get()
+      .filter((h) => h.shardImg !== undefined);
+    expect(withShard.map((h) => h.id)).toEqual([
+      'molly',
+      'zinman',
+      'flint',
+      'philly',
+      'alonso',
+      'logan',
+      'reina',
+      'gwen',
+      'wu-ming',
+      'gordon',
+      'hendrik',
+      'magnus',
+    ]);
+    withShard.forEach((h) => expect(existsSync(join(__dirname, '../..', h.shardImg!))).toBe(true));
   });
 });
