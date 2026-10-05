@@ -1,0 +1,201 @@
+{
+  "id": "lucky-wheel",
+  "name": "Lucky Wheel",
+  "img": "/images/events/lucky-wheel.png",
+  "category": "solo",
+  "description": "A spin event for the hero shards of your current generation. Spin to get shards, with bonus shards at set spin counts.",
+  "frequency": "Tuesday to Thursday",
+  "duration": "3 days",
+  "requirements": [
+    "Points to spin come from other events: Hall of Chiefs (stage 2), King of Icefield (stages 2 and 3), and the SvS preparation phase (stages 2 and 3).",
+    "With 6 such events a free-to-play player can reach a 5-star hero."
+  ],
+  "tiers": [
+    {
+      "name": "Spin 5",
+      "scoreTotal": 5,
+      "rewards": [
+        {
+          "name": "Hero shard of the generation",
+          "amount": 5,
+          "note": "Bonus for the 5th spin, 5 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+        }
+      ]
+    },
+    {
+      "name": "Spin 15",
+      "scoreTotal": 15,
+      "rewards": [
+        {
+          "name": "Hero shard of the generation",
+          "amount": 10,
+          "note": "Bonus for the 15th spin, 15 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+        }
+      ]
+    },
+    {
+      "name": "Spin 35",
+      "scoreTotal": 35,
+      "rewards": [
+        {
+          "name": "Hero shard of the generation",
+          "amount": 20,
+          "note": "Bonus for the 35th spin, 35 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+        }
+      ]
+    },
+    {
+      "name": "Spin 70",
+      "scoreTotal": 70,
+      "rewards": [
+        {
+          "name": "Hero shard of the generation",
+          "amount": 30,
+          "note": "Bonus for the 70th spin, 65 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+        }
+      ]
+    },
+    {
+      "name": "Spin 120",
+      "scoreTotal": 120,
+      "rewards": [
+        {
+          "name": "Hero shard of the generation",
+          "amount": 50,
+          "note": "Bonus for the 120th spin, 115 in total. The same number of Mythic Expedition and Exploration Skill Manuals is given."
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Hero shard of the generation",
+      "amount": 5,
+      "note": "4.37% chance"
+    },
+    {
+      "name": "Hero shard of the generation",
+      "amount": 1,
+      "note": "32.81% chance"
+    },
+    {
+      "name": "Mystery Pack",
+      "amount": 1,
+      "note": "6.56% chance. Two packs are listed."
+    },
+    {
+      "name": "Mystery Pack",
+      "amount": 1,
+      "note": "6.56% chance. Two packs are listed."
+    },
+    {
+      "name": "1h General Speedup",
+      "itemId": "speedup-general-1h",
+      "amount": 1,
+      "note": "20.51% chance"
+    },
+    {
+      "name": "Hero XP",
+      "itemId": "hero-xp",
+      "amount": 1,
+      "note": "18.27% chance. A 10,000 Hero XP item"
+    },
+    {
+      "name": "Iron",
+      "itemId": "iron",
+      "amount": 20,
+      "note": "2.73% chance. 10K packs"
+    },
+    {
+      "name": "Coal",
+      "itemId": "coal",
+      "amount": 80,
+      "note": "2.73% chance. 10K packs"
+    },
+    {
+      "name": "Wood",
+      "itemId": "wood",
+      "amount": 400,
+      "note": "2.73% chance. 10K packs"
+    },
+    {
+      "name": "Meat",
+      "itemId": "meat",
+      "amount": 400,
+      "note": "2.73% chance. 10K packs"
+    },
+    {
+      "name": "Lucky Chip",
+      "itemId": "lucky-chip",
+      "amount": 5,
+      "note": "Given on the 2nd day of SvS. The wheel costs 1,500 gems for 1 spin or 13,500 for 10."
+    }
+  ],
+  "tips": [
+    "Mystery Pack: Mythic Exploration Manual \u00d72-4, Mythic Expedition Skill Manual \u00d72-4, 10,000 Hero XP \u00d75, and 1h Training, Research, and Construction speedups \u00d72-5.",
+    "Hero by generation (days after the state starts): Gen 1 Zinman (0), Gen 2 Flint (40), Gen 3 Mia (120), Gen 4 Lynn (195), Gen 5 Hector (270), Gen 6 Renee (360), Gen 7 Bradley (440), Gen 8 Gatot (520), Gen 9 Fred (600), Gen 10 Blanchette (700), Gen 11 Eleonora (800), Gen 12 Karol (870). The days vary a little.",
+    "A spin costs 1,500 gems, or 13,500 gems for 10 spins. You get 1 free ticket a day, can buy 5 types of gifts once a day, and get 5 lucky chips on the 2nd day of SvS.",
+    "You can spin up to 150 times a day.",
+    "Expected shards with the bonuses: 5 spins 7.7, 15 spins 23.2, 35 spins 54.1, 70 spins 103.3, 120 spins 180.6, 150 spins 197.0.",
+    "Spinning 120 times only with gems costs about 162,000 gems.",
+    "Shards needed for a hero (Mythic): 1 star 10, 2 stars 40, 3 stars 115, 4 stars 300, 5 stars 600 (cumulative 10, 50, 165, 465, 1,065). Add 10 shards to unlock the hero, 20 for Jeronimo, and 40 for Jessie.",
+    "The SvS Preparation State of Power tab shows a Lucky Chip reward of 5 and a Sunfire Token of 10 at the target chests."
+  ],
+  "shop": [
+    {
+      "reward": {
+        "name": "Free Lucky Chip Pack",
+        "amount": 1,
+        "note": "Gives Lucky Chip \u00d71, 10K Meat \u00d710, 10K Wood \u00d710, 10K Coal \u00d72, and 10K Iron \u00d71."
+      },
+      "cost": 0,
+      "limit": 1
+    },
+    {
+      "reward": {
+        "name": "Common Lucky Chip Pack",
+        "amount": 1,
+        "note": "Price shown in the screenshot: \u00a5320 (2540% value). Gives Lucky Chip \u00d75, Mythic Exploration and Expedition Skill Manual \u00d71 each, 5K Hero XP \u00d75, and 100K Meat and Wood pouches \u00d775 each. Daily limit 1."
+      },
+      "cost": 0,
+      "limit": 1
+    },
+    {
+      "reward": {
+        "name": "Uncommon Lucky Chip Pack",
+        "amount": 1,
+        "note": "Price shown in the screenshot: \u00a5800 (2180% value). Gives Lucky Chip \u00d710, Mythic Exploration and Expedition Skill Manual \u00d74 each, 5K Hero XP \u00d710, and 100K Meat and Wood pouches \u00d7150 each. Daily limit 1."
+      },
+      "cost": 0,
+      "limit": 1
+    },
+    {
+      "reward": {
+        "name": "Rare Lucky Chip Pack",
+        "amount": 1,
+        "note": "Price shown in the screenshot: \u00a51,600 (2140% value). Gives Lucky Chip \u00d720, Mythic Exploration and Expedition Skill Manual \u00d77 each, 5K Hero XP \u00d720, and 100K Meat and Wood pouches \u00d7300 each. Daily limit 1."
+      },
+      "cost": 0,
+      "limit": 1
+    },
+    {
+      "reward": {
+        "name": "Epic Lucky Chip Pack",
+        "amount": 1,
+        "note": "Price shown in the screenshot: \u00a53,200 (2120% value). Gives Lucky Chip \u00d740, Mythic Exploration and Expedition Skill Manual \u00d712 each, 5K Hero XP \u00d750, and 100K Meat and Wood pouches \u00d7600 each. Daily limit 1."
+      },
+      "cost": 0,
+      "limit": 1
+    },
+    {
+      "reward": {
+        "name": "Mythic Lucky Chip Pack",
+        "amount": 1,
+        "note": "Price shown in the screenshot: \u00a58,000 (2100% value). Gives Lucky Chip \u00d7100, Mythic Exploration and Expedition Skill Manual \u00d730 each, 5K Hero XP \u00d7100, and 100K Meat and Wood pouches \u00d71500 each. Daily limit 1."
+      },
+      "cost": 0,
+      "limit": 1
+    }
+  ],
+  "shopCurrencyName": "Money"
+}

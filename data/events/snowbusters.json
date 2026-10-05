@@ -1,0 +1,77 @@
+{
+  "id": "snowbusters",
+  "name": "Snowbusters",
+  "img": "/images/events/snowbusters.png",
+  "category": "solo",
+  "description": "A monthly mini game. Use fuel to clear snow, find survivors and objects, defeat beasts, and collect coal.",
+  "frequency": "Monthly",
+  "requirements": [
+    "Fuel regenerates at 12 points every 5 minutes during the event. Packs give more fuel."
+  ],
+  "rewards": [
+    {
+      "name": "Themed city, march, avatar frame, and nameplate skins",
+      "note": "Unlocked with stars from the encyclopedia of theme pictures. Each theme has a limited number of stars."
+    },
+    {
+      "name": "Snowbuster Arena",
+      "decorationId": "snowbuster-arena",
+      "amount": 1,
+      "note": "Mythic 3x3 island decoration, limit 1, 1,000 Prosperity and Troops Attack +1.0% at Lv. 1. Given with 1,000 Gems at the 20 star milestone. Levels up only with building pieces from this event."
+    },
+    {
+      "name": "Map Fragment",
+      "itemId": "map-fragment",
+      "note": "Extra theme pictures become map fragments for Map Search."
+    },
+    {
+      "name": "Fuel Supply Chest",
+      "itemId": "fuel-supply-chest",
+      "note": "The only fuel item that stays in the backpack after the event."
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 1000,
+      "note": "Given with the Snowbuster Arena at the 20 star milestone of the theme overview"
+    },
+    {
+      "name": "Ice Breaker pass",
+      "note": "$6.99. Shows 4000% value. Gives items for each level, including Fire Crystals, chests, skill manuals, and speedups. Amounts are not readable."
+    },
+    {
+      "name": "Ice Bath Champion pass",
+      "note": "$13.99. Shows 4000% value. Gives more items for each level, including Fire Crystals, skill manuals, essence stones, keys, and speedups. Amounts are not readable."
+    },
+    {
+      "name": "Snow Warrior Pack",
+      "note": "Three versions: free, $1.39 (3780% value), and $2.79 (3660% value). They give Infini-Fuel, chests, Gems, and fuel items. Amounts are not readable."
+    }
+  ],
+  "tips": [
+    "Rescue survivors first. Each survivor adds range to your Snowbuster weapon.",
+    "Watch your health. At zero you drop all coal and can pick up only 90% again.",
+    "Save coal for the end of a level, where extra coal turns into fuel.",
+    "Clear 95% of the snow to use a rocket for the rest.",
+    "Every 5 levels is an easy level with an Infini-Fuel, rockets, Ultra Magnets, and Super Snowbusters.",
+    "Bonus items: Super Snowbuster (range, +20% move speed, 20s), Ultra Magnet (30s), Infini-Fuel (20s), Portable Snowshield (blocks 3 hits), Medkit (40% health), and Rocket.",
+    "Gear: the Snowbuster raises attack and range, Gloves raise health and cut fuel use, the Coat raises damage mitigation and fuel recovery, and Boots raise speed and fire health regeneration. Gear resets after each event.",
+    "Unused Rocket V2 items stay in your backpack for later events. Opened fuel does not.",
+    "Two passes can be bought for about $5 and $10.",
+    "The in-game packs also give extra fuel. Fuel is also earned from daily missions."
+  ],
+  "phases": [
+    {
+      "name": "Themes",
+      "description": "The theme overview shows 4 themes: Rebuilding Paradise, Joe Attacks, Mercenary Tales, and Wandering Convoys. Each picture gives stars, and the star track has chests at set star counts (1, 5, 10, 15, 20, and more)."
+    },
+    {
+      "name": "Map Search",
+      "description": "Spend Map Fragments to draw random rewards, either a map from the current theme or another item. Duplicate maps become Map Fragments by star rating. Unused fragments carry over. Item chances run from 0.5% for 5-star items to 2.5% for 1-star items."
+    },
+    {
+      "name": "Levels",
+      "description": "Areas of snow to clear. Every 5 levels is an easy level. The wiki shows areas 1, 3, 5, and 8."
+    }
+  ]
+}

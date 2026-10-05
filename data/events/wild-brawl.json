@@ -1,0 +1,352 @@
+{
+  "id": "wild-brawl",
+  "name": "Wild Brawl",
+  "img": "/images/events/wild-brawl.png",
+  "category": "solo",
+  "description": "A free-for-all where 10 chiefs fight in a match to earn points from buildings, supply crates, and airdropped items.",
+  "frequency": "Recurring, once the state has reached the required age",
+  "duration": "2 days",
+  "requirements": [
+    "Furnace Lv. 25 or higher.",
+    "Not available before Hero Generation 3.",
+    "You must have no troops scouting or on expedition, no barricades burning, and no reinforcements in your Embassy."
+  ],
+  "phases": [
+    {
+      "name": "Matchmaking",
+      "description": "4 periods each day, 2 hours each. Same-Gen mode matches chiefs of one hero generation. Cross-Gen mode matches chiefs from all states. A match starts when 10 chiefs are ready. Each chief can play 10 matches in the whole event."
+    },
+    {
+      "name": "Preparation",
+      "description": "The first 30 seconds of a 10-minute match."
+    },
+    {
+      "name": "Battle",
+      "description": "9 minutes 30 seconds. 4 buildings can be captured: the Twilight Citadel in the center, worth the most points (7,000 for the first control and +2,100 a minute after), and 3 Boulder Fortresses (2,000 for the first control and +600 a minute after). A building is held after 10 seconds. 30 seconds in, 3 supply trucks arrive every minute with strategic supply crates. 1 minute 30 seconds in, item crates are airdropped every 2 minutes."
+    }
+  ],
+  "missions": [
+    {
+      "group": "Participate and earn more than 0 Strategic Points",
+      "name": "Participate in 1 match",
+      "points": 1000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 5
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 5
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "group": "Participate and earn more than 0 Strategic Points",
+      "name": "Participate in 2 matches",
+      "points": 1000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 5
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 5
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "group": "Participate and earn more than 0 Strategic Points",
+      "name": "Participate in 3 matches",
+      "points": 1000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 10
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "group": "Participate and earn more than 0 Strategic Points",
+      "name": "Participate in 4 matches",
+      "points": 1000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 10
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "group": "Participate and earn more than 0 Strategic Points",
+      "name": "Participate in 5 matches",
+      "points": 1000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 10
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "group": "Participate and earn more than 0 Strategic Points",
+      "name": "Participate in 6 matches",
+      "points": 1000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 10
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 10
+        },
+        {
+          "name": "Shot Token",
+          "itemId": "shot-token",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Airdrops",
+      "name": "Use 5 airdropped items",
+      "points": 1000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 5
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 5
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "group": "Airdrops",
+      "name": "Use 10 airdropped items",
+      "points": 1500,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 5
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 5
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "group": "Airdrops",
+      "name": "Use 15 airdropped items",
+      "points": 1500,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 10
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 10
+        },
+        {
+          "name": "Shot Token",
+          "itemId": "shot-token",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Points",
+      "name": "Reach 25,000 Strategic Points this season",
+      "points": 5000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 10
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 10
+        },
+        {
+          "name": "Shot Token",
+          "itemId": "shot-token",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "missionPointsLabel": "Pioneer Badges",
+  "tips": [
+    "The 4 airdrop items are Destroyer Rocket, Frost Bomb, Battlefield MedKit, and Smoke Bomb. You can collect only one crate at a time.",
+    "Points come from buildings, gathering supply crates, and airdrops.",
+    "Healing uses the Battlefield MedKit and costs no resources. Your troops heal when you leave.",
+    "You cannot loot resources from a chief you beat. Cities burn faster, and a city that fails is moved to a random place.",
+    "President, Frost Dragon Tyrant, and territory bonuses and Pet Gathering Skills do not apply. 10% and 20% buffs and battle pet bonuses do.",
+    "If you quit an event session you cannot re-enter it.",
+    "The Icebreaker Shop uses Pioneer Badges. Some items need the Fire Crystal Age. Each mission also gives Pioneer Badges.",
+    "Matchmaking times in the game screen are shown in your local time."
+  ],
+  "shopCurrencyName": "Pioneer Badge",
+  "shop": [
+    {
+      "reward": {
+        "name": "Fire Crystal",
+        "itemId": "fire-crystal",
+        "amount": 1
+      },
+      "cost": 250,
+      "limit": 60
+    },
+    {
+      "reward": {
+        "name": "Fire Crystal Shard",
+        "itemId": "fire-crystal-shard",
+        "amount": 1
+      },
+      "cost": 150,
+      "limit": 100
+    },
+    {
+      "reward": {
+        "name": "Refined Fire Crystal",
+        "itemId": "refined-fire-crystal",
+        "amount": 1
+      },
+      "cost": 5000,
+      "limit": 3
+    },
+    {
+      "reward": {
+        "name": "Charm Design",
+        "itemId": "charm-design",
+        "amount": 1
+      },
+      "cost": 500,
+      "limit": 30
+    },
+    {
+      "reward": {
+        "name": "Charm Guide",
+        "itemId": "charm-guide",
+        "amount": 1
+      },
+      "cost": 500,
+      "limit": 30
+    },
+    {
+      "reward": {
+        "name": "Mythic General Decoration Component",
+        "itemId": "mythic-general-decoration-component",
+        "amount": 1
+      },
+      "cost": 6000,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "Lucky Hero Gear Chest",
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 1
+      },
+      "cost": 1000,
+      "limit": 15
+    },
+    {
+      "reward": {
+        "name": "Enhancement XP Component",
+        "itemId": "enhancement-xp-component",
+        "amount": 1,
+        "note": "Each is a 100 Enhancement XP component"
+      },
+      "cost": 500,
+      "limit": 30
+    }
+  ]
+}

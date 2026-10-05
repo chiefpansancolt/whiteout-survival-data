@@ -1,0 +1,1030 @@
+{
+  "id": "tundra-games",
+  "name": "Tundra Games",
+  "img": "/images/events/tundra-games.png",
+  "category": "solo",
+  "description": "A set of seven mini games and tasks with rewards. Players punch Brawler Buddies with Energized Bread.",
+  "frequency": "Irregular",
+  "phases": [
+    {
+      "name": "Camp Frostpunch",
+      "description": "The main part. Use Energized Bread to punch Brawler Buddies. Each Brawler Buddy you defeat has a 20% chance to summon the Arctic Crusher, which can be hit 3 to 15 times, with 10% of appearances allowing 10 or more hits. Each punch gives 2 Frostpunch Points. The chance of the grand prize on 10 or more hits is about 0.06%."
+    },
+    {
+      "name": "Whirlwind Wallop",
+      "description": "The milestone track for Frostpunch Points. The first tier is free. The second and third tiers need paid upgrades."
+    },
+    {
+      "name": "Kitty Rescue",
+      "description": "A reflex game with the Mythic hero Reina. Throw kunai at a spinning ice block without hitting kunai already stuck in it. Cleared stages give rewards, including Energized Bread."
+    },
+    {
+      "name": "King of Treasure",
+      "description": "7 one-day stages: Power Boost, Beast Slay, Hero Development, Train Troops, Hero Gear, Resource Gathering, and Chief Gear. You earn points for each stage, claim milestones, get stage ranking rewards each day, and total ranking rewards at the end."
+    },
+    {
+      "name": "Snowcapped Symphony",
+      "description": "A board of missions. Finishing a row or column gives a Stage Chest, and finishing the board gives the Snowpeak Trove."
+    },
+    {
+      "name": "Top-up Benefits",
+      "description": "Milestones unlocked by buying Gems during the event."
+    },
+    {
+      "name": "Supply Station",
+      "description": "Ways to get Energized Bread: spending Gems, using speedups, gathering resources (limit 3,000), and defeating Beasts (limit 7,000). A Longshot Dynamo Pack gives more."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Energized Bread",
+      "note": "Any bread left at the end is turned into 1,000-resource supply chests. The Best Boxer\u2019s Bounty can give thousands of bread (5,843 in the wiki example)."
+    },
+    {
+      "name": "Chief Gear Materials Chest",
+      "itemId": "chief-gear-materials-chest",
+      "amount": 1,
+      "note": "Brawler Buddy win. 2% chance"
+    },
+    {
+      "name": "Random Chief Charm Material Chest",
+      "itemId": "random-chief-charm-material-chest",
+      "amount": 1,
+      "note": "Brawler Buddy win. 2% chance"
+    },
+    {
+      "name": "Essence Stones",
+      "itemId": "essence-stones",
+      "amount": 1,
+      "note": "Brawler Buddy win. 2% chance"
+    },
+    {
+      "name": "1h General Speedup",
+      "itemId": "speedup-general-1h",
+      "amount": 1,
+      "note": "Brawler Buddy win. 8% chance"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 100,
+      "note": "Brawler Buddy win. 86% chance. A 100 Gems pack"
+    },
+    {
+      "name": "Lucky Hero Gear Chest",
+      "itemId": "lucky-hero-gear-chest",
+      "amount": 1,
+      "note": "Brawler Buddy attack. 1% chance"
+    },
+    {
+      "name": "Chief Stamina",
+      "itemId": "chief-stamina",
+      "amount": 10,
+      "note": "Brawler Buddy attack. 3% chance. A 10 stamina can"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 100,
+      "note": "Brawler Buddy attack. 10% chance. A 100 Gems pack"
+    },
+    {
+      "name": "Hero XP",
+      "itemId": "hero-xp",
+      "amount": 5000,
+      "note": "Brawler Buddy attack. 17% chance"
+    },
+    {
+      "name": "5m Construction Speedup",
+      "itemId": "speedup-construction-5m",
+      "amount": 1,
+      "note": "Brawler Buddy attack. 23% chance"
+    },
+    {
+      "name": "5m Research Speedup",
+      "itemId": "speedup-research-5m",
+      "amount": 1,
+      "note": "Brawler Buddy attack. 23% chance"
+    },
+    {
+      "name": "5m Troop Training Speedup",
+      "itemId": "speedup-troop-5m",
+      "amount": 1,
+      "note": "Brawler Buddy attack. 23% chance"
+    },
+    {
+      "name": "Lucky Hero Gear Chest",
+      "itemId": "lucky-hero-gear-chest",
+      "amount": 2,
+      "note": "Arctic Crusher attack. 1.5% chance"
+    },
+    {
+      "name": "Chief Gear Materials Chest",
+      "itemId": "chief-gear-materials-chest",
+      "amount": 1,
+      "note": "Arctic Crusher attack. 2% chance"
+    },
+    {
+      "name": "Random Chief Charm Material Chest",
+      "itemId": "random-chief-charm-material-chest",
+      "amount": 1,
+      "note": "Arctic Crusher attack. 2% chance"
+    },
+    {
+      "name": "Essence Stones",
+      "itemId": "essence-stones",
+      "amount": 1,
+      "note": "Arctic Crusher attack. 2% chance"
+    },
+    {
+      "name": "3h General Speedup",
+      "itemId": "speedup-general-3h",
+      "amount": 1,
+      "note": "Arctic Crusher attack. 12% chance"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 1000,
+      "note": "Arctic Crusher attack. 20% chance. A 1K Gems pouch"
+    },
+    {
+      "name": "Gems",
+      "itemId": "gems",
+      "amount": 100,
+      "note": "Arctic Crusher attack. 60.5% chance. A 100 Gems pack"
+    },
+    {
+      "name": "Mythic General Hero Shard",
+      "itemId": "mythic-general-hero-shard",
+      "amount": 2,
+      "note": "Daily chest at 300 Frostpunch Points"
+    },
+    {
+      "name": "Essence Stones",
+      "itemId": "essence-stones",
+      "amount": 3,
+      "note": "Daily chest at 300 Frostpunch Points"
+    },
+    {
+      "name": "3h General Speedup",
+      "itemId": "speedup-general-3h",
+      "amount": 1,
+      "note": "Daily chest at 300 Frostpunch Points"
+    }
+  ],
+  "tips": [
+    "Get 300 Frostpunch Points each day to unlock the daily chest rewards.",
+    "Hit Brawler Buddies when the treasure points are over 12,000 for a better chance at the Best Boxer\u2019s Bounty and free bread.",
+    "The rewards for each part are shown on the wiki only as images.",
+    "The Whirlwind Wallop pass preview (Knockout, $9.99, shown with a 4000% value tag) lists gems, Fire Crystals, essence stones, skill manuals, troop skill items, a 14-day item, and speedups. Most amounts are not readable.",
+    "The Whirlwind Wallop track screenshot shows free and two paid tiers for each level, with items such as 5m speedups, 1h speedups, manuals, keys, gem pouches, and 3-day items. It is cut off after level 8.",
+    "Top-up Benefits give Energized Bread, speedups, and other rewards at each gem purchase total. The reward icons are not named."
+  ],
+  "days": [
+    {
+      "day": "1",
+      "name": "Power Boost",
+      "scoring": [
+        {
+          "action": "Raise 1 Power through Construction",
+          "points": 1
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 1
+        },
+        {
+          "action": "Raise 1 Power by training or promoting troops",
+          "points": 1
+        },
+        {
+          "action": "Use Epic Recruitment 1 time",
+          "points": 11000
+        },
+        {
+          "action": "Use Advanced Recruitment 1 time",
+          "points": 3300
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 500
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 2200
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 6000
+        }
+      ],
+      "note": "Rows read from two screenshots labelled Tips on the wiki."
+    },
+    {
+      "day": "2",
+      "name": "Beast Slay",
+      "scoring": [
+        {
+          "action": "Call a rally and hunt down 1 Polar Terror",
+          "points": 30000
+        },
+        {
+          "action": "Kill a Lv. 1-30 Beast",
+          "points": 9900
+        }
+      ]
+    },
+    {
+      "day": "3",
+      "name": "Hero Development",
+      "scoring": [
+        {
+          "action": "Use Epic Recruitment 1 time",
+          "points": 11000
+        },
+        {
+          "action": "Use Advanced Recruitment 1 time",
+          "points": 3300
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 500
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 2200
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 6000
+        },
+        {
+          "action": "Use 1m of Speedups for Construction (Gem Speedups excluded)",
+          "points": 60
+        },
+        {
+          "action": "Use 1m of Speedups for Research (Gem Speedups excluded)",
+          "points": 60
+        },
+        {
+          "action": "Use 1m of Speedups for Troop Training or Promotion (Gem Speedups excluded)",
+          "points": 60
+        }
+      ]
+    },
+    {
+      "day": "4",
+      "name": "Train Troops",
+      "scoring": [
+        {
+          "action": "Train 1 Lv. 1 Troop",
+          "points": 5
+        },
+        {
+          "action": "Train 1 Lv. 2 Troop",
+          "points": 7
+        },
+        {
+          "action": "Train 1 Lv. 3 Troop",
+          "points": 10
+        },
+        {
+          "action": "Train 1 Lv. 4 Troop",
+          "points": 16
+        },
+        {
+          "action": "Train 1 Lv. 5 Troop",
+          "points": 23
+        },
+        {
+          "action": "Train 1 Lv. 6 Troop",
+          "points": 36
+        },
+        {
+          "action": "Train 1 Lv. 7 Troop",
+          "points": 50
+        },
+        {
+          "action": "Train 1 Lv. 8 Troop",
+          "points": 68
+        },
+        {
+          "action": "Train 1 Lv. 9 Troop",
+          "points": 90
+        },
+        {
+          "action": "Train 1 Lv. 10 Troop",
+          "points": 118
+        },
+        {
+          "action": "Train 1 Lv. 11 Troop",
+          "points": 140
+        }
+      ],
+      "note": "Points earned from promotion are the difference between the points of the two troop levels. Target points and rewards are shown on the wiki only for stage 4. Other stages have their own targets.",
+      "milestones": [
+        {
+          "name": "Target 26,000",
+          "scoreTotal": 26000,
+          "rewards": [
+            {
+              "name": "Energized Bread",
+              "amount": 250,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 100,
+              "note": "Each is a 1K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 100,
+              "note": "Each is a 1K pack"
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "name": "Target 55,000",
+          "scoreTotal": 55000,
+          "rewards": [
+            {
+              "name": "Energized Bread",
+              "amount": 300,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 20,
+              "note": "Each is a 1K pack"
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 5,
+              "note": "Each is a 1K pack"
+            },
+            {
+              "name": "Hero XP",
+              "itemId": "hero-xp",
+              "amount": 2,
+              "note": "Each is a 1K Hero XP item"
+            }
+          ]
+        },
+        {
+          "name": "Target 98,000",
+          "scoreTotal": 98000,
+          "rewards": [
+            {
+              "name": "Energized Bread",
+              "amount": 350,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Epic Exploration Skill Manual",
+              "itemId": "epic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Epic Expedition Skill Manual",
+              "itemId": "epic-expedition-skill-manual",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "name": "Target 169,000",
+          "scoreTotal": 169000,
+          "rewards": [
+            {
+              "name": "Energized Bread",
+              "amount": 400,
+              "note": "Item not linked"
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 3
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "5",
+      "name": "Hero Gear",
+      "scoring": [
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 25000
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 50000
+        },
+        {
+          "action": "Use 1 Gem",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "day": "6",
+      "name": "Gather Resources",
+      "scoring": [
+        {
+          "action": "Gather 1,000 Meat in the Wilderness",
+          "points": 10
+        },
+        {
+          "action": "Gather 1,000 Wood in the Wilderness",
+          "points": 10
+        },
+        {
+          "action": "Gather 200 Coal in the Wilderness",
+          "points": 10
+        },
+        {
+          "action": "Gather 50 Iron in the Wilderness",
+          "points": 10
+        },
+        {
+          "action": "Raise 1 Power through Construction",
+          "points": 1
+        },
+        {
+          "action": "Raise 1 Power through Research",
+          "points": 1
+        },
+        {
+          "action": "Raise 1 Power by training or promoting troops",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "day": "7",
+      "name": "Chief Gear",
+      "scoring": [
+        {
+          "action": "Raise max Chief Gear score by 1 (excluding Charm)",
+          "points": 50
+        },
+        {
+          "action": "Use 1m of Speedups for Construction (Gem Speedups excluded)",
+          "points": 60
+        },
+        {
+          "action": "Use 1m of Speedups for Research (Gem Speedups excluded)",
+          "points": 60
+        },
+        {
+          "action": "Use 1m of Speedups for Troop Training or Promotion (Gem Speedups excluded)",
+          "points": 60
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Camp Frostpunch ranking (mailed)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Unidentified island decoration",
+              "amount": 1,
+              "note": "Frozen building icon"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 80000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 30
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 30
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Unidentified island decoration",
+              "amount": 1,
+              "note": "Frozen building icon"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 48000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 21
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 21
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 21
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Unidentified island decoration",
+              "amount": 1,
+              "note": "Frozen building icon"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 28800
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 18
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 18
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Unidentified island decoration",
+              "amount": 1,
+              "note": "Frozen building icon"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 14
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 14
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 14
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Unidentified island decoration",
+              "amount": 1,
+              "note": "Frozen building icon"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 11
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 11
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 11
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-25",
+          "rewards": [
+            {
+              "name": "Unidentified island decoration",
+              "amount": 1,
+              "note": "Frozen building icon. 30-day version"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 5000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 8
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 8
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "26-50",
+          "rewards": [
+            {
+              "name": "Gems and 1h speedups",
+              "note": "Amounts are cut off in the source screenshot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "King of Treasure stage ranking (top 50 chiefs in a tier with over 20,000 points, mailed)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 14000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 8500
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 5000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2500
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-50",
+          "rewards": [
+            {
+              "name": "Gems and 1h speedups",
+              "note": "Amounts are cut off in the source screenshot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "King of Treasure total ranking (top 100 chiefs, mailed)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Unidentified green item",
+              "amount": 1,
+              "note": "Green card icon"
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 100,
+              "note": "Orange puzzle piece"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 40000
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 30
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Unidentified green item",
+              "amount": 1,
+              "note": "Green card icon"
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 50,
+              "note": "Orange puzzle piece"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 24000
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 20
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Unidentified green item",
+              "amount": 1,
+              "note": "Green card icon"
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 25,
+              "note": "Orange puzzle piece"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 14400
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 18
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 9
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-10",
+          "rewards": [
+            {
+              "name": "Unidentified green item",
+              "amount": 1,
+              "note": "Green card icon"
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 15,
+              "note": "Orange puzzle piece"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 9000
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 14
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-25",
+          "rewards": [
+            {
+              "name": "Unidentified green item",
+              "amount": 1,
+              "note": "Green card icon"
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 10,
+              "note": "Orange puzzle piece"
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4000
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 10
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "26-100",
+          "rewards": [
+            {
+              "name": "Rewards",
+              "note": "Cut off in the source screenshot"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Top-up 2,500 Gems",
+      "scoreTotal": 2500,
+      "note": "Reward icons are not named on the wiki"
+    },
+    {
+      "name": "Top-up 7,500 Gems",
+      "scoreTotal": 7500,
+      "note": "Reward icons are not named on the wiki"
+    },
+    {
+      "name": "Top-up 12,500 Gems",
+      "scoreTotal": 12500,
+      "note": "Reward icons are not named on the wiki"
+    },
+    {
+      "name": "Top-up 20,000 Gems",
+      "scoreTotal": 20000,
+      "note": "Reward icons are not named on the wiki"
+    },
+    {
+      "name": "Top-up 30,000 Gems",
+      "scoreTotal": 30000,
+      "note": "Reward icons are not named on the wiki"
+    }
+  ],
+  "shop": [
+    {
+      "reward": {
+        "name": "Longshot Dynamo Pack 2",
+        "amount": 1,
+        "note": "$4.99. Gives 2,500 Gems, Perpetual Treads Avatar Frame (permanent) \u00d71, Energized Bread \u00d71,000, Lucky Hero Gear Chest \u00d728, Fire Crystal \u00d743."
+      },
+      "cost": 4.99,
+      "limit": 1
+    },
+    {
+      "reward": {
+        "name": "Longshot Dynamo Pack 3",
+        "amount": 1,
+        "note": "$9.99. Gives 5,000 Gems, Perpetual Treads Nameplate (permanent) \u00d71, Energized Bread \u00d71,600, Lucky Hero Gear Chest \u00d756, Fire Crystal \u00d783."
+      },
+      "cost": 9.99,
+      "limit": 1
+    }
+  ],
+  "shopCurrencyName": "USD"
+}

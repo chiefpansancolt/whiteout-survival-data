@@ -1,0 +1,17 @@
+{
+  "id": "hero-rally",
+  "name": "Hero Rally",
+  "img": "/images/events/hero-rally.png",
+  "category": "solo",
+  "description": "An event with level rewards. You can buy a pack for more items and buy levels for 2,160 gems each.",
+  "rewards": [
+    {
+      "name": "Level rewards",
+      "note": "Shown on the wiki only as screenshots. Each extra level costs 2,160 gems."
+    }
+  ],
+  "tips": [
+    "The wiki gives no reward amounts as text.",
+    "The event screen shows level progress such as Lv. 1 with 0 of 90 points, and a Purchase Level button."
+  ]
+}

@@ -32,6 +32,14 @@ describe('EventsQuery', () => {
       'the-labyrinth',
       'treasure-hunter',
       'tundra-trading-station-guide',
+      'defeat-nearby-beasts',
+      'flame-and-fang',
+      'hero-rally',
+      'lucky-wheel',
+      'snowbusters',
+      'stand-of-arms',
+      'tundra-games',
+      'wild-brawl',
     ]);
     expect(events().byCategory('alliance').count()).toBe(14);
     expect(events().byCategory('rookie').count()).toBe(0);
@@ -338,6 +346,7 @@ describe('Events data', () => {
       'icefire-way',
       'luminari-citadel',
       'serpent-sanctuary',
+      'snowbuster-arena',
       'tundra-truck',
       'war-chariot',
     ]);
@@ -1081,11 +1090,93 @@ describe('Events data', () => {
       'Custom Hero Widget Chest (S8)',
       'Custom Hero Widget Chest (S7)',
       'Custom Hero Widget Chest (S6)',
-      'Unidentified tin can',
     ]);
     expect(station.tiers!.map((t) => t.rewards![0].amount)).toEqual([
       6, 10, 100, 50, 200, 300, 400,
     ]);
+    const wheel = events().find('lucky-wheel')!;
+    expect(wheel.tiers!.map((t) => t.scoreTotal)).toEqual([5, 15, 35, 70, 120]);
+    expect(wheel.rewards).toHaveLength(11);
+    const beasts = events().find('defeat-nearby-beasts')!;
+    expect(beasts.days![0].scoring.map((s) => s.points)).toEqual([1, 3]);
+    expect(beasts.days![0].milestones!.map((m) => m.scoreTotal)).toEqual([1, 30, 50, 80]);
+    expect(beasts.days).toHaveLength(2);
+    expect(beasts.days![1].milestones![3].rewards![0]).toMatchObject({
+      itemId: 'charm-guide',
+      amount: 12,
+    });
+    expect(beasts.personalRankings![1].rankings[0].rewards[0]).toMatchObject({
+      itemId: 'mythic-general-decoration-component',
+      amount: 10,
+    });
+    expect(beasts.personalRankings!.map((t) => t.rankings.length)).toEqual([8, 8]);
+    expect(
+      events()
+        .find('flame-and-fang')!
+        .missions!.map((m) => m.points),
+    ).toEqual([10, 1]);
+    const fang = events().find('flame-and-fang')!;
+    expect(fang.shopCurrencyItemId).toBe('crystallite-core');
+    expect(fang.shop![2].reward).toMatchObject({ itemId: 'fire-crystal-shard', amount: 8 });
+    expect(fang.shop!.map((o) => [o.cost, o.limit])).toEqual([
+      [20, 2],
+      [5, 6],
+      [3, 6],
+      [1, 30],
+      [1, 30],
+      [1, 30],
+      [1, 30],
+      [3, 20],
+      [4, 5],
+      [4, 5],
+      [4, 5],
+    ]);
+    const brawl = events().find('wild-brawl')!;
+    expect(brawl.missions).toHaveLength(10);
+    expect(brawl.missions!.map((m) => m.points)).toEqual([
+      1000, 1000, 1000, 1000, 1000, 1000, 1000, 1500, 1500, 5000,
+    ]);
+    expect(brawl.shopCurrencyName).toBe('Pioneer Badge');
+    expect(brawl.missions![5].rewards![3]).toMatchObject({ itemId: 'shot-token', amount: 1 });
+    expect(brawl.missions![9].rewards![3]).toMatchObject({ itemId: 'shot-token', amount: 3 });
+    expect(brawl.shop!.map((o) => [o.cost, o.limit])).toEqual([
+      [250, 60],
+      [150, 100],
+      [5000, 3],
+      [500, 30],
+      [500, 30],
+      [6000, 5],
+      [1000, 15],
+      [500, 30],
+    ]);
+    expect(events().find('tundra-games')!.phases).toHaveLength(7);
+    expect(events().find('stand-of-arms')!.personalRankings![0].rankings).toHaveLength(8);
+    expect(
+      events()
+        .find('stand-of-arms')!
+        .days![0].milestones!.map((m) => m.scoreTotal),
+    ).toEqual([100, 2000, 7500, 16000]);
+    expect(events().find('snowbusters')!.frequency).toBe('Monthly');
+    expect(
+      events()
+        .find('snowbusters')!
+        .rewards!.some((r) => r.decorationId === 'snowbuster-arena'),
+    ).toBe(true);
+    expect(events().find('lucky-wheel')!.shop).toHaveLength(6);
+    const games = events().find('tundra-games')!;
+    expect(games.days).toHaveLength(7);
+    expect(games.days![3].milestones!.map((m) => m.scoreTotal)).toEqual([
+      26000, 55000, 98000, 169000,
+    ]);
+    expect(games.personalRankings).toHaveLength(3);
+    const dropTotal = (note: string) =>
+      games
+        .rewards!.filter((r) => r.note?.startsWith(note))
+        .reduce((sum, r) => sum + parseFloat(/([\d.]+)% chance/.exec(r.note!)![1]), 0);
+    ['Brawler Buddy win', 'Brawler Buddy attack', 'Arctic Crusher attack'].forEach((n) =>
+      expect(dropTotal(n)).toBeCloseTo(100),
+    );
+    expect(events().find('hero-rally')!.rewards).toHaveLength(1);
     const mission = events().find('heros-mission')!;
     expect(mission.tiers!.map((t) => t.scoreTotal)).toEqual([1, 3, 5, 7, 10]);
     expect(mission.tiers![4].rewards).toContainEqual({

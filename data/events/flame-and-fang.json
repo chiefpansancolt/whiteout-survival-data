@@ -1,0 +1,141 @@
+{
+  "id": "flame-and-fang",
+  "name": "Flame and Fang",
+  "img": "/images/events/flame-and-fang.png",
+  "category": "solo",
+  "description": "Do your Intel missions to get Crystallite Cores and trade them for rewards.",
+  "frequency": "Monday and Tuesday of the SvS preparation phase",
+  "duration": "3 days. You get cores on 2 days, and the last day is only for trading.",
+  "missionPointsLabel": "Crystallite Cores",
+  "missions": [
+    {
+      "group": "Intel",
+      "name": "Kill a Firebeast",
+      "points": 10
+    },
+    {
+      "group": "Intel",
+      "name": "Do a normal Intel mission",
+      "points": 1
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Crystallite Core",
+      "itemId": "crystallite-core",
+      "note": "You can get 168 in one event, or 184 with the tip. Unused cores become 10k meat at the end of the event."
+    }
+  ],
+  "shopCurrencyItemId": "crystallite-core",
+  "shop": [
+    {
+      "reward": {
+        "name": "Refined Fire Crystal",
+        "itemId": "refined-fire-crystal",
+        "amount": 1,
+        "note": "Needs the state to have unlocked Fire Crystal levels 6 to 8. The amount is not shown."
+      },
+      "cost": 20,
+      "limit": 2
+    },
+    {
+      "reward": {
+        "name": "Fire Crystal",
+        "itemId": "fire-crystal",
+        "amount": 5
+      },
+      "cost": 5,
+      "limit": 6
+    },
+    {
+      "reward": {
+        "name": "Fire Crystal Shard",
+        "itemId": "fire-crystal-shard",
+        "amount": 8
+      },
+      "cost": 3,
+      "limit": 6
+    },
+    {
+      "reward": {
+        "name": "Meat",
+        "itemId": "meat",
+        "amount": 1000000
+      },
+      "cost": 1,
+      "limit": 30
+    },
+    {
+      "reward": {
+        "name": "Wood",
+        "itemId": "wood",
+        "amount": 1000000
+      },
+      "cost": 1,
+      "limit": 30
+    },
+    {
+      "reward": {
+        "name": "Coal",
+        "itemId": "coal",
+        "amount": 200000,
+        "note": "Two 100K packs"
+      },
+      "cost": 1,
+      "limit": 30
+    },
+    {
+      "reward": {
+        "name": "Iron",
+        "itemId": "iron",
+        "amount": 50000,
+        "note": "Five 10K packs"
+      },
+      "cost": 1,
+      "limit": 30
+    },
+    {
+      "reward": {
+        "name": "Hero XP",
+        "itemId": "hero-xp",
+        "amount": 1,
+        "note": "A 10K Hero XP item"
+      },
+      "cost": 3,
+      "limit": 20
+    },
+    {
+      "reward": {
+        "name": "1h Construction Speedup",
+        "itemId": "speedup-construction-1h",
+        "amount": 2
+      },
+      "cost": 4,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "1h Research Speedup",
+        "itemId": "speedup-research-1h",
+        "amount": 2
+      },
+      "cost": 4,
+      "limit": 5
+    },
+    {
+      "reward": {
+        "name": "1h Troop Training Speedup",
+        "itemId": "speedup-troop-1h",
+        "amount": 2
+      },
+      "cost": 4,
+      "limit": 5
+    }
+  ],
+  "tips": [
+    "The day before the event, do your 08:00 UTC Intel mission but do not claim it. This gives 184 cores instead of 168.",
+    "Only the Crystallite Core is fixed in an Intel mission. The other rewards are random.",
+    "A Firehunter Lv. 10 Intel gives 10 Crystallite Cores. Other Intel missions give 1 core each and also other rewards.",
+    "You also get a Fire Crystal from the 6th and 7th chest of the daily mission."
+  ]
+}

@@ -181,6 +181,8 @@ export interface GameEvent {
   missionPointsLabel?: string;
   /** Item id of the currency the shop offers cost. */
   shopCurrencyItemId?: string;
+  /** Name of the shop currency, when it is not an item in `items()`. */
+  shopCurrencyName?: string;
   /** Refreshes in order, with their cost and quality chances. */
   refreshes?: GameEventRefresh[];
   /** Offers in the event shop. */

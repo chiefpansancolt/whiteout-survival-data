@@ -213,9 +213,10 @@
     },
     {
       "reward": {
-        "name": "Unidentified tin can",
+        "name": "Chief Stamina",
+        "itemId": "chief-stamina",
         "amount": 1,
-        "note": "Orange tin can with a 10 on top"
+        "note": "A 10 stamina can"
       },
       "cost": 60,
       "limit": 10

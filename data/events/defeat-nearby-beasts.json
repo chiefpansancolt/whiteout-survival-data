@@ -1,0 +1,649 @@
+{
+  "id": "defeat-nearby-beasts",
+  "name": "Defeat Nearby Beasts",
+  "img": "/images/events/defeat-nearby-beasts.png",
+  "category": "solo",
+  "description": "Hunt Beasts or Polar Terrors on the world map to earn points for personal rewards.",
+  "frequency": "Two days every two weeks",
+  "duration": "2 days",
+  "days": [
+    {
+      "day": "below-gen-7",
+      "name": "States below Gen 7",
+      "scoring": [
+        {
+          "action": "Defeat a Beast, level 1 to 30",
+          "points": 1
+        },
+        {
+          "action": "Call a rally and defeat a Polar Terror",
+          "points": 3
+        }
+      ],
+      "note": "80 points need about 27 Polar Terrors (540 stamina with Gina, 675 without) or 80 Beasts (640 stamina with Gina, 800 without).",
+      "milestones": [
+        {
+          "name": "1 points",
+          "scoreTotal": 1,
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 80,
+              "note": "Each is a 1K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 80,
+              "note": "Each is a 1K pack"
+            }
+          ]
+        },
+        {
+          "name": "30 points",
+          "scoreTotal": 30,
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 300,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 300,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 60,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 15,
+              "note": "Each is a 10K pack"
+            }
+          ]
+        },
+        {
+          "name": "50 points",
+          "scoreTotal": 50,
+          "rewards": [
+            {
+              "name": "Hero XP",
+              "itemId": "hero-xp",
+              "amount": 10,
+              "note": "Each is a 1K Hero XP item"
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 30
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 30
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "80 points",
+          "scoreTotal": 80,
+          "rewards": [
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 10,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Chief Stamina",
+              "itemId": "chief-stamina",
+              "amount": 5,
+              "note": "A 10 stamina can"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "gen-7-plus",
+      "name": "States at Gen 7 and above",
+      "scoring": [
+        {
+          "action": "Defeat a Beast, level 1 to 30",
+          "points": 1
+        },
+        {
+          "action": "Call a rally and defeat a Polar Terror",
+          "points": 3
+        }
+      ],
+      "note": "80 points need about 27 Polar Terrors (540 stamina with Gina, 675 without) or 80 Beasts (640 stamina with Gina, 800 without).",
+      "milestones": [
+        {
+          "name": "1 points",
+          "scoreTotal": 1,
+          "rewards": [
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 6
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 9
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 10,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 10,
+              "note": "Each is a 10K pack"
+            }
+          ]
+        },
+        {
+          "name": "30 points",
+          "scoreTotal": 30,
+          "rewards": [
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 8
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 12
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 50,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 50,
+              "note": "Each is a 10K pack"
+            }
+          ]
+        },
+        {
+          "name": "50 points",
+          "scoreTotal": 50,
+          "rewards": [
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 10
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 15
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 100,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 100,
+              "note": "Each is a 10K pack"
+            }
+          ]
+        },
+        {
+          "name": "80 points",
+          "scoreTotal": 80,
+          "rewards": [
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 12
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 18
+            },
+            {
+              "name": "Chief Stamina",
+              "itemId": "chief-stamina",
+              "amount": 5,
+              "note": "A 10 stamina can"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "ranking for states below Gen 7 (top 100)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 10
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 10
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 7200
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 6
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 6
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 400
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 1
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "basedOn": "ranking for states at Gen 7 and above (top 100)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 10
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 10
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 10
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 6
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 4
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 7200
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 6
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 6
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 3
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Mythic General Decoration Component",
+              "itemId": "mythic-general-decoration-component",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 400
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 1
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Always hunt with Gina. Her level 5 skill cuts the stamina cost from 10 to 8 per Beast and from 25 to 20 per Polar Terror.",
+    "A Polar Terror is the better value: 3 points cost 20 stamina, while 3 Beasts cost 24.",
+    "Do not finish the 16:00 UTC Intel mission, the one with only Beasts, the day before the event. Do it after the event starts.",
+    "Use the Ultra Value Monthly Card for stamina. It gives 600 stamina cans (6,000 stamina) and automatic hunting.",
+    "Turn on auto-join to join rallies in your alliance.",
+    "Gen 7 and above states get Charm Guides and Charm Designs as milestone rewards and Mythic General Decoration Components in the ranking."
+  ]
+}
