@@ -108,7 +108,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `allianceFortress()`: the castle, 4 strongholds, and 12 fortresses with map coordinates and the
   reward each gives in each of the 8 phases, sourced from user-provided images.
 - `events()`: game events, one data file each under `data/events/`, with frequency, duration,
-  requirements, phases, rewards, and tips. The four batches cover 32 alliance and solo events.
+  requirements, phases, rewards, and tips. The five batches cover 42 alliance, solo, and rookie
+  events.
 - `items()`: a `Speedups` category with 21 speedup items (General, Construction, Troop Training,
   Research, Learning, and Troop Healing) and their icons under `images/items/speedups/`.
 - `skins()`: the Frostflame Knight City Skin from the Icefire Warhymn League season ranking, with

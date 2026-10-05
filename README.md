@@ -735,7 +735,11 @@ and supreme Ultimate Treasure options in `personalRankings`, and the Treasure Pr
 shop offers in `shop` (priced in Trade Vouchers) and the Trade Voucher value of each exchange in
 `tiers`. The fourth batch adds Lucky Wheel, Defeat Nearby Beasts, Snowbusters, Flame and Fang, Wild
 Brawl, Tundra Games, Stand of Arms, and Hero Rally from the wiki text. Amounts the wiki shows only
-as images are not loaded, and rewards it does not name are recorded as unidentified items.
+The fifth batch adds 10 rookie events: City Development, Plan Your City, Trusted Chief, Power Up,
+War Preparation, Grow Your Heroes, Develop New Tech (two wiki copies), Trial Event, and Home Beyond.
+Each target event has its four or five target levels and the top 100 ranking, and the target point
+amounts are loaded where a screenshot shows them. as images are not loaded, and rewards it does not
+name are recorded as unidentified items.
 
 ### 🎯 Event Buffs
 
