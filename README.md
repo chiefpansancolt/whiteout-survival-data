@@ -733,7 +733,9 @@ and supreme Ultimate Treasure options in `personalRankings`, and the Treasure Pr
 `rewards`. Tundra Trade Route has its 6 truck refreshes with their gem cost and quality chances in
 `refreshes`. Its truck rewards are random, so they are not listed. Tundra Trading Station has its 19
 shop offers in `shop` (priced in Trade Vouchers) and the Trade Voucher value of each exchange in
-`tiers`.
+`tiers`. The fourth batch adds Lucky Wheel, Defeat Nearby Beasts, Snowbusters, Flame and Fang, Wild
+Brawl, Tundra Games, Stand of Arms, and Hero Rally from the wiki text. Amounts the wiki shows only
+as images are not loaded, and rewards it does not name are recorded as unidentified items.
 
 ### 🎯 Event Buffs
 
