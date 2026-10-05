@@ -274,10 +274,10 @@ for those heroes.
 `["Hall of Heroes", "Daily Deals"]`) — transcribed verbatim from each hero's own "Sources" section
 on the wiki. Empty for the one Gen 0 hero (Ling Xue) whose page has no Sources section at all.
 
-`shardImg` is an optional icon of the hero's shard, set for the 12 heroes whose shard icon has been
-captured (Molly, Zinman, Flint, Philly, Alonso, Logan, Reina, Gwen, Wu Ming, Gordon, Hendrik, and
-Magnus). It lives in the hero's image folder as `<Name>-Shard.png`, and the matching hero shard item
-in `items()` points to the same file.
+`shardImg` is an optional icon of the hero's shard, set for the 13 heroes whose shard icon has been
+captured (Gina, Molly, Zinman, Flint, Philly, Alonso, Logan, Reina, Gwen, Wu Ming, Gordon, Hendrik,
+and Magnus). It lives in the hero's image folder as `<Name>-Shard.png`, and the matching hero shard
+item in `items()` points to the same file.
 
 `Hero.levels` is the 80-level Furnace/XP/Power progression, replacing the old flat `levelPower`
 field. `furnaceLevelRequired` (the Furnace level needed to reach that hero level) and `xpRequired`
@@ -387,7 +387,7 @@ same convention `images/heroes/` uses — the single skill image is named `<Pet>
 
 | Module | Factory   | Items | Description                                                       |
 | ------ | --------- | ----- | ----------------------------------------------------------------- |
-| items  | `items()` | 271   | Functional items — resources, currencies, chests, buffs, and more |
+| items  | `items()` | 273   | Functional items — resources, currencies, chests, buffs, and more |
 
 Sourced from the wiki's master item catalog page, which covers 415 items across 18 category tabs.
 Birthday Card entries are skipped (a yearly login freebie with no gameplay data worth tracking), and
@@ -746,7 +746,12 @@ Each target event has its four or five target levels and the top 100 ranking, an
 amounts are loaded where a screenshot shows them. The sixth batch adds Hall of Chief (13 stage
 scoring lists for its two seasons), Hall of Heroes (the shop of each hero generation from 1 to 9 in
 `shops`), and Mia Fortune (orb costs and milestones). Rewards the wiki shows only as images are not
-loaded, and rewards it does not name are recorded as unidentified items.
+loaded, and rewards it does not name are recorded as unidentified items. The seventh batch adds
+Crystal Reactivation (chest shops by Fire Crystal age), Beast Whisperer (75 daily missions), Journey
+of Light, Symphony of Change, Return to Tundra, Deadshot, Gina's Revenge, and Working Overtime.
+Chest and bundle offers hold their rewards in `contents`. Brothers in Arms has its troop-level point
+table, four target levels, and top 100 ranking rewards. Hero's Mission lists the hero whose shards
+it gives for generations 4 to 15 in `heroByGeneration`.
 
 ### 🎯 Event Buffs
 
