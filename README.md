@@ -751,7 +751,9 @@ Crystal Reactivation (chest shops by Fire Crystal age), Beast Whisperer (75 dail
 of Light, Symphony of Change, Return to Tundra, Deadshot, Gina's Revenge, and Working Overtime.
 Chest and bundle offers hold their rewards in `contents`. Brothers in Arms has its troop-level point
 table, four target levels, and top 100 ranking rewards. Hero's Mission lists the hero whose shards
-it gives for generations 4 to 15 in `heroByGeneration`.
+it gives for generations 4 to 15 in `heroByGeneration`. The eighth batch adds the first holiday
+events: Frosty Fortune, Vision of Dawn, Romance Season, and Dreamscape Memory, from the wiki text
+and the images that can be read.
 
 ### 🎯 Event Buffs
 
