@@ -1,0 +1,750 @@
+{
+  "id": "tundra-adventure",
+  "name": "Tundra Adventure",
+  "img": "/images/events/tundra-adventure.png",
+  "category": "solo",
+  "description": "Roll dice to move around a board for rewards and Adventure Coins, which you spend in the Adventure Caravan. The event has four parts: Tundra Adventure, Adventurer Drill, Odyssey of Adventure, and Adventure Caravan.",
+  "frequency": "Irregular, set by the developers",
+  "duration": "7 days. The Adventure Caravan shop lasts 8 days.",
+  "phases": [
+    {
+      "name": "Tundra Adventure",
+      "description": "Use Common Dice (a random 1 to 6) or Illusion Dice (a 1 to 6 you choose). A normal roll uses 1 Common Die and a quintuple roll uses 5. Tiles: Starting, Treasure, Event, and Item. Unused Common Dice become a 10K resource chest at the end, and unused Illusion Dice become 100 Gems. A blue chest appears on a random tile and moves once you step on it."
+    },
+    {
+      "name": "Adventurer Drill",
+      "description": "Daily missions (reset at 00:00 UTC) give Adventure Points and rewards. Treasure Hunt Tomes (price level 3) double the daily mission rewards and unlock special rewards. Buy it on day 1 if at all."
+    },
+    {
+      "name": "Odyssey of Adventure",
+      "description": "A 7-day puzzle board of 15 missions. Each row gives a chest and each column gives a chest. Finishing the board gives the Adventurer\u2019s Chest."
+    },
+    {
+      "name": "Adventure Caravan",
+      "description": "The shop where you spend Adventure Coins. It lasts 8 days and its Mythic General Hero Shards reset on day 8. Unused Adventure Coins turn into 1K resources at the end. Two limited city skins and two limited march skins change each time the event appears."
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Point target 30",
+      "scoreTotal": 30,
+      "rewards": [
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "name": "Point target 60",
+      "scoreTotal": 60,
+      "rewards": [
+        {
+          "name": "Common Dice",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Point target 120",
+      "scoreTotal": 120,
+      "rewards": [
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "name": "Point target 180",
+      "scoreTotal": 180,
+      "rewards": [
+        {
+          "name": "Common Dice",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Point target 300",
+      "scoreTotal": 300,
+      "rewards": [
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 1000
+        }
+      ]
+    },
+    {
+      "name": "Point target 600",
+      "scoreTotal": 600,
+      "rewards": [
+        {
+          "name": "Common Dice",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Point target 900",
+      "scoreTotal": 900,
+      "rewards": [
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 3000
+        }
+      ]
+    },
+    {
+      "name": "Point target 1,200",
+      "scoreTotal": 1200,
+      "rewards": [
+        {
+          "name": "Common Dice",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "Point target 1,500",
+      "scoreTotal": 1500,
+      "rewards": [
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "name": "Point target 2,000",
+      "scoreTotal": 2000,
+      "rewards": [
+        {
+          "name": "Common Dice",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "name": "Treasure Tile",
+      "note": "Each landing gives one of these",
+      "rewards": [
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 200,
+          "note": "2% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 400,
+          "note": "8% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 600,
+          "note": "20% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 1500,
+          "note": "30% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 3000,
+          "note": "40% chance"
+        }
+      ]
+    },
+    {
+      "name": "Event Tile",
+      "note": "Each landing gives one of these. The chances listed on the wiki add up to 94%, and the missing 6% is not stated.",
+      "rewards": [
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 50,
+          "note": "20% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 250,
+          "note": "18% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 500,
+          "note": "6.5% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 2500,
+          "note": "0.5% chance"
+        },
+        {
+          "name": "Illusion Dice",
+          "amount": 1,
+          "note": "2% chance"
+        },
+        {
+          "name": "Go back 1 to 4 tiles",
+          "note": "2% chance"
+        },
+        {
+          "name": "Teleport to the end",
+          "note": "2% chance"
+        },
+        {
+          "name": "+2 XP on the next Item Tile stop",
+          "note": "43% chance"
+        }
+      ]
+    },
+    {
+      "name": "Blue chest",
+      "note": "Appears on one tile at random",
+      "rewards": [
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 10,
+          "note": "3% chance"
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 4,
+          "note": "10% chance"
+        },
+        {
+          "name": "Mythic General Hero Shard",
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2,
+          "note": "15% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 2500,
+          "note": "5% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 1000,
+          "note": "12% chance"
+        },
+        {
+          "name": "Adventure Coin",
+          "itemId": "adventure-coin",
+          "amount": 500,
+          "note": "25% chance"
+        },
+        {
+          "name": "General Speedup hours",
+          "itemId": "speedup-general-1h",
+          "amount": 15,
+          "note": "10% chance. 15h in total"
+        },
+        {
+          "name": "General Speedup hours",
+          "itemId": "speedup-general-1h",
+          "amount": 6,
+          "note": "20% chance. 6h in total"
+        }
+      ]
+    },
+    {
+      "name": "Item Tile: Gems",
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 1000,
+          "note": "Level 1"
+        },
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 2000,
+          "note": "Level 2"
+        },
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 3000,
+          "note": "Level 3"
+        },
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 4000,
+          "note": "Level 4"
+        },
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 5000,
+          "note": "Level 5"
+        }
+      ]
+    },
+    {
+      "name": "Item Tile: Essence Stones Chest",
+      "note": "Level 1 to 5 gives 1 to 5 chests. A chest holds one of these.",
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 3,
+          "note": "4% chance"
+        },
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 2,
+          "note": "10% chance"
+        },
+        {
+          "name": "Hero Gear XP",
+          "amount": 100,
+          "note": "21% chance. Item not linked"
+        },
+        {
+          "name": "Hero Gear XP",
+          "amount": 40,
+          "note": "30% chance. Item not linked"
+        },
+        {
+          "name": "Hero Gear XP",
+          "amount": 20,
+          "note": "35% chance. Item not linked"
+        }
+      ]
+    },
+    {
+      "name": "Item Tile: Fire Crystal Chest",
+      "note": "Level 1 to 5 gives 1 to 5 chests. States before the Fire Crystal Age get a General Speedups Chest instead.",
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 20,
+          "note": "2% chance"
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 10,
+          "note": "8% chance"
+        },
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 6,
+          "note": "20% chance"
+        },
+        {
+          "name": "General Speedup minutes",
+          "amount": 50,
+          "note": "30% chance. 50 minutes in total"
+        },
+        {
+          "name": "General Speedup minutes",
+          "amount": 25,
+          "note": "40% chance. 25 minutes in total"
+        }
+      ]
+    },
+    {
+      "name": "Item Tile: General Speedups Chest",
+      "note": "Level 1 to 5 gives 1 to 5 chests. For states before the Fire Crystal Age.",
+      "rewards": [
+        {
+          "name": "General Speedup hours",
+          "amount": 6,
+          "note": "2% chance. 6h in total"
+        },
+        {
+          "name": "General Speedup hours",
+          "amount": 3,
+          "note": "8% chance. 3h in total"
+        },
+        {
+          "name": "General Speedup hours",
+          "amount": 2,
+          "note": "20% chance. 2h in total"
+        },
+        {
+          "name": "General Speedup hours",
+          "amount": 1,
+          "note": "30% chance. 1h in total"
+        },
+        {
+          "name": "General Speedup minutes",
+          "amount": 30,
+          "note": "40% chance. 30 minutes in total"
+        }
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "group": "Adventurer Drill (daily)",
+      "name": "Daily Login",
+      "points": 0,
+      "rewards": [
+        {
+          "name": "Adventure Points",
+          "amount": 200,
+          "note": "Item not linked"
+        },
+        {
+          "name": "Common Dice",
+          "amount": 1
+        },
+        {
+          "name": "General Speedup minutes",
+          "amount": 50,
+          "note": "50 minutes in total"
+        }
+      ]
+    },
+    {
+      "group": "Adventurer Drill (daily)",
+      "name": "Use 1,000 minutes of General Speedups",
+      "points": 0,
+      "rewards": [
+        {
+          "name": "Adventure Points",
+          "amount": 100
+        },
+        {
+          "name": "Common Dice",
+          "amount": 1
+        },
+        {
+          "name": "General Speedup minutes",
+          "amount": 100,
+          "note": "100 minutes in total"
+        }
+      ]
+    },
+    {
+      "group": "Adventurer Drill (daily)",
+      "name": "Defeat 10 Beasts",
+      "points": 0,
+      "rewards": [
+        {
+          "name": "Adventure Points",
+          "amount": 100
+        },
+        {
+          "name": "Common Dice",
+          "amount": 1
+        },
+        {
+          "name": "Troop Training Speedup minutes",
+          "amount": 50,
+          "note": "50 minutes in total"
+        }
+      ]
+    },
+    {
+      "group": "Adventurer Drill (daily)",
+      "name": "Use Epic Recruitment 2 times",
+      "points": 0,
+      "rewards": [
+        {
+          "name": "Adventure Points",
+          "amount": 100
+        },
+        {
+          "name": "Hero Gear XP",
+          "amount": 50,
+          "note": "Item not linked"
+        },
+        {
+          "name": "Research Speedup minutes",
+          "amount": 50,
+          "note": "50 minutes in total"
+        }
+      ]
+    },
+    {
+      "group": "Adventurer Drill (daily)",
+      "name": "Finish 5 Intel Missions",
+      "points": 0,
+      "rewards": [
+        {
+          "name": "Adventure Points",
+          "amount": 100
+        },
+        {
+          "name": "Hero XP",
+          "itemId": "hero-xp",
+          "amount": 10000
+        },
+        {
+          "name": "Resource Supply Chest",
+          "itemId": "meat",
+          "amount": 2,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Adventurer Drill (daily)",
+      "name": "Raise 30,000 Power by training or promoting troops",
+      "points": 0,
+      "rewards": [
+        {
+          "name": "Adventure Points",
+          "amount": 100
+        },
+        {
+          "name": "Hero Gear XP",
+          "amount": 50,
+          "note": "Item not linked"
+        },
+        {
+          "name": "Resource Supply Chest",
+          "itemId": "meat",
+          "amount": 2,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Use 2,500 Gems",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Train 3,000 Lv. 1 or above troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 55,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Use 2,000 minutes of any Speedup",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 55,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Make 150 Alliance Contributions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Purchase 1 pack with 2,500 or more Gems",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Login for 1 Day",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Gather 20M resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Heal 30 injured soldiers",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 55,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Spend 1,000 Chief Stamina",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Call rally and hunt down 5 Polar Terrors",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 55,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Claim 15 Online Rewards",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Gather 10M resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Defeat 30 Beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Fight in 20 Arena Challenges",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Odyssey of Adventure",
+      "name": "Carry out 15 Intel Missions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    }
+  ],
+  "missionPointsLabel": "Points",
+  "rewards": [
+    {
+      "name": "Row chest",
+      "note": "5 times. 1 Common Dice, 5 Fire Crystal, 1 Gold Key. States before the Fire Crystal Age get 1h General Speedups."
+    },
+    {
+      "name": "Column chest",
+      "note": "3 times. 2 Common Dice, 12 Fire Crystal, 1 Epic manual (flag icon), and 5K resources. States before the Fire Crystal Age get 3h General Speedups."
+    },
+    {
+      "name": "Adventurer\u2019s Chest",
+      "note": "5 Common Dice, 2 Mythic General Hero Shards, 40 Fire Crystal, and 2K Gems. States before the Fire Crystal Age get 10h General Speedups."
+    }
+  ],
+  "tips": [
+    "Item tiles have levels. Stepping on one gives 1 XP. The XP needed is Level 2: 2, Level 3: 3, Level 4: 7, Level 5: 15.",
+    "The Starting tile gives 2 random Item tiles +1 XP, whether you stop on it or pass it.",
+    "You can keep some basic dice after the event by not claiming the Odyssey of Adventure chests and leaving the mail unclaimed until the end.",
+    "There are 7 daily Adventure Resource packs. You must buy the previous level to buy the next. Levels 1 to 6 are once a day and level 7 is 5 times a day.",
+    "If you are a low spender, the Treasure Hunt Tome can be worth it if you pick Design Plans or Charm Designs in the Adventure Caravan.",
+    "Check other events running at the same time to share points."
+  ]
+}

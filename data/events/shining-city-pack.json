@@ -1,0 +1,46 @@
+{
+  "id": "shining-city-pack",
+  "name": "Shining City Pack",
+  "img": "/images/events/shining-city-pack.png",
+  "category": "solo",
+  "description": "An irregular 5-day event with built-in pack purchases. A Shining City Pack gives a Lucky Glorious Tome Chest, which holds 5 to 100 Glorious Tomes to spend in the Exchange Shop.",
+  "frequency": "Irregular",
+  "duration": "5 days",
+  "phases": [
+    {
+      "name": "Daily rewards",
+      "description": "Claim 100 Gems free every day. After you buy a Shining City Pack that day you can also claim 80 Glorious Tomes."
+    },
+    {
+      "name": "First daily packs",
+      "description": "The first purchase of each pack tier each day gives bonus rewards: Lucky Glorious Tome Chests, Gems, VIP XP, Custom Resource Chests, and an Alliance Gift. After that, the first two tiers can be bought up to 3 more times that day and the third tier up to 5 more times, at the normal reward."
+    },
+    {
+      "name": "Exchange Shop",
+      "description": "Spend Glorious Tomes on items. Both the Glorious Tomes and the Lucky Glorious Tome Chests do not expire and can be saved for future Shining City events."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Glorious Tome",
+      "note": "Event token, 5 to 100 from each Lucky Glorious Tome Chest. Item not linked."
+    },
+    {
+      "name": "Custom Classic Skin: City",
+      "note": "Exchange Shop. If you own the available skins you can pick only Mythic General Hero Shards."
+    },
+    {
+      "name": "Custom Classic Skin: March",
+      "note": "Exchange Shop. If you own the available skins you can pick only Mythic General Hero Shards."
+    },
+    {
+      "name": "Custom Classic Skin: Decoration (Island)",
+      "note": "Exchange Shop. You can keep getting them after max level and recycle extra copies in the Recycle Shop."
+    }
+  ],
+  "tips": [
+    "The wiki does not recommend any of the three limited Exchange Shop items.",
+    "Exchange Shop items differ with your state progress and the skins in the current rotation.",
+    "The chance of each Glorious Tome amount from a chest is shown only as an image."
+  ]
+}

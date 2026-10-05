@@ -39,6 +39,8 @@ import planYourCity from '@/data/events/plan-your-city.json';
 import powerUp from '@/data/events/power-up.json';
 import returnToTundra from '@/data/events/return-to-tundra.json';
 import romanceSeason from '@/data/events/romance-season.json';
+import shiningCityPack from '@/data/events/shining-city-pack.json';
+import silverShellEvents from '@/data/events/silver-shell-events.json';
 import snowbusters from '@/data/events/snowbusters.json';
 import standOfArms from '@/data/events/stand-of-arms.json';
 import sunfireCastle from '@/data/events/sunfire-castle.json';
@@ -48,6 +50,8 @@ import theLabyrinth from '@/data/events/the-labyrinth.json';
 import treasureHunter from '@/data/events/treasure-hunter.json';
 import trialEvent from '@/data/events/trial-event.json';
 import trustedChief from '@/data/events/trusted-chief.json';
+import tundraAdventure from '@/data/events/tundra-adventure.json';
+import tundraAlbum2 from '@/data/events/tundra-album-2.json';
 import tundraArmsLeague from '@/data/events/tundra-arms-league.json';
 import tundraGames from '@/data/events/tundra-games.json';
 import tundraTradeRoute from '@/data/events/tundra-trade-route.json';
@@ -116,6 +120,10 @@ const eventsData: GameEvent[] = [
   frostyFortuneSkinEvent,
   romanceSeason,
   visionOfDawn,
+  shiningCityPack,
+  silverShellEvents,
+  tundraAdventure,
+  tundraAlbum2,
 ] as GameEvent[];
 
 /** Query builder for GameEvent data. All filter methods return a new EventsQuery for chaining. */

@@ -1,0 +1,135 @@
+{
+  "id": "tundra-album-2",
+  "name": "Tundra Album",
+  "img": "/images/events/tundra-album-2.png",
+  "category": "solo",
+  "description": "An ongoing event where you earn rewards by reaching milestones as you develop your account. Missions give envelopes of puzzle pieces, and finished puzzles give rewards and buffs.",
+  "frequency": "Ongoing",
+  "phases": [
+    {
+      "name": "Missions and envelopes",
+      "description": "Complete missions in different parts of the game to get envelopes. Open them to get puzzle pieces. Save Mythic (gold) envelopes and open them when your puzzles are only missing 5-star pieces."
+    },
+    {
+      "name": "Puzzles",
+      "description": "Put a puzzle together when you have all its pieces. Each finished puzzle gives rewards and a buff. After 10 puzzles done by hand you can unlock auto complete. There are 2,211 unique fragments in all, and you get rewards for every set of fragments."
+    },
+    {
+      "name": "Recycle shop",
+      "description": "Extra 3-star and 4-star pieces can fill alliance member requests and give recycle tokens."
+    }
+  ],
+  "tiers": [
+    {
+      "name": "60 recycle tokens",
+      "scoreTotal": 60,
+      "rewards": [
+        {
+          "name": "Rare General Scene Fragment Pack",
+          "itemId": "rare-general-scene-fragment-pack",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "120 recycle tokens",
+      "scoreTotal": 120,
+      "rewards": [
+        {
+          "name": "Epic General Scene Fragment Pack",
+          "itemId": "epic-general-scene-fragment-pack",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "250 recycle tokens",
+      "scoreTotal": 250,
+      "rewards": [
+        {
+          "name": "Mythic General Scene Fragment Pack",
+          "itemId": "mythic-general-scene-fragment-pack",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "2500 recycle tokens",
+      "scoreTotal": 2500,
+      "rewards": [
+        {
+          "name": "General Master Fragment",
+          "itemId": "general-master-fragment",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Rekindled Flames buff",
+      "note": "+5% resource production speed"
+    },
+    {
+      "name": "Explore the World buff",
+      "note": "+2% troops attack"
+    },
+    {
+      "name": "Daybreak Island buff",
+      "note": "+2% troops defense"
+    },
+    {
+      "name": "Tundra Alliance buff",
+      "note": "+2% troops attack"
+    },
+    {
+      "name": "Battlefield Epic buff",
+      "note": "+2% troops defense"
+    },
+    {
+      "name": "Spectacular Adventures buff",
+      "note": "+2% troops attack"
+    },
+    {
+      "name": "Divine Weapons buff",
+      "note": "+2% troops defense"
+    },
+    {
+      "name": "Song of Heroes buff",
+      "note": "+5% resource gathering speed"
+    },
+    {
+      "name": "The Labyrinth buff",
+      "note": "+2% troops attack"
+    },
+    {
+      "name": "Nature\u2019s Strength buff",
+      "note": "+2% troops defense"
+    },
+    {
+      "name": "Crystalline Mysteries buff",
+      "note": "+2% troops attack"
+    },
+    {
+      "name": "Ballad of Wind and Cold buff",
+      "note": "+2% troops defense"
+    },
+    {
+      "name": "Infernal Power buff",
+      "note": "+2% troops attack"
+    },
+    {
+      "name": "Prerogative of the Flame buff",
+      "note": "+2% troops defense"
+    },
+    {
+      "name": "Frostdragon Empire buff",
+      "note": "+2% troops attack"
+    },
+    {
+      "name": "Kings of Combat buff",
+      "note": "+2% troops defense"
+    }
+  ],
+  "tips": ["The wiki shows the fragment reward track only as images."]
+}

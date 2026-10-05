@@ -52,6 +52,10 @@ describe('EventsQuery', () => {
       'journey-of-light',
       'return-to-tundra',
       'symphony-of-change',
+      'shining-city-pack',
+      'silver-shell-events',
+      'tundra-adventure',
+      'tundra-album-2',
     ]);
     expect(events().byCategory('alliance').count()).toBe(12);
     expect(
@@ -386,10 +390,13 @@ describe('Events data', () => {
       'dragon-pagoda',
       'dream-nest',
       'giant-horn',
+      'harbor-of-hope',
       'hero-s-sanctun',
       'icefire-way',
       'luminari-citadel',
       'serpent-sanctuary',
+      'skating-rink',
+      'ski-resort',
       'snowbuster-arena',
       'tundra-truck',
       'war-chariot',
@@ -1386,6 +1393,29 @@ describe('Events data', () => {
       'dream-odyssey',
       'dream-nest',
     ]);
+    const adventure = events().find('tundra-adventure')!;
+    expect(adventure.tiers!.slice(0, 10).map((t) => t.scoreTotal)).toEqual([
+      30, 60, 120, 180, 300, 600, 900, 1200, 1500, 2000,
+    ]);
+    const adventureChance = (name: string) =>
+      adventure
+        .tiers!.find((t) => t.name === name)!
+        .rewards!.reduce((sum, r) => sum + parseFloat(/([\d.]+)% chance/.exec(r.note!)![1]), 0);
+    expect(adventureChance('Treasure Tile')).toBeCloseTo(100);
+    expect(adventureChance('Event Tile')).toBeCloseTo(94);
+    expect(adventure.phases).toHaveLength(4);
+    expect(adventure.missions!.filter((m) => m.group === 'Odyssey of Adventure')).toHaveLength(15);
+    expect(
+      events()
+        .find('tundra-album-2')!
+        .tiers!.map((t) => t.scoreTotal),
+    ).toEqual([60, 120, 250, 2500]);
+    expect(
+      events()
+        .find('silver-shell-events')!
+        .rewards!.some((x) => x.decorationId === 'ski-resort'),
+    ).toBe(true);
+    expect(events().find('shining-city-pack')!.duration).toBe('5 days');
     const mission = events().find('heros-mission')!;
     expect(mission.tiers!.map((t) => t.scoreTotal)).toEqual([1, 3, 5, 7, 10]);
     expect(mission.tiers![4].rewards).toContainEqual({

@@ -1,0 +1,85 @@
+{
+  "id": "silver-shell-events",
+  "name": "Silver Shell Events",
+  "img": "/images/events/silver-shell-events.png",
+  "category": "solo",
+  "description": "Random events with a special currency, Silver Shells, that buy limited items at good rates.",
+  "frequency": "Random, at the developers\u2019 discretion",
+  "phases": [
+    {
+      "name": "Missions",
+      "description": "Complete daily missions to earn points for extra rewards. A 5 USD event pass for each Silver Shell event doubles the rewards for the missions."
+    },
+    {
+      "name": "Buy Silver Shells",
+      "description": "Buy Silver Shells from event packs."
+    },
+    {
+      "name": "Event shop",
+      "description": "Spend Silver Shells on items."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Silver Shell",
+      "itemId": "silver-shell",
+      "note": "Carry over from one event to the next and stay in your backpack until you spend them in the shop"
+    },
+    {
+      "name": "Custom city, march, and teleport skins",
+      "note": "Old event skins you choose yourself. They cost 3,000 to 5,000 Silver Shells, depending on the event and state age. If you own every option, a city skin chest gives 100 and a march or teleport skin chest gives 20 Mythic General Hero Shards."
+    },
+    {
+      "name": "Harbor of Hope",
+      "decorationId": "harbor-of-hope",
+      "note": "Island building. 1% lethality and health for each level, up to 10% each at max."
+    },
+    {
+      "name": "Skating Rink",
+      "decorationId": "skating-rink",
+      "note": "Island building. 2% research speed for each level, up to 10% at max."
+    },
+    {
+      "name": "Ski Resort",
+      "decorationId": "ski-resort",
+      "note": "Island building. 3% training speed for each level, up to 15% at max."
+    },
+    {
+      "name": "Mithril",
+      "itemId": "mithril"
+    },
+    {
+      "name": "Custom Mythic Hero Gear Chest",
+      "itemId": "custom-mythic-hero-gear-chest"
+    },
+    {
+      "name": "Lucky Hero Gear Chest",
+      "itemId": "lucky-hero-gear-chest"
+    },
+    {
+      "name": "Essence Stones",
+      "itemId": "essence-stones"
+    },
+    {
+      "name": "Charm Design, Charm Guide, and Charm Secrets",
+      "note": "Charm materials. For servers with Gen 7 heroes."
+    },
+    {
+      "name": "Chief Gear Materials Chest",
+      "itemId": "chief-gear-materials-chest"
+    },
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal"
+    },
+    {
+      "name": "Steel",
+      "itemId": "steel"
+    }
+  ],
+  "tips": [
+    "The shop contents can differ with your server timeline and from one Silver Shell event to another.",
+    "Saving Silver Shells is a good idea, but you could be saving for a long time because no one knows when the next event comes.",
+    "The shop prices and packs are shown on the wiki only as images."
+  ]
+}
