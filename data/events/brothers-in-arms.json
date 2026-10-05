@@ -2,7 +2,7 @@
   "id": "brothers-in-arms",
   "name": "Brothers in Arms",
   "img": "/images/events/brothers-in-arms.png",
-  "category": "alliance",
+  "category": "solo",
   "description": "Also called KE. Points come only from killing enemy troops or losing your own troops, so it is one of the deadliest events.",
   "frequency": "Once a month, in the week of the normal Sunfire Castle battle.",
   "duration": "Friday 00:00 UTC to Sunday 00:00 UTC (2 days).",
@@ -20,16 +20,331 @@
       "description": "Sunday 00:00 UTC."
     }
   ],
-  "rewards": [
-    {
-      "name": "Ranking rewards",
-      "note": "Given to the top 100 chiefs with 4,000 or more points. Troop kills and losses give 1 to 15 points depending on troop level."
-    }
-  ],
   "tips": [
     "Join the Sunfire Castle battle to gain points.",
     "Gathering during the event makes you a target. Check gatherings around alliances at the Friday 00:00 UTC reset.",
     "Attacking cities causes troop losses.",
-    "Use a farm account or friendly battles if you do not want to take part."
+    "Use a farm account or friendly battles if you do not want to take part.",
+    "States usually set their own rules. Common ones: no attacks on cities in alliances in the top 5 or 10, attacks on gatherings are allowed until the Sunfire Castle battle is over, cities with no alliance or an alliance outside the top 5 or 10 can be attacked, and at most 2 attacks on each city. Ask your alliance leader.",
+    "A failed attack loses 35% of the march (sent to the heaven), 10% injured (sent to the infirmary), and 55% lightly injured (back to the city).",
+    "A failed defense injures 35% of your troops (infirmary) and lightly injures 65% (city). Troops over the infirmary capacity go to the Enlistment Office."
+  ],
+  "days": [
+    {
+      "day": "brothers-in-arms",
+      "name": "Brothers in Arms",
+      "scoring": [
+        {
+          "action": "Kill or wound 1 Lv. 1 troop",
+          "points": 1
+        },
+        {
+          "action": "Kill or wound 1 Lv. 2 troop",
+          "points": 1
+        },
+        {
+          "action": "Kill or wound 1 Lv. 3 troop",
+          "points": 2
+        },
+        {
+          "action": "Kill or wound 1 Lv. 4 troop",
+          "points": 3
+        },
+        {
+          "action": "Kill or wound 1 Lv. 5 troop",
+          "points": 4
+        },
+        {
+          "action": "Kill or wound 1 Lv. 6 troop",
+          "points": 5
+        },
+        {
+          "action": "Kill or wound 1 Lv. 7 troop",
+          "points": 7
+        },
+        {
+          "action": "Kill or wound 1 Lv. 8 troop",
+          "points": 9
+        },
+        {
+          "action": "Kill or wound 1 Lv. 9 troop",
+          "points": 11
+        },
+        {
+          "action": "Kill or wound 1 Lv. 10 troop",
+          "points": 13
+        },
+        {
+          "action": "Kill or wound 1 Lv. 11 troop",
+          "points": 15
+        }
+      ],
+      "note": "Troops killed or wounded, yours or the enemy\u2019s, give the same points. Target points change slightly with the age of your state.",
+      "milestones": [
+        {
+          "name": "Level 1",
+          "scoreTotal": 1000,
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 80,
+              "note": "Each is a 1K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 80,
+              "note": "Each is a 1K pack"
+            }
+          ]
+        },
+        {
+          "name": "Level 2",
+          "scoreTotal": 18000,
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 150,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 150,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 30,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 7,
+              "note": "Each is a 10K pack"
+            }
+          ]
+        },
+        {
+          "name": "Level 3",
+          "scoreTotal": 44000,
+          "rewards": [
+            {
+              "name": "Hero XP",
+              "itemId": "hero-xp",
+              "amount": 6,
+              "note": "Each is a 1K Hero XP item"
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 20
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 20
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "scoreTotal": 89000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Honor Ranking (given to the top 100 chiefs over 4,000 points)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 10
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 7200
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 6
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 400
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 1
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
   ]
 }

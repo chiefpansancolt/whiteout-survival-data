@@ -1,0 +1,460 @@
+{
+  "id": "working-overtime-2",
+  "name": "Working Overtime",
+  "img": "/images/events/working-overtime-2.png",
+  "category": "rookie",
+  "description": "Earn points by using construction speedups. General speedups count too. Top scorers win up to 50,000 Gems.",
+  "duration": "2 days",
+  "days": [
+    {
+      "day": "wiki-text",
+      "name": "Wiki text version",
+      "scoring": [
+        {
+          "action": "Use 1m of Construction Speedup",
+          "points": 1
+        },
+        {
+          "action": "Use 1m of Research Speedup",
+          "points": 1
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Level 1",
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 80,
+              "note": "Each is a 1K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 80,
+              "note": "Each is a 1K pack"
+            }
+          ]
+        },
+        {
+          "name": "Level 2",
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 400,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 400,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 80,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 20,
+              "note": "Each is a 10K pack"
+            }
+          ]
+        },
+        {
+          "name": "Level 3",
+          "rewards": [
+            {
+              "name": "Hero XP",
+              "itemId": "hero-xp",
+              "amount": 10,
+              "note": "Each is a 1K Hero XP item"
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 30
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 30
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "Level 4",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2600
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            }
+          ]
+        }
+      ],
+      "note": "The points needed for each level are not loaded for this version."
+    },
+    {
+      "day": "screenshot",
+      "name": "Screenshot version",
+      "scoring": [
+        {
+          "action": "Use 1m of Construction Speedup",
+          "points": 1
+        },
+        {
+          "action": "Use 1m of Research Speedup",
+          "points": 1
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Level 1",
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 80,
+              "note": "Each is a 1K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 80,
+              "note": "Each is a 1K pack"
+            }
+          ],
+          "scoreTotal": 10
+        },
+        {
+          "name": "Level 2",
+          "rewards": [
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 600,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 600,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 120,
+              "note": "Each is a 10K pack"
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 30,
+              "note": "Each is a 10K pack"
+            }
+          ],
+          "scoreTotal": 800
+        },
+        {
+          "name": "Level 3",
+          "rewards": [
+            {
+              "name": "Hero XP",
+              "itemId": "hero-xp",
+              "amount": 26,
+              "note": "Each is a 1K Hero XP item"
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 50
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 50
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 50
+            }
+          ],
+          "scoreTotal": 2000
+        },
+        {
+          "name": "Level 4",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4500
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            }
+          ],
+          "scoreTotal": 4000
+        }
+      ],
+      "note": "From an in-game screenshot with its targets of 10, 800, 2,000, and 4,000 points. The wiki text lists smaller rewards."
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Honor Ranking (given to the top 100 chiefs over 500 points)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 50000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 20
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 20
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 20
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 3,
+              "note": "Purple key icon"
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 15
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 15
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 15
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 2,
+              "note": "Purple key icon"
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 13
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 13
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 13
+            },
+            {
+              "name": "Gold key",
+              "itemId": "gold-key",
+              "amount": 1,
+              "note": "Purple key icon"
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10800
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 9
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 9
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 9
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3800
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 60
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 60
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1900
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 35
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 35
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "Save construction or general speedups for this event to raise your chances at the top rewards."
+  ]
+}

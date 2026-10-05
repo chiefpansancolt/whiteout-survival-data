@@ -1,0 +1,37 @@
+{
+  "id": "ginas-revenge",
+  "name": "Gina\u2019s Revenge",
+  "img": "/images/events/ginas-revenge.png",
+  "category": "solo",
+  "description": "Collect Cryptid Horns to hunt Cryptids and earn Gina shards.",
+  "frequency": "Until season 4",
+  "duration": "3 days",
+  "phases": [
+    {
+      "name": "Find a Cryptid",
+      "description": "Use a Horn of the Cryptid from the Other tab of your backpack. You get horns as a chance reward for defeating beasts during the event. Hunt beasts on the Intel to save stamina."
+    },
+    {
+      "name": "Rally",
+      "description": "Tap the rally button on the Cryptid. It costs 25 Chief Stamina, or 20 with Gina skills at level 5. Each rally gives 2 to 4 Gina shards. Finish 10 event rallies for a reward of 10 Gina shards, whether or not they succeed."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Gina Shard",
+      "itemId": "gina-shard",
+      "note": "2 to 4 for each rally and 10 for finishing 10 rallies"
+    },
+    {
+      "name": "Horn of the Cryptid",
+      "itemId": "horn-of-the-cryptid",
+      "note": "Kept after the event ends"
+    }
+  ],
+  "tips": [
+    "Recruit Gina early. With her in the march she cuts Chief Stamina costs by 10 percent, up to 20 percent at a higher rank.",
+    "Hunt Cryptids one by one with Gina in the rally, and get as many players as possible to join.",
+    "Join rallies from alliance members for up to 50 help rewards a day. Use Auto Join under Alliance, Wars.",
+    "From Generation 4, Hero\u2019s Mission converts Horns and Scattered Parts into Gina shards."
+  ]
+}

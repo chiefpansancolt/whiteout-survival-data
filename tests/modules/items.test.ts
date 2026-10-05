@@ -17,18 +17,18 @@ describe('ItemQuery', () => {
 
   it('byCategory() filters to the given category', () => {
     const chests = items().byCategory('Chest');
-    expect(chests.count()).toBe(59);
+    expect(chests.count()).toBe(60);
     expect(chests.get().every((i) => i.category === 'Chest')).toBe(true);
   });
 });
 
 describe('Item catalog', () => {
-  it('tracks 271 items across 11 categories', () => {
-    expect(items().count()).toBe(271);
-    expect(items().byCategory('Hero Items').count()).toBe(22);
+  it('tracks 273 items across 11 categories', () => {
+    expect(items().count()).toBe(273);
+    expect(items().byCategory('Hero Items').count()).toBe(23);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
-    expect(items().byCategory('Chest').count()).toBe(59);
+    expect(items().byCategory('Chest').count()).toBe(60);
     expect(items().byCategory('Buff').count()).toBe(31);
     expect(items().byCategory('Fire Crystal').count()).toBe(4);
     expect(items().byCategory('Experts').count()).toBe(16);
@@ -91,6 +91,21 @@ describe('Item catalog', () => {
       const trophy = items().find(id)!;
       expect(trophy.category).toBe('Event');
       expect(existsSync(join(__dirname, '../..', trophy.img))).toBe(true);
+    });
+  });
+
+  it('lists everything a Journey of Light Radiance Treasure holds as rewardRates of 100 percent', () => {
+    const chests = ['common', 'premium', 'exquisite', 'dazzling'].map((n) =>
+      items().find(`${n}-radiance-treasure`)!,
+    );
+    chests.forEach((c) => {
+      expect(c.rewardRates).toHaveLength(3);
+      c.rewardRates!.forEach((r) => expect(r.probabilityPercent).toBe(100));
+    });
+    expect(chests[3].rewardRates![0]).toEqual({
+      reward: 'Mythic General Hero Shard',
+      amount: 10,
+      probabilityPercent: 100,
     });
   });
 });

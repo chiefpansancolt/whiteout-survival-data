@@ -497,6 +497,7 @@ describe('Generation 1-17 heroes (Legendary)', () => {
       .get()
       .filter((h) => h.shardImg !== undefined);
     expect(withShard.map((h) => h.id)).toEqual([
+      'gina',
       'molly',
       'zinman',
       'flint',

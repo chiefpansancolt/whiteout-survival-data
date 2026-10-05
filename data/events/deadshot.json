@@ -1,0 +1,22 @@
+{
+  "id": "deadshot",
+  "name": "Deadshot",
+  "img": "/images/events/deadshot.png",
+  "category": "solo",
+  "description": "A permanent mini game played with Shot Tokens. Tap targets to find keys and upgrade chests.",
+  "frequency": "Permanent",
+  "phases": [
+    {
+      "name": "Play",
+      "description": "Choose 1x or 5x. A 5x attempt costs 5 Shot Tokens. On a grid of 12 targets, pick targets one at a time until you hit 2 keys. An up arrow gives an upgrade point, and 2 upgrade points raise the chest quality for better rewards. A +1 target gives an extra reward and a Point Boost multiplies your chest. The attempt ends at 2 keys and you get random rewards based on the arrows and +1 targets you hit."
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Shot Token",
+      "itemId": "shot-token",
+      "note": "Daily login on the event page. Also given as personal rewards in Foundry, Tundra Arms League, Canyon Clash, Armament Competition, Officer Project, SVS, and King of Icefield."
+    }
+  ],
+  "tips": ["The chest reward lists are not shown on the wiki."]
+}

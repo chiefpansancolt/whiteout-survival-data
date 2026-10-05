@@ -1,0 +1,1546 @@
+{
+  "id": "beast-whisperer",
+  "name": "Beast Whisperer",
+  "img": "/images/events/beast-whisperer.png",
+  "category": "rookie",
+  "description": "A one-time 7-day event that starts when you unlock your first pet. Complete daily missions to earn Beast Whisperer coins, pet items, and a chest at 70 coins.",
+  "frequency": "Once only",
+  "duration": "7 days",
+  "requirements": [
+    "State age of 55 days.",
+    "Furnace Level 18.",
+    "Build the Beast Cage, then capture and tame the Cave Hyena."
+  ],
+  "missions": [
+    {
+      "group": "Day 1: Daily Logins",
+      "name": "Login for 1 Day",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 200
+        },
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Daily Logins",
+      "name": "Login for 2 Days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 300
+        },
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Daily Logins",
+      "name": "Login for 3 Days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 300
+        },
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Daily Logins",
+      "name": "Login for 4 Days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 300
+        },
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Daily Logins",
+      "name": "Login for 5 Days",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 200
+        },
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Recruit Hero",
+      "name": "Recruit 5 heroes",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Recruit Hero",
+      "name": "Recruit 10 heroes",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Recruit Hero",
+      "name": "Recruit 15 heroes",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Recruit Hero",
+      "name": "Recruit 20 heroes",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Recruit Hero",
+      "name": "Recruit 30 heroes",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Upgrade Pets",
+      "name": "Upgrade any pet to Lv. 5",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Upgrade Pets",
+      "name": "Upgrade any pet to Lv. 15",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Upgrade Pets",
+      "name": "Upgrade any pet to Lv. 25",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Upgrade Pets",
+      "name": "Upgrade any pet to Lv. 30",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 1: Upgrade Pets",
+      "name": "Upgrade any pet to Lv. 35",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Intel Missions",
+      "name": "Carry out 10 Intel Mission",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Intel Missions",
+      "name": "Carry out 25 Intel Mission",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Intel Missions",
+      "name": "Carry out 40 Intel Mission",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Intel Missions",
+      "name": "Carry out 55 Intel Mission",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Intel Missions",
+      "name": "Carry out 70 Intel Mission",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Spend Stamina",
+      "name": "Spend 20 Chief Stamina",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Spend Stamina",
+      "name": "Spend 100 Chief Stamina",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Spend Stamina",
+      "name": "Spend 200 Chief Stamina",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Spend Stamina",
+      "name": "Spend 500 Chief Stamina",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Spend Stamina",
+      "name": "Spend 800 Chief Stamina",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Refine Pets",
+      "name": "Refine pets 5 times",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Refine Pets",
+      "name": "Refine pets 10 times",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Refine Pets",
+      "name": "Refine pets 15 times",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Refine Pets",
+      "name": "Refine pets 20 times",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 2: Refine Pets",
+      "name": "Refine pets 30 times",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Rally Polar Terror",
+      "name": "Call rally and hunt down 1 Polar Terror",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Rally Polar Terror",
+      "name": "Call rally and hunt down 3 Polar Terror",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Rally Polar Terror",
+      "name": "Call rally and hunt down 6 Polar Terror",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Rally Polar Terror",
+      "name": "Call rally and hunt down 10 Polar Terror",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Rally Polar Terror",
+      "name": "Call rally and hunt down 15 Polar Terror",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Defeat Beasts",
+      "name": "Defeat 5 beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Defeat Beasts",
+      "name": "Defeat 10 beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Defeat Beasts",
+      "name": "Defeat 20 beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Defeat Beasts",
+      "name": "Defeat 30 beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Defeat Beasts",
+      "name": "Defeat 40 beasts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 1,000,000 ressources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 2,000,000 ressources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 5,000,000 ressources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 10,000,000 ressources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 3: Gather Resources",
+      "name": "Gather 15,000,000 ressources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Spend Gems",
+      "name": "Use 500 Gems",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Spend Gems",
+      "name": "Use 1000 Gems",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Spend Gems",
+      "name": "Use 2000 Gems",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Spend Gems",
+      "name": "Use 3000 Gems",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Spend Gems",
+      "name": "Use 5000 Gems",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Contributions",
+      "name": "Make 20 Alliance Contributions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Contributions",
+      "name": "Make 40 Alliance Contributions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Contributions",
+      "name": "Make 60 Alliance Contributions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Contributions",
+      "name": "Make 80 Alliance Contributions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Alliance Contributions",
+      "name": "Make 100 Alliance Contributions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant (daily shop)",
+      "name": "Do 5 trades with the Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant (daily shop)",
+      "name": "Do 10 trades with the Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant (daily shop)",
+      "name": "Do 15 trades with the Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant (daily shop)",
+      "name": "Do 20 trades with the Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 4: Nomadic Merchant (daily shop)",
+      "name": "Do 25 trades with the Nomadic Merchants",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 100m of Any Speedup",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 200m of Any Speedup",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 500m of Any Speedup",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 1000m of Any Speedup",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Use Speedups",
+      "name": "Use 1500m of Any Speedup",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 5,000 Power by training/promoting troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 25,000 Power by training/promoting troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 50,000 Power by training/promoting troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 75,000 Power by training/promoting troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Troops Training",
+      "name": "Raise 1oo,000 Power by training/promoting troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 3 Online Rewards",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 100
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 5 Online Rewards",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 200
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 10 Online Rewards",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 300
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 15 Online Rewards",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 400
+        },
+        {
+          "name": "Common Wild Mark",
+          "itemId": "common-wild-mark",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "group": "Day 5: Online Rewards",
+      "name": "Claim 20 Online Rewards",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Taming Manual",
+          "itemId": "taming-manual",
+          "amount": 2
+        },
+        {
+          "name": "Pet Food",
+          "itemId": "pet-food",
+          "amount": 500
+        },
+        {
+          "name": "Advanced Wild Mark",
+          "itemId": "advanced-wild-mark",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "missionPointsLabel": "Beast Whisperer coins",
+  "tips": [
+    "Each day has three groups of missions, and each mission gives 1 coin. The progress bar needs 70 coins to get all the chest rewards.",
+    "The wiki lists missions for days 1 to 5 only."
+  ]
+}

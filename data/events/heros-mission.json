@@ -2,7 +2,7 @@
   "id": "heros-mission",
   "name": "Hero's Mission",
   "img": "/images/events/heros-mission.png",
-  "category": "alliance",
+  "category": "solo",
   "description": "Starts in generation 4 and replaces Gina's Revenge. Players defeat Reapers on the world map to get Scattered Parts and shards of the featured Mythic Heroes. Players can also join rallies started by alliance members.",
   "frequency": "Every 2 weeks.",
   "duration": "3 days.",
@@ -132,10 +132,62 @@
       ]
     }
   ],
+  "heroByGeneration": [
+    {
+      "generation": 4,
+      "heroId": "philly",
+      "shardItemId": "hero-shard-gen-2b"
+    },
+    {
+      "generation": 5,
+      "heroId": "greg"
+    },
+    {
+      "generation": 6,
+      "heroId": "ahmose"
+    },
+    {
+      "generation": 7,
+      "heroId": "norah"
+    },
+    {
+      "generation": 8,
+      "heroId": "wayne"
+    },
+    {
+      "generation": 9,
+      "heroId": "edith"
+    },
+    {
+      "generation": 10,
+      "heroId": "sonya"
+    },
+    {
+      "generation": 11,
+      "heroId": "xura"
+    },
+    {
+      "generation": 12,
+      "heroId": "gregory"
+    },
+    {
+      "generation": 13,
+      "heroId": "lloyd"
+    },
+    {
+      "generation": 14,
+      "heroId": "ligeia"
+    },
+    {
+      "generation": 15,
+      "heroId": "gisela"
+    }
+  ],
   "tips": [
     "Hunt Reapers one at a time with Gina for bonuses.",
     "Join as many rallies as possible for rewards.",
     "Scattered Parts stay after the event ends.",
-    "After 10 rallies, hunt beasts for more Scattered Parts."
+    "After 10 rallies, hunt beasts for more Scattered Parts.",
+    "The Mythic hero whose shards you collect changes with each generation. The wiki lists the hero for Generation 4 to 15."
   ]
 }

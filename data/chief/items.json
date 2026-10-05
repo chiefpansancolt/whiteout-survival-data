@@ -379,7 +379,24 @@
     "img": "/images/items/common-radiance-treasure.png",
     "category": "Chest",
     "description": "3 Common Radiance Treasure chests can be assembled into 1 Premium Radiance Treasure chest, and contains: 100 gems (x2), 10 enhancement xp component (x5), 5 mins general speeds (x10)",
-    "sources": ["Journey of Light"]
+    "sources": ["Journey of Light"],
+    "rewardRates": [
+      {
+        "reward": "Gems",
+        "amount": 200,
+        "probabilityPercent": 100.0
+      },
+      {
+        "reward": "10 Enhancement XP Component",
+        "amount": 5,
+        "probabilityPercent": 100.0
+      },
+      {
+        "reward": "5m General Speedup",
+        "amount": 10,
+        "probabilityPercent": 100.0
+      }
+    ]
   },
   {
     "id": "controllers-chest",
@@ -443,7 +460,24 @@
     "img": "/images/items/dazzling-radiance-treasure.png",
     "category": "Chest",
     "description": "Dazzling Radiance Treasure contains: mythic general hero shard (x10), lucky hero gear chest (x10), 1 hour general speeds (x10)",
-    "sources": ["Journey of Light"]
+    "sources": ["Journey of Light"],
+    "rewardRates": [
+      {
+        "reward": "Mythic General Hero Shard",
+        "amount": 10,
+        "probabilityPercent": 100.0
+      },
+      {
+        "reward": "Lucky Hero Gear Chest",
+        "amount": 10,
+        "probabilityPercent": 100.0
+      },
+      {
+        "reward": "1h General Speedup",
+        "amount": 10,
+        "probabilityPercent": 100.0
+      }
+    ]
   },
   {
     "id": "exquisite-radiance-treasure",
@@ -451,7 +485,24 @@
     "img": "/images/items/exquisite-radiance-treasure.png",
     "category": "Chest",
     "description": "Exquisite Radiance Treasure contains: mythic general hero shard (x2), lucky hero gear chest (x2), 1 hour general speeds (x2)",
-    "sources": ["Journey of Light"]
+    "sources": ["Journey of Light"],
+    "rewardRates": [
+      {
+        "reward": "Mythic General Hero Shard",
+        "amount": 2,
+        "probabilityPercent": 100.0
+      },
+      {
+        "reward": "Lucky Hero Gear Chest",
+        "amount": 2,
+        "probabilityPercent": 100.0
+      },
+      {
+        "reward": "1h General Speedup",
+        "amount": 2,
+        "probabilityPercent": 100.0
+      }
+    ]
   },
   {
     "id": "fyre-crystal-chest",
@@ -726,7 +777,24 @@
     "img": "/images/items/premium-radiance-treasure.png",
     "category": "Chest",
     "description": "3x Premium Radiance Treasure chests can be assembled into 1x Exquisite Radiance Treasure chest (75% chance) or 1x Dazzling Radiance Treasure chest (25% chance), and contains: 100 gems (x5), 100 enhancement xp component (x2), 1 hour general speeds (x2)",
-    "sources": ["Journey of Light"]
+    "sources": ["Journey of Light"],
+    "rewardRates": [
+      {
+        "reward": "Gems",
+        "amount": 500,
+        "probabilityPercent": 100.0
+      },
+      {
+        "reward": "100 Enhancement XP Component",
+        "amount": 2,
+        "probabilityPercent": 100.0
+      },
+      {
+        "reward": "1h General Speedup",
+        "amount": 2,
+        "probabilityPercent": 100.0
+      }
+    ]
   },
   {
     "id": "random-chief-charm-material-chest",
@@ -2739,5 +2807,21 @@
     "category": "Hero Items",
     "description": "A shard of Magnus, a Generation 9 hero sold in the Hall of Heroes.",
     "sources": ["Hall of Heroes"]
+  },
+  {
+    "id": "gina-shard",
+    "name": "Gina Shard",
+    "img": "/images/heroes/Gina/Gina-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Gina, the Epic hunting hero. You get them from Gina's Revenge rallies and by converting Cryptid Horns and Scattered Parts in Hero's Mission.",
+    "sources": ["Gina's Revenge", "Hero's Mission"]
+  },
+  {
+    "id": "gear-boost-custom-chest",
+    "name": "Gear Boost Custom Chest",
+    "img": "/images/items/gear-boost-custom-chest.png",
+    "category": "Chest",
+    "description": "A custom chest of gear boost items, with Hero Gear Essence Stones, a gem, and enhancement parts on its icon. Given as a milestone reward in Journey of Light.",
+    "sources": ["Journey of Light"]
   }
 ]

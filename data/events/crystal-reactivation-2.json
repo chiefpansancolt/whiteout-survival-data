@@ -1,0 +1,1112 @@
+{
+  "id": "crystal-reactivation-2",
+  "name": "Crystal Reactivation",
+  "img": "/images/events/crystal-reactivation-2.png",
+  "category": "solo",
+  "description": "Get Fire Crystal Embers and exchange them for chests of rewards. The chests depend on the Fire Crystal age of your state.",
+  "frequency": "Friday and Saturday of the Sunfire Castle battle week",
+  "duration": "2 days",
+  "phases": [
+    {
+      "name": "Get Fire Crystal Embers",
+      "description": "Gems: 500 Gems for 1 Ember, up to 15 times. Missions: spend 10 Chief Stamina for 1 Ember (5 times) and gather 5M resources for 1 Ember (5 times). Packs: 5.99 EUR for 50 Embers (up to 2), 11.99 EUR for 100 (1), 24.99 EUR for 200 (1), and 59.99 EUR for 500 (1). You do not need an earlier pack to buy a later one."
+    },
+    {
+      "name": "Exchange",
+      "description": "Spend Embers on chests. Embers stay in your bag after the event."
+    }
+  ],
+  "shopCurrencyItemId": "fire-crystal-ember-2",
+  "shops": [
+    {
+      "name": "Chests for states with FC1, FC2, FC3",
+      "offers": [
+        {
+          "reward": {
+            "name": "Common chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 4
+            },
+            {
+              "name": "General Speedups (1h total)",
+              "itemId": "speedup-general-1h",
+              "amount": 1,
+              "note": "Total hours of General Speedups"
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 600000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 600000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 120000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 30000
+            }
+          ],
+          "cost": 4,
+          "limit": 5
+        },
+        {
+          "reward": {
+            "name": "Uncommon chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 1
+            },
+            {
+              "name": "General Speedups (14h total)",
+              "itemId": "speedup-general-1h",
+              "amount": 14,
+              "note": "Total hours of General Speedups"
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 2500
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 7500000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 7500000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 1500000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 380000
+            }
+          ],
+          "cost": 50,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Rare chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 60
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 2
+            },
+            {
+              "name": "General Speedups (28h total)",
+              "itemId": "speedup-general-1h",
+              "amount": 28,
+              "note": "Total hours of General Speedups"
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 4000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 15000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 15000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 3000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 760000
+            }
+          ],
+          "cost": 100,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Epic chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 120
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 4
+            },
+            {
+              "name": "General Speedups (56h total)",
+              "itemId": "speedup-general-1h",
+              "amount": 56,
+              "note": "Total hours of General Speedups"
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 6000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 30000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 30000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 6000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 1520000
+            }
+          ],
+          "cost": 200,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Mythic chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 300
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 10
+            },
+            {
+              "name": "General Speedups (140h total)",
+              "itemId": "speedup-general-1h",
+              "amount": 140,
+              "note": "Total hours of General Speedups"
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 12000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 60000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 60000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 12000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 3040000
+            }
+          ],
+          "cost": 500,
+          "limit": 1
+        }
+      ]
+    },
+    {
+      "name": "Chests for states with FC4, FC5",
+      "offers": [
+        {
+          "reward": {
+            "name": "Common chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 4
+            },
+            {
+              "name": "General Speedups (1h total)",
+              "itemId": "speedup-general-1h",
+              "amount": 1,
+              "note": "Total hours of General Speedups"
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 600000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 600000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 120000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 30000
+            }
+          ],
+          "cost": 4,
+          "limit": 5
+        },
+        {
+          "reward": {
+            "name": "Lucky chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 5
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 2500
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 7500000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 7500000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 1500000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 380000
+            }
+          ],
+          "cost": 50,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Uncommon chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 45
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 2
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 2500
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 7500000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 7500000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 1500000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 380000
+            }
+          ],
+          "cost": 50,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Rare chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 90
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 4
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 4000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 15000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 15000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 3000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 760000
+            }
+          ],
+          "cost": 100,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Epic chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 180
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 8
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 6000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 30000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 30000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 6000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 1520000
+            }
+          ],
+          "cost": 200,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Mythic chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 450
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 20
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 12000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 60000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 60000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 12000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 3040000
+            }
+          ],
+          "cost": 500,
+          "limit": 1
+        }
+      ]
+    },
+    {
+      "name": "Chests for states with FC6, FC7, FC8",
+      "offers": [
+        {
+          "reward": {
+            "name": "Common chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 4
+            },
+            {
+              "name": "General Speedups (1h total)",
+              "itemId": "speedup-general-1h",
+              "amount": 1,
+              "note": "Total hours of General Speedups"
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 600000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 600000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 120000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 30000
+            }
+          ],
+          "cost": 4,
+          "limit": 5
+        },
+        {
+          "reward": {
+            "name": "Lucky chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 7
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 2500
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 7500000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 7500000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 1500000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 380000
+            }
+          ],
+          "cost": 50,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Uncommon chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 67
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 2
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 2500
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 7500000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 7500000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 1500000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 380000
+            }
+          ],
+          "cost": 50,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Rare chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 113
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 4
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 4000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 15000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 15000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 3000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 760000
+            }
+          ],
+          "cost": 100,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Epic chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 216
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 8
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 6000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 30000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 30000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 6000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 1520000
+            }
+          ],
+          "cost": 200,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Mythic chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 540
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 20
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 12000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 60000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 60000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 12000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 3040000
+            }
+          ],
+          "cost": 500,
+          "limit": 1
+        }
+      ]
+    },
+    {
+      "name": "Chests for states with FC9, FC10",
+      "offers": [
+        {
+          "reward": {
+            "name": "Common chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 4
+            },
+            {
+              "name": "General Speedups (1h total)",
+              "itemId": "speedup-general-1h",
+              "amount": 1,
+              "note": "Total hours of General Speedups"
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 600000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 600000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 120000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 30000
+            }
+          ],
+          "cost": 4,
+          "limit": 5
+        },
+        {
+          "reward": {
+            "name": "Lucky chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 9
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 2500
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 7500000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 7500000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 1500000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 380000
+            }
+          ],
+          "cost": 50,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Uncommon chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 80
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 2
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 2500
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 7500000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 7500000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 1500000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 380000
+            }
+          ],
+          "cost": 50,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Rare chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 135
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 4
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 4000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 15000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 15000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 3000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 760000
+            }
+          ],
+          "cost": 100,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Epic chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 260
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 8
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 6000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 30000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 30000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 6000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 1520000
+            }
+          ],
+          "cost": 200,
+          "limit": 1
+        },
+        {
+          "reward": {
+            "name": "Mythic chest",
+            "amount": 1
+          },
+          "contents": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 650
+            },
+            {
+              "name": "Fire Crystal Chest",
+              "itemId": "fyre-crystal-chest",
+              "amount": 20
+            },
+            {
+              "name": "VIP Points",
+              "itemId": "vip-xp",
+              "amount": 12000
+            },
+            {
+              "name": "Meat",
+              "itemId": "meat",
+              "amount": 60000000
+            },
+            {
+              "name": "Wood",
+              "itemId": "wood",
+              "amount": 60000000
+            },
+            {
+              "name": "Coal",
+              "itemId": "coal",
+              "amount": 12000000
+            },
+            {
+              "name": "Iron",
+              "itemId": "iron",
+              "amount": 3040000
+            }
+          ],
+          "cost": 500,
+          "limit": 1
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal",
+      "amount": 5,
+      "note": "55% chance from a Fire Crystal Chest"
+    },
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal",
+      "amount": 10,
+      "note": "27% chance from a Fire Crystal Chest"
+    },
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal",
+      "amount": 20,
+      "note": "10.5% chance from a Fire Crystal Chest"
+    },
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal",
+      "amount": 50,
+      "note": "5.5% chance from a Fire Crystal Chest"
+    },
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal",
+      "amount": 100,
+      "note": "1.5% chance from a Fire Crystal Chest"
+    },
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal",
+      "amount": 200,
+      "note": "0.5% chance from a Fire Crystal Chest"
+    }
+  ],
+  "tips": [
+    "The Fire Crystal amounts and chances above are for the contents of a Fire Crystal Chest.",
+    "From FC4 on, the Lucky chest gives only Fire Crystal Chests. FC9 and FC10 add a sixth chest."
+  ]
+}

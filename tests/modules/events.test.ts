@@ -1,6 +1,7 @@
 import { decoration } from '@/modules/daybreak-island';
 import { eventBuff } from '@/modules/event-buff';
 import { events, EventsQuery } from '@/modules/events';
+import { heroes as heroData } from '@/modules/heroes';
 import { items } from '@/modules/items';
 import { skins } from '@/modules/skins';
 import { existsSync, readdirSync } from 'fs';
@@ -27,7 +28,9 @@ describe('EventsQuery', () => {
       'tundra-trade-route',
       'king-of-icefield',
       'armament-competition',
+      'brothers-in-arms',
       'fishing-tournament',
+      'heros-mission',
       'officer-project',
       'the-labyrinth',
       'treasure-hunter',
@@ -43,8 +46,14 @@ describe('EventsQuery', () => {
       'hall-of-chief',
       'hall-of-heroes',
       'mia-fortune',
+      'crystal-reactivation-2',
+      'deadshot',
+      'ginas-revenge',
+      'journey-of-light',
+      'return-to-tundra',
+      'symphony-of-change',
     ]);
-    expect(events().byCategory('alliance').count()).toBe(14);
+    expect(events().byCategory('alliance').count()).toBe(12);
     expect(
       events()
         .byCategory('rookie')
@@ -52,6 +61,7 @@ describe('EventsQuery', () => {
         .map((e) => e.id)
         .sort(),
     ).toEqual([
+      'beast-whisperer',
       'city-development',
       'develop-new-tech',
       'develop-new-tech-2',
@@ -62,6 +72,7 @@ describe('EventsQuery', () => {
       'trial-event',
       'trusted-chief',
       'war-preparation',
+      'working-overtime-2',
     ]);
   });
 });
@@ -1276,6 +1287,65 @@ describe('Events data', () => {
     ]);
     const fortune = events().find('mia-fortune')!;
     expect(fortune.tiers!.map((t) => t.scoreTotal)).toEqual([20, 100, 250, 750]);
+    const crystal = events().find('crystal-reactivation-2')!;
+    expect(crystal.shopCurrencyItemId).toBe('fire-crystal-ember-2');
+    expect(crystal.shops!.map((x) => x.offers.length)).toEqual([5, 6, 6, 6]);
+    expect(crystal.shops![0].offers[4]).toMatchObject({ cost: 500, limit: 1 });
+    expect(crystal.shops![0].offers[4].contents![0]).toMatchObject({
+      itemId: 'fire-crystal',
+      amount: 300,
+    });
+    expect(crystal.rewards!.map((x) => x.amount)).toEqual([5, 10, 20, 50, 100, 200]);
+    const whisperer = events().find('beast-whisperer')!;
+    expect(whisperer.missions).toHaveLength(75);
+    expect(whisperer.missions![4].rewards!.map((x) => x.itemId)).toEqual([
+      'gems',
+      'taming-manual',
+      'pet-food',
+      'advanced-wild-mark',
+    ]);
+    const tundra = events().find('return-to-tundra')!;
+    expect(tundra.missions).toHaveLength(15);
+    expect(tundra.tiers!.map((x) => x.scoreTotal)).toEqual([5, 10, 20, 40, 65]);
+    expect(events().find('symphony-of-change')!.missions).toHaveLength(15);
+    const journey = events().find('journey-of-light')!;
+    expect(journey.tiers!.map((t) => t.scoreTotal)).toEqual([
+      3, 10, 20, 30, 50, 70, 100, 150, 200, 270, 420, 570, 720, 900,
+    ]);
+    expect(journey.tiers![9].rewards![0]).toMatchObject({
+      itemId: 'random-chief-charm-material-chest',
+      amount: 40,
+    });
+    expect(journey.rewards!.filter((x) => x.itemId?.endsWith('radiance-treasure'))).toHaveLength(4);
+    expect(journey.tiers![13].rewards![0]).toMatchObject({
+      itemId: 'gear-boost-custom-chest',
+      amount: 20,
+    });
+    expect(
+      events()
+        .find('working-overtime-2')!
+        .days![1].milestones!.map((x) => x.scoreTotal),
+    ).toEqual([10, 800, 2000, 4000]);
+    const generationHeroes = events().find('heros-mission')!.heroByGeneration!;
+    expect(generationHeroes.map((x) => x.generation)).toEqual([
+      4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+    ]);
+    expect(generationHeroes.map((x) => x.heroId)).toEqual([
+      'philly',
+      'greg',
+      'ahmose',
+      'norah',
+      'wayne',
+      'edith',
+      'sonya',
+      'xura',
+      'gregory',
+      'lloyd',
+      'ligeia',
+      'gisela',
+    ]);
+    generationHeroes.forEach((x) => expect(heroData().find(x.heroId)).toBeDefined());
+    expect(generationHeroes[0].shardItemId).toBe('hero-shard-gen-2b');
     const mission = events().find('heros-mission')!;
     expect(mission.tiers!.map((t) => t.scoreTotal)).toEqual([1, 3, 5, 7, 10]);
     expect(mission.tiers![4].rewards).toContainEqual({
@@ -1285,5 +1355,13 @@ describe('Events data', () => {
     });
     expect(events().find('the-labyrinth')!.phases).toHaveLength(4);
     expect(events().find('brothers-in-arms')!.duration).toContain('Friday');
+    const arms = events().find('brothers-in-arms')!;
+    expect(arms.days![0].scoring.map((x) => x.points)).toEqual([
+      1, 1, 2, 3, 4, 5, 7, 9, 11, 13, 15,
+    ]);
+    expect(arms.days![0].milestones!.map((m) => m.scoreTotal)).toEqual([1000, 18000, 44000, 89000]);
+    expect(arms.personalRankings![0].rankings.map((x) => x.rewards[0].amount)).toEqual([
+      20000, 12000, 7200, 4500, 2500, 1500, 800, 400,
+    ]);
   });
 });

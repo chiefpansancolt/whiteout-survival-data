@@ -1,0 +1,255 @@
+{
+  "id": "symphony-of-change",
+  "name": "Symphony of Change",
+  "img": "/images/events/symphony-of-change.png",
+  "category": "solo",
+  "description": "Complete missions to complete a puzzle board. Each row and column gives a chest, and the full board gives the grand prize.",
+  "frequency": "About once for each Fire Crystal generation",
+  "duration": "7 days",
+  "missions": [
+    {
+      "group": "Puzzle missions",
+      "name": "Reach 80,000 power by researching",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Reach 300,000 power by training troops",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 55,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Make 60 Alliance Contributions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Recruit 30 Heroes",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 55,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Login for 1 Day",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Claim 60 Alliance Gifts",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Spend 1,000 Chief Stamina",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Reach 70,000 power through construction",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Claim 15 Online Rewards",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Carry out 15 Intel Missions",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Gather 30,000,000 Resources",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Use 2,000 minutes of Any Speedup",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 55,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Provide Alliance Help 140 times",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 15,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Defeat 5 Polar Terrors",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 55,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    },
+    {
+      "group": "Puzzle missions",
+      "name": "Purchase 1 pack with 2,500 or more Gems",
+      "points": 1,
+      "rewards": [
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 270,
+          "note": "Each is a 10K pack"
+        }
+      ]
+    }
+  ],
+  "missionPointsLabel": "Missions",
+  "tiers": [
+    {
+      "name": "Each column or row chest",
+      "note": "There are 5 columns and 3 rows",
+      "rewards": [
+        {
+          "name": "1h Construction Speedup",
+          "itemId": "speedup-construction-1h",
+          "amount": 2
+        },
+        {
+          "name": "Gold key",
+          "itemId": "gold-key",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Gold chests (full board)",
+      "rewards": [
+        {
+          "name": "Gems",
+          "itemId": "gems",
+          "amount": 5000
+        },
+        {
+          "name": "1h Construction Speedup",
+          "itemId": "speedup-construction-1h",
+          "amount": 20
+        },
+        {
+          "name": "Mythic Exploration Skill Manual",
+          "itemId": "mythic-exploration-skill-manual",
+          "amount": 10
+        },
+        {
+          "name": "Mythic Expedition Skill Manual",
+          "itemId": "mythic-expedition-skill-manual",
+          "amount": 10
+        }
+      ]
+    }
+  ],
+  "tips": [
+    "The mission list and chest rewards are from the wiki screenshot. The wiki text lists lower thresholds for some missions (40K research power, 300K construction power, 10M resources) and different chest rewards (6 Fire Crystal and 1 Gold Key per row, 12 Fire Crystal, 2 Mythic books and 2 Gold Keys per column, and a Trailblazer Chest with 42 Fire Crystal, 5K Gems, and 20 Mythic books).",
+    "To complete the event you need to spend at least 6 EUR for the pack mission.",
+    "Check other events running at the same time to share points."
+  ]
+}

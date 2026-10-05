@@ -93,6 +93,8 @@ export interface GameEventShop {
 /** One offer in an event shop, bought with the event's currency. */
 export interface GameEventShopOffer {
   reward: GameEventReward;
+  /** What the offer holds, when it is a chest or bundle of several rewards. */
+  contents?: GameEventReward[];
   cost: number;
   limit: number;
 }
@@ -157,6 +159,15 @@ export interface GameEventPointLevels {
   levels: GameEventPointLevel[];
 }
 
+/** The hero whose shards an event gives in one hero generation. */
+export interface GameEventGenerationHero {
+  generation: number;
+  /** Id of the hero in `heroes()`. */
+  heroId: string;
+  /** Id of the hero's shard in `items()`, when the shard has an item. */
+  shardItemId?: string;
+}
+
 export interface GameEvent {
   id: string;
   name: string;
@@ -195,6 +206,8 @@ export interface GameEvent {
   shop?: GameEventShopOffer[];
   /** Several shops, when the event has one shop for each group, such as each hero generation. */
   shops?: GameEventShop[];
+  /** The hero shard the event gives in each hero generation. */
+  heroByGeneration?: GameEventGenerationHero[];
   /** Zones with the days each one is open. */
   zones?: GameEventZone[];
   rewards?: GameEventReward[];
