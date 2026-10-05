@@ -274,6 +274,11 @@ for those heroes.
 `["Hall of Heroes", "Daily Deals"]`) — transcribed verbatim from each hero's own "Sources" section
 on the wiki. Empty for the one Gen 0 hero (Ling Xue) whose page has no Sources section at all.
 
+`shardImg` is an optional icon of the hero's shard, set for the 12 heroes whose shard icon has been
+captured (Molly, Zinman, Flint, Philly, Alonso, Logan, Reina, Gwen, Wu Ming, Gordon, Hendrik, and
+Magnus). It lives in the hero's image folder as `<Name>-Shard.png`, and the matching hero shard item
+in `items()` points to the same file.
+
 `Hero.levels` is the 80-level Furnace/XP/Power progression, replacing the old flat `levelPower`
 field. `furnaceLevelRequired` (the Furnace level needed to reach that hero level) and `xpRequired`
 (Hero XP needed from the previous level, `0` at Level 1) are identical across every hero — the same
@@ -382,7 +387,7 @@ same convention `images/heroes/` uses — the single skill image is named `<Pet>
 
 | Module | Factory   | Items | Description                                                       |
 | ------ | --------- | ----- | ----------------------------------------------------------------- |
-| items  | `items()` | 251   | Functional items — resources, currencies, chests, buffs, and more |
+| items  | `items()` | 271   | Functional items — resources, currencies, chests, buffs, and more |
 
 Sourced from the wiki's master item catalog page, which covers 415 items across 18 category tabs.
 Birthday Card entries are skipped (a yearly login freebie with no gameplay data worth tracking), and
@@ -738,8 +743,10 @@ Brawl, Tundra Games, Stand of Arms, and Hero Rally from the wiki text. Amounts t
 The fifth batch adds 10 rookie events: City Development, Plan Your City, Trusted Chief, Power Up,
 War Preparation, Grow Your Heroes, Develop New Tech (two wiki copies), Trial Event, and Home Beyond.
 Each target event has its four or five target levels and the top 100 ranking, and the target point
-amounts are loaded where a screenshot shows them. as images are not loaded, and rewards it does not
-name are recorded as unidentified items.
+amounts are loaded where a screenshot shows them. The sixth batch adds Hall of Chief (13 stage
+scoring lists for its two seasons), Hall of Heroes (the shop of each hero generation from 1 to 9 in
+`shops`), and Mia Fortune (orb costs and milestones). Rewards the wiki shows only as images are not
+loaded, and rewards it does not name are recorded as unidentified items.
 
 ### 🎯 Event Buffs
 

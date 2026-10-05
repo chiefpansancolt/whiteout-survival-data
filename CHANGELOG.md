@@ -116,6 +116,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   its tile as the image.
 - `skins()`: the 7-day City Skin from the State of Power battle personal ranking, with its tile as
   the image.
+- `heroes()`: an optional `shardImg` on the 12 heroes whose shard icon has been captured.
+- `items()`: the Hall of Heroes hero shards for generations 1 to 9 (11 shards) and the Hero Shard
+  and Hero Widget Chests for seasons 1 to 4, with icons cropped from the wiki and in-game
+  screenshots. Some hero names are not confirmed.
 - `items()`: the Battle Commendation Custom Chest - Gen Hero, given in the SVS battle personal
   ranking.
 - `items()`: the Frostdragon Tyrant trophies Triumph of Tyrant, Glory of Kings, and Trail of Heroes,
