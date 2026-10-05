@@ -1,0 +1,76 @@
+{
+  "id": "king-of-icefield",
+  "name": "King of Icefield",
+  "img": "/images/events/king-of-icefield.png",
+  "category": "solo",
+  "description": "Your state competes with other states. Players complete daily challenges to earn medals that unlock hero fragments, island scrolls, and other rewards.",
+  "frequency": "Once a month",
+  "duration": "7 days, Monday to Sunday",
+  "requirements": [
+    "Complete the daily points requirement each day to receive the maximum reward",
+    "Crystal dust needs the War Academy unlocked",
+    "Refined crystal needs Furnace levels 6 to 8 unlocked"
+  ],
+  "phases": [
+    {
+      "name": "Day 1: City Construction",
+      "description": "Fire Crystal reward"
+    },
+    {
+      "name": "Day 2: Hero Development",
+      "description": "Essence Stones reward"
+    },
+    {
+      "name": "Day 3: Basic Skill Up",
+      "description": "Charm Projects reward"
+    },
+    {
+      "name": "Day 4: Combat Training",
+      "description": "Charm Guides reward"
+    },
+    {
+      "name": "Day 5: Basic Skills Up",
+      "description": "Fire Crystals reward"
+    },
+    {
+      "name": "Day 6: Combat Training",
+      "description": "Chief Projects reward"
+    },
+    {
+      "name": "Day 7: Hero Development",
+      "description": "Mythic Shards reward"
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Fire Crystal",
+      "itemId": "fire-crystal"
+    },
+    {
+      "name": "Essence Stones",
+      "itemId": "essence-stones"
+    },
+    {
+      "name": "Charm Design",
+      "itemId": "charm-design"
+    },
+    {
+      "name": "Charm Guide",
+      "itemId": "charm-guide"
+    },
+    {
+      "name": "Chief Design"
+    },
+    {
+      "name": "Mythic Shards",
+      "itemId": "mythic-general-hero-shard"
+    },
+    {
+      "name": "Hero fragments"
+    },
+    {
+      "name": "Island scrolls"
+    }
+  ],
+  "tips": ["Earn 2 medals each day.", "Personal and cross-state rankings are available."]
+}

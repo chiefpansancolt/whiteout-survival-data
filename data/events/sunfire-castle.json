@@ -1,0 +1,610 @@
+{
+  "id": "sunfire-castle",
+  "name": "Sunfire Castle",
+  "img": "/images/events/sunfire-castle.png",
+  "category": "alliance",
+  "description": "Sunfire Castle has withstood generations of disaster and war and is the ultimate prize of the state. Whoever controls it presides over the frozen land. Alliances battle for control of the castle.",
+  "frequency": "Once every two weeks",
+  "duration": "5 hours",
+  "requirements": [
+    "Furnace level 16 or higher to apply for a minister position",
+    "Cities in the Alert Zone are teleported at random 2 hours before the event"
+  ],
+  "tiers": [
+    {
+      "name": "Personal points over 70,000",
+      "scoreTotal": 70000,
+      "rewards": [
+        {
+          "name": "5m Construction Speedup",
+          "itemId": "speedup-construction-5m",
+          "amount": 40
+        },
+        {
+          "name": "1K Meat",
+          "itemId": "meat",
+          "amount": 2800
+        }
+      ]
+    },
+    {
+      "name": "Personal points over 170,000",
+      "scoreTotal": 170000,
+      "rewards": [
+        {
+          "name": "5m Troop Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 40
+        },
+        {
+          "name": "1K Wood",
+          "itemId": "wood",
+          "amount": 2800
+        }
+      ]
+    },
+    {
+      "name": "Personal points over 250,000",
+      "scoreTotal": 250000,
+      "rewards": [
+        {
+          "name": "5m Research Speedup",
+          "itemId": "speedup-research-5m",
+          "amount": 40
+        },
+        {
+          "name": "1K Coal",
+          "itemId": "coal",
+          "amount": 560
+        }
+      ]
+    },
+    {
+      "name": "Personal points over 350,000",
+      "scoreTotal": 350000,
+      "rewards": [
+        {
+          "name": "5m Troop Healing Speedup",
+          "itemId": "speedup-healing-5m",
+          "amount": 100
+        },
+        {
+          "name": "1K Iron",
+          "itemId": "iron",
+          "amount": 140
+        }
+      ]
+    },
+    {
+      "name": "Personal points over 450,000",
+      "scoreTotal": 450000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 3
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 23
+        }
+      ]
+    },
+    {
+      "name": "Personal points over 1,930,000",
+      "scoreTotal": 1930000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 3
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 23
+        }
+      ]
+    },
+    {
+      "name": "Personal points over 3,410,000",
+      "scoreTotal": 3410000,
+      "rewards": [
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 3
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 23
+        }
+      ]
+    }
+  ],
+  "personalRankings": [
+    {
+      "basedOn": "Personal ranking",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 17300
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 180
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 240
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 16200
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 170
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 230
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15200
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 155
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 215
+            }
+          ]
+        },
+        {
+          "groupRanking": "4",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 14100
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 150
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 205
+            }
+          ]
+        },
+        {
+          "groupRanking": "5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 13900
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 145
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 190
+            }
+          ]
+        },
+        {
+          "groupRanking": "6",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 13700
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 135
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 180
+            }
+          ]
+        },
+        {
+          "groupRanking": "7",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 13500
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 130
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 170
+            }
+          ]
+        },
+        {
+          "groupRanking": "8",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 13300
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 120
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 155
+            }
+          ]
+        },
+        {
+          "groupRanking": "9",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 13000
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 105
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 145
+            }
+          ]
+        },
+        {
+          "groupRanking": "10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12800
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 95
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 130
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 10800
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 85
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 7600
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 80
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 95
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 5700
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 60
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 85
+            }
+          ]
+        },
+        {
+          "groupRanking": "101-150",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4900
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 55
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 70
+            }
+          ]
+        },
+        {
+          "groupRanking": "151-200",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4400
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 50
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "201-250",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3800
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 40
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 55
+            }
+          ]
+        },
+        {
+          "groupRanking": "251-300",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3300
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 36
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "groupRanking": "301-350",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2700
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 30
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "groupRanking": "351-400",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2200
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 24
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "groupRanking": "401-450",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1700
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 18
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "groupRanking": "451-500",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1100
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 12
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "groupRanking": "501-550",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 6
+            },
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "General's Commendation",
+      "note": "1/1. Supreme President: 2/2. Contents are not stated in text."
+    },
+    {
+      "name": "Officer's Commendation",
+      "note": "5/5. Supreme President: 10/10. Contents are not stated in text."
+    },
+    {
+      "name": "Soldier's Commendation",
+      "note": "30/30. Supreme President: 50/50. Contents are not stated in text."
+    },
+    {
+      "name": "14-day skins",
+      "amount": 2,
+      "note": "For becoming president."
+    },
+    {
+      "name": "Free pack",
+      "note": "For the president."
+    },
+    {
+      "name": "President and Supreme President title bonuses",
+      "note": "President: +5% Troop Attack, Defense, Lethality, and Health. Supreme President: +7.5%. Both can swap their boost with any minister without limit."
+    }
+  ],
+  "tips": [
+    "Keep enough infantry to counter turret damage.",
+    "Double rally: send two rallies of nearly equal power timed to arrive together.",
+    "Earn points through carnage, occupation, or casualties.",
+    "Batch healing: heal troops in small amounts to use ally help.",
+    "Focus on turret loops while healing to build points efficiently.",
+    "Point and reward amounts depend on server age and Furnace level (30 or below, or above 30). The tables here come from one example screenshot, and the wiki does not say which server it is from."
+  ],
+  "eventBuffId": "castle-battle"
+}

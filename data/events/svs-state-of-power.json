@@ -1,0 +1,2880 @@
+{
+  "id": "svs-state-of-power",
+  "name": "SVS - State of Power",
+  "img": "/images/events/svs-state-of-power.png",
+  "category": "alliance",
+  "description": "States with similar or very close power are paired together for cross-state battles that include castle sieges, troop combat, and changes to the presidency.",
+  "duration": "About 2 weeks: 2 days of matchmaking, 6 days of preparation, then the battle phase and the field triage phase.",
+  "phases": [
+    {
+      "name": "Matchmaking",
+      "description": "2 days. The system pairs states by power. Day 1 checks power and day 2 reveals the opponent."
+    },
+    {
+      "name": "Preparation",
+      "description": "6 days. Players earn points through tasks, and State Points depend on Furnace level. The state with the most points wins and gets the State Bonus."
+    },
+    {
+      "name": "Battle",
+      "description": "The cross-state portal opens at 10 UTC and the Sunfire Castle battle begins at 12 UTC. The winning state alliance can appoint the Supreme President. Attacks are limited by Furnace level difference."
+    },
+    {
+      "name": "Field Triage",
+      "description": "Revive lost troops (30% to 90% recovery) and receive 20 Rebirth Tomes to help allies."
+    }
+  ],
+  "days": [
+    {
+      "day": "1",
+      "name": "City Construction",
+      "scoring": [
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 70
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 30000
+        },
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 1000
+        },
+        {
+          "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Research (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Troop Training / Promotion (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
+          "points": 30
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 30,000",
+          "scoreTotal": 30000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "name": "Personal points 100,000",
+          "scoreTotal": 100000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 700
+            }
+          ]
+        },
+        {
+          "name": "Personal points 200,000",
+          "scoreTotal": 200000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 10
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 18
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 30
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            }
+          ],
+          "note": "Reaching 200,000 points also gives 1 State Medal."
+        }
+      ],
+      "allianceMilestones": [
+        {
+          "name": "Alliance points 145,000",
+          "scoreTotal": 145000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 1
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 10
+            },
+            {
+              "name": "10K Coal",
+              "itemId": "coal",
+              "amount": 2
+            },
+            {
+              "name": "1K Iron",
+              "itemId": "iron",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 996,000",
+          "scoreTotal": 996000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "Gathering Speed Boost (8h)",
+              "itemId": "gathering-speed-boost-8h",
+              "amount": 2
+            },
+            {
+              "name": "5m Healing Speedup",
+              "itemId": "speedup-healing-5m",
+              "amount": 25
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 3,500,000",
+          "scoreTotal": 3500000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 3
+            },
+            {
+              "name": "Mythic Exploration Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Expedition Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2",
+      "name": "Basic Skills Up",
+      "scoring": [
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 30000
+        },
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 1000
+        },
+        {
+          "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Research (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups for Troop Training / Promotion (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Play Lucky Wheel 1 times",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 350
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 1220
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 3040
+        },
+        {
+          "action": "Gather 1,000 Meat in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 1,000 Wood in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 200 Coal in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 50 Iron in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Use any 1 Expert Sigil (excluding Common Sigils)",
+          "points": 6000
+        },
+        {
+          "action": "Use 1 Book of Knowledge",
+          "points": 60
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 40,000",
+          "scoreTotal": 40000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "name": "Personal points 120,000",
+          "scoreTotal": 120000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 700
+            }
+          ]
+        },
+        {
+          "name": "Personal points 270,000",
+          "scoreTotal": 270000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 10
+            },
+            {
+              "name": "Lucky Chip",
+              "itemId": "lucky-chip",
+              "amount": 5
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 30
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            }
+          ],
+          "note": "Reaching 270,000 points also gives 1 State Medal."
+        }
+      ],
+      "allianceMilestones": [
+        {
+          "name": "Alliance points 145,000",
+          "scoreTotal": 145000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 1
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 10
+            },
+            {
+              "name": "10K Coal",
+              "itemId": "coal",
+              "amount": 2
+            },
+            {
+              "name": "1K Iron",
+              "itemId": "iron",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 996,000",
+          "scoreTotal": 996000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "Expedition",
+              "itemId": "expedition",
+              "amount": 2,
+              "note": "Recalls troops that are marching to a destination."
+            },
+            {
+              "name": "5m Healing Speedup",
+              "itemId": "speedup-healing-5m",
+              "amount": 25
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 3,500,000",
+          "scoreTotal": 3500000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 3
+            },
+            {
+              "name": "Mythic Exploration Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Expedition Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "3",
+      "name": "Beast Slay",
+      "scoring": [
+        {
+          "action": "Pet advancement score increases by 1",
+          "points": 50
+        },
+        {
+          "action": "Use 1 Advanced Wild Mark to refine pets",
+          "points": 15000
+        },
+        {
+          "action": "Use 1 Common Wild Mark to refine pets",
+          "points": 1150
+        },
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 70
+        },
+        {
+          "action": "Play Lucky Wheel 1 times",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 350
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 1220
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 3040
+        },
+        {
+          "action": "Call Rally and hunt down 1 Polar Terror",
+          "points": 30000
+        },
+        {
+          "action": "Defeat 1 Lv. 1 to 10 Beast",
+          "points": 9000
+        },
+        {
+          "action": "Defeat 1 Lv. 11 to 15 Beast",
+          "points": 9750
+        },
+        {
+          "action": "Defeat 1 Lv. 16 to 20 Beast",
+          "points": 10500
+        },
+        {
+          "action": "Defeat 1 Lv. 20 to 25 Beast",
+          "points": 11250
+        },
+        {
+          "action": "Defeat 1 Lv. 26 to 30 Beast",
+          "points": 12000
+        },
+        {
+          "action": "Use any 1 Expert Sigil (excluding Common Sigils)",
+          "points": 6000
+        },
+        {
+          "action": "Use 1 Book of Knowledge",
+          "points": 60
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 80,000",
+          "scoreTotal": 80000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "name": "Personal points 150,000",
+          "scoreTotal": 150000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 700
+            }
+          ]
+        },
+        {
+          "name": "Personal points 300,000",
+          "scoreTotal": 300000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 10
+            },
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 15
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 30
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            }
+          ],
+          "note": "Reaching 300,000 points also gives 1 State Medal."
+        }
+      ],
+      "allianceMilestones": [
+        {
+          "name": "Alliance points 369,000",
+          "scoreTotal": 369000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 1
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 10
+            },
+            {
+              "name": "10K Coal",
+              "itemId": "coal",
+              "amount": 2
+            },
+            {
+              "name": "1K Iron",
+              "itemId": "iron",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 1,850,000",
+          "scoreTotal": 1850000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "March Accelerator I",
+              "itemId": "march-accelerator-i",
+              "amount": 5
+            },
+            {
+              "name": "5m Healing Speedup",
+              "itemId": "speedup-healing-5m",
+              "amount": 25
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 5,550,000",
+          "scoreTotal": 5550000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 3
+            },
+            {
+              "name": "Mythic Exploration Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Expedition Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "4",
+      "name": "Hero Development",
+      "scoring": [
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 70
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 4000
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Mithril",
+          "points": 144000
+        },
+        {
+          "action": "Train 1 Lv. 1 Troop",
+          "points": 3
+        },
+        {
+          "action": "Train 1 Lv. 2 Troop",
+          "points": 4
+        },
+        {
+          "action": "Train 1 Lv. 3 Troop",
+          "points": 5
+        },
+        {
+          "action": "Train 1 Lv. 4 Troop",
+          "points": 8
+        },
+        {
+          "action": "Train 1 Lv. 5 Troop",
+          "points": 12
+        },
+        {
+          "action": "Train 1 Lv. 6 Troop",
+          "points": 18
+        },
+        {
+          "action": "Train 1 Lv. 7 Troop",
+          "points": 25
+        },
+        {
+          "action": "Train 1 Lv. 8 Troop",
+          "points": 35
+        },
+        {
+          "action": "Train 1 Lv. 9 Troop",
+          "points": 45
+        },
+        {
+          "action": "Train 1 Lv. 10 Troop",
+          "points": 60
+        },
+        {
+          "action": "Train 1 Lv. 11 Troop",
+          "points": 75
+        },
+        {
+          "action": "Train 1 Lv. 12 Troop",
+          "points": 94
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 80,000",
+          "scoreTotal": 80000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "name": "Personal points 150,000",
+          "scoreTotal": 150000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 700
+            }
+          ]
+        },
+        {
+          "name": "Personal points 300,000",
+          "scoreTotal": 300000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 10
+            },
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 12
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 30
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            }
+          ],
+          "note": "Reaching 300,000 points also gives 1 State Medal."
+        }
+      ],
+      "allianceMilestones": [
+        {
+          "name": "Alliance points 498,000",
+          "scoreTotal": 498000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 1
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 10
+            },
+            {
+              "name": "10K Coal",
+              "itemId": "coal",
+              "amount": 2
+            },
+            {
+              "name": "1K Iron",
+              "itemId": "iron",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 2,190,000",
+          "scoreTotal": 2190000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "Troops Attack Up I (2hrs)",
+              "itemId": "troops-attack-up-i-2hrs",
+              "amount": 1
+            },
+            {
+              "name": "5m Healing Speedup",
+              "itemId": "speedup-healing-5m",
+              "amount": 25
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 4,850,000",
+          "scoreTotal": 4850000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 3
+            },
+            {
+              "name": "Mythic Exploration Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Expedition Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "5",
+      "name": "Power Boost",
+      "scoring": [
+        {
+          "action": "Pet advancement score increases by 1",
+          "points": 50
+        },
+        {
+          "action": "Use 1 Advanced Wild Mark to refine pets",
+          "points": 15000
+        },
+        {
+          "action": "Use 1 Common Wild Mark to refine pets",
+          "points": 1150
+        },
+        {
+          "action": "Use 1 Mithril",
+          "points": 144000
+        },
+        {
+          "action": "Raise max Chief Gear score by 1 (excluding Charm)",
+          "points": 36
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 4000
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 8000
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 30000
+        },
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 2000
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 1000
+        },
+        {
+          "action": "Use 1m Speedups for Construction (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m Speedups for Research (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m Speedups for Troop Training / Promotion (Gems Speedups excluded)",
+          "points": 30
+        },
+        {
+          "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
+          "points": 30
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 40,000",
+          "scoreTotal": 40000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "name": "Personal points 130,000",
+          "scoreTotal": 130000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 700
+            }
+          ]
+        },
+        {
+          "name": "Personal points 250,000",
+          "scoreTotal": 250000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 10
+            },
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 20
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 30
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            }
+          ],
+          "note": "Reaching 250,000 points also gives 1 State Medal."
+        }
+      ],
+      "allianceMilestones": [
+        {
+          "name": "Alliance points 145,000",
+          "scoreTotal": 145000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 1
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 10
+            },
+            {
+              "name": "10K Coal",
+              "itemId": "coal",
+              "amount": 2
+            },
+            {
+              "name": "1K Iron",
+              "itemId": "iron",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 996,000",
+          "scoreTotal": 996000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "Troops Defense Up I (2hrs)",
+              "itemId": "troops-defense-up-i-2hrs",
+              "amount": 1
+            },
+            {
+              "name": "5m Healing Speedup",
+              "itemId": "speedup-healing-5m",
+              "amount": 25
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 3,500,000",
+          "scoreTotal": 3500000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 3
+            },
+            {
+              "name": "Mythic Exploration Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Expedition Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            }
+          ]
+        }
+      ],
+      "note": "This stage runs 34 hours instead of 24 and ends at 10:00 UTC on Saturday, when the battle phase begins."
+    },
+    {
+      "day": "Battle",
+      "name": "Battle Phase",
+      "scoring": [
+        {
+          "action": "Every 1,000 Power occupies Sunfire Castle or any Turret for 60 s",
+          "points": 1
+        },
+        {
+          "action": "Kill 1 Lv. 1 enemy Troop.",
+          "points": 1
+        },
+        {
+          "action": "Kill 1 Lv. 2 enemy Troop.",
+          "points": 1
+        },
+        {
+          "action": "Kill 1 Lv. 3 enemy Troop.",
+          "points": 2
+        },
+        {
+          "action": "Kill 1 Lv. 4 enemy Troop.",
+          "points": 3
+        },
+        {
+          "action": "Kill 1 Lv. 5 enemy Troop.",
+          "points": 4
+        },
+        {
+          "action": "Kill 1 Lv. 6 enemy Troop.",
+          "points": 5
+        },
+        {
+          "action": "Kill 1 Lv. 7 enemy Troop.",
+          "points": 7
+        },
+        {
+          "action": "Kill 1 Lv. 8 enemy Troop.",
+          "points": 9
+        },
+        {
+          "action": "Kill 1 Lv. 9 enemy Troop.",
+          "points": 11
+        },
+        {
+          "action": "Kill 1 Lv. 10 enemy Troop.",
+          "points": 13
+        },
+        {
+          "action": "Kill 1 Lv. 11 enemy Troop.",
+          "points": 15
+        },
+        {
+          "action": "Lost 1 Lv. 1 Troop in the battle with the opposing State.",
+          "points": 1
+        },
+        {
+          "action": "Lost 1 Lv. 2 Troop in the battle with the opposing State.",
+          "points": 1
+        },
+        {
+          "action": "Lost 1 Lv. 3 Troop in the battle with the opposing State.",
+          "points": 2
+        },
+        {
+          "action": "Lost 1 Lv. 4 Troop in the battle with the opposing State.",
+          "points": 3
+        },
+        {
+          "action": "Lost 1 Lv. 5 Troop in the battle with the opposing State.",
+          "points": 4
+        },
+        {
+          "action": "Lost 1 Lv. 6 Troop in the battle with the opposing State.",
+          "points": 5
+        },
+        {
+          "action": "Lost 1 Lv. 7 Troop in the battle with the opposing State.",
+          "points": 7
+        },
+        {
+          "action": "Lost 1 Lv. 8 Troop in the battle with the opposing State.",
+          "points": 9
+        },
+        {
+          "action": "Lost 1 Lv. 9 Troop in the battle with the opposing State.",
+          "points": 11
+        },
+        {
+          "action": "Lost 1 Lv. 10 Troop in the battle with the opposing State.",
+          "points": 13
+        },
+        {
+          "action": "Lost 1 Lv. 11 Troop in the battle with the opposing State.",
+          "points": 15
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 48,000",
+          "scoreTotal": 48000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 5
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "name": "Personal points 120,000",
+          "scoreTotal": 120000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 10
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4000
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 30
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 700
+            }
+          ]
+        },
+        {
+          "name": "Personal points 250,000",
+          "scoreTotal": 250000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 20
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 13
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 30
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 2
+            }
+          ],
+          "note": "Reaching 250,000 points also gives 1 State Medal."
+        }
+      ],
+      "allianceMilestones": [
+        {
+          "name": "Alliance points 17,400,000",
+          "scoreTotal": 17400000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 2
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 80
+            },
+            {
+              "name": "10K Coal",
+              "itemId": "coal",
+              "amount": 80
+            },
+            {
+              "name": "1K Iron",
+              "itemId": "iron",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 30,000,000",
+          "scoreTotal": 30000000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 4
+            },
+            {
+              "name": "Troops Defense Up I (2hrs)",
+              "itemId": "troops-defense-up-i-2hrs",
+              "amount": 1
+            },
+            {
+              "name": "5m Healing Speedup",
+              "itemId": "speedup-healing-5m",
+              "amount": 25
+            },
+            {
+              "name": "10K Secured Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "Alliance points 44,000,000",
+          "scoreTotal": 44000000,
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 8
+            },
+            {
+              "name": "Mythic Exploration Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 5
+            },
+            {
+              "name": "Mythic Expedition Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 5
+            }
+          ]
+        }
+      ],
+      "note": "Kills and losses only score against Chiefs within 3 Furnace levels of yours. A rally uses the Furnace level of the rally captain."
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Stage personal ranking (each day)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 25000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 12
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 12
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 150
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 10
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 10
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 16000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 8
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 8
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 7
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 8000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 6
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 6
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 85
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 5
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 75
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 70
+            }
+          ]
+        },
+        {
+          "groupRanking": "101-150",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 400
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 2
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "151+",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 100
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 1
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 1
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Total personal ranking (preparation phase)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 5
+            },
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 400,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 100000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 40
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 4
+            },
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 300,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 80000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 32
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 3
+            },
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 200,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 65000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 28
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 28
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 2
+            },
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 150,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 48000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 24
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 24
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 1
+            },
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 80,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 18
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 40,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 13
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 13
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 20,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 9
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 9
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 10,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 6
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "groupRanking": "101-150",
+          "rewards": [
+            {
+              "name": "Hero of the Season Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 5,
+              "note": "The shard changes each generation. You receive the shard for the Hero of the Season."
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "151+",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 1
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Battle personal ranking",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 1
+            },
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 100
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 25000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 250
+            },
+            {
+              "name": "7-day City Skin",
+              "skinId": "svs-battle-city-skin",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 1
+            },
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 60
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 20000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 150
+            },
+            {
+              "name": "7-day City Skin",
+              "skinId": "svs-battle-city-skin",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 1
+            },
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 45
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 16000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 120
+            },
+            {
+              "name": "7-day City Skin",
+              "skinId": "svs-battle-city-skin",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 1
+            },
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 36
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 100
+            },
+            {
+              "name": "7-day City Skin",
+              "skinId": "svs-battle-city-skin",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Lv.1 Conquering Sword",
+              "decorationId": "conquering-sword",
+              "amount": 1
+            },
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 18
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 7200
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 60
+            },
+            {
+              "name": "7-day City Skin",
+              "skinId": "svs-battle-city-skin",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 9
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "7-day City Skin",
+              "skinId": "svs-battle-city-skin",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 4
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "7-day City Skin",
+              "skinId": "svs-battle-city-skin",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "51-100",
+          "rewards": [
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 2
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "101-150",
+          "rewards": [
+            {
+              "name": "Battle Commendation Custom Chest - Gen Hero",
+              "itemId": "battle-commendation-custom-chest-gen-hero",
+              "amount": 1
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 400
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "151+",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 100
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 10
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 10
+            },
+            {
+              "name": "10K Coal",
+              "itemId": "coal",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stage alliance ranking (each day)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 5
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 100
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 4
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 80
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 900
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 3
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 70
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 70
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 3
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 60
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 600
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 2
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 40
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 400
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 1
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 200
+            },
+            {
+              "name": "Platinum Key",
+              "itemId": "platinum-key",
+              "amount": 1
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 10
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Total alliance ranking (preparation phase)",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 150
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 2
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 1
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 1
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 6
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 6
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 500
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 3
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 3
+            },
+            {
+              "name": "Lv.2 Custom Resource Chest",
+              "itemId": "lv-2-custom-ressource-chest",
+              "amount": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Battle alliance ranking",
+      "rankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 150
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2000
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 5
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 36
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 120
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 4
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 110
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1200
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 4
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 27
+            }
+          ]
+        },
+        {
+          "groupRanking": "4-5",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 100
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 3
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 24
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 80
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 2
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "groupRanking": "11-20",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 60
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 600
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 1
+            },
+            {
+              "name": "5m Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "groupRanking": "21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 300
+            },
+            {
+              "name": "Platinum Key",
+              "itemId": "platinum-key",
+              "amount": 1
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat",
+              "amount": 10
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Winner, runner-up, and bye rewards",
+      "rankings": [
+        {
+          "groupRanking": "Preparation phase: Winner",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 30
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Advanced Teleporter",
+              "itemId": "advanced-teleporter",
+              "amount": 2
+            },
+            {
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 2
+            },
+            {
+              "name": "10K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 150
+            }
+          ]
+        },
+        {
+          "groupRanking": "Preparation phase: Runner-up",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 10
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 500
+            },
+            {
+              "name": "Advanced Teleporter",
+              "itemId": "advanced-teleporter",
+              "amount": 1
+            },
+            {
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 1
+            },
+            {
+              "name": "10K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "groupRanking": "Preparation phase: Matchmaking Bye",
+          "rewards": [
+            {
+              "name": "General Accessory Construction Contract",
+              "itemId": "general-accessory-construction-contract",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2000
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 10
+            },
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 100
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "Battle phase: Winner",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 50
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Advanced Teleporter",
+              "itemId": "advanced-teleporter",
+              "amount": 2
+            },
+            {
+              "name": "March Accelerator I",
+              "itemId": "march-accelerator-i",
+              "amount": 2
+            },
+            {
+              "name": "10K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 225
+            }
+          ]
+        },
+        {
+          "groupRanking": "Battle phase: Runner-up",
+          "rewards": [
+            {
+              "name": "Sunfire Token",
+              "itemId": "sunfire-token",
+              "amount": 15
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 500
+            },
+            {
+              "name": "Advanced Teleporter",
+              "itemId": "advanced-teleporter",
+              "amount": 1
+            },
+            {
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 1
+            },
+            {
+              "name": "10K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 75
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "State Power Shop skins",
+      "note": "7-day activation."
+    },
+    {
+      "name": "State Medal",
+      "note": "Reach the highest personal points grade on a preparation day or in the battle phase to earn 1 State Medal. More medals unlock more rewards."
+    }
+  ],
+  "tips": [
+    "Coordinate with alliances in your own state instead of fighting them.",
+    "Use shields if you are not online when the portal opens, to reduce losses.",
+    "Your Furnace level affects how many State Points you contribute."
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "id": "alliance-mobilization",
+  "name": "Alliance Mobilization",
+  "img": "/images/events/alliance-mobilization.png",
+  "category": "alliance",
+  "description": "An event with an individual leaderboard and an alliance leaderboard. Members complete missions to earn points, and alliance scores are combined to compete against other servers.",
+  "frequency": "Once a month. Twice a month until about 13 weeks of state age, after which one of the slots goes to Alliance Showdown.",
+  "duration": "Monday to Saturday",
+  "tiers": [
+    {
+      "name": "Rookie"
+    },
+    {
+      "name": "Junior"
+    },
+    {
+      "name": "Senior"
+    },
+    {
+      "name": "Elite"
+    },
+    {
+      "name": "Legendary"
+    }
+  ],
+  "missions": [
+    {
+      "group": "Gather resources",
+      "name": "Gather 10M",
+      "points": 30
+    },
+    {
+      "group": "Gather resources",
+      "name": "Gather 15M",
+      "points": 55
+    },
+    {
+      "group": "Gather resources",
+      "name": "Gather 20M",
+      "points": 70
+    },
+    {
+      "group": "Gather resources",
+      "name": "Gather 25M",
+      "points": 80
+    },
+    {
+      "group": "Gather resources",
+      "name": "Gather 30M",
+      "points": 100
+    },
+    {
+      "group": "Train troops",
+      "name": "Train 15K power",
+      "points": 70
+    },
+    {
+      "group": "Train troops",
+      "name": "Train 30K power",
+      "points": 120
+    },
+    {
+      "group": "Train troops",
+      "name": "Train 120K power",
+      "points": 430
+    },
+    {
+      "group": "Use speedups",
+      "name": "900m construction / research / training",
+      "points": 110
+    },
+    {
+      "group": "Use speedups",
+      "name": "1800m any speedup",
+      "points": 160
+    },
+    {
+      "group": "Use speedups",
+      "name": "1800m construction / research / training",
+      "points": 180
+    },
+    {
+      "group": "Use speedups",
+      "name": "3600m any speedup",
+      "points": 270
+    },
+    {
+      "group": "Use speedups",
+      "name": "3600m construction / research / training",
+      "points": 300
+    },
+    {
+      "group": "Use speedups",
+      "name": "7200m any speedup",
+      "points": 400
+    },
+    {
+      "group": "Use speedups",
+      "name": "7200m construction / research / training",
+      "points": 450
+    },
+    {
+      "group": "Killing beasts",
+      "name": "Defeat 5 beasts",
+      "points": 20
+    },
+    {
+      "group": "Killing beasts",
+      "name": "Defeat 15 beasts",
+      "points": 45
+    },
+    {
+      "group": "Killing beasts",
+      "name": "Defeat 20 beasts",
+      "points": 60
+    },
+    {
+      "group": "Killing beasts",
+      "name": "Defeat 30 beasts",
+      "points": 110
+    },
+    {
+      "group": "Killing beasts",
+      "name": "Defeat 5 polar terrors",
+      "points": 80
+    },
+    {
+      "group": "Killing beasts",
+      "name": "Defeat 10 polar terrors",
+      "points": 160
+    },
+    {
+      "group": "Use gems",
+      "name": "Use 5K gems",
+      "points": 100
+    },
+    {
+      "group": "Use gems",
+      "name": "Use 10K gems",
+      "points": 200
+    },
+    {
+      "group": "Use gems",
+      "name": "Use 15K gems",
+      "points": 270
+    },
+    {
+      "group": "Use gems",
+      "name": "Use 30K gems",
+      "points": 400
+    },
+    {
+      "group": "Use gems",
+      "name": "Use 50K gems",
+      "points": 670
+    },
+    {
+      "group": "Essence stones",
+      "name": "Use 20 hero gear essence stones",
+      "points": 400
+    },
+    {
+      "group": "Essence stones",
+      "name": "Use 35 hero gear essence stones",
+      "points": 550
+    },
+    {
+      "group": "Chief Gear",
+      "name": "Raise max Chief Gear score by 3000",
+      "points": 200
+    },
+    {
+      "group": "Chief Gear",
+      "name": "Raise max Chief Gear score by 6000",
+      "points": 350
+    },
+    {
+      "group": "Chief gear charms",
+      "name": "Increase score by 600",
+      "points": 75
+    },
+    {
+      "group": "Chief gear charms",
+      "name": "Increase score by 1200",
+      "points": 150
+    },
+    {
+      "group": "Chief gear charms",
+      "name": "Increase score by 2500",
+      "points": 300
+    },
+    {
+      "group": "Chief gear charms",
+      "name": "Increase score by 4900",
+      "points": 440
+    },
+    {
+      "group": "Mythic shards (not general)",
+      "name": "Use 10 Mythic shards",
+      "points": 100
+    },
+    {
+      "group": "Mythic shards (not general)",
+      "name": "Use 30 Mythic shards",
+      "points": 300
+    },
+    {
+      "group": "Mythic shards (not general)",
+      "name": "Use 68 Mythic shards",
+      "points": 490
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Alliance Monument gathering speed bonus",
+      "note": "From +3% (Junior) up to +10% (Legendary)."
+    },
+    {
+      "name": "Custom Mission Voucher",
+      "itemId": "custom-mission-voucher",
+      "amount": 2,
+      "note": "2 free per event, as a reward from the Alliance Monuments."
+    },
+    {
+      "name": "Personal ranking, alliance ranking, and monument rewards",
+      "note": "Rewards depend on the tier. The wiki gives the amounts in images only."
+    }
+  ],
+  "tips": [
+    "Defeat Polar Terrors.",
+    "Raise your power by training and promoting troops.",
+    "Defeat the required number of beasts.",
+    "Gather resources.",
+    "Spender tasks: buy packs and use gems."
+  ]
+}

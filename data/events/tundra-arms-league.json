@@ -30,9 +30,9 @@
               "amount": 1000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 1,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 1
             },
             {
               "name": "1h Troop Training Speedup",
@@ -60,9 +60,9 @@
               "amount": 500
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 1,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 1
             },
             {
               "name": "1h Troop Training Speedup",
@@ -90,9 +90,9 @@
               "amount": 2000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 2,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 2
             },
             {
               "name": "1h Troop Training Speedup",
@@ -120,9 +120,9 @@
               "amount": 1000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 1,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 1
             },
             {
               "name": "1h Troop Training Speedup",
@@ -156,9 +156,9 @@
               "amount": 2000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 2,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 2
             },
             {
               "name": "1h Troop Training Speedup",
@@ -186,9 +186,9 @@
               "amount": 1000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 1,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 1
             },
             {
               "name": "1h Troop Training Speedup",
@@ -216,9 +216,9 @@
               "amount": 4000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 4,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 4
             },
             {
               "name": "1h Troop Training Speedup",
@@ -246,9 +246,9 @@
               "amount": 2000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 2,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 2
             },
             {
               "name": "1h Troop Training Speedup",
@@ -282,9 +282,9 @@
               "amount": 3000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 3,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 3
             },
             {
               "name": "1h Troop Training Speedup",
@@ -312,9 +312,9 @@
               "amount": 1500
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 2,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 2
             },
             {
               "name": "1h Troop Training Speedup",
@@ -342,9 +342,9 @@
               "amount": 6000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 6,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 6
             },
             {
               "name": "1h Troop Training Speedup",
@@ -372,9 +372,9 @@
               "amount": 3000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 3,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 3
             },
             {
               "name": "1h Troop Training Speedup",
@@ -408,9 +408,9 @@
               "amount": 4000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 4,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 4
             },
             {
               "name": "1h Troop Training Speedup",
@@ -438,9 +438,9 @@
               "amount": 2000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 2,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 2
             },
             {
               "name": "1h Troop Training Speedup",
@@ -468,9 +468,9 @@
               "amount": 8000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 8,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 8
             },
             {
               "name": "1h Troop Training Speedup",
@@ -498,9 +498,9 @@
               "amount": 4000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 4,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 4
             },
             {
               "name": "1h Troop Training Speedup",
@@ -534,9 +534,9 @@
               "amount": 5000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 5,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 5
             },
             {
               "name": "1h Troop Training Speedup",
@@ -564,9 +564,9 @@
               "amount": 2500
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 3,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 3
             },
             {
               "name": "1h Troop Training Speedup",
@@ -594,9 +594,9 @@
               "amount": 10000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 10,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 10
             },
             {
               "name": "1h Troop Training Speedup",
@@ -624,9 +624,9 @@
               "amount": 5000
             },
             {
-              "name": "Unidentified troop item",
-              "amount": 5,
-              "note": "Icon of soldiers with arrows. The source image does not name it."
+              "name": "March Accelerator II",
+              "itemId": "march-accelerator-ii",
+              "amount": 5
             },
             {
               "name": "1h Troop Training Speedup",

@@ -1,0 +1,3077 @@
+{
+  "id": "alliance-showdown",
+  "name": "Alliance Showdown",
+  "img": "/images/events/alliance-showdown.png",
+  "category": "alliance",
+  "description": "Six days of tasks, similar to SvS and KOI, against an alliance of similar power in another state. It runs together with the Tundra Trade Route event.",
+  "frequency": "Every 4 weeks, after the SvS week. It replaces one of the Alliance Mobilization slots in eligible states.",
+  "duration": "6 days. Day 6 runs 12 hours into Sunday.",
+  "requirements": [
+    "Top 20 alliance in your state",
+    "You must be in the alliance before the event starts. Changing alliance after the start means you cannot take part in your new alliance.",
+    "Ranking rewards need at least 300,000 personal points from the member and 20,000,000 total alliance points"
+  ],
+  "days": [
+    {
+      "day": "1",
+      "name": "Rise of the City",
+      "victoryPoints": 1,
+      "scoring": [
+        {
+          "action": "Escort 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raid 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 18750
+        },
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 1250
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 625
+        },
+        {
+          "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups for Research (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups for troop Training/Promotion (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Gather 2,000 Meat in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 2,000 Wood in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 400 Coal in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 100 Iron in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Use 1 gem",
+          "points": 1
+        },
+        {
+          "action": "Use any 1 Expert Sigil (excluding Common Sigils)",
+          "points": 3600
+        },
+        {
+          "action": "Use 1 Book of Knowledge",
+          "points": 36
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 100",
+          "scoreTotal": 100,
+          "rewards": [
+            {
+              "name": "100 Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 2
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 4
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Personal points 25,000",
+          "scoreTotal": 25000,
+          "rewards": [
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 1
+            },
+            {
+              "name": "10K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 8
+            },
+            {
+              "name": "10K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Personal points 50,000",
+          "scoreTotal": 50000,
+          "rewards": [
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Personal points 87,500",
+          "scoreTotal": 87500,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3500
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Personal points 125,000",
+          "scoreTotal": 125000,
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 4
+            },
+            {
+              "name": "100K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2",
+      "name": "Hero Development",
+      "victoryPoints": 2,
+      "scoring": [
+        {
+          "action": "Escort 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raid 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 210
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 750
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 1875
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 18750
+        },
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 1250
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 625
+        },
+        {
+          "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups for Research (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups for troop Training/Promotion (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1 gem",
+          "points": 1
+        },
+        {
+          "action": "Use any 1 Expert Sigil (excluding Common Sigils)",
+          "points": 3600
+        },
+        {
+          "action": "Use 1 Book of Knowledge",
+          "points": 36
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 100",
+          "scoreTotal": 100,
+          "rewards": [
+            {
+              "name": "100 Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 2
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 4
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Personal points 25,000",
+          "scoreTotal": 25000,
+          "rewards": [
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 1
+            },
+            {
+              "name": "10K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 8
+            },
+            {
+              "name": "10K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Personal points 50,000",
+          "scoreTotal": 50000,
+          "rewards": [
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Personal points 87,500",
+          "scoreTotal": 87500,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3500
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Personal points 125,000",
+          "scoreTotal": 125000,
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 5
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 4
+            },
+            {
+              "name": "100K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "3",
+      "name": "Pet Training",
+      "victoryPoints": 2,
+      "scoring": [
+        {
+          "action": "Escort 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raid 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 45
+        },
+        {
+          "action": "Pet advancement score increases by 1",
+          "points": 30
+        },
+        {
+          "action": "Use 1 Advanced Wild Mark to refine pets",
+          "points": 9370
+        },
+        {
+          "action": "Use 1 Common Wild Mark to refine pets",
+          "points": 680
+        },
+        {
+          "action": "Gather 2,000 Meat in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 2,000 Wood in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 400 Coal in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Gather 100 Iron in the Wilderness",
+          "points": 2
+        },
+        {
+          "action": "Use 1 gem",
+          "points": 1
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 100",
+          "scoreTotal": 100,
+          "rewards": [
+            {
+              "name": "100 Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 2
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 4
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Personal points 25,000",
+          "scoreTotal": 25000,
+          "rewards": [
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 1
+            },
+            {
+              "name": "10K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 8
+            },
+            {
+              "name": "10K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Personal points 50,000",
+          "scoreTotal": 50000,
+          "rewards": [
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Personal points 87,500",
+          "scoreTotal": 87500,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3500
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Personal points 125,000",
+          "scoreTotal": 125000,
+          "rewards": [
+            {
+              "name": "Charm Design",
+              "itemId": "charm-design",
+              "amount": 15
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 4
+            },
+            {
+              "name": "100K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "4",
+      "name": "Gear Enhancement",
+      "victoryPoints": 2,
+      "scoring": [
+        {
+          "action": "Escort 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raid 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 45
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 1875
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 3750
+        },
+        {
+          "action": "Use 1 Mithril",
+          "points": 67500
+        },
+        {
+          "action": "Train 1 Lv. 1 troop",
+          "points": 1
+        },
+        {
+          "action": "Train 1 Lv. 2 troop",
+          "points": 1
+        },
+        {
+          "action": "Train 1 Lv. 3 troop",
+          "points": 2
+        },
+        {
+          "action": "Train 1 Lv. 4 troop",
+          "points": 3
+        },
+        {
+          "action": "Train 1 Lv. 5 troop",
+          "points": 4
+        },
+        {
+          "action": "Train 1 Lv. 6 troop",
+          "points": 7
+        },
+        {
+          "action": "Train 1 Lv. 7 troop",
+          "points": 10
+        },
+        {
+          "action": "Train 1 Lv. 8 troop",
+          "points": 14
+        },
+        {
+          "action": "Train 1 Lv. 9 troop",
+          "points": 18
+        },
+        {
+          "action": "Train 1 Lv. 10 troop",
+          "points": 24
+        },
+        {
+          "action": "Train 1 Lv. 11 troop",
+          "points": 30
+        },
+        {
+          "action": "Train 1 Lv. 12 troop",
+          "points": 36
+        },
+        {
+          "action": "Use 1 gem",
+          "points": 1
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 100",
+          "scoreTotal": 100,
+          "rewards": [
+            {
+              "name": "100 Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 2
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 4
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Personal points 25,000",
+          "scoreTotal": 25000,
+          "rewards": [
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 1
+            },
+            {
+              "name": "10K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 8
+            },
+            {
+              "name": "10K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Personal points 50,000",
+          "scoreTotal": 50000,
+          "rewards": [
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Personal points 87,500",
+          "scoreTotal": 87500,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3500
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Personal points 125,000",
+          "scoreTotal": 125000,
+          "rewards": [
+            {
+              "name": "Charm Guide",
+              "itemId": "charm-guide",
+              "amount": 15
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 4
+            },
+            {
+              "name": "100K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "5",
+      "name": "Trade Dominion",
+      "victoryPoints": 2,
+      "scoring": [
+        {
+          "action": "Escort 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raid 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raise Chief Gear max score by 1",
+          "points": 22
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 18750
+        },
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 1250
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 625
+        },
+        {
+          "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups for Research (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups for troop Training/Promotion (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1 gem",
+          "points": 1
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 100",
+          "scoreTotal": 100,
+          "rewards": [
+            {
+              "name": "100 Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 2
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 4
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Personal points 37,500",
+          "scoreTotal": 37500,
+          "rewards": [
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 1
+            },
+            {
+              "name": "10K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 8
+            },
+            {
+              "name": "10K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Personal points 75,000",
+          "scoreTotal": 75000,
+          "rewards": [
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Personal points 125,000",
+          "scoreTotal": 125000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3500
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Personal points 187,500",
+          "scoreTotal": 187500,
+          "rewards": [
+            {
+              "name": "Design Plans",
+              "itemId": "design-plans",
+              "amount": 15
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 4
+            },
+            {
+              "name": "100K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "6-7",
+      "name": "Full-Scale Competition",
+      "victoryPoints": 4,
+      "scoring": [
+        {
+          "action": "Escort 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raid 1 truck of any grade",
+          "points": 10000
+        },
+        {
+          "action": "Raise Chief Gear max score by 1",
+          "points": 22
+        },
+        {
+          "action": "Raise Chief Charm max score by 1",
+          "points": 45
+        },
+        {
+          "action": "Use 1 Hero Gear Essence Stone",
+          "points": 1875
+        },
+        {
+          "action": "Use 1 Widget of any Hero Exclusive Gear",
+          "points": 3750
+        },
+        {
+          "action": "Use 1 Mithril",
+          "points": 67500
+        },
+        {
+          "action": "Use 1 Rare Hero Shard to ascend Heroes",
+          "points": 210
+        },
+        {
+          "action": "Use 1 Epic Hero Shard to ascend Heroes",
+          "points": 750
+        },
+        {
+          "action": "Use 1 Mythic Hero Shard to ascend Heroes",
+          "points": 1875
+        },
+        {
+          "action": "Pet advancement score increases by 1",
+          "points": 30
+        },
+        {
+          "action": "Use 1 Advanced Wild Mark to refine pets",
+          "points": 9370
+        },
+        {
+          "action": "Use 1 Common Wild Mark to refine pets",
+          "points": 680
+        },
+        {
+          "action": "Use 1 Refined Fire Crystal to upgrade buildings",
+          "points": 18750
+        },
+        {
+          "action": "Use 1 Fire Crystal to upgrade buildings",
+          "points": 1250
+        },
+        {
+          "action": "Use 1 Fire Crystal Shard for Research",
+          "points": 625
+        },
+        {
+          "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups for Research (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups for troop Training/Promotion (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
+          "points": 18
+        },
+        {
+          "action": "Use 1 gem",
+          "points": 1
+        }
+      ],
+      "milestones": [
+        {
+          "name": "Personal points 100",
+          "scoreTotal": 100,
+          "rewards": [
+            {
+              "name": "100 Enhancement XP Component",
+              "itemId": "enhancement-xp-component",
+              "amount": 2
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 4
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Personal points 37,500",
+          "scoreTotal": 37500,
+          "rewards": [
+            {
+              "name": "Lucky Hero Gear Chest",
+              "itemId": "lucky-hero-gear-chest",
+              "amount": 1
+            },
+            {
+              "name": "10K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 8
+            },
+            {
+              "name": "10K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Personal points 75,000",
+          "scoreTotal": 75000,
+          "rewards": [
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "5m Construction Speedup",
+              "itemId": "speedup-construction-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Research Speedup",
+              "itemId": "speedup-research-5m",
+              "amount": 25
+            },
+            {
+              "name": "5m Troop Training Speedup",
+              "itemId": "speedup-troop-5m",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Personal points 125,000",
+          "scoreTotal": 125000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3500
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Meat (Secured)",
+              "itemId": "meat",
+              "amount": 20
+            },
+            {
+              "name": "100K Wood (Secured)",
+              "itemId": "wood",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Personal points 187,500",
+          "scoreTotal": 187500,
+          "rewards": [
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 8
+            },
+            {
+              "name": "Truck Voucher",
+              "itemId": "truck-voucher",
+              "amount": 1
+            },
+            {
+              "name": "100K Coal (Secured)",
+              "itemId": "coal",
+              "amount": 4
+            },
+            {
+              "name": "100K Iron (Secured)",
+              "itemId": "iron",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Star rating 1-2",
+      "rankings": [
+        {
+          "groupRanking": "Star reward: Winning alliance",
+          "rewards": [
+            {
+              "name": "Tundra Truck Lv.1",
+              "decorationId": "tundra-truck",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 30000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 10
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 5
+            },
+            {
+              "name": "100K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "groupRanking": "Star reward: Losing or drawing alliance",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 5
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 2
+            },
+            {
+              "name": "100K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 1",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 5
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 500000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 40
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 10
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 2",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 300000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 24000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 8
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 3-5",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 200000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 6
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 6-10",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 10
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 1",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 300000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 5
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 2",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 200000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 3-5",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 9000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 10
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 5
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Star rating 3-5",
+      "rankings": [
+        {
+          "groupRanking": "Star reward: Winning alliance",
+          "rewards": [
+            {
+              "name": "Tundra Truck Lv.1",
+              "decorationId": "tundra-truck",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 30000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 6
+            },
+            {
+              "name": "100K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 75
+            }
+          ]
+        },
+        {
+          "groupRanking": "Star reward: Losing or drawing alliance",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 750
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 10
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 3
+            },
+            {
+              "name": "100K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 1",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 5
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 500000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 50
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 20
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 2",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 300000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 24000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 40
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 16
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 3-5",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 200000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 8
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 6-10",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 1",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 300000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 40
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 10
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 2",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 200000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 8
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 3-5",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 9000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 6
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 10
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 1
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Star rating 6-9",
+      "rankings": [
+        {
+          "groupRanking": "Star reward: Winning alliance",
+          "rewards": [
+            {
+              "name": "Tundra Truck Lv.1",
+              "decorationId": "tundra-truck",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 60000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 8
+            },
+            {
+              "name": "100K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "groupRanking": "Star reward: Losing or drawing alliance",
+          "rewards": [
+            {
+              "name": "Tundra Truck Lv.1",
+              "decorationId": "tundra-truck",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 30000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 4
+            },
+            {
+              "name": "100K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 75
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 1",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 5
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 500000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 60
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 30
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 2",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 4
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 400000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 24000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 50
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 24
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 24
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 3-5",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 300000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 40
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 18
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 6-10",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 200000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 12
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 11-20",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 6
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 1",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 300000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 50
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 20
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 2",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 200000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 40
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 16
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 3-5",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 9000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 12
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 6-10",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 8
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 15
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Star rating 10+",
+      "rankings": [
+        {
+          "groupRanking": "Star reward: Winning alliance",
+          "rewards": [
+            {
+              "name": "Tundra Truck Lv.1",
+              "decorationId": "tundra-truck",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 80000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 10
+            },
+            {
+              "name": "100K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 125
+            }
+          ]
+        },
+        {
+          "groupRanking": "Star reward: Losing or drawing alliance",
+          "rewards": [
+            {
+              "name": "Tundra Truck Lv.1",
+              "decorationId": "tundra-truck",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 40000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1250
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 5
+            },
+            {
+              "name": "100K Resource Supply Chest",
+              "itemId": "ressources-supply-chest",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 1",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 5
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 500000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 30000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 70
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 40
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 2",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 4
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 400000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 24000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 60
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 32
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 3-5",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 300000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 18000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 50
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 24
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 24
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 6-10",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 200000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 40
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 16
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 11-20",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 8
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "groupRanking": "Winning alliance, alliance rank 21-50",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 1",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 3
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 300000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 15000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 60
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 30
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 2",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 2
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 200000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 12000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 50
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 24
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 24
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 3-5",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 9000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 40
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 18
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 6-10",
+          "rewards": [
+            {
+              "name": "Giant Horn Lv.1",
+              "decorationId": "giant-horn",
+              "amount": 1
+            },
+            {
+              "name": "Alliance Tokens",
+              "itemId": "alliance-token",
+              "amount": 100000
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 30
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 12
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 11-20",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 25
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 6
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "groupRanking": "Losing or drawing alliance, alliance rank 21-50",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 20
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "allianceRankings": [
+    {
+      "groupRanking": "Daily: Winning alliance",
+      "rewards": [
+        {
+          "name": "Gold Key",
+          "itemId": "gold-key",
+          "amount": 2
+        },
+        {
+          "name": "Life Essence",
+          "itemId": "life-essence",
+          "amount": 2000
+        },
+        {
+          "name": "Alliance Tokens",
+          "itemId": "alliance-token",
+          "amount": 30000
+        },
+        {
+          "name": "1h Research Speedup",
+          "itemId": "speedup-research-1h",
+          "amount": 2
+        },
+        {
+          "name": "100K Meat",
+          "itemId": "meat",
+          "amount": 2
+        },
+        {
+          "name": "100K Wood",
+          "itemId": "wood",
+          "amount": 2
+        },
+        {
+          "name": "10K Coal",
+          "itemId": "coal",
+          "amount": 4
+        },
+        {
+          "name": "10K Iron",
+          "itemId": "iron",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "groupRanking": "Daily: Losing or drawing alliance",
+      "rewards": [
+        {
+          "name": "Gold Key",
+          "itemId": "gold-key",
+          "amount": 1
+        },
+        {
+          "name": "Life Essence",
+          "itemId": "life-essence",
+          "amount": 1000
+        },
+        {
+          "name": "Alliance Tokens",
+          "itemId": "alliance-token",
+          "amount": 15000
+        },
+        {
+          "name": "1h Research Speedup",
+          "itemId": "speedup-research-1h",
+          "amount": 1
+        },
+        {
+          "name": "100K Meat",
+          "itemId": "meat",
+          "amount": 1
+        },
+        {
+          "name": "100K Wood",
+          "itemId": "wood",
+          "amount": 1
+        },
+        {
+          "name": "10K Coal",
+          "itemId": "coal",
+          "amount": 2
+        },
+        {
+          "name": "10K Iron",
+          "itemId": "iron",
+          "amount": 1
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "name": "Giant Horn",
+      "decorationId": "giant-horn",
+      "note": "Decoration. Troop attack 1%."
+    },
+    {
+      "name": "Tundra Truck",
+      "decorationId": "tundra-truck",
+      "note": "Decoration. Troop defense 1%."
+    }
+  ],
+  "tips": [
+    "A team needs 7 of the 13 victory points to win.",
+    "Tundra Trade Route runs at the same time for 6 days. Loot from day 6 can be collected on day 7 until 4 UTC."
+  ]
+}
