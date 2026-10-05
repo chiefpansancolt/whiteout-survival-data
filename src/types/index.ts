@@ -19,3 +19,4 @@ export * from './event';
 export * from './vip';
 export * from './daybreak-island';
 export * from './converter';
+export * from './calculator';

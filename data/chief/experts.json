@@ -5181,7 +5181,12 @@
         "img": "/images/experts/Valeria/skills/Valeria-WellPrepared.png",
         "description": "Valeria pays meticulous attention to every detail during battle preparation, gaining +20% State of Power's Preparation Phase Point gains, and +3 bonus tier for daily Personal Point rewards.",
         "maxLevel": 10,
-        "progressions": [],
+        "progressions": [
+          {
+            "label": "Preparation Phase Point gains (%)",
+            "values": [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+          }
+        ],
         "costs": [
           {
             "level": 1,
