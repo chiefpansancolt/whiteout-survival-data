@@ -122,6 +122,8 @@
   const eventEl = document.getElementById('event');
   let activeEventId = EVENTS.length ? EVENTS[0].id : null;
   const activeTierByEvent = {};
+  const activeDayByEvent = {};
+  const activeLevelsByTier = {};
 
   function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -204,6 +206,7 @@
     tiers.forEach((tier) => {
       const row = body.insertRow();
       row.insertCell().textContent = tier.name;
+      if (tier.note) row.title = tier.note;
       if (hasScore) {
         const cell = row.insertCell();
         cell.className = 'num';
@@ -214,6 +217,43 @@
     const wrap = el('div', 'scroll');
     wrap.append(table);
     return wrap;
+  }
+
+  function levelsTable(levels) {
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    ['Level', 'Tier', 'Power', 'Bonus', 'Infantry', 'Lancer', 'Marksman', 'Total troops', 'Rewards'].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    levels.forEach((level) => {
+      const row = body.insertRow();
+      const numbers = [level.level, level.tier, level.power, level.bonus, level.troops.infantry, level.troops.lancer, level.troops.marksman, level.totalTroops];
+      numbers.forEach((value) => {
+        const cell = row.insertCell();
+        cell.className = 'num';
+        cell.textContent = value.toLocaleString('en-US');
+      });
+      const rewards = row.insertCell();
+      rewards.append(rewardList(level.rewards));
+      if (level.note) row.title = level.note;
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
+  function levelsSection(tier) {
+    const withLevels = tier.rankings.filter((r) => r.levels);
+    const key = tier.name;
+    const selected = activeLevelsByTier[key] ?? withLevels[0].groupRanking;
+    const body = el('div');
+    const pills = el('div', 'pills');
+    withLevels.forEach((ranking) => {
+      const pill = el('button', `pill${ranking.groupRanking === selected ? ' active' : ''}`, ranking.groupRanking);
+      pill.addEventListener('click', () => { activeLevelsByTier[key] = ranking.groupRanking; renderEvent(); });
+      pills.append(pill);
+    });
+    body.append(pills, levelsTable(withLevels.find((r) => r.groupRanking === selected).levels));
+    return section(`${tier.name}: enemy levels`, body);
   }
 
   function tiersSection(event) {
@@ -236,7 +276,77 @@
     }
     if (tier.rewards && tier.rewards.length) body.append(rewardList(tier.rewards));
     body.append(rankingTable(tier.rankings, 'Placement'));
+    if (tier.rankings.some((r) => r.levels)) body.append(levelsSection(tier));
     return section('Tiers (lowest to highest)', body);
+  }
+
+  function missionsTable(missions) {
+    const table = el('table');
+    const headRow = table.createTHead().insertRow();
+    ['Mission', 'Base points'].forEach((label) => headRow.append(el('th', '', label)));
+    const body = table.createTBody();
+    let lastGroup;
+    missions.forEach((mission) => {
+      if (mission.group !== lastGroup) {
+        const groupRow = body.insertRow();
+        const cell = groupRow.insertCell();
+        cell.colSpan = 2;
+        cell.append(el('b', '', mission.group));
+        lastGroup = mission.group;
+      }
+      const row = body.insertRow();
+      row.insertCell().textContent = mission.name;
+      const points = row.insertCell();
+      points.className = 'num';
+      points.textContent = mission.points.toLocaleString('en-US');
+    });
+    const wrap = el('div', 'scroll');
+    wrap.append(table);
+    return wrap;
+  }
+
+  function dayContent(day) {
+    const body = el('div');
+    const victory = day.victoryPoints === undefined ? '' : `${day.victoryPoints} victory point${day.victoryPoints === 1 ? '' : 's'} for the winner`;
+    if (victory) body.append(el('p', 'sub', victory));
+    if (day.note) body.append(el('p', 'sub', day.note));
+    body.append(el('p', 'sub', 'Points to score'));
+    const scoring = el('table');
+    const headRow = scoring.createTHead().insertRow();
+    ['Action', 'Points'].forEach((label) => headRow.append(el('th', '', label)));
+    const scoringBody = scoring.createTBody();
+    day.scoring.forEach((entry) => {
+      const row = scoringBody.insertRow();
+      row.insertCell().textContent = entry.action;
+      const points = row.insertCell();
+      points.className = 'num';
+      points.textContent = entry.points.toLocaleString('en-US');
+    });
+    const scoringWrap = el('div', 'scroll');
+    scoringWrap.append(scoring);
+    body.append(scoringWrap);
+    if (day.milestones) {
+      body.append(el('p', 'sub', 'Personal point milestones and rewards'));
+      body.append(flatTierTable(day.milestones));
+    }
+    if (day.allianceMilestones) {
+      body.append(el('p', 'sub', 'Alliance point milestones and rewards'));
+      body.append(flatTierTable(day.allianceMilestones));
+    }
+    return body;
+  }
+
+  function daysSection(event) {
+    const selected = activeDayByEvent[event.id] ?? event.days[0].day;
+    const body = el('div');
+    const pills = el('div', 'pills');
+    event.days.forEach((day) => {
+      const pill = el('button', `pill${day.day === selected ? ' active' : ''}`, (/^\d/.test(day.day) ? `Day ${day.day}: ${day.name}` : day.name));
+      pill.addEventListener('click', () => { activeDayByEvent[event.id] = day.day; renderEvent(); });
+      pills.append(pill);
+    });
+    body.append(pills, dayContent(event.days.find((day) => day.day === selected)));
+    return section('Days', body);
   }
 
   const TARGET_LABELS = { city: 'Player cities', headquarters: 'Alliance HQ' };
@@ -291,6 +401,8 @@
       card.append(section('Phases', phases));
     }
     if (event.waves) card.append(section('Waves', wavesTable(event.waves)));
+    if (event.days) card.append(daysSection(event));
+    if (event.missions) card.append(section('Missions', missionsTable(event.missions)));
     if (event.tiers) card.append(tiersSection(event));
     if (event.allianceRankings) card.append(section('Alliance rewards', rankingTable(event.allianceRankings, 'Alliance rank')));
     if (event.personalRankings) event.personalRankings.forEach((table) => card.append(section(`Personal rewards by ${table.basedOn.toLowerCase()}`, rankingTable(table.rankings, 'Rank'))));
