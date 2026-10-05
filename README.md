@@ -755,7 +755,9 @@ it gives for generations 4 to 15 in `heroByGeneration`. The eighth batch adds th
 events: Frosty Fortune, Vision of Dawn, Romance Season, and Dreamscape Memory, from the wiki text
 and the images that can be read. The ninth batch adds Tundra Adventure (tile chances, item tile
 levels, point targets, and the Odyssey of Adventure board), Silver Shell Events, Tundra Album, and
-Shining City Pack, from the wiki text. Their shops and packs are not loaded.
+Shining City Pack, from the wiki text. Their shops and packs are not loaded. The tenth batch adds
+State Merger (97 Pioneering Praises missions with their rewards and the five chests), State
+Transfer, Vault of Enigma, and Tundra Star.
 
 ### 🎯 Event Buffs
 
