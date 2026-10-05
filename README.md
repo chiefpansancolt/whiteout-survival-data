@@ -382,7 +382,7 @@ same convention `images/heroes/` uses — the single skill image is named `<Pet>
 
 | Module | Factory   | Items | Description                                                       |
 | ------ | --------- | ----- | ----------------------------------------------------------------- |
-| items  | `items()` | 250   | Functional items — resources, currencies, chests, buffs, and more |
+| items  | `items()` | 251   | Functional items — resources, currencies, chests, buffs, and more |
 
 Sourced from the wiki's master item catalog page, which covers 415 items across 18 category tabs.
 Birthday Card entries are skipped (a yearly login freebie with no gameplay data worth tracking), and
@@ -414,7 +414,7 @@ get no `rewardRates` at all.
 
 | Module | Factory   | Items | Description                                                        |
 | ------ | --------- | ----- | ------------------------------------------------------------------ |
-| skins  | `skins()` | 189   | Cosmetic skins — avatar frames, nameplates, and vehicle/city skins |
+| skins  | `skins()` | 190   | Cosmetic skins — avatar frames, nameplates, and vehicle/city skins |
 
 The cosmetic half of the same item catalog, across 7 skin types: Avatar Frame (69), March Skin (48),
 City Skin (35), Nameplate (20), Name Card (10), Teleport Skin (5), and Chief Profile (2). Every
@@ -660,7 +660,7 @@ structure type.
 
 | Module | Factory    | Items | Description                                                           |
 | ------ | ---------- | ----- | --------------------------------------------------------------------- |
-| events | `events()` | 10    | Game events with frequency, duration, requirements, rewards, and tips |
+| events | `events()` | 16    | Game events with frequency, duration, requirements, rewards, and tips |
 
 Sourced from `https://www.whiteoutsurvival.wiki/events/` (67 events listed, added in batches). Event
 pages are prose and screenshots with no tables, so each event's text is transcribed from its page
@@ -675,14 +675,32 @@ guide that lists them as text. Canyon Clash uses `tiers` for personal merit rang
 rewards per legion rank, and `allianceRankings` for alliance rewards, both read from wiki images.
 Frostdragon Tyrant has `personalRankings` (one table per thing a placement is based on, such as
 capital occupation time and personal points) and uses `tiers` for its personal points milestones.
-Tundra Arms League uses all three: `allianceRankings`, `personalRankings` (legion ranking and legion
-result), and `tiers` by Personal Arsenal Points with Winner and Defeat rankings for the Elimination
-and Championship phases. Its rewards come from in-game screenshots on outof.games. Crazy Joe has
-`waves` (target, rule, and details for each of its 20 waves, from a community guide) and uses
-`tiers` for its 21 difficulties, with the Alliance Defense Points needed to unlock each, read from a
-wiki image. The first batch covers Bear Hunt, Crazy Joe, Alliance Championship, Foundry Battle,
-Canyon Clash, Frostfire Mine, Frostdragon Tyrant, Tundra Arms League, Icefire Warhymn League, and
-Tundra Trade Route.
+SVS - State of Power has `days` for its 5 preparation stages and the battle phase (scoring actions,
+personal and alliance point milestones) and `tiers` for the ranking and winner reward tables, from
+the outof.games guide text and the wiki's reward images. Sunfire Castle has `personalRankings`
+(Gems, Charm Design, and Charm Guide for 22 rank groups) and `tiers` for its 7 personal points
+milestones, read from two wiki images that show one server's values. Mercenary Prestige has `tiers`
+for its four difficulty tiers (Easy to Insane as rankings) and `allianceRankings` for the Captain
+rewards, both from the wiki text. Champion's and Epic Initiation rankings also carry `levels`: 50
+enemy levels each with tier, power, bonus, troops per type, total troops, and stage rewards, read by
+OCR and spot-checked from the outof.games guide's table images. Those images show the older 50-level
+event (the guide's Legend's Initiation, now called Epic), so their stage rewards differ from the
+current 25-level wiki rewards. Two source rows look like typos (Champion's Nightmare level 50 and
+Epic Nightmare level 13) and are kept as printed with a `note`. Alliance Showdown has `days` (the
+actions that score points each day, and that day's personal point milestones with rewards) and uses
+`tiers` by star rating for the star and ranking rewards, from the outof.games guide's tables.
+Alliance Mobilization has `missions` (name, group, and base points, read from the wiki's mission
+tables; the 120% and 200% exclusive columns and the gem purchase missions are left out). Tundra Arms
+League uses all three: `allianceRankings`, `personalRankings` (legion ranking and legion result),
+and `tiers` by Personal Arsenal Points with Winner and Defeat rankings for the Elimination and
+Championship phases. Its rewards come from in-game screenshots on outof.games. Crazy Joe has `waves`
+(target, rule, and details for each of its 20 waves, from a community guide) and uses `tiers` for
+its 21 difficulties, with the Alliance Defense Points needed to unlock each, read from a wiki image.
+The first batch covers Bear Hunt, Crazy Joe, Alliance Championship, Foundry Battle, Canyon Clash,
+Frostfire Mine, Frostdragon Tyrant, Tundra Arms League, Icefire Warhymn League, and Tundra Trade
+Route. The second batch adds Alliance Showdown, Alliance Mobilization, Mercenary Prestige, SVS -
+State of Power, King of Icefield, and Sunfire Castle, from the wiki text only (their reward amounts
+are mostly in images and are not loaded yet).
 
 ---
 
@@ -815,10 +833,12 @@ back onto the existing `hero-s-sanctun` id — so `decoration().find('heros-sanc
 nothing, while `decoration().find('hero-s-sanctun')` has the full imported level data.
 
 `img` is optional on `Decoration` and set only where a picture has been added so far: Dragon Pagoda
-and Serpent Sanctuary (cropped from heaven-guardian.com guide images), and War Chariot and Cannon
-(cropped from the Tundra Arms League legion rewards screenshot on outof.games). They are stored
-under `images/daybreak-island/`. Cannon's per-level buffs are not documented, so its levels carry
-blank buffs.
+and Serpent Sanctuary (cropped from heaven-guardian.com guide images), War Chariot and Cannon
+(cropped from the Tundra Arms League legion rewards screenshot on outof.games), Tundra Truck and
+Giant Horn (cropped from the Alliance Showdown reward screenshots on outof.games), and Conquering
+Sword (cropped from an in-game SVS reward screenshot). They are stored under
+`images/daybreak-island/`. Cannon's per-level buffs are not documented, so its levels carry blank
+buffs.
 
 ---
 
