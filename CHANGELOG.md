@@ -108,9 +108,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `allianceFortress()`: the castle, 4 strongholds, and 12 fortresses with map coordinates and the
   reward each gives in each of the 8 phases, sourced from user-provided images.
 - `events()`: game events, one data file each under `data/events/`, with frequency, duration,
-  requirements, phases, rewards, and tips. The first two batches cover 16 alliance and solo events.
+  requirements, phases, rewards, and tips. The three batches cover 24 alliance and solo events.
 - `items()`: a `Speedups` category with 21 speedup items (General, Construction, Troop Training,
   Research, Learning, and Troop Healing) and their icons under `images/items/speedups/`.
+- `skins()`: the Frostflame Knight City Skin from the Icefire Warhymn League season ranking, with
+  its tile as the image.
 - `skins()`: the 7-day City Skin from the State of Power battle personal ranking, with its tile as
   the image.
 - `items()`: the Battle Commendation Custom Chest - Gen Hero, given in the SVS battle personal
@@ -118,8 +120,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `items()`: the Frostdragon Tyrant trophies Triumph of Tyrant, Glory of Kings, and Trail of Heroes,
   with icons cropped from the wiki's reward image.
 - `decoration()`: an optional `img` on decorations, set for Dragon Pagoda, Serpent Sanctuary, War
-  Chariot, Cannon, Tundra Truck, Giant Horn, and Conquering Sword, with icons under
-  `images/daybreak-island/`. Event rewards can link a decoration with `decorationId`.
+  Chariot, Cannon, Tundra Truck, Giant Horn, Conquering Sword, Icefire Way, Luminari Citadel, and
+  Hero's Sanctum, with icons under `images/daybreak-island/`. Event rewards can link a decoration
+  with `decorationId`.
 - `eventBuff()`: which of 11 buff sources (Pet Skills, President Skills, Facility Buff, etc.) apply
   in each of 14 game modes, sourced from a user-provided screenshot rather than any wiki page.
   `petSkillsAutoApplied` marks the modes where pet skills apply without player activation.

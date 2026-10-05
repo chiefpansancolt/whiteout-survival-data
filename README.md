@@ -414,7 +414,7 @@ get no `rewardRates` at all.
 
 | Module | Factory   | Items | Description                                                        |
 | ------ | --------- | ----- | ------------------------------------------------------------------ |
-| skins  | `skins()` | 190   | Cosmetic skins — avatar frames, nameplates, and vehicle/city skins |
+| skins  | `skins()` | 191   | Cosmetic skins — avatar frames, nameplates, and vehicle/city skins |
 
 The cosmetic half of the same item catalog, across 7 skin types: Avatar Frame (69), March Skin (48),
 City Skin (35), Nameplate (20), Name Card (10), Teleport Skin (5), and Chief Profile (2). Every
@@ -705,9 +705,35 @@ Hunt, Crazy Joe, Alliance Championship, Foundry Battle, Canyon Clash, Frostfire 
 Tyrant, Tundra Arms League, Icefire Warhymn League, and Tundra Trade Route. The second batch adds
 Alliance Showdown, Alliance Mobilization, Mercenary Prestige, SVS - State of Power, King of
 Icefield, and Sunfire Castle, from the wiki text only (their reward amounts are mostly in images and
-are not loaded yet).
-
----
+are not loaded yet). The third batch adds Armament Competition, Officer Project, Brothers in Arms,
+Hero's Mission, Tundra Trading Station, Fishing Tournament, The Labyrinth, and Treasure Hunter, from
+the wiki text only. Categories for the solo events are set from the event pages and can be
+corrected. Armament Competition and Officer Project each have ranking rewards and, in `days`, one
+entry for each version (Chief Gear and Chief Charm, or Troops and Heroes) with the points to score
+and the four target point levels with their rewards. The points needed for each level are loaded
+only for the Officer Project Troops version, so `scoreTotal` is omitted on the other levels until
+they are known. Fishing Tournament lists its five daily mission rewards in `tiers`, by Fishing
+Points. Its leaderboard rewards (9 rank bands) have no amounts and some items are not linked,
+because they are read from a low-resolution wiki image. Refine them when the event returns.
+Frostfire Mine has its six gathering reward levels in `tiers` (by Orichalcum yield, with the source
+image cutting off the last items of each row) and its ranking rewards in `personalRankings`. Icefire
+Warhymn League has its 7 season ranking groups and its State rewards in `personalRankings`, its 16
+League Shop offers in `shop` (cost and limit in Warhymn Testaments), and its League Missions in
+`missions`, with `missionPointsLabel` naming the Testaments. Each mission has 7 levels that give the
+same rewards. Its `levelRequirements` has all 7 levels. The login mission needs 1 more day for each
+level, and each other mission needs its level 1 amount again for each level, so level N is N times
+level 1. `rewards` holds the other items each level gives. Its phases carry the UTC schedule, and
+the tips list which buffs apply, from the wiki and a community guide. King of Icefield has the
+scoring list for each of its 7 days in `days` and four ranking tables in `personalRankings`. The
+ranking tables hold only the first rows, because the wiki images are cropped. The Labyrinth has its
+6 zones with their open days in `zones`, its 14 Labyrinth Core milestone rewards in `tiers`, and its
+Glowstone shop in `shop`, with `shopCurrencyItemId` naming the shop currency. Treasure Hunter has
+its 4 daily pickaxe missions in `missions`, its 21 total search milestones in `tiers`, its common
+and supreme Ultimate Treasure options in `personalRankings`, and the Treasure Preview rewards in
+`rewards`. Tundra Trade Route has its 6 truck refreshes with their gem cost and quality chances in
+`refreshes`. Its truck rewards are random, so they are not listed. Tundra Trading Station has its 19
+shop offers in `shop` (priced in Trade Vouchers) and the Trade Voucher value of each exchange in
+`tiers`.
 
 ### 🎯 Event Buffs
 
@@ -841,10 +867,10 @@ nothing, while `decoration().find('hero-s-sanctun')` has the full imported level
 and Serpent Sanctuary (cropped from heaven-guardian.com guide images), War Chariot and Cannon
 (cropped from the Tundra Arms League legion rewards screenshot on outof.games), Tundra Truck and
 Giant Horn (cropped from the Alliance Showdown reward screenshots on outof.games), and Conquering
-Sword (cropped from an in-game SVS reward screenshot). They are stored under
-`images/daybreak-island/`. Cannon's per-level buffs are not documented, so its levels carry blank
-buffs.
-
+Sword (cropped from an in-game SVS reward screenshot), Icefire Way (cropped from an in-game League
+Shop screenshot), Luminari Citadel and Hero's Sanctum (cropped from in-game Labyrinth reward
+screenshots). They are stored under `images/daybreak-island/`. Cannon's per-level buffs are not
+documented, so its levels carry blank buffs.
 ---
 
 ## 📋 Raw Data Access
