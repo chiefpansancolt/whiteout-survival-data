@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chief Charm Upgrade Calculator</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --good: #52d17a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+    max-width: 980px;
+  }
+  a { color: var(--accent); }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 0.85rem; margin: 24px 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; line-height: 1.45; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+  .controls label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  select, input[type="number"] {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+  input[type="number"] { width: 110px; text-align: right; }
+  select:disabled { opacity: 0.45; }
+  button {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .bonus-note { color: var(--good); font-size: 0.85rem; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 10px; }
+  .pill {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .pill.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  th, td { padding: 7px 10px; border-bottom: 1px solid var(--panel-border); text-align: left; vertical-align: middle; }
+  th { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+  td.bonus { color: var(--good); }
+  .scroll { overflow-x: auto; }
+  .note { color: var(--text-dim); font-size: 0.8rem; margin: 8px 0 0; line-height: 1.4; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .stat { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 12px 14px; }
+  .stat .value { font-size: 1.25rem; font-weight: 700; color: var(--accent); }
+  .stat .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  select.level { width: 100%; min-width: 150px; }
+  .mat { display: inline-flex; align-items: center; gap: 8px; }
+  .mat img { width: 28px; height: 28px; border-radius: 6px; }
+  .warn { color: #ffb74d; font-size: 0.8rem; }
+  .group-row td { background: var(--panel); color: var(--text-dim); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+</style>
+</head>
+<body>
+  <p><a href="index.html">&larr; All sample pages</a></p>
+  <h1 id="page-title"></h1>
+  <p class="sub" id="page-intro"></p>
+
+  <div class="card">
+    <div class="controls">
+      <strong id="all-label"></strong>
+      <label>From <select id="all-from" class="level"></select></label>
+      <label>To <select id="all-to" class="level"></select></label>
+      <button type="button" id="all-apply">Apply</button>
+      <button type="button" id="reset">Reset all</button>
+    </div>
+  </div>
+
+  <h2>Results</h2>
+  <div class="grid" id="stats"></div>
+  <div class="card scroll" id="materials-card"></div>
+  <h2>Event points</h2>
+  <div class="card scroll" id="events-card"></div>
+  <p class="note" id="events-note"></p>
+
+  <h2 id="table-title"></h2>
+  <div class="card scroll"><table id="piece-table"></table></div>
+
+<script id="upgrade-data" type="application/json">{"title":"Chief Charm Upgrade Calculator","intro":"Pick the level each charm is at now and the level you want. Each gear piece has 3 charms. The page adds up the materials, the charm score, the power gained, and the event points. Leave a row on \"None\" to skip it. Nothing is saved, and reloading the page clears your choices.","levels":[{"id":"level-1","name":"Level 1","materials":[{"itemId":"charm-guide","amount":5},{"itemId":"charm-design","amount":5}],"powerTotal":205700,"score":625},{"id":"level-2","name":"Level 2","materials":[{"itemId":"charm-guide","amount":40},{"itemId":"charm-design","amount":15}],"powerTotal":288000,"score":1250},{"id":"level-3","name":"Level 3","materials":[{"itemId":"charm-guide","amount":60},{"itemId":"charm-design","amount":40}],"powerTotal":370000,"score":3125},{"id":"level-4-stage-0","name":"Level 4 Stage 0","materials":[{"itemId":"charm-guide","amount":80},{"itemId":"charm-design","amount":100}],"powerTotal":452000,"score":8750},{"id":"level-4-stage-1","name":"Level 4 Stage 1","materials":[{"itemId":"charm-guide","amount":25},{"itemId":"charm-design","amount":50}],"powerTotal":483000,"score":2813},{"id":"level-4-stage-2","name":"Level 4 Stage 2","materials":[{"itemId":"charm-guide","amount":25},{"itemId":"charm-design","amount":50}],"powerTotal":514000,"score":2813},{"id":"level-4-stage-3","name":"Level 4 Stage 3","materials":[{"itemId":"charm-guide","amount":25},{"itemId":"charm-design","amount":50}],"powerTotal":545000,"score":2812},{"id":"level-5-stage-0","name":"Level 5 Stage 0","materials":[{"itemId":"charm-guide","amount":25},{"itemId":"charm-design","amount":50}],"powerTotal":576000,"score":2812},{"id":"level-5-stage-1","name":"Level 5 Stage 1","materials":[{"itemId":"charm-guide","amount":30},{"itemId":"charm-design","amount":75}],"powerTotal":607000,"score":3125},{"id":"level-5-stage-2","name":"Level 5 Stage 2","materials":[{"itemId":"charm-guide","amount":30},{"itemId":"charm-design","amount":75}],"powerTotal":638000,"score":3125},{"id":"level-5-stage-3","name":"Level 5 Stage 3","materials":[{"itemId":"charm-guide","amount":30},{"itemId":"charm-design","amount":75}],"powerTotal":669000,"score":3125},{"id":"level-6-stage-0","name":"Level 6 Stage 0","materials":[{"itemId":"charm-guide","amount":30},{"itemId":"charm-design","amount":75}],"powerTotal":700000,"score":3125},{"id":"level-6-stage-1","name":"Level 6 Stage 1","materials":[{"itemId":"charm-guide","amount":35},{"itemId":"charm-design","amount":100}],"powerTotal":731000,"score":3125},{"id":"level-6-stage-2","name":"Level 6 Stage 2","materials":[{"itemId":"charm-guide","amount":35},{"itemId":"charm-design","amount":100}],"powerTotal":762000,"score":3125},{"id":"level-6-stage-3","name":"Level 6 Stage 3","materials":[{"itemId":"charm-guide","amount":35},{"itemId":"charm-design","amount":100}],"powerTotal":793000,"score":3125},{"id":"level-7-stage-0","name":"Level 7 Stage 0","materials":[{"itemId":"charm-guide","amount":35},{"itemId":"charm-design","amount":100}],"powerTotal":824000,"score":3125},{"id":"level-7-stage-1","name":"Level 7 Stage 1","materials":[{"itemId":"charm-guide","amount":50},{"itemId":"charm-design","amount":100}],"powerTotal":855000,"score":3250},{"id":"level-7-stage-2","name":"Level 7 Stage 2","materials":[{"itemId":"charm-guide","amount":50},{"itemId":"charm-design","amount":100}],"powerTotal":886000,"score":3250},{"id":"level-7-stage-3","name":"Level 7 Stage 3","materials":[{"itemId":"charm-guide","amount":50},{"itemId":"charm-design","amount":100}],"powerTotal":917000,"score":3250},{"id":"level-8-stage-0","name":"Level 8 Stage 0","materials":[{"itemId":"charm-guide","amount":50},{"itemId":"charm-design","amount":100}],"powerTotal":948000,"score":3250},{"id":"level-8-stage-1","name":"Level 8 Stage 1","materials":[{"itemId":"charm-guide","amount":75},{"itemId":"charm-design","amount":100}],"powerTotal":979000,"score":3500},{"id":"level-8-stage-2","name":"Level 8 Stage 2","materials":[{"itemId":"charm-guide","amount":75},{"itemId":"charm-design","amount":100}],"powerTotal":1010000,"score":3500},{"id":"level-8-stage-3","name":"Level 8 Stage 3","materials":[{"itemId":"charm-guide","amount":75},{"itemId":"charm-design","amount":100}],"powerTotal":1041000,"score":3500},{"id":"level-9-stage-0","name":"Level 9 Stage 0","materials":[{"itemId":"charm-guide","amount":75},{"itemId":"charm-design","amount":100}],"powerTotal":1072000,"score":3500},{"id":"level-9-stage-1","name":"Level 9 Stage 1","materials":[{"itemId":"charm-guide","amount":105},{"itemId":"charm-design","amount":105}],"powerTotal":1103000,"score":3750},{"id":"level-9-stage-2","name":"Level 9 Stage 2","materials":[{"itemId":"charm-guide","amount":105},{"itemId":"charm-design","amount":105}],"powerTotal":1134000,"score":3750},{"id":"level-9-stage-3","name":"Level 9 Stage 3","materials":[{"itemId":"charm-guide","amount":105},{"itemId":"charm-design","amount":105}],"powerTotal":1165000,"score":3750},{"id":"level-10-stage-0","name":"Level 10 Stage 0","materials":[{"itemId":"charm-guide","amount":105},{"itemId":"charm-design","amount":105}],"powerTotal":1196000,"score":3750},{"id":"level-10-stage-1","name":"Level 10 Stage 1","materials":[{"itemId":"charm-guide","amount":140},{"itemId":"charm-design","amount":105}],"powerTotal":1227000,"score":4000},{"id":"level-10-stage-2","name":"Level 10 Stage 2","materials":[{"itemId":"charm-guide","amount":140},{"itemId":"charm-design","amount":105}],"powerTotal":1258000,"score":4000},{"id":"level-10-stage-3","name":"Level 10 Stage 3","materials":[{"itemId":"charm-guide","amount":140},{"itemId":"charm-design","amount":105}],"powerTotal":1289000,"score":4000},{"id":"level-11-stage-0","name":"Level 11 Stage 0","materials":[{"itemId":"charm-guide","amount":140},{"itemId":"charm-design","amount":105}],"powerTotal":1320000,"score":4000},{"id":"level-11-stage-1","name":"Level 11 Stage 1","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":3}],"powerTotal":1363200,"score":3400},{"id":"level-11-stage-2","name":"Level 11 Stage 2","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":3}],"powerTotal":1406400,"score":3400},{"id":"level-11-stage-3","name":"Level 11 Stage 3","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":3}],"powerTotal":1449600,"score":3400},{"id":"level-11-stage-4","name":"Level 11 Stage 4","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":3}],"powerTotal":1492800,"score":3400},{"id":"level-12-stage-0","name":"Level 12 Stage 0","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":3}],"powerTotal":1536000,"score":3400},{"id":"level-12-stage-1","name":"Level 12 Stage 1","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":6}],"powerTotal":1579200,"score":3600},{"id":"level-12-stage-2","name":"Level 12 Stage 2","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":6}],"powerTotal":1622400,"score":3600},{"id":"level-12-stage-3","name":"Level 12 Stage 3","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":6}],"powerTotal":1665600,"score":3600},{"id":"level-12-stage-4","name":"Level 12 Stage 4","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":6}],"powerTotal":1708800,"score":3600},{"id":"level-13-stage-0","name":"Level 13 Stage 0","materials":[{"itemId":"charm-guide","amount":116},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":6}],"powerTotal":1752000,"score":3600},{"id":"level-13-stage-1","name":"Level 13 Stage 1","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":9}],"powerTotal":1795200,"score":3800},{"id":"level-13-stage-2","name":"Level 13 Stage 2","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":9}],"powerTotal":1838400,"score":3800},{"id":"level-13-stage-3","name":"Level 13 Stage 3","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":9}],"powerTotal":1881600,"score":3800},{"id":"level-13-stage-4","name":"Level 13 Stage 4","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":9}],"powerTotal":1924800,"score":3800},{"id":"level-14-stage-0","name":"Level 14 Stage 0","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":9}],"powerTotal":1968000,"score":3800},{"id":"level-14-stage-1","name":"Level 14 Stage 1","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":14}],"powerTotal":2011200,"score":4000},{"id":"level-14-stage-2","name":"Level 14 Stage 2","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":14}],"powerTotal":2054400,"score":4000},{"id":"level-14-stage-3","name":"Level 14 Stage 3","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":14}],"powerTotal":2097600,"score":4000},{"id":"level-14-stage-4","name":"Level 14 Stage 4","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":14}],"powerTotal":2140800,"score":4000},{"id":"level-15-stage-0","name":"Level 15 Stage 0","materials":[{"itemId":"charm-guide","amount":120},{"itemId":"charm-design","amount":100},{"itemId":"charm-secrets","amount":14}],"powerTotal":2184000,"score":4000},{"id":"level-15-stage-1","name":"Level 15 Stage 1","materials":[{"itemId":"charm-guide","amount":130},{"itemId":"charm-design","amount":110},{"itemId":"charm-secrets","amount":20}],"powerTotal":2227200,"score":4200},{"id":"level-15-stage-2","name":"Level 15 Stage 2","materials":[{"itemId":"charm-guide","amount":130},{"itemId":"charm-design","amount":110},{"itemId":"charm-secrets","amount":20}],"powerTotal":2270400,"score":4200},{"id":"level-15-stage-3","name":"Level 15 Stage 3","materials":[{"itemId":"charm-guide","amount":130},{"itemId":"charm-design","amount":110},{"itemId":"charm-secrets","amount":20}],"powerTotal":2313600,"score":4200},{"id":"level-15-stage-4","name":"Level 15 Stage 4","materials":[{"itemId":"charm-guide","amount":130},{"itemId":"charm-design","amount":110},{"itemId":"charm-secrets","amount":20}],"powerTotal":2356800,"score":4200},{"id":"level-16-stage-0","name":"Level 16 Stage 0","materials":[{"itemId":"charm-guide","amount":130},{"itemId":"charm-design","amount":110},{"itemId":"charm-secrets","amount":20}],"powerTotal":2400000,"score":4200},{"id":"level-16-stage-1","name":"Level 16 Stage 1","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2424000,"score":2500},{"id":"level-16-stage-2","name":"Level 16 Stage 2","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2448000,"score":2500},{"id":"level-16-stage-3","name":"Level 16 Stage 3","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2472000,"score":2500},{"id":"level-16-stage-4","name":"Level 16 Stage 4","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2496000,"score":2500},{"id":"level-16-stage-5","name":"Level 16 Stage 5","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2520000,"score":2500},{"id":"level-16-stage-6","name":"Level 16 Stage 6","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2544000,"score":2500},{"id":"level-16-stage-7","name":"Level 16 Stage 7","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2568000,"score":2500},{"id":"level-16-stage-8","name":"Level 16 Stage 8","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2592000,"score":2500},{"id":"level-17-stage-0","name":"Level 17 Stage 0","materials":[{"itemId":"charm-guide","amount":85},{"itemId":"charm-design","amount":70},{"itemId":"charm-secrets","amount":15}],"powerTotal":2616000,"score":2500},{"id":"level-17-stage-1","name":"Level 17 Stage 1","materials":[{"itemId":"charm-guide","amount":100},{"itemId":"charm-design","amount":90},{"itemId":"charm-secrets","amount":20}],"powerTotal":2640000,"score":2700},{"id":"level-17-stage-2","name":"Level 17 Stage 2","materials":[{"itemId":"charm-guide","amount":150},{"itemId":"charm-design","amount":130},{"itemId":"charm-secrets","amount":20}],"powerTotal":2664000,"score":2700},{"id":"level-17-stage-3","name":"Level 17 Stage 3","materials":[{"itemId":"charm-guide","amount":150},{"itemId":"charm-design","amount":130},{"itemId":"charm-secrets","amount":20}],"powerTotal":2688000,"score":2700},{"id":"level-17-stage-4","name":"Level 17 Stage 4","materials":[{"itemId":"charm-guide","amount":150},{"itemId":"charm-design","amount":130},{"itemId":"charm-secrets","amount":20}],"powerTotal":2712000,"score":2700},{"id":"level-17-stage-5","name":"Level 17 Stage 5","materials":[{"itemId":"charm-guide","amount":150},{"itemId":"charm-design","amount":130},{"itemId":"charm-secrets","amount":20}],"powerTotal":2736000,"score":2700},{"id":"level-17-stage-6","name":"Level 17 Stage 6","materials":[{"itemId":"charm-guide","amount":150},{"itemId":"charm-design","amount":130},{"itemId":"charm-secrets","amount":20}],"powerTotal":2760000,"score":2700},{"id":"level-17-stage-7","name":"Level 17 Stage 7","materials":[{"itemId":"charm-guide","amount":150},{"itemId":"charm-design","amount":130},{"itemId":"charm-secrets","amount":20}],"powerTotal":2784000,"score":2700},{"id":"level-17-stage-8","name":"Level 17 Stage 8","materials":[{"itemId":"charm-guide","amount":150},{"itemId":"charm-design","amount":130},{"itemId":"charm-secrets","amount":20}],"powerTotal":2808000,"score":2700},{"id":"level-18-stage-0","name":"Level 18 Stage 0","materials":[{"itemId":"charm-guide","amount":150},{"itemId":"charm-design","amount":130},{"itemId":"charm-secrets","amount":20}],"powerTotal":2832000,"score":2700}],"rows":[{"label":"Cap charm 1","group":"Cap"},{"label":"Cap charm 2","group":"Cap"},{"label":"Cap charm 3","group":"Cap"},{"label":"Watch charm 1","group":"Watch"},{"label":"Watch charm 2","group":"Watch"},{"label":"Watch charm 3","group":"Watch"},{"label":"Coat charm 1","group":"Coat"},{"label":"Coat charm 2","group":"Coat"},{"label":"Coat charm 3","group":"Coat"},{"label":"Pants charm 1","group":"Pants"},{"label":"Pants charm 2","group":"Pants"},{"label":"Pants charm 3","group":"Pants"},{"label":"Ring charm 1","group":"Ring"},{"label":"Ring charm 2","group":"Ring"},{"label":"Ring charm 3","group":"Ring"},{"label":"Weapon charm 1","group":"Weapon"},{"label":"Weapon charm 2","group":"Weapon"},{"label":"Weapon charm 3","group":"Weapon"}],"items":{"charm-guide":{"name":"Charm Guide","img":"/images/items/charm-guide.png"},"charm-design":{"name":"Charm Design","img":"/images/items/charm-design.png"},"charm-secrets":{"name":"Charm Secrets","img":"/images/items/charm-secrets.png"}},"materialOrder":["charm-guide","charm-design","charm-secrets"],"perScore":{"svs":70,"allianceShowdown":45,"kingOfIcefield":70,"hallOfChief":1000},"scoreLabel":"Charm score","pieceLabel":"Charm","tableTitle":"Chief charms","eventsNote":"Event points are the charm score times the points that the \"Raise Chief Charm max score\" row pays in each event. The score of the steps inside a level is an even split of the level score, taken from WoS Tools."}</script>
+<script>
+(function () {
+  const DATA = JSON.parse(document.getElementById('upgrade-data').textContent);
+  const fmt = (n) => n.toLocaleString('en-US');
+  const rows = DATA.rows.map((row) => ({ label: row.label, group: row.group, from: '', to: '' }));
+  const EVENTS = [['svs', 'SvS'], ['allianceShowdown', 'Alliance Showdown'], ['kingOfIcefield', 'King of Icefield'], ['hallOfChief', 'Hall of Chief']];
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function levelIndex(id) {
+    return id === '' ? -1 : DATA.levels.findIndex((l) => l.id === id);
+  }
+
+  function calculate() {
+    const totals = new Map();
+    let score = 0, power = 0, steps = 0;
+    const issues = rows.map((row) => {
+      const from = levelIndex(row.from);
+      const to = levelIndex(row.to);
+      if (to === -1) return '';
+      if (to < from) return 'The end level is below the start level, so this row is skipped.';
+      if (to === from) return '';
+      for (let k = from + 1; k <= to; k++) {
+        steps++;
+        score += DATA.levels[k].score;
+        DATA.levels[k].materials.forEach((m) => totals.set(m.itemId, (totals.get(m.itemId) || 0) + m.amount));
+      }
+      power += DATA.levels[to].powerTotal - (from === -1 ? 0 : DATA.levels[from].powerTotal);
+      return '';
+    });
+    return { totals, score, power, steps, issues };
+  }
+
+  function renderResults(result) {
+    const stats = document.getElementById('stats');
+    stats.replaceChildren();
+    [[DATA.scoreLabel, result.score], ['Power gained', result.power], ['Steps', result.steps]].forEach(([label, value]) => {
+      const box = el('div', 'stat');
+      box.append(el('div', 'value', fmt(value)), el('div', 'label', label));
+      stats.append(box);
+    });
+
+    const matCard = document.getElementById('materials-card');
+    matCard.replaceChildren();
+    const matTable = el('table');
+    const head = matTable.createTHead().insertRow();
+    ['Material', 'Amount'].forEach((l, i) => head.append(el('th', i ? 'num' : '', l)));
+    const body = matTable.createTBody();
+    DATA.materialOrder.forEach((itemId) => {
+      const amount = result.totals.get(itemId) || 0;
+      if (amount === 0) return;
+      const item = DATA.items[itemId];
+      const row = body.insertRow();
+      const wrap = el('span', 'mat');
+      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      wrap.append(img, document.createTextNode(item.name));
+      row.insertCell().append(wrap);
+      const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(amount);
+    });
+    if (!body.rows.length) { const row = body.insertRow(); const c = row.insertCell(); c.colSpan = 2; c.className = 'note'; c.textContent = 'Choose a start and end level to see the materials.'; }
+    matCard.append(matTable);
+
+    const evCard = document.getElementById('events-card');
+    evCard.replaceChildren();
+    const evTable = el('table');
+    const evHead = evTable.createTHead().insertRow();
+    ['Event', 'Points'].forEach((l, i) => evHead.append(el('th', i ? 'num' : '', l)));
+    const evBody = evTable.createTBody();
+    EVENTS.forEach(([key, name]) => {
+      const row = evBody.insertRow();
+      row.insertCell().textContent = name;
+      const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(result.score * DATA.perScore[key]);
+    });
+    evCard.append(evTable);
+  }
+
+  function optionList(select, noneLabel) {
+    select.replaceChildren();
+    const none = el('option', '', noneLabel); none.value = ''; select.append(none);
+    DATA.levels.forEach((l) => { const o = el('option', '', l.name); o.value = l.id; select.append(o); });
+  }
+
+  function renderTable(issues) {
+    const table = document.getElementById('piece-table');
+    table.replaceChildren();
+    const head = table.createTHead().insertRow();
+    [DATA.pieceLabel, 'From', 'To', ''].forEach((l) => head.append(el('th', '', l)));
+    const body = table.createTBody();
+    let lastGroup = null;
+    rows.forEach((row, i) => {
+      if (row.group && row.group !== lastGroup) {
+        lastGroup = row.group;
+        const g = body.insertRow(); g.className = 'group-row'; const c = g.insertCell(); c.colSpan = 4; c.textContent = row.group;
+      }
+      const tr = body.insertRow();
+      tr.insertCell().textContent = row.label;
+      [['from', 'None (not started)'], ['to', 'None (skip)']].forEach(([key, noneLabel]) => {
+        const select = el('select', 'level');
+        optionList(select, noneLabel);
+        select.value = row[key];
+        select.setAttribute('aria-label', `${row.label} ${key}`);
+        select.addEventListener('change', () => { row[key] = select.value; update(); });
+        tr.insertCell().append(select);
+      });
+      const warn = tr.insertCell();
+      warn.className = 'warn';
+      warn.textContent = issues[i] || '';
+    });
+  }
+
+  function update() {
+    const result = calculate();
+    renderResults(result);
+    document.querySelectorAll('#piece-table tbody tr:not(.group-row)').forEach((tr, i) => { tr.lastElementChild.textContent = result.issues[i] || ''; });
+  }
+
+  function render() {
+    const result = calculate();
+    renderTable(result.issues);
+    renderResults(result);
+  }
+
+  document.getElementById('page-title').textContent = DATA.title;
+  document.getElementById('page-intro').textContent = DATA.intro;
+  document.getElementById('all-label').textContent = `Set every ${DATA.pieceLabel.toLowerCase()}`;
+  document.getElementById('events-note').textContent = DATA.eventsNote;
+  document.getElementById('table-title').textContent = DATA.tableTitle;
+  optionList(document.getElementById('all-from'), 'None (not started)');
+  optionList(document.getElementById('all-to'), 'None (skip)');
+  document.getElementById('all-apply').addEventListener('click', () => {
+    const from = document.getElementById('all-from').value, to = document.getElementById('all-to').value;
+    rows.forEach((r) => { r.from = from; r.to = to; });
+    render();
+  });
+  document.getElementById('reset').addEventListener('click', () => {
+    rows.forEach((r) => { r.from = ''; r.to = ''; });
+    document.getElementById('all-from').value = '';
+    document.getElementById('all-to').value = '';
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
