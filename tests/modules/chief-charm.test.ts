@@ -5,6 +5,7 @@ import {
   ChiefCharmSlotQuery,
   chiefCharmSlots,
 } from '@/modules/chief-charm';
+import { events } from '@/modules/events';
 import { items } from '@/modules/items';
 import { testQueryBaseContract } from '../helpers';
 
@@ -86,5 +87,63 @@ describe('Chief Charm system', () => {
     const infantry = chiefCharmSlots().byTroopType('Infantry').first()!;
     expect(chiefCharmImage(infantry, 1)).toBe('/images/chief-charm/Infantry-1.png');
     expect(chiefCharmImage(infantry, 18)).toBe('/images/chief-charm/Infantry-18.png');
+  });
+});
+
+describe('charm score', () => {
+  const MAIN_LEVEL_SCORES = [
+    625, 1250, 3125, 8750, 11250, 12500, 12500, 13000, 14000, 15000, 16000, 17000, 18000, 19000,
+    20000, 21000, 22500, 24300,
+  ];
+
+  it('gives every entry a score', () => {
+    const levels = chiefCharm().get();
+    expect(levels).toHaveLength(75);
+    levels.forEach((l) => expect(l.score).toBeGreaterThan(0));
+  });
+
+  it('adds the steps that lead to each level up to the score of that level', () => {
+    let index = 0;
+    MAIN_LEVEL_SCORES.forEach((score, i) => {
+      const steps = i + 1 <= 4 ? 1 : i + 1 <= 11 ? 4 : i + 1 <= 16 ? 5 : 9;
+      const group = chiefCharm()
+        .get()
+        .slice(index, index + steps);
+      expect(group.reduce((sum, l) => sum + l.score, 0)).toBe(score);
+      expect(group[steps - 1].level).toBe(i + 1);
+      expect(group[steps - 1].stage).toBe(0);
+      index += steps;
+    });
+    expect(index).toBe(75);
+  });
+
+  it('splits the score of a level evenly with the remainder on the first steps', () => {
+    const level5 = chiefCharm()
+      .get()
+      .filter(
+        (l) =>
+          l.id === 'level-4-stage-1' ||
+          l.id === 'level-4-stage-2' ||
+          l.id === 'level-4-stage-3' ||
+          l.id === 'level-5-stage-0',
+      )
+      .map((l) => l.score);
+    expect(level5).toEqual([2813, 2813, 2812, 2812]);
+  });
+
+  it('adds up to 249,800 over all steps', () => {
+    expect(
+      chiefCharm()
+        .get()
+        .reduce((sum, l) => sum + l.score, 0),
+    ).toBe(249800);
+  });
+
+  it('matches the main level scores in the King of Icefield note from the wiki', () => {
+    const note = events().find('king-of-icefield')!.days![3].note!;
+    const wiki = [
+      ...note.split('Chief Charm score for each level up:')[1].matchAll(/Lv\. \d+ ([\d,]+)/g),
+    ].map((m) => Number(m[1].replace(/,/g, '')));
+    expect(wiki).toEqual(MAIN_LEVEL_SCORES.slice(0, 16));
   });
 });

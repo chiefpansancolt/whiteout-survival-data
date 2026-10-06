@@ -103,3 +103,59 @@ describe('Chief Gear system', () => {
     expect(chiefGearImage(cap, legendaryT6)).toBe(cap.images.Legendary);
   });
 });
+
+describe('gear score', () => {
+  const byId = (id: string) => chiefGear().find(id)!;
+
+  it('gives every row a score', () => {
+    expect(
+      chiefGear()
+        .get()
+        .every((l) => l.score > 0),
+    ).toBe(true);
+  });
+
+  it('has the score of each early level from the wiki and WoS Tools', () => {
+    expect(
+      chiefGear()
+        .get()
+        .slice(0, 8)
+        .map((l) => l.score),
+    ).toEqual([1125, 1875, 3000, 4500, 5100, 5440, 3230, 3230]);
+  });
+
+  it('splits the score of a level evenly over the steps that lead to it', () => {
+    expect(byId('legendary-star-0-stage-1').score).toBe(2390);
+    expect(byId('legendary-star-0-stage-2').score).toBe(2390);
+    expect(byId('legendary-star-0-stage-3').score).toBe(2390);
+    expect(byId('legendary-star-0-stage-0').score).toBe(2390);
+    expect(byId('legendary-star-1-stage-0').score).toBe(2390);
+  });
+
+  it('adds the steps that lead to each level up to the score of that level', () => {
+    const levels = chiefGear().get();
+    const levelScores = new Map<string, number>([
+      ['common-star-0', 1125],
+      ['legendary-star-0-stage-0', 9560],
+      ['legendary-star-3-stage-0', 9560],
+      ['legendary-t4-star-0-stage-0', 15560],
+      ['legendary-t4-star-1-stage-0', 15400],
+      ['legendary-t6-star-3-stage-0', 15390],
+    ]);
+    const start = (id: string) => {
+      const end = levels.findIndex((l) => l.id === id);
+      let first = end;
+      while (first > 0 && levels[first - 1].stage > 0) first--;
+      return levels.slice(first, end + 1).reduce((sum, l) => sum + l.score, 0);
+    };
+    levelScores.forEach((score, id) => expect(start(id)).toBe(score));
+  });
+
+  it('adds up to 461,880 over all steps', () => {
+    expect(
+      chiefGear()
+        .get()
+        .reduce((sum, l) => sum + l.score, 0),
+    ).toBe(461880);
+  });
+});

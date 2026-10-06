@@ -15,7 +15,8 @@
       }
     ],
     "statTotalPercent": 9.0,
-    "powerTotal": 205700
+    "powerTotal": 205700,
+    "score": 625
   },
   {
     "id": "level-2",
@@ -33,7 +34,8 @@
       }
     ],
     "statTotalPercent": 12.0,
-    "powerTotal": 288000
+    "powerTotal": 288000,
+    "score": 1250
   },
   {
     "id": "level-3",
@@ -51,7 +53,8 @@
       }
     ],
     "statTotalPercent": 16.0,
-    "powerTotal": 370000
+    "powerTotal": 370000,
+    "score": 3125
   },
   {
     "id": "level-4-stage-0",
@@ -69,7 +72,8 @@
       }
     ],
     "statTotalPercent": 19.0,
-    "powerTotal": 452000
+    "powerTotal": 452000,
+    "score": 8750
   },
   {
     "id": "level-4-stage-1",
@@ -87,7 +91,8 @@
       }
     ],
     "statTotalPercent": 20.5,
-    "powerTotal": 483000
+    "powerTotal": 483000,
+    "score": 2813
   },
   {
     "id": "level-4-stage-2",
@@ -105,7 +110,8 @@
       }
     ],
     "statTotalPercent": 22.0,
-    "powerTotal": 514000
+    "powerTotal": 514000,
+    "score": 2813
   },
   {
     "id": "level-4-stage-3",
@@ -123,7 +129,8 @@
       }
     ],
     "statTotalPercent": 23.5,
-    "powerTotal": 545000
+    "powerTotal": 545000,
+    "score": 2812
   },
   {
     "id": "level-5-stage-0",
@@ -141,7 +148,8 @@
       }
     ],
     "statTotalPercent": 25.0,
-    "powerTotal": 576000
+    "powerTotal": 576000,
+    "score": 2812
   },
   {
     "id": "level-5-stage-1",
@@ -159,7 +167,8 @@
       }
     ],
     "statTotalPercent": 26.25,
-    "powerTotal": 607000
+    "powerTotal": 607000,
+    "score": 3125
   },
   {
     "id": "level-5-stage-2",
@@ -177,7 +186,8 @@
       }
     ],
     "statTotalPercent": 27.5,
-    "powerTotal": 638000
+    "powerTotal": 638000,
+    "score": 3125
   },
   {
     "id": "level-5-stage-3",
@@ -195,7 +205,8 @@
       }
     ],
     "statTotalPercent": 28.75,
-    "powerTotal": 669000
+    "powerTotal": 669000,
+    "score": 3125
   },
   {
     "id": "level-6-stage-0",
@@ -213,7 +224,8 @@
       }
     ],
     "statTotalPercent": 30.0,
-    "powerTotal": 700000
+    "powerTotal": 700000,
+    "score": 3125
   },
   {
     "id": "level-6-stage-1",
@@ -231,7 +243,8 @@
       }
     ],
     "statTotalPercent": 31.25,
-    "powerTotal": 731000
+    "powerTotal": 731000,
+    "score": 3125
   },
   {
     "id": "level-6-stage-2",
@@ -249,7 +262,8 @@
       }
     ],
     "statTotalPercent": 32.5,
-    "powerTotal": 762000
+    "powerTotal": 762000,
+    "score": 3125
   },
   {
     "id": "level-6-stage-3",
@@ -267,7 +281,8 @@
       }
     ],
     "statTotalPercent": 33.75,
-    "powerTotal": 793000
+    "powerTotal": 793000,
+    "score": 3125
   },
   {
     "id": "level-7-stage-0",
@@ -285,7 +300,8 @@
       }
     ],
     "statTotalPercent": 35.0,
-    "powerTotal": 824000
+    "powerTotal": 824000,
+    "score": 3125
   },
   {
     "id": "level-7-stage-1",
@@ -303,7 +319,8 @@
       }
     ],
     "statTotalPercent": 36.25,
-    "powerTotal": 855000
+    "powerTotal": 855000,
+    "score": 3250
   },
   {
     "id": "level-7-stage-2",
@@ -321,7 +338,8 @@
       }
     ],
     "statTotalPercent": 37.5,
-    "powerTotal": 886000
+    "powerTotal": 886000,
+    "score": 3250
   },
   {
     "id": "level-7-stage-3",
@@ -339,7 +357,8 @@
       }
     ],
     "statTotalPercent": 38.75,
-    "powerTotal": 917000
+    "powerTotal": 917000,
+    "score": 3250
   },
   {
     "id": "level-8-stage-0",
@@ -357,7 +376,8 @@
       }
     ],
     "statTotalPercent": 40.0,
-    "powerTotal": 948000
+    "powerTotal": 948000,
+    "score": 3250
   },
   {
     "id": "level-8-stage-1",
@@ -375,7 +395,8 @@
       }
     ],
     "statTotalPercent": 41.25,
-    "powerTotal": 979000
+    "powerTotal": 979000,
+    "score": 3500
   },
   {
     "id": "level-8-stage-2",
@@ -393,7 +414,8 @@
       }
     ],
     "statTotalPercent": 42.5,
-    "powerTotal": 1010000
+    "powerTotal": 1010000,
+    "score": 3500
   },
   {
     "id": "level-8-stage-3",
@@ -411,7 +433,8 @@
       }
     ],
     "statTotalPercent": 43.75,
-    "powerTotal": 1041000
+    "powerTotal": 1041000,
+    "score": 3500
   },
   {
     "id": "level-9-stage-0",
@@ -429,7 +452,8 @@
       }
     ],
     "statTotalPercent": 45.0,
-    "powerTotal": 1072000
+    "powerTotal": 1072000,
+    "score": 3500
   },
   {
     "id": "level-9-stage-1",
@@ -447,7 +471,8 @@
       }
     ],
     "statTotalPercent": 46.25,
-    "powerTotal": 1103000
+    "powerTotal": 1103000,
+    "score": 3750
   },
   {
     "id": "level-9-stage-2",
@@ -465,7 +490,8 @@
       }
     ],
     "statTotalPercent": 47.5,
-    "powerTotal": 1134000
+    "powerTotal": 1134000,
+    "score": 3750
   },
   {
     "id": "level-9-stage-3",
@@ -483,7 +509,8 @@
       }
     ],
     "statTotalPercent": 48.75,
-    "powerTotal": 1165000
+    "powerTotal": 1165000,
+    "score": 3750
   },
   {
     "id": "level-10-stage-0",
@@ -501,7 +528,8 @@
       }
     ],
     "statTotalPercent": 50.0,
-    "powerTotal": 1196000
+    "powerTotal": 1196000,
+    "score": 3750
   },
   {
     "id": "level-10-stage-1",
@@ -519,7 +547,8 @@
       }
     ],
     "statTotalPercent": 51.25,
-    "powerTotal": 1227000
+    "powerTotal": 1227000,
+    "score": 4000
   },
   {
     "id": "level-10-stage-2",
@@ -537,7 +566,8 @@
       }
     ],
     "statTotalPercent": 52.5,
-    "powerTotal": 1258000
+    "powerTotal": 1258000,
+    "score": 4000
   },
   {
     "id": "level-10-stage-3",
@@ -555,7 +585,8 @@
       }
     ],
     "statTotalPercent": 53.75,
-    "powerTotal": 1289000
+    "powerTotal": 1289000,
+    "score": 4000
   },
   {
     "id": "level-11-stage-0",
@@ -573,7 +604,8 @@
       }
     ],
     "statTotalPercent": 55.0,
-    "powerTotal": 1320000
+    "powerTotal": 1320000,
+    "score": 4000
   },
   {
     "id": "level-11-stage-1",
@@ -595,7 +627,8 @@
       }
     ],
     "statTotalPercent": 56.8,
-    "powerTotal": 1363200
+    "powerTotal": 1363200,
+    "score": 3400
   },
   {
     "id": "level-11-stage-2",
@@ -617,7 +650,8 @@
       }
     ],
     "statTotalPercent": 58.6,
-    "powerTotal": 1406400
+    "powerTotal": 1406400,
+    "score": 3400
   },
   {
     "id": "level-11-stage-3",
@@ -639,7 +673,8 @@
       }
     ],
     "statTotalPercent": 60.4,
-    "powerTotal": 1449600
+    "powerTotal": 1449600,
+    "score": 3400
   },
   {
     "id": "level-11-stage-4",
@@ -661,7 +696,8 @@
       }
     ],
     "statTotalPercent": 62.2,
-    "powerTotal": 1492800
+    "powerTotal": 1492800,
+    "score": 3400
   },
   {
     "id": "level-12-stage-0",
@@ -683,7 +719,8 @@
       }
     ],
     "statTotalPercent": 64.0,
-    "powerTotal": 1536000
+    "powerTotal": 1536000,
+    "score": 3400
   },
   {
     "id": "level-12-stage-1",
@@ -705,7 +742,8 @@
       }
     ],
     "statTotalPercent": 65.8,
-    "powerTotal": 1579200
+    "powerTotal": 1579200,
+    "score": 3600
   },
   {
     "id": "level-12-stage-2",
@@ -727,7 +765,8 @@
       }
     ],
     "statTotalPercent": 67.6,
-    "powerTotal": 1622400
+    "powerTotal": 1622400,
+    "score": 3600
   },
   {
     "id": "level-12-stage-3",
@@ -749,7 +788,8 @@
       }
     ],
     "statTotalPercent": 69.4,
-    "powerTotal": 1665600
+    "powerTotal": 1665600,
+    "score": 3600
   },
   {
     "id": "level-12-stage-4",
@@ -771,7 +811,8 @@
       }
     ],
     "statTotalPercent": 71.2,
-    "powerTotal": 1708800
+    "powerTotal": 1708800,
+    "score": 3600
   },
   {
     "id": "level-13-stage-0",
@@ -793,7 +834,8 @@
       }
     ],
     "statTotalPercent": 73.0,
-    "powerTotal": 1752000
+    "powerTotal": 1752000,
+    "score": 3600
   },
   {
     "id": "level-13-stage-1",
@@ -815,7 +857,8 @@
       }
     ],
     "statTotalPercent": 74.8,
-    "powerTotal": 1795200
+    "powerTotal": 1795200,
+    "score": 3800
   },
   {
     "id": "level-13-stage-2",
@@ -837,7 +880,8 @@
       }
     ],
     "statTotalPercent": 76.6,
-    "powerTotal": 1838400
+    "powerTotal": 1838400,
+    "score": 3800
   },
   {
     "id": "level-13-stage-3",
@@ -859,7 +903,8 @@
       }
     ],
     "statTotalPercent": 78.4,
-    "powerTotal": 1881600
+    "powerTotal": 1881600,
+    "score": 3800
   },
   {
     "id": "level-13-stage-4",
@@ -881,7 +926,8 @@
       }
     ],
     "statTotalPercent": 80.2,
-    "powerTotal": 1924800
+    "powerTotal": 1924800,
+    "score": 3800
   },
   {
     "id": "level-14-stage-0",
@@ -903,7 +949,8 @@
       }
     ],
     "statTotalPercent": 82.0,
-    "powerTotal": 1968000
+    "powerTotal": 1968000,
+    "score": 3800
   },
   {
     "id": "level-14-stage-1",
@@ -925,7 +972,8 @@
       }
     ],
     "statTotalPercent": 83.8,
-    "powerTotal": 2011200
+    "powerTotal": 2011200,
+    "score": 4000
   },
   {
     "id": "level-14-stage-2",
@@ -947,7 +995,8 @@
       }
     ],
     "statTotalPercent": 85.6,
-    "powerTotal": 2054400
+    "powerTotal": 2054400,
+    "score": 4000
   },
   {
     "id": "level-14-stage-3",
@@ -969,7 +1018,8 @@
       }
     ],
     "statTotalPercent": 87.4,
-    "powerTotal": 2097600
+    "powerTotal": 2097600,
+    "score": 4000
   },
   {
     "id": "level-14-stage-4",
@@ -991,7 +1041,8 @@
       }
     ],
     "statTotalPercent": 89.2,
-    "powerTotal": 2140800
+    "powerTotal": 2140800,
+    "score": 4000
   },
   {
     "id": "level-15-stage-0",
@@ -1013,7 +1064,8 @@
       }
     ],
     "statTotalPercent": 91.0,
-    "powerTotal": 2184000
+    "powerTotal": 2184000,
+    "score": 4000
   },
   {
     "id": "level-15-stage-1",
@@ -1035,7 +1087,8 @@
       }
     ],
     "statTotalPercent": 92.8,
-    "powerTotal": 2227200
+    "powerTotal": 2227200,
+    "score": 4200
   },
   {
     "id": "level-15-stage-2",
@@ -1057,7 +1110,8 @@
       }
     ],
     "statTotalPercent": 94.6,
-    "powerTotal": 2270400
+    "powerTotal": 2270400,
+    "score": 4200
   },
   {
     "id": "level-15-stage-3",
@@ -1079,7 +1133,8 @@
       }
     ],
     "statTotalPercent": 96.4,
-    "powerTotal": 2313600
+    "powerTotal": 2313600,
+    "score": 4200
   },
   {
     "id": "level-15-stage-4",
@@ -1101,7 +1156,8 @@
       }
     ],
     "statTotalPercent": 98.2,
-    "powerTotal": 2356800
+    "powerTotal": 2356800,
+    "score": 4200
   },
   {
     "id": "level-16-stage-0",
@@ -1123,7 +1179,8 @@
       }
     ],
     "statTotalPercent": 100.0,
-    "powerTotal": 2400000
+    "powerTotal": 2400000,
+    "score": 4200
   },
   {
     "id": "level-16-stage-1",
@@ -1145,7 +1202,8 @@
       }
     ],
     "statTotalPercent": 101.0,
-    "powerTotal": 2424000
+    "powerTotal": 2424000,
+    "score": 2500
   },
   {
     "id": "level-16-stage-2",
@@ -1167,7 +1225,8 @@
       }
     ],
     "statTotalPercent": 102.0,
-    "powerTotal": 2448000
+    "powerTotal": 2448000,
+    "score": 2500
   },
   {
     "id": "level-16-stage-3",
@@ -1189,7 +1248,8 @@
       }
     ],
     "statTotalPercent": 103.0,
-    "powerTotal": 2472000
+    "powerTotal": 2472000,
+    "score": 2500
   },
   {
     "id": "level-16-stage-4",
@@ -1211,7 +1271,8 @@
       }
     ],
     "statTotalPercent": 104.0,
-    "powerTotal": 2496000
+    "powerTotal": 2496000,
+    "score": 2500
   },
   {
     "id": "level-16-stage-5",
@@ -1233,7 +1294,8 @@
       }
     ],
     "statTotalPercent": 105.0,
-    "powerTotal": 2520000
+    "powerTotal": 2520000,
+    "score": 2500
   },
   {
     "id": "level-16-stage-6",
@@ -1255,7 +1317,8 @@
       }
     ],
     "statTotalPercent": 106.0,
-    "powerTotal": 2544000
+    "powerTotal": 2544000,
+    "score": 2500
   },
   {
     "id": "level-16-stage-7",
@@ -1277,7 +1340,8 @@
       }
     ],
     "statTotalPercent": 107.0,
-    "powerTotal": 2568000
+    "powerTotal": 2568000,
+    "score": 2500
   },
   {
     "id": "level-16-stage-8",
@@ -1299,7 +1363,8 @@
       }
     ],
     "statTotalPercent": 108.0,
-    "powerTotal": 2592000
+    "powerTotal": 2592000,
+    "score": 2500
   },
   {
     "id": "level-17-stage-0",
@@ -1321,7 +1386,8 @@
       }
     ],
     "statTotalPercent": 109.0,
-    "powerTotal": 2616000
+    "powerTotal": 2616000,
+    "score": 2500
   },
   {
     "id": "level-17-stage-1",
@@ -1343,7 +1409,8 @@
       }
     ],
     "statTotalPercent": 110.0,
-    "powerTotal": 2640000
+    "powerTotal": 2640000,
+    "score": 2700
   },
   {
     "id": "level-17-stage-2",
@@ -1365,7 +1432,8 @@
       }
     ],
     "statTotalPercent": 111.0,
-    "powerTotal": 2664000
+    "powerTotal": 2664000,
+    "score": 2700
   },
   {
     "id": "level-17-stage-3",
@@ -1387,7 +1455,8 @@
       }
     ],
     "statTotalPercent": 112.0,
-    "powerTotal": 2688000
+    "powerTotal": 2688000,
+    "score": 2700
   },
   {
     "id": "level-17-stage-4",
@@ -1409,7 +1478,8 @@
       }
     ],
     "statTotalPercent": 113.0,
-    "powerTotal": 2712000
+    "powerTotal": 2712000,
+    "score": 2700
   },
   {
     "id": "level-17-stage-5",
@@ -1431,7 +1501,8 @@
       }
     ],
     "statTotalPercent": 114.0,
-    "powerTotal": 2736000
+    "powerTotal": 2736000,
+    "score": 2700
   },
   {
     "id": "level-17-stage-6",
@@ -1453,7 +1524,8 @@
       }
     ],
     "statTotalPercent": 115.0,
-    "powerTotal": 2760000
+    "powerTotal": 2760000,
+    "score": 2700
   },
   {
     "id": "level-17-stage-7",
@@ -1475,7 +1547,8 @@
       }
     ],
     "statTotalPercent": 116.0,
-    "powerTotal": 2784000
+    "powerTotal": 2784000,
+    "score": 2700
   },
   {
     "id": "level-17-stage-8",
@@ -1497,7 +1570,8 @@
       }
     ],
     "statTotalPercent": 117.0,
-    "powerTotal": 2808000
+    "powerTotal": 2808000,
+    "score": 2700
   },
   {
     "id": "level-18-stage-0",
@@ -1519,6 +1593,7 @@
       }
     ],
     "statTotalPercent": 118.0,
-    "powerTotal": 2832000
+    "powerTotal": 2832000,
+    "score": 2700
   }
 ]

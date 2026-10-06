@@ -21,4 +21,10 @@ export interface ChiefCharmLevel {
   materials: ChiefCharmMaterial[];
   statTotalPercent: number;
   powerTotal: number;
+  /**
+   * Charm score the upgrade step to this entry adds. Events count it, such as the SvS row "Raise
+   * Chief Charm max score by 1". It does not depend on power. The score of a whole level is split
+   * evenly over the steps that lead to it, with the remainder on the first steps.
+   */
+  score: number;
 }

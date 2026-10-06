@@ -16,7 +16,8 @@
       }
     ],
     "statTotalPercent": 9.35,
-    "powerTotal": 224400
+    "powerTotal": 224400,
+    "score": 1125
   },
   {
     "id": "common-star-1",
@@ -35,7 +36,8 @@
       }
     ],
     "statTotalPercent": 12.75,
-    "powerTotal": 306000
+    "powerTotal": 306000,
+    "score": 1875
   },
   {
     "id": "rare-star-0",
@@ -54,7 +56,8 @@
       }
     ],
     "statTotalPercent": 17.0,
-    "powerTotal": 408000
+    "powerTotal": 408000,
+    "score": 3000
   },
   {
     "id": "rare-star-1",
@@ -73,7 +76,8 @@
       }
     ],
     "statTotalPercent": 21.25,
-    "powerTotal": 510000
+    "powerTotal": 510000,
+    "score": 4500
   },
   {
     "id": "rare-star-2",
@@ -88,7 +92,8 @@
       }
     ],
     "statTotalPercent": 25.5,
-    "powerTotal": 612000
+    "powerTotal": 612000,
+    "score": 5100
   },
   {
     "id": "rare-star-3",
@@ -103,7 +108,8 @@
       }
     ],
     "statTotalPercent": 29.75,
-    "powerTotal": 714000
+    "powerTotal": 714000,
+    "score": 5440
   },
   {
     "id": "epic-star-0",
@@ -118,7 +124,8 @@
       }
     ],
     "statTotalPercent": 34.0,
-    "powerTotal": 816000
+    "powerTotal": 816000,
+    "score": 3230
   },
   {
     "id": "epic-star-1",
@@ -133,7 +140,8 @@
       }
     ],
     "statTotalPercent": 36.89,
-    "powerTotal": 885360
+    "powerTotal": 885360,
+    "score": 3230
   },
   {
     "id": "epic-star-2",
@@ -156,7 +164,8 @@
       }
     ],
     "statTotalPercent": 39.78,
-    "powerTotal": 954720
+    "powerTotal": 954720,
+    "score": 3225
   },
   {
     "id": "epic-star-3",
@@ -179,7 +188,8 @@
       }
     ],
     "statTotalPercent": 42.67,
-    "powerTotal": 1024080
+    "powerTotal": 1024080,
+    "score": 3225
   },
   {
     "id": "epic-t1-star-0",
@@ -202,7 +212,8 @@
       }
     ],
     "statTotalPercent": 45.56,
-    "powerTotal": 1093440
+    "powerTotal": 1093440,
+    "score": 3440
   },
   {
     "id": "epic-t1-star-1",
@@ -225,7 +236,8 @@
       }
     ],
     "statTotalPercent": 48.45,
-    "powerTotal": 1162800
+    "powerTotal": 1162800,
+    "score": 3440
   },
   {
     "id": "epic-t1-star-2",
@@ -248,7 +260,8 @@
       }
     ],
     "statTotalPercent": 51.34,
-    "powerTotal": 1232160
+    "powerTotal": 1232160,
+    "score": 4085
   },
   {
     "id": "epic-t1-star-3",
@@ -271,7 +284,8 @@
       }
     ],
     "statTotalPercent": 54.23,
-    "powerTotal": 1301520
+    "powerTotal": 1301520,
+    "score": 4085
   },
   {
     "id": "mythic-star-0",
@@ -294,7 +308,8 @@
       }
     ],
     "statTotalPercent": 56.78,
-    "powerTotal": 1362720
+    "powerTotal": 1362720,
+    "score": 6250
   },
   {
     "id": "mythic-star-1",
@@ -317,7 +332,8 @@
       }
     ],
     "statTotalPercent": 59.33,
-    "powerTotal": 1423920
+    "powerTotal": 1423920,
+    "score": 6250
   },
   {
     "id": "mythic-star-2",
@@ -340,7 +356,8 @@
       }
     ],
     "statTotalPercent": 61.88,
-    "powerTotal": 1485120
+    "powerTotal": 1485120,
+    "score": 6250
   },
   {
     "id": "mythic-star-3",
@@ -363,7 +380,8 @@
       }
     ],
     "statTotalPercent": 64.43,
-    "powerTotal": 1546320
+    "powerTotal": 1546320,
+    "score": 6250
   },
   {
     "id": "mythic-t1-star-0",
@@ -386,7 +404,8 @@
       }
     ],
     "statTotalPercent": 66.98,
-    "powerTotal": 1607520
+    "powerTotal": 1607520,
+    "score": 6250
   },
   {
     "id": "mythic-t1-star-1",
@@ -409,7 +428,8 @@
       }
     ],
     "statTotalPercent": 69.53,
-    "powerTotal": 1668720
+    "powerTotal": 1668720,
+    "score": 6250
   },
   {
     "id": "mythic-t1-star-2",
@@ -432,7 +452,8 @@
       }
     ],
     "statTotalPercent": 72.08,
-    "powerTotal": 1729920
+    "powerTotal": 1729920,
+    "score": 6250
   },
   {
     "id": "mythic-t1-star-3",
@@ -455,7 +476,8 @@
       }
     ],
     "statTotalPercent": 74.63,
-    "powerTotal": 1791120
+    "powerTotal": 1791120,
+    "score": 6250
   },
   {
     "id": "mythic-t2-star-0",
@@ -478,7 +500,8 @@
       }
     ],
     "statTotalPercent": 77.18,
-    "powerTotal": 1852320
+    "powerTotal": 1852320,
+    "score": 6250
   },
   {
     "id": "mythic-t2-star-1",
@@ -501,7 +524,8 @@
       }
     ],
     "statTotalPercent": 79.73,
-    "powerTotal": 1913520
+    "powerTotal": 1913520,
+    "score": 6250
   },
   {
     "id": "mythic-t2-star-2",
@@ -524,7 +548,8 @@
       }
     ],
     "statTotalPercent": 82.28,
-    "powerTotal": 1974720
+    "powerTotal": 1974720,
+    "score": 6250
   },
   {
     "id": "mythic-t2-star-3-stage-0",
@@ -547,7 +572,8 @@
       }
     ],
     "statTotalPercent": 85.0,
-    "powerTotal": 2040000
+    "powerTotal": 2040000,
+    "score": 6250
   },
   {
     "id": "mythic-t2-star-3-stage-1",
@@ -575,7 +601,8 @@
     ],
     "statTotalPercent": 86.06,
     "powerTotal": 2064000,
-    "troopsDeploymentCapacity": 10
+    "troopsDeploymentCapacity": 10,
+    "score": 2390
   },
   {
     "id": "mythic-t2-star-3-stage-2",
@@ -603,7 +630,8 @@
     ],
     "statTotalPercent": 87.12,
     "powerTotal": 2088000,
-    "troopsDeploymentCapacity": 20
+    "troopsDeploymentCapacity": 20,
+    "score": 2390
   },
   {
     "id": "mythic-t2-star-3-stage-3",
@@ -631,7 +659,8 @@
     ],
     "statTotalPercent": 88.18,
     "powerTotal": 2112000,
-    "troopsDeploymentCapacity": 30
+    "troopsDeploymentCapacity": 30,
+    "score": 2390
   },
   {
     "id": "legendary-star-0-stage-0",
@@ -659,7 +688,8 @@
     ],
     "statTotalPercent": 89.25,
     "powerTotal": 2142000,
-    "troopsDeploymentCapacity": 40
+    "troopsDeploymentCapacity": 40,
+    "score": 2390
   },
   {
     "id": "legendary-star-0-stage-1",
@@ -687,7 +717,8 @@
     ],
     "statTotalPercent": 90.31,
     "powerTotal": 2166000,
-    "troopsDeploymentCapacity": 50
+    "troopsDeploymentCapacity": 50,
+    "score": 2390
   },
   {
     "id": "legendary-star-0-stage-2",
@@ -715,7 +746,8 @@
     ],
     "statTotalPercent": 91.37,
     "powerTotal": 2190000,
-    "troopsDeploymentCapacity": 60
+    "troopsDeploymentCapacity": 60,
+    "score": 2390
   },
   {
     "id": "legendary-star-0-stage-3",
@@ -743,7 +775,8 @@
     ],
     "statTotalPercent": 92.43,
     "powerTotal": 2214000,
-    "troopsDeploymentCapacity": 70
+    "troopsDeploymentCapacity": 70,
+    "score": 2390
   },
   {
     "id": "legendary-star-1-stage-0",
@@ -771,7 +804,8 @@
     ],
     "statTotalPercent": 93.5,
     "powerTotal": 2244000,
-    "troopsDeploymentCapacity": 80
+    "troopsDeploymentCapacity": 80,
+    "score": 2390
   },
   {
     "id": "legendary-star-1-stage-1",
@@ -799,7 +833,8 @@
     ],
     "statTotalPercent": 94.56,
     "powerTotal": 2268000,
-    "troopsDeploymentCapacity": 90
+    "troopsDeploymentCapacity": 90,
+    "score": 2390
   },
   {
     "id": "legendary-star-1-stage-2",
@@ -827,7 +862,8 @@
     ],
     "statTotalPercent": 95.62,
     "powerTotal": 2292000,
-    "troopsDeploymentCapacity": 100
+    "troopsDeploymentCapacity": 100,
+    "score": 2390
   },
   {
     "id": "legendary-star-1-stage-3",
@@ -855,7 +891,8 @@
     ],
     "statTotalPercent": 96.68,
     "powerTotal": 2316000,
-    "troopsDeploymentCapacity": 110
+    "troopsDeploymentCapacity": 110,
+    "score": 2390
   },
   {
     "id": "legendary-star-2-stage-0",
@@ -883,7 +920,8 @@
     ],
     "statTotalPercent": 97.75,
     "powerTotal": 2346000,
-    "troopsDeploymentCapacity": 120
+    "troopsDeploymentCapacity": 120,
+    "score": 2390
   },
   {
     "id": "legendary-star-2-stage-1",
@@ -911,7 +949,8 @@
     ],
     "statTotalPercent": 98.81,
     "powerTotal": 2370000,
-    "troopsDeploymentCapacity": 130
+    "troopsDeploymentCapacity": 130,
+    "score": 2390
   },
   {
     "id": "legendary-star-2-stage-2",
@@ -939,7 +978,8 @@
     ],
     "statTotalPercent": 99.87,
     "powerTotal": 2394000,
-    "troopsDeploymentCapacity": 140
+    "troopsDeploymentCapacity": 140,
+    "score": 2390
   },
   {
     "id": "legendary-star-2-stage-3",
@@ -967,7 +1007,8 @@
     ],
     "statTotalPercent": 100.93,
     "powerTotal": 2418000,
-    "troopsDeploymentCapacity": 150
+    "troopsDeploymentCapacity": 150,
+    "score": 2390
   },
   {
     "id": "legendary-star-3-stage-0",
@@ -995,7 +1036,8 @@
     ],
     "statTotalPercent": 102.0,
     "powerTotal": 2448000,
-    "troopsDeploymentCapacity": 160
+    "troopsDeploymentCapacity": 160,
+    "score": 2390
   },
   {
     "id": "legendary-star-3-stage-1",
@@ -1023,7 +1065,8 @@
     ],
     "statTotalPercent": 103.06,
     "powerTotal": 2472000,
-    "troopsDeploymentCapacity": 260
+    "troopsDeploymentCapacity": 260,
+    "score": 2390
   },
   {
     "id": "legendary-star-3-stage-2",
@@ -1051,7 +1094,8 @@
     ],
     "statTotalPercent": 104.12,
     "powerTotal": 2496000,
-    "troopsDeploymentCapacity": 270
+    "troopsDeploymentCapacity": 270,
+    "score": 2390
   },
   {
     "id": "legendary-star-3-stage-3",
@@ -1079,7 +1123,8 @@
     ],
     "statTotalPercent": 105.18,
     "powerTotal": 2520000,
-    "troopsDeploymentCapacity": 280
+    "troopsDeploymentCapacity": 280,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-0-stage-0",
@@ -1107,7 +1152,8 @@
     ],
     "statTotalPercent": 106.25,
     "powerTotal": 2550000,
-    "troopsDeploymentCapacity": 290
+    "troopsDeploymentCapacity": 290,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-0-stage-1",
@@ -1135,7 +1181,8 @@
     ],
     "statTotalPercent": 107.31,
     "powerTotal": 2574000,
-    "troopsDeploymentCapacity": 300
+    "troopsDeploymentCapacity": 300,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-0-stage-2",
@@ -1163,7 +1210,8 @@
     ],
     "statTotalPercent": 108.37,
     "powerTotal": 2598000,
-    "troopsDeploymentCapacity": 310
+    "troopsDeploymentCapacity": 310,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-0-stage-3",
@@ -1191,7 +1239,8 @@
     ],
     "statTotalPercent": 109.43,
     "powerTotal": 2622000,
-    "troopsDeploymentCapacity": 320
+    "troopsDeploymentCapacity": 320,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-1-stage-0",
@@ -1219,7 +1268,8 @@
     ],
     "statTotalPercent": 110.5,
     "powerTotal": 2652000,
-    "troopsDeploymentCapacity": 330
+    "troopsDeploymentCapacity": 330,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-1-stage-1",
@@ -1247,7 +1297,8 @@
     ],
     "statTotalPercent": 111.56,
     "powerTotal": 2676000,
-    "troopsDeploymentCapacity": 340
+    "troopsDeploymentCapacity": 340,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-1-stage-2",
@@ -1275,7 +1326,8 @@
     ],
     "statTotalPercent": 112.62,
     "powerTotal": 2700000,
-    "troopsDeploymentCapacity": 350
+    "troopsDeploymentCapacity": 350,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-1-stage-3",
@@ -1303,7 +1355,8 @@
     ],
     "statTotalPercent": 113.68,
     "powerTotal": 2724000,
-    "troopsDeploymentCapacity": 360
+    "troopsDeploymentCapacity": 360,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-2-stage-0",
@@ -1331,7 +1384,8 @@
     ],
     "statTotalPercent": 114.75,
     "powerTotal": 2754000,
-    "troopsDeploymentCapacity": 370
+    "troopsDeploymentCapacity": 370,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-2-stage-1",
@@ -1359,7 +1413,8 @@
     ],
     "statTotalPercent": 115.81,
     "powerTotal": 2778000,
-    "troopsDeploymentCapacity": 380
+    "troopsDeploymentCapacity": 380,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-2-stage-2",
@@ -1387,7 +1442,8 @@
     ],
     "statTotalPercent": 116.87,
     "powerTotal": 2802000,
-    "troopsDeploymentCapacity": 390
+    "troopsDeploymentCapacity": 390,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-2-stage-3",
@@ -1415,7 +1471,8 @@
     ],
     "statTotalPercent": 117.93,
     "powerTotal": 2826000,
-    "troopsDeploymentCapacity": 400
+    "troopsDeploymentCapacity": 400,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-3-stage-0",
@@ -1443,7 +1500,8 @@
     ],
     "statTotalPercent": 119.0,
     "powerTotal": 2856000,
-    "troopsDeploymentCapacity": 410
+    "troopsDeploymentCapacity": 410,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-3-stage-1",
@@ -1471,7 +1529,8 @@
     ],
     "statTotalPercent": 120.06,
     "powerTotal": 2881000,
-    "troopsDeploymentCapacity": 510
+    "troopsDeploymentCapacity": 510,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-3-stage-2",
@@ -1499,7 +1558,8 @@
     ],
     "statTotalPercent": 121.12,
     "powerTotal": 2906000,
-    "troopsDeploymentCapacity": 520
+    "troopsDeploymentCapacity": 520,
+    "score": 2390
   },
   {
     "id": "legendary-t1-star-3-stage-3",
@@ -1527,7 +1587,8 @@
     ],
     "statTotalPercent": 122.18,
     "powerTotal": 2931000,
-    "troopsDeploymentCapacity": 530
+    "troopsDeploymentCapacity": 530,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-0-stage-0",
@@ -1555,7 +1616,8 @@
     ],
     "statTotalPercent": 123.25,
     "powerTotal": 2958000,
-    "troopsDeploymentCapacity": 540
+    "troopsDeploymentCapacity": 540,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-0-stage-1",
@@ -1583,7 +1645,8 @@
     ],
     "statTotalPercent": 124.31,
     "powerTotal": 2983000,
-    "troopsDeploymentCapacity": 550
+    "troopsDeploymentCapacity": 550,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-0-stage-2",
@@ -1611,7 +1674,8 @@
     ],
     "statTotalPercent": 125.37,
     "powerTotal": 3008000,
-    "troopsDeploymentCapacity": 560
+    "troopsDeploymentCapacity": 560,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-0-stage-3",
@@ -1639,7 +1703,8 @@
     ],
     "statTotalPercent": 126.43,
     "powerTotal": 3033000,
-    "troopsDeploymentCapacity": 570
+    "troopsDeploymentCapacity": 570,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-1-stage-0",
@@ -1667,7 +1732,8 @@
     ],
     "statTotalPercent": 127.5,
     "powerTotal": 3060000,
-    "troopsDeploymentCapacity": 580
+    "troopsDeploymentCapacity": 580,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-1-stage-1",
@@ -1695,7 +1761,8 @@
     ],
     "statTotalPercent": 128.56,
     "powerTotal": 3085000,
-    "troopsDeploymentCapacity": 590
+    "troopsDeploymentCapacity": 590,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-1-stage-2",
@@ -1723,7 +1790,8 @@
     ],
     "statTotalPercent": 129.62,
     "powerTotal": 3110000,
-    "troopsDeploymentCapacity": 600
+    "troopsDeploymentCapacity": 600,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-1-stage-3",
@@ -1751,7 +1819,8 @@
     ],
     "statTotalPercent": 130.68,
     "powerTotal": 3135000,
-    "troopsDeploymentCapacity": 610
+    "troopsDeploymentCapacity": 610,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-2-stage-0",
@@ -1779,7 +1848,8 @@
     ],
     "statTotalPercent": 131.75,
     "powerTotal": 3162000,
-    "troopsDeploymentCapacity": 620
+    "troopsDeploymentCapacity": 620,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-2-stage-1",
@@ -1807,7 +1877,8 @@
     ],
     "statTotalPercent": 132.81,
     "powerTotal": 3187000,
-    "troopsDeploymentCapacity": 630
+    "troopsDeploymentCapacity": 630,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-2-stage-2",
@@ -1835,7 +1906,8 @@
     ],
     "statTotalPercent": 133.87,
     "powerTotal": 3212000,
-    "troopsDeploymentCapacity": 640
+    "troopsDeploymentCapacity": 640,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-2-stage-3",
@@ -1863,7 +1935,8 @@
     ],
     "statTotalPercent": 134.93,
     "powerTotal": 3237000,
-    "troopsDeploymentCapacity": 650
+    "troopsDeploymentCapacity": 650,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-3-stage-0",
@@ -1891,7 +1964,8 @@
     ],
     "statTotalPercent": 136.0,
     "powerTotal": 3264000,
-    "troopsDeploymentCapacity": 660
+    "troopsDeploymentCapacity": 660,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-3-stage-1",
@@ -1919,7 +1993,8 @@
     ],
     "statTotalPercent": 137.06,
     "powerTotal": 3289000,
-    "troopsDeploymentCapacity": 760
+    "troopsDeploymentCapacity": 760,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-3-stage-2",
@@ -1947,7 +2022,8 @@
     ],
     "statTotalPercent": 138.12,
     "powerTotal": 3314000,
-    "troopsDeploymentCapacity": 770
+    "troopsDeploymentCapacity": 770,
+    "score": 2390
   },
   {
     "id": "legendary-t2-star-3-stage-3",
@@ -1975,7 +2051,8 @@
     ],
     "statTotalPercent": 139.18,
     "powerTotal": 3339000,
-    "troopsDeploymentCapacity": 780
+    "troopsDeploymentCapacity": 780,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-0-stage-0",
@@ -2003,7 +2080,8 @@
     ],
     "statTotalPercent": 140.25,
     "powerTotal": 3366000,
-    "troopsDeploymentCapacity": 790
+    "troopsDeploymentCapacity": 790,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-0-stage-1",
@@ -2031,7 +2109,8 @@
     ],
     "statTotalPercent": 141.31,
     "powerTotal": 3391000,
-    "troopsDeploymentCapacity": 800
+    "troopsDeploymentCapacity": 800,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-0-stage-2",
@@ -2059,7 +2138,8 @@
     ],
     "statTotalPercent": 142.37,
     "powerTotal": 3416000,
-    "troopsDeploymentCapacity": 810
+    "troopsDeploymentCapacity": 810,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-0-stage-3",
@@ -2087,7 +2167,8 @@
     ],
     "statTotalPercent": 143.43,
     "powerTotal": 3441000,
-    "troopsDeploymentCapacity": 820
+    "troopsDeploymentCapacity": 820,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-1-stage-0",
@@ -2115,7 +2196,8 @@
     ],
     "statTotalPercent": 144.5,
     "powerTotal": 3468000,
-    "troopsDeploymentCapacity": 830
+    "troopsDeploymentCapacity": 830,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-1-stage-1",
@@ -2143,7 +2225,8 @@
     ],
     "statTotalPercent": 145.56,
     "powerTotal": 3493000,
-    "troopsDeploymentCapacity": 840
+    "troopsDeploymentCapacity": 840,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-1-stage-2",
@@ -2171,7 +2254,8 @@
     ],
     "statTotalPercent": 146.62,
     "powerTotal": 3518000,
-    "troopsDeploymentCapacity": 850
+    "troopsDeploymentCapacity": 850,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-1-stage-3",
@@ -2199,7 +2283,8 @@
     ],
     "statTotalPercent": 147.68,
     "powerTotal": 3543000,
-    "troopsDeploymentCapacity": 860
+    "troopsDeploymentCapacity": 860,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-2-stage-0",
@@ -2227,7 +2312,8 @@
     ],
     "statTotalPercent": 148.75,
     "powerTotal": 3570000,
-    "troopsDeploymentCapacity": 870
+    "troopsDeploymentCapacity": 870,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-2-stage-1",
@@ -2255,7 +2341,8 @@
     ],
     "statTotalPercent": 149.81,
     "powerTotal": 3595000,
-    "troopsDeploymentCapacity": 880
+    "troopsDeploymentCapacity": 880,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-2-stage-2",
@@ -2283,7 +2370,8 @@
     ],
     "statTotalPercent": 150.87,
     "powerTotal": 3620000,
-    "troopsDeploymentCapacity": 890
+    "troopsDeploymentCapacity": 890,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-2-stage-3",
@@ -2311,7 +2399,8 @@
     ],
     "statTotalPercent": 151.93,
     "powerTotal": 3645000,
-    "troopsDeploymentCapacity": 900
+    "troopsDeploymentCapacity": 900,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-3-stage-0",
@@ -2339,7 +2428,8 @@
     ],
     "statTotalPercent": 153.0,
     "powerTotal": 3672000,
-    "troopsDeploymentCapacity": 910
+    "troopsDeploymentCapacity": 910,
+    "score": 2390
   },
   {
     "id": "legendary-t3-star-3-stage-1",
@@ -2367,7 +2457,8 @@
     ],
     "statTotalPercent": 154.7,
     "powerTotal": 3712000,
-    "troopsDeploymentCapacity": 1010
+    "troopsDeploymentCapacity": 1010,
+    "score": 3112
   },
   {
     "id": "legendary-t3-star-3-stage-2",
@@ -2395,7 +2486,8 @@
     ],
     "statTotalPercent": 156.4,
     "powerTotal": 3753000,
-    "troopsDeploymentCapacity": 1020
+    "troopsDeploymentCapacity": 1020,
+    "score": 3112
   },
   {
     "id": "legendary-t3-star-3-stage-3",
@@ -2423,7 +2515,8 @@
     ],
     "statTotalPercent": 158.1,
     "powerTotal": 3794000,
-    "troopsDeploymentCapacity": 1030
+    "troopsDeploymentCapacity": 1030,
+    "score": 3112
   },
   {
     "id": "legendary-t3-star-3-stage-4",
@@ -2451,7 +2544,8 @@
     ],
     "statTotalPercent": 159.8,
     "powerTotal": 3835000,
-    "troopsDeploymentCapacity": 1040
+    "troopsDeploymentCapacity": 1040,
+    "score": 3112
   },
   {
     "id": "legendary-t4-star-0-stage-0",
@@ -2479,7 +2573,8 @@
     ],
     "statTotalPercent": 161.5,
     "powerTotal": 3876000,
-    "troopsDeploymentCapacity": 1050
+    "troopsDeploymentCapacity": 1050,
+    "score": 3112
   },
   {
     "id": "legendary-t4-star-0-stage-1",
@@ -2507,7 +2602,8 @@
     ],
     "statTotalPercent": 163.2,
     "powerTotal": 3916000,
-    "troopsDeploymentCapacity": 1060
+    "troopsDeploymentCapacity": 1060,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-0-stage-2",
@@ -2535,7 +2631,8 @@
     ],
     "statTotalPercent": 164.9,
     "powerTotal": 3957000,
-    "troopsDeploymentCapacity": 1070
+    "troopsDeploymentCapacity": 1070,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-0-stage-3",
@@ -2563,7 +2660,8 @@
     ],
     "statTotalPercent": 166.6,
     "powerTotal": 3998000,
-    "troopsDeploymentCapacity": 1080
+    "troopsDeploymentCapacity": 1080,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-0-stage-4",
@@ -2591,7 +2689,8 @@
     ],
     "statTotalPercent": 168.3,
     "powerTotal": 4039000,
-    "troopsDeploymentCapacity": 1090
+    "troopsDeploymentCapacity": 1090,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-1-stage-0",
@@ -2619,7 +2718,8 @@
     ],
     "statTotalPercent": 170.0,
     "powerTotal": 4080000,
-    "troopsDeploymentCapacity": 1100
+    "troopsDeploymentCapacity": 1100,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-1-stage-1",
@@ -2647,7 +2747,8 @@
     ],
     "statTotalPercent": 171.7,
     "powerTotal": 4120000,
-    "troopsDeploymentCapacity": 1110
+    "troopsDeploymentCapacity": 1110,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-1-stage-2",
@@ -2675,7 +2776,8 @@
     ],
     "statTotalPercent": 173.4,
     "powerTotal": 4161000,
-    "troopsDeploymentCapacity": 1120
+    "troopsDeploymentCapacity": 1120,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-1-stage-3",
@@ -2703,7 +2805,8 @@
     ],
     "statTotalPercent": 175.1,
     "powerTotal": 4202000,
-    "troopsDeploymentCapacity": 1130
+    "troopsDeploymentCapacity": 1130,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-1-stage-4",
@@ -2731,7 +2834,8 @@
     ],
     "statTotalPercent": 176.8,
     "powerTotal": 4243000,
-    "troopsDeploymentCapacity": 1140
+    "troopsDeploymentCapacity": 1140,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-2-stage-0",
@@ -2759,7 +2863,8 @@
     ],
     "statTotalPercent": 178.5,
     "powerTotal": 4284000,
-    "troopsDeploymentCapacity": 1150
+    "troopsDeploymentCapacity": 1150,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-2-stage-1",
@@ -2787,7 +2892,8 @@
     ],
     "statTotalPercent": 180.2,
     "powerTotal": 4324000,
-    "troopsDeploymentCapacity": 1160
+    "troopsDeploymentCapacity": 1160,
+    "score": 3078
   },
   {
     "id": "legendary-t4-star-2-stage-2",
@@ -2815,7 +2921,8 @@
     ],
     "statTotalPercent": 181.9,
     "powerTotal": 4365000,
-    "troopsDeploymentCapacity": 1170
+    "troopsDeploymentCapacity": 1170,
+    "score": 3078
   },
   {
     "id": "legendary-t4-star-2-stage-3",
@@ -2843,7 +2950,8 @@
     ],
     "statTotalPercent": 183.6,
     "powerTotal": 4406000,
-    "troopsDeploymentCapacity": 1180
+    "troopsDeploymentCapacity": 1180,
+    "score": 3078
   },
   {
     "id": "legendary-t4-star-2-stage-4",
@@ -2871,7 +2979,8 @@
     ],
     "statTotalPercent": 185.3,
     "powerTotal": 4447000,
-    "troopsDeploymentCapacity": 1190
+    "troopsDeploymentCapacity": 1190,
+    "score": 3078
   },
   {
     "id": "legendary-t4-star-3-stage-0",
@@ -2899,7 +3008,8 @@
     ],
     "statTotalPercent": 187.0,
     "powerTotal": 4488000,
-    "troopsDeploymentCapacity": 1200
+    "troopsDeploymentCapacity": 1200,
+    "score": 3078
   },
   {
     "id": "legendary-t4-star-3-stage-1",
@@ -2927,7 +3037,8 @@
     ],
     "statTotalPercent": 188.7,
     "powerTotal": 4528000,
-    "troopsDeploymentCapacity": 1300
+    "troopsDeploymentCapacity": 1300,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-3-stage-2",
@@ -2955,7 +3066,8 @@
     ],
     "statTotalPercent": 190.4,
     "powerTotal": 4569000,
-    "troopsDeploymentCapacity": 1310
+    "troopsDeploymentCapacity": 1310,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-3-stage-3",
@@ -2983,7 +3095,8 @@
     ],
     "statTotalPercent": 192.1,
     "powerTotal": 4610000,
-    "troopsDeploymentCapacity": 1320
+    "troopsDeploymentCapacity": 1320,
+    "score": 3080
   },
   {
     "id": "legendary-t4-star-3-stage-4",
@@ -3011,7 +3124,8 @@
     ],
     "statTotalPercent": 193.8,
     "powerTotal": 4651000,
-    "troopsDeploymentCapacity": 1330
+    "troopsDeploymentCapacity": 1330,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-0-stage-0",
@@ -3039,7 +3153,8 @@
     ],
     "statTotalPercent": 195.5,
     "powerTotal": 4692000,
-    "troopsDeploymentCapacity": 1340
+    "troopsDeploymentCapacity": 1340,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-0-stage-1",
@@ -3067,7 +3182,8 @@
     ],
     "statTotalPercent": 197.2,
     "powerTotal": 4732000,
-    "troopsDeploymentCapacity": 1350
+    "troopsDeploymentCapacity": 1350,
+    "score": 3078
   },
   {
     "id": "legendary-t5-star-0-stage-2",
@@ -3095,7 +3211,8 @@
     ],
     "statTotalPercent": 198.9,
     "powerTotal": 4773000,
-    "troopsDeploymentCapacity": 1360
+    "troopsDeploymentCapacity": 1360,
+    "score": 3078
   },
   {
     "id": "legendary-t5-star-0-stage-3",
@@ -3123,7 +3240,8 @@
     ],
     "statTotalPercent": 200.6,
     "powerTotal": 4814000,
-    "troopsDeploymentCapacity": 1370
+    "troopsDeploymentCapacity": 1370,
+    "score": 3078
   },
   {
     "id": "legendary-t5-star-0-stage-4",
@@ -3151,7 +3269,8 @@
     ],
     "statTotalPercent": 202.3,
     "powerTotal": 4855000,
-    "troopsDeploymentCapacity": 1380
+    "troopsDeploymentCapacity": 1380,
+    "score": 3078
   },
   {
     "id": "legendary-t5-star-1-stage-0",
@@ -3179,7 +3298,8 @@
     ],
     "statTotalPercent": 204.0,
     "powerTotal": 4896000,
-    "troopsDeploymentCapacity": 1390
+    "troopsDeploymentCapacity": 1390,
+    "score": 3078
   },
   {
     "id": "legendary-t5-star-1-stage-1",
@@ -3207,7 +3327,8 @@
     ],
     "statTotalPercent": 205.7,
     "powerTotal": 4936000,
-    "troopsDeploymentCapacity": 1400
+    "troopsDeploymentCapacity": 1400,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-1-stage-2",
@@ -3235,7 +3356,8 @@
     ],
     "statTotalPercent": 207.4,
     "powerTotal": 4977000,
-    "troopsDeploymentCapacity": 1410
+    "troopsDeploymentCapacity": 1410,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-1-stage-3",
@@ -3263,7 +3385,8 @@
     ],
     "statTotalPercent": 209.1,
     "powerTotal": 5018000,
-    "troopsDeploymentCapacity": 1420
+    "troopsDeploymentCapacity": 1420,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-1-stage-4",
@@ -3291,7 +3414,8 @@
     ],
     "statTotalPercent": 210.8,
     "powerTotal": 5059000,
-    "troopsDeploymentCapacity": 1430
+    "troopsDeploymentCapacity": 1430,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-2-stage-0",
@@ -3319,7 +3443,8 @@
     ],
     "statTotalPercent": 212.5,
     "powerTotal": 5100000,
-    "troopsDeploymentCapacity": 1440
+    "troopsDeploymentCapacity": 1440,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-2-stage-1",
@@ -3347,7 +3472,8 @@
     ],
     "statTotalPercent": 214.2,
     "powerTotal": 5140000,
-    "troopsDeploymentCapacity": 1450
+    "troopsDeploymentCapacity": 1450,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-2-stage-2",
@@ -3375,7 +3501,8 @@
     ],
     "statTotalPercent": 215.9,
     "powerTotal": 5181000,
-    "troopsDeploymentCapacity": 1460
+    "troopsDeploymentCapacity": 1460,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-2-stage-3",
@@ -3403,7 +3530,8 @@
     ],
     "statTotalPercent": 217.6,
     "powerTotal": 5222000,
-    "troopsDeploymentCapacity": 1470
+    "troopsDeploymentCapacity": 1470,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-2-stage-4",
@@ -3431,7 +3559,8 @@
     ],
     "statTotalPercent": 219.3,
     "powerTotal": 5263000,
-    "troopsDeploymentCapacity": 1480
+    "troopsDeploymentCapacity": 1480,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-3-stage-0",
@@ -3459,7 +3588,8 @@
     ],
     "statTotalPercent": 221.0,
     "powerTotal": 5304000,
-    "troopsDeploymentCapacity": 1490
+    "troopsDeploymentCapacity": 1490,
+    "score": 3080
   },
   {
     "id": "legendary-t5-star-3-stage-1",
@@ -3487,7 +3617,8 @@
     ],
     "statTotalPercent": 222.7,
     "powerTotal": 5344000,
-    "troopsDeploymentCapacity": 1590
+    "troopsDeploymentCapacity": 1590,
+    "score": 3078
   },
   {
     "id": "legendary-t5-star-3-stage-2",
@@ -3515,7 +3646,8 @@
     ],
     "statTotalPercent": 224.4,
     "powerTotal": 5385000,
-    "troopsDeploymentCapacity": 1600
+    "troopsDeploymentCapacity": 1600,
+    "score": 3078
   },
   {
     "id": "legendary-t5-star-3-stage-3",
@@ -3543,7 +3675,8 @@
     ],
     "statTotalPercent": 226.1,
     "powerTotal": 5426000,
-    "troopsDeploymentCapacity": 1610
+    "troopsDeploymentCapacity": 1610,
+    "score": 3078
   },
   {
     "id": "legendary-t5-star-3-stage-4",
@@ -3571,7 +3704,8 @@
     ],
     "statTotalPercent": 227.8,
     "powerTotal": 5467000,
-    "troopsDeploymentCapacity": 1620
+    "troopsDeploymentCapacity": 1620,
+    "score": 3078
   },
   {
     "id": "legendary-t6-star-0-stage-0",
@@ -3599,7 +3733,8 @@
     ],
     "statTotalPercent": 229.5,
     "powerTotal": 5508000,
-    "troopsDeploymentCapacity": 1630
+    "troopsDeploymentCapacity": 1630,
+    "score": 3078
   },
   {
     "id": "legendary-t6-star-0-stage-1",
@@ -3627,7 +3762,8 @@
     ],
     "statTotalPercent": 231.2,
     "powerTotal": 5548000,
-    "troopsDeploymentCapacity": 1640
+    "troopsDeploymentCapacity": 1640,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-0-stage-2",
@@ -3655,7 +3791,8 @@
     ],
     "statTotalPercent": 232.9,
     "powerTotal": 5589000,
-    "troopsDeploymentCapacity": 1650
+    "troopsDeploymentCapacity": 1650,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-0-stage-3",
@@ -3683,7 +3820,8 @@
     ],
     "statTotalPercent": 234.6,
     "powerTotal": 5630000,
-    "troopsDeploymentCapacity": 1660
+    "troopsDeploymentCapacity": 1660,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-0-stage-4",
@@ -3711,7 +3849,8 @@
     ],
     "statTotalPercent": 236.3,
     "powerTotal": 5671000,
-    "troopsDeploymentCapacity": 1670
+    "troopsDeploymentCapacity": 1670,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-1-stage-0",
@@ -3739,7 +3878,8 @@
     ],
     "statTotalPercent": 238.0,
     "powerTotal": 5712000,
-    "troopsDeploymentCapacity": 1680
+    "troopsDeploymentCapacity": 1680,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-1-stage-1",
@@ -3767,7 +3907,8 @@
     ],
     "statTotalPercent": 239.7,
     "powerTotal": 5752000,
-    "troopsDeploymentCapacity": 1690
+    "troopsDeploymentCapacity": 1690,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-1-stage-2",
@@ -3795,7 +3936,8 @@
     ],
     "statTotalPercent": 241.4,
     "powerTotal": 5793000,
-    "troopsDeploymentCapacity": 1700
+    "troopsDeploymentCapacity": 1700,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-1-stage-3",
@@ -3823,7 +3965,8 @@
     ],
     "statTotalPercent": 243.1,
     "powerTotal": 5834000,
-    "troopsDeploymentCapacity": 1710
+    "troopsDeploymentCapacity": 1710,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-1-stage-4",
@@ -3851,7 +3994,8 @@
     ],
     "statTotalPercent": 244.8,
     "powerTotal": 5875000,
-    "troopsDeploymentCapacity": 1720
+    "troopsDeploymentCapacity": 1720,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-2-stage-0",
@@ -3879,7 +4023,8 @@
     ],
     "statTotalPercent": 246.5,
     "powerTotal": 5916000,
-    "troopsDeploymentCapacity": 1730
+    "troopsDeploymentCapacity": 1730,
+    "score": 3080
   },
   {
     "id": "legendary-t6-star-2-stage-1",
@@ -3907,7 +4052,8 @@
     ],
     "statTotalPercent": 248.2,
     "powerTotal": 5956000,
-    "troopsDeploymentCapacity": 1740
+    "troopsDeploymentCapacity": 1740,
+    "score": 3078
   },
   {
     "id": "legendary-t6-star-2-stage-2",
@@ -3935,7 +4081,8 @@
     ],
     "statTotalPercent": 249.9,
     "powerTotal": 5997000,
-    "troopsDeploymentCapacity": 1750
+    "troopsDeploymentCapacity": 1750,
+    "score": 3078
   },
   {
     "id": "legendary-t6-star-2-stage-3",
@@ -3963,7 +4110,8 @@
     ],
     "statTotalPercent": 251.6,
     "powerTotal": 6038000,
-    "troopsDeploymentCapacity": 1760
+    "troopsDeploymentCapacity": 1760,
+    "score": 3078
   },
   {
     "id": "legendary-t6-star-2-stage-4",
@@ -3991,7 +4139,8 @@
     ],
     "statTotalPercent": 253.3,
     "powerTotal": 6079000,
-    "troopsDeploymentCapacity": 1770
+    "troopsDeploymentCapacity": 1770,
+    "score": 3078
   },
   {
     "id": "legendary-t6-star-3-stage-0",
@@ -4019,6 +4168,7 @@
     ],
     "statTotalPercent": 255.0,
     "powerTotal": 6120000,
-    "troopsDeploymentCapacity": 1780
+    "troopsDeploymentCapacity": 1780,
+    "score": 3078
   }
 ]

@@ -29,4 +29,10 @@ export interface ChiefGearLevel {
   troopsDeploymentCapacity?: number;
   statTotalPercent: number;
   powerTotal: number;
+  /**
+   * Gear score the upgrade step to this row adds. Events count it, such as the SvS row "Raise max
+   * Chief Gear score by 1". It does not depend on power. The score of a whole level is split evenly
+   * over the steps that lead to it.
+   */
+  score: number;
 }

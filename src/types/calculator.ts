@@ -61,3 +61,34 @@ export interface AllianceShowdownCalculation extends EventScoreCalculation {
   /** Baldur's point bonus in percent, 0 when Baldur is not used. */
   dawnHymnBonusPercent: number;
 }
+
+/** Upgrades one gear piece or one charm from a level to a level, by `id` from `chiefGear()` for gear or `chiefCharm()` for charms. */
+export interface UpgradeRange {
+  /** The level the piece is at now. Use `null` for a piece that has no level yet. */
+  from: string | null;
+  /** The level to reach. */
+  to: string;
+}
+
+export interface UpgradeMaterial {
+  itemId: string;
+  amount: number;
+}
+
+/** Event points that the score of an upgrade earns, from the "Raise Chief Gear/Charm max score" rows of each event. */
+export interface UpgradeEventPoints {
+  svs: number;
+  allianceShowdown: number;
+  kingOfIcefield: number;
+  hallOfChief: number;
+}
+
+export interface UpgradeResult {
+  /** Number of upgrade steps, counting the steps inside a level. */
+  steps: number;
+  materials: UpgradeMaterial[];
+  score: number;
+  /** Power gained, from the `powerTotal` of the first level to the `powerTotal` of the last level of each range. */
+  power: number;
+  eventPoints: UpgradeEventPoints;
+}
