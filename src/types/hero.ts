@@ -68,6 +68,11 @@ export interface HeroShardTier {
   total: number;
   /** Total Power accumulated once this star tier is reached (not the increment). Not yet sourced -- 0 until the real value is confirmed. */
   power: number;
+  /**
+   * Hero Power shown in the game at each of the six tiers of this star (x.1 to x.6), measured from
+   * star 0. Set only for the heroes and stars that were read in the game.
+   */
+  tierPower?: number[];
 }
 
 export interface HeroLevel {
@@ -92,6 +97,8 @@ export interface Hero {
   img: string;
   /** Icon of this hero's shard. Set only for the heroes whose shard icon has been captured. */
   shardImg?: string;
+  /** Hero Power shown in the game at star 0, before any shard tier. Set only for the heroes that were read in the game. */
+  powerAtStarZero?: number;
   rarity: HeroRarity;
   class: HeroClass;
   subClass: HeroSubClass;

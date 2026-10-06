@@ -270,6 +270,14 @@ cumulative:
 Legendary Generations 5–17 have no confirmed max-star Power yet, so `power` stays a `0` placeholder
 for those heroes.
 
+The three Generation 5 heroes (Hector, Norah, and Gwen) also have Hero Power read in the game, which
+is not part of the table above. `powerAtStarZero` is the power at star 0 (22,200, twice the level 1
+power of 11,100), and `tierPower` on stars 1 to 3 lists the power at each of the six tiers (1.1 to
+3.6, ending at 449,772). Stars 4 and 5 are not read yet. These readings show that power per tier is
+not spread evenly over the shards, so the cumulative `power` values above are a projection. The
+reading at tier 3.4 was entered as 352,258, which does not fit the other readings, and is stored as
+352,314 until it is checked in the game.
+
 `shardSources` lists where a hero's shards can be obtained (e.g. `["VIP Packs"]`,
 `["Hall of Heroes", "Daily Deals"]`) — transcribed verbatim from each hero's own "Sources" section
 on the wiki. Empty for the one Gen 0 hero (Ling Xue) whose page has no Sources section at all.

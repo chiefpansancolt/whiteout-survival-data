@@ -513,4 +513,50 @@ describe('Generation 1-17 heroes (Legendary)', () => {
     ]);
     withShard.forEach((h) => expect(existsSync(join(__dirname, '../..', h.shardImg!))).toBe(true));
   });
+
+  describe('star tier power', () => {
+    const generation5 = () =>
+      heroes()
+        .get()
+        .filter((h) => h.generation === 5);
+
+    it('has the Hero Power at star 0 and at each tier of stars 1 to 3 on every Generation 5 hero', () => {
+      expect(generation5().map((h) => h.name)).toEqual(['Hector', 'Norah', 'Gwen']);
+      generation5().forEach((hero) => {
+        expect(hero.powerAtStarZero).toBe(22200);
+        expect(hero.powerAtStarZero).toBe(hero.levels[0].power * 2);
+        expect(hero.shardCosts.map((t) => t.tierPower?.length)).toEqual([
+          6,
+          6,
+          6,
+          undefined,
+          undefined,
+        ]);
+        expect(hero.shardCosts[0].tierPower).toEqual([29748, 39960, 50838, 59940, 72150, 92796]);
+        expect(hero.shardCosts[1].tierPower).toEqual([
+          109224, 126540, 144744, 164058, 187368, 221556,
+        ]);
+        expect(hero.shardCosts[2].tierPower).toEqual([
+          251082, 282162, 318126, 352314, 388944, 449772,
+        ]);
+      });
+    });
+
+    it('rises with every tier', () => {
+      generation5().forEach((hero) => {
+        const all = [hero.powerAtStarZero!, ...hero.shardCosts.flatMap((t) => t.tierPower ?? [])];
+        all.slice(1).forEach((power, i) => expect(power).toBeGreaterThan(all[i]));
+      });
+    });
+
+    it('leaves heroes of other generations without tier power', () => {
+      heroes()
+        .get()
+        .filter((h) => h.generation !== 5)
+        .forEach((hero) => {
+          expect(hero.powerAtStarZero).toBeUndefined();
+          hero.shardCosts.forEach((t) => expect(t.tierPower).toBeUndefined());
+        });
+    });
+  });
 });

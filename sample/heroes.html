@@ -21196,7 +21196,15 @@
           2
         ],
         "total": 10,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          29748,
+          39960,
+          50838,
+          59940,
+          72150,
+          92796
+        ]
       },
       {
         "star": 2,
@@ -21209,7 +21217,15 @@
           15
         ],
         "total": 40,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          109224,
+          126540,
+          144744,
+          164058,
+          187368,
+          221556
+        ]
       },
       {
         "star": 3,
@@ -21222,7 +21238,15 @@
           40
         ],
         "total": 115,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          251082,
+          282162,
+          318126,
+          352314,
+          388944,
+          449772
+        ]
       },
       {
         "star": 4,
@@ -21738,7 +21762,8 @@
         "xpRequired": 2400000,
         "power": 414252
       }
-    ]
+    ],
+    "powerAtStarZero": 22200
   },
   {
     "id": "norah",
@@ -22029,7 +22054,15 @@
           2
         ],
         "total": 10,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          29748,
+          39960,
+          50838,
+          59940,
+          72150,
+          92796
+        ]
       },
       {
         "star": 2,
@@ -22042,7 +22075,15 @@
           15
         ],
         "total": 40,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          109224,
+          126540,
+          144744,
+          164058,
+          187368,
+          221556
+        ]
       },
       {
         "star": 3,
@@ -22055,7 +22096,15 @@
           40
         ],
         "total": 115,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          251082,
+          282162,
+          318126,
+          352314,
+          388944,
+          449772
+        ]
       },
       {
         "star": 4,
@@ -22571,7 +22620,8 @@
         "xpRequired": 2400000,
         "power": 414252
       }
-    ]
+    ],
+    "powerAtStarZero": 22200
   },
   {
     "id": "gwen",
@@ -22863,7 +22913,15 @@
           2
         ],
         "total": 10,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          29748,
+          39960,
+          50838,
+          59940,
+          72150,
+          92796
+        ]
       },
       {
         "star": 2,
@@ -22876,7 +22934,15 @@
           15
         ],
         "total": 40,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          109224,
+          126540,
+          144744,
+          164058,
+          187368,
+          221556
+        ]
       },
       {
         "star": 3,
@@ -22889,7 +22955,15 @@
           40
         ],
         "total": 115,
-        "power": 0
+        "power": 0,
+        "tierPower": [
+          251082,
+          282162,
+          318126,
+          352314,
+          388944,
+          449772
+        ]
       },
       {
         "star": 4,
@@ -23404,7 +23478,8 @@
         "xpRequired": 2400000,
         "power": 414252
       }
-    ]
+    ],
+    "powerAtStarZero": 22200
   },
   {
     "id": "wu-ming",
@@ -53465,7 +53540,8 @@
     </div>`;
   }
 
-  function shardCostsTable(shardCosts) {
+  function shardCostsTable(shardCosts, powerAtStarZero) {
+    const hasTierPower = shardCosts.some((tier) => tier.tierPower !== undefined);
     const rows = shardCosts
       .map(
         (tier) => `<tr>
@@ -53473,11 +53549,13 @@
           <td>${tier.tierCosts.map(fmt).join(', ')}</td>
           <td>${fmt(tier.total)}</td>
           <td>${numCell(tier.power)}</td>
+          ${hasTierPower ? `<td>${tier.tierPower ? tier.tierPower.map(fmt).join(', ') : '<span class="empty">&mdash;</span>'}</td>` : ''}
         </tr>`,
       )
       .join('');
-    return `<table>
-      <thead><tr><th>Star</th><th>Tier Costs</th><th>Total Shards</th><th>Power at Star</th></tr></thead>
+    const zeroNote = powerAtStarZero !== undefined ? `<p class="empty">Hero Power at star 0: ${fmt(powerAtStarZero)}</p>` : '';
+    return `${zeroNote}<table>
+      <thead><tr><th>Star</th><th>Tier Costs</th><th>Total Shards</th><th>Power at Star</th>${hasTierPower ? '<th>Hero Power at Tiers x.1 to x.6</th>' : ''}</tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
   }
@@ -53633,7 +53711,7 @@
 
       <div class="section">
         <h3>${hero.shardImg ? `<img src="..${hero.shardImg}" alt="" style="width:28px;height:28px;vertical-align:middle;margin-right:8px;border-radius:6px;">` : ''}Shard Costs</h3>
-        ${shardCostsTable(hero.shardCosts)}
+        ${shardCostsTable(hero.shardCosts, hero.powerAtStarZero)}
       </div>
 
       <div class="section">
