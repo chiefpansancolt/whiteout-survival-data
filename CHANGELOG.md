@@ -23,6 +23,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `expertRelationships()`: the 11 relationship statuses from Stranger to Intimate with their icons
   and the affinity level where each starts. The experts sample page shows them in the affinity
   table.
+- `troops()`: Infantry, Lancer, and Marksman with the resource cost and training time of tiers 1 to
+  12, from WoS Tools, and the tier 12 promotion cost.
+- `TROOP_CALCULATOR`, `SVS_BATTLE_DAY_ID`, and `ALLIANCE_SHOWDOWN_TRUCK_ACTION`: the values the
+  calculators use, exported so an app can show the same choices and rules.
+- `calculateTroops()`: a troop calculator built on the Camp Configuration of WoS Tools. It takes the
+  level and the runs of each of the three camps, which can train, promote, or both, and returns the
+  troops by type and tier, the resources, and the time, with training speed buffs and cost
+  reduction. The sample page `sample/calculator-troops.html` has the camp inputs. The camp levels
+  from 30-1 to FC 10 now have a `trainingCapacity`, taken from WoS Tools.
 - `calculateChiefGear()` and `calculateChiefCharm()`: the materials, score, power gained, and event
   points for upgrading Chief Gear or Chief Charms from a start level to an end level, for as many
   pieces as you pass. The sample pages `sample/calculator-chief-gear.html` (6 pieces) and

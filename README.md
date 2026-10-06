@@ -122,7 +122,10 @@ in-game data (not sourced from either wiki, which don't document this metric).
   `trainingSpeedBonusPercent` — the latter is set on every standard level but only on Fire Crystal
   tier base rows (`FC 1`..`FC 10`), matching the wiki, which shows no value on sub-levels or the
   pre-FC stage. Fire Crystal levels carry a Furnace-only cross-building gate (no Embassy), on top of
-  the same derived same-building chain as Command Center.
+  the same derived same-building chain as Command Center. `trainingCapacity` comes from the wiki for
+  levels 1 to 30. The 50 levels from 30-1 to FC 10 come from WoS Tools: 234 at FC 1 up to 459 at FC
+  10, with 5 more for each sub-level. The levels 30-1 to 30-4 follow the same 5-step rule from 209
+  at level 30.
 - **War Academy** — researches Marksman/Infantry/Lancer technologies and unlocks T11 units. The one
   building so far with no standard tier and no pre-FC stage at all: it unlocks directly at `FC 1`
   (zero cost) once the Furnace reaches Fire Crystal Level 1, tracking the Furnace FC tier throughout
@@ -366,6 +369,22 @@ recruitment-cost field is stored — it would just be redundant, derivable data.
 Images are organized one folder per expert (`images/experts/<Expert>/`), portrait alongside a
 `skills/` subfolder covering all 4 skills plus the talent, the same convention `images/heroes/` and
 `images/pets/` use — each is named `<Expert>-<SkillName>.<ext>`.
+
+---
+
+### 🪖 Troops
+
+| Module | Factory    | Items | Description                                                        |
+| ------ | ---------- | ----- | ------------------------------------------------------------------ |
+| troops | `troops()` | 3     | Infantry, Lancer, and Marksman with the cost and time of each tier |
+
+Each troop type lists tiers 1 to 12. A tier has `cost`, the meat, wood, coal, and iron for one
+troop, and `trainingTimeSeconds`, the seconds to train one troop with no training speed bonus. Tier
+12 also has `promotionCost`, the resources to promote one troop from tier 11 to tier 12, because
+that is not the difference of the two training costs. The data comes from WoS Tools. The training
+time of a tier is the same for all three types, and the costs differ. The tier 12 costs are partly
+derived on WoS Tools: the Marksman promotion cost was measured in the game, and the Infantry and
+Lancer costs were scaled from it. The troop calculator reads this table.
 
 ---
 
@@ -815,6 +834,7 @@ so a data fix changes the result without any code change.
 | `calculateHallOfChief()`      | Hall of Chief points for each stage                                     |
 | `calculateChiefGear()`        | Materials, gear score, power, and event points to upgrade Chief Gear    |
 | `calculateChiefCharm()`       | Materials, charm score, power, and event points to upgrade Chief Charms |
+| `calculateTroops()`           | Troops trained or promoted by each camp, by troop type and tier         |
 
 Every calculator takes how many times each scoring action was done, as counts by day id and then by
 action text from that event's `days` in `events()`. Days and actions that are left out count as 0.
@@ -838,6 +858,39 @@ Event points are the score times what the "Raise Chief Gear max score" or "Raise
 score" row pays in SvS, Alliance Showdown, King of Icefield, and Hall of Chief. A range that goes
 down, or a level that does not exist, throws an error.
 
+`calculateTroops({ camps, ... })` works like the Camp Configuration on WoS Tools. Each of the three
+camps (`infantry`, `lancer`, `marksman`) has a `level` (a level `label` from `buildings()`, such as
+`30` or `FC 3-2`) and a list of `runs`. A run has an `action` (`training` at a `tier`, or
+`promotion` from a `fromTier` to a `toTier`), a `count` per batch (or `max`), and `batches`. A camp
+can train and promote, so it can have both runs, each with its own count and batches. All three
+camps share one capacity: the capacity of the three camp levels added together, plus
+`researchCapacity` and the `ministerOfEducation` buff (+200, or +300 for the supreme buff), times 3
+with `capacityBoost`.
+
+It returns the capacity, the runs of each camp, and the change in troops for each type and tier from
+T1 to T12. Training adds troops at its tier, and promotion takes them from the first tier and adds
+them to the second. It also returns the `resources` (meat, wood, coal, and iron) and the time. The
+cost of a run is the cost of one troop from `troops()` times the troops, less `costReductionPercent`
+for that troop type (0 to 75), and promotion costs the difference between the two tiers. The seconds
+of a batch are the training time of one troop times the troops, divided by 1 plus the training
+speed, rounded down. The training speed is `trainingSpeedPercent` (your speed without buffs, as the
+game shows it) plus the buffs: `vicePresident` (+10% or +15%), `ministerOfEducation` (+50% or +75%),
+`mobilize` (+30%), and `advancedTraining` (+20%). A camp adds up its batches, `totalSeconds` adds
+the camps together (the speedup time you need), and `longestCampSeconds` is the camp that takes the
+longest. A count above the capacity, an unknown level, a tier outside 1 to 12, a negative speed, or
+a cost reduction outside 0 to 75 throws an error.
+
+A promotion to tier 12 adds up the steps from tier to tier. A step costs the difference of the two
+training costs, or the tier's `promotionCost` for tier 12, and takes the difference of the two
+training times.
+
+The values that the calculators use are exported, so an app can offer the same choices and show the
+same rules. `TROOP_CALCULATOR` holds the troop types, the tier range, the capacity boost, the
+Minister of Education capacity and speed, the Vice President, Mobilize, and Advanced Training speed,
+and the highest cost reduction. Its `maxTier` comes from the troop data. `SVS_BATTLE_DAY_ID` is the
+SvS day that Valeria's bonus skips, and `ALLIANCE_SHOWDOWN_TRUCK_ACTION` matches the truck actions
+that Baldur's bonus skips. The troop sample page reads `TROOP_CALCULATOR` instead of its own copies.
+
 The bonus of a day is rounded to a whole number. The percents are read from the `progressions` of
 each expert skill.
 
@@ -853,8 +906,8 @@ result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 43
 
 The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
 `calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
-and `calculator-chief-charm.html` are free plug-and-play versions with the same math. They save
-nothing.
+`calculator-chief-charm.html`, and `calculator-troops.html` are free plug-and-play versions with the
+same math. They save nothing.
 
 ---
 
