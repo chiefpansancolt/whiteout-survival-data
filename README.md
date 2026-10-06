@@ -788,17 +788,29 @@ Transfer, Vault of Enigma, and Tundra Star.
 Calculators are plain functions, not query builders. They read their numbers from the package data,
 so a data fix changes the result without any code change.
 
-| Function         | Description                                                          |
-| ---------------- | -------------------------------------------------------------------- |
-| `calculateSvs()` | State of Power scores for each day and the whole event, with Valeria |
+| Function                      | Description                                                         |
+| ----------------------------- | ------------------------------------------------------------------- |
+| `calculateSvs()`              | State of Power points for each day and phase, with Valeria's bonus  |
+| `calculateAllianceShowdown()` | Alliance Showdown personal points for each day, with Baldur's bonus |
+| `calculateKingOfIcefield()`   | King of Icefield points for each day                                |
+| `calculateHallOfChief()`      | Hall of Chief points for each stage                                 |
 
-`calculateSvs(usage, options)` takes how many times each scoring action was done, as counts by day
-id and then by action text from the `svs-state-of-power` event, and returns the base points, the
-Valeria bonus, and the total for every day, for the Preparation Phase, for the Battle Phase, and for
-the whole event. `options.valeriaLevel` (1 to 10) turns on Valeria's Well Prepared skill, which adds
-2% for each level (read from the `progressions` of that skill) to the points of days 1 to 5. The
-bonus of a day is rounded to a whole number and never applies to the Battle Phase. A day or action
-that the event does not have, a negative count, or a level outside 1 to 10 throws an error.
+Every calculator takes how many times each scoring action was done, as counts by day id and then by
+action text from that event's `days` in `events()`. Days and actions that are left out count as 0.
+Each returns the base points, the expert bonus, and the total for every day and for the whole event.
+A day or action that the event does not have, or a negative count, throws an error.
+
+`calculateSvs(usage, { valeriaLevel })` also returns the Preparation Phase and Battle Phase totals.
+Valeria's Well Prepared skill (level 1 to 10) adds 2% for each level to the points of days 1 to 5,
+and never to the Battle Phase.
+
+`calculateAllianceShowdown(usage, { dawnHymnLevel })` uses Baldur's Dawn Hymn skill (level 1 to 10).
+It adds 5% for each level to every action except the Tundra Trade Route truck actions (escort and
+raid). `calculateKingOfIcefield(usage)` and `calculateHallOfChief(usage)` have no expert bonus. Hall
+of Chief ranks every stage on its own, so the points of one stage matter more than the sum.
+
+The bonus of a day is rounded to a whole number. The percents are read from the `progressions` of
+each expert skill.
 
 ```ts
 import { calculateSvs } from "whiteout-survival-data";
@@ -810,8 +822,9 @@ const result = calculateSvs(
 result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 432,000 Preparation points
 ```
 
-The sample page `sample/calculator-svs.html` is a free plug-and-play version with the same math. It
-saves nothing.
+The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
+`calculator-king-of-icefield.html`, and `calculator-hall-of-chief.html` are free plug-and-play
+versions with the same math. They save nothing.
 
 ---
 

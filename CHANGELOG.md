@@ -17,6 +17,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `expertRelationships()`: the 11 relationship statuses from Stranger to Intimate with their icons
   and the affinity level where each starts. The experts sample page shows them in the affinity
   table.
+- `calculateAllianceShowdown()`, `calculateKingOfIcefield()`, and `calculateHallOfChief()`: score
+  calculators for those events, built like `calculateSvs()` from the scoring lists of each event.
+  Alliance Showdown supports Baldur's Dawn Hymn bonus, which skips the truck actions. Each has a
+  plug-and-play page under `sample/`, linked from the Calculators section of the sample index.
 - `calculateSvs()`: a State of Power score calculator. It reads the scoring lists of the
   `svs-state-of-power` event and returns the points for each day, each phase, and the whole event,
   with Valeria's Well Prepared bonus when `valeriaLevel` is set. The sample page
