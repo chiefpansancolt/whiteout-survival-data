@@ -1,0 +1,866 @@
+[
+  {
+    "id": "infantry",
+    "name": "Infantry",
+    "tiers": [
+      {
+        "tier": 1,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 36
+          },
+          {
+            "itemId": "wood",
+            "amount": 27
+          },
+          {
+            "itemId": "coal",
+            "amount": 7
+          },
+          {
+            "itemId": "iron",
+            "amount": 2
+          }
+        ],
+        "trainingTimeSeconds": 12
+      },
+      {
+        "tier": 2,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 58
+          },
+          {
+            "itemId": "wood",
+            "amount": 44
+          },
+          {
+            "itemId": "coal",
+            "amount": 10
+          },
+          {
+            "itemId": "iron",
+            "amount": 3
+          }
+        ],
+        "trainingTimeSeconds": 17
+      },
+      {
+        "tier": 3,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 92
+          },
+          {
+            "itemId": "wood",
+            "amount": 69
+          },
+          {
+            "itemId": "coal",
+            "amount": 17
+          },
+          {
+            "itemId": "iron",
+            "amount": 4
+          }
+        ],
+        "trainingTimeSeconds": 24
+      },
+      {
+        "tier": 4,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 120
+          },
+          {
+            "itemId": "wood",
+            "amount": 90
+          },
+          {
+            "itemId": "coal",
+            "amount": 21
+          },
+          {
+            "itemId": "iron",
+            "amount": 5
+          }
+        ],
+        "trainingTimeSeconds": 32
+      },
+      {
+        "tier": 5,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 156
+          },
+          {
+            "itemId": "wood",
+            "amount": 117
+          },
+          {
+            "itemId": "coal",
+            "amount": 27
+          },
+          {
+            "itemId": "iron",
+            "amount": 6
+          }
+        ],
+        "trainingTimeSeconds": 44
+      },
+      {
+        "tier": 6,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 186
+          },
+          {
+            "itemId": "wood",
+            "amount": 140
+          },
+          {
+            "itemId": "coal",
+            "amount": 33
+          },
+          {
+            "itemId": "iron",
+            "amount": 7
+          }
+        ],
+        "trainingTimeSeconds": 60
+      },
+      {
+        "tier": 7,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 279
+          },
+          {
+            "itemId": "wood",
+            "amount": 210
+          },
+          {
+            "itemId": "coal",
+            "amount": 49
+          },
+          {
+            "itemId": "iron",
+            "amount": 11
+          }
+        ],
+        "trainingTimeSeconds": 83
+      },
+      {
+        "tier": 8,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 558
+          },
+          {
+            "itemId": "wood",
+            "amount": 419
+          },
+          {
+            "itemId": "coal",
+            "amount": 98
+          },
+          {
+            "itemId": "iron",
+            "amount": 21
+          }
+        ],
+        "trainingTimeSeconds": 113
+      },
+      {
+        "tier": 9,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1394
+          },
+          {
+            "itemId": "wood",
+            "amount": 1046
+          },
+          {
+            "itemId": "coal",
+            "amount": 244
+          },
+          {
+            "itemId": "iron",
+            "amount": 51
+          }
+        ],
+        "trainingTimeSeconds": 131
+      },
+      {
+        "tier": 10,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 2788
+          },
+          {
+            "itemId": "wood",
+            "amount": 2091
+          },
+          {
+            "itemId": "coal",
+            "amount": 488
+          },
+          {
+            "itemId": "iron",
+            "amount": 102
+          }
+        ],
+        "trainingTimeSeconds": 152
+      },
+      {
+        "tier": 11,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 6970
+          },
+          {
+            "itemId": "wood",
+            "amount": 5228
+          },
+          {
+            "itemId": "coal",
+            "amount": 1220
+          },
+          {
+            "itemId": "iron",
+            "amount": 253
+          }
+        ],
+        "trainingTimeSeconds": 180
+      },
+      {
+        "tier": 12,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 6970
+          },
+          {
+            "itemId": "wood",
+            "amount": 5228
+          },
+          {
+            "itemId": "coal",
+            "amount": 1220
+          },
+          {
+            "itemId": "iron",
+            "amount": 254
+          }
+        ],
+        "trainingTimeSeconds": 215,
+        "promotionCost": [
+          {
+            "itemId": "meat",
+            "amount": 3476
+          },
+          {
+            "itemId": "wood",
+            "amount": 2613
+          },
+          {
+            "itemId": "coal",
+            "amount": 604
+          },
+          {
+            "itemId": "iron",
+            "amount": 120
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lancer",
+    "name": "Lancer",
+    "tiers": [
+      {
+        "tier": 1,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 32
+          },
+          {
+            "itemId": "wood",
+            "amount": 30
+          },
+          {
+            "itemId": "coal",
+            "amount": 7
+          },
+          {
+            "itemId": "iron",
+            "amount": 2
+          }
+        ],
+        "trainingTimeSeconds": 12
+      },
+      {
+        "tier": 2,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 51
+          },
+          {
+            "itemId": "wood",
+            "amount": 48
+          },
+          {
+            "itemId": "coal",
+            "amount": 10
+          },
+          {
+            "itemId": "iron",
+            "amount": 3
+          }
+        ],
+        "trainingTimeSeconds": 17
+      },
+      {
+        "tier": 3,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 81
+          },
+          {
+            "itemId": "wood",
+            "amount": 76
+          },
+          {
+            "itemId": "coal",
+            "amount": 16
+          },
+          {
+            "itemId": "iron",
+            "amount": 4
+          }
+        ],
+        "trainingTimeSeconds": 24
+      },
+      {
+        "tier": 4,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 105
+          },
+          {
+            "itemId": "wood",
+            "amount": 99
+          },
+          {
+            "itemId": "coal",
+            "amount": 21
+          },
+          {
+            "itemId": "iron",
+            "amount": 5
+          }
+        ],
+        "trainingTimeSeconds": 32
+      },
+      {
+        "tier": 5,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 136
+          },
+          {
+            "itemId": "wood",
+            "amount": 129
+          },
+          {
+            "itemId": "coal",
+            "amount": 27
+          },
+          {
+            "itemId": "iron",
+            "amount": 7
+          }
+        ],
+        "trainingTimeSeconds": 44
+      },
+      {
+        "tier": 6,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 163
+          },
+          {
+            "itemId": "wood",
+            "amount": 154
+          },
+          {
+            "itemId": "coal",
+            "amount": 32
+          },
+          {
+            "itemId": "iron",
+            "amount": 8
+          }
+        ],
+        "trainingTimeSeconds": 60
+      },
+      {
+        "tier": 7,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 244
+          },
+          {
+            "itemId": "wood",
+            "amount": 231
+          },
+          {
+            "itemId": "coal",
+            "amount": 48
+          },
+          {
+            "itemId": "iron",
+            "amount": 11
+          }
+        ],
+        "trainingTimeSeconds": 83
+      },
+      {
+        "tier": 8,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 488
+          },
+          {
+            "itemId": "wood",
+            "amount": 461
+          },
+          {
+            "itemId": "coal",
+            "amount": 95
+          },
+          {
+            "itemId": "iron",
+            "amount": 22
+          }
+        ],
+        "trainingTimeSeconds": 113
+      },
+      {
+        "tier": 9,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1220
+          },
+          {
+            "itemId": "wood",
+            "amount": 1151
+          },
+          {
+            "itemId": "coal",
+            "amount": 237
+          },
+          {
+            "itemId": "iron",
+            "amount": 55
+          }
+        ],
+        "trainingTimeSeconds": 131
+      },
+      {
+        "tier": 10,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 2440
+          },
+          {
+            "itemId": "wood",
+            "amount": 2301
+          },
+          {
+            "itemId": "coal",
+            "amount": 474
+          },
+          {
+            "itemId": "iron",
+            "amount": 109
+          }
+        ],
+        "trainingTimeSeconds": 152
+      },
+      {
+        "tier": 11,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 6099
+          },
+          {
+            "itemId": "wood",
+            "amount": 5751
+          },
+          {
+            "itemId": "coal",
+            "amount": 1185
+          },
+          {
+            "itemId": "iron",
+            "amount": 271
+          }
+        ],
+        "trainingTimeSeconds": 180
+      },
+      {
+        "tier": 12,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 6099
+          },
+          {
+            "itemId": "wood",
+            "amount": 5751
+          },
+          {
+            "itemId": "coal",
+            "amount": 1185
+          },
+          {
+            "itemId": "iron",
+            "amount": 272
+          }
+        ],
+        "trainingTimeSeconds": 215,
+        "promotionCost": [
+          {
+            "itemId": "meat",
+            "amount": 3042
+          },
+          {
+            "itemId": "wood",
+            "amount": 2875
+          },
+          {
+            "itemId": "coal",
+            "amount": 587
+          },
+          {
+            "itemId": "iron",
+            "amount": 128
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marksman",
+    "name": "Marksman",
+    "tiers": [
+      {
+        "tier": 1,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 23
+          },
+          {
+            "itemId": "wood",
+            "amount": 34
+          },
+          {
+            "itemId": "coal",
+            "amount": 6
+          },
+          {
+            "itemId": "iron",
+            "amount": 2
+          }
+        ],
+        "trainingTimeSeconds": 12
+      },
+      {
+        "tier": 2,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 36
+          },
+          {
+            "itemId": "wood",
+            "amount": 54
+          },
+          {
+            "itemId": "coal",
+            "amount": 9
+          },
+          {
+            "itemId": "iron",
+            "amount": 4
+          }
+        ],
+        "trainingTimeSeconds": 17
+      },
+      {
+        "tier": 3,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 58
+          },
+          {
+            "itemId": "wood",
+            "amount": 86
+          },
+          {
+            "itemId": "coal",
+            "amount": 15
+          },
+          {
+            "itemId": "iron",
+            "amount": 5
+          }
+        ],
+        "trainingTimeSeconds": 24
+      },
+      {
+        "tier": 4,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 75
+          },
+          {
+            "itemId": "wood",
+            "amount": 111
+          },
+          {
+            "itemId": "coal",
+            "amount": 19
+          },
+          {
+            "itemId": "iron",
+            "amount": 6
+          }
+        ],
+        "trainingTimeSeconds": 32
+      },
+      {
+        "tier": 5,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 97
+          },
+          {
+            "itemId": "wood",
+            "amount": 144
+          },
+          {
+            "itemId": "coal",
+            "amount": 24
+          },
+          {
+            "itemId": "iron",
+            "amount": 8
+          }
+        ],
+        "trainingTimeSeconds": 44
+      },
+      {
+        "tier": 6,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 117
+          },
+          {
+            "itemId": "wood",
+            "amount": 173
+          },
+          {
+            "itemId": "coal",
+            "amount": 29
+          },
+          {
+            "itemId": "iron",
+            "amount": 10
+          }
+        ],
+        "trainingTimeSeconds": 60
+      },
+      {
+        "tier": 7,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 175
+          },
+          {
+            "itemId": "wood",
+            "amount": 258
+          },
+          {
+            "itemId": "coal",
+            "amount": 44
+          },
+          {
+            "itemId": "iron",
+            "amount": 14
+          }
+        ],
+        "trainingTimeSeconds": 83
+      },
+      {
+        "tier": 8,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 349
+          },
+          {
+            "itemId": "wood",
+            "amount": 516
+          },
+          {
+            "itemId": "coal",
+            "amount": 87
+          },
+          {
+            "itemId": "iron",
+            "amount": 28
+          }
+        ],
+        "trainingTimeSeconds": 113
+      },
+      {
+        "tier": 9,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 872
+          },
+          {
+            "itemId": "wood",
+            "amount": 1290
+          },
+          {
+            "itemId": "coal",
+            "amount": 217
+          },
+          {
+            "itemId": "iron",
+            "amount": 70
+          }
+        ],
+        "trainingTimeSeconds": 131
+      },
+      {
+        "tier": 10,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 1740
+          },
+          {
+            "itemId": "wood",
+            "amount": 2579
+          },
+          {
+            "itemId": "coal",
+            "amount": 433
+          },
+          {
+            "itemId": "iron",
+            "amount": 140
+          }
+        ],
+        "trainingTimeSeconds": 152
+      },
+      {
+        "tier": 11,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 4357
+          },
+          {
+            "itemId": "wood",
+            "amount": 6448
+          },
+          {
+            "itemId": "coal",
+            "amount": 1081
+          },
+          {
+            "itemId": "iron",
+            "amount": 349
+          }
+        ],
+        "trainingTimeSeconds": 180
+      },
+      {
+        "tier": 12,
+        "cost": [
+          {
+            "itemId": "meat",
+            "amount": 4357
+          },
+          {
+            "itemId": "wood",
+            "amount": 6448
+          },
+          {
+            "itemId": "coal",
+            "amount": 1081
+          },
+          {
+            "itemId": "iron",
+            "amount": 350
+          }
+        ],
+        "trainingTimeSeconds": 215,
+        "promotionCost": [
+          {
+            "itemId": "meat",
+            "amount": 2173
+          },
+          {
+            "itemId": "wood",
+            "amount": 3223
+          },
+          {
+            "itemId": "coal",
+            "amount": 535
+          },
+          {
+            "itemId": "iron",
+            "amount": 165
+          }
+        ]
+      }
+    ]
+  }
+]

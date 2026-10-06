@@ -5,7 +5,8 @@ import {
 } from '@/types';
 import { scoreEventDays, skillPercent, sumScores } from './event-score';
 
-const TRUCK_ACTION = /^(Escort|Raid) 1 truck/;
+/** Matches the Tundra Trade Route truck actions (escort and raid), which Baldur's Dawn Hymn bonus does not apply to. */
+export const ALLIANCE_SHOWDOWN_TRUCK_ACTION = /^(Escort|Raid) 1 truck/;
 
 /**
  * Calculates Alliance Showdown personal points from how many times each scoring action was done.
@@ -32,7 +33,7 @@ export function calculateAllianceShowdown(
   );
   const days = scoreEventDays('alliance-showdown', 'Alliance Showdown', usage, {
     percent: bonusPercent,
-    appliesTo: (_day, action) => !TRUCK_ACTION.test(action),
+    appliesTo: (_day, action) => !ALLIANCE_SHOWDOWN_TRUCK_ACTION.test(action),
   });
   return { dawnHymnBonusPercent: bonusPercent, days, event: sumScores(days) };
 }

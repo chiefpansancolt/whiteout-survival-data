@@ -22,4 +22,5 @@ export * from './modules/vip';
 export * from './modules/daybreak-island';
 export * from './modules/chief-gear-converter';
 export * from './modules/chief-charm-converter';
+export * from './modules/troops';
 export * from './modules/calculators';

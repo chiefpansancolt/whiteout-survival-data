@@ -92,3 +92,78 @@ export interface UpgradeResult {
   power: number;
   eventPoints: UpgradeEventPoints;
 }
+
+export type TroopType = 'infantry' | 'lancer' | 'marksman';
+
+/** What a camp does in one batch. Tiers are 1 to 11. */
+export type TroopCampAction =
+  { mode: 'training'; tier: number } | { mode: 'promotion'; fromTier: number; toTier: number };
+
+/** One run of a camp: troops in each batch, repeated for a number of batches. */
+export interface TroopRun {
+  action: TroopCampAction;
+  /** Troops in each batch, or `max` for the capacity. */
+  count: number | 'max';
+  /** Number of batches, 1 or more. Defaults to 1. */
+  batches?: number;
+}
+
+export interface TroopCampConfig {
+  /** The camp level, as the `label` of a level of the camp in `buildings()`, such as `30` or `FC 3-2`. */
+  level: string;
+  /** What the camp does. A camp can train and promote, so it can have several runs. Leave out when the camp only adds its level to the shared capacity. */
+  runs?: TroopRun[];
+}
+
+export interface TroopCalculatorInput {
+  camps: Record<TroopType, TroopCampConfig>;
+  /** Training capacity from research. Defaults to 0. */
+  researchCapacity?: number;
+  /** The Minister of Education buff adds 200 capacity, or 300 for the supreme buff. */
+  ministerOfEducation?: 'regular' | 'supreme';
+  /** The training capacity boost that multiplies the total capacity by 3. */
+  capacityBoost?: boolean;
+  /** Your training speed bonus in percent, as the game shows it, not counting the buffs below. Defaults to 0. */
+  trainingSpeedPercent?: number;
+  /** The Vice President buff adds 10% training speed, or 15% for the supreme buff. */
+  vicePresident?: 'regular' | 'supreme';
+  /** The Mobilize buff of the President adds 30% training speed. */
+  mobilize?: boolean;
+  /** The Advanced Training buff adds 20% training speed. */
+  advancedTraining?: boolean;
+  /** Percent off the resource cost for each troop type, from 0 to 75. Defaults to 0. */
+  costReductionPercent?: Partial<Record<TroopType, number>>;
+}
+
+export interface TroopCampResult {
+  /** The troops in each batch, the batches, and the seconds for all the batches of each run of the camp, in order. */
+  runs: { troopsPerBatch: number; batches: number; seconds: number }[];
+  /** The seconds for all runs of the camp, before any speedups. */
+  seconds: number;
+}
+
+export interface TroopTierRow {
+  tier: number;
+  infantry: number;
+  lancer: number;
+  marksman: number;
+  total: number;
+}
+
+export interface TroopCalculation {
+  /** The most troops a camp can queue in one batch. All three camps share this capacity. */
+  capacity: number;
+  camps: Record<TroopType, TroopCampResult>;
+  /** The change in troops for each tier from 1 to 11. Training adds troops, and promotion takes troops from the first tier and adds them to the second. */
+  tiers: TroopTierRow[];
+  /** The change in troops for each type, summed over all tiers. */
+  totals: Omit<TroopTierRow, 'tier'>;
+  /** The training speed bonus in percent that the times use, with the buffs added. */
+  trainingSpeedPercent: number;
+  /** Meat, wood, coal, and iron for all runs, with the cost reduction applied. Promotion costs the difference between the two tiers. */
+  resources: UpgradeMaterial[];
+  /** The seconds for all camps added together, which is the speedup time to finish all of them. */
+  totalSeconds: number;
+  /** The seconds for the camp that takes the longest, since the camps train at the same time. */
+  longestCampSeconds: number;
+}

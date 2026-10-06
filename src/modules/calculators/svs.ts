@@ -1,7 +1,8 @@
 import { SvsCalculation, SvsCalculatorOptions, SvsDayResult, SvsUsage } from '@/types';
 import { scoreEventDays, skillPercent, sumScores } from './event-score';
 
-const BATTLE_DAY_ID = 'Battle';
+/** The id of the Battle Phase day in the `svs-state-of-power` event. Valeria's bonus does not apply to this day. */
+export const SVS_BATTLE_DAY_ID = 'Battle';
 
 /**
  * Calculates State of Power scores from how many times each scoring action was done.
@@ -28,10 +29,10 @@ export function calculateSvs(
   );
   const days: SvsDayResult[] = scoreEventDays('svs-state-of-power', 'SvS', usage, {
     percent: bonusPercent,
-    appliesTo: (day) => day.day !== BATTLE_DAY_ID,
+    appliesTo: (day) => day.day !== SVS_BATTLE_DAY_ID,
   }).map((day) => ({
     ...day,
-    phase: day.day === BATTLE_DAY_ID ? 'battle' : 'preparation',
+    phase: day.day === SVS_BATTLE_DAY_ID ? 'battle' : 'preparation',
   }));
 
   return {

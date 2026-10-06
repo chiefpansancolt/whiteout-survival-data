@@ -11793,7 +11793,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 316180,
-        "developmentIndex": 36850
+        "developmentIndex": 36850,
+        "trainingCapacity": 214
       },
       {
         "id": "infantry-camp-30-2",
@@ -11836,7 +11837,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 327660,
-        "developmentIndex": 38100
+        "developmentIndex": 38100,
+        "trainingCapacity": 219
       },
       {
         "id": "infantry-camp-30-3",
@@ -11879,7 +11881,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 339140,
-        "developmentIndex": 39350
+        "developmentIndex": 39350,
+        "trainingCapacity": 224
       },
       {
         "id": "infantry-camp-30-4",
@@ -11922,7 +11925,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 350620,
-        "developmentIndex": 40600
+        "developmentIndex": 40600,
+        "trainingCapacity": 229
       },
       {
         "id": "infantry-camp-fc1",
@@ -11965,7 +11969,8 @@
         "buildTimeSeconds": 90720,
         "power": 362100,
         "trainingSpeedBonusPercent": 8.3,
-        "developmentIndex": 41850
+        "developmentIndex": 41850,
+        "trainingCapacity": 234
       },
       {
         "id": "infantry-camp-fc1-1",
@@ -12008,7 +12013,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 373580,
-        "developmentIndex": 43100
+        "developmentIndex": 43100,
+        "trainingCapacity": 239
       },
       {
         "id": "infantry-camp-fc1-2",
@@ -12051,7 +12057,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 385060,
-        "developmentIndex": 44350
+        "developmentIndex": 44350,
+        "trainingCapacity": 244
       },
       {
         "id": "infantry-camp-fc1-3",
@@ -12094,7 +12101,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 396540,
-        "developmentIndex": 45600
+        "developmentIndex": 45600,
+        "trainingCapacity": 249
       },
       {
         "id": "infantry-camp-fc1-4",
@@ -12137,7 +12145,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 408020,
-        "developmentIndex": 46850
+        "developmentIndex": 46850,
+        "trainingCapacity": 254
       },
       {
         "id": "infantry-camp-fc2",
@@ -12180,7 +12189,8 @@
         "buildTimeSeconds": 116640,
         "power": 419500,
         "trainingSpeedBonusPercent": 8.6,
-        "developmentIndex": 48100
+        "developmentIndex": 48100,
+        "trainingCapacity": 259
       },
       {
         "id": "infantry-camp-fc2-1",
@@ -12223,7 +12233,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 430980,
-        "developmentIndex": 49350
+        "developmentIndex": 49350,
+        "trainingCapacity": 264
       },
       {
         "id": "infantry-camp-fc2-2",
@@ -12266,7 +12277,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 442460,
-        "developmentIndex": 50600
+        "developmentIndex": 50600,
+        "trainingCapacity": 269
       },
       {
         "id": "infantry-camp-fc2-3",
@@ -12309,7 +12321,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 453940,
-        "developmentIndex": 51850
+        "developmentIndex": 51850,
+        "trainingCapacity": 274
       },
       {
         "id": "infantry-camp-fc2-4",
@@ -12352,7 +12365,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 465420,
-        "developmentIndex": 53100
+        "developmentIndex": 53100,
+        "trainingCapacity": 279
       },
       {
         "id": "infantry-camp-fc3",
@@ -12395,7 +12409,8 @@
         "buildTimeSeconds": 142560,
         "power": 476900,
         "trainingSpeedBonusPercent": 8.9,
-        "developmentIndex": 54350
+        "developmentIndex": 54350,
+        "trainingCapacity": 284
       },
       {
         "id": "infantry-camp-fc3-1",
@@ -12438,7 +12453,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 489540,
-        "developmentIndex": 55750
+        "developmentIndex": 55750,
+        "trainingCapacity": 289
       },
       {
         "id": "infantry-camp-fc3-2",
@@ -12481,7 +12497,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 502180,
-        "developmentIndex": 57100
+        "developmentIndex": 57100,
+        "trainingCapacity": 294
       },
       {
         "id": "infantry-camp-fc3-3",
@@ -12524,7 +12541,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 514820,
-        "developmentIndex": 58500
+        "developmentIndex": 58500,
+        "trainingCapacity": 299
       },
       {
         "id": "infantry-camp-fc3-4",
@@ -12567,7 +12585,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 527460,
-        "developmentIndex": 59850
+        "developmentIndex": 59850,
+        "trainingCapacity": 304
       },
       {
         "id": "infantry-camp-fc4",
@@ -12610,7 +12629,8 @@
         "buildTimeSeconds": 155520,
         "power": 540100,
         "trainingSpeedBonusPercent": 9.2,
-        "developmentIndex": 61250
+        "developmentIndex": 61250,
+        "trainingCapacity": 309
       },
       {
         "id": "infantry-camp-fc4-1",
@@ -12653,7 +12673,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 552740,
-        "developmentIndex": 62600
+        "developmentIndex": 62600,
+        "trainingCapacity": 314
       },
       {
         "id": "infantry-camp-fc4-2",
@@ -12696,7 +12717,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 565380,
-        "developmentIndex": 64000
+        "developmentIndex": 64000,
+        "trainingCapacity": 319
       },
       {
         "id": "infantry-camp-fc4-3",
@@ -12739,7 +12761,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 578020,
-        "developmentIndex": 65350
+        "developmentIndex": 65350,
+        "trainingCapacity": 324
       },
       {
         "id": "infantry-camp-fc4-4",
@@ -12782,7 +12805,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 590660,
-        "developmentIndex": 66750
+        "developmentIndex": 66750,
+        "trainingCapacity": 329
       },
       {
         "id": "infantry-camp-fc5",
@@ -12825,7 +12849,8 @@
         "buildTimeSeconds": 181440,
         "power": 603300,
         "trainingSpeedBonusPercent": 9.5,
-        "developmentIndex": 68100
+        "developmentIndex": 68100,
+        "trainingCapacity": 334
       },
       {
         "id": "infantry-camp-fc5-1",
@@ -12872,7 +12897,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 616820,
-        "developmentIndex": 69550
+        "developmentIndex": 69550,
+        "trainingCapacity": 339
       },
       {
         "id": "infantry-camp-fc5-2",
@@ -12919,7 +12945,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 630340,
-        "developmentIndex": 71050
+        "developmentIndex": 71050,
+        "trainingCapacity": 344
       },
       {
         "id": "infantry-camp-fc5-3",
@@ -12966,7 +12993,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 643860,
-        "developmentIndex": 72500
+        "developmentIndex": 72500,
+        "trainingCapacity": 349
       },
       {
         "id": "infantry-camp-fc5-4",
@@ -13013,7 +13041,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 657380,
-        "developmentIndex": 74000
+        "developmentIndex": 74000,
+        "trainingCapacity": 354
       },
       {
         "id": "infantry-camp-fc6",
@@ -13060,7 +13089,8 @@
         "buildTimeSeconds": 194400,
         "power": 670900,
         "trainingSpeedBonusPercent": 9.8,
-        "developmentIndex": 75450
+        "developmentIndex": 75450,
+        "trainingCapacity": 359
       },
       {
         "id": "infantry-camp-fc6-1",
@@ -13107,7 +13137,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 684420,
-        "developmentIndex": 76950
+        "developmentIndex": 76950,
+        "trainingCapacity": 364
       },
       {
         "id": "infantry-camp-fc6-2",
@@ -13154,7 +13185,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 697940,
-        "developmentIndex": 78400
+        "developmentIndex": 78400,
+        "trainingCapacity": 369
       },
       {
         "id": "infantry-camp-fc6-3",
@@ -13201,7 +13233,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 711460,
-        "developmentIndex": 79850
+        "developmentIndex": 79850,
+        "trainingCapacity": 374
       },
       {
         "id": "infantry-camp-fc6-4",
@@ -13248,7 +13281,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 724980,
-        "developmentIndex": 81350
+        "developmentIndex": 81350,
+        "trainingCapacity": 379
       },
       {
         "id": "infantry-camp-fc7",
@@ -13295,7 +13329,8 @@
         "buildTimeSeconds": 233280,
         "power": 738500,
         "trainingSpeedBonusPercent": 10.1,
-        "developmentIndex": 82800
+        "developmentIndex": 82800,
+        "trainingCapacity": 384
       },
       {
         "id": "infantry-camp-fc7-1",
@@ -13342,7 +13377,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 752020,
-        "developmentIndex": 84300
+        "developmentIndex": 84300,
+        "trainingCapacity": 389
       },
       {
         "id": "infantry-camp-fc7-2",
@@ -13389,7 +13425,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 765540,
-        "developmentIndex": 85750
+        "developmentIndex": 85750,
+        "trainingCapacity": 394
       },
       {
         "id": "infantry-camp-fc7-3",
@@ -13436,7 +13473,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 779060,
-        "developmentIndex": 87250
+        "developmentIndex": 87250,
+        "trainingCapacity": 399
       },
       {
         "id": "infantry-camp-fc7-4",
@@ -13483,7 +13521,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 792580,
-        "developmentIndex": 88700
+        "developmentIndex": 88700,
+        "trainingCapacity": 404
       },
       {
         "id": "infantry-camp-fc8",
@@ -13530,7 +13569,8 @@
         "buildTimeSeconds": 259200,
         "power": 806100,
         "trainingSpeedBonusPercent": 10.3,
-        "developmentIndex": 90150
+        "developmentIndex": 90150,
+        "trainingCapacity": 409
       },
       {
         "id": "infantry-camp-fc8-1",
@@ -13577,7 +13617,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 820580,
-        "developmentIndex": 91750
+        "developmentIndex": 91750,
+        "trainingCapacity": 414
       },
       {
         "id": "infantry-camp-fc8-2",
@@ -13624,7 +13665,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 835060,
-        "developmentIndex": 93300
+        "developmentIndex": 93300,
+        "trainingCapacity": 419
       },
       {
         "id": "infantry-camp-fc8-3",
@@ -13671,7 +13713,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 849540,
-        "developmentIndex": 94900
+        "developmentIndex": 94900,
+        "trainingCapacity": 424
       },
       {
         "id": "infantry-camp-fc8-4",
@@ -13718,7 +13761,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 864020,
-        "developmentIndex": 96450
+        "developmentIndex": 96450,
+        "trainingCapacity": 429
       },
       {
         "id": "infantry-camp-fc9",
@@ -13765,7 +13809,8 @@
         "buildTimeSeconds": 168480,
         "power": 878500,
         "trainingSpeedBonusPercent": 10.6,
-        "developmentIndex": 98050
+        "developmentIndex": 98050,
+        "trainingCapacity": 434
       },
       {
         "id": "infantry-camp-fc9-1",
@@ -13812,7 +13857,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 892980,
-        "developmentIndex": 99650
+        "developmentIndex": 99650,
+        "trainingCapacity": 439
       },
       {
         "id": "infantry-camp-fc9-2",
@@ -13859,7 +13905,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 907460,
-        "developmentIndex": 101200
+        "developmentIndex": 101200,
+        "trainingCapacity": 444
       },
       {
         "id": "infantry-camp-fc9-3",
@@ -13906,7 +13953,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 921940,
-        "developmentIndex": 102800
+        "developmentIndex": 102800,
+        "trainingCapacity": 449
       },
       {
         "id": "infantry-camp-fc9-4",
@@ -13953,7 +14001,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 936420,
-        "developmentIndex": 104350
+        "developmentIndex": 104350,
+        "trainingCapacity": 454
       },
       {
         "id": "infantry-camp-fc10",
@@ -14000,7 +14049,8 @@
         "buildTimeSeconds": 259200,
         "power": 950900,
         "trainingSpeedBonusPercent": 11,
-        "developmentIndex": 105950
+        "developmentIndex": 105950,
+        "trainingCapacity": 459
       }
     ]
   },
@@ -15032,7 +15082,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 316180,
-        "developmentIndex": 36850
+        "developmentIndex": 36850,
+        "trainingCapacity": 214
       },
       {
         "id": "marksman-camp-30-2",
@@ -15075,7 +15126,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 327660,
-        "developmentIndex": 38100
+        "developmentIndex": 38100,
+        "trainingCapacity": 219
       },
       {
         "id": "marksman-camp-30-3",
@@ -15118,7 +15170,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 339140,
-        "developmentIndex": 39350
+        "developmentIndex": 39350,
+        "trainingCapacity": 224
       },
       {
         "id": "marksman-camp-30-4",
@@ -15161,7 +15214,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 350620,
-        "developmentIndex": 40600
+        "developmentIndex": 40600,
+        "trainingCapacity": 229
       },
       {
         "id": "marksman-camp-fc1",
@@ -15204,7 +15258,8 @@
         "buildTimeSeconds": 90720,
         "power": 362100,
         "trainingSpeedBonusPercent": 8.3,
-        "developmentIndex": 41850
+        "developmentIndex": 41850,
+        "trainingCapacity": 234
       },
       {
         "id": "marksman-camp-fc1-1",
@@ -15247,7 +15302,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 373580,
-        "developmentIndex": 43100
+        "developmentIndex": 43100,
+        "trainingCapacity": 239
       },
       {
         "id": "marksman-camp-fc1-2",
@@ -15290,7 +15346,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 385060,
-        "developmentIndex": 44350
+        "developmentIndex": 44350,
+        "trainingCapacity": 244
       },
       {
         "id": "marksman-camp-fc1-3",
@@ -15333,7 +15390,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 396540,
-        "developmentIndex": 45600
+        "developmentIndex": 45600,
+        "trainingCapacity": 249
       },
       {
         "id": "marksman-camp-fc1-4",
@@ -15376,7 +15434,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 408020,
-        "developmentIndex": 46850
+        "developmentIndex": 46850,
+        "trainingCapacity": 254
       },
       {
         "id": "marksman-camp-fc2",
@@ -15419,7 +15478,8 @@
         "buildTimeSeconds": 116640,
         "power": 419500,
         "trainingSpeedBonusPercent": 8.6,
-        "developmentIndex": 48100
+        "developmentIndex": 48100,
+        "trainingCapacity": 259
       },
       {
         "id": "marksman-camp-fc2-1",
@@ -15462,7 +15522,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 430980,
-        "developmentIndex": 49350
+        "developmentIndex": 49350,
+        "trainingCapacity": 264
       },
       {
         "id": "marksman-camp-fc2-2",
@@ -15505,7 +15566,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 442460,
-        "developmentIndex": 50600
+        "developmentIndex": 50600,
+        "trainingCapacity": 269
       },
       {
         "id": "marksman-camp-fc2-3",
@@ -15548,7 +15610,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 453940,
-        "developmentIndex": 51850
+        "developmentIndex": 51850,
+        "trainingCapacity": 274
       },
       {
         "id": "marksman-camp-fc2-4",
@@ -15591,7 +15654,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 465420,
-        "developmentIndex": 53100
+        "developmentIndex": 53100,
+        "trainingCapacity": 279
       },
       {
         "id": "marksman-camp-fc3",
@@ -15634,7 +15698,8 @@
         "buildTimeSeconds": 142560,
         "power": 476900,
         "trainingSpeedBonusPercent": 8.9,
-        "developmentIndex": 54350
+        "developmentIndex": 54350,
+        "trainingCapacity": 284
       },
       {
         "id": "marksman-camp-fc3-1",
@@ -15677,7 +15742,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 489540,
-        "developmentIndex": 55750
+        "developmentIndex": 55750,
+        "trainingCapacity": 289
       },
       {
         "id": "marksman-camp-fc3-2",
@@ -15720,7 +15786,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 502180,
-        "developmentIndex": 57100
+        "developmentIndex": 57100,
+        "trainingCapacity": 294
       },
       {
         "id": "marksman-camp-fc3-3",
@@ -15763,7 +15830,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 514820,
-        "developmentIndex": 58500
+        "developmentIndex": 58500,
+        "trainingCapacity": 299
       },
       {
         "id": "marksman-camp-fc3-4",
@@ -15806,7 +15874,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 527460,
-        "developmentIndex": 59850
+        "developmentIndex": 59850,
+        "trainingCapacity": 304
       },
       {
         "id": "marksman-camp-fc4",
@@ -15849,7 +15918,8 @@
         "buildTimeSeconds": 155520,
         "power": 540100,
         "trainingSpeedBonusPercent": 9.2,
-        "developmentIndex": 61250
+        "developmentIndex": 61250,
+        "trainingCapacity": 309
       },
       {
         "id": "marksman-camp-fc4-1",
@@ -15892,7 +15962,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 552740,
-        "developmentIndex": 62600
+        "developmentIndex": 62600,
+        "trainingCapacity": 314
       },
       {
         "id": "marksman-camp-fc4-2",
@@ -15935,7 +16006,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 565380,
-        "developmentIndex": 64000
+        "developmentIndex": 64000,
+        "trainingCapacity": 319
       },
       {
         "id": "marksman-camp-fc4-3",
@@ -15978,7 +16050,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 578020,
-        "developmentIndex": 65350
+        "developmentIndex": 65350,
+        "trainingCapacity": 324
       },
       {
         "id": "marksman-camp-fc4-4",
@@ -16021,7 +16094,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 590660,
-        "developmentIndex": 66750
+        "developmentIndex": 66750,
+        "trainingCapacity": 329
       },
       {
         "id": "marksman-camp-fc5",
@@ -16064,7 +16138,8 @@
         "buildTimeSeconds": 181440,
         "power": 603300,
         "trainingSpeedBonusPercent": 9.5,
-        "developmentIndex": 68100
+        "developmentIndex": 68100,
+        "trainingCapacity": 334
       },
       {
         "id": "marksman-camp-fc5-1",
@@ -16111,7 +16186,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 616820,
-        "developmentIndex": 69550
+        "developmentIndex": 69550,
+        "trainingCapacity": 339
       },
       {
         "id": "marksman-camp-fc5-2",
@@ -16158,7 +16234,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 630340,
-        "developmentIndex": 71050
+        "developmentIndex": 71050,
+        "trainingCapacity": 344
       },
       {
         "id": "marksman-camp-fc5-3",
@@ -16205,7 +16282,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 643860,
-        "developmentIndex": 72500
+        "developmentIndex": 72500,
+        "trainingCapacity": 349
       },
       {
         "id": "marksman-camp-fc5-4",
@@ -16252,7 +16330,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 657380,
-        "developmentIndex": 74000
+        "developmentIndex": 74000,
+        "trainingCapacity": 354
       },
       {
         "id": "marksman-camp-fc6",
@@ -16299,7 +16378,8 @@
         "buildTimeSeconds": 194400,
         "power": 670900,
         "trainingSpeedBonusPercent": 9.8,
-        "developmentIndex": 75450
+        "developmentIndex": 75450,
+        "trainingCapacity": 359
       },
       {
         "id": "marksman-camp-fc6-1",
@@ -16346,7 +16426,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 684420,
-        "developmentIndex": 76950
+        "developmentIndex": 76950,
+        "trainingCapacity": 364
       },
       {
         "id": "marksman-camp-fc6-2",
@@ -16393,7 +16474,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 697940,
-        "developmentIndex": 78400
+        "developmentIndex": 78400,
+        "trainingCapacity": 369
       },
       {
         "id": "marksman-camp-fc6-3",
@@ -16440,7 +16522,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 711460,
-        "developmentIndex": 79850
+        "developmentIndex": 79850,
+        "trainingCapacity": 374
       },
       {
         "id": "marksman-camp-fc6-4",
@@ -16487,7 +16570,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 724980,
-        "developmentIndex": 81350
+        "developmentIndex": 81350,
+        "trainingCapacity": 379
       },
       {
         "id": "marksman-camp-fc7",
@@ -16534,7 +16618,8 @@
         "buildTimeSeconds": 233280,
         "power": 738500,
         "trainingSpeedBonusPercent": 10.1,
-        "developmentIndex": 82800
+        "developmentIndex": 82800,
+        "trainingCapacity": 384
       },
       {
         "id": "marksman-camp-fc7-1",
@@ -16581,7 +16666,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 752020,
-        "developmentIndex": 84300
+        "developmentIndex": 84300,
+        "trainingCapacity": 389
       },
       {
         "id": "marksman-camp-fc7-2",
@@ -16628,7 +16714,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 765540,
-        "developmentIndex": 85750
+        "developmentIndex": 85750,
+        "trainingCapacity": 394
       },
       {
         "id": "marksman-camp-fc7-3",
@@ -16675,7 +16762,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 779060,
-        "developmentIndex": 87250
+        "developmentIndex": 87250,
+        "trainingCapacity": 399
       },
       {
         "id": "marksman-camp-fc7-4",
@@ -16722,7 +16810,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 792580,
-        "developmentIndex": 88700
+        "developmentIndex": 88700,
+        "trainingCapacity": 404
       },
       {
         "id": "marksman-camp-fc8",
@@ -16769,7 +16858,8 @@
         "buildTimeSeconds": 259200,
         "power": 806100,
         "trainingSpeedBonusPercent": 10.3,
-        "developmentIndex": 90150
+        "developmentIndex": 90150,
+        "trainingCapacity": 409
       },
       {
         "id": "marksman-camp-fc8-1",
@@ -16816,7 +16906,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 820580,
-        "developmentIndex": 91750
+        "developmentIndex": 91750,
+        "trainingCapacity": 414
       },
       {
         "id": "marksman-camp-fc8-2",
@@ -16863,7 +16954,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 835060,
-        "developmentIndex": 93300
+        "developmentIndex": 93300,
+        "trainingCapacity": 419
       },
       {
         "id": "marksman-camp-fc8-3",
@@ -16910,7 +17002,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 849540,
-        "developmentIndex": 94900
+        "developmentIndex": 94900,
+        "trainingCapacity": 424
       },
       {
         "id": "marksman-camp-fc8-4",
@@ -16957,7 +17050,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 864020,
-        "developmentIndex": 96450
+        "developmentIndex": 96450,
+        "trainingCapacity": 429
       },
       {
         "id": "marksman-camp-fc9",
@@ -17004,7 +17098,8 @@
         "buildTimeSeconds": 168480,
         "power": 878500,
         "trainingSpeedBonusPercent": 10.6,
-        "developmentIndex": 98050
+        "developmentIndex": 98050,
+        "trainingCapacity": 434
       },
       {
         "id": "marksman-camp-fc9-1",
@@ -17051,7 +17146,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 892980,
-        "developmentIndex": 99650
+        "developmentIndex": 99650,
+        "trainingCapacity": 439
       },
       {
         "id": "marksman-camp-fc9-2",
@@ -17098,7 +17194,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 907460,
-        "developmentIndex": 101200
+        "developmentIndex": 101200,
+        "trainingCapacity": 444
       },
       {
         "id": "marksman-camp-fc9-3",
@@ -17145,7 +17242,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 921940,
-        "developmentIndex": 102800
+        "developmentIndex": 102800,
+        "trainingCapacity": 449
       },
       {
         "id": "marksman-camp-fc9-4",
@@ -17192,7 +17290,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 936420,
-        "developmentIndex": 104350
+        "developmentIndex": 104350,
+        "trainingCapacity": 454
       },
       {
         "id": "marksman-camp-fc10",
@@ -17239,7 +17338,8 @@
         "buildTimeSeconds": 259200,
         "power": 950900,
         "trainingSpeedBonusPercent": 11,
-        "developmentIndex": 105950
+        "developmentIndex": 105950,
+        "trainingCapacity": 459
       }
     ]
   },
@@ -18271,7 +18371,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 316180,
-        "developmentIndex": 36850
+        "developmentIndex": 36850,
+        "trainingCapacity": 214
       },
       {
         "id": "lancer-camp-30-2",
@@ -18314,7 +18415,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 327660,
-        "developmentIndex": 38100
+        "developmentIndex": 38100,
+        "trainingCapacity": 219
       },
       {
         "id": "lancer-camp-30-3",
@@ -18357,7 +18459,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 339140,
-        "developmentIndex": 39350
+        "developmentIndex": 39350,
+        "trainingCapacity": 224
       },
       {
         "id": "lancer-camp-30-4",
@@ -18400,7 +18503,8 @@
         ],
         "buildTimeSeconds": 90720,
         "power": 350620,
-        "developmentIndex": 40600
+        "developmentIndex": 40600,
+        "trainingCapacity": 229
       },
       {
         "id": "lancer-camp-fc1",
@@ -18443,7 +18547,8 @@
         "buildTimeSeconds": 90720,
         "power": 362100,
         "trainingSpeedBonusPercent": 8.3,
-        "developmentIndex": 41850
+        "developmentIndex": 41850,
+        "trainingCapacity": 234
       },
       {
         "id": "lancer-camp-fc1-1",
@@ -18486,7 +18591,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 373580,
-        "developmentIndex": 43100
+        "developmentIndex": 43100,
+        "trainingCapacity": 239
       },
       {
         "id": "lancer-camp-fc1-2",
@@ -18529,7 +18635,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 385060,
-        "developmentIndex": 44350
+        "developmentIndex": 44350,
+        "trainingCapacity": 244
       },
       {
         "id": "lancer-camp-fc1-3",
@@ -18572,7 +18679,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 396540,
-        "developmentIndex": 45600
+        "developmentIndex": 45600,
+        "trainingCapacity": 249
       },
       {
         "id": "lancer-camp-fc1-4",
@@ -18615,7 +18723,8 @@
         ],
         "buildTimeSeconds": 116640,
         "power": 408020,
-        "developmentIndex": 46850
+        "developmentIndex": 46850,
+        "trainingCapacity": 254
       },
       {
         "id": "lancer-camp-fc2",
@@ -18658,7 +18767,8 @@
         "buildTimeSeconds": 116640,
         "power": 419500,
         "trainingSpeedBonusPercent": 8.6,
-        "developmentIndex": 48100
+        "developmentIndex": 48100,
+        "trainingCapacity": 259
       },
       {
         "id": "lancer-camp-fc2-1",
@@ -18701,7 +18811,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 430980,
-        "developmentIndex": 49350
+        "developmentIndex": 49350,
+        "trainingCapacity": 264
       },
       {
         "id": "lancer-camp-fc2-2",
@@ -18744,7 +18855,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 442460,
-        "developmentIndex": 50600
+        "developmentIndex": 50600,
+        "trainingCapacity": 269
       },
       {
         "id": "lancer-camp-fc2-3",
@@ -18787,7 +18899,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 453940,
-        "developmentIndex": 51850
+        "developmentIndex": 51850,
+        "trainingCapacity": 274
       },
       {
         "id": "lancer-camp-fc2-4",
@@ -18830,7 +18943,8 @@
         ],
         "buildTimeSeconds": 142560,
         "power": 465420,
-        "developmentIndex": 53100
+        "developmentIndex": 53100,
+        "trainingCapacity": 279
       },
       {
         "id": "lancer-camp-fc3",
@@ -18873,7 +18987,8 @@
         "buildTimeSeconds": 142560,
         "power": 476900,
         "trainingSpeedBonusPercent": 8.9,
-        "developmentIndex": 54350
+        "developmentIndex": 54350,
+        "trainingCapacity": 284
       },
       {
         "id": "lancer-camp-fc3-1",
@@ -18916,7 +19031,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 489540,
-        "developmentIndex": 55750
+        "developmentIndex": 55750,
+        "trainingCapacity": 289
       },
       {
         "id": "lancer-camp-fc3-2",
@@ -18959,7 +19075,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 502180,
-        "developmentIndex": 57100
+        "developmentIndex": 57100,
+        "trainingCapacity": 294
       },
       {
         "id": "lancer-camp-fc3-3",
@@ -19002,7 +19119,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 514820,
-        "developmentIndex": 58500
+        "developmentIndex": 58500,
+        "trainingCapacity": 299
       },
       {
         "id": "lancer-camp-fc3-4",
@@ -19045,7 +19163,8 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 527460,
-        "developmentIndex": 59850
+        "developmentIndex": 59850,
+        "trainingCapacity": 304
       },
       {
         "id": "lancer-camp-fc4",
@@ -19088,7 +19207,8 @@
         "buildTimeSeconds": 155520,
         "power": 540100,
         "trainingSpeedBonusPercent": 9.2,
-        "developmentIndex": 61250
+        "developmentIndex": 61250,
+        "trainingCapacity": 309
       },
       {
         "id": "lancer-camp-fc4-1",
@@ -19131,7 +19251,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 552740,
-        "developmentIndex": 62600
+        "developmentIndex": 62600,
+        "trainingCapacity": 314
       },
       {
         "id": "lancer-camp-fc4-2",
@@ -19174,7 +19295,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 565380,
-        "developmentIndex": 64000
+        "developmentIndex": 64000,
+        "trainingCapacity": 319
       },
       {
         "id": "lancer-camp-fc4-3",
@@ -19217,7 +19339,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 578020,
-        "developmentIndex": 65350
+        "developmentIndex": 65350,
+        "trainingCapacity": 324
       },
       {
         "id": "lancer-camp-fc4-4",
@@ -19260,7 +19383,8 @@
         ],
         "buildTimeSeconds": 181440,
         "power": 590660,
-        "developmentIndex": 66750
+        "developmentIndex": 66750,
+        "trainingCapacity": 329
       },
       {
         "id": "lancer-camp-fc5",
@@ -19303,7 +19427,8 @@
         "buildTimeSeconds": 181440,
         "power": 603300,
         "trainingSpeedBonusPercent": 9.5,
-        "developmentIndex": 68100
+        "developmentIndex": 68100,
+        "trainingCapacity": 334
       },
       {
         "id": "lancer-camp-fc5-1",
@@ -19350,7 +19475,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 616820,
-        "developmentIndex": 69550
+        "developmentIndex": 69550,
+        "trainingCapacity": 339
       },
       {
         "id": "lancer-camp-fc5-2",
@@ -19397,7 +19523,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 630340,
-        "developmentIndex": 71050
+        "developmentIndex": 71050,
+        "trainingCapacity": 344
       },
       {
         "id": "lancer-camp-fc5-3",
@@ -19444,7 +19571,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 643860,
-        "developmentIndex": 72500
+        "developmentIndex": 72500,
+        "trainingCapacity": 349
       },
       {
         "id": "lancer-camp-fc5-4",
@@ -19491,7 +19619,8 @@
         ],
         "buildTimeSeconds": 194400,
         "power": 657380,
-        "developmentIndex": 74000
+        "developmentIndex": 74000,
+        "trainingCapacity": 354
       },
       {
         "id": "lancer-camp-fc6",
@@ -19538,7 +19667,8 @@
         "buildTimeSeconds": 194400,
         "power": 670900,
         "trainingSpeedBonusPercent": 9.8,
-        "developmentIndex": 75450
+        "developmentIndex": 75450,
+        "trainingCapacity": 359
       },
       {
         "id": "lancer-camp-fc6-1",
@@ -19585,7 +19715,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 684420,
-        "developmentIndex": 76950
+        "developmentIndex": 76950,
+        "trainingCapacity": 364
       },
       {
         "id": "lancer-camp-fc6-2",
@@ -19632,7 +19763,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 697940,
-        "developmentIndex": 78400
+        "developmentIndex": 78400,
+        "trainingCapacity": 369
       },
       {
         "id": "lancer-camp-fc6-3",
@@ -19679,7 +19811,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 711460,
-        "developmentIndex": 79850
+        "developmentIndex": 79850,
+        "trainingCapacity": 374
       },
       {
         "id": "lancer-camp-fc6-4",
@@ -19726,7 +19859,8 @@
         ],
         "buildTimeSeconds": 233280,
         "power": 724980,
-        "developmentIndex": 81350
+        "developmentIndex": 81350,
+        "trainingCapacity": 379
       },
       {
         "id": "lancer-camp-fc7",
@@ -19773,7 +19907,8 @@
         "buildTimeSeconds": 233280,
         "power": 738500,
         "trainingSpeedBonusPercent": 10.1,
-        "developmentIndex": 82800
+        "developmentIndex": 82800,
+        "trainingCapacity": 384
       },
       {
         "id": "lancer-camp-fc7-1",
@@ -19820,7 +19955,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 752020,
-        "developmentIndex": 84300
+        "developmentIndex": 84300,
+        "trainingCapacity": 389
       },
       {
         "id": "lancer-camp-fc7-2",
@@ -19867,7 +20003,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 765540,
-        "developmentIndex": 85750
+        "developmentIndex": 85750,
+        "trainingCapacity": 394
       },
       {
         "id": "lancer-camp-fc7-3",
@@ -19914,7 +20051,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 779060,
-        "developmentIndex": 87250
+        "developmentIndex": 87250,
+        "trainingCapacity": 399
       },
       {
         "id": "lancer-camp-fc7-4",
@@ -19961,7 +20099,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 792580,
-        "developmentIndex": 88700
+        "developmentIndex": 88700,
+        "trainingCapacity": 404
       },
       {
         "id": "lancer-camp-fc8",
@@ -20008,7 +20147,8 @@
         "buildTimeSeconds": 259200,
         "power": 806100,
         "trainingSpeedBonusPercent": 10.3,
-        "developmentIndex": 90150
+        "developmentIndex": 90150,
+        "trainingCapacity": 409
       },
       {
         "id": "lancer-camp-fc8-1",
@@ -20055,7 +20195,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 820580,
-        "developmentIndex": 91750
+        "developmentIndex": 91750,
+        "trainingCapacity": 414
       },
       {
         "id": "lancer-camp-fc8-2",
@@ -20102,7 +20243,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 835060,
-        "developmentIndex": 93300
+        "developmentIndex": 93300,
+        "trainingCapacity": 419
       },
       {
         "id": "lancer-camp-fc8-3",
@@ -20149,7 +20291,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 849540,
-        "developmentIndex": 94900
+        "developmentIndex": 94900,
+        "trainingCapacity": 424
       },
       {
         "id": "lancer-camp-fc8-4",
@@ -20196,7 +20339,8 @@
         ],
         "buildTimeSeconds": 168480,
         "power": 864020,
-        "developmentIndex": 96450
+        "developmentIndex": 96450,
+        "trainingCapacity": 429
       },
       {
         "id": "lancer-camp-fc9",
@@ -20243,7 +20387,8 @@
         "buildTimeSeconds": 168480,
         "power": 878500,
         "trainingSpeedBonusPercent": 10.6,
-        "developmentIndex": 98050
+        "developmentIndex": 98050,
+        "trainingCapacity": 434
       },
       {
         "id": "lancer-camp-fc9-1",
@@ -20290,7 +20435,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 892980,
-        "developmentIndex": 99650
+        "developmentIndex": 99650,
+        "trainingCapacity": 439
       },
       {
         "id": "lancer-camp-fc9-2",
@@ -20337,7 +20483,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 907460,
-        "developmentIndex": 101200
+        "developmentIndex": 101200,
+        "trainingCapacity": 444
       },
       {
         "id": "lancer-camp-fc9-3",
@@ -20384,7 +20531,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 921940,
-        "developmentIndex": 102800
+        "developmentIndex": 102800,
+        "trainingCapacity": 449
       },
       {
         "id": "lancer-camp-fc9-4",
@@ -20431,7 +20579,8 @@
         ],
         "buildTimeSeconds": 259200,
         "power": 936420,
-        "developmentIndex": 104350
+        "developmentIndex": 104350,
+        "trainingCapacity": 454
       },
       {
         "id": "lancer-camp-fc10",
@@ -20478,7 +20627,8 @@
         "buildTimeSeconds": 259200,
         "power": 950900,
         "trainingSpeedBonusPercent": 11,
-        "developmentIndex": 105950
+        "developmentIndex": 105950,
+        "trainingCapacity": 459
       }
     ]
   },

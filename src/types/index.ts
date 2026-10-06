@@ -20,3 +20,4 @@ export * from './vip';
 export * from './daybreak-island';
 export * from './converter';
 export * from './calculator';
+export * from './troop';
