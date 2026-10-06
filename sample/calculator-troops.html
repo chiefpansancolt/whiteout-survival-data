@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Troop Calculator</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --good: #52d17a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+    max-width: 980px;
+  }
+  a { color: var(--accent); }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 0.85rem; margin: 24px 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; line-height: 1.45; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+  .controls label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  select, input[type="number"] {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+  input[type="number"] { width: 110px; text-align: right; }
+  select:disabled { opacity: 0.45; }
+  button {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .bonus-note { color: var(--good); font-size: 0.85rem; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 10px; }
+  .pill {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .pill.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  th, td { padding: 7px 10px; border-bottom: 1px solid var(--panel-border); text-align: left; vertical-align: middle; }
+  th { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+  td.bonus { color: var(--good); }
+  .scroll { overflow-x: auto; }
+  .note { color: var(--text-dim); font-size: 0.8rem; margin: 8px 0 0; line-height: 1.4; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .stat { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 12px 14px; }
+  .stat .value { font-size: 1.25rem; font-weight: 700; color: var(--accent); }
+  .stat .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  select.level { width: 100%; min-width: 150px; }
+  .mat { display: inline-flex; align-items: center; gap: 8px; }
+  .mat img { width: 28px; height: 28px; border-radius: 6px; }
+  .warn { color: #ffb74d; font-size: 0.8rem; }
+  .group-row td { background: var(--panel); color: var(--text-dim); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+
+  .camps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .camp h3 { margin: 0 0 10px; font-size: 1rem; }
+  .field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; font-size: 0.8rem; color: var(--text-dim); }
+  .field select, .field input[type="number"] { width: 100%; text-align: left; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .negative { color: #ff8a80; }
+  .mat { display: inline-flex; align-items: center; gap: 8px; }
+  .mat img { width: 28px; height: 28px; border-radius: 6px; }
+  .row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 10px; }
+  .positive { color: var(--good); }
+</style>
+</head>
+<body>
+  <p><a href="index.html">&larr; All sample pages</a></p>
+  <h1>Troop Calculator</h1>
+  <p class="sub">Set the level of each camp and what it trains or promotes. The page adds up the troops you get by troop type and tier. All three camps share one training capacity, which is the capacity of the three camp levels added together plus the bonuses below. Nothing is saved, and reloading the page clears your choices.</p>
+
+  <div class="card">
+    <div class="controls">
+      <label>Research capacity <input type="number" id="research" min="0" step="1" value="0" /></label>
+      <label>Minister of Education (capacity and speed)
+        <select id="minister"></select>
+      </label>
+      <label><input type="checkbox" id="boost" /> <span id="boost-label"></span></label>
+      <button type="button" id="reset">Reset all</button>
+    </div>
+    <div class="row">
+      <label>Training speed % <input type="number" id="speed" min="0" step="0.1" value="0" /></label>
+      <label>Vice President
+        <select id="vp"></select>
+      </label>
+      <label><input type="checkbox" id="mobilize" /> <span id="mobilize-label"></span></label>
+      <label><input type="checkbox" id="advanced" /> <span id="advanced-label"></span></label>
+    </div>
+    <div class="row">
+      <label>Infantry cost reduction % <input type="number" id="reduction-infantry" min="0" step="0.5" value="0" /></label>
+      <label>Lancer cost reduction % <input type="number" id="reduction-lancer" min="0" step="0.5" value="0" /></label>
+      <label>Marksman cost reduction % <input type="number" id="reduction-marksman" min="0" step="0.5" value="0" /></label>
+    </div>
+  </div>
+
+  <h2>Camp configuration</h2>
+  <div class="camps" id="camps"></div>
+
+  <h2>Results</h2>
+  <div class="grid" id="stats"></div>
+  <div class="card scroll" id="tiers-card"></div>
+  <h2>Resources</h2>
+  <div class="card scroll" id="resources-card"></div>
+  <h2>Time</h2>
+  <div class="card scroll" id="time-card"></div>
+  <p class="note" id="speed-note"></p>
+  <p class="note">Training adds troops at its tier. Promotion takes the troops from the first tier and adds them to the second, shown in red and green. Promotion to tier 12 uses the promotion cost of tier 12. A camp can do both, each with its own count and batches. The capacity of the levels from 30-1 up to Fire Crystal 10, and the cost and time of each troop, come from WoS Tools. Time is the time of one troop times the troops, divided by 1 plus the training speed, rounded down, for each batch. Enter your training speed without the buffs below it, as the game shows it.</p>
+
+<script id="troop-data" type="application/json">{"rules":{"troopTypes":["infantry","lancer","marksman"],"minTier":1,"maxTier":12,"capacityBoostMultiplier":3,"ministerOfEducation":{"capacity":{"regular":200,"supreme":300},"speedPercent":{"regular":50,"supreme":75}},"vicePresidentSpeedPercent":{"regular":10,"supreme":15},"mobilizeSpeedPercent":30,"advancedTrainingSpeedPercent":20,"maxCostReductionPercent":75},"levels":[{"label":"1","capacity":17},{"label":"2","capacity":22},{"label":"3","capacity":26},{"label":"4","capacity":30},{"label":"5","capacity":35},{"label":"6","capacity":39},{"label":"7","capacity":43},{"label":"8","capacity":48},{"label":"9","capacity":52},{"label":"10","capacity":56},{"label":"11","capacity":61},{"label":"12","capacity":65},{"label":"13","capacity":69},{"label":"14","capacity":76},{"label":"15","capacity":84},{"label":"16","capacity":92},{"label":"17","capacity":101},{"label":"18","capacity":109},{"label":"19","capacity":117},{"label":"20","capacity":126},{"label":"21","capacity":134},{"label":"22","capacity":142},{"label":"23","capacity":151},{"label":"24","capacity":159},{"label":"25","capacity":167},{"label":"26","capacity":176},{"label":"27","capacity":184},{"label":"28","capacity":192},{"label":"29","capacity":201},{"label":"30","capacity":209},{"label":"30-1","capacity":214},{"label":"30-2","capacity":219},{"label":"30-3","capacity":224},{"label":"30-4","capacity":229},{"label":"FC 1","capacity":234},{"label":"FC 1-1","capacity":239},{"label":"FC 1-2","capacity":244},{"label":"FC 1-3","capacity":249},{"label":"FC 1-4","capacity":254},{"label":"FC 2","capacity":259},{"label":"FC 2-1","capacity":264},{"label":"FC 2-2","capacity":269},{"label":"FC 2-3","capacity":274},{"label":"FC 2-4","capacity":279},{"label":"FC 3","capacity":284},{"label":"FC 3-1","capacity":289},{"label":"FC 3-2","capacity":294},{"label":"FC 3-3","capacity":299},{"label":"FC 3-4","capacity":304},{"label":"FC 4","capacity":309},{"label":"FC 4-1","capacity":314},{"label":"FC 4-2","capacity":319},{"label":"FC 4-3","capacity":324},{"label":"FC 4-4","capacity":329},{"label":"FC 5","capacity":334},{"label":"FC 5-1","capacity":339},{"label":"FC 5-2","capacity":344},{"label":"FC 5-3","capacity":349},{"label":"FC 5-4","capacity":354},{"label":"FC 6","capacity":359},{"label":"FC 6-1","capacity":364},{"label":"FC 6-2","capacity":369},{"label":"FC 6-3","capacity":374},{"label":"FC 6-4","capacity":379},{"label":"FC 7","capacity":384},{"label":"FC 7-1","capacity":389},{"label":"FC 7-2","capacity":394},{"label":"FC 7-3","capacity":399},{"label":"FC 7-4","capacity":404},{"label":"FC 8","capacity":409},{"label":"FC 8-1","capacity":414},{"label":"FC 8-2","capacity":419},{"label":"FC 8-3","capacity":424},{"label":"FC 8-4","capacity":429},{"label":"FC 9","capacity":434},{"label":"FC 9-1","capacity":439},{"label":"FC 9-2","capacity":444},{"label":"FC 9-3","capacity":449},{"label":"FC 9-4","capacity":454},{"label":"FC 10","capacity":459}],"troops":{"infantry":[{"cost":[36,27,7,2],"seconds":12},{"cost":[58,44,10,3],"seconds":17},{"cost":[92,69,17,4],"seconds":24},{"cost":[120,90,21,5],"seconds":32},{"cost":[156,117,27,6],"seconds":44},{"cost":[186,140,33,7],"seconds":60},{"cost":[279,210,49,11],"seconds":83},{"cost":[558,419,98,21],"seconds":113},{"cost":[1394,1046,244,51],"seconds":131},{"cost":[2788,2091,488,102],"seconds":152},{"cost":[6970,5228,1220,253],"seconds":180},{"cost":[6970,5228,1220,254],"seconds":215,"promotionCost":[3476,2613,604,120]}],"lancer":[{"cost":[32,30,7,2],"seconds":12},{"cost":[51,48,10,3],"seconds":17},{"cost":[81,76,16,4],"seconds":24},{"cost":[105,99,21,5],"seconds":32},{"cost":[136,129,27,7],"seconds":44},{"cost":[163,154,32,8],"seconds":60},{"cost":[244,231,48,11],"seconds":83},{"cost":[488,461,95,22],"seconds":113},{"cost":[1220,1151,237,55],"seconds":131},{"cost":[2440,2301,474,109],"seconds":152},{"cost":[6099,5751,1185,271],"seconds":180},{"cost":[6099,5751,1185,272],"seconds":215,"promotionCost":[3042,2875,587,128]}],"marksman":[{"cost":[23,34,6,2],"seconds":12},{"cost":[36,54,9,4],"seconds":17},{"cost":[58,86,15,5],"seconds":24},{"cost":[75,111,19,6],"seconds":32},{"cost":[97,144,24,8],"seconds":44},{"cost":[117,173,29,10],"seconds":60},{"cost":[175,258,44,14],"seconds":83},{"cost":[349,516,87,28],"seconds":113},{"cost":[872,1290,217,70],"seconds":131},{"cost":[1740,2579,433,140],"seconds":152},{"cost":[4357,6448,1081,349],"seconds":180},{"cost":[4357,6448,1081,350],"seconds":215,"promotionCost":[2173,3223,535,165]}]},"resourceIds":["meat","wood","coal","iron"],"items":{"meat":{"name":"Meat","img":"/images/items/meat.png"},"wood":{"name":"Wood","img":"/images/items/wood.png"},"coal":{"name":"Coal","img":"/images/items/coal.png"},"iron":{"name":"Iron","img":"/images/items/iron.png"}}}</script>
+<script>
+(function () {
+  const DATA = JSON.parse(document.getElementById('troop-data').textContent);
+  const RULES = DATA.rules;
+  const fmt = (n) => n.toLocaleString('en-US');
+  const TYPES = [['infantry', 'Infantry Camp'], ['lancer', 'Lancer Camp'], ['marksman', 'Marksman Camp']];
+  const freshRun = (kind) => (kind === 'training' ? { tier: 10, count: 0, max: false, batches: 1 } : { fromTier: 9, toTier: 10, count: 0, max: false, batches: 1 });
+  const freshCamp = () => ({ level: '30', mode: '', train: freshRun('training'), promo: freshRun('promotion') });
+  const camps = Object.fromEntries(TYPES.map(([type]) => [type, freshCamp()]));
+  const capacityOf = (label) => DATA.levels.find((l) => l.label === label).capacity;
+  const pct = (id, max) => { const v = Number(document.getElementById(id).value) || 0; return Math.min(max === undefined ? Infinity : max, Math.max(0, v)); };
+  function formatTime(seconds) {
+    const d = Math.floor(seconds / 86400), h = Math.floor((seconds % 86400) / 3600), m = Math.floor((seconds % 3600) / 60), s = seconds % 60;
+    return [d ? `${d}d` : '', d || h ? `${h}h` : '', d || h || m ? `${m}m` : '', `${s}s`].filter(Boolean).join(' ');
+  }
+  function speedPercent() {
+    const vp = document.getElementById('vp').value;
+    const minister = document.getElementById('minister').value;
+    return pct('speed') + (vp ? RULES.vicePresidentSpeedPercent[vp] : 0) + (minister ? RULES.ministerOfEducation.speedPercent[minister] : 0) + (document.getElementById('mobilize').checked ? RULES.mobilizeSpeedPercent : 0) + (document.getElementById('advanced').checked ? RULES.advancedTrainingSpeedPercent : 0);
+  }
+  function troopCost(type, kind, run) {
+    const tiers = DATA.troops[type];
+    if (kind === 'training') return { amounts: tiers[run.tier - 1].cost, seconds: tiers[run.tier - 1].seconds };
+    const amounts = [0, 0, 0, 0];
+    for (let tier = run.fromTier + 1; tier <= run.toTier; tier++) {
+      const step = tiers[tier - 1].promotionCost || tiers[tier - 1].cost.map((a, i) => a - tiers[tier - 2].cost[i]);
+      step.forEach((a, i) => { amounts[i] += a; });
+    }
+    return { amounts, seconds: tiers[run.toTier - 1].seconds - tiers[run.fromTier - 1].seconds };
+  }
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function settings() {
+    return { research: Math.max(0, Math.floor(Number(document.getElementById('research').value) || 0)), minister: document.getElementById('minister').value, boost: document.getElementById('boost').checked };
+  }
+
+  function capacity() {
+    const s = settings();
+    const base = TYPES.reduce((sum, [type]) => sum + capacityOf(camps[type].level), 0) + s.research + (s.minister ? RULES.ministerOfEducation.capacity[s.minister] : 0);
+    return base * (s.boost ? RULES.capacityBoostMultiplier : 1);
+  }
+
+  function runsOf(camp) {
+    const runs = [];
+    if (camp.mode === 'training' || camp.mode === 'both') runs.push({ kind: 'training', run: camp.train });
+    if (camp.mode === 'promotion' || camp.mode === 'both') runs.push({ kind: 'promotion', run: camp.promo });
+    return runs;
+  }
+
+  function calculate() {
+    const cap = capacity();
+    const tiers = Array.from({ length: RULES.maxTier }, (_, i) => ({ tier: i + 1, infantry: 0, lancer: 0, marksman: 0 }));
+    const issues = {};
+    const speed = speedPercent();
+    const resources = [0, 0, 0, 0];
+    const seconds = {};
+    TYPES.forEach(([type]) => {
+      seconds[type] = 0;
+      const planned = [];
+      for (const { kind, run } of runsOf(camps[type])) {
+        const perBatch = run.max ? cap : run.count;
+        if (perBatch > cap) { issues[type] = `The ${kind} count is above the capacity of ${fmt(cap)}, so this camp is skipped.`; return; }
+        if (kind === 'promotion' && run.toTier <= run.fromTier) { issues[type] = 'The promotion must go to a higher tier, so this camp is skipped.'; return; }
+        planned.push({ kind, run, troops: perBatch * run.batches });
+      }
+      const reduction = pct('reduction-' + type, RULES.maxCostReductionPercent);
+      planned.forEach(({ kind, run, troops }) => {
+        if (kind === 'training') tiers[run.tier - 1][type] += troops;
+        else { tiers[run.fromTier - 1][type] -= troops; tiers[run.toTier - 1][type] += troops; }
+        const cost = troopCost(type, kind, run);
+        cost.amounts.forEach((amount, i) => { resources[i] += amount * troops * (1 - reduction / 100); });
+        const perBatch = run.max ? cap : run.count;
+        seconds[type] += Math.floor((cost.seconds * perBatch) / (1 + speed / 100)) * run.batches;
+      });
+    });
+    const campSeconds = TYPES.map(([type]) => seconds[type]);
+    return { cap, tiers, issues, speed, resources: resources.map(Math.round), seconds, totalSeconds: campSeconds.reduce((a, b) => a + b, 0), longest: Math.max(...campSeconds) };
+  }
+
+  function signed(cell, value) {
+    cell.className = 'num' + (value < 0 ? ' negative' : value > 0 ? ' positive' : '');
+    cell.textContent = fmt(value);
+  }
+
+  function renderResults(result) {
+    const stats = document.getElementById('stats');
+    stats.replaceChildren();
+    const totals = Object.fromEntries(['infantry', 'lancer', 'marksman'].map((t) => [t, result.tiers.reduce((s, r) => s + r[t], 0)]));
+    [['Capacity per batch', result.cap], ['Infantry', totals.infantry], ['Lancers', totals.lancer], ['Marksmen', totals.marksman], ['All troops', totals.infantry + totals.lancer + totals.marksman]].forEach(([label, value]) => {
+      const box = el('div', 'stat');
+      box.append(el('div', 'value', fmt(value)), el('div', 'label', label));
+      stats.append(box);
+    });
+    const card = document.getElementById('tiers-card');
+    card.replaceChildren();
+    const table = el('table');
+    const head = table.createTHead().insertRow();
+    ['Tier', 'Infantry', 'Lancers', 'Marksmen', 'Total'].forEach((l, i) => head.append(el('th', i ? 'num' : '', l)));
+    const body = table.createTBody();
+    result.tiers.forEach((r) => {
+      const row = body.insertRow();
+      row.insertCell().textContent = `T${r.tier}`;
+      signed(row.insertCell(), r.infantry); signed(row.insertCell(), r.lancer); signed(row.insertCell(), r.marksman); signed(row.insertCell(), r.infantry + r.lancer + r.marksman);
+    });
+    const totalRow = body.insertRow(); totalRow.className = 'total';
+    totalRow.insertCell().textContent = 'Total';
+    signed(totalRow.insertCell(), totals.infantry); signed(totalRow.insertCell(), totals.lancer); signed(totalRow.insertCell(), totals.marksman); signed(totalRow.insertCell(), totals.infantry + totals.lancer + totals.marksman);
+    card.append(table);
+
+    const resCard = document.getElementById('resources-card');
+    resCard.replaceChildren();
+    const resTable = el('table');
+    const resHead = resTable.createTHead().insertRow();
+    ['Resource', 'Amount'].forEach((l, i) => resHead.append(el('th', i ? 'num' : '', l)));
+    const resBody = resTable.createTBody();
+    DATA.resourceIds.forEach((id, i) => {
+      const item = DATA.items[id];
+      const row = resBody.insertRow();
+      const wrap = el('span', 'mat');
+      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      wrap.append(img, document.createTextNode(item.name));
+      row.insertCell().append(wrap);
+      const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(result.resources[i]);
+    });
+    resCard.append(resTable);
+
+    const timeCard = document.getElementById('time-card');
+    timeCard.replaceChildren();
+    const timeTable = el('table');
+    const timeHead = timeTable.createTHead().insertRow();
+    ['', 'Time before speedups'].forEach((l, i) => timeHead.append(el('th', i ? 'num' : '', l)));
+    const timeBody = timeTable.createTBody();
+    [...TYPES.map(([type, title]) => [title, result.seconds[type], '']), ['All camps added together (speedups needed)', result.totalSeconds, 'total'], ['Longest camp (all camps train at the same time)', result.longest, 'total']].forEach(([label, secs, cls]) => {
+      const row = timeBody.insertRow(); if (cls) row.className = cls;
+      row.insertCell().textContent = label;
+      const c = row.insertCell(); c.className = 'num'; c.textContent = formatTime(secs);
+    });
+    timeCard.append(timeTable);
+    const note = document.getElementById('speed-note'); note.textContent = `Training speed used: ${Math.round(result.speed * 10) / 10}%`;
+  }
+
+  function tierSelect(value, onChange, label) {
+    const select = el('select');
+    for (let t = RULES.minTier; t <= RULES.maxTier; t++) { const o = el('option', '', `T${t}`); o.value = String(t); select.append(o); }
+    select.value = String(value); select.setAttribute('aria-label', label);
+    select.addEventListener('change', () => onChange(Number(select.value)));
+    return select;
+  }
+
+  function field(label, control) {
+    const wrap = el('label', 'field', label);
+    wrap.append(control);
+    return wrap;
+  }
+
+  function runControls(card, title, kind, run) {
+    const prefix = kind === 'training' ? `${title} training` : `${title} promotion`;
+    if (kind === 'training') card.append(field('Training tier', tierSelect(run.tier, (v) => { run.tier = v; update(); }, `${prefix} tier`)));
+    else {
+      const pair = el('div', 'pair');
+      pair.append(field('Promote from tier', tierSelect(run.fromTier, (v) => { run.fromTier = v; update(); }, `${prefix} from tier`)), field('To tier', tierSelect(run.toTier, (v) => { run.toTier = v; update(); }, `${prefix} to tier`)));
+      card.append(pair);
+    }
+    const count = el('input'); count.type = 'number'; count.min = '0'; count.step = '1'; count.value = String(run.count); count.disabled = run.max; count.setAttribute('aria-label', `${prefix} count`);
+    count.addEventListener('input', () => { run.count = Math.max(0, Math.floor(Number(count.value) || 0)); update(); });
+    const maxBox = el('input'); maxBox.type = 'checkbox'; maxBox.checked = run.max; maxBox.setAttribute('aria-label', `${prefix} max`);
+    maxBox.addEventListener('change', () => { run.max = maxBox.checked; renderCamps(); update(); });
+    const maxLabel = el('label', 'field'); maxLabel.append(maxBox, document.createTextNode(' Max (fill to capacity)'));
+    const batches = el('input'); batches.type = 'number'; batches.min = '1'; batches.step = '1'; batches.value = String(run.batches); batches.setAttribute('aria-label', `${prefix} batches`);
+    batches.addEventListener('input', () => { run.batches = Math.max(1, Math.floor(Number(batches.value) || 1)); update(); });
+    card.append(field(`${kind === 'training' ? 'Troops to train' : 'Troops to promote'} in each batch`, count), maxLabel, field('Batches', batches));
+  }
+
+  function renderCamps() {
+    const holder = document.getElementById('camps');
+    holder.replaceChildren();
+    TYPES.forEach(([type, title]) => {
+      const c = camps[type];
+      const card = el('div', 'card camp');
+      card.append(el('h3', '', title));
+      const level = el('select'); level.setAttribute('aria-label', `${title} level`);
+      DATA.levels.forEach((l) => { const o = el('option', '', `${l.label} (${fmt(l.capacity)})`); o.value = l.label; level.append(o); });
+      level.value = c.level; level.addEventListener('change', () => { c.level = level.value; update(); });
+      card.append(field('Camp level (capacity)', level));
+      const mode = el('select'); mode.setAttribute('aria-label', `${title} mode`);
+      [['', 'Not training'], ['training', 'Training'], ['promotion', 'Promotion'], ['both', 'Training and promotion']].forEach(([v, l]) => { const o = el('option', '', l); o.value = v; mode.append(o); });
+      mode.value = c.mode;
+      mode.addEventListener('change', () => {
+        c.mode = mode.value;
+        if (c.mode === 'both') { c.promo.fromTier = Math.max(1, c.train.tier - 1); c.promo.toTier = c.train.tier; if (c.promo.toTier <= c.promo.fromTier) c.promo.fromTier = 1, c.promo.toTier = Math.max(2, c.train.tier); }
+        renderCamps(); update();
+      });
+      card.append(field('Mode', mode));
+      runsOf(c).forEach(({ kind, run }) => runControls(card, title, kind, run));
+      const warn = el('div', 'warn'); warn.dataset.type = type;
+      card.append(warn);
+      holder.append(card);
+    });
+  }
+
+  function update() {
+    const result = calculate();
+    renderResults(result);
+    document.querySelectorAll('.warn[data-type]').forEach((w) => { w.textContent = result.issues[w.dataset.type] || ''; });
+  }
+
+  ['research', 'speed', 'reduction-infantry', 'reduction-lancer', 'reduction-marksman'].forEach((id) => document.getElementById(id).addEventListener('input', update));
+  ['minister', 'boost', 'vp', 'mobilize', 'advanced'].forEach((id) => document.getElementById(id).addEventListener('change', update));
+  document.getElementById('reset').addEventListener('click', () => {
+    TYPES.forEach(([type]) => { camps[type] = freshCamp(); });
+    ['research', 'speed', 'reduction-infantry', 'reduction-lancer', 'reduction-marksman'].forEach((id) => { document.getElementById(id).value = '0'; });
+    ['minister', 'vp'].forEach((id) => { document.getElementById(id).value = ''; });
+    ['boost', 'mobilize', 'advanced'].forEach((id) => { document.getElementById(id).checked = false; });
+    renderCamps(); update();
+  });
+  const noneOption = (select) => { const o = el('option', '', 'None'); o.value = ''; select.append(o); };
+  const minister = document.getElementById('minister'); noneOption(minister);
+  Object.keys(RULES.ministerOfEducation.capacity).forEach((key) => { const o = el('option', '', `${key === 'supreme' ? 'Supreme' : 'Regular'} (+${RULES.ministerOfEducation.capacity[key]} capacity, +${RULES.ministerOfEducation.speedPercent[key]}% speed)`); o.value = key; minister.append(o); });
+  const vp = document.getElementById('vp'); noneOption(vp);
+  Object.keys(RULES.vicePresidentSpeedPercent).forEach((key) => { const o = el('option', '', `${key === 'supreme' ? 'Supreme' : 'Regular'} (+${RULES.vicePresidentSpeedPercent[key]}%)`); o.value = key; vp.append(o); });
+  document.getElementById('boost-label').textContent = `Capacity boost (x${RULES.capacityBoostMultiplier})`;
+  document.getElementById('mobilize-label').textContent = `Mobilize (+${RULES.mobilizeSpeedPercent}%)`;
+  document.getElementById('advanced-label').textContent = `Advanced Training (+${RULES.advancedTrainingSpeedPercent}%)`;
+  ['reduction-infantry', 'reduction-lancer', 'reduction-marksman'].forEach((id) => { document.getElementById(id).max = String(RULES.maxCostReductionPercent); });
+  renderCamps();
+  update();
+})();
+</script>
+</body>
+</html>
