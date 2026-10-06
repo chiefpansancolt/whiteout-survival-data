@@ -332,14 +332,30 @@ several distinct in-game mechanics found while transcribing the full roster, not
 - Most skills/talents have one or more `progressions` (a named value that scales per level, e.g.
   Agnes's talent has both `"Chest Gain"` and `"Daily Cap"` scaling independently) plus a `costs`
   table (EXP/Books per level).
+- Every skill and talent has a `"Power"` progression, the power its level adds, with one value for
+  each level. The experts sample page adds these up for each expert and for all experts at the top.
+  Max power is the skills and talent at max level, plus the level 100 `levelPower` and the level 100
+  `affinityPowerAfterAdvancement`.
 - Some have `milestoneRewards` instead — a flat, non-scaling base value where leveling unlocks a
   fixed one-time item bundle at specific levels (e.g. Baldur's "Blazing Sunrise" grants a fixed
   reward set at levels 1, 6, and 10) rather than a continuously increasing stat.
 - Some have a `lootTable` (a random-reward chest, on either a skill or the talent — confirmed
   present on both, not talent-exclusive).
-- A few are entirely flat with no `progressions`, `milestoneRewards`, or `lootTable` at all (e.g.
-  Baldur's talent "Master Negotiator") — `maxLevel` defaults to `1` for these rather than `0`, since
-  the ability is still active, just not further upgradeable.
+
+Each `affinityLevels` row can also carry `levelPower` and `affinityPower`, the two power parts that
+the Experts screen shows, plus `affinityPowerAfterAdvancement` on a level with an `advancementCost`.
+They come from readings taken in the game, and every expert has them on all 100 levels. Both follow
+one rule. Affinity power is the expert's gain times the advancement stage (levels 1 to 10 are stage
+1, levels 11 to 20 are stage 2, and so on), and `affinityPowerAfterAdvancement` is the next stage.
+Level power is the gain divided by 8, times the level plus 12. The gains are Gareth 216,000, Romulus
+and Valeria 144,000, Fabian and Kathy 108,000, Holger and Ronne 86,400, Baldur 57,600, and Agnes and
+Cyrille 43,200. Levels that were not read in the game are filled from this rule.
+
+`expertRelationships()` lists the 11 relationship statuses that every expert goes through, with an
+icon under `images/experts/relationship/` and the affinity `level` at which each starts: Stranger
+(1), Acquaintance 1 to 3 (10, 20, 30), Casual 1 to 3 (40, 50, 60), Close 1 to 3 (70, 80, 90), and
+Intimate (100). `atAffinityLevel(level)` returns the status for a level. The Close 3 and Intimate
+icons were captured while locked, so the lock was painted out and a seam can show on them.
 
 `affinityLevels` is a 100-row table (`level`, `affinityRequired`, an optional `advancementCost` —
 present only at levels divisible by 10 — and the resulting `statBonus`). `advancementCost` is the

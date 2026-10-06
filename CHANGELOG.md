@@ -9,6 +9,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- `experts()`: a `"Power"` progression on every skill and talent of all 10 experts, per-level values
+  for the skills that only had a max-level number (Baldur's and Valeria's), and 11 levels on the
+  talents of Baldur and Valeria. Each affinity level also has `levelPower`, `affinityPower`, and
+  `affinityPowerAfterAdvancement`. The experts sample page shows each expert's max power and the
+  combined total.
+- `expertRelationships()`: the 11 relationship statuses from Stranger to Intimate with their icons
+  and the affinity level where each starts. The experts sample page shows them in the affinity
+  table.
 - `calculateSvs()`: a State of Power score calculator. It reads the scoring lists of the
   `svs-state-of-power` event and returns the points for each day, each phase, and the whole event,
   with Valeria's Well Prepared bonus when `valeriaLevel` is set. The sample page
