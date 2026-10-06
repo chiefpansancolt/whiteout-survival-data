@@ -1156,9 +1156,17 @@ describe('Events data', () => {
     expect(beasts.days![0].scoring.map((s) => s.points)).toEqual([1, 3]);
     expect(beasts.days![0].milestones!.map((m) => m.scoreTotal)).toEqual([1, 30, 50, 80]);
     expect(beasts.days).toHaveLength(2);
+    expect(beasts.days!.map((d) => d.day)).toEqual(['below-gen-5', 'gen-5-plus']);
     expect(beasts.days![1].milestones![3].rewards![0]).toMatchObject({
       itemId: 'charm-guide',
       amount: 12,
+    });
+    expect(beasts.days![1].milestones![3].rewards!.slice(2)).toEqual([
+      { name: 'Shot Token', itemId: 'shot-token', amount: 1 },
+      { name: 'Energizing Potion', itemId: 'energizing-potion', amount: 5 },
+    ]);
+    expect(beasts.days![0].milestones![3].rewards![3]).toMatchObject({
+      itemId: 'chief-stamina',
     });
     expect(beasts.personalRankings![1].rankings[0].rewards[0]).toMatchObject({
       itemId: 'mythic-general-decoration-component',

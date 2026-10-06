@@ -8,8 +8,8 @@
   "duration": "2 days",
   "days": [
     {
-      "day": "below-gen-7",
-      "name": "States below Gen 7",
+      "day": "below-gen-5",
+      "name": "States below Gen 5",
       "scoring": [
         {
           "action": "Defeat a Beast, level 1 to 30",
@@ -128,8 +128,8 @@
       ]
     },
     {
-      "day": "gen-7-plus",
-      "name": "States at Gen 7 and above",
+      "day": "gen-5-plus",
+      "name": "States at Gen 5 and above",
       "scoring": [
         {
           "action": "Defeat a Beast, level 1 to 30",
@@ -241,10 +241,14 @@
               "amount": 18
             },
             {
-              "name": "Chief Stamina",
-              "itemId": "chief-stamina",
-              "amount": 5,
-              "note": "A 10 stamina can"
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1
+            },
+            {
+              "name": "Energizing Potion",
+              "itemId": "energizing-potion",
+              "amount": 5
             }
           ]
         }
@@ -253,7 +257,7 @@
   ],
   "personalRankings": [
     {
-      "basedOn": "ranking for states below Gen 7 (top 100)",
+      "basedOn": "ranking for states below Gen 5 (top 100)",
       "rankings": [
         {
           "groupRanking": "1",
@@ -433,7 +437,7 @@
       ]
     },
     {
-      "basedOn": "ranking for states at Gen 7 and above (top 100)",
+      "basedOn": "ranking for states at Gen 5 and above (top 100)",
       "rankings": [
         {
           "groupRanking": "1",
@@ -644,6 +648,6 @@
     "Do not finish the 16:00 UTC Intel mission, the one with only Beasts, the day before the event. Do it after the event starts.",
     "Use the Ultra Value Monthly Card for stamina. It gives 600 stamina cans (6,000 stamina) and automatic hunting.",
     "Turn on auto-join to join rallies in your alliance.",
-    "Gen 7 and above states get Charm Guides and Charm Designs as milestone rewards and Mythic General Decoration Components in the ranking."
+    "Gen 5 and above states get Charm Guides and Charm Designs as milestone rewards and Mythic General Decoration Components in the ranking."
   ]
 }
