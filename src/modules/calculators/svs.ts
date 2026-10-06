@@ -1,26 +1,7 @@
-import { events } from '@/modules/events';
-import { experts } from '@/modules/experts';
-import { SvsCalculation, SvsCalculatorOptions, SvsDayResult, SvsScore, SvsUsage } from '@/types';
+import { SvsCalculation, SvsCalculatorOptions, SvsDayResult, SvsUsage } from '@/types';
+import { scoreEventDays, skillPercent, sumScores } from './event-score';
 
-const SVS_EVENT_ID = 'svs-state-of-power';
-
-function valeriaBonusPercent(level: number | undefined): number {
-  if (level === undefined) return 0;
-  const wellPrepared = experts()
-    .find('valeria')!
-    .skills.find((skill) => skill.name === 'Well Prepared')!;
-  const percents = wellPrepared.progressions[0].values;
-  if (!Number.isInteger(level) || level < 1 || level > percents.length) {
-    throw new RangeError(`valeriaLevel must be a whole number from 1 to ${percents.length}`);
-  }
-  return percents[level - 1];
-}
-
-function sumScores(scores: SvsScore[]): SvsScore {
-  const base = scores.reduce((sum, s) => sum + s.base, 0);
-  const bonus = scores.reduce((sum, s) => sum + s.bonus, 0);
-  return { base, bonus, total: base + bonus };
-}
+const BATTLE_DAY_ID = 'Battle';
 
 /**
  * Calculates State of Power scores from how many times each scoring action was done.
@@ -38,40 +19,20 @@ export function calculateSvs(
   usage: SvsUsage = {},
   options: SvsCalculatorOptions = {},
 ): SvsCalculation {
-  const eventDays = events().find(SVS_EVENT_ID)!.days!;
-  const bonusPercent = valeriaBonusPercent(options.valeriaLevel);
-
-  Object.keys(usage).forEach((dayId) => {
-    if (!eventDays.some((d) => d.day === dayId)) throw new Error(`Unknown SvS day: ${dayId}`);
-  });
-
-  const days: SvsDayResult[] = eventDays.map((eventDay) => {
-    const dayUsage = usage[eventDay.day] ?? {};
-    Object.keys(dayUsage).forEach((action) => {
-      if (!eventDay.scoring.some((s) => s.action === action)) {
-        throw new Error(`Unknown SvS action on day ${eventDay.day}: ${action}`);
-      }
-    });
-    const lines = eventDay.scoring.map((s) => {
-      const count = dayUsage[s.action] ?? 0;
-      if (!Number.isFinite(count) || count < 0) {
-        throw new RangeError(`Count for "${s.action}" must be a number of 0 or more`);
-      }
-      return { action: s.action, points: s.points, count, subtotal: s.points * count };
-    });
-    const phase = eventDay.day === 'Battle' ? 'battle' : 'preparation';
-    const base = lines.reduce((sum, l) => sum + l.subtotal, 0);
-    const bonus = phase === 'preparation' ? Math.round((base * bonusPercent) / 100) : 0;
-    return {
-      day: eventDay.day,
-      name: eventDay.name,
-      phase,
-      lines,
-      base,
-      bonus,
-      total: base + bonus,
-    };
-  });
+  const bonusPercent = skillPercent(
+    'valeria',
+    'Well Prepared',
+    'Preparation Phase Point gains (%)',
+    options.valeriaLevel,
+    'valeriaLevel',
+  );
+  const days: SvsDayResult[] = scoreEventDays('svs-state-of-power', 'SvS', usage, {
+    percent: bonusPercent,
+    appliesTo: (day) => day.day !== BATTLE_DAY_ID,
+  }).map((day) => ({
+    ...day,
+    phase: day.day === BATTLE_DAY_ID ? 'battle' : 'preparation',
+  }));
 
   return {
     valeriaBonusPercent: bonusPercent,
