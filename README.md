@@ -480,6 +480,16 @@ material's icon filename against the icon already downloaded for that item.
 `troopsDeploymentCapacity` is left unset for the table's first 26 rows; the wiki only starts
 awarding it once a piece reaches Mythic T2 star 3 stage 1.
 
+Each `chiefGear()` row has a `score`, the gear score that the upgrade step to that row adds. Events
+count it (the rows "Raise max Chief Gear score by 1" pay 36 points in SvS and King of Icefield, 22
+in Alliance Showdown, and 500 in Hall of Chief for each point of score). It does not depend on
+power. The score of a whole level is 1,125 and 1,875 for Common, 3,000 to 5,440 for Rare, 3,230 to
+4,085 for Epic, 6,250 for every Mythic level, and 9,560 for Legendary up to T3. From Legendary T4 it
+is 15,560, 15,400, or 15,390. The steps that lead to a level split its score evenly, and they add up
+to the level score for all 54 levels. The wiki's event note confirms the scores from Common to
+Legendary (1,125 up to 9,560). The Legendary T4 to T6 scores and the split into steps come from WoS
+Tools only.
+
 `chiefGearSlots()` covers the 6 equip slots (Cap, Watch, Coat, Pants, Ring, Weapon), hand-entered
 from the page's prose rather than scraped from a table, since no table lists them: Cap/Watch buff
 Lancer, Coat/Pants buff Infantry, and Ring/Weapon buff Marksman. The 3-piece/6-piece same-quality
@@ -507,6 +517,15 @@ Same shape as `chiefGear()` for the level table, minus the deployment-capacity c
 are Charm Guide, Charm Design, and Charm Secrets — the last one only appears starting at level 11
 stage 1, not from level 1, matching the raw table exactly rather than assuming a fixed
 three-material set throughout.
+
+Each `chiefCharm()` entry has a `score`, the charm score that the upgrade step to that entry adds.
+Events count it (the rows "Raise Chief Charm max score by 1" pay 70 points in SvS and King of
+Icefield, 45 in Alliance Showdown, and 1,000 in Hall of Chief for each point of score). It does not
+depend on power. The score of a whole level is 625, 1,250, 3,125, 8,750, 11,250, 12,500, 12,500,
+13,000, 14,000, 15,000, 16,000, 17,000, 18,000, 19,000, 20,000, 21,000, 22,500, and 24,300 for
+levels 1 to 18. Levels 1 to 16 match the wiki's event notes, and levels 17 and 18 come from WoS
+Tools only. A level with several steps splits its score evenly over them, with the remainder on the
+first steps, as WoS Tools does. The split between steps is not confirmed in the game.
 
 Unlike gear, a charm's appearance changes at every one of its 18 levels rather than collapsing to a
 handful of rarity icons, so `ChiefCharmSlot.images` is a plain 18-entry array (`images[level - 1]`)
@@ -788,12 +807,14 @@ Transfer, Vault of Enigma, and Tundra Star.
 Calculators are plain functions, not query builders. They read their numbers from the package data,
 so a data fix changes the result without any code change.
 
-| Function                      | Description                                                         |
-| ----------------------------- | ------------------------------------------------------------------- |
-| `calculateSvs()`              | State of Power points for each day and phase, with Valeria's bonus  |
-| `calculateAllianceShowdown()` | Alliance Showdown personal points for each day, with Baldur's bonus |
-| `calculateKingOfIcefield()`   | King of Icefield points for each day                                |
-| `calculateHallOfChief()`      | Hall of Chief points for each stage                                 |
+| Function                      | Description                                                             |
+| ----------------------------- | ----------------------------------------------------------------------- |
+| `calculateSvs()`              | State of Power points for each day and phase, with Valeria's bonus      |
+| `calculateAllianceShowdown()` | Alliance Showdown personal points for each day, with Baldur's bonus     |
+| `calculateKingOfIcefield()`   | King of Icefield points for each day                                    |
+| `calculateHallOfChief()`      | Hall of Chief points for each stage                                     |
+| `calculateChiefGear()`        | Materials, gear score, power, and event points to upgrade Chief Gear    |
+| `calculateChiefCharm()`       | Materials, charm score, power, and event points to upgrade Chief Charms |
 
 Every calculator takes how many times each scoring action was done, as counts by day id and then by
 action text from that event's `days` in `events()`. Days and actions that are left out count as 0.
@@ -809,6 +830,14 @@ It adds 5% for each level to every action except the Tundra Trade Route truck ac
 raid). `calculateKingOfIcefield(usage)` and `calculateHallOfChief(usage)` have no expert bonus. Hall
 of Chief ranks every stage on its own, so the points of one stage matter more than the sum.
 
+`calculateChiefGear(ranges)` and `calculateChiefCharm(ranges)` are different from the event
+calculators, and each has its own function. They take one range for every gear piece or charm to
+upgrade, `{ from, to }` with level ids from `chiefGear()` or `chiefCharm()` (use `from: null` for a
+piece with no level yet). Each returns the steps, materials, score, power gained, and event points.
+Event points are the score times what the "Raise Chief Gear max score" or "Raise Chief Charm max
+score" row pays in SvS, Alliance Showdown, King of Icefield, and Hall of Chief. A range that goes
+down, or a level that does not exist, throws an error.
+
 The bonus of a day is rounded to a whole number. The percents are read from the `progressions` of
 each expert skill.
 
@@ -823,8 +852,9 @@ result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 43
 ```
 
 The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
-`calculator-king-of-icefield.html`, and `calculator-hall-of-chief.html` are free plug-and-play
-versions with the same math. They save nothing.
+`calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
+and `calculator-chief-charm.html` are free plug-and-play versions with the same math. They save
+nothing.
 
 ---
 

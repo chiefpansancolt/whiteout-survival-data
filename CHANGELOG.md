@@ -9,6 +9,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- `chiefGear()`: a `score` on every one of the 150 gear rows, the gear score that events count when
+  you upgrade a piece. It comes from WoS Tools, and the wiki's event note confirms the scores from
+  Common to Legendary. The gear sample page shows it.
+- `chiefCharm()`: a `score` on every one of the 75 charm entries, the charm score that events count
+  when you upgrade a charm. It comes from the level scores on the wiki's event notes (levels 1
+  to 16) and WoS Tools (all 18 levels), and the charm sample page shows it.
 - `experts()`: a `"Power"` progression on every skill and talent of all 10 experts, per-level values
   for the skills that only had a max-level number (Baldur's and Valeria's), and 11 levels on the
   talents of Baldur and Valeria. Each affinity level also has `levelPower`, `affinityPower`, and
@@ -17,6 +23,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `expertRelationships()`: the 11 relationship statuses from Stranger to Intimate with their icons
   and the affinity level where each starts. The experts sample page shows them in the affinity
   table.
+- `calculateChiefGear()` and `calculateChiefCharm()`: the materials, score, power gained, and event
+  points for upgrading Chief Gear or Chief Charms from a start level to an end level, for as many
+  pieces as you pass. The sample pages `sample/calculator-chief-gear.html` (6 pieces) and
+  `sample/calculator-chief-charm.html` (18 charms) have a start and end level for each.
 - `calculateAllianceShowdown()`, `calculateKingOfIcefield()`, and `calculateHallOfChief()`: score
   calculators for those events, built like `calculateSvs()` from the scoring lists of each event.
   Alliance Showdown supports Baldur's Dawn Hymn bonus, which skips the truck actions. Each has a
