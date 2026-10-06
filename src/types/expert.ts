@@ -45,6 +45,12 @@ export interface ExpertAffinityLevel {
   affinityRequired: number;
   advancementCost?: number;
   statBonus: number;
+  /** Power the expert's level gives at this affinity level. */
+  levelPower?: number;
+  /** Power the affinity gives at this affinity level, before any advancement of this level. */
+  affinityPower?: number;
+  /** Power the affinity gives after the advancement at this level. Only on levels with an `advancementCost`. */
+  affinityPowerAfterAdvancement?: number;
 }
 
 export interface Expert {
@@ -58,4 +64,13 @@ export interface Expert {
   skills: ExpertSkill[];
   talent: ExpertTalent;
   affinityLevels: ExpertAffinityLevel[];
+}
+
+/** A relationship status that every expert goes through as the affinity level rises. */
+export interface ExpertRelationship {
+  id: string;
+  name: string;
+  img: string;
+  /** The affinity level at which the expert reaches this status. The status lasts until the next one starts. */
+  level: number;
 }

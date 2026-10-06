@@ -1,0 +1,68 @@
+[
+  {
+    "id": "stranger",
+    "name": "Stranger",
+    "img": "/images/experts/relationship/Stranger.png",
+    "level": 1
+  },
+  {
+    "id": "acquaintance-1",
+    "name": "Acquaintance 1",
+    "img": "/images/experts/relationship/Acquaintance-1.png",
+    "level": 10
+  },
+  {
+    "id": "acquaintance-2",
+    "name": "Acquaintance 2",
+    "img": "/images/experts/relationship/Acquaintance-2.png",
+    "level": 20
+  },
+  {
+    "id": "acquaintance-3",
+    "name": "Acquaintance 3",
+    "img": "/images/experts/relationship/Acquaintance-3.png",
+    "level": 30
+  },
+  {
+    "id": "casual-1",
+    "name": "Casual 1",
+    "img": "/images/experts/relationship/Casual-1.png",
+    "level": 40
+  },
+  {
+    "id": "casual-2",
+    "name": "Casual 2",
+    "img": "/images/experts/relationship/Casual-2.png",
+    "level": 50
+  },
+  {
+    "id": "casual-3",
+    "name": "Casual 3",
+    "img": "/images/experts/relationship/Casual-3.png",
+    "level": 60
+  },
+  {
+    "id": "close-1",
+    "name": "Close 1",
+    "img": "/images/experts/relationship/Close-1.png",
+    "level": 70
+  },
+  {
+    "id": "close-2",
+    "name": "Close 2",
+    "img": "/images/experts/relationship/Close-2.png",
+    "level": 80
+  },
+  {
+    "id": "close-3",
+    "name": "Close 3",
+    "img": "/images/experts/relationship/Close-3.png",
+    "level": 90
+  },
+  {
+    "id": "intimate",
+    "name": "Intimate",
+    "img": "/images/experts/relationship/Intimate.png",
+    "level": 100
+  }
+]
