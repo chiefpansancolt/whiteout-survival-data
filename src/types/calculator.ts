@@ -167,3 +167,62 @@ export interface TroopCalculation {
   /** The seconds for the camp that takes the longest, since the camps train at the same time. */
   longestCampSeconds: number;
 }
+
+/** One research line to upgrade. Levels are 0 for not researched up to the number of levels of the line. */
+export interface ResearchGoal {
+  /** The `id` of the research line in `research()`. */
+  id: string;
+  /** The level you have now. 0 when you have not started the line. */
+  current: number;
+  /** The level you want. */
+  goal: number;
+}
+
+export interface ResearchCalculatorOptions {
+  /** Your research speed bonus in percent, as the game shows it, not counting the buffs below. Defaults to 0. */
+  researchSpeedPercent?: number;
+  /** The state buff adds 10% research speed. */
+  stateBuff?: boolean;
+  /** The Vice President buff adds 10% research speed, or 15% for the supreme buff. */
+  vicePresident?: 'regular' | 'supreme';
+}
+
+export interface ResearchItemResult {
+  id: string;
+  name: string;
+  category: string;
+  steps: number;
+  resources: UpgradeMaterial[];
+  power: number;
+  /** The research time of the steps before the speed bonus. */
+  baseSeconds: number;
+}
+
+/** A research level whose prerequisite is not met by the current or goal level of the other line. */
+export interface UnmetResearchPrerequisite {
+  /** The research line and the level that needs it. */
+  id: string;
+  level: number;
+  /** The research line and the level that it needs. */
+  requires: { id: string; level: number };
+  /** The highest of the current and goal levels given for the required line, 0 when it is not given. */
+  planned: number;
+}
+
+export interface ResearchCalculation {
+  items: ResearchItemResult[];
+  steps: number;
+  resources: UpgradeMaterial[];
+  power: number;
+  /** The research time of all steps added together, before the speed bonus. */
+  baseSeconds: number;
+  /** The research speed in percent that the time uses, with the buffs added. */
+  researchSpeedPercent: number;
+  /** The research time after the speed bonus, rounded down. */
+  seconds: number;
+  /** The steps that have no research time in the data. Their time counts as 0. */
+  stepsWithoutTime: number;
+  unmetPrerequisites: UnmetResearchPrerequisite[];
+  /** The highest level of each building that the steps need, as a level `label` of `buildings()`. */
+  buildingRequirements: { id: string; level: string }[];
+}
