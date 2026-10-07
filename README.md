@@ -855,6 +855,7 @@ so a data fix changes the result without any code change.
 | `calculateChiefGear()`        | Materials, gear score, power, and event points to upgrade Chief Gear    |
 | `calculateChiefCharm()`       | Materials, charm score, power, and event points to upgrade Chief Charms |
 | `calculateTroops()`           | Troops trained or promoted by each camp, by troop type and tier         |
+| `calculateResearch()`         | Resources, time, and power to upgrade research lines to a goal level    |
 
 Every calculator takes how many times each scoring action was done, as counts by day id and then by
 action text from that event's `days` in `events()`. Days and actions that are left out count as 0.
@@ -900,6 +901,22 @@ the camps together (the speedup time you need), and `longestCampSeconds` is the 
 longest. A count above the capacity, an unknown level, a tier outside 1 to 12, a negative speed, or
 a cost reduction outside 0 to 75 throws an error.
 
+`calculateResearch(goals, options)` takes one entry for each research line to upgrade,
+`{ id, current, goal }`, with the `id` from `research()` and levels from 0 (not started) up to the
+number of levels of the line. Each tier of a research line is its own line with its own levels, as
+in the game. Only the levels after `current` up to `goal` count. It returns the resources, the power
+gained, and the research time. The time is the research time of all levels added together divided by
+1 plus the research speed, rounded down. The speed is `researchSpeedPercent` (your speed as the game
+shows it, without buffs) plus the `stateBuff` (+10%) and `vicePresident` (+10%, or +15% for
+supreme). `items` breaks the result down for each line. `unmetPrerequisites` lists levels that need
+another research line at a level that your plan does not reach, `buildingRequirements` gives the
+highest building level the steps need (for example `war-academy` at `FC 5`), and `stepsWithoutTime`
+counts the levels that have no time in the data, which count as 0 seconds. An unknown line, a level
+out of range, a goal below the current level, or a negative speed throws an error.
+`RESEARCH_CALCULATOR` exports the two buffs. The sample page shows the same tree as
+`research-tree.html`: click a line to set its current and goal level, and the lines in your plan are
+highlighted. A list view has the same choices.
+
 A promotion to tier 12 adds up the steps from tier to tier. A step costs the difference of the two
 training costs, or the tier's `promotionCost` for tier 12, and takes the difference of the two
 training times.
@@ -926,8 +943,8 @@ result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 43
 
 The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
 `calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
-`calculator-chief-charm.html`, and `calculator-troops.html` are free plug-and-play versions with the
-same math. They save nothing.
+`calculator-chief-charm.html`, `calculator-troops.html`, and `calculator-research.html` are free
+plug-and-play versions with the same math. They save nothing.
 
 ---
 

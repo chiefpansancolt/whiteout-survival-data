@@ -28,6 +28,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `expertRelationships()`: the 11 relationship statuses from Stranger to Intimate with their icons
   and the affinity level where each starts. The experts sample page shows them in the affinity
   table.
+- `calculateResearch()` and `RESEARCH_CALCULATOR`: the resources, research time, and power for
+  upgrading research lines from a current level to a goal level, with the research speed buffs. It
+  also lists unmet research prerequisites and the building levels the steps need. The sample page
+  `sample/calculator-research.html` shows the research tree, where you click a line to set its
+  current and goal level, and has a list view with the same choices.
 - `troops()`: Infantry, Lancer, and Marksman with the resource cost and training time of tiers 1 to
   12, from WoS Tools, and the tier 12 promotion cost.
 - `TROOP_CALCULATOR`, `SVS_BATTLE_DAY_ID`, and `ALLIANCE_SHOWDOWN_TRUCK_ACTION`: the values the
