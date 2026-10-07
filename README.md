@@ -241,9 +241,9 @@ estimate: it has only been checked against Hector at 3.0 to 3.3, the 3.2 step is
 the game than the formula gives, and there is no data for other hero levels, so it only covers
 level 80.
 
-The sample page `sample/hero-compare.html` compares two heroes at any star and tier, like the Hero
-Hub compare tab. It also has boxes for your in-game numbers, and shows how far the estimate is from
-them, so you can test the formula against more readings.
+The sample page `sample/chief/hero-compare.html` compares two heroes at any star and tier, like the
+Hero Hub compare tab. It also has boxes for your in-game numbers, and shows how far the estimate is
+from them, so you can test the formula against more readings.
 
 Every `HeroSkill` carries its own `levels` array — 5 entries
 (`{ level, manualsRequired, powerGain, starRequired }`), matching the 5 slash-separated values in
@@ -1075,12 +1075,14 @@ const result = calculateSvs(
 result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 432,000 Preparation points
 ```
 
-The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
-`calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
-`calculator-chief-charm.html`, `calculator-troops.html`, `calculator-research.html`,
-`calculator-pets.html`, `calculator-experts.html`, `calculator-buildings.html`,
-`calculator-hero-gear.html`, and `calculator-hero-upgrade.html` are free plug-and-play versions with
-the same math. They save nothing.
+The sample pages in `sample/calculators/` (`calculator-svs.html`,
+`calculator-alliance-showdown.html`, `calculator-king-of-icefield.html`,
+`calculator-hall-of-chief.html`, `calculator-chief-gear.html`, `calculator-chief-charm.html`,
+`calculator-troops.html`, `calculator-research.html`, `calculator-pets.html`,
+`calculator-experts.html`, `calculator-buildings.html`, `calculator-hero-gear.html`, and
+`calculator-hero-upgrade.html`) are free plug-and-play versions with the same math. They save
+nothing. The other sample pages are in `sample/chief/`, `sample/events/`, `sample/alliance/`, and
+`sample/general/`, and `sample/index.html` links to all of them.
 
 ---
 

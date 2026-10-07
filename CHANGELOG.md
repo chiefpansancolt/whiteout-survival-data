@@ -12,8 +12,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `estimateHeroStats()` and `HERO_STAT_ESTIMATE`: a hero's Exploration and Expedition stats at level
   80 for a star and tier below 5 stars. It is the WoS Tools Hero Hub formula with the Exploration
   star growth fitted to Hector's in-game numbers. It is an estimate and has only been checked
-  against Hector at 3.0 to 3.3 stars. The sample page `sample/hero-compare.html` compares two heroes
-  and checks the estimate against in-game numbers you type in.
+  against Hector at 3.0 to 3.3 stars. The sample page `sample/chief/hero-compare.html` compares two
+  heroes and checks the estimate against in-game numbers you type in.
 - `chiefGear()`: a `score` on every one of the 150 gear rows, the gear score that events count when
   you upgrade a piece. It comes from WoS Tools, and the wiki's event note confirms the scores from
   Common to Legendary. The gear sample page shows it.
@@ -36,40 +36,40 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   as 3.1), the skill manuals for skill levels, and the Widgets for exclusive weapon levels of one
   hero, with the skill levels that need more stars and the shard and Widget points in SvS, Alliance
   Showdown, King of Icefield, and Hall of Chief. The sample page
-  `sample/calculator-hero-upgrade.html` plans one hero.
+  `sample/calculators/calculator-hero-upgrade.html` plans one hero.
 - `heroWidgets()`: the Widgets that exclusive weapon levels 1 to 10 cost (from WoS Tools).
 - `heroGearStats()`: the per piece Attack or Defense, HP, and Lethality or Health of every hero gear
   slot and troop type for enhancement levels 1 to 200, with the Mithril milestone bonuses (from WoS
   Tools).
 - `calculateHeroGear()` takes a `piece` (slot and troop type) and returns the `stats` of the piece
   before the plan, after the plan, and the gain, with the mastery forging multiplier and the
-  milestones the plan unlocks. The sample page `sample/calculator-hero-gear.html` has a piece picker
-  and a stats table with the power. The result has `currentPower` and `goalPower`.
+  milestones the plan unlocks. The sample page `sample/calculators/calculator-hero-gear.html` has a
+  piece picker and a stats table with the power. The result has `currentPower` and `goalPower`.
 - `calculateHeroGear()`, `HERO_GEAR_MAX_ENHANCEMENT_LEVEL`, `HERO_GEAR_MAX_EMPOWERMENT_LEVEL`, and
   `HERO_GEAR_ENHANCEMENT_REQUIREMENT`: the Essence Stones, Mythic chests, Mithril, and Enhancement
   XP Components to level one hero gear piece through mastery forging, enhancement (1 to 100), and
   empowerment (1 to 100), with the power gained, the SvS, Alliance Showdown, and King of Icefield
   points, and a list of the tracks that need enhancement at level 100. The sample page
-  `sample/calculator-hero-gear.html` plans one piece.
+  `sample/calculators/calculator-hero-gear.html` plans one piece.
 - `calculateBuildings()`: the resources, build time, power, and SvS, King of Icefield, and Hall of
   Chief points for upgrading buildings from a current level to a goal level, with the steps of
-  prerequisite buildings added. The sample page `sample/calculator-buildings.html` has the 18
-  buildings with resource costs.
+  prerequisite buildings added. The sample page `sample/calculators/calculator-buildings.html` has
+  the 18 buildings with resource costs.
 - `calculateExperts()` and `EXPERT_MAX_LEVEL`: the Books of Knowledge and expert sigils (with the
   skill EXP and affinity points) for leveling experts and their skills from a current level to a
   goal level, with advancements at levels 10 to 100. The sample page
-  `sample/calculator-experts.html` has the affinity level and the skill levels for each of the 10
-  experts.
+  `sample/calculators/calculator-experts.html` has the affinity level and the skill levels for each
+  of the 10 experts.
 - `calculatePets()` and `PET_ADVANCEMENT_INTERVAL`: the pet food, advancement items, and gains in
   Troop Attack, Troop Defense, and power for leveling pets from a current level to a goal level,
   with pets that can already be advanced or advance at the goal. It also returns the advancement
   score and the points it earns in SvS, Alliance Showdown, and King of Icefield. The sample page
-  `sample/calculator-pets.html` has a current and goal level for each of the 14 pets.
+  `sample/calculators/calculator-pets.html` has a current and goal level for each of the 14 pets.
 - `calculateResearch()` and `RESEARCH_CALCULATOR`: the resources, research time, and power for
   upgrading research lines from a current level to a goal level, with the research speed buffs. It
   also lists unmet research prerequisites and the building levels the steps need. The sample page
-  `sample/calculator-research.html` shows the research tree, where you click a line to set its
-  current and goal level, and has a list view with the same choices.
+  `sample/calculators/calculator-research.html` shows the research tree, where you click a line to
+  set its current and goal level, and has a list view with the same choices.
 - `troops()`: Infantry, Lancer, and Marksman with the resource cost and training time of tiers 1 to
   12, from WoS Tools, and the tier 12 promotion cost.
 - `TROOP_CALCULATOR`, `SVS_BATTLE_DAY_ID`, and `ALLIANCE_SHOWDOWN_TRUCK_ACTION`: the values the
@@ -77,12 +77,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `calculateTroops()`: a troop calculator built on the Camp Configuration of WoS Tools. It takes the
   level and the runs of each of the three camps, which can train, promote, or both, and returns the
   troops by type and tier, the resources, and the time, with training speed buffs and cost
-  reduction. The sample page `sample/calculator-troops.html` has the camp inputs. The camp levels
-  from 30-1 to FC 10 now have a `trainingCapacity`, taken from WoS Tools.
+  reduction. The sample page `sample/calculators/calculator-troops.html` has the camp inputs. The
+  camp levels from 30-1 to FC 10 now have a `trainingCapacity`, taken from WoS Tools.
 - `calculateChiefGear()` and `calculateChiefCharm()`: the materials, score, power gained, and event
   points for upgrading Chief Gear or Chief Charms from a start level to an end level, for as many
-  pieces as you pass. The sample pages `sample/calculator-chief-gear.html` (6 pieces) and
-  `sample/calculator-chief-charm.html` (18 charms) have a start and end level for each.
+  pieces as you pass. The sample pages `sample/calculators/calculator-chief-gear.html` (6 pieces)
+  and `sample/calculators/calculator-chief-charm.html` (18 charms) have a start and end level for
+  each.
 - `calculateAllianceShowdown()`, `calculateKingOfIcefield()`, and `calculateHallOfChief()`: score
   calculators for those events, built like `calculateSvs()` from the scoring lists of each event.
   Alliance Showdown supports Baldur's Dawn Hymn bonus, which skips the truck actions. Each has a
@@ -90,8 +91,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `calculateSvs()`: a State of Power score calculator. It reads the scoring lists of the
   `svs-state-of-power` event and returns the points for each day, each phase, and the whole event,
   with Valeria's Well Prepared bonus when `valeriaLevel` is set. The sample page
-  `sample/calculator-svs.html` is a plug-and-play version, linked from a new Calculators section on
-  the sample index.
+  `sample/calculators/calculator-svs.html` is a plug-and-play version, linked from a new Calculators
+  section on the sample index.
 - `experts()`: Valeria's Well Prepared skill now has a `progressions` entry with its Preparation
   Phase point gain, 2% for each level up to 20%.
 - `buildings()`: every building's full upgrade progression — Furnace, Embassy, Research Center,
@@ -229,6 +230,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   shop rotations and event packs, were researched and supplied directly by the package maintainer.
   "Limited" isn't its own category — it's a `limited` boolean on a decoration's real Epic/Mythic
   tier, reflecting how it's obtained rather than a separate rarity.
+
+### Changed
+
+- The sample pages moved from `sample/` into `sample/chief/`, `sample/calculators/`,
+  `sample/events/`, `sample/alliance/`, and `sample/general/`. `sample/index.html` stays at the top
+  and links to them.
 
 ### Fixed
 
