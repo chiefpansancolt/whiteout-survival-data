@@ -224,9 +224,8 @@ describe('Generation 0 heroes', () => {
   });
 
   it('follows the confirmed shared 80-level Power curve (base[L] * start / 250, running total) for Rare and Epic', () => {
-    // Per HeroLevelPowerCurve.md: base[L] is the same 80-entry curve for every hero; only the
-    // Level-1 start value (Rare 3250, Epic 4000) differs. Checkpoints below are copied from that
-    // spec's verification table.
+    // The base curve is the same for every hero. Only the level 1 start value (Rare 3250, Epic 4000)
+    // differs. The checkpoints below are the known values.
     const checkpoints = {
       Rare: { 10: 9945, 20: 18850, 40: 42185, 60: 74815, 80: 121290 },
       Epic: { 10: 12240, 20: 23200, 40: 51920, 60: 92080, 80: 149280 },
@@ -453,7 +452,7 @@ describe('Generation 1-17 heroes (Legendary)', () => {
     });
   });
 
-  it('fills levels[].power for Generations 1-5 via the shared curve, matching HeroLevelPowerCurve.md checkpoints, and leaves 0 for Generations 6-17', () => {
+  it('fills levels[].power for Generations 1-5 via the shared curve, matching the known checkpoints, and leaves 0 for Generations 6-17', () => {
     const maxPowerByGen: Record<number, number> = {
       1: 186600,
       2: 223920,

@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-07
+
+First release. It includes the build tooling, lint and format config, the test harness, and the
+shared `QueryBase<T>` query builder.
+
 ### Added
 
 #### Game data
@@ -65,6 +70,3 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - The constants the calculators use (`TROOP_CALCULATOR`, `RESEARCH_CALCULATOR`,
   `HERO_UPGRADE_CALCULATOR`, and others) are exported, so an app can show the same choices and
   limits.
-
-Initial repository scaffold: build tooling, lint/format config, test harness, and the shared
-`QueryBase<T>` query builder.

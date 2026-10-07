@@ -172,20 +172,18 @@ level needed to reach the hero level. `xpRequired` is the Hero XP needed from th
 and it is 0 at level 1. Both are identical for every hero, regardless of rarity, class, or
 generation.
 
-`power` is the total Power once the level is reached. It is confirmed through one shared 80-entry
-curve, documented in `HeroLevelPowerCurve.md` in the repo root. The gain at level L is
-`start * base[L] / 250` with integer division, which is exact for every known start value. `power`
-is the running total of the gains. Only the level 1 `start` differs between heroes. It is 3,250 for
-Rare and 4,000 for Epic. For Legendary Generations 1 to 5 it is 5,000, 6,000, 7,500, 9,250, and
-11,100. The start values of Generations 3 to 5 are marked "projected" in the spec and are not
-measured in the game. The `base` array sums to 9,330 and is the same for all heroes. It has dips at
-levels 3, 19, 52, and 67 and a jump at level 80.
+`power` is the total Power once the level is reached. It follows one shared 80-entry curve. The gain
+at level L is `start * base[L] / 250` with integer division, and `power` is the running total of the
+gains. The `base` curve is the same for all heroes, and only the level 1 `start` differs. It is
+3,250 for Rare and 4,000 for Epic. For Legendary Generations 1 to 5 it is 5,000, 6,000, 7,500,
+9,250, and 11,100. The start values of Generations 3 to 5 are projected and are not measured in the
+game.
 
-This reproduces the checkpoint table of the spec for every covered rarity and generation. Rare
-levels 10, 40, and 80 give 9,945, 42,185, and 121,290. Legendary Generation 1 gives 15,300, 64,900,
-and 186,600. Legendary Generations 6 to 17 have no confirmed start value, and the spec warns against
-extrapolating one. Their level `power` is a `0` placeholder.
+The values reproduce the known checkpoints for every covered rarity and generation. Rare levels 10,
+40, and 80 give 9,945, 42,185, and 121,290. Legendary Generation 1 gives 15,300, 64,900, and
+186,600. Legendary Generations 6 to 17 have no confirmed start value, so extrapolating one would be
+a guess. Their level `power` is a `0` placeholder.
 
 Jeronimo is a confirmed exception to his generation. His start is 6,250 and not the 5,000 of
-Generation 1, so his level 80 total is 233,250 and not 186,600. The `base` array and the formula are
-the same.
+Generation 1, so his level 80 total is 233,250 and not 186,600. The curve and the formula are the
+same.
