@@ -4,13 +4,18 @@ import { EventScore, EventScoreDay, EventUsage, GameEventDay } from '@/types';
 
 export interface ScoreBonus {
   percent: number;
-  /** Returns true when the bonus applies to the points of this action on this day. */
   appliesTo: (day: GameEventDay, action: string) => boolean;
 }
 
 export const NO_BONUS: ScoreBonus = { percent: 0, appliesTo: () => false };
 
-/** Returns the percent a skill gives at the level, read from the skill's progression with the given label. Returns 0 when the level is undefined. */
+/**
+ * Returns the percent that a skill gives at a level, read from the progression with the given label.
+ * Returns 0 when `level` is undefined.
+ *
+ * @param optionName Name of the option in the error message.
+ * @throws RangeError when `level` is not a whole number from 1 to the number of levels of the skill.
+ */
 export function skillPercent(
   expertId: string,
   skillName: string,
@@ -37,9 +42,11 @@ export function sumScores(scores: EventScore[]): EventScore {
 
 /**
  * Scores every day of an event from the usage. The bonus of a day is the bonus percent of the
- * points from the actions the bonus applies to, rounded to a whole number.
+ * points of the actions that `bonus.appliesTo` accepts, rounded to a whole number.
  *
  * @param label Name of the event in error messages.
+ * @throws Error when `usage` names a day or an action that the event does not have.
+ * @throws RangeError when a count is negative or not a finite number.
  */
 export function scoreEventDays(
   eventId: string,

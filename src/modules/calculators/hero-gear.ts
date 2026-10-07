@@ -182,31 +182,20 @@ function eventPoints(resources: UpgradeMaterial[]): HeroGearEventPoints {
 }
 
 /**
- * Calculates what one hero gear piece needs to level up.
+ * Calculates the resources, power, stats, and event points to level one hero gear piece.
  *
- * A piece has three tracks. Mastery forging costs Essence Stones, with Custom Mythic Hero Gear Chests
- * at the higher rows. Enhancement (levels 1 to 100) costs Enhancement XP Components. Empowerment starts
- * after enhancement level 100 and has 100 levels of its own, and its power continues from the power of
- * enhancement level 100. Level 1 costs Custom Mythic Hero Gear
- * Chests, and levels 20, 40, 60, 80, and 100 also cost Mithril. The steps of a track are the rows after
- * the current one up to and including the goal, and a track that is not in the goal adds nothing.
- * Mastery forging past `HERO_GEAR_ENHANCEMENT_REQUIREMENT.afterRowId`, and empowerment, need the
- * enhancement of the piece at level 100. When the goal has an enhancement range that ends below 100,
- * the result lists these tracks in `unmetRequirements`. Essence Stones and Mithril score in SvS,
- * Alliance Showdown, and King of Icefield, with the points read from the scoring rows of each event.
- * The same table costs apply to every hero gear piece. When the goal names a `piece` (slot and troop
- * type), `stats` has the Attack or Defense, HP, and Lethality or Health of the piece before the plan
- * (`current`), after the plan (`goal`), and the `gain`, and the Mithril milestone bonuses that the plan unlocks. The stats of a level are the stats of `heroGearStats()` times
- * the mastery forging multiplier (1 plus the `statsUpPercent` of the row), rounded down, and level 0 has
- * no stats. A track that is not in the goal counts as level 0 with no mastery forging, so give an
- * `enhancement` range such as `{ current: 100, goal: 100 }` to get the gain of a mastery forging only plan.
- *
- * `currentPower` and `goalPower` are the power of the piece before and after the plan.
+ * A piece has three tracks: mastery forging, enhancement, and empowerment. The steps of a track are the
+ * rows after the current one up to and including the goal. A track that is not in the goal adds nothing.
+ * Mastery forging past `HERO_GEAR_ENHANCEMENT_REQUIREMENT.afterRowId` and empowerment need enhancement
+ * level 100. The calculator does not throw for this rule. It lists the affected tracks in
+ * `unmetRequirements` when the goal has an `enhancement` range that ends below 100. When the goal names a
+ * `piece`, the result has the `stats` of the piece. Widgets are not included.
  *
  * @param goal The mastery forging, enhancement, and empowerment ranges of one piece.
  * @throws Error when the mastery forging range names a row that does not exist.
  * @throws RangeError when an enhancement or empowerment level is not a whole number from 0 to 100,
  * or when a goal is below its current state.
+ * @see docs/hero-gear.md
  */
 export function calculateHeroGear(goal: HeroGearGoal = {}): HeroGearCalculation {
   const masteryForging = masteryForgingResult(goal.masteryForging);

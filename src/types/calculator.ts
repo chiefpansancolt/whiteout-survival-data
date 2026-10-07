@@ -33,7 +33,7 @@ export interface EventScoreCalculation {
 export type SvsUsage = EventUsage;
 
 export interface SvsCalculatorOptions {
-  /** Level (1 to 10) of Valeria's Well Prepared skill. Leave out when Valeria is not used. */
+  /** Level (1 to 10) of the Well Prepared skill of Valeria. Leave out when Valeria is not used. */
   valeriaLevel?: number;
 }
 
@@ -46,7 +46,7 @@ export interface SvsDayResult extends EventScoreDay {
 }
 
 export interface SvsCalculation {
-  /** Valeria's Preparation Phase bonus in percent, 0 when Valeria is not used. */
+  /** The bonus of Valeria for the Preparation Phase, in percent. 0 when Valeria is not used. */
   valeriaBonusPercent: number;
   days: SvsDayResult[];
   preparation: EventScore;
@@ -55,20 +55,19 @@ export interface SvsCalculation {
 }
 
 export interface AllianceShowdownCalculatorOptions {
-  /** Level (1 to 10) of Baldur's Dawn Hymn skill. Leave out when Baldur is not used. */
+  /** Level (1 to 10) of the Dawn Hymn skill of Baldur. Leave out when Baldur is not used. */
   dawnHymnLevel?: number;
 }
 
 export interface AllianceShowdownCalculation extends EventScoreCalculation {
-  /** Baldur's point bonus in percent, 0 when Baldur is not used. */
+  /** The point bonus of Baldur in percent. 0 when Baldur is not used. */
   dawnHymnBonusPercent: number;
 }
 
-/** Upgrades one gear piece or one charm from a level to a level, by `id` from `chiefGear()` for gear or `chiefCharm()` for charms. */
+/** One gear piece or one charm to upgrade, by `id` from `chiefGear()` or `chiefCharm()`. */
 export interface UpgradeRange {
   /** The level the piece is at now. Use `null` for a piece that has no level yet. */
   from: string | null;
-  /** The level to reach. */
   to: string;
 }
 
@@ -77,7 +76,7 @@ export interface UpgradeMaterial {
   amount: number;
 }
 
-/** Event points that the score of an upgrade earns, from the "Raise Chief Gear/Charm max score" rows of each event. */
+/** Event points of the score of an upgrade, from the "Raise Chief Gear max score" and "Raise Chief Charm max score" rows. */
 export interface UpgradeEventPoints {
   svs: number;
   allianceShowdown: number;
@@ -86,34 +85,34 @@ export interface UpgradeEventPoints {
 }
 
 export interface UpgradeResult {
-  /** Number of upgrade steps, counting the steps inside a level. */
+  /** The number of upgrade steps, including the steps inside a level. */
   steps: number;
   materials: UpgradeMaterial[];
   score: number;
-  /** Power gained, from the `powerTotal` of the first level to the `powerTotal` of the last level of each range. */
+  /** The `powerTotal` of the last level minus the `powerTotal` of the first level, summed over all ranges. */
   power: number;
   eventPoints: UpgradeEventPoints;
 }
 
 export type TroopType = 'infantry' | 'lancer' | 'marksman';
 
-/** What a camp does in one batch. Tiers are 1 to 11. */
+/** What a camp does in one batch. Tiers are 1 to 12. */
 export type TroopCampAction =
   { mode: 'training'; tier: number } | { mode: 'promotion'; fromTier: number; toTier: number };
 
-/** One run of a camp: troops in each batch, repeated for a number of batches. */
+/** Troops in each batch, repeated for a number of batches. */
 export interface TroopRun {
   action: TroopCampAction;
   /** Troops in each batch, or `max` for the capacity. */
   count: number | 'max';
-  /** Number of batches, 1 or more. Defaults to 1. */
+  /** The number of batches, 1 or more. Defaults to 1. */
   batches?: number;
 }
 
 export interface TroopCampConfig {
-  /** The camp level, as the `label` of a level of the camp in `buildings()`, such as `30` or `FC 3-2`. */
+  /** The `label` of a camp level in `buildings()`, such as `30` or `FC 3-2`. */
   level: string;
-  /** What the camp does. A camp can train and promote, so it can have several runs. Leave out when the camp only adds its level to the shared capacity. */
+  /** A camp can train and promote, so it can have more than one run. Leave out when the camp only adds its level to the shared capacity. */
   runs?: TroopRun[];
 }
 
@@ -121,24 +120,24 @@ export interface TroopCalculatorInput {
   camps: Record<TroopType, TroopCampConfig>;
   /** Training capacity from research. Defaults to 0. */
   researchCapacity?: number;
-  /** The Minister of Education buff adds 200 capacity, or 300 for the supreme buff. */
+  /** Adds 200 capacity, or 300 for the supreme buff. */
   ministerOfEducation?: 'regular' | 'supreme';
-  /** The training capacity boost that multiplies the total capacity by 3. */
+  /** Multiplies the total capacity by 3. */
   capacityBoost?: boolean;
-  /** Your training speed bonus in percent, as the game shows it, not counting the buffs below. Defaults to 0. */
+  /** Your training speed bonus in percent, as the game shows it, without the buffs below. Defaults to 0. */
   trainingSpeedPercent?: number;
-  /** The Vice President buff adds 10% training speed, or 15% for the supreme buff. */
+  /** Adds 10% training speed, or 15% for the supreme buff. */
   vicePresident?: 'regular' | 'supreme';
-  /** The Mobilize buff of the President adds 30% training speed. */
+  /** The Mobilize buff of the President. Adds 30% training speed. */
   mobilize?: boolean;
-  /** The Advanced Training buff adds 20% training speed. */
+  /** Adds 20% training speed. */
   advancedTraining?: boolean;
   /** Percent off the resource cost for each troop type, from 0 to 75. Defaults to 0. */
   costReductionPercent?: Partial<Record<TroopType, number>>;
 }
 
 export interface TroopCampResult {
-  /** The troops in each batch, the batches, and the seconds for all the batches of each run of the camp, in order. */
+  /** One entry for each run of the camp, in order. `seconds` covers all batches of the run. */
   runs: { troopsPerBatch: number; batches: number; seconds: number }[];
   /** The seconds for all runs of the camp, before any speedups. */
   seconds: number;
@@ -153,39 +152,38 @@ export interface TroopTierRow {
 }
 
 export interface TroopCalculation {
-  /** The most troops a camp can queue in one batch. All three camps share this capacity. */
+  /** The most troops that a camp can queue in one batch. All three camps share this capacity. */
   capacity: number;
   camps: Record<TroopType, TroopCampResult>;
-  /** The change in troops for each tier from 1 to 11. Training adds troops, and promotion takes troops from the first tier and adds them to the second. */
+  /** The change in troops for each tier from 1 to 12. Promotion takes troops from the first tier and adds them to the second. */
   tiers: TroopTierRow[];
   /** The change in troops for each type, summed over all tiers. */
   totals: Omit<TroopTierRow, 'tier'>;
-  /** The training speed bonus in percent that the times use, with the buffs added. */
+  /** The training speed in percent that the times use, with the buffs added. */
   trainingSpeedPercent: number;
   /** Meat, wood, coal, and iron for all runs, with the cost reduction applied. Promotion costs the difference between the two tiers. */
   resources: UpgradeMaterial[];
-  /** The seconds for all camps added together, which is the speedup time to finish all of them. */
+  /** The seconds of all camps added together, which is the speedup time to finish all of them. */
   totalSeconds: number;
-  /** The seconds for the camp that takes the longest, since the camps train at the same time. */
+  /** The seconds of the camp that takes the longest. The camps train at the same time. */
   longestCampSeconds: number;
 }
 
-/** One research line to upgrade. Levels are 0 for not researched up to the number of levels of the line. */
+/** One research line to upgrade. Each tier of a research line is its own line with its own levels. */
 export interface ResearchGoal {
   /** The `id` of the research line in `research()`. */
   id: string;
-  /** The level you have now. 0 when you have not started the line. */
+  /** The level you have now, from 0 (not started) to the number of levels of the line. */
   current: number;
-  /** The level you want. */
   goal: number;
 }
 
 export interface ResearchCalculatorOptions {
-  /** Your research speed bonus in percent, as the game shows it, not counting the buffs below. Defaults to 0. */
+  /** Your research speed bonus in percent, as the game shows it, without the buffs below. Defaults to 0. */
   researchSpeedPercent?: number;
-  /** The state buff adds 10% research speed. */
+  /** Adds 10% research speed. */
   stateBuff?: boolean;
-  /** The Vice President buff adds 10% research speed, or 15% for the supreme buff. */
+  /** Adds 10% research speed, or 15% for the supreme buff. */
   vicePresident?: 'regular' | 'supreme';
 }
 
@@ -202,12 +200,11 @@ export interface ResearchItemResult {
 
 /** A research level whose prerequisite is not met by the current or goal level of the other line. */
 export interface UnmetResearchPrerequisite {
-  /** The research line and the level that needs it. */
+  /** The research line and the level that needs the prerequisite. */
   id: string;
   level: number;
-  /** The research line and the level that it needs. */
   requires: { id: string; level: number };
-  /** The highest of the current and goal levels given for the required line, 0 when it is not given. */
+  /** The highest of the current and goal levels given for the required line. 0 when it is not given. */
   planned: number;
 }
 
@@ -233,17 +230,16 @@ export interface ResearchCalculation {
 export interface PetGoal {
   /** The `id` of the pet in `pets()`. */
   id: string;
-  /** The level the pet is at now, from 1 to its max level. */
+  /** The level of the pet now, from 1 to its max level. */
   current: number;
-  /** The level you want. */
   goal: number;
-  /** True when the pet is already advanced at its current level. Only for a level that is a multiple of 10. */
+  /** True when the pet is already advanced at `current`. Valid only on a level that is a multiple of 10. */
   currentAdvanced?: boolean;
-  /** True to advance the pet at the goal level too. Only for a level that is a multiple of 10. */
+  /** True to pay for the advancement at `goal`. Valid only on a level that is a multiple of 10. */
   goalAdvanced?: boolean;
 }
 
-/** Event points that the pet advancement score earns, from the "Pet advancement score increases by 1" row of each event. */
+/** Event points of the pet advancement score, from the "Pet advancement score increases by 1" row of each event. */
 export interface PetEventPoints {
   svs: number;
   allianceShowdown: number;
@@ -258,9 +254,9 @@ export interface PetItemResult {
   /** The advancements paid for. */
   advancements: number;
   resources: UpgradeMaterial[];
-  /** The gain in Troop Attack in percent. */
+  /** The gain in Troop Attack, in percent. */
   troopAttack: number;
-  /** The gain in Troop Defense in percent. */
+  /** The gain in Troop Defense, in percent. */
   troopDefense: number;
   /** The gain in troops power. */
   power: number;
@@ -284,9 +280,8 @@ export interface PetCalculation {
 /** One skill of an expert to level up, by the skill `name` in `experts()`. */
 export interface ExpertSkillGoal {
   name: string;
-  /** The skill level you have now, from 1 to the max level of the skill. */
+  /** The skill level now, from 1 to the max level of the skill. */
   current: number;
-  /** The skill level you want. */
   goal: number;
 }
 
@@ -294,13 +289,13 @@ export interface ExpertSkillGoal {
 export interface ExpertGoal {
   /** The `id` of the expert in `experts()`. */
   id: string;
-  /** The affinity level of the expert, from 1 to 100. */
+  /** The affinity level range, from 1 to 100. */
   level?: {
     current: number;
     goal: number;
-    /** True when the expert is already advanced at the current level. Only for a level that has an advancement cost. */
+    /** True when the expert is already advanced at `current`. Valid only on a level that has an advancement cost. */
     currentAdvanced?: boolean;
-    /** True to advance the expert at the goal level too. Only for a level that has an advancement cost. */
+    /** True to pay for the advancement at `goal`. Valid only on a level that has an advancement cost. */
     goalAdvanced?: boolean;
   };
   skills?: ExpertSkillGoal[];
@@ -339,20 +334,16 @@ export interface ExpertCalculation {
 /** One building to upgrade, by `id` from `buildings()`. */
 export interface BuildingGoal {
   id: string;
-  /** The level `label` the building is at now. Use `null` for a building that is not built yet. */
+  /** The level `label` of the building now. Use `null` for a building that is not built. */
   current: string | null;
-  /** The level `label` to reach, for example `"30"`, `"30-1"`, or `"FC 3"`. */
+  /** The level `label` to reach, such as `"30"`, `"30-1"`, or `"FC 3"`. */
   goal: string;
 }
 
 export interface BuildingCalculatorOptions {
-  /**
-   * The level `label` of the buildings you already have, by building `id`. The calculator adds the
-   * steps of a prerequisite building that is below the needed level, and a building that is not
-   * listed counts as not built.
-   */
+  /** The level `label` of the buildings you already have, by building `id`. A building that is not listed counts as not built. */
   buildingLevels?: Record<string, string | null>;
-  /** The total construction speed in percent, from 0 up. The speed bonuses add up. */
+  /** The total construction speed in percent, from 0 up. The speed bonuses add up. Defaults to 0. */
   constructionSpeedPercent?: number;
 }
 
@@ -361,7 +352,7 @@ export interface BuildingStep {
   name: string;
   /** The level `label` that this step reaches. */
   level: string;
-  /** True for a step that a goal needs as a prerequisite and that is not inside a goal range. */
+  /** True for a step that a goal needs as a prerequisite. The step is not inside a goal range. */
   prerequisite: boolean;
   cost: UpgradeMaterial[];
   /** The power that this step adds. */
@@ -379,14 +370,14 @@ export interface BuildingHallOfChiefPoints {
 }
 
 export interface BuildingEventPoints {
-  /** Fire Crystals and Refined Fire Crystals. Speedups are not included. */
+  /** Points of Fire Crystals and Refined Fire Crystals. Speedups are not included. */
   svs: number;
   kingOfIcefield: number;
   hallOfChief: BuildingHallOfChiefPoints[];
 }
 
 export interface UnmetBuildingPrerequisite {
-  /** The building name as the data states it. The name is not in `buildings()`. */
+  /** The building name as the data states it. The building is not in `buildings()`. */
   building: string;
   level: string;
 }
@@ -400,9 +391,9 @@ export interface BuildingCalculation {
   constructionSpeedPercent: number;
   /** The build time after the speed bonus, rounded down. */
   seconds: number;
-  /** The minutes of speedups that cover all of the build time, rounded up. */
+  /** The minutes of speedups that cover the build time, rounded up. */
   speedupMinutesNeeded: number;
-  /** The points of each speedup minute used, to multiply with the minutes the user spends. */
+  /** The points of one speedup minute. The caller multiplies them with the minutes the user spends. */
   speedupPointsPerMinute: { svs: number; kingOfIcefield: number };
   eventPoints: BuildingEventPoints;
   /** Prerequisites on a building that is not in `buildings()`. They add no steps. */
@@ -413,7 +404,6 @@ export interface BuildingCalculation {
 export interface HeroGearMasteryForgingRange {
   /** The row the piece is at now. Use `null` for a piece with no mastery forging yet. */
   current: string | null;
-  /** The row to reach. */
   goal: string;
 }
 
@@ -423,7 +413,7 @@ export interface HeroGearLevelRange {
   goal: number;
 }
 
-/** Which hero gear piece it is. The stats depend on the slot and on the troop type of the gear set. */
+/** The stats depend on the slot and on the troop type of the gear set. */
 export interface HeroGearPiece {
   slot: HeroGearSlot;
   troopType: TroopType;
@@ -431,12 +421,12 @@ export interface HeroGearPiece {
 
 /** One hero gear piece to upgrade. Leave out a track that does not change. */
 export interface HeroGearGoal {
-  /** The piece, for the stats gain in the result. */
+  /** The piece for the stats gain in the result. */
   piece?: HeroGearPiece;
   masteryForging?: HeroGearMasteryForgingRange;
-  /** Enhancement levels 1 to 100, from `heroGearEnhancement()`. */
+  /** Levels from `heroGearEnhancement()`. */
   enhancement?: HeroGearLevelRange;
-  /** Empowerment levels 1 to 100, from `heroGearEmpowerment()`. Empowerment starts after enhancement level 100. */
+  /** Levels from `heroGearEmpowerment()`. Empowerment starts after enhancement level 100. */
   empowerment?: HeroGearLevelRange;
 }
 
@@ -447,16 +437,16 @@ export interface HeroGearTrackResult {
 }
 
 export interface HeroGearMasteryForgingResult extends HeroGearTrackResult {
-  /** The stats gain in percent, from the `statsUpPercent` of the first row to the `statsUpPercent` of the last row. */
+  /** The `statsUpPercent` of the last row minus the `statsUpPercent` of the first row, in percent. */
   statsUpPercent: number;
 }
 
 export interface HeroGearLevelResult extends HeroGearTrackResult {
-  /** The power gained, from the `power` of the current level to the `power` of the goal level. */
+  /** The `power` of the goal level minus the `power` of the current level. */
   power: number;
 }
 
-/** A track that needs the enhancement of the piece to be at a level before it can go on. */
+/** A track that needs the enhancement of the piece at a level before it can go on. */
 export interface HeroGearRequirement {
   track: 'masteryForging' | 'empowerment';
   /** The enhancement level that the piece needs. */
@@ -470,13 +460,12 @@ export interface HeroGearEventPoints {
   kingOfIcefield: number;
 }
 
-/** The stat values of one piece. */
 export interface HeroGearStatValues {
-  /** Attack for Goggles and Boots, Defense for Gloves and Belt. */
+  /** Attack for Goggles and Boots. Defense for Gloves and Belt. */
   combatStat: number;
-  /** The flat HP. */
+  /** The flat health. */
   health: number;
-  /** Lethality for Goggles and Boots, Health for Gloves and Belt, in percent. */
+  /** Lethality for Goggles and Boots. Health for Gloves and Belt. In percent. */
   percentStat: number;
 }
 
@@ -501,18 +490,18 @@ export interface HeroGearCalculation {
   resources: UpgradeMaterial[];
   /** The power gained from enhancement and empowerment. */
   power: number;
-  /** The power of the piece at the current enhancement and empowerment levels. Level 0 has no power. */
+  /** The power of the piece at the current levels. Level 0 has no power. */
   currentPower: number;
   /** The power of the piece at the goal levels. */
   goalPower: number;
   eventPoints: HeroGearEventPoints;
   /** The requirements that the plan does not meet. Only the tracks in the goal are checked. */
   unmetRequirements: HeroGearRequirement[];
-  /** The stats of the piece, or `null` when the goal has no `piece`. */
+  /** The stats of the piece. `null` when the goal has no `piece`. */
   stats: HeroGearStatsResult | null;
 }
 
-/** A hero star label such as 3.1: the star from 0 to 5 and the tier inside it from 0 to 5. Tier is 0 at 5 stars. */
+/** A hero star label such as 3.1: the star from 0 to 5 and the tier from 0 to 5. The tier is 0 at 5 stars. */
 export interface HeroStars {
   star: number;
   tier: number;
@@ -526,9 +515,8 @@ export interface HeroStarsRange {
 /** One skill of the hero, by `name` from the exploration or expedition skills of `heroes()`. */
 export interface HeroSkillGoal {
   name: string;
-  /** The skill level the hero has now, from 1 to the last level of the skill. */
+  /** The skill level now, from 1 to the last level of the skill. */
   current: number;
-  /** The skill level you want. */
   goal: number;
 }
 
@@ -556,7 +544,7 @@ export interface HeroUpgradeStars {
 
 export interface HeroUpgradeSkills {
   levels: number;
-  /** Manuals of each type, as the manual item for the rarity of the hero. */
+  /** The manual item of the rarity of the hero, for each manual type. */
   manuals: UpgradeMaterial[];
 }
 
@@ -586,9 +574,9 @@ export interface HeroUpgradeCalculation {
   stars: HeroUpgradeStars;
   skills: HeroUpgradeSkills;
   widgets: HeroUpgradeWidgets;
-  /** The shards of the general shard item for the rarity of the hero, and the manuals. */
+  /** The general shard item of the rarity of the hero, and the manuals. */
   resources: UpgradeMaterial[];
   eventPoints: HeroUpgradeEventPoints;
-  /** Skill levels in the goal that need a higher star than the star goal. Only checked when the goal has `stars`. */
+  /** Skill levels that need a higher star than the star goal. Checked only when the goal has `stars`. */
   unmetRequirements: UnmetHeroSkillRequirement[];
 }

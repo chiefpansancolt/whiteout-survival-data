@@ -9,11 +9,13 @@ export type ResearchCategory =
   | 'T12 Marksman'
   | 'T12 Lancer';
 
+/** An `unreleased` id does not resolve against `research()`. */
 export type ResearchRequirementType = 'building' | 'research' | 'unreleased';
 
 export interface ResearchRequirement {
   type: ResearchRequirementType;
   id: string;
+  /** For a `building` requirement, the same text as `BuildingLevel.label`. */
   level: number | string;
 }
 
@@ -31,6 +33,7 @@ export interface ResearchLevel {
   level: number;
   prerequisites: ResearchRequirement[];
   cost: ResearchCost[];
+  /** Omitted when the source page has no time value. */
   researchTimeSeconds?: number;
   bonus: ResearchBonus[];
   power: number;
@@ -39,6 +42,7 @@ export interface ResearchLevel {
 export interface ResearchNode {
   id: string;
   name: string;
+  /** Empty for nodes that have no icon. */
   img: string;
   category: ResearchCategory;
   tier: number;

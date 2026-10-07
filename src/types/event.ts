@@ -8,36 +8,35 @@ export interface GameEventPhase {
 export interface GameEventReward {
   name: string;
   itemId?: string;
-  /** Id of the matching Daybreak Island decoration, for rewards that are decorations and not items. */
+  /** Id of the matching Daybreak Island decoration. Set when the reward is a decoration and not an item. */
   decorationId?: string;
-  /** Id of the matching skin in `skin()`, for rewards that are skins. */
+  /** Id of the matching skin in `skins()`. Set when the reward is a skin. */
   skinId?: string;
   amount?: number;
-  /** The condition for the reward, such as a rank tier, or a detail the amount cannot express. */
+  /** The condition for the reward, such as a rank tier, or a detail that `amount` cannot express. */
   note?: string;
 }
 
 export interface GameEventStageLevel {
-  /** The level of the enemy a player scouts and defeats, such as 1 to 50. */
+  /** Level of the enemy, from 1 to 50. */
   level: number;
-  /** The troop tier of the enemy at this level. */
   tier: number;
   power: number;
   bonus: number;
   troops: { infantry: number; lancer: number; marksman: number };
   totalTroops: number;
   rewards: GameEventReward[];
-  /** Set when the source table looks wrong for this level and the values are kept as printed. */
+  /** Set when the source table looks wrong for this level. The values are kept as printed. */
   note?: string;
 }
 
 export interface GameEventRanking {
-  /** The placement group the rewards apply to, such as `1`, `2-3`, `4-5`, or `6`. */
+  /** Placement group the rewards apply to, such as `1`, `2-3`, or `4-5`. */
   groupRanking: string;
-  /** Change to the star rating for this placement. Negative when stars are lost. */
+  /** Change to the star rating for this placement. Negative when the player loses stars. */
   starChange?: number;
   rewards: GameEventReward[];
-  /** Per-level enemy details and rewards for this difficulty. */
+  /** Enemy details and rewards for each level of this difficulty. */
   levels?: GameEventStageLevel[];
 }
 
@@ -64,36 +63,30 @@ export interface GameEventWave {
   details?: string;
 }
 
-/** A zone of an event, such as a Labyrinth zone, with the days it is open. */
 export interface GameEventZone {
   name: string;
   days: string[];
-  /** Where the stats used in this zone come from. */
   statSources: string;
   unlock?: string;
-  /** Number of stages in the zone. */
   stages?: number;
   note?: string;
 }
 
-/** One refresh of an event item, such as a Tundra Trade Route truck, with its cost and the chance of each quality. */
 export interface GameEventRefresh {
   refresh: number;
   gemCost?: number;
-  /** Chance in percent for each quality, such as Uncommon or Mythic. */
+  /** Chance in percent for each quality, keyed by quality name such as `Uncommon` or `Mythic`. */
   chances: Record<string, number>;
 }
 
-/** A named group of shop offers, such as the shop of one hero generation. */
 export interface GameEventShop {
   name: string;
   offers: GameEventShopOffer[];
 }
 
-/** One offer in an event shop, bought with the event's currency. */
 export interface GameEventShopOffer {
   reward: GameEventReward;
-  /** What the offer holds, when it is a chest or bundle of several rewards. */
+  /** The rewards inside the offer. Set when the offer is a chest or bundle. */
   contents?: GameEventReward[];
   cost: number;
   limit: number;
@@ -101,7 +94,7 @@ export interface GameEventShopOffer {
 
 export interface GameEventMissionLevel {
   level: number;
-  /** Omit until the requirement is known. */
+  /** Not set until the requirement is known. */
   requirement?: string;
 }
 
@@ -110,11 +103,10 @@ export interface GameEventMission {
   name: string;
   /** Base points. Exclusive missions give a bonus on top of this. */
   points: number;
-  /** Number of levels, when the mission has several levels that give the same rewards. */
+  /** Number of levels. Set when the mission has more than one level that gives the same rewards. */
   levels?: number;
-  /** What a player must do to complete each level. */
   levelRequirements?: GameEventMissionLevel[];
-  /** The rewards for each level besides `points`. */
+  /** Rewards for each level, in addition to `points`. */
   rewards?: GameEventReward[];
   note?: string;
 }
@@ -125,16 +117,15 @@ export interface GameEventScoringAction {
 }
 
 export interface GameEventDay {
-  /** The day or days the stage runs, such as `1` or `6-7`. */
+  /** Day or days the stage runs, such as `1` or `6-7`. */
   day: string;
   name: string;
-  /** Event points the day's winner earns, for events decided by daily matches. */
+  /** Event points the winner of the day earns. Set for events decided by daily matches. */
   victoryPoints?: number;
-  /** How a player or alliance scores points during this day. */
   scoring: GameEventScoringAction[];
-  /** Personal point milestones for this day, as tiers with `scoreTotal` and `rewards`. Omit `scoreTotal` until the points needed are known. */
+  /** Personal point milestones for this day. A tier omits `scoreTotal` until the points needed are known. */
   milestones?: GameEventTier[];
-  /** Alliance point milestones for this day, as tiers with `scoreTotal` and `rewards`. */
+  /** Alliance point milestones for this day. */
   allianceMilestones?: GameEventTier[];
   note?: string;
 }
@@ -159,12 +150,10 @@ export interface GameEventPointLevels {
   levels: GameEventPointLevel[];
 }
 
-/** The hero whose shards an event gives in one hero generation. */
 export interface GameEventGenerationHero {
   generation: number;
-  /** Id of the hero in `heroes()`. */
   heroId: string;
-  /** Id of the hero's shard in `items()`, when the shard has an item. */
+  /** Id of the shard in `items()`. Not set when the shard has no item. */
   shardItemId?: string;
 }
 
@@ -177,41 +166,35 @@ export interface GameEvent {
   frequency?: string;
   duration?: string;
   requirements?: string[];
-  /** Ranking tiers ordered from lowest to highest. */
+  /** Ranking tiers from lowest to highest. */
   tiers?: GameEventTier[];
-  /** Alliance rewards by the placement of the alliance's first legion. */
+  /** Alliance rewards by the placement of the first legion of the alliance. */
   allianceRankings?: GameEventRanking[];
-  /** Later reward lists for `allianceRankings`, in the order the game replaced them. */
+  /** Later reward lists that replace `allianceRankings`, in the order the game replaced them. */
   allianceRankingUpdates?: GameEventRankingVersion[];
-  /** Reward levels that need both personal and alliance points, such as Crazy Joe defense points. */
+  /** Reward levels that need both personal and alliance points. */
   pointLevels?: GameEventPointLevels;
-  /** Personal rewards by placement, one table for each thing the placement is based on. */
+  /** Personal rewards by placement. One table for each basis of placement. */
   personalRankings?: GameEventRankingTable[];
   phases?: GameEventPhase[];
-  /** Per-day details, for events that score and reward each day separately. Also used for the separate versions of an event, such as Armament Competition. */
+  /** Details for each day, for events that score and reward each day separately. Also holds the separate versions of an event, such as Armament Competition. */
   days?: GameEventDay[];
-  /** Attack waves in order, for wave-based events. */
   waves?: GameEventWave[];
-  /** Missions players can complete to earn points, for mission-based events. */
   missions?: GameEventMission[];
-  /** What the `points` of each mission count, when it is not points, such as a currency. */
+  /** What `points` of each mission counts. Set when the points are a currency. */
   missionPointsLabel?: string;
-  /** Item id of the currency the shop offers cost. */
+  /** Id in `items()` of the currency that `cost` of a shop offer uses. */
   shopCurrencyItemId?: string;
-  /** Name of the shop currency, when it is not an item in `items()`. */
+  /** Name of the shop currency. Set when the currency is not in `items()`. */
   shopCurrencyName?: string;
-  /** Refreshes in order, with their cost and quality chances. */
   refreshes?: GameEventRefresh[];
-  /** Offers in the event shop. */
   shop?: GameEventShopOffer[];
-  /** Several shops, when the event has one shop for each group, such as each hero generation. */
+  /** More than one shop. Set when the event has one shop for each group, such as each hero generation. */
   shops?: GameEventShop[];
-  /** The hero shard the event gives in each hero generation. */
   heroByGeneration?: GameEventGenerationHero[];
-  /** Zones with the days each one is open. */
   zones?: GameEventZone[];
   rewards?: GameEventReward[];
   tips?: string[];
-  /** Id of the matching `EventBuff` row. */
+  /** Id of the matching row in `eventBuff()`. */
   eventBuffId?: string;
 }

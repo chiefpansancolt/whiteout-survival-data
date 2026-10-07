@@ -11,6 +11,6 @@ export interface AllianceFortress {
   kind: AllianceFortressKind;
   x: number;
   y: number;
-  /** One reward per phase (1-8). Empty for the castle, whose rewards are not documented. */
+  /** One reward for each phase, 1 to 8. Empty for the castle, because its rewards are not documented. */
   rewards: AllianceFortressReward[];
 }

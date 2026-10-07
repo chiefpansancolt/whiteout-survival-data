@@ -1,18 +1,15 @@
 import { SvsCalculation, SvsCalculatorOptions, SvsDayResult, SvsUsage } from '@/types';
 import { scoreEventDays, skillPercent, sumScores } from './event-score';
 
-/** The id of the Battle Phase day in the `svs-state-of-power` event. Valeria's bonus does not apply to this day. */
+/** Id of the Battle Phase day. Valeria's bonus does not apply to this day. */
 export const SVS_BATTLE_DAY_ID = 'Battle';
 
 /**
- * Calculates State of Power scores from how many times each scoring action was done.
- *
- * Points come from the scoring lists of the `svs-state-of-power` event. Valeria's Well Prepared
- * skill adds its percent to the points of every Preparation Phase day (days 1 to 5) and never to
- * the Battle Phase. The bonus of each day is rounded to a whole number.
+ * Calculates State of Power points for each day and phase from the action counts in `usage`.
+ * Valeria's bonus applies to the Preparation Phase days only. See `docs/svs.md`.
  *
  * @param usage Counts by day id and then by action text. Days and actions left out count as 0.
- * @param options `valeriaLevel` turns on the Valeria bonus for a level from 1 to 10.
+ * @param options `valeriaLevel` is the level of Valeria's Well Prepared skill, from 1 to 10.
  * @throws RangeError when `valeriaLevel` is not a whole number from 1 to 10, or a count is negative.
  * @throws Error when `usage` names a day or an action that the event does not have.
  */

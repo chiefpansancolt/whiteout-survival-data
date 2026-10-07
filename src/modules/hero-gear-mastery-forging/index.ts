@@ -5,19 +5,18 @@ import { HeroGearMasteryForgingLevel } from '@/types';
 const heroGearMasteryForgingData: HeroGearMasteryForgingLevel[] =
   data as HeroGearMasteryForgingLevel[];
 
-/** Query builder for HeroGearMasteryForgingLevel data. All filter methods return a new HeroGearMasteryForgingQuery for chaining. */
 export class HeroGearMasteryForgingQuery extends QueryBase<HeroGearMasteryForgingLevel> {
   constructor(data: HeroGearMasteryForgingLevel[] = heroGearMasteryForgingData) {
     super(data);
   }
 
-  /** Filter to rows at the given level. */
+  /** Returns every stage row of the given level. Levels 4 to 19 have 5 stages. */
   byLevel(level: number): HeroGearMasteryForgingQuery {
     return new HeroGearMasteryForgingQuery(this.data.filter((l) => l.level === level));
   }
 }
 
-/** Returns a HeroGearMasteryForgingQuery for the shared Hero Master Forging table. Pass `source` to wrap a pre-filtered array. */
+/** Returns a query over the shared Hero Gear mastery forging table. Pass `source` to query a different array instead of the packaged data. */
 export function heroGearMasteryForging(
   source: HeroGearMasteryForgingLevel[] = heroGearMasteryForgingData,
 ): HeroGearMasteryForgingQuery {

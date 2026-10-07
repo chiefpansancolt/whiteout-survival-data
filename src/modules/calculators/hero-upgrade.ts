@@ -176,24 +176,19 @@ function eventPoints(hero: Hero, shards: number, widgets: number): HeroUpgradeEv
 }
 
 /**
- * Calculates what one hero needs for a star upgrade, skill upgrades, and exclusive weapon levels.
+ * Calculates the shards, skill manuals, Widgets, and event points to upgrade one hero.
  *
- * Stars use the in-game label x.y, the star x and the tier y from 0 to 5, with 5.0 as the last label.
- * Each step from one label to the next costs the shards of the matching tier in `shardCosts`, and the
- * costs are the same for every hero. A skill level costs the Manuals of the rarity of the hero
- * (Mythic for Legendary heroes), Exploration or Expedition by the kind of the skill, and only the levels
- * after the current level up to the goal count. A skill level can need a star: when the goal has `stars`,
- * the levels whose `starRequired` is above the goal star are listed in `unmetRequirements`. Widgets level
- * the exclusive weapon of a Legendary hero from 0 to 10, and the levels that reach the `unlockLevel` of
- * a weapon skill list that skill. Shards that ascend the hero and Widgets score in SvS, Alliance Showdown,
- * King of Icefield, and Hall of Chief, with the points read from the scoring rows of each event.
- * The result counts the shards as the general shard item of the rarity. Power is not included.
+ * A star label `x.y` is the star `x` and the tier `y`, and 5.0 is the last label. Each step to the next
+ * label costs the shards of that tier, counted as the general shard item of the rarity. A skill level
+ * costs the manuals of the rarity of the hero. When the goal has `stars`, skill levels that need a higher
+ * star are listed in `unmetRequirements`. Widgets level the exclusive weapon. Power is not included.
  *
- * @param goal The hero and the ranges to upgrade.
+ * @param goal The hero and the star, skill, and Widget ranges to upgrade.
  * @throws Error when the hero or a skill does not exist, when two skill goals name the same skill, or
  * when Widgets are planned for a hero with no exclusive weapon.
  * @throws RangeError when a star, tier, skill level, or widget level is out of range, or a goal is below
  * its current value.
+ * @see docs/hero-upgrade.md
  */
 export function calculateHeroUpgrade(goal: HeroUpgradeGoal): HeroUpgradeCalculation {
   const hero = heroes().find(goal.id);

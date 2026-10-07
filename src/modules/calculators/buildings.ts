@@ -158,24 +158,21 @@ function eventPoints(resources: UpgradeMaterial[], power: number): BuildingEvent
 }
 
 /**
- * Calculates the resources, build time, power, and event points for upgrading buildings.
+ * Calculates the resources, build time, power, and event points to upgrade buildings.
  *
- * Each goal adds the levels after `current` up to `goal`. A level can need other buildings at a
- * level, and the calculator adds the steps of those buildings first when they are below that level
- * (`buildingLevels` lists the buildings you already have). A step that comes from such a prerequisite
- * has `prerequisite` set to true. Power is the power of the level minus the power of the level before it.
- * The speed bonus divides the build time: a speed of 50% turns 10 hours into 6 hours 40 minutes.
- * SvS and King of Icefield score each Fire Crystal and each Refined Fire Crystal. Speedups score
- * `speedupPointsPerMinute` for each minute used, and the caller multiplies them with the minutes spent.
- * Hall of Chief scores each power gained, and the result lists each multiplier with the event days
- * that use it. Only buildings with resource costs can be calculated.
+ * Each goal adds the levels after `current` up to `goal`. When a level needs another building at a
+ * higher level than the one in `buildingLevels`, the calculator adds the steps of that building first.
+ * Those steps have `prerequisite` set to true. The speed bonus divides the build time. Speedups are not
+ * an input. The result gives `speedupMinutesNeeded` and `speedupPointsPerMinute` instead. Only buildings
+ * with resource costs can be calculated.
  *
- * @param goals One entry for each building to upgrade.
+ * @param goals One entry for each building.
  * @param options The buildings you already have and the construction speed.
  * @throws Error when a goal or `buildingLevels` names a building that does not exist, when two goals
  * name the same building, or when a building has a cost that is not a resource.
  * @throws RangeError when a level `label` does not exist for the building, when a goal is below its
- * current level, or when a number option is negative or not finite.
+ * current level, or when `constructionSpeedPercent` is negative or not finite.
+ * @see docs/buildings.md
  */
 export function calculateBuildings(
   goals: BuildingGoal[] = [],

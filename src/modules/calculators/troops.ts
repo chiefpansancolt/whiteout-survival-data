@@ -10,14 +10,12 @@ import {
   UpgradeMaterial,
 } from '@/types';
 
-/** The values the troop calculator uses, so an app that shows its inputs can offer the same choices. */
+/** The values that `calculateTroops()` uses. An app can read them to offer the same choices. */
 export const TROOP_CALCULATOR = {
   troopTypes: ['infantry', 'lancer', 'marksman'],
   minTier: 1,
   maxTier: troops().first()!.tiers.length,
-  /** Multiplies the total capacity when `capacityBoost` is on. */
   capacityBoostMultiplier: 3,
-  /** The Minister of Education buff, which `ministerOfEducation` selects. */
   ministerOfEducation: {
     capacity: { regular: 200, supreme: 300 },
     speedPercent: { regular: 50, supreme: 75 },
@@ -25,7 +23,6 @@ export const TROOP_CALCULATOR = {
   vicePresidentSpeedPercent: { regular: 10, supreme: 15 },
   mobilizeSpeedPercent: 30,
   advancedTrainingSpeedPercent: 20,
-  /** The highest `costReductionPercent` for a troop type. */
   maxCostReductionPercent: 75,
 } as const;
 
@@ -93,11 +90,7 @@ function trainingSpeed(input: TroopCalculatorInput): number {
   );
 }
 
-/**
- * The cost and the seconds of one troop for a run. A promotion adds up the steps from tier to tier. A
- * step costs the difference of the two training costs, or the `promotionCost` of the tier when it has
- * one. The seconds of a step are the difference of the two training times.
- */
+/** A promotion step uses the `promotionCost` of the tier when the data has one. Otherwise it costs the difference of the two training costs. */
 function troopCost(troopType: TroopType, action: TroopCampAction) {
   const tiers = troops().find(troopType)!.tiers;
   const amountsOf = (tier: number) => tiers[tier - 1].cost.map((c) => c.amount);
@@ -141,24 +134,14 @@ function applyRun(
 }
 
 /**
- * Calculates the troops that the three camps train or promote, by troop type and tier.
- *
- * All three camps share one training capacity: the capacity of the three camp levels added together,
- * plus research capacity and the Minister of Education buff, times 3 with the capacity boost. Each
- * camp queues up to that many troops in a batch. A camp has runs, so it can train and promote. Training
- * adds the troops at its tier. Promotion takes the troops from `fromTier` and adds them to `toTier`,
- * so it adds none to the total.
- *
- * The resources are the cost of each troop times the troops, less the cost reduction. Promotion costs
- * the difference between the two tiers. The seconds of a batch are the training time of one troop times
- * the troops, divided by 1 plus the training speed bonus, rounded down. A camp adds up its batches, and
- * the camps train at the same time.
+ * Calculates the troops that the three camps train or promote, by troop type and tier, with the
+ * resources and the training time. The three camps share one capacity. See `docs/troops.md`.
  *
  * @param input A config for each of the three camps, the capacity bonuses, the training speed, and the cost reduction.
  * @throws Error when a camp level does not exist.
- * @throws RangeError when a count is not a whole number or is above the capacity, when batches is
- * not a whole number of 1 or more, when a tier is not from 1 to 11, when a promotion does not go up,
- * when the training speed is negative, or when a cost reduction is not from 0 to 75.
+ * @throws RangeError when a count is not a whole number or is above the capacity, when `batches` is
+ * not a whole number of 1 or more, when a tier is not a whole number from 1 to 12, when a promotion
+ * does not go up, when the training speed is negative, or when a cost reduction is not from 0 to 75.
  */
 export function calculateTroops(input: TroopCalculatorInput): TroopCalculation {
   const levelCapacity = TROOP_TYPES.reduce(

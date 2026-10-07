@@ -6,46 +6,43 @@ import { ChiefGearLevel, ChiefGearRarity, ChiefGearSlot, ChiefGearTroopType } fr
 const chiefGearSlotData: ChiefGearSlot[] = slotData as ChiefGearSlot[];
 const chiefGearLevelData: ChiefGearLevel[] = levelData as ChiefGearLevel[];
 
-/** Strips a "T" sub-tier suffix (e.g. "EpicT1" -> "Epic") to get a level's base rarity. */
+/** Returns the base rarity of a tier label by removing the sub-tier suffix. "EpicT1" returns "Epic". */
 export function chiefGearRarity(tier: string): ChiefGearRarity {
   return tier.replace(/T\d+$/, '') as ChiefGearRarity;
 }
 
-/** Returns the icon for a slot at a given level's rarity (sub-tiers share their base rarity's icon). */
+/** Returns the icon of a slot for the base rarity of a level. Sub-tiers share the icon of their base rarity. */
 export function chiefGearImage(slot: ChiefGearSlot, level: ChiefGearLevel): string {
   return slot.images[chiefGearRarity(level.tier)];
 }
 
-/** Query builder for ChiefGearSlot data. All filter methods return a new ChiefGearSlotQuery for chaining. */
 export class ChiefGearSlotQuery extends QueryBase<ChiefGearSlot> {
   constructor(data: ChiefGearSlot[] = chiefGearSlotData) {
     super(data);
   }
 
-  /** Filter to slots that buff the given troop type. */
   byTroopType(troopType: ChiefGearTroopType): ChiefGearSlotQuery {
     return new ChiefGearSlotQuery(this.data.filter((s) => s.troopType === troopType));
   }
 }
 
-/** Returns a ChiefGearSlotQuery for all Chief Gear equip slots. Pass `source` to wrap a pre-filtered array. */
+/** Returns a query over all Chief Gear slots. Pass `source` to query a different array instead of the packaged data. */
 export function chiefGearSlots(source: ChiefGearSlot[] = chiefGearSlotData): ChiefGearSlotQuery {
   return new ChiefGearSlotQuery(source);
 }
 
-/** Query builder for ChiefGearLevel data. All filter methods return a new ChiefGearLevelQuery for chaining. */
 export class ChiefGearLevelQuery extends QueryBase<ChiefGearLevel> {
   constructor(data: ChiefGearLevel[] = chiefGearLevelData) {
     super(data);
   }
 
-  /** Filter to levels in the given tier. */
+  /** Matches the tier label exactly. "Epic" does not match "EpicT1". */
   byTier(tier: string): ChiefGearLevelQuery {
     return new ChiefGearLevelQuery(this.data.filter((l) => l.tier === tier));
   }
 }
 
-/** Returns a ChiefGearLevelQuery for the shared Chief Gear upgrade table. Pass `source` to wrap a pre-filtered array. */
+/** Returns a query over the Chief Gear upgrade table. Pass `source` to query a different array instead of the packaged data. */
 export function chiefGear(source: ChiefGearLevel[] = chiefGearLevelData): ChiefGearLevelQuery {
   return new ChiefGearLevelQuery(source);
 }

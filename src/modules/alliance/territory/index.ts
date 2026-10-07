@@ -4,13 +4,12 @@ import { AllianceBannerLevel } from '@/types';
 
 const allianceBannerData: AllianceBannerLevel[] = data as AllianceBannerLevel[];
 
-/** Query builder for AllianceBannerLevel data. All filter methods return a new AllianceBannerQuery for chaining. */
 export class AllianceBannerQuery extends QueryBase<AllianceBannerLevel> {
   constructor(data: AllianceBannerLevel[] = allianceBannerData) {
     super(data);
   }
 
-  /** Filter to the level range that contains the given banner level. */
+  /** Keeps the level range that contains `level`. The result is empty when no range contains it. */
   atLevel(level: number): AllianceBannerQuery {
     return new AllianceBannerQuery(
       this.data.filter((l) => level >= l.minLevel && level <= l.maxLevel),
@@ -18,7 +17,7 @@ export class AllianceBannerQuery extends QueryBase<AllianceBannerLevel> {
   }
 }
 
-/** Returns an AllianceBannerQuery for the shared Alliance Territory banner build-cost table. Pass `source` to wrap a pre-filtered array. */
+/** Returns a query over the banner build-cost table. Pass `source` to query a different array instead of the packaged data. */
 export function allianceBanner(
   source: AllianceBannerLevel[] = allianceBannerData,
 ): AllianceBannerQuery {

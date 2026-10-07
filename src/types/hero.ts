@@ -4,11 +4,11 @@ export type HeroSubClass = 'Growth' | 'Combat';
 
 export interface HeroSkillLevel {
   level: number;
-  /** Hero Manuals required to reach this level from the previous one. 0 at every level for a Talent skill, which needs no Manuals at all. */
+  /** Hero Manuals needed to reach this level from the previous one. A Talent skill needs none, so it is 0. */
   manualsRequired: number;
-  /** Power gained at this level. Not yet sourced for a Talent skill -- 0 until confirmed. */
+  /** Power gained at this level. 0 for a Talent skill, because no source states it. */
   powerGain: number;
-  /** Hero star tier required before this skill level can be unlocked. Applicable but not yet sourced for a Talent skill -- 0 until confirmed. */
+  /** Hero star needed to unlock this skill level. 0 for a Talent skill, because no source states it. */
   starRequired: number;
 }
 
@@ -16,14 +16,14 @@ export interface HeroSkill {
   name: string;
   img: string;
   description: string;
-  /** The 5 levels behind this skill's slash-separated description values. */
+  /** The 5 skill levels. They match the 5 slash-separated values in `description`. */
   levels: HeroSkillLevel[];
 }
 
 export interface HeroSkills {
   exploration: HeroSkill[];
   expedition: HeroSkill[];
-  /** Only Jeronimo and Natalia have a Talent skill -- the tab is empty on every other Legendary hero's wiki page. */
+  /** Set only for Jeronimo and Natalia. The Talent tab is empty for every other Legendary hero on the wiki. */
   talent?: HeroSkill;
 }
 
@@ -38,9 +38,9 @@ export interface HeroExpeditionStats {
   defense: number;
 }
 
-/** A hero's stats at a star and tier, estimated for hero level 80. */
+/** The stats of a hero at level 80 for a star and tier. */
 export interface HeroStatEstimate {
-  /** The hero level the estimate is for. Always 80. */
+  /** Always 80. */
   level: number;
   star: number;
   tier: number;
@@ -62,7 +62,7 @@ export interface ExclusiveWeaponSkill {
   name: string;
   img: string;
   description: string;
-  /** The Special item level required for this skill to activate. Omitted on the handful of hero pages that don't state one. */
+  /** The Special item level at which this skill activates. Not set when the hero page does not state it. */
   unlockLevel?: number;
 }
 
@@ -78,27 +78,21 @@ export interface HeroShardTier {
   star: number;
   tierCosts: number[];
   total: number;
-  /** Total Power accumulated once this star tier is reached (not the increment). Not yet sourced -- 0 until the real value is confirmed. */
+  /** Total Power once this star is reached, not the gain of this star. 0 when not yet sourced. */
   power: number;
-  /**
-   * Hero Power shown in the game at each of the six tiers of this star (x.1 to x.6), measured from
-   * star 0. Set only for the heroes and stars that were read in the game.
-   */
+  /** Hero Power read in the game at each of the 6 tiers of this star. Set only where it was read. */
   tierPower?: number[];
 }
 
 export interface HeroLevel {
   level: number;
-  /** Furnace level required before this hero level can be reached. Identical across every hero. */
+  /** Furnace level needed to reach this hero level. */
   furnaceLevelRequired: number;
-  /** Hero XP required to reach this level from the previous one. 0 at Level 1 (starting level, no XP needed). Identical across every hero. */
+  /** Hero XP needed to reach this level from the previous one. 0 at level 1. */
   xpRequired: number;
   /**
-   * Total Power accumulated once this level is reached (not the increment). Confirmed via the
-   * shared 80-level curve (gain(L) = start * base[L] / 250, running total) for Rare, Epic, and
-   * Legendary Generations 1-5 (Gens 3-5's start values are themselves projected, per
-   * HeroLevelPowerCurve.md) -- only the Level-1 start value differs by rarity/generation. Legendary
-   * Generations 6+ have no known start value yet -- 0 until confirmed.
+   * Total Power once this level is reached, not the gain of this level. 0 for Legendary
+   * Generations 6 and later, because no start value is known.
    */
   power: number;
 }
@@ -107,14 +101,15 @@ export interface Hero {
   id: string;
   name: string;
   img: string;
-  /** Icon of this hero's shard. Set only for the heroes whose shard icon has been captured. */
+  /** Shard icon of the hero. Set only for the heroes whose shard icon is bundled. */
   shardImg?: string;
-  /** Hero Power shown in the game at star 0, before any shard tier. Set only for the heroes that were read in the game. */
+  /** Hero Power read in the game at star 0. Set only for the heroes that were read. */
   powerAtStarZero?: number;
   rarity: HeroRarity;
   class: HeroClass;
   subClass: HeroSubClass;
   generation: number;
+  /** Level 80 stats at 5 stars. */
   stats: {
     exploration: HeroStats;
     expedition: HeroExpeditionStats;
@@ -122,18 +117,16 @@ export interface Hero {
   skills: HeroSkills;
   exclusiveWeapon?: ExclusiveWeapon;
   shardCosts: HeroShardTier[];
-  /** Where this hero's shards can be obtained (e.g. "VIP Packs", "Hall of Heroes"). Empty for heroes not yet scraped for this. */
+  /** Where the shards of the hero come from, as the wiki lists them. Empty when the wiki lists none. */
   shardSources: string[];
-  /** The 80-level Furnace/XP/Power progression. furnaceLevelRequired and xpRequired are identical across every hero. */
   levels: HeroLevel[];
 }
 
-/** The Widgets that one level of a hero's exclusive weapon costs. The same table applies to every hero that has an exclusive weapon. */
+/** The Widgets that one exclusive weapon level costs. The table is the same for every hero. */
 export interface HeroWidgetLevel {
   id: string;
   name: string;
-  /** The exclusive weapon level, from 1 to 10. */
   level: number;
-  /** Widgets required to reach this level from the previous one. */
+  /** Widgets needed to reach this level from the previous one. */
   widgets: number;
 }

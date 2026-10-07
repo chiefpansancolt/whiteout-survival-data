@@ -4,14 +4,13 @@ import { Facility } from '@/types';
 
 const facilityData: Facility[] = data as Facility[];
 
-/** Query builder for Facility data. All filter methods return a new FacilityQuery for chaining. */
 export class FacilityQuery extends QueryBase<Facility> {
   constructor(data: Facility[] = facilityData) {
     super(data);
   }
 }
 
-/** Returns a FacilityQuery for all Facility data. Pass `source` to wrap a pre-filtered array. */
+/** Returns a query over all facilities. Pass `source` to query a different array instead of the packaged data. */
 export function facilities(source: Facility[] = facilityData): FacilityQuery {
   return new FacilityQuery(source);
 }

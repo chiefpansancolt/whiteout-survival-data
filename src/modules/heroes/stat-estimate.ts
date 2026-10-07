@@ -1,23 +1,22 @@
 import { Hero, HeroStatEstimate } from '@/types';
 
-/** The star, tier, and level ranges that `estimateHeroStats()` accepts. */
+/** The hero level, maximum star, and maximum tier that `estimateHeroStats()` accepts. */
 export const HERO_STAT_ESTIMATE = {
-  /** The only hero level the estimate covers. */
   level: 80,
   maxStar: 5,
-  /** Tiers go from 0 to 5 inside a star, as the in-game star label x.0 to x.5. */
   maxTier: 5,
 } as const;
 
 /*
- * The estimate is the formula of the WoS Tools Hero Hub compare tab with the star growth of the
- * Exploration stats changed from 1.4 to 1.376, fitted to Hector at level 80 and 3.0 to 3.3 stars.
- * A hero's stats are scaled by the ratio of its own 5-star stats to the reference stats below, and
- * the stats at a star are:
+ * This is the formula of the WoS Tools Hero Hub compare tab. The Exploration star growth is 1.376
+ * and not 1.4 of WoS Tools. The value is fitted to Hector at level 80 and 3.0 to 3.3 stars.
+ * The stat at a star is:
  *
- *   ratio * (zeroStar + firstStep * (growth^star - 1) / (growth - 1) + tier * tierShare * firstStep * growth^star + skillBonus)
+ *   ratio * (zeroStar + firstStep * (growth^star - 1) / (growth - 1)
+ *            + tier * tierShare * firstStep * growth^star + skillBonus)
  *
- * The first star step of the Exploration stats makes the reference 5-star stats exact.
+ * The ratio is the 5-star stat of the hero divided by the REFERENCE stat. The first step of the
+ * Exploration stats makes the REFERENCE 5-star stats exact.
  */
 const TIER_SHARE = 0.147;
 const REFERENCE = { attack: 4928, defense: 4928, health: 49284, expedition: 444.35 };
@@ -63,18 +62,15 @@ function checkWholeNumber(name: string, value: number, max: number): void {
 }
 
 /**
- * Estimates a hero's stats at hero level 80 for a star and tier below the maximum.
+ * Estimates the stats of a hero at level 80 for a star and tier.
  *
- * The stats stored on a hero are the 5-star stats. Every other state is an estimate that scales those
- * stats down with the formula of the WoS Tools Hero Hub, with the Exploration star growth fitted to
- * Hector at 3.0 to 3.3 stars. It has not been checked at other stars, other heroes, or other levels,
- * and it does not include gear or skill bonuses from outside the formula.
+ * The stats stored on a hero are the 5-star stats. The function scales them down for lower stars.
+ * It has been checked only against Hector at 3.0 to 3.3 stars.
  *
- * @param hero The hero to estimate.
  * @param star Whole stars from 0 to 5.
- * @param tier The tier inside the star, from 0 to 5, as the in-game label `star.tier`. Use 0 at 5 stars.
- * @returns Exploration stats as whole numbers and Expedition stats in percent with 2 decimals. At 5
- * stars, the stats stored on the hero.
+ * @param tier Tier inside the star from 0 to 5, as in the in-game label `star.tier`. Must be 0 at 5 stars.
+ * @returns Exploration stats as whole numbers and Expedition stats in percent with 2 decimals.
+ * At 5 stars, `estimated` is false and the stats are the ones stored on the hero.
  * @throws RangeError when `star` or `tier` is not a whole number in range, or `tier` is above 0 at 5 stars.
  */
 export function estimateHeroStats(hero: Hero, star: number, tier = 0): HeroStatEstimate {

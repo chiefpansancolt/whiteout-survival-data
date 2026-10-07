@@ -54,16 +54,16 @@ export interface DecorationLevel {
 export interface Decoration {
   id: string;
   name: string;
-  /** Icon path. Present only for decorations whose picture has been added so far. */
+  /** Icon path. Present only for decorations that have an image. */
   img?: string;
   category: DecorationCategory;
   cost?: DecorationCost[];
   lifeEssenceCost?: number;
   limit?: number;
-  /** Common/Uncommon only — a single fixed value, since these can't be leveled at all. */
+  /** Common and Uncommon only. These decorations cannot be upgraded, so the value is fixed. */
   prosperityAtMaxLevel?: number;
-  /** Rare/Epic/Mythic/Unique only. A still-incomplete level carries a blank buff rather than being omitted. */
+  /** Rare, Epic, Mythic, and Unique only. A level without known buff data has a blank buff. */
   levels?: DecorationLevel[];
-  /** True for decorations obtained through a time-limited source (shop rotation, event pack, etc.) rather than standard Rare/Epic/Mythic progression. Omitted, not false, for every other decoration. */
+  /** True for decorations from a time-limited source, such as a shop rotation or event pack. Omitted otherwise. */
   limited?: boolean;
 }

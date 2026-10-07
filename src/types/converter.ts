@@ -1,4 +1,3 @@
-/** A fixed exchange rate between two items (e.g. a resource converter screen). */
 export interface ItemConversion {
   id: string;
   name: string;
@@ -6,6 +5,6 @@ export interface ItemConversion {
   fromQuantity: number;
   toItemId: string;
   toQuantity: number;
-  /** Maximum number of times this conversion can be used per week, where the source caps it. */
+  /** Maximum uses of this conversion per week. Absent where the source states no cap. */
   weeklyLimit?: number;
 }

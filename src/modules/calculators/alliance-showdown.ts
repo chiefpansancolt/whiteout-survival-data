@@ -5,18 +5,15 @@ import {
 } from '@/types';
 import { scoreEventDays, skillPercent, sumScores } from './event-score';
 
-/** Matches the Tundra Trade Route truck actions (escort and raid), which Baldur's Dawn Hymn bonus does not apply to. */
+/** Matches the truck actions (escort and raid) that Baldur's bonus does not apply to. */
 export const ALLIANCE_SHOWDOWN_TRUCK_ACTION = /^(Escort|Raid) 1 truck/;
 
 /**
- * Calculates Alliance Showdown personal points from how many times each scoring action was done.
- *
- * Points come from the scoring lists of the `alliance-showdown` event. Baldur's Dawn Hymn skill
- * adds its percent to every action except the Tundra Trade Route truck actions (escort and raid),
- * which the skill does not cover. The bonus of each day is rounded to a whole number.
+ * Calculates Alliance Showdown personal points for each day from the action counts in `usage`.
+ * Baldur's bonus applies to every action except the truck actions. See `docs/alliance-showdown.md`.
  *
  * @param usage Counts by day id and then by action text. Days and actions left out count as 0.
- * @param options `dawnHymnLevel` turns on the Baldur bonus for a level from 1 to 10.
+ * @param options `dawnHymnLevel` is the level of Baldur's Dawn Hymn skill, from 1 to 10.
  * @throws RangeError when `dawnHymnLevel` is not a whole number from 1 to 10, or a count is negative.
  * @throws Error when `usage` names a day or an action that the event does not have.
  */

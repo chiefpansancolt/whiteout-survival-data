@@ -33,24 +33,23 @@ export interface HeroGearMasteryForgingLevel {
 export type HeroGearSlot = 'goggles' | 'gloves' | 'belt' | 'boots';
 
 export interface HeroGearStatLevel {
-  /** The enhancement level from 1 to 200. Levels 101 to 200 are empowerment levels 1 to 100. */
+  /** Levels 1 to 100 are enhancement levels. Levels 101 to 200 are empowerment levels 1 to 100. */
   level: number;
-  /** The flat Attack or Defense of the piece. */
+  /** Flat Attack or Defense. */
   combatStat: number;
-  /** The flat HP of the piece. */
+  /** Flat HP. */
   health: number;
-  /** The percent Lethality or Health of the piece. */
+  /** Percent Lethality or Health. */
   percentStat: number;
 }
 
 export interface HeroGearMilestone {
-  /** The empowerment level that unlocks the bonus. */
   empowermentLevel: number;
   event: 'Expedition' | 'Exploration';
   stat: string;
 }
 
-/** The stats of one hero gear slot for one troop type, by enhancement level. The values are for one piece. */
+/** The stats of one piece of hero gear, by level. */
 export interface HeroGearStats {
   id: string;
   name: string;

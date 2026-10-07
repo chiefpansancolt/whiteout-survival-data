@@ -18,7 +18,6 @@ const PET_EVENT_IDS: Record<keyof PetEventPoints, string> = {
   kingOfIcefield: 'king-of-icefield',
 };
 
-/** The points that one point of pet advancement score is worth in each event, read from the scoring row of the event. */
 function pointsPerScore(): PetEventPoints {
   const result = {} as PetEventPoints;
   (Object.keys(PET_EVENT_IDS) as (keyof PetEventPoints)[]).forEach((key) => {
@@ -118,21 +117,18 @@ function petResult(goal: PetGoal): PetItemResult {
 }
 
 /**
- * Calculates the resources and the stat gains for leveling pets from a current level to a goal level.
+ * Calculates the pet food, advancement items, stat gains, and event points to level pets.
  *
- * Each level costs pet food. A pet advances at every level that is a multiple of 10, and it needs the
- * advancement before it can go past that level, so a range that starts at or passes a multiple of 10
- * pays for that advancement. A goal that is a multiple of 10 only pays for its advancement when
- * `goalAdvanced` is true, and a pet that is already advanced at its current level (`currentAdvanced`)
- * does not pay for it again. The stat gains are the difference between the stats of the two states.
- * Each advancement adds its pet advancement score, which SvS, Alliance Showdown, and King of Icefield
- * count: the event points are the score times the points of the "Pet advancement score increases by 1"
- * row of the event. Pets have no training time in the data, so the result has no time.
+ * Each level after `current` up to `goal` costs pet food. A pet needs an advancement to go past a level
+ * that is a multiple of `PET_ADVANCEMENT_INTERVAL`. Set `goalAdvanced` to pay for the advancement at the
+ * goal level. Set `currentAdvanced` when the pet is already advanced at its current level. The result has
+ * no time, because pets have no training time in the data.
  *
- * @param goals One entry for each pet to upgrade.
+ * @param goals One entry for each pet.
  * @throws Error when a goal names a pet that does not exist.
- * @throws RangeError when a level is not a whole number from 1 to the max level of the pet, when a
- * goal is below its current level, or when an advanced flag is set on a level that is not a multiple of 10.
+ * @throws RangeError when a level is not a whole number from 1 to the max level of the pet, when a goal
+ * is below its current level, or when an advanced flag is set on a level that is not a multiple of 10.
+ * @see docs/pets.md
  */
 export function calculatePets(goals: PetGoal[] = []): PetCalculation {
   const items = goals.map(petResult);

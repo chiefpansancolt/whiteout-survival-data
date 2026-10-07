@@ -62,12 +62,9 @@ function buildingLevelIndex(buildingId: string, label: string): number {
 
 /**
  * Calculates the resources, time, and power for upgrading research lines from a current level to a
- * goal level.
- *
- * Only the levels after the current level up to the goal count, so a goal that equals the current
- * level costs nothing. The time is the research time of all levels added together divided by 1 plus
- * the research speed, rounded down. The result also lists the research levels whose prerequisite line
- * is not at the needed level, and the highest building level that the steps need.
+ * goal level. Only the levels after the current level up to the goal count. The result also lists
+ * the unmet research prerequisites and the building levels that the steps need. See
+ * `docs/research.md`.
  *
  * @param goals One entry for each research line to upgrade. A line that is left out counts as level 0.
  * @param options The research speed and the buffs that add to it.

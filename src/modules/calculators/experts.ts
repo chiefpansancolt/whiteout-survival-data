@@ -80,20 +80,19 @@ function expertResult(goal: ExpertGoal): ExpertItemResult {
 }
 
 /**
- * Calculates the Books of Knowledge, expert sigils, skill EXP, and affinity points for leveling
- * experts and their skills.
+ * Calculates the Books of Knowledge, expert sigils, skill EXP, and affinity points to level experts and
+ * their skills.
  *
- * A skill level costs books and EXP, and only the levels after the current level up to the goal count.
- * An expert advances at every affinity level that has an advancement cost (10, 20, and so on up to 100)
- * and needs the advancement to go past that level, so a range that starts at or passes such a level
- * pays the sigils for it. A goal at such a level only pays for its advancement when `goalAdvanced` is
- * true, and an expert that is already advanced at its current level (`currentAdvanced`) does not pay
- * for it again. The talent costs nothing, because it levels with the relationship.
+ * Only the levels after `current` up to `goal` count. An expert needs an advancement to go past an
+ * affinity level that has an advancement cost. Set `goalAdvanced` to pay for the advancement at the goal
+ * level. Set `currentAdvanced` when the expert is already advanced at the current level. The talent costs
+ * nothing.
  *
  * @param goals One entry for each expert, with an optional affinity level range and skill ranges.
  * @throws Error when a goal names an expert or a skill that does not exist.
  * @throws RangeError when a level is not a whole number in range, when a goal is below its current
  * level, or when an advanced flag is set on a level that has no advancement cost.
+ * @see docs/experts.md
  */
 export function calculateExperts(goals: ExpertGoal[] = []): ExpertCalculation {
   const items = goals.map(expertResult);

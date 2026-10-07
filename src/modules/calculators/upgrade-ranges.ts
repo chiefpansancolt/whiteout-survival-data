@@ -15,7 +15,7 @@ const EVENT_IDS: Record<keyof UpgradeEventPoints, string> = {
   hallOfChief: 'hall-of-chief',
 };
 
-/** Points that one point of score is worth in each event, read from the matching scoring row of the event. */
+/** Returns the points that one point of score is worth in each event, read from the scoring row that matches `rowPattern`. */
 function pointsPerScore(rowPattern: RegExp): UpgradeEventPoints {
   const result = {} as UpgradeEventPoints;
   (Object.keys(EVENT_IDS) as (keyof UpgradeEventPoints)[]).forEach((key) => {
@@ -40,10 +40,13 @@ function indexOfLevel(levels: UpgradeLevel[], id: string, label: string): number
 }
 
 /**
- * Adds up the upgrade steps of every range.
+ * Adds up the upgrade steps of every range. The steps of a range are the levels after `from` up to
+ * and including `to`.
  *
  * @param label Name of the kind of piece in error messages.
  * @param scoreRowPattern Matches the scoring row of each event that pays points for this score.
+ * @throws Error when a range names a level that does not exist.
+ * @throws RangeError when a range goes down.
  */
 export function upgradeRanges(
   levels: UpgradeLevel[],

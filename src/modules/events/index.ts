@@ -134,19 +134,17 @@ const eventsData: GameEvent[] = [
   vaultOfEnigma,
 ] as GameEvent[];
 
-/** Query builder for GameEvent data. All filter methods return a new EventsQuery for chaining. */
 export class EventsQuery extends QueryBase<GameEvent> {
   constructor(data: GameEvent[] = eventsData) {
     super(data);
   }
 
-  /** Filter to events in one wiki category: solo, alliance, rookie, or holiday. */
   byCategory(category: EventCategory): EventsQuery {
     return new EventsQuery(this.data.filter((e) => e.category === category));
   }
 }
 
-/** Returns an EventsQuery for every tracked game event. Pass `source` to wrap a pre-filtered array. */
+/** Returns a query over all game events. Pass `source` to query a different array instead of the packaged data. */
 export function events(source: GameEvent[] = eventsData): EventsQuery {
   return new EventsQuery(source);
 }
