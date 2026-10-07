@@ -207,9 +207,10 @@ Infirmary's own).
 
 ### 🦸 Heroes
 
-| Module | Factory    | Items | Description                                        |
-| ------ | ---------- | ----- | -------------------------------------------------- |
-| heroes | `heroes()` | 65    | Heroes with stats, skills, and shard-upgrade costs |
+| Module      | Factory         | Items | Description                                        |
+| ----------- | --------------- | ----- | -------------------------------------------------- |
+| heroes      | `heroes()`      | 65    | Heroes with stats, skills, and shard-upgrade costs |
+| heroWidgets | `heroWidgets()` | 10    | The Widgets each exclusive weapon level costs      |
 
 Every hero has a `rarity` (`Rare`/`Epic`/`Legendary`), a `class` (`Infantry`/`Lancer`/`Marksman`),
 and a `subClass` (`Growth`/`Combat`) — `subClass` is stored per hero rather than derived, since it
@@ -871,6 +872,7 @@ so a data fix changes the result without any code change.
 | `calculatePets()`             | Pet food, advancement items, and stat gains to level pets to a goal     |
 | `calculateBuildings()`        | Resources, build time, power, and event points to upgrade buildings     |
 | `calculateHeroGear()`         | Resources, power, and event points to level one hero gear piece         |
+| `calculateHeroUpgrade()`      | Shards, skill manuals, and widgets to upgrade one hero                  |
 | `calculateExperts()`          | Books of Knowledge and expert sigils to level experts and their skills  |
 
 Every calculator takes how many times each scoring action was done, as counts by day id and then by
@@ -1015,6 +1017,25 @@ give `enhancement: { current: 100, goal: 100 }` to get the stats of a mastery fo
 stats are for one piece and the `power` is the wiki value, which is 4 times the WoS Tools per piece
 power.
 
+`calculateHeroUpgrade(goal)` plans one hero at a time: `{ id, stars, skills, widgets }` with the
+hero `id` from `heroes()`. `stars` is `{ current, goal }` with labels `{ star, tier }` such as 3.1
+(star 3, tier 1): the star is 0 to 5, the tier is 0 to 5, and 5.0 is the last label. Each step to
+the next label costs the shards of that tier in the `shardCosts` of the hero, which are the same for
+every hero, and the result counts them as the general shard item of the rarity (the shard of the
+hero counts the same). `skills` is a list of `{ name, current, goal }` with the name of an
+Exploration or Expedition skill and levels from 1 to 5. The levels after `current` up to `goal` cost
+the Exploration or Expedition Skill Manuals of the rarity of the hero, which is Mythic for Legendary
+heroes. A skill level can need a star, so when the goal has `stars` the levels with a `starRequired`
+above the star goal are listed in `unmetRequirements`. `widgets` is `{ current, goal }` with
+exclusive weapon levels from 0 to 10, which cost the Widgets of `heroWidgets()` (5 for level 1 up to
+50 for level 10, 275 in all) and only exist for a hero with an `exclusiveWeapon`. The result lists
+the weapon skills that the levels unlock when the weapon skill has an `unlockLevel`. The Widget
+table comes from WoS Tools and the repo has no Widget item yet, so the Widgets are a plain number.
+`eventPoints` scores the shards used to ascend the hero (by rarity) and the Widgets in SvS, Alliance
+Showdown, King of Icefield, and Hall of Chief. Power is not included. An unknown hero or skill, a
+skill named twice, a star, tier, or level out of range, a goal below the current value, or Widgets
+for a hero with no exclusive weapon throws an error. `HERO_UPGRADE_CALCULATOR` exports the limits.
+
 `calculateExperts(goals)` takes one entry for each expert, `{ id, level, skills }`, with the `id`
 from `experts()`. `level` is the affinity level range,
 `{ current, goal, currentAdvanced?, goalAdvanced? }`, from 1 to 100, and `skills` is a list of
@@ -1057,8 +1078,9 @@ result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 43
 The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
 `calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
 `calculator-chief-charm.html`, `calculator-troops.html`, `calculator-research.html`,
-`calculator-pets.html`, `calculator-experts.html`, `calculator-buildings.html`, and
-`calculator-hero-gear.html` are free plug-and-play versions with the same math. They save nothing.
+`calculator-pets.html`, `calculator-experts.html`, `calculator-buildings.html`,
+`calculator-hero-gear.html`, and `calculator-hero-upgrade.html` are free plug-and-play versions with
+the same math. They save nothing.
 
 ---
 

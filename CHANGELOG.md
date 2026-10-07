@@ -32,6 +32,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   100), the pet advancement score that events count.
 - `experts()`: Gareth's Gifts of Iron books and EXP were swapped on the wiki and are corrected from
   WoS Tools (300 books for level 2, 13,500 in all).
+- `calculateHeroUpgrade()` and `HERO_UPGRADE_CALCULATOR`: the shards for a star upgrade (labels such
+  as 3.1), the skill manuals for skill levels, and the Widgets for exclusive weapon levels of one
+  hero, with the skill levels that need more stars and the shard and Widget points in SvS, Alliance
+  Showdown, King of Icefield, and Hall of Chief. The sample page
+  `sample/calculator-hero-upgrade.html` plans one hero.
+- `heroWidgets()`: the Widgets that exclusive weapon levels 1 to 10 cost (from WoS Tools).
 - `heroGearStats()`: the per piece Attack or Defense, HP, and Lethality or Health of every hero gear
   slot and troop type for enhancement levels 1 to 200, with the Mithril milestone bonuses (from WoS
   Tools).
