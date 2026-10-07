@@ -8,9 +8,11 @@
 
 </div>
 
-> ⚠️ **Work in progress.** This package has not had a first release yet. Data is still being
-> gathered, cross-checked, and corrected, so some fields are placeholders, some values may be wrong,
-> and the API surface can still change without notice. Treat everything here as unstable until the
+> ⚠️ **Work in progress.** This package has not had a first release yet. The data is still being
+> collected, so some of it is missing or not 100% complete, some fields are placeholders, and some
+> values may be wrong. The API can also change without notice. If you have data that is missing, you
+> are welcome to share it through an issue or a pull request (see [Contributing](#contributing)).
+> Otherwise, please wait while the data is gathered. Treat everything here as unstable until the
 > first tagged release.
 
 ---
