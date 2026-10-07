@@ -661,11 +661,12 @@ Level 15 (also scraped, not user-supplied).
 
 ### 🛡️ Hero Gear
 
-| Module                 | Factory                    | Items | Description                                                          |
-| ---------------------- | -------------------------- | ----- | -------------------------------------------------------------------- |
-| heroGearEnhancement    | `heroGearEnhancement()`    | 100   | The shared base leveling table every piece of Hero Gear uses         |
-| heroGearEmpowerment    | `heroGearEmpowerment()`    | 100   | A second 100-level shared table with no explanatory text on the wiki |
-| heroGearMasteryForging | `heroGearMasteryForging()` | 84    | The Gold-quality-exclusive Mastery Forging table                     |
+| Module                 | Factory                    | Items | Description                                                           |
+| ---------------------- | -------------------------- | ----- | --------------------------------------------------------------------- |
+| heroGearEnhancement    | `heroGearEnhancement()`    | 100   | The shared base leveling table every piece of Hero Gear uses          |
+| heroGearEmpowerment    | `heroGearEmpowerment()`    | 100   | A second 100-level shared table with no explanatory text on the wiki  |
+| heroGearMasteryForging | `heroGearMasteryForging()` | 84    | The Gold-quality-exclusive Mastery Forging table                      |
+| heroGearStats          | `heroGearStats()`          | 12    | Per level Attack or Defense, HP, and Lethality or Health of each slot |
 
 Like Chief Gear/Charm, the Hero Gear page describes shared upgrade progressions rather than a
 catalog of individually-named pieces — there is no per-item detail page for Hero Gear anywhere on
@@ -869,6 +870,7 @@ so a data fix changes the result without any code change.
 | `calculateResearch()`         | Resources, time, and power to upgrade research lines to a goal level    |
 | `calculatePets()`             | Pet food, advancement items, and stat gains to level pets to a goal     |
 | `calculateBuildings()`        | Resources, build time, power, and event points to upgrade buildings     |
+| `calculateHeroGear()`         | Resources, power, and event points to level one hero gear piece         |
 | `calculateExperts()`          | Books of Knowledge and expert sigils to level experts and their skills  |
 
 Every calculator takes how many times each scoring action was done, as counts by day id and then by
@@ -970,6 +972,49 @@ Only the buildings with resource costs can be calculated, so the Daybreak Island
 error, and so does a goal for a building that appears twice, an unknown building or level `label`, a
 goal below the current level, or a negative speed.
 
+`calculateHeroGear(goal)` plans one hero gear piece at a time, with three tracks.
+`goal.masteryForging` is `{ current, goal }` with row `id` values from `heroGearMasteryForging()`
+(`current` is `null` for a piece with no mastery forging) and costs Essence Stones, with Custom
+Mythic Hero Gear Chests at the higher rows. `goal.enhancement` is `{ current, goal }` with levels 0
+to 100 from `heroGearEnhancement()` and costs Enhancement XP Components. After enhancement level 100
+the piece is empowered, and `goal.empowerment` is `{ current, goal }` with levels 0 to 100 from
+`heroGearEmpowerment()`: level 1 costs Mythic chests, and levels 20, 40, 60, 80, and 100 (the step
+from 19 to 20, 39 to 40, and so on) also cost Mithril. WoS Tools shows empowerment as Ascended +1 to
++100 on a single 0 to 200 enhancement scale. Mastery forging past `level-10-stage-0` and empowerment
+need enhancement at level 100, which `HERO_GEAR_ENHANCEMENT_REQUIREMENT` exports. This rule comes
+from in-game play and is not stated by the wiki or WoS Tools, so the calculator does not throw for
+it. When the goal has an `enhancement` range that ends below 100, the result lists the affected
+tracks in `unmetRequirements`. A goal with no `enhancement` range is not checked, because the
+calculator does not know the enhancement level of the piece. The steps of a track are the rows after
+the current one up to and including the goal, and a track that is left out adds nothing. The result
+has the `resources` of all tracks (Essence Stones, Custom Mythic Hero Gear Chests, Enhancement XP
+Components, and Mithril as `itemId` amounts), the same totals for each track, the `statsUpPercent`
+of mastery forging, and the `power` gained, and the `currentPower` and `goalPower` of the piece
+(zero at level 0). The empowerment power continues from the power of enhancement level 100.
+`eventPoints` scores the Essence Stones and the Mithril in SvS, Alliance Showdown, and King of
+Icefield, from the scoring rows of each event. Widgets are not included, because the repo has no
+widget level table yet. An unknown mastery forging row, an enhancement or empowerment level out of
+range, or a goal below the current state throws an error. `HERO_GEAR_MAX_ENHANCEMENT_LEVEL` and
+`HERO_GEAR_MAX_EMPOWERMENT_LEVEL` export the two 100s. The WoS Tools table stops at 192 of the 200
+levels, so its XP total is 531,320 where ours is 574,370. The Mithril (150) and Mythic chest (35)
+totals agree. The `power` values of both tables are cumulative from enhancement level 1 through
+empowerment level 100, as the wiki states them. They are exactly 4 times the per piece power on WoS
+Tools at every level, and the calculator keeps the wiki values.
+
+When the goal names a `piece`, `{ slot, troopType }` with the slot `goggles`, `gloves`, `belt`, or
+`boots`, `stats` has the stats of the piece before the plan (`current`), after the plan (`goal`),
+and the `gain`. Each block has `combatStat` (Attack for Goggles and Boots, Defense for Gloves and
+Belt), flat `health`, and `percentStat` (Lethality for Goggles and Boots, Health for Gloves and
+Belt), and `combatStatName` and `percentStatName` give the names. `stats.milestones` lists the
+Mithril bonuses that the plan unlocks (Expedition and Exploration bonuses at empowerment levels 20,
+40, 60, 80, and 100). The values come from `heroGearStats()`, which holds the per piece stats of
+every slot and troop type by level from 1 to 200 (taken from WoS Tools, since the wiki does not list
+them), multiplied by the mastery forging (1 plus the `statsUpPercent` of the row) and rounded down.
+Level 0 has no stats. A track that is not in the goal counts as level 0 with no mastery forging, so
+give `enhancement: { current: 100, goal: 100 }` to get the stats of a mastery forging only plan. The
+stats are for one piece and the `power` is the wiki value, which is 4 times the WoS Tools per piece
+power.
+
 `calculateExperts(goals)` takes one entry for each expert, `{ id, level, skills }`, with the `id`
 from `experts()`. `level` is the affinity level range,
 `{ current, goal, currentAdvanced?, goalAdvanced? }`, from 1 to 100, and `skills` is a list of
@@ -1012,8 +1057,8 @@ result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 43
 The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
 `calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
 `calculator-chief-charm.html`, `calculator-troops.html`, `calculator-research.html`,
-`calculator-pets.html`, `calculator-experts.html`, and `calculator-buildings.html` are free
-plug-and-play versions with the same math. They save nothing.
+`calculator-pets.html`, `calculator-experts.html`, `calculator-buildings.html`, and
+`calculator-hero-gear.html` are free plug-and-play versions with the same math. They save nothing.
 
 ---
 

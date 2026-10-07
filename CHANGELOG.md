@@ -32,6 +32,19 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   100), the pet advancement score that events count.
 - `experts()`: Gareth's Gifts of Iron books and EXP were swapped on the wiki and are corrected from
   WoS Tools (300 books for level 2, 13,500 in all).
+- `heroGearStats()`: the per piece Attack or Defense, HP, and Lethality or Health of every hero gear
+  slot and troop type for enhancement levels 1 to 200, with the Mithril milestone bonuses (from WoS
+  Tools).
+- `calculateHeroGear()` takes a `piece` (slot and troop type) and returns the `stats` of the piece
+  before the plan, after the plan, and the gain, with the mastery forging multiplier and the
+  milestones the plan unlocks. The sample page `sample/calculator-hero-gear.html` has a piece picker
+  and a stats table with the power. The result has `currentPower` and `goalPower`.
+- `calculateHeroGear()`, `HERO_GEAR_MAX_ENHANCEMENT_LEVEL`, `HERO_GEAR_MAX_EMPOWERMENT_LEVEL`, and
+  `HERO_GEAR_ENHANCEMENT_REQUIREMENT`: the Essence Stones, Mythic chests, Mithril, and Enhancement
+  XP Components to level one hero gear piece through mastery forging, enhancement (1 to 100), and
+  empowerment (1 to 100), with the power gained, the SvS, Alliance Showdown, and King of Icefield
+  points, and a list of the tracks that need enhancement at level 100. The sample page
+  `sample/calculator-hero-gear.html` plans one piece.
 - `calculateBuildings()`: the resources, build time, power, and SvS, King of Icefield, and Hall of
   Chief points for upgrading buildings from a current level to a goal level, with the steps of
   prerequisite buildings added. The sample page `sample/calculator-buildings.html` has the 18
