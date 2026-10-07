@@ -479,4 +479,27 @@ describe('expertRelationships', () => {
         expect(power!.values).toHaveLength(skill.maxLevel);
       });
   });
+
+  it("has Gareth's Gifts of Iron books and EXP in the right columns", () => {
+    const giftsOfIron = experts()
+      .findByName('Gareth')!
+      .skills.find((skill) => skill.name === 'Gifts of Iron')!;
+    expect(giftsOfIron.costs.map((c) => c.books)).toEqual([
+      0, 300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700,
+    ]);
+    expect(giftsOfIron.costs[1].exp).toBe(25800);
+    expect(giftsOfIron.costs[9].exp).toBe(232800);
+    expect(giftsOfIron.costs.reduce((sum, c) => sum + c.books, 0)).toBe(13500);
+  });
+
+  it('has more EXP than books at every skill level, since EXP is the learning time in seconds', () => {
+    experts()
+      .get()
+      .flatMap((e) => e.skills)
+      .forEach((skill) =>
+        skill.costs
+          .filter((c) => c.books > 0)
+          .forEach((c) => expect(c.exp / c.books).toBeGreaterThan(20)),
+      );
+  });
 });

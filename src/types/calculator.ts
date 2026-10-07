@@ -278,3 +278,58 @@ export interface PetCalculation {
   advancementScore: number;
   eventPoints: PetEventPoints;
 }
+
+/** One skill of an expert to level up, by the skill `name` in `experts()`. */
+export interface ExpertSkillGoal {
+  name: string;
+  /** The skill level you have now, from 1 to the max level of the skill. */
+  current: number;
+  /** The skill level you want. */
+  goal: number;
+}
+
+/** One expert to upgrade. */
+export interface ExpertGoal {
+  /** The `id` of the expert in `experts()`. */
+  id: string;
+  /** The affinity level of the expert, from 1 to 100. */
+  level?: {
+    current: number;
+    goal: number;
+    /** True when the expert is already advanced at the current level. Only for a level that has an advancement cost. */
+    currentAdvanced?: boolean;
+    /** True to advance the expert at the goal level too. Only for a level that has an advancement cost. */
+    goalAdvanced?: boolean;
+  };
+  skills?: ExpertSkillGoal[];
+}
+
+export interface ExpertItemResult {
+  id: string;
+  name: string;
+  /** The affinity levels gained. */
+  levels: number;
+  /** The advancements paid for. */
+  advancements: number;
+  /** The skill levels gained, for all skills. */
+  skillLevels: number;
+  /** Expert sigils for the advancements. */
+  sigils: number;
+  /** Books of Knowledge for the skill levels. */
+  books: number;
+  /** Skill EXP for the skill levels. */
+  exp: number;
+  /** Affinity points for the affinity levels. */
+  affinity: number;
+}
+
+export interface ExpertCalculation {
+  items: ExpertItemResult[];
+  levels: number;
+  advancements: number;
+  skillLevels: number;
+  sigils: number;
+  books: number;
+  exp: number;
+  affinity: number;
+}
