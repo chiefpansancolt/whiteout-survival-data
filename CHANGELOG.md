@@ -28,6 +28,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `expertRelationships()`: the 11 relationship statuses from Stranger to Intimate with their icons
   and the affinity level where each starts. The experts sample page shows them in the affinity
   table.
+- `pets()`: an `advancementScore` on every advancement row (500 at level 10 up to 17,500 at level
+  100), the pet advancement score that events count.
+- `calculatePets()` and `PET_ADVANCEMENT_INTERVAL`: the pet food, advancement items, and gains in
+  Troop Attack, Troop Defense, and power for leveling pets from a current level to a goal level,
+  with pets that can already be advanced or advance at the goal. It also returns the advancement
+  score and the points it earns in SvS, Alliance Showdown, and King of Icefield. The sample page
+  `sample/calculator-pets.html` has a current and goal level for each of the 14 pets.
 - `calculateResearch()` and `RESEARCH_CALCULATOR`: the resources, research time, and power for
   upgrading research lines from a current level to a goal level, with the research speed buffs. It
   also lists unmet research prerequisites and the building levels the steps need. The sample page

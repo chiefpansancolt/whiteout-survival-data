@@ -432,6 +432,12 @@ field is stored per pet (e.g. Cave Hyena: 6.70%) — it is consistently about 4/
 table's own max refined value, but neither source wiki documents the underlying mechanic, so it's
 kept as a flat scraped field rather than a derived one.
 
+Each row with `advancementMaterials` also has `advancementScore`, the pet advancement score that the
+advancement adds, which SvS, Alliance Showdown, and King of Icefield count. It depends only on the
+level, so it is the same for every pet: 500, 1,000, 2,000, 3,000, 4,500, 6,750, 10,000, 12,000,
+14,500, and 17,500 at levels 10 to 100. Levels 40 to 100 match the wiki's event notes, and levels 10
+to 30 come from WoS Tools only.
+
 Most skills have a `values` array that scales with the effect's own percentage or flat number (e.g.
 Cave Hyena's Construction Speed bonus) and a flat `cooldownSeconds`. A few pets (Musk Ox, Giant Elk)
 have a skill with no numeric effect to scale — instead, the _cooldown itself_ shortens per tier,
@@ -856,6 +862,7 @@ so a data fix changes the result without any code change.
 | `calculateChiefCharm()`       | Materials, charm score, power, and event points to upgrade Chief Charms |
 | `calculateTroops()`           | Troops trained or promoted by each camp, by troop type and tier         |
 | `calculateResearch()`         | Resources, time, and power to upgrade research lines to a goal level    |
+| `calculatePets()`             | Pet food, advancement items, and stat gains to level pets to a goal     |
 
 Every calculator takes how many times each scoring action was done, as counts by day id and then by
 action text from that event's `days` in `events()`. Days and actions that are left out count as 0.
@@ -917,6 +924,22 @@ out of range, a goal below the current level, or a negative speed throws an erro
 `research-tree.html`: click a line to set its current and goal level, and the lines in your plan are
 highlighted. A list view has the same choices.
 
+`calculatePets(goals)` takes one entry for each pet, `{ id, current, goal }`, with the `id` from
+`pets()` and levels from 1 to the max level of the pet. Each level after `current` up to `goal`
+costs its pet food. A pet advances at every level that is a multiple of 10 and needs the advancement
+to go past that level, so a range that starts at or passes such a level pays for the advancement
+items. A goal that is a multiple of 10 pays for its advancement only when `goalAdvanced` is true
+(use it for the final advancement at the max level), and a pet that is already advanced at its
+current level (`currentAdvanced`) does not pay for it again. It returns the resources, the gain in
+Troop Attack, Troop Defense, and troops power (the difference between the two states, with the
+advanced values used for an advanced state), and a breakdown for each pet. Pets have no training
+time in the data, so there is no time. An unknown pet, a level out of range, a goal below the
+current level, or an advanced flag on a level that is not a multiple of 10 throws an error.
+`PET_ADVANCEMENT_INTERVAL` exports the 10. Each advancement paid for adds its `advancementScore`,
+and the result gives the total and the event points (the score times the "Pet advancement score
+increases by 1" row of SvS, Alliance Showdown, and King of Icefield, which is 50, 30, and 50 for
+each point of score).
+
 A promotion to tier 12 adds up the steps from tier to tier. A step costs the difference of the two
 training costs, or the tier's `promotionCost` for tier 12, and takes the difference of the two
 training times.
@@ -943,8 +966,8 @@ result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 43
 
 The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
 `calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
-`calculator-chief-charm.html`, `calculator-troops.html`, and `calculator-research.html` are free
-plug-and-play versions with the same math. They save nothing.
+`calculator-chief-charm.html`, `calculator-troops.html`, `calculator-research.html`, and
+`calculator-pets.html` are free plug-and-play versions with the same math. They save nothing.
 
 ---
 
