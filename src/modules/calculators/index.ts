@@ -1,5 +1,6 @@
 export * from './alliance-showdown';
 export * from './chief-charm';
+export * from './buildings';
 export * from './chief-gear';
 export * from './experts';
 export * from './hall-of-chief';

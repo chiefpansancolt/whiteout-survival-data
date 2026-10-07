@@ -333,3 +333,76 @@ export interface ExpertCalculation {
   exp: number;
   affinity: number;
 }
+
+/** One building to upgrade, by `id` from `buildings()`. */
+export interface BuildingGoal {
+  id: string;
+  /** The level `label` the building is at now. Use `null` for a building that is not built yet. */
+  current: string | null;
+  /** The level `label` to reach, for example `"30"`, `"30-1"`, or `"FC 3"`. */
+  goal: string;
+}
+
+export interface BuildingCalculatorOptions {
+  /**
+   * The level `label` of the buildings you already have, by building `id`. The calculator adds the
+   * steps of a prerequisite building that is below the needed level, and a building that is not
+   * listed counts as not built.
+   */
+  buildingLevels?: Record<string, string | null>;
+  /** The total construction speed in percent, from 0 up. The speed bonuses add up. */
+  constructionSpeedPercent?: number;
+}
+
+export interface BuildingStep {
+  buildingId: string;
+  name: string;
+  /** The level `label` that this step reaches. */
+  level: string;
+  /** True for a step that a goal needs as a prerequisite and that is not inside a goal range. */
+  prerequisite: boolean;
+  cost: UpgradeMaterial[];
+  /** The power that this step adds. */
+  power: number;
+  /** The build time before the speed bonus. */
+  baseSeconds: number;
+}
+
+/** The Hall of Chief points of the power gained, for the stages that score construction power. */
+export interface BuildingHallOfChiefPoints {
+  pointsPerPower: number;
+  /** The names of the event days that use this multiplier. */
+  days: string[];
+  points: number;
+}
+
+export interface BuildingEventPoints {
+  /** Fire Crystals and Refined Fire Crystals. Speedups are not included. */
+  svs: number;
+  kingOfIcefield: number;
+  hallOfChief: BuildingHallOfChiefPoints[];
+}
+
+export interface UnmetBuildingPrerequisite {
+  /** The building name as the data states it. The name is not in `buildings()`. */
+  building: string;
+  level: string;
+}
+
+export interface BuildingCalculation {
+  steps: BuildingStep[];
+  resources: UpgradeMaterial[];
+  power: number;
+  /** The build time of all steps added together, before the speed bonus. */
+  baseSeconds: number;
+  constructionSpeedPercent: number;
+  /** The build time after the speed bonus, rounded down. */
+  seconds: number;
+  /** The minutes of speedups that cover all of the build time, rounded up. */
+  speedupMinutesNeeded: number;
+  /** The points of each speedup minute used, to multiply with the minutes the user spends. */
+  speedupPointsPerMinute: { svs: number; kingOfIcefield: number };
+  eventPoints: BuildingEventPoints;
+  /** Prerequisites on a building that is not in `buildings()`. They add no steps. */
+  unmetPrerequisites: UnmetBuildingPrerequisite[];
+}
