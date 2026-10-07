@@ -38,6 +38,18 @@ export interface HeroExpeditionStats {
   defense: number;
 }
 
+/** A hero's stats at a star and tier, estimated for hero level 80. */
+export interface HeroStatEstimate {
+  /** The hero level the estimate is for. Always 80. */
+  level: number;
+  star: number;
+  tier: number;
+  /** False only at 5 stars, where the stats are the ones stored on the hero. */
+  estimated: boolean;
+  exploration: HeroStats;
+  expedition: HeroExpeditionStats;
+}
+
 export interface ExclusiveWeaponStats {
   exploration: HeroStats;
   expedition: {

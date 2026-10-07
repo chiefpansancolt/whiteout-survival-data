@@ -25,3 +25,5 @@ export class HeroQuery extends QueryBase<Hero> {
 export function heroes(source: Hero[] = heroData): HeroQuery {
   return new HeroQuery(source);
 }
+
+export * from './stat-estimate';
