@@ -96,7 +96,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Troop Calculator</h1>
   <p class="sub">Set the level of each camp and what it trains or promotes. The page adds up the troops you get by troop type and tier. All three camps share one training capacity, which is the capacity of the three camp levels added together plus the bonuses below. Nothing is saved, and reloading the page clears your choices.</p>
 
@@ -263,7 +263,7 @@
       const item = DATA.items[id];
       const row = resBody.insertRow();
       const wrap = el('span', 'mat');
-      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       wrap.append(img, document.createTextNode(item.name));
       row.insertCell().append(wrap);
       const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(result.resources[i]);

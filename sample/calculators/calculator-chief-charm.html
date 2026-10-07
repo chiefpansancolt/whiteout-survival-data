@@ -85,7 +85,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1 id="page-title"></h1>
   <p class="sub" id="page-intro"></p>
 
@@ -169,7 +169,7 @@
       const item = DATA.items[itemId];
       const row = body.insertRow();
       const wrap = el('span', 'mat');
-      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       wrap.append(img, document.createTextNode(item.name));
       row.insertCell().append(wrap);
       const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(amount);

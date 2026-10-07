@@ -93,7 +93,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Pet Calculator</h1>
   <p class="sub">For each pet, pick the level it is at now and the level you want. The page adds up the pet food and the advancement items, and shows the gain in Troop Attack, Troop Defense, and power. A pet advances at every level that is a multiple of 10 and needs the advancement to go past that level. Tick Advanced for a pet that has already advanced at that level, or to advance it at the goal level. Pets have no training time here. Nothing is saved, and reloading the page clears your choices.</p>
 
@@ -187,7 +187,7 @@
       const item = DATA.items[id];
       const row = body.insertRow();
       const wrap = el('span', 'mat');
-      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       wrap.append(img, document.createTextNode(item.name));
       row.insertCell().append(wrap);
       const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(amount);
@@ -241,7 +241,7 @@
     rows.forEach((r) => {
       const tr = body.insertRow();
       const name = el('span', 'pet-name');
-      const img = el('img'); img.src = '..' + r.pet.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + r.pet.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       const text = el('span'); text.textContent = r.pet.name;
       name.append(img, text, el('span', 'rarity', `${r.pet.rarity}, max ${r.pet.maxLevel}`));
       tr.insertCell().append(name);

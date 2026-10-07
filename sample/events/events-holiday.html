@@ -102,7 +102,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Holiday Events</h1>
   <p class="sub">Holiday Events and their rewards. Pick an event tab. Hover a reward for its note.</p>
   <div class="tabs" id="tabs"></div>
@@ -119,7 +119,7 @@
   const HEROES = JSON.parse(document.getElementById('heroes-data').textContent);
   const DECORATIONS = JSON.parse(document.getElementById('decorations-data').textContent);
   const SKINS = JSON.parse(document.getElementById('skins-data').textContent);
-  const IMAGE_ROOT = '..';
+  const IMAGE_ROOT = '../..';
   const tabsEl = document.getElementById('tabs');
   const eventEl = document.getElementById('event');
   let activeEventId = EVENTS.length ? EVENTS[0].id : null;

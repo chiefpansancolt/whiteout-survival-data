@@ -285,7 +285,7 @@ function renderNode(canvas, node, p, orientation) {
     if (node.external) iconEl.style.borderColor = 'var(--gate)';
     if (node.img) {
       const img = document.createElement('img');
-      img.src = '..' + node.img;
+      img.src = '../..' + node.img;
       img.alt = node.name;
       img.loading = 'lazy';
       iconEl.appendChild(img);

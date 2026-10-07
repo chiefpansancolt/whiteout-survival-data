@@ -109,7 +109,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Hero Stat Compare</h1>
   <p class="sub">Compare two heroes at hero level 80. Pick the star and tier once and both heroes use it, or untick the box to set each hero on its own. The stats at 5 stars are the stored stats, and every other state is an estimate from <code>estimateHeroStats()</code>. Type the numbers you see in the game under a hero to see how far the estimate is from them. Nothing is saved.</p>
 
@@ -162,7 +162,7 @@
       const hero = heroOf(side.hero);
       const card = el('div', 'card');
       const head = el('div', 'hero-head');
-      const img = el('img'); img.src = '..' + hero.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + hero.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       const title = el('div');
       title.append(el('div', '', hero.name), el('div', 'meta', `Gen ${hero.generation} ${hero.rarity} ${hero.class}`));
       head.append(img, title);

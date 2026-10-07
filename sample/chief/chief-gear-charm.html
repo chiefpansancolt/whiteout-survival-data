@@ -272,7 +272,7 @@
 
   function gearIconTag(slot, level) {
     return `<div class="gear-icon-wrap">
-      <img src="..${gearImage(slot, level)}" alt="" onerror="this.style.visibility='hidden'">
+      <img src="../..${gearImage(slot, level)}" alt="" onerror="this.style.visibility='hidden'">
       ${gearSubTierBadge(level.tier)}
       ${gearStarStack(level.stars)}
     </div>`;
@@ -310,7 +310,7 @@
       .sort((a, b) => a.item.name.localeCompare(b.item.name))
       .map(
         ({ item, amount }) => `<tr>
-          <td><div class="material-row"><img src="..${item.img}" alt="" onerror="this.style.visibility='hidden'">${item.name}</div></td>
+          <td><div class="material-row"><img src="../..${item.img}" alt="" onerror="this.style.visibility='hidden'">${item.name}</div></td>
           <td>${fmt(amount)}</td>
         </tr>`,
       )
@@ -328,9 +328,9 @@
         const fromItem = MATERIALS[c.fromItemId];
         const toItem = MATERIALS[c.toItemId];
         return `<tr>
-          <td><div class="material-row"><img src="..${fromItem.img}" alt="" onerror="this.style.visibility='hidden'">${fmt(c.fromQuantity)} ${fromItem.name}</div></td>
+          <td><div class="material-row"><img src="../..${fromItem.img}" alt="" onerror="this.style.visibility='hidden'">${fmt(c.fromQuantity)} ${fromItem.name}</div></td>
           <td>&rarr;</td>
-          <td><div class="material-row"><img src="..${toItem.img}" alt="" onerror="this.style.visibility='hidden'">${fmt(c.toQuantity)} ${toItem.name}</div></td>
+          <td><div class="material-row"><img src="../..${toItem.img}" alt="" onerror="this.style.visibility='hidden'">${fmt(c.toQuantity)} ${toItem.name}</div></td>
           ${hasLimit ? `<td>${c.weeklyLimit !== undefined ? fmt(c.weeklyLimit) : '<span class="empty">&mdash;</span>'}</td>` : ''}
         </tr>`;
       })
@@ -418,7 +418,7 @@
     document.getElementById('charm-detail').innerHTML = `
       <div class="detail-header">
         <div class="detail-header-left">
-          <img src="..${charmImage(slot, level)}" alt="" onerror="this.style.visibility='hidden'">
+          <img src="../..${charmImage(slot, level)}" alt="" onerror="this.style.visibility='hidden'">
           <div>
             <h2>${slot.name} &mdash; ${level.name}</h2>
             <span class="badge">Level ${level.level}</span>

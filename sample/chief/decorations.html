@@ -1647,7 +1647,7 @@
                   ? '<span class="empty">not yet documented</span>'
                   : '<span class="empty">&mdash;</span>';
               return `<tr>
-            <td class="name">${d.img ? `<img class="thumb" src="..${d.img}" alt="">` : ""}${d.name}</td>
+            <td class="name">${d.img ? `<img class="thumb" src="../..${d.img}" alt="">` : ""}${d.name}</td>
             <td><span class="badge">${d.category}</span>${d.limited ? '<span class="badge limited">Limited</span>' : ""}</td>
             <td>${d.limited ? "Yes" : '<span class="empty">&mdash;</span>'}</td>
             <td>${cell(d.limit)}</td>

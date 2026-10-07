@@ -115,7 +115,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Building Calculator</h1>
   <p class="sub">Pick the level you have now and the level you want for each building. The page adds the steps of every prerequisite building that is below the level a step needs, so the totals are the true cost. Buildings you do not change count at their current level, so set those too, or a prerequisite building counts as not built. Speed bonuses add up: 50% turns 10 hours into 6 hours 40 minutes. SvS and King of Icefield score each Fire Crystal, each Refined Fire Crystal, and each minute of speedups used. Hall of Chief scores the power gained. Nothing is saved, and reloading the page clears your choices.</p>
 
@@ -202,7 +202,7 @@
     DATA.resourceOrder.forEach((id) => {
       if (!r.resources.has(id)) return;
       const item = DATA.items[id]; const row = rb.insertRow(); const wrap = el('span', 'mat');
-      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       wrap.append(img, document.createTextNode(item.name)); row.insertCell().append(wrap);
       const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(r.resources.get(id));
     });
@@ -254,7 +254,7 @@
     const holder = document.getElementById('list'); holder.replaceChildren();
     DATA.buildings.forEach((b) => {
       const s = state[b.id]; const card = el('div', 'card build-card'); const head = el('div', 'head');
-      const img = el('img'); img.src = '..' + b.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + b.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       head.append(img, el('div', '', b.name)); card.append(head);
       const pair = el('div', 'pair');
       [['current', 'Current'], ['goal', 'Goal']].forEach(([key, label]) => {

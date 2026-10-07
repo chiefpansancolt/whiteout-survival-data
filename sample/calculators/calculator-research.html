@@ -198,7 +198,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Research Calculator</h1>
   <p class="sub">For each research line, pick the level you have now and the level you want. The page adds up the resources and the time for the levels in between. Each tier of a research line is its own line here, with its own levels. Click a line in the tree to pick its levels, or use the list. Nothing is saved, and reloading the page clears your choices.</p>
 
@@ -389,7 +389,7 @@ function edgePath(p1, p2, orientation, fromIsUp, toIsUp, splitFraction) {
     iconEl.className = 'node-icon' + (kind === 'hub' ? ' hub' : '');
     if (node.external) iconEl.style.borderColor = 'var(--gate)';
     if (node.img) {
-      const img = document.createElement('img'); img.src = '..' + node.img; img.alt = node.name; img.loading = 'lazy'; iconEl.appendChild(img);
+      const img = document.createElement('img'); img.src = '../..' + node.img; img.alt = node.name; img.loading = 'lazy'; iconEl.appendChild(img);
     } else { iconEl.textContent = '?'; }
     nodeEl.appendChild(iconEl);
     const nameEl = document.createElement('div'); nameEl.className = 'node-name'; nameEl.textContent = node.name; nodeEl.appendChild(nameEl);
@@ -667,7 +667,7 @@ function renderHubView(category) {
     if (!selectedId) { box.append(el('div', 'meta2', 'Click a research line in the tree to set its current level and goal.')); return; }
     const node = byId[selectedId];
     const st = state[selectedId];
-    const img = el('img'); img.src = '..' + node.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+    const img = el('img'); img.src = '../..' + node.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
     const info = el('div');
     info.append(el('div', 'name', node.name), el('div', 'meta2', `${node.category}, tier ${node.tier}, ${node.levels.length} levels`));
     box.append(img, info);
@@ -814,7 +814,7 @@ function renderHubView(category) {
       const item = DATA.items[id];
       const row = body.insertRow();
       const wrap = el('span', 'mat');
-      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       wrap.append(img, document.createTextNode(item.name));
       row.insertCell().append(wrap);
       const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(amount);
@@ -900,7 +900,7 @@ function renderHubView(category) {
       const st = state[node.id];
       const row = body.insertRow();
       const nameWrap = el('span', 'item-name');
-      const img = el('img'); img.src = '..' + node.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + node.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       const label = el('span'); label.textContent = node.name;
       nameWrap.append(img, label, el('span', 'tier', `Tier ${node.tier}`));
       row.insertCell().append(nameWrap);

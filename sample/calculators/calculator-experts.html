@@ -105,7 +105,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Expert Calculator</h1>
   <p class="sub">For each expert, pick the affinity level and the skill levels you have now and the ones you want. The page adds up the Books of Knowledge and expert sigils, with the skill EXP and affinity points. An expert advances at every level that is a multiple of 10 and needs the sigils to go past that level. Tick Advanced for an expert that has already advanced at that level, or to advance at the goal level. The talent costs nothing, because it levels with the relationship. Nothing is saved, and reloading the page clears your choices.</p>
 
@@ -181,7 +181,7 @@
       const item = DATA.items[id];
       const row = body.insertRow();
       const wrap = el('span', 'mat');
-      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       wrap.append(img, document.createTextNode(label));
       row.insertCell().append(wrap);
       const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(amount);
@@ -225,7 +225,7 @@
       const { expert, level } = st;
       const card = el('div', 'card expert-card');
       const head = el('div', 'expert-head');
-      const img = el('img'); img.src = '..' + expert.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + expert.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       const info = el('div'); info.append(el('div', '', expert.name), el('div', 'meta', `${expert.title}, ${expert.specialty}`));
       head.append(img, info); card.append(head);
       const rows = el('div', 'rows');
@@ -253,7 +253,7 @@
       expert.skills.forEach((skill, i) => {
         const sk = st.skills[i];
         const line = el('div', 'row-line');
-        const name = el('div', 'name'); const sImg = el('img'); sImg.src = '..' + skill.img; sImg.alt = ''; sImg.onerror = () => { sImg.style.visibility = 'hidden'; };
+        const name = el('div', 'name'); const sImg = el('img'); sImg.src = '../..' + skill.img; sImg.alt = ''; sImg.onerror = () => { sImg.style.visibility = 'hidden'; };
         name.append(sImg, document.createTextNode(`${skill.name} (max ${skill.max})`)); line.append(name);
         ['current', 'goal'].forEach((key) => {
           const cell = el('div', 'cell');

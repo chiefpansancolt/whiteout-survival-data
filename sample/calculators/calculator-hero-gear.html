@@ -116,7 +116,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Hero Gear Calculator</h1>
   <p class="sub">Plan one hero gear piece at a time. Enhancement (levels 1 to 100) costs Enhancement XP Components, so fill it out first. Mastery Forging costs Essence Stones, with Custom Mythic Hero Gear Chests at the higher rows. After enhancement level 100 the piece is empowered, and Empowerment has 100 levels of its own: level 1 costs Mythic chests, and levels 20, 40, 60, 80 and 100 also cost Mithril. Mastery Forging past level 10 and Empowerment need Enhancement at level 100. The steps are the rows after the current one up to and including the goal. The same costs apply to every hero gear piece. Pick the gear piece and the troop type of its set, because the stats depend on them. The stat values are for one piece, and Mastery Forging multiplies them. Nothing is saved, and reloading the page clears your choices.</p>
 
@@ -220,7 +220,7 @@
     DATA.itemOrder.forEach((id) => {
       if (!map.has(id)) return;
       const item = DATA.items[id]; const row = body.insertRow(); const wrap = el('span', 'mat');
-      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       wrap.append(img, document.createTextNode(item.name)); row.insertCell().append(wrap);
       const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(map.get(id));
     });

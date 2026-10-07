@@ -17746,7 +17746,7 @@
     el.innerHTML = rows
       .map(
         (p) => `<div class="pet-row${p.id === activeId ? ' active' : ''}" data-id="${p.id}">
-          <img src="..${p.img}" alt="" onerror="this.style.visibility='hidden'">
+          <img src="../..${p.img}" alt="" onerror="this.style.visibility='hidden'">
           <span class="swatch" style="background:${RARITY_COLOR[p.rarity] || '#888'}"></span>
           <div>
             <div>${p.name}</div>
@@ -17783,7 +17783,7 @@
         : null;
     return `<div class="skill">
       <div class="skill-name-row">
-        <img src="..${skill.img}" alt="" onerror="this.style.visibility='hidden'">
+        <img src="../..${skill.img}" alt="" onerror="this.style.visibility='hidden'">
         <div class="skill-name">${skill.name}</div>
       </div>
       <div class="skill-desc">${skill.description}</div>
@@ -17804,7 +17804,7 @@
     return materials
       .map((m) => {
         const item = MATERIALS[m.itemId];
-        return `<span class="material-row" title="${item.name}"><img src="..${item.img}" alt="${item.name}" onerror="this.style.visibility='hidden'">${fmt(m.amount)}x</span>`;
+        return `<span class="material-row" title="${item.name}"><img src="../..${item.img}" alt="${item.name}" onerror="this.style.visibility='hidden'">${fmt(m.amount)}x</span>`;
       })
       .join('');
   }
@@ -17825,7 +17825,7 @@
     return itemIds
       .map((id) => {
         const item = MATERIALS[id];
-        return `<span class="material-row" title="${item.name}"><img src="..${item.img}" alt="${item.name}" onerror="this.style.visibility='hidden'">${fmt(totals[id])}x</span>`;
+        return `<span class="material-row" title="${item.name}"><img src="../..${item.img}" alt="${item.name}" onerror="this.style.visibility='hidden'">${fmt(totals[id])}x</span>`;
       })
       .join('');
   }
@@ -17864,7 +17864,7 @@
     el.innerHTML = `
       <div class="detail-header">
         <div class="detail-header-left">
-          <img src="..${pet.img}" alt="" onerror="this.style.visibility='hidden'">
+          <img src="../..${pet.img}" alt="" onerror="this.style.visibility='hidden'">
           <div>
             <h2>${pet.name}</h2>
             <span class="badge rarity-${pet.rarity}">${pet.rarity}</span>

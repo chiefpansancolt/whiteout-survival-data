@@ -13001,7 +13001,7 @@
     el.innerHTML = rows
       .map(
         (e) => `<div class="expert-row${e.id === activeId ? ' active' : ''}" data-id="${e.id}">
-          <img src="..${e.img}" alt="" onerror="this.style.visibility='hidden'">
+          <img src="../..${e.img}" alt="" onerror="this.style.visibility='hidden'">
           <div>
             <div>${e.name}</div>
             <div class="meta">${e.title} &middot; Gen ${e.generation}</div>
@@ -13069,7 +13069,7 @@
     const totalBooks = skill.costs.reduce((sum, c) => sum + c.books, 0);
     return `<div class="skill">
       <div class="skill-name-row">
-        <img src="..${skill.img}" alt="" onerror="this.style.visibility='hidden'">
+        <img src="../..${skill.img}" alt="" onerror="this.style.visibility='hidden'">
         <div class="skill-name">${skill.name}</div>
         <span class="badge">Max Lv.${skill.maxLevel}</span>
         ${skill.costs.length > 0 ? `<span class="badge">${fmt(totalExp)} EXP</span><span class="badge">${fmt(totalBooks)} Books</span>` : ''}
@@ -13084,7 +13084,7 @@
   function relationshipCell(level) {
     const start = RELATIONSHIPS.find((r) => r.level === level);
     if (!start) return '<span class="empty">&mdash;</span>';
-    return `<img class="rel-icon" src="..${start.img}" alt="" onerror="this.style.visibility='hidden'"> ${start.name}`;
+    return `<img class="rel-icon" src="../..${start.img}" alt="" onerror="this.style.visibility='hidden'"> ${start.name}`;
   }
 
   function affinityTable(affinityLevels) {
@@ -13160,7 +13160,7 @@
     el.innerHTML = `
       <div class="detail-header">
         <div class="detail-header-left">
-          <img src="..${expert.img}" alt="" onerror="this.style.visibility='hidden'">
+          <img src="../..${expert.img}" alt="" onerror="this.style.visibility='hidden'">
           <div>
             <h2>${expert.name}</h2>
             <span class="badge">${expert.title}</span>

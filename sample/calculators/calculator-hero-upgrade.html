@@ -126,7 +126,7 @@
 </style>
 </head>
 <body>
-  <p><a href="index.html">&larr; All sample pages</a></p>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
   <h1>Hero Upgrade Calculator</h1>
   <p class="sub">Plan one hero at a time. Stars use the in-game label, so 3.1 is star 3 and tier 1, and 5.0 is the last label. Each step to the next label costs shards, and the costs are the same for every hero. A skill level costs the manuals of the hero rarity (Mythic for Legendary heroes), Exploration or Expedition by the kind of the skill, and a level can need a star. Widgets level the exclusive weapon of a Legendary hero from 0 to 10. Power is not included. Nothing is saved, and reloading the page clears your choices.</p>
 
@@ -206,7 +206,7 @@
     DATA.itemOrder.forEach((id) => {
       if (!r.resources.has(id)) return;
       const item = DATA.items[id]; const row = body.insertRow(); const wrap = el('span', 'mat');
-      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const img = el('img'); img.src = '../..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
       wrap.append(img, document.createTextNode(item.name)); row.insertCell().append(wrap);
       const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(r.resources.get(id));
     });
@@ -232,7 +232,7 @@
 
   function renderControls() {
     const head = document.getElementById('hero-head'); head.replaceChildren();
-    const img = el('img'); img.src = '..' + hero.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+    const img = el('img'); img.src = '../..' + hero.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
     const info = el('div'); info.append(el('div', '', hero.name), el('div', 'meta', hero.rarity + ', Gen ' + hero.generation + ', ' + hero.class)); head.append(img, info);
 
     const row = document.getElementById('stars-row'); row.replaceChildren(); row.append(el('div', 'name', 'Star label'));
@@ -250,7 +250,7 @@
     skillList().forEach((skill) => {
       const s = state.skills[skill.name] || (state.skills[skill.name] = { c: 1, g: 1 });
       const line = el('div', 'row-line'); const name = el('div', 'name');
-      const sImg = el('img'); sImg.src = '..' + skill.img; sImg.alt = ''; sImg.onerror = () => { sImg.style.visibility = 'hidden'; };
+      const sImg = el('img'); sImg.src = '../..' + skill.img; sImg.alt = ''; sImg.onerror = () => { sImg.style.visibility = 'hidden'; };
       name.append(sImg, document.createTextNode(skill.name), el('span', 'kind', skill.kind)); line.append(name);
       [['c', 'Current'], ['g', 'Goal']].forEach(([key, label]) => {
         const cell = el('div', 'cell');
