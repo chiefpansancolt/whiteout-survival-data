@@ -1,3 +1,5 @@
+import { HeroGearMilestone, HeroGearSlot } from './hero-gear';
+
 /** How many times each scoring action was done, by event day id and then by action text from `events()`. */
 export type EventUsage = Record<string, Record<string, number>>;
 
@@ -405,4 +407,107 @@ export interface BuildingCalculation {
   eventPoints: BuildingEventPoints;
   /** Prerequisites on a building that is not in `buildings()`. They add no steps. */
   unmetPrerequisites: UnmetBuildingPrerequisite[];
+}
+
+/** The mastery forging rows to pay for, by `id` from `heroGearMasteryForging()`. */
+export interface HeroGearMasteryForgingRange {
+  /** The row the piece is at now. Use `null` for a piece with no mastery forging yet. */
+  current: string | null;
+  /** The row to reach. */
+  goal: string;
+}
+
+/** A level range of enhancement or empowerment, each from 0 to 100. */
+export interface HeroGearLevelRange {
+  current: number;
+  goal: number;
+}
+
+/** Which hero gear piece it is. The stats depend on the slot and on the troop type of the gear set. */
+export interface HeroGearPiece {
+  slot: HeroGearSlot;
+  troopType: TroopType;
+}
+
+/** One hero gear piece to upgrade. Leave out a track that does not change. */
+export interface HeroGearGoal {
+  /** The piece, for the stats gain in the result. */
+  piece?: HeroGearPiece;
+  masteryForging?: HeroGearMasteryForgingRange;
+  /** Enhancement levels 1 to 100, from `heroGearEnhancement()`. */
+  enhancement?: HeroGearLevelRange;
+  /** Empowerment levels 1 to 100, from `heroGearEmpowerment()`. Empowerment starts after enhancement level 100. */
+  empowerment?: HeroGearLevelRange;
+}
+
+export interface HeroGearTrackResult {
+  /** The number of levels or sub-stages that the track adds. */
+  steps: number;
+  resources: UpgradeMaterial[];
+}
+
+export interface HeroGearMasteryForgingResult extends HeroGearTrackResult {
+  /** The stats gain in percent, from the `statsUpPercent` of the first row to the `statsUpPercent` of the last row. */
+  statsUpPercent: number;
+}
+
+export interface HeroGearLevelResult extends HeroGearTrackResult {
+  /** The power gained, from the `power` of the current level to the `power` of the goal level. */
+  power: number;
+}
+
+/** A track that needs the enhancement of the piece to be at a level before it can go on. */
+export interface HeroGearRequirement {
+  track: 'masteryForging' | 'empowerment';
+  /** The enhancement level that the piece needs. */
+  enhancementLevel: number;
+}
+
+/** The points that the Essence Stones and the Mithril earn in each event. */
+export interface HeroGearEventPoints {
+  svs: number;
+  allianceShowdown: number;
+  kingOfIcefield: number;
+}
+
+/** The stat values of one piece. */
+export interface HeroGearStatValues {
+  /** Attack for Goggles and Boots, Defense for Gloves and Belt. */
+  combatStat: number;
+  /** The flat HP. */
+  health: number;
+  /** Lethality for Goggles and Boots, Health for Gloves and Belt, in percent. */
+  percentStat: number;
+}
+
+/** The stats of one piece before the plan, after the plan, and the gain between them. */
+export interface HeroGearStatsResult {
+  combatStatName: 'Attack' | 'Defense';
+  percentStatName: 'Lethality' | 'Health';
+  /** The stats at the current levels and the current mastery forging. */
+  current: HeroGearStatValues;
+  /** The stats at the goal levels and the goal mastery forging. */
+  goal: HeroGearStatValues;
+  gain: HeroGearStatValues;
+  /** The Mithril milestone bonuses that the plan unlocks. */
+  milestones: HeroGearMilestone[];
+}
+
+export interface HeroGearCalculation {
+  masteryForging: HeroGearMasteryForgingResult;
+  enhancement: HeroGearLevelResult;
+  empowerment: HeroGearLevelResult;
+  /** The resources of all tracks added together. */
+  resources: UpgradeMaterial[];
+  /** The power gained from enhancement and empowerment. */
+  power: number;
+  /** The power of the piece at the current enhancement and empowerment levels. Level 0 has no power. */
+  currentPower: number;
+  /** The power of the piece at the goal levels. */
+  goalPower: number;
+  eventPoints: HeroGearEventPoints;
+  /** The requirements that the plan does not meet. Only the tracks in the goal are checked. */
+  unmetRequirements: HeroGearRequirement[];
+  /** The stats of the piece, or `null` when the goal has no `piece`. */
+  stats: HeroGearStatsResult | null;
 }
