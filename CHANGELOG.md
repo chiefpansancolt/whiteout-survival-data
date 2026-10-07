@@ -30,6 +30,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   table.
 - `pets()`: an `advancementScore` on every advancement row (500 at level 10 up to 17,500 at level
   100), the pet advancement score that events count.
+- `experts()`: Gareth's Gifts of Iron books and EXP were swapped on the wiki and are corrected from
+  WoS Tools (300 books for level 2, 13,500 in all).
+- `calculateExperts()` and `EXPERT_MAX_LEVEL`: the Books of Knowledge and expert sigils (with the
+  skill EXP and affinity points) for leveling experts and their skills from a current level to a
+  goal level, with advancements at levels 10 to 100. The sample page
+  `sample/calculator-experts.html` has the affinity level and the skill levels for each of the 10
+  experts.
 - `calculatePets()` and `PET_ADVANCEMENT_INTERVAL`: the pet food, advancement items, and gains in
   Troop Attack, Troop Defense, and power for leveling pets from a current level to a goal level,
   with pets that can already be advanced or advance at the goal. It also returns the advancement

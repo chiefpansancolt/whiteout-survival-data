@@ -380,6 +380,11 @@ icon under `images/experts/relationship/` and the affinity `level` at which each
 Intimate (100). `atAffinityLevel(level)` returns the status for a level. The Close 3 and Intimate
 icons were captured while locked, so the lock was painted out and a seam can show on them.
 
+Gareth's Gifts of Iron had its Books and EXP columns swapped on the wiki (25,800 books for level 2).
+They were corrected from WoS Tools, which lists 300 books and 7h 10m for level 2 and 13,500 books in
+all. The other nine experts' books and EXP agree with the pattern, and a test checks that EXP is
+above 20 times the books at every level.
+
 `affinityLevels` is a 100-row table (`level`, `affinityRequired`, an optional `advancementCost` —
 present only at levels divisible by 10 — and the resulting `statBonus`). `advancementCost` is the
 per-milestone "Sigil" cost; summing the column reproduces the aggregate "Total Sigils" figure
@@ -863,6 +868,7 @@ so a data fix changes the result without any code change.
 | `calculateTroops()`           | Troops trained or promoted by each camp, by troop type and tier         |
 | `calculateResearch()`         | Resources, time, and power to upgrade research lines to a goal level    |
 | `calculatePets()`             | Pet food, advancement items, and stat gains to level pets to a goal     |
+| `calculateExperts()`          | Books of Knowledge and expert sigils to level experts and their skills  |
 
 Every calculator takes how many times each scoring action was done, as counts by day id and then by
 action text from that event's `days` in `events()`. Days and actions that are left out count as 0.
@@ -940,6 +946,21 @@ and the result gives the total and the event points (the score times the "Pet ad
 increases by 1" row of SvS, Alliance Showdown, and King of Icefield, which is 50, 30, and 50 for
 each point of score).
 
+`calculateExperts(goals)` takes one entry for each expert, `{ id, level, skills }`, with the `id`
+from `experts()`. `level` is the affinity level range,
+`{ current, goal, currentAdvanced?, goalAdvanced? }`, from 1 to 100, and `skills` is a list of
+`{ name, current, goal }` with the skill `name` and levels from 1 to the max level of the skill.
+Each skill level after `current` up to `goal` costs Books of Knowledge and skill EXP. An expert
+advances at every affinity level that has an `advancementCost` (10 to 100) and needs the sigils to
+go past it, so a range that starts at or passes such a level pays for the advancement. A goal at
+such a level pays only when `goalAdvanced` is true (use it for the final advancement at level 100),
+and an expert that is already advanced at its current level (`currentAdvanced`) does not pay again.
+It returns the `books` and `sigils` as the main totals, with the `exp` and the `affinity` points of
+the levels, and a breakdown for each expert. The talent costs nothing, because it levels with the
+relationship. An unknown expert or skill, a level out of range, a goal below the current level, or
+an advanced flag on a level with no advancement cost throws an error. `EXPERT_MAX_LEVEL` exports
+the 100.
+
 A promotion to tier 12 adds up the steps from tier to tier. A step costs the difference of the two
 training costs, or the tier's `promotionCost` for tier 12, and takes the difference of the two
 training times.
@@ -966,8 +987,9 @@ result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 43
 
 The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
 `calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
-`calculator-chief-charm.html`, `calculator-troops.html`, `calculator-research.html`, and
-`calculator-pets.html` are free plug-and-play versions with the same math. They save nothing.
+`calculator-chief-charm.html`, `calculator-troops.html`, `calculator-research.html`,
+`calculator-pets.html`, and `calculator-experts.html` are free plug-and-play versions with the same
+math. They save nothing.
 
 ---
 
