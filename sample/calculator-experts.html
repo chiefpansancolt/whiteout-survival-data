@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Expert Calculator</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --good: #52d17a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+    max-width: 980px;
+  }
+  a { color: var(--accent); }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 0.85rem; margin: 24px 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; line-height: 1.45; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+  .controls label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  select, input[type="number"] {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+  input[type="number"] { width: 110px; text-align: right; }
+  select:disabled { opacity: 0.45; }
+  button {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .bonus-note { color: var(--good); font-size: 0.85rem; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 10px; }
+  .pill {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .pill.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  th, td { padding: 7px 10px; border-bottom: 1px solid var(--panel-border); text-align: left; vertical-align: middle; }
+  th { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+  td.bonus { color: var(--good); }
+  .scroll { overflow-x: auto; }
+  .note { color: var(--text-dim); font-size: 0.8rem; margin: 8px 0 0; line-height: 1.4; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .stat { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 12px 14px; }
+  .stat .value { font-size: 1.25rem; font-weight: 700; color: var(--accent); }
+  .stat .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  select.level { width: 100%; min-width: 150px; }
+  .mat { display: inline-flex; align-items: center; gap: 8px; }
+  .mat img { width: 28px; height: 28px; border-radius: 6px; }
+  .warn { color: #ffb74d; font-size: 0.8rem; }
+  .group-row td { background: var(--panel); color: var(--text-dim); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+
+  .pet-name { display: inline-flex; align-items: center; gap: 8px; }
+  .pet-name img { width: 36px; height: 36px; border-radius: 8px; object-fit: cover; }
+  .rarity { color: var(--text-dim); font-size: 0.72rem; }
+  .cell { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .cell label { font-size: 0.75rem; color: var(--text-dim); display: inline-flex; align-items: center; gap: 4px; }
+  td select { min-width: 70px; }
+  .bulk { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+  .expert-card { margin-bottom: 12px; }
+  .expert-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .expert-head img { width: 48px; height: 48px; border-radius: 10px; object-fit: cover; border: 1px solid var(--panel-border); }
+  .expert-head .meta { color: var(--text-dim); font-size: 0.78rem; }
+  .rows { display: grid; gap: 8px; }
+  .row-line { display: grid; grid-template-columns: minmax(150px, 1.4fr) 1fr 1fr; gap: 10px; align-items: center; font-size: 0.85rem; }
+  .row-line .name { display: inline-flex; align-items: center; gap: 8px; }
+  .row-line .name img { width: 26px; height: 26px; border-radius: 6px; }
+  .row-line .cell { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .row-line label { font-size: 0.75rem; color: var(--text-dim); display: inline-flex; align-items: center; gap: 4px; }
+  .row-head { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+  <p><a href="index.html">&larr; All sample pages</a></p>
+  <h1>Expert Calculator</h1>
+  <p class="sub">For each expert, pick the affinity level and the skill levels you have now and the ones you want. The page adds up the Books of Knowledge and expert sigils, with the skill EXP and affinity points. An expert advances at every level that is a multiple of 10 and needs the sigils to go past that level. Tick Advanced for an expert that has already advanced at that level, or to advance at the goal level. The talent costs nothing, because it levels with the relationship. Nothing is saved, and reloading the page clears your choices.</p>
+
+  <div class="card">
+    <div class="bulk">
+      <button type="button" id="reset">Reset all</button>
+    </div>
+  </div>
+
+  <h2>Results</h2>
+  <div class="grid" id="stats"></div>
+  <div class="card scroll" id="resources-card"></div>
+  <h2>By expert</h2>
+  <div class="card scroll" id="experts-card"></div>
+
+  <h2>Experts</h2>
+  <div id="expert-list"></div>
+
+<script id="expert-data" type="application/json">{"experts":[{"id":"cyrille","name":"Cyrille","img":"/images/experts/Cyrille/Cyrille.png","title":"Bear Huntress","specialty":"Bear Hunt","levels":[{"affinity":1000},{"affinity":200},{"affinity":210},{"affinity":220},{"affinity":230},{"affinity":240},{"affinity":260},{"affinity":280},{"affinity":300},{"affinity":320,"sigils":5},{"affinity":340},{"affinity":360},{"affinity":380},{"affinity":400},{"affinity":420},{"affinity":440},{"affinity":460},{"affinity":480},{"affinity":500},{"affinity":520,"sigils":10},{"affinity":540},{"affinity":560},{"affinity":580},{"affinity":600},{"affinity":620},{"affinity":640},{"affinity":660},{"affinity":680},{"affinity":700},{"affinity":730,"sigils":15},{"affinity":760},{"affinity":790},{"affinity":820},{"affinity":850},{"affinity":880},{"affinity":910},{"affinity":940},{"affinity":970},{"affinity":1000},{"affinity":1040,"sigils":20},{"affinity":1080},{"affinity":1120},{"affinity":1160},{"affinity":1200},{"affinity":1240},{"affinity":1280},{"affinity":1320},{"affinity":1360},{"affinity":1400},{"affinity":1450,"sigils":25},{"affinity":1500},{"affinity":1550},{"affinity":1600},{"affinity":1650},{"affinity":1700},{"affinity":1750},{"affinity":1800},{"affinity":1850},{"affinity":1900},{"affinity":1950,"sigils":30},{"affinity":2000},{"affinity":2050},{"affinity":2100},{"affinity":2150},{"affinity":2200},{"affinity":2250},{"affinity":2300},{"affinity":2350},{"affinity":2400},{"affinity":2450,"sigils":35},{"affinity":2500},{"affinity":2550},{"affinity":2600},{"affinity":2650},{"affinity":2700},{"affinity":2750},{"affinity":2800},{"affinity":2850},{"affinity":2900},{"affinity":2950,"sigils":40},{"affinity":3000},{"affinity":3050},{"affinity":3100},{"affinity":3150},{"affinity":3200},{"affinity":3250},{"affinity":3300},{"affinity":3350},{"affinity":3400},{"affinity":3450,"sigils":45},{"affinity":3500},{"affinity":3550},{"affinity":3600},{"affinity":3650},{"affinity":3700},{"affinity":3750},{"affinity":3800},{"affinity":3850},{"affinity":3900},{"affinity":3950,"sigils":50}],"skills":[{"name":"Entrapment","img":"/images/experts/Cyrille/skills/Cyrille-Entrapment.png","max":10,"costs":[[0,0],[3600,70],[7200,140],[10800,210],[14400,280],[18000,350],[21600,420],[25200,490],[28800,560],[32400,630]]},{"name":"Scavenging","img":"/images/experts/Cyrille/skills/Cyrille-Scavenging.png","max":5,"costs":[[0,0],[27600,400],[55200,800],[110400,1600],[220800,3200]]},{"name":"Weapon Master","img":"/images/experts/Cyrille/skills/Cyrille-WeaponMaster.png","max":5,"costs":[[0,0],[43200,500],[86400,1000],[172800,2000],[345600,4000]]},{"name":"Ursa's Bane","img":"/images/experts/Cyrille/skills/Cyrille-UrsaSBane.png","max":10,"costs":[[0,0],[10200,100],[20400,200],[30600,300],[41400,400],[51600,500],[61800,600],[72600,700],[82800,800],[93000,900]]}]},{"id":"agnes","name":"Agnes","img":"/images/experts/Agnes/Agnes.png","title":"Elite Politician","specialty":"City Economy","levels":[{"affinity":1000},{"affinity":240},{"affinity":260},{"affinity":270},{"affinity":280},{"affinity":290},{"affinity":320},{"affinity":340},{"affinity":360},{"affinity":390,"sigils":5},{"affinity":410},{"affinity":440},{"affinity":460},{"affinity":480},{"affinity":510},{"affinity":530},{"affinity":560},{"affinity":580},{"affinity":600},{"affinity":630,"sigils":10},{"affinity":650},{"affinity":680},{"affinity":700},{"affinity":720},{"affinity":750},{"affinity":770},{"affinity":800},{"affinity":820},{"affinity":840},{"affinity":880,"sigils":15},{"affinity":920},{"affinity":950},{"affinity":990},{"affinity":1020},{"affinity":1060},{"affinity":1100},{"affinity":1130},{"affinity":1170},{"affinity":1200},{"affinity":1250,"sigils":20},{"affinity":1300},{"affinity":1350},{"affinity":1400},{"affinity":1440},{"affinity":1490},{"affinity":1540},{"affinity":1590},{"affinity":1640},{"affinity":1680},{"affinity":1740,"sigils":25},{"affinity":1800},{"affinity":1860},{"affinity":1920},{"affinity":1980},{"affinity":2040},{"affinity":2100},{"affinity":2160},{"affinity":2220},{"affinity":2280},{"affinity":2340,"sigils":30},{"affinity":2400},{"affinity":2460},{"affinity":2520},{"affinity":2580},{"affinity":2640},{"affinity":2700},{"affinity":2760},{"affinity":2820},{"affinity":2880},{"affinity":2940,"sigils":35},{"affinity":3000},{"affinity":3060},{"affinity":3120},{"affinity":3180},{"affinity":3240},{"affinity":3300},{"affinity":3360},{"affinity":3420},{"affinity":3480},{"affinity":3540,"sigils":40},{"affinity":3600},{"affinity":3660},{"affinity":3720},{"affinity":3780},{"affinity":3840},{"affinity":3900},{"affinity":3960},{"affinity":4020},{"affinity":4080},{"affinity":4140,"sigils":45},{"affinity":4200},{"affinity":4260},{"affinity":4320},{"affinity":4380},{"affinity":4440},{"affinity":4500},{"affinity":4560},{"affinity":4620},{"affinity":4680},{"affinity":4740,"sigils":50}],"skills":[{"name":"Efficient Recon","img":"/images/experts/Agnes/skills/Agnes-EfficientRecon.png","max":5,"costs":[[0,0],[43200,500],[86400,1000],[172800,2000],[345600,4000]]},{"name":"Optimization","img":"/images/experts/Agnes/skills/Agnes-Optimization.png","max":5,"costs":[[0,0],[34200,400],[69000,800],[138000,1600],[276000,3200]]},{"name":"Project Management","img":"/images/experts/Agnes/skills/Agnes-ProjectManagement.png","max":5,"costs":[[0,0],[13800,200],[27600,400],[55200,800],[110400,1600]]},{"name":"Covert Knowledge","img":"/images/experts/Agnes/skills/Agnes-CovertKnowledge.png","max":10,"costs":[[0,0],[10200,100],[20400,200],[30600,300],[41400,400],[51600,500],[61800,600],[72600,700],[82800,800],[93000,900]]}]},{"id":"holger","name":"Holger","img":"/images/experts/Holger/Holger.png","title":"Arena Legend","specialty":"Arena","levels":[{"affinity":1000},{"affinity":600},{"affinity":630},{"affinity":660},{"affinity":690},{"affinity":720},{"affinity":780},{"affinity":840},{"affinity":900},{"affinity":960,"sigils":8},{"affinity":1020},{"affinity":1080},{"affinity":1140},{"affinity":1200},{"affinity":1260},{"affinity":1320},{"affinity":1380},{"affinity":1440},{"affinity":1500},{"affinity":1560,"sigils":16},{"affinity":1620},{"affinity":1680},{"affinity":1740},{"affinity":1800},{"affinity":1860},{"affinity":1920},{"affinity":1980},{"affinity":2040},{"affinity":2100},{"affinity":2190,"sigils":24},{"affinity":2280},{"affinity":2370},{"affinity":2460},{"affinity":2550},{"affinity":2640},{"affinity":2730},{"affinity":2820},{"affinity":2910},{"affinity":3000},{"affinity":3120,"sigils":32},{"affinity":3240},{"affinity":3360},{"affinity":3480},{"affinity":3600},{"affinity":3720},{"affinity":3840},{"affinity":3960},{"affinity":4080},{"affinity":4200},{"affinity":4350,"sigils":40},{"affinity":4500},{"affinity":4650},{"affinity":4800},{"affinity":4950},{"affinity":5100},{"affinity":5250},{"affinity":5400},{"affinity":5550},{"affinity":5700},{"affinity":5850,"sigils":48},{"affinity":6000},{"affinity":6150},{"affinity":6300},{"affinity":6450},{"affinity":6600},{"affinity":6750},{"affinity":6900},{"affinity":7050},{"affinity":7200},{"affinity":7350,"sigils":56},{"affinity":7500},{"affinity":7650},{"affinity":7800},{"affinity":7950},{"affinity":8100},{"affinity":8250},{"affinity":8400},{"affinity":8550},{"affinity":8700},{"affinity":8850,"sigils":64},{"affinity":9000},{"affinity":9150},{"affinity":9300},{"affinity":9450},{"affinity":9600},{"affinity":9750},{"affinity":9900},{"affinity":10050},{"affinity":10200},{"affinity":10350,"sigils":72},{"affinity":10500},{"affinity":10650},{"affinity":10800},{"affinity":10950},{"affinity":11100},{"affinity":11250},{"affinity":11400},{"affinity":11550},{"affinity":11700},{"affinity":11850,"sigils":80}],"skills":[{"name":"Arena Elite","img":"/images/experts/Holger/skills/Holger-ArenaElite.png","max":10,"costs":[[0,0],[82800,600],[165600,1200],[248400,1800],[331800,2400],[414600,3000],[497400,3600],[580200,4200],[663600,4800],[746400,5400]]},{"name":"Crowd Pleaser","img":"/images/experts/Holger/skills/Holger-CrowdPleaser.png","max":10,"costs":[[0,0],[30600,300],[61800,600],[93000,900],[124200,1200],[155400,1500],[186600,1800],[217200,2100],[248400,2400],[279600,2700]]},{"name":"Arena Star","img":"/images/experts/Holger/skills/Holger-ArenaStar.png","max":10,"costs":[[0,0],[30600,300],[61800,600],[93000,900],[124200,1200],[155400,1500],[186600,1800],[217200,2100],[248400,2400],[279600,2700]]},{"name":"Legacy","img":"/images/experts/Holger/skills/Holger-Legacy.png","max":10,"costs":[[0,0],[82800,600],[165600,1200],[248400,1800],[331800,2400],[414600,3000],[497400,3600],[580200,4200],[663600,4800],[746400,5400]]}]},{"id":"romulus","name":"Romulus","img":"/images/experts/Romulus/Romulus.png","title":"Military Advisor","specialty":"PvP/Military","levels":[{"affinity":1000},{"affinity":1100},{"affinity":1160},{"affinity":1210},{"affinity":1270},{"affinity":1320},{"affinity":1430},{"affinity":1540},{"affinity":1650},{"affinity":1760,"sigils":20},{"affinity":1870},{"affinity":1980},{"affinity":2090},{"affinity":2200},{"affinity":2310},{"affinity":2420},{"affinity":2530},{"affinity":2640},{"affinity":2750},{"affinity":2860,"sigils":40},{"affinity":2970},{"affinity":3080},{"affinity":3190},{"affinity":3300},{"affinity":3410},{"affinity":3520},{"affinity":3630},{"affinity":3740},{"affinity":3850},{"affinity":4020,"sigils":80},{"affinity":4180},{"affinity":4350},{"affinity":4510},{"affinity":4680},{"affinity":4840},{"affinity":5010},{"affinity":5170},{"affinity":5340},{"affinity":5500},{"affinity":5720,"sigils":120},{"affinity":5940},{"affinity":6160},{"affinity":6380},{"affinity":6600},{"affinity":6820},{"affinity":7040},{"affinity":7260},{"affinity":7480},{"affinity":7700},{"affinity":7980,"sigils":160},{"affinity":8250},{"affinity":8530},{"affinity":8800},{"affinity":9080},{"affinity":9350},{"affinity":9630},{"affinity":9900},{"affinity":10180},{"affinity":10450},{"affinity":10730,"sigils":200},{"affinity":11000},{"affinity":11280},{"affinity":11550},{"affinity":11830},{"affinity":12100},{"affinity":12380},{"affinity":12650},{"affinity":12930},{"affinity":13200},{"affinity":13480,"sigils":240},{"affinity":13750},{"affinity":14030},{"affinity":14300},{"affinity":14580},{"affinity":14850},{"affinity":15130},{"affinity":15400},{"affinity":15680},{"affinity":15950},{"affinity":16230,"sigils":280},{"affinity":16500},{"affinity":16780},{"affinity":17050},{"affinity":17330},{"affinity":17600},{"affinity":17880},{"affinity":18150},{"affinity":18430},{"affinity":18700},{"affinity":18980,"sigils":320},{"affinity":19250},{"affinity":19530},{"affinity":19800},{"affinity":20080},{"affinity":20350},{"affinity":20630},{"affinity":20900},{"affinity":21180},{"affinity":21450},{"affinity":21730,"sigils":360}],"skills":[{"name":"Call of War","img":"/images/experts/Romulus/skills/Romulus-CallOfWar.png","max":10,"costs":[[0,0],[30600,300],[61800,600],[93000,900],[124200,1200],[155400,1500],[186600,1800],[217200,2100],[248400,2400],[279600,2700]]},{"name":"Last Line","img":"/images/experts/Romulus/skills/Romulus-LastLine.png","max":20,"costs":[[0,0],[86400,500],[172800,1000],[259200,1500],[345600,2000],[432000,2500],[518400,3000],[604800,3500],[691200,4000],[777600,4500],[864000,5000],[950400,5500],[1036800,6000],[1209600,7000],[1382400,8000],[1382400,8000],[1555200,9000],[1555200,9000],[1728000,10000],[1728000,10000]]},{"name":"Spirit of Aeetis","img":"/images/experts/Romulus/skills/Romulus-SpiritOfAeetis.png","max":20,"costs":[[0,0],[159000,800],[297600,1500],[436800,2200],[595800,3000],[754800,3800],[894000,4500],[1033200,5200],[1192200,6000],[1351200,6800],[1490400,7500],[1629000,8200],[1788000,9000],[2086200,10500],[2384400,12000],[2384400,12000],[2682600,13500],[2682600,13500],[2980800,15000],[2980800,15000]]},{"name":"One Heart","img":"/images/experts/Romulus/skills/Romulus-OneHeart.png","max":20,"costs":[[0,0],[179400,800],[336600,1500],[493800,2200],[673800,3000],[853200,3800],[1010400,4500],[1167600,5200],[1347600,6000],[1527600,6800],[1684800,7500],[1842000,8200],[2021400,9000],[2358600,10500],[2695200,12000],[2695200,12000],[3032400,13500],[3032400,13500],[3369600,15000],[3369600,15000]]}]},{"id":"baldur","name":"Baldur","img":"/images/experts/Baldur/Baldur.png","title":"Negotiator","specialty":"Alliance Events","levels":[{"affinity":1000},{"affinity":400},{"affinity":420},{"affinity":440},{"affinity":460},{"affinity":480},{"affinity":520},{"affinity":560},{"affinity":600},{"affinity":640,"sigils":6},{"affinity":680},{"affinity":720},{"affinity":760},{"affinity":800},{"affinity":840},{"affinity":880},{"affinity":920},{"affinity":960},{"affinity":1000},{"affinity":1040,"sigils":12},{"affinity":1080},{"affinity":1120},{"affinity":1160},{"affinity":1200},{"affinity":1240},{"affinity":1280},{"affinity":1320},{"affinity":1360},{"affinity":1400},{"affinity":1460,"sigils":18},{"affinity":1520},{"affinity":1580},{"affinity":1640},{"affinity":1700},{"affinity":1760},{"affinity":1820},{"affinity":1880},{"affinity":1940},{"affinity":2000},{"affinity":2080,"sigils":24},{"affinity":2160},{"affinity":2240},{"affinity":2320},{"affinity":2400},{"affinity":2480},{"affinity":2560},{"affinity":2640},{"affinity":2720},{"affinity":2800},{"affinity":2900,"sigils":30},{"affinity":3000},{"affinity":3100},{"affinity":3200},{"affinity":3300},{"affinity":3400},{"affinity":3500},{"affinity":3600},{"affinity":3700},{"affinity":3800},{"affinity":3900,"sigils":36},{"affinity":4000},{"affinity":4100},{"affinity":4200},{"affinity":4300},{"affinity":4400},{"affinity":4500},{"affinity":4600},{"affinity":4700},{"affinity":4800},{"affinity":4900,"sigils":42},{"affinity":5000},{"affinity":5100},{"affinity":5200},{"affinity":5300},{"affinity":5400},{"affinity":5500},{"affinity":5600},{"affinity":5700},{"affinity":5800},{"affinity":5900,"sigils":48},{"affinity":6000},{"affinity":6100},{"affinity":6200},{"affinity":6300},{"affinity":6400},{"affinity":6500},{"affinity":6600},{"affinity":6700},{"affinity":6800},{"affinity":6900,"sigils":54},{"affinity":7000},{"affinity":7100},{"affinity":7200},{"affinity":7300},{"affinity":7400},{"affinity":7500},{"affinity":7600},{"affinity":7700},{"affinity":7800},{"affinity":7900,"sigils":60}],"skills":[{"name":"Blazing Sunrise","img":"/images/experts/Baldur/skills/Baldur-BlazingSunrise.png","max":10,"costs":[[0,0],[25800,300],[51600,600],[77400,900],[103200,1200],[129600,1500],[155400,1800],[181200,2100],[207000,2400],[232800,2700]]},{"name":"Honored Conquest","img":"/images/experts/Baldur/skills/Baldur-HonoredConquest.png","max":10,"costs":[[0,0],[25800,300],[51600,600],[77400,900],[103200,1200],[129600,1500],[155400,1800],[181200,2100],[207000,2400],[232800,2700]]},{"name":"Bounty Hunter","img":"/images/experts/Baldur/skills/Baldur-BountyHunter.png","max":10,"costs":[[0,0],[25800,300],[51600,600],[77400,900],[103200,1200],[129600,1500],[155400,1800],[181200,2100],[207000,2400],[232800,2700]]},{"name":"Dawn Hymn","img":"/images/experts/Baldur/skills/Baldur-DawnHymn.png","max":10,"costs":[[0,0],[51600,500],[103200,1000],[155400,1500],[207000,2000],[259200,2500],[310800,3000],[362400,3500],[414600,4000],[466200,4500]]}]},{"id":"fabian","name":"Fabian","img":"/images/experts/Fabian/Fabian.png","title":"Master of Arms","specialty":"Foundry Battle","levels":[{"affinity":1000},{"affinity":1000},{"affinity":1050},{"affinity":1100},{"affinity":1150},{"affinity":1200},{"affinity":1300},{"affinity":1400},{"affinity":1500},{"affinity":1600,"sigils":12},{"affinity":1700},{"affinity":1800},{"affinity":1900},{"affinity":2000},{"affinity":2100},{"affinity":2200},{"affinity":2300},{"affinity":2400},{"affinity":2500},{"affinity":2600,"sigils":24},{"affinity":2700},{"affinity":2800},{"affinity":2900},{"affinity":3000},{"affinity":3100},{"affinity":3200},{"affinity":3300},{"affinity":3400},{"affinity":3500},{"affinity":3650,"sigils":36},{"affinity":3800},{"affinity":3950},{"affinity":4100},{"affinity":4250},{"affinity":4400},{"affinity":4550},{"affinity":4700},{"affinity":4850},{"affinity":5000},{"affinity":5200,"sigils":48},{"affinity":5400},{"affinity":5600},{"affinity":5800},{"affinity":6000},{"affinity":6200},{"affinity":6400},{"affinity":6600},{"affinity":6800},{"affinity":7000},{"affinity":7250,"sigils":60},{"affinity":7500},{"affinity":7750},{"affinity":8000},{"affinity":8250},{"affinity":8500},{"affinity":8750},{"affinity":9000},{"affinity":9250},{"affinity":9500},{"affinity":9750,"sigils":72},{"affinity":10000},{"affinity":10250},{"affinity":10500},{"affinity":10750},{"affinity":11000},{"affinity":11250},{"affinity":11500},{"affinity":11750},{"affinity":12000},{"affinity":12250,"sigils":84},{"affinity":12500},{"affinity":12750},{"affinity":13000},{"affinity":13250},{"affinity":13500},{"affinity":13750},{"affinity":14000},{"affinity":14250},{"affinity":14500},{"affinity":14750,"sigils":96},{"affinity":15000},{"affinity":15250},{"affinity":15500},{"affinity":15750},{"affinity":16000},{"affinity":16250},{"affinity":16500},{"affinity":16750},{"affinity":17000},{"affinity":17250,"sigils":108},{"affinity":17500},{"affinity":17750},{"affinity":18000},{"affinity":18250},{"affinity":18500},{"affinity":18750},{"affinity":19000},{"affinity":19250},{"affinity":19500},{"affinity":19750,"sigils":120}],"skills":[{"name":"Salvager","img":"/images/experts/Fabian/skills/Fabian-Salvager.png","max":10,"costs":[[0,0],[25800,300],[51600,600],[77400,900],[103200,1200],[129600,1500],[155400,1800],[181200,2100],[207000,2400],[232800,2700]]},{"name":"Crisis Rescue","img":"/images/experts/Fabian/skills/Fabian-CrisisRescue.png","max":10,"costs":[[0,0],[33053,500],[107400,1000],[160800,1500],[214800,2000],[268800,2500],[322200,3000],[376200,3500],[429600,4000],[483600,4500]]},{"name":"Heightened Firepower","img":"/images/experts/Fabian/skills/Fabian-HeightenedFirepower.png","max":20,"costs":[[0,0],[27600,200],[69000,500],[96600,700],[138000,1000],[165600,1200],[207000,1500],[234600,1700],[276000,2000],[318000,2300],[345600,2500],[373200,2700],[414600,3000],[483600,3500],[552600,4000],[552600,4000],[621600,4500],[621600,4500],[705000,5100],[705000,5100]]},{"name":"Battle Bulwark","img":"/images/experts/Fabian/skills/Fabian-BattleBulwark.png","max":20,"costs":[[0,0],[46200,300],[108600,700],[155400,1000],[217200,1400],[279600,1800],[326400,2100],[373200,2400],[435000,2800],[497400,3200],[544200,3500],[591000,3800],[652800,4200],[762000,4900],[886200,5700],[886200,5700],[994800,6400],[994800,6400],[1104000,7100],[1104000,7100]]}]},{"id":"valeria","name":"Valeria","img":"/images/experts/Valeria/Valeria.png","title":"High Marshal","specialty":"SvS Battle Phase","levels":[{"affinity":1000},{"affinity":1840},{"affinity":1940},{"affinity":2030},{"affinity":2120},{"affinity":2210},{"affinity":2400},{"affinity":2580},{"affinity":2760},{"affinity":2950,"sigils":20},{"affinity":3130},{"affinity":3320},{"affinity":3500},{"affinity":3680},{"affinity":3870},{"affinity":4050},{"affinity":4240},{"affinity":4420},{"affinity":4600},{"affinity":4790,"sigils":40},{"affinity":4970},{"affinity":5160},{"affinity":5340},{"affinity":5520},{"affinity":5710},{"affinity":5890},{"affinity":6080},{"affinity":6260},{"affinity":6440},{"affinity":6720,"sigils":60},{"affinity":7000},{"affinity":7270},{"affinity":7550},{"affinity":7820},{"affinity":8100},{"affinity":8380},{"affinity":8650},{"affinity":8930},{"affinity":9200},{"affinity":9570,"sigils":80},{"affinity":9940},{"affinity":10310},{"affinity":10680},{"affinity":11040},{"affinity":11410},{"affinity":11780},{"affinity":12150},{"affinity":12520},{"affinity":12880},{"affinity":13340,"sigils":100},{"affinity":13800},{"affinity":14260},{"affinity":14720},{"affinity":15180},{"affinity":15640},{"affinity":16100},{"affinity":16560},{"affinity":17020},{"affinity":17480},{"affinity":17940,"sigils":120},{"affinity":18400},{"affinity":18860},{"affinity":19320},{"affinity":19780},{"affinity":20240},{"affinity":20700},{"affinity":21160},{"affinity":21620},{"affinity":22080},{"affinity":22540,"sigils":140},{"affinity":23000},{"affinity":23460},{"affinity":23920},{"affinity":24380},{"affinity":24840},{"affinity":25300},{"affinity":25760},{"affinity":26220},{"affinity":26680},{"affinity":27140,"sigils":160},{"affinity":27600},{"affinity":28060},{"affinity":28520},{"affinity":28980},{"affinity":29440},{"affinity":29900},{"affinity":30360},{"affinity":30820},{"affinity":31280},{"affinity":31740,"sigils":180},{"affinity":32200},{"affinity":32660},{"affinity":33120},{"affinity":33580},{"affinity":34040},{"affinity":34500},{"affinity":34960},{"affinity":34960},{"affinity":35880},{"affinity":36340,"sigils":200}],"skills":[{"name":"Well Prepared","img":"/images/experts/Valeria/skills/Valeria-WellPrepared.png","max":10,"costs":[[0,0],[43200,500],[86400,1000],[129600,1500],[172800,2000],[216000,2500],[259200,3000],[302400,3500],[345600,4000],[388800,4500]]},{"name":"Radiant Honor","img":"/images/experts/Valeria/skills/Valeria-RadiantHonor.png","max":10,"costs":[[0,0],[60000,500],[120600,1000],[181200,1500],[241800,2000],[302400,2500],[362400,3000],[423000,3500],[483600,4000],[544200,4500]]},{"name":"Battle Concerto","img":"/images/experts/Valeria/skills/Valeria-BattleConcerto.png","max":20,"costs":[[0,0],[110400,800],[207000,1500],[303600,2200],[414600,3000],[525000,3800],[621600,4500],[718800,5200],[829200,6000],[939600,6800],[1036800,7500],[1133400,8200],[1243800,9000],[1451400,10500],[1658400,12000],[1658400,12000],[1866000,13500],[1866000,13500],[2073600,15000],[2073600,15000]]},{"name":"Crushing Force","img":"/images/experts/Valeria/skills/Valeria-CrushingForce.png","max":20,"costs":[[0,0],[124200,800],[232800,1500],[342000,2200],[466200,3000],[591000,3800],[699600,4500],[808200,5200],[933000,6000],[1057200,6800],[1166400,7500],[1275000,8200],[1399200,9000],[1632600,10500],[1866000,12000],[1866000,12000],[2099400,13500],[2099400,13500],[2332800,15000],[2332800,15000]]}]},{"id":"ronne","name":"Ronne","img":"/images/experts/Ronne/Ronne.png","title":"Convoy Queen","specialty":"Tundra Trade Route","levels":[{"affinity":1000},{"affinity":600},{"affinity":630},{"affinity":660},{"affinity":690},{"affinity":720},{"affinity":780},{"affinity":840},{"affinity":900},{"affinity":960,"sigils":8},{"affinity":1020},{"affinity":1080},{"affinity":1140},{"affinity":1200},{"affinity":1260},{"affinity":1320},{"affinity":1380},{"affinity":1440},{"affinity":1500},{"affinity":1560,"sigils":16},{"affinity":1620},{"affinity":1680},{"affinity":1740},{"affinity":1800},{"affinity":1860},{"affinity":1920},{"affinity":1980},{"affinity":2040},{"affinity":2100},{"affinity":2190,"sigils":24},{"affinity":2280},{"affinity":2370},{"affinity":2460},{"affinity":2550},{"affinity":2640},{"affinity":2730},{"affinity":2820},{"affinity":2910},{"affinity":3000},{"affinity":3120,"sigils":32},{"affinity":3240},{"affinity":3360},{"affinity":3480},{"affinity":3600},{"affinity":3720},{"affinity":3840},{"affinity":3960},{"affinity":4080},{"affinity":4200},{"affinity":4350,"sigils":40},{"affinity":4500},{"affinity":4650},{"affinity":4800},{"affinity":4950},{"affinity":5100},{"affinity":5250},{"affinity":5400},{"affinity":5550},{"affinity":5700},{"affinity":5850,"sigils":48},{"affinity":6000},{"affinity":6150},{"affinity":6300},{"affinity":6450},{"affinity":6600},{"affinity":6750},{"affinity":6900},{"affinity":7050},{"affinity":7200},{"affinity":7350,"sigils":56},{"affinity":7500},{"affinity":7650},{"affinity":7800},{"affinity":7950},{"affinity":8100},{"affinity":8250},{"affinity":8400},{"affinity":8550},{"affinity":8700},{"affinity":8850,"sigils":64},{"affinity":9000},{"affinity":9150},{"affinity":9300},{"affinity":9450},{"affinity":9600},{"affinity":9750},{"affinity":9900},{"affinity":10050},{"affinity":10200},{"affinity":10350,"sigils":72},{"affinity":10500},{"affinity":10650},{"affinity":10800},{"affinity":10950},{"affinity":11100},{"affinity":11250},{"affinity":11400},{"affinity":11550},{"affinity":11700},{"affinity":11850,"sigils":80}],"skills":[{"name":"Cartographic Memory","img":"/images/experts/Ronne/skills/Ronne-CartographicMemory.png","max":10,"costs":[[0,0],[25800,300],[51600,600],[77400,900],[103200,1200],[129600,1500],[155400,1800],[181200,2100],[207000,2400],[232800,2700]]},{"name":"Treasure Scent","img":"/images/experts/Ronne/skills/Ronne-TreasureScent.png","max":10,"costs":[[0,0],[36000,300],[72600,600],[108600,900],[145200,1200],[181200,1500],[217200,1800],[253800,2100],[289800,2400],[326400,2700]]},{"name":"Giving Back","img":"/images/experts/Ronne/skills/Ronne-GivingBack.png","max":10,"costs":[[0,0],[82800,600],[165600,1200],[248400,1800],[331800,2400],[414600,3000],[497400,3600],[580200,4200],[663600,4800],[746400,5400]]},{"name":"Gold Class","img":"/images/experts/Ronne/skills/Ronne-GoldClass.png","max":10,"costs":[[0,0],[186600,1200],[373200,2400],[559800,3600],[746400,4800],[933000,6000],[1119600,7200],[1306200,8400],[1492800,9600],[1679400,10800]]}]},{"id":"kathy","name":"Kathy","img":"/images/experts/Kathy/Kathy.png","title":"Mining Specialist","specialty":"Mining Specialist","levels":[{"affinity":1000},{"affinity":900},{"affinity":950},{"affinity":990},{"affinity":1040},{"affinity":1080},{"affinity":1170},{"affinity":1260},{"affinity":1350},{"affinity":1440,"sigils":10},{"affinity":1530},{"affinity":1620},{"affinity":1710},{"affinity":1800},{"affinity":1890},{"affinity":1980},{"affinity":2070},{"affinity":2160},{"affinity":2250},{"affinity":2340,"sigils":20},{"affinity":2430},{"affinity":2520},{"affinity":2610},{"affinity":2700},{"affinity":2790},{"affinity":2880},{"affinity":2970},{"affinity":3060},{"affinity":3150},{"affinity":3290,"sigils":30},{"affinity":3420},{"affinity":3560},{"affinity":3690},{"affinity":3830},{"affinity":3960},{"affinity":4100},{"affinity":4230},{"affinity":4370},{"affinity":4500},{"affinity":4680,"sigils":40},{"affinity":4860},{"affinity":5040},{"affinity":5220},{"affinity":5400},{"affinity":5580},{"affinity":5760},{"affinity":5940},{"affinity":6120},{"affinity":6300},{"affinity":6530,"sigils":50},{"affinity":6750},{"affinity":6980},{"affinity":7200},{"affinity":7430},{"affinity":7650},{"affinity":7880},{"affinity":8100},{"affinity":8330},{"affinity":8550},{"affinity":8780,"sigils":60},{"affinity":9000},{"affinity":9230},{"affinity":9450},{"affinity":9680},{"affinity":9900},{"affinity":10130},{"affinity":10350},{"affinity":10580},{"affinity":10800},{"affinity":11030,"sigils":70},{"affinity":11250},{"affinity":11480},{"affinity":11700},{"affinity":11930},{"affinity":12150},{"affinity":12380},{"affinity":12600},{"affinity":12830},{"affinity":13050},{"affinity":13280,"sigils":80},{"affinity":13500},{"affinity":13730},{"affinity":13950},{"affinity":14180},{"affinity":14400},{"affinity":14630},{"affinity":14850},{"affinity":15080},{"affinity":15300},{"affinity":15530,"sigils":90},{"affinity":15750},{"affinity":15980},{"affinity":16200},{"affinity":16430},{"affinity":16650},{"affinity":16880},{"affinity":17100},{"affinity":17330},{"affinity":17550},{"affinity":17780,"sigils":100}],"skills":[{"name":"Icefire Hunter","img":"/images/experts/Kathy/skills/Kathy-IcefireHunter.png","max":10,"costs":[[0,0],[25800,300],[51600,600],[77400,900],[103200,1200],[129600,1500],[155400,1800],[181200,2100],[207000,2400],[232800,2700]]},{"name":"Valorous Cold","img":"/images/experts/Kathy/skills/Kathy-ValorousCold.png","max":10,"costs":[[0,0],[36000,300],[72600,600],[108600,900],[145200,1200],[181200,1500],[217200,1800],[253800,2100],[289800,2400],[326400,2700]]},{"name":"Winter Treasures","img":"/images/experts/Kathy/skills/Kathy-WinterTreasures.png","max":10,"costs":[[0,0],[138000,1000],[276000,2000],[414600,3000],[552600,4000],[691200,5000],[829200,6000],[967200,7000],[1105800,8000],[1243800,9000]]},{"name":"Efficient Mining","img":"/images/experts/Kathy/skills/Kathy-EfficientMining.png","max":10,"costs":[[0,0],[186600,1200],[373200,2400],[559800,3600],[746400,4800],[933000,6000],[1119600,7200],[1306200,8400],[1492800,9600],[1679400,10800]]}]},{"id":"gareth","name":"Gareth","img":"/images/experts/Gareth/Gareth.png","title":"Ironthorn Chief","specialty":"Troop Survivability","levels":[{"affinity":1000},{"affinity":3000},{"affinity":3150},{"affinity":3300},{"affinity":3450},{"affinity":3600},{"affinity":3900},{"affinity":4200},{"affinity":4500},{"affinity":4800,"sigils":30},{"affinity":5100},{"affinity":5400},{"affinity":5700},{"affinity":6000},{"affinity":6300},{"affinity":6600},{"affinity":6900},{"affinity":7200},{"affinity":7500},{"affinity":7800,"sigils":60},{"affinity":8100},{"affinity":8400},{"affinity":8700},{"affinity":9000},{"affinity":9300},{"affinity":9600},{"affinity":9900},{"affinity":10200},{"affinity":10500},{"affinity":10950,"sigils":120},{"affinity":11400},{"affinity":11850},{"affinity":12300},{"affinity":12750},{"affinity":13200},{"affinity":13650},{"affinity":14100},{"affinity":14550},{"affinity":15000},{"affinity":15600,"sigils":180},{"affinity":16200},{"affinity":16800},{"affinity":17400},{"affinity":18000},{"affinity":18600},{"affinity":19200},{"affinity":19800},{"affinity":20400},{"affinity":21000},{"affinity":21750,"sigils":240},{"affinity":22500},{"affinity":23250},{"affinity":24000},{"affinity":24750},{"affinity":25500},{"affinity":26250},{"affinity":27000},{"affinity":27750},{"affinity":28500},{"affinity":29250,"sigils":300},{"affinity":30000},{"affinity":30750},{"affinity":31500},{"affinity":32250},{"affinity":33000},{"affinity":33750},{"affinity":34500},{"affinity":35250},{"affinity":36000},{"affinity":36750,"sigils":360},{"affinity":37500},{"affinity":38250},{"affinity":39000},{"affinity":39750},{"affinity":40500},{"affinity":41250},{"affinity":42000},{"affinity":42750},{"affinity":43500},{"affinity":44250,"sigils":420},{"affinity":45000},{"affinity":45750},{"affinity":46500},{"affinity":47250},{"affinity":48000},{"affinity":48750},{"affinity":49500},{"affinity":50250},{"affinity":51000},{"affinity":51750,"sigils":480},{"affinity":52500},{"affinity":53250},{"affinity":54000},{"affinity":54750},{"affinity":55500},{"affinity":56250},{"affinity":57000},{"affinity":57750},{"affinity":58500},{"affinity":59250,"sigils":540}],"skills":[{"name":"Gifts of Iron","img":"/images/experts/Gareth/skills/Gareth-GiftsOfIron.png","max":10,"costs":[[0,0],[25800,300],[51600,600],[77400,900],[103200,1200],[129600,1500],[155400,1800],[181200,2100],[207000,2400],[232800,2700]]},{"name":"Porcupine","img":"/images/experts/Gareth/skills/Gareth-Porcupine.png","max":20,"costs":[[0,0],[172800,1250],[345600,2500],[518400,3750],[691200,5000],[864000,6250],[1036800,7500],[1209600,8750],[1382400,10000],[1555200,11250],[1728000,12500],[1900800,13750],[2073600,15000],[2419200,17500],[2764800,20000],[2764800,20000],[3110400,22500],[3110400,22500],[3456000,25000],[3456000,25000]]},{"name":"Undefeated Will","img":"/images/experts/Gareth/skills/Gareth-UndefeatedWill.png","max":20,"costs":[[0,0],[194400,1250],[388800,2500],[583200,3750],[777600,5000],[972000,6250],[1166400,7500],[1360800,8750],[1555200,10000],[1749600,11250],[1944000,12500],[2138400,13750],[2332800,15000],[2721600,17500],[3110400,20000],[3110400,20000],[3499200,22500],[3499200,22500],[3888000,25000],[3888000,25000]]},{"name":"Fearsome Reputation","img":"/images/experts/Gareth/skills/Gareth-FearsomeReputation.png","max":20,"costs":[[0,0],[760200,4000],[1520400,8000],[2280600,12000],[3040800,16000],[3801600,20000],[4561800,24000],[5322000,28000],[6082200,32000],[6842400,36000],[7603200,40000],[8363400,44000],[9123600,48000],[10644000,56000],[12165000,64000],[12165000,64000],[13685400,72000],[13685400,72000],[15206400,80000],[15206400,80000]]}]}],"items":{"book-of-knowledge":{"name":"Book of Knowledge","img":"/images/items/book-of-knowledge.png"},"common-expert-sigil":{"name":"Common Expert Sigil","img":"/images/items/common-expert-sigil.png"}}}</script>
+<script>
+(function () {
+  const DATA = JSON.parse(document.getElementById('expert-data').textContent);
+  const fmt = (n) => n.toLocaleString('en-US');
+  const state = DATA.experts.map((expert) => ({
+    expert,
+    level: { current: 1, goal: 1, currentAdv: false, goalAdv: false },
+    skills: expert.skills.map(() => ({ current: 1, goal: 1 })),
+  }));
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function calculate() {
+    const total = { levels: 0, advancements: 0, skillLevels: 0, sigils: 0, books: 0, exp: 0, affinity: 0 };
+    const items = state.map(({ expert, level, skills }) => {
+      const r = { expert, levels: level.goal - level.current, advancements: 0, skillLevels: 0, sigils: 0, books: 0, exp: 0, affinity: 0 };
+      for (let l = level.current + 1; l <= level.goal; l++) r.affinity += expert.levels[l - 1].affinity;
+      expert.levels.forEach((row, i) => {
+        const n = i + 1;
+        if (row.sigils === undefined) return;
+        const passed = n >= level.current && n < level.goal;
+        const atGoal = n === level.goal && level.goalAdv && row.sigils !== undefined;
+        const done = n === level.current && level.currentAdv;
+        if ((passed || atGoal) && !done) { r.advancements++; r.sigils += row.sigils; }
+      });
+      expert.skills.forEach((skill, i) => {
+        for (let l = skills[i].current + 1; l <= skills[i].goal; l++) { r.skillLevels++; r.exp += skill.costs[l - 1][0]; r.books += skill.costs[l - 1][1]; }
+      });
+      Object.keys(total).forEach((k) => { total[k] += r[k]; });
+      return r;
+    });
+    return { items, total };
+  }
+
+  function renderResults(result) {
+    const stats = document.getElementById('stats');
+    stats.replaceChildren();
+    const t = result.total;
+    [['Books of Knowledge', fmt(t.books)], ['Expert sigils', fmt(t.sigils)], ['Skill EXP', fmt(t.exp)], ['Affinity points', fmt(t.affinity)], ['Affinity levels', fmt(t.levels)], ['Skill levels', fmt(t.skillLevels)], ['Advancements', fmt(t.advancements)]].forEach(([label, value]) => {
+      const box = el('div', 'stat'); box.append(el('div', 'value', value), el('div', 'label', label)); stats.append(box);
+    });
+    const card = document.getElementById('resources-card');
+    card.replaceChildren();
+    const table = el('table');
+    const head = table.createTHead().insertRow();
+    ['Item', 'Amount'].forEach((l, i) => head.append(el('th', i ? 'num' : '', l)));
+    const body = table.createTBody();
+    [['book-of-knowledge', 'Books of Knowledge', t.books], ['common-expert-sigil', 'Expert sigils', t.sigils]].forEach(([id, label, amount]) => {
+      const item = DATA.items[id];
+      const row = body.insertRow();
+      const wrap = el('span', 'mat');
+      const img = el('img'); img.src = '..' + item.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      wrap.append(img, document.createTextNode(label));
+      row.insertCell().append(wrap);
+      const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(amount);
+    });
+    card.append(table);
+
+    const ec = document.getElementById('experts-card');
+    ec.replaceChildren();
+    const et = el('table');
+    const eh = et.createTHead().insertRow();
+    ['Expert', 'Affinity levels', 'Skill levels', 'Books', 'Sigils', 'Skill EXP', 'Affinity points'].forEach((l, i) => eh.append(el('th', i ? 'num' : '', l)));
+    const eb = et.createTBody();
+    result.items.forEach((r) => {
+      if (!r.levels && !r.advancements && !r.skillLevels) return;
+      const row = eb.insertRow();
+      row.insertCell().textContent = r.expert.name;
+      [r.levels, r.skillLevels, r.books, r.sigils, r.exp, r.affinity].forEach((v) => { const c = row.insertCell(); c.className = 'num'; c.textContent = fmt(v); });
+    });
+    if (!eb.rows.length) { const r = eb.insertRow(); const c = r.insertCell(); c.colSpan = 7; c.className = 'note'; c.textContent = 'No expert selected yet.'; }
+    ec.append(et);
+  }
+
+  function select(max, value, label, onChange) {
+    const s = el('select'); s.setAttribute('aria-label', label);
+    for (let l = 1; l <= max; l++) { const o = el('option', '', String(l)); o.value = String(l); s.append(o); }
+    s.value = String(value);
+    s.addEventListener('change', () => onChange(Number(s.value)));
+    return s;
+  }
+
+  function bound(obj, key, v, other) {
+    obj[key] = v;
+    if (key === 'current' && obj.goal < v) obj.goal = v;
+    if (key === 'goal' && obj.current > v) obj.current = v;
+  }
+
+  function renderList() {
+    const holder = document.getElementById('expert-list');
+    holder.replaceChildren();
+    state.forEach((st) => {
+      const { expert, level } = st;
+      const card = el('div', 'card expert-card');
+      const head = el('div', 'expert-head');
+      const img = el('img'); img.src = '..' + expert.img; img.alt = ''; img.onerror = () => { img.style.visibility = 'hidden'; };
+      const info = el('div'); info.append(el('div', '', expert.name), el('div', 'meta', `${expert.title}, ${expert.specialty}`));
+      head.append(img, info); card.append(head);
+      const rows = el('div', 'rows');
+      const hdr = el('div', 'row-line row-head'); ['', 'Current', 'Goal'].forEach((l) => hdr.append(el('div', '', l))); rows.append(hdr);
+
+      const lvRow = el('div', 'row-line');
+      lvRow.append(el('div', 'name', 'Affinity level'));
+      [['current', 'currentAdv'], ['goal', 'goalAdv']].forEach(([key, advKey]) => {
+        const cell = el('div', 'cell');
+        cell.append(select(100, level[key], `${expert.name} level ${key}`, (v) => {
+          bound(level, key, v);
+          if (expert.levels[level.current - 1].sigils === undefined) level.currentAdv = false;
+          if (expert.levels[level.goal - 1].sigils === undefined) level.goalAdv = false;
+          sync();
+        }));
+        if (expert.levels[level[key] - 1].sigils !== undefined) {
+          const label = el('label'); const box = el('input'); box.type = 'checkbox'; box.checked = level[advKey]; box.setAttribute('aria-label', `${expert.name} level ${key} advanced`);
+          box.addEventListener('change', () => { level[advKey] = box.checked; update(); });
+          label.append(box, document.createTextNode('Advanced')); cell.append(label);
+        }
+        lvRow.append(cell);
+      });
+      rows.append(lvRow);
+
+      expert.skills.forEach((skill, i) => {
+        const sk = st.skills[i];
+        const line = el('div', 'row-line');
+        const name = el('div', 'name'); const sImg = el('img'); sImg.src = '..' + skill.img; sImg.alt = ''; sImg.onerror = () => { sImg.style.visibility = 'hidden'; };
+        name.append(sImg, document.createTextNode(`${skill.name} (max ${skill.max})`)); line.append(name);
+        ['current', 'goal'].forEach((key) => {
+          const cell = el('div', 'cell');
+          cell.append(select(skill.max, sk[key], `${expert.name} ${skill.name} ${key}`, (v) => { bound(sk, key, v); sync(); }));
+          line.append(cell);
+        });
+        rows.append(line);
+      });
+      card.append(rows);
+      holder.append(card);
+    });
+  }
+
+  function update() { renderResults(calculate()); }
+  function sync() { renderList(); update(); }
+
+  document.getElementById('reset').addEventListener('click', () => {
+    state.forEach((st) => { st.level = { current: 1, goal: 1, currentAdv: false, goalAdv: false }; st.skills = st.expert.skills.map(() => ({ current: 1, goal: 1 })); });
+    sync();
+  });
+  sync();
+})();
+</script>
+</body>
+</html>
