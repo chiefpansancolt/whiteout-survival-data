@@ -868,6 +868,7 @@ so a data fix changes the result without any code change.
 | `calculateTroops()`           | Troops trained or promoted by each camp, by troop type and tier         |
 | `calculateResearch()`         | Resources, time, and power to upgrade research lines to a goal level    |
 | `calculatePets()`             | Pet food, advancement items, and stat gains to level pets to a goal     |
+| `calculateBuildings()`        | Resources, build time, power, and event points to upgrade buildings     |
 | `calculateExperts()`          | Books of Knowledge and expert sigils to level experts and their skills  |
 
 Every calculator takes how many times each scoring action was done, as counts by day id and then by
@@ -946,6 +947,29 @@ and the result gives the total and the event points (the score times the "Pet ad
 increases by 1" row of SvS, Alliance Showdown, and King of Icefield, which is 50, 30, and 50 for
 each point of score).
 
+`calculateBuildings(goals, options)` takes one entry for each building, `{ id, current, goal }`,
+with the `id` from `buildings()` and the level `label` for `current` (`null` for a building that is
+not built) and `goal`, for example `"30"`, `"30-1"`, or `"FC 3"`. It adds the levels after `current`
+up to `goal`. A level can need other buildings at a level, and the calculator adds the steps of
+those buildings first when they are below that level, so the totals are the true cost.
+`options.buildingLevels` lists the level `label` of the buildings you already have by `id`, and a
+building that is not listed counts as not built. A step that comes from a prerequisite has
+`prerequisite` set to true. The result has the `steps`, the `resources` (Wood, Coal, Iron, Meat,
+Fire Crystals, and Refined Fire Crystals as `itemId` amounts), the `power` gained (the power of each
+level minus the power of the level before it), and the build time.
+`options.constructionSpeedPercent` is the total speed bonus, and the bonuses add up, so 50% turns 10
+hours into 6 hours 40 minutes. `seconds` is the time after the bonus and `baseSeconds` is the time
+before it. `eventPoints.svs` and `eventPoints.kingOfIcefield` score each Fire Crystal and each
+Refined Fire Crystal, read from the scoring rows of the events. Speedups are not a function input:
+the result has `speedupMinutesNeeded`, the minutes that cover the build time, and
+`speedupPointsPerMinute` for SvS and King of Icefield, so the interface multiplies them with the
+minutes the user spends. build time. `eventPoints.hallOfChief` lists each multiplier of power gained
+with the event days that use it. A prerequisite on a building that is not in the data (the Hero Hall
+and the numbered Shelters on some Furnace levels) adds no steps and appears in `unmetPrerequisites`.
+Only the buildings with resource costs can be calculated, so the Daybreak Island buildings throw an
+error, and so does a goal for a building that appears twice, an unknown building or level `label`, a
+goal below the current level, or a negative speed.
+
 `calculateExperts(goals)` takes one entry for each expert, `{ id, level, skills }`, with the `id`
 from `experts()`. `level` is the affinity level range,
 `{ current, goal, currentAdvanced?, goalAdvanced? }`, from 1 to 100, and `skills` is a list of
@@ -988,8 +1012,8 @@ result.event.total; // 521,400: 435,000 base plus 86,400, which is 20% of the 43
 The sample pages `calculator-svs.html`, `calculator-alliance-showdown.html`,
 `calculator-king-of-icefield.html`, `calculator-hall-of-chief.html`, `calculator-chief-gear.html`,
 `calculator-chief-charm.html`, `calculator-troops.html`, `calculator-research.html`,
-`calculator-pets.html`, and `calculator-experts.html` are free plug-and-play versions with the same
-math. They save nothing.
+`calculator-pets.html`, `calculator-experts.html`, and `calculator-buildings.html` are free
+plug-and-play versions with the same math. They save nothing.
 
 ---
 

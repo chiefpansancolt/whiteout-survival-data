@@ -32,6 +32,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   100), the pet advancement score that events count.
 - `experts()`: Gareth's Gifts of Iron books and EXP were swapped on the wiki and are corrected from
   WoS Tools (300 books for level 2, 13,500 in all).
+- `calculateBuildings()`: the resources, build time, power, and SvS, King of Icefield, and Hall of
+  Chief points for upgrading buildings from a current level to a goal level, with the steps of
+  prerequisite buildings added. The sample page `sample/calculator-buildings.html` has the 18
+  buildings with resource costs.
 - `calculateExperts()` and `EXPERT_MAX_LEVEL`: the Books of Knowledge and expert sigils (with the
   skill EXP and affinity points) for leveling experts and their skills from a current level to a
   goal level, with advancements at levels 10 to 100. The sample page
