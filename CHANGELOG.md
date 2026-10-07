@@ -9,6 +9,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- `estimateHeroStats()` and `HERO_STAT_ESTIMATE`: a hero's Exploration and Expedition stats at level
+  80 for a star and tier below 5 stars. It is the WoS Tools Hero Hub formula with the Exploration
+  star growth fitted to Hector's in-game numbers. It is an estimate and has only been checked
+  against Hector at 3.0 to 3.3 stars. The sample page `sample/hero-compare.html` compares two heroes
+  and checks the estimate against in-game numbers you type in.
 - `chiefGear()`: a `score` on every one of the 150 gear rows, the gear score that events count when
   you upgrade a piece. It comes from WoS Tools, and the wiki's event note confirms the scores from
   Common to Legendary. The gear sample page shows it.

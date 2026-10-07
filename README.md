@@ -224,6 +224,26 @@ the Talent tab is empty on the wiki for every Legendary hero except **Jeronimo**
 (Generation 1's two Infantry heroes) — `skills.talent` is `undefined` for every other Legendary hero
 rather than a fabricated empty entry.
 
+The stats stored on a hero are its level 80, 5-star stats. `estimateHeroStats(hero, star, tier)`
+estimates the stats of a hero at level 80 for a lower star, where `star` is 0 to 5 and `tier` is 0
+to 5 inside the star, as the in-game label `star.tier` (3.2 is star 3, tier 2). It returns
+`exploration` and `expedition` stats and `estimated: false` only at 5 stars, where it returns the
+stored stats. `HERO_STAT_ESTIMATE` exports the ranges it accepts.
+
+The formula is the one on the WoS Tools Hero Hub compare tab. It scales a hero's stats by the ratio
+of its own 5-star stats to a reference hero, grows the stat by a step for each star, and adds 14.7%
+of the star's step for each tier. The Exploration star growth is 1.376 and not the 1.4 of WoS Tools,
+fitted to Hector at level 80: his in-game stats at 3.0 are 2,130 attack, 2,765 defense, and 41,569
+health, and the estimate is within 0.3%. The promotion previews of 3.0 to 3.1 and 3.2 to 3.3 (+102
+attack, +133 defense, +1,998 health, +14.31 Expedition) match the tier step too. It is still an
+estimate: it has only been checked against Hector at 3.0 to 3.3, the 3.2 step is about 10% larger in
+the game than the formula gives, and there is no data for other hero levels, so it only covers
+level 80.
+
+The sample page `sample/hero-compare.html` compares two heroes at any star and tier, like the Hero
+Hub compare tab. It also has boxes for your in-game numbers, and shows how far the estimate is from
+them, so you can test the formula against more readings.
+
 Every `HeroSkill` carries its own `levels` array — 5 entries
 (`{ level, manualsRequired, powerGain, starRequired }`), matching the 5 slash-separated values in
 that skill's `description` (e.g. Smith's Hammer Burn: "200%/220%/240%/260%/280%"). `manualsRequired`
