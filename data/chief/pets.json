@@ -156,7 +156,8 @@
             "itemId": "taming-manual",
             "amount": 15
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -295,7 +296,8 @@
             "itemId": "taming-manual",
             "amount": 30
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -437,7 +439,8 @@
             "itemId": "energizing-potion",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -580,7 +583,8 @@
             "itemId": "energizing-potion",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -727,7 +731,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       }
     ]
   },
@@ -887,7 +892,8 @@
             "itemId": "taming-manual",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -1026,7 +1032,8 @@
             "itemId": "taming-manual",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -1169,7 +1176,8 @@
             "itemId": "energizing-potion",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -1312,7 +1320,8 @@
             "itemId": "energizing-potion",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -1459,7 +1468,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -1606,7 +1616,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       }
     ]
   },
@@ -1766,7 +1777,8 @@
             "itemId": "taming-manual",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -1905,7 +1917,8 @@
             "itemId": "taming-manual",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -2048,7 +2061,8 @@
             "itemId": "energizing-potion",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -2191,7 +2205,8 @@
             "itemId": "energizing-potion",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -2338,7 +2353,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -2485,7 +2501,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       }
     ]
   },
@@ -2648,7 +2665,8 @@
             "itemId": "taming-manual",
             "amount": 25
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -2786,7 +2804,8 @@
             "itemId": "taming-manual",
             "amount": 50
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -2929,7 +2948,8 @@
             "itemId": "energizing-potion",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -3072,7 +3092,8 @@
             "itemId": "energizing-potion",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -3219,7 +3240,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -3366,7 +3388,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -3513,7 +3536,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       }
     ]
   },
@@ -3676,7 +3700,8 @@
             "itemId": "taming-manual",
             "amount": 25
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -3814,7 +3839,8 @@
             "itemId": "taming-manual",
             "amount": 50
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -3957,7 +3983,8 @@
             "itemId": "energizing-potion",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -4100,7 +4127,8 @@
             "itemId": "energizing-potion",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -4247,7 +4275,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -4394,7 +4423,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -4541,7 +4571,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       }
     ]
   },
@@ -4704,7 +4735,8 @@
             "itemId": "taming-manual",
             "amount": 30
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -4843,7 +4875,8 @@
             "itemId": "taming-manual",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -4986,7 +5019,8 @@
             "itemId": "energizing-potion",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -5129,7 +5163,8 @@
             "itemId": "energizing-potion",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -5276,7 +5311,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -5423,7 +5459,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -5570,7 +5607,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -5717,7 +5755,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       }
     ]
   },
@@ -5881,7 +5920,8 @@
             "itemId": "taming-manual",
             "amount": 30
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -6020,7 +6060,8 @@
             "itemId": "taming-manual",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -6163,7 +6204,8 @@
             "itemId": "energizing-potion",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -6306,7 +6348,8 @@
             "itemId": "energizing-potion",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -6453,7 +6496,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -6600,7 +6644,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -6747,7 +6792,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -6894,7 +6940,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       }
     ]
   },
@@ -7058,7 +7105,8 @@
             "itemId": "taming-manual",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -7197,7 +7245,8 @@
             "itemId": "taming-manual",
             "amount": 70
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -7340,7 +7389,8 @@
             "itemId": "energizing-potion",
             "amount": 15
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -7483,7 +7533,8 @@
             "itemId": "energizing-potion",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -7630,7 +7681,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -7777,7 +7829,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -7924,7 +7977,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -8071,7 +8125,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       },
       {
         "level": 81,
@@ -8218,7 +8273,8 @@
             "itemId": "strengthening-serum",
             "amount": 80
           }
-        ]
+        ],
+        "advancementScore": 14500
       },
       {
         "level": 91,
@@ -8365,7 +8421,8 @@
             "itemId": "strengthening-serum",
             "amount": 100
           }
-        ]
+        ],
+        "advancementScore": 17500
       }
     ]
   },
@@ -8531,7 +8588,8 @@
             "itemId": "taming-manual",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -8670,7 +8728,8 @@
             "itemId": "taming-manual",
             "amount": 70
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -8813,7 +8872,8 @@
             "itemId": "energizing-potion",
             "amount": 15
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -8956,7 +9016,8 @@
             "itemId": "energizing-potion",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -9103,7 +9164,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -9250,7 +9312,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -9397,7 +9460,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -9544,7 +9608,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       },
       {
         "level": 81,
@@ -9691,7 +9756,8 @@
             "itemId": "strengthening-serum",
             "amount": 80
           }
-        ]
+        ],
+        "advancementScore": 14500
       },
       {
         "level": 91,
@@ -9838,7 +9904,8 @@
             "itemId": "strengthening-serum",
             "amount": 100
           }
-        ]
+        ],
+        "advancementScore": 17500
       }
     ]
   },
@@ -10005,7 +10072,8 @@
             "itemId": "taming-manual",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -10144,7 +10212,8 @@
             "itemId": "taming-manual",
             "amount": 70
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -10287,7 +10356,8 @@
             "itemId": "energizing-potion",
             "amount": 15
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -10430,7 +10500,8 @@
             "itemId": "energizing-potion",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -10577,7 +10648,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -10724,7 +10796,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -10871,7 +10944,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -11018,7 +11092,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       },
       {
         "level": 81,
@@ -11165,7 +11240,8 @@
             "itemId": "strengthening-serum",
             "amount": 80
           }
-        ]
+        ],
+        "advancementScore": 14500
       },
       {
         "level": 91,
@@ -11312,7 +11388,8 @@
             "itemId": "strengthening-serum",
             "amount": 100
           }
-        ]
+        ],
+        "advancementScore": 17500
       }
     ]
   },
@@ -11476,7 +11553,8 @@
             "itemId": "taming-manual",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -11615,7 +11693,8 @@
             "itemId": "taming-manual",
             "amount": 70
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -11758,7 +11837,8 @@
             "itemId": "energizing-potion",
             "amount": 15
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -11901,7 +11981,8 @@
             "itemId": "energizing-potion",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -12048,7 +12129,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -12195,7 +12277,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -12342,7 +12425,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -12489,7 +12573,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       },
       {
         "level": 81,
@@ -12636,7 +12721,8 @@
             "itemId": "strengthening-serum",
             "amount": 80
           }
-        ]
+        ],
+        "advancementScore": 14500
       },
       {
         "level": 91,
@@ -12783,7 +12869,8 @@
             "itemId": "strengthening-serum",
             "amount": 100
           }
-        ]
+        ],
+        "advancementScore": 17500
       }
     ]
   },
@@ -12947,7 +13034,8 @@
             "itemId": "taming-manual",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -13086,7 +13174,8 @@
             "itemId": "taming-manual",
             "amount": 70
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -13229,7 +13318,8 @@
             "itemId": "energizing-potion",
             "amount": 15
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -13372,7 +13462,8 @@
             "itemId": "energizing-potion",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -13519,7 +13610,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -13666,7 +13758,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -13813,7 +13906,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -13960,7 +14054,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       },
       {
         "level": 81,
@@ -14107,7 +14202,8 @@
             "itemId": "strengthening-serum",
             "amount": 80
           }
-        ]
+        ],
+        "advancementScore": 14500
       },
       {
         "level": 91,
@@ -14254,7 +14350,8 @@
             "itemId": "strengthening-serum",
             "amount": 100
           }
-        ]
+        ],
+        "advancementScore": 17500
       }
     ]
   },
@@ -14417,7 +14514,8 @@
             "itemId": "taming-manual",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -14556,7 +14654,8 @@
             "itemId": "taming-manual",
             "amount": 70
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -14699,7 +14798,8 @@
             "itemId": "energizing-potion",
             "amount": 15
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -14842,7 +14942,8 @@
             "itemId": "energizing-potion",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -14989,7 +15090,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -15136,7 +15238,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -15283,7 +15386,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -15430,7 +15534,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       },
       {
         "level": 81,
@@ -15577,7 +15682,8 @@
             "itemId": "strengthening-serum",
             "amount": 80
           }
-        ]
+        ],
+        "advancementScore": 14500
       },
       {
         "level": 91,
@@ -15724,7 +15830,8 @@
             "itemId": "strengthening-serum",
             "amount": 100
           }
-        ]
+        ],
+        "advancementScore": 17500
       }
     ]
   },
@@ -15888,7 +15995,8 @@
             "itemId": "taming-manual",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 500
       },
       {
         "level": 11,
@@ -16027,7 +16135,8 @@
             "itemId": "taming-manual",
             "amount": 70
           }
-        ]
+        ],
+        "advancementScore": 1000
       },
       {
         "level": 21,
@@ -16170,7 +16279,8 @@
             "itemId": "energizing-potion",
             "amount": 15
           }
-        ]
+        ],
+        "advancementScore": 2000
       },
       {
         "level": 31,
@@ -16313,7 +16423,8 @@
             "itemId": "energizing-potion",
             "amount": 35
           }
-        ]
+        ],
+        "advancementScore": 3000
       },
       {
         "level": 41,
@@ -16460,7 +16571,8 @@
             "itemId": "strengthening-serum",
             "amount": 10
           }
-        ]
+        ],
+        "advancementScore": 4500
       },
       {
         "level": 51,
@@ -16607,7 +16719,8 @@
             "itemId": "strengthening-serum",
             "amount": 20
           }
-        ]
+        ],
+        "advancementScore": 6750
       },
       {
         "level": 61,
@@ -16754,7 +16867,8 @@
             "itemId": "strengthening-serum",
             "amount": 40
           }
-        ]
+        ],
+        "advancementScore": 10000
       },
       {
         "level": 71,
@@ -16901,7 +17015,8 @@
             "itemId": "strengthening-serum",
             "amount": 60
           }
-        ]
+        ],
+        "advancementScore": 12000
       },
       {
         "level": 81,
@@ -17048,7 +17163,8 @@
             "itemId": "strengthening-serum",
             "amount": 80
           }
-        ]
+        ],
+        "advancementScore": 14500
       },
       {
         "level": 91,
@@ -17195,7 +17311,8 @@
             "itemId": "strengthening-serum",
             "amount": 100
           }
-        ]
+        ],
+        "advancementScore": 17500
       }
     ]
   }

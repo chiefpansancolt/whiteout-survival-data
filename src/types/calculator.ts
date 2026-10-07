@@ -226,3 +226,55 @@ export interface ResearchCalculation {
   /** The highest level of each building that the steps need, as a level `label` of `buildings()`. */
   buildingRequirements: { id: string; level: string }[];
 }
+
+/** One pet to upgrade. Pets start at level 1. */
+export interface PetGoal {
+  /** The `id` of the pet in `pets()`. */
+  id: string;
+  /** The level the pet is at now, from 1 to its max level. */
+  current: number;
+  /** The level you want. */
+  goal: number;
+  /** True when the pet is already advanced at its current level. Only for a level that is a multiple of 10. */
+  currentAdvanced?: boolean;
+  /** True to advance the pet at the goal level too. Only for a level that is a multiple of 10. */
+  goalAdvanced?: boolean;
+}
+
+/** Event points that the pet advancement score earns, from the "Pet advancement score increases by 1" row of each event. */
+export interface PetEventPoints {
+  svs: number;
+  allianceShowdown: number;
+  kingOfIcefield: number;
+}
+
+export interface PetItemResult {
+  id: string;
+  name: string;
+  /** The levels gained. */
+  levels: number;
+  /** The advancements paid for. */
+  advancements: number;
+  resources: UpgradeMaterial[];
+  /** The gain in Troop Attack in percent. */
+  troopAttack: number;
+  /** The gain in Troop Defense in percent. */
+  troopDefense: number;
+  /** The gain in troops power. */
+  power: number;
+  /** The pet advancement score of the advancements paid for. */
+  advancementScore: number;
+  eventPoints: PetEventPoints;
+}
+
+export interface PetCalculation {
+  items: PetItemResult[];
+  levels: number;
+  advancements: number;
+  resources: UpgradeMaterial[];
+  troopAttack: number;
+  troopDefense: number;
+  power: number;
+  advancementScore: number;
+  eventPoints: PetEventPoints;
+}
