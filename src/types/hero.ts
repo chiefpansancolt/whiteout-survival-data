@@ -127,3 +127,13 @@ export interface Hero {
   /** The 80-level Furnace/XP/Power progression. furnaceLevelRequired and xpRequired are identical across every hero. */
   levels: HeroLevel[];
 }
+
+/** The Widgets that one level of a hero's exclusive weapon costs. The same table applies to every hero that has an exclusive weapon. */
+export interface HeroWidgetLevel {
+  id: string;
+  name: string;
+  /** The exclusive weapon level, from 1 to 10. */
+  level: number;
+  /** Widgets required to reach this level from the previous one. */
+  widgets: number;
+}

@@ -511,3 +511,84 @@ export interface HeroGearCalculation {
   /** The stats of the piece, or `null` when the goal has no `piece`. */
   stats: HeroGearStatsResult | null;
 }
+
+/** A hero star label such as 3.1: the star from 0 to 5 and the tier inside it from 0 to 5. Tier is 0 at 5 stars. */
+export interface HeroStars {
+  star: number;
+  tier: number;
+}
+
+export interface HeroStarsRange {
+  current: HeroStars;
+  goal: HeroStars;
+}
+
+/** One skill of the hero, by `name` from the exploration or expedition skills of `heroes()`. */
+export interface HeroSkillGoal {
+  name: string;
+  /** The skill level the hero has now, from 1 to the last level of the skill. */
+  current: number;
+  /** The skill level you want. */
+  goal: number;
+}
+
+/** The exclusive weapon levels, from 0 (none) to 10. */
+export interface HeroWidgetRange {
+  current: number;
+  goal: number;
+}
+
+/** One hero to upgrade. Leave out a track that does not change. */
+export interface HeroUpgradeGoal {
+  /** The `id` of the hero in `heroes()`. */
+  id: string;
+  stars?: HeroStarsRange;
+  skills?: HeroSkillGoal[];
+  widgets?: HeroWidgetRange;
+}
+
+export interface HeroUpgradeStars {
+  /** The tier steps from the current star label to the goal label. */
+  steps: number;
+  /** The shards of the steps. The shard of the hero and the general shard of its rarity count the same. */
+  shards: number;
+}
+
+export interface HeroUpgradeSkills {
+  levels: number;
+  /** Manuals of each type, as the manual item for the rarity of the hero. */
+  manuals: UpgradeMaterial[];
+}
+
+export interface HeroUpgradeWidgets {
+  levels: number;
+  widgets: number;
+  /** The names of the exclusive weapon skills that the levels unlock. */
+  unlockedSkills: string[];
+}
+
+/** Event points of the shards used to ascend the hero and of the Widgets. */
+export interface HeroUpgradeEventPoints {
+  svs: number;
+  allianceShowdown: number;
+  kingOfIcefield: number;
+  hallOfChief: number;
+}
+
+/** A skill level that needs more stars than the goal reaches. */
+export interface UnmetHeroSkillRequirement {
+  skill: string;
+  level: number;
+  starRequired: number;
+}
+
+export interface HeroUpgradeCalculation {
+  stars: HeroUpgradeStars;
+  skills: HeroUpgradeSkills;
+  widgets: HeroUpgradeWidgets;
+  /** The shards of the general shard item for the rarity of the hero, and the manuals. */
+  resources: UpgradeMaterial[];
+  eventPoints: HeroUpgradeEventPoints;
+  /** Skill levels in the goal that need a higher star than the star goal. Only checked when the goal has `stars`. */
+  unmetRequirements: UnmetHeroSkillRequirement[];
+}

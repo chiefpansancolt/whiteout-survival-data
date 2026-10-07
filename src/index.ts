@@ -2,6 +2,7 @@ export * from './types';
 export * from './modules/buildings';
 export * from './modules/facilities';
 export * from './modules/heroes';
+export * from './modules/hero-widgets';
 export * from './modules/experts';
 export * from './modules/pets';
 export * from './modules/items';

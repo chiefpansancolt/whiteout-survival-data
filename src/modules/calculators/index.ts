@@ -5,6 +5,7 @@ export * from './chief-gear';
 export * from './experts';
 export * from './hall-of-chief';
 export * from './hero-gear';
+export * from './hero-upgrade';
 export * from './king-of-icefield';
 export * from './pets';
 export * from './research';
