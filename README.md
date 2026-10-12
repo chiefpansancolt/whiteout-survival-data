@@ -124,15 +124,18 @@ notes on where the data came from. The counts below are the number of entries ea
 
 ### Events, items, and account
 
-| Factory            | Entries | Description                                                                     | Details                                         |
-| ------------------ | ------- | ------------------------------------------------------------------------------- | ----------------------------------------------- |
-| `events()`         | 65      | Game events with scoring, rewards, and tips                                     | [README](src/modules/events/README.md)          |
-| `eventBuff()`      | 14      | Buff sources that apply in each game mode                                       | [README](src/modules/event-buff/README.md)      |
-| `items()`          | 282     | Item catalog with icons and sources                                             | [README](src/modules/items/README.md)           |
-| `skins()`          | 191     | Cosmetic skins                                                                  | [README](src/modules/skins/README.md)           |
-| `serverTimeline()` | 30      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()` | [README](src/modules/server-timeline/README.md) |
-| `dailies()`        | 21      | Default daily tasks: in-game missions and a daily routine, a partial list       | [README](src/modules/dailies/README.md)         |
-| `vip()`            | 12      | VIP 1 to 12 progression                                                         | [README](src/modules/vip/README.md)             |
+| Factory                | Entries | Description                                                                               | Details                                             |
+| ---------------------- | ------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| `events()`             | 65      | Game events with scoring, rewards, and tips                                               | [README](src/modules/events/README.md)              |
+| `eventBuff()`          | 14      | Buff sources that apply in each game mode                                                 | [README](src/modules/event-buff/README.md)          |
+| `items()`              | 282     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
+| `skins()`              | 191     | Cosmetic skins                                                                            | [README](src/modules/skins/README.md)               |
+| `serverTimeline()`     | 30      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`           | [README](src/modules/server-timeline/README.md)     |
+| `chiefOrders()`        | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                    | [README](src/modules/chief-orders/README.md)        |
+| `castleAppointments()` | 8       | Castle positions and the buffs they give                                                  | [README](src/modules/castle-appointments/README.md) |
+| `presidentSkills()`    | 9       | The President's skills: global perks, Receive Tribute, and the skills that act on a Chief | [README](src/modules/president-skills/README.md)    |
+| `dailies()`            | 21      | Default daily tasks: in-game missions and a daily routine, a partial list                 | [README](src/modules/dailies/README.md)             |
+| `vip()`                | 12      | VIP 1 to 12 progression                                                                   | [README](src/modules/vip/README.md)                 |
 
 ## Calculators
 

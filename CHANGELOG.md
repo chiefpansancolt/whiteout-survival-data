@@ -41,6 +41,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Alliance Tech nodes have a `stat`.
 - Research nodes have a `queue`, and `researchTree()` gives the position and links of every node on
   the seven tabs of the Research tech tree.
+- `chiefOrders()`: the Chief Orders with Contentment cost and cooldown, the three orders that
+  replace others at Fire Crystal level 1, and a helper for the time an order can be used again
+- `presidentSkills()`: the skills of the President with Authority cost and uses, and the global
+  perks with their bonus, duration, and cooldown
+- `castleAppointments()`: the castle positions and the buffs each gives, with the boosted minister
+  values
 - `dailies()`: a default list of daily tasks, with the in-game daily missions that a source names
   and the steps of a daily routine guide. The list is not complete yet.
 - Chief Gear and Chief Charm levels have an `order`, and the 30 speedup items have a `speedup` with

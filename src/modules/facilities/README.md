@@ -39,5 +39,6 @@ Enlistment Office replaces troops lost in battle from a reserve pool once the In
 troops capacity is exceeded. Accumulated Loyalty gates it, and its capacity is four times the
 Infirmary's own.
 
-Only Dawn Academy has an `unlockFurnaceLevel`, 25, because its description is the only source that
-states a Furnace level. The other facilities have none until a source states one.
+Dawn Academy has an `unlockFurnaceLevel` of 25, because its description states a Furnace level. The
+Chief's House has 6, from a Chief Order guide that states the Chief's House opens at Furnace
+level 6. The other facilities have none until a source states one.
