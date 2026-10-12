@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fire Crystal Shard Table Explorer</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --row-hover: #1c2e42;
+    --unlock: #ffb84f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; display: flex; align-items: center; gap: 10px; }
+  h1 img { width: 32px; height: 32px; object-fit: contain; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; max-width: 900px; }
+  .summary { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 10px 16px; min-width: 110px; }
+  .card .value { font-size: 1.3rem; font-weight: 700; }
+  .card .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .card.total { border-color: var(--accent); }
+  .card.total .value { color: var(--accent); }
+  .controls { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 14px; align-items: end; }
+  .controls label { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .controls select { background: var(--panel); color: var(--text); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; font-size: 0.9rem; }
+  .controls button { background: var(--panel); color: var(--accent); border: 1px solid var(--accent); border-radius: 8px; padding: 8px 10px; font-size: 0.9rem; cursor: pointer; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--panel-border); border-radius: 10px; max-width: 900px; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  th, td { border: 1px solid var(--panel-border); padding: 7px 10px; text-align: right; font-size: 0.88rem; }
+  thead th { background: var(--panel); text-align: center; }
+  thead th img { width: 22px; height: 22px; object-fit: contain; vertical-align: middle; margin-right: 6px; }
+  thead tr.resources th { padding: 4px; }
+  thead tr.resources img { margin: 0; width: 26px; height: 26px; }
+  th.group, td.group { text-align: left; background: var(--panel); color: var(--text-dim); text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.04em; }
+  td.label { text-align: left; background: var(--panel); }
+  td.na { color: var(--text-dim); text-align: center; }
+  tbody tr:nth-child(even) td:not(.label):not(.group) { background: var(--row-alt); }
+  tbody tr:hover td:not(.label):not(.group) { background: var(--row-hover); }
+  tr.unlock td { border-bottom: 2px solid var(--unlock); }
+  tr.unlock td.label { color: var(--unlock); font-weight: 700; }
+  tr.extrasTotal td { border-top: 2px solid var(--text-dim); font-weight: 700; }
+  tr.total td { border-top: 2px solid var(--accent); font-weight: 700; }
+  tr.total td.label { color: var(--accent); }
+
+  @page { size: landscape; margin: 12mm; }
+  @media print {
+    body { background: #fff; color: #111; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .controls, .summary, p.sub { display: none; }
+    .table-wrap { border: none; overflow: visible; max-width: none; }
+    th, td { border-color: #999; color: #111; }
+    thead th, th.group, td.group, td.label { background: #eee; color: #111; }
+    tbody tr:nth-child(even) td:not(.label):not(.group) { background: #f6f6f6; }
+    td.na { color: #666; }
+    tr.unlock td.label, tr.total td.label { color: #111; }
+  }
+</style>
+</head>
+<body>
+
+<h1><img id="shard-icon" alt="" />Fire Crystal Shard Table Explorer</h1>
+<p class="sub">From <code>fireCrystalShardTable()</code>. Fire Crystal Shards and Refined Fire Crystals for T11 and T12 troop research. The Unlock row sums the research that unlocks the troop: tiers 1 to 5 for T11 and tier 1 for T12. The extras are the research after that, one row for each research tier. T11 costs no Refined Fire Crystals, so only T12 has that column. Pick T11, T12, or both. A dash means the column has no cost in that row.</p>
+
+<div class="controls">
+  <label>Tiers
+    <select id="tiers">
+      <option value="both">T11 and T12</option>
+      <option value="T11">T11 only</option>
+      <option value="T12">T12 only</option>
+    </select>
+  </label>
+  <button type="button" id="print">Print / Save as PDF</button>
+</div>
+<div class="summary" id="summary"></div>
+<div class="table-wrap"><table id="table"></table></div>
+
+<script id="shard-data" type="application/json">
+{"columns":[{"troopType":"Infantry","tier":"T11","category":"T11 Infantry","resource":"fireCrystalShards","itemName":"Fire Crystal Shard","itemImg":"/images/items/fire-crystal-shard.png"},{"troopType":"Infantry","tier":"T12","category":"T12 Infantry","resource":"fireCrystalShards","itemName":"Fire Crystal Shard","itemImg":"/images/items/fire-crystal-shard.png"},{"troopType":"Infantry","tier":"T12","category":"T12 Infantry","resource":"refinedFireCrystals","itemName":"Refined Fire Crystal","itemImg":"/images/items/refined-fire-crystal.png"},{"troopType":"Lancer","tier":"T11","category":"T11 Lancer","resource":"fireCrystalShards","itemName":"Fire Crystal Shard","itemImg":"/images/items/fire-crystal-shard.png"},{"troopType":"Lancer","tier":"T12","category":"T12 Lancer","resource":"fireCrystalShards","itemName":"Fire Crystal Shard","itemImg":"/images/items/fire-crystal-shard.png"},{"troopType":"Lancer","tier":"T12","category":"T12 Lancer","resource":"refinedFireCrystals","itemName":"Refined Fire Crystal","itemImg":"/images/items/refined-fire-crystal.png"},{"troopType":"Marksman","tier":"T11","category":"T11 Marksman","resource":"fireCrystalShards","itemName":"Fire Crystal Shard","itemImg":"/images/items/fire-crystal-shard.png"},{"troopType":"Marksman","tier":"T12","category":"T12 Marksman","resource":"fireCrystalShards","itemName":"Fire Crystal Shard","itemImg":"/images/items/fire-crystal-shard.png"},{"troopType":"Marksman","tier":"T12","category":"T12 Marksman","resource":"refinedFireCrystals","itemName":"Refined Fire Crystal","itemImg":"/images/items/refined-fire-crystal.png"}],"rows":[{"id":"unlock","name":"Unlock","kind":"unlock","cells":[13421,3080,440,13421,3080,440,13421,3080,440]},{"id":"tier-2","name":"Tier 2","kind":"extras","cells":[null,2180,308,null,2180,308,null,2180,308]},{"id":"tier-3","name":"Tier 3","kind":"extras","cells":[null,975,150,null,975,150,null,975,150]},{"id":"tier-4","name":"Tier 4","kind":"extras","cells":[null,22440,1440,null,22440,1440,null,22440,1440]},{"id":"tier-5","name":"Tier 5","kind":"extras","cells":[null,1829,118,null,1829,118,null,1829,118]},{"id":"tier-6","name":"Tier 6","kind":"extras","cells":[8341,37440,1440,8341,37440,1440,8341,37440,1440]},{"id":"tier-7","name":"Tier 7","kind":"extras","cells":[5552,400,54,5552,400,54,5552,400,54]},{"id":"tier-8","name":"Tier 8","kind":"extras","cells":[null,200,27,null,200,27,null,200,27]},{"id":"extras","name":"Extras","kind":"extrasTotal","cells":[13893,65464,3537,13893,65464,3537,13893,65464,3537]},{"id":"total","name":"Total","kind":"total","cells":[27314,68544,3977,27314,68544,3977,27314,68544,3977]}]}
+</script>
+
+<script>
+  const DATA = JSON.parse(document.getElementById('shard-data').textContent);
+  const tiersSelect = document.getElementById('tiers');
+
+  function fmt(value) {
+    return value.toLocaleString();
+  }
+
+  function cell(value) {
+    if (value === null) return '<td class="na">-</td>';
+    return '<td>' + fmt(value) + '</td>';
+  }
+
+  function icon(name, img) {
+    return '<img src="../..' + img + '" alt="' + name + '" title="' + name + '" onerror="this.style.visibility=\'hidden\'">';
+  }
+
+  function groups(columns, key) {
+    const result = [];
+    columns.forEach((column) => {
+      const label = key(column);
+      const last = result[result.length - 1];
+      if (last && last.label === label) last.span += 1;
+      else result.push({ label, span: 1 });
+    });
+    return result;
+  }
+
+  function view(tiers) {
+    const columns = DATA.columns.map((c, index) => Object.assign({ index }, c)).filter((c) => tiers.includes(c.tier));
+    const rows = DATA.rows
+      .map((row) => Object.assign({}, row, { cells: columns.map((c) => row.cells[c.index]) }))
+      .filter((row) => row.kind !== 'extras' || row.cells.some((value) => value !== null));
+    return { columns, rows };
+  }
+
+  function render() {
+    const tiers = tiersSelect.value === 'both' ? ['T11', 'T12'] : [tiersSelect.value];
+    const { columns, rows } = view(tiers);
+
+    const shard = DATA.columns.find((c) => c.resource === 'fireCrystalShards');
+    const titleIcon = document.getElementById('shard-icon');
+    titleIcon.src = '../..' + shard.itemImg;
+    titleIcon.alt = shard.itemName;
+
+    const distinctItems = [...new Map(columns.map((c) => [c.itemName, c])).values()];
+    const corner = distinctItems.map((c) => icon(c.itemName, c.itemImg)).join('');
+    const head1 = '<tr><th class="group" colspan="2" rowspan="3">' + corner + 'Research</th>' + groups(columns, (c) => c.troopType).map((g) =>
+      '<th colspan="' + g.span + '">' + g.label + '</th>').join('') + '</tr>';
+    const head2 = '<tr>' + groups(columns, (c) => c.troopType + c.tier).map((g) =>
+      '<th colspan="' + g.span + '">' + g.label.slice(-3) + '</th>').join('') + '</tr>';
+    const head3 = '<tr class="resources">' + columns.map((c) => '<th>' + icon(c.itemName, c.itemImg) + '</th>').join('') + '</tr>';
+
+    const extrasCount = rows.filter((r) => r.kind === 'extras').length;
+    let extrasStarted = false;
+    const body = rows.map((row) => {
+      const cells = row.cells.map(cell).join('');
+      if (row.kind === 'extras') {
+        const group = extrasStarted ? '' : '<td class="group" rowspan="' + extrasCount + '">Extras</td>';
+        extrasStarted = true;
+        return '<tr class="extras">' + group + '<td class="label">' + row.name + '</td>' + cells + '</tr>';
+      }
+      const label = row.kind === 'extrasTotal' ? 'Extras total' : row.name;
+      return '<tr class="' + row.kind + '"><td class="label" colspan="2">' + label + '</td>' + cells + '</tr>';
+    }).join('');
+
+    document.getElementById('table').innerHTML = '<thead>' + head1 + head2 + head3 + '</thead><tbody>' + body + '</tbody>';
+
+    const total = rows.find((r) => r.kind === 'total');
+    const sumOf = (resource) => columns.reduce((sum, c, index) => sum + (c.resource === resource ? total.cells[index] : 0), 0);
+    const label = tiers.join(' and ');
+    const card = (value, text, cls) => '<div class="card ' + (cls || '') + '"><div class="value">' + fmt(value) + '</div><div class="label">' + text + '</div></div>';
+    document.getElementById('summary').innerHTML = [
+      card(sumOf('fireCrystalShards'), 'Shards, ' + label, 'total'),
+      card(sumOf('refinedFireCrystals'), 'Refined, ' + label),
+    ].join('');
+  }
+
+  tiersSelect.addEventListener('change', render);
+  document.getElementById('print').addEventListener('click', () => window.print());
+  render();
+</script>
+</body>
+</html>

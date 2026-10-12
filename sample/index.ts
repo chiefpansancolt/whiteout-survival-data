@@ -5,6 +5,7 @@ import {
   chiefGearSlots,
   experts,
   facilities,
+  fireCrystalShardTable,
   fireCrystalTable,
   heroes,
   heroGearEmpowerment,
@@ -169,3 +170,11 @@ console.log(
   'FC 6 to FC 10 columns:',
   fireCrystalTable(undefined, { from: 6, to: 10 }).columns.length,
 );
+
+console.log('\n--- Fire Crystal Shard Table ---');
+const shards = fireCrystalShardTable();
+console.log('columns:', shards.columns.length);
+console.log('T11 Infantry unlock:', shards.rows[0].cells[0]);
+console.log('T11 Infantry total:', shards.rows[shards.rows.length - 1].cells[0]);
+console.log('T11 only columns:', fireCrystalShardTable(undefined, ['T11']).columns.length);
+console.log('T12 Infantry Refined total:', shards.rows[shards.rows.length - 1].cells[2]);
