@@ -101,16 +101,17 @@ notes on where the data came from. The counts below are the number of entries ea
 
 ### Gear, troops, and research
 
-| Factory                 | Entries | Description                             | Details                                               |
-| ----------------------- | ------- | --------------------------------------- | ----------------------------------------------------- |
-| `chiefGearSlots()`      | 6       | Chief Gear equip slots                  | [README](src/modules/chief-gear/README.md)            |
-| `chiefGear()`           | 150     | Chief Gear upgrade table                | [README](src/modules/chief-gear/README.md)            |
-| `chiefCharmSlots()`     | 3       | Chief Charm slots by troop type         | [README](src/modules/chief-charm/README.md)           |
-| `chiefCharm()`          | 75      | Chief Charm upgrade table               | [README](src/modules/chief-charm/README.md)           |
-| `chiefGearConverter()`  | 7       | Chief Gear material exchange rates      | [README](src/modules/chief-gear-converter/README.md)  |
-| `chiefCharmConverter()` | 4       | Chief Charm material exchange rates     | [README](src/modules/chief-charm-converter/README.md) |
-| `troops()`              | 3       | Troop tiers with cost and training time | [README](src/modules/troops/README.md)                |
-| `research()`            | 290     | Research Center tech tree               | [README](src/modules/research/README.md)              |
+| Factory                 | Entries | Description                                        | Details                                               |
+| ----------------------- | ------- | -------------------------------------------------- | ----------------------------------------------------- |
+| `chiefGearSlots()`      | 6       | Chief Gear equip slots                             | [README](src/modules/chief-gear/README.md)            |
+| `chiefGear()`           | 150     | Chief Gear upgrade table                           | [README](src/modules/chief-gear/README.md)            |
+| `chiefCharmSlots()`     | 3       | Chief Charm slots by troop type                    | [README](src/modules/chief-charm/README.md)           |
+| `chiefCharm()`          | 75      | Chief Charm upgrade table                          | [README](src/modules/chief-charm/README.md)           |
+| `chiefGearConverter()`  | 7       | Chief Gear material exchange rates                 | [README](src/modules/chief-gear-converter/README.md)  |
+| `chiefCharmConverter()` | 4       | Chief Charm material exchange rates                | [README](src/modules/chief-charm-converter/README.md) |
+| `troops()`              | 3       | Troop tiers with cost and training time            | [README](src/modules/troops/README.md)                |
+| `research()`            | 290     | Research Center tech tree                          | [README](src/modules/research/README.md)              |
+| `researchTree()`        | 7       | Positions and links of the Research tech tree tabs | [README](src/modules/research-tree/README.md)         |
 
 ### Alliance
 

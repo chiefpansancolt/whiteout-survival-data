@@ -39,6 +39,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Bonuses of research, skins, experts, VIP, and Alliance Tech have a `statKey`, a parsed `amount`
   and `unit`, and the research bonuses have a `totalAmount` that adds up the levels of a node.
   Alliance Tech nodes have a `stat`.
+- Research nodes have a `queue`, and `researchTree()` gives the position and links of every node on
+  the seven tabs of the Research tech tree.
 - Chief Gear and Chief Charm levels have an `order`, and the 30 speedup items have a `speedup` with
   their type and length in minutes. Every speedup type has a 1m, 5m, 1h, 3h, and 8h item. Nine of
   them are placeholders with no icon.

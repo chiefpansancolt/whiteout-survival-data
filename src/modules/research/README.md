@@ -31,12 +31,15 @@ in [How It Works](../../../README.md#how-it-works).
 
 ## Data
 
-The data is in `data/chief/research.json`. Each node has `id`, `name`, `img`, `category`, `tier`,
-and `levels`. A level has `level`, `prerequisites`, `cost`, `bonus`, `power`, and an optional
-`researchTimeSeconds`. The nodes are sourced page by page, like `items()`, because each research
-line has its own detail page with its own cost, time, and bonus table.
+The data is in `data/chief/research.json`. Each node has `id`, `name`, `img`, `category`, `queue`,
+`tier`, and `levels`. A level has `level`, `prerequisites`, `cost`, `bonus`, `power`, and an
+optional `researchTimeSeconds`. The nodes are sourced page by page, like `items()`, because each
+research line has its own detail page with its own cost, time, and bonus table.
 
-`category` has 9 values. `tier` is the position of the node inside its category's own tier count.
+`category` has 9 values. `queue` is `main` for Growth, Economy, and Battle, and `warAcademy` for the
+six T11 and T12 categories, because the game researches the two groups in separate queues. `tier` is
+the position of the node inside its category's own tier count. `researchTree()` gives the position
+of each node in a tree.
 
 | Category                               | Nodes   | Tiers |
 | -------------------------------------- | ------- | ----- |
@@ -132,6 +135,10 @@ no icon exists to reference.
 Each troop type's 4 tier 2 Molten X I items also require that troop type's Exalted capstone at level
 1, next to their War Academy building gate. This comes from in-game knowledge. The wiki's
 Prerequisites column omits it for these 12 nodes.
+
+Tool Enhancement I also requires Tooling Up I at level 1, next to Ward Expansion I and Camp
+Expansion I. The wiki's Prerequisites column omits it. It was added at the request of the package
+owner, so that Tooling Up I is linked in the tree.
 
 Each troop type's 4 tier 4 Molten X II items (`Molten Blades II` and so on) require that troop
 type's tier 3 node (`indomitable-wall`, `starfire`, or `meridian-phalanx`) at level 1. This was
