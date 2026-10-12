@@ -82,21 +82,32 @@ describe('Research tech tree', () => {
     }
   });
 
-  it('leaves researchTimeSeconds unset only for the 78 levels of the 18 Exalted nodes', () => {
-    const withoutTime = research()
+  it('gives the 75 levels of the 15 five-level T12 tier 1 lines a time of 0, because they upgrade instantly', () => {
+    const instant = research()
       .get()
-      .filter((n) => n.levels.some((l) => l.researchTimeSeconds === undefined));
-    expect(withoutTime).toHaveLength(18);
-    expect(withoutTime.every((n) => n.id.startsWith('exalted-'))).toBe(true);
-    expect(
-      withoutTime.every((n) => n.levels.every((l) => l.researchTimeSeconds === undefined)),
-    ).toBe(true);
-    expect(withoutTime.reduce((sum, n) => sum + n.levels.length, 0)).toBe(78);
+      .filter((n) => n.category.startsWith('T12 ') && n.tier === 1 && n.levels.length === 5);
+    expect(instant).toHaveLength(15);
+    expect(instant.every((n) => n.id.startsWith('exalted-'))).toBe(true);
+    for (const node of instant) {
+      expect(node.levels.map((l) => l.researchTimeSeconds)).toEqual([0, 0, 0, 0, 0]);
+    }
   });
 
-  it('leaves researchTimeSeconds unset for T12 nodes with no Time value on the source page', () => {
-    const exaltedBlunderbuss = research().find('exalted-blunderbuss')!;
-    expect(exaltedBlunderbuss.levels[0].researchTimeSeconds).toBeUndefined();
+  it('gives the three Exalted capstones a time of 0, because they only mark the five lines as complete', () => {
+    for (const id of ['exalted-infantry', 'exalted-lancer', 'exalted-marksman']) {
+      expect(
+        research()
+          .find(id)!
+          .levels.map((l) => l.researchTimeSeconds),
+      ).toEqual([0]);
+    }
+  });
+
+  it('gives every level of every node a researchTimeSeconds', () => {
+    const levels = research()
+      .get()
+      .flatMap((n) => n.levels);
+    expect(levels.every((l) => l.researchTimeSeconds !== undefined)).toBe(true);
   });
 
   it("resolves Solar Supremacy's Molten X II references now that those pages are published", () => {

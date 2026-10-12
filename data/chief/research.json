@@ -47942,6 +47942,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Health",
@@ -47971,6 +47972,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Health",
@@ -48000,6 +48002,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Health",
@@ -48029,6 +48032,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Health",
@@ -48058,6 +48062,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Health",
@@ -48108,6 +48113,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Defense",
@@ -48137,6 +48143,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Defense",
@@ -48166,6 +48173,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Defense",
@@ -48195,6 +48203,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Defense",
@@ -48224,6 +48233,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Defense",
@@ -48269,6 +48279,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -48298,6 +48309,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -48333,6 +48345,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -48362,6 +48375,7 @@
             "amount": 175
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -48391,6 +48405,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -48443,6 +48458,7 @@
           }
         ],
         "cost": [],
+        "researchTimeSeconds": 0,
         "bonus": [],
         "power": 8000000
       }
@@ -48484,6 +48500,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Attack",
@@ -48513,6 +48530,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Attack",
@@ -48542,6 +48560,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Attack",
@@ -48571,6 +48590,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Attack",
@@ -48600,6 +48620,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Attack",
@@ -48650,6 +48671,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Lethality",
@@ -48679,6 +48701,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Lethality",
@@ -48708,6 +48731,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Lethality",
@@ -48737,6 +48761,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Lethality",
@@ -48766,6 +48791,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Infantry Lethality",
@@ -73653,6 +73679,7 @@
           }
         ],
         "cost": [],
+        "researchTimeSeconds": 0,
         "bonus": [],
         "power": 8000000
       }
@@ -73694,6 +73721,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Attack",
@@ -73723,6 +73751,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Attack",
@@ -73752,6 +73781,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Attack",
@@ -73781,6 +73811,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Attack",
@@ -73810,6 +73841,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Attack",
@@ -73860,6 +73892,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Health",
@@ -73889,6 +73922,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Health",
@@ -73918,6 +73952,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Health",
@@ -73947,6 +73982,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Health",
@@ -73976,6 +74012,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Health",
@@ -74026,6 +74063,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Defense",
@@ -74055,6 +74093,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Defense",
@@ -74084,6 +74123,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Defense",
@@ -74113,6 +74153,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Defense",
@@ -74142,6 +74183,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Defense",
@@ -74187,6 +74229,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -74216,6 +74259,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -74251,6 +74295,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -74280,6 +74325,7 @@
             "amount": 175
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -74309,6 +74355,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -74359,6 +74406,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Lethality",
@@ -74388,6 +74436,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Lethality",
@@ -74417,6 +74466,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Lethality",
@@ -74446,6 +74496,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Lethality",
@@ -74475,6 +74526,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Lancer Lethality",
@@ -99360,6 +99412,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Health",
@@ -99389,6 +99442,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Health",
@@ -99418,6 +99472,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Health",
@@ -99447,6 +99502,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Health",
@@ -99476,6 +99532,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Health",
@@ -99526,6 +99583,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Lethality",
@@ -99555,6 +99613,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Lethality",
@@ -99584,6 +99643,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Lethality",
@@ -99613,6 +99673,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Lethality",
@@ -99642,6 +99703,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Lethality",
@@ -99692,6 +99754,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Attack",
@@ -99721,6 +99784,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Attack",
@@ -99750,6 +99814,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Attack",
@@ -99779,6 +99844,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Attack",
@@ -99808,6 +99874,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Attack",
@@ -99860,6 +99927,7 @@
           }
         ],
         "cost": [],
+        "researchTimeSeconds": 0,
         "bonus": [],
         "power": 8000000
       }
@@ -99896,6 +99964,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -99925,6 +99994,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -99960,6 +100030,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -99989,6 +100060,7 @@
             "amount": 175
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -100018,6 +100090,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Troops Deployment Capacity",
@@ -100068,6 +100141,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Defense",
@@ -100097,6 +100171,7 @@
             "amount": 70
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Defense",
@@ -100126,6 +100201,7 @@
             "amount": 105
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Defense",
@@ -100155,6 +100231,7 @@
             "amount": 140
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Defense",
@@ -100184,6 +100261,7 @@
             "amount": 210
           }
         ],
+        "researchTimeSeconds": 0,
         "bonus": [
           {
             "stat": "Marksman Defense",

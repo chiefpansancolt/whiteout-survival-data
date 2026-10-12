@@ -87,9 +87,16 @@ describe('calculateResearch', () => {
     expect(amountOf(result.resources, 'meat')).toBe(8700 + 12000);
   });
 
-  it('counts the steps that have no research time in the data', () => {
+  it('counts the capstone of the Exalted lines as a step with a time of 0', () => {
+    const result = calculateResearch([{ id: 'exalted-infantry', current: 0, goal: 1 }]);
+    expect(result.stepsWithoutTime).toBe(0);
+    expect(result.baseSeconds).toBe(0);
+    expect(result.steps).toBe(1);
+  });
+
+  it('does not count an instant upgrade as a step without time', () => {
     const result = calculateResearch([{ id: 'exalted-armament', current: 0, goal: 2 }]);
-    expect(result.stepsWithoutTime).toBe(2);
+    expect(result.stepsWithoutTime).toBe(0);
     expect(result.baseSeconds).toBe(0);
     expect(result.steps).toBe(2);
   });
