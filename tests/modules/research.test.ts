@@ -72,6 +72,28 @@ describe('Research tech tree', () => {
     expect(allItemIds.every((id) => items().find(id) !== undefined)).toBe(true);
   });
 
+  it('gives level 1 of Bulwark Formations IV and Picket Lines IV the time of 08:53:20', () => {
+    for (const id of ['bulwark-formations-iv', 'picket-lines-iv']) {
+      expect(
+        research()
+          .find(id)!
+          .levels.map((l) => l.researchTimeSeconds),
+      ).toEqual([32000, 41600, 64000, 96000, 240480]);
+    }
+  });
+
+  it('leaves researchTimeSeconds unset only for the 78 levels of the 18 Exalted nodes', () => {
+    const withoutTime = research()
+      .get()
+      .filter((n) => n.levels.some((l) => l.researchTimeSeconds === undefined));
+    expect(withoutTime).toHaveLength(18);
+    expect(withoutTime.every((n) => n.id.startsWith('exalted-'))).toBe(true);
+    expect(
+      withoutTime.every((n) => n.levels.every((l) => l.researchTimeSeconds === undefined)),
+    ).toBe(true);
+    expect(withoutTime.reduce((sum, n) => sum + n.levels.length, 0)).toBe(78);
+  });
+
   it('leaves researchTimeSeconds unset for T12 nodes with no Time value on the source page', () => {
     const exaltedBlunderbuss = research().find('exalted-blunderbuss')!;
     expect(exaltedBlunderbuss.levels[0].researchTimeSeconds).toBeUndefined();

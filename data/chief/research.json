@@ -8583,6 +8583,7 @@
             "amount": 6400
           }
         ],
+        "researchTimeSeconds": 32000,
         "bonus": [
           {
             "stat": "Lancer Defense",
@@ -9992,6 +9993,7 @@
             "amount": 6400
           }
         ],
+        "researchTimeSeconds": 32000,
         "bonus": [
           {
             "stat": "Marksman Defense",
