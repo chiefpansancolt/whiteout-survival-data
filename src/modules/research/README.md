@@ -87,10 +87,14 @@ not use fuzzy matching.
 | `Helios Marksmen`           | `Helios Marksman`     |
 | `Survival Expansion`        | `Survival Techniques` |
 
-### Missing research time
+### Research time
 
-`researchTimeSeconds` is optional. The source pages of the 18 Exalted nodes have no Time value, so
-all 78 levels of those nodes (for example `exalted-blunderbuss`) have none.
+`researchTimeSeconds` is optional, and every level in the data has one. The source pages of the T12
+tier 1 Exalted nodes have no Time value, because the wiki column repeats the power. The 15 lines
+with five levels (for example `exalted-blunderbuss`) upgrade instantly, as the package owner states,
+so all 75 levels have `researchTimeSeconds` 0. The three Exalted capstones, `exalted-infantry`,
+`exalted-lancer`, and `exalted-marksman`, are placeholders that unlock once the five lines of the
+troop type are complete. They take no time, so their level has `researchTimeSeconds` 0 too.
 
 Level 1 of `bulwark-formations-iv` and `picket-lines-iv` has the time 32,000 seconds. The wiki
 writes it as `08:53::20`, with two colons, on both pages. The package reads it as `08:53:20`,

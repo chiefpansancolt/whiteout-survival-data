@@ -72,6 +72,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - The Daybreak Island decorations Hero’s Sanctum and Floating Market have their names spelled
   correctly.
 - Level 1 of the research nodes Bulwark Formations IV and Picket Lines IV has its research time.
+- The T12 tier 1 Exalted research lines and their capstones have a research time of 0, because they
+  upgrade instantly.
 
 ## [0.1.0] - 2026-10-07
 
