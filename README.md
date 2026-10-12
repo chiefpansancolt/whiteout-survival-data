@@ -107,6 +107,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | ----------------------- | ------- | -------------------------------------------------------------------- | ----------------------------------------------------- |
 | `chiefGearSlots()`      | 6       | Chief Gear equip slots                                               | [README](src/modules/chief-gear/README.md)            |
 | `chiefGear()`           | 150     | Chief Gear upgrade table                                             | [README](src/modules/chief-gear/README.md)            |
+| `chiefGearSetBonuses()` | 14      | The set bonus of each Chief Gear tier, with `chiefGearSetBonus()`    | [README](src/modules/chief-gear/README.md)            |
 | `chiefCharmSlots()`     | 3       | Chief Charm slots by troop type                                      | [README](src/modules/chief-charm/README.md)           |
 | `chiefCharm()`          | 75      | Chief Charm upgrade table                                            | [README](src/modules/chief-charm/README.md)           |
 | `chiefGearConverter()`  | 7       | Chief Gear material exchange rates                                   | [README](src/modules/chief-gear-converter/README.md)  |

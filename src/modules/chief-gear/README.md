@@ -6,7 +6,12 @@ through. Use it to look up the materials, stat gain, power, and score of each up
 ## Usage
 
 ```ts
-import { chiefGear, chiefGearImage, chiefGearSlots } from "whiteout-survival-data";
+import {
+  chiefGear,
+  chiefGearImage,
+  chiefGearSetBonus,
+  chiefGearSlots,
+} from "whiteout-survival-data";
 
 // Slots that buff Infantry
 const infantrySlots = chiefGearSlots().byTroopType("Infantry").get();
@@ -22,6 +27,18 @@ console.log(step?.materials); // [{ itemId: 'hardened-alloy', amount: 1500 }, ..
 const cap = chiefGearSlots().find("cap");
 const level = chiefGear().find("epic-t1-star-0");
 if (cap && level) console.log(chiefGearImage(cap, level));
+
+// The set bonuses of the six pieces that a chief wears, by the id of each level
+const sets = chiefGearSetBonus([
+  "mythic-t1-star-0",
+  "mythic-t1-star-1",
+  "mythic-t1-star-2",
+  "epic-star-0",
+  "epic-star-0",
+  "epic-star-0",
+]);
+console.log(sets.threePiece); // { pieces: 3, stat: 'Defense', percent: 8, tierId: 'mythic-t1' }
+console.log(sets.sixPiece); // { pieces: 6, stat: 'Attack', percent: 0 }
 ```
 
 ## Query methods
@@ -33,6 +50,9 @@ if (cap && level) console.log(chiefGearImage(cap, level));
 
 `byTier('Epic')` does not match `EpicT1`. The terminal methods `get`, `first`, `find`, `findByName`,
 `search`, and `count` are described in [How It Works](../../../README.md#how-it-works).
+
+`chiefGearSetBonuses()` is the table of the set bonus of each tier. It has the shared terminal
+methods only.
 
 Two helpers work on the results. `chiefGearRarity(tier)` removes the `T` suffix from a tier label
 and returns the base rarity. `chiefGearImage(slot, level)` returns the slot icon that matches the
@@ -48,16 +68,17 @@ Weapon buff Marksman. Each slot has `images`, one icon for each of the 5 raritie
 `chiefGear()` holds 150 rows from `data/chief/gear-levels.json`. Every equipped piece uses the same
 table, so the rows are upgrade steps, not named items. A row has these fields.
 
-| Field                      | Meaning                                                            |
-| -------------------------- | ------------------------------------------------------------------ |
-| `order`                    | Position in the table, from 1 in row order                         |
-| `tier`                     | Tier label of the source wiki, for example `Epic` or `LegendaryT3` |
-| `stars`, `stage`           | Position in the tier. Both restart in each tier                    |
-| `materials`                | Item ids from `items()` and the amount needed for the step         |
-| `troopsDeploymentCapacity` | Deployment capacity gained. Absent for the first 26 rows           |
-| `statTotalPercent`         | Total stat bonus at this step                                      |
-| `powerTotal`               | Total power at this step                                           |
-| `score`                    | Gear score that the step to this row adds                          |
+| Field                      | Meaning                                                                                          |
+| -------------------------- | ------------------------------------------------------------------------------------------------ |
+| `order`                    | Position in the table, from 1 in row order                                                       |
+| `tier`                     | Tier label of the source wiki, for example `Epic` or `LegendaryT3`                               |
+| `tierId`                   | The tier in kebab case, such as `epic-t1`. It is the `id` of the tier in `chiefGearSetBonuses()` |
+| `stars`, `stage`           | Position in the tier. Both restart in each tier                                                  |
+| `materials`                | Item ids from `items()` and the amount needed for the step                                       |
+| `troopsDeploymentCapacity` | Deployment capacity gained. Absent for the first 26 rows                                         |
+| `statTotalPercent`         | Total stat bonus at this step                                                                    |
+| `powerTotal`               | Total power at this step                                                                         |
+| `score`                    | Gear score that the step to this row adds                                                        |
 
 The tiers are `Common`, `Rare`, `Epic`, `EpicT1`, `Mythic`, `MythicT1`, `MythicT2`, `Legendary`, and
 `LegendaryT1` to `LegendaryT6`.
@@ -80,10 +101,55 @@ evenly, and they add up to the level score for all 54 levels. The wiki event not
 scores from Common to Legendary (1,125 up to 9,560). The Legendary T4 to T6 scores and the split
 into steps come from WoS Tools only.
 
-The slots were entered by hand from the prose of the wiki page, because no table lists them. The
-3-piece and 6-piece set bonus from the same page is not modeled. The wiki describes it only as
-"raise ... by x%" and gives no numbers.
+The slots were entered by hand from the prose of the wiki page, because no table lists them. The set
+bonus is described in the section below.
 
 A piece changes its look at the 5 rarity points only, not at each of the 150 rows. Every sub-tier
 (`EpicT1`, `MythicT1`, `MythicT2`, `LegendaryT1` to `LegendaryT6`) uses the icon of its base rarity.
 The star and stage counters on the source calculator are a UI overlay, not separate images.
+
+## Set bonus
+
+A chief that wears 3 pieces of the same quality gets a Defense bonus for Infantry, Lancer, and
+Marksman. A chief that wears all 6 pieces of the same quality also gets an Attack bonus for all
+three. The wiki says this in the text of its Chief Gear page and gives the value as "x%". The Chief
+profile in the game shows the values behind a triangle icon (3 pieces) and a circle icon (6 pieces).
+
+`chiefGearSetBonus(levelIds)` takes the ids of the `chiefGear()` levels of the pieces worn, at most
+6, and returns `threePiece` and `sixPiece`. Each has `pieces`, `stat`, `percent`, and `tierId`. A
+bonus that is not active has a `percent` of 0 and no `tierId`. The constant `CHIEF_GEAR_SET_BONUS`
+holds the two rules: 3 pieces for `Defense`, 6 pieces for `Attack`, on all three troop types.
+
+The percent of each tier is in `data/chief/gear-set-bonuses.json`, one entry for each of the 14
+tiers with an `id`, a `name`, and the `percent`. The `id` is the `tierId` of the levels, so
+`chiefGearSetBonuses().find(level.tierId)` gives the set bonus of a level. The package owner states
+that each tier has one value, and the 3 piece bonus and the 6 piece bonus have the same value.
+
+| Tier         | Percent |
+| ------------ | ------- |
+| Common       | 5       |
+| Rare         | 5.5     |
+| Epic         | 6       |
+| Epic T1      | 6.5     |
+| Mythic       | 7       |
+| Mythic T1    | 8       |
+| Mythic T2    | 9       |
+| Legendary    | 10      |
+| Legendary T1 | 12      |
+| Legendary T2 | 14      |
+| Legendary T3 | 16      |
+| Legendary T4 | 18      |
+| Legendary T5 | 20      |
+| Legendary T6 | 22      |
+
+The package owner read the values of Mythic T1 (8), Mythic T2 (9), Legendary T1 (12), and Legendary
+T2 (14) in the game. The other values are assumptions of the owner. The step is 1 from Mythic T1 to
+Mythic T2 and 2 from Legendary T1 to Legendary T2, and the other values continue that rise. The
+Whiteout Survival Wiki gives no numbers, and WoS Guru gives one loose figure, "around +6-7% at
+Purple/Gold", which fits the values for Epic and Mythic. Check the other values in the game before
+you rely on them.
+
+The rules of the calculation are also assumptions, because no source states them. Pieces count by
+the tier of their level, so two levels of one tier match. The 3 piece bonus uses the highest tier
+that has at least 3 pieces. The 6 piece bonus needs all 6 pieces in one tier. A higher tier does not
+count toward a lower one.

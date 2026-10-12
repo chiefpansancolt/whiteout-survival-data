@@ -11,6 +11,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game data
 
+- `chiefGearSetBonus()` and `chiefGearSetBonuses()`: the 3 piece Defense and 6 piece Attack set
+  bonuses of Chief Gear, from the level of each piece worn. Some values are assumptions of the
+  owner.
 - `heroGearSlots()`: the four Hero Gear slots, Goggles, Gloves, Belt, and Boots, with an icon of the
   piece for each troop type each
 - `unreleasedExperts()`: the experts that are announced and not released, flagged `unreleased` in
@@ -59,6 +62,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- `chiefGear()` levels have a `tierId` that links each level to the set bonus of its tier.
 - `experts()` gives each expert on the server timeline its unlock day, like `pets()`.
 - `troops()` gives each tier its power and what unlocks it: the camp level for tiers 1 to 10, and
   the War Academy level and research for tiers 11 and 12. `highestTierAtCampLevel()` gives the
