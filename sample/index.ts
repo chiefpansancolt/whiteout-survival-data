@@ -15,6 +15,7 @@ import {
   heroGearEmpowerment,
   heroGearEnhancement,
   heroGearMasteryForging,
+  highestTierAtCampLevel,
   items,
   pets,
   presidentSkills,
@@ -23,6 +24,8 @@ import {
   serverTimeline,
   serverTimelineStatus,
   skins,
+  troopPower,
+  troops,
 } from '../src';
 
 console.log('--- Buildings ---');
@@ -221,3 +224,15 @@ console.log(
 console.log('\n--- President Skills ---');
 console.log('skills:', presidentSkills().count());
 console.log('Mobilize:', presidentSkills().find('mobilize')?.bonus?.value);
+
+console.log('\n--- Troops ---');
+const infantryTroop = troops().find('infantry')!;
+console.log('camp level 19 trains tier:', highestTierAtCampLevel(infantryTroop, 19)?.tier);
+console.log('tier 12 power:', infantryTroop.tiers[11].power);
+console.log('tier 11 power at FC 10:', troopPower(infantryTroop, 11, 10));
+console.log(
+  'experts on the timeline:',
+  serverTimeline()
+    .get()
+    .flatMap((m) => m.expertIds).length,
+);
