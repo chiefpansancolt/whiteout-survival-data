@@ -16,6 +16,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   and Fire Crystal level badge entries. `serverAge()` and `serverTimelineStatus()` take a server
   start date and give the server age, what is unlocked, and what comes next. Each hero lists the
   events that give its shards.
+- `fireCrystalTable()` and `fireCrystalLevels()`: a table of the Fire Crystals and Refined Fire
+  Crystals that each building needs for FC 1 to FC 10, with a column for each level and resource, a
+  row for each building, and a total for each column. A level range gives a table of only some
+  levels. `fireCrystalLevels()` gives the FC 1 to FC 10 badge icons.
 
 ## [0.1.0] - 2026-10-07
 
