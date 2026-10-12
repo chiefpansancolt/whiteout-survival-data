@@ -3,6 +3,7 @@
   "name": "Frosty Fortune",
   "img": "/images/events/frosty-fortune-skin-event.png",
   "category": "holiday",
+  "resultShape": "participation",
   "description": "A skin event with three linked parts: Treasure Hunt Drill, Frosty Fortune, and the Emporium of Enigma. You earn Gems of Enigma and open chests for Thorns of Enigma and skin progress.",
   "frequency": "Irregular",
   "phases": [

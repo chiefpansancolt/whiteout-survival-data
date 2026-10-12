@@ -3,6 +3,7 @@
   "name": "Symphony of Change",
   "img": "/images/events/symphony-of-change.png",
   "category": "solo",
+  "resultShape": "milestones",
   "description": "Complete missions to complete a puzzle board. Each row and column gives a chest, and the full board gives the grand prize.",
   "frequency": "About once for each Fire Crystal generation",
   "duration": "7 days",

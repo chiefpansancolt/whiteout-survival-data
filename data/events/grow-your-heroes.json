@@ -3,6 +3,7 @@
   "name": "Grow Your Heroes",
   "img": "/images/events/grow-your-heroes.png",
   "category": "rookie",
+  "resultShape": "ranking",
   "description": "Upgrade your heroes by using shards. It comes at Gen 1 two or three times, and later became Officer Project Design Plan.",
   "days": [
     {

@@ -3,6 +3,7 @@
   "name": "Icefire Warhymn League",
   "img": "/images/events/icefire-warhymn-league.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "A week-long solo tournament in a half-ice, half-fire arena. Chiefs battle through the Qualifier, Elimination, and Pinnacle phases to be crowned the season champion. No real troops are lost in battles.",
   "frequency": "One season per week, Sunday to Saturday",
   "duration": "Competition runs Monday to Saturday, after a 24-hour Preview Phase on Sunday",

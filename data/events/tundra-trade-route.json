@@ -3,6 +3,7 @@
   "name": "Tundra Trade Route",
   "img": "/images/events/tundra-trade-route.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "A PvP event where players raid enemy trade carts. It can run with or without the Alliance Showdown event. When both run, players earn extra tickets to refresh their own carts for a higher tier cart and more rewards.",
   "duration": "6 days. On day 7, loot from day 6 can be collected until 4 UTC.",
   "refreshes": [

@@ -3,6 +3,7 @@
   "name": "Shining City Pack",
   "img": "/images/events/shining-city-pack.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "An irregular 5-day event with built-in pack purchases. A Shining City Pack gives a Lucky Glorious Tome Chest, which holds 5 to 100 Glorious Tomes to spend in the Exchange Shop.",
   "frequency": "Irregular",
   "duration": "5 days",

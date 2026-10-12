@@ -3,6 +3,7 @@
   "name": "Officer Project",
   "img": "/images/events/officer-project.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "A ranking event with two versions, Troops and Heroes. Players earn points through different activities, reach target point levels for rewards, and claim ranking rewards.",
   "personalRankings": [
     {
@@ -263,7 +264,8 @@
         },
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 6000
+          "points": 6000,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Widget of any Hero Exclusive Gear",
@@ -271,7 +273,8 @@
         },
         {
           "action": "Use 1 Mithril",
-          "points": 216000
+          "points": 216000,
+          "itemId": "mithril"
         },
         {
           "action": "Train 1 Lv. 1 Troop",
@@ -457,7 +460,8 @@
         },
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 6000
+          "points": 6000,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Widget of any Hero Exclusive Gear",
@@ -465,7 +469,8 @@
         },
         {
           "action": "Use 1 Mithril",
-          "points": 216000
+          "points": 216000,
+          "itemId": "mithril"
         }
       ],
       "milestones": [

@@ -3,6 +3,7 @@
   "name": "Deadshot",
   "img": "/images/events/deadshot.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "A permanent mini game played with Shot Tokens. Tap targets to find keys and upgrade chests.",
   "frequency": "Permanent",
   "phases": [

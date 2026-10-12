@@ -3,6 +3,7 @@
   "name": "Vision of Dawn",
   "img": "/images/events/vision-of-dawn.png",
   "category": "holiday",
+  "resultShape": "milestones",
   "description": "A 3-day event where you hit daily targets to win Hope points and unlock five Hope progress chests. Target progress resets daily.",
   "duration": "3 days",
   "requirements": [

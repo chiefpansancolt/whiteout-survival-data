@@ -3,6 +3,7 @@
   "name": "Crystal Reactivation",
   "img": "/images/events/crystal-reactivation-2.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "Get Fire Crystal Embers and exchange them for chests of rewards. The chests depend on the Fire Crystal age of your state.",
   "frequency": "Friday and Saturday of the Sunfire Castle battle week",
   "duration": "2 days",

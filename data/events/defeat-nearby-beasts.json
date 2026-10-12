@@ -3,6 +3,7 @@
   "name": "Defeat Nearby Beasts",
   "img": "/images/events/defeat-nearby-beasts.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "Hunt Beasts or Polar Terrors on the world map to earn points for personal rewards.",
   "frequency": "Two days every two weeks",
   "duration": "2 days",

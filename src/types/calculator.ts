@@ -141,6 +141,14 @@ export interface TroopTierRow {
   total: number;
 }
 
+export interface TroopEventPoints {
+  svs: number;
+  allianceShowdown: number;
+  kingOfIcefield: number;
+  /** For one season. Both seasons give the same points. */
+  hallOfChief: number;
+}
+
 export interface TroopCalculation {
   /** All three camps share this capacity. */
   capacity: number;
@@ -156,6 +164,11 @@ export interface TroopCalculation {
   totalSeconds: number;
   /** The camps train at the same time. */
   longestCampSeconds: number;
+  /** Rounded up. */
+  speedupMinutesNeeded: number;
+  speedupPointsPerMinute: { svs: number; allianceShowdown: number; kingOfIcefield: number };
+  /** Training runs only. Promotion and power are not included. A tier with no scoring row gives 0. */
+  eventPoints: TroopEventPoints;
 }
 
 /** Each tier of a research line is its own line with its own levels. */
@@ -195,6 +208,14 @@ export interface UnmetResearchPrerequisite {
   planned: number;
 }
 
+export interface ResearchEventPoints {
+  /** Fire Crystal Shards. Speedups are not included. */
+  svs: number;
+  allianceShowdown: number;
+  kingOfIcefield: number;
+  hallOfChief: HallOfChiefPowerPoints[];
+}
+
 export interface ResearchCalculation {
   items: ResearchItemResult[];
   steps: number;
@@ -211,6 +232,10 @@ export interface ResearchCalculation {
   unmetPrerequisites: UnmetResearchPrerequisite[];
   /** As a level `label` of `buildings()`. */
   buildingRequirements: { id: string; level: string }[];
+  /** Rounded up. */
+  speedupMinutesNeeded: number;
+  speedupPointsPerMinute: { svs: number; allianceShowdown: number; kingOfIcefield: number };
+  eventPoints: ResearchEventPoints;
 }
 
 export interface PetGoal {
@@ -291,6 +316,12 @@ export interface ExpertItemResult {
   affinity: number;
 }
 
+export interface ExpertEventPoints {
+  /** Books of Knowledge and expert sigils. Speedups are not included. */
+  svs: number;
+  allianceShowdown: number;
+}
+
 export interface ExpertCalculation {
   items: ExpertItemResult[];
   levels: number;
@@ -300,6 +331,8 @@ export interface ExpertCalculation {
   books: number;
   exp: number;
   affinity: number;
+  speedupPointsPerMinute: { svs: number; allianceShowdown: number };
+  eventPoints: ExpertEventPoints;
 }
 
 export interface BuildingGoal {
@@ -329,11 +362,13 @@ export interface BuildingStep {
   baseSeconds: number;
 }
 
-export interface BuildingHallOfChiefPoints {
+export interface HallOfChiefPowerPoints {
   pointsPerPower: number;
   days: string[];
   points: number;
 }
+
+export type BuildingHallOfChiefPoints = HallOfChiefPowerPoints;
 
 export interface BuildingEventPoints {
   /** Speedups are not included. */

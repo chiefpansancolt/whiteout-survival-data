@@ -3,6 +3,7 @@
   "name": "Snowbusters",
   "img": "/images/events/snowbusters.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "A monthly mini game. Use fuel to clear snow, find survivors and objects, defeat beasts, and collect coal.",
   "frequency": "Monthly",
   "requirements": [

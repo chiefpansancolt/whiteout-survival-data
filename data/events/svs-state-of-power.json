@@ -34,15 +34,18 @@
         },
         {
           "action": "Use 1 Refined Fire Crystal to upgrade buildings",
-          "points": 30000
+          "points": 30000,
+          "itemId": "refined-fire-crystal"
         },
         {
           "action": "Use 1 Fire Crystal to upgrade buildings",
-          "points": 2000
+          "points": 2000,
+          "itemId": "fire-crystal"
         },
         {
           "action": "Use 1 Fire Crystal Shard for Research",
-          "points": 1000
+          "points": 1000,
+          "itemId": "fire-crystal-shard"
         },
         {
           "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
@@ -219,15 +222,18 @@
       "scoring": [
         {
           "action": "Use 1 Refined Fire Crystal to upgrade buildings",
-          "points": 30000
+          "points": 30000,
+          "itemId": "refined-fire-crystal"
         },
         {
           "action": "Use 1 Fire Crystal to upgrade buildings",
-          "points": 2000
+          "points": 2000,
+          "itemId": "fire-crystal"
         },
         {
           "action": "Use 1 Fire Crystal Shard for Research",
-          "points": 1000
+          "points": 1000,
+          "itemId": "fire-crystal-shard"
         },
         {
           "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
@@ -283,7 +289,8 @@
         },
         {
           "action": "Use 1 Book of Knowledge",
-          "points": 60
+          "points": 60,
+          "itemId": "book-of-knowledge"
         }
       ],
       "milestones": [
@@ -449,11 +456,13 @@
         },
         {
           "action": "Use 1 Advanced Wild Mark to refine pets",
-          "points": 15000
+          "points": 15000,
+          "itemId": "advanced-wild-mark"
         },
         {
           "action": "Use 1 Common Wild Mark to refine pets",
-          "points": 1150
+          "points": 1150,
+          "itemId": "common-wild-mark"
         },
         {
           "action": "Raise Chief Charm max score by 1",
@@ -505,7 +514,8 @@
         },
         {
           "action": "Use 1 Book of Knowledge",
-          "points": 60
+          "points": 60,
+          "itemId": "book-of-knowledge"
         }
       ],
       "milestones": [
@@ -670,7 +680,8 @@
         },
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 4000
+          "points": 4000,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Widget of any Hero Exclusive Gear",
@@ -678,7 +689,8 @@
         },
         {
           "action": "Use 1 Mithril",
-          "points": 144000
+          "points": 144000,
+          "itemId": "mithril"
         },
         {
           "action": "Train 1 Lv. 1 Troop",
@@ -891,15 +903,18 @@
         },
         {
           "action": "Use 1 Advanced Wild Mark to refine pets",
-          "points": 15000
+          "points": 15000,
+          "itemId": "advanced-wild-mark"
         },
         {
           "action": "Use 1 Common Wild Mark to refine pets",
-          "points": 1150
+          "points": 1150,
+          "itemId": "common-wild-mark"
         },
         {
           "action": "Use 1 Mithril",
-          "points": 144000
+          "points": 144000,
+          "itemId": "mithril"
         },
         {
           "action": "Raise max Chief Gear score by 1 (excluding Charm)",
@@ -907,7 +922,8 @@
         },
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 4000
+          "points": 4000,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Widget of any Hero Exclusive Gear",
@@ -915,15 +931,18 @@
         },
         {
           "action": "Use 1 Refined Fire Crystal to upgrade buildings",
-          "points": 30000
+          "points": 30000,
+          "itemId": "refined-fire-crystal"
         },
         {
           "action": "Use 1 Fire Crystal to upgrade buildings",
-          "points": 2000
+          "points": 2000,
+          "itemId": "fire-crystal"
         },
         {
           "action": "Use 1 Fire Crystal Shard for Research",
-          "points": 1000
+          "points": 1000,
+          "itemId": "fire-crystal-shard"
         },
         {
           "action": "Use 1m Speedups for Construction (Gems Speedups excluded)",

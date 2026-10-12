@@ -3,6 +3,7 @@
   "name": "Tundra Trading Station",
   "img": "/images/events/tundra-trading-station-guide.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "Exchange items you do not need for Trade Vouchers, or spend Trade Vouchers on other items at the Trading Station.",
   "frequency": "Monthly.",
   "duration": "2 days.",

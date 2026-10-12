@@ -3,12 +3,14 @@ import { research } from '@/modules/research';
 import {
   ResearchCalculation,
   ResearchCalculatorOptions,
+  ResearchEventPoints,
   ResearchGoal,
   ResearchItemResult,
   ResearchLevel,
   UnmetResearchPrerequisite,
   UpgradeMaterial,
 } from '@/types';
+import { hallOfChiefPowerPoints, scoringPoints } from './event-score';
 
 export const RESEARCH_CALCULATOR = {
   stateBuffSpeedPercent: 10,
@@ -35,6 +37,20 @@ function addResources(levels: ResearchLevel[]): UpgradeMaterial[] {
     .flatMap((l) => l.cost)
     .forEach((c) => totals.set(c.itemId, (totals.get(c.itemId) ?? 0) + c.amount));
   return [...totals].map(([itemId, amount]) => ({ itemId, amount }));
+}
+
+const RESEARCH_SHARD_ROW = /^Use 1 Fire Crystal Shard for Research/;
+const RESEARCH_SPEEDUP_ROW = /^Use 1m (of )?Speedups for Research/;
+
+function researchEventPoints(resources: UpgradeMaterial[], power: number): ResearchEventPoints {
+  const shards = resources.find((r) => r.itemId === 'fire-crystal-shard')?.amount ?? 0;
+  const forEvent = (eventId: string) => shards * scoringPoints(eventId, RESEARCH_SHARD_ROW);
+  return {
+    svs: forEvent('svs-state-of-power'),
+    allianceShowdown: forEvent('alliance-showdown'),
+    kingOfIcefield: forEvent('king-of-icefield'),
+    hallOfChief: hallOfChiefPowerPoints(/^Raise 1 Power through Research/, power),
+  };
 }
 
 function checkGoal(goal: ResearchGoal, levelCount: number): void {
@@ -128,16 +144,26 @@ export function calculateResearch(
   });
   const allLevels = steps.flatMap((s) => s.levels);
   const baseSeconds = items.reduce((sum, i) => sum + i.baseSeconds, 0);
+  const resources = addResources(allLevels);
+  const power = items.reduce((sum, i) => sum + i.power, 0);
+  const seconds = Math.floor(baseSeconds / (1 + speed / 100));
   return {
     items,
     steps: allLevels.length,
-    resources: addResources(allLevels),
-    power: items.reduce((sum, i) => sum + i.power, 0),
+    resources,
+    power,
     baseSeconds,
     researchSpeedPercent: speed,
-    seconds: Math.floor(baseSeconds / (1 + speed / 100)),
+    seconds,
     stepsWithoutTime: allLevels.filter((l) => l.researchTimeSeconds === undefined).length,
     unmetPrerequisites: unmet,
     buildingRequirements: [...buildingNeeds].map(([id, need]) => ({ id, level: need.label })),
+    speedupMinutesNeeded: Math.ceil(seconds / 60),
+    speedupPointsPerMinute: {
+      svs: scoringPoints('svs-state-of-power', RESEARCH_SPEEDUP_ROW),
+      allianceShowdown: scoringPoints('alliance-showdown', RESEARCH_SPEEDUP_ROW),
+      kingOfIcefield: scoringPoints('king-of-icefield', RESEARCH_SPEEDUP_ROW),
+    },
+    eventPoints: researchEventPoints(resources, power),
   };
 }

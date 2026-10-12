@@ -3,6 +3,7 @@
   "name": "Stand of Arms",
   "img": "/images/events/stand-of-arms.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "Deal with potential threats to your power before they deal with you. Chief Charm and Hero Gear Essence Stone use gives target point rewards and a ranking.",
   "personalRankings": [
     {
@@ -240,7 +241,8 @@
         },
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 800
+          "points": 800,
+          "itemId": "essence-stones"
         }
       ],
       "note": "The wiki screenshot shows 4 target levels and the ranking.",

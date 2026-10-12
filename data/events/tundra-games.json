@@ -3,6 +3,7 @@
   "name": "Tundra Games",
   "img": "/images/events/tundra-games.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "A set of seven mini games and tasks with rewards. Players punch Brawler Buddies with Energized Bread.",
   "frequency": "Irregular",
   "phases": [
@@ -431,7 +432,8 @@
       "scoring": [
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 25000
+          "points": 25000,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Widget of any Hero Exclusive Gear",
@@ -439,7 +441,8 @@
         },
         {
           "action": "Use 1 Gem",
-          "points": 10
+          "points": 10,
+          "itemId": "gems"
         }
       ]
     },

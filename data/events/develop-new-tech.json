@@ -3,6 +3,7 @@
   "name": "Develop New Tech",
   "img": "/images/events/develop-new-tech.png",
   "category": "rookie",
+  "resultShape": "ranking",
   "description": "Spark the flame of civilization with technology.",
   "days": [
     {

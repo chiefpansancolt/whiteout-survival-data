@@ -3,6 +3,7 @@
   "name": "Treasure Hunter",
   "img": "/images/events/treasure-hunter.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "An irregular event that lasts for 5 days.",
   "duration": "5 days.",
   "requirements": [

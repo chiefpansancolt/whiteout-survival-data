@@ -3,6 +3,7 @@
   "name": "Foundry Battle",
   "img": "/images/events/foundry-battle.png",
   "category": "alliance",
+  "resultShape": "tier",
   "description": "The Solaris Dynasty's Foundry still stands, and all Chiefs' eyes have turned to reactivating this military asset.",
   "requirements": [
     "The alliance ranks in the top 20 on the Alliance Power Leaderboard before the event begins",

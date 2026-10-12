@@ -64,7 +64,12 @@ import visionOfDawn from '@/data/events/vision-of-dawn.json';
 import warPreparation from '@/data/events/war-preparation.json';
 import wildBrawl from '@/data/events/wild-brawl.json';
 import workingOvertime2 from '@/data/events/working-overtime-2.json';
-import { EventCategory, GameEvent } from '@/types';
+import {
+  EventCategory,
+  GameEvent,
+  GameEventRankingScope,
+  GameEventRankingTableView,
+} from '@/types';
 
 const eventsData: GameEvent[] = [
   allianceChampionship,
@@ -146,4 +151,48 @@ export class EventsQuery extends QueryBase<GameEvent> {
 
 export function events(source: GameEvent[] = eventsData): EventsQuery {
   return new EventsQuery(source);
+}
+
+function scopeFromName(name: string): GameEventRankingScope | undefined {
+  if (/alliance/i.test(name)) return 'alliance';
+  if (/personal/i.test(name)) return 'personal';
+  return undefined;
+}
+
+/**
+ * Returns every ranking table of an event in one shape. The order is the personal ranking tables,
+ * the alliance ranking table, the later alliance reward lists, then the tiers that hold rankings.
+ * A personal table has `basedOn` and no `name`. A tier table has the `name` of the tier, and a
+ * `scope` only when that name says `personal` or `alliance`. The array is empty when the event has
+ * no ranking.
+ */
+export function eventRankingTables(event: GameEvent): GameEventRankingTableView[] {
+  const personal = (event.personalRankings ?? []).map((table, index) => ({
+    id: `personal-${index + 1}`,
+    scope: 'personal' as const,
+    basedOn: table.basedOn,
+    rankings: table.rankings,
+  }));
+  const alliance = event.allianceRankings
+    ? [{ id: 'alliance', scope: 'alliance' as const, rankings: event.allianceRankings }]
+    : [];
+  const updates = (event.allianceRankingUpdates ?? []).map((version, index) => ({
+    id: `alliance-update-${index + 1}`,
+    scope: 'alliance' as const,
+    name: version.name,
+    rankings: version.rankings,
+  }));
+  const tiers = (event.tiers ?? []).flatMap((tier, index) =>
+    tier.rankings
+      ? [
+          {
+            id: `tier-${index + 1}`,
+            scope: scopeFromName(tier.name),
+            name: tier.name,
+            rankings: tier.rankings,
+          },
+        ]
+      : [],
+  );
+  return [...personal, ...alliance, ...updates, ...tiers];
 }

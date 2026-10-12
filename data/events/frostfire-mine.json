@@ -3,6 +3,7 @@
   "name": "Frostfire Mine",
   "img": "/images/events/frostfire-mine.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "Players gather Orichalcum by occupying veins in a 30-minute battle with unlimited troops that cannot be killed.",
   "frequency": "7 time slots: 02, 05, 11, 14, 16, 18, and 21 UTC",
   "duration": "30 minutes",

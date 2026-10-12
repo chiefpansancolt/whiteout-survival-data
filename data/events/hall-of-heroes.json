@@ -3,6 +3,7 @@
   "name": "Hall of Heroes",
   "img": "/images/events/hall-of-heroes.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "A shop event that runs every 2 weeks. Marks of Valor buy hero shards and widget chests for your generation and earlier ones.",
   "frequency": "Every 2 weeks, from Sunday to Tuesday",
   "duration": "3 days",

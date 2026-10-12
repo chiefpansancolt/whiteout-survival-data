@@ -3,6 +3,7 @@
   "name": "Trial Event",
   "img": "/images/events/trial-event.png",
   "category": "rookie",
+  "resultShape": "participation",
   "description": "Available at the beginning of the game. This event gives you Jessie, a Generation 1 hero.",
   "rewards": [
     {

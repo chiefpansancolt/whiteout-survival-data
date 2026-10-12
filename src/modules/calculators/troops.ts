@@ -1,4 +1,5 @@
 import { buildings } from '@/modules/buildings';
+import { events } from '@/modules/events';
 import { troops } from '@/modules/troops';
 import {
   TroopCalculation,
@@ -9,6 +10,18 @@ import {
   TroopType,
   UpgradeMaterial,
 } from '@/types';
+import { scoringPoints } from './event-score';
+
+const TROOP_SPEEDUP_ROW = /^Use 1m (of )?Speedups for (troop )?Training/i;
+
+function trainingPoints(eventId: string, tier: number): number {
+  const pattern = new RegExp(`^Train 1 Lv\\. ${tier} troop$`, 'i');
+  const row = events()
+    .find(eventId)!
+    .days!.flatMap((day) => day.scoring)
+    .find((r) => pattern.test(r.action));
+  return row?.points ?? 0;
+}
 
 export const TROOP_CALCULATOR = {
   troopTypes: ['infantry', 'lancer', 'marksman'],
@@ -166,6 +179,7 @@ export function calculateTroops(input: TroopCalculatorInput): TroopCalculation {
   const camps = {} as TroopCalculation['camps'];
   const resourceTotals = RESOURCE_IDS.map(() => 0);
 
+  const trainedAtTier = new Map<number, number>();
   TROOP_TYPES.forEach((type) => {
     const reduction = input.costReductionPercent?.[type] ?? 0;
     checkPercent(`The ${type} cost reduction`, reduction, TROOP_CALCULATOR.maxCostReductionPercent);
@@ -176,6 +190,10 @@ export function calculateTroops(input: TroopCalculatorInput): TroopCalculation {
       }
       const perBatch = troopsPerBatch(type, run, capacity);
       applyRun(tiers, type, run.action, perBatch * batches);
+      if (run.action.mode === 'training') {
+        const { tier } = run.action;
+        trainedAtTier.set(tier, (trainedAtTier.get(tier) ?? 0) + perBatch * batches);
+      }
       const cost = troopCost(type, run.action);
       cost.amounts.forEach((amount, i) => {
         resourceTotals[i] += amount * perBatch * batches * (1 - reduction / 100);
@@ -196,6 +214,12 @@ export function calculateTroops(input: TroopCalculatorInput): TroopCalculation {
     total: tiers.reduce((sum, r) => sum + r.total, 0),
   };
   const campSeconds = TROOP_TYPES.map((type) => camps[type].seconds);
+  const totalSeconds = campSeconds.reduce((sum, seconds) => sum + seconds, 0);
+  const forEvent = (eventId: string) =>
+    [...trainedAtTier].reduce(
+      (sum, [tier, troops]) => sum + troops * trainingPoints(eventId, tier),
+      0,
+    );
   return {
     capacity,
     camps,
@@ -206,7 +230,19 @@ export function calculateTroops(input: TroopCalculatorInput): TroopCalculation {
       itemId,
       amount: Math.round(resourceTotals[i]),
     })),
-    totalSeconds: campSeconds.reduce((sum, seconds) => sum + seconds, 0),
+    totalSeconds,
     longestCampSeconds: Math.max(...campSeconds),
+    speedupMinutesNeeded: Math.ceil(totalSeconds / 60),
+    speedupPointsPerMinute: {
+      svs: scoringPoints('svs-state-of-power', TROOP_SPEEDUP_ROW),
+      allianceShowdown: scoringPoints('alliance-showdown', TROOP_SPEEDUP_ROW),
+      kingOfIcefield: scoringPoints('king-of-icefield', TROOP_SPEEDUP_ROW),
+    },
+    eventPoints: {
+      svs: forEvent('svs-state-of-power'),
+      allianceShowdown: forEvent('alliance-showdown'),
+      kingOfIcefield: forEvent('king-of-icefield'),
+      hallOfChief: forEvent('hall-of-chief'),
+    },
   };
 }

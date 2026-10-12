@@ -3,6 +3,7 @@
   "name": "Trusted Chief",
   "img": "/images/events/trusted-chief.png",
   "category": "rookie",
+  "resultShape": "ranking",
   "description": "Establish yourself as a trusted chief.",
   "days": [
     {

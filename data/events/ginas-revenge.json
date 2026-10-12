@@ -3,6 +3,7 @@
   "name": "Gina\u2019s Revenge",
   "img": "/images/events/ginas-revenge.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "Collect Cryptid Horns to hunt Cryptids and earn Gina shards.",
   "frequency": "Until season 4",
   "duration": "3 days",

@@ -6,7 +6,7 @@ const amountOf = (materials: { itemId: string; amount: number }[], itemId: strin
 
 describe('calculateResearch', () => {
   it('returns zero for no goals', () => {
-    expect(calculateResearch()).toEqual({
+    expect(calculateResearch()).toMatchObject({
       items: [],
       steps: 0,
       resources: [],
@@ -179,5 +179,46 @@ describe('calculateResearch', () => {
       stateBuffSpeedPercent: 10,
       vicePresidentSpeedPercent: { regular: 10, supreme: 15 },
     });
+  });
+});
+
+describe('calculateResearch event points', () => {
+  const helios = calculateResearch([{ id: 'helios-infantry', current: 0, goal: 1 }]);
+
+  it('scores the Fire Crystal Shards of the research', () => {
+    expect(amountOf(helios.resources, 'fire-crystal-shard')).toBe(2236);
+    expect(helios.eventPoints).toMatchObject({
+      svs: 2236 * 1000,
+      allianceShowdown: 2236 * 625,
+      kingOfIcefield: 2236 * 1000,
+    });
+  });
+
+  it('scores the power for Hall of Chief with the highest points per power first', () => {
+    const hallOfChief = helios.eventPoints.hallOfChief;
+    expect(hallOfChief.map((h) => h.pointsPerPower)).toEqual([45, 30]);
+    expect(hallOfChief[0]).toMatchObject({ points: 8_000_000 * 45 });
+    expect(hallOfChief[0].days).toContain('Season 1, Stage 1');
+    expect(hallOfChief[1]).toMatchObject({ points: 8_000_000 * 30 });
+  });
+
+  it('gives no shard points for research that costs no Fire Crystal Shards', () => {
+    const result = calculateResearch([{ id: 'assaut-techniques-i', current: 0, goal: 1 }]);
+    expect(result.eventPoints).toMatchObject({ svs: 0, allianceShowdown: 0, kingOfIcefield: 0 });
+  });
+
+  it('gives the points of one minute of research speedups', () => {
+    expect(helios.speedupPointsPerMinute).toEqual({
+      svs: 30,
+      allianceShowdown: 18,
+      kingOfIcefield: 30,
+    });
+  });
+
+  it('rounds the speedup minutes up from the seconds', () => {
+    const result = calculateResearch([{ id: 'assaut-techniques-i', current: 0, goal: 1 }]);
+    expect(result.speedupMinutesNeeded).toBe(Math.ceil(result.seconds / 60));
+    expect(result.seconds % 60).not.toBe(0);
+    expect(calculateResearch().speedupMinutesNeeded).toBe(0);
   });
 });

@@ -3,6 +3,7 @@
   "name": "Crazy Joe",
   "img": "/images/events/crazy-joe.png",
   "category": "alliance",
+  "resultShape": "waves",
   "description": "Players earn points by sending reinforcements to alliance partners, who do the same in return. A system camp attacks cities in 20 waves: 2 target headquarters and 18 target furnaces. There are 21 difficulty levels, and shields are ineffective.",
   "frequency": "Tuesday and Thursday during the SvS, KOI, or HoC week.",
   "duration": "About 40 minutes",

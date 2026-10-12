@@ -3,6 +3,7 @@
   "name": "Plan Your City",
   "img": "/images/events/plan-your-city.png",
   "category": "rookie",
+  "resultShape": "ranking",
   "description": "Work with your survivors to build a strong City.",
   "days": [
     {

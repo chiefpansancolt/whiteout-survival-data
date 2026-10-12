@@ -1,6 +1,12 @@
 import { events } from '@/modules/events';
 import { experts } from '@/modules/experts';
-import { EventScore, EventScoreDay, EventUsage, GameEventDay } from '@/types';
+import {
+  EventScore,
+  EventScoreDay,
+  EventUsage,
+  GameEventDay,
+  HallOfChiefPowerPoints,
+} from '@/types';
 
 export interface ScoreBonus {
   percent: number;
@@ -88,4 +94,32 @@ export function scoreEventDays(
       total: base + bonusPoints,
     };
   });
+}
+
+/** Returns the points of the first scoring row of an event whose action matches `pattern`. */
+export function scoringPoints(eventId: string, pattern: RegExp): number {
+  return events()
+    .find(eventId)!
+    .days!.flatMap((day) => day.scoring)
+    .find((row) => pattern.test(row.action))!.points;
+}
+
+/**
+ * Returns the Hall of Chief points for `power`, one entry for each points value of the rows that
+ * match `pattern`, with the days that use it. The highest points value comes first.
+ */
+export function hallOfChiefPowerPoints(pattern: RegExp, power: number): HallOfChiefPowerPoints[] {
+  const daysByMultiplier = new Map<number, string[]>();
+  events()
+    .find('hall-of-chief')!
+    .days!.forEach((day) =>
+      day.scoring
+        .filter((row) => pattern.test(row.action))
+        .forEach((row) =>
+          daysByMultiplier.set(row.points, [...(daysByMultiplier.get(row.points) ?? []), day.name]),
+        ),
+    );
+  return [...daysByMultiplier]
+    .sort(([a], [b]) => b - a)
+    .map(([pointsPerPower, days]) => ({ pointsPerPower, days, points: power * pointsPerPower }));
 }

@@ -3,6 +3,7 @@
   "name": "Alliance Championship",
   "img": "/images/events/alliance-championship.png",
   "category": "alliance",
+  "resultShape": "tier",
   "description": "A weekly alliance event where 6 alliances face each other in 5 rounds. The alliance that wins the most rounds ranks first and advances to a higher tier for better rewards.",
   "frequency": "Weekly",
   "duration": "Monday 00:00 UTC to Monday 00:00 UTC (one week)",

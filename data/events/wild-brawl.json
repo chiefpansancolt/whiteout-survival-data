@@ -3,6 +3,7 @@
   "name": "Wild Brawl",
   "img": "/images/events/wild-brawl.png",
   "category": "solo",
+  "resultShape": "milestones",
   "description": "A free-for-all where 10 chiefs fight in a match to earn points from buildings, supply crates, and airdropped items.",
   "frequency": "Recurring, once the state has reached the required age",
   "duration": "2 days",

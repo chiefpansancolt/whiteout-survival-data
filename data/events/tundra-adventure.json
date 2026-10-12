@@ -3,6 +3,7 @@
   "name": "Tundra Adventure",
   "img": "/images/events/tundra-adventure.png",
   "category": "solo",
+  "resultShape": "milestones",
   "description": "Roll dice to move around a board for rewards and Adventure Coins, which you spend in the Adventure Caravan. The event has four parts: Tundra Adventure, Adventurer Drill, Odyssey of Adventure, and Adventure Caravan.",
   "frequency": "Irregular, set by the developers",
   "duration": "7 days. The Adventure Caravan shop lasts 8 days.",

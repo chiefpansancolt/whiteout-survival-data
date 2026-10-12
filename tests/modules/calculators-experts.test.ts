@@ -10,7 +10,7 @@ const agnes = (level: ExpertGoal['level'], skills?: ExpertSkillGoal[]): ExpertGo
 
 describe('calculateExperts', () => {
   it('returns zero for no goals', () => {
-    expect(calculateExperts()).toEqual({
+    expect(calculateExperts()).toMatchObject({
       items: [],
       levels: 0,
       advancements: 0,
@@ -149,5 +149,27 @@ describe('calculateExperts', () => {
 
   it('exports the max level', () => {
     expect(EXPERT_MAX_LEVEL).toBe(100);
+  });
+});
+
+describe('calculateExperts event points', () => {
+  it('has no event points for no goals', () => {
+    const result = calculateExperts();
+    expect(result.eventPoints).toEqual({ svs: 0, allianceShowdown: 0 });
+  });
+
+  it('scores the Books of Knowledge and the sigils', () => {
+    const result = calculateExperts([
+      agnes({ current: 1, goal: 11 }, [{ name: 'Efficient Recon', current: 1, goal: 5 }]),
+    ]);
+    expect(result).toMatchObject({ books: 7500, sigils: 5 });
+    expect(result.eventPoints).toEqual({
+      svs: 7500 * 60 + 5 * 6000,
+      allianceShowdown: 7500 * 36 + 5 * 3600,
+    });
+  });
+
+  it('gives the points of one minute of speedups to learn expert skills', () => {
+    expect(calculateExperts().speedupPointsPerMinute).toEqual({ svs: 30, allianceShowdown: 18 });
   });
 });

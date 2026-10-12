@@ -3,6 +3,7 @@
   "name": "Vault of Enigma",
   "img": "/images/events/vault-of-enigma.png",
   "category": "holiday",
+  "resultShape": "participation",
   "description": "A 5-day pack event. Buy one chest each day, and if you bought all 5 you can choose a reward at the end.",
   "duration": "5 days",
   "phases": [

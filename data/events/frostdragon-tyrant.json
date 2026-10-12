@@ -3,6 +3,7 @@
   "name": "Frostdragon Tyrant",
   "img": "/images/events/frostdragon-tyrant.png",
   "category": "alliance",
+  "resultShape": "ranking",
   "description": "Chiefs of all States compete to control the Capital on the Frostdragon Battlefield during a 6-hour combat window. Only rally captains' occupation time counts toward becoming Frostdragon Tyrant.",
   "duration": "The Tyrant title lasts 30 days after crowning",
   "requirements": [

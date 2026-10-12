@@ -3,6 +3,7 @@
   "name": "Hero Rally",
   "img": "/images/events/hero-rally.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "An event with level rewards. You can buy a pack for more items and buy levels for 2,160 gems each.",
   "rewards": [
     {

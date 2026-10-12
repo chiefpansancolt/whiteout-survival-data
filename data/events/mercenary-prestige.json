@@ -3,6 +3,7 @@
   "name": "Mercenary Prestige",
   "img": "/images/events/mercenary-prestige.png",
   "category": "alliance",
+  "resultShape": "tier",
   "description": "Phaethon Mercenaries have seized a nearby mining region and enslaved the locals. Gina's Eagles accepted a contract to remove them, but she worries they are overmatched. The event has Personal Challenges and Alliance Challenges.",
   "requirements": [
     "Select a difficulty tier (Champions, Epic, Legends, or Fearless) and a level (Easy, Normal, Hard, Nightmare, or Insane)",

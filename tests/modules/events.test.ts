@@ -1,6 +1,6 @@
 import { decoration } from '@/modules/daybreak-island';
 import { eventBuff } from '@/modules/event-buff';
-import { events, EventsQuery } from '@/modules/events';
+import { eventRankingTables, events, EventsQuery } from '@/modules/events';
 import { heroes as heroData } from '@/modules/heroes';
 import { items } from '@/modules/items';
 import { skins } from '@/modules/skins';
@@ -516,10 +516,18 @@ describe('Events data', () => {
     expect(missions.some((m) => /gems >|pack/i.test(m.name))).toBe(false);
   });
 
+  it('gives every Alliance Showdown day the top-up points action', () => {
+    const days = events().find('alliance-showdown')!.days!;
+    const action = 'Obtain 500 top-up points through payments (top-up, pack purchase, etc.)';
+    for (const day of days) {
+      expect(day.scoring.filter((a) => a.action === action)).toEqual([{ action, points: 3000 }]);
+    }
+  });
+
   it('lists Alliance Showdown scoring and personal milestones for each day', () => {
     const days = events().find('alliance-showdown')!.days!;
     expect(days.map((d) => d.day)).toEqual(['1', '2', '3', '4', '5', '6-7']);
-    expect(days.map((d) => d.scoring.length)).toEqual([16, 15, 11, 19, 11, 21]);
+    expect(days.map((d) => d.scoring.length)).toEqual([17, 16, 12, 20, 12, 22]);
     expect(days[0].scoring[0]).toEqual({ action: 'Escort 1 truck of any grade', points: 10000 });
     expect(days[3].scoring.find((a) => a.action.includes('Mithril'))!.points).toBe(67500);
     expect(
@@ -850,7 +858,11 @@ describe('Events data', () => {
     ]);
     expect(armament.personalRankings![0].rankings[7].rewards[1]).toMatchObject({ amount: 25 });
     const [gear, charm] = armament.days!;
-    expect(gear.scoring[0]).toEqual({ action: 'Use 1 Fire Crystal', points: 100 });
+    expect(gear.scoring[0]).toEqual({
+      action: 'Use 1 Fire Crystal',
+      points: 100,
+      itemId: 'fire-crystal',
+    });
     expect(charm.scoring.map((a) => a.points)).toContain(125);
     [gear, charm].forEach((version) => {
       expect(version.milestones!.map((m) => m.name)).toEqual([
@@ -1058,7 +1070,11 @@ describe('Events data', () => {
       'Combat Training',
       'Hero Development',
     ]);
-    expect(koi.days![1].scoring).toContainEqual({ action: 'Use 1 Mithril', points: 40000 });
+    expect(koi.days![1].scoring).toContainEqual({
+      action: 'Use 1 Mithril',
+      points: 40000,
+      itemId: 'mithril',
+    });
     expect(
       koi.days![3].scoring.filter((s) => s.action.startsWith('Train')).map((s) => s.points),
     ).toEqual([1, 2, 3, 5, 7, 11, 16, 23, 30, 39, 49]);
@@ -1462,5 +1478,196 @@ describe('Events data', () => {
     expect(arms.personalRankings![0].rankings.map((x) => x.rewards[0].amount)).toEqual([
       20000, 12000, 7200, 4500, 2500, 1500, 800, 400,
     ]);
+  });
+});
+
+describe('scoring action item ids', () => {
+  const actions = events()
+    .get()
+    .flatMap((e) => (e.days ?? []).flatMap((d) => d.scoring));
+  const idOf = (eventId: string, action: string) =>
+    events()
+      .find(eventId)!
+      .days!.flatMap((d) => d.scoring)
+      .find((a) => a.action === action)?.itemId;
+
+  it('resolves every item id through items()', () => {
+    const linked = actions.filter((a) => a.itemId !== undefined);
+    expect(linked).toHaveLength(85);
+    for (const action of linked) expect(items().find(action.itemId!)).toBeDefined();
+  });
+
+  it('links the Use actions that name one item', () => {
+    expect(idOf('svs-state-of-power', 'Use 1 Refined Fire Crystal to upgrade buildings')).toBe(
+      'refined-fire-crystal',
+    );
+    expect(idOf('svs-state-of-power', 'Use 1 Fire Crystal Shard for Research')).toBe(
+      'fire-crystal-shard',
+    );
+    expect(idOf('svs-state-of-power', 'Use 1 Hero Gear Essence Stone')).toBe('essence-stones');
+    expect(idOf('svs-state-of-power', 'Use 1 Mithril')).toBe('mithril');
+  });
+
+  it('leaves the actions that name no single item unlinked', () => {
+    const unlinked = actions.filter(
+      (a) =>
+        a.itemId === undefined &&
+        /Hero Shard|Widget of any|Expert Sigil|Speedups?|Recruitment/.test(a.action),
+    );
+    expect(unlinked.length).toBeGreaterThan(0);
+  });
+
+  it('only links actions that start with Use', () => {
+    for (const action of actions.filter((a) => a.itemId !== undefined)) {
+      expect(action.action.startsWith('Use ')).toBe(true);
+    }
+  });
+});
+
+describe('score units', () => {
+  it('sets the unit on the six events whose targets are not points', () => {
+    const withUnit = Object.fromEntries(
+      events()
+        .get()
+        .filter((e) => e.scoreUnit !== undefined)
+        .map((e) => [e.id, e.scoreUnit]),
+    );
+    expect(withUnit).toEqual({
+      'journey-of-light': 'flights',
+      'lucky-wheel': 'spins',
+      'heros-mission': 'reapers',
+      'the-labyrinth': 'Labyrinth Cores',
+      'tundra-album-2': 'recycle tokens',
+      'mia-fortune': 'Fortune Tokens',
+    });
+  });
+});
+
+describe('result shapes', () => {
+  const CORE = ['svs-state-of-power', 'alliance-showdown', 'king-of-icefield', 'hall-of-chief'];
+  const withShape = events()
+    .get()
+    .filter((e) => !CORE.includes(e.id));
+  const idsOf = (shape: string) =>
+    withShape.filter((e) => e.resultShape === shape).map((e) => e.id);
+
+  it('leaves the four Core events without a shape', () => {
+    for (const id of CORE) expect(events().find(id)!.resultShape).toBeUndefined();
+  });
+
+  it('gives every other event a shape', () => {
+    expect(withShape).toHaveLength(61);
+    for (const event of withShape) expect(event.resultShape).toBeDefined();
+  });
+
+  it('counts the events of each shape', () => {
+    expect(idsOf('ranking')).toHaveLength(21);
+    expect(idsOf('milestones')).toHaveLength(16);
+    expect(idsOf('tier')).toHaveLength(5);
+    expect(idsOf('waves')).toHaveLength(1);
+    expect(idsOf('participation')).toHaveLength(18);
+  });
+
+  it('names the tier and waves events', () => {
+    expect(idsOf('tier').sort()).toEqual([
+      'alliance-championship',
+      'canyon-clash',
+      'foundry-battle',
+      'mercenary-prestige',
+      'tundra-arms-league',
+    ]);
+    expect(idsOf('waves')).toEqual(['crazy-joe']);
+  });
+
+  it('follows the data of each event', () => {
+    for (const event of withShape) {
+      const hasRanking =
+        (event.personalRankings?.length ?? 0) > 0 || (event.allianceRankings?.length ?? 0) > 0;
+      const hasTierRanking = (event.tiers ?? []).some((t) => (t.rankings?.length ?? 0) > 0);
+      if (event.resultShape === 'waves') expect(event.waves?.length).toBeGreaterThan(0);
+      if (event.resultShape === 'tier') expect(hasTierRanking).toBe(true);
+      if (event.resultShape === 'ranking') expect(hasRanking && !hasTierRanking).toBe(true);
+      if (event.resultShape === 'participation') {
+        expect(hasRanking || hasTierRanking).toBe(false);
+        expect(event.missions).toBeUndefined();
+        expect((event.tiers ?? []).some((t) => t.scoreTotal !== undefined)).toBe(false);
+      }
+    }
+  });
+});
+
+describe('eventRankingTables', () => {
+  const tablesOf = (id: string) => eventRankingTables(events().find(id)!);
+
+  it('lists the ranking tables of State vs State with a scope from the name', () => {
+    const tables = tablesOf('svs-state-of-power');
+    expect(tables.map((t) => t.id)).toEqual([
+      'tier-1',
+      'tier-2',
+      'tier-3',
+      'tier-4',
+      'tier-5',
+      'tier-6',
+      'tier-7',
+    ]);
+    expect(tables.map((t) => t.scope)).toEqual([
+      'personal',
+      'personal',
+      'personal',
+      'alliance',
+      'alliance',
+      'alliance',
+      undefined,
+    ]);
+    expect(tables[0].name).toBe('Stage personal ranking (each day)');
+  });
+
+  it('lists the personal tables of King of Icefield with their basis and no name', () => {
+    const tables = tablesOf('king-of-icefield');
+    expect(tables.map((t) => t.id)).toEqual([
+      'personal-1',
+      'personal-2',
+      'personal-3',
+      'personal-4',
+    ]);
+    for (const table of tables) {
+      expect(table.scope).toBe('personal');
+      expect(table.basedOn).toBeDefined();
+      expect(table.name).toBeUndefined();
+    }
+  });
+
+  it('lists the two personal tables of Hall of Chief', () => {
+    expect(tablesOf('hall-of-chief').map((t) => t.id)).toEqual(['personal-1', 'personal-2']);
+  });
+
+  it('lists the alliance table and the unscoped star rating tiers of Alliance Showdown', () => {
+    const tables = tablesOf('alliance-showdown');
+    expect(tables.map((t) => t.id)).toEqual(['alliance', 'tier-1', 'tier-2', 'tier-3', 'tier-4']);
+    expect(tables[0].scope).toBe('alliance');
+    expect(tables[1].scope).toBeUndefined();
+  });
+
+  it('lists personal, alliance, and later alliance tables in that order', () => {
+    expect(tablesOf('crazy-joe').map((t) => t.id)).toEqual([
+      'personal-1',
+      'alliance',
+      'alliance-update-1',
+    ]);
+    expect(tablesOf('crazy-joe')[2].name).toBe('After the server update');
+  });
+
+  it('skips tiers that hold no rankings', () => {
+    expect(events().find('lucky-wheel')!.tiers!.length).toBeGreaterThan(0);
+    expect(tablesOf('lucky-wheel')).toEqual([]);
+  });
+
+  it('gives an empty array for an event with no ranking', () => {
+    expect(tablesOf('wild-brawl')).toEqual([]);
+  });
+
+  it('reuses the ranking arrays of the event', () => {
+    const event = events().find('king-of-icefield')!;
+    expect(eventRankingTables(event)[0].rankings).toBe(event.personalRankings![0].rankings);
   });
 });

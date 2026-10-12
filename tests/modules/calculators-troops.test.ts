@@ -414,3 +414,92 @@ describe('calculateTroops errors', () => {
     expect(() => calculateTroops(infantry(promote(3, 13, 1)))).toThrow(RangeError);
   });
 });
+
+describe('calculateTroops event points', () => {
+  const training = (tier: number, count: number | 'max', batches = 1) =>
+    calculateTroops({
+      camps: camps('30', {
+        infantry: { level: '30', runs: [{ action: { mode: 'training', tier }, count, batches }] },
+      }),
+    });
+
+  it('scores the troops trained at each tier', () => {
+    const result = training(10, 'max', 2);
+    expect(result.totals.total).toBe(1254);
+    expect(result.eventPoints).toEqual({
+      svs: 1254 * 60,
+      allianceShowdown: 1254 * 24,
+      kingOfIcefield: 1254 * 39,
+      hallOfChief: 1254 * 1960,
+    });
+  });
+
+  it('adds up the runs of different tiers and camps', () => {
+    const result = calculateTroops({
+      camps: camps('30', {
+        infantry: {
+          level: '30',
+          runs: [
+            { action: { mode: 'training', tier: 1 }, count: 100 },
+            { action: { mode: 'training', tier: 2 }, count: 50 },
+          ],
+        },
+        lancer: { level: '30', runs: [{ action: { mode: 'training', tier: 1 }, count: 10 }] },
+      }),
+    });
+    expect(result.eventPoints.svs).toBe(110 * 3 + 50 * 4);
+    expect(result.eventPoints.hallOfChief).toBe(110 * 90 + 50 * 120);
+  });
+
+  it('gives no points for a tier that an event has no row for', () => {
+    const result = training(12, 10);
+    expect(result.eventPoints).toEqual({
+      svs: 10 * 94,
+      allianceShowdown: 10 * 36,
+      kingOfIcefield: 0,
+      hallOfChief: 0,
+    });
+  });
+
+  it('gives no points for a promotion', () => {
+    const result = calculateTroops({
+      camps: camps('30', {
+        infantry: {
+          level: '30',
+          runs: [{ action: { mode: 'promotion', fromTier: 9, toTier: 10 }, count: 20 }],
+        },
+      }),
+    });
+    expect(result.eventPoints).toEqual({
+      svs: 0,
+      allianceShowdown: 0,
+      kingOfIcefield: 0,
+      hallOfChief: 0,
+    });
+  });
+
+  it('gives the same Hall of Chief points in both seasons', () => {
+    const rows = (stage: string) =>
+      events()
+        .find('hall-of-chief')!
+        .days!.find((d) => d.day === stage)!
+        .scoring.filter((s) => /^Train 1 Lv\. \d+ Troop$/.test(s.action))
+        .map((s) => [s.action, s.points]);
+    expect(rows('s1-3').length).toBeGreaterThan(0);
+    expect(rows('s1-3')).toEqual(rows('s2-3'));
+  });
+
+  it('gives the points of one minute of training speedups', () => {
+    expect(training(10, 1).speedupPointsPerMinute).toEqual({
+      svs: 30,
+      allianceShowdown: 18,
+      kingOfIcefield: 30,
+    });
+  });
+
+  it('rounds the speedup minutes up from the total seconds', () => {
+    const result = training(10, 'max', 2);
+    expect(result.totalSeconds).toBe(190608);
+    expect(result.speedupMinutesNeeded).toBe(3177);
+  });
+});

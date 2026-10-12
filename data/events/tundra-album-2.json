@@ -3,6 +3,8 @@
   "name": "Tundra Album",
   "img": "/images/events/tundra-album-2.png",
   "category": "solo",
+  "resultShape": "milestones",
+  "scoreUnit": "recycle tokens",
   "description": "An ongoing event where you earn rewards by reaching milestones as you develop your account. Missions give envelopes of puzzle pieces, and finished puzzles give rewards and buffs.",
   "frequency": "Ongoing",
   "phases": [

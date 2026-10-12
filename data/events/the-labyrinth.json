@@ -3,6 +3,8 @@
   "name": "The Labyrinth",
   "img": "/images/events/the-labyrinth.png",
   "category": "solo",
+  "resultShape": "milestones",
+  "scoreUnit": "Labyrinth Cores",
   "description": "Unlocks at Furnace Level 19. Enter the Labyrinth through the Command Center.",
   "frequency": "Each zone gives 5 challenge attempts per day, refreshed at 00:00 UTC. Stage progress resets on Monday.",
   "requirements": [

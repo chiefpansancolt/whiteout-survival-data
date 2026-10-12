@@ -3,6 +3,7 @@
   "name": "State Merger",
   "img": "/images/events/state-merger.png",
   "category": "solo",
+  "resultShape": "milestones",
   "description": "When the countdown ends, all the states in a group merge into the state with the highest state code. Chiefs get Pioneering Points from missions to unlock chests, and alliances complete new monument missions.",
   "frequency": "Irregular",
   "duration": "5 days of Pioneering Praises missions",

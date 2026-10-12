@@ -3,6 +3,7 @@
   "name": "Alliance Mobilization",
   "img": "/images/events/alliance-mobilization.png",
   "category": "alliance",
+  "resultShape": "milestones",
   "description": "An event with an individual leaderboard and an alliance leaderboard. Members complete missions to earn points, and alliance scores are combined to compete against other servers.",
   "frequency": "Once a month. Twice a month until about 13 weeks of state age, after which one of the slots goes to Alliance Showdown.",
   "duration": "Monday to Saturday",

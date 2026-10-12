@@ -3,6 +3,7 @@
   "name": "Beast Whisperer",
   "img": "/images/events/beast-whisperer.png",
   "category": "rookie",
+  "resultShape": "milestones",
   "description": "A one-time 7-day event that starts when you unlock your first pet. Complete daily missions to earn Beast Whisperer coins, pet items, and a chest at 70 coins.",
   "frequency": "Once only",
   "duration": "7 days",

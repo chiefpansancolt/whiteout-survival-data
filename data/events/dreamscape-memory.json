@@ -3,6 +3,7 @@
   "name": "Dreamscape Memory",
   "img": "/images/events/dreamscape-memory.png",
   "category": "holiday",
+  "resultShape": "participation",
   "description": "A recurring scavenger hunt mini game. It started in the 3rd Anniversary event.",
   "frequency": "Recurring",
   "phases": [

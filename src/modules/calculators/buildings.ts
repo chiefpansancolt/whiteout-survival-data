@@ -1,18 +1,17 @@
 import { buildings } from '@/modules/buildings';
-import { events } from '@/modules/events';
 import {
   Building,
   BuildingCalculation,
   BuildingCalculatorOptions,
   BuildingEventPoints,
   BuildingGoal,
-  BuildingHallOfChiefPoints,
   BuildingLevel,
   BuildingRequirement,
   BuildingStep,
   UnmetBuildingPrerequisite,
   UpgradeMaterial,
 } from '@/types';
+import { hallOfChiefPowerPoints, scoringPoints } from './event-score';
 
 const RESOURCE_ITEM_IDS: Record<string, string> = {
   Wood: 'wood',
@@ -118,42 +117,19 @@ function checkNumber(name: string, value: number): void {
   }
 }
 
-function constructionRow(eventId: string, pattern: RegExp): number {
-  return events()
-    .find(eventId)!
-    .days!.flatMap((day) => day.scoring)
-    .find((row) => pattern.test(row.action))!.points;
-}
-
 const speedupPoints = (eventId: string) =>
-  constructionRow(eventId, /^Use 1m (of )?Speedups for Construction/);
-
-function hallOfChiefPoints(power: number): BuildingHallOfChiefPoints[] {
-  const daysByMultiplier = new Map<number, string[]>();
-  events()
-    .find('hall-of-chief')!
-    .days!.forEach((day) =>
-      day.scoring
-        .filter((row) => /^Raise 1 Power through Construction/.test(row.action))
-        .forEach((row) =>
-          daysByMultiplier.set(row.points, [...(daysByMultiplier.get(row.points) ?? []), day.name]),
-        ),
-    );
-  return [...daysByMultiplier]
-    .sort(([a], [b]) => b - a)
-    .map(([pointsPerPower, days]) => ({ pointsPerPower, days, points: power * pointsPerPower }));
-}
+  scoringPoints(eventId, /^Use 1m (of )?Speedups for Construction/);
 
 function eventPoints(resources: UpgradeMaterial[], power: number): BuildingEventPoints {
   const amount = (itemId: string) => resources.find((r) => r.itemId === itemId)?.amount ?? 0;
   const forEvent = (eventId: string) =>
-    amount('fire-crystal') * constructionRow(eventId, /^Use 1 Fire Crystal to upgrade/) +
+    amount('fire-crystal') * scoringPoints(eventId, /^Use 1 Fire Crystal to upgrade/) +
     amount('refined-fire-crystal') *
-      constructionRow(eventId, /^Use 1 Refined Fire Crystal to upgrade/);
+      scoringPoints(eventId, /^Use 1 Refined Fire Crystal to upgrade/);
   return {
     svs: forEvent('svs-state-of-power'),
     kingOfIcefield: forEvent('king-of-icefield'),
-    hallOfChief: hallOfChiefPoints(power),
+    hallOfChief: hallOfChiefPowerPoints(/^Raise 1 Power through Construction/, power),
   };
 }
 

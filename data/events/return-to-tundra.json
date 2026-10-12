@@ -3,6 +3,7 @@
   "name": "Return to Tundra",
   "img": "/images/events/return-to-tundra.png",
   "category": "solo",
+  "resultShape": "milestones",
   "description": "An event of five mini events for players who stopped playing for a while and come back.",
   "requirements": [
     "The state must have been in its hero generation for at least 14 days.",

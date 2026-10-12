@@ -3,6 +3,7 @@
   "name": "Sunfire Castle",
   "img": "/images/events/sunfire-castle.png",
   "category": "alliance",
+  "resultShape": "ranking",
   "description": "Sunfire Castle has withstood generations of disaster and war and is the ultimate prize of the state. Whoever controls it presides over the frozen land. Alliances battle for control of the castle.",
   "frequency": "Once every two weeks",
   "duration": "5 hours",

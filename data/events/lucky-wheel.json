@@ -3,6 +3,8 @@
   "name": "Lucky Wheel",
   "img": "/images/events/lucky-wheel.png",
   "category": "solo",
+  "resultShape": "milestones",
+  "scoreUnit": "spins",
   "description": "A spin event for the hero shards of your current generation. Spin to get shards, with bonus shards at set spin counts.",
   "frequency": "Tuesday to Thursday",
   "duration": "3 days",

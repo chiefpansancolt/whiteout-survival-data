@@ -131,7 +131,8 @@
       "scoring": [
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 50000
+          "points": 50000,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Widget of any Hero Exclusive Gear",
@@ -315,7 +316,8 @@
       "scoring": [
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 50000
+          "points": 50000,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Widget of any Hero Exclusive Gear",

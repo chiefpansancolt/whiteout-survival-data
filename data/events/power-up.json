@@ -3,6 +3,7 @@
   "name": "Power Up",
   "img": "/images/events/power-up.png",
   "category": "rookie",
+  "resultShape": "ranking",
   "description": "We must do whatever we can to strengthen our hand.",
   "days": [
     {

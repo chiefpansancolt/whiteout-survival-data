@@ -3,6 +3,8 @@
   "name": "Hero's Mission",
   "img": "/images/events/heros-mission.png",
   "category": "solo",
+  "resultShape": "milestones",
+  "scoreUnit": "reapers",
   "description": "Starts in generation 4 and replaces Gina's Revenge. Players defeat Reapers on the world map to get Scattered Parts and shards of the featured Mythic Heroes. Players can also join rallies started by alliance members.",
   "frequency": "Every 2 weeks.",
   "duration": "3 days.",

@@ -51,6 +51,12 @@ describe('calculateAllianceShowdown', () => {
     expect(result.event).toEqual({ base: 135000, bonus: 52500, total: 187500 });
   });
 
+  it('scores the top-up points action of a day and gives it the Dawn Hymn percent', () => {
+    const topUp = 'Obtain 500 top-up points through payments (top-up, pack purchase, etc.)';
+    const result = calculateAllianceShowdown({ '2': { [topUp]: 3 } }, { dawnHymnLevel: 10 });
+    expect(result.days[1]).toMatchObject({ base: 9000, bonus: 4500, total: 13500 });
+  });
+
   it('uses the percent stored on Baldur for every Dawn Hymn level from 1 to 10', () => {
     [5, 10, 15, 20, 25, 30, 35, 40, 45, 50].forEach((percent, i) =>
       expect(calculateAllianceShowdown({}, { dawnHymnLevel: i + 1 }).dawnHymnBonusPercent).toBe(

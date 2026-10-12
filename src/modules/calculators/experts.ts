@@ -1,5 +1,6 @@
 import { experts } from '@/modules/experts';
 import { Expert, ExpertCalculation, ExpertGoal, ExpertItemResult, ExpertSkillGoal } from '@/types';
+import { scoringPoints } from './event-score';
 
 export const EXPERT_MAX_LEVEL = 100;
 
@@ -78,6 +79,10 @@ function expertResult(goal: ExpertGoal): ExpertItemResult {
   return { id: expert.id, name: expert.name, ...level, ...skills };
 }
 
+const EXPERT_BOOK_ROW = /^Use 1 Book of Knowledge$/;
+const EXPERT_SIGIL_ROW = /^Use any 1 Expert Sigil/;
+const EXPERT_SPEEDUP_ROW = /^Use 1m (of )?Speedups to Learn Expert Skills/;
+
 /**
  * Calculates the Books of Knowledge, expert sigils, skill EXP, and affinity points to level experts and
  * their skills.
@@ -97,14 +102,27 @@ export function calculateExperts(goals: ExpertGoal[] = []): ExpertCalculation {
   const items = goals.map(expertResult);
   const sum = (pick: (i: ExpertItemResult) => number) =>
     items.reduce((total, i) => total + pick(i), 0);
+  const books = sum((i) => i.books);
+  const sigils = sum((i) => i.sigils);
+  const forEvent = (eventId: string) =>
+    books * scoringPoints(eventId, EXPERT_BOOK_ROW) +
+    sigils * scoringPoints(eventId, EXPERT_SIGIL_ROW);
   return {
     items,
     levels: sum((i) => i.levels),
     advancements: sum((i) => i.advancements),
     skillLevels: sum((i) => i.skillLevels),
-    sigils: sum((i) => i.sigils),
-    books: sum((i) => i.books),
+    sigils,
+    books,
     exp: sum((i) => i.exp),
     affinity: sum((i) => i.affinity),
+    speedupPointsPerMinute: {
+      svs: scoringPoints('svs-state-of-power', EXPERT_SPEEDUP_ROW),
+      allianceShowdown: scoringPoints('alliance-showdown', EXPERT_SPEEDUP_ROW),
+    },
+    eventPoints: {
+      svs: forEvent('svs-state-of-power'),
+      allianceShowdown: forEvent('alliance-showdown'),
+    },
   };
 }

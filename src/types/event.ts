@@ -107,6 +107,7 @@ export interface GameEventMission {
 export interface GameEventScoringAction {
   action: string;
   points: number;
+  itemId?: string;
 }
 
 export interface GameEventDay {
@@ -145,11 +146,27 @@ export interface GameEventGenerationHero {
   shardItemId?: string;
 }
 
+export type GameEventResultShape = 'ranking' | 'milestones' | 'tier' | 'waves' | 'participation';
+
+export type GameEventRankingScope = 'personal' | 'alliance';
+
+export interface GameEventRankingTableView {
+  id: string;
+  scope?: GameEventRankingScope;
+  name?: string;
+  basedOn?: string;
+  rankings: GameEventRanking[];
+}
+
 export interface GameEvent {
   id: string;
   name: string;
   img: string;
   category: EventCategory;
+  /** Not set on the four Core events. */
+  resultShape?: GameEventResultShape;
+  /** What `scoreTotal` counts, for events whose targets are not points. */
+  scoreUnit?: string;
   description: string;
   frequency?: string;
   duration?: string;

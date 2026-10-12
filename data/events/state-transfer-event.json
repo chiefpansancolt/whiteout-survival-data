@@ -3,6 +3,7 @@
   "name": "State Transfer",
   "img": "/images/events/state-transfer-event.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "An event where chiefs move to another state. It happens irregularly, usually every 4 or 6 weeks. The game shows details 3 to 4 days before.",
   "frequency": "Irregular, usually every 4 or 6 weeks",
   "duration": "7 days in 3 phases",

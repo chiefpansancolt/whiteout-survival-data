@@ -3,6 +3,7 @@
   "name": "Canyon Clash",
   "img": "/images/events/canyon-clash.png",
   "category": "alliance",
+  "resultShape": "tier",
   "description": "Three alliances take part in cross-state matchmaking and fight a three-way battle in Lost Canyon. Players occupy buildings and fight for neutral structures to earn points, and the alliance with the most points wins.",
   "duration": "The battle lasts 60 minutes",
   "requirements": [

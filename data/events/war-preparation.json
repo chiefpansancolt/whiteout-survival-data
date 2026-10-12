@@ -3,6 +3,7 @@
   "name": "War Preparation",
   "img": "/images/events/war-preparation.png",
   "category": "rookie",
+  "resultShape": "ranking",
   "description": "We need stronger heroes to overcome the danger.",
   "days": [
     {
@@ -11,7 +12,8 @@
       "scoring": [
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 800
+          "points": 800,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1m of Training Speedup (Training, Promotion)",

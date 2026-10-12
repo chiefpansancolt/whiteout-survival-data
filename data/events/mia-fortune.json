@@ -3,6 +3,8 @@
   "name": "Mia Fortune",
   "img": "/images/events/mia-fortune.png",
   "category": "solo",
+  "resultShape": "milestones",
+  "scoreUnit": "Fortune Tokens",
   "description": "Pick a wish reward and find it among 10 hidden orbs, using Fortune Tokens.",
   "frequency": "Once a month",
   "duration": "2 days",

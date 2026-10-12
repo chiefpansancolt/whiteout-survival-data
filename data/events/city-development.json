@@ -3,6 +3,7 @@
   "name": "City Development",
   "img": "/images/events/city-development.png",
   "category": "rookie",
+  "resultShape": "ranking",
   "description": "Lead the survivors and build a new home.",
   "days": [
     {

@@ -3,6 +3,7 @@
   "name": "Armament Competition",
   "img": "/images/events/armament-competition.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "Unlocks when you start Fire Crystal buildings, replacing City Development. It has two competition types, one for chief gear and one for chief charms.",
   "personalRankings": [
     {
@@ -258,15 +259,18 @@
       "scoring": [
         {
           "action": "Use 1 Fire Crystal",
-          "points": 100
+          "points": 100,
+          "itemId": "fire-crystal"
         },
         {
           "action": "Use 1 Refined Fire Crystal",
-          "points": 1500
+          "points": 1500,
+          "itemId": "refined-fire-crystal"
         },
         {
           "action": "Use 1 Fire Crystal Shard",
-          "points": 50
+          "points": 50,
+          "itemId": "fire-crystal-shard"
         },
         {
           "action": "Raise max Chief Gear score by 1",
@@ -274,7 +278,8 @@
         },
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 800
+          "points": 800,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Widget of any Hero Exclusive Gear",
@@ -282,7 +287,8 @@
         },
         {
           "action": "Use 1 Mithril",
-          "points": 28800
+          "points": 28800,
+          "itemId": "mithril"
         },
         {
           "action": "Use 1m of Construction Speedup",
@@ -420,7 +426,8 @@
         },
         {
           "action": "Use 1 Hero Gear Essence Stone",
-          "points": 800
+          "points": 800,
+          "itemId": "essence-stones"
         },
         {
           "action": "Use 1 Rare Hero Shard",

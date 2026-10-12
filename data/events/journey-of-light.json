@@ -3,6 +3,8 @@
   "name": "Journey of Light",
   "img": "/images/events/journey-of-light.png",
   "category": "solo",
+  "resultShape": "milestones",
+  "scoreUnit": "flights",
   "description": "Send aircraft on 8-hour flights to get Radiance Treasure chests, then open or combine them for hero gear and Mythic hero shards.",
   "frequency": "Irregular",
   "duration": "5 days",

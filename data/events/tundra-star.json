@@ -3,6 +3,7 @@
   "name": "Tundra Star",
   "img": "/images/events/tundra-star.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "Raise the selected heroes to the target star rating for rewards. Unclaimed rewards are mailed when the event ends.",
   "phases": [
     {

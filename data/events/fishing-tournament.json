@@ -3,6 +3,7 @@
   "name": "Fishing Tournament",
   "img": "/images/events/fishing-tournament.png",
   "category": "solo",
+  "resultShape": "ranking",
   "description": "Players fish in seasonal waters (Winter, Spring, Summer, Autumn) to catch fish, divers, and crates.",
   "frequency": "Once a month.",
   "duration": "3 days.",

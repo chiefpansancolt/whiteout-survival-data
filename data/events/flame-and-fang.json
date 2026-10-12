@@ -3,6 +3,7 @@
   "name": "Flame and Fang",
   "img": "/images/events/flame-and-fang.png",
   "category": "solo",
+  "resultShape": "milestones",
   "description": "Do your Intel missions to get Crystallite Cores and trade them for rewards.",
   "frequency": "Monday and Tuesday of the SvS preparation phase",
   "duration": "3 days. You get cores on 2 days, and the last day is only for trading.",

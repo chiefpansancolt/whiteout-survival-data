@@ -3,6 +3,7 @@
   "name": "Silver Shell Events",
   "img": "/images/events/silver-shell-events.png",
   "category": "solo",
+  "resultShape": "participation",
   "description": "Random events with a special currency, Silver Shells, that buy limited items at good rates.",
   "frequency": "Random, at the developers\u2019 discretion",
   "phases": [
