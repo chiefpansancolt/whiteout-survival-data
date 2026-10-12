@@ -7,12 +7,14 @@
     "bonuses": [
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+2%",
         "amount": 2,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+100K",
         "amount": 100000,
         "unit": "flat"
@@ -27,12 +29,14 @@
     "bonuses": [
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+4%",
         "amount": 4,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+150K",
         "amount": 150000,
         "unit": "flat"
@@ -47,12 +51,14 @@
     "bonuses": [
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+6%",
         "amount": 6,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+200K",
         "amount": 200000,
         "unit": "flat"
@@ -67,18 +73,21 @@
     "bonuses": [
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+10%",
         "amount": 10,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+8%",
         "amount": 8,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+300K",
         "amount": 300000,
         "unit": "flat"
@@ -93,24 +102,28 @@
     "bonuses": [
       {
         "stat": "Troop Formation",
+        "statKey": "troop-formation",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+10%",
         "amount": 10,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+10%",
         "amount": 10,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+400K",
         "amount": 400000,
         "unit": "flat"
@@ -125,30 +138,35 @@
     "bonuses": [
       {
         "stat": "March Queue",
+        "statKey": "march-queue",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Troop Formation",
+        "statKey": "troop-formation",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+10%",
         "amount": 10,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+12%",
         "amount": 12,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+500K",
         "amount": 500000,
         "unit": "flat"
@@ -163,30 +181,35 @@
     "bonuses": [
       {
         "stat": "March Queue",
+        "statKey": "march-queue",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Troop Formation",
+        "statKey": "troop-formation",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+10%",
         "amount": 10,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+14%",
         "amount": 14,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+600K",
         "amount": 600000,
         "unit": "flat"
@@ -201,30 +224,35 @@
     "bonuses": [
       {
         "stat": "March Queue",
+        "statKey": "march-queue",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Troop Formation",
+        "statKey": "troop-formation",
         "value": "+2",
         "amount": 2,
         "unit": "flat"
       },
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+10%",
         "amount": 10,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+16%",
         "amount": 16,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+700K",
         "amount": 700000,
         "unit": "flat"
@@ -239,36 +267,42 @@
     "bonuses": [
       {
         "stat": "Troops Defense",
+        "statKey": "troops-defense",
         "value": "+10%",
         "amount": 10,
         "unit": "percent"
       },
       {
         "stat": "March Queue",
+        "statKey": "march-queue",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Troop Formation",
+        "statKey": "troop-formation",
         "value": "+2",
         "amount": 2,
         "unit": "flat"
       },
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+20%",
         "amount": 20,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+18%",
         "amount": 18,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+800K",
         "amount": 800000,
         "unit": "flat"
@@ -283,42 +317,49 @@
     "bonuses": [
       {
         "stat": "Troops Attack",
+        "statKey": "troops-attack",
         "value": "+12%",
         "amount": 12,
         "unit": "percent"
       },
       {
         "stat": "Troops Defense",
+        "statKey": "troops-defense",
         "value": "+12%",
         "amount": 12,
         "unit": "percent"
       },
       {
         "stat": "March Queue",
+        "statKey": "march-queue",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Troop Formation",
+        "statKey": "troop-formation",
         "value": "+2",
         "amount": 2,
         "unit": "flat"
       },
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+20%",
         "amount": 20,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+20%",
         "amount": 20,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+900K",
         "amount": 900000,
         "unit": "flat"
@@ -333,48 +374,56 @@
     "bonuses": [
       {
         "stat": "Troops Health",
+        "statKey": "troops-health",
         "value": "+14%",
         "amount": 14,
         "unit": "percent"
       },
       {
         "stat": "Troops Attack",
+        "statKey": "troops-attack",
         "value": "+14%",
         "amount": 14,
         "unit": "percent"
       },
       {
         "stat": "Troops Defense",
+        "statKey": "troops-defense",
         "value": "+14%",
         "amount": 14,
         "unit": "percent"
       },
       {
         "stat": "March Queue",
+        "statKey": "march-queue",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Troop Formation",
+        "statKey": "troop-formation",
         "value": "+2",
         "amount": 2,
         "unit": "flat"
       },
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+20%",
         "amount": 20,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+22%",
         "amount": 22,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+1M",
         "amount": 1000000,
         "unit": "flat"
@@ -389,54 +438,63 @@
     "bonuses": [
       {
         "stat": "Troops Lethality",
+        "statKey": "troops-lethality",
         "value": "+16%",
         "amount": 16,
         "unit": "percent"
       },
       {
         "stat": "Troops Health",
+        "statKey": "troops-health",
         "value": "+16%",
         "amount": 16,
         "unit": "percent"
       },
       {
         "stat": "Troops Attack",
+        "statKey": "troops-attack",
         "value": "+16%",
         "amount": 16,
         "unit": "percent"
       },
       {
         "stat": "Troops Defense",
+        "statKey": "troops-defense",
         "value": "+16%",
         "amount": 16,
         "unit": "percent"
       },
       {
         "stat": "March Queue",
+        "statKey": "march-queue",
         "value": "+1",
         "amount": 1,
         "unit": "flat"
       },
       {
         "stat": "Troop Formation",
+        "statKey": "troop-formation",
         "value": "+2",
         "amount": 2,
         "unit": "flat"
       },
       {
         "stat": "Construction Speed",
+        "statKey": "construction-speed",
         "value": "+20%",
         "amount": 20,
         "unit": "percent"
       },
       {
         "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
         "value": "+24%",
         "amount": 24,
         "unit": "percent"
       },
       {
         "stat": "Storehouse Capacity",
+        "statKey": "storehouse-capacity",
         "value": "+1.1M",
         "amount": 1100000,
         "unit": "flat"

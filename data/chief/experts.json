@@ -9,7 +9,10 @@
     "baseBonuses": [
       {
         "stat": "Troops Attack",
-        "value": 15.0
+        "statKey": "troops-attack",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -988,7 +991,10 @@
     "baseBonuses": [
       {
         "stat": "Troops Defense",
-        "value": 15.0
+        "statKey": "troops-defense",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -1988,11 +1994,17 @@
     "baseBonuses": [
       {
         "stat": "Troops Attack",
-        "value": 15.0
+        "statKey": "troops-attack",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       },
       {
         "stat": "Troops Defense",
-        "value": 15.0
+        "statKey": "troops-defense",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -3055,11 +3067,17 @@
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
-        "value": 20.0
+        "statKey": "troops-lethality",
+        "value": 20.0,
+        "amount": 20.0,
+        "unit": "percent"
       },
       {
         "stat": "Troops Health",
-        "value": 20.0
+        "statKey": "troops-health",
+        "value": 20.0,
+        "amount": 20.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -4258,11 +4276,17 @@
     "baseBonuses": [
       {
         "stat": "Troops Attack",
-        "value": 10.0
+        "statKey": "troops-attack",
+        "value": 10.0,
+        "amount": 10.0,
+        "unit": "percent"
       },
       {
         "stat": "Troops Defense",
-        "value": 10.0
+        "statKey": "troops-defense",
+        "value": 10.0,
+        "amount": 10.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -5472,11 +5496,17 @@
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
-        "value": 15.0
+        "statKey": "troops-lethality",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       },
       {
         "stat": "Troops Health",
-        "value": 15.0
+        "statKey": "troops-health",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -6628,11 +6658,17 @@
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
-        "value": 20.0
+        "statKey": "troops-lethality",
+        "value": 20.0,
+        "amount": 20.0,
+        "unit": "percent"
       },
       {
         "stat": "Troops Health",
-        "value": 20.0
+        "statKey": "troops-health",
+        "value": 20.0,
+        "amount": 20.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -7889,11 +7925,17 @@
     "baseBonuses": [
       {
         "stat": "Troops Attack",
-        "value": 15.0
+        "statKey": "troops-attack",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       },
       {
         "stat": "Troops Defense",
-        "value": 15.0
+        "statKey": "troops-defense",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -8940,11 +8982,17 @@
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
-        "value": 15.0
+        "statKey": "troops-lethality",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       },
       {
         "stat": "Troops Health",
-        "value": 15.0
+        "statKey": "troops-health",
+        "value": 15.0,
+        "amount": 15.0,
+        "unit": "percent"
       }
     ],
     "skills": [
@@ -9989,11 +10037,17 @@
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
-        "value": 30.0
+        "statKey": "troops-lethality",
+        "value": 30.0,
+        "amount": 30.0,
+        "unit": "percent"
       },
       {
         "stat": "Troops Health",
-        "value": 30.0
+        "statKey": "troops-health",
+        "value": 30.0,
+        "amount": 30.0,
+        "unit": "percent"
       }
     ],
     "skills": [

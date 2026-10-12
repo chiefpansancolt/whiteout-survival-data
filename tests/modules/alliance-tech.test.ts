@@ -93,3 +93,54 @@ describe('Alliance Tech tree', () => {
     expect(infantryAttackI.levels[3].prerequisites).toEqual([]);
   });
 });
+
+describe('alliance tech stats', () => {
+  const nodes = allianceTech().get();
+
+  it('gives every node a stat except the three that have no stat effect', () => {
+    expect(nodes.filter((n) => n.stat === undefined).map((n) => n.id)).toEqual([
+      'long-live-our-alliance',
+      'tundra-surveying',
+      'fertile-land-expedition',
+    ]);
+    expect(nodes.filter((n) => n.stat !== undefined)).toHaveLength(56);
+  });
+
+  it('names the stat of a node from its description', () => {
+    const infantry = allianceTech().find('infantry-attack-i')!;
+    expect(infantry).toMatchObject({ stat: 'Infantry Attack', statKey: 'infantry-attack' });
+    expect(allianceTech().find('troops-health-i')).toMatchObject({ stat: 'Troops Health' });
+    expect(allianceTech().find('mechanisms-i')).toMatchObject({ statKey: 'research-speed' });
+  });
+
+  it('reads the amount and unit of each level from its bonus', () => {
+    const levels = allianceTech().find('infantry-attack-i')!.levels;
+    expect(levels.map((l) => [l.amount, l.unit])).toEqual([
+      [1, 'percent'],
+      [2, 'percent'],
+      [3, 'percent'],
+      [4, 'percent'],
+      [5, 'percent'],
+    ]);
+    expect(
+      allianceTech()
+        .find('rally-expansion-i')!
+        .levels.map((l) => l.unit),
+    ).toEqual(['flat', 'flat', 'flat']);
+  });
+
+  it('has an amount on every level with a bonus of a node with a stat, and on no other level', () => {
+    for (const node of nodes) {
+      for (const level of node.levels) {
+        const hasAmount = node.stat !== undefined && level.bonus !== undefined;
+        expect(level.amount !== undefined).toBe(hasAmount);
+        expect(level.unit !== undefined).toBe(hasAmount);
+      }
+    }
+  });
+
+  it('keeps the 2000 in level 2 of Storehouse Expansion II as the source states it', () => {
+    const levels = allianceTech().find('storehouse-expansion-ii')!.levels;
+    expect(levels[1]).toMatchObject({ bonus: '2000', amount: 2000, unit: 'flat' });
+  });
+});

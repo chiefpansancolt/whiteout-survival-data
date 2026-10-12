@@ -4,6 +4,8 @@ export interface Base {
   img: string;
 }
 
+export type BonusUnit = 'percent' | 'flat';
+
 export interface Resource {
   name: string;
   count: number;

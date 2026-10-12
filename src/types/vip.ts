@@ -1,7 +1,10 @@
-export type VipBonusUnit = 'percent' | 'flat';
+import { BonusUnit } from './common';
+
+export type VipBonusUnit = BonusUnit;
 
 export interface VipBonus {
   stat: string;
+  statKey: string;
   value: string;
   amount: number;
   unit: VipBonusUnit;

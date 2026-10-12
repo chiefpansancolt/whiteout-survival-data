@@ -6,6 +6,8 @@
     "category": "Battle",
     "tier": 1,
     "description": "Enhances Infantry Troop Attack.",
+    "stat": "Infantry Attack",
+    "statKey": "infantry-attack",
     "levels": [
       {
         "level": 1,
@@ -26,7 +28,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -47,7 +51,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -68,7 +74,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -84,7 +92,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -100,7 +110,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -111,6 +123,8 @@
     "category": "Battle",
     "tier": 1,
     "description": "Enhances Lancer Attack.",
+    "stat": "Lancer Attack",
+    "statKey": "lancer-attack",
     "levels": [
       {
         "level": 1,
@@ -131,7 +145,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -152,7 +168,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -173,7 +191,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -189,7 +209,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -205,7 +227,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -216,6 +240,8 @@
     "category": "Battle",
     "tier": 1,
     "description": "Enhances Marksman Attack.",
+    "stat": "Marksman Attack",
+    "statKey": "marksman-attack",
     "levels": [
       {
         "level": 1,
@@ -236,7 +262,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -257,7 +285,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -278,7 +308,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -294,7 +326,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -310,7 +344,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -321,6 +357,8 @@
     "category": "Battle",
     "tier": 1,
     "description": "Increases rally governor cap.",
+    "stat": "Rally Governor Cap",
+    "statKey": "rally-governor-cap",
     "levels": [
       {
         "level": 1,
@@ -336,7 +374,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1"
+        "bonus": "1",
+        "amount": 1,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -352,7 +392,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2"
+        "bonus": "2",
+        "amount": 2,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -368,7 +410,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3"
+        "bonus": "3",
+        "amount": 3,
+        "unit": "flat"
       }
     ]
   },
@@ -379,6 +423,8 @@
     "category": "Battle",
     "tier": 1,
     "description": "Enhances all Troops’ Attack.",
+    "stat": "Troops Attack",
+    "statKey": "troops-attack",
     "levels": [
       {
         "level": 1,
@@ -407,7 +453,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -436,7 +484,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -465,7 +515,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -494,7 +546,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -523,7 +577,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -534,6 +590,8 @@
     "category": "Battle",
     "tier": 2,
     "description": "Enhances Infantry Defense.",
+    "stat": "Infantry Defense",
+    "statKey": "infantry-defense",
     "levels": [
       {
         "level": 1,
@@ -558,7 +616,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -587,7 +647,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -616,7 +678,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -640,7 +704,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -664,7 +730,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -675,6 +743,8 @@
     "category": "Battle",
     "tier": 2,
     "description": "Enhances Lancer Defense.",
+    "stat": "Lancer Defense",
+    "statKey": "lancer-defense",
     "levels": [
       {
         "level": 1,
@@ -699,7 +769,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -728,7 +800,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -757,7 +831,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -781,7 +857,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -805,7 +883,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -816,6 +896,8 @@
     "category": "Battle",
     "tier": 2,
     "description": "Enhances Marksman Defense.",
+    "stat": "Marksman Defense",
+    "statKey": "marksman-defense",
     "levels": [
       {
         "level": 1,
@@ -840,7 +922,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -869,7 +953,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -898,7 +984,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -922,7 +1010,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -946,7 +1036,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -957,6 +1049,8 @@
     "category": "Battle",
     "tier": 2,
     "description": "Increases rally governor cap.",
+    "stat": "Rally Governor Cap",
+    "statKey": "rally-governor-cap",
     "levels": [
       {
         "level": 1,
@@ -977,7 +1071,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1"
+        "bonus": "1",
+        "amount": 1,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -998,7 +1094,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "2"
+        "bonus": "2",
+        "amount": 2,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -1019,7 +1117,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "3"
+        "bonus": "3",
+        "amount": 3,
+        "unit": "flat"
       }
     ]
   },
@@ -1030,6 +1130,8 @@
     "category": "Battle",
     "tier": 2,
     "description": "Enhances all Troops’ Defense.",
+    "stat": "Troops Defense",
+    "statKey": "troops-defense",
     "levels": [
       {
         "level": 1,
@@ -1062,7 +1164,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -1099,7 +1203,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -1136,7 +1242,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -1173,7 +1281,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -1210,7 +1320,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -1221,6 +1333,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Enhances Infantry Health.",
+    "stat": "Infantry Health",
+    "statKey": "infantry-health",
     "levels": [
       {
         "level": 1,
@@ -1249,7 +1363,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -1278,7 +1394,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -1307,7 +1425,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -1336,7 +1456,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -1365,7 +1487,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -1376,6 +1500,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Enhances Infantry Lethality.",
+    "stat": "Infantry Lethality",
+    "statKey": "infantry-lethality",
     "levels": [
       {
         "level": 1,
@@ -1404,7 +1530,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -1433,7 +1561,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -1462,7 +1592,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -1486,7 +1618,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -1510,7 +1644,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -1521,6 +1657,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Enhances Lancer Health.",
+    "stat": "Lancer Health",
+    "statKey": "lancer-health",
     "levels": [
       {
         "level": 1,
@@ -1549,7 +1687,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -1578,7 +1718,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -1607,7 +1749,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -1636,7 +1780,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -1665,7 +1811,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -1676,6 +1824,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Enhances Lancer Lethality.",
+    "stat": "Lancer Lethality",
+    "statKey": "lancer-lethality",
     "levels": [
       {
         "level": 1,
@@ -1704,7 +1854,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -1733,7 +1885,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -1762,7 +1916,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -1786,7 +1942,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -1810,7 +1968,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -1843,6 +2003,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Enhances Marksman Health.",
+    "stat": "Marksman Health",
+    "statKey": "marksman-health",
     "levels": [
       {
         "level": 1,
@@ -1871,7 +2033,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -1900,7 +2064,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -1929,7 +2095,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -1958,7 +2126,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -1987,7 +2157,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -1998,6 +2170,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Enhances Marksman Lethality.",
+    "stat": "Marksman Lethality",
+    "statKey": "marksman-lethality",
     "levels": [
       {
         "level": 1,
@@ -2026,7 +2200,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -2055,7 +2231,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -2084,7 +2262,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -2108,7 +2288,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -2132,7 +2314,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -2143,6 +2327,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Increases rally governor cap.",
+    "stat": "Rally Governor Cap",
+    "statKey": "rally-governor-cap",
     "levels": [
       {
         "level": 1,
@@ -2171,7 +2357,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "1"
+        "bonus": "1",
+        "amount": 1,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -2200,7 +2388,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "2"
+        "bonus": "2",
+        "amount": 2,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -2229,7 +2419,9 @@
           }
         ],
         "timeSeconds": 10800,
-        "bonus": "3"
+        "bonus": "3",
+        "amount": 3,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -2258,7 +2450,9 @@
           }
         ],
         "timeSeconds": 14400,
-        "bonus": "4"
+        "bonus": "4",
+        "amount": 4,
+        "unit": "flat"
       }
     ]
   },
@@ -2269,6 +2463,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Enhances all Troops’ Health.",
+    "stat": "Troops Health",
+    "statKey": "troops-health",
     "levels": [
       {
         "level": 1,
@@ -2305,7 +2501,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -2342,7 +2540,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -2379,7 +2579,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -2416,7 +2618,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -2453,7 +2657,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -2464,6 +2670,8 @@
     "category": "Battle",
     "tier": 3,
     "description": "Enhances all Troops’ Lethality.",
+    "stat": "Troops Lethality",
+    "statKey": "troops-lethality",
     "levels": [
       {
         "level": 1,
@@ -2500,7 +2708,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -2537,7 +2747,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -2574,7 +2786,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -2611,7 +2825,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -2648,7 +2864,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -2659,6 +2877,8 @@
     "category": "Growth",
     "tier": 1,
     "description": "Accelerates City construction for alliance members.",
+    "stat": "Construction Speed",
+    "statKey": "construction-speed",
     "levels": [
       {
         "level": 1,
@@ -2679,7 +2899,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -2700,7 +2922,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -2721,7 +2945,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -2746,7 +2972,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -2771,7 +2999,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -2782,6 +3012,8 @@
     "category": "Growth",
     "tier": 1,
     "description": "Accelerates training for all alliance member troop types.",
+    "stat": "Training Speed",
+    "statKey": "training-speed",
     "levels": [
       {
         "level": 1,
@@ -2802,7 +3034,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -2823,7 +3057,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -2844,7 +3080,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -2869,7 +3107,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -2894,7 +3134,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -2905,6 +3147,8 @@
     "category": "Growth",
     "tier": 1,
     "description": "Increases alliance membership cap.",
+    "stat": "Alliance Member Cap",
+    "statKey": "alliance-member-cap",
     "levels": [
       {
         "level": 1,
@@ -2920,7 +3164,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "2"
+        "bonus": "2",
+        "amount": 2,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -2936,7 +3182,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "4"
+        "bonus": "4",
+        "amount": 4,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -2952,7 +3200,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "6"
+        "bonus": "6",
+        "amount": 6,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -2968,7 +3218,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "8"
+        "bonus": "8",
+        "amount": 8,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -2984,7 +3236,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "10"
+        "bonus": "10",
+        "amount": 10,
+        "unit": "flat"
       }
     ]
   },
@@ -2995,6 +3249,8 @@
     "category": "Growth",
     "tier": 1,
     "description": "Alliance Help will reduce more time.",
+    "stat": "Alliance Help Time",
+    "statKey": "alliance-help-time",
     "levels": [
       {
         "level": 1,
@@ -3010,7 +3266,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "30"
+        "bonus": "30",
+        "amount": 30,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -3026,7 +3284,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "60"
+        "bonus": "60",
+        "amount": 60,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -3042,7 +3302,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "90"
+        "bonus": "90",
+        "amount": 90,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -3058,7 +3320,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "120"
+        "bonus": "120",
+        "amount": 120,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -3074,7 +3338,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "150"
+        "bonus": "150",
+        "amount": 150,
+        "unit": "flat"
       }
     ]
   },
@@ -3085,6 +3351,8 @@
     "category": "Growth",
     "tier": 1,
     "description": "Speeds up alliance members’ research.",
+    "stat": "Research Speed",
+    "statKey": "research-speed",
     "levels": [
       {
         "level": 1,
@@ -3105,7 +3373,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -3126,7 +3396,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -3147,7 +3419,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -3172,7 +3446,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -3197,7 +3473,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -3208,6 +3486,8 @@
     "category": "Growth",
     "tier": 1,
     "description": "Raises the Alliance Help cap.",
+    "stat": "Alliance Help Cap",
+    "statKey": "alliance-help-cap",
     "levels": [
       {
         "level": 1,
@@ -3228,7 +3508,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1"
+        "bonus": "1",
+        "amount": 1,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -3249,7 +3531,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2"
+        "bonus": "2",
+        "amount": 2,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -3270,7 +3554,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3"
+        "bonus": "3",
+        "amount": 3,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -3295,7 +3581,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4"
+        "bonus": "4",
+        "amount": 4,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -3320,7 +3608,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5"
+        "bonus": "5",
+        "amount": 5,
+        "unit": "flat"
       }
     ]
   },
@@ -3331,6 +3621,8 @@
     "category": "Growth",
     "tier": 2,
     "description": "Increases alliance membership cap.",
+    "stat": "Alliance Member Cap",
+    "statKey": "alliance-member-cap",
     "levels": [
       {
         "level": 1,
@@ -3355,7 +3647,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "4"
+        "bonus": "4",
+        "amount": 4,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -3380,7 +3674,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "8"
+        "bonus": "8",
+        "amount": 8,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -3405,7 +3701,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "12"
+        "bonus": "12",
+        "amount": 12,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -3434,7 +3732,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "16"
+        "bonus": "16",
+        "amount": 16,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -3463,7 +3763,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "20"
+        "bonus": "20",
+        "amount": 20,
+        "unit": "flat"
       }
     ]
   },
@@ -3474,6 +3776,8 @@
     "category": "Growth",
     "tier": 2,
     "description": "Speeds up alliance members’ Coal mining in the wilderness.",
+    "stat": "Coal Gathering Speed",
+    "statKey": "coal-gathering-speed",
     "levels": [
       {
         "level": 1,
@@ -3494,7 +3798,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -3515,7 +3821,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -3540,7 +3848,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -3569,7 +3879,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -3598,7 +3910,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -3609,6 +3923,8 @@
     "category": "Growth",
     "tier": 2,
     "description": "Speeds up alliance members’ Meat gathering in the wilderness.",
+    "stat": "Meat Gathering Speed",
+    "statKey": "meat-gathering-speed",
     "levels": [
       {
         "level": 1,
@@ -3629,7 +3945,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -3650,7 +3968,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -3675,7 +3995,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -3704,7 +4026,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -3733,7 +4057,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -3744,6 +4070,8 @@
     "category": "Growth",
     "tier": 2,
     "description": "Speeds up alliance members’ Iron mining in the wilderness.",
+    "stat": "Iron Gathering Speed",
+    "statKey": "iron-gathering-speed",
     "levels": [
       {
         "level": 1,
@@ -3764,7 +4092,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -3785,7 +4115,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -3810,7 +4142,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -3839,7 +4173,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -3868,7 +4204,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -3913,6 +4251,8 @@
     "category": "Growth",
     "tier": 2,
     "description": "Speeds up alliance members’ Wood gathering in the wilderness.",
+    "stat": "Wood Gathering Speed",
+    "statKey": "wood-gathering-speed",
     "levels": [
       {
         "level": 1,
@@ -3933,7 +4273,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -3954,7 +4296,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -3979,7 +4323,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -4008,7 +4354,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -4037,7 +4385,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -4048,6 +4398,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Accelerates City construction for alliance members.",
+    "stat": "Construction Speed",
+    "statKey": "construction-speed",
     "levels": [
       {
         "level": 1,
@@ -4076,7 +4428,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -4105,7 +4459,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -4134,7 +4490,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -4163,7 +4521,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -4192,7 +4552,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -4203,6 +4565,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Accelerates training for all alliance member troop types.",
+    "stat": "Training Speed",
+    "statKey": "training-speed",
     "levels": [
       {
         "level": 1,
@@ -4231,7 +4595,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -4260,7 +4626,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -4289,7 +4657,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -4318,7 +4688,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -4347,7 +4719,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -4358,6 +4732,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Increases alliance membership cap.",
+    "stat": "Alliance Member Cap",
+    "statKey": "alliance-member-cap",
     "levels": [
       {
         "level": 1,
@@ -4386,7 +4762,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "4"
+        "bonus": "4",
+        "amount": 4,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -4415,7 +4793,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "8"
+        "bonus": "8",
+        "amount": 8,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -4448,7 +4828,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "12"
+        "bonus": "12",
+        "amount": 12,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -4481,7 +4863,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "16"
+        "bonus": "16",
+        "amount": 16,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -4514,7 +4898,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "20"
+        "bonus": "20",
+        "amount": 20,
+        "unit": "flat"
       }
     ]
   },
@@ -4525,6 +4911,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Speeds up alliance members’ Coal mining in the wilderness.",
+    "stat": "Coal Gathering Speed",
+    "statKey": "coal-gathering-speed",
     "levels": [
       {
         "level": 1,
@@ -4553,7 +4941,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -4582,7 +4972,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -4611,7 +5003,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -4640,7 +5034,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -4669,7 +5065,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -4718,6 +5116,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Speeds up alliance members’ troop healing.",
+    "stat": "Healing Speed",
+    "statKey": "healing-speed",
     "levels": [
       {
         "level": 1,
@@ -4750,7 +5150,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -4783,7 +5185,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "8%"
+        "bonus": "8%",
+        "amount": 8,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -4816,7 +5220,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "12%"
+        "bonus": "12%",
+        "amount": 12,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -4849,7 +5255,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "16%"
+        "bonus": "16%",
+        "amount": 16,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -4882,7 +5290,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "20%"
+        "bonus": "20%",
+        "amount": 20,
+        "unit": "percent"
       }
     ]
   },
@@ -4893,6 +5303,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Speeds up alliance members’ Meat gathering in the wilderness.",
+    "stat": "Meat Gathering Speed",
+    "statKey": "meat-gathering-speed",
     "levels": [
       {
         "level": 1,
@@ -4921,7 +5333,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -4950,7 +5364,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -4979,7 +5395,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -5008,7 +5426,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -5037,7 +5457,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -5048,6 +5470,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Speeds up alliance members’ Iron mining in the wilderness.",
+    "stat": "Iron Gathering Speed",
+    "statKey": "iron-gathering-speed",
     "levels": [
       {
         "level": 1,
@@ -5076,7 +5500,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -5105,7 +5531,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -5134,7 +5562,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -5163,7 +5593,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -5192,7 +5624,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -5203,6 +5637,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Speeds up alliance members’ research.",
+    "stat": "Research Speed",
+    "statKey": "research-speed",
     "levels": [
       {
         "level": 1,
@@ -5231,7 +5667,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -5260,7 +5698,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -5289,7 +5729,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -5318,7 +5760,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -5347,7 +5791,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -5358,6 +5804,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Raises the Alliance Help cap.",
+    "stat": "Alliance Help Cap",
+    "statKey": "alliance-help-cap",
     "levels": [
       {
         "level": 1,
@@ -5386,7 +5834,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "2"
+        "bonus": "2",
+        "amount": 2,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -5415,7 +5865,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "4"
+        "bonus": "4",
+        "amount": 4,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -5444,7 +5896,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "6"
+        "bonus": "6",
+        "amount": 6,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -5473,7 +5927,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "8"
+        "bonus": "8",
+        "amount": 8,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -5502,7 +5958,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "10"
+        "bonus": "10",
+        "amount": 10,
+        "unit": "flat"
       }
     ]
   },
@@ -5513,6 +5971,8 @@
     "category": "Growth",
     "tier": 3,
     "description": "Speeds up alliance members’ Wood gathering in the wilderness.",
+    "stat": "Wood Gathering Speed",
+    "statKey": "wood-gathering-speed",
     "levels": [
       {
         "level": 1,
@@ -5541,7 +6001,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -5570,7 +6032,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -5599,7 +6063,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -5628,7 +6094,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -5657,7 +6125,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -5668,6 +6138,8 @@
     "category": "Territory",
     "tier": 1,
     "description": "Enhances Alliance Building Durability.",
+    "stat": "Alliance Building Durability",
+    "statKey": "alliance-building-durability",
     "levels": [
       {
         "level": 1,
@@ -5688,7 +6160,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1000"
+        "bonus": "1000",
+        "amount": 1000,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -5709,7 +6183,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2000"
+        "bonus": "2000",
+        "amount": 2000,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -5730,7 +6206,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3000"
+        "bonus": "3000",
+        "amount": 3000,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -5751,7 +6229,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4000"
+        "bonus": "4000",
+        "amount": 4000,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -5776,7 +6256,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5000"
+        "bonus": "5000",
+        "amount": 5000,
+        "unit": "flat"
       }
     ]
   },
@@ -5787,6 +6269,8 @@
     "category": "Territory",
     "tier": 1,
     "description": "Enhances Alliance Construction Speed.",
+    "stat": "Alliance Construction Speed",
+    "statKey": "alliance-construction-speed",
     "levels": [
       {
         "level": 1,
@@ -5807,7 +6291,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -5828,7 +6314,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -5849,7 +6337,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "6%"
+        "bonus": "6%",
+        "amount": 6,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -5874,7 +6364,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "8%"
+        "bonus": "8%",
+        "amount": 8,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -5899,7 +6391,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "10%"
+        "bonus": "10%",
+        "amount": 10,
+        "unit": "percent"
       }
     ]
   },
@@ -5910,6 +6404,8 @@
     "category": "Territory",
     "tier": 1,
     "description": "Accelerates Enemy Alliance Building Destruction",
+    "stat": "Enemy Alliance Building Destruction Speed",
+    "statKey": "enemy-alliance-building-destruction-speed",
     "levels": [
       {
         "level": 1,
@@ -5930,7 +6426,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -5951,7 +6449,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -5972,7 +6472,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "6%"
+        "bonus": "6%",
+        "amount": 6,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -5997,7 +6499,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "8%"
+        "bonus": "8%",
+        "amount": 8,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -6022,7 +6526,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "10%"
+        "bonus": "10%",
+        "amount": 10,
+        "unit": "percent"
       }
     ]
   },
@@ -6033,6 +6539,8 @@
     "category": "Territory",
     "tier": 1,
     "description": "Troops March Speed",
+    "stat": "Troops March Speed",
+    "statKey": "troops-march-speed",
     "levels": [
       {
         "level": 1,
@@ -6048,7 +6556,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1%"
+        "bonus": "1%",
+        "amount": 1,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -6064,7 +6574,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -6080,7 +6592,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3%"
+        "bonus": "3%",
+        "amount": 3,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -6096,7 +6610,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -6112,7 +6628,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5%"
+        "bonus": "5%",
+        "amount": 5,
+        "unit": "percent"
       }
     ]
   },
@@ -6123,6 +6641,8 @@
     "category": "Territory",
     "tier": 1,
     "description": "Increases Alliance Storehouse Capacity.",
+    "stat": "Alliance Storehouse Capacity",
+    "statKey": "alliance-storehouse-capacity",
     "levels": [
       {
         "level": 1,
@@ -6143,7 +6663,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "50%"
+        "bonus": "50%",
+        "amount": 50,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -6164,7 +6686,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "100%"
+        "bonus": "100%",
+        "amount": 100,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -6185,7 +6709,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "200%"
+        "bonus": "200%",
+        "amount": 200,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -6210,7 +6736,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "300%"
+        "bonus": "300%",
+        "amount": 300,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -6235,7 +6763,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "400%"
+        "bonus": "400%",
+        "amount": 400,
+        "unit": "percent"
       }
     ]
   },
@@ -6246,6 +6776,8 @@
     "category": "Territory",
     "tier": 1,
     "description": "Increases Alliance Banner cap.",
+    "stat": "Alliance Banner Cap",
+    "statKey": "alliance-banner-cap",
     "levels": [
       {
         "level": 1,
@@ -6266,7 +6798,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "18"
+        "bonus": "18",
+        "amount": 18,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -6287,7 +6821,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "36"
+        "bonus": "36",
+        "amount": 36,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -6308,7 +6844,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "54"
+        "bonus": "54",
+        "amount": 54,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -6329,7 +6867,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "72"
+        "bonus": "72",
+        "amount": 72,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -6350,7 +6890,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "90"
+        "bonus": "90",
+        "amount": 90,
+        "unit": "flat"
       }
     ]
   },
@@ -6361,6 +6903,8 @@
     "category": "Territory",
     "tier": 2,
     "description": "Enhances Alliance Building Durability.",
+    "stat": "Alliance Building Durability",
+    "statKey": "alliance-building-durability",
     "levels": [
       {
         "level": 1,
@@ -6389,7 +6933,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1000"
+        "bonus": "1000",
+        "amount": 1000,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -6418,7 +6964,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2000"
+        "bonus": "2000",
+        "amount": 2000,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -6447,7 +6995,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3000"
+        "bonus": "3000",
+        "amount": 3000,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -6476,7 +7026,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4000"
+        "bonus": "4000",
+        "amount": 4000,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -6505,7 +7057,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5000"
+        "bonus": "5000",
+        "amount": 5000,
+        "unit": "flat"
       }
     ]
   },
@@ -6516,6 +7070,8 @@
     "category": "Territory",
     "tier": 2,
     "description": "Enhances Alliance Construction Speed.",
+    "stat": "Alliance Construction Speed",
+    "statKey": "alliance-construction-speed",
     "levels": [
       {
         "level": 1,
@@ -6544,7 +7100,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -6573,7 +7131,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -6602,7 +7162,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "6%"
+        "bonus": "6%",
+        "amount": 6,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -6631,7 +7193,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "8%"
+        "bonus": "8%",
+        "amount": 8,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -6660,7 +7224,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "10%"
+        "bonus": "10%",
+        "amount": 10,
+        "unit": "percent"
       }
     ]
   },
@@ -6671,6 +7237,8 @@
     "category": "Territory",
     "tier": 2,
     "description": "Accelerates Enemy Alliance Building Destruction",
+    "stat": "Enemy Alliance Building Destruction Speed",
+    "statKey": "enemy-alliance-building-destruction-speed",
     "levels": [
       {
         "level": 1,
@@ -6699,7 +7267,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -6728,7 +7298,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -6757,7 +7329,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "6%"
+        "bonus": "6%",
+        "amount": 6,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -6786,7 +7360,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "8%"
+        "bonus": "8%",
+        "amount": 8,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -6815,7 +7391,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "10%"
+        "bonus": "10%",
+        "amount": 10,
+        "unit": "percent"
       }
     ]
   },
@@ -6826,6 +7404,8 @@
     "category": "Territory",
     "tier": 2,
     "description": "Increases Alliance Storehouse Capacity.",
+    "stat": "Alliance Storehouse Capacity",
+    "statKey": "alliance-storehouse-capacity",
     "levels": [
       {
         "level": 1,
@@ -6854,7 +7434,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "50%"
+        "bonus": "50%",
+        "amount": 50,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -6883,7 +7465,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2000"
+        "bonus": "2000",
+        "amount": 2000,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -6912,7 +7496,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "100%"
+        "bonus": "100%",
+        "amount": 100,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -6941,7 +7527,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "300%"
+        "bonus": "300%",
+        "amount": 300,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -6970,7 +7558,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "400%"
+        "bonus": "400%",
+        "amount": 400,
+        "unit": "percent"
       }
     ]
   },
@@ -6981,6 +7571,8 @@
     "category": "Territory",
     "tier": 2,
     "description": "Increases Alliance Banner cap.",
+    "stat": "Alliance Banner Cap",
+    "statKey": "alliance-banner-cap",
     "levels": [
       {
         "level": 1,
@@ -7009,7 +7601,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "20"
+        "bonus": "20",
+        "amount": 20,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -7038,7 +7632,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "40"
+        "bonus": "40",
+        "amount": 40,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -7067,7 +7663,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "60"
+        "bonus": "60",
+        "amount": 60,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -7096,7 +7694,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "80"
+        "bonus": "80",
+        "amount": 80,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -7125,7 +7725,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "100"
+        "bonus": "100",
+        "amount": 100,
+        "unit": "flat"
       }
     ]
   },
@@ -7136,6 +7738,8 @@
     "category": "Territory",
     "tier": 3,
     "description": "Enhances Alliance Building Durability.",
+    "stat": "Alliance Building Durability",
+    "statKey": "alliance-building-durability",
     "levels": [
       {
         "level": 1,
@@ -7164,7 +7768,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "1000"
+        "bonus": "1000",
+        "amount": 1000,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -7193,7 +7799,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2000"
+        "bonus": "2000",
+        "amount": 2000,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -7222,7 +7830,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "3000"
+        "bonus": "3000",
+        "amount": 3000,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -7251,7 +7861,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "4000"
+        "bonus": "4000",
+        "amount": 4000,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -7280,7 +7892,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "5000"
+        "bonus": "5000",
+        "amount": 5000,
+        "unit": "flat"
       }
     ]
   },
@@ -7291,6 +7905,8 @@
     "category": "Territory",
     "tier": 3,
     "description": "Enhances Alliance Construction Speed.",
+    "stat": "Alliance Construction Speed",
+    "statKey": "alliance-construction-speed",
     "levels": [
       {
         "level": 1,
@@ -7319,7 +7935,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -7348,7 +7966,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -7377,7 +7997,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "6%"
+        "bonus": "6%",
+        "amount": 6,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -7406,7 +8028,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "8%"
+        "bonus": "8%",
+        "amount": 8,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -7435,7 +8059,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "10%"
+        "bonus": "10%",
+        "amount": 10,
+        "unit": "percent"
       }
     ]
   },
@@ -7446,6 +8072,8 @@
     "category": "Territory",
     "tier": 3,
     "description": "Accelerates Enemy Alliance Building Destruction",
+    "stat": "Enemy Alliance Building Destruction Speed",
+    "statKey": "enemy-alliance-building-destruction-speed",
     "levels": [
       {
         "level": 1,
@@ -7474,7 +8102,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "2%"
+        "bonus": "2%",
+        "amount": 2,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -7503,7 +8133,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "4%"
+        "bonus": "4%",
+        "amount": 4,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -7532,7 +8164,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "6%"
+        "bonus": "6%",
+        "amount": 6,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -7561,7 +8195,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "8%"
+        "bonus": "8%",
+        "amount": 8,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -7590,7 +8226,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "10%"
+        "bonus": "10%",
+        "amount": 10,
+        "unit": "percent"
       }
     ]
   },
@@ -7601,6 +8239,8 @@
     "category": "Territory",
     "tier": 3,
     "description": "Increases Alliance Storehouse Capacity.",
+    "stat": "Alliance Storehouse Capacity",
+    "statKey": "alliance-storehouse-capacity",
     "levels": [
       {
         "level": 1,
@@ -7629,7 +8269,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "400%"
+        "bonus": "400%",
+        "amount": 400,
+        "unit": "percent"
       },
       {
         "level": 2,
@@ -7658,7 +8300,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "800%"
+        "bonus": "800%",
+        "amount": 800,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -7687,7 +8331,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "1200%"
+        "bonus": "1200%",
+        "amount": 1200,
+        "unit": "percent"
       },
       {
         "level": 4,
@@ -7716,7 +8362,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "1600%"
+        "bonus": "1600%",
+        "amount": 1600,
+        "unit": "percent"
       },
       {
         "level": 5,
@@ -7745,7 +8393,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "2000%"
+        "bonus": "2000%",
+        "amount": 2000,
+        "unit": "percent"
       }
     ]
   },
@@ -7756,6 +8406,8 @@
     "category": "Territory",
     "tier": 3,
     "description": "Increases Alliance Banner cap.",
+    "stat": "Alliance Banner Cap",
+    "statKey": "alliance-banner-cap",
     "levels": [
       {
         "level": 1,
@@ -7788,7 +8440,9 @@
           }
         ],
         "timeSeconds": 1800,
-        "bonus": "30"
+        "bonus": "30",
+        "amount": 30,
+        "unit": "flat"
       },
       {
         "level": 2,
@@ -7821,7 +8475,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "60"
+        "bonus": "60",
+        "amount": 60,
+        "unit": "flat"
       },
       {
         "level": 3,
@@ -7854,7 +8510,9 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "65"
+        "bonus": "65",
+        "amount": 65,
+        "unit": "flat"
       },
       {
         "level": 4,
@@ -7887,7 +8545,9 @@
           }
         ],
         "timeSeconds": 7200,
-        "bonus": "70"
+        "bonus": "70",
+        "amount": 70,
+        "unit": "flat"
       },
       {
         "level": 5,
@@ -7920,7 +8580,9 @@
           }
         ],
         "timeSeconds": 9000,
-        "bonus": "75"
+        "bonus": "75",
+        "amount": 75,
+        "unit": "flat"
       }
     ]
   }

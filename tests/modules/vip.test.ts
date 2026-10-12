@@ -54,21 +54,75 @@ describe('VIP progression', () => {
   it('lists cumulative bonuses active at each level, not per-level deltas', () => {
     const vip1 = vip().find('vip-1')!;
     expect(vip1.bonuses).toEqual([
-      { stat: 'Resource Production Speed', value: '+2%', amount: 2, unit: 'percent' },
-      { stat: 'Storehouse Capacity', value: '+100K', amount: 100000, unit: 'flat' },
+      {
+        stat: 'Resource Production Speed',
+        statKey: 'resource-production-speed',
+        value: '+2%',
+        amount: 2,
+        unit: 'percent',
+      },
+      {
+        stat: 'Storehouse Capacity',
+        statKey: 'storehouse-capacity',
+        value: '+100K',
+        amount: 100000,
+        unit: 'flat',
+      },
     ]);
 
     const vip12 = vip().find('vip-12')!;
     expect(vip12.bonuses).toEqual([
-      { stat: 'Troops Lethality', value: '+16%', amount: 16, unit: 'percent' },
-      { stat: 'Troops Health', value: '+16%', amount: 16, unit: 'percent' },
-      { stat: 'Troops Attack', value: '+16%', amount: 16, unit: 'percent' },
-      { stat: 'Troops Defense', value: '+16%', amount: 16, unit: 'percent' },
-      { stat: 'March Queue', value: '+1', amount: 1, unit: 'flat' },
-      { stat: 'Troop Formation', value: '+2', amount: 2, unit: 'flat' },
-      { stat: 'Construction Speed', value: '+20%', amount: 20, unit: 'percent' },
-      { stat: 'Resource Production Speed', value: '+24%', amount: 24, unit: 'percent' },
-      { stat: 'Storehouse Capacity', value: '+1.1M', amount: 1100000, unit: 'flat' },
+      {
+        stat: 'Troops Lethality',
+        statKey: 'troops-lethality',
+        value: '+16%',
+        amount: 16,
+        unit: 'percent',
+      },
+      {
+        stat: 'Troops Health',
+        statKey: 'troops-health',
+        value: '+16%',
+        amount: 16,
+        unit: 'percent',
+      },
+      {
+        stat: 'Troops Attack',
+        statKey: 'troops-attack',
+        value: '+16%',
+        amount: 16,
+        unit: 'percent',
+      },
+      {
+        stat: 'Troops Defense',
+        statKey: 'troops-defense',
+        value: '+16%',
+        amount: 16,
+        unit: 'percent',
+      },
+      { stat: 'March Queue', statKey: 'march-queue', value: '+1', amount: 1, unit: 'flat' },
+      { stat: 'Troop Formation', statKey: 'troop-formation', value: '+2', amount: 2, unit: 'flat' },
+      {
+        stat: 'Construction Speed',
+        statKey: 'construction-speed',
+        value: '+20%',
+        amount: 20,
+        unit: 'percent',
+      },
+      {
+        stat: 'Resource Production Speed',
+        statKey: 'resource-production-speed',
+        value: '+24%',
+        amount: 24,
+        unit: 'percent',
+      },
+      {
+        stat: 'Storehouse Capacity',
+        statKey: 'storehouse-capacity',
+        value: '+1.1M',
+        amount: 1100000,
+        unit: 'flat',
+      },
     ]);
   });
 

@@ -1,3 +1,5 @@
+import { BonusUnit } from './common';
+
 export type AllianceTechCategory = 'Growth' | 'Territory' | 'Battle';
 
 export interface AllianceTechRequirement {
@@ -16,6 +18,8 @@ export interface AllianceTechLevel {
   cost: AllianceTechCost[];
   timeSeconds: number;
   bonus?: string;
+  amount?: number;
+  unit?: BonusUnit;
 }
 
 export interface AllianceTechNode {
@@ -25,5 +29,8 @@ export interface AllianceTechNode {
   category: AllianceTechCategory;
   tier: number;
   description: string;
+  /** Not set for the three nodes that have no stat effect. */
+  stat?: string;
+  statKey?: string;
   levels: AllianceTechLevel[];
 }

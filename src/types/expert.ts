@@ -1,6 +1,11 @@
+import { BonusUnit } from './common';
+
 export interface ExpertStatBonus {
   stat: string;
+  statKey: string;
   value: number;
+  amount: number;
+  unit: BonusUnit;
 }
 
 export interface ExpertProgression {

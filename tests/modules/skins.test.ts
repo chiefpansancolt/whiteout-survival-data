@@ -34,7 +34,13 @@ describe('Skin catalog', () => {
 
   it('parses a clean Bonus line into a structured stat/value pair', () => {
     const gildedDragonboat = skins().find('gilded-dragonboat')!;
-    expect(gildedDragonboat.bonus).toEqual({ stat: 'Troops Attack', value: '+2%' });
+    expect(gildedDragonboat.bonus).toEqual({
+      stat: 'Troops Attack',
+      statKey: 'troops-attack',
+      value: '+2%',
+      amount: 2,
+      unit: 'percent',
+    });
   });
 
   it('leaves bonus unset for skins with no stat bonus', () => {

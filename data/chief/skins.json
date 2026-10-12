@@ -7,7 +7,10 @@
     "description": "Grants the [Abundance Scent Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Thanksgiving Event Pack"]
   },
@@ -19,7 +22,10 @@
     "description": "Grants the [Autumn Reverie Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Thanksgiving 2025 Event"]
   },
@@ -31,7 +37,10 @@
     "description": "Grants the [Bear Party Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["2nd Anniversary (Snapshot of Time: Letter)"]
   },
@@ -59,7 +68,10 @@
     "description": "Grants the [Budding Life Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Springtime Blessing Pack"]
   },
@@ -71,7 +83,10 @@
     "description": "Grants the [Childhood Painting Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Childhood Memory Festival"]
   },
@@ -83,7 +98,10 @@
     "description": "Grants the [Chilly Beginnings Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["1st Anniversary"]
   },
@@ -95,7 +113,10 @@
     "description": "Grants the [Christmas Carol Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Christmas Pack 2023"]
   },
@@ -107,7 +128,10 @@
     "description": "Grants the [Chrono Flow Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["3rd Anniversary (Pack)"]
   },
@@ -119,7 +143,10 @@
     "description": "Grants the [Crescent Wish Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Ramadan Event 2025 (Purchase Pack)"]
   },
@@ -131,7 +158,10 @@
     "description": "Grants the [Cupid's Arrow Avatar Frame](Permanent). Bonus: Troops Defense +1.5%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+1.5%"
+      "statKey": "troops-defense",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Valentine's Event"]
   },
@@ -143,7 +173,10 @@
     "description": "Grants the [Dragon's Blessing Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Chinese New Year 2024"]
   },
@@ -155,7 +188,10 @@
     "description": "Grants the [Dream Keeper Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Christmas 2025 Event"]
   },
@@ -167,7 +203,10 @@
     "description": "Grants the [Dream Odyssey Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Recall Road (Dreamscape Memory)"]
   },
@@ -187,7 +226,10 @@
     "description": "Grants the [Easter Egg Avatar Frame] (Permanent). Bonus: Troop Defense +2%",
     "bonus": {
       "stat": "Troop Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Pack (Easter Event)"]
   },
@@ -199,7 +241,10 @@
     "description": "Grants the [Egg-topia Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Easter Event 2024"]
   },
@@ -211,7 +256,10 @@
     "description": "Grants the [Enchanting Power Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Children's Day 2024"]
   },
@@ -223,7 +271,10 @@
     "description": "Grants the [Endless Bounty Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Glided Jade 2026"]
   },
@@ -235,7 +286,10 @@
     "description": "Grants the [Fantasy Mushroom Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Skin Shop"]
   },
@@ -247,7 +301,10 @@
     "description": "Grants the [Feast of Fidelity Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Banquet Stall"]
   },
@@ -259,7 +316,10 @@
     "description": "Grants the [Flame Dance Avatar Frame](Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": []
   },
@@ -271,7 +331,10 @@
     "description": "Grants the [Frost Domain Avatar Frame] (30-Days). Exclusive to VIP Club members. Received as a welcome gift upon $10,000 top-up, then renewed monthly with $1,000 top-up. Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["VIP Club"]
   },
@@ -283,7 +346,10 @@
     "description": "Gives [Frostwing Avatar Frame] for 30 days. Supreme Frostdragon Tyrant's Benefits for the chief to dominate the Capital longest. Bonus: Troops Defense +3%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+3%"
+      "statKey": "troops-defense",
+      "value": "+3%",
+      "amount": 3,
+      "unit": "percent"
     },
     "sources": ["Frostdragon Tyrant"]
   },
@@ -295,7 +361,10 @@
     "description": "Grants the [Garden of Delights Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Children's Event 2025"]
   },
@@ -307,7 +376,10 @@
     "description": "Grants the [Gleaming Crescent Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Ramadan 2024 Pack"]
   },
@@ -319,7 +391,10 @@
     "description": "Grants the [Golden Symphony Avatar Frame](Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Aurora Melody"]
   },
@@ -331,7 +406,10 @@
     "description": "Grants the [Halloween Fright Night Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Halloween Event 2023"]
   },
@@ -343,7 +421,10 @@
     "description": "Grants the [Harvest Hymn Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Thanksgiving 2023"]
   },
@@ -363,7 +444,10 @@
     "description": "Grants the [Ice Age Avatar Frame](Permanent). VIP 12 Prestige-exclusive, available in the Prestige Shop once Prestige Benefits are unlocked. Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Prestige Shop"]
   },
@@ -383,7 +467,10 @@
     "description": "Grants the [Jubilee Pact Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["New Year's Prelude 2026 pack"]
   },
@@ -403,7 +490,10 @@
     "description": "Grants the [Love Melody Avatar Frame](Permanent). Bonus: Troops Defense +1.5%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+1.5%"
+      "statKey": "troops-defense",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Valentine's Event"]
   },
@@ -415,7 +505,10 @@
     "description": "Grants the [Chilly Beginnings Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Valentine's Day 2024"]
   },
@@ -427,7 +520,10 @@
     "description": "Grants the [Luminous Waves Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Blessing of Daylight"]
   },
@@ -439,7 +535,10 @@
     "description": "Grants the [Marry Christmas Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Christmas Party Pack 2023"]
   },
@@ -451,7 +550,10 @@
     "description": "Grants the [Master Artisan Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Dream Miracle (Iron Forger Fantasia) May 2026"]
   },
@@ -463,7 +565,10 @@
     "description": "Grants the [Master Builder Avatar Frame] (Permanent). Bonus: Construction Speed +1%.",
     "bonus": {
       "stat": "Construction Speed",
-      "value": "+1%"
+      "statKey": "construction-speed",
+      "value": "+1%",
+      "amount": 1,
+      "unit": "percent"
     },
     "sources": []
   },
@@ -475,7 +580,10 @@
     "description": "Grants the [Master of the Seas Avatar Frame] (Permanent) Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Fishing event"]
   },
@@ -495,7 +603,10 @@
     "description": "Grants the [Moonlight Milkyway Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Moonlight Festival 2023"]
   },
@@ -515,7 +626,10 @@
     "description": "Grants the [New Year Celebration Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["New Year 2023"]
   },
@@ -527,7 +641,10 @@
     "description": "Grants the [New Year Flame Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["New Year 2024 (Pessage of Time Pack)"]
   },
@@ -539,7 +656,10 @@
     "description": "Grants the [O Holy Night Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["New Years (Purchase Pack)"]
   },
@@ -551,7 +671,10 @@
     "description": "Grants the [Phantom Magician Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Halloween Event Pack"]
   },
@@ -563,7 +686,10 @@
     "description": "Grants the [Pious Soul Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Eid al-Adha 2025 (Purchase Pack)"]
   },
@@ -575,7 +701,10 @@
     "description": "Grants the [Pumpkin Head Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Halloween Event 2025"]
   },
@@ -587,7 +716,10 @@
     "description": "Grants the [Romantic Gentleman Avatar Frame](Permanent). Bonus: Troops Defense +1.5%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+1.5%"
+      "statKey": "troops-defense",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Pack (Valentine's Event 2025)"]
   },
@@ -599,7 +731,10 @@
     "description": "Grants the [Rose Lady Avatar Frame](Permanent). Bonus: Troops Defense +1.5%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+1.5%"
+      "statKey": "troops-defense",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Pack (Valentine's Event 2025)"]
   },
@@ -611,7 +746,10 @@
     "description": "Grants the [Scarlet Lion Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Chinese New Year's Event 2025 (Purchase Pack)"]
   },
@@ -631,7 +769,10 @@
     "description": "Grants the [Snow Kiss Avatar Frame] (Permanent). Bonus: Troops Defense +1.5%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+1.5%"
+      "statKey": "troops-defense",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Top-up Points Gift"]
   },
@@ -643,7 +784,10 @@
     "description": "Grants the [Snowbusters Squad Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Snowbusters"]
   },
@@ -655,7 +799,10 @@
     "description": "Grants the [Snowhare Scholar Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Radiant Melody 2026"]
   },
@@ -667,7 +814,10 @@
     "description": "Grants the [Song of Ocean Avatar Frame] (30 Days). Awarded to the Top 50 players in the Fishing Event. Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Fishing Event"]
   },
@@ -687,7 +837,10 @@
     "description": "Grants the [Sweet Bliss Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Valentine's Day 2024"]
   },
@@ -707,7 +860,10 @@
     "description": "Grants the [Torchbright Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["3rd Anniversary (Snapshot of Time : Red letter)"]
   },
@@ -719,7 +875,10 @@
     "description": "Grants the [Winged Dreams Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["2nd Anniversary (Purchase Pack)"]
   },
@@ -739,7 +898,10 @@
     "description": "Grants the [Winter Triumph Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Tundra Games Event"]
   },
@@ -751,7 +913,10 @@
     "description": "Grants the [Wispwafter Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Harvest Moonlight Blessing Pack 2024"]
   },
@@ -771,7 +936,10 @@
     "description": "Grants the [Yuletide Glee Avatar Frame] (Permanent). Bonus: Troops Defense +2%.",
     "bonus": {
       "stat": "Troops Defense",
-      "value": "+2%"
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Christmas event 2024 (Curiosity Shop)"]
   },
@@ -783,7 +951,10 @@
     "description": "Grants the [Dragon Dominion Chief Profile Skin](30 day). Bonus: Troops Health+2.5%.",
     "bonus": {
       "stat": "Troops Health",
-      "value": "+2.5%"
+      "statKey": "troops-health",
+      "value": "+2.5%",
+      "amount": 2.5,
+      "unit": "percent"
     },
     "sources": ["Frostdragon Tyrant"]
   },
@@ -795,7 +966,10 @@
     "description": "Grants the [ٍStar Radiance Chief Profile Skin](Permanent). Bonus: Troops Health+2%.",
     "bonus": {
       "stat": "Troops Health",
-      "value": "+2%"
+      "statKey": "troops-health",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Prestige Merit Shop 300M Points (VIP 12)"]
   },
@@ -807,7 +981,10 @@
     "description": "Grants the [Arena of Stars](7 days). Awarded exclusively to the top 3 players in the Arena’s final weekly rankings. Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Arena"]
   },
@@ -819,7 +996,10 @@
     "description": "Grants the [Bountiful Dream City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Thanksgiving 2025 Event"]
   },
@@ -831,7 +1011,10 @@
     "description": "Grants the [Cloud Fantasy City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Recall Road (Dreamscape Memory)"]
   },
@@ -843,7 +1026,10 @@
     "description": "Grants the [Dancing Lion City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Gilded Jade"]
   },
@@ -855,7 +1041,10 @@
     "description": "Grants the [Deep Connection City Skin] (Permanent / 30 days). — awarded based on personal ranking in event: Rank 1–15: Permanent Rank 16–30: 30 days Bonus: Troop Attack +2%. Couple Perks: ( Sweet Memories & Deep Connection ): Trigger the special effect by placing both cities exactly as shown below . Swapping positions or any misalignment will cause the effect to fail.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Event (Valentine's Day 2025)"]
   },
@@ -867,7 +1056,10 @@
     "description": "Gives [Dragonhold City Skin] for (30 days). Supreme Frostdragon Tyrant's Benefits for the chief to dominate the Capital longest. Bonus: Troops Attack +5%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+5%"
+      "statKey": "troops-attack",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Frostdragon Tyrant"]
   },
@@ -879,7 +1071,10 @@
     "description": "Grants the [Dragon's Blessing City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Adventue Caravan"]
   },
@@ -891,7 +1086,10 @@
     "description": "Grants the [Dream of Atlantis](30 Days). Awarded to the Top 15 players in the Fishing Event. Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Fishing Event"]
   },
@@ -903,7 +1101,10 @@
     "description": "Grants the [Dreamheart City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Seasonal Sweetness (Valentine 2024)", "Adventue Caravan"]
   },
@@ -915,7 +1116,10 @@
     "description": "Grants the [Easter Egg-Plant City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Easter Event"]
   },
@@ -927,7 +1131,10 @@
     "description": "Grants the [Emperor Penguin Slopes City Skin] (Permanent / 30 days). — awarded based on personal ranking in event: Rank 1–10: Permanent Rank 11–25: 30 days Bonus: Troop Attack +2%.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Tundra Games Event"]
   },
@@ -939,7 +1146,10 @@
     "description": "Grants the [Fiery Melody City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Aurora Melody"]
   },
@@ -951,7 +1161,10 @@
     "description": "Grants the [Forgetown City Skin] (Permanent). Bonus: Troop Attack +2%.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Emporium of Enigma Shop (Frosty Fortune)"]
   },
@@ -963,7 +1176,10 @@
     "description": "Grants the [Frost Sphere City Skin] (Permanent). Prestige-exclusive skin unlocked at VIP 12. Submit 100 puzzle pieces in the Prestige Shop to claim it. Bonus: Troops Attack +5.0% Domain Effect: Nearby cities affected: 8 Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Bonus: Allies within 2 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +5.0% - Defender Troops Defense When Defending Own City +5.0% - Training Speed +2.0% - Resource Gathering Speed +5.0%",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+5.0%"
+      "statKey": "troops-attack",
+      "value": "+5.0%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Prestige Shop"]
   },
@@ -975,7 +1191,10 @@
     "description": "Bonus: Troops Attack +10.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 8 Domain Bonus: Allies within 2 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +10.0% - Defender Troops Defense When Defending Own City +10.0% - Training Speed +4.0% - Resource Gathering Speed +10.0%",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+10.0%"
+      "statKey": "troops-attack",
+      "value": "+10.0%",
+      "amount": 10,
+      "unit": "percent"
     },
     "sources": ["Prestige Merit Shop 75M Points"]
   },
@@ -987,7 +1206,10 @@
     "description": "Bonus: Troops Attack +20.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 24 Domain Bonus: Allies within 4 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +15% - Defender Troops Defense When Defending Own City +15% - Training Speed +6% - Resource Gathering Speed +15%",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+20.0%"
+      "statKey": "troops-attack",
+      "value": "+20.0%",
+      "amount": 20,
+      "unit": "percent"
     },
     "sources": ["Prestige Merit Shop 150M Points"]
   },
@@ -999,7 +1221,10 @@
     "description": "Bonus: Troops Attack +30.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 24 Domain Bonus: Allies within 4 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +20% - Defender Troops Defense When Defending Own City +20% - Training Speed +9% - Resource Gathering Speed +20%",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+30.0%"
+      "statKey": "troops-attack",
+      "value": "+30.0%",
+      "amount": 30,
+      "unit": "percent"
     },
     "sources": ["Prestige Merit Shop 225M Points"]
   },
@@ -1011,7 +1236,10 @@
     "description": "Bonus: Troops Attack +40.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 24 Domain Bonus: Allies within 4 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +25% - Defender Troops Defense When Defending Own City +25% - Training Speed +12% - Resource Gathering Speed +25%",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+40.0%"
+      "statKey": "troops-attack",
+      "value": "+40.0%",
+      "amount": 40,
+      "unit": "percent"
     },
     "sources": ["Prestige Merit Shop 300M Points"]
   },
@@ -1023,7 +1251,10 @@
     "description": "Bonus: Troops Attack +50.0% Domain Bonuses for Allies: 1. A Chief's City must be located within 2 tiles of the Domain's area of effect . 2. If a Chief is within range of multiple Domains of the same type , the effect of the higher-level Domain will apply. If there are multiple Domains of the same type and level, one will be applied at random . Domain Effect: Nearby cities affected: 48 Domain Bonus: Allies within 6 tiles of your city gain the following effects: - Defender Troops Attack When Defending Own City +30% - Defender Troops Defense When Defending Own City +30% - Training Speed +15% - Resource Gathering Speed +30%",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+50.0%"
+      "statKey": "troops-attack",
+      "value": "+50.0%",
+      "amount": 50,
+      "unit": "percent"
     },
     "sources": ["Prestige Merit Shop 375M Points"]
   },
@@ -1035,7 +1266,10 @@
     "description": "Grants the [Gilded Dragonboat City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Dream Miracle (Silverfrost Shop) may 2026"]
   },
@@ -1047,7 +1281,10 @@
     "description": "Grants the [High Diver City Skin] (Permanent / 30 days). — awarded based on personal ranking in event: Rank 1–10: Permanent Rank 11–25: 30 days Bonus: Troop Attack +2%.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Tundra Games Event"]
   },
@@ -1067,7 +1304,10 @@
     "description": "Grants the [leaping Koi City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Glided Jade 2026"]
   },
@@ -1079,7 +1319,10 @@
     "description": "Grants [Lost City Skin] (Permanent). Can be obtained from the Adventure Caravan Shop during the Tundra Adventure event. Bonus: Troop Attack +2%.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Adventure Caravan Shop"]
   },
@@ -1099,7 +1342,10 @@
     "description": "Grants the [Snowman Rhapsody City Skin] (Permanent). Bonus: Troop Attack +2%.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Snowbusters Event"]
   },
@@ -1111,7 +1357,10 @@
     "description": "Grants the [Snowy Bells City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Christmas 2025 Event (Curiosity Shop)"]
   },
@@ -1123,7 +1372,10 @@
     "description": "Grants the [Sporehaven](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Skin Shop"]
   },
@@ -1135,7 +1387,10 @@
     "description": "Grants the [Spring Watcher City Skin](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Radiant Melody 2026 (Radiant Bazaar Shop)"]
   },
@@ -1147,7 +1402,10 @@
     "description": "Grants the [Stormhold Fortress](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Fishing Event"]
   },
@@ -1159,7 +1417,10 @@
     "description": "Grants the [Sweet Memories City Skin] (Permanent / 30 days). — awarded based on personal ranking in event: Rank 1–15: Permanent Rank 16–30: 30 days Bonus: Troop Attack +2%. Couple Perks: ( Sweet Memories & Deep Connection ): Trigger the special effect by placing both cities exactly as shown below . Swapping positions or any misalignment will cause the effect to fail.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Event (Valentine's Day 2025)"]
   },
@@ -1171,7 +1432,10 @@
     "description": "Grants the [Treasure Stronghold](Permanent). Bonus: Troops Attack +2%.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Fishing Event"]
   },
@@ -1183,7 +1447,10 @@
     "description": "Grants the [Windmill Village City Skin] (Permanent). Bonus: Troop Attack +2%.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Emporium of Enigma Shop (Frosty Fortune)"]
   },
@@ -1195,7 +1462,10 @@
     "description": "Grants the [Winter Watcher City Skin] (14/30 days) — awarded based on occupation ranking (by total personal occupation time): Rank 2–3: 30 days Rank 4–10: 14 days Bonus: Troop Attack +2%.",
     "bonus": {
       "stat": "Troop Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Frostdragon Tyrant"]
   },
@@ -1207,7 +1477,10 @@
     "description": "Grants the [Winter of Plenty City Skin] (Permanent). Rookie Growth exclusive reward, one time event available at the beginning of the game. Reach 4M Power within 7 days by completing daily tasks to claim it. Bonus: Resource Gathering Speed +5%.",
     "bonus": {
       "stat": "Resource Gathering Speed",
-      "value": "+5%"
+      "statKey": "resource-gathering-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Rookie's Growth"]
   },
@@ -1219,7 +1492,10 @@
     "description": "Grants the [Ace Adventure March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Dawn Feast 2025 (Top-up Benefits)"]
   },
@@ -1231,7 +1507,10 @@
     "description": "Grants the [Auspicious Beast March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Adventure Caravan"]
   },
@@ -1243,7 +1522,10 @@
     "description": "Grants the [Blazing Meteor March Skin] (Permanent). Prestige-exclusive skin unlocked at VIP 12. Submit 100 puzzle pieces in the Prestige Shop to claim it. Bonus: Hunting March Speed +10%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+10%"
+      "statKey": "hunting-march-speed",
+      "value": "+10%",
+      "amount": 10,
+      "unit": "percent"
     },
     "sources": ["Prestige Shop"]
   },
@@ -1255,7 +1537,10 @@
     "description": "Grants the [Blazing Meteor II March Skin] (Permanent). Bonus: Hunting March Speed +10%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+10%"
+      "statKey": "hunting-march-speed",
+      "value": "+10%",
+      "amount": 10,
+      "unit": "percent"
     },
     "sources": ["Prestige Merit Shop 225M Points"]
   },
@@ -1267,7 +1552,10 @@
     "description": "Grants the [Brute Mammoth March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Emporium of Enigma Shop (Frosty Fortune)"]
   },
@@ -1279,7 +1567,10 @@
     "description": "Grants the [Bubble Fantasy March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["WOS 3rd Anniversary"]
   },
@@ -1291,7 +1582,10 @@
     "description": "Grants the [Bunny Special Forces March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Easter Event 2023"]
   },
@@ -1303,7 +1597,10 @@
     "description": "Grants the [Candy Kaboom March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["WOS 1st Anniversary"]
   },
@@ -1315,7 +1612,10 @@
     "description": "Grants the [Cupid Patrol March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Valentine's Day"]
   },
@@ -1327,7 +1627,10 @@
     "description": "Grants the [Cyclone Runner March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Tundra Games Event"]
   },
@@ -1339,7 +1642,10 @@
     "description": "Grants the [Egg-pert March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Colorful Easter 2024 (Top-up Benefits)"]
   },
@@ -1351,7 +1657,10 @@
     "description": "Grants the [Fireclaw Hunter March Skin] (30 day,14 day). Bonus: Hunting March Speed +5%",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Tundra Arms League"]
   },
@@ -1363,7 +1672,10 @@
     "description": "Grants the [Freeze Patrol Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Snowbusters"]
   },
@@ -1375,7 +1687,10 @@
     "description": "Gives [Frost Dragon March Skin] for (30 days). Supreme Frostdragon Tyrant's Benefits for the chief to dominate the Capital longest. Bonus: Hunting March Speed +10%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+10%"
+      "statKey": "hunting-march-speed",
+      "value": "+10%",
+      "amount": 10,
+      "unit": "percent"
     },
     "sources": ["Frostdragon Tyrant"]
   },
@@ -1387,7 +1702,10 @@
     "description": "Grants the [Honeymoon Trip March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Event Shop (Valentine's Day 2025)"]
   },
@@ -1399,7 +1717,10 @@
     "description": "Grants the [Hornwrath Herald March Skin] (30 Day). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Tundra Arms League"]
   },
@@ -1411,7 +1732,10 @@
     "description": "Grants the [Hymn of the Aurora March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Christmas 2025 Event"]
   },
@@ -1423,7 +1747,10 @@
     "description": "Grants the [Ice Journey March Skin](Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Fishing Event"]
   },
@@ -1435,7 +1762,10 @@
     "description": "Grants the [Incubus Knight March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Halloween 2025"]
   },
@@ -1455,7 +1785,10 @@
     "description": "Grants the [Koi Lantern March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Glided Jade 2026"]
   },
@@ -1467,7 +1800,10 @@
     "description": "Grants the [Lotus Lanternshine March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Moonlight Festival 2024"]
   },
@@ -1479,7 +1815,10 @@
     "description": "Grants the [Magic Teddy March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Children's Day 2024"]
   },
@@ -1491,7 +1830,10 @@
     "description": "Grants the [Mecha Pincer March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Tundra Adventure 2025"]
   },
@@ -1503,7 +1845,10 @@
     "description": "Grants the [Moonlight Serenade March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Moonlight Festival"]
   },
@@ -1515,7 +1860,10 @@
     "description": "Grants the [Mushroom Fairy March Skin](Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Skin Shop"]
   },
@@ -1527,7 +1875,10 @@
     "description": "Grants the [Nightmare Jack-o-Mobile March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Halloween"]
   },
@@ -1539,7 +1890,10 @@
     "description": "Grants the [Ninja Meow March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Recall Road (Dreamscape Memory)"]
   },
@@ -1551,7 +1905,10 @@
     "description": "Grants the [Panda Fury March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Gilded Jade"]
   },
@@ -1563,7 +1920,10 @@
     "description": "Grants the [Phantom Envoy March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Halloween 2024"]
   },
@@ -1583,7 +1943,10 @@
     "description": "Grants the [Rainbow Unicorn March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Children's Day 2023"]
   },
@@ -1595,7 +1958,10 @@
     "description": "Grants the [Santa's Reindeer March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Christmas Festival 2025"]
   },
@@ -1607,7 +1973,10 @@
     "description": "Grants the [Snow Sovereign March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Tundra Games Event"]
   },
@@ -1619,7 +1988,10 @@
     "description": "Grants the [Snowmobile March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Emporium of Enigma Shop (Frosty Fortune)"]
   },
@@ -1631,7 +2003,10 @@
     "description": "Grants the [Sunseeker Express March Skin](7 days). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["State of Power Shop"]
   },
@@ -1643,7 +2018,10 @@
     "description": "Grants the [Supersonic Bunny March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Radiant Melody 2026 (Top-up Benefits)"]
   },
@@ -1655,7 +2033,10 @@
     "description": "Grants the [Symphonic Parade March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Aurora Melody"]
   },
@@ -1667,7 +2048,10 @@
     "description": "Grants the [Toy Army March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Childhood Memory Festival 2025 (Top-up Benefits)"]
   },
@@ -1679,7 +2063,10 @@
     "description": "Grants [Tundra Adventure March Skin] (Permanent). Can be obtained from the Adventure Caravan Shop during the Tundra Adventure event. Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Adventure Caravan Shop"]
   },
@@ -1691,7 +2078,10 @@
     "description": "Grants the [Tundra Cannon March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Labor Day 2023 (Top-up Benefits)"]
   },
@@ -1703,7 +2093,10 @@
     "description": "Grants the [Turkey Dash March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Thanksgiving"]
   },
@@ -1715,7 +2108,10 @@
     "description": "Grants the [Turkey Tornado March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Thanksgiving"]
   },
@@ -1727,7 +2123,10 @@
     "description": "Grants the [Whale Waves March Skin](30 Days). Awarded to the Top 6 players in the Fishing Event. Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Fishing Event"]
   },
@@ -1739,7 +2138,10 @@
     "description": "Grants the [Wilderness Warrior March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Thanksgiving 2025 Event"]
   },
@@ -1751,7 +2153,10 @@
     "description": "Grants the [Wind Charger March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Dream Miracle (Silverfrost Shop) May 2026"]
   },
@@ -1763,7 +2168,10 @@
     "description": "50,000 Top-up points Grants the [Wing of the Icy Wind March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": ["Top-up Gift"]
   },
@@ -1775,7 +2183,10 @@
     "description": "Grants the [Wish Express March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
-      "value": "+5%"
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
     },
     "sources": []
   },
@@ -1787,7 +2198,10 @@
     "description": "Grants the [Autumn Reverie Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Thanksgiving 2025 Event"]
   },
@@ -1799,7 +2213,10 @@
     "description": "Grants the [Dream Keeper Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Christmas 2025 Event"]
   },
@@ -1811,7 +2228,10 @@
     "description": "Grants the [Endless Bounty Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Glided Jade 2026"]
   },
@@ -1823,7 +2243,10 @@
     "description": "Grants the [Festive Moment Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["2nd Anniversary"]
   },
@@ -1835,7 +2258,10 @@
     "description": "Grants the [Garden of Delights Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Childhood Memory Festival 2025"]
   },
@@ -1847,7 +2273,10 @@
     "description": "Grants the [Golden Symphony Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Aurora Melody 2025"]
   },
@@ -1859,7 +2288,10 @@
     "description": "Grants the [Luminous Waves Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Blessing of Daylight"]
   },
@@ -1871,7 +2303,10 @@
     "description": "Grants the [Perpetual Treads Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Tundra Games 2025"]
   },
@@ -1883,7 +2318,10 @@
     "description": "Grants the [Pumpkin Head Name Card](Permanent). Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Halloween Event 2025"]
   },
@@ -1895,7 +2333,10 @@
     "description": "Grants the [Snowhare Scholar Name Card](Permanent/7 days/3 days). — awarded based on personal ranking in event: Rank 1–25: Permanent Rank 26–50: 7 days Rank 51-100: 3 days Bonus: Troops Lethality +1.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+1.5%"
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
     },
     "sources": ["Radiant Melody 2026 (Eggciting Fiesta)"]
   },
@@ -2067,7 +2508,10 @@
     "description": "Grants the [Gate of Time Teleport Skin](Permanent). Bonus: Troops Lethality +2.5%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+2.5%"
+      "statKey": "troops-lethality",
+      "value": "+2.5%",
+      "amount": 2.5,
+      "unit": "percent"
     },
     "sources": ["Prestige Merit Shop 150M Points"]
   },
@@ -2079,7 +2523,10 @@
     "description": "Grants the [Petal Rain Teleport Skin](Permanent). Bonus: Troops Lethality +2%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+2%"
+      "statKey": "troops-lethality",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Silver Shell Event Shop"]
   },
@@ -2091,7 +2538,10 @@
     "description": "Grants the [Storm of Destruction Teleport Skin](Permanent). Bonus: Troops Lethality +2%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+2%"
+      "statKey": "troops-lethality",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Tundra Arms League — Champion Shop"]
   },
@@ -2103,7 +2553,10 @@
     "description": "Grants the [Sword of Ice Teleport Skin](Permanent). Bonus: Troops Lethality +2%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+2%"
+      "statKey": "troops-lethality",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Silver Shell Event Shop"]
   },
@@ -2115,7 +2568,10 @@
     "description": "Grants the [Thunder Summon Teleport Skin](Permanent). Bonus: Troops Lethality +2%.",
     "bonus": {
       "stat": "Troops Lethality",
-      "value": "+2%"
+      "statKey": "troops-lethality",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Silver Shell Event Shop"]
   },
@@ -2135,7 +2591,10 @@
     "description": "Grants the [Frostflame Knight City Skin] for 30, 14, or 7 days depending on placement. The 30-day version gives Troops Attack +2% as a stat bonus when you get it.",
     "bonus": {
       "stat": "Troops Attack",
-      "value": "+2%"
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
     },
     "sources": ["Icefire Warhymn League"]
   }

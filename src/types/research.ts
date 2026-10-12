@@ -1,3 +1,5 @@
+import { BonusUnit } from './common';
+
 export type ResearchCategory =
   | 'Battle'
   | 'Growth'
@@ -26,7 +28,14 @@ export interface ResearchCost {
 
 export interface ResearchBonus {
   stat: string;
+  /** Not set for the "Other" stat, which holds unlock text. */
+  statKey?: string;
   value: string;
+  /** Not set for unlock text. */
+  amount?: number;
+  unit?: BonusUnit;
+  /** The sum of the `amount` of this stat over the levels of the node up to this level. */
+  totalAmount?: number;
 }
 
 export interface ResearchLevel {

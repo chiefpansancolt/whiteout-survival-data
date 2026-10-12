@@ -1,3 +1,5 @@
+import { BonusUnit } from './common';
+
 export type SkinType =
   | 'Avatar Frame'
   | 'Nameplate'
@@ -9,7 +11,10 @@ export type SkinType =
 
 export interface SkinBonus {
   stat: string;
+  statKey: string;
   value: string;
+  amount: number;
+  unit: BonusUnit;
 }
 
 export interface Skin {
