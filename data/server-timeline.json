@@ -1,0 +1,483 @@
+[
+  {
+    "id": "day-0",
+    "name": "Day 0",
+    "day": 0,
+    "heroIds": ["natalia", "jeronimo", "molly", "zinman"],
+    "heroShardEventIds": {
+      "molly": ["hall-of-heroes"],
+      "zinman": ["lucky-wheel"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-40",
+    "name": "Day 40",
+    "day": 40,
+    "heroIds": ["flint", "philly", "alonso"],
+    "heroShardEventIds": {
+      "flint": ["lucky-wheel"],
+      "philly": ["hall-of-chief", "king-of-icefield", "svs-state-of-power"],
+      "alonso": ["hall-of-heroes"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": [
+      {
+        "name": "Legendary Hero Gear Unlocks"
+      }
+    ]
+  },
+  {
+    "id": "day-53",
+    "name": "Day 53",
+    "day": 53,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": ["sunfire-castle"],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-54",
+    "name": "Day 54",
+    "day": 54,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": ["cave-hyena", "arctic-wolf", "musk-ox", "titan-roc", "giant-tapir"],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-60",
+    "name": "Day 60",
+    "day": 60,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": ["fc-1", "fc-2", "fc-3"],
+    "unlocks": [
+      {
+        "name": "Fire Crystal Age Unlocks",
+        "itemId": "fire-crystal"
+      },
+      {
+        "name": "\"Road to Recovery\" Monument mission"
+      }
+    ]
+  },
+  {
+    "id": "day-80",
+    "name": "Day 80",
+    "day": 80,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": ["svs-state-of-power", "king-of-icefield"],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-90",
+    "name": "Day 90",
+    "day": 90,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": ["snow-leopard", "giant-elk"],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-120",
+    "name": "Day 120",
+    "day": 120,
+    "heroIds": ["logan", "mia", "greg"],
+    "heroShardEventIds": {
+      "logan": ["hall-of-heroes"],
+      "mia": ["lucky-wheel"],
+      "greg": ["king-of-icefield", "svs-state-of-power"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": [
+      {
+        "name": "Vision of Dawn Update & Hero Recruitment Keys mission"
+      },
+      {
+        "name": "Fortress Event Rewards (Fire Crystals & Pets unlock)"
+      },
+      {
+        "name": "VIP Prestige Shop"
+      }
+    ]
+  },
+  {
+    "id": "day-140",
+    "name": "Day 140",
+    "day": 140,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": ["cave-lion", "snow-ape"],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-150",
+    "name": "Day 150",
+    "day": 150,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": ["fc-4", "fc-5"],
+    "unlocks": [
+      {
+        "name": "Crystal Laboratory Unlocks (4x)"
+      }
+    ]
+  },
+  {
+    "id": "day-180",
+    "name": "Day 180",
+    "day": 180,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": [
+      {
+        "name": "Legendary Chief Gear Unlocks"
+      }
+    ]
+  },
+  {
+    "id": "day-195",
+    "name": "Day 195",
+    "day": 195,
+    "heroIds": ["ahmose", "reina", "lynn"],
+    "heroShardEventIds": {
+      "ahmose": ["king-of-icefield", "svs-state-of-power"],
+      "reina": ["hall-of-heroes"],
+      "lynn": ["lucky-wheel"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": ["heros-mission"],
+    "fireCrystalLevelIds": [],
+    "unlocks": [
+      {
+        "name": "Fortress Event Rewards Update"
+      },
+      {
+        "name": "Hero Hall Update"
+      },
+      {
+        "name": "Intel Missions Update"
+      }
+    ]
+  },
+  {
+    "id": "day-200",
+    "name": "Day 200",
+    "day": 200,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": ["iron-rhino", "saber-tooth-tiger"],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-220",
+    "name": "Day 220",
+    "day": 220,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": [
+      {
+        "name": "War Academy Unlocks"
+      },
+      {
+        "name": "Crystal Laboratory Updated (5x)"
+      }
+    ]
+  },
+  {
+    "id": "day-270",
+    "name": "Day 270",
+    "day": 270,
+    "heroIds": ["hector", "norah", "gwen"],
+    "heroShardEventIds": {
+      "hector": ["lucky-wheel"],
+      "norah": ["king-of-icefield", "svs-state-of-power"],
+      "gwen": ["hall-of-heroes"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-280",
+    "name": "Day 280",
+    "day": 280,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": ["mammoth", "frost-gorilla"],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-315",
+    "name": "Day 315",
+    "day": 315,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": ["fc-6", "fc-7", "fc-8"],
+    "unlocks": [
+      {
+        "name": "Daily Missions Update (20x Fire Crystal rewards)"
+      },
+      {
+        "name": "Crystal Laboratory Updated (6x)"
+      }
+    ]
+  },
+  {
+    "id": "day-360",
+    "name": "Day 360",
+    "day": 360,
+    "heroIds": ["wu-ming", "renee", "wayne"],
+    "heroShardEventIds": {
+      "wu-ming": ["hall-of-heroes"],
+      "renee": ["lucky-wheel"],
+      "wayne": ["king-of-icefield", "svs-state-of-power"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-370",
+    "name": "Day 370",
+    "day": 370,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": ["frostscale-chameleon"],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-440",
+    "name": "Day 440",
+    "day": 440,
+    "heroIds": ["edith", "gordon", "bradley"],
+    "heroShardEventIds": {
+      "edith": ["king-of-icefield", "svs-state-of-power"],
+      "gordon": ["hall-of-heroes"],
+      "bradley": ["lucky-wheel"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-500",
+    "name": "Day 500",
+    "day": 500,
+    "heroIds": [],
+    "heroShardEventIds": {},
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": ["fc-9", "fc-10"],
+    "unlocks": []
+  },
+  {
+    "id": "day-520",
+    "name": "Day 520",
+    "day": 520,
+    "heroIds": ["gatot", "sonya", "hendrik"],
+    "heroShardEventIds": {
+      "gatot": ["lucky-wheel"],
+      "sonya": ["king-of-icefield", "svs-state-of-power"],
+      "hendrik": ["hall-of-heroes"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-600",
+    "name": "Day 600",
+    "day": 600,
+    "heroIds": ["magnus", "fred", "xura"],
+    "heroShardEventIds": {
+      "magnus": ["hall-of-heroes"],
+      "fred": ["lucky-wheel"],
+      "xura": ["king-of-icefield", "svs-state-of-power"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-680",
+    "name": "Day 680",
+    "day": 680,
+    "heroIds": ["gregory", "freya", "blanchette"],
+    "heroShardEventIds": {
+      "gregory": ["king-of-icefield", "svs-state-of-power"],
+      "freya": ["hall-of-heroes"],
+      "blanchette": ["lucky-wheel"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": [
+      {
+        "name": "Flame Tech (T12) Unlocks"
+      }
+    ]
+  },
+  {
+    "id": "day-760",
+    "name": "Day 760",
+    "day": 760,
+    "heroIds": ["eleonora", "lloyd", "rufus"],
+    "heroShardEventIds": {
+      "eleonora": ["lucky-wheel"],
+      "lloyd": ["king-of-icefield", "svs-state-of-power"],
+      "rufus": ["hall-of-heroes"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-840",
+    "name": "Day 840",
+    "day": 840,
+    "heroIds": ["hervor", "karol", "ligeia"],
+    "heroShardEventIds": {
+      "hervor": ["hall-of-heroes"],
+      "karol": ["lucky-wheel"],
+      "ligeia": ["king-of-icefield", "svs-state-of-power"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-920",
+    "name": "Day 920",
+    "day": 920,
+    "heroIds": ["gisela", "flora", "vulcanus"],
+    "heroShardEventIds": {
+      "gisela": ["king-of-icefield", "svs-state-of-power"],
+      "flora": ["hall-of-heroes"],
+      "vulcanus": ["lucky-wheel"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-1000",
+    "name": "Day 1000",
+    "day": 1000,
+    "heroIds": ["elif", "dominic", "cara"],
+    "heroShardEventIds": {
+      "elif": ["lucky-wheel"],
+      "dominic": ["king-of-icefield", "svs-state-of-power"],
+      "cara": ["hall-of-heroes"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-1080",
+    "name": "Day 1080",
+    "day": 1080,
+    "heroIds": ["hank", "estrella", "viveca"],
+    "heroShardEventIds": {
+      "hank": ["hall-of-heroes"],
+      "estrella": ["lucky-wheel"],
+      "viveca": ["king-of-icefield", "svs-state-of-power"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  },
+  {
+    "id": "day-1160",
+    "name": "Day 1160",
+    "day": 1160,
+    "heroIds": ["seigel", "ursar", "aisling"],
+    "heroShardEventIds": {
+      "seigel": ["king-of-icefield", "svs-state-of-power"],
+      "ursar": ["hall-of-heroes"],
+      "aisling": ["lucky-wheel"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
+  }
+]
