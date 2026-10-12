@@ -45,14 +45,14 @@ and `count`. They are described in [How It Works](../../../README.md#how-it-work
 Experts are in `data/chief/experts.json`. There are 10 experts across 3 generations (4, 4, and 2).
 Each expert has these fields.
 
-| Field            | Meaning                                                                          |
-| ---------------- | -------------------------------------------------------------------------------- |
-| `title`          | Narrative epithet, for example "Elite Politician".                               |
-| `specialty`      | Mechanical category, for example "City Economy". It comes from a different wiki. |
-| `baseBonuses`    | One or two stat bonuses. The value is the one reached at affinity level 100.     |
-| `skills`         | Always 4 skills.                                                                 |
-| `talent`         | One talent. It has the same `ExpertSkill` shape as a skill.                      |
-| `affinityLevels` | 100 rows, one for each affinity level.                                           |
+| Field            | Meaning                                                                                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `title`          | Narrative epithet, for example "Elite Politician".                                                                                         |
+| `specialty`      | Mechanical category, for example "City Economy". It comes from a different wiki.                                                           |
+| `baseBonuses`    | One or two stat bonuses. The value is the one reached at affinity level 100. A bonus has `stat`, `statKey`, `value`, `amount`, and `unit`. |
+| `skills`         | Always 4 skills.                                                                                                                           |
+| `talent`         | One talent. It has the same `ExpertSkill` shape as a skill.                                                                                |
+| `affinityLevels` | 100 rows, one for each affinity level.                                                                                                     |
 
 A skill or talent covers three mechanics. Most have `progressions`, which are named values that
 scale per level, and a `costs` table of EXP and books per level. Agnes's talent has two independent

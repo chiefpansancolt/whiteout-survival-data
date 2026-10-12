@@ -36,6 +36,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   ranking table of an event in one shape.
 - `calculateResearch()`, `calculateTroops()`, and `calculateExperts()` give `eventPoints` and
   `speedupPointsPerMinute`, and the research and troops results give `speedupMinutesNeeded`.
+- Bonuses of research, skins, experts, VIP, and Alliance Tech have a `statKey`, a parsed `amount`
+  and `unit`, and the research bonuses have a `totalAmount` that adds up the levels of a node.
+  Alliance Tech nodes have a `stat`.
 - Chief Gear and Chief Charm levels have an `order`, and the 30 speedup items have a `speedup` with
   their type and length in minutes. Every speedup type has a 1m, 5m, 1h, 3h, and 8h item. Nine of
   them are placeholders with no icon.

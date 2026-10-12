@@ -43,9 +43,9 @@ The module holds 12 levels from `data/vip.json`. Each level has these fields.
 | `xpRequired` | XP to go from the previous level to this one. It is `0` for VIP 1          |
 | `bonuses`    | Total bonuses active at this level, not the change from the previous level |
 
-A bonus has `stat`, `value`, `amount`, and `unit`. `value` is the display string of the source, for
-example `"+16%"`, `"+1"`, or `"+1.1M"`. `amount` and `unit` are the parsed form: `16` and
-`'percent'`, `1` and `'flat'`, or `1100000` and `'flat'`. The `K` and `M` capacity suffixes are
+A bonus has `stat`, `statKey`, `value`, `amount`, and `unit`. `value` is the display string of the
+source, for example `"+16%"`, `"+1"`, or `"+1.1M"`. `amount` and `unit` are the parsed form: `16`
+and `'percent'`, `1` and `'flat'`, or `1100000` and `'flat'`. The `K` and `M` capacity suffixes are
 expanded to the full number. Use `amount` and `unit` to add up or compare bonuses, and `value` to
 display them.
 

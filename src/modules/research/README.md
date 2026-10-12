@@ -95,6 +95,30 @@ affects 20 nodes: `bulwark-formations-iv`, `picket-lines-iv`, and 18 Exalted nod
 `bonus` is an array because a level can grant more than one stat. Most levels grant one stat. 9
 nodes have levels with two stats, for example `helios-infantry-training`.
 
+A bonus has `stat`, `statKey`, `value`, `amount`, `unit`, and `totalAmount`. `value` is the text of
+the source, such as `"1.25%"`, `"600"`, or `"1,000"`. `amount` and `unit` are the parsed form: a `%`
+gives `percent` and a plain number gives `flat`, with the commas removed. `amount` is the bonus of
+that level, not the bonus so far. `totalAmount` is the sum of the `amount` of the same stat over the
+levels of the node up to this level, so `1.25`, `1.25`, and `1.5` have the totals `1.25`, `2.5`, and
+`4`. This rule applies to every node, also to the T12 nodes whose `amount` rises each level, such as
+`exalted-shoulderguard` (3, 6, 9, 12, 15 with the totals 3, 9, 18, 30, 45). The three bonuses of the
+`Other` stat hold unlock text such as `Unlock XI Helios Infantry`. They have no `statKey`, `amount`,
+`unit`, or `totalAmount`.
+
+`statKey` is the stat name in lowercase kebab-case, for example `"Infantry Attack"` gives
+`infantry-attack`. It is the same key in `research()`, `skins()`, `experts()`, `vip()`, and
+`allianceTech()`, so a page can add up bonuses from different sources. The sources write two of the
+names in the singular, so these map to the plural key:
+
+| Stat name       | `statKey`          |
+| --------------- | ------------------ |
+| `Troop Attack`  | `troops-attack`    |
+| `Troop Defense` | `troops-defense`   |
+| `Other`         | none (unlock text) |
+
+The 4 sources hold 57 stat names with a key and 55 keys. Alliance Tech adds 10 more, such as
+`alliance-banner-cap`. The mapping was made from the list of names, not by matching similar names.
+
 ### Exalted capstones
 
 `exalted-infantry`, `exalted-marksman`, and `exalted-lancer` do not exist on the wiki yet. They were

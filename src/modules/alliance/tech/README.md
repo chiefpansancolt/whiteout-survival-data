@@ -37,9 +37,10 @@ in [How It Works](../../../../README.md#how-it-works).
 
 The data is in `data/alliance/alliance-tech.json`. It has 59 nodes in 3 categories, each split into
 3 tiers. A node has `id`, `name`, `img`, `category`, `tier`, `description` (the stat the node
-affects), and `levels`. A level has `level`, `prerequisites` (a list of `{ id, level }` that point
-to other Alliance Tech nodes), `cost` (a list of `{ itemId, amount }`), `timeSeconds`, and `bonus`,
-the raw value of the stat at that level, such as `'3%'`.
+affects), `stat`, `statKey`, and `levels`. A level has `level`, `prerequisites` (a list of
+`{ id, level }` that point to other Alliance Tech nodes), `cost` (a list of `{ itemId, amount }`),
+`timeSeconds`, `bonus`, the raw value of the stat at that level such as `'3%'`, and the parsed
+`amount` and `unit` (`percent` or `flat`) of that value.
 
 ## Notes
 
@@ -48,7 +49,16 @@ The source is `https://www.whiteoutsurvival.wiki/alliance-tech/`, read one page 
 Alliance Tech node. No building gates the tree.
 
 `bonus` is `undefined` for the two one-off unlock nodes that have no stat effect, Tundra Surveying
-and Fertile Land Expedition.
+and Fertile Land Expedition. These two nodes and Long Live Our Alliance have no `stat`, `statKey`,
+`amount`, or `unit`. The other 56 nodes have a `stat` and a `statKey`.
+
+The `stat` is a short name for what the node raises, written from its `description` with a reviewed
+table. For example `Enhances all Troops’ Attack.` gives `Troops Attack`, and
+`Speeds up alliance members’ Coal mining in the wilderness.` gives `Coal Gathering Speed`. The
+`statKey` is the same kebab-case key as in `research()`, so `infantry-attack` means the same stat in
+both. The `bonus` of each level is the bonus at that level, not a step. Level 2 of Storehouse
+Expansion II has the bonus `2000` in the source, between `50%` and `100%`, and its `unit` is `flat`
+as the source states it.
 
 The wiki writes upgrade time as `M:S` under one hour (such as `30:00`) and `H:M:S` from one hour
 (such as `01:00:00`). Both forms are converted to seconds.

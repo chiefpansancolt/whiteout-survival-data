@@ -13,7 +13,8 @@ const frames = skins().bySkinType("Avatar Frame").get();
 
 // A skin with a stat bonus
 const frame = skins().find("abundance-scent");
-console.log(frame?.bonus); // { stat: 'Troops Defense', value: '+2%' }
+console.log(frame?.bonus);
+// { stat: 'Troops Defense', statKey: 'troops-defense', value: '+2%', amount: 2, unit: 'percent' }
 
 // Skins that grant no stat bonus
 const plain = skins()
