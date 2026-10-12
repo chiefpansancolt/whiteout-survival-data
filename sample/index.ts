@@ -12,6 +12,8 @@ import {
   items,
   pets,
   research,
+  serverTimeline,
+  serverTimelineStatus,
   skins,
 } from '../src';
 
@@ -144,3 +146,14 @@ console.log('empowerment levels:', heroGearEmpowerment().count());
 console.log('mastery forging rows:', heroGearMasteryForging().count());
 console.log('empowerment level 1 cost:', heroGearEmpowerment().find('level-1')?.cost);
 console.log('empowerment level 100 cost:', heroGearEmpowerment().find('level-100')?.cost);
+
+console.log('\n--- Server Timeline ---');
+console.log('milestones:', serverTimeline().count());
+const status = serverTimelineStatus('2026-07-01', '2026-10-11');
+console.log('server age:', status.age);
+console.log('unlocked milestones:', status.unlocked.length);
+console.log('next unlock:', status.next?.name, status.next?.date);
+console.log(
+  'heroes unlocked:',
+  status.unlocked.flatMap((m) => m.heroes.map((h) => h.name)).join(', '),
+);
