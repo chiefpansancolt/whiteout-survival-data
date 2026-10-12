@@ -8,7 +8,12 @@ and what is unlocked.
 ## Usage
 
 ```ts
-import { serverAge, serverTimeline, serverTimelineStatus } from "whiteout-survival-data";
+import {
+  heroGenerationAt,
+  serverAge,
+  serverTimeline,
+  serverTimelineStatus,
+} from "whiteout-survival-data";
 
 // Server age in whole days. Day 0 is the start date.
 console.log(serverAge("2026-07-01", "2026-10-11")); // 102
@@ -19,6 +24,15 @@ console.log(status.age); // 102
 console.log(status.unlocked.flatMap((m) => m.heroes.map((h) => h.name)));
 // ['Natalia', 'Jeronimo', 'Molly', 'Zinman', 'Flint', 'Philly', 'Alonso']
 console.log(status.next?.name, status.next?.date); // 'Day 120' '2026-10-29'
+
+// The highest hero generation unlocked at a server age
+console.log(heroGenerationAt(status.age)); // 2
+
+// The day on which a keyed unlock happens
+const warAcademy = serverTimeline()
+  .get()
+  .find((m) => m.unlocks.some((u) => u.key === "war-academy"));
+console.log(warAcademy?.day); // 220
 
 // Query the milestones directly
 const day54 = serverTimeline().find("day-54")!;
@@ -53,9 +67,12 @@ console.log(
 | ---------------------------------------- | ------- | ---------------------------------------------------------------- |
 | `serverAge(startDate, asOf?)`            | number  | Whole days from the start date to `asOf`. `asOf` defaults to now |
 | `serverTimelineStatus(startDate, asOf?)` | object  | The age, the unlocked and locked milestones, and the next one    |
+| `heroGenerationAt(serverAge)`            | number  | The highest hero generation unlocked at a server age in days     |
 
 Dates are a `Date` or a string such as `2026-01-15`. Both count in UTC and ignore the time of day.
-Both functions throw `RangeError` when a date is invalid or `asOf` is before the start date.
+`serverAge` and `serverTimelineStatus` throw `RangeError` when a date is invalid or `asOf` is before
+the start date. `heroGenerationAt` is 1 on day 0 and 16 from day 1160, and throws `RangeError` for a
+negative or non-numeric age.
 
 `serverTimelineStatus` returns `age`, `startDate`, `unlocked`, `locked`, and `next`. `unlocked` and
 `locked` list the oldest milestone first. Each milestone has a `date`, the calendar date on which it
@@ -71,16 +88,16 @@ the age itself is unlocked.
 The module holds 30 milestones from `data/server-timeline.json`, from day 0 to day 1160. Each
 milestone has these fields.
 
-| Field                 | Meaning                                                                                             |
-| --------------------- | --------------------------------------------------------------------------------------------------- |
-| `day`                 | Server age in days at which the content unlocks. Day 0 is the server start date                     |
-| `heroIds`             | Ids of the heroes that unlock. Resolve with `heroes()`                                              |
-| `heroShardEventIds`   | Ids of the events that give shards of each hero, by hero id. A hero with no listed event has no key |
-| `expertIds`           | Ids of the experts that unlock. Resolve with `experts()`                                            |
-| `petIds`              | Ids of the pets that unlock. Resolve with `pets()`                                                  |
-| `eventIds`            | Ids of the events that unlock. Resolve with `events()`                                              |
-| `fireCrystalLevelIds` | Ids of the Fire Crystal levels that unlock, such as `fc-5`. Resolve with `resolve()`                |
-| `unlocks`             | Everything else that unlocks, as `name` in the wording of the source and an optional `itemId`       |
+| Field                 | Meaning                                                                                                           |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `day`                 | Server age in days at which the content unlocks. Day 0 is the server start date                                   |
+| `heroIds`             | Ids of the heroes that unlock. Resolve with `heroes()`                                                            |
+| `heroShardEventIds`   | Ids of the events that give shards of each hero, by hero id. A hero with no listed event has no key               |
+| `expertIds`           | Ids of the experts that unlock. Resolve with `experts()`                                                          |
+| `petIds`              | Ids of the pets that unlock. Resolve with `pets()`                                                                |
+| `eventIds`            | Ids of the events that unlock. Resolve with `events()`                                                            |
+| `fireCrystalLevelIds` | Ids of the Fire Crystal levels that unlock, such as `fc-5`. Resolve with `resolve()`                              |
+| `unlocks`             | Everything else that unlocks, as `name` in the wording of the source, an optional `key`, and an optional `itemId` |
 
 ## Notes
 
@@ -134,3 +151,7 @@ The "Fire Crystal Age Unlocks" entry on day 60 has the `itemId` `fire-crystal`, 
 Crystal icon from `items()`.
 
 The source writes the hero Norah as "Nora". The timeline uses the id `norah` from `heroes()`.
+
+The `key` of an unlock names an unlock that the site reads, so the site does not match its text. It
+is set for `war-academy` on day 220 and `t12-research` on day 680, and for no other unlock. A key is
+unique in the timeline.

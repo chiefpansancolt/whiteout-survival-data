@@ -6,7 +6,12 @@ Life levels, and the cost, Prosperity, and buff of each decoration.
 ## Usage
 
 ```ts
-import { decoration, lumberCamp, treeOfLife } from "whiteout-survival-data";
+import {
+  DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL,
+  decoration,
+  lumberCamp,
+  treeOfLife,
+} from "whiteout-survival-data";
 
 // Tree of Life level 8 and its buff
 const level8 = treeOfLife().find("tree-of-life-level-8");
@@ -24,6 +29,9 @@ const mythic = decoration()
   .filter((d) => !d.limited);
 const lighthouse = decoration().find("starry-lighthouse");
 console.log(mythic.length, lighthouse?.levels?.length);
+
+// The Furnace level at which Daybreak Island unlocks
+console.log(DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL); // 19
 ```
 
 ## Query methods
@@ -71,8 +79,9 @@ level. For Starry Lighthouse it counts contracts, as the Notes explain.
 
 The data comes from `https://onechilledgamer.com/whiteout-survival-daybreak-island-guide/`. This is
 a third-party fan site, not `whiteoutsurvival.wiki`, but it has real `<table>` markup. The 12 tables
-were parsed from the raw HTML. Daybreak Island unlocks at Furnace Level 19. The player builds the
-Dock, and the island is discovered after about 3 days in real time.
+were parsed from the raw HTML. Daybreak Island unlocks at Furnace Level 19, the value of
+`DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL`. The player builds the Dock, and the island is discovered
+after about 3 days in real time.
 
 Two identical Lumber Camps clear the starting forest of the island. Each cleared tree can drop Life
 Essence, Hero Shards, or gear. After the forest is clear, a Timbermill takes over Life Essence

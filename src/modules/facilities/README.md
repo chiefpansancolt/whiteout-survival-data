@@ -25,7 +25,8 @@ console.log(facilities().count()); // 9
 ## Data
 
 The data is in `data/chief/facilities.json`. Each of the 9 entries has four fields: `id`, `name`,
-`img` (icon path), and `description` (what the facility does in the game). The entries are Hero
+`img` (icon path), and `description` (what the facility does in the game). An entry also has an
+optional `unlockFurnaceLevel`, the Furnace level at which the facility unlocks. The entries are Hero
 Hall, Dawn Academy, Beast Cage, Lighthouse, Arena, Chief's House, Explorer's Cabin, Suggestion Box,
 and Enlistment Office.
 
@@ -37,3 +38,6 @@ These buildings have no upgrade levels, no power, and no build cost. A `Building
 Enlistment Office replaces troops lost in battle from a reserve pool once the Infirmary's injured
 troops capacity is exceeded. Accumulated Loyalty gates it, and its capacity is four times the
 Infirmary's own.
+
+Only Dawn Academy has an `unlockFurnaceLevel`, 25, because its description is the only source that
+states a Furnace level. The other facilities have none until a source states one.

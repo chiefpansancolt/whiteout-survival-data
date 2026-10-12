@@ -27,6 +27,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Building costs of Wood, Coal, Iron, Meat, Fire Crystals, and Refined Fire Crystals have an
   `itemId` that resolves through `items()`.
 - Pet prerequisites have the `petId` of the required pet.
+- Timeline unlocks can have a `key`, set for the War Academy and T12 research unlocks, and
+  `heroGenerationAt()` gives the highest hero generation unlocked at a server age.
+- Dawn Academy has an `unlockFurnaceLevel`, and `DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL` gives the
+  Furnace level that unlocks Daybreak Island.
 - Chief Gear and Chief Charm levels have an `order`, and the 30 speedup items have a `speedup` with
   their type and length in minutes. Every speedup type has a 1m, 5m, 1h, 3h, and 8h item. Nine of
   them are placeholders with no icon.
