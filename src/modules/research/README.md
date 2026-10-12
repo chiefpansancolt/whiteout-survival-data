@@ -89,9 +89,13 @@ not use fuzzy matching.
 
 ### Missing research time
 
-`researchTimeSeconds` is optional. Some source pages have no Time value for some levels. This
-affects 20 nodes: `bulwark-formations-iv`, `picket-lines-iv`, and 18 Exalted nodes (for example
-`exalted-blunderbuss`).
+`researchTimeSeconds` is optional. The source pages of the 18 Exalted nodes have no Time value, so
+all 78 levels of those nodes (for example `exalted-blunderbuss`) have none.
+
+Level 1 of `bulwark-formations-iv` and `picket-lines-iv` has the time 32,000 seconds. The wiki
+writes it as `08:53::20`, with two colons, on both pages. The package reads it as `08:53:20`,
+because that is the only valid reading and it fits the other levels: 32,000, 41,600, 64,000, 96,000,
+and 240,480 seconds.
 
 ### Bonus array
 
