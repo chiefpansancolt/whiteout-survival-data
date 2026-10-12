@@ -20,6 +20,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Crystals that each building needs for FC 1 to FC 10, with a column for each level and resource, a
   row for each building, and a total for each column. A level range gives a table of only some
   levels. `fireCrystalLevels()` gives the FC 1 to FC 10 badge icons.
+- `fireCrystalShardTable()`: the Fire Crystal Shards and Refined Fire Crystals that T11 and T12
+  troop research costs, with a column for each troop type, tier, and resource. The Unlock row sums
+  the research that unlocks the troop, and the extras follow by research tier with a sum and a
+  total. A tier option shows only T11, only T12, or both.
 
 ## [0.1.0] - 2026-10-07
 
