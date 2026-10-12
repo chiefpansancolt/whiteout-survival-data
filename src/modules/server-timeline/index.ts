@@ -1,13 +1,12 @@
 import { QueryBase } from '@/common/query-base';
-import fireCrystalLevels from '@/data/fire-crystal-levels.json';
 import data from '@/data/server-timeline.json';
 import { events } from '@/modules/events';
 import { experts } from '@/modules/experts';
+import { fireCrystalLevels } from '@/modules/fire-crystal-table';
 import { heroes } from '@/modules/heroes';
 import { items } from '@/modules/items';
 import { pets } from '@/modules/pets';
 import {
-  FireCrystalLevel,
   ResolvedServerTimelineMilestone,
   ResolvedServerTimelineUnlock,
   ServerTimelineMilestone,
@@ -17,8 +16,6 @@ import {
 } from '@/types';
 
 const serverTimelineData: ServerTimelineMilestone[] = data as unknown as ServerTimelineMilestone[];
-
-const fireCrystalLevelData: FireCrystalLevel[] = fireCrystalLevels as FireCrystalLevel[];
 
 const MS_PER_DAY = 86_400_000;
 
@@ -65,7 +62,7 @@ function resolveMilestone(milestone: ServerTimelineMilestone): ResolvedServerTim
     events: findEntries(eventIds, (id) => events().find(id), 'event'),
     fireCrystalLevels: findEntries(
       fireCrystalLevelIds,
-      (id) => fireCrystalLevelData.find((level) => level.id === id),
+      (id) => fireCrystalLevels().find(id),
       'Fire Crystal level',
     ),
   };

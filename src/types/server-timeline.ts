@@ -1,15 +1,9 @@
 import { GameEvent } from './event';
 import { Expert } from './expert';
+import { FireCrystalLevel } from './fire-crystal-table';
 import { Hero } from './hero';
 import { Item } from './item';
 import { Pet } from './pet';
-
-export interface FireCrystalLevel {
-  id: string;
-  name: string;
-  level: number;
-  img: string;
-}
 
 export interface ServerTimelineUnlock {
   name: string;
