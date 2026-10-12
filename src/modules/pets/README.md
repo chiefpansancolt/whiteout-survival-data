@@ -38,6 +38,10 @@ milestones as the Advancement rows of the level table.
 `unlockRequirement` always has `daysRequired`, the days since server start. It also has either
 `furnaceLevel` or `prerequisitePet`. The three earliest pets need Furnace Lv.18. Every later pet
 needs a set level on the pet before it in one linear chain, not a chain split by rarity.
+`prerequisitePet` has the `petId` of that pet, its `name`, and the `level` needed.
+
+`daysRequired` follows the server timeline (`serverTimeline()`): day 54 for the first five pets,
+then 90, 140, 200, 280, and 370 for the later ones.
 
 Each entry in `levels` has `level`, `petFoodCost`, and a `troopAttack`, `troopDefense`, and
 `troopsPower` triple. Each is a `{ value, refinedValue? }` pair. `refinedValue` appears only at

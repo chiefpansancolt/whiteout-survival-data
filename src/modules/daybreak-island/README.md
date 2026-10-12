@@ -108,12 +108,11 @@ the Silverfrost Shop on a recurring but irregular basis. This is closer to the s
 of Starry Lighthouse than to a limited-time Epic or Mythic, so it is `Unique` and not
 `limited: true`.
 
-Names and buff text are copied exactly as the source shows them. This includes likely fan-site typos
-that no second source can check: "Marskman Attack" on Clock Hut, "Floating Markert", "Marksman
-Defence" on Fisherman's Chalet, and "Hero's Sanctun". The level import spelled the last one "Hero's
-Sanctum", but it was merged into the existing `hero-s-sanctun` id so that no reference breaks. As a
-result `decoration().find('heros-sanctum')` returns nothing, and
-`decoration().find('hero-s-sanctun')` has the full level data.
+Names and buff text are copied as the source shows them. Two misspelled decoration names are
+corrected: `hero-s-sanctun` is named "Hero’s Sanctum" and `floating-markert` is named "Floating
+Market". Their ids keep the old spelling so that no reference breaks. As a result
+`decoration().find('heros-sanctum')` returns nothing, and `decoration().find('hero-s-sanctun')` has
+the full level data.
 
 `img` is set only on decorations that have a picture so far. It is stored under
 `images/daybreak-island/`. The sources are crops from these images.

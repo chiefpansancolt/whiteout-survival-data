@@ -24,6 +24,22 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   troop research costs, with a column for each troop type, tier, and resource. The Unlock row sums
   the research that unlocks the troop, and the extras follow by research tier with a sum and a
   total. A tier option shows only T11, only T12, or both.
+- Building costs of Wood, Coal, Iron, Meat, Fire Crystals, and Refined Fire Crystals have an
+  `itemId` that resolves through `items()`.
+- Pet prerequisites have the `petId` of the required pet.
+- Chief Gear and Chief Charm levels have an `order`, and the 30 speedup items have a `speedup` with
+  their type and length in minutes. Every speedup type has a 1m, 5m, 1h, 3h, and 8h item. Nine of
+  them are placeholders with no icon.
+
+### Changed
+
+- Pet unlock days follow the server timeline: 54 for the first five pets, then 90, 140, 200, 280,
+  and 370.
+
+### Fixed
+
+- The Daybreak Island decorations Hero’s Sanctum and Floating Market have their names spelled
+  correctly.
 
 ## [0.1.0] - 2026-10-07
 

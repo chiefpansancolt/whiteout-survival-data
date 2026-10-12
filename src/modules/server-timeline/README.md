@@ -89,11 +89,11 @@ The data comes from `https://www.whiteoutsurvival.wiki/server-timeline-server-ag
 The source lists no expert, so every `expertIds` array is empty. The source does not list the
 Generation 17 heroes in `heroes()`. They are not on the timeline until a source states their day.
 
-The pet days on the timeline differ from `unlockRequirement.daysRequired` in `pets()`. The timeline
-puts Titan Roc and Giant Tapir on day 54, Snow Leopard and Giant Elk on day 90, Cave Lion and Snow
-Ape on day 140, Iron Rhino and Saber-tooth Tiger on day 200, Mammoth and Frost Gorilla on day 280,
-and Frostscale Chameleon on day 370. These days were set by hand. The wiki timeline page lists
-different days and no pets after day 280. `pets()` keeps its own values.
+The pet days on the timeline and `unlockRequirement.daysRequired` in `pets()` are the same. Titan
+Roc and Giant Tapir are on day 54, Snow Leopard and Giant Elk on day 90, Cave Lion and Snow Ape on
+day 140, Iron Rhino and Saber-tooth Tiger on day 200, Mammoth and Frost Gorilla on day 280, and
+Frostscale Chameleon on day 370. These days were set by hand. The wiki timeline page lists different
+days and no pets after day 280.
 
 The source names events that unlock: Sunfire Castle (day 53), State vs. State and King of the Ice
 (day 80), and Hero's Mission (day 195). They link to `sunfire-castle`, `svs-state-of-power`,

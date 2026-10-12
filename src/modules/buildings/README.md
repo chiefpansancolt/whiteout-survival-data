@@ -50,6 +50,11 @@ has that stat: `rallyCapacity`, `marchCapacity`, `trainingCapacity`, `trainingSp
 `researchSpeedBonusPercent`, `infirmaryCapacity`, `allyAssists`, `allyHelpTimeSeconds`,
 `reinforceCapacity`, `storehouseCapacity`, `barricadeDurability`, and `troopDeploymentCapacity`.
 
+A `cost` entry is `{ name, count }`. The raw resources Wood, Coal, Iron, Meat, Fire Crystals, and
+Refined Fire Crystals also have an `itemId` that resolves through `items()` (`wood`, `coal`, `iron`,
+`meat`, `fire-crystal`, `refined-fire-crystal`). The furniture costs of the entertainment buildings
+are not items, so they have no `itemId`.
+
 ## Notes
 
 ### Level shape

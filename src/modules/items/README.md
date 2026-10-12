@@ -1,6 +1,6 @@
 # Items
 
-The 273 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 282 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -35,7 +35,9 @@ described in [How It Works](../../../README.md#how-it-works).
 ## Data
 
 Items are in `data/chief/items.json`. Each entry has `id`, `name`, `img`, `category`, an optional
-`description`, a list of `sources`, and an optional `rewardRates`.
+`description`, a list of `sources`, and an optional `rewardRates`. The 30 speedup items also have a
+`speedup` with its `type` (`general`, `construction`, `troop`, `research`, `learning`, or `healing`)
+and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minutes).
 
 `category` is one of 11 values.
 
@@ -46,7 +48,7 @@ Items are in `data/chief/items.json`. Each entry has `id`, `name`, `img`, `categ
 | Others         | 40    |
 | Buff           | 31    |
 | Hero Items     | 23    |
-| Speedups       | 21    |
+| Speedups       | 30    |
 | Experts        | 16    |
 | Gear Materials | 10    |
 | Pet            | 6     |
@@ -70,8 +72,12 @@ gameplay data. The other 17 tabs split by kind. Functional items are in this mod
 skins are in `skins()`.
 
 The first 10 categories are the tab labels of the wiki. `Speedups` is not a wiki tab. It holds the
-21 general and type-specific speedup items (1m to 8h), which the catalog does not list. Their icons
-are cropped from in-game Backpack screenshots. The 3h and 8h icons are not added yet for most types.
+30 general and type-specific speedup items (1m to 8h), which the catalog does not list. Their icons
+are cropped from in-game Backpack screenshots. Each of the six types (general, construction,
+research, troop, learning, and healing) has a 1m, 5m, 1h, 3h, and 8h item. Nine items have no icon
+yet, so their `img` is an empty string and their `sources` are empty: the 3h and 8h speedups of
+construction, troop, research, and healing, and the 8h speedup of learning. They are placeholders,
+so no source states them yet.
 
 The source site tags five items under more than one tab, all of them involving Chest. Seeker's Chest
 is tagged both `Chest` and `Experts`. `Chest` wins in every case because it is the more specific

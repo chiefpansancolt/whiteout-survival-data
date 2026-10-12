@@ -50,6 +50,7 @@ table, so the rows are upgrade steps, not named items. A row has these fields.
 
 | Field                      | Meaning                                                            |
 | -------------------------- | ------------------------------------------------------------------ |
+| `order`                    | Position in the table, from 1 in row order                         |
 | `tier`                     | Tier label of the source wiki, for example `Epic` or `LegendaryT3` |
 | `stars`, `stage`           | Position in the tier. Both restart in each tier                    |
 | `materials`                | Item ids from `items()` and the amount needed for the step         |
