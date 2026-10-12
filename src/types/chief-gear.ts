@@ -17,6 +17,7 @@ export interface ChiefGearMaterial {
 
 export interface ChiefGearLevel {
   id: string;
+  order: number;
   name: string;
   /** Tier label as the source writes it, such as "Epic" or "LegendaryT3". Stars and stage restart in each tier. */
   tier: string;

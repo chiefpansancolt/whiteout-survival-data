@@ -159,3 +159,12 @@ describe('gear score', () => {
     ).toBe(461880);
   });
 });
+
+describe('chief gear level order', () => {
+  it('numbers the levels from 1 in row order', () => {
+    const orders = chiefGear()
+      .get()
+      .map((l) => l.order);
+    expect(orders).toEqual(orders.map((_, index) => index + 1));
+  });
+});

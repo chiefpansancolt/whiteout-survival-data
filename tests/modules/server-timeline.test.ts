@@ -237,6 +237,14 @@ describe('timeline data', () => {
     );
   });
 
+  it('matches the unlock day of each pet to its milestone day', () => {
+    for (const m of serverTimeline().get()) {
+      for (const id of m.petIds) {
+        expect(pets().find(id)!.unlockRequirement.daysRequired).toBe(m.day);
+      }
+    }
+  });
+
   it('resolves every milestone', () => {
     expect(serverTimeline().resolve()).toHaveLength(serverTimeline().count());
   });

@@ -147,3 +147,12 @@ describe('charm score', () => {
     expect(wiki).toEqual(MAIN_LEVEL_SCORES.slice(0, 16));
   });
 });
+
+describe('chief charm level order', () => {
+  it('numbers the levels from 1 in row order', () => {
+    const orders = chiefCharm()
+      .get()
+      .map((l) => l.order);
+    expect(orders).toEqual(orders.map((_, index) => index + 1));
+  });
+});

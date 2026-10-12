@@ -106,3 +106,17 @@ describe('Pet roster', () => {
     ]);
   });
 });
+
+describe('pet prerequisites', () => {
+  const chained = pets()
+    .get()
+    .filter((p) => p.unlockRequirement.prerequisitePet !== undefined);
+
+  it('gives every prerequisite the id of the pet it names', () => {
+    expect(chained).toHaveLength(11);
+    for (const pet of chained) {
+      const { petId, name } = pet.unlockRequirement.prerequisitePet!;
+      expect(pets().find(petId)?.name).toBe(name);
+    }
+  });
+});

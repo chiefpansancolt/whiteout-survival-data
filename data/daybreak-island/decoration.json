@@ -381,7 +381,7 @@
   },
   {
     "id": "hero-s-sanctun",
-    "name": "Hero’s Sanctun",
+    "name": "Hero’s Sanctum",
     "img": "/images/daybreak-island/heros-sanctum.png",
     "category": "Epic",
     "levels": [
@@ -3158,7 +3158,7 @@
   },
   {
     "id": "floating-markert",
-    "name": "Floating Markert",
+    "name": "Floating Market",
     "category": "Mythic",
     "lifeEssenceCost": 10000,
     "levels": [

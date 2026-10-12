@@ -15,6 +15,7 @@ export interface ChiefCharmMaterial {
 
 export interface ChiefCharmLevel {
   id: string;
+  order: number;
   name: string;
   level: number;
   stage: number;

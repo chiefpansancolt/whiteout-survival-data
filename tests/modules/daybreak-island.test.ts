@@ -299,3 +299,17 @@ describe('Decorations', () => {
     withImg.forEach((d) => expect(existsSync(join(__dirname, '../..', d.img!))).toBe(true));
   });
 });
+
+describe('decoration names', () => {
+  it('uses the corrected spelling of Hero’s Sanctum and Floating Market', () => {
+    expect(decoration().find('hero-s-sanctun')?.name).toBe('Hero’s Sanctum');
+    expect(decoration().find('floating-markert')?.name).toBe('Floating Market');
+  });
+
+  it('has no decoration with an old misspelling in its name', () => {
+    const names = decoration()
+      .get()
+      .map((d) => d.name);
+    expect(names.some((n) => /Sanctun|Markert/.test(n))).toBe(false);
+  });
+});

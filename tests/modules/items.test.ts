@@ -23,8 +23,8 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 273 items across 11 categories', () => {
-    expect(items().count()).toBe(273);
+  it('tracks 282 items across 11 categories', () => {
+    expect(items().count()).toBe(282);
     expect(items().byCategory('Hero Items').count()).toBe(23);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
@@ -35,7 +35,7 @@ describe('Item catalog', () => {
     expect(items().byCategory('Teleporter').count()).toBe(4);
     expect(items().byCategory('Others').count()).toBe(40);
     expect(items().byCategory('Event').count()).toBe(58);
-    expect(items().byCategory('Speedups').count()).toBe(21);
+    expect(items().byCategory('Speedups').count()).toBe(30);
   });
 
   it('resolves items tagged under both Chest and another tab to Chest', () => {
@@ -73,11 +73,39 @@ describe('Item catalog', () => {
     expect(resourceChest.description).toBeDefined();
   });
 
-  it('has an icon file for every Speedups item', () => {
+  it('has an icon file for every Speedups item except the placeholders', () => {
     items()
       .byCategory('Speedups')
       .get()
+      .filter((item) => item.img !== '')
       .forEach((item) => expect(existsSync(join(__dirname, '../..', item.img))).toBe(true));
+  });
+
+  it('has 1m, 5m, 1h, 3h, and 8h speedups of every type', () => {
+    for (const type of ['general', 'construction', 'research', 'troop', 'learning', 'healing']) {
+      for (const length of ['1m', '5m', '1h', '3h', '8h']) {
+        expect(items().find(`speedup-${type}-${length}`)).toBeDefined();
+      }
+    }
+  });
+
+  it('marks the placeholder speedups with an empty img and no sources', () => {
+    const placeholders = items()
+      .byCategory('Speedups')
+      .get()
+      .filter((item) => item.img === '');
+    expect(placeholders.map((item) => item.id)).toEqual([
+      'speedup-construction-3h',
+      'speedup-construction-8h',
+      'speedup-troop-3h',
+      'speedup-troop-8h',
+      'speedup-research-3h',
+      'speedup-research-8h',
+      'speedup-learning-8h',
+      'speedup-healing-3h',
+      'speedup-healing-8h',
+    ]);
+    for (const item of placeholders) expect(item.sources).toEqual([]);
   });
 
   it('names speedups by duration and type', () => {
@@ -107,5 +135,31 @@ describe('Item catalog', () => {
       amount: 10,
       probabilityPercent: 100,
     });
+  });
+});
+
+describe('speedup items', () => {
+  const speedups = items()
+    .get()
+    .filter((i) => i.speedup !== undefined);
+
+  it('has a speedup field on the 30 speedup items', () => {
+    expect(speedups).toHaveLength(30);
+  });
+
+  it('reads the type and the minutes from the id', () => {
+    for (const item of speedups) {
+      const match = /^speedup-([a-z]+)-(\d+)(m|h)$/.exec(item.id)!;
+      expect(item.speedup!.type).toBe(match[1]);
+      expect(item.speedup!.minutes).toBe(Number(match[2]) * (match[3] === 'h' ? 60 : 1));
+    }
+  });
+
+  it('keeps every speedup item in the Speedups category', () => {
+    for (const item of speedups) expect(item.category).toBe('Speedups');
+  });
+
+  it('has a general 8 hour speedup of 480 minutes', () => {
+    expect(items().find('speedup-general-8h')!.speedup).toEqual({ type: 'general', minutes: 480 });
   });
 });

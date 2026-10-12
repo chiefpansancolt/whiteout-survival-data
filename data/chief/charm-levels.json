@@ -1,6 +1,7 @@
 [
   {
     "id": "level-1",
+    "order": 1,
     "name": "Level 1",
     "level": 1,
     "stage": 0,
@@ -20,6 +21,7 @@
   },
   {
     "id": "level-2",
+    "order": 2,
     "name": "Level 2",
     "level": 2,
     "stage": 0,
@@ -39,6 +41,7 @@
   },
   {
     "id": "level-3",
+    "order": 3,
     "name": "Level 3",
     "level": 3,
     "stage": 0,
@@ -58,6 +61,7 @@
   },
   {
     "id": "level-4-stage-0",
+    "order": 4,
     "name": "Level 4 Stage 0",
     "level": 4,
     "stage": 0,
@@ -77,6 +81,7 @@
   },
   {
     "id": "level-4-stage-1",
+    "order": 5,
     "name": "Level 4 Stage 1",
     "level": 4,
     "stage": 1,
@@ -96,6 +101,7 @@
   },
   {
     "id": "level-4-stage-2",
+    "order": 6,
     "name": "Level 4 Stage 2",
     "level": 4,
     "stage": 2,
@@ -115,6 +121,7 @@
   },
   {
     "id": "level-4-stage-3",
+    "order": 7,
     "name": "Level 4 Stage 3",
     "level": 4,
     "stage": 3,
@@ -134,6 +141,7 @@
   },
   {
     "id": "level-5-stage-0",
+    "order": 8,
     "name": "Level 5 Stage 0",
     "level": 5,
     "stage": 0,
@@ -153,6 +161,7 @@
   },
   {
     "id": "level-5-stage-1",
+    "order": 9,
     "name": "Level 5 Stage 1",
     "level": 5,
     "stage": 1,
@@ -172,6 +181,7 @@
   },
   {
     "id": "level-5-stage-2",
+    "order": 10,
     "name": "Level 5 Stage 2",
     "level": 5,
     "stage": 2,
@@ -191,6 +201,7 @@
   },
   {
     "id": "level-5-stage-3",
+    "order": 11,
     "name": "Level 5 Stage 3",
     "level": 5,
     "stage": 3,
@@ -210,6 +221,7 @@
   },
   {
     "id": "level-6-stage-0",
+    "order": 12,
     "name": "Level 6 Stage 0",
     "level": 6,
     "stage": 0,
@@ -229,6 +241,7 @@
   },
   {
     "id": "level-6-stage-1",
+    "order": 13,
     "name": "Level 6 Stage 1",
     "level": 6,
     "stage": 1,
@@ -248,6 +261,7 @@
   },
   {
     "id": "level-6-stage-2",
+    "order": 14,
     "name": "Level 6 Stage 2",
     "level": 6,
     "stage": 2,
@@ -267,6 +281,7 @@
   },
   {
     "id": "level-6-stage-3",
+    "order": 15,
     "name": "Level 6 Stage 3",
     "level": 6,
     "stage": 3,
@@ -286,6 +301,7 @@
   },
   {
     "id": "level-7-stage-0",
+    "order": 16,
     "name": "Level 7 Stage 0",
     "level": 7,
     "stage": 0,
@@ -305,6 +321,7 @@
   },
   {
     "id": "level-7-stage-1",
+    "order": 17,
     "name": "Level 7 Stage 1",
     "level": 7,
     "stage": 1,
@@ -324,6 +341,7 @@
   },
   {
     "id": "level-7-stage-2",
+    "order": 18,
     "name": "Level 7 Stage 2",
     "level": 7,
     "stage": 2,
@@ -343,6 +361,7 @@
   },
   {
     "id": "level-7-stage-3",
+    "order": 19,
     "name": "Level 7 Stage 3",
     "level": 7,
     "stage": 3,
@@ -362,6 +381,7 @@
   },
   {
     "id": "level-8-stage-0",
+    "order": 20,
     "name": "Level 8 Stage 0",
     "level": 8,
     "stage": 0,
@@ -381,6 +401,7 @@
   },
   {
     "id": "level-8-stage-1",
+    "order": 21,
     "name": "Level 8 Stage 1",
     "level": 8,
     "stage": 1,
@@ -400,6 +421,7 @@
   },
   {
     "id": "level-8-stage-2",
+    "order": 22,
     "name": "Level 8 Stage 2",
     "level": 8,
     "stage": 2,
@@ -419,6 +441,7 @@
   },
   {
     "id": "level-8-stage-3",
+    "order": 23,
     "name": "Level 8 Stage 3",
     "level": 8,
     "stage": 3,
@@ -438,6 +461,7 @@
   },
   {
     "id": "level-9-stage-0",
+    "order": 24,
     "name": "Level 9 Stage 0",
     "level": 9,
     "stage": 0,
@@ -457,6 +481,7 @@
   },
   {
     "id": "level-9-stage-1",
+    "order": 25,
     "name": "Level 9 Stage 1",
     "level": 9,
     "stage": 1,
@@ -476,6 +501,7 @@
   },
   {
     "id": "level-9-stage-2",
+    "order": 26,
     "name": "Level 9 Stage 2",
     "level": 9,
     "stage": 2,
@@ -495,6 +521,7 @@
   },
   {
     "id": "level-9-stage-3",
+    "order": 27,
     "name": "Level 9 Stage 3",
     "level": 9,
     "stage": 3,
@@ -514,6 +541,7 @@
   },
   {
     "id": "level-10-stage-0",
+    "order": 28,
     "name": "Level 10 Stage 0",
     "level": 10,
     "stage": 0,
@@ -533,6 +561,7 @@
   },
   {
     "id": "level-10-stage-1",
+    "order": 29,
     "name": "Level 10 Stage 1",
     "level": 10,
     "stage": 1,
@@ -552,6 +581,7 @@
   },
   {
     "id": "level-10-stage-2",
+    "order": 30,
     "name": "Level 10 Stage 2",
     "level": 10,
     "stage": 2,
@@ -571,6 +601,7 @@
   },
   {
     "id": "level-10-stage-3",
+    "order": 31,
     "name": "Level 10 Stage 3",
     "level": 10,
     "stage": 3,
@@ -590,6 +621,7 @@
   },
   {
     "id": "level-11-stage-0",
+    "order": 32,
     "name": "Level 11 Stage 0",
     "level": 11,
     "stage": 0,
@@ -609,6 +641,7 @@
   },
   {
     "id": "level-11-stage-1",
+    "order": 33,
     "name": "Level 11 Stage 1",
     "level": 11,
     "stage": 1,
@@ -632,6 +665,7 @@
   },
   {
     "id": "level-11-stage-2",
+    "order": 34,
     "name": "Level 11 Stage 2",
     "level": 11,
     "stage": 2,
@@ -655,6 +689,7 @@
   },
   {
     "id": "level-11-stage-3",
+    "order": 35,
     "name": "Level 11 Stage 3",
     "level": 11,
     "stage": 3,
@@ -678,6 +713,7 @@
   },
   {
     "id": "level-11-stage-4",
+    "order": 36,
     "name": "Level 11 Stage 4",
     "level": 11,
     "stage": 4,
@@ -701,6 +737,7 @@
   },
   {
     "id": "level-12-stage-0",
+    "order": 37,
     "name": "Level 12 Stage 0",
     "level": 12,
     "stage": 0,
@@ -724,6 +761,7 @@
   },
   {
     "id": "level-12-stage-1",
+    "order": 38,
     "name": "Level 12 Stage 1",
     "level": 12,
     "stage": 1,
@@ -747,6 +785,7 @@
   },
   {
     "id": "level-12-stage-2",
+    "order": 39,
     "name": "Level 12 Stage 2",
     "level": 12,
     "stage": 2,
@@ -770,6 +809,7 @@
   },
   {
     "id": "level-12-stage-3",
+    "order": 40,
     "name": "Level 12 Stage 3",
     "level": 12,
     "stage": 3,
@@ -793,6 +833,7 @@
   },
   {
     "id": "level-12-stage-4",
+    "order": 41,
     "name": "Level 12 Stage 4",
     "level": 12,
     "stage": 4,
@@ -816,6 +857,7 @@
   },
   {
     "id": "level-13-stage-0",
+    "order": 42,
     "name": "Level 13 Stage 0",
     "level": 13,
     "stage": 0,
@@ -839,6 +881,7 @@
   },
   {
     "id": "level-13-stage-1",
+    "order": 43,
     "name": "Level 13 Stage 1",
     "level": 13,
     "stage": 1,
@@ -862,6 +905,7 @@
   },
   {
     "id": "level-13-stage-2",
+    "order": 44,
     "name": "Level 13 Stage 2",
     "level": 13,
     "stage": 2,
@@ -885,6 +929,7 @@
   },
   {
     "id": "level-13-stage-3",
+    "order": 45,
     "name": "Level 13 Stage 3",
     "level": 13,
     "stage": 3,
@@ -908,6 +953,7 @@
   },
   {
     "id": "level-13-stage-4",
+    "order": 46,
     "name": "Level 13 Stage 4",
     "level": 13,
     "stage": 4,
@@ -931,6 +977,7 @@
   },
   {
     "id": "level-14-stage-0",
+    "order": 47,
     "name": "Level 14 Stage 0",
     "level": 14,
     "stage": 0,
@@ -954,6 +1001,7 @@
   },
   {
     "id": "level-14-stage-1",
+    "order": 48,
     "name": "Level 14 Stage 1",
     "level": 14,
     "stage": 1,
@@ -977,6 +1025,7 @@
   },
   {
     "id": "level-14-stage-2",
+    "order": 49,
     "name": "Level 14 Stage 2",
     "level": 14,
     "stage": 2,
@@ -1000,6 +1049,7 @@
   },
   {
     "id": "level-14-stage-3",
+    "order": 50,
     "name": "Level 14 Stage 3",
     "level": 14,
     "stage": 3,
@@ -1023,6 +1073,7 @@
   },
   {
     "id": "level-14-stage-4",
+    "order": 51,
     "name": "Level 14 Stage 4",
     "level": 14,
     "stage": 4,
@@ -1046,6 +1097,7 @@
   },
   {
     "id": "level-15-stage-0",
+    "order": 52,
     "name": "Level 15 Stage 0",
     "level": 15,
     "stage": 0,
@@ -1069,6 +1121,7 @@
   },
   {
     "id": "level-15-stage-1",
+    "order": 53,
     "name": "Level 15 Stage 1",
     "level": 15,
     "stage": 1,
@@ -1092,6 +1145,7 @@
   },
   {
     "id": "level-15-stage-2",
+    "order": 54,
     "name": "Level 15 Stage 2",
     "level": 15,
     "stage": 2,
@@ -1115,6 +1169,7 @@
   },
   {
     "id": "level-15-stage-3",
+    "order": 55,
     "name": "Level 15 Stage 3",
     "level": 15,
     "stage": 3,
@@ -1138,6 +1193,7 @@
   },
   {
     "id": "level-15-stage-4",
+    "order": 56,
     "name": "Level 15 Stage 4",
     "level": 15,
     "stage": 4,
@@ -1161,6 +1217,7 @@
   },
   {
     "id": "level-16-stage-0",
+    "order": 57,
     "name": "Level 16 Stage 0",
     "level": 16,
     "stage": 0,
@@ -1184,6 +1241,7 @@
   },
   {
     "id": "level-16-stage-1",
+    "order": 58,
     "name": "Level 16 Stage 1",
     "level": 16,
     "stage": 1,
@@ -1207,6 +1265,7 @@
   },
   {
     "id": "level-16-stage-2",
+    "order": 59,
     "name": "Level 16 Stage 2",
     "level": 16,
     "stage": 2,
@@ -1230,6 +1289,7 @@
   },
   {
     "id": "level-16-stage-3",
+    "order": 60,
     "name": "Level 16 Stage 3",
     "level": 16,
     "stage": 3,
@@ -1253,6 +1313,7 @@
   },
   {
     "id": "level-16-stage-4",
+    "order": 61,
     "name": "Level 16 Stage 4",
     "level": 16,
     "stage": 4,
@@ -1276,6 +1337,7 @@
   },
   {
     "id": "level-16-stage-5",
+    "order": 62,
     "name": "Level 16 Stage 5",
     "level": 16,
     "stage": 5,
@@ -1299,6 +1361,7 @@
   },
   {
     "id": "level-16-stage-6",
+    "order": 63,
     "name": "Level 16 Stage 6",
     "level": 16,
     "stage": 6,
@@ -1322,6 +1385,7 @@
   },
   {
     "id": "level-16-stage-7",
+    "order": 64,
     "name": "Level 16 Stage 7",
     "level": 16,
     "stage": 7,
@@ -1345,6 +1409,7 @@
   },
   {
     "id": "level-16-stage-8",
+    "order": 65,
     "name": "Level 16 Stage 8",
     "level": 16,
     "stage": 8,
@@ -1368,6 +1433,7 @@
   },
   {
     "id": "level-17-stage-0",
+    "order": 66,
     "name": "Level 17 Stage 0",
     "level": 17,
     "stage": 0,
@@ -1391,6 +1457,7 @@
   },
   {
     "id": "level-17-stage-1",
+    "order": 67,
     "name": "Level 17 Stage 1",
     "level": 17,
     "stage": 1,
@@ -1414,6 +1481,7 @@
   },
   {
     "id": "level-17-stage-2",
+    "order": 68,
     "name": "Level 17 Stage 2",
     "level": 17,
     "stage": 2,
@@ -1437,6 +1505,7 @@
   },
   {
     "id": "level-17-stage-3",
+    "order": 69,
     "name": "Level 17 Stage 3",
     "level": 17,
     "stage": 3,
@@ -1460,6 +1529,7 @@
   },
   {
     "id": "level-17-stage-4",
+    "order": 70,
     "name": "Level 17 Stage 4",
     "level": 17,
     "stage": 4,
@@ -1483,6 +1553,7 @@
   },
   {
     "id": "level-17-stage-5",
+    "order": 71,
     "name": "Level 17 Stage 5",
     "level": 17,
     "stage": 5,
@@ -1506,6 +1577,7 @@
   },
   {
     "id": "level-17-stage-6",
+    "order": 72,
     "name": "Level 17 Stage 6",
     "level": 17,
     "stage": 6,
@@ -1529,6 +1601,7 @@
   },
   {
     "id": "level-17-stage-7",
+    "order": 73,
     "name": "Level 17 Stage 7",
     "level": 17,
     "stage": 7,
@@ -1552,6 +1625,7 @@
   },
   {
     "id": "level-17-stage-8",
+    "order": 74,
     "name": "Level 17 Stage 8",
     "level": 17,
     "stage": 8,
@@ -1575,6 +1649,7 @@
   },
   {
     "id": "level-18-stage-0",
+    "order": 75,
     "name": "Level 18 Stage 0",
     "level": 18,
     "stage": 0,

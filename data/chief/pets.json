@@ -2514,9 +2514,10 @@
     "maxLevel": 70,
     "maxRefinementPercent": 20.11,
     "unlockRequirement": {
-      "daysRequired": 90,
+      "daysRequired": 54,
       "prerequisitePet": {
         "name": "Musk Ox",
+        "petId": "musk-ox",
         "level": 15
       }
     },
@@ -3549,9 +3550,10 @@
     "maxLevel": 70,
     "maxRefinementPercent": 20.11,
     "unlockRequirement": {
-      "daysRequired": 90,
+      "daysRequired": 54,
       "prerequisitePet": {
         "name": "Giant Tapir",
+        "petId": "giant-tapir",
         "level": 15
       }
     },
@@ -4584,9 +4586,10 @@
     "maxLevel": 80,
     "maxRefinementPercent": 29.05,
     "unlockRequirement": {
-      "daysRequired": 140,
+      "daysRequired": 90,
       "prerequisitePet": {
         "name": "Titan Roc",
+        "petId": "titan-roc",
         "level": 15
       }
     },
@@ -5768,9 +5771,10 @@
     "maxLevel": 80,
     "maxRefinementPercent": 29.05,
     "unlockRequirement": {
-      "daysRequired": 140,
+      "daysRequired": 90,
       "prerequisitePet": {
         "name": "Giant Elk",
+        "petId": "giant-elk",
         "level": 15
       }
     },
@@ -6953,9 +6957,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 44.69,
     "unlockRequirement": {
-      "daysRequired": 200,
+      "daysRequired": 140,
       "prerequisitePet": {
         "name": "Snow Leopard",
+        "petId": "snow-leopard",
         "level": 15
       }
     },
@@ -8434,9 +8439,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 44.69,
     "unlockRequirement": {
-      "daysRequired": 200,
+      "daysRequired": 140,
       "prerequisitePet": {
         "name": "Cave Lion",
+        "petId": "cave-lion",
         "level": 30
       }
     },
@@ -9917,9 +9923,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 49.16,
     "unlockRequirement": {
-      "daysRequired": 280,
+      "daysRequired": 200,
       "prerequisitePet": {
         "name": "Snow Ape",
+        "petId": "snow-ape",
         "level": 30
       }
     },
@@ -11401,9 +11408,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 49.16,
     "unlockRequirement": {
-      "daysRequired": 280,
+      "daysRequired": 200,
       "prerequisitePet": {
         "name": "Iron Rhino",
+        "petId": "iron-rhino",
         "level": 30
       }
     },
@@ -12882,9 +12890,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 49.16,
     "unlockRequirement": {
-      "daysRequired": 370,
+      "daysRequired": 280,
       "prerequisitePet": {
         "name": "Saber-tooth Tiger",
+        "petId": "saber-tooth-tiger",
         "level": 30
       }
     },
@@ -14363,9 +14372,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 49.16,
     "unlockRequirement": {
-      "daysRequired": 370,
+      "daysRequired": 280,
       "prerequisitePet": {
         "name": "Mammoth",
+        "petId": "mammoth",
         "level": 30
       }
     },
@@ -15843,9 +15853,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 58.1,
     "unlockRequirement": {
-      "daysRequired": 450,
+      "daysRequired": 370,
       "prerequisitePet": {
         "name": "Frost Gorilla",
+        "petId": "frost-gorilla",
         "level": 30
       }
     },

@@ -1,6 +1,7 @@
 export type PetRarity = 'Common' | 'Uncommon' | 'Rare' | 'Epic' | 'Legendary';
 
 export interface PetPrerequisitePet {
+  petId: string;
   name: string;
   level: number;
 }

@@ -1,4 +1,5 @@
 import { BuildingQuery, buildings } from '@/modules/buildings';
+import { items } from '@/modules/items';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('buildings', () => buildings());
@@ -488,5 +489,37 @@ describe.each([
       { building: name, level: 10 },
       { building: 'Furnace', level: 'FC 1' },
     ]);
+  });
+});
+
+describe('building cost item ids', () => {
+  const costs = buildings()
+    .get()
+    .flatMap((b) => b.levels.flatMap((l) => l.cost));
+  const ITEM_IDS: Record<string, string> = {
+    Wood: 'wood',
+    Coal: 'coal',
+    Iron: 'iron',
+    Meat: 'meat',
+    'Fire Crystals': 'fire-crystal',
+    'Refined Fire Crystals': 'refined-fire-crystal',
+  };
+
+  it('gives every resource cost the id of its item', () => {
+    const resourceCosts = costs.filter((c) => c.name in ITEM_IDS);
+    expect(resourceCosts.length).toBeGreaterThan(0);
+    for (const cost of resourceCosts) expect(cost.itemId).toBe(ITEM_IDS[cost.name]);
+  });
+
+  it('resolves every item id through items()', () => {
+    for (const cost of costs.filter((c) => c.itemId !== undefined)) {
+      expect(items().find(cost.itemId!)).toBeDefined();
+    }
+  });
+
+  it('leaves the entertainment building costs without an item id', () => {
+    const other = costs.filter((c) => !(c.name in ITEM_IDS));
+    expect(other.length).toBeGreaterThan(0);
+    for (const cost of other) expect(cost.itemId).toBeUndefined();
   });
 });
