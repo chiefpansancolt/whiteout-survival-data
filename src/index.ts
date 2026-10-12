@@ -27,3 +27,5 @@ export * from './modules/chief-charm-converter';
 export * from './modules/troops';
 export * from './modules/calculators';
 export * from './modules/server-timeline';
+export * from './modules/fire-crystal-table';
+export * from './modules/fire-crystal-shard-table';

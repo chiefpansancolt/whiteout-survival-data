@@ -74,13 +74,16 @@ notes on where the data came from. The counts below are the number of entries ea
 
 ### Buildings and city
 
-| Factory        | Entries | Description                                                                 | Details                                         |
-| -------------- | ------- | --------------------------------------------------------------------------- | ----------------------------------------------- |
-| `buildings()`  | 27      | Every building with its per-level cost, build time, power, and requirements | [README](src/modules/buildings/README.md)       |
-| `facilities()` | 9       | Buildings that have no upgrade levels                                       | [README](src/modules/facilities/README.md)      |
-| `lumberCamp()` | 10      | Daybreak Island Lumber Camp upgrade table                                   | [README](src/modules/daybreak-island/README.md) |
-| `treeOfLife()` | 10      | Daybreak Island Tree of Life upgrade table                                  | [README](src/modules/daybreak-island/README.md) |
-| `decoration()` | 103     | Daybreak Island decorations                                                 | [README](src/modules/daybreak-island/README.md) |
+| Factory                   | Entries | Description                                                                   | Details                                                  |
+| ------------------------- | ------- | ----------------------------------------------------------------------------- | -------------------------------------------------------- |
+| `buildings()`             | 27      | Every building with its per-level cost, build time, power, and requirements   | [README](src/modules/buildings/README.md)                |
+| `facilities()`            | 9       | Buildings that have no upgrade levels                                         | [README](src/modules/facilities/README.md)               |
+| `fireCrystalTable()`      | 8       | Fire Crystals and Refined Fire Crystals each building needs for FC 1 to FC 10 | [README](src/modules/fire-crystal-table/README.md)       |
+| `fireCrystalLevels()`     | 10      | FC 1 to FC 10 level badge icons                                               | [README](src/modules/fire-crystal-table/README.md)       |
+| `fireCrystalShardTable()` | 9       | Fire Crystal Shards and Refined Fire Crystals for T11 and T12 troop research  | [README](src/modules/fire-crystal-shard-table/README.md) |
+| `lumberCamp()`            | 10      | Daybreak Island Lumber Camp upgrade table                                     | [README](src/modules/daybreak-island/README.md)          |
+| `treeOfLife()`            | 10      | Daybreak Island Tree of Life upgrade table                                    | [README](src/modules/daybreak-island/README.md)          |
+| `decoration()`            | 103     | Daybreak Island decorations                                                   | [README](src/modules/daybreak-island/README.md)          |
 
 ### Heroes and experts
 

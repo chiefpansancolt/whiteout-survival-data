@@ -22,3 +22,5 @@ export * from './converter';
 export * from './calculator';
 export * from './troop';
 export * from './server-timeline';
+export * from './fire-crystal-table';
+export * from './fire-crystal-shard-table';
