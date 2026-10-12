@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chief Orders, Castle Appointments and President Skills</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --boost: #ffb74d;
+    --row-alt: #131d27;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px 16px 60px; }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 1.05rem; margin: 28px 0 8px; display: flex; align-items: center; gap: 10px; }
+  h2 img { width: 32px; height: 32px; object-fit: contain; }
+  h3 { font-size: 0.8rem; margin: 18px 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 14px; font-size: 0.85rem; max-width: 900px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 14px; align-items: end; }
+  .controls label { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .controls input, .controls select { background: var(--panel); color: var(--text); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; font-size: 0.9rem; color-scheme: dark; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--panel-border); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  th, td { border-bottom: 1px solid var(--panel-border); padding: 8px 10px; text-align: left; font-size: 0.85rem; vertical-align: top; }
+  thead th { background: var(--panel); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-dim); }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  td.num { text-align: right; white-space: nowrap; }
+  td.name { font-weight: 600; white-space: nowrap; }
+  td.name img { width: 36px; height: 36px; object-fit: cover; border-radius: 6px; vertical-align: middle; margin-right: 10px; }
+  td .note { color: var(--text-dim); font-size: 0.78rem; margin-top: 4px; }
+  td .tag { display: inline-block; margin-top: 4px; padding: 1px 8px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-size: 0.72rem; }
+  td.ready { color: var(--accent); white-space: nowrap; }
+  td.none { color: var(--text-dim); }
+  td .replaces { color: var(--boost); font-size: 0.72rem; margin-top: 4px; }
+  .reward-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .reward { display: flex; align-items: center; gap: 8px; background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 6px 12px 6px 8px; font-size: 0.85rem; }
+  .reward img { width: 32px; height: 32px; object-fit: contain; }
+  .reward .chance { color: var(--accent); font-weight: 700; }
+  .bonus { white-space: nowrap; }
+  .bonus .stat { color: var(--text-dim); }
+  .boosted { color: var(--boost); }
+  .rules { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 10px 16px; min-width: 130px; }
+  .card .value { font-size: 1.15rem; font-weight: 700; color: var(--accent); }
+  .card .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+<h1>Chief Orders, Castle Appointments and President Skills</h1>
+<p class="sub">The six orders of the Chief's House from <code>chiefOrders()</code> and the castle positions from <code>castleAppointments()</code>. The cooldown starts when an order is used. Pick the time of use to see when each order is ready again, as <code>chiefOrderReadyAt()</code> calculates it.</p>
+
+<h2 id="orders-title"></h2>
+<div class="controls">
+  <label>Order used at
+    <input type="datetime-local" id="used-at">
+  </label>
+  <label>Fire Crystal level
+    <select id="fc-level">
+      <option value="0">Before FC 1</option>
+      <option value="1">FC 1 or higher</option>
+    </select>
+  </label>
+  <label>Time shown as
+    <select id="zone">
+      <option value="local">Local time</option>
+      <option value="utc">UTC</option>
+    </select>
+  </label>
+</div>
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Order</th><th>Effect</th><th>Contentment</th><th>Cooldown</th><th>Ready again at</th></tr>
+    </thead>
+    <tbody id="orders"></tbody>
+  </table>
+</div>
+
+<div id="rewards"></div>
+
+<h2>Castle Appointments</h2>
+<div class="controls">
+  <label>Minister values
+    <select id="minister-values">
+      <option value="both">Base and boosted</option>
+      <option value="base">Base only</option>
+      <option value="boosted">Boosted only</option>
+    </select>
+  </label>
+</div>
+<div id="appointments"></div>
+<div class="rules" id="rules"></div>
+
+<h2>President Skills</h2>
+<p class="sub">The global perks the President activates for every Chief in the state, from <code>presidentSkills()</code>. The Authority costs and uses are the ones the skill screen of the game shows.</p>
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Skill</th><th>Effect</th><th>Affects</th><th>Authority</th><th>Uses</th><th>Bonus</th><th>Cooldown</th></tr>
+    </thead>
+    <tbody id="skills"></tbody>
+  </table>
+</div>
+
+<script id="data" type="application/json">{"skills":[{"id":"receive-tribute","name":"Receive Tribute","img":"/images/president-skills/receive-tribute.png","effect":"You can exchange 27,000 Authority for 300, 400, 500 Gems","target":"president","authorityCost":27000,"maxUses":3},{"id":"medical-advancement","name":"Medical Advancement","img":"/images/president-skills/medical-advancement.png","effect":"+50.00% all State Chiefs' healing speeds for 24 hours","target":"state","authorityCost":45000,"cooldownSeconds":604800,"bonus":{"stat":"Healing Speed","statKey":"healing-speed","value":"50%","amount":50,"unit":"percent","durationSeconds":86400}},{"id":"mercantilism","name":"Mercantilism","img":"/images/president-skills/mercantilism.png","effect":"+10.00% all State Chiefs' construction speeds for 24 hours","target":"state","authorityCost":45000,"maxUses":2,"cooldownSeconds":604800,"bonus":{"stat":"Construction Speed","statKey":"construction-speed","value":"10%","amount":10,"unit":"percent","durationSeconds":86400}},{"id":"research-advancement","name":"Research Advancement","img":"/images/president-skills/research-advancement.png","effect":"+10.00% all State Chiefs' research speeds for 24 hours","target":"state","authorityCost":45000,"maxUses":2,"cooldownSeconds":604800,"bonus":{"stat":"Research Speed","statKey":"research-speed","value":"10%","amount":10,"unit":"percent","durationSeconds":86400}},{"id":"mobilize","name":"Mobilize","img":"/images/president-skills/mobilize.png","effect":"+30.00% all State Chiefs' training speeds for 24 hours","target":"state","authorityCost":45000,"maxUses":2,"cooldownSeconds":604800,"bonus":{"stat":"Training Speed","statKey":"training-speed","value":"30%","amount":30,"unit":"percent","durationSeconds":86400}},{"id":"ceasefire","name":"Ceasefire","img":"/images/president-skills/ceasefire.png","effect":"Prevent a Chief from attacking other Chiefs for 1 hour.","target":"chief","authorityCost":27000,"maxUses":14},{"id":"forced-exile","name":"Forced Exile","img":"/images/president-skills/forced-exile.png","effect":"Teleports a targeted Chief's city randomly, and generate a Shield for it that lasts 10 hours (Shield duration does not stack, takes the maximum value)","target":"chief","authorityCost":27000,"maxUses":14},{"id":"state-search","name":"State Search","img":"/images/president-skills/state-search.png","effect":"Immediately locates the City of any Chief (limited to Chiefs of your State)","target":"chief","authorityCost":18000,"maxUses":56},{"id":"supreme-presidents-will","name":"Supreme President's Will","effect":"A Supreme President-only state enhancement","target":"state","supremePresidentOnly":true}],"items":{"fire-crystal":{"name":"Fire Crystal","img":"/images/items/fire-crystal.png"},"essence-stones":{"name":"Essence Stones","img":"/images/items/essence-stones.png"},"lucky-hero-gear-chest":{"name":"Lucky Hero Gear Chest","img":"/images/items/lucky-hero-gear-chest.png"},"design-plans":{"name":"Design Plans","img":"/images/items/design-plans.png"},"charm-design":{"name":"Charm Design","img":"/images/items/charm-design.png"},"charm-guide":{"name":"Charm Guide","img":"/images/items/charm-guide.png"}},"rules":{"cooldownSeconds":7200,"applicationValiditySeconds":86400,"maxApplicationsPerPosition":100},"house":{"name":"Chief's House","img":"/images/facilities/ChiefsHouse.png","unlockFurnaceLevel":6},"orders":[{"id":"double-time","name":"Double Time","img":"/images/chief-orders/double-time.png","effect":"Reduces the duration of new construction or upgrades started during the next five minutes by 20%.","contentmentCost":800000,"cooldownSeconds":82800,"bonus":{"stat":"Construction Time Reduction","statKey":"construction-time-reduction","value":"20%","amount":20,"unit":"percent","windowSeconds":300},"note":"Only affects construction started during the activation window, not existing timers."},{"id":"rush-job","name":"Rush Job","img":"/images/chief-orders/rush-job.png","effect":"Instantly grants five days of resources from all city worksites in Survivor Time.","contentmentCost":150000,"cooldownSeconds":86400},{"id":"productivity-day","name":"Productivity Day","img":"/images/chief-orders/productivity-day.png","effect":"Increases output from all resource worksites by 100% for 24 hours of Survivor Time. Reduces Mood by 10.","contentmentCost":50000,"cooldownSeconds":43200},{"id":"urgent-mobilization","name":"Urgent Mobilization","img":"/images/chief-orders/urgent-mobilization.png","effect":"Forces survivors at all worksites to work for 48 hours of Survivor Time. Reduces Mood by 10.","contentmentCost":50000,"cooldownSeconds":28800},{"id":"festivities","name":"Festivities","img":"/images/chief-orders/festivities.png","effect":"Provides +50 Mood and +30 Comfort during one day of city festivities in Survivor Time.","contentmentCost":50000,"cooldownSeconds":86400},{"id":"comprehensive-care","name":"Comprehensive Care","img":"/images/chief-orders/comprehensive-care.png","effect":"Immediately heals all sick survivors in the city.","contentmentCost":150000,"cooldownSeconds":14400,"note":"Does not heal wounded troops in the Infirmary."},{"id":"dawn-alliance-commendation","name":"Dawn Alliance Commendation","effect":"Entitle you to a random reward from the Dawn Alliance vault.","contentmentCost":800000,"cooldownSeconds":172800,"replaces":"festivities","unlockFireCrystalLevel":1,"rewards":[{"itemId":"fire-crystal","quantity":5,"chance":10},{"itemId":"fire-crystal","quantity":10,"chance":10},{"itemId":"essence-stones","quantity":3,"chance":10},{"itemId":"lucky-hero-gear-chest","quantity":3,"chance":10},{"itemId":"design-plans","quantity":3,"chance":10},{"itemId":"design-plans","quantity":8,"chance":10},{"itemId":"charm-design","quantity":3,"chance":10},{"itemId":"charm-design","quantity":8,"chance":10},{"itemId":"charm-guide","quantity":3,"chance":10},{"itemId":"charm-guide","quantity":8,"chance":10}]},{"id":"crunch-time","name":"Crunch Time","effect":"Initiates maximum automation load for +100% resource output for 24 hours (survivor time).","contentmentCost":100000,"cooldownSeconds":43200,"replaces":"urgent-mobilization","unlockFireCrystalLevel":1},{"id":"advanced-training","name":"Advanced Training","effect":"Increases troop training speed by 20% for 2 hours.","contentmentCost":150000,"cooldownSeconds":172800,"bonus":{"stat":"Training Speed","statKey":"training-speed","value":"20%","amount":20,"unit":"percent","windowSeconds":7200},"replaces":"productivity-day","unlockFireCrystalLevel":1}],"appointments":[{"id":"supreme-president","name":"Supreme President","kind":"president","bonuses":[{"stat":"Troops Attack","statKey":"troops-attack","value":"+7.5%","amount":7.5,"unit":"percent"},{"stat":"Troops Defense","statKey":"troops-defense","value":"+7.5%","amount":7.5,"unit":"percent"},{"stat":"Troops Lethality","statKey":"troops-lethality","value":"+7.5%","amount":7.5,"unit":"percent"},{"stat":"Troops Health","statKey":"troops-health","value":"+7.5%","amount":7.5,"unit":"percent"}]},{"id":"president","name":"President","kind":"president","bonuses":[{"stat":"Troops Attack","statKey":"troops-attack","value":"+5%","amount":5,"unit":"percent"},{"stat":"Troops Defense","statKey":"troops-defense","value":"+5%","amount":5,"unit":"percent"},{"stat":"Troops Lethality","statKey":"troops-lethality","value":"+5%","amount":5,"unit":"percent"},{"stat":"Troops Health","statKey":"troops-health","value":"+5%","amount":5,"unit":"percent"}]},{"id":"vice-president","name":"Vice President","kind":"vice-president","bonuses":[{"stat":"Construction Speed","statKey":"construction-speed","value":"+10%","amount":10,"unit":"percent"},{"stat":"Research Speed","statKey":"research-speed","value":"+10%","amount":10,"unit":"percent"},{"stat":"Training Speed","statKey":"training-speed","value":"+10%","amount":10,"unit":"percent"}]},{"id":"minister-of-defense","name":"Minister of Defense","kind":"minister","bonuses":[{"stat":"Troops Lethality","statKey":"troops-lethality","value":"+10%","amount":10,"unit":"percent"}],"boostedBonuses":[{"stat":"Troops Lethality","statKey":"troops-lethality","value":"+15%","amount":15,"unit":"percent"}]},{"id":"minister-of-strategy","name":"Minister of Strategy","kind":"minister","bonuses":[{"stat":"Troops Attack","statKey":"troops-attack","value":"+5%","amount":5,"unit":"percent"},{"stat":"Troops Deployment Capacity","statKey":"troops-deployment-capacity","value":"+2,500","amount":2500,"unit":"flat"}],"boostedBonuses":[{"stat":"Troops Attack","statKey":"troops-attack","value":"+8%","amount":8,"unit":"percent"},{"stat":"Troops Deployment Capacity","statKey":"troops-deployment-capacity","value":"+3,750","amount":3750,"unit":"flat"}]},{"id":"minister-of-health","name":"Minister of Health","kind":"minister","bonuses":[{"stat":"Healing Speed","statKey":"healing-speed","value":"+100%","amount":100,"unit":"percent"},{"stat":"Infirmary Capacity","statKey":"infirmary-capacity","value":"+5,000","amount":5000,"unit":"flat"}],"boostedBonuses":[{"stat":"Healing Speed","statKey":"healing-speed","value":"+150%","amount":150,"unit":"percent"},{"stat":"Infirmary Capacity","statKey":"infirmary-capacity","value":"+7,500","amount":7500,"unit":"flat"}]},{"id":"minister-of-education","name":"Minister of Education","kind":"minister","bonuses":[{"stat":"Training Speed","statKey":"training-speed","value":"+50%","amount":50,"unit":"percent"},{"stat":"Training Capacity","statKey":"training-capacity","value":"+200","amount":200,"unit":"flat"}],"boostedBonuses":[{"stat":"Training Speed","statKey":"training-speed","value":"+75%","amount":75,"unit":"percent"},{"stat":"Training Capacity","statKey":"training-capacity","value":"+300","amount":300,"unit":"flat"}]},{"id":"minister-of-interior","name":"Minister of Interior","kind":"minister","bonuses":[{"stat":"Resource Production Speed","statKey":"resource-production-speed","value":"+80%","amount":80,"unit":"percent"}],"boostedBonuses":[{"stat":"Resource Production Speed","statKey":"resource-production-speed","value":"+120%","amount":120,"unit":"percent"}]}]}</script>
+
+<script>
+  const DATA = JSON.parse(document.getElementById('data').textContent);
+  const RULES = DATA.rules;
+  const KIND_TITLES = { president: 'President', 'vice-president': 'Vice President', minister: 'Ministers' };
+
+  const usedAtInput = document.getElementById('used-at');
+  const zoneSelect = document.getElementById('zone');
+  const valuesSelect = document.getElementById('minister-values');
+  const levelSelect = document.getElementById('fc-level');
+  const ORDER_NAMES = Object.fromEntries(DATA.orders.map((o) => [o.id, o.name]));
+
+  function fmt(value) {
+    return value.toLocaleString('en-US');
+  }
+
+  function hours(seconds) {
+    const h = seconds / 3600;
+    return h + (h === 1 ? ' hour' : ' hours');
+  }
+
+  function readyAt(order, usedAt) {
+    return new Date(usedAt.getTime() + order.cooldownSeconds * 1000);
+  }
+
+  function parseUsedAt() {
+    if (!usedAtInput.value) return null;
+    if (zoneSelect.value === 'utc') return new Date(usedAtInput.value + ':00Z');
+    return new Date(usedAtInput.value);
+  }
+
+  function formatTime(date) {
+    return date.toLocaleString('en-US', {
+      weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit',
+      timeZone: zoneSelect.value === 'utc' ? 'UTC' : undefined,
+    });
+  }
+
+  function icon(entry) {
+    return entry.img ? '<img src="../..' + entry.img + '" alt="" onerror="this.style.visibility=\'hidden\'">' : '';
+  }
+
+  function ordersAtLevel(level) {
+    const inEffect = DATA.orders.filter((o) => (o.unlockFireCrystalLevel ?? 0) <= level);
+    const replaced = new Set(inEffect.map((o) => o.replaces));
+    return inEffect.filter((o) => !replaced.has(o.id));
+  }
+
+  function renderRewards(orders) {
+    document.getElementById('rewards').innerHTML = orders.filter((o) => o.rewards).map((o) =>
+      '<h3>' + o.name + ' reward table</h3><div class="reward-grid">' + o.rewards.map((r) => {
+        const item = DATA.items[r.itemId];
+        return '<div class="reward"><img src="../..' + item.img + '" alt="" onerror="this.style.visibility=\'hidden\'"><span>' + item.name + ' (' + r.quantity + 'x)</span><span class="chance">' + r.chance + '%</span></div>';
+      }).join('') + '</div>').join('');
+  }
+
+  function renderOrders() {
+    const usedAt = parseUsedAt();
+    const orders = ordersAtLevel(Number(levelSelect.value));
+    renderRewards(orders);
+    document.getElementById('orders').innerHTML = orders.map((order) => {
+      const bonus = order.bonus ? '<div class="tag">' + order.bonus.value + ' ' + order.bonus.stat + ', ' + order.bonus.windowSeconds / 60 + ' minutes</div>' : '';
+      const replaces = order.replaces ? '<div class="replaces">Replaces ' + ORDER_NAMES[order.replaces] + ' from FC ' + order.unlockFireCrystalLevel + '</div>' : '';
+      const note = order.note ? '<div class="note">' + order.note + '</div>' : '';
+      const ready = usedAt ? '<td class="ready">' + formatTime(readyAt(order, usedAt)) + '</td>' : '<td class="none">Pick a time</td>';
+      return '<tr><td class="name">' + icon(order) + order.name + '</td><td>' + order.effect + bonus + replaces + note + '</td><td class="num">' + fmt(order.contentmentCost) + '</td><td class="num">' + hours(order.cooldownSeconds) + '</td>' + ready + '</tr>';
+    }).join('');
+  }
+
+  function bonusList(bonuses, boosted) {
+    return bonuses.map((b) => '<div class="bonus' + (boosted ? ' boosted' : '') + '"><span class="stat">' + b.stat + '</span> ' + b.value + '</div>').join('');
+  }
+
+  function renderAppointments() {
+    const mode = valuesSelect.value;
+    const kinds = ['president', 'vice-president', 'minister'];
+    document.getElementById('appointments').innerHTML = kinds.map((kind) => {
+      const rows = DATA.appointments.filter((a) => a.kind === kind);
+      const showBase = mode !== 'boosted';
+      const showBoosted = kind === 'minister' && mode !== 'base';
+      const head = '<tr><th>Position</th>' + (showBase ? '<th>Buffs</th>' : '') + (showBoosted ? '<th>Boosted</th>' : '') + '</tr>';
+      const body = rows.map((a) => {
+        const base = showBase ? '<td>' + bonusList(a.bonuses, false) + '</td>' : '';
+        const boosted = showBoosted ? '<td>' + (a.boostedBonuses ? bonusList(a.boostedBonuses, true) : '') + '</td>' : '';
+        const fallback = !showBase && !showBoosted ? '<td>' + bonusList(a.bonuses, false) + '</td>' : '';
+        return '<tr><td class="name">' + a.name + '</td>' + base + boosted + fallback + '</tr>';
+      }).join('');
+      const shownHead = !showBase && !showBoosted ? '<tr><th>Position</th><th>Buffs</th></tr>' : head;
+      return '<h3>' + KIND_TITLES[kind] + '</h3><div class="table-wrap"><table><thead>' + shownHead + '</thead><tbody>' + body + '</tbody></table></div>';
+    }).join('');
+  }
+
+  function renderRules() {
+    document.getElementById('rules').innerHTML = [
+      [hours(RULES.cooldownSeconds), 'Appointment cooldown'],
+      [hours(RULES.applicationValiditySeconds), 'Application stays valid'],
+      [fmt(RULES.maxApplicationsPerPosition), 'Applications per position'],
+    ].map(([value, label]) => '<div class="card"><div class="value">' + value + '</div><div class="label">' + label + '</div></div>').join('');
+  }
+
+  const TARGETS = { state: 'The state', president: 'The President', chief: 'One Chief' };
+
+  function renderSkills() {
+    document.getElementById('skills').innerHTML = DATA.skills.map((skill) => {
+      const bonus = skill.bonus ? '<td class="bonus"><span class="stat">' + skill.bonus.stat + '</span> ' + skill.bonus.value + ', ' + hours(skill.bonus.durationSeconds) + '</td>' : '<td class="none">None</td>';
+      const cooldown = skill.cooldownSeconds ? '<td class="num">' + skill.cooldownSeconds / 86400 + ' days</td>' : '<td class="none">None</td>';
+      const cost = skill.authorityCost ? '<td class="num">' + fmt(skill.authorityCost) + '</td>' : '<td class="none">Not stated</td>';
+      const uses = skill.maxUses ? '<td class="num">' + skill.maxUses + '</td>' : '<td class="none">Not stated</td>';
+      const tag = skill.supremePresidentOnly ? '<div class="tag">Supreme President only</div>' : '';
+      return '<tr><td class="name">' + icon(skill) + skill.name + '</td><td>' + skill.effect + tag + '</td><td>' + TARGETS[skill.target] + '</td>' + cost + uses + bonus + cooldown + '</tr>';
+    }).join('');
+  }
+
+  document.getElementById('orders-title').innerHTML =
+    '<img src="../..' + DATA.house.img + '" alt="" onerror="this.style.visibility=\'hidden\'">' + DATA.house.name + ' Orders <span class="sub" style="margin:0">Furnace ' + DATA.house.unlockFurnaceLevel + '</span>';
+
+  const now = new Date();
+  now.setSeconds(0, 0);
+  usedAtInput.value = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 16);
+
+  [usedAtInput, zoneSelect, levelSelect].forEach((el) => el.addEventListener('change', renderOrders));
+  valuesSelect.addEventListener('change', renderAppointments);
+  renderOrders();
+  renderAppointments();
+  renderRules();
+  renderSkills();
+</script>
+</body>
+</html>

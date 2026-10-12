@@ -1,8 +1,11 @@
 import {
   buildings,
+  castleAppointments,
   chiefCharm,
   chiefGear,
   chiefGearSlots,
+  chiefOrderReadyAt,
+  chiefOrders,
   dailies,
   experts,
   facilities,
@@ -14,6 +17,7 @@ import {
   heroGearMasteryForging,
   items,
   pets,
+  presidentSkills,
   research,
   researchTree,
   serverTimeline,
@@ -195,3 +199,25 @@ console.log(
 console.log('\n--- Dailies ---');
 console.log('daily missions:', dailies().count());
 console.log('first mission:', dailies().first()?.name);
+
+console.log('\n--- Chief Orders ---');
+const doubleTime = chiefOrders().find('double-time')!;
+console.log('orders:', chiefOrders().count());
+console.log(
+  'Double Time ready again:',
+  chiefOrderReadyAt(doubleTime, new Date('2026-10-12T10:00:00Z')).toISOString(),
+);
+
+console.log('\n--- Castle Appointments ---');
+console.log('positions:', castleAppointments().count());
+console.log(
+  'ministers:',
+  castleAppointments()
+    .byKind('minister')
+    .get()
+    .map((a) => a.name),
+);
+
+console.log('\n--- President Skills ---');
+console.log('skills:', presidentSkills().count());
+console.log('Mobilize:', presidentSkills().find('mobilize')?.bonus?.value);
