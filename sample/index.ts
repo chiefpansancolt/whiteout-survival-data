@@ -5,6 +5,7 @@ import {
   chiefGearSlots,
   experts,
   facilities,
+  fireCrystalTable,
   heroes,
   heroGearEmpowerment,
   heroGearEnhancement,
@@ -156,4 +157,15 @@ console.log('next unlock:', status.next?.name, status.next?.date);
 console.log(
   'heroes unlocked:',
   status.unlocked.flatMap((m) => m.heroes.map((h) => h.name)).join(', '),
+);
+
+console.log('\n--- Fire Crystal Table ---');
+const fireCrystal = fireCrystalTable();
+console.log('buildings:', fireCrystal.rows.length);
+console.log('columns:', fireCrystal.columns.length);
+console.log('Furnace FC 1 Fire Crystals:', fireCrystal.rows[0].cells[0]);
+console.log('FC 1 total:', fireCrystal.totals[0]);
+console.log(
+  'FC 6 to FC 10 columns:',
+  fireCrystalTable(undefined, { from: 6, to: 10 }).columns.length,
 );

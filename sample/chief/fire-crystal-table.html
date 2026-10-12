@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fire Crystal Table Explorer</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --row-hover: #1c2e42;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+  }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 1rem; margin: 22px 0 8px; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; max-width: 900px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; align-items: end; }
+  .controls label { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .controls select, .controls button { background: var(--panel); color: var(--text); border: 1px solid var(--panel-border); border-radius: 8px; padding: 8px 10px; font-size: 0.9rem; }
+  .controls button { cursor: pointer; border-color: var(--accent); color: var(--accent); }
+  .error { color: #ff7b7b; font-size: 0.85rem; min-height: 1.2em; margin-bottom: 10px; }
+  .summary { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 10px 16px; min-width: 110px; }
+  .card .value { font-size: 1.3rem; font-weight: 700; }
+  .card .label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .card.total { border-color: var(--accent); }
+  .card.total .value { color: var(--accent); }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--panel-border); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  th, td { border: 1px solid var(--panel-border); padding: 6px 8px; text-align: right; font-size: 0.85rem; }
+  thead th { background: var(--panel); text-align: center; }
+  thead th img.badge { width: 40px; height: 40px; border-radius: 8px; display: block; margin: 0 auto 2px; }
+  thead th .level { font-size: 0.7rem; color: var(--text-dim); }
+  thead tr.resources th { padding: 4px; }
+  thead tr.resources img { width: 26px; height: 26px; object-fit: contain; display: block; margin: 0 auto; }
+  th.building, td.building { text-align: left; background: var(--panel); min-width: 170px; }
+  td.building img { width: 28px; height: 28px; object-fit: cover; border-radius: 6px; vertical-align: middle; margin-right: 8px; }
+  tbody tr:nth-child(even) td:not(.building) { background: var(--row-alt); }
+  tbody tr:hover td { background: var(--row-hover); }
+  td.na { color: var(--text-dim); text-align: center; }
+  tr.totals td { font-weight: 700; border-top: 2px solid var(--accent); }
+  tr.totals td.building { color: var(--accent); }
+
+  @page { size: landscape; margin: 12mm; }
+  @media print {
+    body { background: #fff; color: #111; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .controls, .error, p.sub { display: none; }
+    .summary { display: none; }
+    h1 { font-size: 1.1rem; margin-bottom: 6px; }
+    h2 { color: #111; margin: 0 0 6px; }
+    .segment { break-inside: avoid; page-break-after: always; }
+    .segment:last-child { page-break-after: auto; }
+    .table-wrap { border: none; overflow: visible; }
+    th, td { border-color: #999; color: #111; }
+    thead th, th.building, td.building { background: #eee; color: #111; }
+    tbody tr:nth-child(even) td:not(.building) { background: #f6f6f6; }
+    thead th .level { color: #444; }
+    td.na { color: #666; }
+    tr.totals td { border-top: 2px solid #111; }
+    tr.totals td.building { color: #111; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Fire Crystal Table Explorer</h1>
+<p class="sub">Fire Crystals and Refined Fire Crystals each building needs to reach each Fire Crystal level, from <code>fireCrystalTable()</code>. Each level adds up the five upgrades that end at its base row. A dash means the building has no cost for that level. Pick a range of levels and a segment size, then print to save each segment as its own PDF page.</p>
+
+<div class="controls">
+  <label>From level
+    <select id="from"></select>
+  </label>
+  <label>To level
+    <select id="to"></select>
+  </label>
+  <label>Levels per table
+    <select id="size"></select>
+  </label>
+  <button type="button" id="print">Print / Save as PDF</button>
+</div>
+<div class="error" id="error"></div>
+<div class="summary" id="summary"></div>
+<div id="segments"></div>
+
+<script id="fc-data" type="application/json">
+{"columns":[{"level":1,"levelName":"FC 1","levelImg":"/images/fire-crystal/fc-1.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":2,"levelName":"FC 2","levelImg":"/images/fire-crystal/fc-2.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":3,"levelName":"FC 3","levelImg":"/images/fire-crystal/fc-3.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":4,"levelName":"FC 4","levelImg":"/images/fire-crystal/fc-4.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":5,"levelName":"FC 5","levelImg":"/images/fire-crystal/fc-5.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":6,"levelName":"FC 6","levelImg":"/images/fire-crystal/fc-6.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":6,"levelName":"FC 6","levelImg":"/images/fire-crystal/fc-6.png","resource":"refinedFireCrystals","itemName":"Refined Fire Crystal","itemImg":"/images/items/refined-fire-crystal.png"},{"level":7,"levelName":"FC 7","levelImg":"/images/fire-crystal/fc-7.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":7,"levelName":"FC 7","levelImg":"/images/fire-crystal/fc-7.png","resource":"refinedFireCrystals","itemName":"Refined Fire Crystal","itemImg":"/images/items/refined-fire-crystal.png"},{"level":8,"levelName":"FC 8","levelImg":"/images/fire-crystal/fc-8.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":8,"levelName":"FC 8","levelImg":"/images/fire-crystal/fc-8.png","resource":"refinedFireCrystals","itemName":"Refined Fire Crystal","itemImg":"/images/items/refined-fire-crystal.png"},{"level":9,"levelName":"FC 9","levelImg":"/images/fire-crystal/fc-9.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":9,"levelName":"FC 9","levelImg":"/images/fire-crystal/fc-9.png","resource":"refinedFireCrystals","itemName":"Refined Fire Crystal","itemImg":"/images/items/refined-fire-crystal.png"},{"level":10,"levelName":"FC 10","levelImg":"/images/fire-crystal/fc-10.png","resource":"fireCrystals","itemName":"Fire Crystal","itemImg":"/images/items/fire-crystal.png"},{"level":10,"levelName":"FC 10","levelImg":"/images/fire-crystal/fc-10.png","resource":"refinedFireCrystals","itemName":"Refined Fire Crystal","itemImg":"/images/items/refined-fire-crystal.png"}],"rows":[{"buildingId":"furnace","name":"Furnace","img":"/images/buildings/Furnace.png","cells":[660,790,1190,1400,1675,900,60,1080,90,1080,120,1260,180,1575,420]},{"buildingId":"embassy","name":"Embassy","img":"/images/buildings/Embassy.png","cells":[165,195,295,350,415,225,13,270,19,270,30,315,43,391,103]},{"buildingId":"command-center","name":"Command Center","img":"/images/buildings/CommandCenter.png","cells":[130,155,235,280,335,180,12,216,18,216,24,252,36,315,84]},{"buildingId":"infantry-camp","name":"Infantry Camp","img":"/images/buildings/InfantryCamp.png","cells":[295,355,535,630,750,405,25,486,37,486,55,567,79,706,187]},{"buildingId":"marksman-camp","name":"Marksman Camp","img":"/images/buildings/MarksmanCamp.png","cells":[295,355,535,630,750,405,25,486,37,486,55,567,79,706,187]},{"buildingId":"lancer-camp","name":"Lancer Camp","img":"/images/buildings/LancerCamp.png","cells":[295,355,535,630,750,405,25,486,37,486,55,567,79,706,187]},{"buildingId":"war-academy","name":"War Academy","img":"/images/buildings/WarAcademy.png","cells":[null,355,535,630,750,405,25,486,37,486,55,567,79,706,187]},{"buildingId":"infirmary","name":"Infirmary","img":"/images/buildings/Infirmary.png","cells":[130,155,235,280,335,180,12,216,18,216,24,252,36,315,84]}],"totals":[1970,2715,4095,4830,5760,3105,197,3726,293,3726,418,4347,611,5420,1439]}
+</script>
+
+<script>
+  const DATA = JSON.parse(document.getElementById('fc-data').textContent);
+  const LEVELS = [...new Set(DATA.columns.map((c) => c.level))];
+  const SIZES = [{ value: 0, label: 'One table' }, { value: 1, label: '1 level' }, { value: 2, label: '2 levels' }, { value: 3, label: '3 levels' }, { value: 5, label: '5 levels' }];
+
+  const fromSelect = document.getElementById('from');
+  const toSelect = document.getElementById('to');
+  const sizeSelect = document.getElementById('size');
+
+  function fmt(value) {
+    return value.toLocaleString();
+  }
+
+  function cell(value) {
+    if (value === null) return '<td class="na">-</td>';
+    return '<td>' + fmt(value) + '</td>';
+  }
+
+  function buildTable(from, to) {
+    const columns = DATA.columns
+      .map((column, index) => Object.assign({ index }, column))
+      .filter((column) => column.level >= from && column.level <= to);
+
+    const groups = [];
+    columns.forEach((column) => {
+      const last = groups[groups.length - 1];
+      if (last && last.level === column.level) last.span += 1;
+      else groups.push({ level: column.level, name: column.levelName, img: column.levelImg, span: 1 });
+    });
+
+    const head1 = '<tr><th class="building" rowspan="2">Building</th>' + groups.map((g) =>
+      '<th colspan="' + g.span + '"><img class="badge" src="../..' + g.img + '" alt="' + g.name + '" onerror="this.style.visibility=\'hidden\'"><span class="level">' + g.name + '</span></th>').join('') + '</tr>';
+    const head2 = '<tr class="resources">' + columns.map((c) =>
+      '<th><img src="../..' + c.itemImg + '" alt="' + c.itemName + '" title="' + c.itemName + '" onerror="this.style.visibility=\'hidden\'"></th>').join('') + '</tr>';
+
+    const body = DATA.rows.map((row) => {
+      const img = row.img ? '<img src="../..' + row.img + '" alt="" onerror="this.style.visibility=\'hidden\'">' : '';
+      return '<tr><td class="building">' + img + row.name + '</td>' + columns.map((c) => cell(row.cells[c.index])).join('') + '</tr>';
+    }).join('');
+    const totals = '<tr class="totals"><td class="building">TOTAL</td>' + columns.map((c) => cell(DATA.totals[c.index])).join('') + '</tr>';
+
+    return { html: '<thead>' + head1 + head2 + '</thead><tbody>' + body + totals + '</tbody>', columns };
+  }
+
+  function segmentRanges(from, to, size) {
+    if (size === 0) return [[from, to]];
+    const ranges = [];
+    for (let start = from; start <= to; start += size) ranges.push([start, Math.min(start + size - 1, to)]);
+    return ranges;
+  }
+
+  function title(from, to) {
+    return from === to ? 'FC ' + from : 'FC ' + from + ' to FC ' + to;
+  }
+
+  function render() {
+    const from = Number(fromSelect.value);
+    const to = Number(toSelect.value);
+    const size = Number(sizeSelect.value);
+    const error = document.getElementById('error');
+    const summary = document.getElementById('summary');
+    const segments = document.getElementById('segments');
+
+    if (from > to) {
+      error.textContent = 'The from level is above the to level.';
+      summary.innerHTML = '';
+      segments.innerHTML = '';
+      return;
+    }
+    error.textContent = '';
+
+    const ranges = segmentRanges(from, to, size);
+    const built = ranges.map(([a, b]) => ({ range: [a, b], table: buildTable(a, b) }));
+    segments.innerHTML = built.map(({ range, table }) =>
+      '<section class="segment"><h2>' + title(range[0], range[1]) + '</h2><div class="table-wrap"><table>' + table.html + '</table></div></section>').join('');
+
+    const selected = buildTable(from, to).columns;
+    const sum = (resource) => selected.filter((c) => c.resource === resource).reduce((total, c) => total + DATA.totals[c.index], 0);
+    summary.innerHTML = [
+      '<div class="card total"><div class="value">' + DATA.rows.length + '</div><div class="label">Buildings</div></div>',
+      '<div class="card"><div class="value">' + built.length + '</div><div class="label">Tables</div></div>',
+      '<div class="card"><div class="value">' + fmt(sum('fireCrystals')) + '</div><div class="label">Fire Crystals, ' + title(from, to) + '</div></div>',
+      '<div class="card"><div class="value">' + fmt(sum('refinedFireCrystals')) + '</div><div class="label">Refined, ' + title(from, to) + '</div></div>',
+    ].join('');
+  }
+
+  LEVELS.forEach((level) => {
+    fromSelect.add(new Option('FC ' + level, level));
+    toSelect.add(new Option('FC ' + level, level));
+  });
+  toSelect.value = LEVELS[LEVELS.length - 1];
+  SIZES.forEach((s) => sizeSelect.add(new Option(s.label, s.value)));
+  sizeSelect.value = 5;
+
+  [fromSelect, toSelect, sizeSelect].forEach((select) => select.addEventListener('change', render));
+  document.getElementById('print').addEventListener('click', () => window.print());
+  render();
+</script>
+</body>
+</html>
