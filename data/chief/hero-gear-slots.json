@@ -1,0 +1,38 @@
+[
+  {
+    "id": "goggles",
+    "name": "Goggles",
+    "images": {
+      "infantry": "/images/hero-gear/goggles-infantry.png",
+      "lancer": "/images/hero-gear/goggles-lancer.png",
+      "marksman": "/images/hero-gear/goggles-marksman.png"
+    }
+  },
+  {
+    "id": "gloves",
+    "name": "Gloves",
+    "images": {
+      "infantry": "/images/hero-gear/gloves-infantry.png",
+      "lancer": "/images/hero-gear/gloves-lancer.png",
+      "marksman": "/images/hero-gear/gloves-marksman.png"
+    }
+  },
+  {
+    "id": "belt",
+    "name": "Belt",
+    "images": {
+      "infantry": "/images/hero-gear/belt-infantry.png",
+      "lancer": "/images/hero-gear/belt-lancer.png",
+      "marksman": "/images/hero-gear/belt-marksman.png"
+    }
+  },
+  {
+    "id": "boots",
+    "name": "Boots",
+    "images": {
+      "infantry": "/images/hero-gear/boots-infantry.png",
+      "lancer": "/images/hero-gear/boots-lancer.png",
+      "marksman": "/images/hero-gear/boots-marksman.png"
+    }
+  }
+]

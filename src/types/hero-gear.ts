@@ -32,6 +32,12 @@ export interface HeroGearMasteryForgingLevel {
 
 export type HeroGearSlot = 'goggles' | 'gloves' | 'belt' | 'boots';
 
+export interface HeroGearSlotEntry {
+  id: HeroGearSlot;
+  name: string;
+  images: Record<TroopType, string>;
+}
+
 export interface HeroGearStatLevel {
   /** Levels 1 to 100 are enhancement levels. Levels 101 to 200 are empowerment levels 1 to 100. */
   level: number;

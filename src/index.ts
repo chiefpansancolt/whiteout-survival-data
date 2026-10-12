@@ -13,6 +13,7 @@ export * from './modules/research';
 export * from './modules/hero-gear-enhancement';
 export * from './modules/hero-gear-empowerment';
 export * from './modules/hero-gear-mastery-forging';
+export * from './modules/hero-gear-slots';
 export * from './modules/hero-gear-stats';
 export * from './modules/alliance/territory';
 export * from './modules/alliance/tech';
