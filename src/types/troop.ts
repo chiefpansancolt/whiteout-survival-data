@@ -1,10 +1,21 @@
+import { ResearchRequirement } from './research';
+
 export interface TroopMaterial {
   itemId: string;
   amount: number;
 }
 
+export interface TroopFireCrystalPower {
+  level: number;
+  power: number;
+}
+
 export interface TroopTier {
   tier: number;
+  power?: number;
+  fireCrystalPower?: TroopFireCrystalPower[];
+  unlockCampLevel?: number;
+  unlockRequirements?: ResearchRequirement[];
   cost: TroopMaterial[];
   /** Seconds to train one troop with no training speed bonus. */
   trainingTimeSeconds: number;

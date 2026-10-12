@@ -5,6 +5,8 @@
     "tiers": [
       {
         "tier": 1,
+        "power": 3,
+        "unlockCampLevel": 1,
         "cost": [
           {
             "itemId": "meat",
@@ -27,6 +29,8 @@
       },
       {
         "tier": 2,
+        "power": 4,
+        "unlockCampLevel": 4,
         "cost": [
           {
             "itemId": "meat",
@@ -49,6 +53,8 @@
       },
       {
         "tier": 3,
+        "power": 6,
+        "unlockCampLevel": 7,
         "cost": [
           {
             "itemId": "meat",
@@ -71,6 +77,8 @@
       },
       {
         "tier": 4,
+        "power": 9,
+        "unlockCampLevel": 11,
         "cost": [
           {
             "itemId": "meat",
@@ -93,6 +101,8 @@
       },
       {
         "tier": 5,
+        "power": 13,
+        "unlockCampLevel": 13,
         "cost": [
           {
             "itemId": "meat",
@@ -115,6 +125,8 @@
       },
       {
         "tier": 6,
+        "power": 20,
+        "unlockCampLevel": 16,
         "cost": [
           {
             "itemId": "meat",
@@ -137,6 +149,8 @@
       },
       {
         "tier": 7,
+        "power": 28,
+        "unlockCampLevel": 19,
         "cost": [
           {
             "itemId": "meat",
@@ -159,6 +173,8 @@
       },
       {
         "tier": 8,
+        "power": 38,
+        "unlockCampLevel": 22,
         "cost": [
           {
             "itemId": "meat",
@@ -181,6 +197,8 @@
       },
       {
         "tier": 9,
+        "power": 50,
+        "unlockCampLevel": 26,
         "cost": [
           {
             "itemId": "meat",
@@ -203,6 +221,50 @@
       },
       {
         "tier": 10,
+        "power": 66,
+        "fireCrystalPower": [
+          {
+            "level": 1,
+            "power": 71
+          },
+          {
+            "level": 2,
+            "power": 76
+          },
+          {
+            "level": 3,
+            "power": 83
+          },
+          {
+            "level": 4,
+            "power": 88
+          },
+          {
+            "level": 5,
+            "power": 94
+          },
+          {
+            "level": 6,
+            "power": 99
+          },
+          {
+            "level": 7,
+            "power": 104
+          },
+          {
+            "level": 8,
+            "power": 110
+          },
+          {
+            "level": 9,
+            "power": 115
+          },
+          {
+            "level": 10,
+            "power": 121
+          }
+        ],
+        "unlockCampLevel": 30,
         "cost": [
           {
             "itemId": "meat",
@@ -225,6 +287,61 @@
       },
       {
         "tier": 11,
+        "power": 80,
+        "fireCrystalPower": [
+          {
+            "level": 1,
+            "power": 86
+          },
+          {
+            "level": 2,
+            "power": 92
+          },
+          {
+            "level": 3,
+            "power": 100
+          },
+          {
+            "level": 4,
+            "power": 106
+          },
+          {
+            "level": 5,
+            "power": 114
+          },
+          {
+            "level": 6,
+            "power": 120
+          },
+          {
+            "level": 7,
+            "power": 126
+          },
+          {
+            "level": 8,
+            "power": 135
+          },
+          {
+            "level": 9,
+            "power": 141
+          },
+          {
+            "level": 10,
+            "power": 148
+          }
+        ],
+        "unlockRequirements": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 1"
+          },
+          {
+            "type": "research",
+            "id": "helios-infantry",
+            "level": 1
+          }
+        ],
         "cost": [
           {
             "itemId": "meat",
@@ -247,6 +364,19 @@
       },
       {
         "tier": 12,
+        "power": 178,
+        "unlockRequirements": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-infantry",
+            "level": 1
+          }
+        ],
         "cost": [
           {
             "itemId": "meat",
@@ -293,6 +423,8 @@
     "tiers": [
       {
         "tier": 1,
+        "power": 3,
+        "unlockCampLevel": 1,
         "cost": [
           {
             "itemId": "meat",
@@ -315,6 +447,8 @@
       },
       {
         "tier": 2,
+        "power": 4,
+        "unlockCampLevel": 4,
         "cost": [
           {
             "itemId": "meat",
@@ -337,6 +471,8 @@
       },
       {
         "tier": 3,
+        "power": 6,
+        "unlockCampLevel": 7,
         "cost": [
           {
             "itemId": "meat",
@@ -359,6 +495,8 @@
       },
       {
         "tier": 4,
+        "power": 9,
+        "unlockCampLevel": 11,
         "cost": [
           {
             "itemId": "meat",
@@ -381,6 +519,8 @@
       },
       {
         "tier": 5,
+        "power": 13,
+        "unlockCampLevel": 13,
         "cost": [
           {
             "itemId": "meat",
@@ -403,6 +543,8 @@
       },
       {
         "tier": 6,
+        "power": 20,
+        "unlockCampLevel": 16,
         "cost": [
           {
             "itemId": "meat",
@@ -425,6 +567,8 @@
       },
       {
         "tier": 7,
+        "power": 28,
+        "unlockCampLevel": 19,
         "cost": [
           {
             "itemId": "meat",
@@ -447,6 +591,8 @@
       },
       {
         "tier": 8,
+        "power": 38,
+        "unlockCampLevel": 22,
         "cost": [
           {
             "itemId": "meat",
@@ -469,6 +615,8 @@
       },
       {
         "tier": 9,
+        "power": 50,
+        "unlockCampLevel": 26,
         "cost": [
           {
             "itemId": "meat",
@@ -491,6 +639,50 @@
       },
       {
         "tier": 10,
+        "power": 66,
+        "fireCrystalPower": [
+          {
+            "level": 1,
+            "power": 71
+          },
+          {
+            "level": 2,
+            "power": 76
+          },
+          {
+            "level": 3,
+            "power": 83
+          },
+          {
+            "level": 4,
+            "power": 88
+          },
+          {
+            "level": 5,
+            "power": 94
+          },
+          {
+            "level": 6,
+            "power": 99
+          },
+          {
+            "level": 7,
+            "power": 104
+          },
+          {
+            "level": 8,
+            "power": 110
+          },
+          {
+            "level": 9,
+            "power": 115
+          },
+          {
+            "level": 10,
+            "power": 121
+          }
+        ],
+        "unlockCampLevel": 30,
         "cost": [
           {
             "itemId": "meat",
@@ -513,6 +705,61 @@
       },
       {
         "tier": 11,
+        "power": 80,
+        "fireCrystalPower": [
+          {
+            "level": 1,
+            "power": 86
+          },
+          {
+            "level": 2,
+            "power": 92
+          },
+          {
+            "level": 3,
+            "power": 100
+          },
+          {
+            "level": 4,
+            "power": 106
+          },
+          {
+            "level": 5,
+            "power": 114
+          },
+          {
+            "level": 6,
+            "power": 120
+          },
+          {
+            "level": 7,
+            "power": 126
+          },
+          {
+            "level": 8,
+            "power": 135
+          },
+          {
+            "level": 9,
+            "power": 141
+          },
+          {
+            "level": 10,
+            "power": 148
+          }
+        ],
+        "unlockRequirements": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 1"
+          },
+          {
+            "type": "research",
+            "id": "helios-lancer",
+            "level": 1
+          }
+        ],
         "cost": [
           {
             "itemId": "meat",
@@ -535,6 +782,19 @@
       },
       {
         "tier": 12,
+        "power": 178,
+        "unlockRequirements": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-lancer",
+            "level": 1
+          }
+        ],
         "cost": [
           {
             "itemId": "meat",
@@ -581,6 +841,8 @@
     "tiers": [
       {
         "tier": 1,
+        "power": 3,
+        "unlockCampLevel": 1,
         "cost": [
           {
             "itemId": "meat",
@@ -603,6 +865,8 @@
       },
       {
         "tier": 2,
+        "power": 4,
+        "unlockCampLevel": 4,
         "cost": [
           {
             "itemId": "meat",
@@ -625,6 +889,8 @@
       },
       {
         "tier": 3,
+        "power": 6,
+        "unlockCampLevel": 7,
         "cost": [
           {
             "itemId": "meat",
@@ -647,6 +913,8 @@
       },
       {
         "tier": 4,
+        "power": 9,
+        "unlockCampLevel": 11,
         "cost": [
           {
             "itemId": "meat",
@@ -669,6 +937,8 @@
       },
       {
         "tier": 5,
+        "power": 13,
+        "unlockCampLevel": 13,
         "cost": [
           {
             "itemId": "meat",
@@ -691,6 +961,8 @@
       },
       {
         "tier": 6,
+        "power": 20,
+        "unlockCampLevel": 16,
         "cost": [
           {
             "itemId": "meat",
@@ -713,6 +985,8 @@
       },
       {
         "tier": 7,
+        "power": 28,
+        "unlockCampLevel": 19,
         "cost": [
           {
             "itemId": "meat",
@@ -735,6 +1009,8 @@
       },
       {
         "tier": 8,
+        "power": 38,
+        "unlockCampLevel": 22,
         "cost": [
           {
             "itemId": "meat",
@@ -757,6 +1033,8 @@
       },
       {
         "tier": 9,
+        "power": 50,
+        "unlockCampLevel": 26,
         "cost": [
           {
             "itemId": "meat",
@@ -779,6 +1057,50 @@
       },
       {
         "tier": 10,
+        "power": 66,
+        "fireCrystalPower": [
+          {
+            "level": 1,
+            "power": 71
+          },
+          {
+            "level": 2,
+            "power": 76
+          },
+          {
+            "level": 3,
+            "power": 83
+          },
+          {
+            "level": 4,
+            "power": 88
+          },
+          {
+            "level": 5,
+            "power": 94
+          },
+          {
+            "level": 6,
+            "power": 99
+          },
+          {
+            "level": 7,
+            "power": 104
+          },
+          {
+            "level": 8,
+            "power": 110
+          },
+          {
+            "level": 9,
+            "power": 115
+          },
+          {
+            "level": 10,
+            "power": 121
+          }
+        ],
+        "unlockCampLevel": 30,
         "cost": [
           {
             "itemId": "meat",
@@ -801,6 +1123,61 @@
       },
       {
         "tier": 11,
+        "power": 80,
+        "fireCrystalPower": [
+          {
+            "level": 1,
+            "power": 86
+          },
+          {
+            "level": 2,
+            "power": 92
+          },
+          {
+            "level": 3,
+            "power": 100
+          },
+          {
+            "level": 4,
+            "power": 106
+          },
+          {
+            "level": 5,
+            "power": 114
+          },
+          {
+            "level": 6,
+            "power": 120
+          },
+          {
+            "level": 7,
+            "power": 126
+          },
+          {
+            "level": 8,
+            "power": 135
+          },
+          {
+            "level": 9,
+            "power": 141
+          },
+          {
+            "level": 10,
+            "power": 148
+          }
+        ],
+        "unlockRequirements": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 1"
+          },
+          {
+            "type": "research",
+            "id": "helios-marksman",
+            "level": 1
+          }
+        ],
         "cost": [
           {
             "itemId": "meat",
@@ -823,6 +1200,19 @@
       },
       {
         "tier": 12,
+        "power": 178,
+        "unlockRequirements": [
+          {
+            "type": "building",
+            "id": "war-academy",
+            "level": "FC 10"
+          },
+          {
+            "type": "research",
+            "id": "exalted-marksman",
+            "level": 1
+          }
+        ],
         "cost": [
           {
             "itemId": "meat",
