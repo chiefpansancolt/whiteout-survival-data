@@ -1,5 +1,5 @@
 import { events } from '@/modules/events';
-import { experts } from '@/modules/experts';
+import { experts, unreleasedExperts } from '@/modules/experts';
 import { heroes } from '@/modules/heroes';
 import { items } from '@/modules/items';
 import { pets } from '@/modules/pets';
@@ -247,10 +247,21 @@ describe('timeline data', () => {
     }
   });
 
-  it('matches the unlock day of each expert to its milestone day', () => {
+  it('matches the unlock day of each released expert to its milestone day', () => {
     for (const m of serverTimeline().get()) {
-      for (const id of m.expertIds) {
+      for (const id of m.expertIds.filter((expertId) => experts().find(expertId))) {
         expect(experts().find(id)!.unlockRequirement).toEqual({ daysRequired: m.day });
+      }
+    }
+  });
+
+  it('puts each unreleased expert on the milestone of the hero generation that it needs', () => {
+    for (const m of serverTimeline().get()) {
+      for (const id of m.expertIds.filter((expertId) => unreleasedExperts().find(expertId))) {
+        const { heroGeneration } = unreleasedExperts().find(id)!.unlockRequirement;
+        expect(m.heroIds.length).toBeGreaterThan(0);
+        expect(heroGenerationAt(m.day)).toBe(heroGeneration);
+        expect(heroGenerationAt(m.day - 1)).toBe(heroGeneration - 1);
       }
     }
   });
@@ -425,21 +436,22 @@ describe('expert unlock days', () => {
       .filter((m) => m.expertIds.length > 0)
       .map((m) => [m.day, m.expertIds]);
 
-  it('unlocks the experts on the days that the wiki timeline lists', () => {
+  it('unlocks the experts on the days that the wiki timeline lists, and Justus with generation 6', () => {
     expect(expertDays()).toEqual([
       [120, ['holger', 'agnes', 'cyrille']],
       [160, ['romulus']],
       [200, ['valeria', 'baldur', 'fabian']],
       [230, ['kathy', 'ronne']],
+      [360, ['justus']],
     ]);
   });
 
-  it('lists each expert once and leaves Gareth off, because the wiki timeline has no day for him', () => {
+  it('lists each expert once and leaves Gareth off, because no source gives a day for him', () => {
     const ids = serverTimeline()
       .get()
       .flatMap((m) => m.expertIds);
     expect(new Set(ids).size).toBe(ids.length);
-    expect(ids).toHaveLength(9);
+    expect(ids).toHaveLength(10);
     expect(ids).not.toContain('gareth');
   });
 

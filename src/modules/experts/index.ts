@@ -1,9 +1,11 @@
 import { QueryBase } from '@/common/query-base';
 import relationshipData from '@/data/chief/expert-relationships.json';
 import data from '@/data/chief/experts.json';
-import { Expert, ExpertRelationship } from '@/types';
+import { Expert, ExpertRelationship, UnreleasedExpert } from '@/types';
 
-const expertData: Expert[] = data as Expert[];
+const allExpertData = data as (Expert | UnreleasedExpert)[];
+const expertData = allExpertData.filter((e): e is Expert => !('unreleased' in e));
+const unreleasedExpertData = allExpertData.filter((e): e is UnreleasedExpert => 'unreleased' in e);
 const expertRelationshipData: ExpertRelationship[] = relationshipData as ExpertRelationship[];
 
 export class ExpertQuery extends QueryBase<Expert> {
@@ -18,6 +20,18 @@ export class ExpertQuery extends QueryBase<Expert> {
 
 export function experts(source: Expert[] = expertData): ExpertQuery {
   return new ExpertQuery(source);
+}
+
+export class UnreleasedExpertQuery extends QueryBase<UnreleasedExpert> {
+  constructor(data: UnreleasedExpert[] = unreleasedExpertData) {
+    super(data);
+  }
+}
+
+export function unreleasedExperts(
+  source: UnreleasedExpert[] = unreleasedExpertData,
+): UnreleasedExpertQuery {
+  return new UnreleasedExpertQuery(source);
 }
 
 export class ExpertRelationshipQuery extends QueryBase<ExpertRelationship> {

@@ -11267,5 +11267,14 @@
         "affinityPowerAfterAdvancement": 2376000
       }
     ]
+  },
+  {
+    "id": "justus",
+    "name": "Justus",
+    "img": "/images/experts/Justus/Justus.png",
+    "unreleased": true,
+    "unlockRequirement": {
+      "heroGeneration": 6
+    }
   }
 ]

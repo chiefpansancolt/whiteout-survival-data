@@ -1,15 +1,20 @@
+import expertFile from '@/data/chief/experts.json';
 import {
   ExpertQuery,
   ExpertRelationshipQuery,
   expertRelationships,
   experts,
+  UnreleasedExpertQuery,
+  unreleasedExperts,
 } from '@/modules/experts';
+import { heroGenerationAt } from '@/modules/server-timeline';
 import { existsSync } from 'fs';
 import { join } from 'path';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('experts', () => experts());
 testQueryBaseContract('expertRelationships', () => expertRelationships());
+testQueryBaseContract('unreleasedExperts', () => unreleasedExperts());
 
 describe('ExpertQuery', () => {
   it('accepts an explicit source array', () => {
@@ -522,5 +527,54 @@ describe('expert unlock days', () => {
       ['kathy', 230],
       ['gareth', undefined],
     ]);
+  });
+});
+
+describe('unreleased experts', () => {
+  it('accepts an explicit source array', () => {
+    expect(new UnreleasedExpertQuery(unreleasedExperts().get().slice(0, 1)).count()).toBe(1);
+  });
+
+  it('uses default data when constructed without arguments', () => {
+    expect(new UnreleasedExpertQuery().count()).toBe(1);
+  });
+
+  it('lists Justus with a name, an icon, and the unlock of generation 6 heroes', () => {
+    expect(unreleasedExperts().find('justus')).toEqual({
+      id: 'justus',
+      name: 'Justus',
+      img: '/images/experts/Justus/Justus.png',
+      unreleased: true,
+      unlockRequirement: { heroGeneration: 6 },
+    });
+  });
+
+  it('reads the unreleased experts from the flag in experts.json', () => {
+    const flagged = expertFile.filter((e) => 'unreleased' in e).map((e) => e.id);
+    expect(flagged).toEqual(['justus']);
+    expect(
+      unreleasedExperts()
+        .get()
+        .map((e) => e.id),
+    ).toEqual(flagged);
+    expect(expertFile).toHaveLength(experts().count() + unreleasedExperts().count());
+  });
+
+  it('has an icon file for each unreleased expert', () => {
+    for (const expert of unreleasedExperts().get()) {
+      expect(existsSync(join(__dirname, '../..', expert.img))).toBe(true);
+    }
+  });
+
+  it('keeps unreleased experts out of experts()', () => {
+    for (const expert of unreleasedExperts().get()) {
+      expect(experts().find(expert.id)).toBeUndefined();
+    }
+  });
+
+  it('names a hero generation that the server timeline has', () => {
+    const { heroGeneration } = unreleasedExperts().find('justus')!.unlockRequirement;
+    expect(heroGenerationAt(359)).toBe(heroGeneration - 1);
+    expect(heroGenerationAt(360)).toBe(heroGeneration);
   });
 });

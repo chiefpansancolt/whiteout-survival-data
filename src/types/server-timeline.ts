@@ -1,5 +1,5 @@
 import { GameEvent } from './event';
-import { Expert } from './expert';
+import { Expert, UnreleasedExpert } from './expert';
 import { FireCrystalLevel } from './fire-crystal-table';
 import { Hero } from './hero';
 import { Item } from './item';
@@ -42,7 +42,7 @@ export interface ResolvedServerTimelineMilestone extends Omit<
 > {
   heroes: Hero[];
   heroShardEvents: Record<string, GameEvent[]>;
-  experts: Expert[];
+  experts: (Expert | UnreleasedExpert)[];
   pets: Pet[];
   events: GameEvent[];
   fireCrystalLevels: FireCrystalLevel[];

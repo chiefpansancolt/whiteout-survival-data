@@ -61,6 +61,18 @@ export interface ExpertUnlockRequirement {
   daysRequired: number;
 }
 
+export interface UnreleasedExpertUnlockRequirement {
+  heroGeneration: number;
+}
+
+export interface UnreleasedExpert {
+  id: string;
+  name: string;
+  img: string;
+  unreleased: true;
+  unlockRequirement: UnreleasedExpertUnlockRequirement;
+}
+
 export interface Expert {
   id: string;
   name: string;
