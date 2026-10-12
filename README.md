@@ -131,6 +131,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `items()`          | 282     | Item catalog with icons and sources                                             | [README](src/modules/items/README.md)           |
 | `skins()`          | 191     | Cosmetic skins                                                                  | [README](src/modules/skins/README.md)           |
 | `serverTimeline()` | 30      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()` | [README](src/modules/server-timeline/README.md) |
+| `dailies()`        | 21      | Default daily tasks: in-game missions and a daily routine, a partial list       | [README](src/modules/dailies/README.md)         |
 | `vip()`            | 12      | VIP 1 to 12 progression                                                         | [README](src/modules/vip/README.md)             |
 
 ## Calculators
