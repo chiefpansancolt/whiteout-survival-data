@@ -3,6 +3,7 @@ import {
   chiefCharm,
   chiefGear,
   chiefGearSlots,
+  dailies,
   experts,
   facilities,
   fireCrystalShardTable,
@@ -190,3 +191,7 @@ console.log(
     .filter((n) => n.queue === 'warAcademy').length,
   'War Academy nodes',
 );
+
+console.log('\n--- Dailies ---');
+console.log('daily missions:', dailies().count());
+console.log('first mission:', dailies().first()?.name);

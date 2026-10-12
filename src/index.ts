@@ -30,3 +30,4 @@ export * from './modules/server-timeline';
 export * from './modules/fire-crystal-table';
 export * from './modules/fire-crystal-shard-table';
 export * from './modules/research-tree';
+export * from './modules/dailies';
