@@ -334,3 +334,48 @@ describe('Research tech tree', () => {
     });
   });
 });
+
+describe('research queues', () => {
+  it('puts the Growth, Economy, and Battle research in the main queue', () => {
+    for (const category of ['Growth', 'Economy', 'Battle'] as const) {
+      const nodes = research().byCategory(category).get();
+      expect(nodes.length).toBeGreaterThan(0);
+      for (const node of nodes) expect(node.queue).toBe('main');
+    }
+  });
+
+  it('puts the T11 and T12 research in the War Academy queue', () => {
+    const warAcademy = research()
+      .get()
+      .filter((n) => n.category.startsWith('T11 ') || n.category.startsWith('T12 '));
+    expect(warAcademy).toHaveLength(99);
+    for (const node of warAcademy) expect(node.queue).toBe('warAcademy');
+  });
+
+  it('gives every node a queue', () => {
+    const counts = { main: 0, warAcademy: 0 };
+    for (const node of research().get()) counts[node.queue] += 1;
+    expect(counts).toEqual({ main: 191, warAcademy: 99 });
+  });
+});
+
+describe('Tool Enhancement I prerequisites', () => {
+  it('needs Ward Expansion I, Camp Expansion I, and Tooling Up I at level 1', () => {
+    const level = research().find('tool-enhancement-i')!.levels[0];
+    const research1 = level.prerequisites
+      .filter((p) => p.type === 'research')
+      .map((p) => [p.id, p.level]);
+    expect(research1).toEqual([
+      ['ward-expansion-i', 1],
+      ['camp-expansion-i', 1],
+      ['tooling-up-i', 1],
+    ]);
+  });
+
+  it('leaves Tooling Up I with no research prerequisite of its own', () => {
+    const levels = research().find('tooling-up-i')!.levels;
+    for (const level of levels) {
+      expect(level.prerequisites.every((p) => p.type === 'building')).toBe(true);
+    }
+  });
+});

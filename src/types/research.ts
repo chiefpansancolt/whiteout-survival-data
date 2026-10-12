@@ -47,12 +47,15 @@ export interface ResearchLevel {
   power: number;
 }
 
+export type ResearchQueue = 'main' | 'warAcademy';
+
 export interface ResearchNode {
   id: string;
   name: string;
   /** Empty for nodes that have no icon. */
   img: string;
   category: ResearchCategory;
+  queue: ResearchQueue;
   tier: number;
   levels: ResearchLevel[];
 }

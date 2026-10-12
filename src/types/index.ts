@@ -24,3 +24,4 @@ export * from './troop';
 export * from './server-timeline';
 export * from './fire-crystal-table';
 export * from './fire-crystal-shard-table';
+export * from './research-tree';

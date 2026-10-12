@@ -4,6 +4,7 @@
     "name": "Assaut Techniques I",
     "img": "/images/research/assaut-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -150,6 +151,7 @@
     "name": "Bulwark Formations I",
     "img": "/images/research/bulwark-formations-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -296,6 +298,7 @@
     "name": "Close Combat I",
     "img": "/images/research/close-combat-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -442,6 +445,7 @@
     "name": "Defensive Formation I",
     "img": "/images/research/defensive-formation-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -588,6 +592,7 @@
     "name": "Lancer Armor I",
     "img": "/images/research/lancer-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -734,6 +739,7 @@
     "name": "Lancer Upgrade I",
     "img": "/images/research/lancer-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -880,6 +886,7 @@
     "name": "Marksman Armor I",
     "img": "/images/research/marksman-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -1026,6 +1033,7 @@
     "name": "Picket Lines I",
     "img": "/images/research/picket-lines-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -1172,6 +1180,7 @@
     "name": "Precision Targeting I",
     "img": "/images/research/precision-targeting-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -1318,6 +1327,7 @@
     "name": "Regimental Expansion I",
     "img": "/images/research/regimental-expansion-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -1469,6 +1479,7 @@
     "name": "Reprisal Tactics I",
     "img": "/images/research/reprisal-tactics-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -1615,6 +1626,7 @@
     "name": "Shield Upgrade I",
     "img": "/images/research/shield-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -1761,6 +1773,7 @@
     "name": "Skirmishing I",
     "img": "/images/research/skirmishing-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -1907,6 +1920,7 @@
     "name": "Special Defensive Training I",
     "img": "/images/research/special-defensive-training-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -2063,6 +2077,7 @@
     "name": "Survival Techniques I",
     "img": "/images/research/survival-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -2209,6 +2224,7 @@
     "name": "Targeted Sniping I",
     "img": "/images/research/targeted-sniping-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -2355,6 +2371,7 @@
     "name": "Weapons Prep I",
     "img": "/images/research/weapons-prep-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -2496,6 +2513,7 @@
     "name": "Assaut Techniques II",
     "img": "/images/research/assaut-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -2642,6 +2660,7 @@
     "name": "Bulwark Formations II",
     "img": "/images/research/bulwark-formations-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -2788,6 +2807,7 @@
     "name": "Close Combat II",
     "img": "/images/research/close-combat-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -2934,6 +2954,7 @@
     "name": "Defensive Formation II",
     "img": "/images/research/defensive-formation-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -3080,6 +3101,7 @@
     "name": "Lancer Armor II",
     "img": "/images/research/lancer-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -3226,6 +3248,7 @@
     "name": "Lancer Upgrade II",
     "img": "/images/research/lancer-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -3372,6 +3395,7 @@
     "name": "Marksman Armor II",
     "img": "/images/research/marksman-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -3518,6 +3542,7 @@
     "name": "Picket Lines II",
     "img": "/images/research/picket-lines-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -3664,6 +3689,7 @@
     "name": "Precision Targeting II",
     "img": "/images/research/precision-targeting-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -3810,6 +3836,7 @@
     "name": "Regimental Expansion II",
     "img": "/images/research/regimental-expansion-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -3961,6 +3988,7 @@
     "name": "Reprisal Tactics II",
     "img": "/images/research/reprisal-tactics-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -4107,6 +4135,7 @@
     "name": "Shield Upgrade II",
     "img": "/images/research/shield-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -4253,6 +4282,7 @@
     "name": "Skirmishing II",
     "img": "/images/research/skirmishing-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -4399,6 +4429,7 @@
     "name": "Special Defensive Training II",
     "img": "/images/research/special-defensive-training-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -4555,6 +4586,7 @@
     "name": "Survival Techniques II",
     "img": "/images/research/survival-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -4701,6 +4733,7 @@
     "name": "Targeted Sniping II",
     "img": "/images/research/targeted-sniping-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -4847,6 +4880,7 @@
     "name": "Weapons Prep II",
     "img": "/images/research/weapons-prep-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -5003,6 +5037,7 @@
     "name": "Assaut Techniques III",
     "img": "/images/research/assaut-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -5193,6 +5228,7 @@
     "name": "Bulwark Formations III",
     "img": "/images/research/bulwark-formations-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -5383,6 +5419,7 @@
     "name": "Close Combat III",
     "img": "/images/research/close-combat-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -5573,6 +5610,7 @@
     "name": "Defensive Formation III",
     "img": "/images/research/defensive-formation-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -5763,6 +5801,7 @@
     "name": "Lancer Armor III",
     "img": "/images/research/lancer-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -5953,6 +5992,7 @@
     "name": "Lancer Upgrade III",
     "img": "/images/research/lancer-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -6143,6 +6183,7 @@
     "name": "Marksman Armor III",
     "img": "/images/research/marksman-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -6333,6 +6374,7 @@
     "name": "Picket Lines III",
     "img": "/images/research/picket-lines-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -6523,6 +6565,7 @@
     "name": "Precision Targeting III",
     "img": "/images/research/precision-targeting-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -6713,6 +6756,7 @@
     "name": "Regimental Expansion III",
     "img": "/images/research/regimental-expansion-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -6908,6 +6952,7 @@
     "name": "Reprisal Tactics III",
     "img": "/images/research/reprisal-tactics-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -7098,6 +7143,7 @@
     "name": "Shield Upgrade III",
     "img": "/images/research/shield-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -7288,6 +7334,7 @@
     "name": "Skirmishing III",
     "img": "/images/research/skirmishing-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -7478,6 +7525,7 @@
     "name": "Special Defensive Training III",
     "img": "/images/research/special-defensive-training-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -7678,6 +7726,7 @@
     "name": "Survival Techniques III",
     "img": "/images/research/survival-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -7868,6 +7917,7 @@
     "name": "Targeted Sniping III",
     "img": "/images/research/targeted-sniping-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -8058,6 +8108,7 @@
     "name": "Weapons Prep III",
     "img": "/images/research/weapons-prep-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -8258,6 +8309,7 @@
     "name": "Assaut Techniques IV",
     "img": "/images/research/assaut-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -8492,6 +8544,7 @@
     "name": "Bulwark Formations IV",
     "img": "/images/research/bulwark-formations-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -8725,6 +8778,7 @@
     "name": "Close Combat IV",
     "img": "/images/research/close-combat-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -8959,6 +9013,7 @@
     "name": "Defensive Formation IV",
     "img": "/images/research/defensive-formation-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -9193,6 +9248,7 @@
     "name": "Lancer Armor IV",
     "img": "/images/research/lancer-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -9427,6 +9483,7 @@
     "name": "Lancer Upgrade IV",
     "img": "/images/research/lancer-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -9661,6 +9718,7 @@
     "name": "Marksman Armor IV",
     "img": "/images/research/marksman-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -9895,6 +9953,7 @@
     "name": "Picket Lines IV",
     "img": "/images/research/picket-lines-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -10128,6 +10187,7 @@
     "name": "Precision Targeting IV",
     "img": "/images/research/precision-targeting-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -10362,6 +10422,7 @@
     "name": "Regimental Expansion IV",
     "img": "/images/research/regimental-expansion-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -10601,6 +10662,7 @@
     "name": "Reprisal Tactics IV",
     "img": "/images/research/reprisal-tactics-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -10835,6 +10897,7 @@
     "name": "Shield Upgrade IV",
     "img": "/images/research/shield-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -11069,6 +11132,7 @@
     "name": "Skirmishing IV",
     "img": "/images/research/skirmishing-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -11303,6 +11367,7 @@
     "name": "Special Defensive Training IV",
     "img": "/images/research/special-defensive-training-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -11547,6 +11612,7 @@
     "name": "Survival Techniques IV",
     "img": "/images/research/survival-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -11781,6 +11847,7 @@
     "name": "Targeted Sniping IV",
     "img": "/images/research/targeted-sniping-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -12015,6 +12082,7 @@
     "name": "Weapons Prep IV",
     "img": "/images/research/weapons-prep-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -12259,6 +12327,7 @@
     "name": "Assaut Techniques V",
     "img": "/images/research/assaut-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -12537,6 +12606,7 @@
     "name": "Bulwark Formations V",
     "img": "/images/research/bulwark-formations-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -12815,6 +12885,7 @@
     "name": "Close Combat V",
     "img": "/images/research/close-combat-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -13093,6 +13164,7 @@
     "name": "Defensive Formation V",
     "img": "/images/research/defensive-formation-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -13371,6 +13443,7 @@
     "name": "Lancer Armor V",
     "img": "/images/research/lancer-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -13649,6 +13722,7 @@
     "name": "Lancer Upgrade V",
     "img": "/images/research/lancer-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -13927,6 +14001,7 @@
     "name": "Marksman Armor V",
     "img": "/images/research/marksman-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -14205,6 +14280,7 @@
     "name": "Picket Lines V",
     "img": "/images/research/picket-lines-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -14483,6 +14559,7 @@
     "name": "Precision Targeting V",
     "img": "/images/research/precision-targeting-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -14761,6 +14838,7 @@
     "name": "Regimental Expansion V",
     "img": "/images/research/regimental-expansion-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -15044,6 +15122,7 @@
     "name": "Reprisal Tactics V",
     "img": "/images/research/reprisal-tactics-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -15322,6 +15401,7 @@
     "name": "Shield Upgrade V",
     "img": "/images/research/shield-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -15600,6 +15680,7 @@
     "name": "Skirmishing V",
     "img": "/images/research/skirmishing-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -15878,6 +15959,7 @@
     "name": "Special Defensive Training V",
     "img": "/images/research/special-defensive-training-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -16166,6 +16248,7 @@
     "name": "Survival Techniques V",
     "img": "/images/research/survival-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -16444,6 +16527,7 @@
     "name": "Targeted Sniping V",
     "img": "/images/research/targeted-sniping-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -16722,6 +16806,7 @@
     "name": "Weapons Prep V",
     "img": "/images/research/weapons-prep-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -17010,6 +17095,7 @@
     "name": "Assaut Techniques VI",
     "img": "/images/research/assaut-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -17288,6 +17374,7 @@
     "name": "Bulwark Formations VI",
     "img": "/images/research/bulwark-formations-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -17566,6 +17653,7 @@
     "name": "Close Combat VI",
     "img": "/images/research/close-combat-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -17844,6 +17932,7 @@
     "name": "Defensive Formation VI",
     "img": "/images/research/defensive-formation-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -18122,6 +18211,7 @@
     "name": "Lancer Armor VI",
     "img": "/images/research/lancer-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -18400,6 +18490,7 @@
     "name": "Lancer Upgrade VI",
     "img": "/images/research/lancer-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -18678,6 +18769,7 @@
     "name": "Marksman Armor VI",
     "img": "/images/research/marksman-armor-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -18956,6 +19048,7 @@
     "name": "Picket Lines VI",
     "img": "/images/research/picket-lines-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -19234,6 +19327,7 @@
     "name": "Precision Targeting VI",
     "img": "/images/research/precision-targeting-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -19512,6 +19606,7 @@
     "name": "Regimental Expansion VI",
     "img": "/images/research/regimental-expansion-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -19795,6 +19890,7 @@
     "name": "Reprisal Tactics VI",
     "img": "/images/research/reprisal-tactics-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -20073,6 +20169,7 @@
     "name": "Shield Upgrade VI",
     "img": "/images/research/shield-upgrade-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -20351,6 +20448,7 @@
     "name": "Skirmishing VI",
     "img": "/images/research/skirmishing-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -20629,6 +20727,7 @@
     "name": "Special Defensive Training VI",
     "img": "/images/research/special-defensive-training-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -20917,6 +21016,7 @@
     "name": "Survival Techniques VI",
     "img": "/images/research/survival-techniques-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -21195,6 +21295,7 @@
     "name": "Targeted Sniping VI",
     "img": "/images/research/targeted-sniping-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -21473,6 +21574,7 @@
     "name": "Weapons Prep VI",
     "img": "/images/research/weapons-prep-i.png",
     "category": "Battle",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -21761,6 +21863,7 @@
     "name": "Coal Mining I",
     "img": "/images/research/coal-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -21907,6 +22010,7 @@
     "name": "Coal Output I",
     "img": "/images/research/coal-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -22058,6 +22162,7 @@
     "name": "Food Gathering I",
     "img": "/images/research/food-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -22204,6 +22309,7 @@
     "name": "Iron Mining I",
     "img": "/images/research/iron-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -22355,6 +22461,7 @@
     "name": "Iron Output I",
     "img": "/images/research/iron-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -22506,6 +22613,7 @@
     "name": "Meat Output I",
     "img": "/images/research/meat-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -22647,6 +22755,7 @@
     "name": "Wood Gathering I",
     "img": "/images/research/wood-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -22793,6 +22902,7 @@
     "name": "Wood Output I",
     "img": "/images/research/wood-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -22939,6 +23049,7 @@
     "name": "Coal Mining II",
     "img": "/images/research/coal-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -23085,6 +23196,7 @@
     "name": "Coal Output II",
     "img": "/images/research/coal-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -23231,6 +23343,7 @@
     "name": "Food Gathering II",
     "img": "/images/research/food-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -23377,6 +23490,7 @@
     "name": "Iron Mining II",
     "img": "/images/research/iron-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -23533,6 +23647,7 @@
     "name": "Iron Output II",
     "img": "/images/research/iron-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -23689,6 +23804,7 @@
     "name": "Meat Output II",
     "img": "/images/research/meat-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -23835,6 +23951,7 @@
     "name": "Wood Gathering II",
     "img": "/images/research/wood-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -23981,6 +24098,7 @@
     "name": "Wood Output II",
     "img": "/images/research/wood-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -24127,6 +24245,7 @@
     "name": "Coal Mining III",
     "img": "/images/research/coal-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -24273,6 +24392,7 @@
     "name": "Coal Output III",
     "img": "/images/research/coal-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -24419,6 +24539,7 @@
     "name": "Food Gathering III",
     "img": "/images/research/food-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -24565,6 +24686,7 @@
     "name": "Iron Mining III",
     "img": "/images/research/iron-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -24721,6 +24843,7 @@
     "name": "Iron Output III",
     "img": "/images/research/iron-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -24877,6 +25000,7 @@
     "name": "Meat Output III",
     "img": "/images/research/meat-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -25023,6 +25147,7 @@
     "name": "Wood Gathering III",
     "img": "/images/research/wood-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -25169,6 +25294,7 @@
     "name": "Wood Output III",
     "img": "/images/research/wood-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -25315,6 +25441,7 @@
     "name": "Coal Mining IV",
     "img": "/images/research/coal-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -25461,6 +25588,7 @@
     "name": "Coal Output IV",
     "img": "/images/research/coal-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -25607,6 +25735,7 @@
     "name": "Food Gathering IV",
     "img": "/images/research/food-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -25753,6 +25882,7 @@
     "name": "Iron Mining IV",
     "img": "/images/research/iron-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -25909,6 +26039,7 @@
     "name": "Iron Output IV",
     "img": "/images/research/iron-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -26065,6 +26196,7 @@
     "name": "Meat Output IV",
     "img": "/images/research/meat-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -26211,6 +26343,7 @@
     "name": "Wood Gathering IV",
     "img": "/images/research/wood-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -26357,6 +26490,7 @@
     "name": "Wood Output IV",
     "img": "/images/research/wood-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -26503,6 +26637,7 @@
     "name": "Coal Mining V",
     "img": "/images/research/coal-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -26649,6 +26784,7 @@
     "name": "Coal Output V",
     "img": "/images/research/coal-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -26795,6 +26931,7 @@
     "name": "Food Gathering V",
     "img": "/images/research/food-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -26941,6 +27078,7 @@
     "name": "Iron Mining V",
     "img": "/images/research/iron-mining-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -27097,6 +27235,7 @@
     "name": "Iron Output V",
     "img": "/images/research/iron-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -27253,6 +27392,7 @@
     "name": "Meat Output V",
     "img": "/images/research/meat-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -27399,6 +27539,7 @@
     "name": "Wood Gathering V",
     "img": "/images/research/wood-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -27545,6 +27686,7 @@
     "name": "Wood Output V",
     "img": "/images/research/wood-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -27691,6 +27833,7 @@
     "name": "Food Gathering VI",
     "img": "/images/research/food-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -27837,6 +27980,7 @@
     "name": "Meat Output VI",
     "img": "/images/research/meat-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -27983,6 +28127,7 @@
     "name": "Wood Gathering VI",
     "img": "/images/research/wood-gathering-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -28129,6 +28274,7 @@
     "name": "Wood Output VI",
     "img": "/images/research/wood-output-i.png",
     "category": "Economy",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -28275,6 +28421,7 @@
     "name": "Bandaging I",
     "img": "/images/research/bandaging-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -28421,6 +28568,7 @@
     "name": "Camp Expansion I",
     "img": "/images/research/camp-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -28562,6 +28710,7 @@
     "name": "Command Tactics I",
     "img": "/images/research/command-tactics-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -28625,6 +28774,7 @@
     "name": "Tool Enhancement I",
     "img": "/images/research/tool-enhancement-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -28643,6 +28793,11 @@
           {
             "type": "research",
             "id": "camp-expansion-i",
+            "level": 1
+          },
+          {
+            "type": "research",
+            "id": "tooling-up-i",
             "level": 1
           }
         ],
@@ -28776,6 +28931,7 @@
     "name": "Tooling Up I",
     "img": "/images/research/tooling-up-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -28917,6 +29073,7 @@
     "name": "Trainer Tools I",
     "img": "/images/research/trainer-tools-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -29063,6 +29220,7 @@
     "name": "Ward Expansion I",
     "img": "/images/research/ward-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 1,
     "levels": [
       {
@@ -29204,6 +29362,7 @@
     "name": "Bandaging II",
     "img": "/images/research/bandaging-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -29350,6 +29509,7 @@
     "name": "Camp Expansion II",
     "img": "/images/research/camp-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -29496,6 +29656,7 @@
     "name": "Command Tactics II",
     "img": "/images/research/command-tactics-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -29559,6 +29720,7 @@
     "name": "Tool Enhancement II",
     "img": "/images/research/tool-enhancement-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -29710,6 +29872,7 @@
     "name": "Tooling Up II",
     "img": "/images/research/tooling-up-ii.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -29856,6 +30019,7 @@
     "name": "Trainer Tools II",
     "img": "/images/research/trainer-tools-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -30002,6 +30166,7 @@
     "name": "Ward Expansion II",
     "img": "/images/research/ward-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 2,
     "levels": [
       {
@@ -30148,6 +30313,7 @@
     "name": "Bandaging III",
     "img": "/images/research/bandaging-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -30294,6 +30460,7 @@
     "name": "Camp Expansion III",
     "img": "/images/research/camp-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -30440,6 +30607,7 @@
     "name": "Command Tactics III",
     "img": "/images/research/command-tactics-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -30503,6 +30671,7 @@
     "name": "Tool Enhancement III",
     "img": "/images/research/tool-enhancement-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -30654,6 +30823,7 @@
     "name": "Tooling Up III",
     "img": "/images/research/tooling-up-ii.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -30805,6 +30975,7 @@
     "name": "Trainer Tools III",
     "img": "/images/research/trainer-tools-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -30951,6 +31122,7 @@
     "name": "Ward Expansion III",
     "img": "/images/research/ward-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 3,
     "levels": [
       {
@@ -31097,6 +31269,7 @@
     "name": "Bandaging IV",
     "img": "/images/research/bandaging-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -31243,6 +31416,7 @@
     "name": "Camp Expansion IV",
     "img": "/images/research/camp-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -31389,6 +31563,7 @@
     "name": "Tool Enhancement IV",
     "img": "/images/research/tool-enhancement-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -31540,6 +31715,7 @@
     "name": "Tooling Up IV",
     "img": "/images/research/tooling-up-ii.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -31686,6 +31862,7 @@
     "name": "Trainer Tools IV",
     "img": "/images/research/trainer-tools-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -31832,6 +32009,7 @@
     "name": "Ward Expansion IV",
     "img": "/images/research/ward-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 4,
     "levels": [
       {
@@ -31978,6 +32156,7 @@
     "name": "Bandaging V",
     "img": "/images/research/bandaging-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -32124,6 +32303,7 @@
     "name": "Camp Expansion V",
     "img": "/images/research/camp-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -32270,6 +32450,7 @@
     "name": "Tool Enhancement V",
     "img": "/images/research/tool-enhancement-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -32421,6 +32602,7 @@
     "name": "Tooling Up V",
     "img": "/images/research/tooling-up-ii.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -32567,6 +32749,7 @@
     "name": "Trainer Tools V",
     "img": "/images/research/trainer-tools-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -32713,6 +32896,7 @@
     "name": "Ward Expansion V",
     "img": "/images/research/ward-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 5,
     "levels": [
       {
@@ -32859,6 +33043,7 @@
     "name": "Bandaging VI",
     "img": "/images/research/bandaging-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -33005,6 +33190,7 @@
     "name": "Camp Expansion VI",
     "img": "/images/research/camp-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -33151,6 +33337,7 @@
     "name": "Tool Enhancement VI",
     "img": "/images/research/tool-enhancement-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -33302,6 +33489,7 @@
     "name": "Tooling Up VI",
     "img": "/images/research/tooling-up-ii.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -33453,6 +33641,7 @@
     "name": "Trainer Tools VI",
     "img": "/images/research/trainer-tools-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -33599,6 +33788,7 @@
     "name": "Ward Expansion VI",
     "img": "/images/research/ward-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 6,
     "levels": [
       {
@@ -33745,6 +33935,7 @@
     "name": "Bandaging VII",
     "img": "/images/research/bandaging-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 7,
     "levels": [
       {
@@ -33891,6 +34082,7 @@
     "name": "Camp Expansion VII",
     "img": "/images/research/camp-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 7,
     "levels": [
       {
@@ -34037,6 +34229,7 @@
     "name": "Tool Enhancement VII",
     "img": "/images/research/tool-enhancement-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 7,
     "levels": [
       {
@@ -34188,6 +34381,7 @@
     "name": "Tooling Up VII",
     "img": "/images/research/tooling-up-ii.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 7,
     "levels": [
       {
@@ -34339,6 +34533,7 @@
     "name": "Trainer Tools VII",
     "img": "/images/research/trainer-tools-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 7,
     "levels": [
       {
@@ -34485,6 +34680,7 @@
     "name": "Ward Expansion VII",
     "img": "/images/research/ward-expansion-i.png",
     "category": "Growth",
+    "queue": "main",
     "tier": 7,
     "levels": [
       {
@@ -34631,6 +34827,7 @@
     "name": "Flame Squad",
     "img": "/images/research/flame-squad-2.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -34856,6 +35053,7 @@
     "name": "Flame Shield",
     "img": "/images/research/flame-shield.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -35242,6 +35440,7 @@
     "name": "Flame Strike",
     "img": "/images/research/flame-strike.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -35628,6 +35827,7 @@
     "name": "Flame Legion",
     "img": "/images/research/flame-legion-2.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 3,
     "levels": [
       {
@@ -36185,6 +36385,7 @@
     "name": "Flame Protection",
     "img": "/images/research/flame-protection.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -36726,6 +36927,7 @@
     "name": "Flame Tomahawk",
     "img": "/images/research/flame-tomahawk.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -37267,6 +37469,7 @@
     "name": "Helios Infantry",
     "img": "/images/research/helios-infantry.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 5,
     "levels": [
       {
@@ -37335,6 +37538,7 @@
     "name": "Helios Infantry First Aid",
     "img": "/images/research/helios-infantry-first-aid.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -37855,6 +38059,7 @@
     "name": "Helios Infantry Healing",
     "img": "/images/research/helios-infantry-healing.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -38375,6 +38580,7 @@
     "name": "Helios Infantry Training",
     "img": "/images/research/helios-infantry-training.png",
     "category": "T11 Infantry",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -38895,6 +39101,7 @@
     "name": "Flame Squad",
     "img": "/images/research/flame-squad-3.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -39120,6 +39327,7 @@
     "name": "Blazing Armor",
     "img": "/images/research/blazing-armor.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -39483,6 +39691,7 @@
     "name": "Blazing Charge",
     "img": "/images/research/blazing-charge.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -39846,6 +40055,7 @@
     "name": "Flame Legion",
     "img": "/images/research/flame-legion-3.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 3,
     "levels": [
       {
@@ -40381,6 +40591,7 @@
     "name": "Blazing Guardian",
     "img": "/images/research/blazing-guardian.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -40922,6 +41133,7 @@
     "name": "Blazing Lance",
     "img": "/images/research/blazing-lance.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -41463,6 +41675,7 @@
     "name": "Helios Lancer",
     "img": "/images/research/helios-lancer.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 5,
     "levels": [
       {
@@ -41531,6 +41744,7 @@
     "name": "Helios Lancer First Aid",
     "img": "/images/research/helios-lancer-first-aid.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -42051,6 +42265,7 @@
     "name": "Helios Lancer Healing",
     "img": "/images/research/helios-lancer-healing.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -42670,6 +42885,7 @@
     "name": "Helios Lancer Training",
     "img": "/images/research/helios-lancer-training.png",
     "category": "T11 Lancer",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -43289,6 +43505,7 @@
     "name": "Flame Squad",
     "img": "/images/research/flame-squad-4.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -43514,6 +43731,7 @@
     "name": "Crystal Armor",
     "img": "/images/research/crystal-armor.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -43877,6 +44095,7 @@
     "name": "Crystal Vision",
     "img": "/images/research/crystal-vision.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -44240,6 +44459,7 @@
     "name": "Flame Legion",
     "img": "/images/research/flame-legion.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 3,
     "levels": [
       {
@@ -44775,6 +44995,7 @@
     "name": "Crystal Arrow",
     "img": "/images/research/crystal-arrow.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -45316,6 +45537,7 @@
     "name": "Crystal Protection",
     "img": "/images/research/crystal-protection.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -45857,6 +46079,7 @@
     "name": "Helios Marksman",
     "img": "/images/research/helios-marksman.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 5,
     "levels": [
       {
@@ -45925,6 +46148,7 @@
     "name": "Helios Marksman First Aid",
     "img": "/images/research/helios-marksman-first-aid.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -46445,6 +46669,7 @@
     "name": "Helios Marksman Healing",
     "img": "/images/research/helios-marksman-healing.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -47064,6 +47289,7 @@
     "name": "Helios Marksman Training",
     "img": "/images/research/helios-marksman-training.png",
     "category": "T11 Marksman",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -47683,6 +47909,7 @@
     "name": "Exalted Armament",
     "img": "/images/research/exalted-armament.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -47848,6 +48075,7 @@
     "name": "Exalted Bastion",
     "img": "/images/research/exalted-bastion.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -48013,6 +48241,7 @@
     "name": "Exalted Helm",
     "img": "/images/research/exalted-helm.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -48179,6 +48408,7 @@
     "name": "Exalted Infantry",
     "img": "",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -48221,6 +48451,7 @@
     "name": "Exalted Shoulderguard",
     "img": "/images/research/exalted-shoulderguard.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -48386,6 +48617,7 @@
     "name": "Exalted Trek",
     "img": "/images/research/exalted-trek.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -48551,6 +48783,7 @@
     "name": "Molten Blades I",
     "img": "/images/research/molten-blades-i.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -49491,6 +49724,7 @@
     "name": "Molten Guard I",
     "img": "/images/research/molten-guard-i.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -50431,6 +50665,7 @@
     "name": "Molten Plating I",
     "img": "/images/research/molten-plating-i.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -51371,6 +51606,7 @@
     "name": "Molten Shields I",
     "img": "/images/research/molten-shields-i.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -52311,6 +52547,7 @@
     "name": "Indomitable Wall",
     "img": "/images/research/indomitable-wall.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 3,
     "levels": [
       {
@@ -52499,6 +52736,7 @@
     "name": "Molten Blades II",
     "img": "/images/research/molten-blades-ii.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -54841,6 +55079,7 @@
     "name": "Molten Guard II",
     "img": "/images/research/molten-guard-ii.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -57183,6 +57422,7 @@
     "name": "Molten Plating II",
     "img": "/images/research/molten-plating-ii.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -59525,6 +59765,7 @@
     "name": "Molten Shields II",
     "img": "/images/research/molten-shields-ii.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -61867,6 +62108,7 @@
     "name": "Solar Supremacy",
     "img": "/images/research/solar-supremacy.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 5,
     "levels": [
       {
@@ -62644,6 +62886,7 @@
     "name": "Molten Blades III",
     "img": "/images/research/molten-blades-iii.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -64964,6 +65207,7 @@
     "name": "Molten Guard III",
     "img": "/images/research/molten-guard-iii.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -67284,6 +67528,7 @@
     "name": "Molten Plating III",
     "img": "/images/research/molten-plating-iii.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -69604,6 +69849,7 @@
     "name": "Molten Shields III",
     "img": "/images/research/molten-shields-iii.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -71924,6 +72170,7 @@
     "name": "Exalted Infantry First Aid",
     "img": "/images/research/exalted-infantry-first-aid.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -72404,6 +72651,7 @@
     "name": "Exalted Infantry Healing",
     "img": "/images/research/exalted-infantry-healing.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -72884,6 +73132,7 @@
     "name": "Exalted Infantry Training",
     "img": "/images/research/exalted-infantry-training.png",
     "category": "T12 Infantry",
+    "queue": "warAcademy",
     "tier": 8,
     "levels": [
       {
@@ -73369,6 +73618,7 @@
     "name": "Exalted Lancer",
     "img": "",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -73411,6 +73661,7 @@
     "name": "Exalted Pauldron",
     "img": "/images/research/exalted-pauldron.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -73576,6 +73827,7 @@
     "name": "Exalted Pike",
     "img": "/images/research/exalted-pike.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -73741,6 +73993,7 @@
     "name": "Exalted Platemail",
     "img": "/images/research/exalted-platemail.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -73906,6 +74159,7 @@
     "name": "Exalted Warcrown",
     "img": "/images/research/exalted-warcrown.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -74072,6 +74326,7 @@
     "name": "Exalted Warpath",
     "img": "/images/research/exalted-warpath.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -74237,6 +74492,7 @@
     "name": "Molten Helmets I",
     "img": "/images/research/molten-helmets-i.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -75177,6 +75433,7 @@
     "name": "Molten Lance I",
     "img": "/images/research/molten-lance-i.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -76117,6 +76374,7 @@
     "name": "Molten Tactics I",
     "img": "/images/research/molten-tactics-i.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -77057,6 +77315,7 @@
     "name": "Molten Vambrace I",
     "img": "/images/research/molten-vambrace-i.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -77997,6 +78256,7 @@
     "name": "Meridian Phalanx",
     "img": "/images/research/meridian-phalanx.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 3,
     "levels": [
       {
@@ -78185,6 +78445,7 @@
     "name": "Molten Helmets II",
     "img": "/images/research/molten-helmets-ii.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -80527,6 +80788,7 @@
     "name": "Molten Lance II",
     "img": "/images/research/molten-lance-ii.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -82869,6 +83131,7 @@
     "name": "Molten Tactics II",
     "img": "/images/research/molten-tactics-ii.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -85211,6 +85474,7 @@
     "name": "Molten Vambrace II",
     "img": "/images/research/molten-vambrace-ii.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -87553,6 +87817,7 @@
     "name": "Solar Supremacy",
     "img": "/images/research/solar-supremacy-lanc.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 5,
     "levels": [
       {
@@ -88330,6 +88595,7 @@
     "name": "Molten Helmets III",
     "img": "/images/research/molten-helmets-iii.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -90650,6 +90916,7 @@
     "name": "Molten Lance III",
     "img": "/images/research/molten-lance-iii.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -92970,6 +93237,7 @@
     "name": "Molten Tactics III",
     "img": "/images/research/molten-tactics-iii.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -95290,6 +95558,7 @@
     "name": "Molten Vambrace III",
     "img": "/images/research/molten-vambrace-iii.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -97610,6 +97879,7 @@
     "name": "Exalted Lancer First Aid",
     "img": "/images/research/exalted-lancer-first-aid.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -98090,6 +98360,7 @@
     "name": "Exalted Lancer Healing",
     "img": "/images/research/exalted-lancer-healing.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -98570,6 +98841,7 @@
     "name": "Exalted Lancer Training",
     "img": "/images/research/exalted-lancer-training.png",
     "category": "T12 Lancer",
+    "queue": "warAcademy",
     "tier": 8,
     "levels": [
       {
@@ -99055,6 +99327,7 @@
     "name": "Exalted Blunderbuss",
     "img": "/images/research/exalted-blunderbuss.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -99220,6 +99493,7 @@
     "name": "Exalted Cadence",
     "img": "/images/research/exalted-cadence.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -99385,6 +99659,7 @@
     "name": "Exalted Mantle",
     "img": "/images/research/exalted-mantle.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -99550,6 +99825,7 @@
     "name": "Exalted Marksman",
     "img": "",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -99592,6 +99868,7 @@
     "name": "Exalted Veil",
     "img": "/images/research/exalted-veil.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -99758,6 +100035,7 @@
     "name": "Exalted War Garb",
     "img": "/images/research/exalted-war-grab.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 1,
     "levels": [
       {
@@ -99923,6 +100201,7 @@
     "name": "Molten Grips I",
     "img": "/images/research/molten-grips-i.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -100863,6 +101142,7 @@
     "name": "Molten Scales I",
     "img": "/images/research/molten-scales-i.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -101803,6 +102083,7 @@
     "name": "Molten Sharpshooting I",
     "img": "/images/research/molten-sharpshooting-i.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -102743,6 +103024,7 @@
     "name": "Molten Shot I",
     "img": "/images/research/molten-shot-i.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 2,
     "levels": [
       {
@@ -103683,6 +103965,7 @@
     "name": "Starfire",
     "img": "/images/research/starfire.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 3,
     "levels": [
       {
@@ -103871,6 +104154,7 @@
     "name": "Molten Grips II",
     "img": "/images/research/molten-grips-ii.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -106213,6 +106497,7 @@
     "name": "Molten Scales II",
     "img": "/images/research/molten-scales-ii.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -108555,6 +108840,7 @@
     "name": "Molten Sharpshooting II",
     "img": "/images/research/molten-sharpshooting-ii.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -110897,6 +111183,7 @@
     "name": "Molten Shot II",
     "img": "/images/research/molten-shot-ii.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 4,
     "levels": [
       {
@@ -113239,6 +113526,7 @@
     "name": "Solar Supremacy",
     "img": "/images/research/solar-supremacy-mm.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 5,
     "levels": [
       {
@@ -114016,6 +114304,7 @@
     "name": "Molten Grips III",
     "img": "/images/research/molten-grips-iii.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -116336,6 +116625,7 @@
     "name": "Molten Scales III",
     "img": "/images/research/molten-scales-iii.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -118656,6 +118946,7 @@
     "name": "Molten Sharpshooting III",
     "img": "/images/research/molten-sharpshooting-iii.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -120976,6 +121267,7 @@
     "name": "Molten Shot III",
     "img": "/images/research/molten-shot-iii.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 6,
     "levels": [
       {
@@ -123296,6 +123588,7 @@
     "name": "Exalted Marksman First Aid",
     "img": "/images/research/exalted-marksman-first-aid.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -123776,6 +124069,7 @@
     "name": "Exalted Marksman Healing",
     "img": "/images/research/exalted-marksman-healing.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 7,
     "levels": [
       {
@@ -124256,6 +124550,7 @@
     "name": "Exalted Marksman Training",
     "img": "/images/research/exalted-marksman-training.png",
     "category": "T12 Marksman",
+    "queue": "warAcademy",
     "tier": 8,
     "levels": [
       {
