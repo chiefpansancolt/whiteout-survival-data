@@ -35,18 +35,21 @@ its own levels, as in the game.
 
 ## Result
 
-| Field                  | Meaning                                                                                                  |
-| ---------------------- | -------------------------------------------------------------------------------------------------------- |
-| `items`                | One entry for each goal with `id`, `name`, `category`, `steps`, `resources`, `power`, and `baseSeconds`. |
-| `steps`                | Number of levels bought.                                                                                 |
-| `resources`            | Total amount of each item, as `{ itemId, amount }`.                                                      |
-| `power`                | Power gained.                                                                                            |
-| `baseSeconds`          | The research time of all steps added together, before the speed bonus.                                   |
-| `researchSpeedPercent` | The speed in percent that `seconds` uses, with the buffs added.                                          |
-| `seconds`              | The time after the speed bonus, rounded down.                                                            |
-| `stepsWithoutTime`     | The number of steps that have no time in the data. They count as 0 seconds.                              |
-| `unmetPrerequisites`   | Levels that need another research line at a level that the plan does not reach.                          |
-| `buildingRequirements` | The highest building level that the steps need, such as `war-academy` at `FC 5`.                         |
+| Field                    | Meaning                                                                                                       |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| `items`                  | One entry for each goal with `id`, `name`, `category`, `steps`, `resources`, `power`, and `baseSeconds`.      |
+| `steps`                  | Number of levels bought.                                                                                      |
+| `resources`              | Total amount of each item, as `{ itemId, amount }`.                                                           |
+| `power`                  | Power gained.                                                                                                 |
+| `baseSeconds`            | The research time of all steps added together, before the speed bonus.                                        |
+| `researchSpeedPercent`   | The speed in percent that `seconds` uses, with the buffs added.                                               |
+| `seconds`                | The time after the speed bonus, rounded down.                                                                 |
+| `stepsWithoutTime`       | The number of steps that have no time in the data. They count as 0 seconds.                                   |
+| `unmetPrerequisites`     | Levels that need another research line at a level that the plan does not reach.                               |
+| `buildingRequirements`   | The highest building level that the steps need, such as `war-academy` at `FC 5`.                              |
+| `speedupMinutesNeeded`   | The `seconds` in minutes, rounded up.                                                                         |
+| `speedupPointsPerMinute` | Points for each minute of research speedups in `svs`, `allianceShowdown`, and `kingOfIcefield`.               |
+| `eventPoints`            | The Fire Crystal Shard points in `svs`, `allianceShowdown`, and `kingOfIcefield`, and the `hallOfChief` list. |
 
 ## How it works
 
@@ -66,6 +69,16 @@ line it requires and the planned level. In the example, the first level needs
 
 For building prerequisites, `buildingRequirements` keeps the highest level for each building,
 compared by its order in `buildings()`.
+
+## Event points
+
+Speedups are not an input. The result gives `speedupMinutesNeeded` and `speedupPointsPerMinute`, and
+the interface multiplies the points with the minutes the user spends.
+
+SvS, Alliance Showdown, and King of Icefield score each Fire Crystal Shard used for research. Hall
+of Chief scores each point of power gained through research. `eventPoints.hallOfChief` lists each
+multiplier (`pointsPerPower`) with the event days that use it and the points it gives. The point
+values are read from the scoring rows of `events()`.
 
 ## Errors
 

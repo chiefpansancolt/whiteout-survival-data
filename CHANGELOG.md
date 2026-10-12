@@ -31,6 +31,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `heroGenerationAt()` gives the highest hero generation unlocked at a server age.
 - Dawn Academy has an `unlockFurnaceLevel`, and `DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL` gives the
   Furnace level that unlocks Daybreak Island.
+- Event scoring actions that name one item have an `itemId`, six events have a `scoreUnit`, and the
+  61 events that are not Core events have a `resultShape`. `eventRankingTables()` gives every
+  ranking table of an event in one shape.
+- `calculateResearch()`, `calculateTroops()`, and `calculateExperts()` give `eventPoints` and
+  `speedupPointsPerMinute`, and the research and troops results give `speedupMinutesNeeded`.
 - Chief Gear and Chief Charm levels have an `order`, and the 30 speedup items have a `speedup` with
   their type and length in minutes. Every speedup type has a 1m, 5m, 1h, 3h, and 8h item. Nine of
   them are placeholders with no icon.

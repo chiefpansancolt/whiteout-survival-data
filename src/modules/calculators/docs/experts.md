@@ -44,15 +44,17 @@ from 1 to the max level of the skill.
 
 The result has one entry in `items` for each expert, and the same fields summed over all experts.
 
-| Field          | Meaning                                  |
-| -------------- | ---------------------------------------- |
-| `books`        | Books of Knowledge for the skill levels. |
-| `sigils`       | Expert sigils for the advancements.      |
-| `exp`          | Skill EXP for the skill levels.          |
-| `affinity`     | Affinity points for the affinity levels. |
-| `levels`       | Affinity levels gained.                  |
-| `advancements` | Advancements paid for.                   |
-| `skillLevels`  | Skill levels gained, for all skills.     |
+| Field                    | Meaning                                                                                    |
+| ------------------------ | ------------------------------------------------------------------------------------------ |
+| `books`                  | Books of Knowledge for the skill levels.                                                   |
+| `sigils`                 | Expert sigils for the advancements.                                                        |
+| `exp`                    | Skill EXP for the skill levels.                                                            |
+| `affinity`               | Affinity points for the affinity levels.                                                   |
+| `levels`                 | Affinity levels gained.                                                                    |
+| `advancements`           | Advancements paid for.                                                                     |
+| `skillLevels`            | Skill levels gained, for all skills.                                                       |
+| `speedupPointsPerMinute` | Points for each minute of speedups to learn expert skills in `svs` and `allianceShowdown`. |
+| `eventPoints`            | Points for the `books` and `sigils` in `svs` and `allianceShowdown`.                       |
 
 Each item also has the expert `id` and `name`.
 
@@ -66,6 +68,13 @@ pays for the advancement. A goal at such a level pays only when `goalAdvanced` i
 the final advancement at level 100. An expert that is already advanced at its current level
 (`currentAdvanced`) does not pay again. The affinity points are the sum of the affinity needed for
 each level gained.
+
+## Event points
+
+SvS and Alliance Showdown score each Book of Knowledge and each expert sigil, read from the scoring
+rows of `events()`. King of Icefield and Hall of Chief have no such row. The result does not give
+the speedup minutes, because the package has no value for the EXP that a minute of learning speedup
+gives. The interface multiplies `speedupPointsPerMinute` with the minutes the user spends.
 
 ## Errors
 

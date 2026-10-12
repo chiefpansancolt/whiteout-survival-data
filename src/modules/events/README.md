@@ -6,7 +6,7 @@ event works and what it gives.
 ## Usage
 
 ```ts
-import { events } from "whiteout-survival-data";
+import { eventRankingTables, events } from "whiteout-survival-data";
 
 // Alliance events
 events().byCategory("alliance").count(); // 12
@@ -23,6 +23,11 @@ events()
   .get()
   .filter((e) => e.eventBuffId !== undefined)
   .map((e) => e.id);
+
+// Every ranking table of an event in one shape
+const tables = eventRankingTables(events().find("king-of-icefield")!);
+tables.map((t) => `${t.id} ${t.scope}`);
+// ['personal-1 personal', 'personal-2 personal', 'personal-3 personal', 'personal-4 personal']
 ```
 
 ## Query methods
@@ -33,6 +38,15 @@ events()
 
 The shared terminal methods (`get`, `first`, `find`, `findByName`, `search`, `count`) are described
 in [How It Works](../../../README.md#how-it-works).
+
+`eventRankingTables(event)` returns every ranking table of one event in one shape, so a page does
+not read three fields. Each table has an `id`, the `rankings`, and a `scope` that is `personal` or
+`alliance` when the source states it. The order is the `personalRankings` tables (`personal-1` and
+on, with `basedOn`), the `allianceRankings` table (`alliance`), the `allianceRankingUpdates` lists
+(`alliance-update-1` and on, with the `name` of the update), and the tiers that hold rankings
+(`tier-1` and on, with the `name` of the tier). A tier table has a `scope` only when its name says
+`personal` or `alliance`. The star rating tiers of Alliance Showdown and the winner tier of SvS have
+none. The array is empty for an event with no ranking.
 
 ## Data
 
@@ -55,6 +69,33 @@ The event fields that hold more than text:
 | `missions`, `missionPointsLabel`                          | Missions with base points. The label names the points when they are a currency.                                                                  |
 | `shop`, `shops`, `shopCurrencyItemId`, `shopCurrencyName` | Shop offers with cost and limit, and the currency.                                                                                               |
 | `refreshes`, `heroByGeneration`                           | Refresh costs with quality chances, and the hero shard of each generation.                                                                       |
+| `resultShape`                                             | The form of result the event takes, set on the 61 events that are not Core events. See below.                                                    |
+| `scoreUnit`                                               | What `scoreTotal` counts, on the six events whose targets are not points.                                                                        |
+
+A scoring action can have an `itemId` when its text names one item that is in `items()`: Fire
+Crystal, Refined Fire Crystal, Fire Crystal Shard, Mithril, Gems, Book of Knowledge, the two Wild
+Marks, and the Hero Gear Essence Stone (`essence-stones`). Actions that name a group of items have
+none: the Hero Shards, "any" Expert Sigil, "any" Hero Exclusive Gear Widget, the Recruitments, and
+the speedup minutes.
+
+`scoreUnit` is `flights` for Journey of Light, `spins` for Lucky Wheel, `reapers` for Hero's
+Mission, `Labyrinth Cores` for The Labyrinth, `recycle tokens` for Tundra Album, and
+`Fortune Tokens` for Mia Fortune. The other events count points, and have no `scoreUnit`.
+
+`resultShape` has five values, derived from the data of each event in this order:
+
+| Value           | Rule                                                                   | Events |
+| --------------- | ---------------------------------------------------------------------- | ------ |
+| `waves`         | The event has `waves`.                                                 | 1      |
+| `tier`          | A tier holds `rankings`.                                               | 5      |
+| `ranking`       | The event has `personalRankings` or `allianceRankings`.                | 21     |
+| `milestones`    | A tier has `scoreTotal`, or the event has `pointLevels` or `missions`. | 16     |
+| `participation` | None of the above. The data has no score or rank.                      | 18     |
+
+The four Core events have no `resultShape`. Six events are `milestones` only because they list
+missions: Alliance Mobilization, Beast Whisperer, Flame and Fang, Symphony of Change, Vision of
+Dawn, and Wild Brawl. The site plan counts 14 and 20 for the last two shapes, so check these six if
+a different form fits better. A `resultShape` is data, and an edit in the event file changes it.
 
 ## Notes
 

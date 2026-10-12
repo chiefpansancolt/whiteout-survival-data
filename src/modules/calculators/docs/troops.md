@@ -54,16 +54,19 @@ A camp can train and promote, so it can have several runs, each with its own cou
 
 ## Result
 
-| Field                  | Meaning                                                                                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `capacity`             | The most troops a camp can queue in one batch. All three camps share it.                                      |
-| `camps`                | For each type, `runs` (`troopsPerBatch`, `batches`, `seconds`, in input order) and the `seconds` of the camp. |
-| `tiers`                | One row for each tier 1 to 12 with the change in troops of each type and `total`.                             |
-| `totals`               | The change in troops for each type and in all, summed over the tiers.                                         |
-| `trainingSpeedPercent` | The speed in percent that the times use, with the buffs added.                                                |
-| `resources`            | Meat, wood, coal, and iron as `{ itemId, amount }`, rounded to whole numbers.                                 |
-| `totalSeconds`         | The seconds of the three camps added together. This is the speedup time you need.                             |
-| `longestCampSeconds`   | The seconds of the camp that takes the longest, since the camps train at the same time.                       |
+| Field                    | Meaning                                                                                                       |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| `capacity`               | The most troops a camp can queue in one batch. All three camps share it.                                      |
+| `camps`                  | For each type, `runs` (`troopsPerBatch`, `batches`, `seconds`, in input order) and the `seconds` of the camp. |
+| `tiers`                  | One row for each tier 1 to 12 with the change in troops of each type and `total`.                             |
+| `totals`                 | The change in troops for each type and in all, summed over the tiers.                                         |
+| `trainingSpeedPercent`   | The speed in percent that the times use, with the buffs added.                                                |
+| `resources`              | Meat, wood, coal, and iron as `{ itemId, amount }`, rounded to whole numbers.                                 |
+| `totalSeconds`           | The seconds of the three camps added together. This is the speedup time you need.                             |
+| `longestCampSeconds`     | The seconds of the camp that takes the longest, since the camps train at the same time.                       |
+| `speedupMinutesNeeded`   | The `totalSeconds` in minutes, rounded up.                                                                    |
+| `speedupPointsPerMinute` | Points for each minute of training speedups in `svs`, `allianceShowdown`, and `kingOfIcefield`.               |
+| `eventPoints`            | Training points in `svs`, `allianceShowdown`, `kingOfIcefield`, and `hallOfChief`.                            |
 
 ## How it works
 
@@ -88,6 +91,17 @@ resource at the end, not per run.
 `minTier` (1), `maxTier` (12, read from the troop data), `capacityBoostMultiplier` (3), the Minister
 of Education capacity and speed, the Vice President speed, `mobilizeSpeedPercent`,
 `advancedTrainingSpeedPercent`, and `maxCostReductionPercent` (75).
+
+## Event points
+
+Speedups are not an input. The result gives `speedupMinutesNeeded` and `speedupPointsPerMinute`, and
+the interface multiplies the points with the minutes the user spends.
+
+`eventPoints` scores the "Train 1 Lv. N troop" rows of `events()` for the troops trained in training
+runs, at the tier of each run. A promotion gives no points here, and neither does power, because the
+package has no power value for a troop tier. A tier that an event has no row for gives 0, such as
+tier 12 in King of Icefield and tiers 11 and 12 in Hall of Chief. `hallOfChief` is the points for
+one season, because stage 3 of both seasons gives the same points.
 
 ## Errors
 

@@ -44,6 +44,9 @@ actions (escort and raid). The percent comes from the "Point Boost (%)" progress
 `experts()`, and the bonus is 5% for each level. The bonus of a day is the percent of the points of
 the covered actions, rounded to a whole number.
 
+Every day also has the action "Obtain 500 top-up points through payments (top-up, pack purchase,
+etc.)", worth 3,000 points. It counts as a covered action, so the Dawn Hymn percent applies to it.
+
 `ALLIANCE_SHOWDOWN_TRUCK_ACTION` is exported. It is the pattern `/^(Escort|Raid) 1 truck/`, and it
 matches the truck actions that the bonus skips. Use it to mark those actions in an app.
 
