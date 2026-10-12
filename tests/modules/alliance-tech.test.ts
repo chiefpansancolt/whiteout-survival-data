@@ -139,8 +139,18 @@ describe('alliance tech stats', () => {
     }
   });
 
-  it('keeps the 2000 in level 2 of Storehouse Expansion II as the source states it', () => {
-    const levels = allianceTech().find('storehouse-expansion-ii')!.levels;
-    expect(levels[1]).toMatchObject({ bonus: '2000', amount: 2000, unit: 'flat' });
+  it('reads 50, 100, 200, 300, and 400 percent for Storehouse Expansion II', () => {
+    const node = allianceTech().find('storehouse-expansion-ii')!;
+    expect(node).toMatchObject({
+      stat: 'Alliance Storehouse Capacity',
+      statKey: 'alliance-storehouse-capacity',
+    });
+    expect(node.levels.map((l) => [l.bonus, l.amount, l.unit])).toEqual([
+      ['50%', 50, 'percent'],
+      ['100%', 100, 'percent'],
+      ['200%', 200, 'percent'],
+      ['300%', 300, 'percent'],
+      ['400%', 400, 'percent'],
+    ]);
   });
 });

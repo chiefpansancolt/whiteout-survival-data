@@ -7465,9 +7465,9 @@
           }
         ],
         "timeSeconds": 3600,
-        "bonus": "2000",
-        "amount": 2000,
-        "unit": "flat"
+        "bonus": "100%",
+        "amount": 100,
+        "unit": "percent"
       },
       {
         "level": 3,
@@ -7496,8 +7496,8 @@
           }
         ],
         "timeSeconds": 5400,
-        "bonus": "100%",
-        "amount": 100,
+        "bonus": "200%",
+        "amount": 200,
         "unit": "percent"
       },
       {

@@ -379,3 +379,16 @@ describe('Tool Enhancement I prerequisites', () => {
     }
   });
 });
+
+describe('Ward Expansion III', () => {
+  it('gives Infirmary Capacity at every level', () => {
+    const levels = research().find('ward-expansion-iii')!.levels;
+    expect(levels.map((l) => l.bonus.map((b) => b.stat))).toEqual([
+      ['Infirmary Capacity'],
+      ['Infirmary Capacity'],
+      ['Infirmary Capacity'],
+    ]);
+    expect(levels.map((l) => l.bonus[0].amount)).toEqual([2200, 2200, 2900]);
+    expect(levels.map((l) => l.bonus[0].totalAmount)).toEqual([2200, 4400, 7300]);
+  });
+});

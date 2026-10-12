@@ -136,6 +136,10 @@ Each troop type's 4 tier 2 Molten X I items also require that troop type's Exalt
 1, next to their War Academy building gate. This comes from in-game knowledge. The wiki's
 Prerequisites column omits it for these 12 nodes.
 
+The wiki lists levels 2 and 3 of Ward Expansion III as Construction Speed, with 2,200 and 2,900. The
+package gives Infirmary Capacity at all three levels, as level 1 does, at the request of the package
+owner. No other source states the stat.
+
 Tool Enhancement I also requires Tooling Up I at level 1, next to Ward Expansion I and Camp
 Expansion I. The wiki's Prerequisites column omits it. It was added at the request of the package
 owner, so that Tooling Up I is linked in the tree.

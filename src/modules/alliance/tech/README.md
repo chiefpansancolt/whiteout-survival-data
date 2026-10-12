@@ -56,9 +56,10 @@ The `stat` is a short name for what the node raises, written from its `descripti
 table. For example `Enhances all Troops’ Attack.` gives `Troops Attack`, and
 `Speeds up alliance members’ Coal mining in the wilderness.` gives `Coal Gathering Speed`. The
 `statKey` is the same kebab-case key as in `research()`, so `infantry-attack` means the same stat in
-both. The `bonus` of each level is the bonus at that level, not a step. Level 2 of Storehouse
-Expansion II has the bonus `2000` in the source, between `50%` and `100%`, and its `unit` is `flat`
-as the source states it.
+both. The `bonus` of each level is the bonus at that level, not a step. The wiki writes the bonuses
+of Storehouse Expansion II as `50%`, `2000`, `100%`, `300%`, and `400%`. The package reads `50%`,
+`100%`, `200%`, `300%`, and `400%`, like Storehouse Expansion I, at the request of the package
+owner. No other source states them.
 
 The wiki writes upgrade time as `M:S` under one hour (such as `30:00`) and `H:M:S` from one hour
 (such as `01:00:00`). Both forms are converted to seconds.

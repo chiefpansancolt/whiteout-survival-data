@@ -31207,12 +31207,12 @@
         ],
         "bonus": [
           {
-            "stat": "Construction Speed",
-            "statKey": "construction-speed",
+            "stat": "Infirmary Capacity",
+            "statKey": "infirmary-capacity",
             "value": "2200",
             "amount": 2200,
             "unit": "flat",
-            "totalAmount": 2200
+            "totalAmount": 4400
           }
         ],
         "power": 4400,
@@ -31251,12 +31251,12 @@
         ],
         "bonus": [
           {
-            "stat": "Construction Speed",
-            "statKey": "construction-speed",
+            "stat": "Infirmary Capacity",
+            "statKey": "infirmary-capacity",
             "value": "2900",
             "amount": 2900,
             "unit": "flat",
-            "totalAmount": 5100
+            "totalAmount": 7300
           }
         ],
         "power": 5800,
