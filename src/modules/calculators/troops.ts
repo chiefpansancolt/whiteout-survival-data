@@ -1,6 +1,6 @@
 import { buildings } from '@/modules/buildings';
 import { events } from '@/modules/events';
-import { troops } from '@/modules/troops';
+import { troopPower, troops } from '@/modules/troops';
 import {
   TroopCalculation,
   TroopCalculatorInput,
@@ -47,6 +47,15 @@ const CAMP_IDS: Record<TroopType, string> = {
 const RESOURCE_IDS = troops()
   .first()!
   .tiers[0].cost.map((c) => c.itemId);
+
+/**
+ * Returns the Fire Crystal level of a camp level label. `FC 3` and its steps `FC 3-1` to `FC 3-4`
+ * are level 3. Every label before `FC 1` is level 0.
+ */
+export function campFireCrystalLevel(level: string): number {
+  const match = /^FC (\d+)/.exec(level);
+  return match ? Number(match[1]) : 0;
+}
 
 function campCapacity(troopType: TroopType, level: string): number {
   const camp = buildings().find(CAMP_IDS[troopType])!;
@@ -207,6 +216,26 @@ export function calculateTroops(input: TroopCalculatorInput): TroopCalculation {
   tiers.forEach((row) => {
     row.total = row.infantry + row.lancer + row.marksman;
   });
+  const fireCrystalLevels = {
+    infantry: campFireCrystalLevel(input.camps.infantry.level),
+    lancer: campFireCrystalLevel(input.camps.lancer.level),
+    marksman: campFireCrystalLevel(input.camps.marksman.level),
+  };
+  const tierPower = tiers.map((row): TroopTierRow => {
+    const power = { tier: row.tier, infantry: 0, lancer: 0, marksman: 0, total: 0 };
+    TROOP_TYPES.forEach((type) => {
+      const perTroop = troopPower(troops().find(type)!, row.tier, fireCrystalLevels[type])!;
+      power[type] = row[type] * perTroop;
+    });
+    power.total = power.infantry + power.lancer + power.marksman;
+    return power;
+  });
+  const totalPower = {
+    infantry: tierPower.reduce((sum, r) => sum + r.infantry, 0),
+    lancer: tierPower.reduce((sum, r) => sum + r.lancer, 0),
+    marksman: tierPower.reduce((sum, r) => sum + r.marksman, 0),
+    total: tierPower.reduce((sum, r) => sum + r.total, 0),
+  };
   const totals = {
     infantry: tiers.reduce((sum, r) => sum + r.infantry, 0),
     lancer: tiers.reduce((sum, r) => sum + r.lancer, 0),
@@ -225,6 +254,9 @@ export function calculateTroops(input: TroopCalculatorInput): TroopCalculation {
     camps,
     tiers,
     totals,
+    fireCrystalLevels,
+    tierPower,
+    totalPower,
     trainingSpeedPercent: speed,
     resources: RESOURCE_IDS.map((itemId, i): UpgradeMaterial => ({
       itemId,

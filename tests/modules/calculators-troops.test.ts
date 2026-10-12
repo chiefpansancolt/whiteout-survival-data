@@ -2,6 +2,7 @@ import { buildings } from '@/modules/buildings';
 import {
   ALLIANCE_SHOWDOWN_TRUCK_ACTION,
   calculateTroops,
+  campFireCrystalLevel,
   SVS_BATTLE_DAY_ID,
   TROOP_CALCULATOR,
 } from '@/modules/calculators';
@@ -501,5 +502,97 @@ describe('calculateTroops event points', () => {
     const result = training(10, 'max', 2);
     expect(result.totalSeconds).toBe(190608);
     expect(result.speedupMinutesNeeded).toBe(3177);
+  });
+});
+
+describe('campFireCrystalLevel', () => {
+  it('reads the Fire Crystal level of a camp level label', () => {
+    expect(campFireCrystalLevel('FC 1')).toBe(1);
+    expect(campFireCrystalLevel('FC 3-2')).toBe(3);
+    expect(campFireCrystalLevel('FC 10')).toBe(10);
+  });
+
+  it('gives level 0 to every label before FC 1', () => {
+    expect(campFireCrystalLevel('1')).toBe(0);
+    expect(campFireCrystalLevel('30')).toBe(0);
+    expect(campFireCrystalLevel('30-4')).toBe(0);
+  });
+
+  it('gives a level to every camp level of the data', () => {
+    const labels = buildings()
+      .find('infantry-camp')!
+      .levels.map((l) => l.label);
+    const levels = labels.map(campFireCrystalLevel);
+    expect(Math.max(...levels)).toBe(10);
+    expect(levels.every((l, i) => i === 0 || l >= levels[i - 1])).toBe(true);
+  });
+});
+
+describe('calculateTroops power', () => {
+  it('multiplies the troops of a tier with the base power at a camp without Fire Crystal levels', () => {
+    const result = calculateTroops({
+      camps: camps('30', {
+        infantry: { level: '30', runs: [train(10, 5)] },
+        lancer: { level: '30', runs: [train(3, 7)] },
+      }),
+    });
+    expect(result.fireCrystalLevels).toEqual({ infantry: 0, lancer: 0, marksman: 0 });
+    expect(result.tierPower[9]).toEqual({
+      tier: 10,
+      infantry: 5 * 66,
+      lancer: 0,
+      marksman: 0,
+      total: 330,
+    });
+    expect(result.tierPower[2]).toEqual({
+      tier: 3,
+      infantry: 0,
+      lancer: 7 * 6,
+      marksman: 0,
+      total: 42,
+    });
+    expect(result.totalPower).toEqual({ infantry: 330, lancer: 42, marksman: 0, total: 372 });
+  });
+
+  it('uses the Fire Crystal level of the camp for tiers 10 and 11', () => {
+    const result = calculateTroops({
+      camps: camps('30', {
+        infantry: { level: 'FC 2-3', runs: [train(11, 10)] },
+        lancer: { level: 'FC 10', runs: [train(10, 10)] },
+      }),
+    });
+    expect(result.fireCrystalLevels).toEqual({ infantry: 2, lancer: 10, marksman: 0 });
+    expect(result.tierPower[10].infantry).toBe(10 * 92);
+    expect(result.tierPower[9].lancer).toBe(10 * 121);
+    expect(result.totalPower).toEqual({ infantry: 920, lancer: 1210, marksman: 0, total: 2130 });
+  });
+
+  it('keeps the base power for tiers that do not change with the Fire Crystal level', () => {
+    const result = calculateTroops({
+      camps: camps('FC 10', {
+        infantry: { level: 'FC 10', runs: [train(12, 2)] },
+        lancer: { level: 'FC 10', runs: [train(4, 3)] },
+      }),
+    });
+    expect(result.tierPower[11].infantry).toBe(2 * 178);
+    expect(result.tierPower[3].lancer).toBe(3 * 9);
+  });
+
+  it('takes the power of the lower tier away and adds the power of the higher tier on a promotion', () => {
+    const result = calculateTroops({
+      camps: camps('30', {
+        marksman: { level: 'FC 10', runs: [promote(9, 11, 10)] },
+      }),
+    });
+    expect(result.tierPower[8].marksman).toBe(-10 * 50);
+    expect(result.tierPower[10].marksman).toBe(10 * 148);
+    expect(result.totalPower.marksman).toBe(980);
+    expect(result.totalPower.total).toBe(980);
+  });
+
+  it('gives no power for a calculation with no runs', () => {
+    const result = calculateTroops({ camps: camps('30') });
+    expect(result.totalPower).toEqual({ infantry: 0, lancer: 0, marksman: 0, total: 0 });
+    expect(result.tierPower).toHaveLength(12);
   });
 });

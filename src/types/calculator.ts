@@ -150,6 +150,9 @@ export interface TroopEventPoints {
 }
 
 export interface TroopCalculation {
+  fireCrystalLevels: Record<TroopType, number>;
+  tierPower: TroopTierRow[];
+  totalPower: Omit<TroopTierRow, 'tier'>;
   /** All three camps share this capacity. */
   capacity: number;
   camps: Record<TroopType, TroopCampResult>;
