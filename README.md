@@ -120,13 +120,14 @@ notes on where the data came from. The counts below are the number of entries ea
 
 ### Events, items, and account
 
-| Factory       | Entries | Description                                 | Details                                    |
-| ------------- | ------- | ------------------------------------------- | ------------------------------------------ |
-| `events()`    | 65      | Game events with scoring, rewards, and tips | [README](src/modules/events/README.md)     |
-| `eventBuff()` | 14      | Buff sources that apply in each game mode   | [README](src/modules/event-buff/README.md) |
-| `items()`     | 273     | Item catalog with icons and sources         | [README](src/modules/items/README.md)      |
-| `skins()`     | 191     | Cosmetic skins                              | [README](src/modules/skins/README.md)      |
-| `vip()`       | 12      | VIP 1 to 12 progression                     | [README](src/modules/vip/README.md)        |
+| Factory            | Entries | Description                                                                     | Details                                         |
+| ------------------ | ------- | ------------------------------------------------------------------------------- | ----------------------------------------------- |
+| `events()`         | 65      | Game events with scoring, rewards, and tips                                     | [README](src/modules/events/README.md)          |
+| `eventBuff()`      | 14      | Buff sources that apply in each game mode                                       | [README](src/modules/event-buff/README.md)      |
+| `items()`          | 273     | Item catalog with icons and sources                                             | [README](src/modules/items/README.md)           |
+| `skins()`          | 191     | Cosmetic skins                                                                  | [README](src/modules/skins/README.md)           |
+| `serverTimeline()` | 30      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()` | [README](src/modules/server-timeline/README.md) |
+| `vip()`            | 12      | VIP 1 to 12 progression                                                         | [README](src/modules/vip/README.md)             |
 
 ## Calculators
 

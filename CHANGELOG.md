@@ -7,6 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game data
+
+- `serverTimeline()`: the 30 server age milestones from day 0 to day 1160, with the heroes, pets,
+  and other content that unlock at each one. `resolve()` loads the full hero, expert, pet, event,
+  and Fire Crystal level badge entries. `serverAge()` and `serverTimelineStatus()` take a server
+  start date and give the server age, what is unlocked, and what comes next. Each hero lists the
+  events that give its shards.
+
 ## [0.1.0] - 2026-10-07
 
 First release. It includes the build tooling, lint and format config, the test harness, and the
