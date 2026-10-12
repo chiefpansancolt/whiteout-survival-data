@@ -11,6 +11,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game data
 
+- `heroGearSlots()`: the four Hero Gear slots, Goggles, Gloves, Belt, and Boots, with an icon of the
+  piece for each troop type each
 - `unreleasedExperts()`: the experts that are announced and not released, flagged `unreleased` in
   the expert data, with a name, an icon, and the unlock requirement. It holds Justus.
 - `serverTimeline()`: the 32 server age milestones from day 0 to day 1160, with the heroes, experts,

@@ -30,6 +30,8 @@ in [How It Works](../../../README.md#how-it-works).
 
 ## Data
 
+The slots and their icons are in [`heroGearSlots()`](../hero-gear-slots/README.md).
+
 The data is in `data/chief/hero-gear-stats.json`. It has 12 entries, one for each of the 4 slots and
 3 troop types, with ids such as `goggles-infantry`. Each entry has these fields.
 
