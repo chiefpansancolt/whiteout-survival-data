@@ -165,7 +165,7 @@ describe('Expert roster', () => {
   });
 
   describe('level and affinity power', () => {
-    // Readings taken in the game: [expert, level, levelPower, affinityPower, affinity gain per advancement].
+    // Values read in game. Tuple: [expert, level, levelPower, affinityPower, affinityGainPerAdvancement].
     const readings: [string, number, number, number, number][] = [
       ['Gareth', 10, 594000, 216000, 216000],
       ['Cyrille', 80, 496800, 345600, 43200],

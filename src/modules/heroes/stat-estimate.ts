@@ -1,6 +1,5 @@
 import { Hero, HeroStatEstimate } from '@/types';
 
-/** The hero level, maximum star, and maximum tier that `estimateHeroStats()` accepts. */
 export const HERO_STAT_ESTIMATE = {
   level: 80,
   maxStar: 5,
@@ -8,15 +7,13 @@ export const HERO_STAT_ESTIMATE = {
 } as const;
 
 /*
- * This is the formula of the WoS Tools Hero Hub compare tab. The Exploration star growth is 1.376
- * and not 1.4 of WoS Tools. The value is fitted to Hector at level 80 and 3.0 to 3.3 stars.
- * The stat at a star is:
+ * This is the formula of the WoS Tools Hero Hub compare tab. The Exploration growth is 1.376 and
+ * not 1.4 of WoS Tools. The value is fitted to Hector at 3.0 to 3.3 stars.
  *
  *   ratio * (zeroStar + firstStep * (growth^star - 1) / (growth - 1)
  *            + tier * tierShare * firstStep * growth^star + skillBonus)
  *
- * The ratio is the 5-star stat of the hero divided by the REFERENCE stat. The first step of the
- * Exploration stats makes the REFERENCE 5-star stats exact.
+ * The ratio is the 5-star stat of the hero divided by the REFERENCE stat.
  */
 const TIER_SHARE = 0.147;
 const REFERENCE = { attack: 4928, defense: 4928, health: 49284, expedition: 444.35 };
@@ -62,16 +59,14 @@ function checkWholeNumber(name: string, value: number, max: number): void {
 }
 
 /**
- * Estimates the stats of a hero at level 80 for a star and tier.
- *
- * The stats stored on a hero are the 5-star stats. The function scales them down for lower stars.
- * It has been checked only against Hector at 3.0 to 3.3 stars.
+ * Estimates the stats of a hero at level 80 by scaling down the stored 5-star stats. The result is
+ * checked only against Hector at 3.0 to 3.3 stars.
  *
  * @param star Whole stars from 0 to 5.
  * @param tier Tier inside the star from 0 to 5, as in the in-game label `star.tier`. Must be 0 at 5 stars.
  * @returns Exploration stats as whole numbers and Expedition stats in percent with 2 decimals.
- * At 5 stars, `estimated` is false and the stats are the ones stored on the hero.
- * @throws RangeError when `star` or `tier` is not a whole number in range, or `tier` is above 0 at 5 stars.
+ * At 5 stars, `estimated` is false and the stats are the stored ones.
+ * @throws RangeError when `star` or `tier` is not a whole number in range.
  */
 export function estimateHeroStats(hero: Hero, star: number, tier = 0): HeroStatEstimate {
   checkWholeNumber('star', star, HERO_STAT_ESTIMATE.maxStar);

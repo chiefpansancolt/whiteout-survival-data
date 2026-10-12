@@ -35,11 +35,8 @@ export type HeroGearSlot = 'goggles' | 'gloves' | 'belt' | 'boots';
 export interface HeroGearStatLevel {
   /** Levels 1 to 100 are enhancement levels. Levels 101 to 200 are empowerment levels 1 to 100. */
   level: number;
-  /** Flat Attack or Defense. */
   combatStat: number;
-  /** Flat HP. */
   health: number;
-  /** Percent Lethality or Health. */
   percentStat: number;
 }
 
@@ -49,7 +46,6 @@ export interface HeroGearMilestone {
   stat: string;
 }
 
-/** The stats of one piece of hero gear, by level. */
 export interface HeroGearStats {
   id: string;
   name: string;

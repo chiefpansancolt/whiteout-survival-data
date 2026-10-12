@@ -10,7 +10,6 @@ import {
   UpgradeMaterial,
 } from '@/types';
 
-/** The research speed buffs that `calculateResearch()` adds, in percent. */
 export const RESEARCH_CALCULATOR = {
   stateBuffSpeedPercent: 10,
   vicePresidentSpeedPercent: { regular: 10, supreme: 15 },

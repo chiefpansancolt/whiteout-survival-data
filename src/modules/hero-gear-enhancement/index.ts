@@ -14,7 +14,6 @@ export class HeroGearEnhancementQuery extends QueryBase<HeroGearEnhancementLevel
   }
 }
 
-/** Returns a query over the shared Hero Gear enhancement table. Pass `source` to query a different array instead of the packaged data. */
 export function heroGearEnhancement(
   source: HeroGearEnhancementLevel[] = heroGearEnhancementData,
 ): HeroGearEnhancementQuery {

@@ -9,7 +9,7 @@ export class AllianceBannerQuery extends QueryBase<AllianceBannerLevel> {
     super(data);
   }
 
-  /** Keeps the level range that contains `level`. The result is empty when no range contains it. */
+  /** Matches the row whose level range contains `level`. */
   atLevel(level: number): AllianceBannerQuery {
     return new AllianceBannerQuery(
       this.data.filter((l) => level >= l.minLevel && level <= l.maxLevel),
@@ -17,7 +17,6 @@ export class AllianceBannerQuery extends QueryBase<AllianceBannerLevel> {
   }
 }
 
-/** Returns a query over the banner build-cost table. Pass `source` to query a different array instead of the packaged data. */
 export function allianceBanner(
   source: AllianceBannerLevel[] = allianceBannerData,
 ): AllianceBannerQuery {

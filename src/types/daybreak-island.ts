@@ -54,7 +54,6 @@ export interface DecorationLevel {
 export interface Decoration {
   id: string;
   name: string;
-  /** Icon path. Present only for decorations that have an image. */
   img?: string;
   category: DecorationCategory;
   cost?: DecorationCost[];
@@ -64,6 +63,5 @@ export interface Decoration {
   prosperityAtMaxLevel?: number;
   /** Rare, Epic, Mythic, and Unique only. A level without known buff data has a blank buff. */
   levels?: DecorationLevel[];
-  /** True for decorations from a time-limited source, such as a shop rotation or event pack. Omitted otherwise. */
   limited?: boolean;
 }

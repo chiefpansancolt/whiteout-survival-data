@@ -10,7 +10,6 @@ export class TroopQuery extends QueryBase<TroopData> {
   }
 }
 
-/** Returns a query over Infantry, Lancer, and Marksman. Pass `source` to query a different array instead of the packaged data. */
 export function troops(source: TroopData[] = troopData): TroopQuery {
   return new TroopQuery(source);
 }

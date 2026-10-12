@@ -18,7 +18,6 @@ export class HeroQuery extends QueryBase<Hero> {
   }
 }
 
-/** Returns a query over all heroes. Pass `source` to query a different array instead of the packaged data. */
 export function heroes(source: Hero[] = heroData): HeroQuery {
   return new HeroQuery(source);
 }

@@ -18,10 +18,8 @@ import {
   UpgradeMaterial,
 } from '@/types';
 
-/** The star, tier, and widget level ranges that `calculateHeroUpgrade()` accepts. */
 export const HERO_UPGRADE_CALCULATOR = {
   maxStar: 5,
-  /** Tiers go from 0 to 5 inside a star, as the in-game star label x.0 to x.5. */
   maxTier: 5,
   maxWidgetLevel: heroWidgets().count(),
 } as const;

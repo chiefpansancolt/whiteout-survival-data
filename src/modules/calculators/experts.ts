@@ -1,7 +1,6 @@
 import { experts } from '@/modules/experts';
 import { Expert, ExpertCalculation, ExpertGoal, ExpertItemResult, ExpertSkillGoal } from '@/types';
 
-/** The highest affinity level of an expert. */
 export const EXPERT_MAX_LEVEL = 100;
 
 function checkLevel(name: string, owner: string, level: number, max: number): void {

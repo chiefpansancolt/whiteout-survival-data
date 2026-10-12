@@ -10,7 +10,6 @@ import {
   UpgradeMaterial,
 } from '@/types';
 
-/** The values that `calculateTroops()` uses. An app can read them to offer the same choices. */
 export const TROOP_CALCULATOR = {
   troopTypes: ['infantry', 'lancer', 'marksman'],
   minTier: 1,
@@ -90,7 +89,6 @@ function trainingSpeed(input: TroopCalculatorInput): number {
   );
 }
 
-/** A promotion step uses the `promotionCost` of the tier when the data has one. Otherwise it costs the difference of the two training costs. */
 function troopCost(troopType: TroopType, action: TroopCampAction) {
   const tiers = troops().find(troopType)!.tiers;
   const amountsOf = (tier: number) => tiers[tier - 1].cost.map((c) => c.amount);

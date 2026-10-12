@@ -10,7 +10,6 @@ export class AllianceFacilityQuery extends QueryBase<AllianceFacility> {
   }
 }
 
-/** Returns a query over all Alliance Facility types. Pass `source` to query a different array instead of the packaged data. */
 export function allianceFacility(
   source: AllianceFacility[] = allianceFacilityData,
 ): AllianceFacilityQuery {

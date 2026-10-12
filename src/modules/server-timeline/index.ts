@@ -73,27 +73,21 @@ export class ServerTimelineQuery extends QueryBase<ServerTimelineMilestone> {
     super(data);
   }
 
-  /** Keeps the milestones at or before this server age in days. */
+  /** Includes the milestones on day `age`. */
   unlockedAt(age: number): ServerTimelineQuery {
     return new ServerTimelineQuery(this.data.filter((m) => m.day <= age));
   }
 
-  /** Keeps the milestones after this server age in days. */
   lockedAt(age: number): ServerTimelineQuery {
     return new ServerTimelineQuery(this.data.filter((m) => m.day > age));
   }
 
-  /**
-   * Returns the milestones with every id replaced by its entry: heroes, experts, pets, and events
-   * from their modules, Fire Crystal level badges, and the item of each unlock. Throws `Error`
-   * when an id matches no entry.
-   */
+  /** Replaces every id with its entry. Throws `Error` when an id matches no entry. */
   resolve(): ResolvedServerTimelineMilestone[] {
     return this.data.map(resolveMilestone);
   }
 }
 
-/** Returns a query over all server timeline milestones. Pass `source` to query a different array instead of the packaged data. */
 export function serverTimeline(
   source: ServerTimelineMilestone[] = serverTimelineData,
 ): ServerTimelineQuery {
@@ -108,8 +102,7 @@ function utcDayStart(date: Date | string, label: string): number {
 
 /**
  * Returns the whole days from the server start date to `asOf`. Day 0 is the start date. Dates count
- * in UTC. A string must be a date such as `2026-01-15`. Throws `RangeError` when a date is invalid
- * or `asOf` is before the start date.
+ * in UTC. Throws `RangeError` when a date is invalid or `asOf` is before the start date.
  */
 export function serverAge(startDate: Date | string, asOf: Date | string = new Date()): number {
   const start = utcDayStart(startDate, 'server start date');
@@ -118,10 +111,7 @@ export function serverAge(startDate: Date | string, asOf: Date | string = new Da
   return (end - start) / MS_PER_DAY;
 }
 
-/**
- * Returns the server age and the milestones that are unlocked and locked at `asOf`, with the
- * heroes, experts, pets, and events of each milestone resolved. Throws the same errors as `serverAge()`.
- */
+/** Returns the resolved milestones that are unlocked and locked at `asOf`. Throws the same errors as `serverAge()`. */
 export function serverTimelineStatus(
   startDate: Date | string,
   asOf: Date | string = new Date(),

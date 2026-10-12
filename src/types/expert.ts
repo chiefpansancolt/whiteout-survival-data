@@ -45,11 +45,10 @@ export interface ExpertAffinityLevel {
   affinityRequired: number;
   advancementCost?: number;
   statBonus: number;
-  /** Power from the expert level at this affinity level. */
   levelPower?: number;
-  /** Power from affinity at this affinity level, before the advancement of this level. */
+  /** Before the advancement of this level. */
   affinityPower?: number;
-  /** Power from affinity after the advancement at this level. Set only with `advancementCost`. */
+  /** Set only with `advancementCost`. */
   affinityPowerAfterAdvancement?: number;
 }
 
@@ -70,6 +69,6 @@ export interface ExpertRelationship {
   id: string;
   name: string;
   img: string;
-  /** Affinity level at which this status starts. The status lasts until the next status starts. */
+  /** The status lasts until the next status starts. */
   level: number;
 }

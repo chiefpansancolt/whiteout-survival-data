@@ -1,7 +1,6 @@
 import { SvsCalculation, SvsCalculatorOptions, SvsDayResult, SvsUsage } from '@/types';
 import { scoreEventDays, skillPercent, sumScores } from './event-score';
 
-/** Id of the Battle Phase day. Valeria's bonus does not apply to this day. */
 export const SVS_BATTLE_DAY_ID = 'Battle';
 
 /**

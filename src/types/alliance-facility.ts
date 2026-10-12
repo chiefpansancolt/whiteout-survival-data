@@ -8,9 +8,8 @@ export interface AllianceFacilityLevel {
   boosterPercent: number;
   heavilyInjuredPercent: number;
   lossesPercent: number;
-  /** Most facilities of this level that one alliance can own. */
   ownLimit: number;
-  /** Number of facilities of this level on the map. Equals `locations.length`. */
+  /** Equals `locations.length`. */
   available: number;
   locations: AllianceFacilityLocation[];
 }

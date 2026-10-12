@@ -14,7 +14,6 @@ export interface EventBuff {
   marchAccelerator: BuffApplicability;
   frostdragonTyrantTitles: BuffApplicability;
   frostSphereDomainBonus: BuffApplicability;
-  /** True where pet skills take effect without the player activating them. */
   petSkillsAutoApplied: boolean;
   notes?: string;
 }

@@ -78,10 +78,6 @@ describe('Research tech tree', () => {
   });
 
   it("resolves Solar Supremacy's Molten X II references now that those pages are published", () => {
-    // These were forward references to unpublished tech lines (type
-    // 'unreleased') until the Molten X II nodes were added; now that they
-    // exist, every one of Solar Supremacy's 3 gated levels (1, 6, 11) should
-    // resolve as a normal research-type prerequisite.
     const solarSupremacyLancer = research().find('solar-supremacy-lanc')!;
     const gatedLevels = solarSupremacyLancer.levels.filter((l) => l.prerequisites.length > 0);
     expect(gatedLevels.map((l) => l.level)).toEqual([1, 6, 11]);
@@ -99,9 +95,7 @@ describe('Research tech tree', () => {
   });
 
   it("disambiguates a same-named prerequisite to the referencing node's own troop type", () => {
-    // "Flame Squad" and "Flame Legion" each exist as three separate nodes, one
-    // per T11 troop type, and the source text never distinguishes which one it
-    // means — every troop type's own chain must resolve to its own node.
+    // The source text does not say which of the three same-named T11 nodes it means.
     const flameShield = research().find('flame-shield')!; // T11 Infantry
     expect(flameShield.levels[0].prerequisites).toEqual([
       { type: 'research', id: 'flame-squad-2', level: 3 },
@@ -124,12 +118,8 @@ describe('Research tech tree', () => {
   });
 
   it('corrects confirmed wiki copy-paste errors that reference the wrong troop type by node name', () => {
-    // Flame Legion (Marksman), Helios Marksman, and Helios Lancer each reuse
-    // Infantry's prerequisite text verbatim on their own pages ("Flame Strike",
-    // "Flame Shield", "Flame Tomahawk", "Flame Protection" — all real nodes,
-    // but Infantry's own). Verified against each correct node's own page,
-    // which names the referencing node as its own real prerequisite (e.g.
-    // Crystal Arrow's page requires "Crystal Vision 6").
+    // Three nodes copy the Infantry prerequisite text on the wiki. The correct node page lists
+    // the real prerequisite, for example Crystal Arrow requires "Crystal Vision 6".
     const researchIds = (n: { levels: { prerequisites: { type: string; id: string }[] }[] }) =>
       n.levels[0].prerequisites
         .filter((p) => p.type === 'research')
@@ -153,8 +143,6 @@ describe('Research tech tree', () => {
       'flame-legion-3',
     ]);
 
-    // none of Marksman's or Lancer's levels should still reference Infantry's
-    // node names anywhere in the chain
     const infantryOnlyIds = new Set([
       'flame-strike',
       'flame-shield',
@@ -171,10 +159,8 @@ describe('Research tech tree', () => {
   });
 
   it('chains T12 tier-1 items in their real in-game unlock order (user-supplied, not scraped)', () => {
-    // The wiki's Prerequisites column for these 15 nodes only lists the War
-    // Academy Fire Crystal gate and omits that each item's own Level 5 also
-    // unlocks the next item in the troop type's chain — confirmed directly
-    // from in-game knowledge, not present on the source page.
+    // The wiki lists only the War Academy Fire Crystal gate. The chain order comes from
+    // in-game knowledge.
     const chains: [string, string][] = [
       ['exalted-mantle', 'exalted-veil'],
       ['exalted-war-grab', 'exalted-mantle'],
@@ -206,10 +192,8 @@ describe('Research tech tree', () => {
   });
 
   it('adds an Exalted capstone per T12 troop type requiring all 5 chain items at Level 5 (user-supplied, not scraped)', () => {
-    // No page for these exists on the wiki at all — confirmed directly from
-    // in-game knowledge. Each has a single level, no cost/bonus data (none is
-    // known yet), and no icon (img is "" rather than a broken link, matching
-    // the Pets module's precedent for a genuine missing-asset gap).
+    // The wiki has no page for these nodes. Cost and bonus data is unknown, so img is ""
+    // as in the Pets module.
     const cases: [string, string, string[]][] = [
       [
         'exalted-infantry',
@@ -263,9 +247,8 @@ describe('Research tech tree', () => {
   });
 
   it("gates each tier-2 Molten I item on its own troop type's Exalted capstone at Level 1 (user-supplied, not scraped)", () => {
-    // The wiki's Prerequisites column for these 12 nodes only lists the War
-    // Academy Fire Crystal gate — confirmed directly from in-game knowledge
-    // that each also requires its own troop type's Exalted capstone.
+    // The wiki lists only the War Academy Fire Crystal gate. The Exalted capstone
+    // requirement comes from in-game knowledge.
     const cases: [string, string][] = [
       ['molten-blades-i', 'exalted-infantry'],
       ['molten-guard-i', 'exalted-infantry'],
@@ -292,9 +275,8 @@ describe('Research tech tree', () => {
   });
 
   it("adds each tier-4 Molten X II item, gated on its own troop type's tier-3 capstone at Level 1", () => {
-    // Published under the wiki's Unicode Roman numeral slug (e.g.
-    // molten-blades-Ⅱ), not the ASCII "-ii" this package uses for its
-    // own ids — the name is normalized to ASCII on the way in.
+    // The wiki slug uses a Unicode Roman numeral, for example molten-blades-Ⅱ.
+    // This package normalizes it to the ASCII "-ii".
     const cases: [string, string, string][] = [
       ['molten-blades-ii', 'T12 Infantry', 'indomitable-wall'],
       ['molten-guard-ii', 'T12 Infantry', 'indomitable-wall'],

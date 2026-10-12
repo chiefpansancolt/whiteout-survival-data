@@ -20,8 +20,7 @@ describe('VipQuery', () => {
   });
 
   it('atXp() returns the highest level reachable with the given XP, summing per-level costs', () => {
-    // Per-level costs: 0, 2500, 5000, 12500, 30000, 40000, ... -- cumulative: 0, 2500, 7500,
-    // 20000, 50000, 90000, ... VIP 6 needs 90000 total, not its own 40000.
+    // Level costs are not cumulative. VIP 6 needs 90000 total XP, not its own 40000.
     expect(vip().atXp(0).first()!.id).toBe('vip-1');
     expect(vip().atXp(2499).first()!.id).toBe('vip-1');
     expect(vip().atXp(2500).first()!.id).toBe('vip-2');
@@ -53,9 +52,6 @@ describe('VIP progression', () => {
   });
 
   it('lists cumulative bonuses active at each level, not per-level deltas', () => {
-    // The source infographic shows the *total* bonus active at each level,
-    // not what changed since the previous level, so e.g. Resource Production
-    // Speed appears at every level with an increasing value.
     const vip1 = vip().find('vip-1')!;
     expect(vip1.bonuses).toEqual([
       { stat: 'Resource Production Speed', value: '+2%', amount: 2, unit: 'percent' },
@@ -77,8 +73,6 @@ describe('VIP progression', () => {
   });
 
   it('parses every bonus value into a numeric amount matching its display string', () => {
-    // e.g. "+16%" -> 16/percent, "+100K" -> 100000/flat, "+1.1M" -> 1100000/flat,
-    // "+1" -> 1/flat — the raw string stays as the source of truth for display.
     vip()
       .get()
       .flatMap((l) => l.bonuses)

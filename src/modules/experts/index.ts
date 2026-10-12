@@ -16,7 +16,6 @@ export class ExpertQuery extends QueryBase<Expert> {
   }
 }
 
-/** Returns a query over all experts. Pass `source` to query a different array instead of the packaged data. */
 export function experts(source: Expert[] = expertData): ExpertQuery {
   return new ExpertQuery(source);
 }
@@ -26,13 +25,12 @@ export class ExpertRelationshipQuery extends QueryBase<ExpertRelationship> {
     super(data);
   }
 
-  /** Returns the status that applies at the given affinity level (1 to 100). Returns `undefined` below level 1. */
+  /** Returns `undefined` below affinity level 1. */
   atAffinityLevel(level: number): ExpertRelationship | undefined {
     return this.data.filter((r) => r.level <= level).pop();
   }
 }
 
-/** Returns a query over the 11 relationship statuses. Pass `source` to query a different array instead of the packaged data. */
 export function expertRelationships(
   source: ExpertRelationship[] = expertRelationshipData,
 ): ExpertRelationshipQuery {

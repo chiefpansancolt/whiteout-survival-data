@@ -10,7 +10,6 @@ export class FacilityQuery extends QueryBase<Facility> {
   }
 }
 
-/** Returns a query over all facilities. Pass `source` to query a different array instead of the packaged data. */
 export function facilities(source: Facility[] = facilityData): FacilityQuery {
   return new FacilityQuery(source);
 }

@@ -10,13 +10,11 @@ export class HeroGearMasteryForgingQuery extends QueryBase<HeroGearMasteryForgin
     super(data);
   }
 
-  /** Returns every stage row of the given level. Levels 4 to 19 have 5 stages. */
   byLevel(level: number): HeroGearMasteryForgingQuery {
     return new HeroGearMasteryForgingQuery(this.data.filter((l) => l.level === level));
   }
 }
 
-/** Returns a query over the shared Hero Gear mastery forging table. Pass `source` to query a different array instead of the packaged data. */
 export function heroGearMasteryForging(
   source: HeroGearMasteryForgingLevel[] = heroGearMasteryForgingData,
 ): HeroGearMasteryForgingQuery {

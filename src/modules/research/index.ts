@@ -18,7 +18,6 @@ export class ResearchQuery extends QueryBase<ResearchNode> {
   }
 }
 
-/** Returns a query over all research nodes. Pass `source` to query a different array instead of the packaged data. */
 export function research(source: ResearchNode[] = researchData): ResearchQuery {
   return new ResearchQuery(source);
 }

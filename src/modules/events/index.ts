@@ -144,7 +144,6 @@ export class EventsQuery extends QueryBase<GameEvent> {
   }
 }
 
-/** Returns a query over all game events. Pass `source` to query a different array instead of the packaged data. */
 export function events(source: GameEvent[] = eventsData): EventsQuery {
   return new EventsQuery(source);
 }

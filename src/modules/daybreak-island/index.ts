@@ -14,7 +14,6 @@ export class LumberCampQuery extends QueryBase<LumberCampLevel> {
   }
 }
 
-/** Returns a query over the Lumber Camp upgrade table. Pass `source` to query a different array instead of the packaged data. */
 export function lumberCamp(source: LumberCampLevel[] = lumberCampLevelData): LumberCampQuery {
   return new LumberCampQuery(source);
 }
@@ -25,7 +24,6 @@ export class TreeOfLifeQuery extends QueryBase<TreeOfLifeLevel> {
   }
 }
 
-/** Returns a query over the Tree of Life upgrade table. Pass `source` to query a different array instead of the packaged data. */
 export function treeOfLife(source: TreeOfLifeLevel[] = treeOfLifeLevelData): TreeOfLifeQuery {
   return new TreeOfLifeQuery(source);
 }
@@ -40,7 +38,6 @@ export class DecorationQuery extends QueryBase<Decoration> {
   }
 }
 
-/** Returns a query over all decorations. Pass `source` to query a different array instead of the packaged data. */
 export function decoration(source: Decoration[] = decorationTypeData): DecorationQuery {
   return new DecorationQuery(source);
 }

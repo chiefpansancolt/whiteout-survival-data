@@ -33,7 +33,6 @@ export interface ResearchLevel {
   level: number;
   prerequisites: ResearchRequirement[];
   cost: ResearchCost[];
-  /** Omitted when the source page has no time value. */
   researchTimeSeconds?: number;
   bonus: ResearchBonus[];
   power: number;

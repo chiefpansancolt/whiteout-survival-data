@@ -14,7 +14,6 @@ export class BuildingQuery extends QueryBase<Building> {
   }
 }
 
-/** Returns a query over all buildings. Pass `source` to query a different array instead of the packaged data. */
 export function buildings(source: Building[] = buildingData): BuildingQuery {
   return new BuildingQuery(source);
 }

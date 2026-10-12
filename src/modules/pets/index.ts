@@ -14,7 +14,6 @@ export class PetQuery extends QueryBase<Pet> {
   }
 }
 
-/** Returns a query over all pets. Pass `source` to query a different array instead of the packaged data. */
 export function pets(source: Pet[] = petData): PetQuery {
   return new PetQuery(source);
 }

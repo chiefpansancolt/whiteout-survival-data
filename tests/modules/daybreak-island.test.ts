@@ -94,7 +94,6 @@ describe('Tree of Life', () => {
   });
 
   it('parses a flat (non-percent) buff into its expanded numeric amount, like VipBonus', () => {
-    // "+1K"/"+3K" -> 1000/3000, matching VipBonus's K/M expansion convention.
     const level2 = treeOfLife().find('tree-of-life-level-2')!;
     expect(level2.buff).toEqual({
       stat: 'Troops Deployment Capacity',
@@ -193,9 +192,6 @@ describe('Decorations', () => {
   });
 
   it('fills incomplete rows with blank/zero values rather than omitting them', () => {
-    // Several newly-added limited-availability placeholders have real Cost/Prosperity
-    // but no buff yet -- those get an empty stat, "+0" value, and amount 0 rather than
-    // being left out of the levels array entirely.
     const christmasCarol = decoration().find('christmas-carol')!;
     expect(christmasCarol.category).toBe('Mythic');
     expect(christmasCarol.limited).toBe(true);
@@ -213,8 +209,8 @@ describe('Decorations', () => {
     expect(snowCastle.category).toBe('Mythic');
     expect(snowCastle.lifeEssenceCost).toBe(12000);
 
-    // Limited-availability Mythics are obtained outside the standard Life Essence
-    // curve (shop rotations, event packs), so they carry no lifeEssenceCost at all.
+    // Limited Mythics come from shop rotations and event packs, outside the Life Essence
+    // curve. They have no lifeEssenceCost.
     const otherStandardMythics = decoration()
       .byCategory('Mythic')
       .get()
@@ -226,10 +222,8 @@ describe('Decorations', () => {
   });
 
   it('resolves the corrected-spelling Hero’s Sanctum entry to the original fan-site id', () => {
-    // The user's own research spells it "Hero's Sanctum"; the original
-    // scraped id/name kept the fan site's "Sanctun" typo -- both refer to the
-    // same decoration, so the import updates the existing entry in place
-    // rather than creating a duplicate.
+    // The original scraped id keeps the fan-site typo "Sanctun". The import updates that
+    // entry instead of adding a duplicate.
     expect(decoration().find('heros-sanctum')).toBeUndefined();
     const heroSanctum = decoration().find('hero-s-sanctun')!;
     expect(heroSanctum.category).toBe('Epic');

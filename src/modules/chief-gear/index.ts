@@ -6,12 +6,10 @@ import { ChiefGearLevel, ChiefGearRarity, ChiefGearSlot, ChiefGearTroopType } fr
 const chiefGearSlotData: ChiefGearSlot[] = slotData as ChiefGearSlot[];
 const chiefGearLevelData: ChiefGearLevel[] = levelData as ChiefGearLevel[];
 
-/** Returns the base rarity of a tier label by removing the sub-tier suffix. "EpicT1" returns "Epic". */
 export function chiefGearRarity(tier: string): ChiefGearRarity {
   return tier.replace(/T\d+$/, '') as ChiefGearRarity;
 }
 
-/** Returns the icon of a slot for the base rarity of a level. Sub-tiers share the icon of their base rarity. */
 export function chiefGearImage(slot: ChiefGearSlot, level: ChiefGearLevel): string {
   return slot.images[chiefGearRarity(level.tier)];
 }
@@ -26,7 +24,6 @@ export class ChiefGearSlotQuery extends QueryBase<ChiefGearSlot> {
   }
 }
 
-/** Returns a query over all Chief Gear slots. Pass `source` to query a different array instead of the packaged data. */
 export function chiefGearSlots(source: ChiefGearSlot[] = chiefGearSlotData): ChiefGearSlotQuery {
   return new ChiefGearSlotQuery(source);
 }
@@ -42,7 +39,6 @@ export class ChiefGearLevelQuery extends QueryBase<ChiefGearLevel> {
   }
 }
 
-/** Returns a query over the Chief Gear upgrade table. Pass `source` to query a different array instead of the packaged data. */
 export function chiefGear(source: ChiefGearLevel[] = chiefGearLevelData): ChiefGearLevelQuery {
   return new ChiefGearLevelQuery(source);
 }

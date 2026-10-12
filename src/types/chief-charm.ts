@@ -4,7 +4,7 @@ export interface ChiefCharmSlot {
   id: string;
   name: string;
   troopType: ChiefGearTroopType;
-  /** One icon per level from 1 to 18. Use `images[level - 1]` for a level. */
+  /** Index is `level - 1`. */
   images: string[];
 }
 

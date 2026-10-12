@@ -18,7 +18,6 @@ export class ChiefCharmConverterQuery extends QueryBase<ItemConversion> {
   }
 }
 
-/** Returns a query over the Chief Charm converter exchange rates. Pass `source` to query a different array instead of the packaged data. */
 export function chiefCharmConverter(
   source: ItemConversion[] = chiefCharmConverterData,
 ): ChiefCharmConverterQuery {

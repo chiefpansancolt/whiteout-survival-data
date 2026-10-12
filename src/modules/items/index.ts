@@ -14,7 +14,6 @@ export class ItemQuery extends QueryBase<Item> {
   }
 }
 
-/** Returns a query over all items. Pass `source` to query a different array instead of the packaged data. */
 export function items(source: Item[] = itemData): ItemQuery {
   return new ItemQuery(source);
 }

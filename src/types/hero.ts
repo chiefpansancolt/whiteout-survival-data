@@ -4,11 +4,11 @@ export type HeroSubClass = 'Growth' | 'Combat';
 
 export interface HeroSkillLevel {
   level: number;
-  /** Hero Manuals needed to reach this level from the previous one. A Talent skill needs none, so it is 0. */
+  /** A Talent skill needs none, so it is 0. */
   manualsRequired: number;
-  /** Power gained at this level. 0 for a Talent skill, because no source states it. */
+  /** 0 for a Talent skill, because no source states it. */
   powerGain: number;
-  /** Hero star needed to unlock this skill level. 0 for a Talent skill, because no source states it. */
+  /** 0 for a Talent skill, because no source states it. */
   starRequired: number;
 }
 
@@ -16,14 +16,14 @@ export interface HeroSkill {
   name: string;
   img: string;
   description: string;
-  /** The 5 skill levels. They match the 5 slash-separated values in `description`. */
+  /** Matches the 5 slash-separated values in `description`. */
   levels: HeroSkillLevel[];
 }
 
 export interface HeroSkills {
   exploration: HeroSkill[];
   expedition: HeroSkill[];
-  /** Set only for Jeronimo and Natalia. The Talent tab is empty for every other Legendary hero on the wiki. */
+  /** The Talent tab is empty for every other Legendary hero on the wiki. */
   talent?: HeroSkill;
 }
 
@@ -38,7 +38,6 @@ export interface HeroExpeditionStats {
   defense: number;
 }
 
-/** The stats of a hero at level 80 for a star and tier. */
 export interface HeroStatEstimate {
   /** Always 80. */
   level: number;
@@ -62,7 +61,6 @@ export interface ExclusiveWeaponSkill {
   name: string;
   img: string;
   description: string;
-  /** The Special item level at which this skill activates. Not set when the hero page does not state it. */
   unlockLevel?: number;
 }
 
@@ -86,7 +84,6 @@ export interface HeroShardTier {
 
 export interface HeroLevel {
   level: number;
-  /** Furnace level needed to reach this hero level. */
   furnaceLevelRequired: number;
   /** Hero XP needed to reach this level from the previous one. 0 at level 1. */
   xpRequired: number;
@@ -101,7 +98,7 @@ export interface Hero {
   id: string;
   name: string;
   img: string;
-  /** Shard icon of the hero. Set only for the heroes whose shard icon is bundled. */
+  /** Set only for the heroes whose shard icon is bundled. */
   shardImg?: string;
   /** Hero Power read in the game at star 0. Set only for the heroes that were read. */
   powerAtStarZero?: number;
@@ -127,6 +124,5 @@ export interface HeroWidgetLevel {
   id: string;
   name: string;
   level: number;
-  /** Widgets needed to reach this level from the previous one. */
   widgets: number;
 }

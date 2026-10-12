@@ -5,7 +5,6 @@ import {
 } from '@/types';
 import { scoreEventDays, skillPercent, sumScores } from './event-score';
 
-/** Matches the truck actions (escort and raid) that Baldur's bonus does not apply to. */
 export const ALLIANCE_SHOWDOWN_TRUCK_ACTION = /^(Escort|Raid) 1 truck/;
 
 /**

@@ -9,7 +9,6 @@ import {
   UpgradeMaterial,
 } from '@/types';
 
-/** Pets advance at every level that is a multiple of this number. */
 export const PET_ADVANCEMENT_INTERVAL = 10;
 
 const PET_EVENT_IDS: Record<keyof PetEventPoints, string> = {

@@ -18,6 +18,5 @@ export interface TroopTier {
 export interface TroopData {
   id: 'infantry' | 'lancer' | 'marksman';
   name: string;
-  /** Tiers 1 to 12. */
   tiers: TroopTier[];
 }

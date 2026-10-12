@@ -18,7 +18,6 @@ export class AllianceTechQuery extends QueryBase<AllianceTechNode> {
   }
 }
 
-/** Returns a query over all Alliance Tech nodes. Pass `source` to query a different array instead of the packaged data. */
 export function allianceTech(source: AllianceTechNode[] = allianceTechData): AllianceTechQuery {
   return new AllianceTechQuery(source);
 }

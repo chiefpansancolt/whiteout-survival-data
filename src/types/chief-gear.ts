@@ -6,7 +6,7 @@ export interface ChiefGearSlot {
   id: string;
   name: string;
   troopType: ChiefGearTroopType;
-  /** One icon per base rarity. A tier with a "T" suffix, such as "EpicT1", uses the icon of its base rarity. */
+  /** A tier with a "T" suffix, such as "EpicT1", uses the icon of its base rarity. */
   images: Record<ChiefGearRarity, string>;
 }
 
@@ -19,7 +19,7 @@ export interface ChiefGearLevel {
   id: string;
   order: number;
   name: string;
-  /** Tier label as the source writes it, such as "Epic" or "LegendaryT3". Stars and stage restart in each tier. */
+  /** Stars and stage restart in each tier. */
   tier: string;
   stars: number;
   stage: number;
@@ -28,6 +28,6 @@ export interface ChiefGearLevel {
   troopsDeploymentCapacity?: number;
   statTotalPercent: number;
   powerTotal: number;
-  /** Gear score that the upgrade step to this row adds. A level score is split evenly over its steps. */
+  /** A level score is split evenly over its steps. */
   score: number;
 }

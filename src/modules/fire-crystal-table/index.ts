@@ -26,7 +26,6 @@ export class FireCrystalLevelQuery extends QueryBase<FireCrystalLevel> {
   }
 }
 
-/** Returns a query over the Fire Crystal level badges FC 1 to FC 10. Pass `source` to query a different array instead of the packaged data. */
 export function fireCrystalLevels(
   source: FireCrystalLevel[] = fireCrystalLevelData,
 ): FireCrystalLevelQuery {
@@ -62,17 +61,14 @@ function levelsInRange(range: FireCrystalLevelRange | undefined): FireCrystalLev
 }
 
 /**
- * Returns the table of Fire Crystals and Refined Fire Crystals that each building needs to reach
- * each Fire Crystal level. The cost of a level is the sum of the five upgrades that end at its base
- * row. For example, FC 6 adds up `FC 5-1` to `FC 5-4` and `FC 6`. FC 1 adds up `30-1` to `30-4` and
- * `FC 1`.
+ * Returns the Fire Crystals and Refined Fire Crystals that each building needs to reach each Fire
+ * Crystal level. The cost of a level is the sum of the five upgrades that end at its base row. For
+ * example, FC 6 adds up `FC 5-1` to `FC 5-4` and `FC 6`.
  *
- * `columns` holds a Fire Crystals column for every level and a Refined Fire Crystals column for the
- * levels that cost any. A cell is `null` when the building has no cost for that level. Pass `range`
- * to keep only the levels from `range.from` to `range.to`. Every range has the same rows, so
- * segments of one table line up. Pass `source` to build the table from a different array of
- * buildings. Only buildings with a Fire Crystal cost get a row. Throws `RangeError` when a level of
- * `range` is not a Fire Crystal level or `range.from` is above `range.to`.
+ * A Refined Fire Crystals column exists only for a level that costs any. A cell is `null` when the
+ * building has no cost for that level. Every `range` gives the same rows. Only buildings with a
+ * Fire Crystal cost get a row. Throws `RangeError` when a level of `range` is not a Fire Crystal
+ * level or `range.from` is above `range.to`.
  */
 export function fireCrystalTable(
   source: Building[] = buildings().get(),

@@ -224,8 +224,7 @@ describe('Generation 0 heroes', () => {
   });
 
   it('follows the confirmed shared 80-level Power curve (base[L] * start / 250, running total) for Rare and Epic', () => {
-    // The base curve is the same for every hero. Only the level 1 start value (Rare 3250, Epic 4000)
-    // differs. The checkpoints below are the known values.
+    // Level 1 start power is 3250 for Rare and 4000 for Epic.
     const checkpoints = {
       Rare: { 10: 9945, 20: 18850, 40: 42185, 60: 74815, 80: 121290 },
       Epic: { 10: 12240, 20: 23200, 40: 51920, 60: 92080, 80: 149280 },
@@ -239,7 +238,6 @@ describe('Generation 0 heroes', () => {
           Object.entries(checkpoints[rarity]).forEach(([level, power]) => {
             expect(h.levels[Number(level) - 1].power).toBe(power);
           });
-          // Power climbs monotonically level over level, never resetting or double-counting.
           for (let i = 1; i < h.levels.length; i++) {
             expect(h.levels[i].power).toBeGreaterThan(h.levels[i - 1].power);
           }
@@ -472,8 +470,8 @@ describe('Generation 1-17 heroes (Legendary)', () => {
         });
     }
 
-    // Jeronimo is a confirmed exception to Generation 1's shared start value: his own Level 80
-    // total is 233,250 (start 6,250), not the shared Gen 1 total of 186,600 (start 5,000).
+    // Jeronimo is an exception: Level 80 total is 233,250 (start 6,250).
+    // The shared Generation 1 total is 186,600 (start 5,000).
     const jeronimo = heroes().findByName('Jeronimo')!;
     expect(jeronimo.levels[79].power).toBe(233250);
     for (let i = 1; i < jeronimo.levels.length; i++) {

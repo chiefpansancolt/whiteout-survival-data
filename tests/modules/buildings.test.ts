@@ -136,8 +136,6 @@ describe('Furnace levels', () => {
   });
 
   it("uses the wiki's exact Fire Crystal Power values, not wostools's rounded ones", () => {
-    // Regression guard: these were previously rounded to the nearest 100,000
-    // (e.g. "30-1" was 1,600,000 instead of the wiki's exact 1,580,900).
     const exactPowerByLabel: Record<string, number> = {
       '30-1': 1580900,
       '30-2': 1638300,

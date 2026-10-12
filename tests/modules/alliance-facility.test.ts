@@ -30,10 +30,8 @@ describe('Alliance Facilities', () => {
   });
 
   it('documents only the levels shown on the source image, not a guessed full range', () => {
-    // The wiki has no structured data for this page at all (confirmed via
-    // raw HTML: no table, prose-only capture-mechanics description), so
-    // these levels are transcribed directly from a user-provided screenshot
-    // that only documents some levels per facility.
+    // The wiki has no structured data for this page. Levels come from a user-provided
+    // screenshot that shows only some levels per facility.
     const defense = allianceFacility().find('defense')!;
     expect(defense.bonusStat).toBe('Troop Defense Boost');
     expect(

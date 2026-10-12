@@ -14,7 +14,6 @@ export class AllianceFortressQuery extends QueryBase<AllianceFortress> {
   }
 }
 
-/** Returns a query over the castle, the strongholds, and the fortresses. Pass `source` to query a different array instead of the packaged data. */
 export function allianceFortress(
   source: AllianceFortress[] = allianceFortressData,
 ): AllianceFortressQuery {

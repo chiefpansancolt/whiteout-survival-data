@@ -15,7 +15,6 @@ const EVENT_IDS: Record<keyof UpgradeEventPoints, string> = {
   hallOfChief: 'hall-of-chief',
 };
 
-/** Returns the points that one point of score is worth in each event, read from the scoring row that matches `rowPattern`. */
 function pointsPerScore(rowPattern: RegExp): UpgradeEventPoints {
   const result = {} as UpgradeEventPoints;
   (Object.keys(EVENT_IDS) as (keyof UpgradeEventPoints)[]).forEach((key) => {

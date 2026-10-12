@@ -14,7 +14,6 @@ export class SkinQuery extends QueryBase<Skin> {
   }
 }
 
-/** Returns a query over all skins. Pass `source` to query a different array instead of the packaged data. */
 export function skins(source: Skin[] = skinData): SkinQuery {
   return new SkinQuery(source);
 }

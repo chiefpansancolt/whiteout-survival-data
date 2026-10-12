@@ -20,16 +20,10 @@ import {
   UpgradeMaterial,
 } from '@/types';
 
-/** The highest level of enhancement. Empowerment starts after it. */
 export const HERO_GEAR_MAX_ENHANCEMENT_LEVEL = heroGearEnhancement().get().length;
 
-/** The highest level of empowerment. */
 export const HERO_GEAR_MAX_EMPOWERMENT_LEVEL = heroGearEmpowerment().get().length;
 
-/**
- * Mastery forging goes past the row `afterRowId` only when the enhancement of the piece is at
- * `enhancementLevel`. Empowerment also needs the enhancement at `enhancementLevel`.
- */
 export const HERO_GEAR_ENHANCEMENT_REQUIREMENT = {
   afterRowId: 'level-10-stage-0',
   enhancementLevel: HERO_GEAR_MAX_ENHANCEMENT_LEVEL,
@@ -122,7 +116,6 @@ const roundTo = (value: number, decimals: number): number => {
   return Math.round(value * factor) / factor;
 };
 
-/** The enhancement level of the state, where empowerment levels follow enhancement level 100. */
 function stateLevel(enhancement: number, empowerment: number): number {
   return empowerment > 0 ? HERO_GEAR_MAX_ENHANCEMENT_LEVEL + empowerment : enhancement;
 }

@@ -1,9 +1,5 @@
 import { QueryBase } from '@/common/query-base';
 
-/**
- * Standard assertions every QueryBase subclass should pass.
- * Call from each module's test file with the factory function.
- */
 export function testQueryBaseContract<T extends { id: string; name: string }>(
   factoryName: string,
   factory: () => QueryBase<T>,

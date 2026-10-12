@@ -16,14 +16,13 @@ export class ChiefCharmSlotQuery extends QueryBase<ChiefCharmSlot> {
   }
 }
 
-/** Returns a query over all Chief Charm slots. Pass `source` to query a different array instead of the packaged data. */
 export function chiefCharmSlots(
   source: ChiefCharmSlot[] = chiefCharmSlotData,
 ): ChiefCharmSlotQuery {
   return new ChiefCharmSlotQuery(source);
 }
 
-/** Returns the icon of a slot for a charm level from 1 to 18. */
+/** `level` counts from 1 to 18. */
 export function chiefCharmImage(slot: ChiefCharmSlot, level: number): string {
   return slot.images[level - 1];
 }
@@ -38,7 +37,6 @@ export class ChiefCharmLevelQuery extends QueryBase<ChiefCharmLevel> {
   }
 }
 
-/** Returns a query over the Chief Charm upgrade table. Pass `source` to query a different array instead of the packaged data. */
 export function chiefCharm(source: ChiefCharmLevel[] = chiefCharmLevelData): ChiefCharmLevelQuery {
   return new ChiefCharmLevelQuery(source);
 }

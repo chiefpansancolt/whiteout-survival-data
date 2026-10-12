@@ -18,7 +18,6 @@ export class HeroGearStatsQuery extends QueryBase<HeroGearStats> {
   }
 }
 
-/** Returns a query over the per level stats of every hero gear slot and troop type. Pass `source` to query a different array instead of the packaged data. */
 export function heroGearStats(source: HeroGearStats[] = heroGearStatsData): HeroGearStatsQuery {
   return new HeroGearStatsQuery(source);
 }
