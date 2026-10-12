@@ -3,4 +3,5 @@ export interface Facility {
   name: string;
   img: string;
   description: string;
+  unlockFurnaceLevel?: number;
 }

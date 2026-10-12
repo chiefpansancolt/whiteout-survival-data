@@ -7,11 +7,13 @@ import { Pet } from './pet';
 
 export interface ServerTimelineUnlock {
   name: string;
+  key?: string;
   itemId?: string;
 }
 
 export interface ResolvedServerTimelineUnlock {
   name: string;
+  key?: string;
   item?: Item;
 }
 

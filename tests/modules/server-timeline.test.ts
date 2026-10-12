@@ -3,6 +3,7 @@ import { heroes } from '@/modules/heroes';
 import { items } from '@/modules/items';
 import { pets } from '@/modules/pets';
 import {
+  heroGenerationAt,
   serverAge,
   serverTimeline,
   ServerTimelineQuery,
@@ -321,5 +322,89 @@ describe('serverTimelineStatus', () => {
 
   it('throws RangeError when asOf is before the start date', () => {
     expect(() => serverTimelineStatus('2026-01-02', '2026-01-01')).toThrow(RangeError);
+  });
+});
+
+describe('unlock keys', () => {
+  const dayOfKey = (key: string) =>
+    serverTimeline()
+      .get()
+      .find((m) => m.unlocks.some((u) => u.key === key))?.day;
+
+  it('marks the War Academy unlock on day 220 and the T12 research unlock on day 680', () => {
+    expect(dayOfKey('war-academy')).toBe(220);
+    expect(dayOfKey('t12-research')).toBe(680);
+  });
+
+  it('keeps the key on the resolved unlock', () => {
+    const [resolved] = new ServerTimelineQuery([serverTimeline().find('day-220')!]).resolve();
+    expect(resolved.unlocks[0]).toEqual({ name: 'War Academy Unlocks', key: 'war-academy' });
+  });
+
+  it('keeps the key next to the item of an unlock', () => {
+    const milestone = {
+      id: 'x',
+      name: 'X',
+      day: 1,
+      heroIds: [],
+      heroShardEventIds: {},
+      expertIds: [],
+      petIds: [],
+      eventIds: [],
+      fireCrystalLevelIds: [],
+      unlocks: [{ name: 'Thing', key: 'thing', itemId: 'fire-crystal' }],
+    };
+    const [resolved] = new ServerTimelineQuery([milestone]).resolve();
+    expect(resolved.unlocks[0]).toEqual({
+      name: 'Thing',
+      key: 'thing',
+      item: items().find('fire-crystal'),
+    });
+  });
+
+  it('gives each key to one unlock only', () => {
+    const keys = serverTimeline()
+      .get()
+      .flatMap((m) => m.unlocks.map((u) => u.key))
+      .filter((key) => key !== undefined);
+    expect(new Set(keys).size).toBe(keys.length);
+  });
+});
+
+describe('heroGenerationAt', () => {
+  it('starts at generation 1 on day 0', () => {
+    expect(heroGenerationAt(0)).toBe(1);
+  });
+
+  it('moves to the next generation on the day of its milestone', () => {
+    expect(heroGenerationAt(39)).toBe(1);
+    expect(heroGenerationAt(40)).toBe(2);
+    expect(heroGenerationAt(119)).toBe(2);
+    expect(heroGenerationAt(120)).toBe(3);
+    expect(heroGenerationAt(1159)).toBe(15);
+    expect(heroGenerationAt(1160)).toBe(16);
+  });
+
+  it('stays at 16 after the last milestone', () => {
+    expect(heroGenerationAt(5000)).toBe(16);
+  });
+
+  it('keeps the generation of the last hero milestone between hero days', () => {
+    expect(heroGenerationAt(54)).toBe(2);
+    expect(heroGenerationAt(194)).toBe(3);
+    expect(heroGenerationAt(195)).toBe(4);
+  });
+
+  it('matches the generation of the heroes that unlock on each hero milestone', () => {
+    for (const m of serverTimeline()
+      .get()
+      .filter((milestone) => milestone.heroIds.length > 0)) {
+      expect(heroGenerationAt(m.day)).toBe(heroes().find(m.heroIds[0])!.generation);
+    }
+  });
+
+  it('throws RangeError for a negative or non-numeric age', () => {
+    expect(() => heroGenerationAt(-1)).toThrow(RangeError);
+    expect(() => heroGenerationAt(Number.NaN)).toThrow(RangeError);
   });
 });

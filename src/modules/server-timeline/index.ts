@@ -31,9 +31,9 @@ function findEntries<T extends { id: string }>(
   });
 }
 
-function resolveUnlock({ name, itemId }: ServerTimelineUnlock): ResolvedServerTimelineUnlock {
-  if (itemId === undefined) return { name };
-  return { name, item: findEntries([itemId], (id) => items().find(id), 'item')[0] };
+function resolveUnlock({ itemId, ...unlock }: ServerTimelineUnlock): ResolvedServerTimelineUnlock {
+  if (itemId === undefined) return unlock;
+  return { ...unlock, item: findEntries([itemId], (id) => items().find(id), 'item')[0] };
 }
 
 function resolveMilestone(milestone: ServerTimelineMilestone): ResolvedServerTimelineMilestone {
@@ -131,4 +131,19 @@ export function serverTimelineStatus(
     locked,
     next: locked[0],
   };
+}
+
+/**
+ * Returns the highest hero generation unlocked at a server age in days. The result is 1 on day 0 and
+ * 16 from day 1160, because the timeline has no later generation. Throws `RangeError` when the age
+ * is negative or not a number.
+ */
+export function heroGenerationAt(serverAge: number): number {
+  if (!(serverAge >= 0)) throw new RangeError(`Invalid server age: ${serverAge}`);
+  const generations = serverTimeline()
+    .unlockedAt(serverAge)
+    .get()
+    .flatMap((milestone) => milestone.heroIds)
+    .map((id) => heroes().find(id)!.generation);
+  return Math.max(...generations);
 }

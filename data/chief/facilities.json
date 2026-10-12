@@ -9,7 +9,8 @@
     "id": "dawn-academy",
     "name": "Dawn Academy",
     "img": "/images/facilities/DawnAcademy.png",
-    "description": "An Expert System building, unlocked at Furnace Level 25 (Fire Crystal Level 5 era), where Experts recruited during Tundra Trek settle and hold lectures teaching townspeople and soldiers their specialty, providing skill-based town bonuses. Also distributes Trek Supplies daily (20 units at 00:00 UTC, plus 10 more at 08:00 and 16:00 UTC)."
+    "description": "An Expert System building, unlocked at Furnace Level 25 (Fire Crystal Level 5 era), where Experts recruited during Tundra Trek settle and hold lectures teaching townspeople and soldiers their specialty, providing skill-based town bonuses. Also distributes Trek Supplies daily (20 units at 00:00 UTC, plus 10 more at 08:00 and 16:00 UTC).",
+    "unlockFurnaceLevel": 25
   },
   {
     "id": "beast-cage",

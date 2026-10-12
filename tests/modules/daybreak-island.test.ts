@@ -1,4 +1,5 @@
 import {
+  DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL,
   decoration,
   DecorationQuery,
   lumberCamp,
@@ -305,5 +306,11 @@ describe('decoration names', () => {
       .get()
       .map((d) => d.name);
     expect(names.some((n) => /Sanctun|Markert/.test(n))).toBe(false);
+  });
+});
+
+describe('Daybreak Island unlock', () => {
+  it('unlocks at Furnace level 19', () => {
+    expect(DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL).toBe(19);
   });
 });

@@ -222,7 +222,8 @@
     "fireCrystalLevelIds": [],
     "unlocks": [
       {
-        "name": "War Academy Unlocks"
+        "name": "War Academy Unlocks",
+        "key": "war-academy"
       },
       {
         "name": "Crystal Laboratory Updated (5x)"
@@ -380,7 +381,8 @@
     "fireCrystalLevelIds": [],
     "unlocks": [
       {
-        "name": "Flame Tech (T12) Unlocks"
+        "name": "Flame Tech (T12) Unlocks",
+        "key": "t12-research"
       }
     ]
   },

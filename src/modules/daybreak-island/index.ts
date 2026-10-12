@@ -4,6 +4,8 @@ import lumberCampData from '@/data/daybreak-island/lumber-camp.json';
 import treeOfLifeData from '@/data/daybreak-island/tree-of-life.json';
 import { Decoration, DecorationCategory, LumberCampLevel, TreeOfLifeLevel } from '@/types';
 
+export const DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL = 19;
+
 const lumberCampLevelData: LumberCampLevel[] = lumberCampData as LumberCampLevel[];
 const treeOfLifeLevelData: TreeOfLifeLevel[] = treeOfLifeData as TreeOfLifeLevel[];
 const decorationTypeData: Decoration[] = decorationData as Decoration[];

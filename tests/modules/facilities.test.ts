@@ -25,3 +25,19 @@ describe('FacilityQuery', () => {
     ).toBe(true);
   });
 });
+
+describe('facility unlock levels', () => {
+  it('gives Dawn Academy the Furnace level that its description states', () => {
+    const dawnAcademy = facilities().find('dawn-academy')!;
+    expect(dawnAcademy.unlockFurnaceLevel).toBe(25);
+    expect(dawnAcademy.description).toContain('Furnace Level 25');
+  });
+
+  it('leaves the unlock level out of every other facility', () => {
+    const others = facilities()
+      .get()
+      .filter((f) => f.id !== 'dawn-academy');
+    expect(others.length).toBeGreaterThan(0);
+    for (const facility of others) expect(facility.unlockFurnaceLevel).toBeUndefined();
+  });
+});
