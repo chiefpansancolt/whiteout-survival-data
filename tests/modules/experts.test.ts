@@ -503,3 +503,24 @@ describe('expertRelationships', () => {
       );
   });
 });
+
+describe('expert unlock days', () => {
+  it('gives each expert on the server timeline the days of its milestone', () => {
+    expect(
+      experts()
+        .get()
+        .map((e) => [e.id, e.unlockRequirement?.daysRequired]),
+    ).toEqual([
+      ['cyrille', 120],
+      ['agnes', 120],
+      ['holger', 120],
+      ['romulus', 160],
+      ['baldur', 200],
+      ['fabian', 200],
+      ['valeria', 200],
+      ['ronne', 230],
+      ['kathy', 230],
+      ['gareth', undefined],
+    ]);
+  });
+});

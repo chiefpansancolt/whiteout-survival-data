@@ -57,6 +57,10 @@ export interface ExpertAffinityLevel {
   affinityPowerAfterAdvancement?: number;
 }
 
+export interface ExpertUnlockRequirement {
+  daysRequired: number;
+}
+
 export interface Expert {
   id: string;
   name: string;
@@ -64,6 +68,7 @@ export interface Expert {
   title: string;
   specialty: string;
   generation: number;
+  unlockRequirement?: ExpertUnlockRequirement;
   baseBonuses: ExpertStatBonus[];
   skills: ExpertSkill[];
   talent: ExpertTalent;

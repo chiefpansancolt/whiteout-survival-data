@@ -6,6 +6,9 @@
     "title": "Bear Huntress",
     "specialty": "Bear Hunt",
     "generation": 1,
+    "unlockRequirement": {
+      "daysRequired": 120
+    },
     "baseBonuses": [
       {
         "stat": "Troops Attack",
@@ -988,6 +991,9 @@
     "title": "Elite Politician",
     "specialty": "City Economy",
     "generation": 1,
+    "unlockRequirement": {
+      "daysRequired": 120
+    },
     "baseBonuses": [
       {
         "stat": "Troops Defense",
@@ -1991,6 +1997,9 @@
     "title": "Arena Legend",
     "specialty": "Arena",
     "generation": 1,
+    "unlockRequirement": {
+      "daysRequired": 120
+    },
     "baseBonuses": [
       {
         "stat": "Troops Attack",
@@ -3064,6 +3073,9 @@
     "title": "Military Advisor",
     "specialty": "PvP/Military",
     "generation": 1,
+    "unlockRequirement": {
+      "daysRequired": 160
+    },
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
@@ -4273,6 +4285,9 @@
     "title": "Negotiator",
     "specialty": "Alliance Events",
     "generation": 2,
+    "unlockRequirement": {
+      "daysRequired": 200
+    },
     "baseBonuses": [
       {
         "stat": "Troops Attack",
@@ -5493,6 +5508,9 @@
     "title": "Master of Arms",
     "specialty": "Foundry Battle",
     "generation": 2,
+    "unlockRequirement": {
+      "daysRequired": 200
+    },
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
@@ -6655,6 +6673,9 @@
     "title": "High Marshal",
     "specialty": "SvS Battle Phase",
     "generation": 2,
+    "unlockRequirement": {
+      "daysRequired": 200
+    },
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
@@ -7922,6 +7943,9 @@
     "title": "Convoy Queen",
     "specialty": "Tundra Trade Route",
     "generation": 2,
+    "unlockRequirement": {
+      "daysRequired": 230
+    },
     "baseBonuses": [
       {
         "stat": "Troops Attack",
@@ -8979,6 +9003,9 @@
     "title": "Mining Specialist",
     "specialty": "Mining Specialist",
     "generation": 3,
+    "unlockRequirement": {
+      "daysRequired": 230
+    },
     "baseBonuses": [
       {
         "stat": "Troops Lethality",

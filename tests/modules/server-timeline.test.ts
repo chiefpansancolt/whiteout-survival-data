@@ -1,4 +1,5 @@
 import { events } from '@/modules/events';
+import { experts } from '@/modules/experts';
 import { heroes } from '@/modules/heroes';
 import { items } from '@/modules/items';
 import { pets } from '@/modules/pets';
@@ -246,6 +247,14 @@ describe('timeline data', () => {
     }
   });
 
+  it('matches the unlock day of each expert to its milestone day', () => {
+    for (const m of serverTimeline().get()) {
+      for (const id of m.expertIds) {
+        expect(experts().find(id)!.unlockRequirement).toEqual({ daysRequired: m.day });
+      }
+    }
+  });
+
   it('resolves every milestone', () => {
     expect(serverTimeline().resolve()).toHaveLength(serverTimeline().count());
   });
@@ -406,5 +415,37 @@ describe('heroGenerationAt', () => {
   it('throws RangeError for a negative or non-numeric age', () => {
     expect(() => heroGenerationAt(-1)).toThrow(RangeError);
     expect(() => heroGenerationAt(Number.NaN)).toThrow(RangeError);
+  });
+});
+
+describe('expert unlock days', () => {
+  const expertDays = () =>
+    serverTimeline()
+      .get()
+      .filter((m) => m.expertIds.length > 0)
+      .map((m) => [m.day, m.expertIds]);
+
+  it('unlocks the experts on the days that the wiki timeline lists', () => {
+    expect(expertDays()).toEqual([
+      [120, ['holger', 'agnes', 'cyrille']],
+      [160, ['romulus']],
+      [200, ['valeria', 'baldur', 'fabian']],
+      [230, ['kathy', 'ronne']],
+    ]);
+  });
+
+  it('lists each expert once and leaves Gareth off, because the wiki timeline has no day for him', () => {
+    const ids = serverTimeline()
+      .get()
+      .flatMap((m) => m.expertIds);
+    expect(new Set(ids).size).toBe(ids.length);
+    expect(ids).toHaveLength(9);
+    expect(ids).not.toContain('gareth');
+  });
+
+  it('resolves the experts of a milestone', () => {
+    const day230 = serverTimeline().find('day-230')!;
+    const [resolved] = new ServerTimelineQuery([day230]).resolve();
+    expect(resolved.experts.map((e) => e.name)).toEqual(['Kathy', 'Ronne']);
   });
 });
