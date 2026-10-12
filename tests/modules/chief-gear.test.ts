@@ -1,8 +1,12 @@
 import {
+  CHIEF_GEAR_SET_BONUS,
   chiefGear,
   chiefGearImage,
   ChiefGearLevelQuery,
   chiefGearRarity,
+  chiefGearSetBonus,
+  chiefGearSetBonuses,
+  ChiefGearSetBonusQuery,
   ChiefGearSlotQuery,
   chiefGearSlots,
 } from '@/modules/chief-gear';
@@ -10,6 +14,7 @@ import { items } from '@/modules/items';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('chiefGearSlots', () => chiefGearSlots());
+testQueryBaseContract('chiefGearSetBonuses', () => chiefGearSetBonuses());
 testQueryBaseContract('chiefGear', () => chiefGear());
 
 describe('ChiefGearSlotQuery', () => {
@@ -166,5 +171,189 @@ describe('chief gear level order', () => {
       .get()
       .map((l) => l.order);
     expect(orders).toEqual(orders.map((_, index) => index + 1));
+  });
+});
+
+describe('chief gear tierId', () => {
+  it('links every level to the set bonus entry of its tier', () => {
+    for (const level of chiefGear().get()) {
+      expect(chiefGearSetBonuses().find(level.tierId)).toBeDefined();
+    }
+  });
+
+  it('gives all levels of a tier the same tierId, with the tier label in kebab case', () => {
+    expect(
+      chiefGear()
+        .byTier('EpicT1')
+        .get()
+        .map((l) => [l.id, l.tierId]),
+    ).toEqual([
+      ['epic-t1-star-0', 'epic-t1'],
+      ['epic-t1-star-1', 'epic-t1'],
+      ['epic-t1-star-2', 'epic-t1'],
+      ['epic-t1-star-3', 'epic-t1'],
+    ]);
+    for (const level of chiefGear().get()) {
+      expect(level.tierId).toBe(level.tier.replace(/T(\d+)$/, '-t$1').toLowerCase());
+    }
+  });
+
+  it('uses every set bonus entry for at least one level', () => {
+    const used = new Set(
+      chiefGear()
+        .get()
+        .map((l) => l.tierId),
+    );
+    expect(
+      chiefGearSetBonuses()
+        .get()
+        .every((t) => used.has(t.id)),
+    ).toBe(true);
+  });
+});
+
+describe('ChiefGearSetBonusQuery', () => {
+  it('accepts an explicit source array', () => {
+    expect(new ChiefGearSetBonusQuery(chiefGearSetBonuses().get().slice(0, 2)).count()).toBe(2);
+  });
+
+  it('uses default data when constructed without arguments', () => {
+    expect(new ChiefGearSetBonusQuery().count()).toBe(14);
+  });
+});
+
+describe('chief gear set bonus table', () => {
+  it('has one entry for each tierId of chiefGear(), in the order of the levels', () => {
+    const tierIds = [
+      ...new Set(
+        chiefGear()
+          .get()
+          .map((l) => l.tierId),
+      ),
+    ];
+    expect(
+      chiefGearSetBonuses()
+        .get()
+        .map((t) => t.id),
+    ).toEqual(tierIds);
+  });
+
+  it('lists the percent of each tier', () => {
+    expect(
+      chiefGearSetBonuses()
+        .get()
+        .map((t) => [t.id, t.percent]),
+    ).toEqual([
+      ['common', 5],
+      ['rare', 5.5],
+      ['epic', 6],
+      ['epic-t1', 6.5],
+      ['mythic', 7],
+      ['mythic-t1', 8],
+      ['mythic-t2', 9],
+      ['legendary', 10],
+      ['legendary-t1', 12],
+      ['legendary-t2', 14],
+      ['legendary-t3', 16],
+      ['legendary-t4', 18],
+      ['legendary-t5', 20],
+      ['legendary-t6', 22],
+    ]);
+  });
+
+  it('rises with every tier', () => {
+    const percents = chiefGearSetBonuses()
+      .get()
+      .map((t) => t.percent);
+    percents.slice(1).forEach((p, i) => expect(p).toBeGreaterThan(percents[i]));
+  });
+});
+
+describe('CHIEF_GEAR_SET_BONUS', () => {
+  it('gives Defense for 3 pieces and Attack for 6 pieces on all three troop types', () => {
+    expect(CHIEF_GEAR_SET_BONUS).toEqual({
+      threePiece: { pieces: 3, stat: 'Defense' },
+      sixPiece: { pieces: 6, stat: 'Attack' },
+      troopTypes: ['infantry', 'lancer', 'marksman'],
+    });
+  });
+});
+
+describe('chiefGearSetBonus', () => {
+  const none = (pieces: 3 | 6, stat: 'Defense' | 'Attack') => ({ pieces, stat, percent: 0 });
+
+  it('gives no bonus for no pieces and for two pieces', () => {
+    const expected = { threePiece: none(3, 'Defense'), sixPiece: none(6, 'Attack') };
+    expect(chiefGearSetBonus([])).toEqual(expected);
+    expect(chiefGearSetBonus(['mythic-t1-star-0', 'mythic-t1-star-1'])).toEqual(expected);
+  });
+
+  it('gives the 3 piece Defense bonus of the tier for 3 pieces', () => {
+    const result = chiefGearSetBonus(['mythic-t1-star-0', 'mythic-t1-star-0', 'mythic-t1-star-0']);
+    expect(result.threePiece).toEqual({
+      pieces: 3,
+      stat: 'Defense',
+      percent: 8,
+      tierId: 'mythic-t1',
+    });
+    expect(result.sixPiece).toEqual(none(6, 'Attack'));
+  });
+
+  it('gives both bonuses for 6 pieces of one tier', () => {
+    const result = chiefGearSetBonus(Array(6).fill('legendary-t2-star-0-stage-0'));
+    expect(result.threePiece).toEqual({
+      pieces: 3,
+      stat: 'Defense',
+      percent: 14,
+      tierId: 'legendary-t2',
+    });
+    expect(result.sixPiece).toEqual({
+      pieces: 6,
+      stat: 'Attack',
+      percent: 14,
+      tierId: 'legendary-t2',
+    });
+  });
+
+  it('counts different levels of the same tier together', () => {
+    const result = chiefGearSetBonus([
+      'mythic-t1-star-0',
+      'mythic-t1-star-1',
+      'mythic-t1-star-2',
+      'mythic-t1-star-3',
+      'mythic-t1-star-3',
+      'mythic-t1-star-3',
+    ]);
+    expect(result.threePiece.percent).toBe(8);
+    expect(result.sixPiece.percent).toBe(8);
+  });
+
+  it('uses the highest tier with 3 pieces and gives no 6 piece bonus for mixed tiers', () => {
+    const result = chiefGearSetBonus([
+      'epic-star-0',
+      'epic-star-0',
+      'epic-star-0',
+      'mythic-t1-star-0',
+      'mythic-t1-star-0',
+      'mythic-t1-star-0',
+    ]);
+    expect(result.threePiece).toEqual({
+      pieces: 3,
+      stat: 'Defense',
+      percent: 8,
+      tierId: 'mythic-t1',
+    });
+    expect(result.sixPiece).toEqual(none(6, 'Attack'));
+  });
+
+  it('gives no 6 piece bonus for 5 pieces of one tier', () => {
+    const result = chiefGearSetBonus(Array(5).fill('epic-star-0'));
+    expect(result.threePiece.percent).toBe(6);
+    expect(result.sixPiece.percent).toBe(0);
+  });
+
+  it('throws for an unknown level id and for more than 6 pieces', () => {
+    expect(() => chiefGearSetBonus(['nope'])).toThrow(new Error('Unknown Chief Gear level: nope'));
+    expect(() => chiefGearSetBonus(Array(7).fill('epic-star-0'))).toThrow(RangeError);
   });
 });

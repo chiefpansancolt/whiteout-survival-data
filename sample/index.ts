@@ -3,6 +3,7 @@ import {
   castleAppointments,
   chiefCharm,
   chiefGear,
+  chiefGearSetBonus,
   chiefGearSlots,
   chiefOrderReadyAt,
   chiefOrders,
@@ -236,3 +237,6 @@ console.log(
     .get()
     .flatMap((m) => m.expertIds).length,
 );
+
+console.log('\n--- Chief Gear set bonus ---');
+console.log(chiefGearSetBonus(Array(6).fill('mythic-t1-star-0')));

@@ -21,6 +21,7 @@ export interface ChiefGearLevel {
   name: string;
   /** Stars and stage restart in each tier. */
   tier: string;
+  tierId: string;
   stars: number;
   stage: number;
   materials: ChiefGearMaterial[];
@@ -30,4 +31,24 @@ export interface ChiefGearLevel {
   powerTotal: number;
   /** A level score is split evenly over its steps. */
   score: number;
+}
+
+export interface ChiefGearSetBonusTier {
+  id: string;
+  name: string;
+  percent: number;
+}
+
+export type ChiefGearSetBonusStat = 'Defense' | 'Attack';
+
+export interface ChiefGearSetBonus {
+  pieces: 3 | 6;
+  stat: ChiefGearSetBonusStat;
+  percent: number;
+  tierId?: string;
+}
+
+export interface ChiefGearSetBonuses {
+  threePiece: ChiefGearSetBonus;
+  sixPiece: ChiefGearSetBonus;
 }

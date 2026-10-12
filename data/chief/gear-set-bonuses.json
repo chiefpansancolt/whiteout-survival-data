@@ -1,0 +1,72 @@
+[
+  {
+    "id": "common",
+    "name": "Common",
+    "percent": 5
+  },
+  {
+    "id": "rare",
+    "name": "Rare",
+    "percent": 5.5
+  },
+  {
+    "id": "epic",
+    "name": "Epic",
+    "percent": 6
+  },
+  {
+    "id": "epic-t1",
+    "name": "Epic T1",
+    "percent": 6.5
+  },
+  {
+    "id": "mythic",
+    "name": "Mythic",
+    "percent": 7
+  },
+  {
+    "id": "mythic-t1",
+    "name": "Mythic T1",
+    "percent": 8
+  },
+  {
+    "id": "mythic-t2",
+    "name": "Mythic T2",
+    "percent": 9
+  },
+  {
+    "id": "legendary",
+    "name": "Legendary",
+    "percent": 10
+  },
+  {
+    "id": "legendary-t1",
+    "name": "Legendary T1",
+    "percent": 12
+  },
+  {
+    "id": "legendary-t2",
+    "name": "Legendary T2",
+    "percent": 14
+  },
+  {
+    "id": "legendary-t3",
+    "name": "Legendary T3",
+    "percent": 16
+  },
+  {
+    "id": "legendary-t4",
+    "name": "Legendary T4",
+    "percent": 18
+  },
+  {
+    "id": "legendary-t5",
+    "name": "Legendary T5",
+    "percent": 20
+  },
+  {
+    "id": "legendary-t6",
+    "name": "Legendary T6",
+    "percent": 22
+  }
+]
