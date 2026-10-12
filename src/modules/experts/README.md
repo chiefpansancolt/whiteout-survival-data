@@ -45,14 +45,20 @@ and `count`. They are described in [How It Works](../../../README.md#how-it-work
 Experts are in `data/chief/experts.json`. There are 10 experts across 3 generations (4, 4, and 2).
 Each expert has these fields.
 
-| Field            | Meaning                                                                                                                                    |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `title`          | Narrative epithet, for example "Elite Politician".                                                                                         |
-| `specialty`      | Mechanical category, for example "City Economy". It comes from a different wiki.                                                           |
-| `baseBonuses`    | One or two stat bonuses. The value is the one reached at affinity level 100. A bonus has `stat`, `statKey`, `value`, `amount`, and `unit`. |
-| `skills`         | Always 4 skills.                                                                                                                           |
-| `talent`         | One talent. It has the same `ExpertSkill` shape as a skill.                                                                                |
-| `affinityLevels` | 100 rows, one for each affinity level.                                                                                                     |
+| Field               | Meaning                                                                                                                                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `unlockRequirement` | `daysRequired`, the days since server start at which the expert unlocks, as on a pet. It is the day of the expert on the server timeline. Gareth has none, because the timeline page does not list him. |
+| `title`             | Narrative epithet, for example "Elite Politician".                                                                                                                                                      |
+| `specialty`         | Mechanical category, for example "City Economy". It comes from a different wiki.                                                                                                                        |
+| `baseBonuses`       | One or two stat bonuses. The value is the one reached at affinity level 100. A bonus has `stat`, `statKey`, `value`, `amount`, and `unit`.                                                              |
+| `skills`            | Always 4 skills.                                                                                                                                                                                        |
+| `talent`            | One talent. It has the same `ExpertSkill` shape as a skill.                                                                                                                                             |
+| `affinityLevels`    | 100 rows, one for each affinity level.                                                                                                                                                                  |
+
+The `generation` and the unlock day do not line up for two experts. Romulus is generation 1 and
+unlocks on day 160, after the other generation 1 experts on day 120. Kathy is generation 3 and
+unlocks on day 230, together with Ronne of generation 2. The data keeps both as the sources state
+them.
 
 A skill or talent covers three mechanics. Most have `progressions`, which are named values that
 scale per level, and a `costs` table of EXP and books per level. Agnes's talent has two independent

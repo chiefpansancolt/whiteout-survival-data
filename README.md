@@ -101,17 +101,17 @@ notes on where the data came from. The counts below are the number of entries ea
 
 ### Gear, troops, and research
 
-| Factory                 | Entries | Description                                        | Details                                               |
-| ----------------------- | ------- | -------------------------------------------------- | ----------------------------------------------------- |
-| `chiefGearSlots()`      | 6       | Chief Gear equip slots                             | [README](src/modules/chief-gear/README.md)            |
-| `chiefGear()`           | 150     | Chief Gear upgrade table                           | [README](src/modules/chief-gear/README.md)            |
-| `chiefCharmSlots()`     | 3       | Chief Charm slots by troop type                    | [README](src/modules/chief-charm/README.md)           |
-| `chiefCharm()`          | 75      | Chief Charm upgrade table                          | [README](src/modules/chief-charm/README.md)           |
-| `chiefGearConverter()`  | 7       | Chief Gear material exchange rates                 | [README](src/modules/chief-gear-converter/README.md)  |
-| `chiefCharmConverter()` | 4       | Chief Charm material exchange rates                | [README](src/modules/chief-charm-converter/README.md) |
-| `troops()`              | 3       | Troop tiers with cost and training time            | [README](src/modules/troops/README.md)                |
-| `research()`            | 290     | Research Center tech tree                          | [README](src/modules/research/README.md)              |
-| `researchTree()`        | 7       | Positions and links of the Research tech tree tabs | [README](src/modules/research-tree/README.md)         |
+| Factory                 | Entries | Description                                                          | Details                                               |
+| ----------------------- | ------- | -------------------------------------------------------------------- | ----------------------------------------------------- |
+| `chiefGearSlots()`      | 6       | Chief Gear equip slots                                               | [README](src/modules/chief-gear/README.md)            |
+| `chiefGear()`           | 150     | Chief Gear upgrade table                                             | [README](src/modules/chief-gear/README.md)            |
+| `chiefCharmSlots()`     | 3       | Chief Charm slots by troop type                                      | [README](src/modules/chief-charm/README.md)           |
+| `chiefCharm()`          | 75      | Chief Charm upgrade table                                            | [README](src/modules/chief-charm/README.md)           |
+| `chiefGearConverter()`  | 7       | Chief Gear material exchange rates                                   | [README](src/modules/chief-gear-converter/README.md)  |
+| `chiefCharmConverter()` | 4       | Chief Charm material exchange rates                                  | [README](src/modules/chief-charm-converter/README.md) |
+| `troops()`              | 3       | Troop tiers with cost, training time, power, and unlock requirements | [README](src/modules/troops/README.md)                |
+| `research()`            | 290     | Research Center tech tree                                            | [README](src/modules/research/README.md)              |
+| `researchTree()`        | 7       | Positions and links of the Research tech tree tabs                   | [README](src/modules/research-tree/README.md)         |
 
 ### Alliance
 
@@ -130,7 +130,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `eventBuff()`          | 14      | Buff sources that apply in each game mode                                                 | [README](src/modules/event-buff/README.md)          |
 | `items()`              | 282     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
 | `skins()`              | 191     | Cosmetic skins                                                                            | [README](src/modules/skins/README.md)               |
-| `serverTimeline()`     | 30      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`           | [README](src/modules/server-timeline/README.md)     |
+| `serverTimeline()`     | 32      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`           | [README](src/modules/server-timeline/README.md)     |
 | `chiefOrders()`        | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                    | [README](src/modules/chief-orders/README.md)        |
 | `castleAppointments()` | 8       | Castle positions and the buffs they give                                                  | [README](src/modules/castle-appointments/README.md) |
 | `presidentSkills()`    | 9       | The President's skills: global perks, Receive Tribute, and the skills that act on a Chief | [README](src/modules/president-skills/README.md)    |

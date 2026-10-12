@@ -85,7 +85,7 @@ the age itself is unlocked.
 
 ## Data
 
-The module holds 30 milestones from `data/server-timeline.json`, from day 0 to day 1160. Each
+The module holds 32 milestones from `data/server-timeline.json`, from day 0 to day 1160. Each
 milestone has these fields.
 
 | Field                 | Meaning                                                                                                           |
@@ -103,8 +103,15 @@ milestone has these fields.
 
 The data comes from `https://www.whiteoutsurvival.wiki/server-timeline-server-age/`.
 
-The source lists no expert, so every `expertIds` array is empty. The source does not list the
-Generation 17 heroes in `heroes()`. They are not on the timeline until a source states their day.
+The experts unlock on four days, from the Experts section of the timeline page: day 120 (Holger,
+Agnes, Cyrille), day 160 (Romulus), day 200 (Valeria, Baldur, Fabian), and day 230 (Kathy, Ronne).
+Days 160 and 230 have no other content on the page, so their milestones hold only experts. The page
+does not list Gareth, so he is on no milestone. The wiki days are the ones in the data, so Ronne and
+Kathy unlock on day 230 together. The day of each expert is also `unlockRequirement.daysRequired` in
+`experts()`.
+
+The source does not list the Generation 17 heroes in `heroes()`. They are not on the timeline until
+a source states their day.
 
 The pet days on the timeline and `unlockRequirement.daysRequired` in `pets()` are the same. Titan
 Roc and Giant Tapir are on day 54, Snow Leopard and Giant Elk on day 90, Cave Lion and Snow Ape on

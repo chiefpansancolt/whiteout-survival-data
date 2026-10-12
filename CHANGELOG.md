@@ -11,11 +11,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game data
 
-- `serverTimeline()`: the 30 server age milestones from day 0 to day 1160, with the heroes, pets,
-  and other content that unlock at each one. `resolve()` loads the full hero, expert, pet, event,
-  and Fire Crystal level badge entries. `serverAge()` and `serverTimelineStatus()` take a server
-  start date and give the server age, what is unlocked, and what comes next. Each hero lists the
-  events that give its shards.
+- `serverTimeline()`: the 32 server age milestones from day 0 to day 1160, with the heroes, experts,
+  pets, and other content that unlock at each one. `resolve()` loads the full hero, expert, pet,
+  event, and Fire Crystal level badge entries. `serverAge()` and `serverTimelineStatus()` take a
+  server start date and give the server age, what is unlocked, and what comes next. Each hero lists
+  the events that give its shards.
 - `fireCrystalTable()` and `fireCrystalLevels()`: a table of the Fire Crystals and Refined Fire
   Crystals that each building needs for FC 1 to FC 10, with a column for each level and resource, a
   row for each building, and a total for each column. A level range gives a table of only some
@@ -55,6 +55,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- `experts()` gives each expert on the server timeline its unlock day, like `pets()`.
+- `troops()` gives each tier its power and what unlocks it: the camp level for tiers 1 to 10, and
+  the War Academy level and research for tiers 11 and 12. `highestTierAtCampLevel()` gives the
+  highest tier that a camp level can train. Tiers 10 and 11 list their power at each Fire Crystal
+  level, and `troopPower()` gives the power at a level.
+- `calculateTroops()` gives the power that the troops add, by tier and troop type, using the Fire
+  Crystal level of each camp.
 - Pet unlock days follow the server timeline: 54 for the first five pets, then 90, 140, 200, 280,
   and 370.
 

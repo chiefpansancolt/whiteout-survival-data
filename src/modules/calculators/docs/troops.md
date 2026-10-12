@@ -22,6 +22,7 @@ result.capacity; // 627
 result.totals; // { infantry: 1254, lancer: 0, marksman: 0, total: 1254 }
 result.resources; // meat 3,496,152, wood 2,622,114, coal 611,952, iron 127,908
 result.totalSeconds; // 190608
+result.totalPower; // { infantry: 82764, lancer: 0, marksman: 0, total: 82764 }
 ```
 
 ## Input
@@ -60,6 +61,9 @@ A camp can train and promote, so it can have several runs, each with its own cou
 | `camps`                  | For each type, `runs` (`troopsPerBatch`, `batches`, `seconds`, in input order) and the `seconds` of the camp. |
 | `tiers`                  | One row for each tier 1 to 12 with the change in troops of each type and `total`.                             |
 | `totals`                 | The change in troops for each type and in all, summed over the tiers.                                         |
+| `fireCrystalLevels`      | The Fire Crystal level of each camp, read from its `level`. Tiers 10 and 11 use it for power.                 |
+| `tierPower`              | One row for each tier 1 to 12 with the power that the change in troops adds, by type, and `total`.            |
+| `totalPower`             | The power that the change in troops adds for each type and in all, summed over the tiers.                     |
 | `trainingSpeedPercent`   | The speed in percent that the times use, with the buffs added.                                                |
 | `resources`              | Meat, wood, coal, and iron as `{ itemId, amount }`, rounded to whole numbers.                                 |
 | `totalSeconds`           | The seconds of the three camps added together. This is the speedup time you need.                             |
@@ -92,16 +96,29 @@ resource at the end, not per run.
 of Education capacity and speed, the Vice President speed, `mobilizeSpeedPercent`,
 `advancedTrainingSpeedPercent`, and `maxCostReductionPercent` (75).
 
+## Power
+
+The power of a tier row is the change in troops times the power of one troop, from `troopPower()`.
+Training adds power at its tier. A promotion takes the power of the lower tier away and adds the
+power of the higher tier, so `tierPower` can be negative at the lower tier, like `tiers`.
+
+Tiers 10 and 11 change with the Fire Crystal level. The calculator reads the level from the `level`
+of the camp: `FC 3` and its steps `FC 3-1` to `FC 3-4` are level 3, and every level before `FC 1` is
+level 0, the base power. `campFireCrystalLevel()` is exported and does the same for one label. Every
+other tier has the same power at any level. The power does not use any bonus, such as the stat
+bonuses of research or gear.
+
 ## Event points
 
 Speedups are not an input. The result gives `speedupMinutesNeeded` and `speedupPointsPerMinute`, and
 the interface multiplies the points with the minutes the user spends.
 
 `eventPoints` scores the "Train 1 Lv. N troop" rows of `events()` for the troops trained in training
-runs, at the tier of each run. A promotion gives no points here, and neither does power, because the
-package has no power value for a troop tier. A tier that an event has no row for gives 0, such as
-tier 12 in King of Icefield and tiers 11 and 12 in Hall of Chief. `hallOfChief` is the points for
-one season, because stage 3 of both seasons gives the same points.
+runs, at the tier of each run. A promotion gives no points here. The "Raise 1 Power by training or
+promoting troops" rows of Hall of Chief, Power Up, and Tundra Games are not scored, so `totalPower`
+is not turned into event points. A tier that an event has no row for gives 0, such as tier 12 in
+King of Icefield and tiers 11 and 12 in Hall of Chief. `hallOfChief` is the points for one season,
+because stage 3 of both seasons gives the same points.
 
 ## Errors
 
