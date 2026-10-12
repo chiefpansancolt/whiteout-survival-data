@@ -14,6 +14,7 @@ import {
   items,
   pets,
   research,
+  researchTree,
   serverTimeline,
   serverTimelineStatus,
   skins,
@@ -178,3 +179,14 @@ console.log('T11 Infantry unlock:', shards.rows[0].cells[0]);
 console.log('T11 Infantry total:', shards.rows[shards.rows.length - 1].cells[0]);
 console.log('T11 only columns:', fireCrystalShardTable(undefined, ['T11']).columns.length);
 console.log('T12 Infantry Refined total:', shards.rows[shards.rows.length - 1].cells[2]);
+
+console.log('\n--- Research Tree ---');
+const tree = researchTree();
+console.log('tabs:', tree.map((t) => `${t.name} (${t.nodes.length})`).join(', '));
+console.log(
+  'queues:',
+  research()
+    .get()
+    .filter((n) => n.queue === 'warAcademy').length,
+  'War Academy nodes',
+);
