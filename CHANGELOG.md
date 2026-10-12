@@ -11,6 +11,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game data
 
+- `unreleasedExperts()`: the experts that are announced and not released, flagged `unreleased` in
+  the expert data, with a name, an icon, and the unlock requirement. It holds Justus.
 - `serverTimeline()`: the 32 server age milestones from day 0 to day 1160, with the heroes, experts,
   pets, and other content that unlock at each one. `resolve()` loads the full hero, expert, pet,
   event, and Fire Crystal level badge entries. `serverAge()` and `serverTimelineStatus()` take a

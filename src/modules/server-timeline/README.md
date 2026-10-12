@@ -110,6 +110,11 @@ does not list Gareth, so he is on no milestone. The wiki days are the ones in th
 Kathy unlock on day 230 together. The day of each expert is also `unlockRequirement.daysRequired` in
 `experts()`.
 
+Justus, an expert that the game has not released, is on day 360, the day of the generation 6 heroes.
+The guide says he unlocks "after Gen 6 Heroes unlock in your state" and gives no day, so day 360 is
+the earliest day he can unlock. The wiki timeline page does not list him. `resolve()` returns him in
+`experts`, with `unreleased` set to `true`.
+
 The source does not list the Generation 17 heroes in `heroes()`. They are not on the timeline until
 a source states their day.
 

@@ -2,7 +2,8 @@
 
 The 10 Dawn Academy Experts, recruited during Tundra Trek, with their skills, talent, and affinity
 table. This module also holds the 11 relationship statuses an expert goes through. Use it to read
-expert skill levels, costs, power, and affinity rewards.
+expert skill levels, costs, power, and affinity rewards. An expert that is announced and not yet
+released is in `unreleasedExperts()`, with a name, an icon, and the unlock requirement only.
 
 ## Usage
 
@@ -90,6 +91,36 @@ gain divided by 8, times the level plus 12. The gains are:
 | Holger, Ronne    | 86,400  |
 | Baldur           | 57,600  |
 | Agnes, Cyrille   | 43,200  |
+
+### Unreleased experts
+
+An expert that is announced and not yet released is in `experts.json` with `unreleased` set to
+`true`. `unreleasedExperts()` returns these entries, and `experts()` leaves them out, so `experts()`
+only has experts with skills, a talent, and affinity levels. An unreleased expert has an `id`, a
+`name`, an `img`, the flag, and `unlockRequirement`, which holds `heroGeneration`, the generation of
+heroes that must unlock first. The file has one, Justus, who unlocks after the generation 6 heroes.
+On the server timeline, the generation 6 heroes unlock on day 360.
+
+```ts
+import { unreleasedExperts } from "whiteout-survival-data";
+
+const justus = unreleasedExperts().find("justus");
+console.log(justus?.name); // 'Justus'
+console.log(justus?.unlockRequirement); // { heroGeneration: 6 }
+```
+
+An unreleased expert has no skills, talent, bonuses, or affinity levels, and the calculator does not
+accept its `id`. When the game releases the expert with its values, add the values to the entry and
+remove the `unreleased` flag. The entry then moves to `experts()`.
+
+The data comes from the
+[Justus guide of WSCO](https://www.whiteoutsurvival-community.com/en/guides/experts/justus.html).
+The guide says: "Official timing (feedback adjustment): October 2026, after Gen 6 Heroes unlock in
+your state." It also names five skills, with "N" in place of every value, and says the other values
+are not published. The package does not hold those skill names until the game states the values. The
+wiki timeline page does not list Justus. The server timeline of this package has him on day 360, the
+day of the generation 6 heroes, and `unlockRequirement` has no day. The icon is the portrait of the
+guide, scaled to 350 by 350 pixels like the other experts.
 
 ### Relationships
 

@@ -87,17 +87,18 @@ notes on where the data came from. The counts below are the number of entries ea
 
 ### Heroes and experts
 
-| Factory                    | Entries | Description                                                           | Details                                                   |
-| -------------------------- | ------- | --------------------------------------------------------------------- | --------------------------------------------------------- |
-| `heroes()`                 | 65      | Heroes with stats, skills, shard costs, levels, and exclusive weapons | [README](src/modules/heroes/README.md)                    |
-| `heroWidgets()`            | 10      | Widgets that each exclusive weapon level costs                        | [README](src/modules/hero-widgets/README.md)              |
-| `heroGearEnhancement()`    | 100     | Hero gear enhancement levels 1 to 100                                 | [README](src/modules/hero-gear-enhancement/README.md)     |
-| `heroGearEmpowerment()`    | 100     | Hero gear empowerment levels 1 to 100                                 | [README](src/modules/hero-gear-empowerment/README.md)     |
-| `heroGearMasteryForging()` | 84      | Hero gear mastery forging rows                                        | [README](src/modules/hero-gear-mastery-forging/README.md) |
-| `heroGearStats()`          | 12      | Hero gear stats per slot, troop type, and level                       | [README](src/modules/hero-gear-stats/README.md)           |
-| `experts()`                | 10      | Dawn Academy experts with skills, talents, and affinity levels        | [README](src/modules/experts/README.md)                   |
-| `expertRelationships()`    | 11      | Expert relationship statuses by affinity level                        | [README](src/modules/experts/README.md)                   |
-| `pets()`                   | 14      | Beast Cage pets with skills and level tables                          | [README](src/modules/pets/README.md)                      |
+| Factory                    | Entries | Description                                                                     | Details                                                   |
+| -------------------------- | ------- | ------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| `heroes()`                 | 65      | Heroes with stats, skills, shard costs, levels, and exclusive weapons           | [README](src/modules/heroes/README.md)                    |
+| `heroWidgets()`            | 10      | Widgets that each exclusive weapon level costs                                  | [README](src/modules/hero-widgets/README.md)              |
+| `heroGearEnhancement()`    | 100     | Hero gear enhancement levels 1 to 100                                           | [README](src/modules/hero-gear-enhancement/README.md)     |
+| `heroGearEmpowerment()`    | 100     | Hero gear empowerment levels 1 to 100                                           | [README](src/modules/hero-gear-empowerment/README.md)     |
+| `heroGearMasteryForging()` | 84      | Hero gear mastery forging rows                                                  | [README](src/modules/hero-gear-mastery-forging/README.md) |
+| `heroGearStats()`          | 12      | Hero gear stats per slot, troop type, and level                                 | [README](src/modules/hero-gear-stats/README.md)           |
+| `experts()`                | 10      | Dawn Academy experts with skills, talents, and affinity levels                  | [README](src/modules/experts/README.md)                   |
+| `expertRelationships()`    | 11      | Expert relationship statuses by affinity level                                  | [README](src/modules/experts/README.md)                   |
+| `unreleasedExperts()`      | 1       | Experts that are announced and not released: name, icon, and unlock requirement | [README](src/modules/experts/README.md)                   |
+| `pets()`                   | 14      | Beast Cage pets with skills and level tables                                    | [README](src/modules/pets/README.md)                      |
 
 ### Gear, troops, and research
 
