@@ -1,0 +1,116 @@
+[
+  {
+    "id": "receive-tribute",
+    "name": "Receive Tribute",
+    "img": "/images/president-skills/receive-tribute.png",
+    "effect": "You can exchange 27,000 Authority for 300, 400, 500 Gems",
+    "target": "president",
+    "authorityCost": 27000,
+    "maxUses": 3
+  },
+  {
+    "id": "medical-advancement",
+    "name": "Medical Advancement",
+    "img": "/images/president-skills/medical-advancement.png",
+    "effect": "+50.00% all State Chiefs' healing speeds for 24 hours",
+    "target": "state",
+    "authorityCost": 45000,
+    "cooldownSeconds": 604800,
+    "bonus": {
+      "stat": "Healing Speed",
+      "statKey": "healing-speed",
+      "value": "50%",
+      "amount": 50,
+      "unit": "percent",
+      "durationSeconds": 86400
+    }
+  },
+  {
+    "id": "mercantilism",
+    "name": "Mercantilism",
+    "img": "/images/president-skills/mercantilism.png",
+    "effect": "+10.00% all State Chiefs' construction speeds for 24 hours",
+    "target": "state",
+    "authorityCost": 45000,
+    "maxUses": 2,
+    "cooldownSeconds": 604800,
+    "bonus": {
+      "stat": "Construction Speed",
+      "statKey": "construction-speed",
+      "value": "10%",
+      "amount": 10,
+      "unit": "percent",
+      "durationSeconds": 86400
+    }
+  },
+  {
+    "id": "research-advancement",
+    "name": "Research Advancement",
+    "img": "/images/president-skills/research-advancement.png",
+    "effect": "+10.00% all State Chiefs' research speeds for 24 hours",
+    "target": "state",
+    "authorityCost": 45000,
+    "maxUses": 2,
+    "cooldownSeconds": 604800,
+    "bonus": {
+      "stat": "Research Speed",
+      "statKey": "research-speed",
+      "value": "10%",
+      "amount": 10,
+      "unit": "percent",
+      "durationSeconds": 86400
+    }
+  },
+  {
+    "id": "mobilize",
+    "name": "Mobilize",
+    "img": "/images/president-skills/mobilize.png",
+    "effect": "+30.00% all State Chiefs' training speeds for 24 hours",
+    "target": "state",
+    "authorityCost": 45000,
+    "maxUses": 2,
+    "cooldownSeconds": 604800,
+    "bonus": {
+      "stat": "Training Speed",
+      "statKey": "training-speed",
+      "value": "30%",
+      "amount": 30,
+      "unit": "percent",
+      "durationSeconds": 86400
+    }
+  },
+  {
+    "id": "ceasefire",
+    "name": "Ceasefire",
+    "img": "/images/president-skills/ceasefire.png",
+    "effect": "Prevent a Chief from attacking other Chiefs for 1 hour.",
+    "target": "chief",
+    "authorityCost": 27000,
+    "maxUses": 14
+  },
+  {
+    "id": "forced-exile",
+    "name": "Forced Exile",
+    "img": "/images/president-skills/forced-exile.png",
+    "effect": "Teleports a targeted Chief's city randomly, and generate a Shield for it that lasts 10 hours (Shield duration does not stack, takes the maximum value)",
+    "target": "chief",
+    "authorityCost": 27000,
+    "maxUses": 14
+  },
+  {
+    "id": "state-search",
+    "name": "State Search",
+    "img": "/images/president-skills/state-search.png",
+    "effect": "Immediately locates the City of any Chief (limited to Chiefs of your State)",
+    "target": "chief",
+    "authorityCost": 18000,
+    "maxUses": 56
+  },
+  {
+    "id": "supreme-presidents-will",
+    "name": "Supreme President's Will",
+    "effect": "A Supreme President-only state enhancement",
+    "target": "state",
+    "supremePresidentOnly": true
+  }
+]

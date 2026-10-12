@@ -31,3 +31,6 @@ export * from './modules/fire-crystal-table';
 export * from './modules/fire-crystal-shard-table';
 export * from './modules/research-tree';
 export * from './modules/dailies';
+export * from './modules/chief-orders';
+export * from './modules/castle-appointments';
+export * from './modules/president-skills';

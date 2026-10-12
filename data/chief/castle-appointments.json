@@ -1,0 +1,257 @@
+[
+  {
+    "id": "supreme-president",
+    "name": "Supreme President",
+    "kind": "president",
+    "bonuses": [
+      {
+        "stat": "Troops Attack",
+        "statKey": "troops-attack",
+        "value": "+7.5%",
+        "amount": 7.5,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Defense",
+        "statKey": "troops-defense",
+        "value": "+7.5%",
+        "amount": 7.5,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Lethality",
+        "statKey": "troops-lethality",
+        "value": "+7.5%",
+        "amount": 7.5,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Health",
+        "statKey": "troops-health",
+        "value": "+7.5%",
+        "amount": 7.5,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "president",
+    "name": "President",
+    "kind": "president",
+    "bonuses": [
+      {
+        "stat": "Troops Attack",
+        "statKey": "troops-attack",
+        "value": "+5%",
+        "amount": 5,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Defense",
+        "statKey": "troops-defense",
+        "value": "+5%",
+        "amount": 5,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Lethality",
+        "statKey": "troops-lethality",
+        "value": "+5%",
+        "amount": 5,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Health",
+        "statKey": "troops-health",
+        "value": "+5%",
+        "amount": 5,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "vice-president",
+    "name": "Vice President",
+    "kind": "vice-president",
+    "bonuses": [
+      {
+        "stat": "Construction Speed",
+        "statKey": "construction-speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "Research Speed",
+        "statKey": "research-speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      },
+      {
+        "stat": "Training Speed",
+        "statKey": "training-speed",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "minister-of-defense",
+    "name": "Minister of Defense",
+    "kind": "minister",
+    "bonuses": [
+      {
+        "stat": "Troops Lethality",
+        "statKey": "troops-lethality",
+        "value": "+10%",
+        "amount": 10,
+        "unit": "percent"
+      }
+    ],
+    "boostedBonuses": [
+      {
+        "stat": "Troops Lethality",
+        "statKey": "troops-lethality",
+        "value": "+15%",
+        "amount": 15,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "minister-of-strategy",
+    "name": "Minister of Strategy",
+    "kind": "minister",
+    "bonuses": [
+      {
+        "stat": "Troops Attack",
+        "statKey": "troops-attack",
+        "value": "+5%",
+        "amount": 5,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Deployment Capacity",
+        "statKey": "troops-deployment-capacity",
+        "value": "+2,500",
+        "amount": 2500,
+        "unit": "flat"
+      }
+    ],
+    "boostedBonuses": [
+      {
+        "stat": "Troops Attack",
+        "statKey": "troops-attack",
+        "value": "+8%",
+        "amount": 8,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Deployment Capacity",
+        "statKey": "troops-deployment-capacity",
+        "value": "+3,750",
+        "amount": 3750,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "minister-of-health",
+    "name": "Minister of Health",
+    "kind": "minister",
+    "bonuses": [
+      {
+        "stat": "Healing Speed",
+        "statKey": "healing-speed",
+        "value": "+100%",
+        "amount": 100,
+        "unit": "percent"
+      },
+      {
+        "stat": "Infirmary Capacity",
+        "statKey": "infirmary-capacity",
+        "value": "+5,000",
+        "amount": 5000,
+        "unit": "flat"
+      }
+    ],
+    "boostedBonuses": [
+      {
+        "stat": "Healing Speed",
+        "statKey": "healing-speed",
+        "value": "+150%",
+        "amount": 150,
+        "unit": "percent"
+      },
+      {
+        "stat": "Infirmary Capacity",
+        "statKey": "infirmary-capacity",
+        "value": "+7,500",
+        "amount": 7500,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "minister-of-education",
+    "name": "Minister of Education",
+    "kind": "minister",
+    "bonuses": [
+      {
+        "stat": "Training Speed",
+        "statKey": "training-speed",
+        "value": "+50%",
+        "amount": 50,
+        "unit": "percent"
+      },
+      {
+        "stat": "Training Capacity",
+        "statKey": "training-capacity",
+        "value": "+200",
+        "amount": 200,
+        "unit": "flat"
+      }
+    ],
+    "boostedBonuses": [
+      {
+        "stat": "Training Speed",
+        "statKey": "training-speed",
+        "value": "+75%",
+        "amount": 75,
+        "unit": "percent"
+      },
+      {
+        "stat": "Training Capacity",
+        "statKey": "training-capacity",
+        "value": "+300",
+        "amount": 300,
+        "unit": "flat"
+      }
+    ]
+  },
+  {
+    "id": "minister-of-interior",
+    "name": "Minister of Interior",
+    "kind": "minister",
+    "bonuses": [
+      {
+        "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
+        "value": "+80%",
+        "amount": 80,
+        "unit": "percent"
+      }
+    ],
+    "boostedBonuses": [
+      {
+        "stat": "Resource Production Speed",
+        "statKey": "resource-production-speed",
+        "value": "+120%",
+        "amount": 120,
+        "unit": "percent"
+      }
+    ]
+  }
+]

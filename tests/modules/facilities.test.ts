@@ -33,10 +33,14 @@ describe('facility unlock levels', () => {
     expect(dawnAcademy.description).toContain('Furnace Level 25');
   });
 
+  it('gives the Chief’s House the Furnace level at which the Chief Orders unlock', () => {
+    expect(facilities().find('chiefs-house')!.unlockFurnaceLevel).toBe(6);
+  });
+
   it('leaves the unlock level out of every other facility', () => {
     const others = facilities()
       .get()
-      .filter((f) => f.id !== 'dawn-academy');
+      .filter((f) => !['dawn-academy', 'chiefs-house'].includes(f.id));
     expect(others.length).toBeGreaterThan(0);
     for (const facility of others) expect(facility.unlockFurnaceLevel).toBeUndefined();
   });

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "double-time",
+    "name": "Double Time",
+    "img": "/images/chief-orders/double-time.png",
+    "effect": "Reduces the duration of new construction or upgrades started during the next five minutes by 20%.",
+    "contentmentCost": 800000,
+    "cooldownSeconds": 82800,
+    "bonus": {
+      "stat": "Construction Time Reduction",
+      "statKey": "construction-time-reduction",
+      "value": "20%",
+      "amount": 20,
+      "unit": "percent",
+      "windowSeconds": 300
+    },
+    "note": "Only affects construction started during the activation window, not existing timers."
+  },
+  {
+    "id": "rush-job",
+    "name": "Rush Job",
+    "img": "/images/chief-orders/rush-job.png",
+    "effect": "Instantly grants five days of resources from all city worksites in Survivor Time.",
+    "contentmentCost": 150000,
+    "cooldownSeconds": 86400
+  },
+  {
+    "id": "productivity-day",
+    "name": "Productivity Day",
+    "img": "/images/chief-orders/productivity-day.png",
+    "effect": "Increases output from all resource worksites by 100% for 24 hours of Survivor Time. Reduces Mood by 10.",
+    "contentmentCost": 50000,
+    "cooldownSeconds": 43200
+  },
+  {
+    "id": "urgent-mobilization",
+    "name": "Urgent Mobilization",
+    "img": "/images/chief-orders/urgent-mobilization.png",
+    "effect": "Forces survivors at all worksites to work for 48 hours of Survivor Time. Reduces Mood by 10.",
+    "contentmentCost": 50000,
+    "cooldownSeconds": 28800
+  },
+  {
+    "id": "festivities",
+    "name": "Festivities",
+    "img": "/images/chief-orders/festivities.png",
+    "effect": "Provides +50 Mood and +30 Comfort during one day of city festivities in Survivor Time.",
+    "contentmentCost": 50000,
+    "cooldownSeconds": 86400
+  },
+  {
+    "id": "comprehensive-care",
+    "name": "Comprehensive Care",
+    "img": "/images/chief-orders/comprehensive-care.png",
+    "effect": "Immediately heals all sick survivors in the city.",
+    "contentmentCost": 150000,
+    "cooldownSeconds": 14400,
+    "note": "Does not heal wounded troops in the Infirmary."
+  },
+  {
+    "id": "dawn-alliance-commendation",
+    "name": "Dawn Alliance Commendation",
+    "effect": "Entitle you to a random reward from the Dawn Alliance vault.",
+    "contentmentCost": 800000,
+    "cooldownSeconds": 172800,
+    "replaces": "festivities",
+    "unlockFireCrystalLevel": 1,
+    "rewards": [
+      {
+        "itemId": "fire-crystal",
+        "quantity": 5,
+        "chance": 10
+      },
+      {
+        "itemId": "fire-crystal",
+        "quantity": 10,
+        "chance": 10
+      },
+      {
+        "itemId": "essence-stones",
+        "quantity": 3,
+        "chance": 10
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "quantity": 3,
+        "chance": 10
+      },
+      {
+        "itemId": "design-plans",
+        "quantity": 3,
+        "chance": 10
+      },
+      {
+        "itemId": "design-plans",
+        "quantity": 8,
+        "chance": 10
+      },
+      {
+        "itemId": "charm-design",
+        "quantity": 3,
+        "chance": 10
+      },
+      {
+        "itemId": "charm-design",
+        "quantity": 8,
+        "chance": 10
+      },
+      {
+        "itemId": "charm-guide",
+        "quantity": 3,
+        "chance": 10
+      },
+      {
+        "itemId": "charm-guide",
+        "quantity": 8,
+        "chance": 10
+      }
+    ]
+  },
+  {
+    "id": "crunch-time",
+    "name": "Crunch Time",
+    "effect": "Initiates maximum automation load for +100% resource output for 24 hours (survivor time).",
+    "contentmentCost": 100000,
+    "cooldownSeconds": 43200,
+    "replaces": "urgent-mobilization",
+    "unlockFireCrystalLevel": 1
+  },
+  {
+    "id": "advanced-training",
+    "name": "Advanced Training",
+    "effect": "Increases troop training speed by 20% for 2 hours.",
+    "contentmentCost": 150000,
+    "cooldownSeconds": 172800,
+    "bonus": {
+      "stat": "Training Speed",
+      "statKey": "training-speed",
+      "value": "20%",
+      "amount": 20,
+      "unit": "percent",
+      "windowSeconds": 7200
+    },
+    "replaces": "productivity-day",
+    "unlockFireCrystalLevel": 1
+  }
+]

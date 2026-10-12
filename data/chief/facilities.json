@@ -34,7 +34,8 @@
     "id": "chiefs-house",
     "name": "Chief's House",
     "img": "/images/facilities/ChiefsHouse.png",
-    "description": "Houses Edicts, special town-wide abilities activated by spending Contentment (earned by working Survivors, or purchased with Diamonds): Urgent Mobilization, Rush Job, Comprehensive Care, Double Time, Productivity Day, and Festivities, each with its own Contentment cost and cooldown."
+    "description": "Houses Edicts, special town-wide abilities activated by spending Contentment (earned by working Survivors, or purchased with Diamonds): Urgent Mobilization, Rush Job, Comprehensive Care, Double Time, Productivity Day, and Festivities, each with its own Contentment cost and cooldown.",
+    "unlockFurnaceLevel": 6
   },
   {
     "id": "explorers-cabin",
