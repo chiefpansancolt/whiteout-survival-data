@@ -15,6 +15,10 @@ events().byCategory("alliance").count(); // 12
 const bear = events().find("bear-hunt");
 bear?.duration; // '30 minutes'
 
+// The same as a rule that an app can use: repeat every 47.5 hours, a run of 30 minutes
+bear?.schedule;
+// { repeat: { kind: 'every', every: 47.5, unit: 'hours' }, runs: [{ length: 30, unit: 'minutes' }] }
+
 // Read a nested list: the 20 waves of Crazy Joe
 events().findByName("Crazy Joe")?.waves?.length; // 20
 
@@ -96,6 +100,52 @@ The four Core events have no `resultShape`. Six events are `milestones` only bec
 missions: Alliance Mobilization, Beast Whisperer, Flame and Fang, Symphony of Change, Vision of
 Dawn, and Wild Brawl. The site plan counts 14 and 20 for the last two shapes, so check these six if
 a different form fits better. A `resultShape` is data, and an edit in the event file changes it.
+
+## Schedule
+
+`frequency` and `duration` are free text from the wiki. `schedule` is the same information as a
+rule, for a calendar. It is set on 50 of the 65 events. It has two optional parts.
+
+| Field    | Meaning                                                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `repeat` | `kind` is `none`, `every`, or `weekly`. `every` has `every` (a number) and `unit` (`hours`, `days`, `weeks`, or `months`). `weekly` has `weekdays`.    |
+| `runs`   | The runs of one cycle. A run has `length`, `unit` (`minutes`, `hours`, or `days`), and optional `label`, `startWeekday`, and `startTimeUtc` (`HH:MM`). |
+
+The shape is the one that a tracker app needs to suggest a repeat rule and a run length next to the
+text of the game. An event with two runs in a cycle has two entries in `runs`: Hall of Chief has
+`Season 1` for 6 days and `Season 2` for 7 days. Crazy Joe has a run on Tuesday and one on Thursday.
+Frostfire Mine has a run of 30 minutes for each of its seven time slots. Times are in UTC. The
+schedule has no dates, because the game does not publish them.
+
+The text of `frequency` and `duration` stays as the wiki states it. The `schedule` is read from that
+text, and only where it is clear:
+
+- A repeat rule is set when the text gives an interval: "Weekly", "Every two weeks", "Once a month",
+  and "Yearly" (12 months). Bear Hunt is every 47.5 hours, the time that an alliance waits to summon
+  the bear again. "Once only" is `kind: 'none'`.
+- A run is set when the text gives a length, such as "2 days" or "30 minutes". A weekday or a time
+  is added when the text gives one, such as "Monday 00:00 UTC".
+- The time slots of Frostfire Mine are hours of the day in UTC, so the repeat is every day. The text
+  does not say "daily".
+- Alliance Mobilization is set to once a month, as the text says, although it runs twice a month
+  until about 13 weeks of state age.
+
+Seven events have a repeat rule or a run that comes from another source, because the wiki text has
+none. WoS Tools and a BlueStacks guide agree on Foundry Battle every two weeks for 60 minutes, and
+on SvS every four weeks. Canyon Clash every month is on WoS Tools, a help center page, and a
+BlueStacks guide. The others have one source: Armament Competition and Officer Project every two
+weeks (Heaven Guardian and Out of Games, with Officer Project "usually two days"), Mercenary
+Prestige every month (Out of Games), and Hero Rally 14 days (Heaven Guardian).
+
+Fifteen events have no schedule, because no source gives a usable one: Deadshot, Develop New Tech
+and its second version, Dreamscape Memory, Frostdragon Tyrant, Frosty Fortune, Home Beyond, Return
+to Tundra, Silver Shell Events, Stand of Arms, The Labyrinth, Trial Event, Tundra Album, Tundra
+Games, and Tundra Star. Some events have a repeat rule and no run, or the other way around, when the
+text has only one of the two.
+
+Two events have sources that disagree, and the schedule follows the wiki text. SvS has "About 2
+weeks" on the wiki and a 10 day event in two other sources, so it has no run. Tundra Arms League has
+18 days in the package and four weeks in a guide.
 
 ## Notes
 
