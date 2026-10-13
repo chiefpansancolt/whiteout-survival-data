@@ -151,9 +151,13 @@ table "Fire Crystal Upgrades" by Lobster (WOA, State 843) on Reddit, so they are
 red table background. They are not the original game files. The timeline links FC 1 to FC 3 to day
 60, FC 4 and FC 5 to day 150, FC 6 to FC 8 to day 315, and FC 9 and FC 10 to day 500. The wiki page
 names only FC 5, FC 8, and FC 10. It writes day 150 as "Fire Crystal 5 + Laboratory Unlocks", day
-315 as "Fire Crystal 8 Unlocks", and day 500 as "Fire Crystal 10 Unlocks". The other levels were set
-by hand. The badges replace the "Fire Crystal 8 Unlocks" line on day 315 and the "Fire Crystal 10
-Unlocks" line on day 500.
+315 as "Fire Crystal 8 Unlocks", and day 500 as "Fire Crystal 10 Unlocks". The Fire Crystal guide
+and the server timeline guide of mone.gg state the same groups as the package: FC 1 to FC 3 on day
+60, FC 4 and FC 5 on day 150, FC 6 to FC 8 on day 315 (with Refined Fire Crystals), and FC 9 and FC
+10 on day 500. The grindnstrat.com timeline lists "Fire Crystal Building LV6-8" on day 315 and "Fire
+Crystal 9-10" on day 600, and an older list on the same page gives "Fire Crystal 8" on day 330. The
+package keeps the wiki and mone.gg days. The badges replace the "Fire Crystal 8 Unlocks" line on day
+315 and the "Fire Crystal 10 Unlocks" line on day 500.
 
 The laboratory entries use reworded text. Day 150 reads "Crystal Laboratory Unlocks (4x)", day 220
 reads "Crystal Laboratory Updated (5x)", and day 315 reads "Crystal Laboratory Updated (6x)". The
