@@ -241,6 +241,62 @@
       "note": "Rewards depend on the tier. The wiki gives the amounts in images only."
     }
   ],
+  "expertTiers": [
+    {
+      "expertId": "baldur",
+      "skill": "Blazing Sunrise",
+      "tier": 1,
+      "unlockSkillLevel": 1,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 20
+        },
+        {
+          "name": "Charm Guide",
+          "itemId": "charm-guide",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "expertId": "baldur",
+      "skill": "Blazing Sunrise",
+      "tier": 2,
+      "unlockSkillLevel": 6,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 10
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "expertId": "baldur",
+      "skill": "Blazing Sunrise",
+      "tier": 3,
+      "unlockSkillLevel": 10,
+      "rewards": [
+        {
+          "name": "Fire Crystal",
+          "itemId": "fire-crystal",
+          "amount": 30
+        },
+        {
+          "name": "Charm Design",
+          "itemId": "charm-design",
+          "amount": 20
+        }
+      ]
+    }
+  ],
   "tips": [
     "Defeat Polar Terrors.",
     "Raise your power by training and promoting troops.",

@@ -2898,6 +2898,92 @@
       "note": "Reach the highest personal points grade on a preparation day or in the battle phase to earn 1 State Medal. More medals unlock more rewards."
     }
   ],
+  "expertTiers": [
+    {
+      "expertId": "valeria",
+      "skill": "Well Prepared",
+      "tier": 1,
+      "unlockSkillLevel": 1,
+      "rewards": [
+        {
+          "name": "Sunfire Token",
+          "itemId": "sunfire-token",
+          "amount": 2
+        },
+        {
+          "name": "Sail of Conquest",
+          "itemId": "sail-of-conquest",
+          "amount": 1
+        },
+        {
+          "name": "Fiery Heart",
+          "itemId": "fiery-heart",
+          "amount": 2
+        },
+        {
+          "name": "5m Learning Speedup",
+          "itemId": "speedup-learning-5m",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "expertId": "valeria",
+      "skill": "Well Prepared",
+      "tier": 2,
+      "unlockSkillLevel": 6,
+      "rewards": [
+        {
+          "name": "Sunfire Token",
+          "itemId": "sunfire-token",
+          "amount": 5
+        },
+        {
+          "name": "Book of Knowledge",
+          "itemId": "book-of-knowledge",
+          "amount": 200
+        },
+        {
+          "name": "Fiery Heart",
+          "itemId": "fiery-heart",
+          "amount": 2
+        },
+        {
+          "name": "5m Learning Speedup",
+          "itemId": "speedup-learning-5m",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "expertId": "valeria",
+      "skill": "Well Prepared",
+      "tier": 3,
+      "unlockSkillLevel": 10,
+      "rewards": [
+        {
+          "name": "Sunfire Token",
+          "itemId": "sunfire-token",
+          "amount": 10
+        },
+        {
+          "name": "Common Expert Sigil",
+          "itemId": "common-expert-sigil",
+          "amount": 2
+        },
+        {
+          "name": "Fiery Heart",
+          "itemId": "fiery-heart",
+          "amount": 2
+        },
+        {
+          "name": "5m Learning Speedup",
+          "itemId": "speedup-learning-5m",
+          "amount": 20
+        }
+      ]
+    }
+  ],
   "tips": [
     "Coordinate with alliances in your own state instead of fighting them.",
     "Use shields if you are not online when the portal opens, to reduce losses.",

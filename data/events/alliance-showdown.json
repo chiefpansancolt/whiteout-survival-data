@@ -3135,6 +3135,98 @@
       "note": "Decoration. Troop defense 1%."
     }
   ],
+  "expertTiers": [
+    {
+      "expertId": "baldur",
+      "skill": "Dawn Hymn",
+      "tier": 1,
+      "unlockSkillLevel": 1,
+      "thresholds": [
+        {
+          "days": ["1", "2", "3", "4"],
+          "scoreTotal": 200000
+        }
+      ],
+      "rewards": [
+        {
+          "name": "Sail of Conquest",
+          "itemId": "sail-of-conquest",
+          "amount": 1
+        },
+        {
+          "name": "Truck Voucher",
+          "itemId": "truck-voucher",
+          "amount": 1
+        },
+        {
+          "name": "100K Meat (Secured)",
+          "itemId": "meat",
+          "amount": 20
+        },
+        {
+          "name": "100K Wood (Secured)",
+          "itemId": "wood",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "expertId": "baldur",
+      "skill": "Dawn Hymn",
+      "tier": 2,
+      "unlockSkillLevel": 6,
+      "rewards": [
+        {
+          "name": "Book of Knowledge",
+          "itemId": "book-of-knowledge",
+          "amount": 200
+        },
+        {
+          "name": "Truck Voucher",
+          "itemId": "truck-voucher",
+          "amount": 1
+        },
+        {
+          "name": "100K Coal (Secured)",
+          "itemId": "coal",
+          "amount": 4
+        },
+        {
+          "name": "100K Iron (Secured)",
+          "itemId": "iron",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "expertId": "baldur",
+      "skill": "Dawn Hymn",
+      "tier": 3,
+      "unlockSkillLevel": 10,
+      "rewards": [
+        {
+          "name": "Common Expert Sigil",
+          "itemId": "common-expert-sigil",
+          "amount": 2
+        },
+        {
+          "name": "Truck Voucher",
+          "itemId": "truck-voucher",
+          "amount": 1
+        },
+        {
+          "name": "5m General Speedup",
+          "itemId": "speedup-general-5m",
+          "amount": 25
+        },
+        {
+          "name": "5m Training Speedup",
+          "itemId": "speedup-troop-5m",
+          "amount": 25
+        }
+      ]
+    }
+  ],
   "tips": [
     "A team needs 7 of the 13 victory points to win.",
     "Tundra Trade Route runs at the same time for 6 days. Loot from day 6 can be collected on day 7 until 4 UTC."

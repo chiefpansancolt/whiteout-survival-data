@@ -185,6 +185,20 @@ export interface EventSchedule {
   runs?: EventRun[];
 }
 
+export interface GameEventExpertTierThreshold {
+  days: string[];
+  scoreTotal: number;
+}
+
+export interface GameEventExpertTier {
+  expertId: string;
+  skill: string;
+  tier: number;
+  unlockSkillLevel: number;
+  thresholds?: GameEventExpertTierThreshold[];
+  rewards?: GameEventReward[];
+}
+
 export interface GameEvent {
   id: string;
   name: string;
@@ -198,6 +212,7 @@ export interface GameEvent {
   frequency?: string;
   duration?: string;
   schedule?: EventSchedule;
+  expertTiers?: GameEventExpertTier[];
   requirements?: string[];
   /** Ordered from lowest to highest. */
   tiers?: GameEventTier[];

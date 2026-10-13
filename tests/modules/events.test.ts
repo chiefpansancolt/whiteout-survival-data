@@ -1,6 +1,7 @@
 import { decoration } from '@/modules/daybreak-island';
 import { eventBuff } from '@/modules/event-buff';
 import { eventRankingTables, events, EventsQuery } from '@/modules/events';
+import { experts } from '@/modules/experts';
 import { heroes as heroData } from '@/modules/heroes';
 import { items } from '@/modules/items';
 import { skins } from '@/modules/skins';
@@ -1801,5 +1802,138 @@ describe('event schedules', () => {
       repeat: { kind: 'none' },
       runs: [{ length: 7, unit: 'days' }],
     });
+  });
+});
+
+describe('expert extra tiers', () => {
+  const withTiers = () =>
+    events()
+      .get()
+      .filter((e) => e.expertTiers);
+
+  it('lists three extra tiers for Dawn Hymn, Blazing Sunrise, and Well Prepared', () => {
+    expect(
+      withTiers().map((e) => [
+        e.id,
+        e.expertTiers!.map((t) => [t.expertId, t.skill, t.tier, t.unlockSkillLevel]),
+      ]),
+    ).toEqual([
+      [
+        'alliance-mobilization',
+        [
+          ['baldur', 'Blazing Sunrise', 1, 1],
+          ['baldur', 'Blazing Sunrise', 2, 6],
+          ['baldur', 'Blazing Sunrise', 3, 10],
+        ],
+      ],
+      [
+        'alliance-showdown',
+        [
+          ['baldur', 'Dawn Hymn', 1, 1],
+          ['baldur', 'Dawn Hymn', 2, 6],
+          ['baldur', 'Dawn Hymn', 3, 10],
+        ],
+      ],
+      [
+        'svs-state-of-power',
+        [
+          ['valeria', 'Well Prepared', 1, 1],
+          ['valeria', 'Well Prepared', 2, 6],
+          ['valeria', 'Well Prepared', 3, 10],
+        ],
+      ],
+    ]);
+  });
+
+  it('matches each tier to the Extra Tier progression of the skill of the expert', () => {
+    for (const event of withTiers()) {
+      for (const tier of event.expertTiers!) {
+        const skill = experts()
+          .find(tier.expertId)!
+          .skills.find((s) => s.name === tier.skill)!;
+        const values = skill.progressions!.find((p) => p.label === 'Extra Tier')!.values;
+        const firstLevel = values.findIndex((v) => v >= tier.tier) + 1;
+        expect(tier.unlockSkillLevel).toBe(firstLevel);
+      }
+    }
+  });
+
+  it('gives Dawn Hymn tier 1 a threshold of 200,000 points on days 1 to 4', () => {
+    const [tier1, tier2, tier3] = events().find('alliance-showdown')!.expertTiers!;
+    expect(tier1.thresholds).toEqual([{ days: ['1', '2', '3', '4'], scoreTotal: 200000 }]);
+    expect(tier2.thresholds).toBeUndefined();
+    expect(tier3.thresholds).toBeUndefined();
+  });
+
+  it('puts the Dawn Hymn tier 1 threshold above the normal milestones of those days', () => {
+    const showdown = events().find('alliance-showdown')!;
+    for (const dayId of showdown.expertTiers![0].thresholds![0].days) {
+      const day = showdown.days!.find((d) => d.day === dayId)!;
+      const highest = Math.max(...day.milestones!.map((m) => m.scoreTotal ?? 0));
+      expect(highest).toBeLessThan(200000);
+    }
+  });
+
+  it('keeps the other thresholds out until a source states them', () => {
+    for (const event of withTiers()) {
+      for (const tier of event.expertTiers!) {
+        if (event.id !== 'alliance-showdown' || tier.tier !== 1) {
+          expect(tier.thresholds).toBeUndefined();
+        }
+      }
+    }
+  });
+
+  it('gives each tier the rewards of its skill at the level that unlocks it', () => {
+    for (const event of withTiers()) {
+      for (const tier of event.expertTiers!) {
+        const skill = experts()
+          .find(tier.expertId)!
+          .skills.find((s) => s.name === tier.skill)!;
+        const bundle = skill.milestoneRewards!.find(
+          (m) => m.levelRequired === tier.unlockSkillLevel,
+        )!;
+        expect(tier.rewards!.map((r) => r.amount)).toEqual(bundle.rewards.map((r) => r.amount));
+        for (const reward of tier.rewards!) expect(items().find(reward.itemId!)).toBeDefined();
+      }
+    }
+  });
+
+  it('lists the rewards of Well Prepared, Blazing Sunrise, and Dawn Hymn by tier', () => {
+    const rewards = (eventId: string, tier: number) =>
+      events()
+        .find(eventId)!
+        .expertTiers![tier - 1].rewards!.map((r) => [r.itemId, r.amount]);
+    expect(rewards('svs-state-of-power', 3)).toEqual([
+      ['sunfire-token', 10],
+      ['common-expert-sigil', 2],
+      ['fiery-heart', 2],
+      ['speedup-learning-5m', 20],
+    ]);
+    expect(rewards('alliance-mobilization', 2)).toEqual([
+      ['essence-stones', 10],
+      ['enhancement-xp-component', 10],
+    ]);
+    expect(rewards('alliance-showdown', 1)).toEqual([
+      ['sail-of-conquest', 1],
+      ['truck-voucher', 1],
+      ['meat', 20],
+      ['wood', 20],
+    ]);
+    expect(rewards('alliance-showdown', 3)).toEqual([
+      ['common-expert-sigil', 2],
+      ['truck-voucher', 1],
+      ['speedup-general-5m', 25],
+      ['speedup-troop-5m', 25],
+    ]);
+  });
+
+  it('names the secured resource packs and the speedups like the other events do', () => {
+    const names = events()
+      .find('alliance-showdown')!
+      .expertTiers!.flatMap((t) => t.rewards!.map((r) => r.name));
+    expect(names).toContain('100K Meat (Secured)');
+    expect(names).toContain('100K Iron (Secured)');
+    expect(names).toContain('5m Training Speedup');
   });
 });
