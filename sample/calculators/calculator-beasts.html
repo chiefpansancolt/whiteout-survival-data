@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Beast Calculator</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --good: #52d17a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+    max-width: 980px;
+  }
+  a { color: var(--accent); }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 0.85rem; margin: 24px 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; line-height: 1.45; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+  .controls label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  select, input[type="number"] {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+  input[type="number"] { width: 110px; text-align: right; }
+  select:disabled { opacity: 0.45; }
+  button {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .bonus-note { color: var(--good); font-size: 0.85rem; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 10px; }
+  .pill {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .pill.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  th, td { padding: 7px 10px; border-bottom: 1px solid var(--panel-border); text-align: left; vertical-align: middle; }
+  th { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+  td.bonus { color: var(--good); }
+  .scroll { overflow-x: auto; }
+  .note { color: var(--text-dim); font-size: 0.8rem; margin: 8px 0 0; line-height: 1.4; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .stat { background: #0f1720; border: 1px solid var(--panel-border); border-radius: 8px; padding: 10px; }
+  .stat .value { font-size: 1.2rem; font-weight: 700; }
+  .stat .label { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 2px; }
+</style>
+</head>
+<body>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
+  <h1>Beast Calculator</h1>
+  <p class="sub">Enter your stamina and stamina cans to see how many beasts or Polar Terrors they pay for, and the points in each event. Plan the hunts that you do anyway, such as the beasts of Intel missions, and see what the stamina left pays for. Gina's Endurance Training lowers the stamina of each hunt.</p>
+
+  <div class="card">
+    <div class="controls">
+      <label>Stamina <input type="number" id="stamina" min="0" step="1" value="0" /></label>
+      <label>Stamina cans <input type="number" id="cans" min="0" step="1" value="0" /></label>
+      <label>Beast level for the stamina left <select id="level"></select></label>
+      <label>Gina, Endurance Training <select id="gina"></select></label>
+    </div>
+  </div>
+
+  <h2>Planned hunts</h2>
+  <div class="card">
+    <div id="runs"></div>
+    <div class="controls">
+      <button type="button" id="add-run">Add beast run</button>
+      <label>Polar Terrors <input type="number" id="polar" min="0" step="1" value="0" /></label>
+    </div>
+  </div>
+
+  <h2>Stamina</h2>
+  <div class="stats" id="stats"></div>
+
+  <h2>Plan</h2>
+  <div class="card scroll" id="hunts"></div>
+
+  <h2>Event points</h2>
+  <div class="card scroll" id="events"></div>
+  <p class="note">Planned hunts are paid first. The two plans after it use all of the stamina left on one kind of hunt. A beast is 10 stamina, a Polar Terror is 25, and a stamina can is 10. A reduced cost is rounded to the nearest whole number.</p>
+
+<script id="beast-data" type="application/json">{"beastStamina":10,"polarTerrorStamina":25,"staminaPerCan":10,"maxBeastLevel":30,"ginaName":"Endurance Training","ginaPercents":[10,12,15,18,20],"events":[{"id":"svs-state-of-power","name":"SVS - State of Power","beastRows":[{"low":1,"high":10,"points":9000},{"low":11,"high":15,"points":9750},{"low":16,"high":20,"points":10500},{"low":20,"high":25,"points":11250},{"low":26,"high":30,"points":12000}],"polarTerrorPoints":30000},{"id":"defeat-nearby-beasts","name":"Defeat Nearby Beasts","beastRows":[{"low":1,"high":30,"points":1},{"low":1,"high":30,"points":1}],"polarTerrorPoints":3},{"id":"tundra-games","name":"Tundra Games","beastRows":[{"low":1,"high":30,"points":9900}],"polarTerrorPoints":30000}]}</script>
+<script>
+(function () {
+  const DATA = JSON.parse(document.getElementById('beast-data').textContent);
+  const fmt = (n) => n.toLocaleString('en-US');
+  const whole = (value) => Math.max(0, parseInt(value, 10) || 0);
+  const runs = [];
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function cost(base, percent) { return Math.round((base * (100 - percent)) / 100); }
+
+  function pointsPerBeast(event, level) {
+    return event.beastRows.find((r) => level >= r.low && level <= r.high).points;
+  }
+
+  function compute(stamina, cans, level, ginaLevel, beastRuns, plannedPolar) {
+    const percent = ginaLevel ? DATA.ginaPercents[ginaLevel - 1] : 0;
+    const total = stamina + cans * DATA.staminaPerCan;
+    const beastCost = cost(DATA.beastStamina, percent);
+    const polarCost = cost(DATA.polarTerrorStamina, percent);
+    const plannedBeasts = beastRuns.reduce((sum, run) => sum + run.count, 0);
+    const needed = plannedBeasts * beastCost + plannedPolar * polarCost;
+    const left = Math.max(0, total - needed);
+    const beastCount = Math.floor(left / beastCost);
+    const polarCount = Math.floor(left / polarCost);
+    return {
+      total, percent, beastCost, polarCost,
+      planned: { beasts: plannedBeasts, polarTerrors: plannedPolar, needed, short: Math.max(0, needed - total), left },
+      beasts: { count: beastCount, left: left - beastCount * beastCost },
+      polarTerrors: { count: polarCount, left: left - polarCount * polarCost },
+      events: DATA.events.map((e) => {
+        const perBeast = pointsPerBeast(e, level);
+        const runPoints = beastRuns.reduce((sum, run) => sum + run.count * pointsPerBeast(e, run.level), 0);
+        const planned = runPoints + plannedPolar * e.polarTerrorPoints;
+        return { name: e.name, perBeast, perPolar: e.polarTerrorPoints, planned, beastPoints: planned + beastCount * perBeast, polarPoints: planned + polarCount * e.polarTerrorPoints };
+      }),
+    };
+  }
+
+  function table(headers, rows) {
+    const t = el('table');
+    const head = t.createTHead().insertRow();
+    headers.forEach((h, i) => head.append(el('th', i ? 'num' : '', h)));
+    const body = t.createTBody();
+    rows.forEach((cells) => {
+      const row = body.insertRow();
+      cells.forEach((c, i) => { const cell = row.insertCell(); if (i) cell.className = 'num'; cell.textContent = c; });
+    });
+    return t;
+  }
+
+  function levelSelect(selected) {
+    const select = el('select');
+    for (let l = 1; l <= DATA.maxBeastLevel; l++) select.append(new Option('Level ' + l, l));
+    select.value = String(selected);
+    return select;
+  }
+
+  function renderRuns() {
+    const box = document.getElementById('runs');
+    box.replaceChildren();
+    runs.forEach((run, i) => {
+      const row = el('div', 'controls');
+      const select = levelSelect(run.level);
+      select.addEventListener('input', () => { run.level = Number(select.value); render(); });
+      const count = el('input');
+      count.type = 'number'; count.min = '0'; count.step = '1'; count.value = String(run.count);
+      count.addEventListener('input', () => { run.count = whole(count.value); render(); });
+      const remove = el('button', '', 'Remove');
+      remove.type = 'button';
+      remove.addEventListener('click', () => { runs.splice(i, 1); renderRuns(); render(); });
+      const label = el('label', '', 'Beast run ');
+      label.append(select, count);
+      row.append(label, remove);
+      box.append(row);
+    });
+  }
+
+  function render() {
+    const level = Number(document.getElementById('level').value);
+    const r = compute(whole(document.getElementById('stamina').value), whole(document.getElementById('cans').value), level, Number(document.getElementById('gina').value), runs, whole(document.getElementById('polar').value));
+    const stats = document.getElementById('stats');
+    stats.replaceChildren();
+    [['Total stamina', fmt(r.total)], ['Stamina per beast', fmt(r.beastCost)], ['Stamina per Polar Terror', fmt(r.polarCost)], ['Gina reduction', r.percent + '%'], ['Planned stamina', fmt(r.planned.needed)], ['Stamina short', fmt(r.planned.short)], ['Stamina left', fmt(r.planned.left)]].forEach(([label, value]) => {
+      const box = el('div', 'stat'); box.append(el('div', 'value', value), el('div', 'label', label)); stats.append(box);
+    });
+    document.getElementById('hunts').replaceChildren(table(['After the planned hunts', 'More hunts', 'Stamina left'], [
+      ['Only beasts', fmt(r.beasts.count), fmt(r.beasts.left)],
+      ['Only Polar Terrors', fmt(r.polarTerrors.count), fmt(r.polarTerrors.left)],
+    ]));
+    document.getElementById('events').replaceChildren(table(['Event', 'Points per beast', 'Points per Polar Terror', 'Planned', 'Plan and beasts', 'Plan and Polar Terrors'],
+      r.events.map((e) => [e.name, fmt(e.perBeast), fmt(e.perPolar), fmt(e.planned), fmt(e.beastPoints), fmt(e.polarPoints)])));
+  }
+
+  const level = document.getElementById('level');
+  for (let l = 1; l <= DATA.maxBeastLevel; l++) level.append(new Option('Level ' + l, l));
+  const gina = document.getElementById('gina');
+  gina.append(new Option('Not used', 0));
+  DATA.ginaPercents.forEach((p, i) => gina.append(new Option('Level ' + (i + 1) + ' (' + p + '% less)', i + 1)));
+  ['stamina', 'cans', 'level', 'gina', 'polar'].forEach((id) => document.getElementById(id).addEventListener('input', render));
+  document.getElementById('add-run').addEventListener('click', () => { runs.push({ level: 1, count: 1 }); renderRuns(); render(); });
+  render();
+})();
+</script>
+</body>
+</html>
