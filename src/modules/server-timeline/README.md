@@ -71,7 +71,7 @@ console.log(
 
 Dates are a `Date` or a string such as `2026-01-15`. Both count in UTC and ignore the time of day.
 `serverAge` and `serverTimelineStatus` throw `RangeError` when a date is invalid or `asOf` is before
-the start date. `heroGenerationAt` is 1 on day 0 and 16 from day 1160, and throws `RangeError` for a
+the start date. `heroGenerationAt` is 1 on day 0 and 17 from day 1240, and throws `RangeError` for a
 negative or non-numeric age.
 
 `serverTimelineStatus` returns `age`, `startDate`, `unlocked`, `locked`, and `next`. `unlocked` and
@@ -85,7 +85,7 @@ the age itself is unlocked.
 
 ## Data
 
-The module holds 32 milestones from `data/server-timeline.json`, from day 0 to day 1160. Each
+The module holds 33 milestones from `data/server-timeline.json`, from day 0 to day 1240. Each
 milestone has these fields.
 
 | Field                 | Meaning                                                                                                           |
@@ -115,8 +115,10 @@ The guide says he unlocks "after Gen 6 Heroes unlock in your state" and gives no
 the earliest day he can unlock. The wiki timeline page does not list him. `resolve()` returns him in
 `experts`, with `unreleased` set to `true`.
 
-The source does not list the Generation 17 heroes in `heroes()`. They are not on the timeline until
-a source states their day.
+Generation 17 (Aiden, Bertha, and Eleanor) is on day 1240. The wiki timeline page ends at day 1160.
+A Heaven Guardian guide gives "around state day 1240" as a planning estimate. The package owner
+states that the day is accurate, because the heroes of every generation from generation 6 on unlock
+80 days after the generation before. Generation 18 is not announced, so it is not on the timeline.
 
 The pet days on the timeline and `unlockRequirement.daysRequired` in `pets()` are the same. Titan
 Roc and Giant Tapir are on day 54, Snow Leopard and Giant Elk on day 90, Cave Lion and Snow Ape on
@@ -135,7 +137,7 @@ The shard events of each hero cover five events: Lucky Wheel, Hall of Heroes, Ha
 Icefield, and State of Power (SVS). Generations 2 to 9 come from the Reddit image "Server Timeline"
 (last update 2024/8/19), where an icon below each hero shows the first way to get shards of a new
 generation. Each generation has one hero for Lucky Wheel, one for Hall of Heroes, and one for the
-other three events. Generation 1 and Generations 10 to 16 have no image, so they use `shardSources`
+other three events. Generation 1 and Generations 10 to 17 have no image, so they use `shardSources`
 from `heroes()`, limited to the same events. Jeronimo and Natalia have no listed event.
 
 Hall of Chief is listed only for Philly (Generation 2). The image and the wiki show it for later
