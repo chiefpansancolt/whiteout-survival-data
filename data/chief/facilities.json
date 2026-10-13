@@ -3,7 +3,8 @@
     "id": "hero-hall",
     "name": "Hero Hall",
     "img": "/images/facilities/HeroHall.png",
-    "description": "Where you use Platinum and Gold keys to recruit Heroes to your team. Platinum keys open Advanced chests and Gold keys open Epic chests, both yielding heroes, hero shards, exploration and expedition manuals, hero XP, and speedups or resources."
+    "description": "Where you use Platinum and Gold keys to recruit Heroes to your team. Platinum keys open Advanced chests and Gold keys open Epic chests, both yielding heroes, hero shards, exploration and expedition manuals, hero XP, and speedups or resources.",
+    "unlockFurnaceLevel": 4
   },
   {
     "id": "dawn-academy",
@@ -16,19 +17,22 @@
     "id": "beast-cage",
     "name": "Beast Cage",
     "img": "/images/facilities/BeastCage.png",
-    "description": "Where beasts captured from the Wilderness are kept (only one of each type can be captured). Tamed pets can be upgraded, advanced, and dispatched on Wilderness treasure hunts; reaching Pet Lv.10 and completing advancement unlocks a special Talent Skill."
+    "description": "Where beasts captured from the Wilderness are kept (only one of each type can be captured). Tamed pets can be upgraded, advanced, and dispatched on Wilderness treasure hunts; reaching Pet Lv.10 and completing advancement unlocks a special Talent Skill.",
+    "unlockFurnaceLevel": 18
   },
   {
     "id": "lighthouse",
     "name": "Lighthouse",
     "img": "/images/facilities/Lighthouse.png",
-    "description": "Hosts Intelligence missions — rescuing Survivors, hunting beasts, or sending Heroes to investigate a building. Its Searchlight can be upgraded (to a maximum of Level 20) by completing missions, increasing both the quantity and quality of missions available at each refresh."
+    "description": "Hosts Intelligence missions — rescuing Survivors, hunting beasts, or sending Heroes to investigate a building. Its Searchlight can be upgraded (to a maximum of Level 20) by completing missions, increasing both the quantity and quality of missions available at each refresh.",
+    "unlockFurnaceLevel": 7
   },
   {
     "id": "arena",
     "name": "Arena",
     "img": "/images/facilities/Arena.png",
-    "description": "The PvP combat facility where Chiefs challenge each other and climb the ranks. Arena points are earned only by initiating and winning a challenge; losing a challenge you initiated costs no points, and being challenged by someone else never changes your points either way. Wins also earn Arena Tokens for a dedicated store, with rewards on daily and weekly schedules and a weekly seasonal reset."
+    "description": "The PvP combat facility where Chiefs challenge each other and climb the ranks. Arena points are earned only by initiating and winning a challenge; losing a challenge you initiated costs no points, and being challenged by someone else never changes your points either way. Wins also earn Arena Tokens for a dedicated store, with rewards on daily and weekly schedules and a weekly seasonal reset.",
+    "unlockFurnaceLevel": 8
   },
   {
     "id": "chiefs-house",
@@ -41,18 +45,21 @@
     "id": "explorers-cabin",
     "name": "Explorer's Cabin",
     "img": "/images/facilities/ExplorersCabin.png",
-    "description": "Collects offline Idle rewards once your maximum Idle time is reached (a chest appears above it for direct collection), and otherwise serves as the entry point into Exploration mode."
+    "description": "Collects offline Idle rewards once your maximum Idle time is reached (a chest appears above it for direct collection), and otherwise serves as the entry point into Exploration mode.",
+    "unlockFurnaceLevel": 4
   },
   {
     "id": "suggestion-box",
     "name": "Suggestion Box",
     "img": "/images/facilities/SuggestionBox.png",
-    "description": "Tracks Survivor satisfaction through two tabs: Suggestions, where unresolved unhappiness lowers Public Opinion Rating (POR), and SOS, where resolving decision-based town scenarios raises or lowers POR depending on your choices. Keeping POR high keeps Survivors happy and improves daily rewards."
+    "description": "Tracks Survivor satisfaction through two tabs: Suggestions, where unresolved unhappiness lowers Public Opinion Rating (POR), and SOS, where resolving decision-based town scenarios raises or lowers POR depending on your choices. Keeping POR high keeps Survivors happy and improves daily rewards.",
+    "unlockFurnaceLevel": 2
   },
   {
     "id": "enlistment-office",
     "name": "Enlistment Office",
     "img": "/images/facilities/EnlistmentOffice.png",
-    "description": "Recruits reserve Troops to replace battle losses once the Infirmary's injured-Troops capacity is exceeded, drawing on accumulated Loyalty (capacity 4x the Infirmary's own). Loyalty accumulates faster the lower it currently is, the fewer severely injured Troops sit in the Infirmary, and the more reserves are waiting to be recruited, stopping once it hits its cap. It's earned from daily mission and gathering rewards (more as Furnace level rises), but only while the Enlistment Office's reserve isn't empty."
+    "description": "Recruits reserve Troops to replace battle losses once the Infirmary's injured-Troops capacity is exceeded, drawing on accumulated Loyalty (capacity 4x the Infirmary's own). Loyalty accumulates faster the lower it currently is, the fewer severely injured Troops sit in the Infirmary, and the more reserves are waiting to be recruited, stopping once it hits its cap. It's earned from daily mission and gathering rewards (more as Furnace level rises), but only while the Enlistment Office's reserve isn't empty.",
+    "unlockFurnaceLevel": 11
   }
 ]

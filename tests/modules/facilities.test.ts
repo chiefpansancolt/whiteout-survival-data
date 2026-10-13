@@ -1,4 +1,5 @@
 import { facilities, FacilityQuery } from '@/modules/facilities';
+import { pets } from '@/modules/pets';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('facilities', () => facilities());
@@ -27,6 +28,24 @@ describe('FacilityQuery', () => {
 });
 
 describe('facility unlock levels', () => {
+  it('gives each facility the Furnace level at which it unlocks', () => {
+    expect(
+      facilities()
+        .get()
+        .map((f) => [f.id, f.unlockFurnaceLevel]),
+    ).toEqual([
+      ['hero-hall', 4],
+      ['dawn-academy', 25],
+      ['beast-cage', 18],
+      ['lighthouse', 7],
+      ['arena', 8],
+      ['chiefs-house', 6],
+      ['explorers-cabin', 4],
+      ['suggestion-box', 2],
+      ['enlistment-office', 11],
+    ]);
+  });
+
   it('gives Dawn Academy the Furnace level that its description states', () => {
     const dawnAcademy = facilities().find('dawn-academy')!;
     expect(dawnAcademy.unlockFurnaceLevel).toBe(25);
@@ -37,11 +56,20 @@ describe('facility unlock levels', () => {
     expect(facilities().find('chiefs-house')!.unlockFurnaceLevel).toBe(6);
   });
 
-  it('leaves the unlock level out of every other facility', () => {
-    const others = facilities()
-      .get()
-      .filter((f) => !['dawn-academy', 'chiefs-house'].includes(f.id));
-    expect(others.length).toBeGreaterThan(0);
-    for (const facility of others) expect(facility.unlockFurnaceLevel).toBeUndefined();
+  it('gives the Beast Cage the Furnace level that the pets list', () => {
+    const petLevels = new Set(
+      pets()
+        .get()
+        .map((p) => p.unlockRequirement.furnaceLevel)
+        .filter((level) => level !== undefined),
+    );
+    expect([...petLevels]).toEqual([facilities().find('beast-cage')!.unlockFurnaceLevel]);
+  });
+
+  it('keeps every unlock level within the 30 Furnace levels', () => {
+    for (const facility of facilities().get()) {
+      expect(facility.unlockFurnaceLevel).toBeGreaterThanOrEqual(1);
+      expect(facility.unlockFurnaceLevel).toBeLessThanOrEqual(30);
+    }
   });
 });
