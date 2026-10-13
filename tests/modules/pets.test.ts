@@ -1,5 +1,6 @@
 import { items } from '@/modules/items';
-import { PetQuery, pets } from '@/modules/pets';
+import { PET_REFINEMENT_STATS, PetQuery, pets } from '@/modules/pets';
+import { research } from '@/modules/research';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('pets', () => pets());
@@ -117,6 +118,31 @@ describe('pet prerequisites', () => {
     for (const pet of chained) {
       const { petId, name } = pet.unlockRequirement.prerequisitePet!;
       expect(pets().find(petId)?.name).toBe(name);
+    }
+  });
+});
+
+describe('pet refinement stats', () => {
+  it('has the Lethality and the Health of the three troop types', () => {
+    expect(PET_REFINEMENT_STATS.map((s) => s.stat)).toEqual([
+      'Infantry Lethality',
+      'Infantry Health',
+      'Lancer Lethality',
+      'Lancer Health',
+      'Marksman Lethality',
+      'Marksman Health',
+    ]);
+  });
+
+  it('gives each stat the kebab-case key that research() uses for the same stat', () => {
+    const researchKeys = new Set(
+      research()
+        .get()
+        .flatMap((n) => n.levels.flatMap((l) => l.bonus.map((b) => b.statKey))),
+    );
+    for (const { stat, statKey } of PET_REFINEMENT_STATS) {
+      expect(statKey).toBe(stat.toLowerCase().replace(/ /g, '-'));
+      expect(researchKeys.has(statKey)).toBe(true);
     }
   });
 });
