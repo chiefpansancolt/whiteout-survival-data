@@ -1,6 +1,6 @@
 # Items
 
-The 282 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 283 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -49,7 +49,7 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | Buff           | 31    |
 | Hero Items     | 23    |
 | Speedups       | 30    |
-| Experts        | 16    |
+| Experts        | 17    |
 | Gear Materials | 10    |
 | Pet            | 6     |
 | Fire Crystal   | 4     |
@@ -86,3 +86,17 @@ category.
 The wiki shows chest rewards in two structured shapes: a "Reward Rates" bullet list, and an `Item`,
 `Quantity`, `Chance` table in which the item name cell spans several tiers. The parser reads both.
 The other chests describe rewards in prose only and get no `rewardRates`.
+
+### Gareth Sigil
+
+The wiki item list has no Gareth Sigil. The item is here because the Heaven Guardian guides state
+that Gareth has a named sigil, in the same group as the sigils of the other nine experts, and that
+named sigils come from Expert progression such as Tundra Trek and Frontier Trek, from packs, and
+from the conversion of Common Expert Sigils. The `description` and the `sources` are the ones that
+all nine other named sigils have, written for Gareth. The game wording of this item was not found.
+
+The icon is cropped from a screenshot of a rewards screen that the package owner supplied. It shows
+the sigil as a reward with a count of 200, on its orange tile. The crystal is lifted from the tile
+to a transparent background, with the digits of the count rebuilt from the pixels around them, and
+is fitted to the same 128 by 128 frame as the other sigils. The source was small, so the face is
+softer than on the other icons.

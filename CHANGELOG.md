@@ -64,6 +64,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- `items()` has the Gareth Sigil, with an icon.
 - `calculateHeroGear()` lists empowerment as unmet when the goal has a mastery forging range that
   ends below Level 10, and exports `HERO_GEAR_EMPOWERMENT_REQUIREMENT`. A requirement in
   `unmetRequirements` has either an `enhancementLevel` or a `masteryForgingRowId`.
