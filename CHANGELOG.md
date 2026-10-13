@@ -67,6 +67,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- `calculateExperts()` gives the minutes of learning time that the skill EXP needs, at 60 EXP for
+  each minute, with `EXPERT_SKILL_EXP_PER_LEARNING_MINUTE` and the EXP of each learning session that
+  can be queued in `EXPERT_LEARNING_QUEUE_OPTIONS`.
 - The scoring actions of events that name a kind of item are linked to `items()`: the hero shards,
   the Recruitments, the Expert Sigils, and the speedup minutes. An action can have `itemIds` for a
   group.

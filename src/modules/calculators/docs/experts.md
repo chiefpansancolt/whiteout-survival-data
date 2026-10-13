@@ -49,6 +49,7 @@ The result has one entry in `items` for each expert, and the same fields summed 
 | `books`                  | Books of Knowledge for the skill levels.                                                   |
 | `sigils`                 | Expert sigils for the advancements.                                                        |
 | `exp`                    | Skill EXP for the skill levels.                                                            |
+| `learningMinutes`        | The `exp` divided by 60, rounded up: the minutes of learning time that the skills need.    |
 | `affinity`               | Affinity points for the affinity levels.                                                   |
 | `levels`                 | Affinity levels gained.                                                                    |
 | `advancements`           | Advancements paid for.                                                                     |
@@ -72,9 +73,35 @@ each level gained.
 ## Event points
 
 SvS and Alliance Showdown score each Book of Knowledge and each expert sigil, read from the scoring
-rows of `events()`. King of Icefield and Hall of Chief have no such row. The result does not give
-the speedup minutes, because the package has no value for the EXP that a minute of learning speedup
-gives. The interface multiplies `speedupPointsPerMinute` with the minutes the user spends.
+rows of `events()`. King of Icefield and Hall of Chief have no such row. The `learningMinutes` of
+the result are the minutes that the user needs in Learning or General Speedups. The interface
+multiplies `speedupPointsPerMinute` with the minutes the user spends.
+
+## Learning time
+
+One minute of learning time gives 60 Skill EXP, so one EXP is one second.
+`EXPERT_SKILL_EXP_PER_LEARNING_MINUTE` exports the 60. A skill level that costs 43,200 EXP takes 720
+minutes, or 12 hours of learning. The result gives `learningMinutes` for each expert and for all
+experts. The total is rounded up once from the total EXP, so it can be one minute below the sum of
+the experts.
+
+`EXPERT_LEARNING_QUEUE_OPTIONS` lists the sessions that an expert skill can learn, one at a time.
+Each has a `label`, its `minutes`, and the `exp` that it earns, which is the minutes times 60. The
+list is the package owner's, from the game.
+
+| Option | Minutes | EXP     |
+| ------ | ------- | ------- |
+| 10 min | 10      | 600     |
+| 2h     | 120     | 7,200   |
+| 10h    | 600     | 36,000  |
+| 24h    | 1,440   | 86,400  |
+| 3d     | 4,320   | 259,200 |
+| 5d     | 7,200   | 432,000 |
+
+A Learning Speedup takes its minutes off the learning time, so a minute of Learning Speedup is worth
+60 EXP. According to the package owner, a General Speedup counts toward skill learning at the same
+rate. The calculator does not take an inventory of speedups, so `learningMinutes` is the number to
+compare with the minutes that the user holds.
 
 ## Errors
 
@@ -84,6 +111,12 @@ a goal below the current level, or an advanced flag on a level with no advanceme
 
 ## Data and assumptions
 
-The numbers come from the data behind `experts()`. The talent costs nothing, because it levels with
-the relationship, so it is not in the result. The result has no event points. `EXPERT_MAX_LEVEL`
-exports the 100.
+The numbers come from the data behind `experts()`. The 60 EXP for a minute is not stated in text
+anywhere. It is in the code of the WoS Tools experts calculator, which turns the Learning XP shown
+in the game into minutes with `currentXp / 60`. It also fits the data: for 33 skills of the three
+sources, the learning minutes of WoS Tools times 60 equal the EXP of `experts()` at every level but
+one, level 2 of Fabian's Crisis Rescue. There `experts()` has 33,053 and WoS Tools has 551 minutes,
+which is 33,060. Heaven Guardian says "The amount of Skill XP gained depends on the learning
+duration" and "Learning Speedups reduce the remaining time of Expert Skill learning". The talent
+costs nothing, because it levels with the relationship, so it is not in the result. The result has
+no event points. `EXPERT_MAX_LEVEL` exports the 100.
