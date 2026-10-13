@@ -131,7 +131,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | ---------------------- | ------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | `events()`             | 65      | Game events with scoring, rewards, and tips                                               | [README](src/modules/events/README.md)              |
 | `eventBuff()`          | 14      | Buff sources that apply in each game mode                                                 | [README](src/modules/event-buff/README.md)          |
-| `items()`              | 283     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
+| `items()`              | 326     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
 | `skins()`              | 191     | Cosmetic skins                                                                            | [README](src/modules/skins/README.md)               |
 | `serverTimeline()`     | 33      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`           | [README](src/modules/server-timeline/README.md)     |
 | `chiefOrders()`        | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                    | [README](src/modules/chief-orders/README.md)        |

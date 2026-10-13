@@ -1,6 +1,6 @@
 # Items
 
-The 283 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 326 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -39,13 +39,13 @@ Items are in `data/chief/items.json`. Each entry has `id`, `name`, `img`, `categ
 `speedup` with its `type` (`general`, `construction`, `troop`, `research`, `learning`, or `healing`)
 and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minutes).
 
-`category` is one of 11 values.
+`category` is one of 12 values.
 
 | Category       | Items |
 | -------------- | ----- |
 | Chest          | 60    |
 | Event          | 58    |
-| Others         | 40    |
+| Others         | 41    |
 | Buff           | 31    |
 | Hero Items     | 23    |
 | Speedups       | 30    |
@@ -54,12 +54,13 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | Pet            | 6     |
 | Fire Crystal   | 4     |
 | Teleporter     | 4     |
+| Furniture      | 42    |
 
 `id` is the wiki URL slug of the item, not a new slug made from the name. Several names repeat
 across categories, and the source slugs are already unique. The Skins module has the same rule.
 
 `sources` is a plain list of where an item drops from, such as shops, events, and activities. It is
-empty for 91 items, where the wiki does not document a source.
+empty for 100 items, where the wiki does not document a source.
 
 `rewardRates` is a loot table, a list of `{ reward, amount, probabilityPercent }`. Only chests carry
 it, and only 12 of the 60 chests do.
@@ -86,6 +87,28 @@ category.
 The wiki shows chest rewards in two structured shapes: a "Reward Rates" bullet list, and an `Item`,
 `Quantity`, `Chance` table in which the item name cell spans several tiers. The parser reads both.
 The other chests describe rewards in prose only and get no `rewardRates`.
+
+### Furniture
+
+The 42 furniture items are the pieces that the nine entertainment buildings need, plus the Blueprint
+that each of them needs. They come from the in-game data of the package owner, not from the wiki.
+The owner states that furniture is bought with Wish Sigils in the Wish Shop, so `sources` is
+`Wish Shop` for all of them. The Wish Sigil is its own item, `wish-sigil`. No icon exists, so `img`
+is an empty string. A piece that several buildings use is one item: the Blueprint
+(`furniture-blueprint`), the Counter, and the Table & Chair Set. Its price can differ by building,
+so the `pricePerItem` stays on the cost of the building and not on the item.
+
+### Wish Sigil
+
+The Wish Sigil is the currency of the Wish Shop, which the package owner states for the furniture of
+the entertainment buildings. It is in `Others`, with the other standing currencies, because the game
+gives it as a daily reward and not as an event token. Its `sources` are the two that the game lists
+on the Obtain more screen of the item: the Wish Station ("Obtained by completing Survivor Wishes")
+and the Development Index Daily Reward. The `description` is written for the package. The Wish
+Voucher is a different item, which unlocks random Kasia's Wish House rewards.
+
+The icon is cropped from a screenshot of that screen that the package owner supplied. The coin is
+cut from its orange tile on a transparent background.
 
 ### Gareth Sigil
 

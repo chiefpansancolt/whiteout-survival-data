@@ -37,7 +37,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   the research that unlocks the troop, and the extras follow by research tier with a sum and a
   total. A tier option shows only T11, only T12, or both.
 - Building costs of Wood, Coal, Iron, Meat, Fire Crystals, and Refined Fire Crystals have an
-  `itemId` that resolves through `items()`.
+  `itemId` that resolves through `items()`. The furniture costs of the entertainment buildings do
+  too, with 42 new Furniture items that have no icon yet. `items()` has the Wish Sigil that buys
+  them.
 - Pet prerequisites have the `petId` of the required pet.
 - Timeline unlocks can have a `key`, set for the War Academy and T12 research unlocks, and
   `heroGenerationAt()` gives the highest hero generation unlocked at a server age.
