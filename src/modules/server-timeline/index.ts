@@ -139,7 +139,7 @@ export function serverTimelineStatus(
 
 /**
  * Returns the highest hero generation unlocked at a server age in days. The result is 1 on day 0 and
- * 16 from day 1160, because the timeline has no later generation. Throws `RangeError` when the age
+ * 17 from day 1240, because the timeline has no later generation. Throws `RangeError` when the age
  * is negative or not a number.
  */
 export function heroGenerationAt(serverAge: number): number {

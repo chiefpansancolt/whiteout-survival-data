@@ -45,7 +45,7 @@ describe('ServerTimelineQuery', () => {
 
   it('lockedAt() keeps milestones after the age', () => {
     const locked = serverTimeline().lockedAt(1000).get();
-    expect(locked.map((m) => m.day)).toEqual([1080, 1160]);
+    expect(locked.map((m) => m.day)).toEqual([1080, 1160, 1240]);
   });
 
   it('resolve() replaces ids with hero, expert, and pet entries', () => {
@@ -405,8 +405,13 @@ describe('heroGenerationAt', () => {
     expect(heroGenerationAt(1160)).toBe(16);
   });
 
-  it('stays at 16 after the last milestone', () => {
-    expect(heroGenerationAt(5000)).toBe(16);
+  it('moves from generation 16 to generation 17 on day 1240', () => {
+    expect(heroGenerationAt(1239)).toBe(16);
+    expect(heroGenerationAt(1240)).toBe(17);
+  });
+
+  it('stays at 17 after the last milestone', () => {
+    expect(heroGenerationAt(5000)).toBe(17);
   });
 
   it('keeps the generation of the last hero milestone between hero days', () => {
@@ -459,5 +464,32 @@ describe('expert unlock days', () => {
     const day230 = serverTimeline().find('day-230')!;
     const [resolved] = new ServerTimelineQuery([day230]).resolve();
     expect(resolved.experts.map((e) => e.name)).toEqual(['Kathy', 'Ronne']);
+  });
+});
+
+describe('generation 17', () => {
+  it('unlocks Aiden, Bertha, and Eleanor on day 1240, 80 days after generation 16', () => {
+    const day1240 = serverTimeline().find('day-1240')!;
+    expect(day1240.day).toBe(1240);
+    expect(day1240.heroIds).toEqual(['aiden', 'bertha', 'eleanor']);
+    expect(serverTimeline().find('day-1160')!.day + 80).toBe(day1240.day);
+    for (const id of day1240.heroIds) expect(heroes().find(id)!.generation).toBe(17);
+  });
+
+  it('gives the shard events that the heroes list as sources', () => {
+    expect(serverTimeline().find('day-1240')!.heroShardEventIds).toEqual({
+      aiden: ['lucky-wheel'],
+      bertha: ['king-of-icefield', 'svs-state-of-power'],
+      eleanor: ['hall-of-heroes'],
+    });
+  });
+
+  it('steps 80 days between the hero milestones from generation 6 on', () => {
+    const days = serverTimeline()
+      .get()
+      .filter((m) => m.heroIds.length > 0)
+      .map((m) => m.day);
+    const generation6 = days.indexOf(360);
+    days.slice(generation6 + 1).forEach((day, i) => expect(day - days[generation6 + i]).toBe(80));
   });
 });

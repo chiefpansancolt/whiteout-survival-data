@@ -505,5 +505,21 @@
     "eventIds": [],
     "fireCrystalLevelIds": [],
     "unlocks": []
+  },
+  {
+    "id": "day-1240",
+    "name": "Day 1240",
+    "day": 1240,
+    "heroIds": ["aiden", "bertha", "eleanor"],
+    "heroShardEventIds": {
+      "aiden": ["lucky-wheel"],
+      "bertha": ["king-of-icefield", "svs-state-of-power"],
+      "eleanor": ["hall-of-heroes"]
+    },
+    "expertIds": [],
+    "petIds": [],
+    "eventIds": [],
+    "fireCrystalLevelIds": [],
+    "unlocks": []
   }
 ]
