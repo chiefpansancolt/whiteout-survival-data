@@ -42,7 +42,8 @@ level 12, and stage 1 of level 13. Every row of levels 14 to 20 has a chest cost
 
 The system is described in the prose of the wiki page. Mastery forging past `level-10-stage-0` needs
 the piece at enhancement level 100. The rule comes from play in the game and is not stated by the
-wiki or WoS Tools.
+wiki or WoS Tools. Empowerment needs the piece at mastery forging `level-10-stage-0`, the Level 10
+row of the wiki chart (+100%), as the wiki and the Century Games help center state.
 
 `heroGearStats()` values are multiplied by 1 plus the `statsUpPercent` of the row to get the stats
 of a forged piece. See [`heroGearStats()`](../hero-gear-stats/README.md).

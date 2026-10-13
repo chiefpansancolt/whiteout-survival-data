@@ -35,17 +35,17 @@ out adds nothing.
 
 ## Result
 
-| Field                       | Meaning                                                                                                                     |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `masteryForging`            | `steps`, `resources`, and `statsUpPercent` of the track.                                                                    |
-| `enhancement`               | `steps`, `resources`, and `power` of the track.                                                                             |
-| `empowerment`               | `steps`, `resources`, and `power` of the track.                                                                             |
-| `resources`                 | Essence Stones, Custom Mythic Hero Gear Chests, Enhancement XP Components, and Mithril as `itemId` amounts, for all tracks. |
-| `power`                     | Power gained from enhancement and empowerment.                                                                              |
-| `currentPower`, `goalPower` | Power of the piece before and after the plan. Level 0 has no power.                                                         |
-| `eventPoints`               | Points in `svs`, `allianceShowdown`, and `kingOfIcefield`.                                                                  |
-| `unmetRequirements`         | Tracks that need enhancement level 100 and that the plan does not meet.                                                     |
-| `stats`                     | Stats of the piece, or `null` when the goal has no `piece`.                                                                 |
+| Field                       | Meaning                                                                                                                                   |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `masteryForging`            | `steps`, `resources`, and `statsUpPercent` of the track.                                                                                  |
+| `enhancement`               | `steps`, `resources`, and `power` of the track.                                                                                           |
+| `empowerment`               | `steps`, `resources`, and `power` of the track.                                                                                           |
+| `resources`                 | Essence Stones, Custom Mythic Hero Gear Chests, Enhancement XP Components, and Mithril as `itemId` amounts, for all tracks.               |
+| `power`                     | Power gained from enhancement and empowerment.                                                                                            |
+| `currentPower`, `goalPower` | Power of the piece before and after the plan. Level 0 has no power.                                                                       |
+| `eventPoints`               | Points in `svs`, `allianceShowdown`, and `kingOfIcefield`.                                                                                |
+| `unmetRequirements`         | Requirements that the plan does not meet: tracks that need enhancement level 100, and empowerment that needs mastery forging at level 10. |
+| `stats`                     | Stats of the piece, or `null` when the goal has no `piece`.                                                                               |
 
 ## How it works
 
@@ -58,10 +58,15 @@ to 40, and so on) also cost Mithril. The empowerment power continues from the po
 level 100.
 
 Mastery forging past `level-10-stage-0` and empowerment need enhancement at level 100.
-`HERO_GEAR_ENHANCEMENT_REQUIREMENT` exports this rule. The calculator does not throw for it. When
-the goal has an `enhancement` range that ends below 100, the result lists the affected tracks in
-`unmetRequirements`. A goal with no `enhancement` range is not checked, because the calculator does
-not know the enhancement level of the piece.
+`HERO_GEAR_ENHANCEMENT_REQUIREMENT` exports this rule. Empowerment also needs mastery forging at
+Level 10, the row `level-10-stage-0`. `HERO_GEAR_EMPOWERMENT_REQUIREMENT` exports both parts: the
+`enhancementLevel` and the `masteryForgingRowId`. The calculator does not throw for these rules. It
+lists the unmet ones in `unmetRequirements`. An entry with an `enhancementLevel` is the enhancement
+rule, and it appears when the goal has an `enhancement` range that ends below 100. An entry with a
+`masteryForgingRowId` is the mastery forging rule for empowerment, and it appears when the goal has
+an `empowerment` goal above 0 and a `masteryForging` range that ends below `level-10-stage-0`. A
+goal with no `enhancement` range, or no `masteryForging` range, is not checked for that rule,
+because the calculator does not know that state of the piece.
 
 `eventPoints` scores the Essence Stones and the Mithril, read from the scoring rows of each event.
 
@@ -84,8 +89,14 @@ whole number from 0 to 100, or a goal below the current state, throws `RangeErro
 
 `HERO_GEAR_MAX_ENHANCEMENT_LEVEL` and `HERO_GEAR_MAX_EMPOWERMENT_LEVEL` export the two 100s.
 
-The enhancement requirement comes from in-game play. The wiki and WoS Tools do not state it. WoS
-Tools shows empowerment as Ascended +1 to +100 on a single 0 to 200 enhancement scale.
+The Level 10 requirement of empowerment comes from the Century Games help center ("When your server
+has been active for a certain number of days, your Hero Gear at Enhancement Level 100 and Mastery
+Level 10 can be ascended") and from the wiki ("Legendary hero gear can be obtained once you have a
+mythic piece to lvl 100 and mastery lvl 10"). Mastery Level 10 is the row `level-10-stage-0`, which
+has a `statsUpPercent` of 100, as the Level 10 row of the wiki chart. The server must also be old
+enough for the ascension, and the gear must be Mythic. The calculator checks neither of these. The
+enhancement requirement comes from in-game play. The wiki and WoS Tools do not state it. WoS Tools
+shows empowerment as Ascended +1 to +100 on a single 0 to 200 enhancement scale.
 
 The WoS Tools table stops at 192 of the 200 levels, so its XP total is 531,320 where this package
 has 574,370. The Mithril (150) and Mythic chest (35) totals agree.

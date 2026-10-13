@@ -64,6 +64,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- `calculateHeroGear()` lists empowerment as unmet when the goal has a mastery forging range that
+  ends below Level 10, and exports `HERO_GEAR_EMPOWERMENT_REQUIREMENT`. A requirement in
+  `unmetRequirements` has either an `enhancementLevel` or a `masteryForgingRowId`.
 - `chiefGear()` levels have a `tierId` that links each level to the set bonus of its tier.
 - `experts()` gives each expert on the server timeline its unlock day, like `pets()`.
 - `troops()` gives each tier its power and what unlocks it: the camp level for tiers 1 to 10, and
