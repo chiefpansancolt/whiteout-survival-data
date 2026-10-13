@@ -13,7 +13,7 @@
 > values may be wrong. The API can also change without notice. If you have data that is missing, you
 > are welcome to share it through an issue or a pull request (see [Contributing](#contributing)).
 > Otherwise, please wait while the data is gathered. Treat everything here as unstable until the
-> first tagged release.
+> first tagged release. See [Known Gaps](#known-gaps) for what is missing.
 
 ---
 
@@ -179,6 +179,39 @@ import buildings from "whiteout-survival-data/data/chief/buildings.json";
 
 Check out the [Change Log](CHANGELOG.md) for new breaking changes, features, and bug fixes per
 release of a new version.
+
+---
+
+## Known Gaps
+
+This is what the data does not hold yet. Each module README gives the detail.
+
+- **Events.** 15 of the 65 events have no `schedule`. Only 1 of the 9 expert extra tier thresholds
+  is known. The Hall of Chief ranking lists only the first ranks, and its hero shard rewards have no
+  amount. See [Events](src/modules/events/README.md).
+- **Heroes.** The 36 heroes of Generations 6 to 17 have a level `power` of 0 at every level, and the
+  39 heroes of Generations 5 to 17 have a shard `power` of 0. Stars 4 and 5 of Generation 5 are not
+  read. The Talent of Jeronimo and Natalia has no star requirement and no power gain. See
+  [Heroes](src/modules/heroes/README.md).
+- **Experts.** Justus is announced and not released, so he has a name, an icon, and an unlock
+  requirement only. See [Experts](src/modules/experts/README.md).
+- **Items.** 51 items have no icon: the 9 speedups of 3h and 8h for construction, troop, research,
+  and healing and of 8h for learning, and the 42 Furniture items. See
+  [Items](src/modules/items/README.md).
+- **Buildings.** The nine entertainment buildings have no `img`. See
+  [Buildings](src/modules/buildings/README.md).
+- **Castle appointments.** The positions have no icons. See
+  [Castle Appointments](src/modules/castle-appointments/README.md).
+- **Daily tasks.** The list of in-game daily missions is not complete, and the daily reset time is
+  not stored. See [Dailies](src/modules/dailies/README.md).
+- **Pets.** Only the maximum refinement percent of each pet is stored. The steps and the quality
+  ranges are not. See [Pets](src/modules/pets/README.md).
+- **Troops.** It is not known whether tiers 11 and 12 also need a camp level. See
+  [Troops](src/modules/troops/README.md).
+- **Alliance Fortress.** The castle has no rewards. See
+  [Alliance Fortress](src/modules/alliance/fortress/README.md).
+
+If you have any of this data, see [Contributing](#contributing).
 
 ---
 
