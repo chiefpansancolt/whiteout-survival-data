@@ -96,6 +96,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 
+- The Alliance Showdown reward rows for the individual ranks say "individual rank" and not "alliance
+  rank".
 - The Daybreak Island decorations Hero’s Sanctum and Floating Market have their names spelled
   correctly.
 - Level 1 of the research nodes Bulwark Formations IV and Picket Lines IV has its research time.
