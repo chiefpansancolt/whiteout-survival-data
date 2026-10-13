@@ -201,23 +201,28 @@
         },
         {
           "action": "Use Epic Recruitment 1 time",
-          "points": 11000
+          "points": 11000,
+          "itemId": "platinum-key"
         },
         {
           "action": "Use Advanced Recruitment 1 time",
-          "points": 3300
+          "points": 3300,
+          "itemId": "gold-key"
         },
         {
           "action": "Use 1 Rare Hero Shard to ascend Heroes",
-          "points": 500
+          "points": 500,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard to ascend Heroes",
-          "points": 2200
+          "points": 2200,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard to ascend Heroes",
-          "points": 6000
+          "points": 6000,
+          "itemId": "mythic-general-hero-shard"
         }
       ],
       "note": "Rows read from two screenshots labelled Tips on the wiki."
@@ -242,35 +247,61 @@
       "scoring": [
         {
           "action": "Use Epic Recruitment 1 time",
-          "points": 11000
+          "points": 11000,
+          "itemId": "platinum-key"
         },
         {
           "action": "Use Advanced Recruitment 1 time",
-          "points": 3300
+          "points": 3300,
+          "itemId": "gold-key"
         },
         {
           "action": "Use 1 Rare Hero Shard to ascend Heroes",
-          "points": 500
+          "points": 500,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard to ascend Heroes",
-          "points": 2200
+          "points": 2200,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard to ascend Heroes",
-          "points": 6000
+          "points": 6000,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "action": "Use 1m of Speedups for Construction (Gem Speedups excluded)",
-          "points": 60
+          "points": 60,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Research (Gem Speedups excluded)",
-          "points": 60
+          "points": 60,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Troop Training or Promotion (Gem Speedups excluded)",
-          "points": 60
+          "points": 60,
+          "itemIds": [
+            "speedup-troop-1m",
+            "speedup-troop-5m",
+            "speedup-troop-1h",
+            "speedup-troop-3h",
+            "speedup-troop-8h"
+          ]
         }
       ]
     },
@@ -490,15 +521,36 @@
         },
         {
           "action": "Use 1m of Speedups for Construction (Gem Speedups excluded)",
-          "points": 60
+          "points": 60,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Research (Gem Speedups excluded)",
-          "points": 60
+          "points": 60,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Troop Training or Promotion (Gem Speedups excluded)",
-          "points": 60
+          "points": 60,
+          "itemIds": [
+            "speedup-troop-1m",
+            "speedup-troop-5m",
+            "speedup-troop-1h",
+            "speedup-troop-3h",
+            "speedup-troop-8h"
+          ]
         }
       ]
     }

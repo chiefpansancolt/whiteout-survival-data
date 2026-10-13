@@ -51,15 +51,18 @@
         },
         {
           "action": "Use 1 Rare Hero Shard to ascend Heroes",
-          "points": 4000
+          "points": 4000,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard to ascend Heroes",
-          "points": 14000
+          "points": 14000,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard to ascend Heroes",
-          "points": 35000
+          "points": 35000,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "action": "Gather 200 Meat in the Wilderness",
@@ -223,15 +226,18 @@
         },
         {
           "action": "Use 1 Rare Hero Shard to ascend Heroes",
-          "points": 4000
+          "points": 4000,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard to ascend Heroes",
-          "points": 14000
+          "points": 14000,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard to ascend Heroes",
-          "points": 35000
+          "points": 35000,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "action": "Gather 200 Meat in the Wilderness",
@@ -372,27 +378,51 @@
       "scoring": [
         {
           "action": "Use 1 Rare Hero Shard to ascend Heroes",
-          "points": 4000
+          "points": 4000,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard to ascend Heroes",
-          "points": 14000
+          "points": 14000,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard to ascend Heroes",
-          "points": 35000
+          "points": 35000,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "action": "Use 1m of Speedups for Construction",
-          "points": 300
+          "points": 300,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Research",
-          "points": 300
+          "points": 300,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Training or Promotion",
-          "points": 300
+          "points": 300,
+          "itemIds": [
+            "speedup-troop-1m",
+            "speedup-troop-5m",
+            "speedup-troop-1h",
+            "speedup-troop-3h",
+            "speedup-troop-8h"
+          ]
         }
       ]
     }

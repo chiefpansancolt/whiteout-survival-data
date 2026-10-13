@@ -12,15 +12,18 @@
       "scoring": [
         {
           "action": "Use 1 Rare Hero Shard",
-          "points": 15
+          "points": 15,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard",
-          "points": 50
+          "points": 50,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard",
-          "points": 125
+          "points": 125,
+          "itemId": "mythic-general-hero-shard"
         }
       ],
       "milestones": [

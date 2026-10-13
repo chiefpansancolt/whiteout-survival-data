@@ -461,15 +461,18 @@
         },
         {
           "action": "Use 1 Rare Hero Shard",
-          "points": 350
+          "points": 350,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard",
-          "points": 1220
+          "points": 1220,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard",
-          "points": 3040
+          "points": 3040,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "action": "Use 1 Hero Gear Essence Stone",

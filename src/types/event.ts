@@ -108,6 +108,7 @@ export interface GameEventScoringAction {
   action: string;
   points: number;
   itemId?: string;
+  itemIds?: string[];
 }
 
 export interface GameEventDay {

@@ -16,15 +16,36 @@
         },
         {
           "action": "Use 1m of Construction Speedup",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m of Research Speedup",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         },
         {
           "action": "Use 1m of Training Speedup (Training, Promotion)",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-troop-1m",
+            "speedup-troop-5m",
+            "speedup-troop-1h",
+            "speedup-troop-3h",
+            "speedup-troop-8h"
+          ]
         }
       ],
       "milestones": [

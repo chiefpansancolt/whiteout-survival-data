@@ -17,7 +17,14 @@
         },
         {
           "action": "Use 1m of Training Speedup (Training, Promotion)",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-troop-1m",
+            "speedup-troop-5m",
+            "speedup-troop-1h",
+            "speedup-troop-3h",
+            "speedup-troop-8h"
+          ]
         }
       ],
       "milestones": [

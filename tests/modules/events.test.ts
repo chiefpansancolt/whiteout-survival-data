@@ -1494,8 +1494,18 @@ describe('scoring action item ids', () => {
 
   it('resolves every item id through items()', () => {
     const linked = actions.filter((a) => a.itemId !== undefined);
-    expect(linked).toHaveLength(85);
+    expect(linked).toHaveLength(134);
     for (const action of linked) expect(items().find(action.itemId!)).toBeDefined();
+  });
+
+  it('resolves every item of an item group through items()', () => {
+    const grouped = actions.filter((a) => a.itemIds !== undefined);
+    expect(grouped).toHaveLength(69);
+    for (const action of grouped) {
+      expect(action.itemId).toBeUndefined();
+      expect(action.itemIds!.length).toBeGreaterThan(1);
+      for (const id of action.itemIds!) expect(items().find(id)).toBeDefined();
+    }
   });
 
   it('links the Use actions that name one item', () => {
@@ -1509,17 +1519,76 @@ describe('scoring action item ids', () => {
     expect(idOf('svs-state-of-power', 'Use 1 Mithril')).toBe('mithril');
   });
 
-  it('leaves the actions that name no single item unlinked', () => {
+  it('leaves only the Hero Exclusive Gear Widget actions without an item link', () => {
     const unlinked = actions.filter(
-      (a) =>
-        a.itemId === undefined &&
-        /Hero Shard|Widget of any|Expert Sigil|Speedups?|Recruitment/.test(a.action),
+      (a) => a.itemId === undefined && a.itemIds === undefined && a.action.startsWith('Use '),
     );
-    expect(unlinked.length).toBeGreaterThan(0);
+    expect(unlinked).toHaveLength(13);
+    expect(new Set(unlinked.map((a) => a.action))).toEqual(
+      new Set(['Use 1 Widget of any Hero Exclusive Gear']),
+    );
+  });
+
+  it('links the hero shard actions to the general shard of their rarity', () => {
+    const shardActions = actions.filter((a) =>
+      /^Use (\d+ )?(Rare|Epic|Mythic) Hero Shard/.test(a.action),
+    );
+    expect(shardActions).toHaveLength(45);
+    for (const action of shardActions) {
+      const rarity = /(Rare|Epic|Mythic)/.exec(action.action)![1].toLowerCase();
+      expect(action.itemId).toBe(`${rarity}-general-hero-shard`);
+    }
+  });
+
+  it('links the expert sigil actions to every named sigil but the Common one', () => {
+    const sigilActions = actions.filter((a) => a.action.startsWith('Use any 1 Expert Sigil'));
+    expect(sigilActions).toHaveLength(4);
+    const named = items()
+      .get()
+      .filter((i) => i.category === 'Experts' && i.name.endsWith('Sigil'))
+      .map((i) => i.id)
+      .filter((id) => id !== 'common-expert-sigil');
+    expect(named).toHaveLength(10);
+    for (const action of sigilActions) expect(action.itemIds).toEqual(named);
+  });
+
+  it('links Epic Recruitment to the Platinum Key and Advanced Recruitment to the Gold Key', () => {
+    const recruit = actions.filter((a) => /Recruitment 1 time$/.test(a.action));
+    expect(recruit).toHaveLength(4);
+    for (const action of recruit) {
+      expect(action.itemId).toBe(action.action.includes('Epic') ? 'platinum-key' : 'gold-key');
+    }
+  });
+
+  it('links the speedup minute actions to the speedups of their own type', () => {
+    const speedupIds = (type: string) =>
+      items()
+        .get()
+        .filter((i) => i.speedup?.type === type)
+        .map((i) => i.id);
+    const typeOf = (action: string) =>
+      action.includes('Learn Expert Skills')
+        ? 'learning'
+        : action.includes('Construction')
+          ? 'construction'
+          : action.includes('Research')
+            ? 'research'
+            : 'troop';
+    const speedupActions = actions.filter((a) =>
+      /^Use 1m (of )?(Speedups?|\w+ Speedup)/.test(a.action),
+    );
+    expect(speedupActions).toHaveLength(65);
+    for (const action of speedupActions) {
+      expect(action.itemIds).toEqual(speedupIds(typeOf(action.action)));
+    }
+    expect(speedupIds('general')).toHaveLength(5);
+    expect(
+      speedupActions.some((a) => a.itemIds!.some((id) => id.startsWith('speedup-general'))),
+    ).toBe(false);
   });
 
   it('only links actions that start with Use', () => {
-    for (const action of actions.filter((a) => a.itemId !== undefined)) {
+    for (const action of actions.filter((a) => a.itemId !== undefined || a.itemIds !== undefined)) {
       expect(action.action.startsWith('Use ')).toBe(true);
     }
   });

@@ -56,19 +56,47 @@
         },
         {
           "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Research (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Troop Training / Promotion (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-troop-1m",
+            "speedup-troop-5m",
+            "speedup-troop-1h",
+            "speedup-troop-3h",
+            "speedup-troop-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-learning-1m",
+            "speedup-learning-5m",
+            "speedup-learning-1h",
+            "speedup-learning-3h",
+            "speedup-learning-8h"
+          ]
         }
       ],
       "milestones": [
@@ -244,19 +272,47 @@
         },
         {
           "action": "Use 1m of Speedups for Construction (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Research (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups for Troop Training / Promotion (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-troop-1m",
+            "speedup-troop-5m",
+            "speedup-troop-1h",
+            "speedup-troop-3h",
+            "speedup-troop-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-learning-1m",
+            "speedup-learning-5m",
+            "speedup-learning-1h",
+            "speedup-learning-3h",
+            "speedup-learning-8h"
+          ]
         },
         {
           "action": "Play Lucky Wheel 1 times",
@@ -264,15 +320,18 @@
         },
         {
           "action": "Use 1 Rare Hero Shard to ascend Heroes",
-          "points": 350
+          "points": 350,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard to ascend Heroes",
-          "points": 1220
+          "points": 1220,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard to ascend Heroes",
-          "points": 3040
+          "points": 3040,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "action": "Gather 1,000 Meat in the Wilderness",
@@ -292,7 +351,19 @@
         },
         {
           "action": "Use any 1 Expert Sigil (excluding Common Sigils)",
-          "points": 6000
+          "points": 6000,
+          "itemIds": [
+            "agnes-sigil",
+            "baldurs-sigil",
+            "cyrille-sigil",
+            "fabian-sigil",
+            "gareth-sigil",
+            "holger-sigil",
+            "kathy-sigil",
+            "romulus-sigil",
+            "ronne-sigil",
+            "valeria-sigil"
+          ]
         },
         {
           "action": "Use 1 Book of Knowledge",
@@ -481,15 +552,18 @@
         },
         {
           "action": "Use 1 Rare Hero Shard to ascend Heroes",
-          "points": 350
+          "points": 350,
+          "itemId": "rare-general-hero-shard"
         },
         {
           "action": "Use 1 Epic Hero Shard to ascend Heroes",
-          "points": 1220
+          "points": 1220,
+          "itemId": "epic-general-hero-shard"
         },
         {
           "action": "Use 1 Mythic Hero Shard to ascend Heroes",
-          "points": 3040
+          "points": 3040,
+          "itemId": "mythic-general-hero-shard"
         },
         {
           "action": "Call Rally and hunt down 1 Polar Terror",
@@ -517,7 +591,19 @@
         },
         {
           "action": "Use any 1 Expert Sigil (excluding Common Sigils)",
-          "points": 6000
+          "points": 6000,
+          "itemIds": [
+            "agnes-sigil",
+            "baldurs-sigil",
+            "cyrille-sigil",
+            "fabian-sigil",
+            "gareth-sigil",
+            "holger-sigil",
+            "kathy-sigil",
+            "romulus-sigil",
+            "ronne-sigil",
+            "valeria-sigil"
+          ]
         },
         {
           "action": "Use 1 Book of Knowledge",
@@ -953,19 +1039,47 @@
         },
         {
           "action": "Use 1m Speedups for Construction (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m Speedups for Research (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         },
         {
           "action": "Use 1m Speedups for Troop Training / Promotion (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-troop-1m",
+            "speedup-troop-5m",
+            "speedup-troop-1h",
+            "speedup-troop-3h",
+            "speedup-troop-8h"
+          ]
         },
         {
           "action": "Use 1m of Speedups to Learn Expert Skills (Gems Speedups excluded)",
-          "points": 30
+          "points": 30,
+          "itemIds": [
+            "speedup-learning-1m",
+            "speedup-learning-5m",
+            "speedup-learning-1h",
+            "speedup-learning-3h",
+            "speedup-learning-8h"
+          ]
         }
       ],
       "milestones": [

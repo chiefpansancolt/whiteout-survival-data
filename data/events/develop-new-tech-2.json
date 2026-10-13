@@ -12,7 +12,14 @@
       "scoring": [
         {
           "action": "Use 1m of Speedups for Research",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         }
       ],
       "milestones": [

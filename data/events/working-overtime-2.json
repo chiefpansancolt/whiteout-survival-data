@@ -21,11 +21,25 @@
       "scoring": [
         {
           "action": "Use 1m of Construction Speedup",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m of Research Speedup",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         }
       ],
       "milestones": [
@@ -130,11 +144,25 @@
       "scoring": [
         {
           "action": "Use 1m of Construction Speedup",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-construction-1m",
+            "speedup-construction-5m",
+            "speedup-construction-1h",
+            "speedup-construction-3h",
+            "speedup-construction-8h"
+          ]
         },
         {
           "action": "Use 1m of Research Speedup",
-          "points": 1
+          "points": 1,
+          "itemIds": [
+            "speedup-research-1m",
+            "speedup-research-5m",
+            "speedup-research-1h",
+            "speedup-research-3h",
+            "speedup-research-8h"
+          ]
         }
       ],
       "milestones": [
