@@ -147,6 +147,41 @@ Two events have sources that disagree, and the schedule follows the wiki text. S
 weeks" on the wiki and a 10 day event in two other sources, so it has no run. Tundra Arms League has
 18 days in the package and four weeks in a guide.
 
+## Expert extra tiers
+
+Three expert skills add reward tiers to the milestone list of an event: Baldur's Blazing Sunrise to
+Alliance Mobilization, Baldur's Dawn Hymn to Alliance Showdown, and Valeria's Well Prepared to the
+preparation phase of State of Power. Each skill adds up to three extra tiers. The `expertTiers` list
+of these three events has one entry for each extra tier.
+
+| Field              | Meaning                                                                              |
+| ------------------ | ------------------------------------------------------------------------------------ |
+| `expertId`         | The id of the expert, as in `experts()`                                              |
+| `skill`            | The name of the skill of the expert                                                  |
+| `tier`             | The extra tier, 1 to 3                                                               |
+| `unlockSkillLevel` | The skill level at which the tier appears: 1 for tier 1, 6 for tier 2, 10 for tier 3 |
+| `thresholds`       | Optional. The points the tier needs, with the `days` that the value is for           |
+| `rewards`          | The rewards of the tier: the bundle of the skill at the level that unlocks the tier  |
+
+The skill levels come from the `Extra Tier` progression of the skill in `experts()`, which adds 1
+tier at level 1, 2 at level 6, and 3 at level 10. The extra tiers come after the normal milestone
+tiers of the event.
+
+The rewards of a tier are the bundle that the skill lists at the level that unlocks the tier. They
+come from the `milestoneRewards` of the skill in `experts()`: the bundle at level 1 is tier 1, the
+bundle at level 6 is tier 2, and the bundle at level 10 is tier 3. The wiki page of Valeria lists
+these bundles under the heading "Bonus Tier Rewards", and the skill text says "+3 bonus tier(s)".
+The wiki page of Baldur lists his bundles at the same levels without a heading, so for him the link
+rests on the levels and on the skill text. The item names are linked to `items()`. The packs of
+secured resources and the 5m Training Speedup are named as the other events name them: Dawn Hymn
+tier 1 gives 20 `100K Meat (Secured)`, with the `itemId` `meat` and the pack count as the `amount`.
+
+The points that an extra tier needs are not published. No source states them: the wiki, WoS Tools,
+and the Heaven Guardian guides only say "+3 tiers" at level 10. The only value is the threshold of
+Dawn Hymn tier 1, 200,000 points on days 1 to 4 of Alliance Showdown, from the package owner, who
+read it in the game. It is above the highest normal milestone of those days, 125,000. Every other
+threshold is left out until it is known.
+
 ## Notes
 
 The source is `https://www.whiteoutsurvival.wiki/events/`. Event pages are prose and screenshots

@@ -14,6 +14,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `chiefGearSetBonus()` and `chiefGearSetBonuses()`: the 3 piece Defense and 6 piece Attack set
   bonuses of Chief Gear, from the level of each piece worn. Some values are assumptions of the
   owner.
+- `events()` for Alliance Mobilization, Alliance Showdown, and State of Power list the extra reward
+  tiers that the expert skills Blazing Sunrise, Dawn Hymn, and Well Prepared add, with their rewards
+  and the point threshold of the one tier that is known.
 - `events()` have an optional `schedule`: a repeat rule and the runs of a cycle, in a shape that a
   calendar can use, for 50 events.
 - `heroGearSlots()`: the four Hero Gear slots, Goggles, Gloves, Belt, and Boots, with an icon of the
