@@ -69,6 +69,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- The icons of speedups, expert relationship medals, President skills, Fire Crystal levels, and
+  other tiles have a transparent area outside the shape, and the faint haze around many images is
+  gone. Every image is now PNG or JPG, with no WebP.
 - `calculateExperts()` gives the minutes of learning time that the skill EXP needs, at 60 EXP for
   each minute, with `EXPERT_SKILL_EXP_PER_LEARNING_MINUTE` and the EXP of each learning session that
   can be queued in `EXPERT_LEARNING_QUEUE_OPTIONS`.
