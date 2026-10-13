@@ -1,8 +1,35 @@
 import { experts } from '@/modules/experts';
-import { Expert, ExpertCalculation, ExpertGoal, ExpertItemResult, ExpertSkillGoal } from '@/types';
+import {
+  Expert,
+  ExpertCalculation,
+  ExpertGoal,
+  ExpertItemResult,
+  ExpertLearningQueueOption,
+  ExpertSkillGoal,
+} from '@/types';
 import { scoringPoints } from './event-score';
 
 export const EXPERT_MAX_LEVEL = 100;
+
+export const EXPERT_SKILL_EXP_PER_LEARNING_MINUTE = 60;
+
+export const EXPERT_LEARNING_QUEUE_OPTIONS: readonly ExpertLearningQueueOption[] = (
+  [
+    ['10 min', 10],
+    ['2h', 2 * 60],
+    ['10h', 10 * 60],
+    ['24h', 24 * 60],
+    ['3d', 3 * 24 * 60],
+    ['5d', 5 * 24 * 60],
+  ] as const
+).map(([label, minutes]) => ({
+  label,
+  minutes,
+  exp: minutes * EXPERT_SKILL_EXP_PER_LEARNING_MINUTE,
+}));
+
+const learningMinutesOf = (exp: number): number =>
+  Math.ceil(exp / EXPERT_SKILL_EXP_PER_LEARNING_MINUTE);
 
 function checkLevel(name: string, owner: string, level: number, max: number): void {
   if (!Number.isInteger(level) || level < 1 || level > max) {
@@ -76,7 +103,13 @@ function expertResult(goal: ExpertGoal): ExpertItemResult {
       ? { levels: 0, advancements: 0, sigils: 0, affinity: 0 }
       : levelCosts(expert, goal.level);
   const skills = skillCosts(expert, goal.skills ?? []);
-  return { id: expert.id, name: expert.name, ...level, ...skills };
+  return {
+    id: expert.id,
+    name: expert.name,
+    ...level,
+    ...skills,
+    learningMinutes: learningMinutesOf(skills.exp),
+  };
 }
 
 const EXPERT_BOOK_ROW = /^Use 1 Book of Knowledge$/;
@@ -92,6 +125,9 @@ const EXPERT_SPEEDUP_ROW = /^Use 1m (of )?Speedups to Learn Expert Skills/;
  * level. Set `currentAdvanced` when the expert is already advanced at the current level. The talent costs
  * nothing.
  *
+ * `learningMinutes` is the skill EXP divided by `EXPERT_SKILL_EXP_PER_LEARNING_MINUTE`, rounded up: the
+ * minutes of learning time, or of Learning or General Speedups, that the skills need.
+ *
  * @param goals One entry for each expert, with an optional affinity level range and skill ranges.
  * @throws Error when a goal names an expert or a skill that does not exist.
  * @throws RangeError when a level is not a whole number in range, when a goal is below its current
@@ -104,6 +140,7 @@ export function calculateExperts(goals: ExpertGoal[] = []): ExpertCalculation {
     items.reduce((total, i) => total + pick(i), 0);
   const books = sum((i) => i.books);
   const sigils = sum((i) => i.sigils);
+  const exp = sum((i) => i.exp);
   const forEvent = (eventId: string) =>
     books * scoringPoints(eventId, EXPERT_BOOK_ROW) +
     sigils * scoringPoints(eventId, EXPERT_SIGIL_ROW);
@@ -114,7 +151,8 @@ export function calculateExperts(goals: ExpertGoal[] = []): ExpertCalculation {
     skillLevels: sum((i) => i.skillLevels),
     sigils,
     books,
-    exp: sum((i) => i.exp),
+    exp,
+    learningMinutes: learningMinutesOf(exp),
     affinity: sum((i) => i.affinity),
     speedupPointsPerMinute: {
       svs: scoringPoints('svs-state-of-power', EXPERT_SPEEDUP_ROW),

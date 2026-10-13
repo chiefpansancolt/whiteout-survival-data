@@ -1,4 +1,9 @@
-import { calculateExperts, EXPERT_MAX_LEVEL } from '@/modules/calculators';
+import {
+  calculateExperts,
+  EXPERT_LEARNING_QUEUE_OPTIONS,
+  EXPERT_MAX_LEVEL,
+  EXPERT_SKILL_EXP_PER_LEARNING_MINUTE,
+} from '@/modules/calculators';
 import { experts } from '@/modules/experts';
 import { ExpertGoal, ExpertSkillGoal } from '@/types';
 
@@ -18,6 +23,7 @@ describe('calculateExperts', () => {
       sigils: 0,
       books: 0,
       exp: 0,
+      learningMinutes: 0,
       affinity: 0,
     });
   });
@@ -107,6 +113,7 @@ describe('calculateExperts', () => {
       sigils: 0,
       books: 0,
       exp: 0,
+      learningMinutes: 0,
       affinity: 0,
     });
   });
@@ -171,5 +178,82 @@ describe('calculateExperts event points', () => {
 
   it('gives the points of one minute of speedups to learn expert skills', () => {
     expect(calculateExperts().speedupPointsPerMinute).toEqual({ svs: 30, allianceShowdown: 18 });
+  });
+});
+
+describe('calculateExperts learning minutes', () => {
+  it('exports 60 EXP for each minute of learning', () => {
+    expect(EXPERT_SKILL_EXP_PER_LEARNING_MINUTE).toBe(60);
+  });
+
+  it('divides the skill EXP by 60 for the minutes of learning', () => {
+    const result = calculateExperts([
+      agnes(undefined, [{ name: 'Efficient Recon', current: 1, goal: 3 }]),
+    ]);
+    const skill = experts()
+      .find('agnes')!
+      .skills.find((s) => s.name === 'Efficient Recon')!;
+    const exp = skill.costs[1].exp + skill.costs[2].exp;
+    expect(result.exp).toBe(exp);
+    expect(result.learningMinutes).toBe(exp / 60);
+    expect(result.items[0].learningMinutes).toBe(exp / 60);
+  });
+
+  it('gives whole hours of learning for a skill level of 43,200 EXP', () => {
+    const result = calculateExperts([
+      { id: 'agnes', skills: [{ name: 'Efficient Recon', current: 1, goal: 2 }] },
+    ]);
+    expect(result.exp).toBe(43200);
+    expect(result.learningMinutes).toBe(720);
+  });
+
+  it('rounds the minutes up, like Crisis Rescue level 2 of Fabian with 33,053 EXP', () => {
+    const result = calculateExperts([
+      { id: 'fabian', skills: [{ name: 'Crisis Rescue', current: 1, goal: 2 }] },
+    ]);
+    expect(result.exp).toBe(33053);
+    expect(result.learningMinutes).toBe(551);
+  });
+
+  it('rounds the total once, not the minutes of each expert', () => {
+    const goals = [
+      { id: 'fabian', skills: [{ name: 'Crisis Rescue', current: 1, goal: 2 }] },
+      { id: 'fabian', skills: [{ name: 'Crisis Rescue', current: 1, goal: 2 }] },
+    ];
+    const result = calculateExperts(goals);
+    expect(result.items.map((i) => i.learningMinutes)).toEqual([551, 551]);
+    expect(result.learningMinutes).toBe(Math.ceil((2 * 33053) / 60));
+    expect(result.learningMinutes).toBe(1102);
+  });
+
+  it('gives 0 minutes when no skill levels are chosen', () => {
+    expect(calculateExperts().learningMinutes).toBe(0);
+  });
+});
+
+describe('EXPERT_LEARNING_QUEUE_OPTIONS', () => {
+  it('lists the six sessions that can be queued, one at a time, with the EXP of each', () => {
+    expect(EXPERT_LEARNING_QUEUE_OPTIONS).toEqual([
+      { label: '10 min', minutes: 10, exp: 600 },
+      { label: '2h', minutes: 120, exp: 7200 },
+      { label: '10h', minutes: 600, exp: 36000 },
+      { label: '24h', minutes: 1440, exp: 86400 },
+      { label: '3d', minutes: 4320, exp: 259200 },
+      { label: '5d', minutes: 7200, exp: 432000 },
+    ]);
+  });
+
+  it('gives each option the EXP of its seconds, at 60 EXP for each minute', () => {
+    for (const option of EXPERT_LEARNING_QUEUE_OPTIONS) {
+      expect(option.exp).toBe(option.minutes * 60);
+    }
+  });
+
+  it('pays one 24 hour session for level 3 of Efficient Recon of Agnes', () => {
+    const skill = experts()
+      .find('agnes')!
+      .skills.find((s) => s.name === 'Efficient Recon')!;
+    const session = EXPERT_LEARNING_QUEUE_OPTIONS.find((o) => o.label === '24h')!;
+    expect(skill.costs[2].exp).toBe(session.exp);
   });
 });

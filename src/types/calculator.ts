@@ -306,6 +306,12 @@ export interface ExpertGoal {
   skills?: ExpertSkillGoal[];
 }
 
+export interface ExpertLearningQueueOption {
+  label: string;
+  minutes: number;
+  exp: number;
+}
+
 export interface ExpertItemResult {
   id: string;
   name: string;
@@ -316,6 +322,7 @@ export interface ExpertItemResult {
   sigils: number;
   books: number;
   exp: number;
+  learningMinutes: number;
   affinity: number;
 }
 
@@ -333,6 +340,7 @@ export interface ExpertCalculation {
   sigils: number;
   books: number;
   exp: number;
+  learningMinutes: number;
   affinity: number;
   speedupPointsPerMinute: { svs: number; allianceShowdown: number };
   eventPoints: ExpertEventPoints;
