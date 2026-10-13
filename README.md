@@ -150,6 +150,7 @@ calculator has its own guide.
 | Function                      | What it calculates                                                 | Details                                                    |
 | ----------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------- |
 | `calculateSvs()`              | State of Power score by day, phase, and event                      | [Guide](src/modules/calculators/docs/svs.md)               |
+| `calculateBeasts()`           | Beasts or Polar Terrors that stamina pays for, with event points   | [Guide](src/modules/calculators/docs/beasts.md)            |
 | `calculateAllianceShowdown()` | Alliance Showdown score, with the Dawn Hymn bonus                  | [Guide](src/modules/calculators/docs/alliance-showdown.md) |
 | `calculateKingOfIcefield()`   | King of Icefield score                                             | [Guide](src/modules/calculators/docs/king-of-icefield.md)  |
 | `calculateHallOfChief()`      | Hall of Chief score                                                | [Guide](src/modules/calculators/docs/hall-of-chief.md)     |

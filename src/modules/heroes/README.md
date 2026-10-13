@@ -88,8 +88,33 @@ skills. Rare heroes have 2 and 2. Epic heroes have 3 Exploration and 2 Expeditio
 tab is empty for every Legendary hero except Jeronimo and Natalia, the Generation 1 Infantry heroes.
 `skills.talent` is `undefined` for every other Legendary hero.
 
-Each skill has 5 `levels` of `{ level, manualsRequired, powerGain, starRequired }`. They match the 5
-slash-separated values in the description, for example "200%/220%/240%/260%/280%".
+Each skill has 5 `levels` of `{ level, manualsRequired, powerGain, starRequired, effects }`. They
+match the 5 slash-separated values in the description, for example "200%/220%/240%/260%/280%".
+
+`effects` holds the numbers of the description for that level, so you read them without parsing the
+text. It has one entry for each set of 5 numbers in the description, in the order of the text. Each
+entry is `{ name, amount, unit }`.
+
+```ts
+const gina = heroes().find("gina")!;
+const skill = gina.skills.expedition.find((s) => s.name === "Endurance Training")!;
+skill.levels[1].effects; // [{ name: 'Stamina Cost Reduction', amount: 12, unit: 'percent' }]
+```
+
+| `unit`            | Meaning                                                               |
+| ----------------- | --------------------------------------------------------------------- |
+| `percent`         | A percent, such as 12 for 12%.                                        |
+| `percentOfAttack` | A multiple of the Attack of the hero, such as 210 for "Attack\*210%". |
+| `seconds`         | A time in seconds, such as the 0.5 of a stun of 0.5 seconds.          |
+| `number`          | A plain count, such as the 8 strikes before an effect.                |
+
+A skill with two sets, such as Incendiary Arrow of Gina, has two entries at every level, and no two
+entries of one skill have the same name. The `name` says what the number sets. A name has no suffix
+when the skill grants or raises the stat, such as `Attack`, and ends in `Reduction` when it lowers
+one, such as `Damage Taken Reduction` or `Enemy Attack Reduction`. A qualifier in parentheses names
+the troop type or the target, such as `Damage Dealt (Lancers)` or `Damage (Nearby Enemies)`. The
+names are the same at all 5 levels of a skill. A condition in the text, such as "under 50% Health",
+is not part of the name.
 
 `manualsRequired` is 0 / 10 / 30 / 50 / 75 for levels 1 to 5 on every Exploration and Expedition
 skill of every hero. The Talent skill of Jeronimo and Natalia needs no Manuals, so it is 0 at every

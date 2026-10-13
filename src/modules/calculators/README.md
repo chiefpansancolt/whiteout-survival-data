@@ -34,18 +34,19 @@ calculator names its constants.
 
 ## Calculators
 
-| Calculator                    | Document                                       | What it calculates                                                       |
-| ----------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------ |
-| `calculateSvs()`              | [svs](docs/svs.md)                             | State of Power points for each day and phase, with Valeria's bonus.      |
-| `calculateAllianceShowdown()` | [alliance-showdown](docs/alliance-showdown.md) | Alliance Showdown personal points for each day, with Baldur's bonus.     |
-| `calculateKingOfIcefield()`   | [king-of-icefield](docs/king-of-icefield.md)   | King of Icefield points for each day.                                    |
-| `calculateHallOfChief()`      | [hall-of-chief](docs/hall-of-chief.md)         | Hall of Chief points for each stage.                                     |
-| `calculateChiefGear()`        | [chief-gear](docs/chief-gear.md)               | Materials, gear score, power, and event points to upgrade Chief Gear.    |
-| `calculateChiefCharm()`       | [chief-charm](docs/chief-charm.md)             | Materials, charm score, power, and event points to upgrade Chief Charms. |
-| `calculateTroops()`           | [troops](docs/troops.md)                       | Troops trained or promoted by each camp, with resources and time.        |
-| `calculateResearch()`         | [research](docs/research.md)                   | Resources, time, and power to upgrade research lines to a goal level.    |
-| `calculatePets()`             | [pets](docs/pets.md)                           | Pet food, advancement items, and stat gains to level pets.               |
-| `calculateExperts()`          | [experts](docs/experts.md)                     | Books of Knowledge and expert sigils to level experts and their skills.  |
-| `calculateBuildings()`        | [buildings](docs/buildings.md)                 | Resources, build time, power, and event points to upgrade buildings.     |
-| `calculateHeroGear()`         | [hero-gear](docs/hero-gear.md)                 | Resources, power, stats, and event points to level one hero gear piece.  |
-| `calculateHeroUpgrade()`      | [hero-upgrade](docs/hero-upgrade.md)           | Shards, skill manuals, and widgets to upgrade one hero.                  |
+| Calculator                    | Document                                       | What it calculates                                                         |
+| ----------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------- |
+| `calculateSvs()`              | [svs](docs/svs.md)                             | State of Power points for each day and phase, with Valeria's bonus.        |
+| `calculateBeasts()`           | [beasts](docs/beasts.md)                       | Beasts or Polar Terrors that stamina pays for, with Gina and event points. |
+| `calculateAllianceShowdown()` | [alliance-showdown](docs/alliance-showdown.md) | Alliance Showdown personal points for each day, with Baldur's bonus.       |
+| `calculateKingOfIcefield()`   | [king-of-icefield](docs/king-of-icefield.md)   | King of Icefield points for each day.                                      |
+| `calculateHallOfChief()`      | [hall-of-chief](docs/hall-of-chief.md)         | Hall of Chief points for each stage.                                       |
+| `calculateChiefGear()`        | [chief-gear](docs/chief-gear.md)               | Materials, gear score, power, and event points to upgrade Chief Gear.      |
+| `calculateChiefCharm()`       | [chief-charm](docs/chief-charm.md)             | Materials, charm score, power, and event points to upgrade Chief Charms.   |
+| `calculateTroops()`           | [troops](docs/troops.md)                       | Troops trained or promoted by each camp, with resources and time.          |
+| `calculateResearch()`         | [research](docs/research.md)                   | Resources, time, and power to upgrade research lines to a goal level.      |
+| `calculatePets()`             | [pets](docs/pets.md)                           | Pet food, advancement items, and stat gains to level pets.                 |
+| `calculateExperts()`          | [experts](docs/experts.md)                     | Books of Knowledge and expert sigils to level experts and their skills.    |
+| `calculateBuildings()`        | [buildings](docs/buildings.md)                 | Resources, build time, power, and event points to upgrade buildings.       |
+| `calculateHeroGear()`         | [hero-gear](docs/hero-gear.md)                 | Resources, power, stats, and event points to level one hero gear piece.    |
+| `calculateHeroUpgrade()`      | [hero-upgrade](docs/hero-upgrade.md)           | Shards, skill manuals, and widgets to upgrade one hero.                    |

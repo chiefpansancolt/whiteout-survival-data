@@ -7,6 +7,21 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game data
+
+- Every level of every hero skill has `effects`: the name, the amount, and the unit of each number
+  in the skill text, so a value such as the Stamina Cost Reduction of Gina can be read without
+  parsing the description.
+
+#### Calculators
+
+- `calculateBeasts()`: the beasts or Polar Terrors that stamina and stamina cans pay for, with the
+  stamina that Gina's Endurance Training saves. You can plan beast runs by level and Polar Terrors
+  first, such as the beasts of Intel missions, and see what the stamina left pays for, with the
+  State of Power, Defeat Nearby Beasts, and Tundra Games points.
+
 ## [0.2.0] - 2026-10-12
 
 ### Added
