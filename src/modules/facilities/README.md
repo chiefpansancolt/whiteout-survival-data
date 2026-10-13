@@ -40,21 +40,18 @@ Infirmary's own.
 
 Every facility has an `unlockFurnaceLevel`:
 
-| Facility          | Furnace level | Source                                                 |
-| ----------------- | ------------- | ------------------------------------------------------ |
-| Suggestion Box    | 2             | The package owner, from the game                       |
-| Hero Hall         | 4             | WhiteOutData                                           |
-| Explorer's Cabin  | 4             | WhiteOutData                                           |
-| Chief's House     | 6             | WhiteOutData and the Heaven Guardian Chief Order guide |
-| Lighthouse        | 7             | WhiteOutData                                           |
-| Arena             | 8             | WhiteOutData                                           |
-| Enlistment Office | 11            | WhiteOutData                                           |
-| Beast Cage        | 18            | WhiteOutData. The pets list Furnace 18 as well         |
-| Dawn Academy      | 25            | Its own description                                    |
+| Facility          | Furnace level |
+| ----------------- | ------------- |
+| Suggestion Box    | 2             |
+| Hero Hall         | 4             |
+| Explorer's Cabin  | 4             |
+| Chief's House     | 6             |
+| Lighthouse        | 7             |
+| Arena             | 8             |
+| Enlistment Office | 11            |
+| Beast Cage        | 18            |
+| Dawn Academy      | 25            |
 
-WhiteOutData states each level in a sentence such as "When Furnace is upgraded to level 7, it
-unlocks Shelter 6, Lighthouse, Infantry Camp, and Barricade." The Whiteout Survival Wiki has no
-table for them. The WoS Tools Furnace table agrees on Hero Hall, which it lists among the buildings
-that you need before Furnace 5. An older guide gave Hero Hall and Explorer's Cabin as Furnace 6,
-which no other source states. No page states the level of the Suggestion Box, so its Furnace level 2
-is the statement of the package owner.
+The Furnace level 2 of the Suggestion Box is the statement of the package owner, from the game. The
+level of Dawn Academy is in its own description. The pets list Furnace 18 for the Beast Cage as
+well.

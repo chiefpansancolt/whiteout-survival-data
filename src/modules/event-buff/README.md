@@ -40,13 +40,13 @@ Each entry has 11 buff fields, all of type `BuffApplicability`: `cityBonusWarsBu
 `deploymentCapacity`, `petSkills`, `daybreakIsland`, `presidentSkills`, `ministerBuff`,
 `territoryBonuses`, `facilityBuff`, `marchAccelerator`, `frostdragonTyrantTitles`, and
 `frostSphereDomainBonus`. `petSkillsAutoApplied` is `true` where pet skills take effect without the
-player activating them. `notes` holds the footnote of the source image and is absent for modes with
-no caveat.
+player activating them. `notes` holds the footnote of the screenshot and is absent for modes with no
+caveat.
 
 ## Notes
 
-The data comes from a user-provided "Applicable Buff List" screenshot, not from a wiki page. The
-screenshot is a matrix of 11 buff sources and 14 game modes.
+The data comes from a user-provided "Applicable Buff List" screenshot. The screenshot is a matrix of
+11 buff sources and 14 game modes.
 
 The module is not nested under `alliance/`, because most of the buff sources (pet skills, president
 skills, Frostdragon Tyrant, Frost Sphere) belong to other systems.

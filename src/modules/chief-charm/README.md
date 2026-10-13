@@ -44,8 +44,8 @@ from 1), `level`, `stage`, `materials` (item ids from `items()` with amounts), `
 ## Notes
 
 The materials are Charm Guide, Charm Design, and Charm Secrets. Charm Secrets appears only from
-level 11 stage 1. The table lists exactly the materials that the raw table gives, so a step does not
-always have three.
+level 11 stage 1. The table lists exactly the materials of each step, so a step does not always have
+three.
 
 A charm changes its look at each of its 18 levels. For that reason `images` is a plain array and not
 a map by rarity, as it is for Chief Gear.
@@ -54,8 +54,7 @@ The score is what events count. The rows "Raise Chief Charm max score by 1" pay 
 point in SvS and King of Icefield, 45 in Alliance Showdown, and 1,000 in Hall of Chief. The score
 does not depend on power. A whole level scores 625, 1,250, 3,125, 8,750, 11,250, 12,500, 12,500,
 13,000, 14,000, 15,000, 16,000, 17,000, 18,000, 19,000, 20,000, 21,000, 22,500, and 24,300 for
-levels 1 to 18. The wiki event notes confirm levels 1 to 16. Levels 17 and 18 come from WoS Tools
-only. A level with several steps splits its score evenly over them, with the remainder on the first
-steps, as WoS Tools does. The game does not confirm this split. The steps that lead up to a level
-carry its score, so the rows `level-4-stage-1`, `level-4-stage-2`, `level-4-stage-3`, and
-`level-5-stage-0` together score 11,250, the whole score of level 5.
+levels 1 to 18. A level with several steps splits its score evenly over them, with the remainder on
+the first steps. The game does not confirm this split. The steps that lead up to a level carry its
+score, so the rows `level-4-stage-1`, `level-4-stage-2`, `level-4-stage-3`, and `level-5-stage-0`
+together score 11,250, the whole score of level 5.

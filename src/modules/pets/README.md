@@ -72,24 +72,18 @@ named `<Pet>-<SkillName>.<ext>`.
 ## Notes
 
 `maxRefinementPercent` is stored for each pet (Cave Hyena: 6.70). It is about 4/3 of the largest
-refined value in that pet's level table. Neither source wiki documents the mechanic, so the value is
-stored as scraped and not derived.
+refined value in that pet's level table. The value is stored as given and not derived.
 
 Refinement rolls bonus stats on a pet. There are six: the Lethality and the Health of each troop
 type, which are Infantry Lethality, Infantry Health, Lancer Lethality, Lancer Health, Marksman
 Lethality, and Marksman Health. `PET_REFINEMENT_STATS` lists them with the `statKey` that
 `research()` and the other modules use for the same stat. The package owner gave these six stats,
-from the game. No guide or wiki page names them.
+from the game.
 
 The package stores the maximum refinement of each pet. The percent range of each quality (None,
-Green, Blue, Purple, and Gold), the size of a step, and the Wild Mark cost of a roll are not stored,
-because no source states them. The Century Games help center describes the mechanic without numbers:
-a refinement rolls a new result that can be better or worse, refinement is irreversible, and a
+Green, Blue, Purple, and Gold), the size of a step, and the Wild Mark cost of a roll are not stored.
+A refinement rolls a new result that can be better or worse, refinement is irreversible, and a
 refinement after a quality increase does not drop the quality.
 
-The advancement score for levels 40 to 100 matches the event notes on the wiki. Levels 10 to 30 come
-from WoS Tools only.
-
-Each pet's `img` is the top-left profile portrait of its wiki page (`post_image`). It is not the
-larger splash art further down the page. Only the portrait matches the compact style of the other
-pet images.
+Each pet's `img` is its profile portrait. It is not the larger splash art. Only the portrait matches
+the compact style of the other pet images.

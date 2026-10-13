@@ -33,15 +33,13 @@ to 100. Each row has an `id` such as `level-1`, a `name`, the `level`, a `cost` 
 
 ## Notes
 
-Like Chief Gear and Charms, the Hero Gear page describes shared upgrade progressions and not a
-catalog of named pieces. The wiki has no detail page for a single piece of Hero Gear. The exclusive
-piece of a Legendary hero is stored as `Hero.exclusiveWeapon` in [`heroes()`](../heroes/README.md).
-A proposed gear quality list (Grey, Green, Blue, Purple, Gold) was left out, because it is not an
-entity that is useful on its own.
+Like Chief Gear and Charms, Hero Gear has shared upgrade progressions and not a catalog of named
+pieces. The exclusive piece of a Legendary hero is stored as `Hero.exclusiveWeapon` in
+[`heroes()`](../heroes/README.md). A proposed gear quality list (Grey, Green, Blue, Purple, Gold)
+was left out, because it is not an entity that is useful on its own.
 
-`power` is cumulative from enhancement level 1 through empowerment level 100, as the wiki states it.
-It is exactly 4 times the per piece power on WoS Tools at every level. The values keep the wiki
-figure. Empowerment power continues from the power of level 100. See
+`power` is cumulative from enhancement level 1 through empowerment level 100. Empowerment power
+continues from the power of level 100. See
 [`heroGearEmpowerment()`](../hero-gear-empowerment/README.md).
 
 The per piece stats of each level are in [`heroGearStats()`](../hero-gear-stats/README.md).

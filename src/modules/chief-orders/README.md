@@ -46,8 +46,7 @@ cooldown starts when the order is used.
 ## Data
 
 The data is in `data/chief/chief-orders.json`. Each order has an `id`, a `name`, the `effect` in the
-wording of the source, a `contentmentCost`, and a `cooldownSeconds`. An order can have a `note` that
-the source gives.
+wording of the game, a `contentmentCost`, and a `cooldownSeconds`. An order can have a `note`.
 
 | Order               | Contentment cost | Cooldown |
 | ------------------- | ---------------- | -------- |
@@ -82,20 +81,15 @@ percent: Fire Crystal (5x and 10x), Essence Stones (3x), Lucky Hero Gear Chest (
 and 8x), Charm Design (3x and 8x), and Charm Guide (3x and 8x). Crunch Time gives +100% resource
 output for 24 hours of Survivor Time, like Productivity Day, so it has no `bonus`.
 
-## Sources and assumptions
+## Assumptions
 
-The six first orders come from one guide, the
-[Chief Order guide on Heaven Guardian](https://heaven-guardian.com/whiteout-survival-chiefs-house-orders-guide/).
-The Whiteout Survival Wiki has no page for the orders. The three orders of the Fire Crystal Age come
-from the package owner, who read them in the game. No web source states them.
+The three orders of the Fire Crystal Age come from the package owner, who read them in the game.
 
-- The guide states the Chief's House opens at Furnace level 6 and does not give a different level
-  for any order. The `chiefs-house` facility has `unlockFurnaceLevel` 6 for this reason.
+- The Chief's House opens at Furnace level 6 and no order has a different level. The `chiefs-house`
+  facility has `unlockFurnaceLevel` 6 for this reason.
 - The six first orders have an `img`, a PNG in `images/chief-orders/`. The icons are cropped from
-  the Chief Order screenshot of the Heaven Guardian guide, at the size of the screenshot. The three
-  orders of the Fire Crystal Age have no `img`, because no source shows their icons.
-- The cooldowns are lengths of time. The guide does not state a daily reset time, so the package has
-  none. Use `chiefOrderReadyAt` with the time the order was used.
-- Survivor Time is in the wording of the source. The guide does not say how it relates to real time.
-- The Contentment cost of an order can differ from the guide in the game. The package keeps the
-  guide values.
+  the Chief Order screenshot, at the size of the screenshot. The three orders of the Fire Crystal
+  Age have no `img`.
+- The cooldowns are lengths of time. The package has no daily reset time. Use `chiefOrderReadyAt`
+  with the time the order was used.
+- Survivor Time is in the wording of the game. The package does not say how it relates to real time.

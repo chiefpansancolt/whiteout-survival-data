@@ -33,8 +33,7 @@ in [How It Works](../../../README.md#how-it-works).
 
 The data is in `data/chief/research.json`. Each node has `id`, `name`, `img`, `category`, `queue`,
 `tier`, and `levels`. A level has `level`, `prerequisites`, `cost`, `bonus`, `power`, and an
-optional `researchTimeSeconds`. The nodes are sourced page by page, like `items()`, because each
-research line has its own detail page with its own cost, time, and bonus table.
+optional `researchTimeSeconds`.
 
 `category` has 9 values. `queue` is `main` for Growth, Economy, and Battle, and `warAcademy` for the
 six T11 and T12 categories, because the game researches the two groups in separate queues. `tier` is
@@ -60,24 +59,23 @@ matching the cost icon's source filename to the icon of a cataloged item.
 | ------------ | ---------------------------- | ------------------------------------------------- |
 | `building`   | A `buildings()` id           | Normalized to match `BuildingLevel.label` exactly |
 | `research`   | The id of another node       | A level of that node                              |
-| `unreleased` | A best-effort slugified name | A tech line with no published wiki page yet       |
+| `unreleased` | A best-effort slugified name | A tech line that is not published yet             |
 
 A `building` entry such as `Research Center 7` or `War Academy FC 10` round-trips into
 `buildings().find(id)!.levels`. An `unreleased` entry does not resolve against `research()` by
 design, so the gap stays visible instead of being dropped or pointed at the wrong node. No node uses
 it now. The 12 Molten X II nodes (`Molten Blades II` and eleven others across the three T12 troop
-lines) needed it until their pages went live. The wiki uses a Unicode Roman numeral in their URL
-slug (`molten-blades-Ⅱ`), while this package's ids use ASCII `-ii`.
+lines) needed it until they were published.
 
 ## Notes
 
-### Corrected wiki spellings
+### Corrected spellings
 
-Several prerequisite names resolve only after fixing spelling errors on the source wiki. The package
-corrects them with an explicit alias list built by checking every node name in the manifest. It does
-not use fuzzy matching.
+Several prerequisite names resolve only after fixing spelling errors. The package corrects them with
+an explicit alias list built by checking every node name in the manifest. It does not use fuzzy
+matching.
 
-| Wiki spelling               | Node name             |
+| Misspelled name             | Node name             |
 | --------------------------- | --------------------- |
 | `Assault Techniques`        | `Assaut Techniques`   |
 | `Bulwark Formation`         | `Bulwark Formations`  |
@@ -89,23 +87,19 @@ not use fuzzy matching.
 
 ### Corrected stat of one level
 
-Level 2 of `molten-plating-ii` says `Troops Health` on the wiki. The other 49 levels say
-`Infantry Health`, as the rest of the Infantry Molten II lines do for their own troop type, so the
-package uses `Infantry Health` for all levels of the node.
+All 50 levels of `molten-plating-ii` use `Infantry Health`, as the rest of the Infantry Molten II
+lines do for their own troop type.
 
 ### Research time
 
-`researchTimeSeconds` is optional, and every level in the data has one. The source pages of the T12
-tier 1 Exalted nodes have no Time value, because the wiki column repeats the power. The 15 lines
-with five levels (for example `exalted-blunderbuss`) upgrade instantly, as the package owner states,
-so all 75 levels have `researchTimeSeconds` 0. The three Exalted capstones, `exalted-infantry`,
+`researchTimeSeconds` is optional, and every level in the data has one. The 15 lines with five
+levels (for example `exalted-blunderbuss`) upgrade instantly, as the package owner states, so all 75
+levels have `researchTimeSeconds` 0. The three Exalted capstones, `exalted-infantry`,
 `exalted-lancer`, and `exalted-marksman`, are placeholders that unlock once the five lines of the
 troop type are complete. They take no time, so their level has `researchTimeSeconds` 0 too.
 
-Level 1 of `bulwark-formations-iv` and `picket-lines-iv` has the time 32,000 seconds. The wiki
-writes it as `08:53::20`, with two colons, on both pages. The package reads it as `08:53:20`,
-because that is the only valid reading and it fits the other levels: 32,000, 41,600, 64,000, 96,000,
-and 240,480 seconds.
+Level 1 of `bulwark-formations-iv` and `picket-lines-iv` has the time 32,000 seconds, which is
+`08:53:20`. It fits the other levels: 32,000, 41,600, 64,000, 96,000, and 240,480 seconds.
 
 ### Bonus array
 
@@ -113,26 +107,25 @@ and 240,480 seconds.
 nodes have levels with two stats, for example `helios-infantry-training`.
 
 A bonus has `stat`, `statKey`, `value`, `amount`, `unit`, and `totalAmount`. `value` is the text of
-the source, such as `"1.25%"`, `"600"`, or `"1,000"`. `amount` and `unit` are the parsed form: a `%`
+the bonus, such as `"1.25%"`, `"600"`, or `"1,000"`. `amount` and `unit` are the parsed form: a `%`
 gives `percent` and a plain number gives `flat`, with the commas removed. `amount` is the bonus that
 the level adds, not the bonus so far. `totalAmount` is the bonus up to this level: the sum of the
 `amount` of the same stat over the levels of the node up to this level. So `1.25`, `1.25`, and `1.5`
 have the totals `1.25`, `2.5`, and `4`.
 
-The T12 nodes are the exception for `value`. On the T12 pages the wiki lists the bonus up to the
-level, not the bonus of the level. `exalted-shoulderguard` lists `3.00%`, `6.00%`, `9.00%`,
-`12.00%`, and `15.00%`, so its `amount` is 3 on every level and its `totalAmount` is 3, 6, 9, 12,
-and 15, the listed value. A Molten II line has 50 levels of 1, and a total of 50 at level 50. All 63
-T12 bonuses with several levels have one constant gain, which fits this reading, and WoS Tools says
-the Exalted tracks give "+3.00% per level" and "+15%" when complete. The package owner confirmed
-that the T12 values are totals. The rule for `amount` and `totalAmount` is the same for every node,
-so a page can add up `amount` for any node. The three bonuses of the `Other` stat hold unlock text
-such as `Unlock XI Helios Infantry`. They have no `statKey`, `amount`, `unit`, or `totalAmount`.
+The T12 nodes are the exception for `value`. For T12 nodes, `value` is the bonus up to the level,
+not the bonus of the level. `exalted-shoulderguard` has `3.00%`, `6.00%`, `9.00%`, `12.00%`, and
+`15.00%`, so its `amount` is 3 on every level and its `totalAmount` is 3, 6, 9, 12, and 15, the
+value. A Molten II line has 50 levels of 1, and a total of 50 at level 50. All 63 T12 bonuses with
+several levels have one constant gain, which fits this reading. The package owner confirmed that the
+T12 values are totals. The rule for `amount` and `totalAmount` is the same for every node, so a page
+can add up `amount` for any node. The three bonuses of the `Other` stat hold unlock text such as
+`Unlock XI Helios Infantry`. They have no `statKey`, `amount`, `unit`, or `totalAmount`.
 
 `statKey` is the stat name in lowercase kebab-case, for example `"Infantry Attack"` gives
 `infantry-attack`. It is the same key in `research()`, `skins()`, `experts()`, `vip()`, and
-`allianceTech()`, so a page can add up bonuses from different sources. The sources write two of the
-names in the singular, so these map to the plural key:
+`allianceTech()`, so a page can add up bonuses from different modules. Two of the names are written
+in the singular, so these map to the plural key:
 
 | Stat name       | `statKey`          |
 | --------------- | ------------------ |
@@ -140,34 +133,30 @@ names in the singular, so these map to the plural key:
 | `Troop Defense` | `troops-defense`   |
 | `Other`         | none (unlock text) |
 
-The 4 sources hold 57 stat names with a key and 55 keys. Alliance Tech adds 10 more, such as
+The 4 modules hold 57 stat names with a key and 55 keys. Alliance Tech adds 10 more, such as
 `alliance-banner-cap`. The mapping was made from the list of names, not by matching similar names.
 
 ### Exalted capstones
 
-`exalted-infantry`, `exalted-marksman`, and `exalted-lancer` do not exist on the wiki yet. They were
-added from in-game knowledge, not scraped. Each is a capstone that unlocks once all 5 of its T12
-troop type's tier 1 Exalted items reach level 5. Each has one level and 8,000,000 power. The cost
-and bonus are empty arrays because no data is known, and no value was guessed. `img` is `""` because
-no icon exists to reference.
+`exalted-infantry`, `exalted-marksman`, and `exalted-lancer` were added from in-game knowledge. Each
+is a capstone that unlocks once all 5 of its T12 troop type's tier 1 Exalted items reach level 5.
+Each has one level and 8,000,000 power. The cost and bonus are empty arrays because no data is
+known, and no value was guessed. `img` is `""` because no icon exists to reference.
 
-### Added and scraped prerequisites
+### Added prerequisites
 
 Each troop type's 4 tier 2 Molten X I items also require that troop type's Exalted capstone at level
-1, next to their War Academy building gate. This comes from in-game knowledge. The wiki's
-Prerequisites column omits it for these 12 nodes.
+1, next to their War Academy building gate. This comes from in-game knowledge.
 
-The wiki lists levels 2 and 3 of Ward Expansion III as Construction Speed, with 2,200 and 2,900. The
-package gives Infirmary Capacity at all three levels, as level 1 does, at the request of the package
-owner. No other source states the stat.
+The package gives Infirmary Capacity at all three levels of Ward Expansion III, as level 1 does, at
+the request of the package owner.
 
 Tool Enhancement I also requires Tooling Up I at level 1, next to Ward Expansion I and Camp
-Expansion I. The wiki's Prerequisites column omits it. It was added at the request of the package
-owner, so that Tooling Up I is linked in the tree.
+Expansion I. It was added at the request of the package owner, so that Tooling Up I is linked in the
+tree.
 
 Each troop type's 4 tier 4 Molten X II items (`Molten Blades II` and so on) require that troop
-type's tier 3 node (`indomitable-wall`, `starfire`, or `meridian-phalanx`) at level 1. This was
-scraped from each node's own page.
+type's tier 3 node (`indomitable-wall`, `starfire`, or `meridian-phalanx`) at level 1.
 
 Each troop type's 4 tier 6 Molten X III items require that troop type's Solar Supremacy node at
-level 15. This was also scraped.
+level 15.

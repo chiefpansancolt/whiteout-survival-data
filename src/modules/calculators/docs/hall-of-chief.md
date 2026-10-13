@@ -46,5 +46,5 @@ A `RangeError` is thrown when a count is negative or not a finite number. An `Er
 ## Data and assumptions
 
 The points come from the `hall-of-chief` event, which has 13 stages (`s1-1` to `s1-6` and `s2-1` to
-`s2-7`). The stage names are not shown on the wiki, so the data names them by season and stage. The
+`s2-7`). The stages have no names in the game, so the data names them by season and stage. The
 result keeps the field name `days` so that it matches the other event calculators.

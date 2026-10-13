@@ -56,47 +56,42 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | Teleporter     | 4     |
 | Furniture      | 42    |
 
-`id` is the wiki URL slug of the item, not a new slug made from the name. Several names repeat
-across categories, and the source slugs are already unique. The Skins module has the same rule.
+`id` is a unique slug, not a slug made from the name alone. Several names repeat across categories.
+The Skins module has the same rule.
 
 `sources` is a plain list of where an item drops from, such as shops, events, and activities. It is
-empty for 100 items, where the wiki does not document a source.
+empty for 100 items.
 
 `rewardRates` is a loot table, a list of `{ reward, amount, probabilityPercent }`. Only chests carry
 it, and only 12 of the 60 chests do.
 
 ## Notes
 
-The data comes from the master item catalog page of the wiki, which covers 415 items across 18
-category tabs. Birthday Card entries are skipped, because they are a yearly login gift with no
-gameplay data. The other 17 tabs split by kind. Functional items are in this module, and cosmetic
-skins are in `skins()`.
+Birthday Card entries are skipped, because they are a yearly login gift with no gameplay data.
+Functional items are in this module, and cosmetic skins are in `skins()`.
 
-The first 10 categories are the tab labels of the wiki. `Speedups` is not a wiki tab. It holds the
-30 general and type-specific speedup items (1m to 8h), which the catalog does not list. Their icons
-are cropped from in-game Backpack screenshots. Each of the six types (general, construction,
-research, troop, learning, and healing) has a 1m, 5m, 1h, 3h, and 8h item. Nine items have no icon
-yet, so their `img` is an empty string and their `sources` are empty: the 3h and 8h speedups of
-construction, troop, research, and healing, and the 8h speedup of learning. They are placeholders,
-so no source states them yet.
+`Speedups` holds the 30 general and type-specific speedup items (1m to 8h). Their icons are cropped
+from in-game Backpack screenshots. Each of the six types (general, construction, research, troop,
+learning, and healing) has a 1m, 5m, 1h, 3h, and 8h item. Nine items have no icon yet, so their
+`img` is an empty string and their `sources` are empty: the 3h and 8h speedups of construction,
+troop, research, and healing, and the 8h speedup of learning. They are placeholders.
 
-The source site tags five items under more than one tab, all of them involving Chest. Seeker's Chest
-is tagged both `Chest` and `Experts`. `Chest` wins in every case because it is the more specific
-category.
+Five items fit more than one category, all of them involving Chest. Seeker's Chest fits both `Chest`
+and `Experts`. `Chest` wins in every case because it is the more specific category.
 
-The wiki shows chest rewards in two structured shapes: a "Reward Rates" bullet list, and an `Item`,
+Chest rewards come in two structured shapes: a "Reward Rates" bullet list, and an `Item`,
 `Quantity`, `Chance` table in which the item name cell spans several tiers. The parser reads both.
 The other chests describe rewards in prose only and get no `rewardRates`.
 
 ### Furniture
 
 The 42 furniture items are the pieces that the nine entertainment buildings need, plus the Blueprint
-that each of them needs. They come from the in-game data of the package owner, not from the wiki.
-The owner states that furniture is bought with Wish Sigils in the Wish Shop, so `sources` is
-`Wish Shop` for all of them. The Wish Sigil is its own item, `wish-sigil`. No icon exists, so `img`
-is an empty string. A piece that several buildings use is one item: the Blueprint
-(`furniture-blueprint`), the Counter, and the Table & Chair Set. Its price can differ by building,
-so the `pricePerItem` stays on the cost of the building and not on the item.
+that each of them needs. They come from the in-game data of the package owner. The owner states that
+furniture is bought with Wish Sigils in the Wish Shop, so `sources` is `Wish Shop` for all of them.
+The Wish Sigil is its own item, `wish-sigil`. No icon exists, so `img` is an empty string. A piece
+that several buildings use is one item: the Blueprint (`furniture-blueprint`), the Counter, and the
+Table & Chair Set. Its price can differ by building, so the `pricePerItem` stays on the cost of the
+building and not on the item.
 
 ### Wish Sigil
 
@@ -112,11 +107,10 @@ cut from its orange tile on a transparent background.
 
 ### Gareth Sigil
 
-The wiki item list has no Gareth Sigil. The item is here because the Heaven Guardian guides state
-that Gareth has a named sigil, in the same group as the sigils of the other nine experts, and that
-named sigils come from Expert progression such as Tundra Trek and Frontier Trek, from packs, and
-from the conversion of Common Expert Sigils. The `description` and the `sources` are the ones that
-all nine other named sigils have, written for Gareth. The game wording of this item was not found.
+Gareth has a named sigil, in the same group as the sigils of the other nine experts. Named sigils
+come from Expert progression such as Tundra Trek and Frontier Trek, from packs, and from the
+conversion of Common Expert Sigils. The `description` and the `sources` are the ones that all nine
+other named sigils have, written for Gareth. The game wording of this item was not found.
 
 The icon is cropped from a screenshot of a rewards screen that the package owner supplied. It shows
 the sigil as a reward with a count of 200, on its orange tile. The crystal is lifted from the tile

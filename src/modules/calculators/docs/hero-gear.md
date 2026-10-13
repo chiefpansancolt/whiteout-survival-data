@@ -89,22 +89,13 @@ whole number from 0 to 100, or a goal below the current state, throws `RangeErro
 
 `HERO_GEAR_MAX_ENHANCEMENT_LEVEL` and `HERO_GEAR_MAX_EMPOWERMENT_LEVEL` export the two 100s.
 
-The Level 10 requirement of empowerment comes from the Century Games help center ("When your server
-has been active for a certain number of days, your Hero Gear at Enhancement Level 100 and Mastery
-Level 10 can be ascended") and from the wiki ("Legendary hero gear can be obtained once you have a
-mythic piece to lvl 100 and mastery lvl 10"). Mastery Level 10 is the row `level-10-stage-0`, which
-has a `statsUpPercent` of 100, as the Level 10 row of the wiki chart. The server must also be old
-enough for the ascension, and the gear must be Mythic. The calculator checks neither of these. The
-enhancement requirement comes from in-game play. The wiki and WoS Tools do not state it. WoS Tools
-shows empowerment as Ascended +1 to +100 on a single 0 to 200 enhancement scale.
+Empowerment needs a Mythic piece at Enhancement Level 100 and Mastery Level 10. Mastery Level 10 is
+the row `level-10-stage-0`, which has a `statsUpPercent` of 100. The server must also be old enough
+for the ascension, and the gear must be Mythic. The calculator checks neither of these. The
+enhancement requirement comes from in-game play. Empowerment is Ascended +1 to +100 on a single 0 to
+200 enhancement scale.
 
-The WoS Tools table stops at 192 of the 200 levels, so its XP total is 531,320 where this package
-has 574,370. The Mithril (150) and Mythic chest (35) totals agree.
-
-The `power` values are cumulative from enhancement level 1 through empowerment level 100, as the
-wiki states them. They are exactly 4 times the per piece power on WoS Tools at every level, and the
-calculator keeps the wiki values. The per piece stats in `heroGearStats()` come from WoS Tools,
-since the wiki does not list them.
+The `power` values are cumulative from enhancement level 1 through empowerment level 100.
 
 Widgets are not part of this calculator. [calculateHeroUpgrade](hero-upgrade.md) plans the Widgets
 for the exclusive weapon of a hero.

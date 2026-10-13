@@ -37,9 +37,8 @@ coordinates. The 8 facilities have 12 levels in all.
 
 ## Notes
 
-The wiki page `https://www.whiteoutsurvival.wiki/alliance-facility/facility/` has no structured
-data. It has no facility types and no table, only prose about capture rules: a 30-minute capture, 3
-days of control, stacking rules, and a limit of 12 facilities.
+The capture rules are not stored as data: a 30-minute capture, 3 days of control, stacking rules,
+and a limit of 12 facilities.
 
 The facility types, per-level bonuses, and coordinates come from a user-provided screenshot of the
 in-game map info. The screenshot documents only some levels of each facility. For example, `defense`

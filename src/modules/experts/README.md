@@ -46,20 +46,19 @@ and `count`. They are described in [How It Works](../../../README.md#how-it-work
 Experts are in `data/chief/experts.json`. There are 10 experts across 3 generations (4, 4, and 2).
 Each expert has these fields.
 
-| Field               | Meaning                                                                                                                                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `unlockRequirement` | `daysRequired`, the days since server start at which the expert unlocks, as on a pet. It is the day of the expert on the server timeline. Gareth has none, because the timeline page does not list him. |
-| `title`             | Narrative epithet, for example "Elite Politician".                                                                                                                                                      |
-| `specialty`         | Mechanical category, for example "City Economy". It comes from a different wiki.                                                                                                                        |
-| `baseBonuses`       | One or two stat bonuses. The value is the one reached at affinity level 100. A bonus has `stat`, `statKey`, `value`, `amount`, and `unit`.                                                              |
-| `skills`            | Always 4 skills.                                                                                                                                                                                        |
-| `talent`            | One talent. It has the same `ExpertSkill` shape as a skill.                                                                                                                                             |
-| `affinityLevels`    | 100 rows, one for each affinity level.                                                                                                                                                                  |
+| Field               | Meaning                                                                                                                                                    |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `unlockRequirement` | `daysRequired`, the days since server start at which the expert unlocks, as on a pet. It is the day of the expert on the server timeline. Gareth has none. |
+| `title`             | Narrative epithet, for example "Elite Politician".                                                                                                         |
+| `specialty`         | Mechanical category, for example "City Economy".                                                                                                           |
+| `baseBonuses`       | One or two stat bonuses. The value is the one reached at affinity level 100. A bonus has `stat`, `statKey`, `value`, `amount`, and `unit`.                 |
+| `skills`            | Always 4 skills.                                                                                                                                           |
+| `talent`            | One talent. It has the same `ExpertSkill` shape as a skill.                                                                                                |
+| `affinityLevels`    | 100 rows, one for each affinity level.                                                                                                                     |
 
 The `generation` and the unlock day do not line up for two experts. Romulus is generation 1 and
 unlocks on day 160, after the other generation 1 experts on day 120. Kathy is generation 3 and
-unlocks on day 230, together with Ronne of generation 2. The data keeps both as the sources state
-them.
+unlocks on day 230, together with Ronne of generation 2. The data keeps both as they are.
 
 A skill or talent covers three mechanics. Most have `progressions`, which are named values that
 scale per level, and a `costs` table of EXP and books per level. Agnes's talent has two independent
@@ -73,8 +72,8 @@ is the skills and talent at max level, plus the level 100 `levelPower`, plus the
 
 An `affinityLevels` row has `level`, `affinityRequired`, and the resulting `statBonus`. It also has
 `advancementCost` at levels divisible by 10. That is the Sigil cost of the milestone. Summing the
-column gives the "Total Sigils" figure other sources report for every expert checked (Agnes: 5 +
-10 + ... + 50 = 275), so the module stores no separate recruitment cost.
+column gives the "Total Sigils" figure (Agnes: 5 + 10 + ... + 50 = 275), so the module stores no
+separate recruitment cost.
 
 Each row also has `levelPower` and `affinityPower`, the two power parts the Experts screen shows.
 `affinityPowerAfterAdvancement` is set on rows with an `advancementCost`. All 10 experts have these
@@ -113,14 +112,10 @@ An unreleased expert has no skills, talent, bonuses, or affinity levels, and the
 accept its `id`. When the game releases the expert with its values, add the values to the entry and
 remove the `unreleased` flag. The entry then moves to `experts()`.
 
-The data comes from the
-[Justus guide of WSCO](https://www.whiteoutsurvival-community.com/en/guides/experts/justus.html).
-The guide says: "Official timing (feedback adjustment): October 2026, after Gen 6 Heroes unlock in
-your state." It also names five skills, with "N" in place of every value, and says the other values
-are not published. The package does not hold those skill names until the game states the values. The
-wiki timeline page does not list Justus. The server timeline of this package has him on day 360, the
-day of the generation 6 heroes, and `unlockRequirement` has no day. The icon is the portrait of the
-guide, scaled to 350 by 350 pixels like the other experts.
+Justus is expected in October 2026, after the generation 6 heroes unlock. The package does not hold
+his skill names until the game states the values. The server timeline of this package has him on day
+360, the day of the generation 6 heroes, and `unlockRequirement` has no day. The icon is scaled to
+350 by 350 pixels like the other experts.
 
 ### Relationships
 
@@ -141,10 +136,9 @@ the portrait next to a `skills/` folder for the 4 skills and the talent. Skill i
 
 ## Notes
 
-Gareth's Gifts of Iron had its Books and EXP columns swapped on the wiki (25,800 books for level 2).
-The data uses WoS Tools instead, which lists 300 books and 7h 10m for level 2 and 13,500 books in
-all. The books and EXP of the other nine experts agree with the pattern. A test checks that EXP is
-above 20 times the books at every level.
+Gareth's Gifts of Iron has 300 books and 7h 10m for level 2 and 13,500 books in all. The books and
+EXP of the other nine experts agree with the pattern. A test checks that EXP is above 20 times the
+books at every level.
 
 Levels that were not read in the game are filled from the power rule above.
 

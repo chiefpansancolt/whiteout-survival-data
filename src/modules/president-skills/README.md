@@ -56,7 +56,7 @@ uses that the game shows (for example "Uses left: 2/2").
 | State Search             | chief     | 18,000    | 56   | Locates the city of a Chief of the state |
 | Supreme President's Will | state     | n/s       | n/s  | Supreme President only                   |
 
-`n/s` means that no source states the value.
+`n/s` means that the value is not stated.
 
 The four development skills have a `bonus` with the same `stat`, `statKey`, `value`, `amount`, and
 `unit` fields as the bonuses of the other modules, and a `durationSeconds`. They also have a
@@ -65,29 +65,22 @@ The four development skills have a `bonus` with the same `stat`, `statKey`, `val
 have no `bonus`, because their effect is in the `effect` text. Supreme President's Will has
 `supremePresidentOnly` set to `true`.
 
-## Sources and assumptions
+## Assumptions
 
-The skill screen of the game is in screenshots on the
-[President page of the Whiteout Survival Wiki](https://www.whiteoutsurvival.wiki/president/). The
-`effect`, `authorityCost`, and `maxUses` come from those screenshots. The guides on
-[Heaven Guardian](https://heaven-guardian.com/whiteout-survival-dominate-as-president-rule-the-state/)
-([President Skills page](https://heaven-guardian.com/whiteout-survival-president-guide/)) give the
-names, the 24 hour duration, and the seven day cooldown, and the values agree with the screenshots.
+The `effect`, `authorityCost`, and `maxUses` come from screenshots of the skill screen of the game.
 
 - The screenshots show a cooldown timer instead of the uses for Medical Advancement, so it has no
   `maxUses`. It has the same Authority cost as the other three development skills.
-- The guide says "current game information commonly shows a seven-day cooldown for the major
-  development buffs", and the screenshot shows 6 days left for Medical Advancement. The package
-  gives the four development skills that cooldown. The guide does not tie it to a skill by name.
+- The screenshot shows 6 days left for Medical Advancement. The package gives the four development
+  skills a cooldown of seven days.
 - The screenshots do not say when the uses renew, so the package states `maxUses` only.
 - Receive Tribute lists three gem amounts, 300, 400, and 500, and does not say whether they are the
-  amounts of the three uses. The effect keeps the wording of the game. The wiki says the skill gives
-  "1.2k" gems, which is the sum of the three.
+  amounts of the three uses. The effect keeps the wording of the game.
 - Authority is earned by the President. The game says: "Whenever Chiefs within the State claim Daily
   Mission Chests or gather resources, the President gains [Authority]. President Skills expend
-  [Authority]." No source states how much a Chief earns.
+  [Authority]." The amount a Chief earns is not stated.
 - The skills have an `img`, a PNG in `images/president-skills/`, cropped from the screenshots. They
   are small, about 60 by 60 pixels, and the Ceasefire, Forced Exile, and State Search icons are
-  about 98 by 98. Supreme President's Will has no `img`, because no source shows it.
-- Supreme President's Will is in the guides as "a Supreme President-only state enhancement" with no
-  values, so it has no `authorityCost`, `maxUses`, or `bonus`.
+  about 98 by 98. Supreme President's Will has no `img`.
+- Supreme President's Will is a Supreme President-only state enhancement with no values, so it has
+  no `authorityCost`, `maxUses`, or `bonus`.

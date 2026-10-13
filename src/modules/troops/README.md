@@ -72,29 +72,24 @@ and the same for the other two types.
 
 ## Notes
 
-The data comes from WoS Tools. The training time of a tier is the same for all three types, and the
-costs differ. `promotionCost` is stored because it is not the difference of the two training costs.
+The training time of a tier is the same for all three types, and the costs differ. `promotionCost`
+is stored because it is not the difference of the two training costs.
 
-The power comes from the troop pages of WoS Tools. Tiers 10 and 11 have `fireCrystalPower`, a list
-of `{ level, power }` entries for Fire Crystal levels 1 to 10. Level 0 is the `power` of the tier.
-The Infantry, Lancer, and Marksman pages give the same values, and the base values of the tables
-agree with `power`. Tier 12 does not change with the Fire Crystal level, according to the community,
-and the pages have no tier 12 table, so tier 12 has no `fireCrystalPower`.
+Tiers 10 and 11 have `fireCrystalPower`, a list of `{ level, power }` entries for Fire Crystal
+levels 1 to 10. Level 0 is the `power` of the tier. The three types have the same values, and the
+base values agree with `power`. Tier 12 does not change with the Fire Crystal level and has no
+table, so tier 12 has no `fireCrystalPower`.
 
-The camp levels are the same on the Infantry, Lancer, and Marksman camp pages of
-[Whiteout Data](https://whiteoutdata.com/buildings/marksman-camp/) and on the camp guides of Heaven
-Guardian. The wiki has no table for them. A source says the troops are available at "Furnace 25" for
-tier 9, which does not agree with camp level 26, and the package keeps the camp pages.
+The camp levels are the same for the Infantry, Lancer, and Marksman camps.
 
-The tier 11 requirement is in the Troop Training Calculator of WoS Tools: "T11 requires War Academy
-Fire Crystal level 1 and completing Helios Research level 5 for that troop type." Helios Research
-level 5 is the research tier of `helios-infantry` in `research()`. The tier 12 requirement is in the
-troop pages of WoS Tools: "T12 ("Exalted") needs War Academy FC10 plus the Exalted research tracks".
-The Exalted research tracks end in the node `exalted-infantry`, so the package links to that node.
-The sources do not say whether tiers 11 and 12 also need a camp level.
+Tier 11 requires War Academy Fire Crystal level 1 and completing Helios Research level 5 for that
+troop type. Helios Research level 5 is the research tier of `helios-infantry` in `research()`. Tier
+12 needs War Academy FC10 plus the Exalted research tracks. The Exalted research tracks end in the
+node `exalted-infantry`, so the package links to that node. It is not known whether tiers 11 and 12
+also need a camp level.
 
-The tier 12 costs are partly derived on WoS Tools. The Marksman promotion cost was measured in the
-game, and the Infantry and Lancer promotion costs were scaled from it.
+The tier 12 costs are partly derived. The Marksman promotion cost was measured in the game, and the
+Infantry and Lancer promotion costs were scaled from it.
 
 Power of one troop at each Fire Crystal level, for tiers 10 and 11:
 

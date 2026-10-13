@@ -48,14 +48,9 @@ and 100.
 
 ## Notes
 
-The wiki does not list these stats. The values come from WoS Tools. They are for one piece, and they
-are the stats before mastery forging. A forged piece multiplies them by 1 plus the `statsUpPercent`
-of its [mastery forging](../hero-gear-mastery-forging/README.md) row and rounds down. Level 0 has no
-stats.
+The values are for one piece, and they are the stats before mastery forging. A forged piece
+multiplies them by 1 plus the `statsUpPercent` of its
+[mastery forging](../hero-gear-mastery-forging/README.md) row and rounds down. Level 0 has no stats.
 
-The WoS Tools table stops at 192 of the 200 levels, so the wiki tables of
-[`heroGearEnhancement()`](../hero-gear-enhancement/README.md) and
-[`heroGearEmpowerment()`](../hero-gear-empowerment/README.md) hold more levels than WoS Tools. Their
-XP total is 574,370 and the total on WoS Tools is 531,320. The Mithril (150) and Mythic chest (35)
-totals agree. The `power` values of both tables are exactly 4 times the per piece power on WoS Tools
-at every level.
+The power per level is in [`heroGearEnhancement()`](../hero-gear-enhancement/README.md) and
+[`heroGearEmpowerment()`](../hero-gear-empowerment/README.md).

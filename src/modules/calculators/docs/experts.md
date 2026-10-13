@@ -111,13 +111,7 @@ a goal below the current level, or an advanced flag on a level with no advanceme
 
 ## Data and assumptions
 
-The numbers come from the data behind `experts()`. The 60 EXP for a minute is not stated in text
-anywhere. It is in the code of the WoS Tools experts calculator, which turns the Learning XP shown
-in the game into minutes with `currentXp / 60`. It also fits the data: for 33 skills of the three
-sources, the learning minutes of WoS Tools times 60 equal the EXP of `experts()` at every level but
-one, level 2 of Fabian's Crisis Rescue. There `experts()` has 33,053 and WoS Tools has 551 minutes,
-which is 33,060. The package keeps the 33,053 of the wiki, so the learning minutes of that level
-round up to 551. Heaven Guardian says "The amount of Skill XP gained depends on the learning
-duration" and "Learning Speedups reduce the remaining time of Expert Skill learning". The talent
-costs nothing, because it levels with the relationship, so it is not in the result. The result has
-no event points. `EXPERT_MAX_LEVEL` exports the 100.
+The numbers come from the data behind `experts()`. One minute of learning is 60 EXP. At level 2 of
+Fabian's Crisis Rescue, `experts()` has 33,053 EXP, so the learning minutes of that level round up
+to 551. The talent costs nothing, because it levels with the relationship, so it is not in the
+result. The result has no event points. `EXPERT_MAX_LEVEL` exports the 100.

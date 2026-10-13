@@ -70,6 +70,6 @@ An unknown hero or skill, a skill named twice, or Widgets for a hero with no exc
 
 ## Data and assumptions
 
-`HERO_UPGRADE_CALCULATOR` exports the limits (`maxStar`, `maxTier`, and `maxWidgetLevel`). The
-Widget table comes from WoS Tools. The repo has no Widget item yet, so the Widgets are a plain
-number and not an `itemId` amount. Power is not included.
+`HERO_UPGRADE_CALCULATOR` exports the limits (`maxStar`, `maxTier`, and `maxWidgetLevel`). The repo
+has no Widget item yet, so the Widgets are a plain number and not an `itemId` amount. Power is not
+included.

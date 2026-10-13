@@ -44,9 +44,8 @@ affects), `stat`, `statKey`, and `levels`. A level has `level`, `prerequisites` 
 
 ## Notes
 
-The source is `https://www.whiteoutsurvival.wiki/alliance-tech/`, read one page per node like
-`research()`. Unlike `research()`, the page has no power column. Every prerequisite is another
-Alliance Tech node. No building gates the tree.
+Unlike `research()`, the nodes have no power column. Every prerequisite is another Alliance Tech
+node. No building gates the tree.
 
 `bonus` is `undefined` for the two one-off unlock nodes that have no stat effect, Tundra Surveying
 and Fertile Land Expedition. These two nodes and Long Live Our Alliance have no `stat`, `statKey`,
@@ -56,22 +55,15 @@ The `stat` is a short name for what the node raises, written from its `descripti
 table. For example `Enhances all Troops’ Attack.` gives `Troops Attack`, and
 `Speeds up alliance members’ Coal mining in the wilderness.` gives `Coal Gathering Speed`. The
 `statKey` is the same kebab-case key as in `research()`, so `infantry-attack` means the same stat in
-both. The `bonus` of each level is the bonus at that level, not a step. The wiki writes the bonuses
-of Storehouse Expansion II as `50%`, `2000`, `100%`, `300%`, and `400%`. The package reads `50%`,
-`100%`, `200%`, `300%`, and `400%`, like Storehouse Expansion I, at the request of the package
-owner. No other source states them.
+both. The `bonus` of each level is the bonus at that level, not a step. The bonuses of Storehouse
+Expansion II are `50%`, `100%`, `200%`, `300%`, and `400%`, like Storehouse Expansion I, at the
+request of the package owner.
 
-The wiki writes upgrade time as `M:S` under one hour (such as `30:00`) and `H:M:S` from one hour
-(such as `01:00:00`). Both forms are converted to seconds.
+Upgrade time is stored in seconds.
 
-The wiki has three content errors. The package corrects them as follows:
+Two prerequisites need explanation:
 
-- The Level column of Cooperative Protocols I and Alliance Regimentation I repeats the node name and
-  level (`"Cooperative Protocols I 1"`) in every row. The package reads the trailing number.
-- The Marksman Attack I page lists Rally Expansion I Levels 4 and 5 as prerequisites for its own
-  Levels 4 and 5. Rally Expansion I has only 3 levels. Infantry Attack I and Lancer Attack I, which
-  are otherwise identical, leave their Levels 4 and 5 without a prerequisite. The Marksman Attack I
-  prerequisites for those levels are dropped to match.
-- The only prerequisite of Tundra Surveying is "Alliance Regimentation II" with no level number.
-  Every other cross-reference on the site has one. The package uses Level 5, the last level of that
-  line, because Tundra Surveying is a one-off unlock gate.
+- Marksman Attack I has no prerequisite for its Levels 4 and 5. Rally Expansion I has only 3 levels.
+  Infantry Attack I and Lancer Attack I also leave their Levels 4 and 5 without a prerequisite.
+- The only prerequisite of Tundra Surveying is Alliance Regimentation II at Level 5, the last level
+  of that line, because Tundra Surveying is a one-off unlock gate.

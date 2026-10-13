@@ -35,7 +35,7 @@ rises by 5 for each level to 50 for level 10, 275 in all.
 
 ## Notes
 
-The table comes from WoS Tools. The repo has no Widget item in `items()` yet, so `widgets` is a
-plain number and not an item cost. `calculateHeroUpgrade()` reads this table to plan the weapon
-levels of one hero. Only a hero with an `exclusiveWeapon` has weapon levels, and the weapon skills
-unlock at the `unlockLevel` values on that weapon. See [`heroes()`](../heroes/README.md).
+The repo has no Widget item in `items()` yet, so `widgets` is a plain number and not an item cost.
+`calculateHeroUpgrade()` reads this table to plan the weapon levels of one hero. Only a hero with an
+`exclusiveWeapon` has weapon levels, and the weapon skills unlock at the `unlockLevel` values on
+that weapon. See [`heroes()`](../heroes/README.md).

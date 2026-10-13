@@ -39,9 +39,6 @@ every entry of `heroGearStats()` has an icon.
 
 ## Notes
 
-The slot names are the names that WoS Tools and the Heaven Guardian guides use. The Whiteout
-Survival Wiki has no page for the slots.
-
 The 12 icons are in `images/hero-gear/`, named like `belt-lancer.png`. They are cropped from a
 screenshot of the Gear tab of the Backpack in the game, which the package owner supplied. Each icon
 is a 276 by 276 pixel PNG of one tile with its troop badge in the corner.

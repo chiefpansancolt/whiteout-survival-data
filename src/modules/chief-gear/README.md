@@ -71,7 +71,7 @@ table, so the rows are upgrade steps, not named items. A row has these fields.
 | Field                      | Meaning                                                                                          |
 | -------------------------- | ------------------------------------------------------------------------------------------------ |
 | `order`                    | Position in the table, from 1 in row order                                                       |
-| `tier`                     | Tier label of the source wiki, for example `Epic` or `LegendaryT3`                               |
+| `tier`                     | Tier label, for example `Epic` or `LegendaryT3`                                                  |
 | `tierId`                   | The tier in kebab case, such as `epic-t1`. It is the `id` of the tier in `chiefGearSetBonuses()` |
 | `stars`, `stage`           | Position in the tier. Both restart in each tier                                                  |
 | `materials`                | Item ids from `items()` and the amount needed for the step                                       |
@@ -85,8 +85,7 @@ The tiers are `Common`, `Rare`, `Epic`, `EpicT1`, `Mythic`, `MythicT1`, `MythicT
 
 ## Notes
 
-The wiki gives `troopsDeploymentCapacity` only from Mythic T2 star 3 stage 1, so the first 26 rows
-leave it unset.
+`troopsDeploymentCapacity` starts at Mythic T2 star 3 stage 1, so the first 26 rows leave it unset.
 
 The materials are Hardened Alloy, Polishing Solution, Design Plans, and Lunar Amber. Each one is
 linked to its `items()` id by matching the material icon filename to the icon already downloaded for
@@ -97,23 +96,20 @@ point in SvS and King of Icefield, 22 in Alliance Showdown, and 500 in Hall of C
 not depend on power. A whole level scores 1,125 and 1,875 for the two Common levels, 3,000 to 5,440
 for Rare, 3,230 to 4,085 for Epic, 6,250 for every Mythic level, and 9,560 for Legendary up to T3.
 From Legendary T4 it is 15,560, 15,400, or 15,390. The steps that lead to a level split its score
-evenly, and they add up to the level score for all 54 levels. The wiki event note confirms the
-scores from Common to Legendary (1,125 up to 9,560). The Legendary T4 to T6 scores and the split
-into steps come from WoS Tools only.
+evenly, and they add up to the level score for all 54 levels.
 
-The slots were entered by hand from the prose of the wiki page, because no table lists them. The set
-bonus is described in the section below.
+The set bonus is described in the section below.
 
 A piece changes its look at the 5 rarity points only, not at each of the 150 rows. Every sub-tier
 (`EpicT1`, `MythicT1`, `MythicT2`, `LegendaryT1` to `LegendaryT6`) uses the icon of its base rarity.
-The star and stage counters on the source calculator are a UI overlay, not separate images.
+The star and stage counters are a UI overlay, not separate images.
 
 ## Set bonus
 
 A chief that wears 3 pieces of the same quality gets a Defense bonus for Infantry, Lancer, and
 Marksman. A chief that wears all 6 pieces of the same quality also gets an Attack bonus for all
-three. The wiki says this in the text of its Chief Gear page and gives the value as "x%". The Chief
-profile in the game shows the values behind a triangle icon (3 pieces) and a circle icon (6 pieces).
+three. The Chief profile in the game shows the values behind a triangle icon (3 pieces) and a circle
+icon (6 pieces).
 
 `chiefGearSetBonus(levelIds)` takes the ids of the `chiefGear()` levels of the pieces worn, at most
 6, and returns `threePiece` and `sixPiece`. Each has `pieces`, `stat`, `percent`, and `tierId`. A
@@ -144,12 +140,9 @@ that each tier has one value, and the 3 piece bonus and the 6 piece bonus have t
 
 The package owner read the values of Mythic T1 (8), Mythic T2 (9), Legendary T1 (12), and Legendary
 T2 (14) in the game. The other values are assumptions of the owner. The step is 1 from Mythic T1 to
-Mythic T2 and 2 from Legendary T1 to Legendary T2, and the other values continue that rise. The
-Whiteout Survival Wiki gives no numbers, and WoS Guru gives one loose figure, "around +6-7% at
-Purple/Gold", which fits the values for Epic and Mythic. Check the other values in the game before
-you rely on them.
+Mythic T2 and 2 from Legendary T1 to Legendary T2, and the other values continue that rise. Check
+the other values in the game before you rely on them.
 
-The rules of the calculation are also assumptions, because no source states them. Pieces count by
-the tier of their level, so two levels of one tier match. The 3 piece bonus uses the highest tier
-that has at least 3 pieces. The 6 piece bonus needs all 6 pieces in one tier. A higher tier does not
-count toward a lower one.
+The rules of the calculation are also assumptions. Pieces count by the tier of their level, so two
+levels of one tier match. The 3 piece bonus uses the highest tier that has at least 3 pieces. The 6
+piece bonus needs all 6 pieces in one tier. A higher tier does not count toward a lower one.

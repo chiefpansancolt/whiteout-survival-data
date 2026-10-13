@@ -42,12 +42,9 @@ Mythic Hero Gear Chests and Mithril. Every other level costs Enhancement XP Comp
 
 ## Notes
 
-The wiki gives this table no explanatory paragraph, unlike Enhancement and Mastery Forging. The
-table is modeled as scraped. The cost items match `items()`, but the source does not say which
-in-game action uses the table.
+The cost items match `items()`.
 
 An empowered piece has reached enhancement level 100. The `power` values are cumulative from
-enhancement level 1 through empowerment level 100, as the wiki states them, so they continue from
-the power of enhancement level 100. They are exactly 4 times the per piece power on WoS Tools. WoS
-Tools shows empowerment as Ascended +1 to +100 on a single 0 to 200 enhancement scale. The milestone
-bonuses at levels 20, 40, 60, 80, and 100 are in [`heroGearStats()`](../hero-gear-stats/README.md).
+enhancement level 1 through empowerment level 100, so they continue from the power of enhancement
+level 100. The milestone bonuses at levels 20, 40, 60, 80, and 100 are in
+[`heroGearStats()`](../hero-gear-stats/README.md).

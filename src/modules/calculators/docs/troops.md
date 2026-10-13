@@ -1,7 +1,7 @@
 # calculateTroops
 
 Calculates the troops that the infantry, lancer, and marksman camps train or promote, with the
-resources and the time. It works like the Camp Configuration on WoS Tools.
+resources and the time.
 
 ## Usage
 

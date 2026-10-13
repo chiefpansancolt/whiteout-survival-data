@@ -37,10 +37,8 @@ empty `cost`.
 
 ## Notes
 
-The source is `https://www.whiteoutsurvival.wiki/territory/alliance-territory/`. The page has no
-per-level table. Banners are built and leveled within level ranges, and every level in a range costs
-the same. For this reason the type stores `minLevel` and `maxLevel` and not a single `level`.
+Banners are built and leveled within level ranges, and every level in a range costs the same. For
+this reason the type stores `minLevel` and `maxLevel` and not a single `level`.
 
 Meat and Wood are always required in equal amounts. Coal is added from Level 121-130, and Iron from
-Level 146-150. The wiki row for Level 51-60 lists the Meat icon twice instead of Meat then Wood. The
-amounts are equal either way, so the second `itemId` is corrected to `wood`.
+Level 146-150.

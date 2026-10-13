@@ -70,9 +70,8 @@ at level 10. For these, `fireCrystalImg` is omitted and `maxLevelLabel` is the l
 
 ### Derived Fire Crystal prerequisites
 
-The source wikis list no prerequisites for Fire Crystal levels. Each level still needs the previous
-level of the same building, so the package derives `prerequisites` for that range. The entry names
-the building itself.
+Each Fire Crystal level needs the previous level of the same building, so the package derives
+`prerequisites` for that range. The entry names the building itself.
 
 - A tier base row (`FC N`) requires the last sub-level of the previous tier (`FC (N-1)-4`).
 - The first sub-level (`FC N-1`) requires the base row of the same tier (`FC N`).
@@ -85,7 +84,6 @@ the building itself.
 
 Every level has a `developmentIndex`. It is the score the level adds toward the SvS Wish Station
 event. The values come from the package maintainer's in-game data for every level of every building.
-Neither wiki documents this metric.
 
 ### Per-building details
 
@@ -102,20 +100,19 @@ level.
 Command Center raises Rally and March troop capacity (`rallyCapacity` and `marchCapacity`) as well
 as power. Every standard level requires both the Furnace (Lv.10 minimum, then matching from
 level 11) and the Embassy at the matching level. Its Fire Crystal levels also have a cross-building
-gate taken from the wiki. Every level in a group of five (a tier's four sub-levels plus the next
-tier's base row) requires Furnace and Embassy at a matching Fire Crystal tier. This is in addition
-to the derived same-building chain.
+gate. Every level in a group of five (a tier's four sub-levels plus the next tier's base row)
+requires Furnace and Embassy at a matching Fire Crystal tier. This is in addition to the derived
+same-building chain.
 
 Infantry Camp, Marksman Camp, and Lancer Camp train their troop type. They have identical cost,
 power, and Fire Crystal progression and differ only in the Furnace prerequisite floor (Lv.7, Lv.8,
 and Lv.9, then matching from one level above the floor) and the troop type. Each level has
 `trainingCapacity` and `trainingSpeedBonusPercent`. The speed bonus is set on every standard level
-but only on Fire Crystal tier base rows (`FC 1` to `FC 10`), because the wiki shows no value on
-sub-levels or the pre-Fire-Crystal stage. Fire Crystal levels have a Furnace-only cross-building
-gate (no Embassy), plus the derived same-building chain. `trainingCapacity` for levels 1 to 30 comes
-from the wiki. The 50 levels from `30-1` to `FC 10` come from WoS Tools: 234 at `FC 1` up to 459 at
-`FC 10`, with 5 more for each sub-level. Levels `30-1` to `30-4` follow the same 5-step rule from
-209 at level 30.
+but only on Fire Crystal tier base rows (`FC 1` to `FC 10`), because sub-levels and the
+pre-Fire-Crystal stage have no value. Fire Crystal levels have a Furnace-only cross-building gate
+(no Embassy), plus the derived same-building chain. In the 50 levels from `30-1` to `FC 10`,
+`trainingCapacity` goes from 234 at `FC 1` up to 459 at `FC 10`, with 5 more for each sub-level.
+Levels `30-1` to `30-4` follow the same 5-step rule from 209 at level 30.
 
 War Academy researches Marksman, Infantry, and Lancer technologies and unlocks T11 units. It has no
 standard tier and no pre-Fire-Crystal stage, so it has 46 levels instead of 80. It unlocks at `FC 1`
@@ -144,23 +141,21 @@ is `"FC 1"` for these four. They differ only in the standard Furnace floor. Sawm
 track the Furnace level exactly from level 1. Coal Mine levels 1 to 3 all require Furnace Lv.3, and
 Iron Mine levels 1 to 5 all require Furnace Lv.5.
 
-Clinic, Cookhouse, and Shelter are not on `wostools.net`. Only `whiteoutsurvival.wiki` covers them,
-and the data was checked against its raw HTML because an AI summary of the page can drop a sole
-bonus level. Each has levels 1 to 10 and one bonus `FC 1` level. Unlike the four resource buildings,
-this level requires Furnace `FC 1` (no tier skip) and the building's own level 10. Cookhouse and
-Shelter track the Furnace level exactly from level 1. Clinic levels 1 to 4 all require Furnace Lv.4.
-Clinic and Cookhouse share one cost, power, and time curve. Shelter has its own, generally cheaper
-curve. Shelter is one entry, matching the wiki page, even though a player can build up to eight. The
-Furnace's `prerequisites` text refers to numbered instances (`"Shelter 1"`, `"Shelter 3"`) as plain
-strings that are not linked to this entry.
+Clinic, Cookhouse, and Shelter each have levels 1 to 10 and one bonus `FC 1` level. Unlike the four
+resource buildings, this level requires Furnace `FC 1` (no tier skip) and the building's own
+level 10. Cookhouse and Shelter track the Furnace level exactly from level 1. Clinic levels 1 to 4
+all require Furnace Lv.4. Clinic and Cookhouse share one cost, power, and time curve. Shelter has
+its own, generally cheaper curve. Shelter is one entry, even though a player can build up to eight.
+The Furnace's `prerequisites` text refers to numbered instances (`"Shelter 1"`, `"Shelter 3"`) as
+plain strings that are not linked to this entry.
 
 ### Entertainment buildings
 
 The nine entertainment buildings have no upgrade path. Each has a single `levels` entry
 (`maxLevelLabel: "1"`). A Furnace Fire Crystal level gates each one (FC 3, FC 4, or FC 5, depending
 on the building) instead of a standard-level floor. The data comes from the package maintainer's
-in-game data, not from either wiki. None has a published portrait, so `img` is omitted for these
-nine instead of using a placeholder. This is why `Building.img` is optional.
+in-game data. None has a published portrait, so `img` is omitted for these nine instead of using a
+placeholder. This is why `Building.img` is optional.
 
 Their `cost` entries are furniture pieces, not raw materials. Each has a `pricePerItem`, which other
 buildings' costs do not have, because the pieces are bought one by one. Every level also has

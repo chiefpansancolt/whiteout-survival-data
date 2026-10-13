@@ -43,18 +43,17 @@ The module holds 12 levels from `data/vip.json`. Each level has these fields.
 | `xpRequired` | XP to go from the previous level to this one. It is `0` for VIP 1          |
 | `bonuses`    | Total bonuses active at this level, not the change from the previous level |
 
-A bonus has `stat`, `statKey`, `value`, `amount`, and `unit`. `value` is the display string of the
-source, for example `"+16%"`, `"+1"`, or `"+1.1M"`. `amount` and `unit` are the parsed form: `16`
-and `'percent'`, `1` and `'flat'`, or `1100000` and `'flat'`. The `K` and `M` capacity suffixes are
+A bonus has `stat`, `statKey`, `value`, `amount`, and `unit`. `value` is the display string, for
+example `"+16%"`, `"+1"`, or `"+1.1M"`. `amount` and `unit` are the parsed form: `16` and
+`'percent'`, `1` and `'flat'`, or `1100000` and `'flat'`. The `K` and `M` capacity suffixes are
 expanded to the full number. Use `amount` and `unit` to add up or compare bonuses, and `value` to
 display them.
 
 ## Notes
 
-The data comes from `https://www.whiteoutsurvival.wiki/vip/`. The page has no HTML table. The data
-is a single official infographic image, and it is complete and precise for all 12 levels.
+The data is a single official infographic image, and it is complete and precise for all 12 levels.
 
-`xpRequired` is not a running total. The source image shows `-` for VIP 1, which is stored as `0`.
+`xpRequired` is not a running total. The infographic shows `-` for VIP 1, which is stored as `0`.
 The sum of all `xpRequired` values is 4,800,000, the XP needed to reach VIP 12 from the start.
 
 Bonuses accumulate. Resource Production Speed appears at every level with a higher value. Storehouse

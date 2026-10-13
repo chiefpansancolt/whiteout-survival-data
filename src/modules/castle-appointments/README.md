@@ -35,9 +35,9 @@ in [How It Works](../../../README.md#how-it-works).
 ## Data
 
 The data is in `data/chief/castle-appointments.json`. Each position has an `id`, a `name`, a `kind`,
-and `bonuses`. A bonus has a `stat`, a `statKey`, a `value` in the wording of the source, an
-`amount`, and a `unit`. The `statKey` values are the same as in `research()`, so a position bonus
-matches a research bonus of the same stat.
+and `bonuses`. A bonus has a `stat`, a `statKey`, a `value` in the wording of the game, an `amount`,
+and a `unit`. The `statKey` values are the same as in `research()`, so a position bonus matches a
+research bonus of the same stat.
 
 | Position              | Bonuses                                         | Boosted values |
 | --------------------- | ----------------------------------------------- | -------------- |
@@ -50,28 +50,20 @@ matches a research bonus of the same stat.
 | Minister of Education | Training Speed +50%, Training Capacity +200     | +75%, +300     |
 | Minister of Interior  | Resource Production Speed +80%                  | +120%          |
 
-`CASTLE_APPOINTMENT` holds the rules of the source: a cooldown of 2 hours between appointments
+`CASTLE_APPOINTMENT` holds the appointment rules: a cooldown of 2 hours between appointments
 (`cooldownSeconds`), an application that stays valid for 24 hours (`applicationValiditySeconds`),
 and up to 100 applications for each position (`maxApplicationsPerPosition`).
 
 The skills of the President, the global perks, are in
 [President Skills](../president-skills/README.md).
 
-## Sources and assumptions
+## Assumptions
 
-The values come from two guides that agree:
-[Sunfire Castle guide on BuffGet](https://buffget.com/news/whiteout-survival-sunfire-castle-complete-svs-formation-guide)
-and
-[castle positions on Heaven Guardian](https://heaven-guardian.com/whiteout-survival-president-guide/).
-The Whiteout Survival Wiki has no page for the positions.
-
-- The positions have no icons. The game shows a player portrait for each position, and no source has
-  art for the positions.
-- The package does not state what makes a minister buff boosted. The sources give the boosted values
-  and do not say when they apply, so `boostedBonuses` holds the values only.
-- The sources do not give a boosted value for the President positions or the Vice President.
-- The Ministers of Security, Development, and Science are not in the sources and are not in the
-  data.
-- The sources do not state how long an appointment lasts, so the package has no duration.
-- The Supreme President is one value in the sources and the President is another. The package does
-  not say which state holds which, because the sources tie it to the State of Power result.
+- The positions have no icons. The game shows a player portrait for each position.
+- The package does not state what makes a minister buff boosted, so `boostedBonuses` holds the
+  values only.
+- The President positions and the Vice President have no boosted value.
+- The Ministers of Security, Development, and Science are not in the data.
+- The package has no appointment duration.
+- The Supreme President has one value and the President has another. The package does not say which
+  state holds which, because it depends on the State of Power result.

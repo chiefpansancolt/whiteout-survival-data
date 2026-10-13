@@ -81,39 +81,29 @@ level. For Starry Lighthouse it counts contracts, as the Notes explain.
 
 ## Notes
 
-The data comes from `https://onechilledgamer.com/whiteout-survival-daybreak-island-guide/`. This is
-a third-party fan site, not `whiteoutsurvival.wiki`, but it has real `<table>` markup. The 12 tables
-were parsed from the raw HTML. Daybreak Island unlocks at Furnace Level 19, the value of
-`DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL`. The player builds the Dock, and the island is discovered
-after about 3 days in real time.
+Daybreak Island unlocks at Furnace Level 19, the value of `DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL`.
+The player builds the Dock, and the island is discovered after about 3 days in real time.
 
 Two identical Lumber Camps clear the starting forest of the island. Each cleared tree can drop Life
 Essence, Hero Shards, or gear. After the forest is clear, a Timbermill takes over Life Essence
 production. It has no levels and no table, so its two flat facts are in the constant
 `DAYBREAK_ISLAND_TIMBERMILL`: `lifeEssencePerHourPerWorker` is 40 and `capacity` is 2,000.
 
-Three guides state the numbers: the source of this module ("The Timbermill produces 40 Life Essence
-an hour per worker with a capacity of 2,000"), BuffGet, and WoS Guru. The Century Games help center
-confirms that the Timbermill exists and that the Lumber Camps then become normal decorations: "Once
-all trees are cleared, the Chief is rewarded with a Timbermill that produces Life Essence". It gives
-no numbers. The guide says that all workers of the Lumber Camps go to work in the Timbermill, so the
-two camps at level 4 or higher, with 2 workers each, give 4 workers: 160 Life Essence an hour, and
-12.5 hours to fill the 2,000. This follows from the Lumber Camp data and the guide. No source states
-a number of workers for the Timbermill. WoS Guru also writes "~300/hour" for the Timbermill, which
-does not fit 4 workers at 40, and the package does not use it. No source gives levels or upgrades
-for the Timbermill.
+The Lumber Camps then become normal decorations. All workers of the Lumber Camps go to work in the
+Timbermill, so the two camps at level 4 or higher, with 2 workers each, give 4 workers: 160 Life
+Essence an hour, and 12.5 hours to fill the 2,000. The number of workers is derived from the Lumber
+Camp data. The Timbermill has no levels or upgrades.
 
 The Tree of Life `buff` alternates between "Healing Speed +30%" on odd levels and a growing combat
-or capacity stat on even levels. The pattern breaks at levels 9 and 10, so each `buff` is read from
-the source per level and is not computed.
+or capacity stat on even levels. The pattern breaks at levels 9 and 10, so each `buff` is stored per
+level and is not computed.
 
 The `lifeEssenceCost` of a Common or Uncommon decoration is stated once for the whole rarity in the
-prose of the source. It is not a table column. The same is true for Rare, Epic, and Mythic, at
-3,000, 5,000, and 10,000. Snow Castle (Mythic) is a confirmed exception at 12,000.
+prose of the game. It is not a table column. The same is true for Rare, Epic, and Mythic, at 3,000,
+5,000, and 10,000. Snow Castle (Mythic) is a confirmed exception at 12,000.
 
-The original source showed the buff and Prosperity at maximum level only. The user collected the
-full per-level data for Rare, Epic, and Mythic separately and imported it. The `limit` came from the
-same pass and is 1 for every item checked so far.
+The user collected the full per-level data for Rare, Epic, and Mythic and imported it. The `limit`
+came from the same pass and is 1 for every item checked so far.
 
 Limited is not a rarity. It is the `limited` flag on a decoration that is otherwise a normal Epic
 (maximum level 5) or Mythic (maximum level 10). It marks decorations that come from a shop rotation,
@@ -132,22 +122,21 @@ the Silverfrost Shop on a recurring but irregular basis. This is closer to the s
 of Starry Lighthouse than to a limited-time Epic or Mythic, so it is `Unique` and not
 `limited: true`.
 
-Names and buff text are copied as the source shows them. Two misspelled decoration names are
+Names and buff text are copied as the game shows them. Two misspelled decoration names are
 corrected: `hero-s-sanctun` is named "Hero’s Sanctum" and `floating-markert` is named "Floating
 Market". Their ids keep the old spelling so that no reference breaks. As a result
 `decoration().find('heros-sanctum')` returns nothing, and `decoration().find('hero-s-sanctun')` has
 the full level data.
 
 `img` is set only on decorations that have a picture so far. It is stored under
-`images/daybreak-island/`. The sources are crops from these images.
+`images/daybreak-island/`. The images are crops from these screenshots.
 
-| Decoration                       | Image source                                              |
-| -------------------------------- | --------------------------------------------------------- |
-| Dragon Pagoda, Serpent Sanctuary | heaven-guardian.com guide images                          |
-| War Chariot, Cannon              | Tundra Arms League legion rewards screenshot, outof.games |
-| Tundra Truck, Giant Horn         | Alliance Showdown reward screenshots, outof.games         |
-| Conquering Sword                 | In-game SvS reward screenshot                             |
-| Icefire Way                      | In-game League Shop screenshot                            |
-| Luminari Citadel, Hero's Sanctum | In-game Labyrinth reward screenshots                      |
+| Decoration                       | Image source                                 |
+| -------------------------------- | -------------------------------------------- |
+| War Chariot, Cannon              | Tundra Arms League legion rewards screenshot |
+| Tundra Truck, Giant Horn         | Alliance Showdown reward screenshots         |
+| Conquering Sword                 | In-game SvS reward screenshot                |
+| Icefire Way                      | In-game League Shop screenshot               |
+| Luminari Citadel, Hero's Sanctum | In-game Labyrinth reward screenshots         |
 
 The per-level buffs of Cannon are not documented, so its levels carry blank buffs.

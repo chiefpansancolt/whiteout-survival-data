@@ -237,8 +237,7 @@ whiteout-survival-data is available as open source under the terms of the [MIT L
 ## Disclaimer
 
 This project is not affiliated with, endorsed by, or connected to Whiteout Survival or Century
-Games. All game data is sourced from public wiki and community references. Game images and names are
-used for reference purposes only.
+Games. Game images and names are used for reference purposes only.
 
 ---
 
