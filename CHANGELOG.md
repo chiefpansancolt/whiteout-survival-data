@@ -67,6 +67,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- `PET_REFINEMENT_STATS` lists the six stats that pet refinement rolls: the Lethality and the Health
+  of each troop type.
 - `DAYBREAK_ISLAND_TIMBERMILL` gives the Life Essence per hour for each worker and the capacity of
   the Timbermill that replaces the Lumber Camps.
 - `items()` has the Gareth Sigil, with an icon.
