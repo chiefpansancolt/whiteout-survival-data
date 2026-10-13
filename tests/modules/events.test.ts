@@ -562,7 +562,7 @@ describe('Events data', () => {
     const top = showdown.tiers![3].rankings!;
     expect(top).toHaveLength(14);
     expect(top[0].rewards.map((r) => r.amount)).toEqual([3, 80000, 2500, 25, 10, 125]);
-    expect(top[2].groupRanking).toBe('Winning alliance, alliance rank 1');
+    expect(top[2].groupRanking).toBe('Winning alliance, individual rank 1');
     expect(top[2].rewards.map((r) => r.amount)).toEqual([5, 500000, 30000, 70, 40, 40]);
     expect(showdown.tiers![0].rankings![13].rewards.map((r) => r.amount)).toEqual([1500, 5, 1]);
     expect(showdown.allianceRankings!.map((r) => r.groupRanking)).toEqual([
