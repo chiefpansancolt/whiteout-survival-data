@@ -10,7 +10,17 @@
       "kind": "every",
       "every": 4,
       "unit": "weeks"
-    }
+    },
+    "runs": [
+      { "label": "Preparation", "length": 5, "unit": "days", "startWeekday": "monday" },
+      {
+        "label": "Battle",
+        "length": 12,
+        "unit": "hours",
+        "startWeekday": "saturday",
+        "startTimeUtc": "10:00"
+      }
+    ]
   },
   "phases": [
     {

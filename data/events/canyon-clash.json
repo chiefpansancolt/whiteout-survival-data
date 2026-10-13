@@ -13,11 +13,10 @@
       "unit": "months"
     },
     "runs": [
-      {
-        "label": "Battle",
-        "length": 60,
-        "unit": "minutes"
-      }
+      { "label": "Voting", "length": 2, "unit": "days", "startWeekday": "monday" },
+      { "label": "Registration", "length": 2, "unit": "days", "startWeekday": "wednesday" },
+      { "label": "Matchmaking", "length": 1, "unit": "days", "startWeekday": "friday" },
+      { "label": "Battle", "length": 60, "unit": "minutes", "startWeekday": "saturday" }
     ]
   },
   "requirements": [

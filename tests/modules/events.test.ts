@@ -1872,6 +1872,31 @@ describe('event schedules', () => {
       runs: [{ length: 7, unit: 'days' }],
     });
   });
+
+  it('gives Canyon Clash a Saturday battle after Monday voting, Wednesday registration, and Friday matchmaking', () => {
+    expect(events().find('canyon-clash')!.schedule!.runs).toEqual([
+      { label: 'Voting', length: 2, unit: 'days', startWeekday: 'monday' },
+      { label: 'Registration', length: 2, unit: 'days', startWeekday: 'wednesday' },
+      { label: 'Matchmaking', length: 1, unit: 'days', startWeekday: 'friday' },
+      { label: 'Battle', length: 60, unit: 'minutes', startWeekday: 'saturday' },
+    ]);
+  });
+
+  it('gives SvS a Monday to Friday preparation and a Saturday battle in a cycle of four weeks', () => {
+    expect(events().find('svs-state-of-power')!.schedule).toEqual({
+      repeat: { kind: 'every', every: 4, unit: 'weeks' },
+      runs: [
+        { label: 'Preparation', length: 5, unit: 'days', startWeekday: 'monday' },
+        {
+          label: 'Battle',
+          length: 12,
+          unit: 'hours',
+          startWeekday: 'saturday',
+          startTimeUtc: '10:00',
+        },
+      ],
+    });
+  });
 });
 
 describe('expert extra tiers', () => {
