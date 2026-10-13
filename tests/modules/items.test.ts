@@ -24,8 +24,8 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 282 items across 11 categories', () => {
-    expect(items().count()).toBe(283);
+  it('tracks 326 items across 12 categories', () => {
+    expect(items().count()).toBe(326);
     expect(items().byCategory('Hero Items').count()).toBe(23);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
@@ -34,9 +34,28 @@ describe('Item catalog', () => {
     expect(items().byCategory('Fire Crystal').count()).toBe(4);
     expect(items().byCategory('Experts').count()).toBe(17);
     expect(items().byCategory('Teleporter').count()).toBe(4);
-    expect(items().byCategory('Others').count()).toBe(40);
+    expect(items().byCategory('Others').count()).toBe(41);
     expect(items().byCategory('Event').count()).toBe(58);
     expect(items().byCategory('Speedups').count()).toBe(30);
+    expect(items().byCategory('Furniture').count()).toBe(42);
+  });
+
+  it('has the Wish Sigil, the currency of the Wish Shop, with an icon file', () => {
+    const sigil = items().find('wish-sigil')!;
+    expect(sigil).toMatchObject({
+      name: 'Wish Sigil',
+      category: 'Others',
+      img: '/images/items/wish-sigil.png',
+      sources: ['Wish Station', 'Development Index Daily Reward'],
+    });
+    expect(existsSync(join(__dirname, '../..', sigil.img))).toBe(true);
+  });
+
+  it('buys every furniture item in the Wish Shop and has no icon for it', () => {
+    for (const item of items().byCategory('Furniture').get()) {
+      expect(item.sources).toEqual(['Wish Shop']);
+      expect(item.img).toBe('');
+    }
   });
 
   it('resolves items tagged under both Chest and another tab to Chest', () => {

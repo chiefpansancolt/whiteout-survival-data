@@ -9,7 +9,8 @@ export type ItemCategory =
   | 'Teleporter'
   | 'Speedups'
   | 'Others'
-  | 'Event';
+  | 'Event'
+  | 'Furniture';
 
 export interface ItemRewardRate {
   reward: string;

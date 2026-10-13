@@ -35617,32 +35617,38 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Counter",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "counter"
           },
           {
             "name": "Oven",
             "count": 1,
-            "pricePerItem": 2000
+            "pricePerItem": 2000,
+            "itemId": "oven"
           },
           {
             "name": "Dough Maker",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "dough-maker"
           },
           {
             "name": "Proofing Cabinet",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "proofing-cabinet"
           },
           {
             "name": "Table & Chair Set",
             "count": 2,
-            "pricePerItem": 1000
+            "pricePerItem": 1000,
+            "itemId": "table-and-chair-set"
           }
         ],
         "buildTimeSeconds": 0,
@@ -35674,32 +35680,38 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Vinyl Record Player",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "vinyl-record-player"
           },
           {
             "name": "Speaker",
             "count": 8,
-            "pricePerItem": 200
+            "pricePerItem": 200,
+            "itemId": "speaker"
           },
           {
             "name": "Vinyl Shelf",
             "count": 2,
-            "pricePerItem": 200
+            "pricePerItem": 200,
+            "itemId": "vinyl-shelf"
           },
           {
             "name": "Piano",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "piano"
           },
           {
             "name": "Shop Chair",
             "count": 6,
-            "pricePerItem": 500
+            "pricePerItem": 500,
+            "itemId": "shop-chair"
           }
         ],
         "buildTimeSeconds": 0,
@@ -35731,32 +35743,38 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Counter",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "counter"
           },
           {
             "name": "Beverage Tank",
             "count": 2,
-            "pricePerItem": 1000
+            "pricePerItem": 1000,
+            "itemId": "beverage-tank"
           },
           {
             "name": "Ice Maker",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "ice-maker"
           },
           {
             "name": "Teapot",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "teapot"
           },
           {
             "name": "Table & Chairs",
             "count": 2,
-            "pricePerItem": 1000
+            "pricePerItem": 1000,
+            "itemId": "table-and-chairs"
           }
         ],
         "buildTimeSeconds": 0,
@@ -35788,32 +35806,38 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Screen",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "screen"
           },
           {
             "name": "Projector",
             "count": 1,
-            "pricePerItem": 2400
+            "pricePerItem": 2400,
+            "itemId": "projector"
           },
           {
             "name": "Amplifier",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "amplifier"
           },
           {
             "name": "Sound System",
             "count": 2,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "sound-system"
           },
           {
             "name": "Reclining Chairs",
             "count": 6,
-            "pricePerItem": 600
+            "pricePerItem": 600,
+            "itemId": "reclining-chairs"
           }
         ],
         "buildTimeSeconds": 0,
@@ -35845,32 +35869,38 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Counter",
             "count": 1,
-            "pricePerItem": 1800
+            "pricePerItem": 1800,
+            "itemId": "counter"
           },
           {
             "name": "Coffee Machine",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "coffee-machine"
           },
           {
             "name": "Coffee Grinder",
             "count": 1,
-            "pricePerItem": 2400
+            "pricePerItem": 2400,
+            "itemId": "coffee-grinder"
           },
           {
             "name": "Cup Cabinet",
             "count": 1,
-            "pricePerItem": 1800
+            "pricePerItem": 1800,
+            "itemId": "cup-cabinet"
           },
           {
             "name": "Table & Chair Set",
             "count": 2,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "table-and-chair-set"
           }
         ],
         "buildTimeSeconds": 0,
@@ -35902,32 +35932,38 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Bench Press Rack",
             "count": 1,
-            "pricePerItem": 2400
+            "pricePerItem": 2400,
+            "itemId": "bench-press-rack"
           },
           {
             "name": "Treadmill",
             "count": 2,
-            "pricePerItem": 2400
+            "pricePerItem": 2400,
+            "itemId": "treadmill"
           },
           {
             "name": "Lat Pull Machine",
             "count": 1,
-            "pricePerItem": 1800
+            "pricePerItem": 1800,
+            "itemId": "lat-pull-machine"
           },
           {
             "name": "Pull-Up Trainer",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "pull-up-trainer"
           },
           {
             "name": "Dumbbell Set",
             "count": 1,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "dumbbell-set"
           }
         ],
         "buildTimeSeconds": 0,
@@ -35959,32 +35995,38 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Fertile Soil",
             "count": 6,
-            "pricePerItem": 1000
+            "pricePerItem": 1000,
+            "itemId": "fertile-soil"
           },
           {
             "name": "Seed Pack",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "seed-pack"
           },
           {
             "name": "Fertigation Unit",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "fertigation-unit"
           },
           {
             "name": "Underfloor Heating",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "underfloor-heating"
           },
           {
             "name": "Storage Box",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "storage-box"
           }
         ],
         "buildTimeSeconds": 0,
@@ -36016,27 +36058,32 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Yoga Mat",
             "count": 4,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "yoga-mat"
           },
           {
             "name": "Yoga Wall Rope",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "yoga-wall-rope"
           },
           {
             "name": "Yoga Equipment",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "yoga-equipment"
           },
           {
             "name": "Meditation Equipment",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "meditation-equipment"
           }
         ],
         "buildTimeSeconds": 0,
@@ -36068,32 +36115,38 @@
           {
             "name": "Blueprint",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "furniture-blueprint"
           },
           {
             "name": "Indoor Training Wall",
             "count": 1,
-            "pricePerItem": 3000
+            "pricePerItem": 3000,
+            "itemId": "indoor-training-wall"
           },
           {
             "name": "Protective Mat",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "protective-mat"
           },
           {
             "name": "Outdoor Climbing Wall",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "outdoor-climbing-wall"
           },
           {
             "name": "Indoor Climbing Wall",
             "count": 1,
-            "pricePerItem": 2500
+            "pricePerItem": 2500,
+            "itemId": "indoor-climbing-wall"
           },
           {
             "name": "Rope & Belay Set",
             "count": 3,
-            "pricePerItem": 1500
+            "pricePerItem": 1500,
+            "itemId": "rope-and-belay-set"
           }
         ],
         "buildTimeSeconds": 0,

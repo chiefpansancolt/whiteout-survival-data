@@ -447,12 +447,12 @@ describe('The Bakery cost', () => {
   it('matches the exact furniture list, quantities, and per-item price', () => {
     const bakery = buildings().findByName('The Bakery')!;
     expect(bakery.levels[0].cost).toEqual([
-      { name: 'Blueprint', count: 1, pricePerItem: 3000 },
-      { name: 'Counter', count: 1, pricePerItem: 2500 },
-      { name: 'Oven', count: 1, pricePerItem: 2000 },
-      { name: 'Dough Maker', count: 1, pricePerItem: 1500 },
-      { name: 'Proofing Cabinet', count: 1, pricePerItem: 1500 },
-      { name: 'Table & Chair Set', count: 2, pricePerItem: 1000 },
+      { name: 'Blueprint', count: 1, pricePerItem: 3000, itemId: 'furniture-blueprint' },
+      { name: 'Counter', count: 1, pricePerItem: 2500, itemId: 'counter' },
+      { name: 'Oven', count: 1, pricePerItem: 2000, itemId: 'oven' },
+      { name: 'Dough Maker', count: 1, pricePerItem: 1500, itemId: 'dough-maker' },
+      { name: 'Proofing Cabinet', count: 1, pricePerItem: 1500, itemId: 'proofing-cabinet' },
+      { name: 'Table & Chair Set', count: 2, pricePerItem: 1000, itemId: 'table-and-chair-set' },
     ]);
   });
 });
@@ -515,9 +515,21 @@ describe('building cost item ids', () => {
     }
   });
 
-  it('leaves the entertainment building costs without an item id', () => {
-    const other = costs.filter((c) => !(c.name in ITEM_IDS));
-    expect(other.length).toBeGreaterThan(0);
-    for (const cost of other) expect(cost.itemId).toBeUndefined();
+  it('gives every entertainment building cost the id of a furniture item with its name', () => {
+    const furniture = costs.filter((c) => !(c.name in ITEM_IDS));
+    expect(furniture).toHaveLength(53);
+    for (const cost of furniture) {
+      const item = items().find(cost.itemId!)!;
+      expect(item.category).toBe('Furniture');
+      expect(item.name).toBe(cost.name);
+    }
+  });
+
+  it('uses one furniture item for the pieces that several buildings share', () => {
+    const idsOf = (name: string) =>
+      new Set(costs.filter((c) => c.name === name).map((c) => c.itemId));
+    expect(idsOf('Blueprint')).toEqual(new Set(['furniture-blueprint']));
+    expect(idsOf('Counter')).toEqual(new Set(['counter']));
+    expect(idsOf('Table & Chair Set')).toEqual(new Set(['table-and-chair-set']));
   });
 });

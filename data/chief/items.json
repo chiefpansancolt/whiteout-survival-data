@@ -1479,6 +1479,14 @@
     "sources": ["Kasia's Event", "Packs"]
   },
   {
+    "id": "wish-sigil",
+    "name": "Wish Sigil",
+    "img": "/images/items/wish-sigil.png",
+    "category": "Others",
+    "description": "The currency of the Wish Shop, where the furniture of the entertainment buildings is bought.",
+    "sources": ["Wish Station", "Development Index Daily Reward"]
+  },
+  {
     "id": "agnes-sigil",
     "name": "Agnes Sigil",
     "img": "/images/items/agnes-sigil.png",
@@ -3023,5 +3031,341 @@
     "category": "Chest",
     "description": "A custom chest of gear boost items, with Hero Gear Essence Stones, a gem, and enhancement parts on its icon. Given as a milestone reward in Journey of Light.",
     "sources": ["Journey of Light"]
+  },
+  {
+    "id": "furniture-blueprint",
+    "name": "Blueprint",
+    "img": "",
+    "category": "Furniture",
+    "description": "Needed by each of the nine entertainment buildings. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "counter",
+    "name": "Counter",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Bakery, Tea Milk Shop, and Cafe. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "oven",
+    "name": "Oven",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Bakery. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "dough-maker",
+    "name": "Dough Maker",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Bakery. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "proofing-cabinet",
+    "name": "Proofing Cabinet",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Bakery. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "table-and-chair-set",
+    "name": "Table & Chair Set",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Bakery and Cafe. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "vinyl-record-player",
+    "name": "Vinyl Record Player",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Vinyl Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "speaker",
+    "name": "Speaker",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Vinyl Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "vinyl-shelf",
+    "name": "Vinyl Shelf",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Vinyl Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "piano",
+    "name": "Piano",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Vinyl Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "shop-chair",
+    "name": "Shop Chair",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for The Vinyl Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "beverage-tank",
+    "name": "Beverage Tank",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Tea Milk Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "ice-maker",
+    "name": "Ice Maker",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Tea Milk Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "teapot",
+    "name": "Teapot",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Tea Milk Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "table-and-chairs",
+    "name": "Table & Chairs",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Tea Milk Shop. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "screen",
+    "name": "Screen",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Cinema. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "projector",
+    "name": "Projector",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Cinema. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "amplifier",
+    "name": "Amplifier",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Cinema. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "sound-system",
+    "name": "Sound System",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Cinema. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "reclining-chairs",
+    "name": "Reclining Chairs",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Cinema. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "coffee-machine",
+    "name": "Coffee Machine",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Cafe. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "coffee-grinder",
+    "name": "Coffee Grinder",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Cafe. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "cup-cabinet",
+    "name": "Cup Cabinet",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Cafe. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "bench-press-rack",
+    "name": "Bench Press Rack",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "treadmill",
+    "name": "Treadmill",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "lat-pull-machine",
+    "name": "Lat Pull Machine",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "pull-up-trainer",
+    "name": "Pull-Up Trainer",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "dumbbell-set",
+    "name": "Dumbbell Set",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "fertile-soil",
+    "name": "Fertile Soil",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Farm. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "seed-pack",
+    "name": "Seed Pack",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Farm. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "fertigation-unit",
+    "name": "Fertigation Unit",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Farm. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "underfloor-heating",
+    "name": "Underfloor Heating",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Farm. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "storage-box",
+    "name": "Storage Box",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Farm. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "yoga-mat",
+    "name": "Yoga Mat",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Yoga Studio. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "yoga-wall-rope",
+    "name": "Yoga Wall Rope",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Yoga Studio. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "yoga-equipment",
+    "name": "Yoga Equipment",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Yoga Studio. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "meditation-equipment",
+    "name": "Meditation Equipment",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Yoga Studio. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "indoor-training-wall",
+    "name": "Indoor Training Wall",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "protective-mat",
+    "name": "Protective Mat",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "outdoor-climbing-wall",
+    "name": "Outdoor Climbing Wall",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "indoor-climbing-wall",
+    "name": "Indoor Climbing Wall",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
+    "id": "rope-and-belay-set",
+    "name": "Rope & Belay Set",
+    "img": "",
+    "category": "Furniture",
+    "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
   }
 ]
