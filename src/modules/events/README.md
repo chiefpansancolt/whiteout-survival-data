@@ -78,9 +78,26 @@ The event fields that hold more than text:
 
 A scoring action can have an `itemId` when its text names one item that is in `items()`: Fire
 Crystal, Refined Fire Crystal, Fire Crystal Shard, Mithril, Gems, Book of Knowledge, the two Wild
-Marks, and the Hero Gear Essence Stone (`essence-stones`). Actions that name a group of items have
-none: the Hero Shards, "any" Expert Sigil, "any" Hero Exclusive Gear Widget, the Recruitments, and
-the speedup minutes.
+Marks, and the Hero Gear Essence Stone (`essence-stones`). Some actions name a kind of item and not
+one item. They are linked as follows, and the choices come from the package owner, who knows the
+game:
+
+- **Hero Shards (45 rows).** "Use 1 Rare Hero Shard", "Epic", and "Mythic", also "to ascend Heroes",
+  have the `itemId` of the general shard of that rarity: `rare-general-hero-shard`,
+  `epic-general-hero-shard`, or `mythic-general-hero-shard`. The shards of single heroes are not
+  linked. No source says whether they count too.
+- **Recruitments (4 rows).** "Use Epic Recruitment 1 time" has the `itemId` `platinum-key`, and "Use
+  Advanced Recruitment 1 time" has `gold-key`.
+- **Expert Sigils (4 rows).** "Use any 1 Expert Sigil (excluding Common Sigils)" has `itemIds`, a
+  list of the 10 named sigils. The Common Expert Sigil is not in it.
+- **Speedup minutes (65 rows).** "Use 1m of Speedups for Construction", for Research, for Training
+  or Promotion, and to Learn Expert Skills have `itemIds`, a list of the speedups of that type from
+  `items()`: construction, research, troop, or learning. The general speedups are not in the lists,
+  because the wording names the type. The "Gems Speedups excluded" note is about speedups bought
+  with Gems, which are not items.
+
+An action has an `itemId` or `itemIds`, never both. The 13 "Use 1 Widget of any Hero Exclusive Gear"
+rows have no link, because `items()` has no widget items.
 
 `scoreUnit` is `flights` for Journey of Light, `spins` for Lucky Wheel, `reapers` for Hero's
 Mission, `Labyrinth Cores` for The Labyrinth, `recycle tokens` for Tundra Album, and

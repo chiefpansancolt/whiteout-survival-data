@@ -67,6 +67,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- The scoring actions of events that name a kind of item are linked to `items()`: the hero shards,
+  the Recruitments, the Expert Sigils, and the speedup minutes. An action can have `itemIds` for a
+  group.
 - `PET_REFINEMENT_STATS` lists the six stats that pet refinement rolls: the Lethality and the Health
   of each troop type.
 - `DAYBREAK_ISLAND_TIMBERMILL` gives the Life Essence per hour for each worker and the capacity of
