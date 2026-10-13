@@ -1,4 +1,5 @@
 import {
+  DAYBREAK_ISLAND_TIMBERMILL,
   DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL,
   decoration,
   DecorationQuery,
@@ -312,5 +313,19 @@ describe('decoration names', () => {
 describe('Daybreak Island unlock', () => {
   it('unlocks at Furnace level 19', () => {
     expect(DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL).toBe(19);
+  });
+});
+
+describe('Daybreak Island Timbermill', () => {
+  it('produces 40 Life Essence an hour for each worker, up to a capacity of 2,000', () => {
+    expect(DAYBREAK_ISLAND_TIMBERMILL).toEqual({ lifeEssencePerHourPerWorker: 40, capacity: 2000 });
+  });
+
+  it('gets the workers of the two Lumber Camps, which hold 2 workers each at level 4 or higher', () => {
+    const maxWorkers = lumberCamp().find('lumber-camp-level-10')!.workers;
+    expect(maxWorkers).toBe(2);
+    const perHour = 2 * maxWorkers * DAYBREAK_ISLAND_TIMBERMILL.lifeEssencePerHourPerWorker;
+    expect(perHour).toBe(160);
+    expect(DAYBREAK_ISLAND_TIMBERMILL.capacity / perHour).toBe(12.5);
   });
 });
