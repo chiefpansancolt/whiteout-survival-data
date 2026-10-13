@@ -2,6 +2,17 @@ export type HeroRarity = 'Rare' | 'Epic' | 'Legendary';
 export type HeroClass = 'Infantry' | 'Lancer' | 'Marksman';
 export type HeroSubClass = 'Growth' | 'Combat';
 
+export type HeroSkillEffectUnit = 'percent' | 'percentOfAttack' | 'seconds' | 'number';
+
+export interface HeroSkillEffect {
+  /** What the number sets, such as `Stamina Cost Reduction` or `Damage (Target)`. */
+  name: string;
+  /** The number of the skill text at this level. */
+  amount: number;
+  /** `percentOfAttack` is a multiple of the Attack of the hero, such as the 210% of `Attack*210%`. */
+  unit: HeroSkillEffectUnit;
+}
+
 export interface HeroSkillLevel {
   level: number;
   /** A Talent skill needs none, so it is 0. */
@@ -10,6 +21,8 @@ export interface HeroSkillLevel {
   powerGain: number;
   /** 0 for a Talent skill, because no source states it. */
   starRequired: number;
+  /** One entry for each set of slash-separated numbers in the `description`, in text order. */
+  effects: HeroSkillEffect[];
 }
 
 export interface HeroSkill {

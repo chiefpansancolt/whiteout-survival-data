@@ -557,3 +557,106 @@ describe('Generation 1-17 heroes (Legendary)', () => {
     });
   });
 });
+
+describe('hero skill effects', () => {
+  const allSkills = () =>
+    heroes()
+      .get()
+      .flatMap((hero) => [
+        ...hero.skills.exploration,
+        ...hero.skills.expedition,
+        ...(hero.skills.talent ? [hero.skills.talent] : []),
+      ]);
+
+  const NUMBER_SET = /(\d[\d,]*(?:\.\d+)?)%?((?:\s*\/\s*\d[\d,]*(?:\.\d+)?%?){3,4})\s*s?/g;
+  const textSets = (description: string): number[][] =>
+    [...description.matchAll(NUMBER_SET)].map((m) =>
+      `${m[1]}${m[2]}`.split('/').map((v) => Number(v.replace(/[%\s,s]/g, ''))),
+    );
+
+  it('gives all 375 skills five levels with an effect for every set of numbers in the text', () => {
+    const skills = allSkills();
+    expect(skills).toHaveLength(375);
+    let sets = 0;
+    for (const skill of skills) {
+      const fromText = textSets(skill.description);
+      expect(fromText.length).toBeGreaterThan(0);
+      expect(skill.levels).toHaveLength(5);
+      skill.levels.forEach((level, i) => {
+        expect(level.effects.map((e) => e.amount)).toEqual(fromText.map((set) => set[i]));
+      });
+      sets += fromText.length;
+    }
+    expect(sets).toBe(488);
+  });
+
+  it('keeps the same names and units at every level of a skill', () => {
+    for (const skill of allSkills()) {
+      const first = skill.levels[0].effects.map((e) => [e.name, e.unit]);
+      for (const level of skill.levels) {
+        expect(level.effects.map((e) => [e.name, e.unit])).toEqual(first);
+      }
+    }
+  });
+
+  it('gives every effect of a skill its own name', () => {
+    for (const skill of allSkills()) {
+      const names = skill.levels[0].effects.map((e) => e.name);
+      expect(new Set(names).size).toBe(names.length);
+    }
+  });
+
+  it('uses only the four units and no empty name', () => {
+    const counts: Record<string, number> = {};
+    for (const skill of allSkills()) {
+      for (const effect of skill.levels[0].effects) {
+        expect(effect.name.trim()).not.toBe('');
+        counts[effect.unit] = (counts[effect.unit] ?? 0) + 1;
+      }
+    }
+    expect(counts).toEqual({ percent: 362, percentOfAttack: 115, number: 7, seconds: 4 });
+  });
+
+  it('gives the Stamina Cost Reduction of Gina at each level of Endurance Training', () => {
+    const skill = heroes()
+      .find('gina')!
+      .skills.expedition.find((s) => s.name === 'Endurance Training')!;
+    expect(skill.levels.map((l) => l.effects)).toEqual(
+      [10, 12, 15, 18, 20].map((amount) => [
+        { name: 'Stamina Cost Reduction', amount, unit: 'percent' },
+      ]),
+    );
+  });
+
+  it('gives a skill with two sets two effects at each level', () => {
+    const skill = heroes()
+      .find('gina')!
+      .skills.exploration.find((s) => s.name === 'Incendiary Arrow')!;
+    expect(skill.levels[0].effects).toEqual([
+      { name: 'Damage (Target)', amount: 210, unit: 'percentOfAttack' },
+      { name: 'Damage (Nearby Enemies)', amount: 70, unit: 'percentOfAttack' },
+    ]);
+    expect(skill.levels[4].effects.map((e) => e.amount)).toEqual([290, 98]);
+  });
+
+  it('gives a chance in percent and a duration in seconds', () => {
+    const skill = heroes()
+      .find('charlie')!
+      .skills.exploration.find((s) => s.name === 'Grenadier')!;
+    expect(skill.levels.map((l) => l.effects[0])).toEqual(
+      [10, 15, 15, 20, 20].map((amount) => ({ name: 'Stun Chance', amount, unit: 'percent' })),
+    );
+    expect(skill.levels.map((l) => l.effects[1])).toEqual(
+      [0.5, 0.5, 1, 1, 1.5].map((amount) => ({ name: 'Stun Duration', amount, unit: 'seconds' })),
+    );
+  });
+
+  it('gives the Talent skill of Jeronimo its effects', () => {
+    const talent = heroes().find('jeronimo')!.skills.talent!;
+    expect(talent.levels.map((l) => l.effects)).toEqual(
+      [3, 6, 9, 12, 15].map((amount) => [
+        { name: 'Lethality and Health', amount, unit: 'percent' },
+      ]),
+    );
+  });
+});
