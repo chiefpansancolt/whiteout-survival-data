@@ -1562,6 +1562,14 @@
     "sources": ["Endless Wayfarer Event", "Packs", "VIP Shop"]
   },
   {
+    "id": "gareth-sigil",
+    "name": "Gareth Sigil",
+    "img": "/images/items/gareth-sigil.png",
+    "category": "Experts",
+    "description": "Advances your relationship with Expert Gareth. Once maxed, it can be used for Expert Research.",
+    "sources": ["Tundra & Frontier Treks", "Packs", "Exchange Common Sigils"]
+  },
+  {
     "id": "holger-sigil",
     "name": "Holger Sigil",
     "img": "/images/items/holger-sigil.png",

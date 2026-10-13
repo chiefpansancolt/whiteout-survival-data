@@ -1,3 +1,4 @@
+import { experts } from '@/modules/experts';
 import { ItemQuery, items } from '@/modules/items';
 import { existsSync } from 'fs';
 import { join } from 'path';
@@ -24,14 +25,14 @@ describe('ItemQuery', () => {
 
 describe('Item catalog', () => {
   it('tracks 282 items across 11 categories', () => {
-    expect(items().count()).toBe(282);
+    expect(items().count()).toBe(283);
     expect(items().byCategory('Hero Items').count()).toBe(23);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
     expect(items().byCategory('Chest').count()).toBe(60);
     expect(items().byCategory('Buff').count()).toBe(31);
     expect(items().byCategory('Fire Crystal').count()).toBe(4);
-    expect(items().byCategory('Experts').count()).toBe(16);
+    expect(items().byCategory('Experts').count()).toBe(17);
     expect(items().byCategory('Teleporter').count()).toBe(4);
     expect(items().byCategory('Others').count()).toBe(40);
     expect(items().byCategory('Event').count()).toBe(58);
@@ -161,5 +162,36 @@ describe('speedup items', () => {
 
   it('has a general 8 hour speedup of 480 minutes', () => {
     expect(items().find('speedup-general-8h')!.speedup).toEqual({ type: 'general', minutes: 480 });
+  });
+});
+
+describe('expert sigils', () => {
+  const sigilId = (expertId: string) =>
+    expertId === 'baldur' ? 'baldurs-sigil' : `${expertId}-sigil`;
+
+  it('has a sigil item with an icon file for every expert', () => {
+    for (const expert of experts().get()) {
+      const sigil = items().find(sigilId(expert.id));
+      expect(sigil).toBeDefined();
+      expect(sigil!.category).toBe('Experts');
+      expect(existsSync(join(__dirname, '../..', sigil!.img))).toBe(true);
+    }
+  });
+
+  it('gives the sigils of the experts one description pattern and the same sources', () => {
+    for (const expert of experts().get()) {
+      const sigil = items().find(sigilId(expert.id))!;
+      expect(sigil.description).toBe(
+        `Advances your relationship with Expert ${expert.name}. Once maxed, it can be used for Expert Research.`,
+      );
+      expect(sigil.sources).toEqual(['Tundra & Frontier Treks', 'Packs', 'Exchange Common Sigils']);
+    }
+  });
+
+  it('names the Gareth Sigil like the other sigils', () => {
+    expect(items().find('gareth-sigil')).toMatchObject({
+      name: 'Gareth Sigil',
+      img: '/images/items/gareth-sigil.png',
+    });
   });
 });
