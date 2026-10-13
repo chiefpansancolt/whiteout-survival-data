@@ -200,16 +200,10 @@ This is what the data does not hold yet. Each module README gives the detail.
   [Items](src/modules/items/README.md).
 - **Buildings.** The nine entertainment buildings have no `img`. See
   [Buildings](src/modules/buildings/README.md).
-- **Castle appointments.** The positions have no icons. See
-  [Castle Appointments](src/modules/castle-appointments/README.md).
 - **Daily tasks.** The list of in-game daily missions is not complete, and the daily reset time is
   not stored. See [Dailies](src/modules/dailies/README.md).
 - **Pets.** Only the maximum refinement percent of each pet is stored. The steps and the quality
   ranges are not. See [Pets](src/modules/pets/README.md).
-- **Troops.** It is not known whether tiers 11 and 12 also need a camp level. See
-  [Troops](src/modules/troops/README.md).
-- **Alliance Fortress.** The castle has no rewards. See
-  [Alliance Fortress](src/modules/alliance/fortress/README.md).
 
 If you have any of this data, see [Contributing](#contributing).
 
