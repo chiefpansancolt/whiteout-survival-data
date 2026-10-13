@@ -116,7 +116,8 @@ anywhere. It is in the code of the WoS Tools experts calculator, which turns the
 in the game into minutes with `currentXp / 60`. It also fits the data: for 33 skills of the three
 sources, the learning minutes of WoS Tools times 60 equal the EXP of `experts()` at every level but
 one, level 2 of Fabian's Crisis Rescue. There `experts()` has 33,053 and WoS Tools has 551 minutes,
-which is 33,060. Heaven Guardian says "The amount of Skill XP gained depends on the learning
+which is 33,060. The package keeps the 33,053 of the wiki, so the learning minutes of that level
+round up to 551. Heaven Guardian says "The amount of Skill XP gained depends on the learning
 duration" and "Learning Speedups reduce the remaining time of Expert Skill learning". The talent
 costs nothing, because it levels with the relationship, so it is not in the result. The result has
 no event points. `EXPERT_MAX_LEVEL` exports the 100.
