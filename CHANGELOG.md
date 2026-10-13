@@ -38,7 +38,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Pet prerequisites have the `petId` of the required pet.
 - Timeline unlocks can have a `key`, set for the War Academy and T12 research unlocks, and
   `heroGenerationAt()` gives the highest hero generation unlocked at a server age.
-- Dawn Academy has an `unlockFurnaceLevel`, and `DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL` gives the
+- The facilities have an `unlockFurnaceLevel`, and `DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL` gives the
   Furnace level that unlocks Daybreak Island.
 - Event scoring actions that name one item have an `itemId`, six events have a `scoreUnit`, and the
   61 events that are not Core events have a `resultShape`. `eventRankingTables()` gives every
