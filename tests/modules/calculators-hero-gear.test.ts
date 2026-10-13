@@ -1,5 +1,6 @@
 import {
   calculateHeroGear,
+  HERO_GEAR_EMPOWERMENT_REQUIREMENT,
   HERO_GEAR_ENHANCEMENT_REQUIREMENT,
   HERO_GEAR_MAX_EMPOWERMENT_LEVEL,
   HERO_GEAR_MAX_ENHANCEMENT_LEVEL,
@@ -150,6 +151,67 @@ describe('calculateHeroGear', () => {
       empowerment: { current: 0, goal: 5 },
     });
     expect(result.unmetRequirements).toEqual([]);
+  });
+
+  it('exports the empowerment requirement: enhancement 100 and the Level 10 row of mastery forging', () => {
+    expect(HERO_GEAR_EMPOWERMENT_REQUIREMENT).toEqual({
+      enhancementLevel: 100,
+      masteryForgingRowId: 'level-10-stage-0',
+    });
+    expect(
+      heroGearMasteryForging().find(HERO_GEAR_EMPOWERMENT_REQUIREMENT.masteryForgingRowId),
+    ).toMatchObject({ level: 10, stage: 0, statsUpPercent: 100 });
+    expect(HERO_GEAR_EMPOWERMENT_REQUIREMENT.masteryForgingRowId).toBe(
+      HERO_GEAR_ENHANCEMENT_REQUIREMENT.afterRowId,
+    );
+  });
+
+  it('lists empowerment as unmet when mastery forging ends below level 10', () => {
+    const result = calculateHeroGear({
+      masteryForging: { current: null, goal: 'level-9-stage-4' },
+      enhancement: { current: 0, goal: 100 },
+      empowerment: { current: 0, goal: 5 },
+    });
+    expect(result.unmetRequirements).toEqual([
+      { track: 'empowerment', masteryForgingRowId: 'level-10-stage-0' },
+    ]);
+  });
+
+  it('does not list empowerment when mastery forging reaches level 10', () => {
+    const result = calculateHeroGear({
+      masteryForging: { current: null, goal: 'level-10-stage-0' },
+      enhancement: { current: 0, goal: 100 },
+      empowerment: { current: 0, goal: 5 },
+    });
+    expect(result.unmetRequirements).toEqual([]);
+  });
+
+  it('lists both requirements of empowerment, enhancement first', () => {
+    const result = calculateHeroGear({
+      masteryForging: { current: null, goal: 'level-5-stage-0' },
+      enhancement: { current: 0, goal: 99 },
+      empowerment: { current: 0, goal: 5 },
+    });
+    expect(result.unmetRequirements).toEqual([
+      { track: 'empowerment', enhancementLevel: 100 },
+      { track: 'empowerment', masteryForgingRowId: 'level-10-stage-0' },
+    ]);
+  });
+
+  it('checks the mastery forging requirement only with a mastery forging range and an empowerment goal', () => {
+    expect(
+      calculateHeroGear({
+        enhancement: { current: 0, goal: 100 },
+        empowerment: { current: 0, goal: 5 },
+      }).unmetRequirements,
+    ).toEqual([]);
+    expect(
+      calculateHeroGear({
+        masteryForging: { current: null, goal: 'level-3' },
+        enhancement: { current: 0, goal: 100 },
+        empowerment: { current: 0, goal: 0 },
+      }).unmetRequirements,
+    ).toEqual([]);
   });
 
   it('rejects unknown rows, levels out of range, and goals below the current state', () => {

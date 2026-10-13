@@ -29,6 +29,11 @@ export const HERO_GEAR_ENHANCEMENT_REQUIREMENT = {
   enhancementLevel: HERO_GEAR_MAX_ENHANCEMENT_LEVEL,
 } as const;
 
+export const HERO_GEAR_EMPOWERMENT_REQUIREMENT = {
+  enhancementLevel: HERO_GEAR_MAX_ENHANCEMENT_LEVEL,
+  masteryForgingRowId: 'level-10-stage-0',
+} as const;
+
 const EVENT_IDS: Record<keyof HeroGearEventPoints, string> = {
   svs: 'svs-state-of-power',
   allianceShowdown: 'alliance-showdown',
@@ -95,18 +100,25 @@ function levelResult(
 }
 
 function unmetRequirements(goal: HeroGearGoal): HeroGearRequirement[] {
-  if (goal.enhancement === undefined) return [];
-  const { enhancementLevel, afterRowId } = HERO_GEAR_ENHANCEMENT_REQUIREMENT;
-  if (goal.enhancement.goal >= enhancementLevel) return [];
   const unmet: HeroGearRequirement[] = [];
-  if (
-    goal.masteryForging !== undefined &&
-    masteryForgingRowIndex(goal.masteryForging.goal) > masteryForgingRowIndex(afterRowId)
-  ) {
-    unmet.push({ track: 'masteryForging', enhancementLevel });
+  const empowering = goal.empowerment !== undefined && goal.empowerment.goal > 0;
+  const { enhancementLevel, afterRowId } = HERO_GEAR_ENHANCEMENT_REQUIREMENT;
+  if (goal.enhancement !== undefined && goal.enhancement.goal < enhancementLevel) {
+    if (
+      goal.masteryForging !== undefined &&
+      masteryForgingRowIndex(goal.masteryForging.goal) > masteryForgingRowIndex(afterRowId)
+    ) {
+      unmet.push({ track: 'masteryForging', enhancementLevel });
+    }
+    if (empowering) unmet.push({ track: 'empowerment', enhancementLevel });
   }
-  if (goal.empowerment !== undefined && goal.empowerment.goal > 0) {
-    unmet.push({ track: 'empowerment', enhancementLevel });
+  const { masteryForgingRowId } = HERO_GEAR_EMPOWERMENT_REQUIREMENT;
+  if (
+    empowering &&
+    goal.masteryForging !== undefined &&
+    masteryForgingRowIndex(goal.masteryForging.goal) < masteryForgingRowIndex(masteryForgingRowId)
+  ) {
+    unmet.push({ track: 'empowerment', masteryForgingRowId });
   }
   return unmet;
 }
@@ -180,8 +192,10 @@ function eventPoints(resources: UpgradeMaterial[]): HeroGearEventPoints {
  * A piece has three tracks: mastery forging, enhancement, and empowerment. The steps of a track are the
  * rows after the current one up to and including the goal. A track that is not in the goal adds nothing.
  * Mastery forging past `HERO_GEAR_ENHANCEMENT_REQUIREMENT.afterRowId` and empowerment need enhancement
- * level 100. The calculator does not throw for this rule. It lists the affected tracks in
- * `unmetRequirements` when the goal has an `enhancement` range that ends below 100. When the goal names a
+ * level 100. Empowerment also needs mastery forging at `HERO_GEAR_EMPOWERMENT_REQUIREMENT.masteryForgingRowId`.
+ * The calculator does not throw for these rules. It lists the affected tracks in `unmetRequirements`
+ * when the goal has an `enhancement` range that ends below 100, or a `masteryForging` range that ends
+ * below that row. When the goal names a
  * `piece`, the result has the `stats` of the piece. Widgets are not included.
  *
  * @param goal The mastery forging, enhancement, and empowerment ranges of one piece.

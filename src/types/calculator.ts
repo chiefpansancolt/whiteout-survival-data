@@ -447,10 +447,19 @@ export interface HeroGearLevelResult extends HeroGearTrackResult {
 }
 
 /** A track that needs the enhancement of the piece at a level before it can go on. */
-export interface HeroGearRequirement {
+export interface HeroGearEnhancementRequirement {
   track: 'masteryForging' | 'empowerment';
   enhancementLevel: number;
 }
+
+/** Empowerment needs the mastery forging of the piece to reach a row. */
+export interface HeroGearMasteryForgingRequirement {
+  track: 'empowerment';
+  masteryForgingRowId: string;
+}
+
+export type HeroGearRequirement =
+  HeroGearEnhancementRequirement | HeroGearMasteryForgingRequirement;
 
 export interface HeroGearEventPoints {
   svs: number;
