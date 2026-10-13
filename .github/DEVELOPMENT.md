@@ -158,7 +158,7 @@ Add the import and a couple of representative calls to `sample/index.ts`.
 ### Step 7: Write the module README
 
 Add `src/modules/<module>/README.md` with a short description, a usage section with examples that
-run against the source, a table of the query methods, the shape of the data, and any source notes.
+run against the source, a table of the query methods, the shape of the data, and any assumptions.
 Add a row for the module to the table in the root `README.md`.
 
 ### Step 8: Write tests
@@ -196,7 +196,7 @@ When adding a new module, make sure you've touched all of these:
 - [ ] `src/index.ts`: re-export the module
 - [ ] `images/<category>/`: image assets
 - [ ] `sample/index.ts`: a representative call or two
-- [ ] `src/modules/<module>/README.md`: usage, query methods, data shape, and source notes
+- [ ] `src/modules/<module>/README.md`: usage, query methods, data shape, and assumptions
 - [ ] `tests/modules/<module>.test.ts`: test file, including both constructor-default branches and
       both directions of every sort
 - [ ] Run `pnpm format && pnpm lint && pnpm test:coverage && pnpm sample`
