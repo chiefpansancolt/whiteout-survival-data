@@ -2268,7 +2268,7 @@
   {
     "id": "rare-general-scene-fragment-pack",
     "name": "Rare General Scene Fragment Pack",
-    "img": "/images/items/rare-general-scene-fragment-pack.webp",
+    "img": "/images/items/rare-general-scene-fragment-pack.png",
     "category": "Others",
     "description": "Use to obtain 4 Scene Fragments of random themes. Star Rating Probabilities ⭐⭐⭐ 10.000% ⭐⭐ 40.000% ⭐ 50.000%",
     "sources": ["Album Missions", "Recycle Shop"]
@@ -2276,7 +2276,7 @@
   {
     "id": "short-token",
     "name": "Shot Token",
-    "img": "/images/items/short-token.webp",
+    "img": "/images/items/short-token.png",
     "category": "Others",
     "description": "Used in the [Dead Shot] event.",
     "sources": [

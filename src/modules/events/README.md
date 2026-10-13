@@ -270,8 +270,10 @@ Solo events:
   Voucher value of each exchange in `tiers`.
 - Brothers in Arms has its troop-level point table, four target levels, and top 100 ranking rewards.
 - Hero's Mission lists the hero whose shards it gives for generations 4 to 15 in `heroByGeneration`.
-- Hall of Chief has 13 stage scoring lists for its two seasons. Hall of Heroes has the shop of each
-  hero generation, 1 to 9, in `shops`. Mia Fortune has orb costs and milestones.
+- Hall of Chief has 13 stage scoring lists for its two seasons. Its ranking lists show only the
+  first ranks, and the season hero shard rewards of the total ranking have no amount. Hall of Heroes
+  has the shop of each hero generation, 1 to 9, in `shops`. Mia Fortune has orb costs and
+  milestones.
 - Crystal Reactivation has chest shops by Fire Crystal age. Chest and bundle offers hold their
   rewards in `contents`.
 - Tundra Adventure has tile chances, item tile levels, point targets, and the Odyssey of Adventure
