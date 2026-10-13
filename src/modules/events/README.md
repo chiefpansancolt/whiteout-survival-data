@@ -160,9 +160,27 @@ to Tundra, Silver Shell Events, Stand of Arms, The Labyrinth, Trial Event, Tundr
 Games, and Tundra Star. Some events have a repeat rule and no run, or the other way around, when the
 text has only one of the two.
 
-Two events have sources that disagree, and the schedule follows the wiki text. SvS has "About 2
-weeks" on the wiki and a 10 day event in two other sources, so it has no run. Tundra Arms League has
-18 days in the package and four weeks in a guide.
+Four events needed a decision where sources disagree.
+
+SvS has "About 2 weeks" on the wiki, with 6 days of preparation, and a cycle of about 10 days in WoS
+Tools and BlueStacks. The package owner states that SvS takes one week, with preparation from Monday
+to Friday and the battle on Saturday. The runs follow the owner: Preparation for 5 days from Monday,
+and a Battle of 12 hours from Saturday 10:00 UTC. WoS Tools and BlueStacks state the 12 hours and
+the time. The 2 days of matchmaking and the 2 days of recovery are not runs, because the owner does
+not count them in the week. The repeat stays every four weeks.
+
+Canyon Clash has two schedules in the sources. The WoS Tools wiki and a mone.gg guide state voting
+on Monday and Tuesday, registration on Wednesday and Thursday, matchmaking on Friday, and the battle
+on Saturday. The help center and a Heaven Guardian guide state voting on Saturday and Sunday,
+registration on Monday and Tuesday, matchmaking on Wednesday, and the battle on Thursday, and the
+guide says the older guides show the first one. The package owner states the first schedule, so the
+runs follow it. No source gives a time in UTC.
+
+Tundra Arms League has 18 days in the package. A mone.gg guide gives "around 18-21 days", and a
+Heaven Guardian guide gives a longer phase table: a preview, voting, sign-up, matchmaking, four
+elimination rounds, three championship rounds, and a results week. The package keeps the 18 days of
+the wiki and has no phases. Heaven Guardian states that the game publishes no fixed repeat for it,
+so the "four weeks" of another guide is not recorded.
 
 ## Expert extra tiers
 
