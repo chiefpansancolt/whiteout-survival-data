@@ -6,6 +6,8 @@ import { vip } from '@/modules/vip';
 
 interface Entry {
   source: string;
+  category?: string;
+  totalAmount?: number;
   stat: string;
   statKey?: string;
   value: string | number;
@@ -16,7 +18,11 @@ interface Entry {
 const entries: Entry[] = [
   ...research()
     .get()
-    .flatMap((n) => n.levels.flatMap((l) => l.bonus.map((b) => ({ source: 'research', ...b })))),
+    .flatMap((n) =>
+      n.levels.flatMap((l) =>
+        l.bonus.map((b) => ({ source: 'research', category: n.category, ...b })),
+      ),
+    ),
   ...skins()
     .get()
     .flatMap((s) => (s.bonus ? [{ source: 'skins', ...s.bonus }] : [])),
@@ -88,10 +94,20 @@ describe('bonus amounts', () => {
   };
 
   it('reads the amount and unit from the value of every bonus except the VIP shorthands', () => {
-    const checked = entries.filter((e) => e.source !== 'vip');
+    const checked = entries.filter((e) => e.source !== 'vip' && !e.category?.startsWith('T12 '));
     for (const entry of checked) {
       const parsed = parse(entry.value);
       expect(entry.amount).toBe(parsed?.amount);
+      expect(entry.unit).toBe(parsed?.unit);
+    }
+  });
+
+  it('reads the total amount of a T12 research bonus from its value, because the wiki lists the total', () => {
+    const t12 = entries.filter((e) => e.category?.startsWith('T12 ') && e.amount !== undefined);
+    expect(t12.length).toBeGreaterThan(1000);
+    for (const entry of t12) {
+      const parsed = parse(entry.value);
+      expect(entry.totalAmount).toBeCloseTo(parsed!.amount, 4);
       expect(entry.unit).toBe(parsed?.unit);
     }
   });
@@ -153,10 +169,45 @@ describe('research bonus totals', () => {
     expect(levels.map((l) => l.bonus[0].totalAmount)).toEqual([1.25, 2.5, 4]);
   });
 
-  it('adds up the rising values of the T12 research like any other values', () => {
+  it('gives the T12 research the gain of each level as the amount and the wiki value as the total', () => {
     const levels = research().find('exalted-shoulderguard')!.levels;
-    expect(levels.map((l) => l.bonus[0].amount)).toEqual([3, 6, 9, 12, 15]);
-    expect(levels.map((l) => l.bonus[0].totalAmount)).toEqual([3, 9, 18, 30, 45]);
+    expect(levels.map((l) => l.bonus[0].value)).toEqual([
+      '3.00%',
+      '6.00%',
+      '9.00%',
+      '12.00%',
+      '15.00%',
+    ]);
+    expect(levels.map((l) => l.bonus[0].amount)).toEqual([3, 3, 3, 3, 3]);
+    expect(levels.map((l) => l.bonus[0].totalAmount)).toEqual([3, 6, 9, 12, 15]);
+  });
+
+  it('gives a Molten II line 50 levels of 1 percent and a total of 50 percent', () => {
+    for (const id of ['molten-blades-ii', 'molten-plating-ii', 'molten-shields-ii']) {
+      const levels = research().find(id)!.levels;
+      expect(levels).toHaveLength(50);
+      expect(levels.every((l) => l.bonus[0].amount === 1)).toBe(true);
+      expect(levels[49].bonus[0].totalAmount).toBe(50);
+    }
+  });
+
+  it('gives every T12 bonus with several levels one constant gain', () => {
+    for (const node of research()
+      .get()
+      .filter((n) => n.category.startsWith('T12 '))) {
+      for (const [index, first] of node.levels[0].bonus.entries()) {
+        if (first.amount === undefined || node.levels.length < 2) continue;
+        const gains = new Set(node.levels.map((l) => l.bonus[index].amount));
+        expect([node.id, first.statKey, gains.size]).toEqual([node.id, first.statKey, 1]);
+      }
+    }
+  });
+
+  it('keeps one stat for every level of a line, with Infantry Health on all levels of Molten Plating II', () => {
+    const stats = research()
+      .find('molten-plating-ii')!
+      .levels.map((l) => l.bonus[0].statKey);
+    expect(new Set(stats)).toEqual(new Set(['infantry-health']));
   });
 
   it('adds up each stat of a level with two stats on its own', () => {
