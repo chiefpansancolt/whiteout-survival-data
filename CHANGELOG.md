@@ -64,6 +64,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- `DAYBREAK_ISLAND_TIMBERMILL` gives the Life Essence per hour for each worker and the capacity of
+  the Timbermill that replaces the Lumber Camps.
 - `items()` has the Gareth Sigil, with an icon.
 - `calculateHeroGear()` lists empowerment as unmet when the goal has a mastery forging range that
   ends below Level 10, and exports `HERO_GEAR_EMPOWERMENT_REQUIREMENT`. A requirement in

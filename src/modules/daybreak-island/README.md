@@ -7,6 +7,7 @@ Life levels, and the cost, Prosperity, and buff of each decoration.
 
 ```ts
 import {
+  DAYBREAK_ISLAND_TIMBERMILL,
   DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL,
   decoration,
   lumberCamp,
@@ -32,6 +33,9 @@ console.log(mythic.length, lighthouse?.levels?.length);
 
 // The Furnace level at which Daybreak Island unlocks
 console.log(DAYBREAK_ISLAND_UNLOCK_FURNACE_LEVEL); // 19
+
+// The Timbermill that replaces the Lumber Camps after the last tree
+console.log(DAYBREAK_ISLAND_TIMBERMILL); // { lifeEssencePerHourPerWorker: 40, capacity: 2000 }
 ```
 
 ## Query methods
@@ -85,8 +89,19 @@ after about 3 days in real time.
 
 Two identical Lumber Camps clear the starting forest of the island. Each cleared tree can drop Life
 Essence, Hero Shards, or gear. After the forest is clear, a Timbermill takes over Life Essence
-production. It has no levels and no table. The source gives two flat facts, 40 Life Essence per hour
-per worker and a capacity of 2,000. These are not stored as data.
+production. It has no levels and no table, so its two flat facts are in the constant
+`DAYBREAK_ISLAND_TIMBERMILL`: `lifeEssencePerHourPerWorker` is 40 and `capacity` is 2,000.
+
+Three guides state the numbers: the source of this module ("The Timbermill produces 40 Life Essence
+an hour per worker with a capacity of 2,000"), BuffGet, and WoS Guru. The Century Games help center
+confirms that the Timbermill exists and that the Lumber Camps then become normal decorations: "Once
+all trees are cleared, the Chief is rewarded with a Timbermill that produces Life Essence". It gives
+no numbers. The guide says that all workers of the Lumber Camps go to work in the Timbermill, so the
+two camps at level 4 or higher, with 2 workers each, give 4 workers: 160 Life Essence an hour, and
+12.5 hours to fill the 2,000. This follows from the Lumber Camp data and the guide. No source states
+a number of workers for the Timbermill. WoS Guru also writes "~300/hour" for the Timbermill, which
+does not fit 4 workers at 40, and the package does not use it. No source gives levels or upgrades
+for the Timbermill.
 
 The Tree of Life `buff` alternates between "Healing Speed +30%" on odd levels and a growing combat
 or capacity stat on even levels. The pattern breaks at levels 9 and 10, so each `buff` is read from
