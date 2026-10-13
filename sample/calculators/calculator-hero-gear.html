@@ -203,6 +203,7 @@
       if (state.mfGoal > DATA.mfGateRow) unmet.push('Mastery Forging past level 10');
       if (state.emGoal > 0) unmet.push('Empowerment');
     }
+    const needsMastery = state.emGoal > 0 && state.mfGoal > 0 && state.mfGoal < DATA.mfGateRow;
     const series = DATA.stats.find((s) => s.slot === state.slot && s.troopType === state.troop);
     const levelOf = (enh, emp) => (emp > 0 ? DATA.enhancement.length + emp : enh);
     const curLevel = levelOf(state.enCurrent, state.emCurrent), goalLevel = levelOf(state.enGoal, state.emGoal);
@@ -219,7 +220,7 @@
       series, current: a, goal: b, powerCurrent, powerGoal, combat: b.combat - a.combat, health: b.health - a.health, percent: Math.round((b.percent - a.percent) * 100) / 100,
       milestones: series.milestones.filter((m) => { const l = DATA.enhancement.length + m.empowermentLevel; return l > curLevel && l <= goalLevel; }),
     };
-    return { piece, mfRows, mfRes, mfStats, en, em, power: en.power + em.power, total, unmet };
+    return { piece, mfRows, mfRes, mfStats, en, em, power: en.power + em.power, total, unmet, needsMastery };
   }
 
   function resourceTable(map) {
@@ -243,7 +244,9 @@
     [['Essence Stones', r.total.get('essence-stones') || 0], ['Mythic Hero Gear Chests', mythic], ['Mithril', r.total.get('mithril') || 0], ['Enhancement XP Components', r.total.get('enhancement-xp-component') || 0], ['Power gained', r.power], ['Mastery stats up (%)', r.mfStats]].forEach(([label, value]) => {
       const box = el('div', 'stat'); box.append(el('div', 'value', fmt(value)), el('div', 'label', label)); stats.append(box);
     });
-    document.getElementById('unmet').textContent = r.unmet.length ? 'Needs Enhancement at level ' + DATA.enhancement.length + ' first: ' + r.unmet.join(', ') + '. If the piece is already at Enhancement ' + DATA.enhancement.length + ', set Enhancement current and goal to ' + DATA.enhancement.length + '.' : '';
+    const enhancementNote = r.unmet.length ? 'Needs Enhancement at level ' + DATA.enhancement.length + ' first: ' + r.unmet.join(', ') + '. If the piece is already at Enhancement ' + DATA.enhancement.length + ', set Enhancement current and goal to ' + DATA.enhancement.length + '.' : '';
+    const masteryNote = r.needsMastery ? 'Empowerment also needs Mastery Forging at Level 10 first. If the piece is already there, set the Mastery Forging goal to Level 10 or higher, or leave Mastery Forging on None.' : '';
+    document.getElementById('unmet').textContent = [enhancementNote, masteryNote].filter(Boolean).join(' ');
     const ps = document.getElementById('piece-stats'); ps.replaceChildren();
     const pt = el('table'); const ph = pt.createTHead().insertRow();
     ['Stat', 'Current', 'After plan', 'Gain'].forEach((l, i) => ph.append(el('th', i ? 'num' : '', l)));
