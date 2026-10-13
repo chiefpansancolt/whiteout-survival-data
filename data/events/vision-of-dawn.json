@@ -6,6 +6,14 @@
   "resultShape": "milestones",
   "description": "A 3-day event where you hit daily targets to win Hope points and unlock five Hope progress chests. Target progress resets daily.",
   "duration": "3 days",
+  "schedule": {
+    "runs": [
+      {
+        "length": 3,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "The last chest cannot be unlocked unless you make 1 purchase in the game. There is no minimum amount.",
     "Recruitment missions unlock at Generation 3, about 120 days of state age."

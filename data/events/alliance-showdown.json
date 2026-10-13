@@ -6,6 +6,19 @@
   "description": "Six days of tasks, similar to SvS and KOI, against an alliance of similar power in another state. It runs together with the Tundra Trade Route event.",
   "frequency": "Every 4 weeks, after the SvS week. It replaces one of the Alliance Mobilization slots in eligible states.",
   "duration": "6 days. Day 6 runs 12 hours into Sunday.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 4,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "length": 6,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "Top 20 alliance in your state",
     "You must be in the alliance before the event starts. Changing alliance after the start means you cannot take part in your new alliance.",

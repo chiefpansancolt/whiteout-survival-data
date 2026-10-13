@@ -7,6 +7,20 @@
   "description": "An event with an individual leaderboard and an alliance leaderboard. Members complete missions to earn points, and alliance scores are combined to compete against other servers.",
   "frequency": "Once a month. Twice a month until about 13 weeks of state age, after which one of the slots goes to Alliance Showdown.",
   "duration": "Monday to Saturday",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    },
+    "runs": [
+      {
+        "length": 6,
+        "unit": "days",
+        "startWeekday": "monday"
+      }
+    ]
+  },
   "tiers": [
     {
       "name": "Rookie"

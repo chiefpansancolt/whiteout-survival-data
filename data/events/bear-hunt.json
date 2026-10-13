@@ -7,6 +7,19 @@
   "description": "After the kindling embers goal is achieved, alliances build the hunting trap and hunt the raging bear. Members have 30 minutes to defeat it once activated. Rewards improve with the troop damage dealt to the bear.",
   "frequency": "An R4 or R5 can activate it every two days. An alliance can summon the bear every 47.5 hours.",
   "duration": "30 minutes",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 47.5,
+      "unit": "hours"
+    },
+    "runs": [
+      {
+        "length": 30,
+        "unit": "minutes"
+      }
+    ]
+  },
   "requirements": [
     "Alliance level 5 or higher to build the event building",
     "R4 or R5 rank to activate the event",

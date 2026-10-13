@@ -8,6 +8,15 @@
   "description": "A spin event for the hero shards of your current generation. Spin to get shards, with bonus shards at set spin counts.",
   "frequency": "Tuesday to Thursday",
   "duration": "3 days",
+  "schedule": {
+    "runs": [
+      {
+        "length": 3,
+        "unit": "days",
+        "startWeekday": "tuesday"
+      }
+    ]
+  },
   "requirements": [
     "Points to spin come from other events: Hall of Chiefs (stage 2), King of Icefield (stages 2 and 3), and the SvS preparation phase (stages 2 and 3).",
     "With 6 such events a free-to-play player can reach a 5-star hero."

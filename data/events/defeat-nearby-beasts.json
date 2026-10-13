@@ -7,6 +7,19 @@
   "description": "Hunt Beasts or Polar Terrors on the world map to earn points for personal rewards.",
   "frequency": "Two days every two weeks",
   "duration": "2 days",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 2,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "length": 2,
+        "unit": "days"
+      }
+    ]
+  },
   "days": [
     {
       "day": "below-gen-5",

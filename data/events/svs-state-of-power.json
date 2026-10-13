@@ -5,6 +5,13 @@
   "category": "alliance",
   "description": "States with similar or very close power are paired together for cross-state battles that include castle sieges, troop combat, and changes to the presidency.",
   "duration": "About 2 weeks: 2 days of matchmaking, 6 days of preparation, then the battle phase and the field triage phase.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 4,
+      "unit": "weeks"
+    }
+  },
   "phases": [
     {
       "name": "Matchmaking",

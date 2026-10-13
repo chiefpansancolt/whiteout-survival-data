@@ -7,6 +7,15 @@
   "description": "Do your Intel missions to get Crystallite Cores and trade them for rewards.",
   "frequency": "Monday and Tuesday of the SvS preparation phase",
   "duration": "3 days. You get cores on 2 days, and the last day is only for trading.",
+  "schedule": {
+    "runs": [
+      {
+        "length": 3,
+        "unit": "days",
+        "startWeekday": "monday"
+      }
+    ]
+  },
   "missionPointsLabel": "Crystallite Cores",
   "missions": [
     {

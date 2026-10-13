@@ -7,6 +7,19 @@
   "description": "The season of love in the Tundra, with three sub events: Petals of Desire, the Silverfrost Shop, and Bloom Battle.",
   "frequency": "Yearly, around February",
   "duration": "02/10/2026 00:00 UTC to 02/14/2026 23:59 UTC (5 days)",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 12,
+      "unit": "months"
+    },
+    "runs": [
+      {
+        "length": 5,
+        "unit": "days"
+      }
+    ]
+  },
   "phases": [
     {
       "name": "Petals of Desire",

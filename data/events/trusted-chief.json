@@ -352,5 +352,13 @@
       ]
     }
   ],
-  "duration": "2 days"
+  "duration": "2 days",
+  "schedule": {
+    "runs": [
+      {
+        "length": 2,
+        "unit": "days"
+      }
+    ]
+  }
 }

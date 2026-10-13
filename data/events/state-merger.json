@@ -7,6 +7,14 @@
   "description": "When the countdown ends, all the states in a group merge into the state with the highest state code. Chiefs get Pioneering Points from missions to unlock chests, and alliances complete new monument missions.",
   "frequency": "Irregular",
   "duration": "5 days of Pioneering Praises missions",
+  "schedule": {
+    "runs": [
+      {
+        "length": 5,
+        "unit": "days"
+      }
+    ]
+  },
   "phases": [
     {
       "name": "Data adjustments",

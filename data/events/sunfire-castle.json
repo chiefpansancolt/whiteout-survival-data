@@ -7,6 +7,19 @@
   "description": "Sunfire Castle has withstood generations of disaster and war and is the ultimate prize of the state. Whoever controls it presides over the frozen land. Alliances battle for control of the castle.",
   "frequency": "Once every two weeks",
   "duration": "5 hours",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 2,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "length": 5,
+        "unit": "hours"
+      }
+    ]
+  },
   "requirements": [
     "Furnace level 16 or higher to apply for a minister position",
     "Cities in the Alert Zone are teleported at random 2 hours before the event"

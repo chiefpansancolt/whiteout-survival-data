@@ -7,6 +7,21 @@
   "description": "Also called KE. Points come only from killing enemy troops or losing your own troops, so it is one of the deadliest events.",
   "frequency": "Once a month, in the week of the normal Sunfire Castle battle.",
   "duration": "Friday 00:00 UTC to Sunday 00:00 UTC (2 days).",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    },
+    "runs": [
+      {
+        "length": 2,
+        "unit": "days",
+        "startWeekday": "friday",
+        "startTimeUtc": "00:00"
+      }
+    ]
+  },
   "phases": [
     {
       "name": "Start",

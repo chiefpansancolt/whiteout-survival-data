@@ -6,6 +6,20 @@
   "resultShape": "tier",
   "description": "Three alliances take part in cross-state matchmaking and fight a three-way battle in Lost Canyon. Players occupy buildings and fight for neutral structures to earn points, and the alliance with the most points wins.",
   "duration": "The battle lasts 60 minutes",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    },
+    "runs": [
+      {
+        "label": "Battle",
+        "length": 60,
+        "unit": "minutes"
+      }
+    ]
+  },
   "requirements": [
     "Alliance in the top 20 on the power leaderboard",
     "Alliance level 6 and 40 weekly-active members to unlock a second legion",

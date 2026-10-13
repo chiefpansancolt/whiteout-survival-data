@@ -7,6 +7,14 @@
   "description": "An event where chiefs move to another state. It happens irregularly, usually every 4 or 6 weeks. The game shows details 3 to 4 days before.",
   "frequency": "Irregular, usually every 4 or 6 weeks",
   "duration": "7 days in 3 phases",
+  "schedule": {
+    "runs": [
+      {
+        "length": 7,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "States become eligible for the transfer event when they unlock FC5.",
     "Personal: you must be under the Power Cap, have the required Furnace level (it depends on state age, up to 30), not be in combat, not be in an alliance, not be a Transfer Manager or Tyrant, have waited more than 25 days since your last transfer (1 transfer per event), and have fewer than 4 characters in the target state.",

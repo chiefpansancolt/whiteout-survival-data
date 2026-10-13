@@ -1671,3 +1671,135 @@ describe('eventRankingTables', () => {
     expect(eventRankingTables(event)[0].rankings).toBe(event.personalRankings![0].rankings);
   });
 });
+
+describe('event schedules', () => {
+  const withSchedule = () =>
+    events()
+      .get()
+      .filter((e) => e.schedule);
+  const WEEKDAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+
+  it('gives 50 of the 65 events a schedule', () => {
+    expect(withSchedule()).toHaveLength(50);
+  });
+
+  it('leaves the schedule out of the events that no source gives a usable one for', () => {
+    expect(
+      events()
+        .get()
+        .filter((e) => !e.schedule)
+        .map((e) => e.id)
+        .sort(),
+    ).toEqual([
+      'deadshot',
+      'develop-new-tech',
+      'develop-new-tech-2',
+      'dreamscape-memory',
+      'frostdragon-tyrant',
+      'frosty-fortune-skin-event',
+      'home-beyond',
+      'return-to-tundra',
+      'silver-shell-events',
+      'stand-of-arms',
+      'the-labyrinth',
+      'trial-event',
+      'tundra-album-2',
+      'tundra-games',
+      'tundra-star',
+    ]);
+  });
+
+  it('has a repeat rule or a run on every schedule, in a valid shape', () => {
+    for (const { id, schedule } of withSchedule()) {
+      expect(schedule!.repeat !== undefined || schedule!.runs !== undefined).toBe(true);
+      const repeat = schedule!.repeat;
+      if (repeat?.kind === 'every') {
+        expect(repeat.every).toBeGreaterThan(0);
+        expect(['hours', 'days', 'weeks', 'months']).toContain(repeat.unit);
+      }
+      if (repeat?.kind === 'weekly') expect(repeat.weekdays!.length).toBeGreaterThan(0);
+      for (const run of schedule!.runs ?? []) {
+        expect([id, run.length > 0]).toEqual([id, true]);
+        expect(['minutes', 'hours', 'days']).toContain(run.unit);
+        if (run.startWeekday) expect(WEEKDAYS).toContain(run.startWeekday);
+        if (run.startTimeUtc) expect(run.startTimeUtc).toMatch(/^([01]\d|2[0-3]):[0-5]\d$/);
+      }
+    }
+  });
+
+  it('matches the length of a run to a simple duration text of the wiki', () => {
+    const simple = withSchedule().filter((e) => /^\d+ days?\.?$/.test(e.duration ?? ''));
+    expect(simple.length).toBeGreaterThan(10);
+    for (const event of simple) {
+      const days = Number(event.duration!.match(/^\d+/)![0]);
+      expect(event.schedule!.runs).toEqual([
+        expect.objectContaining({ length: days, unit: 'days' }),
+      ]);
+    }
+  });
+
+  it('matches the repeat rule to a frequency text that says every two weeks', () => {
+    const twoWeeks = ['hall-of-chief', 'hall-of-heroes', 'heros-mission', 'sunfire-castle'];
+    for (const id of twoWeeks) {
+      expect(events().find(id)!.frequency).toMatch(/two weeks|2 weeks/i);
+      expect(events().find(id)!.schedule!.repeat).toEqual({
+        kind: 'every',
+        every: 2,
+        unit: 'weeks',
+      });
+    }
+  });
+
+  it('gives Hall of Chief two runs, one for each season', () => {
+    expect(events().find('hall-of-chief')!.schedule).toEqual({
+      repeat: { kind: 'every', every: 2, unit: 'weeks' },
+      runs: [
+        { label: 'Season 1', length: 6, unit: 'days' },
+        { label: 'Season 2', length: 7, unit: 'days' },
+      ],
+    });
+  });
+
+  it('gives Frostfire Mine a run of 30 minutes at each of its seven time slots', () => {
+    const { repeat, runs } = events().find('frostfire-mine')!.schedule!;
+    expect(repeat).toEqual({ kind: 'every', every: 1, unit: 'days' });
+    expect(runs!.map((r) => r.startTimeUtc)).toEqual([
+      '02:00',
+      '05:00',
+      '11:00',
+      '14:00',
+      '16:00',
+      '18:00',
+      '21:00',
+    ]);
+    expect(runs!.every((r) => r.length === 30 && r.unit === 'minutes')).toBe(true);
+  });
+
+  it('gives Bear Hunt a repeat of 47.5 hours and a run of 30 minutes', () => {
+    expect(events().find('bear-hunt')!.schedule).toEqual({
+      repeat: { kind: 'every', every: 47.5, unit: 'hours' },
+      runs: [{ length: 30, unit: 'minutes' }],
+    });
+  });
+
+  it('gives Alliance Championship a weekly run from Monday 00:00 UTC for seven days', () => {
+    expect(events().find('alliance-championship')!.schedule).toEqual({
+      repeat: { kind: 'every', every: 1, unit: 'weeks' },
+      runs: [{ length: 7, unit: 'days', startWeekday: 'monday', startTimeUtc: '00:00' }],
+    });
+  });
+
+  it('gives Icefire Warhymn League a Sunday preview and a competition from Monday', () => {
+    expect(events().find('icefire-warhymn-league')!.schedule!.runs).toEqual([
+      { label: 'Preview', length: 24, unit: 'hours', startWeekday: 'sunday' },
+      { label: 'Competition', length: 6, unit: 'days', startWeekday: 'monday' },
+    ]);
+  });
+
+  it('marks a single run event as not repeating when the wiki says once only', () => {
+    expect(events().find('beast-whisperer')!.schedule).toEqual({
+      repeat: { kind: 'none' },
+      runs: [{ length: 7, unit: 'days' }],
+    });
+  });
+});

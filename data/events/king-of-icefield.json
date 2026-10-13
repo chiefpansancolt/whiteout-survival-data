@@ -6,6 +6,20 @@
   "description": "Your state competes with other states. Players complete daily challenges to earn medals that unlock hero fragments, island scrolls, and other rewards.",
   "frequency": "Once a month",
   "duration": "7 days, Monday to Sunday",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    },
+    "runs": [
+      {
+        "length": 7,
+        "unit": "days",
+        "startWeekday": "monday"
+      }
+    ]
+  },
   "requirements": [
     "Complete the daily points requirement each day to receive the maximum reward",
     "Crystal dust needs the War Academy unlocked",

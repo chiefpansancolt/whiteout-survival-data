@@ -158,6 +158,33 @@ export interface GameEventRankingTableView {
   rankings: GameEventRanking[];
 }
 
+export type EventWeekday =
+  'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday' | 'saturday' | 'sunday';
+
+export type EventRepeatUnit = 'hours' | 'days' | 'weeks' | 'months';
+
+export interface EventRepeat {
+  kind: 'none' | 'every' | 'weekly';
+  every?: number;
+  unit?: EventRepeatUnit;
+  weekdays?: EventWeekday[];
+}
+
+export type EventRunUnit = 'minutes' | 'hours' | 'days';
+
+export interface EventRun {
+  label?: string;
+  length: number;
+  unit: EventRunUnit;
+  startWeekday?: EventWeekday;
+  startTimeUtc?: string;
+}
+
+export interface EventSchedule {
+  repeat?: EventRepeat;
+  runs?: EventRun[];
+}
+
 export interface GameEvent {
   id: string;
   name: string;
@@ -170,6 +197,7 @@ export interface GameEvent {
   description: string;
   frequency?: string;
   duration?: string;
+  schedule?: EventSchedule;
   requirements?: string[];
   /** Ordered from lowest to highest. */
   tiers?: GameEventTier[];

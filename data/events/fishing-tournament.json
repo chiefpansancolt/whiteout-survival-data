@@ -7,6 +7,19 @@
   "description": "Players fish in seasonal waters (Winter, Spring, Summer, Autumn) to catch fish, divers, and crates.",
   "frequency": "Once a month.",
   "duration": "3 days.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    },
+    "runs": [
+      {
+        "length": 3,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "Drag a finger across the screen to fish. A new attempt comes every 3 hours.",
     "Max the equipment to Level 10 before using the Sunken Treasure Hunt. Each attempt costs 1,500 points."

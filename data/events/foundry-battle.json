@@ -5,6 +5,19 @@
   "category": "alliance",
   "resultShape": "tier",
   "description": "The Solaris Dynasty's Foundry still stands, and all Chiefs' eyes have turned to reactivating this military asset.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 2,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "length": 60,
+        "unit": "minutes"
+      }
+    ]
+  },
   "requirements": [
     "The alliance ranks in the top 20 on the Alliance Power Leaderboard before the event begins",
     "Members join the alliance before registration ends",

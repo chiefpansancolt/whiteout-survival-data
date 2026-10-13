@@ -6,6 +6,13 @@
   "resultShape": "participation",
   "description": "A monthly mini game. Use fuel to clear snow, find survivors and objects, defeat beasts, and collect coal.",
   "frequency": "Monthly",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    }
+  },
   "requirements": [
     "Fuel regenerates at 12 points every 5 minutes during the event. Packs give more fuel."
   ],

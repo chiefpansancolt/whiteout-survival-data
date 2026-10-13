@@ -7,6 +7,14 @@
   "description": "Collect Cryptid Horns to hunt Cryptids and earn Gina shards.",
   "frequency": "Until season 4",
   "duration": "3 days",
+  "schedule": {
+    "runs": [
+      {
+        "length": 3,
+        "unit": "days"
+      }
+    ]
+  },
   "phases": [
     {
       "name": "Find a Cryptid",

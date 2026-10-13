@@ -5,6 +5,19 @@
   "category": "solo",
   "resultShape": "ranking",
   "description": "A ranking event with two versions, Troops and Heroes. Players earn points through different activities, reach target point levels for rewards, and claim ranking rewards.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 2,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "length": 2,
+        "unit": "days"
+      }
+    ]
+  },
   "personalRankings": [
     {
       "basedOn": "Personal ranking",

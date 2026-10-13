@@ -7,6 +7,19 @@
   "description": "Exchange items you do not need for Trade Vouchers, or spend Trade Vouchers on other items at the Trading Station.",
   "frequency": "Monthly.",
   "duration": "2 days.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    },
+    "runs": [
+      {
+        "length": 2,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "Gen-2 hero widgets. Open the crate first, then select the specific hero widget.",
     "Universal Shards and Expedition or Exploration Manuals for Rare and Epic heroes.",

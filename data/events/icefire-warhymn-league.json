@@ -7,6 +7,27 @@
   "description": "A week-long solo tournament in a half-ice, half-fire arena. Chiefs battle through the Qualifier, Elimination, and Pinnacle phases to be crowned the season champion. No real troops are lost in battles.",
   "frequency": "One season per week, Sunday to Saturday",
   "duration": "Competition runs Monday to Saturday, after a 24-hour Preview Phase on Sunday",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "label": "Preview",
+        "length": 24,
+        "unit": "hours",
+        "startWeekday": "sunday"
+      },
+      {
+        "label": "Competition",
+        "length": 6,
+        "unit": "days",
+        "startWeekday": "monday"
+      }
+    ]
+  },
   "requirements": [
     "Furnace level 30 or higher",
     "The event begins in a state two weeks after Generation 4 heroes unlock there"

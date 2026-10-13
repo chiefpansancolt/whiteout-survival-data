@@ -7,6 +7,14 @@
   "description": "A free-for-all where 10 chiefs fight in a match to earn points from buildings, supply crates, and airdropped items.",
   "frequency": "Recurring, once the state has reached the required age",
   "duration": "2 days",
+  "schedule": {
+    "runs": [
+      {
+        "length": 2,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "Furnace Lv. 25 or higher.",
     "Not available before Hero Generation 3.",

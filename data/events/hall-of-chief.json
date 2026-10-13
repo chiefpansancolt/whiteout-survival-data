@@ -6,6 +6,25 @@
   "description": "The first event where you compete against other chiefs of your state. You score points each day with set items to earn Gems and ranking rewards.",
   "frequency": "Every two weeks",
   "duration": "Season 1 lasts 6 days. Season 2 lasts 7 days.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 2,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "label": "Season 1",
+        "length": 6,
+        "unit": "days"
+      },
+      {
+        "label": "Season 2",
+        "length": 7,
+        "unit": "days"
+      }
+    ]
+  },
   "days": [
     {
       "day": "s1-1",

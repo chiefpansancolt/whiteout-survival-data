@@ -6,6 +6,14 @@
   "resultShape": "ranking",
   "description": "Earn points by using construction speedups. General speedups count too. Top scorers win up to 50,000 Gems.",
   "duration": "2 days",
+  "schedule": {
+    "runs": [
+      {
+        "length": 2,
+        "unit": "days"
+      }
+    ]
+  },
   "days": [
     {
       "day": "wiki-text",

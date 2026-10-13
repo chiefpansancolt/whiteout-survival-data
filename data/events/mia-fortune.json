@@ -8,6 +8,19 @@
   "description": "Pick a wish reward and find it among 10 hidden orbs, using Fortune Tokens.",
   "frequency": "Once a month",
   "duration": "2 days",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    },
+    "runs": [
+      {
+        "length": 2,
+        "unit": "days"
+      }
+    ]
+  },
   "phases": [
     {
       "name": "Wish",

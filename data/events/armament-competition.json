@@ -5,6 +5,13 @@
   "category": "solo",
   "resultShape": "ranking",
   "description": "Unlocks when you start Fire Crystal buildings, replacing City Development. It has two competition types, one for chief gear and one for chief charms.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 2,
+      "unit": "weeks"
+    }
+  },
   "personalRankings": [
     {
       "basedOn": "Personal ranking",

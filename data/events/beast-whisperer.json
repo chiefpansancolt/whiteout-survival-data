@@ -7,6 +7,17 @@
   "description": "A one-time 7-day event that starts when you unlock your first pet. Complete daily missions to earn Beast Whisperer coins, pet items, and a chest at 70 coins.",
   "frequency": "Once only",
   "duration": "7 days",
+  "schedule": {
+    "repeat": {
+      "kind": "none"
+    },
+    "runs": [
+      {
+        "length": 7,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "State age of 55 days.",
     "Furnace Level 18.",

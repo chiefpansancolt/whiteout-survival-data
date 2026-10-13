@@ -6,6 +6,14 @@
   "resultShape": "ranking",
   "description": "An irregular event that lasts for 5 days.",
   "duration": "5 days.",
+  "schedule": {
+    "runs": [
+      {
+        "length": 5,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "Use pickaxes to crush the ice and search a chamber.",
     "Choose one Ultimate Treasure for each floor before you search. You can change it until you find it.",

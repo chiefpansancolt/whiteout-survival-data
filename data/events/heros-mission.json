@@ -8,6 +8,19 @@
   "description": "Starts in generation 4 and replaces Gina's Revenge. Players defeat Reapers on the world map to get Scattered Parts and shards of the featured Mythic Heroes. Players can also join rallies started by alliance members.",
   "frequency": "Every 2 weeks.",
   "duration": "3 days.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 2,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "length": 3,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": ["Generation 4 or later.", "Defeat Reapers on the world map."],
   "phases": [
     {

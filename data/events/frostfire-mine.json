@@ -7,6 +7,50 @@
   "description": "Players gather Orichalcum by occupying veins in a 30-minute battle with unlimited troops that cannot be killed.",
   "frequency": "7 time slots: 02, 05, 11, 14, 16, 18, and 21 UTC",
   "duration": "30 minutes",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "days"
+    },
+    "runs": [
+      {
+        "length": 30,
+        "unit": "minutes",
+        "startTimeUtc": "02:00"
+      },
+      {
+        "length": 30,
+        "unit": "minutes",
+        "startTimeUtc": "05:00"
+      },
+      {
+        "length": 30,
+        "unit": "minutes",
+        "startTimeUtc": "11:00"
+      },
+      {
+        "length": 30,
+        "unit": "minutes",
+        "startTimeUtc": "14:00"
+      },
+      {
+        "length": 30,
+        "unit": "minutes",
+        "startTimeUtc": "16:00"
+      },
+      {
+        "length": 30,
+        "unit": "minutes",
+        "startTimeUtc": "18:00"
+      },
+      {
+        "length": 30,
+        "unit": "minutes",
+        "startTimeUtc": "21:00"
+      }
+    ]
+  },
   "requirements": ["Furnace level 16 or higher", "Register and take part on the same day"],
   "tiers": [
     {

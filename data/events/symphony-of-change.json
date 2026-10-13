@@ -7,6 +7,14 @@
   "description": "Complete missions to complete a puzzle board. Each row and column gives a chest, and the full board gives the grand prize.",
   "frequency": "About once for each Fire Crystal generation",
   "duration": "7 days",
+  "schedule": {
+    "runs": [
+      {
+        "length": 7,
+        "unit": "days"
+      }
+    ]
+  },
   "missions": [
     {
       "group": "Puzzle missions",

@@ -6,6 +6,14 @@
   "resultShape": "tier",
   "description": "The Tundra Arms League (TAL) is the Foundry event in tournament form. Alliances register legions of 50 players (30 joiners, 20 substitutes) in an elimination tournament. Legion members can be anyone on the server.",
   "duration": "18 days from start to finish",
+  "schedule": {
+    "runs": [
+      {
+        "length": 18,
+        "unit": "days"
+      }
+    ]
+  },
   "requirements": [
     "An R4 or R5 selects the top three preferred battle times: 2, 7, 12, 14, or 19 UTC",
     "Players must be in their battle alliance at the time of battle",

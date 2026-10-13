@@ -5,6 +5,13 @@
   "category": "alliance",
   "resultShape": "tier",
   "description": "Phaethon Mercenaries have seized a nearby mining region and enslaved the locals. Gina's Eagles accepted a contract to remove them, but she worries they are overmatched. The event has Personal Challenges and Alliance Challenges.",
+  "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 1,
+      "unit": "months"
+    }
+  },
   "requirements": [
     "Select a difficulty tier (Champions, Epic, Legends, or Fearless) and a level (Easy, Normal, Hard, Nightmare, or Insane)",
     "Complete the event 20 times to unlock all difficulty levels",

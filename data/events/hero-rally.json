@@ -5,6 +5,14 @@
   "category": "solo",
   "resultShape": "participation",
   "description": "An event with level rewards. You can buy a pack for more items and buy levels for 2,160 gems each.",
+  "schedule": {
+    "runs": [
+      {
+        "length": 14,
+        "unit": "days"
+      }
+    ]
+  },
   "rewards": [
     {
       "name": "Level rewards",
