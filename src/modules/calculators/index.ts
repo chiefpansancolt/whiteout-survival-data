@@ -1,4 +1,5 @@
 export * from './alliance-showdown';
+export * from './beasts';
 export * from './chief-charm';
 export * from './buildings';
 export * from './chief-gear';

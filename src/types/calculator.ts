@@ -578,3 +578,80 @@ export interface HeroUpgradeCalculation {
   /** Checked only when the goal has `stars`. */
   unmetRequirements: UnmetHeroSkillRequirement[];
 }
+
+export interface BeastRun {
+  /** The level of the beasts, from 1 to 30. */
+  level: number;
+  /** The number of beast hunts at that level. */
+  count: number;
+}
+
+export interface BeastCalculatorInput {
+  /** Defaults to 0. */
+  stamina?: number;
+  /** Stamina cans, 10 stamina each. Defaults to 0. */
+  staminaCans?: number;
+  /** The level of the beasts that the stamina left after the planned runs hunts, from 1 to 30. */
+  beastLevel: number;
+  /** Beast hunts that you plan, such as the beasts of Intel missions. Defaults to none. */
+  beastRuns?: BeastRun[];
+  /** Polar Terror hunts that you plan. Defaults to 0. */
+  polarTerrors?: number;
+  /** The level of Gina's Endurance Training skill, from 1 to 5. Leave out when Gina is not used. */
+  ginaSkillLevel?: number;
+}
+
+export interface BeastHunts {
+  count: number;
+  staminaLeft: number;
+}
+
+export interface BeastPlannedHunts {
+  /** The beast hunts of all `beastRuns`. */
+  beasts: number;
+  polarTerrors: number;
+  staminaNeeded: number;
+  /** 0 when the stamina pays for the planned hunts. */
+  staminaShort: number;
+  /** 0 when the stamina is short. */
+  staminaLeft: number;
+}
+
+export interface BeastEventRun {
+  level: number;
+  count: number;
+  pointsPerBeast: number;
+  points: number;
+}
+
+export interface BeastEventPoints {
+  eventId: string;
+  name: string;
+  /** For the beast level of the input. */
+  pointsPerBeast: number;
+  pointsPerPolarTerror: number;
+  /** The points of each beast run that you plan, at the level of the run. */
+  beastRuns: BeastEventRun[];
+  /** The points of the planned beast runs and Polar Terrors. */
+  plannedPoints: number;
+  /** The planned points and the points of hunting beasts with the stamina left. */
+  beastPoints: number;
+  /** The planned points and the points of hunting Polar Terrors with the stamina left. */
+  polarTerrorPoints: number;
+}
+
+export interface BeastCalculation {
+  totalStamina: number;
+  /** 0 when Gina is not used. */
+  ginaReductionPercent: number;
+  /** The stamina of one beast after Gina's reduction, rounded to a whole number. */
+  beastStaminaCost: number;
+  /** The stamina of one Polar Terror after Gina's reduction, rounded to a whole number. */
+  polarTerrorStaminaCost: number;
+  planned: BeastPlannedHunts;
+  /** The beasts that the stamina left after the planned hunts pays for. */
+  beasts: BeastHunts;
+  /** The Polar Terrors that the stamina left after the planned hunts pays for. */
+  polarTerrors: BeastHunts;
+  events: BeastEventPoints[];
+}
