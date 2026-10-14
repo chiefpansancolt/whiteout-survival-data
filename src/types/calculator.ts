@@ -696,6 +696,17 @@ export interface BuffExpertSkills {
   skills: Record<string, number>;
 }
 
+export interface BuffExpertAffinity {
+  /** From 0 to 100. */
+  level: number;
+  /**
+   * True when the expert advanced at its level. It matters at levels 10, 20, up to 100, where the
+   * expert must advance to get the bonus of the level. Until then the bonus of the level before
+   * counts. Defaults to false.
+   */
+  advanced?: boolean;
+}
+
 export interface BuffDecoration {
   id: string;
   /** The level of the decoration. */
@@ -727,6 +738,11 @@ export interface BuffProfile {
   marchQueuePack?: boolean;
   heroSkills?: BuffHeroSkills[];
   experts?: BuffExpertSkills[];
+  /**
+   * The affinity of each expert, by expert id. The base bonus of the expert counts, such as the
+   * Troops Lethality and Troops Health of Gareth. A level of 0 adds nothing.
+   */
+  expertAffinity?: Record<string, BuffExpertAffinity>;
   /** Research level by node id. A level of 0 adds nothing. */
   researchLevels?: Record<string, number>;
   /** Alliance Tech level by node id. A level of 0 adds nothing. */

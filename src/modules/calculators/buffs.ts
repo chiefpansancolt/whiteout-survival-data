@@ -38,6 +38,8 @@ import {
 
 export const BUFF_VIP_MAX_LEVEL = 12;
 export const BUFF_TREE_OF_LIFE_MAX_LEVEL = 10;
+export const BUFF_EXPERT_MAX_AFFINITY_LEVEL = 100;
+export const BUFF_EXPERT_ADVANCEMENT_INTERVAL = 10;
 export const BUFF_CHARMS_PER_GEAR_SLOT = 3;
 export const BUFF_STARTING_MARCH_QUEUE = 1;
 export const BUFF_MARCH_QUEUE_PACK = 1;
@@ -498,6 +500,21 @@ function expertEntries(profile: BuffProfile): BuffEntry[] {
   });
 }
 
+function expertAffinityEntries(profile: BuffProfile): BuffEntry[] {
+  return Object.entries(profile.expertAffinity ?? {}).flatMap(([expertId, affinity]) => {
+    const expert = found('expert', expertId, experts().find(expertId));
+    const { level, advanced = false } = affinity;
+    checkLevel(`The affinity level of ${expertId}`, level, BUFF_EXPERT_MAX_AFFINITY_LEVEL);
+    if (level === 0) return [];
+    const awaitsAdvancement = level % BUFF_EXPERT_ADVANCEMENT_INTERVAL === 0 && !advanced;
+    const { statBonus } = expert.affinityLevels[(awaitsAdvancement ? level - 1 : level) - 1];
+    const label = `Expert: ${expert.name}, Affinity Lv ${level}${awaitsAdvancement ? ', not advanced' : ''}`;
+    return expert.baseBonuses.map((bonus) =>
+      entry('expert', expertId, label, bonus.statKey, bonus.unit as BuffUnit, statBonus),
+    );
+  });
+}
+
 function researchEntries(profile: BuffProfile): BuffEntry[] {
   return Object.entries(profile.researchLevels ?? {}).flatMap(([id, level]) => {
     const node = found('research node', id, research().find(id));
@@ -879,6 +896,7 @@ export function calculateBuffs(profile: BuffProfile = {}): BuffCalculation {
     ...accountEntries(profile),
     ...heroEntries(profile),
     ...expertEntries(profile),
+    ...expertAffinityEntries(profile),
     ...researchEntries(profile),
     ...allianceTechEntries(profile),
     ...allianceFacilityEntries(profile),

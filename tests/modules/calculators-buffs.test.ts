@@ -5,6 +5,8 @@ import { buildings } from '@/modules/buildings';
 import {
   BUFF_CHARMS_PER_GEAR_SLOT,
   BUFF_ENTERTAINMENT_BUILDINGS,
+  BUFF_EXPERT_ADVANCEMENT_INTERVAL,
+  BUFF_EXPERT_MAX_AFFINITY_LEVEL,
   BUFF_EXPERT_SKILLS,
   BUFF_GROUPS,
   BUFF_HERO_ONLY_SKILLS,
@@ -312,6 +314,124 @@ describe('calculateBuffs Alliance Prestige Buildings', () => {
     expect(() => calculateBuffs({ alliancePrestige: { guardian: 'Gold' } })).toThrow(
       'The tier of the Alliance Prestige Building guardian must be one of Tier 1, Tier 2, Tier 3, Tier 4',
     );
+  });
+});
+
+describe('calculateBuffs expert affinity', () => {
+  const affinity = (expertId: string, level: number, advanced?: boolean) =>
+    calculateBuffs({ expertAffinity: { [expertId]: { level, advanced } } });
+
+  it('gives the base bonus of every expert at levels that are not a multiple of 10', () => {
+    expect(BUFF_EXPERT_MAX_AFFINITY_LEVEL).toBe(100);
+    expect(BUFF_EXPERT_ADVANCEMENT_INTERVAL).toBe(10);
+    for (const expert of experts().get()) {
+      for (const level of [1, 2, 9, 11, 55, 99]) {
+        const result = affinity(expert.id, level);
+        const amount = expert.affinityLevels[level - 1].statBonus;
+        expect(result.categories.map((c) => c.statKey).sort()).toEqual(
+          expert.baseBonuses.map((b) => b.statKey).sort(),
+        );
+        for (const bonus of expert.baseBonuses) {
+          expect(category(result, bonus.statKey)).toMatchObject({
+            total: amount,
+            sources: [
+              {
+                type: 'expert',
+                id: expert.id,
+                label: `Expert: ${expert.name}, Affinity Lv ${level}`,
+                amount,
+              },
+            ],
+          });
+        }
+      }
+    }
+  });
+
+  it('gives the bonus of the level before until the expert advances at a multiple of 10', () => {
+    for (const expert of experts().get()) {
+      for (let level = 10; level <= 100; level += 10) {
+        const rows = expert.affinityLevels;
+        const before = affinity(expert.id, level);
+        const bonus = expert.baseBonuses[0];
+        expect(category(before, bonus.statKey)).toMatchObject({
+          total: rows[level - 2].statBonus,
+          sources: [{ label: `Expert: ${expert.name}, Affinity Lv ${level}, not advanced` }],
+        });
+        expect(category(affinity(expert.id, level, false), bonus.statKey)!.total).toBe(
+          rows[level - 2].statBonus,
+        );
+        const after = affinity(expert.id, level, true);
+        expect(category(after, bonus.statKey)).toMatchObject({
+          total: rows[level - 1].statBonus,
+          sources: [{ label: `Expert: ${expert.name}, Affinity Lv ${level}` }],
+        });
+        expect(rows[level - 1].statBonus).toBeGreaterThan(rows[level - 2].statBonus);
+      }
+    }
+  });
+
+  it.each([
+    ['gareth', 100, false, 28.65],
+    ['gareth', 100, true, 30],
+    ['gareth', 60, false, 17.85],
+    ['gareth', 60, true, 19.2],
+    ['gareth', 61, false, 19.35],
+    ['gareth', 1, false, 3.15],
+    ['romulus', 50, true, 11],
+    ['romulus', 50, false, 10.1],
+  ])(
+    'gives %s at level %d, advanced %s, the Troops Lethality and Health %d',
+    (id, level, advanced, amount) => {
+      const result = affinity(id, level, advanced);
+      expect(category(result, 'troops-lethality')!.total).toBe(amount);
+      expect(category(result, 'troops-health')!.total).toBe(amount);
+    },
+  );
+
+  it('ignores the advanced flag at a level that is not a multiple of 10', () => {
+    expect(category(affinity('gareth', 61, true), 'troops-health')!.total).toBe(19.35);
+    expect(category(affinity('gareth', 61, true), 'troops-health')!.sources[0].label).toBe(
+      'Expert: Gareth, Affinity Lv 61',
+    );
+  });
+
+  it('adds the experts together, and a level of 0 adds nothing', () => {
+    const result = calculateBuffs({
+      expertAffinity: {
+        gareth: { level: 100, advanced: true },
+        romulus: { level: 50, advanced: true },
+        agnes: { level: 0 },
+      },
+    });
+    expect(category(result, 'troops-lethality')!.total).toBe(41);
+    expect(category(result, 'troops-health')!.sources).toHaveLength(2);
+    expect(category(result, 'troops-defense')).toBeUndefined();
+    const full = { level: 100, advanced: true };
+    const attack = calculateBuffs({
+      expertAffinity: { holger: full, cyrille: full, baldur: full },
+    });
+    expect(category(attack, 'troops-attack')!.total).toBe(40);
+    expect(category(attack, 'troops-defense')!.total).toBe(25);
+  });
+
+  it('counts next to the skills of the same expert', () => {
+    const result = calculateBuffs({
+      experts: [{ expertId: 'gareth', skills: { 'Rallying Cry': 3 } }],
+      expertAffinity: { gareth: { level: 100, advanced: true } },
+    });
+    expect(category(result, 'healing-speed')!.sources.map((s) => s.type)).toEqual(['expert']);
+    expect(category(result, 'troops-health')!.total).toBe(30);
+  });
+
+  it('throws for an unknown expert and a bad level', () => {
+    expect(() => calculateBuffs({ expertAffinity: { nobody: { level: 1 } } })).toThrow(
+      new Error('Unknown expert: nobody'),
+    );
+    expect(() => affinity('gareth', 101)).toThrow(
+      new RangeError('The affinity level of gareth must be a whole number from 0 to 100'),
+    );
+    expect(() => affinity('gareth', 1.5)).toThrow(RangeError);
   });
 });
 

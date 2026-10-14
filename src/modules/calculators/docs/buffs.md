@@ -43,27 +43,28 @@ Every section of the profile is optional. A section that is left out adds nothin
 is the March Queue of the account: every profile has the starting March Queue of 1, so an empty
 profile gives one category, `march-queue`.
 
-| Field                | Type                                     | Meaning                                                                                                                                        |
-| -------------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `heroSkills`         | `{ heroId, skills }[]`                   | The level of each skill of a hero, by skill name. Exploration, Expedition, and Talent skills count.                                            |
-| `experts`            | `{ expertId, skills }[]`                 | The level of each skill or talent of an expert, by name, such as `{ expertId: 'gareth', skills: { 'Rallying Cry': 3 } }`.                      |
-| `researchLevels`     | `Record<nodeId, level>`                  | The level of each research node.                                                                                                               |
-| `allianceTech`       | `Record<nodeId, level>`                  | The level of each Alliance Tech node.                                                                                                          |
-| `allianceFacilities` | `Record<facilityId, level[]>`            | The levels of each Alliance Facility that your alliance holds, such as `{ construction: [1, 3] }`.                                             |
-| `alliancePrestige`   | `Record<buildingId, tierName>`           | The tier of each Alliance Prestige Building that your alliance holds, such as `{ 'championship-statue': 'Gold' }`. One tier for each building. |
-| `vipLevel`           | `number`                                 | VIP level, 0 to 12.                                                                                                                            |
-| `marchQueuePack`     | `boolean`                                | `true` when the March Queue pack was bought. It adds 1 March Queue.                                                                            |
-| `buildingLevels`     | `Record<buildingId, levelLabel>`         | The level label of a building, such as `"30"` or `"FC 10"`.                                                                                    |
-| `skins`              | `string[]`                               | Ids of the skins that you own.                                                                                                                 |
-| `tundraAlbums`       | `string[]`                               | Ids of the Tundra Albums that are complete, such as `['crystalline-mysteries']`. The buff of an album counts when it is complete.              |
-| `decorations`        | `{ id, level }[]`                        | Island decorations. List a decoration once for each copy that you have placed.                                                                 |
-| `treeOfLifeLevel`    | `number`                                 | Level of the Tree of Life, 0 to 10. It adds the buffs of all levels up to it.                                                                  |
-| `castleAppointment`  | `string`                                 | The id of the castle position that you hold.                                                                                                   |
-| `chiefOrders`        | `string[]`                               | Ids of the Chief Orders that are active now.                                                                                                   |
-| `presidentSkills`    | `string[]`                               | Ids of the President skills that are active now.                                                                                               |
-| `pets`               | `{ id, level, refined?, refinement? }[]` | Your pets. `refined` uses the refined value of the level when it has one. `refinement` is the percent of each stat that the pet rolled.        |
-| `chiefGear`          | `Record<slotId, levelId>`                | The `chiefGear()` level id of the piece worn in each slot: `cap`, `watch`, `coat`, `pants`, `ring`, `weapon`.                                  |
-| `chiefCharms`        | `Record<slotId, levelId[]>`              | The `chiefCharm()` level ids of the charms of each gear slot, up to 3 for each of `cap`, `watch`, `coat`, `pants`, `ring`, and `weapon`.       |
+| Field                | Type                                     | Meaning                                                                                                                                                                        |
+| -------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `heroSkills`         | `{ heroId, skills }[]`                   | The level of each skill of a hero, by skill name. Exploration, Expedition, and Talent skills count.                                                                            |
+| `experts`            | `{ expertId, skills }[]`                 | The level of each skill or talent of an expert, by name, such as `{ expertId: 'gareth', skills: { 'Rallying Cry': 3 } }`.                                                      |
+| `expertAffinity`     | `Record<expertId, { level, advanced? }>` | The affinity of each expert: a level from 0 to 100 and whether the expert advanced, such as `{ gareth: { level: 100, advanced: true } }`. The base bonus of the expert counts. |
+| `researchLevels`     | `Record<nodeId, level>`                  | The level of each research node.                                                                                                                                               |
+| `allianceTech`       | `Record<nodeId, level>`                  | The level of each Alliance Tech node.                                                                                                                                          |
+| `allianceFacilities` | `Record<facilityId, level[]>`            | The levels of each Alliance Facility that your alliance holds, such as `{ construction: [1, 3] }`.                                                                             |
+| `alliancePrestige`   | `Record<buildingId, tierName>`           | The tier of each Alliance Prestige Building that your alliance holds, such as `{ 'championship-statue': 'Gold' }`. One tier for each building.                                 |
+| `vipLevel`           | `number`                                 | VIP level, 0 to 12.                                                                                                                                                            |
+| `marchQueuePack`     | `boolean`                                | `true` when the March Queue pack was bought. It adds 1 March Queue.                                                                                                            |
+| `buildingLevels`     | `Record<buildingId, levelLabel>`         | The level label of a building, such as `"30"` or `"FC 10"`.                                                                                                                    |
+| `skins`              | `string[]`                               | Ids of the skins that you own.                                                                                                                                                 |
+| `tundraAlbums`       | `string[]`                               | Ids of the Tundra Albums that are complete, such as `['crystalline-mysteries']`. The buff of an album counts when it is complete.                                              |
+| `decorations`        | `{ id, level }[]`                        | Island decorations. List a decoration once for each copy that you have placed.                                                                                                 |
+| `treeOfLifeLevel`    | `number`                                 | Level of the Tree of Life, 0 to 10. It adds the buffs of all levels up to it.                                                                                                  |
+| `castleAppointment`  | `string`                                 | The id of the castle position that you hold.                                                                                                                                   |
+| `chiefOrders`        | `string[]`                               | Ids of the Chief Orders that are active now.                                                                                                                                   |
+| `presidentSkills`    | `string[]`                               | Ids of the President skills that are active now.                                                                                                                               |
+| `pets`               | `{ id, level, refined?, refinement? }[]` | Your pets. `refined` uses the refined value of the level when it has one. `refinement` is the percent of each stat that the pet rolled.                                        |
+| `chiefGear`          | `Record<slotId, levelId>`                | The `chiefGear()` level id of the piece worn in each slot: `cap`, `watch`, `coat`, `pants`, `ring`, `weapon`.                                                                  |
+| `chiefCharms`        | `Record<slotId, levelId[]>`              | The `chiefCharm()` level ids of the charms of each gear slot, up to 3 for each of `cap`, `watch`, `coat`, `pants`, `ring`, and `weapon`.                                       |
 
 A level of 0 means that you do not have it, and adds nothing.
 
@@ -196,6 +197,18 @@ Mysteries and Explore the World give 2% Troops Attack, Daybreak Island gives 2% 
 of Heroes gives 5% Resource Gathering Speed, and Rekindled Flames gives 5% Resource Production
 Speed. The Resource Gathering Speed counts in each of the four resources, as above. An id that is
 not an album throws an `Error`.
+
+An expert also gives a base bonus that grows with the affinity level. The bonus is the `statBonus`
+of that level in `experts()`, from 3% at level 1 up to 30% at level 100 for Gareth, and it goes to
+each stat of the expert: Gareth, Romulus, Valeria, Fabian, and Kathy give Troops Lethality and
+Troops Health, Holger, Ronne, and Baldur give Troops Attack and Troops Defense, Cyrille gives Troops
+Attack, and Agnes gives Troops Defense. You give the affinity in `expertAffinity`, separate from the
+skill levels in `experts`. An expert that is not listed adds nothing.
+
+An expert must advance at the levels 10, 20, up to 100. The `statBonus` of those levels is the bonus
+after the advancement, so it jumps from the level before. Until the expert advances, the bonus of
+the level before counts: level 60 gives the bonus of level 59, and level 60 with `advanced: true`
+gives the bonus of level 60. `advanced` has no effect at the other levels.
 
 An Alliance Prestige Building gives its Resource Gathering Speed for the tier that you give. Each
 building has four tiers: the Championship Statue has Silver, Gold, Diamond, and Ultimate, and the

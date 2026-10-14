@@ -95,12 +95,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   first, such as the beasts of Intel missions, and see what the stamina left pays for, with the
   State of Power, Defeat Nearby Beasts, and Tundra Games points.
 - `calculateBuffs()`: the speed boosts and other buffs that your hero skills, research, Alliance
-  Tech, alliance facilities, alliance prestige buildings, VIP level, buildings, experts, Chief Gear,
-  Chief Charms, skins, completed Tundra Albums, island decorations, pets, castle position, active
-  orders, and the March Queue of your account give, added up for each stat with the list of every
-  source. The stats are also in groups: Military, Resources, Resource Output, Growth, Alliance, and
-  Other. The result also has the totals by source, such as all heroes or all research, with no
-  source lists.
+  Tech, alliance facilities, alliance prestige buildings, VIP level, buildings, experts and their
+  affinity, Chief Gear, Chief Charms, skins, completed Tundra Albums, island decorations, pets,
+  castle position, active orders, and the March Queue of your account give, added up for each stat
+  with the list of every source. The stats are also in groups: Military, Resources, Resource Output,
+  Growth, Alliance, and Other. The result also has the totals by source, such as all heroes or all
+  research, with no source lists.
 
 ### Changed
 
