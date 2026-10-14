@@ -4,9 +4,9 @@ The albums of the Tundra Album event. An album has 9 puzzles. A puzzle is built 
 5 stars, gives a reward when it is done, and the album gives a buff when all 9 puzzles are done. Use
 it to see what an album holds and what finishing it gives.
 
-The package holds 10 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
+The package holds 11 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
 of Heroes, Rekindled Flames, Tundra Alliance, Battlefield Epic, Spectacular Adventures, Divine
-Weapons, and The Labyrinth. More albums are added later.
+Weapons, The Labyrinth, and Nature's Strength. More albums are added later.
 
 ## Usage
 
@@ -261,9 +261,28 @@ Crystal.
 The album has 144 pieces: 18 at 1 star, 27 at 2 stars, 30 at 3 stars, 39 at 4 stars, and 30 at 5
 stars.
 
+### Nature's Strength
+
+The buff is Troops Defense +2%. The completion rewards are 80 Essence Stones and 200 Fire Crystal.
+
+| Puzzle              | Pieces | 1 star | 2 stars | 3 stars | 4 stars | 5 stars | Reward                                   |
+| ------------------- | ------ | ------ | ------- | ------- | ------- | ------- | ---------------------------------------- |
+| Friend of Nature    | 12     | 3      | 3       | 3       | 3       | 0       | 35 Polishing Solution                    |
+| Wild At Heart       | 15     | 3      | 5       | 4       | 2       | 1       | 3 Essence Stones                         |
+| Beast Unleashed     | 15     | 2      | 2       | 4       | 6       | 1       | 2 Mythic General Hero Shard              |
+| Wild Legion         | 15     | 3      | 4       | 4       | 2       | 2       | 3 Chief Gear Materials Chest             |
+| Pets-In-Arms        | 15     | 3      | 3       | 3       | 3       | 3       | 10 Design Plans                          |
+| Master Tamer        | 18     | 2      | 3       | 3       | 5       | 5       | 2 Advanced Wild Mark                     |
+| Superhuman Strength | 18     | 2      | 3       | 3       | 5       | 5       | 2 Advanced Wild Mark                     |
+| Kasia's Struggle    | 18     | 0      | 2       | 2       | 7       | 7       | 5 Pet Advancement Materials Custom Chest |
+| Call of the Wild    | 18     | 1      | 2       | 3       | 6       | 6       | 5 Pet Advancement Materials Custom Chest |
+
+The album has 144 pieces: 19 at 1 star, 27 at 2 stars, 29 at 3 stars, 39 at 4 stars, and 30 at 5
+stars.
+
 ## Notes
 
-The pieces, the star levels, and the reward amounts of the 10 albums are read from the album screens
+The pieces, the star levels, and the reward amounts of the 11 albums are read from the album screens
 of the game, and the images are cut from the same screens. The package owner names the items of the
 album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
 Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The

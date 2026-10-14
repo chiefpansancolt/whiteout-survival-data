@@ -735,6 +735,41 @@ const NEW_ALBUMS = [
       ['the-deepest-echo', 'The Deepest Echo', [0, 2, 2, 7, 7], 'essence-stones', 6],
     ],
   },
+  {
+    id: 'natures-strength',
+    name: "Nature's Strength",
+    stat: 'Troops Defense',
+    statKey: 'troops-defense',
+    eventNote: '+2% troops defense',
+    completion: [
+      ['essence-stones', 80],
+      ['fire-crystal', 200],
+    ],
+    pieces: 144,
+    puzzles: [
+      ['friend-of-nature', 'Friend of Nature', [3, 3, 3, 3, 0], 'polishing-solution', 35],
+      ['wild-at-heart', 'Wild At Heart', [3, 5, 4, 2, 1], 'essence-stones', 3],
+      ['beast-unleashed', 'Beast Unleashed', [2, 2, 4, 6, 1], 'mythic-general-hero-shard', 2],
+      ['wild-legion', 'Wild Legion', [3, 4, 4, 2, 2], 'chief-gear-materials-chest', 3],
+      ['pets-in-arms', 'Pets-In-Arms', [3, 3, 3, 3, 3], 'design-plans', 10],
+      ['master-tamer', 'Master Tamer', [2, 3, 3, 5, 5], 'advanced-wild-mark', 2],
+      ['superhuman-strength', 'Superhuman Strength', [2, 3, 3, 5, 5], 'advanced-wild-mark', 2],
+      [
+        'kasias-struggle',
+        "Kasia's Struggle",
+        [0, 2, 2, 7, 7],
+        'pet-advancement-materials-custom-chest',
+        5,
+      ],
+      [
+        'call-of-the-wild',
+        'Call of the Wild',
+        [1, 2, 3, 6, 6],
+        'pet-advancement-materials-custom-chest',
+        5,
+      ],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {

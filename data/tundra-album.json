@@ -9310,5 +9310,991 @@
         ]
       }
     ]
+  },
+  {
+    "id": "natures-strength",
+    "name": "Nature's Strength",
+    "buff": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "essence-stones",
+        "amount": 80
+      },
+      {
+        "itemId": "fire-crystal",
+        "amount": 200
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "friend-of-nature",
+        "name": "Friend of Nature",
+        "img": "/images/tundra-album/natures-strength/friend-of-nature.png",
+        "reward": {
+          "itemId": "polishing-solution",
+          "amount": 35
+        },
+        "pieces": [
+          {
+            "id": "friend-of-nature-1",
+            "name": "Friend of Nature - 1",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-1.png",
+            "stars": 1
+          },
+          {
+            "id": "friend-of-nature-2",
+            "name": "Friend of Nature - 2",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-2.png",
+            "stars": 1
+          },
+          {
+            "id": "friend-of-nature-3",
+            "name": "Friend of Nature - 3",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-3.png",
+            "stars": 1
+          },
+          {
+            "id": "friend-of-nature-4",
+            "name": "Friend of Nature - 4",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-4.png",
+            "stars": 2
+          },
+          {
+            "id": "friend-of-nature-5",
+            "name": "Friend of Nature - 5",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-5.png",
+            "stars": 2
+          },
+          {
+            "id": "friend-of-nature-6",
+            "name": "Friend of Nature - 6",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-6.png",
+            "stars": 2
+          },
+          {
+            "id": "friend-of-nature-7",
+            "name": "Friend of Nature - 7",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-7.png",
+            "stars": 3
+          },
+          {
+            "id": "friend-of-nature-8",
+            "name": "Friend of Nature - 8",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-8.png",
+            "stars": 3
+          },
+          {
+            "id": "friend-of-nature-9",
+            "name": "Friend of Nature - 9",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-9.png",
+            "stars": 3
+          },
+          {
+            "id": "friend-of-nature-10",
+            "name": "Friend of Nature - 10",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-10.png",
+            "stars": 4
+          },
+          {
+            "id": "friend-of-nature-11",
+            "name": "Friend of Nature - 11",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-11.png",
+            "stars": 4
+          },
+          {
+            "id": "friend-of-nature-12",
+            "name": "Friend of Nature - 12",
+            "img": "/images/tundra-album/natures-strength/friend-of-nature-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "wild-at-heart",
+        "name": "Wild At Heart",
+        "img": "/images/tundra-album/natures-strength/wild-at-heart.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "wild-at-heart-1",
+            "name": "Wild At Heart - 1",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-1.png",
+            "stars": 1
+          },
+          {
+            "id": "wild-at-heart-2",
+            "name": "Wild At Heart - 2",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-2.png",
+            "stars": 1
+          },
+          {
+            "id": "wild-at-heart-3",
+            "name": "Wild At Heart - 3",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-3.png",
+            "stars": 1
+          },
+          {
+            "id": "wild-at-heart-4",
+            "name": "Wild At Heart - 4",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-4.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-at-heart-5",
+            "name": "Wild At Heart - 5",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-5.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-at-heart-6",
+            "name": "Wild At Heart - 6",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-6.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-at-heart-7",
+            "name": "Wild At Heart - 7",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-7.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-at-heart-8",
+            "name": "Wild At Heart - 8",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-8.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-at-heart-9",
+            "name": "Wild At Heart - 9",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-9.png",
+            "stars": 3
+          },
+          {
+            "id": "wild-at-heart-10",
+            "name": "Wild At Heart - 10",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-10.png",
+            "stars": 3
+          },
+          {
+            "id": "wild-at-heart-11",
+            "name": "Wild At Heart - 11",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-11.png",
+            "stars": 3
+          },
+          {
+            "id": "wild-at-heart-12",
+            "name": "Wild At Heart - 12",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-12.png",
+            "stars": 3
+          },
+          {
+            "id": "wild-at-heart-13",
+            "name": "Wild At Heart - 13",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-13.png",
+            "stars": 4
+          },
+          {
+            "id": "wild-at-heart-14",
+            "name": "Wild At Heart - 14",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-14.png",
+            "stars": 4
+          },
+          {
+            "id": "wild-at-heart-15",
+            "name": "Wild At Heart - 15",
+            "img": "/images/tundra-album/natures-strength/wild-at-heart-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "beast-unleashed",
+        "name": "Beast Unleashed",
+        "img": "/images/tundra-album/natures-strength/beast-unleashed.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "beast-unleashed-1",
+            "name": "Beast Unleashed - 1",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-1.png",
+            "stars": 1
+          },
+          {
+            "id": "beast-unleashed-2",
+            "name": "Beast Unleashed - 2",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-2.png",
+            "stars": 1
+          },
+          {
+            "id": "beast-unleashed-3",
+            "name": "Beast Unleashed - 3",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-3.png",
+            "stars": 2
+          },
+          {
+            "id": "beast-unleashed-4",
+            "name": "Beast Unleashed - 4",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-4.png",
+            "stars": 2
+          },
+          {
+            "id": "beast-unleashed-5",
+            "name": "Beast Unleashed - 5",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-5.png",
+            "stars": 3
+          },
+          {
+            "id": "beast-unleashed-6",
+            "name": "Beast Unleashed - 6",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-6.png",
+            "stars": 3
+          },
+          {
+            "id": "beast-unleashed-7",
+            "name": "Beast Unleashed - 7",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-7.png",
+            "stars": 3
+          },
+          {
+            "id": "beast-unleashed-8",
+            "name": "Beast Unleashed - 8",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-8.png",
+            "stars": 3
+          },
+          {
+            "id": "beast-unleashed-9",
+            "name": "Beast Unleashed - 9",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-9.png",
+            "stars": 4
+          },
+          {
+            "id": "beast-unleashed-10",
+            "name": "Beast Unleashed - 10",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-10.png",
+            "stars": 4
+          },
+          {
+            "id": "beast-unleashed-11",
+            "name": "Beast Unleashed - 11",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-11.png",
+            "stars": 4
+          },
+          {
+            "id": "beast-unleashed-12",
+            "name": "Beast Unleashed - 12",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-12.png",
+            "stars": 4
+          },
+          {
+            "id": "beast-unleashed-13",
+            "name": "Beast Unleashed - 13",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-13.png",
+            "stars": 4
+          },
+          {
+            "id": "beast-unleashed-14",
+            "name": "Beast Unleashed - 14",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-14.png",
+            "stars": 4
+          },
+          {
+            "id": "beast-unleashed-15",
+            "name": "Beast Unleashed - 15",
+            "img": "/images/tundra-album/natures-strength/beast-unleashed-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "wild-legion",
+        "name": "Wild Legion",
+        "img": "/images/tundra-album/natures-strength/wild-legion.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "wild-legion-1",
+            "name": "Wild Legion - 1",
+            "img": "/images/tundra-album/natures-strength/wild-legion-1.png",
+            "stars": 1
+          },
+          {
+            "id": "wild-legion-2",
+            "name": "Wild Legion - 2",
+            "img": "/images/tundra-album/natures-strength/wild-legion-2.png",
+            "stars": 1
+          },
+          {
+            "id": "wild-legion-3",
+            "name": "Wild Legion - 3",
+            "img": "/images/tundra-album/natures-strength/wild-legion-3.png",
+            "stars": 1
+          },
+          {
+            "id": "wild-legion-4",
+            "name": "Wild Legion - 4",
+            "img": "/images/tundra-album/natures-strength/wild-legion-4.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-legion-5",
+            "name": "Wild Legion - 5",
+            "img": "/images/tundra-album/natures-strength/wild-legion-5.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-legion-6",
+            "name": "Wild Legion - 6",
+            "img": "/images/tundra-album/natures-strength/wild-legion-6.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-legion-7",
+            "name": "Wild Legion - 7",
+            "img": "/images/tundra-album/natures-strength/wild-legion-7.png",
+            "stars": 2
+          },
+          {
+            "id": "wild-legion-8",
+            "name": "Wild Legion - 8",
+            "img": "/images/tundra-album/natures-strength/wild-legion-8.png",
+            "stars": 3
+          },
+          {
+            "id": "wild-legion-9",
+            "name": "Wild Legion - 9",
+            "img": "/images/tundra-album/natures-strength/wild-legion-9.png",
+            "stars": 3
+          },
+          {
+            "id": "wild-legion-10",
+            "name": "Wild Legion - 10",
+            "img": "/images/tundra-album/natures-strength/wild-legion-10.png",
+            "stars": 3
+          },
+          {
+            "id": "wild-legion-11",
+            "name": "Wild Legion - 11",
+            "img": "/images/tundra-album/natures-strength/wild-legion-11.png",
+            "stars": 3
+          },
+          {
+            "id": "wild-legion-12",
+            "name": "Wild Legion - 12",
+            "img": "/images/tundra-album/natures-strength/wild-legion-12.png",
+            "stars": 4
+          },
+          {
+            "id": "wild-legion-13",
+            "name": "Wild Legion - 13",
+            "img": "/images/tundra-album/natures-strength/wild-legion-13.png",
+            "stars": 4
+          },
+          {
+            "id": "wild-legion-14",
+            "name": "Wild Legion - 14",
+            "img": "/images/tundra-album/natures-strength/wild-legion-14.png",
+            "stars": 5
+          },
+          {
+            "id": "wild-legion-15",
+            "name": "Wild Legion - 15",
+            "img": "/images/tundra-album/natures-strength/wild-legion-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "pets-in-arms",
+        "name": "Pets-In-Arms",
+        "img": "/images/tundra-album/natures-strength/pets-in-arms.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "pets-in-arms-1",
+            "name": "Pets-In-Arms - 1",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-1.png",
+            "stars": 1
+          },
+          {
+            "id": "pets-in-arms-2",
+            "name": "Pets-In-Arms - 2",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-2.png",
+            "stars": 1
+          },
+          {
+            "id": "pets-in-arms-3",
+            "name": "Pets-In-Arms - 3",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-3.png",
+            "stars": 1
+          },
+          {
+            "id": "pets-in-arms-4",
+            "name": "Pets-In-Arms - 4",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-4.png",
+            "stars": 2
+          },
+          {
+            "id": "pets-in-arms-5",
+            "name": "Pets-In-Arms - 5",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-5.png",
+            "stars": 2
+          },
+          {
+            "id": "pets-in-arms-6",
+            "name": "Pets-In-Arms - 6",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-6.png",
+            "stars": 2
+          },
+          {
+            "id": "pets-in-arms-7",
+            "name": "Pets-In-Arms - 7",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-7.png",
+            "stars": 3
+          },
+          {
+            "id": "pets-in-arms-8",
+            "name": "Pets-In-Arms - 8",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-8.png",
+            "stars": 3
+          },
+          {
+            "id": "pets-in-arms-9",
+            "name": "Pets-In-Arms - 9",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-9.png",
+            "stars": 3
+          },
+          {
+            "id": "pets-in-arms-10",
+            "name": "Pets-In-Arms - 10",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-10.png",
+            "stars": 4
+          },
+          {
+            "id": "pets-in-arms-11",
+            "name": "Pets-In-Arms - 11",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-11.png",
+            "stars": 4
+          },
+          {
+            "id": "pets-in-arms-12",
+            "name": "Pets-In-Arms - 12",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-12.png",
+            "stars": 4
+          },
+          {
+            "id": "pets-in-arms-13",
+            "name": "Pets-In-Arms - 13",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-13.png",
+            "stars": 5
+          },
+          {
+            "id": "pets-in-arms-14",
+            "name": "Pets-In-Arms - 14",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-14.png",
+            "stars": 5
+          },
+          {
+            "id": "pets-in-arms-15",
+            "name": "Pets-In-Arms - 15",
+            "img": "/images/tundra-album/natures-strength/pets-in-arms-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "master-tamer",
+        "name": "Master Tamer",
+        "img": "/images/tundra-album/natures-strength/master-tamer.png",
+        "reward": {
+          "itemId": "advanced-wild-mark",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "master-tamer-1",
+            "name": "Master Tamer - 1",
+            "img": "/images/tundra-album/natures-strength/master-tamer-1.png",
+            "stars": 1
+          },
+          {
+            "id": "master-tamer-2",
+            "name": "Master Tamer - 2",
+            "img": "/images/tundra-album/natures-strength/master-tamer-2.png",
+            "stars": 1
+          },
+          {
+            "id": "master-tamer-3",
+            "name": "Master Tamer - 3",
+            "img": "/images/tundra-album/natures-strength/master-tamer-3.png",
+            "stars": 2
+          },
+          {
+            "id": "master-tamer-4",
+            "name": "Master Tamer - 4",
+            "img": "/images/tundra-album/natures-strength/master-tamer-4.png",
+            "stars": 2
+          },
+          {
+            "id": "master-tamer-5",
+            "name": "Master Tamer - 5",
+            "img": "/images/tundra-album/natures-strength/master-tamer-5.png",
+            "stars": 2
+          },
+          {
+            "id": "master-tamer-6",
+            "name": "Master Tamer - 6",
+            "img": "/images/tundra-album/natures-strength/master-tamer-6.png",
+            "stars": 3
+          },
+          {
+            "id": "master-tamer-7",
+            "name": "Master Tamer - 7",
+            "img": "/images/tundra-album/natures-strength/master-tamer-7.png",
+            "stars": 3
+          },
+          {
+            "id": "master-tamer-8",
+            "name": "Master Tamer - 8",
+            "img": "/images/tundra-album/natures-strength/master-tamer-8.png",
+            "stars": 3
+          },
+          {
+            "id": "master-tamer-9",
+            "name": "Master Tamer - 9",
+            "img": "/images/tundra-album/natures-strength/master-tamer-9.png",
+            "stars": 4
+          },
+          {
+            "id": "master-tamer-10",
+            "name": "Master Tamer - 10",
+            "img": "/images/tundra-album/natures-strength/master-tamer-10.png",
+            "stars": 4
+          },
+          {
+            "id": "master-tamer-11",
+            "name": "Master Tamer - 11",
+            "img": "/images/tundra-album/natures-strength/master-tamer-11.png",
+            "stars": 4
+          },
+          {
+            "id": "master-tamer-12",
+            "name": "Master Tamer - 12",
+            "img": "/images/tundra-album/natures-strength/master-tamer-12.png",
+            "stars": 4
+          },
+          {
+            "id": "master-tamer-13",
+            "name": "Master Tamer - 13",
+            "img": "/images/tundra-album/natures-strength/master-tamer-13.png",
+            "stars": 4
+          },
+          {
+            "id": "master-tamer-14",
+            "name": "Master Tamer - 14",
+            "img": "/images/tundra-album/natures-strength/master-tamer-14.png",
+            "stars": 5
+          },
+          {
+            "id": "master-tamer-15",
+            "name": "Master Tamer - 15",
+            "img": "/images/tundra-album/natures-strength/master-tamer-15.png",
+            "stars": 5
+          },
+          {
+            "id": "master-tamer-16",
+            "name": "Master Tamer - 16",
+            "img": "/images/tundra-album/natures-strength/master-tamer-16.png",
+            "stars": 5
+          },
+          {
+            "id": "master-tamer-17",
+            "name": "Master Tamer - 17",
+            "img": "/images/tundra-album/natures-strength/master-tamer-17.png",
+            "stars": 5
+          },
+          {
+            "id": "master-tamer-18",
+            "name": "Master Tamer - 18",
+            "img": "/images/tundra-album/natures-strength/master-tamer-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "superhuman-strength",
+        "name": "Superhuman Strength",
+        "img": "/images/tundra-album/natures-strength/superhuman-strength.png",
+        "reward": {
+          "itemId": "advanced-wild-mark",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "superhuman-strength-1",
+            "name": "Superhuman Strength - 1",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-1.png",
+            "stars": 1
+          },
+          {
+            "id": "superhuman-strength-2",
+            "name": "Superhuman Strength - 2",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-2.png",
+            "stars": 1
+          },
+          {
+            "id": "superhuman-strength-3",
+            "name": "Superhuman Strength - 3",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-3.png",
+            "stars": 2
+          },
+          {
+            "id": "superhuman-strength-4",
+            "name": "Superhuman Strength - 4",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-4.png",
+            "stars": 2
+          },
+          {
+            "id": "superhuman-strength-5",
+            "name": "Superhuman Strength - 5",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-5.png",
+            "stars": 2
+          },
+          {
+            "id": "superhuman-strength-6",
+            "name": "Superhuman Strength - 6",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-6.png",
+            "stars": 3
+          },
+          {
+            "id": "superhuman-strength-7",
+            "name": "Superhuman Strength - 7",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-7.png",
+            "stars": 3
+          },
+          {
+            "id": "superhuman-strength-8",
+            "name": "Superhuman Strength - 8",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-8.png",
+            "stars": 3
+          },
+          {
+            "id": "superhuman-strength-9",
+            "name": "Superhuman Strength - 9",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-9.png",
+            "stars": 4
+          },
+          {
+            "id": "superhuman-strength-10",
+            "name": "Superhuman Strength - 10",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-10.png",
+            "stars": 4
+          },
+          {
+            "id": "superhuman-strength-11",
+            "name": "Superhuman Strength - 11",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-11.png",
+            "stars": 4
+          },
+          {
+            "id": "superhuman-strength-12",
+            "name": "Superhuman Strength - 12",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-12.png",
+            "stars": 4
+          },
+          {
+            "id": "superhuman-strength-13",
+            "name": "Superhuman Strength - 13",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-13.png",
+            "stars": 4
+          },
+          {
+            "id": "superhuman-strength-14",
+            "name": "Superhuman Strength - 14",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-14.png",
+            "stars": 5
+          },
+          {
+            "id": "superhuman-strength-15",
+            "name": "Superhuman Strength - 15",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-15.png",
+            "stars": 5
+          },
+          {
+            "id": "superhuman-strength-16",
+            "name": "Superhuman Strength - 16",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-16.png",
+            "stars": 5
+          },
+          {
+            "id": "superhuman-strength-17",
+            "name": "Superhuman Strength - 17",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-17.png",
+            "stars": 5
+          },
+          {
+            "id": "superhuman-strength-18",
+            "name": "Superhuman Strength - 18",
+            "img": "/images/tundra-album/natures-strength/superhuman-strength-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "kasias-struggle",
+        "name": "Kasia's Struggle",
+        "img": "/images/tundra-album/natures-strength/kasias-struggle.png",
+        "reward": {
+          "itemId": "pet-advancement-materials-custom-chest",
+          "amount": 5
+        },
+        "pieces": [
+          {
+            "id": "kasias-struggle-1",
+            "name": "Kasia's Struggle - 1",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-1.png",
+            "stars": 2
+          },
+          {
+            "id": "kasias-struggle-2",
+            "name": "Kasia's Struggle - 2",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-2.png",
+            "stars": 2
+          },
+          {
+            "id": "kasias-struggle-3",
+            "name": "Kasia's Struggle - 3",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-3.png",
+            "stars": 3
+          },
+          {
+            "id": "kasias-struggle-4",
+            "name": "Kasia's Struggle - 4",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-4.png",
+            "stars": 3
+          },
+          {
+            "id": "kasias-struggle-5",
+            "name": "Kasia's Struggle - 5",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-5.png",
+            "stars": 4
+          },
+          {
+            "id": "kasias-struggle-6",
+            "name": "Kasia's Struggle - 6",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-6.png",
+            "stars": 4
+          },
+          {
+            "id": "kasias-struggle-7",
+            "name": "Kasia's Struggle - 7",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-7.png",
+            "stars": 4
+          },
+          {
+            "id": "kasias-struggle-8",
+            "name": "Kasia's Struggle - 8",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-8.png",
+            "stars": 4
+          },
+          {
+            "id": "kasias-struggle-9",
+            "name": "Kasia's Struggle - 9",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-9.png",
+            "stars": 4
+          },
+          {
+            "id": "kasias-struggle-10",
+            "name": "Kasia's Struggle - 10",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-10.png",
+            "stars": 4
+          },
+          {
+            "id": "kasias-struggle-11",
+            "name": "Kasia's Struggle - 11",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-11.png",
+            "stars": 4
+          },
+          {
+            "id": "kasias-struggle-12",
+            "name": "Kasia's Struggle - 12",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-12.png",
+            "stars": 5
+          },
+          {
+            "id": "kasias-struggle-13",
+            "name": "Kasia's Struggle - 13",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-13.png",
+            "stars": 5
+          },
+          {
+            "id": "kasias-struggle-14",
+            "name": "Kasia's Struggle - 14",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-14.png",
+            "stars": 5
+          },
+          {
+            "id": "kasias-struggle-15",
+            "name": "Kasia's Struggle - 15",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-15.png",
+            "stars": 5
+          },
+          {
+            "id": "kasias-struggle-16",
+            "name": "Kasia's Struggle - 16",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-16.png",
+            "stars": 5
+          },
+          {
+            "id": "kasias-struggle-17",
+            "name": "Kasia's Struggle - 17",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-17.png",
+            "stars": 5
+          },
+          {
+            "id": "kasias-struggle-18",
+            "name": "Kasia's Struggle - 18",
+            "img": "/images/tundra-album/natures-strength/kasias-struggle-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "call-of-the-wild",
+        "name": "Call of the Wild",
+        "img": "/images/tundra-album/natures-strength/call-of-the-wild.png",
+        "reward": {
+          "itemId": "pet-advancement-materials-custom-chest",
+          "amount": 5
+        },
+        "pieces": [
+          {
+            "id": "call-of-the-wild-1",
+            "name": "Call of the Wild - 1",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-1.png",
+            "stars": 1
+          },
+          {
+            "id": "call-of-the-wild-2",
+            "name": "Call of the Wild - 2",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-2.png",
+            "stars": 2
+          },
+          {
+            "id": "call-of-the-wild-3",
+            "name": "Call of the Wild - 3",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-3.png",
+            "stars": 2
+          },
+          {
+            "id": "call-of-the-wild-4",
+            "name": "Call of the Wild - 4",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-4.png",
+            "stars": 3
+          },
+          {
+            "id": "call-of-the-wild-5",
+            "name": "Call of the Wild - 5",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-5.png",
+            "stars": 3
+          },
+          {
+            "id": "call-of-the-wild-6",
+            "name": "Call of the Wild - 6",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-6.png",
+            "stars": 3
+          },
+          {
+            "id": "call-of-the-wild-7",
+            "name": "Call of the Wild - 7",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-7.png",
+            "stars": 4
+          },
+          {
+            "id": "call-of-the-wild-8",
+            "name": "Call of the Wild - 8",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-8.png",
+            "stars": 4
+          },
+          {
+            "id": "call-of-the-wild-9",
+            "name": "Call of the Wild - 9",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-9.png",
+            "stars": 4
+          },
+          {
+            "id": "call-of-the-wild-10",
+            "name": "Call of the Wild - 10",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-10.png",
+            "stars": 4
+          },
+          {
+            "id": "call-of-the-wild-11",
+            "name": "Call of the Wild - 11",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-11.png",
+            "stars": 4
+          },
+          {
+            "id": "call-of-the-wild-12",
+            "name": "Call of the Wild - 12",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-12.png",
+            "stars": 4
+          },
+          {
+            "id": "call-of-the-wild-13",
+            "name": "Call of the Wild - 13",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-13.png",
+            "stars": 5
+          },
+          {
+            "id": "call-of-the-wild-14",
+            "name": "Call of the Wild - 14",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-14.png",
+            "stars": 5
+          },
+          {
+            "id": "call-of-the-wild-15",
+            "name": "Call of the Wild - 15",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-15.png",
+            "stars": 5
+          },
+          {
+            "id": "call-of-the-wild-16",
+            "name": "Call of the Wild - 16",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-16.png",
+            "stars": 5
+          },
+          {
+            "id": "call-of-the-wild-17",
+            "name": "Call of the Wild - 17",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-17.png",
+            "stars": 5
+          },
+          {
+            "id": "call-of-the-wild-18",
+            "name": "Call of the Wild - 18",
+            "img": "/images/tundra-album/natures-strength/call-of-the-wild-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]
