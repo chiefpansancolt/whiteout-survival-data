@@ -3618,5 +3618,775 @@
         ]
       }
     ]
+  },
+  {
+    "id": "rekindled-flames",
+    "name": "Rekindled Flames",
+    "buff": {
+      "stat": "Resource Production Speed",
+      "statKey": "resource-production-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "speedup-general-8h",
+        "amount": 30
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 20
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "furnace",
+        "name": "Furnace",
+        "img": "/images/tundra-album/rekindled-flames/furnace.png",
+        "reward": {
+          "itemId": "coal",
+          "amount": 2000
+        },
+        "pieces": [
+          {
+            "id": "furnace-1",
+            "name": "Furnace - 1",
+            "img": "/images/tundra-album/rekindled-flames/furnace-1.png",
+            "stars": 1
+          },
+          {
+            "id": "furnace-2",
+            "name": "Furnace - 2",
+            "img": "/images/tundra-album/rekindled-flames/furnace-2.png",
+            "stars": 1
+          },
+          {
+            "id": "furnace-3",
+            "name": "Furnace - 3",
+            "img": "/images/tundra-album/rekindled-flames/furnace-3.png",
+            "stars": 1
+          },
+          {
+            "id": "furnace-4",
+            "name": "Furnace - 4",
+            "img": "/images/tundra-album/rekindled-flames/furnace-4.png",
+            "stars": 1
+          },
+          {
+            "id": "furnace-5",
+            "name": "Furnace - 5",
+            "img": "/images/tundra-album/rekindled-flames/furnace-5.png",
+            "stars": 1
+          },
+          {
+            "id": "furnace-6",
+            "name": "Furnace - 6",
+            "img": "/images/tundra-album/rekindled-flames/furnace-6.png",
+            "stars": 1
+          },
+          {
+            "id": "furnace-7",
+            "name": "Furnace - 7",
+            "img": "/images/tundra-album/rekindled-flames/furnace-7.png",
+            "stars": 1
+          },
+          {
+            "id": "furnace-8",
+            "name": "Furnace - 8",
+            "img": "/images/tundra-album/rekindled-flames/furnace-8.png",
+            "stars": 2
+          },
+          {
+            "id": "furnace-9",
+            "name": "Furnace - 9",
+            "img": "/images/tundra-album/rekindled-flames/furnace-9.png",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "id": "city-founding",
+        "name": "City Founding",
+        "img": "/images/tundra-album/rekindled-flames/city-founding.png",
+        "reward": {
+          "itemId": "enhancement-xp-component",
+          "amount": 45
+        },
+        "pieces": [
+          {
+            "id": "city-founding-1",
+            "name": "City Founding - 1",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-1.png",
+            "stars": 1
+          },
+          {
+            "id": "city-founding-2",
+            "name": "City Founding - 2",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-2.png",
+            "stars": 1
+          },
+          {
+            "id": "city-founding-3",
+            "name": "City Founding - 3",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-3.png",
+            "stars": 1
+          },
+          {
+            "id": "city-founding-4",
+            "name": "City Founding - 4",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-4.png",
+            "stars": 1
+          },
+          {
+            "id": "city-founding-5",
+            "name": "City Founding - 5",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-5.png",
+            "stars": 1
+          },
+          {
+            "id": "city-founding-6",
+            "name": "City Founding - 6",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-6.png",
+            "stars": 2
+          },
+          {
+            "id": "city-founding-7",
+            "name": "City Founding - 7",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-7.png",
+            "stars": 2
+          },
+          {
+            "id": "city-founding-8",
+            "name": "City Founding - 8",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-8.png",
+            "stars": 2
+          },
+          {
+            "id": "city-founding-9",
+            "name": "City Founding - 9",
+            "img": "/images/tundra-album/rekindled-flames/city-founding-9.png",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "id": "dawn-alliance",
+        "name": "Dawn Alliance",
+        "img": "/images/tundra-album/rekindled-flames/dawn-alliance.png",
+        "reward": {
+          "itemId": "speedup-general-1h",
+          "amount": 6
+        },
+        "pieces": [
+          {
+            "id": "dawn-alliance-1",
+            "name": "Dawn Alliance - 1",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-1.png",
+            "stars": 1
+          },
+          {
+            "id": "dawn-alliance-2",
+            "name": "Dawn Alliance - 2",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-2.png",
+            "stars": 1
+          },
+          {
+            "id": "dawn-alliance-3",
+            "name": "Dawn Alliance - 3",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-3.png",
+            "stars": 1
+          },
+          {
+            "id": "dawn-alliance-4",
+            "name": "Dawn Alliance - 4",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-4.png",
+            "stars": 1
+          },
+          {
+            "id": "dawn-alliance-5",
+            "name": "Dawn Alliance - 5",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-5.png",
+            "stars": 2
+          },
+          {
+            "id": "dawn-alliance-6",
+            "name": "Dawn Alliance - 6",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-6.png",
+            "stars": 2
+          },
+          {
+            "id": "dawn-alliance-7",
+            "name": "Dawn Alliance - 7",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-7.png",
+            "stars": 2
+          },
+          {
+            "id": "dawn-alliance-8",
+            "name": "Dawn Alliance - 8",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-8.png",
+            "stars": 3
+          },
+          {
+            "id": "dawn-alliance-9",
+            "name": "Dawn Alliance - 9",
+            "img": "/images/tundra-album/rekindled-flames/dawn-alliance-9.png",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "id": "decisions",
+        "name": "Decisions",
+        "img": "/images/tundra-album/rekindled-flames/decisions.png",
+        "reward": {
+          "itemId": "polishing-solution",
+          "amount": 30
+        },
+        "pieces": [
+          {
+            "id": "decisions-1",
+            "name": "Decisions - 1",
+            "img": "/images/tundra-album/rekindled-flames/decisions-1.png",
+            "stars": 1
+          },
+          {
+            "id": "decisions-2",
+            "name": "Decisions - 2",
+            "img": "/images/tundra-album/rekindled-flames/decisions-2.png",
+            "stars": 1
+          },
+          {
+            "id": "decisions-3",
+            "name": "Decisions - 3",
+            "img": "/images/tundra-album/rekindled-flames/decisions-3.png",
+            "stars": 1
+          },
+          {
+            "id": "decisions-4",
+            "name": "Decisions - 4",
+            "img": "/images/tundra-album/rekindled-flames/decisions-4.png",
+            "stars": 1
+          },
+          {
+            "id": "decisions-5",
+            "name": "Decisions - 5",
+            "img": "/images/tundra-album/rekindled-flames/decisions-5.png",
+            "stars": 2
+          },
+          {
+            "id": "decisions-6",
+            "name": "Decisions - 6",
+            "img": "/images/tundra-album/rekindled-flames/decisions-6.png",
+            "stars": 2
+          },
+          {
+            "id": "decisions-7",
+            "name": "Decisions - 7",
+            "img": "/images/tundra-album/rekindled-flames/decisions-7.png",
+            "stars": 2
+          },
+          {
+            "id": "decisions-8",
+            "name": "Decisions - 8",
+            "img": "/images/tundra-album/rekindled-flames/decisions-8.png",
+            "stars": 2
+          },
+          {
+            "id": "decisions-9",
+            "name": "Decisions - 9",
+            "img": "/images/tundra-album/rekindled-flames/decisions-9.png",
+            "stars": 3
+          },
+          {
+            "id": "decisions-10",
+            "name": "Decisions - 10",
+            "img": "/images/tundra-album/rekindled-flames/decisions-10.png",
+            "stars": 3
+          },
+          {
+            "id": "decisions-11",
+            "name": "Decisions - 11",
+            "img": "/images/tundra-album/rekindled-flames/decisions-11.png",
+            "stars": 3
+          },
+          {
+            "id": "decisions-12",
+            "name": "Decisions - 12",
+            "img": "/images/tundra-album/rekindled-flames/decisions-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "menace-afoot",
+        "name": "Menace Afoot",
+        "img": "/images/tundra-album/rekindled-flames/menace-afoot.png",
+        "reward": {
+          "itemId": "enhancement-xp-component",
+          "amount": 7
+        },
+        "pieces": [
+          {
+            "id": "menace-afoot-1",
+            "name": "Menace Afoot - 1",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-1.png",
+            "stars": 1
+          },
+          {
+            "id": "menace-afoot-2",
+            "name": "Menace Afoot - 2",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-2.png",
+            "stars": 1
+          },
+          {
+            "id": "menace-afoot-3",
+            "name": "Menace Afoot - 3",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-3.png",
+            "stars": 1
+          },
+          {
+            "id": "menace-afoot-4",
+            "name": "Menace Afoot - 4",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-4.png",
+            "stars": 2
+          },
+          {
+            "id": "menace-afoot-5",
+            "name": "Menace Afoot - 5",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-5.png",
+            "stars": 2
+          },
+          {
+            "id": "menace-afoot-6",
+            "name": "Menace Afoot - 6",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-6.png",
+            "stars": 2
+          },
+          {
+            "id": "menace-afoot-7",
+            "name": "Menace Afoot - 7",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-7.png",
+            "stars": 3
+          },
+          {
+            "id": "menace-afoot-8",
+            "name": "Menace Afoot - 8",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-8.png",
+            "stars": 3
+          },
+          {
+            "id": "menace-afoot-9",
+            "name": "Menace Afoot - 9",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-9.png",
+            "stars": 3
+          },
+          {
+            "id": "menace-afoot-10",
+            "name": "Menace Afoot - 10",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-10.png",
+            "stars": 3
+          },
+          {
+            "id": "menace-afoot-11",
+            "name": "Menace Afoot - 11",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-11.png",
+            "stars": 4
+          },
+          {
+            "id": "menace-afoot-12",
+            "name": "Menace Afoot - 12",
+            "img": "/images/tundra-album/rekindled-flames/menace-afoot-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "heroes",
+        "name": "Heroes",
+        "img": "/images/tundra-album/rekindled-flames/heroes.png",
+        "reward": {
+          "itemId": "speedup-general-3h",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "heroes-1",
+            "name": "Heroes - 1",
+            "img": "/images/tundra-album/rekindled-flames/heroes-1.png",
+            "stars": 1
+          },
+          {
+            "id": "heroes-2",
+            "name": "Heroes - 2",
+            "img": "/images/tundra-album/rekindled-flames/heroes-2.png",
+            "stars": 1
+          },
+          {
+            "id": "heroes-3",
+            "name": "Heroes - 3",
+            "img": "/images/tundra-album/rekindled-flames/heroes-3.png",
+            "stars": 1
+          },
+          {
+            "id": "heroes-4",
+            "name": "Heroes - 4",
+            "img": "/images/tundra-album/rekindled-flames/heroes-4.png",
+            "stars": 2
+          },
+          {
+            "id": "heroes-5",
+            "name": "Heroes - 5",
+            "img": "/images/tundra-album/rekindled-flames/heroes-5.png",
+            "stars": 2
+          },
+          {
+            "id": "heroes-6",
+            "name": "Heroes - 6",
+            "img": "/images/tundra-album/rekindled-flames/heroes-6.png",
+            "stars": 2
+          },
+          {
+            "id": "heroes-7",
+            "name": "Heroes - 7",
+            "img": "/images/tundra-album/rekindled-flames/heroes-7.png",
+            "stars": 3
+          },
+          {
+            "id": "heroes-8",
+            "name": "Heroes - 8",
+            "img": "/images/tundra-album/rekindled-flames/heroes-8.png",
+            "stars": 3
+          },
+          {
+            "id": "heroes-9",
+            "name": "Heroes - 9",
+            "img": "/images/tundra-album/rekindled-flames/heroes-9.png",
+            "stars": 3
+          },
+          {
+            "id": "heroes-10",
+            "name": "Heroes - 10",
+            "img": "/images/tundra-album/rekindled-flames/heroes-10.png",
+            "stars": 4
+          },
+          {
+            "id": "heroes-11",
+            "name": "Heroes - 11",
+            "img": "/images/tundra-album/rekindled-flames/heroes-11.png",
+            "stars": 4
+          },
+          {
+            "id": "heroes-12",
+            "name": "Heroes - 12",
+            "img": "/images/tundra-album/rekindled-flames/heroes-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "food-power",
+        "name": "Food Power",
+        "img": "/images/tundra-album/rekindled-flames/food-power.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "food-power-1",
+            "name": "Food Power - 1",
+            "img": "/images/tundra-album/rekindled-flames/food-power-1.png",
+            "stars": 1
+          },
+          {
+            "id": "food-power-2",
+            "name": "Food Power - 2",
+            "img": "/images/tundra-album/rekindled-flames/food-power-2.png",
+            "stars": 1
+          },
+          {
+            "id": "food-power-3",
+            "name": "Food Power - 3",
+            "img": "/images/tundra-album/rekindled-flames/food-power-3.png",
+            "stars": 1
+          },
+          {
+            "id": "food-power-4",
+            "name": "Food Power - 4",
+            "img": "/images/tundra-album/rekindled-flames/food-power-4.png",
+            "stars": 2
+          },
+          {
+            "id": "food-power-5",
+            "name": "Food Power - 5",
+            "img": "/images/tundra-album/rekindled-flames/food-power-5.png",
+            "stars": 2
+          },
+          {
+            "id": "food-power-6",
+            "name": "Food Power - 6",
+            "img": "/images/tundra-album/rekindled-flames/food-power-6.png",
+            "stars": 2
+          },
+          {
+            "id": "food-power-7",
+            "name": "Food Power - 7",
+            "img": "/images/tundra-album/rekindled-flames/food-power-7.png",
+            "stars": 2
+          },
+          {
+            "id": "food-power-8",
+            "name": "Food Power - 8",
+            "img": "/images/tundra-album/rekindled-flames/food-power-8.png",
+            "stars": 2
+          },
+          {
+            "id": "food-power-9",
+            "name": "Food Power - 9",
+            "img": "/images/tundra-album/rekindled-flames/food-power-9.png",
+            "stars": 3
+          },
+          {
+            "id": "food-power-10",
+            "name": "Food Power - 10",
+            "img": "/images/tundra-album/rekindled-flames/food-power-10.png",
+            "stars": 3
+          },
+          {
+            "id": "food-power-11",
+            "name": "Food Power - 11",
+            "img": "/images/tundra-album/rekindled-flames/food-power-11.png",
+            "stars": 3
+          },
+          {
+            "id": "food-power-12",
+            "name": "Food Power - 12",
+            "img": "/images/tundra-album/rekindled-flames/food-power-12.png",
+            "stars": 3
+          },
+          {
+            "id": "food-power-13",
+            "name": "Food Power - 13",
+            "img": "/images/tundra-album/rekindled-flames/food-power-13.png",
+            "stars": 4
+          },
+          {
+            "id": "food-power-14",
+            "name": "Food Power - 14",
+            "img": "/images/tundra-album/rekindled-flames/food-power-14.png",
+            "stars": 4
+          },
+          {
+            "id": "food-power-15",
+            "name": "Food Power - 15",
+            "img": "/images/tundra-album/rekindled-flames/food-power-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "a-new-order",
+        "name": "A New Order",
+        "img": "/images/tundra-album/rekindled-flames/a-new-order.png",
+        "reward": {
+          "itemId": "charm-guide",
+          "amount": 8
+        },
+        "pieces": [
+          {
+            "id": "a-new-order-1",
+            "name": "A New Order - 1",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-1.png",
+            "stars": 1
+          },
+          {
+            "id": "a-new-order-2",
+            "name": "A New Order - 2",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-2.png",
+            "stars": 1
+          },
+          {
+            "id": "a-new-order-3",
+            "name": "A New Order - 3",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-3.png",
+            "stars": 1
+          },
+          {
+            "id": "a-new-order-4",
+            "name": "A New Order - 4",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-4.png",
+            "stars": 2
+          },
+          {
+            "id": "a-new-order-5",
+            "name": "A New Order - 5",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-5.png",
+            "stars": 2
+          },
+          {
+            "id": "a-new-order-6",
+            "name": "A New Order - 6",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-6.png",
+            "stars": 2
+          },
+          {
+            "id": "a-new-order-7",
+            "name": "A New Order - 7",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-7.png",
+            "stars": 2
+          },
+          {
+            "id": "a-new-order-8",
+            "name": "A New Order - 8",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-8.png",
+            "stars": 3
+          },
+          {
+            "id": "a-new-order-9",
+            "name": "A New Order - 9",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-9.png",
+            "stars": 3
+          },
+          {
+            "id": "a-new-order-10",
+            "name": "A New Order - 10",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-10.png",
+            "stars": 3
+          },
+          {
+            "id": "a-new-order-11",
+            "name": "A New Order - 11",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-11.png",
+            "stars": 3
+          },
+          {
+            "id": "a-new-order-12",
+            "name": "A New Order - 12",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-12.png",
+            "stars": 4
+          },
+          {
+            "id": "a-new-order-13",
+            "name": "A New Order - 13",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-13.png",
+            "stars": 4
+          },
+          {
+            "id": "a-new-order-14",
+            "name": "A New Order - 14",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-14.png",
+            "stars": 5
+          },
+          {
+            "id": "a-new-order-15",
+            "name": "A New Order - 15",
+            "img": "/images/tundra-album/rekindled-flames/a-new-order-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "true-explorer",
+        "name": "True Explorer",
+        "img": "/images/tundra-album/rekindled-flames/true-explorer.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "true-explorer-1",
+            "name": "True Explorer - 1",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-1.png",
+            "stars": 1
+          },
+          {
+            "id": "true-explorer-2",
+            "name": "True Explorer - 2",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-2.png",
+            "stars": 1
+          },
+          {
+            "id": "true-explorer-3",
+            "name": "True Explorer - 3",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-3.png",
+            "stars": 1
+          },
+          {
+            "id": "true-explorer-4",
+            "name": "True Explorer - 4",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-4.png",
+            "stars": 2
+          },
+          {
+            "id": "true-explorer-5",
+            "name": "True Explorer - 5",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-5.png",
+            "stars": 2
+          },
+          {
+            "id": "true-explorer-6",
+            "name": "True Explorer - 6",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-6.png",
+            "stars": 2
+          },
+          {
+            "id": "true-explorer-7",
+            "name": "True Explorer - 7",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-7.png",
+            "stars": 3
+          },
+          {
+            "id": "true-explorer-8",
+            "name": "True Explorer - 8",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-8.png",
+            "stars": 3
+          },
+          {
+            "id": "true-explorer-9",
+            "name": "True Explorer - 9",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-9.png",
+            "stars": 3
+          },
+          {
+            "id": "true-explorer-10",
+            "name": "True Explorer - 10",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-10.png",
+            "stars": 4
+          },
+          {
+            "id": "true-explorer-11",
+            "name": "True Explorer - 11",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-11.png",
+            "stars": 4
+          },
+          {
+            "id": "true-explorer-12",
+            "name": "True Explorer - 12",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-12.png",
+            "stars": 4
+          },
+          {
+            "id": "true-explorer-13",
+            "name": "True Explorer - 13",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-13.png",
+            "stars": 5
+          },
+          {
+            "id": "true-explorer-14",
+            "name": "True Explorer - 14",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-14.png",
+            "stars": 5
+          },
+          {
+            "id": "true-explorer-15",
+            "name": "True Explorer - 15",
+            "img": "/images/tundra-album/rekindled-flames/true-explorer-15.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]

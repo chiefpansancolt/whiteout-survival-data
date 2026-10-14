@@ -20,7 +20,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Activity Triumph Points, and four resource packs are new in `items()`.
 - `tundraAlbum()`: the Tundra Album albums, with the 9 puzzles of each, the star level and the image
   of every piece, the reward of each puzzle, and the buff of the album. It holds the albums
-  Crystalline Mysteries, Daybreak Island, Explore the World, and Song of Heroes.
+  Crystalline Mysteries, Daybreak Island, Explore the World, Song of Heroes, and Rekindled Flames.
 
 #### Calculators
 

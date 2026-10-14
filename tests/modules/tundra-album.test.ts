@@ -495,6 +495,112 @@ describe('Song of Heroes', () => {
   });
 });
 
+describe('Rekindled Flames', () => {
+  const album = tundraAlbum().find('rekindled-flames')!;
+  const exists = (img: string) => existsSync(join(__dirname, '../..', img));
+
+  it('has the buff and the completion rewards of the album', () => {
+    expect(album.name).toBe('Rekindled Flames');
+    expect(album.buff).toEqual({
+      stat: 'Resource Production Speed',
+      statKey: 'resource-production-speed',
+      value: '+5%',
+      amount: 5,
+      unit: 'percent',
+    });
+    expect(album.completionRewards).toEqual([
+      { itemId: 'speedup-general-8h', amount: 30 },
+      { itemId: 'mythic-general-hero-shard', amount: 20 },
+    ]);
+  });
+
+  it('gives the same buff as the Tundra Album event lists for it', () => {
+    const reward = events()
+      .find('tundra-album-2')!
+      .rewards!.find((r) => r.name === 'Rekindled Flames buff')!;
+    expect(reward.note).toBe('+5% resource production speed');
+  });
+
+  it('has the 9 puzzles of the album in the order of the game', () => {
+    expect(album.puzzles).toHaveLength(TUNDRA_ALBUM_PUZZLES_PER_ALBUM);
+    expect(album.puzzles.map((p) => p.name)).toEqual([
+      'Furnace',
+      'City Founding',
+      'Dawn Alliance',
+      'Decisions',
+      'Menace Afoot',
+      'Heroes',
+      'Food Power',
+      'A New Order',
+      'True Explorer',
+    ]);
+  });
+
+  it.each([
+    ['furnace', [7, 2, 0, 0, 0]],
+    ['city-founding', [5, 3, 1, 0, 0]],
+    ['dawn-alliance', [4, 3, 2, 0, 0]],
+    ['decisions', [4, 4, 3, 1, 0]],
+    ['menace-afoot', [3, 3, 4, 2, 0]],
+    ['heroes', [3, 3, 3, 3, 0]],
+    ['food-power', [3, 5, 4, 2, 1]],
+    ['a-new-order', [3, 4, 4, 2, 2]],
+    ['true-explorer', [3, 3, 3, 3, 3]],
+  ])('has the pieces of %s at each star level: %j', (id, counts) => {
+    const puzzle = album.puzzles.find((p) => p.id === id)!;
+    expect(Object.values(tundraPuzzlePieceCounts(puzzle))).toEqual(counts);
+    expect(puzzle.pieces).toHaveLength(counts.reduce((a, b) => a + b, 0));
+  });
+
+  it('has 108 pieces, named and numbered by puzzle, in order of stars', () => {
+    const all = album.puzzles.flatMap((p) => p.pieces);
+    expect(all).toHaveLength(108);
+    expect(new Set(all.map((p) => p.id)).size).toBe(108);
+    for (const puzzle of album.puzzles) {
+      puzzle.pieces.forEach((piece, i) => {
+        expect(piece.id).toBe(`${puzzle.id}-${i + 1}`);
+        expect(piece.name).toBe(`${puzzle.name} - ${i + 1}`);
+      });
+      const stars = puzzle.pieces.map((p) => p.stars);
+      expect(stars).toEqual([...stars].sort((a, b) => a - b));
+    }
+    const totals = [1, 2, 3, 4, 5].map((s) => all.filter((p) => p.stars === s).length);
+    expect(totals).toEqual([35, 30, 24, 13, 6]);
+  });
+
+  it('gives each puzzle its reward, linked to an item of items()', () => {
+    expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
+      ['furnace', 'coal', 2000],
+      ['city-founding', 'enhancement-xp-component', 45],
+      ['dawn-alliance', 'speedup-general-1h', 6],
+      ['decisions', 'polishing-solution', 30],
+      ['menace-afoot', 'enhancement-xp-component', 7],
+      ['heroes', 'speedup-general-3h', 3],
+      ['food-power', 'essence-stones', 3],
+      ['a-new-order', 'charm-guide', 8],
+      ['true-explorer', 'mythic-general-hero-shard', 2],
+    ]);
+    const rewards = [...album.completionRewards, ...album.puzzles.map((p) => p.reward)];
+    for (const reward of rewards) expect(items().find(reward.itemId!)).toBeDefined();
+  });
+
+  it('has an image file for every puzzle and piece, named after its id, and none unused', () => {
+    const images = album.puzzles.flatMap((p) => [p.img, ...p.pieces.map((piece) => piece.img)]);
+    expect(images).toHaveLength(9 + 108);
+    for (const puzzle of album.puzzles) {
+      expect(puzzle.img).toBe(`/images/tundra-album/${album.id}/${puzzle.id}.png`);
+      for (const piece of puzzle.pieces) {
+        expect(piece.img).toBe(`/images/tundra-album/${album.id}/${piece.id}.png`);
+      }
+    }
+    for (const img of images) expect(exists(img!)).toBe(true);
+    const folder = join(__dirname, '../../images/tundra-album', album.id);
+    const files = readdirSync(folder).map((f) => `/images/tundra-album/${album.id}/${f}`);
+    expect(files.filter((f) => !images.includes(f))).toEqual([]);
+    expect(files).toHaveLength(117);
+  });
+});
+
 describe('tundraPuzzlePieceCounts', () => {
   it('counts the pieces of a puzzle by stars', () => {
     const puzzle = tundraAlbum().find('crystalline-mysteries')!.puzzles[1];
