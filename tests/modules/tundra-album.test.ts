@@ -255,7 +255,7 @@ describe('Daybreak Island', () => {
       ['caravan-visit', 'design-plans', 10],
       ['new-home', 'mythic-general-decoration-component', 1],
       ['daybreak-song', 'mythic-general-decoration-component', 1],
-      ['island-splendors', 'mythic-general-decoration-component', 3],
+      ['island-splendors', 'mythic-general-hero-shard', 3],
     ]);
   });
 
@@ -298,7 +298,7 @@ describe('Explore the World', () => {
     });
     expect(album.completionRewards).toEqual([
       { itemId: 'speedup-troop-8h', amount: 30 },
-      { itemId: 'enhancement-xp-component', amount: 100 },
+      { itemId: 'enhancement-xp-component', amount: 100, size: 100 },
     ]);
   });
 
@@ -358,15 +358,15 @@ describe('Explore the World', () => {
 
   it('gives each puzzle its reward, linked to an item of items()', () => {
     expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
-      ['war-on-winter', 'coal', 2500],
+      ['war-on-winter', 'hardened-alloy', 2500],
       ['exploration-journal', 'polishing-solution', 30],
       ['hunting-guild', 'enhancement-xp-component', 7],
       ['the-raging-bear', 'speedup-general-3h', 3],
       ['treasure-kingdom', 'essence-stones', 3],
       ['wealth-is-knowledge', 'charm-guide', 8],
-      ['ruins-of-old', 'mythic-general-decoration-component', 2],
+      ['ruins-of-old', 'mythic-general-hero-shard', 2],
       ['cryptid-days', 'speedup-troop-8h', 2],
-      ['call-of-the-stars', 'lucky-hero-gear-chest', 4],
+      ['call-of-the-stars', 'random-chief-charm-material-chest', 4],
     ]);
     const rewards = [...album.completionRewards, ...album.puzzles.map((p) => p.reward)];
     for (const reward of rewards) expect(items().find(reward.itemId!)).toBeDefined();
@@ -465,7 +465,7 @@ describe('Song of Heroes', () => {
   it('gives each puzzle its reward, linked to an item of items()', () => {
     expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
       ['dauntless-heroes', 'enhancement-xp-component', 45],
-      ['snow-angel', 'coal', 2500],
+      ['snow-angel', 'hardened-alloy', 2500],
       ['everyday-champions', 'polishing-solution', 30],
       ['arcadias-legacy', 'enhancement-xp-component', 7],
       ['i-am-the-fire', 'speedup-general-3h', 3],
@@ -570,7 +570,7 @@ describe('Rekindled Flames', () => {
 
   it('gives each puzzle its reward, linked to an item of items()', () => {
     expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
-      ['furnace', 'coal', 2000],
+      ['furnace', 'hardened-alloy', 2000],
       ['city-founding', 'enhancement-xp-component', 45],
       ['dawn-alliance', 'speedup-general-1h', 6],
       ['decisions', 'polishing-solution', 30],
@@ -601,6 +601,83 @@ describe('Rekindled Flames', () => {
   });
 });
 
+const NEW_ALBUMS = [];
+
+describe.each(NEW_ALBUMS)('$name', (spec) => {
+  const album = tundraAlbum().find(spec.id)!;
+  const exists = (img: string) => existsSync(join(__dirname, '../..', img));
+  const pieces = album.puzzles.flatMap((p) => p.pieces);
+
+  it('has the buff and the completion rewards of the album', () => {
+    expect(album.name).toBe(spec.name);
+    expect(album.buff).toEqual({
+      stat: spec.stat,
+      statKey: spec.statKey,
+      value: '+2%',
+      amount: 2,
+      unit: 'percent',
+    });
+    expect(album.completionRewards.map((r) => [r.itemId, r.amount])).toEqual(spec.completion);
+  });
+
+  it('gives the same buff as the Tundra Album event lists for it', () => {
+    const reward = events()
+      .find('tundra-album-2')!
+      .rewards!.find((r) => r.name.replace('\u2019', "'") === `${spec.name} buff`)!;
+    expect(reward.note).toBe(spec.eventNote);
+  });
+
+  it('has the 9 puzzles of the album in the order of the game, with their ids', () => {
+    expect(album.puzzles).toHaveLength(TUNDRA_ALBUM_PUZZLES_PER_ALBUM);
+    expect(album.puzzles.map((p) => [p.id, p.name])).toEqual(spec.puzzles.map((p) => [p[0], p[1]]));
+  });
+
+  it('has the pieces of each puzzle at each star level, and each reward linked to an item', () => {
+    expect(
+      album.puzzles.map((p) => [
+        p.id,
+        p.name,
+        Object.values(tundraPuzzlePieceCounts(p)),
+        p.reward.itemId,
+        p.reward.amount,
+      ]),
+    ).toEqual(spec.puzzles);
+    const rewards = [...album.completionRewards, ...album.puzzles.map((p) => p.reward)];
+    for (const reward of rewards) expect(items().find(reward.itemId!)).toBeDefined();
+  });
+
+  it('has its pieces named and numbered by puzzle, in order of stars', () => {
+    expect(pieces).toHaveLength(spec.pieces);
+    expect(new Set(pieces.map((p) => p.id)).size).toBe(spec.pieces);
+    for (const puzzle of album.puzzles) {
+      puzzle.pieces.forEach((piece, i) => {
+        expect(piece.id).toBe(`${puzzle.id}-${i + 1}`);
+        expect(piece.name).toBe(`${puzzle.name} - ${i + 1}`);
+      });
+      const stars = puzzle.pieces.map((p) => p.stars);
+      expect(stars).toEqual([...stars].sort((a, b) => a - b));
+    }
+  });
+
+  it('has an image for every puzzle and every piece, and no unused file', () => {
+    const images = [...album.puzzles.map((p) => p.img), ...pieces.map((p) => p.img)].filter(
+      (img): img is string => img !== undefined,
+    );
+    expect(images).toHaveLength(9 + spec.pieces);
+    for (const puzzle of album.puzzles) {
+      expect(puzzle.img).toBe(`/images/tundra-album/${album.id}/${puzzle.id}.png`);
+    }
+    for (const piece of pieces) {
+      expect(piece.img).toBe(`/images/tundra-album/${album.id}/${piece.id}.png`);
+    }
+    for (const img of images) expect(exists(img)).toBe(true);
+    const folder = join(__dirname, '../../images/tundra-album', album.id);
+    const files = readdirSync(folder).map((f) => `/images/tundra-album/${album.id}/${f}`);
+    expect(files.filter((f) => !images.includes(f))).toEqual([]);
+    expect(files).toHaveLength(images.length);
+  });
+});
+
 describe('tundraPuzzlePieceCounts', () => {
   it('counts the pieces of a puzzle by stars', () => {
     const puzzle = tundraAlbum().find('crystalline-mysteries')!.puzzles[1];
@@ -612,5 +689,24 @@ describe('tundraPuzzlePieceCounts', () => {
       4: 0,
       5: 0,
     });
+  });
+});
+
+describe('the size of an Enhancement XP Component reward', () => {
+  const rewards = tundraAlbum()
+    .get()
+    .flatMap((album) => [...album.completionRewards, ...album.puzzles.map((p) => p.reward)]);
+
+  it('is set on every Enhancement XP Component reward and on no other reward', () => {
+    for (const reward of rewards) {
+      expect(reward.size !== undefined).toBe(reward.itemId === 'enhancement-xp-component');
+    }
+  });
+
+  it('is the 10 component for 45 of them and the 100 component for the rest', () => {
+    const components = rewards.filter((r) => r.size !== undefined);
+    expect(components).toHaveLength(8);
+    for (const reward of components) expect(reward.size).toBe(reward.amount === 45 ? 10 : 100);
+    expect(components.filter((r) => r.size === 10)).toHaveLength(2);
   });
 });

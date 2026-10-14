@@ -26,7 +26,8 @@
         "img": "/images/tundra-album/crystalline-mysteries/fiery-crystal.png",
         "reward": {
           "itemId": "enhancement-xp-component",
-          "amount": 7
+          "amount": 7,
+          "size": 100
         },
         "pieces": [
           {
@@ -1095,7 +1096,8 @@
         "img": "/images/tundra-album/daybreak-island/island-of-dreams.png",
         "reward": {
           "itemId": "enhancement-xp-component",
-          "amount": 7
+          "amount": 7,
+          "size": 100
         },
         "pieces": [
           {
@@ -1802,7 +1804,7 @@
         "img": "/images/tundra-album/daybreak-island/island-splendors.png",
         "reward": {
           "amount": 3,
-          "itemId": "mythic-general-decoration-component"
+          "itemId": "mythic-general-hero-shard"
         },
         "pieces": [
           {
@@ -1934,7 +1936,8 @@
       },
       {
         "itemId": "enhancement-xp-component",
-        "amount": 100
+        "amount": 100,
+        "size": 100
       }
     ],
     "puzzles": [
@@ -1943,7 +1946,7 @@
         "name": "War on Winter",
         "img": "/images/tundra-album/explore-the-world/war-on-winter.png",
         "reward": {
-          "itemId": "coal",
+          "itemId": "hardened-alloy",
           "amount": 2500
         },
         "pieces": [
@@ -2092,7 +2095,8 @@
         "img": "/images/tundra-album/explore-the-world/hunting-guild.png",
         "reward": {
           "itemId": "enhancement-xp-component",
-          "amount": 7
+          "amount": 7,
+          "size": 100
         },
         "pieces": [
           {
@@ -2459,7 +2463,7 @@
         "name": "Ruins of Old",
         "img": "/images/tundra-album/explore-the-world/ruins-of-old.png",
         "reward": {
-          "itemId": "mythic-general-decoration-component",
+          "itemId": "mythic-general-hero-shard",
           "amount": 2
         },
         "pieces": [
@@ -2679,7 +2683,7 @@
         "name": "Call of the Stars",
         "img": "/images/tundra-album/explore-the-world/call-of-the-stars.png",
         "reward": {
-          "itemId": "lucky-hero-gear-chest",
+          "itemId": "random-chief-charm-material-chest",
           "amount": 4
         },
         "pieces": [
@@ -2822,7 +2826,8 @@
         "img": "/images/tundra-album/song-of-heroes/dauntless-heroes.png",
         "reward": {
           "itemId": "enhancement-xp-component",
-          "amount": 45
+          "amount": 45,
+          "size": 10
         },
         "pieces": [
           {
@@ -2886,7 +2891,7 @@
         "name": "Snow Angel",
         "img": "/images/tundra-album/song-of-heroes/snow-angel.png",
         "reward": {
-          "itemId": "coal",
+          "itemId": "hardened-alloy",
           "amount": 2500
         },
         "pieces": [
@@ -3035,7 +3040,8 @@
         "img": "/images/tundra-album/song-of-heroes/arcadias-legacy.png",
         "reward": {
           "itemId": "enhancement-xp-component",
-          "amount": 7
+          "amount": 7,
+          "size": 100
         },
         "pieces": [
           {
@@ -3645,7 +3651,7 @@
         "name": "Furnace",
         "img": "/images/tundra-album/rekindled-flames/furnace.png",
         "reward": {
-          "itemId": "coal",
+          "itemId": "hardened-alloy",
           "amount": 2000
         },
         "pieces": [
@@ -3711,7 +3717,8 @@
         "img": "/images/tundra-album/rekindled-flames/city-founding.png",
         "reward": {
           "itemId": "enhancement-xp-component",
-          "amount": 45
+          "amount": 45,
+          "size": 10
         },
         "pieces": [
           {
@@ -3924,7 +3931,8 @@
         "img": "/images/tundra-album/rekindled-flames/menace-afoot.png",
         "reward": {
           "itemId": "enhancement-xp-component",
-          "amount": 7
+          "amount": 7,
+          "size": 100
         },
         "pieces": [
           {

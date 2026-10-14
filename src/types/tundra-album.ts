@@ -12,6 +12,8 @@ export interface TundraAlbumReward {
   /** The id of the item in `items()`. Left out when the item is not known. */
   itemId?: string;
   amount: number;
+  /** The number on the icon of an Enhancement XP Component, 10 or 100. Set only on that item. */
+  size?: 10 | 100;
 }
 
 export type TundraAlbumStars = 1 | 2 | 3 | 4 | 5;
