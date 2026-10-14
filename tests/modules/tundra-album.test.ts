@@ -172,6 +172,117 @@ describe('Crystalline Mysteries images', () => {
   });
 });
 
+describe('Daybreak Island', () => {
+  const album = tundraAlbum().find('daybreak-island')!;
+  const exists = (img: string) => existsSync(join(__dirname, '../..', img));
+
+  it('has the buff and the completion rewards of the album', () => {
+    expect(album.name).toBe('Daybreak Island');
+    expect(album.buff).toEqual({
+      stat: 'Troops Defense',
+      statKey: 'troops-defense',
+      value: '+2%',
+      amount: 2,
+      unit: 'percent',
+    });
+    expect(album.completionRewards).toEqual([
+      { itemId: 'mythic-general-decoration-component', amount: 16 },
+      { itemId: 'speedup-general-8h', amount: 15 },
+    ]);
+  });
+
+  it('gives the same buff as the Tundra Album event lists for it', () => {
+    const reward = events()
+      .find('tundra-album-2')!
+      .rewards!.find((r) => r.name === 'Daybreak Island buff')!;
+    expect(reward.note).toBe('+2% troops defense');
+  });
+
+  it('has the 9 puzzles of the album in the order of the game', () => {
+    expect(album.puzzles).toHaveLength(TUNDRA_ALBUM_PUZZLES_PER_ALBUM);
+    expect(album.puzzles.map((p) => p.name)).toEqual([
+      'Daybreak Island Legend',
+      'Island of Dreams',
+      'Tree of Life',
+      'Call of the Sea',
+      'Distant Resonance',
+      'Caravan Visit',
+      'New Home',
+      'Daybreak Song',
+      'Island Splendors',
+    ]);
+  });
+
+  it.each([
+    ['daybreak-island-legend', [4, 4, 3, 1, 0]],
+    ['island-of-dreams', [3, 3, 4, 2, 0]],
+    ['tree-of-life', [3, 3, 3, 3, 0]],
+    ['call-of-the-sea', [3, 5, 4, 2, 1]],
+    ['distant-resonance', [3, 4, 4, 2, 2]],
+    ['caravan-visit', [3, 3, 3, 3, 3]],
+    ['new-home', [2, 4, 4, 4, 4]],
+    ['daybreak-song', [2, 3, 3, 5, 5]],
+    ['island-splendors', [0, 2, 2, 7, 7]],
+  ])('has the pieces of %s at each star level: %j', (id, counts) => {
+    const puzzle = album.puzzles.find((p) => p.id === id)!;
+    expect(Object.values(tundraPuzzlePieceCounts(puzzle))).toEqual(counts);
+    expect(puzzle.pieces).toHaveLength(counts.reduce((a, b) => a + b, 0));
+  });
+
+  it('has 135 pieces, named and numbered by puzzle, in order of stars', () => {
+    const all = album.puzzles.flatMap((p) => p.pieces);
+    expect(all).toHaveLength(135);
+    expect(new Set(all.map((p) => p.id)).size).toBe(135);
+    for (const puzzle of album.puzzles) {
+      puzzle.pieces.forEach((piece, i) => {
+        expect(piece.id).toBe(`${puzzle.id}-${i + 1}`);
+        expect(piece.name).toBe(`${puzzle.name} - ${i + 1}`);
+      });
+      const stars = puzzle.pieces.map((p) => p.stars);
+      expect(stars).toEqual([...stars].sort((a, b) => a - b));
+    }
+    const totals = [1, 2, 3, 4, 5].map((s) => all.filter((p) => p.stars === s).length);
+    expect(totals).toEqual([23, 31, 30, 29, 22]);
+  });
+
+  it('gives each puzzle its reward', () => {
+    expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
+      ['daybreak-island-legend', 'polishing-solution', 30],
+      ['island-of-dreams', 'enhancement-xp-component', 7],
+      ['tree-of-life', 'speedup-general-3h', 3],
+      ['call-of-the-sea', 'chief-gear-materials-chest', 3],
+      ['distant-resonance', 'lucky-hero-gear-chest', 4],
+      ['caravan-visit', 'design-plans', 10],
+      ['new-home', 'mythic-general-decoration-component', 1],
+      ['daybreak-song', 'mythic-general-decoration-component', 1],
+      ['island-splendors', 'mythic-general-decoration-component', 3],
+    ]);
+  });
+
+  it('links every known reward item to items()', () => {
+    const rewards = [...album.completionRewards, ...album.puzzles.map((p) => p.reward)];
+    const linked = rewards.filter((r) => r.itemId !== undefined);
+    expect(linked).toHaveLength(11);
+    for (const reward of linked) expect(items().find(reward.itemId!)).toBeDefined();
+  });
+
+  it('has an image file for every puzzle and piece, named after its id, and none unused', () => {
+    const images = album.puzzles.flatMap((p) => [p.img, ...p.pieces.map((piece) => piece.img)]);
+    expect(images).toHaveLength(9 + 135);
+    for (const puzzle of album.puzzles) {
+      expect(puzzle.img).toBe(`/images/tundra-album/${album.id}/${puzzle.id}.png`);
+      for (const piece of puzzle.pieces) {
+        expect(piece.img).toBe(`/images/tundra-album/${album.id}/${piece.id}.png`);
+      }
+    }
+    for (const img of images) expect(exists(img!)).toBe(true);
+    const folder = join(__dirname, '../../images/tundra-album', album.id);
+    const files = readdirSync(folder).map((f) => `/images/tundra-album/${album.id}/${f}`);
+    expect(files.filter((f) => !images.includes(f))).toEqual([]);
+    expect(files).toHaveLength(144);
+  });
+});
+
 describe('tundraPuzzlePieceCounts', () => {
   it('counts the pieces of a puzzle by stars', () => {
     const puzzle = tundraAlbum().find('crystalline-mysteries')!.puzzles[1];

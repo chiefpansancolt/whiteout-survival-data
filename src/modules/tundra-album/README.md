@@ -4,7 +4,8 @@ The albums of the Tundra Album event. An album has 9 puzzles. A puzzle is built 
 5 stars, gives a reward when it is done, and the album gives a buff when all 9 puzzles are done. Use
 it to see what an album holds and what finishing it gives.
 
-The package holds one album so far, Crystalline Mysteries. More albums are added later.
+The package holds two albums so far, Crystalline Mysteries and Daybreak Island. More albums are
+added later.
 
 ## Usage
 
@@ -26,7 +27,7 @@ console.log(mining?.pieces[14].name); // 'Mining the Fire - 15'
 const reward = mining?.reward;
 console.log(reward?.amount, reward?.itemId && items().find(reward.itemId)?.name); // 3 'Essence Stones'
 
-console.log(tundraAlbum().count()); // 1
+console.log(tundraAlbum().count()); // 2
 ```
 
 ## Functions
@@ -78,15 +79,35 @@ The buff is Troops Attack +2%. The completion rewards are 70 Random Chief Charm 
 The album has 144 pieces: 19 at 1 star, 31 at 2 stars, 29 at 3 stars, 35 at 4 stars, and 30 at 5
 stars.
 
+### Daybreak Island
+
+The buff is Troops Defense +2%. The completion rewards are 16 Mythic General Decoration Component
+and 15 8h General Speedup.
+
+| Puzzle                 | Pieces | 1 star | 2 stars | 3 stars | 4 stars | 5 stars | Reward                                |
+| ---------------------- | ------ | ------ | ------- | ------- | ------- | ------- | ------------------------------------- |
+| Daybreak Island Legend | 12     | 4      | 4       | 3       | 1       | 0       | 30 Polishing Solution                 |
+| Island of Dreams       | 12     | 3      | 3       | 4       | 2       | 0       | 7 Enhancement XP Component            |
+| Tree of Life           | 12     | 3      | 3       | 3       | 3       | 0       | 3 3h General Speedup                  |
+| Call of the Sea        | 15     | 3      | 5       | 4       | 2       | 1       | 3 Chief Gear Materials Chest          |
+| Distant Resonance      | 15     | 3      | 4       | 4       | 2       | 2       | 4 Lucky Hero Gear Chest               |
+| Caravan Visit          | 15     | 3      | 3       | 3       | 3       | 3       | 10 Design Plans                       |
+| New Home               | 18     | 2      | 4       | 4       | 4       | 4       | 1 Mythic General Decoration Component |
+| Daybreak Song          | 18     | 2      | 3       | 3       | 5       | 5       | 1 Mythic General Decoration Component |
+| Island Splendors       | 18     | 0      | 2       | 2       | 7       | 7       | 3 Mythic General Decoration Component |
+
+The album has 135 pieces: 23 at 1 star, 31 at 2 stars, 30 at 3 stars, 29 at 4 stars, and 22 at 5
+stars.
+
 ## Notes
 
-The pieces, the star levels, and the reward amounts are read from the album screens of the game, and
-the images are cut from the same screens. The package owner names the items of the album reward
-(Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of Heirs of Empire
-(Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The items of the other
-rewards are read from the icons of the screens. The reward of Fiery Crystal is 7 of the Enhancement
-XP Component with the 100 on its icon, as the screen shows it. The item `enhancement-xp-component`
-covers both the 10 and the 100 component.
+The pieces, the star levels, and the reward amounts of both albums are read from the album screens
+of the game, and the images are cut from the same screens. The package owner names the items of the
+album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
+Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The
+items of the other rewards are read from the icons of the screens. The reward of Fiery Crystal is 7
+of the Enhancement XP Component with the 100 on its icon, as the screen shows it. The item
+`enhancement-xp-component` covers both the 10 and the 100 component.
 
 These parts are not in the data yet:
 

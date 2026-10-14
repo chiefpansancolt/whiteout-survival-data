@@ -984,5 +984,937 @@
         ]
       }
     ]
+  },
+  {
+    "id": "daybreak-island",
+    "name": "Daybreak Island",
+    "buff": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "amount": 16,
+        "itemId": "mythic-general-decoration-component"
+      },
+      {
+        "itemId": "speedup-general-8h",
+        "amount": 15
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "daybreak-island-legend",
+        "name": "Daybreak Island Legend",
+        "img": "/images/tundra-album/daybreak-island/daybreak-island-legend.png",
+        "reward": {
+          "itemId": "polishing-solution",
+          "amount": 30
+        },
+        "pieces": [
+          {
+            "id": "daybreak-island-legend-1",
+            "name": "Daybreak Island Legend - 1",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-1.png",
+            "stars": 1
+          },
+          {
+            "id": "daybreak-island-legend-2",
+            "name": "Daybreak Island Legend - 2",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-2.png",
+            "stars": 1
+          },
+          {
+            "id": "daybreak-island-legend-3",
+            "name": "Daybreak Island Legend - 3",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-3.png",
+            "stars": 1
+          },
+          {
+            "id": "daybreak-island-legend-4",
+            "name": "Daybreak Island Legend - 4",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-4.png",
+            "stars": 1
+          },
+          {
+            "id": "daybreak-island-legend-5",
+            "name": "Daybreak Island Legend - 5",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-5.png",
+            "stars": 2
+          },
+          {
+            "id": "daybreak-island-legend-6",
+            "name": "Daybreak Island Legend - 6",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-6.png",
+            "stars": 2
+          },
+          {
+            "id": "daybreak-island-legend-7",
+            "name": "Daybreak Island Legend - 7",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-7.png",
+            "stars": 2
+          },
+          {
+            "id": "daybreak-island-legend-8",
+            "name": "Daybreak Island Legend - 8",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-8.png",
+            "stars": 2
+          },
+          {
+            "id": "daybreak-island-legend-9",
+            "name": "Daybreak Island Legend - 9",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-9.png",
+            "stars": 3
+          },
+          {
+            "id": "daybreak-island-legend-10",
+            "name": "Daybreak Island Legend - 10",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-10.png",
+            "stars": 3
+          },
+          {
+            "id": "daybreak-island-legend-11",
+            "name": "Daybreak Island Legend - 11",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-11.png",
+            "stars": 3
+          },
+          {
+            "id": "daybreak-island-legend-12",
+            "name": "Daybreak Island Legend - 12",
+            "img": "/images/tundra-album/daybreak-island/daybreak-island-legend-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "island-of-dreams",
+        "name": "Island of Dreams",
+        "img": "/images/tundra-album/daybreak-island/island-of-dreams.png",
+        "reward": {
+          "itemId": "enhancement-xp-component",
+          "amount": 7
+        },
+        "pieces": [
+          {
+            "id": "island-of-dreams-1",
+            "name": "Island of Dreams - 1",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-1.png",
+            "stars": 1
+          },
+          {
+            "id": "island-of-dreams-2",
+            "name": "Island of Dreams - 2",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-2.png",
+            "stars": 1
+          },
+          {
+            "id": "island-of-dreams-3",
+            "name": "Island of Dreams - 3",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-3.png",
+            "stars": 1
+          },
+          {
+            "id": "island-of-dreams-4",
+            "name": "Island of Dreams - 4",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-4.png",
+            "stars": 2
+          },
+          {
+            "id": "island-of-dreams-5",
+            "name": "Island of Dreams - 5",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-5.png",
+            "stars": 2
+          },
+          {
+            "id": "island-of-dreams-6",
+            "name": "Island of Dreams - 6",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-6.png",
+            "stars": 2
+          },
+          {
+            "id": "island-of-dreams-7",
+            "name": "Island of Dreams - 7",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-7.png",
+            "stars": 3
+          },
+          {
+            "id": "island-of-dreams-8",
+            "name": "Island of Dreams - 8",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-8.png",
+            "stars": 3
+          },
+          {
+            "id": "island-of-dreams-9",
+            "name": "Island of Dreams - 9",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-9.png",
+            "stars": 3
+          },
+          {
+            "id": "island-of-dreams-10",
+            "name": "Island of Dreams - 10",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-10.png",
+            "stars": 3
+          },
+          {
+            "id": "island-of-dreams-11",
+            "name": "Island of Dreams - 11",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-11.png",
+            "stars": 4
+          },
+          {
+            "id": "island-of-dreams-12",
+            "name": "Island of Dreams - 12",
+            "img": "/images/tundra-album/daybreak-island/island-of-dreams-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "tree-of-life",
+        "name": "Tree of Life",
+        "img": "/images/tundra-album/daybreak-island/tree-of-life.png",
+        "reward": {
+          "itemId": "speedup-general-3h",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "tree-of-life-1",
+            "name": "Tree of Life - 1",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-1.png",
+            "stars": 1
+          },
+          {
+            "id": "tree-of-life-2",
+            "name": "Tree of Life - 2",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-2.png",
+            "stars": 1
+          },
+          {
+            "id": "tree-of-life-3",
+            "name": "Tree of Life - 3",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-3.png",
+            "stars": 1
+          },
+          {
+            "id": "tree-of-life-4",
+            "name": "Tree of Life - 4",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-4.png",
+            "stars": 2
+          },
+          {
+            "id": "tree-of-life-5",
+            "name": "Tree of Life - 5",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-5.png",
+            "stars": 2
+          },
+          {
+            "id": "tree-of-life-6",
+            "name": "Tree of Life - 6",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-6.png",
+            "stars": 2
+          },
+          {
+            "id": "tree-of-life-7",
+            "name": "Tree of Life - 7",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-7.png",
+            "stars": 3
+          },
+          {
+            "id": "tree-of-life-8",
+            "name": "Tree of Life - 8",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-8.png",
+            "stars": 3
+          },
+          {
+            "id": "tree-of-life-9",
+            "name": "Tree of Life - 9",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-9.png",
+            "stars": 3
+          },
+          {
+            "id": "tree-of-life-10",
+            "name": "Tree of Life - 10",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-10.png",
+            "stars": 4
+          },
+          {
+            "id": "tree-of-life-11",
+            "name": "Tree of Life - 11",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-11.png",
+            "stars": 4
+          },
+          {
+            "id": "tree-of-life-12",
+            "name": "Tree of Life - 12",
+            "img": "/images/tundra-album/daybreak-island/tree-of-life-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "call-of-the-sea",
+        "name": "Call of the Sea",
+        "img": "/images/tundra-album/daybreak-island/call-of-the-sea.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "call-of-the-sea-1",
+            "name": "Call of the Sea - 1",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-1.png",
+            "stars": 1
+          },
+          {
+            "id": "call-of-the-sea-2",
+            "name": "Call of the Sea - 2",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-2.png",
+            "stars": 1
+          },
+          {
+            "id": "call-of-the-sea-3",
+            "name": "Call of the Sea - 3",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-3.png",
+            "stars": 1
+          },
+          {
+            "id": "call-of-the-sea-4",
+            "name": "Call of the Sea - 4",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-4.png",
+            "stars": 2
+          },
+          {
+            "id": "call-of-the-sea-5",
+            "name": "Call of the Sea - 5",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-5.png",
+            "stars": 2
+          },
+          {
+            "id": "call-of-the-sea-6",
+            "name": "Call of the Sea - 6",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-6.png",
+            "stars": 2
+          },
+          {
+            "id": "call-of-the-sea-7",
+            "name": "Call of the Sea - 7",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-7.png",
+            "stars": 2
+          },
+          {
+            "id": "call-of-the-sea-8",
+            "name": "Call of the Sea - 8",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-8.png",
+            "stars": 2
+          },
+          {
+            "id": "call-of-the-sea-9",
+            "name": "Call of the Sea - 9",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-9.png",
+            "stars": 3
+          },
+          {
+            "id": "call-of-the-sea-10",
+            "name": "Call of the Sea - 10",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-10.png",
+            "stars": 3
+          },
+          {
+            "id": "call-of-the-sea-11",
+            "name": "Call of the Sea - 11",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-11.png",
+            "stars": 3
+          },
+          {
+            "id": "call-of-the-sea-12",
+            "name": "Call of the Sea - 12",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-12.png",
+            "stars": 3
+          },
+          {
+            "id": "call-of-the-sea-13",
+            "name": "Call of the Sea - 13",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-13.png",
+            "stars": 4
+          },
+          {
+            "id": "call-of-the-sea-14",
+            "name": "Call of the Sea - 14",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-14.png",
+            "stars": 4
+          },
+          {
+            "id": "call-of-the-sea-15",
+            "name": "Call of the Sea - 15",
+            "img": "/images/tundra-album/daybreak-island/call-of-the-sea-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "distant-resonance",
+        "name": "Distant Resonance",
+        "img": "/images/tundra-album/daybreak-island/distant-resonance.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 4
+        },
+        "pieces": [
+          {
+            "id": "distant-resonance-1",
+            "name": "Distant Resonance - 1",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-1.png",
+            "stars": 1
+          },
+          {
+            "id": "distant-resonance-2",
+            "name": "Distant Resonance - 2",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-2.png",
+            "stars": 1
+          },
+          {
+            "id": "distant-resonance-3",
+            "name": "Distant Resonance - 3",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-3.png",
+            "stars": 1
+          },
+          {
+            "id": "distant-resonance-4",
+            "name": "Distant Resonance - 4",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-4.png",
+            "stars": 2
+          },
+          {
+            "id": "distant-resonance-5",
+            "name": "Distant Resonance - 5",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-5.png",
+            "stars": 2
+          },
+          {
+            "id": "distant-resonance-6",
+            "name": "Distant Resonance - 6",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-6.png",
+            "stars": 2
+          },
+          {
+            "id": "distant-resonance-7",
+            "name": "Distant Resonance - 7",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-7.png",
+            "stars": 2
+          },
+          {
+            "id": "distant-resonance-8",
+            "name": "Distant Resonance - 8",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-8.png",
+            "stars": 3
+          },
+          {
+            "id": "distant-resonance-9",
+            "name": "Distant Resonance - 9",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-9.png",
+            "stars": 3
+          },
+          {
+            "id": "distant-resonance-10",
+            "name": "Distant Resonance - 10",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-10.png",
+            "stars": 3
+          },
+          {
+            "id": "distant-resonance-11",
+            "name": "Distant Resonance - 11",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-11.png",
+            "stars": 3
+          },
+          {
+            "id": "distant-resonance-12",
+            "name": "Distant Resonance - 12",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-12.png",
+            "stars": 4
+          },
+          {
+            "id": "distant-resonance-13",
+            "name": "Distant Resonance - 13",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-13.png",
+            "stars": 4
+          },
+          {
+            "id": "distant-resonance-14",
+            "name": "Distant Resonance - 14",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-14.png",
+            "stars": 5
+          },
+          {
+            "id": "distant-resonance-15",
+            "name": "Distant Resonance - 15",
+            "img": "/images/tundra-album/daybreak-island/distant-resonance-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "caravan-visit",
+        "name": "Caravan Visit",
+        "img": "/images/tundra-album/daybreak-island/caravan-visit.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "caravan-visit-1",
+            "name": "Caravan Visit - 1",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-1.png",
+            "stars": 1
+          },
+          {
+            "id": "caravan-visit-2",
+            "name": "Caravan Visit - 2",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-2.png",
+            "stars": 1
+          },
+          {
+            "id": "caravan-visit-3",
+            "name": "Caravan Visit - 3",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-3.png",
+            "stars": 1
+          },
+          {
+            "id": "caravan-visit-4",
+            "name": "Caravan Visit - 4",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-4.png",
+            "stars": 2
+          },
+          {
+            "id": "caravan-visit-5",
+            "name": "Caravan Visit - 5",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-5.png",
+            "stars": 2
+          },
+          {
+            "id": "caravan-visit-6",
+            "name": "Caravan Visit - 6",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-6.png",
+            "stars": 2
+          },
+          {
+            "id": "caravan-visit-7",
+            "name": "Caravan Visit - 7",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-7.png",
+            "stars": 3
+          },
+          {
+            "id": "caravan-visit-8",
+            "name": "Caravan Visit - 8",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-8.png",
+            "stars": 3
+          },
+          {
+            "id": "caravan-visit-9",
+            "name": "Caravan Visit - 9",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-9.png",
+            "stars": 3
+          },
+          {
+            "id": "caravan-visit-10",
+            "name": "Caravan Visit - 10",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-10.png",
+            "stars": 4
+          },
+          {
+            "id": "caravan-visit-11",
+            "name": "Caravan Visit - 11",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-11.png",
+            "stars": 4
+          },
+          {
+            "id": "caravan-visit-12",
+            "name": "Caravan Visit - 12",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-12.png",
+            "stars": 4
+          },
+          {
+            "id": "caravan-visit-13",
+            "name": "Caravan Visit - 13",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-13.png",
+            "stars": 5
+          },
+          {
+            "id": "caravan-visit-14",
+            "name": "Caravan Visit - 14",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-14.png",
+            "stars": 5
+          },
+          {
+            "id": "caravan-visit-15",
+            "name": "Caravan Visit - 15",
+            "img": "/images/tundra-album/daybreak-island/caravan-visit-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "new-home",
+        "name": "New Home",
+        "img": "/images/tundra-album/daybreak-island/new-home.png",
+        "reward": {
+          "amount": 1,
+          "itemId": "mythic-general-decoration-component"
+        },
+        "pieces": [
+          {
+            "id": "new-home-1",
+            "name": "New Home - 1",
+            "img": "/images/tundra-album/daybreak-island/new-home-1.png",
+            "stars": 1
+          },
+          {
+            "id": "new-home-2",
+            "name": "New Home - 2",
+            "img": "/images/tundra-album/daybreak-island/new-home-2.png",
+            "stars": 1
+          },
+          {
+            "id": "new-home-3",
+            "name": "New Home - 3",
+            "img": "/images/tundra-album/daybreak-island/new-home-3.png",
+            "stars": 2
+          },
+          {
+            "id": "new-home-4",
+            "name": "New Home - 4",
+            "img": "/images/tundra-album/daybreak-island/new-home-4.png",
+            "stars": 2
+          },
+          {
+            "id": "new-home-5",
+            "name": "New Home - 5",
+            "img": "/images/tundra-album/daybreak-island/new-home-5.png",
+            "stars": 2
+          },
+          {
+            "id": "new-home-6",
+            "name": "New Home - 6",
+            "img": "/images/tundra-album/daybreak-island/new-home-6.png",
+            "stars": 2
+          },
+          {
+            "id": "new-home-7",
+            "name": "New Home - 7",
+            "img": "/images/tundra-album/daybreak-island/new-home-7.png",
+            "stars": 3
+          },
+          {
+            "id": "new-home-8",
+            "name": "New Home - 8",
+            "img": "/images/tundra-album/daybreak-island/new-home-8.png",
+            "stars": 3
+          },
+          {
+            "id": "new-home-9",
+            "name": "New Home - 9",
+            "img": "/images/tundra-album/daybreak-island/new-home-9.png",
+            "stars": 3
+          },
+          {
+            "id": "new-home-10",
+            "name": "New Home - 10",
+            "img": "/images/tundra-album/daybreak-island/new-home-10.png",
+            "stars": 3
+          },
+          {
+            "id": "new-home-11",
+            "name": "New Home - 11",
+            "img": "/images/tundra-album/daybreak-island/new-home-11.png",
+            "stars": 4
+          },
+          {
+            "id": "new-home-12",
+            "name": "New Home - 12",
+            "img": "/images/tundra-album/daybreak-island/new-home-12.png",
+            "stars": 4
+          },
+          {
+            "id": "new-home-13",
+            "name": "New Home - 13",
+            "img": "/images/tundra-album/daybreak-island/new-home-13.png",
+            "stars": 4
+          },
+          {
+            "id": "new-home-14",
+            "name": "New Home - 14",
+            "img": "/images/tundra-album/daybreak-island/new-home-14.png",
+            "stars": 4
+          },
+          {
+            "id": "new-home-15",
+            "name": "New Home - 15",
+            "img": "/images/tundra-album/daybreak-island/new-home-15.png",
+            "stars": 5
+          },
+          {
+            "id": "new-home-16",
+            "name": "New Home - 16",
+            "img": "/images/tundra-album/daybreak-island/new-home-16.png",
+            "stars": 5
+          },
+          {
+            "id": "new-home-17",
+            "name": "New Home - 17",
+            "img": "/images/tundra-album/daybreak-island/new-home-17.png",
+            "stars": 5
+          },
+          {
+            "id": "new-home-18",
+            "name": "New Home - 18",
+            "img": "/images/tundra-album/daybreak-island/new-home-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "daybreak-song",
+        "name": "Daybreak Song",
+        "img": "/images/tundra-album/daybreak-island/daybreak-song.png",
+        "reward": {
+          "amount": 1,
+          "itemId": "mythic-general-decoration-component"
+        },
+        "pieces": [
+          {
+            "id": "daybreak-song-1",
+            "name": "Daybreak Song - 1",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-1.png",
+            "stars": 1
+          },
+          {
+            "id": "daybreak-song-2",
+            "name": "Daybreak Song - 2",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-2.png",
+            "stars": 1
+          },
+          {
+            "id": "daybreak-song-3",
+            "name": "Daybreak Song - 3",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-3.png",
+            "stars": 2
+          },
+          {
+            "id": "daybreak-song-4",
+            "name": "Daybreak Song - 4",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-4.png",
+            "stars": 2
+          },
+          {
+            "id": "daybreak-song-5",
+            "name": "Daybreak Song - 5",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-5.png",
+            "stars": 2
+          },
+          {
+            "id": "daybreak-song-6",
+            "name": "Daybreak Song - 6",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-6.png",
+            "stars": 3
+          },
+          {
+            "id": "daybreak-song-7",
+            "name": "Daybreak Song - 7",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-7.png",
+            "stars": 3
+          },
+          {
+            "id": "daybreak-song-8",
+            "name": "Daybreak Song - 8",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-8.png",
+            "stars": 3
+          },
+          {
+            "id": "daybreak-song-9",
+            "name": "Daybreak Song - 9",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-9.png",
+            "stars": 4
+          },
+          {
+            "id": "daybreak-song-10",
+            "name": "Daybreak Song - 10",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-10.png",
+            "stars": 4
+          },
+          {
+            "id": "daybreak-song-11",
+            "name": "Daybreak Song - 11",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-11.png",
+            "stars": 4
+          },
+          {
+            "id": "daybreak-song-12",
+            "name": "Daybreak Song - 12",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-12.png",
+            "stars": 4
+          },
+          {
+            "id": "daybreak-song-13",
+            "name": "Daybreak Song - 13",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-13.png",
+            "stars": 4
+          },
+          {
+            "id": "daybreak-song-14",
+            "name": "Daybreak Song - 14",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-14.png",
+            "stars": 5
+          },
+          {
+            "id": "daybreak-song-15",
+            "name": "Daybreak Song - 15",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-15.png",
+            "stars": 5
+          },
+          {
+            "id": "daybreak-song-16",
+            "name": "Daybreak Song - 16",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-16.png",
+            "stars": 5
+          },
+          {
+            "id": "daybreak-song-17",
+            "name": "Daybreak Song - 17",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-17.png",
+            "stars": 5
+          },
+          {
+            "id": "daybreak-song-18",
+            "name": "Daybreak Song - 18",
+            "img": "/images/tundra-album/daybreak-island/daybreak-song-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "island-splendors",
+        "name": "Island Splendors",
+        "img": "/images/tundra-album/daybreak-island/island-splendors.png",
+        "reward": {
+          "amount": 3,
+          "itemId": "mythic-general-decoration-component"
+        },
+        "pieces": [
+          {
+            "id": "island-splendors-1",
+            "name": "Island Splendors - 1",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-1.png",
+            "stars": 2
+          },
+          {
+            "id": "island-splendors-2",
+            "name": "Island Splendors - 2",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-2.png",
+            "stars": 2
+          },
+          {
+            "id": "island-splendors-3",
+            "name": "Island Splendors - 3",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-3.png",
+            "stars": 3
+          },
+          {
+            "id": "island-splendors-4",
+            "name": "Island Splendors - 4",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-4.png",
+            "stars": 3
+          },
+          {
+            "id": "island-splendors-5",
+            "name": "Island Splendors - 5",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-5.png",
+            "stars": 4
+          },
+          {
+            "id": "island-splendors-6",
+            "name": "Island Splendors - 6",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-6.png",
+            "stars": 4
+          },
+          {
+            "id": "island-splendors-7",
+            "name": "Island Splendors - 7",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-7.png",
+            "stars": 4
+          },
+          {
+            "id": "island-splendors-8",
+            "name": "Island Splendors - 8",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-8.png",
+            "stars": 4
+          },
+          {
+            "id": "island-splendors-9",
+            "name": "Island Splendors - 9",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-9.png",
+            "stars": 4
+          },
+          {
+            "id": "island-splendors-10",
+            "name": "Island Splendors - 10",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-10.png",
+            "stars": 4
+          },
+          {
+            "id": "island-splendors-11",
+            "name": "Island Splendors - 11",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-11.png",
+            "stars": 4
+          },
+          {
+            "id": "island-splendors-12",
+            "name": "Island Splendors - 12",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-12.png",
+            "stars": 5
+          },
+          {
+            "id": "island-splendors-13",
+            "name": "Island Splendors - 13",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-13.png",
+            "stars": 5
+          },
+          {
+            "id": "island-splendors-14",
+            "name": "Island Splendors - 14",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-14.png",
+            "stars": 5
+          },
+          {
+            "id": "island-splendors-15",
+            "name": "Island Splendors - 15",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-15.png",
+            "stars": 5
+          },
+          {
+            "id": "island-splendors-16",
+            "name": "Island Splendors - 16",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-16.png",
+            "stars": 5
+          },
+          {
+            "id": "island-splendors-17",
+            "name": "Island Splendors - 17",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-17.png",
+            "stars": 5
+          },
+          {
+            "id": "island-splendors-18",
+            "name": "Island Splendors - 18",
+            "img": "/images/tundra-album/daybreak-island/island-splendors-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]
