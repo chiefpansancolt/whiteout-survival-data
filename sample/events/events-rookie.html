@@ -528,6 +528,13 @@
     (event.shops ?? []).forEach((shop) => card.append(section(shop.name, shopTable(shop.offers, event))));
     if (event.missions) card.append(section('Missions', missionsTable(event.missions, event.missionPointsLabel)));
     if (event.tiers) card.append(tiersSection(event));
+    (event.versions ?? []).forEach((version) => {
+      const body = el('div');
+      if (version.note) body.append(el('p', 'sub', version.note));
+      if (version.missions) body.append(missionsTable(version.missions, event.missionPointsLabel));
+      if (version.tiers) body.append(flatTierTable(version.tiers));
+      card.append(section(version.name, body));
+    });
     if (event.allianceRankings) card.append(section(event.allianceRankingUpdates ? 'Alliance rewards (first list)' : 'Alliance rewards', rankingTable(event.allianceRankings, 'Alliance rank')));
     if (event.allianceRankingUpdates) event.allianceRankingUpdates.forEach((update) => {
       const body = el('div');

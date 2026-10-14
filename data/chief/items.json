@@ -694,7 +694,7 @@
   {
     "id": "lv-1-custom-ressource-chest",
     "name": "Lv.1 Custom Ressource Chest",
-    "img": "/images/items/lv-1-custom-ressource-chest.png",
+    "img": "/images/items/ressource-chest.png",
     "category": "Chest",
     "description": "Grants your choice of 10K Meat, 10K Wood, 2K Coal or 500 Iron",
     "sources": []

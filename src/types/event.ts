@@ -111,6 +111,13 @@ export interface GameEventScoringAction {
   itemIds?: string[];
 }
 
+export interface GameEventVersion {
+  name: string;
+  note?: string;
+  missions?: GameEventMission[];
+  tiers?: GameEventTier[];
+}
+
 export interface GameEventDay {
   day: string;
   name: string;
@@ -228,6 +235,8 @@ export interface GameEvent {
   days?: GameEventDay[];
   waves?: GameEventWave[];
   missions?: GameEventMission[];
+  /** Holds the missions and tiers of an event that differ by the age of the state. */
+  versions?: GameEventVersion[];
   /** Set only when the points are a currency. */
   missionPointsLabel?: string;
   shopCurrencyItemId?: string;

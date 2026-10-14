@@ -882,8 +882,34 @@ describe('Events data', () => {
     expect(troops.scoring).toContainEqual({ action: 'Train 1 Lv. 11 Troop', points: 37 });
     expect(heroes.scoring.map((s) => s.points)).toEqual([70, 350, 1220, 3040, 6000, 12000, 216000]);
     expect(troops.milestones![3].rewards![0].itemId).toBe('essence-stones');
+    expect(troops.milestones!.map((m) => m.rewards!.map((r) => [r.itemId, r.amount]))).toEqual([
+      [
+        ['meat', 35],
+        ['wood', 35],
+        ['coal', 7],
+        ['iron', 2],
+      ],
+      [
+        ['hero-xp', 16],
+        ['speedup-construction-5m', 45],
+        ['speedup-research-5m', 45],
+        ['speedup-troop-5m', 45],
+      ],
+      [
+        ['gems', 5000],
+        ['lv-1-custom-ressource-chest', 1],
+        ['meat', 280],
+        ['wood', 70],
+      ],
+      [
+        ['essence-stones', 8],
+        ['shot-token', 1],
+        ['mythic-exploration-skill-manual', 5],
+        ['mythic-expedition-skill-manual', 5],
+      ],
+    ]);
     expect(heroes.milestones![3].rewards![0].itemId).toBe('charm-design');
-    expect(troops.milestones!.map((m) => m.scoreTotal)).toEqual([19800, 110000, 226000, 453000]);
+    expect(troops.milestones!.map((m) => m.scoreTotal)).toEqual([13000, 76000, 150000, 310000]);
     heroes.milestones!.forEach((m) => expect(m.scoreTotal).toBeUndefined());
     expect(officer.personalRankings![0].rankings[0].rewards[0]).toMatchObject({
       itemId: 'mythic-general-decoration-component',
@@ -1402,17 +1428,121 @@ describe('Events data', () => {
       'brute-mammamoth',
     ]);
     const dawn = events().find('vision-of-dawn')!;
-    expect(dawn.tiers!.map((t) => t.name)).toEqual([
+    expect(dawn.missions).toBeUndefined();
+    expect(dawn.tiers).toBeUndefined();
+    const [before, fireCrystalAge] = dawn.versions!;
+    expect([before.name, fireCrystalAge.name]).toEqual([
+      'Before Fire Crystal age',
+      'Fire Crystal age',
+    ]);
+    const chestNames = [
       'First chest',
       'Second chest',
       'Third chest',
       'Fourth chest',
       'Fifth chest',
-    ]);
-    expect(dawn.tiers![4].rewards![0]).toMatchObject({
+    ];
+    expect(before.tiers!.map((t) => t.name)).toEqual(chestNames);
+    expect(before.tiers![4].rewards![0]).toMatchObject({
       itemId: 'war-chant-custom-chest',
       amount: 3,
     });
+    expect(before.missions).toHaveLength(9);
+    expect(fireCrystalAge.tiers!.map((t) => t.name)).toEqual(chestNames);
+    expect(fireCrystalAge.tiers!.map((t) => t.scoreTotal)).toEqual([10, 30, 50, 80, 110]);
+    expect(fireCrystalAge.tiers!.map((t) => t.rewards!.map((r) => [r.itemId, r.amount]))).toEqual([
+      [
+        ['gems', 1000],
+        ['chief-stamina', 5],
+      ],
+      [
+        ['speedup-general-3h', 1],
+        ['chief-stamina', 5],
+      ],
+      [
+        ['enhancement-xp-component', 5],
+        ['chief-stamina', 5],
+      ],
+      [
+        ['fire-crystal', 15],
+        ['chief-stamina', 5],
+      ],
+      [
+        ['war-chant-custom-chest', 3],
+        ['chief-stamina', 20],
+      ],
+    ]);
+    expect(fireCrystalAge.missions!.map((m) => [m.name, m.points])).toEqual([
+      ['Defeat 15 Beasts', 4],
+      ['Call rally and hunt down 3 Polar Terrors', 2],
+      ['Call rally and hunt down 10 Polar Terrors', 4],
+      ['Gather 3,000,000 resources', 2],
+      ['Gather 10,000,000 resources', 4],
+      ['Use Epic Recruitment 10 times', 4],
+      ['Use Epic Recruitment 30 times', 10],
+      ['Defeat 5 Beasts', 2],
+      ['Use Advanced Recruitment 10 times', 2],
+      ['Make any payment 1 time', 20],
+    ]);
+    expect(
+      fireCrystalAge.missions!.map((m) => m.rewards!.map((r) => [r.itemId, r.amount])),
+    ).toEqual([
+      [
+        ['mythic-exploration-skill-manual', 2],
+        ['speedup-general-5m', 5],
+        ['speedup-construction-5m', 5],
+      ],
+      [
+        ['hero-xp', 2],
+        ['coal', 20],
+        ['iron', 5],
+      ],
+      [
+        ['enhancement-xp-component', 3],
+        ['speedup-general-5m', 5],
+        ['speedup-research-5m', 5],
+      ],
+      [
+        ['hero-xp', 2],
+        ['meat', 10],
+        ['wood', 10],
+      ],
+      [
+        ['mythic-expedition-skill-manual', 2],
+        ['speedup-general-5m', 5],
+        ['speedup-troop-5m', 5],
+      ],
+      [
+        ['speedup-construction-5m', 10],
+        ['speedup-research-5m', 10],
+        ['speedup-troop-5m', 10],
+      ],
+      [
+        ['mythic-general-hero-shard', 2],
+        ['fire-crystal', 5],
+        ['lv-2-custom-ressource-chest', 10],
+      ],
+      [
+        ['hero-xp', 2],
+        ['meat', 10],
+        ['wood', 10],
+      ],
+      [
+        ['gems', 300],
+        ['coal', 20],
+        ['iron', 5],
+      ],
+      [
+        ['war-chant-custom-chest', 1],
+        ['fire-crystal', 10],
+        ['gold-key', 2],
+      ],
+    ]);
+    const hopeInOneDay = fireCrystalAge.missions!.reduce((sum, m) => sum + m.points, 0);
+    expect(hopeInOneDay).toBe(54);
+    for (const m of fireCrystalAge.missions!) {
+      for (const r of m.rewards!) expect(items().find(r.itemId!)).toBeDefined();
+    }
     expect(dawn.missionPointsLabel).toBe('Hope points');
     expect(events().find('romance-season')!.phases).toHaveLength(3);
     const dream = events().find('dreamscape-memory')!;

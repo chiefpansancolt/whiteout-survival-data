@@ -71,6 +71,7 @@ The event fields that hold more than text:
 | `pointLevels`                                             | Reward levels that need both personal and alliance points.                                                                                       |
 | `days`, `waves`, `zones`                                  | Per-day scoring and milestones, attack waves, and zones with their open days.                                                                    |
 | `missions`, `missionPointsLabel`                          | Missions with base points. The label names the points when they are a currency.                                                                  |
+| `versions`                                                | The missions and tiers of an event that differ by the age of the state, each with a `name` and an optional `note`.                               |
 | `shop`, `shops`, `shopCurrencyItemId`, `shopCurrencyName` | Shop offers with cost and limit, and the currency.                                                                                               |
 | `refreshes`, `heroByGeneration`                           | Refresh costs with quality chances, and the hero shard of each generation.                                                                       |
 | `resultShape`                                             | The form of result the event takes, set on the 61 events that are not Core events. See below.                                                    |
@@ -289,3 +290,10 @@ event.
 
 Holiday events: Frosty Fortune, Vision of Dawn, Romance Season, Dreamscape Memory, and Vault of
 Enigma.
+
+Vision of Dawn has two `versions`, Before Fire Crystal age and Fire Crystal age. Each one holds the
+missions with their Hope points and rewards, and the five Hope chests in `tiers`. The Fire Crystal
+age version has the Hope points of each chest in `scoreTotal` (10, 30, 50, 80, and 110). The Before
+Fire Crystal age version does not have them yet. The missions of the Fire Crystal age version give
+54 Hope points a day. The Lv.2 Custom Ressource Chest of the Epic Recruitment 30 mission is read
+from the icon of the screen.

@@ -341,29 +341,29 @@
             {
               "name": "Meat",
               "itemId": "meat",
-              "amount": 30,
+              "amount": 35,
               "note": "Each is a 10K resource pack"
             },
             {
               "name": "Wood",
               "itemId": "wood",
-              "amount": 30,
+              "amount": 35,
               "note": "Each is a 10K resource pack"
             },
             {
               "name": "Coal",
               "itemId": "coal",
-              "amount": 6,
+              "amount": 7,
               "note": "Each is a 10K resource pack"
             },
             {
               "name": "Iron",
               "itemId": "iron",
-              "amount": 1,
+              "amount": 2,
               "note": "Each is a 10K resource pack"
             }
           ],
-          "scoreTotal": 19800
+          "scoreTotal": 13000
         },
         {
           "name": "Level 2",
@@ -371,26 +371,26 @@
             {
               "name": "Hero XP",
               "itemId": "hero-xp",
-              "amount": 15,
+              "amount": 16,
               "note": "Each is a 1K Hero XP item"
             },
             {
               "name": "5m Construction Speedup",
               "itemId": "speedup-construction-5m",
-              "amount": 40
+              "amount": 45
             },
             {
               "name": "5m Research Speedup",
               "itemId": "speedup-research-5m",
-              "amount": 40
+              "amount": 45
             },
             {
               "name": "5m Troop Training Speedup",
               "itemId": "speedup-troop-5m",
-              "amount": 40
+              "amount": 45
             }
           ],
-          "scoreTotal": 110000
+          "scoreTotal": 76000
         },
         {
           "name": "Level 3",
@@ -398,28 +398,27 @@
             {
               "name": "Gems",
               "itemId": "gems",
-              "amount": 4100
+              "amount": 5000
+            },
+            {
+              "name": "Lv.1 Custom Ressource Chest",
+              "itemId": "lv-1-custom-ressource-chest",
+              "amount": 1
             },
             {
               "name": "Meat",
               "itemId": "meat",
-              "amount": 255,
+              "amount": 280,
               "note": "Each is a 10K resource pack"
             },
             {
               "name": "Wood",
               "itemId": "wood",
-              "amount": 255,
-              "note": "Each is a 10K resource pack"
-            },
-            {
-              "name": "Coal",
-              "itemId": "coal",
-              "amount": 60,
+              "amount": 70,
               "note": "Each is a 10K resource pack"
             }
           ],
-          "scoreTotal": 226000
+          "scoreTotal": 150000
         },
         {
           "name": "Level 4",
@@ -427,7 +426,13 @@
             {
               "name": "Essence Stones",
               "itemId": "essence-stones",
-              "amount": 7
+              "amount": 8
+            },
+            {
+              "name": "Shot Token",
+              "itemId": "shot-token",
+              "amount": 1,
+              "note": "Used in the Dead Shot event"
             },
             {
               "name": "Mythic Exploration Skill Manual",
@@ -438,15 +443,9 @@
               "name": "Mythic Expedition Skill Manual",
               "itemId": "mythic-expedition-skill-manual",
               "amount": 5
-            },
-            {
-              "name": "Iron",
-              "itemId": "iron",
-              "amount": 12,
-              "note": "Each is a 10K resource pack"
             }
           ],
-          "scoreTotal": 453000
+          "scoreTotal": 310000
         }
       ]
     },
