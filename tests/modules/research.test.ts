@@ -425,3 +425,55 @@ describe('Ward Expansion III', () => {
     expect(levels.map((l) => l.bonus[0].totalAmount)).toEqual([2200, 4400, 7300]);
   });
 });
+
+describe('Trainer Tools and Camp Expansion', () => {
+  const statsOf = (id: string) => [
+    ...new Set(
+      research()
+        .find(id)!
+        .levels.flatMap((l) => l.bonus.map((b) => `${b.stat}|${b.statKey}|${b.unit}`)),
+    ),
+  ];
+
+  it.each(['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii'])(
+    'gives Training Speed in percent for Trainer Tools %s',
+    (numeral) => {
+      expect(statsOf(`trainer-tools-${numeral}`)).toEqual([
+        'Training Speed|training-speed|percent',
+      ]);
+    },
+  );
+
+  it.each(['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii'])(
+    'gives Training Capacity in flat troops for Camp Expansion %s',
+    (numeral) => {
+      expect(statsOf(`camp-expansion-${numeral}`)).toEqual([
+        'Training Capacity|training-capacity|flat',
+      ]);
+    },
+  );
+
+  it('gives the Trainer Tools II bonuses of the first three levels as Training Speed', () => {
+    const levels = research().find('trainer-tools-ii')!.levels;
+    expect(levels.map((l) => l.bonus[0].amount)).toEqual([4.6, 4.6, 6]);
+    expect(levels.map((l) => l.bonus[0].totalAmount)).toEqual([4.6, 9.2, 15.2]);
+  });
+
+  it.each(['flame-legion', 'flame-legion-2', 'flame-legion-3'])(
+    'gives Rally Capacity in flat troops for %s',
+    (id) => {
+      expect(statsOf(id)).toEqual(['Rally Capacity|rally-capacity|flat']);
+      const levels = research().find(id)!.levels;
+      expect(levels).toHaveLength(12);
+      expect(levels[11].bonus[0].totalAmount).toBe(33500);
+    },
+  );
+
+  it('has no research bonus that gives Training Capacity in percent', () => {
+    const percent = research()
+      .get()
+      .flatMap((n) => n.levels.flatMap((l) => l.bonus))
+      .filter((b) => b.statKey === 'training-capacity' && b.unit === 'percent');
+    expect(percent).toEqual([]);
+  });
+});

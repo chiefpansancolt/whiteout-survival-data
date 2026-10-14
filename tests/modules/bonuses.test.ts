@@ -63,9 +63,9 @@ describe('stat keys', () => {
     expect(entries.find((e) => e.stat === 'Troop Defense')!.statKey).toBe('troops-defense');
   });
 
-  it('has 55 keys for the 57 stat names with a key', () => {
-    expect(new Set(withStat.map((e) => e.stat)).size).toBe(57);
-    expect(new Set(withStat.map((e) => e.statKey)).size).toBe(55);
+  it('has 56 keys for the 58 stat names with a key', () => {
+    expect(new Set(withStat.map((e) => e.stat)).size).toBe(58);
+    expect(new Set(withStat.map((e) => e.statKey)).size).toBe(56);
   });
 
   it('uses one key for each stat name', () => {

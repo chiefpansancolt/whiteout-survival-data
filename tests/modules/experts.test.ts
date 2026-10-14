@@ -578,3 +578,56 @@ describe('unreleased experts', () => {
     expect(heroGenerationAt(360)).toBe(heroGeneration);
   });
 });
+
+describe('expert progressions', () => {
+  const progressions = () =>
+    experts()
+      .get()
+      .flatMap((e) =>
+        [...e.skills, e.talent].flatMap((s) =>
+          s.progressions
+            .filter((p) => p.label !== 'Power')
+            .map((p) => ({ expert: e.id, skill: s.name, label: p.label, values: p.values })),
+        ),
+      );
+
+  it('never goes down from one level to the next, except the missions of Gold Class', () => {
+    for (const p of progressions()) {
+      if (p.skill === 'Gold Class' && p.label === 'Completions') continue;
+      p.values.slice(1).forEach((v, i) => {
+        expect([p.expert, p.skill, p.label, i + 2, v >= p.values[i]]).toEqual([
+          p.expert,
+          p.skill,
+          p.label,
+          i + 2,
+          true,
+        ]);
+      });
+    }
+  });
+
+  it.each([
+    ['romulus', 'Last Line', 'Troop Attack', 0.5],
+    ['romulus', 'Spirit of Aeetis', 'Troop Lethality', 0.5],
+    ['fabian', 'Heightened Firepower', 'Troop Lethality', 1.5],
+    ['fabian', 'Heightened Firepower', 'Troop Health', 1.5],
+    ['gareth', 'Fearsome Reputation', 'Lethality Down', 0.25],
+  ])('steps %s %s %s by %d at every level', (expert, skill, label, step) => {
+    const values = progressions().find(
+      (p) => p.expert === expert && p.skill === skill && p.label === label,
+    )!.values;
+    expect(values).toHaveLength(20);
+    values.forEach((v, i) => expect(v).toBeCloseTo(step * (i + 1), 6));
+  });
+
+  it('ends the five fixed progressions at the maximum that their text states', () => {
+    const last = (expert: string, skill: string, label: string) =>
+      progressions().find((p) => p.expert === expert && p.skill === skill && p.label === label)!
+        .values[19];
+    expect(last('romulus', 'Last Line', 'Troop Attack')).toBe(10);
+    expect(last('romulus', 'Spirit of Aeetis', 'Troop Lethality')).toBe(10);
+    expect(last('fabian', 'Heightened Firepower', 'Troop Lethality')).toBe(30);
+    expect(last('fabian', 'Heightened Firepower', 'Troop Health')).toBe(30);
+    expect(last('gareth', 'Fearsome Reputation', 'Lethality Down')).toBe(5);
+  });
+});

@@ -7,13 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-12
+
 ### Added
 
 #### Game data
 
-- Every level of every hero skill has `effects`: the name, the amount, and the unit of each number
-  in the skill text, so a value such as the Stamina Cost Reduction of Gina can be read without
-  parsing the description.
 - `dailyMissions()`: the 21 in-game Daily Missions with their levels, the task and the rewards of
   each level. The activeness is the first reward, and `dailyMissionRewardLevels()` gives the reward
   levels of the activity bar with their rewards. The items Activeness, Alliance XP, Authority XP,
@@ -21,20 +20,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `tundraAlbum()`: the Tundra Album albums, with the 9 puzzles of each, the star level and the image
   of every piece, the reward of each puzzle, and the buff of the album. It holds the albums
   Crystalline Mysteries, Daybreak Island, Explore the World, Song of Heroes, and Rekindled Flames.
-
-#### Calculators
-
-- `calculateBeasts()`: the beasts or Polar Terrors that stamina and stamina cans pay for, with the
-  stamina that Gina's Endurance Training saves. You can plan beast runs by level and Polar Terrors
-  first, such as the beasts of Intel missions, and see what the stamina left pays for, with the
-  State of Power, Defeat Nearby Beasts, and Tundra Games points.
-
-## [0.2.0] - 2026-10-12
-
-### Added
-
-#### Game data
-
+- `alliancePrestige()`: the six prestige buildings of an alliance, the event that gives each one,
+  and their Resource Gathering Speed bonus by tier.
+- 24 more skins, including the new skin type `Chat`. They have a bonus and sources where the package
+  owner states them, and no `img` yet.
+- The Command Center has `marchCapacity` and `rallyCapacity` on every Fire Crystal level, FC 1 to FC
+  10 and the sub-levels between them.
+- `events()` have an optional `versions` field for the missions and tiers of an event that differ by
+  the age of the state. Vision of Dawn has two versions, and the Fire Crystal age version has the
+  missions and the Hope chests of that age.
+- Every level of every hero skill has `effects`: the name, the amount, and the unit of each number
+  in the skill text, so a value such as the Stamina Cost Reduction of Gina can be read without
+  parsing the description.
 - `chiefGearSetBonus()` and `chiefGearSetBonuses()`: the 3 piece Defense and 6 piece Attack set
   bonuses of Chief Gear, from the level of each piece worn. Some values are assumptions of the
   owner.
@@ -91,6 +88,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   their type and length in minutes. Every speedup type has a 1m, 5m, 1h, 3h, and 8h item. Nine of
   them are placeholders with no icon.
 
+#### Calculators
+
+- `calculateBeasts()`: the beasts or Polar Terrors that stamina and stamina cans pay for, with the
+  stamina that Gina's Endurance Training saves. You can plan beast runs by level and Polar Terrors
+  first, such as the beasts of Intel missions, and see what the stamina left pays for, with the
+  State of Power, Defeat Nearby Beasts, and Tundra Games points.
+- `calculateBuffs()`: the speed boosts and other buffs that your hero skills, research, Alliance
+  Tech, alliance facilities, alliance prestige buildings, VIP level, buildings, experts, Chief Gear,
+  Chief Charms, skins, completed Tundra Albums, island decorations, pets, castle position, active
+  orders, and the March Queue of your account give, added up for each stat with the list of every
+  source. The stats are also in groups: Military, Resources, Resource Output, Growth, Alliance, and
+  Other. The result also has the totals by source, such as all heroes or all research, with no
+  source lists.
+
 ### Changed
 
 - The icons of speedups, expert relationship medals, President skills, Fire Crystal levels, and
@@ -123,6 +134,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 
+- Five expert skill progressions had values that lost their decimal point, such as 5 for 0.5. They
+  are fixed for Last Line and Spirit of Aeetis of Romulus, Heightened Firepower of Fabian, and
+  Fearsome Reputation of Gareth.
+- The research nodes Trainer Tools II to VII give Training Speed, like Trainer Tools I, and not
+  Training Capacity.
+- The March Skins Tundra Adventurer and Wings of the Icy Wind have their full game names.
+- The Flame Legion research nodes of the three T11 troop types give Rally Capacity and not Troops
+  Deployment Capacity.
 - The Alliance Showdown reward rows for the individual ranks say "individual rank" and not "alliance
   rank".
 - The Daybreak Island decorations Hero’s Sanctum and Floating Market have their names spelled

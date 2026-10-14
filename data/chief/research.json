@@ -30062,8 +30062,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "4.60%",
             "amount": 4.6,
             "unit": "percent",
@@ -30106,8 +30106,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "4.60%",
             "amount": 4.6,
             "unit": "percent",
@@ -30150,8 +30150,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "6.00%",
             "amount": 6,
             "unit": "percent",
@@ -31018,8 +31018,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "6.80%",
             "amount": 6.8,
             "unit": "percent",
@@ -31062,8 +31062,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "6.80%",
             "amount": 6.8,
             "unit": "percent",
@@ -31106,8 +31106,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "9.00%",
             "amount": 9,
             "unit": "percent",
@@ -31905,8 +31905,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "9.00%",
             "amount": 9,
             "unit": "percent",
@@ -31949,8 +31949,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "9.00%",
             "amount": 9,
             "unit": "percent",
@@ -31993,8 +31993,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "12.00%",
             "amount": 12,
             "unit": "percent",
@@ -32792,8 +32792,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "11.20%",
             "amount": 11.2,
             "unit": "percent",
@@ -32836,8 +32836,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "11.20%",
             "amount": 11.2,
             "unit": "percent",
@@ -32880,8 +32880,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "15.00%",
             "amount": 15,
             "unit": "percent",
@@ -33684,8 +33684,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "13.40%",
             "amount": 13.4,
             "unit": "percent",
@@ -33728,8 +33728,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "13.40%",
             "amount": 13.4,
             "unit": "percent",
@@ -33772,8 +33772,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "18.00%",
             "amount": 18,
             "unit": "percent",
@@ -34576,8 +34576,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "13.40%",
             "amount": 13.4,
             "unit": "percent",
@@ -34620,8 +34620,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "13.40%",
             "amount": 13.4,
             "unit": "percent",
@@ -34664,8 +34664,8 @@
         ],
         "bonus": [
           {
-            "stat": "Training Capacity",
-            "statKey": "training-capacity",
+            "stat": "Training Speed",
+            "statKey": "training-speed",
             "value": "18.00%",
             "amount": 18,
             "unit": "percent",
@@ -35879,8 +35879,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "1500",
             "amount": 1500,
             "unit": "flat",
@@ -35921,8 +35921,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "1500",
             "amount": 1500,
             "unit": "flat",
@@ -35963,8 +35963,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2000",
             "amount": 2000,
             "unit": "flat",
@@ -36011,8 +36011,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2000",
             "amount": 2000,
             "unit": "flat",
@@ -36053,8 +36053,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -36095,8 +36095,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -36148,8 +36148,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -36201,8 +36201,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "3000",
             "amount": 3000,
             "unit": "flat",
@@ -36243,8 +36243,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "3500",
             "amount": 3500,
             "unit": "flat",
@@ -36285,8 +36285,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4000",
             "amount": 4000,
             "unit": "flat",
@@ -36327,8 +36327,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4000",
             "amount": 4000,
             "unit": "flat",
@@ -36369,8 +36369,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4500",
             "amount": 4500,
             "unit": "flat",
@@ -40107,8 +40107,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "1500",
             "amount": 1500,
             "unit": "flat",
@@ -40149,8 +40149,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "1500",
             "amount": 1500,
             "unit": "flat",
@@ -40191,8 +40191,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2000",
             "amount": 2000,
             "unit": "flat",
@@ -40233,8 +40233,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2000",
             "amount": 2000,
             "unit": "flat",
@@ -40275,8 +40275,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -40317,8 +40317,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -40365,8 +40365,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -40407,8 +40407,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "3000",
             "amount": 3000,
             "unit": "flat",
@@ -40449,8 +40449,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "3500",
             "amount": 3500,
             "unit": "flat",
@@ -40491,8 +40491,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4000",
             "amount": 4000,
             "unit": "flat",
@@ -40533,8 +40533,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4000",
             "amount": 4000,
             "unit": "flat",
@@ -40575,8 +40575,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4500",
             "amount": 4500,
             "unit": "flat",
@@ -44511,8 +44511,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "1500",
             "amount": 1500,
             "unit": "flat",
@@ -44553,8 +44553,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "1500",
             "amount": 1500,
             "unit": "flat",
@@ -44595,8 +44595,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2000",
             "amount": 2000,
             "unit": "flat",
@@ -44637,8 +44637,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2000",
             "amount": 2000,
             "unit": "flat",
@@ -44679,8 +44679,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -44721,8 +44721,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -44769,8 +44769,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "2500",
             "amount": 2500,
             "unit": "flat",
@@ -44811,8 +44811,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "3000",
             "amount": 3000,
             "unit": "flat",
@@ -44853,8 +44853,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "3500",
             "amount": 3500,
             "unit": "flat",
@@ -44895,8 +44895,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4000",
             "amount": 4000,
             "unit": "flat",
@@ -44937,8 +44937,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4000",
             "amount": 4000,
             "unit": "flat",
@@ -44979,8 +44979,8 @@
         ],
         "bonus": [
           {
-            "stat": "Troops Deployment Capacity",
-            "statKey": "troops-deployment-capacity",
+            "stat": "Rally Capacity",
+            "statKey": "rally-capacity",
             "value": "4500",
             "amount": 4500,
             "unit": "flat",

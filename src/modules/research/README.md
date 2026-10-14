@@ -133,7 +133,7 @@ in the singular, so these map to the plural key:
 | `Troop Defense` | `troops-defense`   |
 | `Other`         | none (unlock text) |
 
-The 4 modules hold 57 stat names with a key and 55 keys. Alliance Tech adds 10 more, such as
+The 4 modules hold 58 stat names with a key and 56 keys. Alliance Tech adds 10 more, such as
 `alliance-banner-cap`. The mapping was made from the list of names, not by matching similar names.
 
 ### Exalted capstones
