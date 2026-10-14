@@ -18,6 +18,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   each level. The activeness is the first reward, and `dailyMissionRewardLevels()` gives the reward
   levels of the activity bar with their rewards. The items Activeness, Alliance XP, Authority XP,
   Activity Triumph Points, and four resource packs are new in `items()`.
+- `tundraAlbum()`: the Tundra Album albums, with the 9 puzzles of each, the star level and the image
+  of every piece, the reward of each puzzle, and the buff of the album. It holds the album
+  Crystalline Mysteries.
 
 #### Calculators
 

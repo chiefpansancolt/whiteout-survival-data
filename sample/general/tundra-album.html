@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tundra Album</title>
+<style>
+  :root {
+    --bg: #0f1720;
+    --panel: #16202c;
+    --panel-border: #26374a;
+    --text: #e6edf5;
+    --text-dim: #8fa1b3;
+    --accent: #4fc3f7;
+    --row-alt: #131d27;
+    --good: #52d17a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px 16px 60px;
+    max-width: 980px;
+  }
+  a { color: var(--accent); }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  h2 { font-size: 0.85rem; margin: 24px 0 8px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  p.sub { color: var(--text-dim); margin: 0 0 18px; font-size: 0.85rem; line-height: 1.45; }
+  .card { background: var(--panel); border: 1px solid var(--panel-border); border-radius: 10px; padding: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+  .controls label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+  select, input[type="number"] {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+  input[type="number"] { width: 110px; text-align: right; }
+  select:disabled { opacity: 0.45; }
+  button {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .bonus-note { color: var(--good); font-size: 0.85rem; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 10px; }
+  .pill {
+    background: #0f1720;
+    border: 1px solid var(--panel-border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .pill.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+  th, td { padding: 7px 10px; border-bottom: 1px solid var(--panel-border); text-align: left; vertical-align: middle; }
+  th { color: var(--text-dim); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody tr:nth-child(even) td { background: var(--row-alt); }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--panel-border); }
+  td.bonus { color: var(--good); }
+  .scroll { overflow-x: auto; }
+  .note { color: var(--text-dim); font-size: 0.8rem; margin: 8px 0 0; line-height: 1.4; }
+
+  body { max-width: none; }
+  .card h2 { margin: 0 0 8px; }
+  .head { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 6px; }
+  .buff { color: var(--good); font-weight: 700; }
+  .reward { display: inline-flex; align-items: center; gap: 6px; background: #0f1720; border: 1px solid var(--panel-border); border-radius: 6px; padding: 2px 8px; margin: 2px 6px 2px 0; font-size: 0.8rem; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .chip.active { background: var(--accent); color: #06222e; border-color: var(--accent); font-weight: 600; }
+  .puzzles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  @media (max-width: 760px) { .puzzles { grid-template-columns: 1fr; } }
+  .puzzle { border: 1px solid var(--panel-border); border-radius: 8px; padding: 12px; min-width: 0; }
+  .ptop { display: flex; gap: 14px; align-items: center; margin-bottom: 8px; }
+  .art { width: 120px; height: 120px; border-radius: 8px; object-fit: cover; flex: none; }
+  .pinfo { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+  .counts { font-size: 0.75rem; color: var(--text-dim); white-space: pre; }
+  .item { width: 28px; height: 28px; }
+  .pieces { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+  .piece { margin: 0; text-align: center; }
+  .piece-img { width: 100%; border-radius: 6px; display: block; }
+  .piece figcaption { font-size: 0.7rem; color: var(--text-dim); margin-top: 2px; }
+  .inline { font-size: 0.8rem; color: var(--text-dim); }
+</style>
+</head>
+<body>
+  <p><a href="../index.html">&larr; All sample pages</a></p>
+  <h1>Tundra Album</h1>
+  <p class="sub">The albums of the Tundra Album event: the buff and rewards of each album, and the pieces and reward of each of its 9 puzzles. A piece shows its name when it has one.</p>
+  <div id="tabs" class="tabs"></div>
+  <div id="albums"></div>
+<script id="album-data" type="application/json">[{"id":"crystalline-mysteries","name":"Crystalline Mysteries","buff":{"stat":"Troops Attack","statKey":"troops-attack","value":"+2%","amount":2,"unit":"percent"},"completionRewards":[{"itemId":"random-chief-charm-material-chest","amount":70},{"itemId":"fire-crystal","amount":200}],"puzzles":[{"id":"fiery-crystal","name":"Fiery Crystal","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal.png","reward":{"itemId":"enhancement-xp-component","amount":7},"pieces":[{"id":"fiery-crystal-1","name":"Fiery Crystal - 1","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-1.png","stars":1},{"id":"fiery-crystal-2","name":"Fiery Crystal - 2","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-2.png","stars":1},{"id":"fiery-crystal-3","name":"Fiery Crystal - 3","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-3.png","stars":1},{"id":"fiery-crystal-4","name":"Fiery Crystal - 4","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-4.png","stars":2},{"id":"fiery-crystal-5","name":"Fiery Crystal - 5","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-5.png","stars":2},{"id":"fiery-crystal-6","name":"Fiery Crystal - 6","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-6.png","stars":2},{"id":"fiery-crystal-7","name":"Fiery Crystal - 7","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-7.png","stars":3},{"id":"fiery-crystal-8","name":"Fiery Crystal - 8","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-8.png","stars":3},{"id":"fiery-crystal-9","name":"Fiery Crystal - 9","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-9.png","stars":3},{"id":"fiery-crystal-10","name":"Fiery Crystal - 10","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-10.png","stars":4},{"id":"fiery-crystal-11","name":"Fiery Crystal - 11","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-11.png","stars":4},{"id":"fiery-crystal-12","name":"Fiery Crystal - 12","img":"/images/tundra-album/crystalline-mysteries/fiery-crystal-12.png","stars":4}]},{"id":"mining-the-fire","name":"Mining the Fire","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire.png","reward":{"itemId":"essence-stones","amount":3},"pieces":[{"id":"mining-the-fire-1","name":"Mining the Fire - 1","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-1.png","stars":1},{"id":"mining-the-fire-2","name":"Mining the Fire - 2","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-2.png","stars":1},{"id":"mining-the-fire-3","name":"Mining the Fire - 3","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-3.png","stars":1},{"id":"mining-the-fire-4","name":"Mining the Fire - 4","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-4.png","stars":2},{"id":"mining-the-fire-5","name":"Mining the Fire - 5","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-5.png","stars":2},{"id":"mining-the-fire-6","name":"Mining the Fire - 6","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-6.png","stars":2},{"id":"mining-the-fire-7","name":"Mining the Fire - 7","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-7.png","stars":2},{"id":"mining-the-fire-8","name":"Mining the Fire - 8","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-8.png","stars":2},{"id":"mining-the-fire-9","name":"Mining the Fire - 9","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-9.png","stars":3},{"id":"mining-the-fire-10","name":"Mining the Fire - 10","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-10.png","stars":3},{"id":"mining-the-fire-11","name":"Mining the Fire - 11","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-11.png","stars":3},{"id":"mining-the-fire-12","name":"Mining the Fire - 12","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-12.png","stars":3},{"id":"mining-the-fire-13","name":"Mining the Fire - 13","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-13.png","stars":4},{"id":"mining-the-fire-14","name":"Mining the Fire - 14","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-14.png","stars":4},{"id":"mining-the-fire-15","name":"Mining the Fire - 15","img":"/images/tundra-album/crystalline-mysteries/mining-the-fire-15.png","stars":5}]},{"id":"heirs-of-empire","name":"Heirs of Empire","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire.png","reward":{"itemId":"chief-gear-materials-chest","amount":3},"pieces":[{"id":"heirs-of-empire-1","name":"Heirs of Empire - 1","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-1.png","stars":1},{"id":"heirs-of-empire-2","name":"Heirs of Empire - 2","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-2.png","stars":1},{"id":"heirs-of-empire-3","name":"Heirs of Empire - 3","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-3.png","stars":1},{"id":"heirs-of-empire-4","name":"Heirs of Empire - 4","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-4.png","stars":2},{"id":"heirs-of-empire-5","name":"Heirs of Empire - 5","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-5.png","stars":2},{"id":"heirs-of-empire-6","name":"Heirs of Empire - 6","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-6.png","stars":2},{"id":"heirs-of-empire-7","name":"Heirs of Empire - 7","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-7.png","stars":2},{"id":"heirs-of-empire-8","name":"Heirs of Empire - 8","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-8.png","stars":2},{"id":"heirs-of-empire-9","name":"Heirs of Empire - 9","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-9.png","stars":3},{"id":"heirs-of-empire-10","name":"Heirs of Empire - 10","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-10.png","stars":3},{"id":"heirs-of-empire-11","name":"Heirs of Empire - 11","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-11.png","stars":3},{"id":"heirs-of-empire-12","name":"Heirs of Empire - 12","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-12.png","stars":3},{"id":"heirs-of-empire-13","name":"Heirs of Empire - 13","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-13.png","stars":4},{"id":"heirs-of-empire-14","name":"Heirs of Empire - 14","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-14.png","stars":4},{"id":"heirs-of-empire-15","name":"Heirs of Empire - 15","img":"/images/tundra-album/crystalline-mysteries/heirs-of-empire-15.png","stars":5}]},{"id":"sins-of-empire","name":"Sins of Empire","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire.png","reward":{"itemId":"essence-stones","amount":3},"pieces":[{"id":"sins-of-empire-1","name":"Sins of Empire - 1","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-1.png","stars":1},{"id":"sins-of-empire-2","name":"Sins of Empire - 2","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-2.png","stars":1},{"id":"sins-of-empire-3","name":"Sins of Empire - 3","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-3.png","stars":1},{"id":"sins-of-empire-4","name":"Sins of Empire - 4","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-4.png","stars":2},{"id":"sins-of-empire-5","name":"Sins of Empire - 5","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-5.png","stars":2},{"id":"sins-of-empire-6","name":"Sins of Empire - 6","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-6.png","stars":2},{"id":"sins-of-empire-7","name":"Sins of Empire - 7","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-7.png","stars":2},{"id":"sins-of-empire-8","name":"Sins of Empire - 8","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-8.png","stars":3},{"id":"sins-of-empire-9","name":"Sins of Empire - 9","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-9.png","stars":3},{"id":"sins-of-empire-10","name":"Sins of Empire - 10","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-10.png","stars":3},{"id":"sins-of-empire-11","name":"Sins of Empire - 11","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-11.png","stars":3},{"id":"sins-of-empire-12","name":"Sins of Empire - 12","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-12.png","stars":4},{"id":"sins-of-empire-13","name":"Sins of Empire - 13","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-13.png","stars":4},{"id":"sins-of-empire-14","name":"Sins of Empire - 14","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-14.png","stars":5},{"id":"sins-of-empire-15","name":"Sins of Empire - 15","img":"/images/tundra-album/crystalline-mysteries/sins-of-empire-15.png","stars":5}]},{"id":"fire-reborn","name":"Fire Reborn","img":"/images/tundra-album/crystalline-mysteries/fire-reborn.png","reward":{"itemId":"mythic-general-hero-shard","amount":2},"pieces":[{"id":"fire-reborn-1","name":"Fire Reborn - 1","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-1.png","stars":1},{"id":"fire-reborn-2","name":"Fire Reborn - 2","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-2.png","stars":1},{"id":"fire-reborn-3","name":"Fire Reborn - 3","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-3.png","stars":1},{"id":"fire-reborn-4","name":"Fire Reborn - 4","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-4.png","stars":2},{"id":"fire-reborn-5","name":"Fire Reborn - 5","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-5.png","stars":2},{"id":"fire-reborn-6","name":"Fire Reborn - 6","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-6.png","stars":2},{"id":"fire-reborn-7","name":"Fire Reborn - 7","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-7.png","stars":3},{"id":"fire-reborn-8","name":"Fire Reborn - 8","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-8.png","stars":3},{"id":"fire-reborn-9","name":"Fire Reborn - 9","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-9.png","stars":3},{"id":"fire-reborn-10","name":"Fire Reborn - 10","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-10.png","stars":4},{"id":"fire-reborn-11","name":"Fire Reborn - 11","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-11.png","stars":4},{"id":"fire-reborn-12","name":"Fire Reborn - 12","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-12.png","stars":4},{"id":"fire-reborn-13","name":"Fire Reborn - 13","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-13.png","stars":5},{"id":"fire-reborn-14","name":"Fire Reborn - 14","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-14.png","stars":5},{"id":"fire-reborn-15","name":"Fire Reborn - 15","img":"/images/tundra-album/crystalline-mysteries/fire-reborn-15.png","stars":5}]},{"id":"the-burning-legion","name":"The Burning Legion","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion.png","reward":{"itemId":"fire-crystal","amount":24},"pieces":[{"id":"the-burning-legion-1","name":"The Burning Legion - 1","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-1.png","stars":1},{"id":"the-burning-legion-2","name":"The Burning Legion - 2","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-2.png","stars":1},{"id":"the-burning-legion-3","name":"The Burning Legion - 3","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-3.png","stars":2},{"id":"the-burning-legion-4","name":"The Burning Legion - 4","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-4.png","stars":2},{"id":"the-burning-legion-5","name":"The Burning Legion - 5","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-5.png","stars":2},{"id":"the-burning-legion-6","name":"The Burning Legion - 6","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-6.png","stars":2},{"id":"the-burning-legion-7","name":"The Burning Legion - 7","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-7.png","stars":3},{"id":"the-burning-legion-8","name":"The Burning Legion - 8","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-8.png","stars":3},{"id":"the-burning-legion-9","name":"The Burning Legion - 9","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-9.png","stars":3},{"id":"the-burning-legion-10","name":"The Burning Legion - 10","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-10.png","stars":3},{"id":"the-burning-legion-11","name":"The Burning Legion - 11","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-11.png","stars":4},{"id":"the-burning-legion-12","name":"The Burning Legion - 12","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-12.png","stars":4},{"id":"the-burning-legion-13","name":"The Burning Legion - 13","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-13.png","stars":4},{"id":"the-burning-legion-14","name":"The Burning Legion - 14","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-14.png","stars":4},{"id":"the-burning-legion-15","name":"The Burning Legion - 15","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-15.png","stars":5},{"id":"the-burning-legion-16","name":"The Burning Legion - 16","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-16.png","stars":5},{"id":"the-burning-legion-17","name":"The Burning Legion - 17","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-17.png","stars":5},{"id":"the-burning-legion-18","name":"The Burning Legion - 18","img":"/images/tundra-album/crystalline-mysteries/the-burning-legion-18.png","stars":5}]},{"id":"promises-of-fire","name":"Promises of Fire","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire.png","reward":{"itemId":"fire-crystal","amount":30},"pieces":[{"id":"promises-of-fire-1","name":"Promises of Fire - 1","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-1.png","stars":1},{"id":"promises-of-fire-2","name":"Promises of Fire - 2","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-2.png","stars":1},{"id":"promises-of-fire-3","name":"Promises of Fire - 3","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-3.png","stars":2},{"id":"promises-of-fire-4","name":"Promises of Fire - 4","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-4.png","stars":2},{"id":"promises-of-fire-5","name":"Promises of Fire - 5","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-5.png","stars":2},{"id":"promises-of-fire-6","name":"Promises of Fire - 6","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-6.png","stars":3},{"id":"promises-of-fire-7","name":"Promises of Fire - 7","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-7.png","stars":3},{"id":"promises-of-fire-8","name":"Promises of Fire - 8","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-8.png","stars":3},{"id":"promises-of-fire-9","name":"Promises of Fire - 9","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-9.png","stars":4},{"id":"promises-of-fire-10","name":"Promises of Fire - 10","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-10.png","stars":4},{"id":"promises-of-fire-11","name":"Promises of Fire - 11","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-11.png","stars":4},{"id":"promises-of-fire-12","name":"Promises of Fire - 12","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-12.png","stars":4},{"id":"promises-of-fire-13","name":"Promises of Fire - 13","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-13.png","stars":4},{"id":"promises-of-fire-14","name":"Promises of Fire - 14","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-14.png","stars":5},{"id":"promises-of-fire-15","name":"Promises of Fire - 15","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-15.png","stars":5},{"id":"promises-of-fire-16","name":"Promises of Fire - 16","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-16.png","stars":5},{"id":"promises-of-fire-17","name":"Promises of Fire - 17","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-17.png","stars":5},{"id":"promises-of-fire-18","name":"Promises of Fire - 18","img":"/images/tundra-album/crystalline-mysteries/promises-of-fire-18.png","stars":5}]},{"id":"crystalline-rage","name":"Crystalline Rage","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage.png","reward":{"itemId":"fire-crystal","amount":30},"pieces":[{"id":"crystalline-rage-1","name":"Crystalline Rage - 1","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-1.png","stars":2},{"id":"crystalline-rage-2","name":"Crystalline Rage - 2","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-2.png","stars":2},{"id":"crystalline-rage-3","name":"Crystalline Rage - 3","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-3.png","stars":3},{"id":"crystalline-rage-4","name":"Crystalline Rage - 4","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-4.png","stars":3},{"id":"crystalline-rage-5","name":"Crystalline Rage - 5","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-5.png","stars":4},{"id":"crystalline-rage-6","name":"Crystalline Rage - 6","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-6.png","stars":4},{"id":"crystalline-rage-7","name":"Crystalline Rage - 7","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-7.png","stars":4},{"id":"crystalline-rage-8","name":"Crystalline Rage - 8","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-8.png","stars":4},{"id":"crystalline-rage-9","name":"Crystalline Rage - 9","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-9.png","stars":4},{"id":"crystalline-rage-10","name":"Crystalline Rage - 10","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-10.png","stars":4},{"id":"crystalline-rage-11","name":"Crystalline Rage - 11","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-11.png","stars":4},{"id":"crystalline-rage-12","name":"Crystalline Rage - 12","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-12.png","stars":5},{"id":"crystalline-rage-13","name":"Crystalline Rage - 13","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-13.png","stars":5},{"id":"crystalline-rage-14","name":"Crystalline Rage - 14","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-14.png","stars":5},{"id":"crystalline-rage-15","name":"Crystalline Rage - 15","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-15.png","stars":5},{"id":"crystalline-rage-16","name":"Crystalline Rage - 16","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-16.png","stars":5},{"id":"crystalline-rage-17","name":"Crystalline Rage - 17","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-17.png","stars":5},{"id":"crystalline-rage-18","name":"Crystalline Rage - 18","img":"/images/tundra-album/crystalline-mysteries/crystalline-rage-18.png","stars":5}]},{"id":"fire-crystal-era","name":"Fire Crystal Era","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era.png","reward":{"itemId":"fire-crystal","amount":30},"pieces":[{"id":"fire-crystal-era-1","name":"Fire Crystal Era - 1","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-1.png","stars":2},{"id":"fire-crystal-era-2","name":"Fire Crystal Era - 2","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-2.png","stars":2},{"id":"fire-crystal-era-3","name":"Fire Crystal Era - 3","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-3.png","stars":3},{"id":"fire-crystal-era-4","name":"Fire Crystal Era - 4","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-4.png","stars":3},{"id":"fire-crystal-era-5","name":"Fire Crystal Era - 5","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-5.png","stars":4},{"id":"fire-crystal-era-6","name":"Fire Crystal Era - 6","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-6.png","stars":4},{"id":"fire-crystal-era-7","name":"Fire Crystal Era - 7","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-7.png","stars":4},{"id":"fire-crystal-era-8","name":"Fire Crystal Era - 8","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-8.png","stars":4},{"id":"fire-crystal-era-9","name":"Fire Crystal Era - 9","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-9.png","stars":4},{"id":"fire-crystal-era-10","name":"Fire Crystal Era - 10","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-10.png","stars":4},{"id":"fire-crystal-era-11","name":"Fire Crystal Era - 11","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-11.png","stars":4},{"id":"fire-crystal-era-12","name":"Fire Crystal Era - 12","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-12.png","stars":5},{"id":"fire-crystal-era-13","name":"Fire Crystal Era - 13","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-13.png","stars":5},{"id":"fire-crystal-era-14","name":"Fire Crystal Era - 14","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-14.png","stars":5},{"id":"fire-crystal-era-15","name":"Fire Crystal Era - 15","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-15.png","stars":5},{"id":"fire-crystal-era-16","name":"Fire Crystal Era - 16","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-16.png","stars":5},{"id":"fire-crystal-era-17","name":"Fire Crystal Era - 17","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-17.png","stars":5},{"id":"fire-crystal-era-18","name":"Fire Crystal Era - 18","img":"/images/tundra-album/crystalline-mysteries/fire-crystal-era-18.png","stars":5}]}]}]</script>
+<script id="item-data" type="application/json">{"chief-gear-materials-chest":{"name":"Chief Gear Materials Chest","img":"/images/items/chief-gear-materials-chest.png"},"random-chief-charm-material-chest":{"name":"Random Chief Charm Material Chest","img":"/images/items/random-chief-charm-material-chest.png"},"fire-crystal":{"name":"Fire Crystal","img":"/images/items/fire-crystal.png"},"enhancement-xp-component":{"name":"Enhancement XP Component","img":"/images/items/enhancement-xp-component.png"},"essence-stones":{"name":"Essence Stones","img":"/images/items/essence-stones.png"},"mythic-general-hero-shard":{"name":"Mythic General Hero Shard","img":"/images/items/mythic-general-hero-shard.png"}}</script>
+<script>
+  const ALBUMS = JSON.parse(document.getElementById('album-data').textContent);
+  const ITEMS = JSON.parse(document.getElementById('item-data').textContent);
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+  const fmt = (n) => n.toLocaleString();
+  const image = (path, cls, alt) => { const img = el('img', cls); img.src = '../..' + path; img.alt = alt; img.loading = 'lazy'; return img; };
+  function rewardChip(r) {
+    const chip = el('span', 'reward');
+    const item = r.itemId ? ITEMS[r.itemId] : null;
+    if (item) chip.append(image(item.img, 'item', ''));
+    chip.append(el('span', '', fmt(r.amount) + ' ' + (item ? item.name : 'unknown item')));
+    return chip;
+  }
+  function pieceCell(piece) {
+    const cell = el('figure', 'piece');
+    cell.title = piece.name || piece.id;
+    cell.append(image(piece.img, 'piece-img', piece.name || piece.id));
+    cell.append(el('figcaption', '', piece.name || '#' + piece.id.split('-').pop()));
+    return cell;
+  }
+  function albumPanel(album) {
+    const panel = el('section', 'card');
+    const pieces = album.puzzles.flatMap((p) => p.pieces);
+    const totals = [1, 2, 3, 4, 5].map((s) => pieces.filter((p) => p.stars === s).length);
+    const head = el('div', 'head');
+    head.append(el('span', 'buff', 'Buff: ' + album.buff.stat + ' ' + album.buff.value));
+    const done = el('span', 'inline', 'Completion rewards: ');
+    album.completionRewards.forEach((r) => done.append(rewardChip(r)));
+    head.append(done);
+    panel.append(head);
+    panel.append(el('p', 'note', album.puzzles.length + ' puzzles, ' + pieces.length + ' pieces: ' + totals.map((n, i) => n + ' at ' + (i + 1) + ' star' + (i ? 's' : '')).join(', ') + '.'));
+    const puzzles = el('div', 'puzzles');
+    album.puzzles.forEach((puzzle, i) => {
+      const box = el('div', 'puzzle');
+      const top = el('div', 'ptop');
+      top.append(image(puzzle.img, 'art', puzzle.name));
+      const info = el('div', 'pinfo');
+      info.append(el('strong', '', (i + 1) + '. ' + puzzle.name), el('span', 'inline', puzzle.pieces.length + ' pieces'), rewardChip(puzzle.reward));
+      const counts = [1, 2, 3, 4, 5].map((s) => puzzle.pieces.filter((p) => p.stars === s).length);
+      info.append(el('div', 'counts', counts.map((n, k) => (k + 1) + '\u2605 ' + n).join('   ')));
+      top.append(info);
+      box.append(top);
+      const grid = el('div', 'pieces');
+      puzzle.pieces.forEach((p) => grid.append(pieceCell(p)));
+      box.append(grid);
+      puzzles.append(box);
+    });
+    panel.append(puzzles);
+    return panel;
+  }
+  function render() {
+    const tabs = document.getElementById('tabs');
+    const root = document.getElementById('albums');
+    const panels = ALBUMS.map((album) => { const p = albumPanel(album); root.append(p); return p; });
+    const buttons = ALBUMS.map((album, i) => {
+      const b = el('button', 'chip', album.name + ' (' + album.puzzles.length + ')');
+      b.type = 'button'; b.dataset.tab = album.id;
+      b.addEventListener('click', () => show(i));
+      tabs.append(b);
+      return b;
+    });
+    function show(active) {
+      panels.forEach((p, i) => { p.style.display = i === active ? '' : 'none'; });
+      buttons.forEach((b, i) => b.classList.toggle('active', i === active));
+    }
+    show(0);
+  }
+  render();
+</script>
+</body>
+</html>
