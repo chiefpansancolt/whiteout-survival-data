@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-10-14
+
+### Fixed
+
+#### Game data
+
+- `pets()`: the troops power of Cave Hyena at level 5 is corrected, and the invalid refined troops
+  power at level 20 is removed.
+
 ## [0.2.0] - 2026-10-12
 
 ### Added
