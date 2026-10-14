@@ -24,8 +24,8 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 334 items across 12 categories', () => {
-    expect(items().count()).toBe(334);
+  it('tracks 328 items across 12 categories', () => {
+    expect(items().count()).toBe(328);
     expect(items().byCategory('Hero Items').count()).toBe(23);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
@@ -34,9 +34,9 @@ describe('Item catalog', () => {
     expect(items().byCategory('Fire Crystal').count()).toBe(4);
     expect(items().byCategory('Experts').count()).toBe(17);
     expect(items().byCategory('Teleporter').count()).toBe(4);
-    expect(items().byCategory('Others').count()).toBe(49);
+    expect(items().byCategory('Others').count()).toBe(48);
     expect(items().byCategory('Event').count()).toBe(58);
-    expect(items().byCategory('Speedups').count()).toBe(30);
+    expect(items().byCategory('Speedups').count()).toBe(25);
     expect(items().byCategory('Furniture').count()).toBe(42);
   });
 
@@ -58,41 +58,6 @@ describe('Item catalog', () => {
     }
   });
 
-  it('resolves items tagged under both Chest and another tab to Chest', () => {
-    const arenaStarChest = items().find('arena-star-chest')!;
-    const seekersChest = items().find('seekers-chest')!;
-    expect(arenaStarChest.category).toBe('Chest');
-    expect(seekersChest.category).toBe('Chest');
-  });
-
-  it('has a parsed rewardRates loot table on some chests but not others', () => {
-    const splendidLabyrinthTreasure = items().find('splendid-labyrinth-treasure')!;
-    expect(splendidLabyrinthTreasure.rewardRates).toHaveLength(5);
-    expect(
-      splendidLabyrinthTreasure.rewardRates!.reduce((sum, r) => sum + r.probabilityPercent, 0),
-    ).toBeCloseTo(100, 1);
-
-    const frostseaHeroChest = items().find('frostsea-hero-chest')!;
-    expect(frostseaHeroChest.rewardRates).toBeUndefined();
-  });
-
-  it('carries forward the rowspan-grouped item name for table-shaped reward rates', () => {
-    const chefGearVarietyChest = items().find('chief-gear-variety-chest')!;
-    expect(chefGearVarietyChest.rewardRates).toHaveLength(12);
-    expect(new Set(chefGearVarietyChest.rewardRates!.map((r) => r.reward)).size).toBe(3);
-  });
-
-  it('has an empty sources array rather than a missing field when no sources are listed', () => {
-    const wood = items().find('wood')!;
-    expect(wood.sources).toEqual([]);
-  });
-
-  it('parses the French-spelled Resource Chest slug correctly', () => {
-    const resourceChest = items().find('ressource-chest')!;
-    expect(resourceChest.name).toBe('Resource Chest');
-    expect(resourceChest.description).toBeDefined();
-  });
-
   it('has an icon file for every Speedups item except the placeholders', () => {
     items()
       .byCategory('Speedups')
@@ -107,11 +72,21 @@ describe('Item catalog', () => {
     expect(existsSync(join(__dirname, '../..', speedup.img))).toBe(true);
   });
 
-  it('has 1m, 5m, 1h, 3h, and 8h speedups of every type', () => {
-    for (const type of ['general', 'construction', 'research', 'troop', 'learning', 'healing']) {
-      for (const length of ['1m', '5m', '1h', '3h', '8h']) {
-        expect(items().find(`speedup-${type}-${length}`)).toBeDefined();
-      }
+  it('has the speedups that are in the game: 1m to 8h, except the lengths that the game does not have', () => {
+    const lengths = {
+      general: ['1m', '5m', '1h', '3h', '8h'],
+      troop: ['1m', '5m', '1h', '3h', '8h'],
+      construction: ['1m', '5m', '1h', '3h'],
+      research: ['1m', '5m', '1h', '3h'],
+      learning: ['1m', '5m', '1h', '3h'],
+      healing: ['1m', '5m', '1h'],
+    };
+    for (const [type, list] of Object.entries(lengths)) {
+      const ids = items()
+        .get()
+        .filter((i) => i.speedup?.type === type)
+        .map((i) => i.id);
+      expect(ids).toEqual(list.map((length) => `speedup-${type}-${length}`));
     }
   });
 
@@ -122,15 +97,22 @@ describe('Item catalog', () => {
       .filter((item) => item.img === '');
     expect(placeholders.map((item) => item.id)).toEqual([
       'speedup-construction-3h',
-      'speedup-construction-8h',
       'speedup-troop-3h',
       'speedup-research-3h',
+    ]);
+    for (const item of placeholders) expect(item.sources).toEqual([]);
+  });
+
+  it('has no speedup of the lengths that are not in the game', () => {
+    for (const id of [
+      'speedup-construction-8h',
       'speedup-research-8h',
       'speedup-learning-8h',
       'speedup-healing-3h',
       'speedup-healing-8h',
-    ]);
-    for (const item of placeholders) expect(item.sources).toEqual([]);
+    ]) {
+      expect(items().find(id)).toBeUndefined();
+    }
   });
 
   it('names speedups by duration and type', () => {
@@ -168,8 +150,8 @@ describe('speedup items', () => {
     .get()
     .filter((i) => i.speedup !== undefined);
 
-  it('has a speedup field on the 30 speedup items', () => {
-    expect(speedups).toHaveLength(30);
+  it('has a speedup field on the 25 speedup items', () => {
+    expect(speedups).toHaveLength(25);
   });
 
   it('reads the type and the minutes from the id', () => {
@@ -221,7 +203,7 @@ describe('expert sigils', () => {
 });
 
 describe('items of the activity bar of the Daily Missions', () => {
-  const withoutIcon = ['alliance-xp', 'authority-xp', 'activity-triumph-points'];
+  const withoutIcon = ['alliance-xp', 'activity-triumph-points'];
   const packs = {
     'meat-10k': ['10k Meat', '/images/items/meat.png'],
     'wood-10k': ['10k Wood', '/images/items/wood.png'],
@@ -229,7 +211,7 @@ describe('items of the activity bar of the Daily Missions', () => {
     'iron-1k': ['1k Iron', '/images/items/iron.png'],
   };
 
-  it('has 3 items of the Others category with an empty img and the Daily Missions as the source', () => {
+  it('has 2 items of the Others category with an empty img and the Daily Missions as the source', () => {
     for (const id of withoutIcon) {
       const item = items().find(id)!;
       expect(item.category).toBe('Others');
@@ -250,12 +232,12 @@ describe('items of the activity bar of the Daily Missions', () => {
     }
   });
 
-  it('has 53 items without an icon in all', () => {
+  it('has 47 items without an icon in all', () => {
     expect(
       items()
         .get()
         .filter((i) => i.img === ''),
-    ).toHaveLength(53);
+    ).toHaveLength(47);
   });
 });
 

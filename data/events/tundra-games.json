@@ -39,7 +39,7 @@
   "rewards": [
     {
       "name": "Energized Bread",
-      "note": "Any bread left at the end is turned into 1,000-resource supply chests. The Best Boxer\u2019s Bounty can give thousands of bread (5,843 in the wiki example)."
+      "note": "Any bread left at the end is turned into 1,000-resource supply chests. The Best Boxer’s Bounty can give thousands of bread (5,843 in the wiki example)."
     },
     {
       "name": "Chief Gear Materials Chest",
@@ -176,7 +176,7 @@
   ],
   "tips": [
     "Get 300 Frostpunch Points each day to unlock the daily chest rewards.",
-    "Hit Brawler Buddies when the treasure points are over 12,000 for a better chance at the Best Boxer\u2019s Bounty and free bread.",
+    "Hit Brawler Buddies when the treasure points are over 12,000 for a better chance at the Best Boxer’s Bounty and free bread.",
     "The rewards for each part are shown on the wiki only as images.",
     "The Whirlwind Wallop pass preview (Knockout, $9.99, shown with a 4000% value tag) lists gems, Fire Crystals, essence stones, skill manuals, troop skill items, a 14-day item, and speedups. Most amounts are not readable.",
     "The Whirlwind Wallop track screenshot shows free and two paid tiers for each level, with items such as 5m speedups, 1h speedups, manuals, keys, gem pouches, and 3-day items. It is cut off after level 8.",
@@ -277,8 +277,7 @@
             "speedup-construction-1m",
             "speedup-construction-5m",
             "speedup-construction-1h",
-            "speedup-construction-3h",
-            "speedup-construction-8h"
+            "speedup-construction-3h"
           ]
         },
         {
@@ -288,8 +287,7 @@
             "speedup-research-1m",
             "speedup-research-5m",
             "speedup-research-1h",
-            "speedup-research-3h",
-            "speedup-research-8h"
+            "speedup-research-3h"
           ]
         },
         {
@@ -526,8 +524,7 @@
             "speedup-construction-1m",
             "speedup-construction-5m",
             "speedup-construction-1h",
-            "speedup-construction-3h",
-            "speedup-construction-8h"
+            "speedup-construction-3h"
           ]
         },
         {
@@ -537,8 +534,7 @@
             "speedup-research-1m",
             "speedup-research-5m",
             "speedup-research-1h",
-            "speedup-research-3h",
-            "speedup-research-8h"
+            "speedup-research-3h"
           ]
         },
         {
@@ -1066,7 +1062,7 @@
       "reward": {
         "name": "Longshot Dynamo Pack 2",
         "amount": 1,
-        "note": "$4.99. Gives 2,500 Gems, Perpetual Treads Avatar Frame (permanent) \u00d71, Energized Bread \u00d71,000, Lucky Hero Gear Chest \u00d728, Fire Crystal \u00d743."
+        "note": "$4.99. Gives 2,500 Gems, Perpetual Treads Avatar Frame (permanent) ×1, Energized Bread ×1,000, Lucky Hero Gear Chest ×28, Fire Crystal ×43."
       },
       "cost": 4.99,
       "limit": 1
@@ -1075,7 +1071,7 @@
       "reward": {
         "name": "Longshot Dynamo Pack 3",
         "amount": 1,
-        "note": "$9.99. Gives 5,000 Gems, Perpetual Treads Nameplate (permanent) \u00d71, Energized Bread \u00d71,600, Lucky Hero Gear Chest \u00d756, Fire Crystal \u00d783."
+        "note": "$9.99. Gives 5,000 Gems, Perpetual Treads Nameplate (permanent) ×1, Energized Bread ×1,600, Lucky Hero Gear Chest ×56, Fire Crystal ×83."
       },
       "cost": 9.99,
       "limit": 1

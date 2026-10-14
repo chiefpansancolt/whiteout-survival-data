@@ -2161,14 +2161,6 @@
     "sources": ["Daily Missions"]
   },
   {
-    "id": "authority-xp",
-    "name": "Authority XP",
-    "img": "",
-    "category": "Others",
-    "description": "A reward of the activity bar of the Daily Missions.",
-    "sources": ["Daily Missions"]
-  },
-  {
     "id": "activity-triumph-points",
     "name": "Activity Triumph Points",
     "img": "",
@@ -2638,18 +2630,6 @@
     "sources": []
   },
   {
-    "id": "speedup-construction-8h",
-    "name": "8h Construction Speedup",
-    "img": "",
-    "category": "Speedups",
-    "speedup": {
-      "type": "construction",
-      "minutes": 480
-    },
-    "description": "Speeds up construction by 8 hours.",
-    "sources": []
-  },
-  {
     "id": "speedup-troop-1m",
     "name": "1m Troop Training Speedup",
     "img": "/images/items/speedups/speedup-troop-1m.png",
@@ -2758,18 +2738,6 @@
     "sources": []
   },
   {
-    "id": "speedup-research-8h",
-    "name": "8h Research Speedup",
-    "img": "",
-    "category": "Speedups",
-    "speedup": {
-      "type": "research",
-      "minutes": 480
-    },
-    "description": "Speeds up research by 8 hours.",
-    "sources": []
-  },
-  {
     "id": "speedup-learning-1m",
     "name": "1m Learning Speedup",
     "img": "/images/items/speedups/speedup-learning-1m.png",
@@ -2818,18 +2786,6 @@
     "sources": []
   },
   {
-    "id": "speedup-learning-8h",
-    "name": "8h Learning Speedup",
-    "img": "",
-    "category": "Speedups",
-    "speedup": {
-      "type": "learning",
-      "minutes": 480
-    },
-    "description": "Speeds up learning by 8 hours.",
-    "sources": []
-  },
-  {
     "id": "speedup-healing-1m",
     "name": "1m Troop Healing Speedup",
     "img": "/images/items/speedups/speedup-healing-1m.png",
@@ -2863,30 +2819,6 @@
       "minutes": 60
     },
     "description": "Speeds up troop healing by 1 hour.",
-    "sources": []
-  },
-  {
-    "id": "speedup-healing-3h",
-    "name": "3h Troop Healing Speedup",
-    "img": "",
-    "category": "Speedups",
-    "speedup": {
-      "type": "healing",
-      "minutes": 180
-    },
-    "description": "Speeds up troop healing by 3 hours.",
-    "sources": []
-  },
-  {
-    "id": "speedup-healing-8h",
-    "name": "8h Troop Healing Speedup",
-    "img": "",
-    "category": "Speedups",
-    "speedup": {
-      "type": "healing",
-      "minutes": 480
-    },
-    "description": "Speeds up troop healing by 8 hours.",
     "sources": []
   },
   {

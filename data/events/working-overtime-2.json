@@ -26,8 +26,7 @@
             "speedup-construction-1m",
             "speedup-construction-5m",
             "speedup-construction-1h",
-            "speedup-construction-3h",
-            "speedup-construction-8h"
+            "speedup-construction-3h"
           ]
         },
         {
@@ -37,8 +36,7 @@
             "speedup-research-1m",
             "speedup-research-5m",
             "speedup-research-1h",
-            "speedup-research-3h",
-            "speedup-research-8h"
+            "speedup-research-3h"
           ]
         }
       ],
@@ -149,8 +147,7 @@
             "speedup-construction-1m",
             "speedup-construction-5m",
             "speedup-construction-1h",
-            "speedup-construction-3h",
-            "speedup-construction-8h"
+            "speedup-construction-3h"
           ]
         },
         {
@@ -160,8 +157,7 @@
             "speedup-research-1m",
             "speedup-research-5m",
             "speedup-research-1h",
-            "speedup-research-3h",
-            "speedup-research-8h"
+            "speedup-research-3h"
           ]
         }
       ],

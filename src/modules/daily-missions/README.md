@@ -138,15 +138,15 @@ The missions of level 1 give 210 activeness in all. The reward levels of the act
 
 ### Reward levels
 
-| Activeness | Rewards                                                                                                                                                                                                                      |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 40         | 175 Gems, 2 5m Troop Healing Speedup, 10 Alliance XP, 10 Authority                                                                                                                                                           |
-| 80         | 13 5m Construction Speedup, 13 5m Research Speedup, 2 5m Troop Healing Speedup, 20 Alliance XP, 10 Authority                                                                                                                 |
-| 120        | 660 10k Meat, 13 5m Troop Training Speedup, 2 5m Troop Healing Speedup, 30 Alliance XP, 10 Authority                                                                                                                         |
-| 160        | 15,000 Hero XP, 660 10k Wood, 3 5m Troop Healing Speedup, 40 Alliance XP, 10 Authority                                                                                                                                       |
-| 215        | 1 Platinum Key, 1,320 1k Coal, 3 5m Troop Healing Speedup, 60 Alliance XP, 10 Authority                                                                                                                                      |
-| 270        | 5 Fire Crystal, 3 Mythic Exploration Skill Manual, 330 1k Iron, 5 5m Troop Healing Speedup, 80 Alliance XP, 10 Authority, 100 Activity Triumph Points                                                                        |
-| 325        | 1 Mythic General Scene Fragment Pack, 30 Skin Token, 5 Fire Crystal, 80 Mystery Badge, 3 Mythic Expedition Skill Manual, 8 5m Troop Healing Speedup, 100 Authority XP, 15 Authority, 500 Activity Triumph Points, 1 Gold key |
+| Activeness | Rewards                                                                                                                                                                                                     |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 40         | 175 Gems, 2 5m Troop Healing Speedup, 10 Alliance XP, 10 Authority                                                                                                                                          |
+| 80         | 13 5m Construction Speedup, 13 5m Research Speedup, 2 5m Troop Healing Speedup, 20 Alliance XP, 10 Authority                                                                                                |
+| 120        | 660 10k Meat, 13 5m Troop Training Speedup, 2 5m Troop Healing Speedup, 30 Alliance XP, 10 Authority                                                                                                        |
+| 160        | 15,000 Hero XP, 660 10k Wood, 3 5m Troop Healing Speedup, 40 Alliance XP, 10 Authority                                                                                                                      |
+| 215        | 1 Platinum Key, 1,320 1k Coal, 3 5m Troop Healing Speedup, 60 Alliance XP, 10 Authority                                                                                                                     |
+| 270        | 5 Fire Crystal, 3 Mythic Exploration Skill Manual, 330 1k Iron, 5 5m Troop Healing Speedup, 80 Alliance XP, 10 Authority, 100 Activity Triumph Points                                                       |
+| 325        | 1 Mythic General Scene Fragment Pack, 30 Skin Token, 5 Fire Crystal, 80 Mystery Badge, 3 Mythic Expedition Skill Manual, 8 5m Troop Healing Speedup, 115 Authority, 500 Activity Triumph Points, 1 Gold key |
 
 The names are the item names of `items()`. The resource packs, such as 10k Meat, are items with an
 amount of packs, as the game shows them.

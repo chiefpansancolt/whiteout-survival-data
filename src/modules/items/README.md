@@ -1,6 +1,6 @@
 # Items
 
-The 334 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 328 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -35,7 +35,7 @@ described in [How It Works](../../../README.md#how-it-works).
 ## Data
 
 Items are in `data/chief/items.json`. Each entry has `id`, `name`, `img`, `category`, an optional
-`description`, a list of `sources`, and an optional `rewardRates`. The 30 speedup items also have a
+`description`, a list of `sources`, and an optional `rewardRates`. The 25 speedup items also have a
 `speedup` with its `type` (`general`, `construction`, `troop`, `research`, `learning`, or `healing`)
 and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minutes).
 
@@ -45,10 +45,10 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | -------------- | ----- |
 | Chest          | 60    |
 | Event          | 58    |
-| Others         | 49    |
+| Others         | 48    |
 | Buff           | 31    |
 | Hero Items     | 23    |
-| Speedups       | 30    |
+| Speedups       | 25    |
 | Experts        | 17    |
 | Gear Materials | 10    |
 | Pet            | 6     |
@@ -70,20 +70,19 @@ it, and only 12 of the 60 chests do.
 Birthday Card entries are skipped, because they are a yearly login gift with no gameplay data.
 Functional items are in this module, and cosmetic skins are in `skins()`.
 
-`Speedups` holds the 30 general and type-specific speedup items (1m to 8h). Their icons are cropped
-from in-game Backpack screenshots. Each of the six types (general, construction, research, troop,
-learning, and healing) has a 1m, 5m, 1h, 3h, and 8h item. Eight items have no icon yet, so their
-`img` is an empty string and their `sources` are empty: the 3h and 8h speedups of construction,
-research, and healing, the 3h speedup of troop, and the 8h speedup of learning. They are
-placeholders.
+`Speedups` holds the 25 general and type-specific speedup items that are in the game. Their icons
+are cropped from in-game Backpack screenshots. General and troop have 1m, 5m, 1h, 3h, and 8h items.
+Construction, research, and learning have 1m, 5m, 1h, and 3h items. Healing has 1m, 5m, and 1h
+items. The game has no other lengths, so the package has no items for them. Three items have no icon
+yet, so their `img` is an empty string and their `sources` are empty: the 3h speedups of
+construction, research, and troop. They are placeholders.
 
 The icon of the 8h Troop Training Speedup is cropped from an album screen, the reward of the puzzle
 Canyon Clash, and the amount on it is painted out.
 
-Three items of the activity bar of the Daily Missions have no icon yet, so their `img` is an empty
-string: Alliance XP, Authority XP, and Activity Triumph Points. The four resource packs of the bar,
-10k Meat, 10k Wood, 1k Coal, and 1k Iron, use the icon of their resource. The names are as the game
-words them.
+Two items of the activity bar of the Daily Missions have no icon yet, so their `img` is an empty
+string: Alliance XP and Activity Triumph Points. The four resource packs of the bar, 10k Meat, 10k
+Wood, 1k Coal, and 1k Iron, use the icon of their resource. The names are as the game words them.
 
 Five items fit more than one category, all of them involving Chest. Seeker's Chest fits both `Chest`
 and `Experts`. `Chest` wins in every case because it is the more specific category.

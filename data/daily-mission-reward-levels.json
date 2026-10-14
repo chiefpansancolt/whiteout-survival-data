@@ -181,12 +181,8 @@
         "amount": 8
       },
       {
-        "itemId": "authority-xp",
-        "amount": 100
-      },
-      {
         "itemId": "authority",
-        "amount": 15
+        "amount": 115
       },
       {
         "itemId": "activity-triumph-points",

@@ -15,8 +15,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `dailyMissions()`: the 21 in-game Daily Missions with their levels, the task and the rewards of
   each level. The activeness is the first reward, and `dailyMissionRewardLevels()` gives the reward
-  levels of the activity bar with their rewards. The items Activeness, Alliance XP, Authority XP,
-  Activity Triumph Points, and four resource packs are new in `items()`.
+  levels of the activity bar with their rewards. The items Activeness, Alliance XP, Activity Triumph
+  Points, and four resource packs are new in `items()`.
 - `tundraAlbum()`: the Tundra Album albums, with the 9 puzzles of each, the star level and the image
   of every piece, the reward of each puzzle, and the buff of the album. It holds 14 of the 16
   albums. `tundraAlbumPieceRewards()` gives the 80 tiers of rewards for the total of pieces that you
@@ -85,9 +85,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   values
 - `dailies()`: a default list of daily tasks, with the in-game daily missions that a source names
   and the steps of a daily routine guide. The list is not complete yet.
-- Chief Gear and Chief Charm levels have an `order`, and the 30 speedup items have a `speedup` with
-  their type and length in minutes. Every speedup type has a 1m, 5m, 1h, 3h, and 8h item. Nine of
-  them are placeholders with no icon.
+- Chief Gear and Chief Charm levels have an `order`, and the 25 speedup items have a `speedup` with
+  their type and length in minutes.
 
 #### Calculators
 
