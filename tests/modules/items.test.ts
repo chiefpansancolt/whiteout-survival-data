@@ -58,18 +58,11 @@ describe('Item catalog', () => {
     }
   });
 
-  it('has an icon file for every Speedups item except the placeholders', () => {
-    items()
-      .byCategory('Speedups')
-      .get()
-      .filter((item) => item.img !== '')
-      .forEach((item) => expect(existsSync(join(__dirname, '../..', item.img))).toBe(true));
-  });
-
-  it('has the 8h Troop Training Speedup with an icon file', () => {
-    const speedup = items().find('speedup-troop-8h')!;
-    expect(speedup.img).toBe('/images/items/speedups/speedup-troop-8h.png');
-    expect(existsSync(join(__dirname, '../..', speedup.img))).toBe(true);
+  it('has an icon file for every Speedups item', () => {
+    for (const item of items().byCategory('Speedups').get()) {
+      expect(item.img).toBe(`/images/items/speedups/${item.id}.png`);
+      expect(existsSync(join(__dirname, '../..', item.img))).toBe(true);
+    }
   });
 
   it('has the speedups that are in the game: 1m to 8h, except the lengths that the game does not have', () => {
@@ -88,19 +81,6 @@ describe('Item catalog', () => {
         .map((i) => i.id);
       expect(ids).toEqual(list.map((length) => `speedup-${type}-${length}`));
     }
-  });
-
-  it('marks the placeholder speedups with an empty img and no sources', () => {
-    const placeholders = items()
-      .byCategory('Speedups')
-      .get()
-      .filter((item) => item.img === '');
-    expect(placeholders.map((item) => item.id)).toEqual([
-      'speedup-construction-3h',
-      'speedup-troop-3h',
-      'speedup-research-3h',
-    ]);
-    for (const item of placeholders) expect(item.sources).toEqual([]);
   });
 
   it('has no speedup of the lengths that are not in the game', () => {
@@ -203,7 +183,6 @@ describe('expert sigils', () => {
 });
 
 describe('items of the activity bar of the Daily Missions', () => {
-  const withoutIcon = ['alliance-xp', 'activity-triumph-points'];
   const packs = {
     'meat-10k': ['10k Meat', '/images/items/meat.png'],
     'wood-10k': ['10k Wood', '/images/items/wood.png'],
@@ -211,11 +190,12 @@ describe('items of the activity bar of the Daily Missions', () => {
     'iron-1k': ['1k Iron', '/images/items/iron.png'],
   };
 
-  it('has 2 items of the Others category with an empty img and the Daily Missions as the source', () => {
-    for (const id of withoutIcon) {
+  it('gives Alliance XP and Activity Triumph Points an icon file, and the Daily Missions as the source', () => {
+    for (const id of ['alliance-xp', 'activity-triumph-points']) {
       const item = items().find(id)!;
       expect(item.category).toBe('Others');
-      expect(item.img).toBe('');
+      expect(item.img).toBe(`/images/items/${id}.png`);
+      expect(existsSync(join(__dirname, '../..', item.img))).toBe(true);
       expect(item.sources).toEqual(['Daily Missions']);
     }
   });
@@ -232,12 +212,12 @@ describe('items of the activity bar of the Daily Missions', () => {
     }
   });
 
-  it('has 47 items without an icon in all', () => {
+  it('has 42 items without an icon in all', () => {
     expect(
       items()
         .get()
         .filter((i) => i.img === ''),
-    ).toHaveLength(47);
+    ).toHaveLength(42);
   });
 });
 

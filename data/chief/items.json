@@ -2155,7 +2155,7 @@
   {
     "id": "alliance-xp",
     "name": "Alliance XP",
-    "img": "",
+    "img": "/images/items/alliance-xp.png",
     "category": "Others",
     "description": "A reward of the activity bar of the Daily Missions.",
     "sources": ["Daily Missions"]
@@ -2163,7 +2163,7 @@
   {
     "id": "activity-triumph-points",
     "name": "Activity Triumph Points",
-    "img": "",
+    "img": "/images/items/activity-triumph-points.png",
     "category": "Others",
     "description": "A reward of the activity bar of the Daily Missions.",
     "sources": ["Daily Missions"]
@@ -2620,7 +2620,7 @@
   {
     "id": "speedup-construction-3h",
     "name": "3h Construction Speedup",
-    "img": "",
+    "img": "/images/items/speedups/speedup-construction-3h.png",
     "category": "Speedups",
     "speedup": {
       "type": "construction",
@@ -2668,7 +2668,7 @@
   {
     "id": "speedup-troop-3h",
     "name": "3h Troop Training Speedup",
-    "img": "",
+    "img": "/images/items/speedups/speedup-troop-3h.png",
     "category": "Speedups",
     "speedup": {
       "type": "troop",
@@ -2728,7 +2728,7 @@
   {
     "id": "speedup-research-3h",
     "name": "3h Research Speedup",
-    "img": "",
+    "img": "/images/items/speedups/speedup-research-3h.png",
     "category": "Speedups",
     "speedup": {
       "type": "research",

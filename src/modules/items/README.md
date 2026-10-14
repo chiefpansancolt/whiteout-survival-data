@@ -73,16 +73,17 @@ Functional items are in this module, and cosmetic skins are in `skins()`.
 `Speedups` holds the 25 general and type-specific speedup items that are in the game. Their icons
 are cropped from in-game Backpack screenshots. General and troop have 1m, 5m, 1h, 3h, and 8h items.
 Construction, research, and learning have 1m, 5m, 1h, and 3h items. Healing has 1m, 5m, and 1h
-items. The game has no other lengths, so the package has no items for them. Three items have no icon
-yet, so their `img` is an empty string and their `sources` are empty: the 3h speedups of
-construction, research, and troop. They are placeholders.
+items. The game has no other lengths, so the package has no items for them.
 
 The icon of the 8h Troop Training Speedup is cropped from an album screen, the reward of the puzzle
-Canyon Clash, and the amount on it is painted out.
+Canyon Clash, and the amount on it is painted out. The icons of the 3h Research, 3h Troop Training,
+and 3h Construction Speedups are cropped from the tooltips of piece count rewards of the Tundra
+Album.
 
-Two items of the activity bar of the Daily Missions have no icon yet, so their `img` is an empty
-string: Alliance XP and Activity Triumph Points. The four resource packs of the bar, 10k Meat, 10k
-Wood, 1k Coal, and 1k Iron, use the icon of their resource. The names are as the game words them.
+The icons of Alliance XP and Activity Triumph Points, two items of the activity bar of the Daily
+Missions, are cropped from the tooltip of a reward level of the bar, and the frame is removed. The
+four resource packs of the bar, 10k Meat, 10k Wood, 1k Coal, and 1k Iron, use the icon of their
+resource. The names are as the game words them.
 
 Five items fit more than one category, all of them involving Chest. Seeker's Chest fits both `Chest`
 and `Experts`. `Chest` wins in every case because it is the more specific category.
