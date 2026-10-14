@@ -15,18 +15,12 @@ describe('DailyTaskQuery', () => {
 });
 
 describe('daily tasks', () => {
-  it('lists the in-game missions first, then the routine tasks, in the wording of the sources', () => {
+  it('lists the steps of the daily routine in order, in the wording of the source', () => {
     expect(
       dailies()
         .get()
         .map((t) => t.name),
     ).toEqual([
-      'Upgrade 1 Building',
-      'Research 1 Technology',
-      'Fight in 1 or 5 Arena Challenges',
-      'Complete 1 challenges in The Labyrinth',
-      'Dispatch Pets to hunt for treasure 1 or 4 times in Pet Adventure',
-      'Claim 5 Online Rewards',
       'Start by Checking Events Before Spending Anything',
       'Complete Daily Missions',
       'Clear Lighthouse Intel Throughout the Day',
@@ -45,6 +39,19 @@ describe('daily tasks', () => {
     ]);
   });
 
+  it('leaves the in-game daily missions to dailyMissions()', () => {
+    for (const id of [
+      'upgrade-1-building',
+      'research-1-technology',
+      'fight-in-1-or-5-arena-challenges',
+      'complete-1-challenges-in-the-labyrinth',
+      'dispatch-pets-to-hunt-for-treasure',
+      'claim-5-online-rewards',
+    ]) {
+      expect(dailies().find(id)).toBeUndefined();
+    }
+  });
+
   it('gives every task a unique kebab-case id', () => {
     const ids = dailies()
       .get()
@@ -54,8 +61,10 @@ describe('daily tasks', () => {
   });
 
   it('finds a task by id and by name', () => {
-    expect(dailies().find('claim-5-online-rewards')?.name).toBe('Claim 5 Online Rewards');
-    expect(dailies().findByName('research 1 technology')?.id).toBe('research-1-technology');
+    expect(dailies().find('claim-your-daily-vip-reward')?.name).toBe('Claim Your Daily VIP Reward');
+    expect(dailies().findByName('use stamina with a purpose')?.id).toBe(
+      'use-stamina-with-a-purpose',
+    );
   });
 
   it('has no icon or description for a task until a source states one', () => {

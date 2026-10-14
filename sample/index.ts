@@ -201,8 +201,8 @@ console.log(
 );
 
 console.log('\n--- Dailies ---');
-console.log('daily missions:', dailies().count());
-console.log('first mission:', dailies().first()?.name);
+console.log('daily routine steps:', dailies().count());
+console.log('first step:', dailies().first()?.name);
 
 console.log('\n--- Chief Orders ---');
 const doubleTime = chiefOrders().find('double-time')!;

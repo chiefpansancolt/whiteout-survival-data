@@ -86,8 +86,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   perks with their bonus, duration, and cooldown
 - `castleAppointments()`: the castle positions and the buffs each gives, with the boosted minister
   values
-- `dailies()`: a default list of daily tasks, with the in-game daily missions that a source names
-  and the steps of a daily routine guide. The list is not complete yet.
+- `dailies()`: a default list of daily tasks, the steps of a daily routine guide. The in-game daily
+  missions are in `dailyMissions()`.
 - Chief Gear and Chief Charm levels have an `order`, and the 25 speedup items have a `speedup` with
   their type and length in minutes.
 

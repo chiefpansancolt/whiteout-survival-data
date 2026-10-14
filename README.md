@@ -138,7 +138,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `chiefOrders()`            | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                     | [README](src/modules/chief-orders/README.md)             |
 | `castleAppointments()`     | 8       | Castle positions and the buffs they give                                                   | [README](src/modules/castle-appointments/README.md)      |
 | `presidentSkills()`        | 9       | The President's skills: global perks, Receive Tribute, and the skills that act on a Chief  | [README](src/modules/president-skills/README.md)         |
-| `dailies()`                | 21      | Default daily tasks: in-game missions and a daily routine, a partial list                  | [README](src/modules/dailies/README.md)                  |
+| `dailies()`                | 15      | Default daily tasks: the steps of a daily routine                                          | [README](src/modules/dailies/README.md)                  |
 | `dailyMissions()`          | 21      | The in-game Daily Missions, with the task and rewards of each, and the activeness          | [README](src/modules/daily-missions/README.md)           |
 | `collectionRewardLevels()` | 51      | The collection levels, with the medallion and the rewards of each, and the medallion buffs | [README](src/modules/collection-reward-levels/README.md) |
 | `tundraAlbum()`            | 14      | Tundra Album albums, with the puzzles, pieces, rewards, and buff of each                   | [README](src/modules/tundra-album/README.md)             |
@@ -212,9 +212,8 @@ This is what the data does not hold yet. Each module README gives the detail.
   [Alliance Prestige Buildings](src/modules/alliance/prestige/README.md).
 - **Tundra Album.** Only 14 of the 16 albums are in. See
   [Tundra Album](src/modules/tundra-album/README.md).
-- **Daily tasks.** The list of in-game daily missions in `dailies()` is not complete. The missions
-  in `dailyMissions()` have only the levels known so far, and the daily reset time is not stored.
-  See [Daily Missions](src/modules/daily-missions/README.md) and
+- **Daily tasks.** The missions in `dailyMissions()` have only the levels known so far, and the
+  daily reset time is not stored. See [Daily Missions](src/modules/daily-missions/README.md) and
   [Dailies](src/modules/dailies/README.md).
 - **Pets.** Only the maximum refinement percent of each pet is stored. The steps and the quality
   ranges are not. See [Pets](src/modules/pets/README.md).

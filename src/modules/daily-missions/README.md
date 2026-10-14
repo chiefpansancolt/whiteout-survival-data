@@ -161,8 +161,8 @@ of the activeness item is the gold star coin of the activity bar.
 The wording of the tasks is the wording of the game, including "time(s)" and "Hero(es)". The
 `Log in` mission is done when you log in.
 
-The [Dailies](../dailies/README.md) module has a shorter list of tasks with only names, and a
-routine of daily steps. This module has the details of the missions.
+The [Dailies](../dailies/README.md) module has a routine of daily steps. They are habits and not
+missions, so the missions are in this module only.
 
 These parts are not in the data yet:
 
