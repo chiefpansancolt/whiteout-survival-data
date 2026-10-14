@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Collection Reward Levels</title>
+<style>
+  :root { --bg:#0f1720; --panel:#16202c; --border:#26374a; --text:#e6edf5; --dim:#8fa1b3; --accent:#4fc3f7; --good:#52d17a; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; padding:20px 16px 60px; max-width:1100px; }
+  a { color:var(--accent); }
+  h1 { font-size:1.3rem; margin:0 0 4px; }
+  h2 { font-size:0.85rem; margin:24px 0 8px; color:var(--dim); text-transform:uppercase; letter-spacing:0.05em; }
+  p.sub { color:var(--dim); margin:0 0 16px; font-size:0.85rem; line-height:1.45; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin-bottom:14px; }
+  .controls { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+  input[type="number"] { background:#0f1720; border:1px solid var(--border); color:var(--text); border-radius:6px; padding:7px 10px; font-size:0.9rem; width:90px; }
+  .dim { color:var(--dim); font-size:0.8rem; }
+  #medallions { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:10px; }
+  .medallion { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:10px; display:flex; flex-direction:column; gap:4px; align-items:center; text-align:center; }
+  .medallion.current { border-color:var(--good); box-shadow:0 0 0 1px var(--good); }
+  .medallion-img { height:110px; width:auto; }
+  .buffs { display:flex; flex-direction:column; gap:2px; font-size:0.78rem; }
+  .buff { color:var(--good); }
+  table { width:100%; border-collapse:collapse; font-size:0.85rem; }
+  th { text-align:left; color:var(--dim); font-weight:600; padding:4px 8px; }
+  td { padding:4px 8px; border-top:1px solid var(--border); vertical-align:middle; }
+  tr.reached td { background:rgba(82,209,122,0.12); }
+  .reward { display:inline-flex; align-items:center; gap:6px; background:#0f1720; border:1px solid var(--border); border-radius:6px; padding:2px 8px; margin:2px 6px 2px 0; font-size:0.8rem; }
+  .item { width:24px; height:24px; object-fit:contain; }
+</style>
+</head>
+<body>
+<p><a href="../index.html">&larr; All sample pages</a></p>
+<h1>Collection Reward Levels</h1>
+<p class="sub">The 51 levels of the collection, the 11 medallions, and the troop buffs of each medallion. Type your collection level to see your medallion and the levels that you have reached.</p>
+<div class="card">
+  <div class="controls">
+    <label>Collection level <input id="level-input" type="number" min="0" max="51" value="0" /></label>
+    <div id="level-result"></div>
+  </div>
+</div>
+<h2>Medallions</h2>
+<div id="medallions"></div>
+<h2>Levels</h2>
+<div class="card">
+  <table><thead><tr><th>Level</th><th>Medallion</th><th>Rewards</th></tr></thead><tbody id="levels"></tbody></table>
+</div>
+<script id="medallion-data" type="application/json">[{"id":"bronze-medallion-1","name":"Bronze Medallion I","img":"/images/collection-medallions/bronze-medallion-1.png","unlockLevel":1,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+2.0%","amount":2,"unit":"percent"}]},{"id":"bronze-medallion-2","name":"Bronze Medallion II","img":"/images/collection-medallions/bronze-medallion-2.png","unlockLevel":6,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+2.0%","amount":2,"unit":"percent"}]},{"id":"silver-medallion-1","name":"Silver Medallion I","img":"/images/collection-medallions/silver-medallion-1.png","unlockLevel":11,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+2.0%","amount":2,"unit":"percent"}]},{"id":"silver-medallion-2","name":"Silver Medallion II","img":"/images/collection-medallions/silver-medallion-2.png","unlockLevel":16,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Health","statKey":"troops-health","value":"+2.0%","amount":2,"unit":"percent"}]},{"id":"gold-medallion-1","name":"Gold Medallion I","img":"/images/collection-medallions/gold-medallion-1.png","unlockLevel":21,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Health","statKey":"troops-health","value":"+2.0%","amount":2,"unit":"percent"}]},{"id":"gold-medallion-2","name":"Gold Medallion II","img":"/images/collection-medallions/gold-medallion-2.png","unlockLevel":26,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+2.0%","amount":2,"unit":"percent"},{"stat":"Troops' Health","statKey":"troops-health","value":"+2.0%","amount":2,"unit":"percent"}]},{"id":"gold-medallion-3","name":"Gold Medallion III","img":"/images/collection-medallions/gold-medallion-3.png","unlockLevel":31,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Health","statKey":"troops-health","value":"+2.0%","amount":2,"unit":"percent"}]},{"id":"light-medallion-1","name":"Light Medallion I","img":"/images/collection-medallions/light-medallion-1.png","unlockLevel":36,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Health","statKey":"troops-health","value":"+4.0%","amount":4,"unit":"percent"}]},{"id":"light-medallion-2","name":"Light Medallion II","img":"/images/collection-medallions/light-medallion-2.png","unlockLevel":41,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+6.0%","amount":6,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Health","statKey":"troops-health","value":"+4.0%","amount":4,"unit":"percent"}]},{"id":"light-medallion-3","name":"Light Medallion III","img":"/images/collection-medallions/light-medallion-3.png","unlockLevel":46,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+6.0%","amount":6,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+6.0%","amount":6,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+4.0%","amount":4,"unit":"percent"},{"stat":"Troops' Health","statKey":"troops-health","value":"+4.0%","amount":4,"unit":"percent"}]},{"id":"light-medallion-4","name":"Light Medallion IV","img":"/images/collection-medallions/light-medallion-4.png","unlockLevel":51,"buffs":[{"stat":"Troops' Attack","statKey":"troops-attack","value":"+6.0%","amount":6,"unit":"percent"},{"stat":"Troops' Defense","statKey":"troops-defense","value":"+6.0%","amount":6,"unit":"percent"},{"stat":"Troops' Lethality","statKey":"troops-lethality","value":"+6.0%","amount":6,"unit":"percent"},{"stat":"Troops' Health","statKey":"troops-health","value":"+4.0%","amount":4,"unit":"percent"}]}]</script>
+<script id="level-data" type="application/json">[{"level":1,"medallionId":"bronze-medallion-1","rewards":[]},{"level":2,"medallionId":"bronze-medallion-1","rewards":[{"itemId":"skin-token","amount":100},{"itemId":"gems","amount":1000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":3,"medallionId":"bronze-medallion-1","rewards":[{"itemId":"skin-token","amount":100},{"itemId":"gems","amount":1000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":4,"medallionId":"bronze-medallion-1","rewards":[{"itemId":"skin-token","amount":100},{"itemId":"gems","amount":1000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":5,"medallionId":"bronze-medallion-1","rewards":[{"itemId":"skin-token","amount":100},{"itemId":"gems","amount":1000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":6,"medallionId":"bronze-medallion-2","rewards":[]},{"level":7,"medallionId":"bronze-medallion-2","rewards":[{"itemId":"skin-token","amount":200},{"itemId":"gems","amount":2000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":8,"medallionId":"bronze-medallion-2","rewards":[{"itemId":"skin-token","amount":200},{"itemId":"gems","amount":2000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":9,"medallionId":"bronze-medallion-2","rewards":[{"itemId":"skin-token","amount":200},{"itemId":"gems","amount":2000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":10,"medallionId":"bronze-medallion-2","rewards":[{"itemId":"skin-token","amount":200},{"itemId":"gems","amount":2000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":11,"medallionId":"silver-medallion-1","rewards":[]},{"level":12,"medallionId":"silver-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":13,"medallionId":"silver-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":14,"medallionId":"silver-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":15,"medallionId":"silver-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":16,"medallionId":"silver-medallion-2","rewards":[]},{"level":17,"medallionId":"silver-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":18,"medallionId":"silver-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":19,"medallionId":"silver-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":20,"medallionId":"silver-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":21,"medallionId":"gold-medallion-1","rewards":[]},{"level":22,"medallionId":"gold-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":23,"medallionId":"gold-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":24,"medallionId":"gold-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":25,"medallionId":"gold-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":26,"medallionId":"gold-medallion-2","rewards":[]},{"level":27,"medallionId":"gold-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":28,"medallionId":"gold-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":29,"medallionId":"gold-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":30,"medallionId":"gold-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":31,"medallionId":"gold-medallion-3","rewards":[]},{"level":32,"medallionId":"gold-medallion-3","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":33,"medallionId":"gold-medallion-3","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":34,"medallionId":"gold-medallion-3","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":35,"medallionId":"gold-medallion-3","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":36,"medallionId":"light-medallion-1","rewards":[]},{"level":37,"medallionId":"light-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":38,"medallionId":"light-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":39,"medallionId":"light-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":40,"medallionId":"light-medallion-1","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":41,"medallionId":"light-medallion-2","rewards":[]},{"level":42,"medallionId":"light-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":43,"medallionId":"light-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":44,"medallionId":"light-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":45,"medallionId":"light-medallion-2","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":46,"medallionId":"light-medallion-3","rewards":[]},{"level":47,"medallionId":"light-medallion-3","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":48,"medallionId":"light-medallion-3","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":49,"medallionId":"light-medallion-3","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":50,"medallionId":"light-medallion-3","rewards":[{"itemId":"skin-token","amount":300},{"itemId":"gems","amount":3000},{"itemId":"mythic-general-hero-shard","amount":2},{"itemId":"lucky-hero-gear-chest","amount":10}]},{"level":51,"medallionId":"light-medallion-4","rewards":[]}]</script>
+<script id="item-data" type="application/json">{"lucky-hero-gear-chest":{"name":"Lucky Hero Gear Chest","img":"/images/items/lucky-hero-gear-chest.png"},"skin-token":{"name":"Skin Token","img":"/images/items/skin-token.png"},"mythic-general-hero-shard":{"name":"Mythic General Hero Shard","img":"/images/items/mythic-general-hero-shard.png"},"gems":{"name":"Gems","img":"/images/items/gems.png"}}</script>
+<script>
+  const MEDALLIONS = JSON.parse(document.getElementById('medallion-data').textContent);
+  const LEVELS = JSON.parse(document.getElementById('level-data').textContent);
+  const ITEMS = JSON.parse(document.getElementById('item-data').textContent);
+  const MAX_LEVEL = LEVELS.length;
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+  const fmt = (n) => n.toLocaleString('en-US');
+  const medallionAt = (level) => MEDALLIONS.filter((m) => m.unlockLevel <= level).sort((a, b) => b.unlockLevel - a.unlockLevel)[0];
+  const medallionById = (id) => MEDALLIONS.find((m) => m.id === id);
+  function rewardChip(r) {
+    const chip = el('span', 'reward');
+    const item = ITEMS[r.itemId];
+    if (item.img) { const img = el('img', 'item'); img.src = '../..' + item.img; img.alt = ''; img.loading = 'lazy'; chip.append(img); }
+    chip.append(el('span', '', fmt(r.amount) + ' ' + item.name));
+    return chip;
+  }
+  function buffList(buffs) {
+    const list = el('div', 'buffs');
+    buffs.forEach((b) => list.append(el('span', 'buff', b.stat + ' ' + b.value)));
+    return list;
+  }
+  const cardById = {};
+  function renderMedallions() {
+    const grid = document.getElementById('medallions');
+    MEDALLIONS.forEach((m) => {
+      const last = LEVELS.filter((l) => l.medallionId === m.id).map((l) => l.level).pop();
+      const card = el('div', 'medallion');
+      card.id = 'medallion-' + m.id; cardById[m.id] = card;
+      const img = el('img', 'medallion-img'); img.src = '../..' + m.img; img.alt = m.name; card.append(img);
+      card.append(el('strong', '', m.name), el('span', 'dim', 'Levels ' + m.unlockLevel + (last > m.unlockLevel ? ' to ' + last : '')), buffList(m.buffs));
+      grid.append(card);
+    });
+  }
+  function renderTable() {
+    const table = document.getElementById('levels');
+    LEVELS.forEach((l) => {
+      const row = el('tr');
+      row.append(el('td', '', String(l.level)), el('td', '', medallionById(l.medallionId).name));
+      const cell = el('td');
+      if (l.rewards.length === 0) cell.append(el('span', 'dim', 'No reward'));
+      l.rewards.forEach((r) => cell.append(rewardChip(r)));
+      row.append(cell);
+      table.append(row);
+    });
+    return table.children;
+  }
+  renderMedallions();
+  const rows = renderTable();
+  const input = document.getElementById('level-input');
+  const result = document.getElementById('level-result');
+  function update() {
+    const level = Math.max(0, Math.min(MAX_LEVEL, Math.floor(Number(input.value) || 0)));
+    const medallion = level >= 1 ? medallionAt(level) : undefined;
+    result.replaceChildren();
+    if (!medallion) result.append(el('span', 'dim', 'No medallion yet.'));
+    else result.append(el('strong', '', medallion.name), buffList(medallion.buffs));
+    MEDALLIONS.forEach((m) => { cardById[m.id].classList.toggle('current', medallion !== undefined && m.id === medallion.id); });
+    for (let i = 0; i < rows.length; i++) rows[i].className = i < level ? 'reached' : '';
+  }
+  input.addEventListener('input', update);
+  update();
+</script>
+</body>
+</html>
