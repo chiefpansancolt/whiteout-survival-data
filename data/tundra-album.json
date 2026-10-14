@@ -11282,5 +11282,991 @@
         ]
       }
     ]
+  },
+  {
+    "id": "infernal-power",
+    "name": "Infernal Power",
+    "buff": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 100
+      },
+      {
+        "itemId": "fire-crystal",
+        "amount": 200
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "helios-warriors",
+        "name": "Helios Warriors",
+        "img": "/images/tundra-album/infernal-power/helios-warriors.png",
+        "reward": {
+          "itemId": "polishing-solution",
+          "amount": 35
+        },
+        "pieces": [
+          {
+            "id": "helios-warriors-1",
+            "name": "Helios Warriors - 1",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-1.png",
+            "stars": 1
+          },
+          {
+            "id": "helios-warriors-2",
+            "name": "Helios Warriors - 2",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-2.png",
+            "stars": 1
+          },
+          {
+            "id": "helios-warriors-3",
+            "name": "Helios Warriors - 3",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-3.png",
+            "stars": 1
+          },
+          {
+            "id": "helios-warriors-4",
+            "name": "Helios Warriors - 4",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-4.png",
+            "stars": 2
+          },
+          {
+            "id": "helios-warriors-5",
+            "name": "Helios Warriors - 5",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-5.png",
+            "stars": 2
+          },
+          {
+            "id": "helios-warriors-6",
+            "name": "Helios Warriors - 6",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-6.png",
+            "stars": 2
+          },
+          {
+            "id": "helios-warriors-7",
+            "name": "Helios Warriors - 7",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-7.png",
+            "stars": 3
+          },
+          {
+            "id": "helios-warriors-8",
+            "name": "Helios Warriors - 8",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-8.png",
+            "stars": 3
+          },
+          {
+            "id": "helios-warriors-9",
+            "name": "Helios Warriors - 9",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-9.png",
+            "stars": 3
+          },
+          {
+            "id": "helios-warriors-10",
+            "name": "Helios Warriors - 10",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-10.png",
+            "stars": 4
+          },
+          {
+            "id": "helios-warriors-11",
+            "name": "Helios Warriors - 11",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-11.png",
+            "stars": 4
+          },
+          {
+            "id": "helios-warriors-12",
+            "name": "Helios Warriors - 12",
+            "img": "/images/tundra-album/infernal-power/helios-warriors-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "crystal-strength",
+        "name": "Crystal Strength",
+        "img": "/images/tundra-album/infernal-power/crystal-strength.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "crystal-strength-1",
+            "name": "Crystal Strength - 1",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-1.png",
+            "stars": 1
+          },
+          {
+            "id": "crystal-strength-2",
+            "name": "Crystal Strength - 2",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-2.png",
+            "stars": 1
+          },
+          {
+            "id": "crystal-strength-3",
+            "name": "Crystal Strength - 3",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-3.png",
+            "stars": 2
+          },
+          {
+            "id": "crystal-strength-4",
+            "name": "Crystal Strength - 4",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-4.png",
+            "stars": 2
+          },
+          {
+            "id": "crystal-strength-5",
+            "name": "Crystal Strength - 5",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-5.png",
+            "stars": 3
+          },
+          {
+            "id": "crystal-strength-6",
+            "name": "Crystal Strength - 6",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-6.png",
+            "stars": 3
+          },
+          {
+            "id": "crystal-strength-7",
+            "name": "Crystal Strength - 7",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-7.png",
+            "stars": 3
+          },
+          {
+            "id": "crystal-strength-8",
+            "name": "Crystal Strength - 8",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-8.png",
+            "stars": 3
+          },
+          {
+            "id": "crystal-strength-9",
+            "name": "Crystal Strength - 9",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-9.png",
+            "stars": 4
+          },
+          {
+            "id": "crystal-strength-10",
+            "name": "Crystal Strength - 10",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-10.png",
+            "stars": 4
+          },
+          {
+            "id": "crystal-strength-11",
+            "name": "Crystal Strength - 11",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-11.png",
+            "stars": 4
+          },
+          {
+            "id": "crystal-strength-12",
+            "name": "Crystal Strength - 12",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-12.png",
+            "stars": 4
+          },
+          {
+            "id": "crystal-strength-13",
+            "name": "Crystal Strength - 13",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-13.png",
+            "stars": 4
+          },
+          {
+            "id": "crystal-strength-14",
+            "name": "Crystal Strength - 14",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-14.png",
+            "stars": 4
+          },
+          {
+            "id": "crystal-strength-15",
+            "name": "Crystal Strength - 15",
+            "img": "/images/tundra-album/infernal-power/crystal-strength-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "crystal-fragmentation",
+        "name": "Crystal Fragmentation",
+        "img": "/images/tundra-album/infernal-power/crystal-fragmentation.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "crystal-fragmentation-1",
+            "name": "Crystal Fragmentation - 1",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-1.png",
+            "stars": 1
+          },
+          {
+            "id": "crystal-fragmentation-2",
+            "name": "Crystal Fragmentation - 2",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-2.png",
+            "stars": 1
+          },
+          {
+            "id": "crystal-fragmentation-3",
+            "name": "Crystal Fragmentation - 3",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-3.png",
+            "stars": 1
+          },
+          {
+            "id": "crystal-fragmentation-4",
+            "name": "Crystal Fragmentation - 4",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-4.png",
+            "stars": 2
+          },
+          {
+            "id": "crystal-fragmentation-5",
+            "name": "Crystal Fragmentation - 5",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-5.png",
+            "stars": 2
+          },
+          {
+            "id": "crystal-fragmentation-6",
+            "name": "Crystal Fragmentation - 6",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-6.png",
+            "stars": 2
+          },
+          {
+            "id": "crystal-fragmentation-7",
+            "name": "Crystal Fragmentation - 7",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-7.png",
+            "stars": 2
+          },
+          {
+            "id": "crystal-fragmentation-8",
+            "name": "Crystal Fragmentation - 8",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-8.png",
+            "stars": 2
+          },
+          {
+            "id": "crystal-fragmentation-9",
+            "name": "Crystal Fragmentation - 9",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-9.png",
+            "stars": 3
+          },
+          {
+            "id": "crystal-fragmentation-10",
+            "name": "Crystal Fragmentation - 10",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-10.png",
+            "stars": 3
+          },
+          {
+            "id": "crystal-fragmentation-11",
+            "name": "Crystal Fragmentation - 11",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-11.png",
+            "stars": 3
+          },
+          {
+            "id": "crystal-fragmentation-12",
+            "name": "Crystal Fragmentation - 12",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-12.png",
+            "stars": 3
+          },
+          {
+            "id": "crystal-fragmentation-13",
+            "name": "Crystal Fragmentation - 13",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-13.png",
+            "stars": 4
+          },
+          {
+            "id": "crystal-fragmentation-14",
+            "name": "Crystal Fragmentation - 14",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-14.png",
+            "stars": 4
+          },
+          {
+            "id": "crystal-fragmentation-15",
+            "name": "Crystal Fragmentation - 15",
+            "img": "/images/tundra-album/infernal-power/crystal-fragmentation-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "miner-madness",
+        "name": "Miner Madness",
+        "img": "/images/tundra-album/infernal-power/miner-madness.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "miner-madness-1",
+            "name": "Miner Madness - 1",
+            "img": "/images/tundra-album/infernal-power/miner-madness-1.png",
+            "stars": 1
+          },
+          {
+            "id": "miner-madness-2",
+            "name": "Miner Madness - 2",
+            "img": "/images/tundra-album/infernal-power/miner-madness-2.png",
+            "stars": 1
+          },
+          {
+            "id": "miner-madness-3",
+            "name": "Miner Madness - 3",
+            "img": "/images/tundra-album/infernal-power/miner-madness-3.png",
+            "stars": 1
+          },
+          {
+            "id": "miner-madness-4",
+            "name": "Miner Madness - 4",
+            "img": "/images/tundra-album/infernal-power/miner-madness-4.png",
+            "stars": 2
+          },
+          {
+            "id": "miner-madness-5",
+            "name": "Miner Madness - 5",
+            "img": "/images/tundra-album/infernal-power/miner-madness-5.png",
+            "stars": 2
+          },
+          {
+            "id": "miner-madness-6",
+            "name": "Miner Madness - 6",
+            "img": "/images/tundra-album/infernal-power/miner-madness-6.png",
+            "stars": 2
+          },
+          {
+            "id": "miner-madness-7",
+            "name": "Miner Madness - 7",
+            "img": "/images/tundra-album/infernal-power/miner-madness-7.png",
+            "stars": 2
+          },
+          {
+            "id": "miner-madness-8",
+            "name": "Miner Madness - 8",
+            "img": "/images/tundra-album/infernal-power/miner-madness-8.png",
+            "stars": 3
+          },
+          {
+            "id": "miner-madness-9",
+            "name": "Miner Madness - 9",
+            "img": "/images/tundra-album/infernal-power/miner-madness-9.png",
+            "stars": 3
+          },
+          {
+            "id": "miner-madness-10",
+            "name": "Miner Madness - 10",
+            "img": "/images/tundra-album/infernal-power/miner-madness-10.png",
+            "stars": 3
+          },
+          {
+            "id": "miner-madness-11",
+            "name": "Miner Madness - 11",
+            "img": "/images/tundra-album/infernal-power/miner-madness-11.png",
+            "stars": 3
+          },
+          {
+            "id": "miner-madness-12",
+            "name": "Miner Madness - 12",
+            "img": "/images/tundra-album/infernal-power/miner-madness-12.png",
+            "stars": 4
+          },
+          {
+            "id": "miner-madness-13",
+            "name": "Miner Madness - 13",
+            "img": "/images/tundra-album/infernal-power/miner-madness-13.png",
+            "stars": 4
+          },
+          {
+            "id": "miner-madness-14",
+            "name": "Miner Madness - 14",
+            "img": "/images/tundra-album/infernal-power/miner-madness-14.png",
+            "stars": 5
+          },
+          {
+            "id": "miner-madness-15",
+            "name": "Miner Madness - 15",
+            "img": "/images/tundra-album/infernal-power/miner-madness-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "engine-of-the-future",
+        "name": "Engine of the Future",
+        "img": "/images/tundra-album/infernal-power/engine-of-the-future.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "engine-of-the-future-1",
+            "name": "Engine of the Future - 1",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-1.png",
+            "stars": 1
+          },
+          {
+            "id": "engine-of-the-future-2",
+            "name": "Engine of the Future - 2",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-2.png",
+            "stars": 1
+          },
+          {
+            "id": "engine-of-the-future-3",
+            "name": "Engine of the Future - 3",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-3.png",
+            "stars": 1
+          },
+          {
+            "id": "engine-of-the-future-4",
+            "name": "Engine of the Future - 4",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-4.png",
+            "stars": 2
+          },
+          {
+            "id": "engine-of-the-future-5",
+            "name": "Engine of the Future - 5",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-5.png",
+            "stars": 2
+          },
+          {
+            "id": "engine-of-the-future-6",
+            "name": "Engine of the Future - 6",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-6.png",
+            "stars": 2
+          },
+          {
+            "id": "engine-of-the-future-7",
+            "name": "Engine of the Future - 7",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-7.png",
+            "stars": 3
+          },
+          {
+            "id": "engine-of-the-future-8",
+            "name": "Engine of the Future - 8",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-8.png",
+            "stars": 3
+          },
+          {
+            "id": "engine-of-the-future-9",
+            "name": "Engine of the Future - 9",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-9.png",
+            "stars": 3
+          },
+          {
+            "id": "engine-of-the-future-10",
+            "name": "Engine of the Future - 10",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-10.png",
+            "stars": 4
+          },
+          {
+            "id": "engine-of-the-future-11",
+            "name": "Engine of the Future - 11",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-11.png",
+            "stars": 4
+          },
+          {
+            "id": "engine-of-the-future-12",
+            "name": "Engine of the Future - 12",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-12.png",
+            "stars": 4
+          },
+          {
+            "id": "engine-of-the-future-13",
+            "name": "Engine of the Future - 13",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-13.png",
+            "stars": 5
+          },
+          {
+            "id": "engine-of-the-future-14",
+            "name": "Engine of the Future - 14",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-14.png",
+            "stars": 5
+          },
+          {
+            "id": "engine-of-the-future-15",
+            "name": "Engine of the Future - 15",
+            "img": "/images/tundra-album/infernal-power/engine-of-the-future-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "risky-business",
+        "name": "Risky Business",
+        "img": "/images/tundra-album/infernal-power/risky-business.png",
+        "reward": {
+          "itemId": "fire-crystal",
+          "amount": 24
+        },
+        "pieces": [
+          {
+            "id": "risky-business-1",
+            "name": "Risky Business - 1",
+            "img": "/images/tundra-album/infernal-power/risky-business-1.png",
+            "stars": 1
+          },
+          {
+            "id": "risky-business-2",
+            "name": "Risky Business - 2",
+            "img": "/images/tundra-album/infernal-power/risky-business-2.png",
+            "stars": 1
+          },
+          {
+            "id": "risky-business-3",
+            "name": "Risky Business - 3",
+            "img": "/images/tundra-album/infernal-power/risky-business-3.png",
+            "stars": 2
+          },
+          {
+            "id": "risky-business-4",
+            "name": "Risky Business - 4",
+            "img": "/images/tundra-album/infernal-power/risky-business-4.png",
+            "stars": 2
+          },
+          {
+            "id": "risky-business-5",
+            "name": "Risky Business - 5",
+            "img": "/images/tundra-album/infernal-power/risky-business-5.png",
+            "stars": 2
+          },
+          {
+            "id": "risky-business-6",
+            "name": "Risky Business - 6",
+            "img": "/images/tundra-album/infernal-power/risky-business-6.png",
+            "stars": 3
+          },
+          {
+            "id": "risky-business-7",
+            "name": "Risky Business - 7",
+            "img": "/images/tundra-album/infernal-power/risky-business-7.png",
+            "stars": 3
+          },
+          {
+            "id": "risky-business-8",
+            "name": "Risky Business - 8",
+            "img": "/images/tundra-album/infernal-power/risky-business-8.png",
+            "stars": 3
+          },
+          {
+            "id": "risky-business-9",
+            "name": "Risky Business - 9",
+            "img": "/images/tundra-album/infernal-power/risky-business-9.png",
+            "stars": 4
+          },
+          {
+            "id": "risky-business-10",
+            "name": "Risky Business - 10",
+            "img": "/images/tundra-album/infernal-power/risky-business-10.png",
+            "stars": 4
+          },
+          {
+            "id": "risky-business-11",
+            "name": "Risky Business - 11",
+            "img": "/images/tundra-album/infernal-power/risky-business-11.png",
+            "stars": 4
+          },
+          {
+            "id": "risky-business-12",
+            "name": "Risky Business - 12",
+            "img": "/images/tundra-album/infernal-power/risky-business-12.png",
+            "stars": 4
+          },
+          {
+            "id": "risky-business-13",
+            "name": "Risky Business - 13",
+            "img": "/images/tundra-album/infernal-power/risky-business-13.png",
+            "stars": 4
+          },
+          {
+            "id": "risky-business-14",
+            "name": "Risky Business - 14",
+            "img": "/images/tundra-album/infernal-power/risky-business-14.png",
+            "stars": 5
+          },
+          {
+            "id": "risky-business-15",
+            "name": "Risky Business - 15",
+            "img": "/images/tundra-album/infernal-power/risky-business-15.png",
+            "stars": 5
+          },
+          {
+            "id": "risky-business-16",
+            "name": "Risky Business - 16",
+            "img": "/images/tundra-album/infernal-power/risky-business-16.png",
+            "stars": 5
+          },
+          {
+            "id": "risky-business-17",
+            "name": "Risky Business - 17",
+            "img": "/images/tundra-album/infernal-power/risky-business-17.png",
+            "stars": 5
+          },
+          {
+            "id": "risky-business-18",
+            "name": "Risky Business - 18",
+            "img": "/images/tundra-album/infernal-power/risky-business-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "treasure-of-empire",
+        "name": "Treasure of Empire",
+        "img": "/images/tundra-album/infernal-power/treasure-of-empire.png",
+        "reward": {
+          "itemId": "fire-crystal",
+          "amount": 24
+        },
+        "pieces": [
+          {
+            "id": "treasure-of-empire-1",
+            "name": "Treasure of Empire - 1",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-1.png",
+            "stars": 1
+          },
+          {
+            "id": "treasure-of-empire-2",
+            "name": "Treasure of Empire - 2",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-2.png",
+            "stars": 1
+          },
+          {
+            "id": "treasure-of-empire-3",
+            "name": "Treasure of Empire - 3",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-3.png",
+            "stars": 2
+          },
+          {
+            "id": "treasure-of-empire-4",
+            "name": "Treasure of Empire - 4",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-4.png",
+            "stars": 2
+          },
+          {
+            "id": "treasure-of-empire-5",
+            "name": "Treasure of Empire - 5",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-5.png",
+            "stars": 2
+          },
+          {
+            "id": "treasure-of-empire-6",
+            "name": "Treasure of Empire - 6",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-6.png",
+            "stars": 3
+          },
+          {
+            "id": "treasure-of-empire-7",
+            "name": "Treasure of Empire - 7",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-7.png",
+            "stars": 3
+          },
+          {
+            "id": "treasure-of-empire-8",
+            "name": "Treasure of Empire - 8",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-8.png",
+            "stars": 3
+          },
+          {
+            "id": "treasure-of-empire-9",
+            "name": "Treasure of Empire - 9",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-9.png",
+            "stars": 4
+          },
+          {
+            "id": "treasure-of-empire-10",
+            "name": "Treasure of Empire - 10",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-10.png",
+            "stars": 4
+          },
+          {
+            "id": "treasure-of-empire-11",
+            "name": "Treasure of Empire - 11",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-11.png",
+            "stars": 4
+          },
+          {
+            "id": "treasure-of-empire-12",
+            "name": "Treasure of Empire - 12",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-12.png",
+            "stars": 4
+          },
+          {
+            "id": "treasure-of-empire-13",
+            "name": "Treasure of Empire - 13",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-13.png",
+            "stars": 4
+          },
+          {
+            "id": "treasure-of-empire-14",
+            "name": "Treasure of Empire - 14",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-14.png",
+            "stars": 5
+          },
+          {
+            "id": "treasure-of-empire-15",
+            "name": "Treasure of Empire - 15",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-15.png",
+            "stars": 5
+          },
+          {
+            "id": "treasure-of-empire-16",
+            "name": "Treasure of Empire - 16",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-16.png",
+            "stars": 5
+          },
+          {
+            "id": "treasure-of-empire-17",
+            "name": "Treasure of Empire - 17",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-17.png",
+            "stars": 5
+          },
+          {
+            "id": "treasure-of-empire-18",
+            "name": "Treasure of Empire - 18",
+            "img": "/images/tundra-album/infernal-power/treasure-of-empire-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-communicative-heart",
+        "name": "The Communicative Heart",
+        "img": "/images/tundra-album/infernal-power/the-communicative-heart.png",
+        "reward": {
+          "itemId": "fire-crystal",
+          "amount": 30
+        },
+        "pieces": [
+          {
+            "id": "the-communicative-heart-1",
+            "name": "The Communicative Heart - 1",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-1.png",
+            "stars": 2
+          },
+          {
+            "id": "the-communicative-heart-2",
+            "name": "The Communicative Heart - 2",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-2.png",
+            "stars": 2
+          },
+          {
+            "id": "the-communicative-heart-3",
+            "name": "The Communicative Heart - 3",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-3.png",
+            "stars": 3
+          },
+          {
+            "id": "the-communicative-heart-4",
+            "name": "The Communicative Heart - 4",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-4.png",
+            "stars": 3
+          },
+          {
+            "id": "the-communicative-heart-5",
+            "name": "The Communicative Heart - 5",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-5.png",
+            "stars": 4
+          },
+          {
+            "id": "the-communicative-heart-6",
+            "name": "The Communicative Heart - 6",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-6.png",
+            "stars": 4
+          },
+          {
+            "id": "the-communicative-heart-7",
+            "name": "The Communicative Heart - 7",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-7.png",
+            "stars": 4
+          },
+          {
+            "id": "the-communicative-heart-8",
+            "name": "The Communicative Heart - 8",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-8.png",
+            "stars": 4
+          },
+          {
+            "id": "the-communicative-heart-9",
+            "name": "The Communicative Heart - 9",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-communicative-heart-10",
+            "name": "The Communicative Heart - 10",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-communicative-heart-11",
+            "name": "The Communicative Heart - 11",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-communicative-heart-12",
+            "name": "The Communicative Heart - 12",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-12.png",
+            "stars": 5
+          },
+          {
+            "id": "the-communicative-heart-13",
+            "name": "The Communicative Heart - 13",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-13.png",
+            "stars": 5
+          },
+          {
+            "id": "the-communicative-heart-14",
+            "name": "The Communicative Heart - 14",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-communicative-heart-15",
+            "name": "The Communicative Heart - 15",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-communicative-heart-16",
+            "name": "The Communicative Heart - 16",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-communicative-heart-17",
+            "name": "The Communicative Heart - 17",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-communicative-heart-18",
+            "name": "The Communicative Heart - 18",
+            "img": "/images/tundra-album/infernal-power/the-communicative-heart-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-guardians",
+        "name": "The Guardians",
+        "img": "/images/tundra-album/infernal-power/the-guardians.png",
+        "reward": {
+          "itemId": "fire-crystal",
+          "amount": 30
+        },
+        "pieces": [
+          {
+            "id": "the-guardians-1",
+            "name": "The Guardians - 1",
+            "img": "/images/tundra-album/infernal-power/the-guardians-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-guardians-2",
+            "name": "The Guardians - 2",
+            "img": "/images/tundra-album/infernal-power/the-guardians-2.png",
+            "stars": 2
+          },
+          {
+            "id": "the-guardians-3",
+            "name": "The Guardians - 3",
+            "img": "/images/tundra-album/infernal-power/the-guardians-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-guardians-4",
+            "name": "The Guardians - 4",
+            "img": "/images/tundra-album/infernal-power/the-guardians-4.png",
+            "stars": 3
+          },
+          {
+            "id": "the-guardians-5",
+            "name": "The Guardians - 5",
+            "img": "/images/tundra-album/infernal-power/the-guardians-5.png",
+            "stars": 3
+          },
+          {
+            "id": "the-guardians-6",
+            "name": "The Guardians - 6",
+            "img": "/images/tundra-album/infernal-power/the-guardians-6.png",
+            "stars": 3
+          },
+          {
+            "id": "the-guardians-7",
+            "name": "The Guardians - 7",
+            "img": "/images/tundra-album/infernal-power/the-guardians-7.png",
+            "stars": 4
+          },
+          {
+            "id": "the-guardians-8",
+            "name": "The Guardians - 8",
+            "img": "/images/tundra-album/infernal-power/the-guardians-8.png",
+            "stars": 4
+          },
+          {
+            "id": "the-guardians-9",
+            "name": "The Guardians - 9",
+            "img": "/images/tundra-album/infernal-power/the-guardians-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-guardians-10",
+            "name": "The Guardians - 10",
+            "img": "/images/tundra-album/infernal-power/the-guardians-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-guardians-11",
+            "name": "The Guardians - 11",
+            "img": "/images/tundra-album/infernal-power/the-guardians-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-guardians-12",
+            "name": "The Guardians - 12",
+            "img": "/images/tundra-album/infernal-power/the-guardians-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-guardians-13",
+            "name": "The Guardians - 13",
+            "img": "/images/tundra-album/infernal-power/the-guardians-13.png",
+            "stars": 5
+          },
+          {
+            "id": "the-guardians-14",
+            "name": "The Guardians - 14",
+            "img": "/images/tundra-album/infernal-power/the-guardians-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-guardians-15",
+            "name": "The Guardians - 15",
+            "img": "/images/tundra-album/infernal-power/the-guardians-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-guardians-16",
+            "name": "The Guardians - 16",
+            "img": "/images/tundra-album/infernal-power/the-guardians-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-guardians-17",
+            "name": "The Guardians - 17",
+            "img": "/images/tundra-album/infernal-power/the-guardians-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-guardians-18",
+            "name": "The Guardians - 18",
+            "img": "/images/tundra-album/infernal-power/the-guardians-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]

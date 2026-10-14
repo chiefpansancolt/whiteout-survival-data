@@ -18,7 +18,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   levels of the activity bar with their rewards. The items Activeness, Alliance XP, Authority XP,
   Activity Triumph Points, and four resource packs are new in `items()`.
 - `tundraAlbum()`: the Tundra Album albums, with the 9 puzzles of each, the star level and the image
-  of every piece, the reward of each puzzle, and the buff of the album. It holds 12 of the 16
+  of every piece, the reward of each puzzle, and the buff of the album. It holds 13 of the 16
   albums.
 - `alliancePrestige()`: the six prestige buildings of an alliance, the event that gives each one,
   and their Resource Gathering Speed bonus by tier.

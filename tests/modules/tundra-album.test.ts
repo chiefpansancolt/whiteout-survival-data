@@ -811,6 +811,35 @@ const NEW_ALBUMS = [
       ['remaker-of-order', 'Remaker of Order', [0, 2, 2, 7, 7], 'essence-stones', 6],
     ],
   },
+  {
+    id: 'infernal-power',
+    name: 'Infernal Power',
+    stat: 'Troops Attack',
+    statKey: 'troops-attack',
+    eventNote: '+2% troops attack',
+    completion: [
+      ['lucky-hero-gear-chest', 100],
+      ['fire-crystal', 200],
+    ],
+    pieces: 144,
+    puzzles: [
+      ['helios-warriors', 'Helios Warriors', [3, 3, 3, 3, 0], 'polishing-solution', 35],
+      ['crystal-strength', 'Crystal Strength', [2, 2, 4, 6, 1], 'essence-stones', 3],
+      ['crystal-fragmentation', 'Crystal Fragmentation', [3, 5, 4, 2, 1], 'design-plans', 10],
+      ['miner-madness', 'Miner Madness', [3, 4, 4, 2, 2], 'chief-gear-materials-chest', 3],
+      [
+        'engine-of-the-future',
+        'Engine of the Future',
+        [3, 3, 3, 3, 3],
+        'mythic-general-hero-shard',
+        2,
+      ],
+      ['risky-business', 'Risky Business', [2, 3, 3, 5, 5], 'fire-crystal', 24],
+      ['treasure-of-empire', 'Treasure of Empire', [2, 3, 3, 5, 5], 'fire-crystal', 24],
+      ['the-communicative-heart', 'The Communicative Heart', [0, 2, 2, 7, 7], 'fire-crystal', 30],
+      ['the-guardians', 'The Guardians', [1, 2, 3, 6, 6], 'fire-crystal', 30],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {
