@@ -101,6 +101,12 @@ describe('Item catalog', () => {
       .forEach((item) => expect(existsSync(join(__dirname, '../..', item.img))).toBe(true));
   });
 
+  it('has the 8h Troop Training Speedup with an icon file', () => {
+    const speedup = items().find('speedup-troop-8h')!;
+    expect(speedup.img).toBe('/images/items/speedups/speedup-troop-8h.png');
+    expect(existsSync(join(__dirname, '../..', speedup.img))).toBe(true);
+  });
+
   it('has 1m, 5m, 1h, 3h, and 8h speedups of every type', () => {
     for (const type of ['general', 'construction', 'research', 'troop', 'learning', 'healing']) {
       for (const length of ['1m', '5m', '1h', '3h', '8h']) {
@@ -118,7 +124,6 @@ describe('Item catalog', () => {
       'speedup-construction-3h',
       'speedup-construction-8h',
       'speedup-troop-3h',
-      'speedup-troop-8h',
       'speedup-research-3h',
       'speedup-research-8h',
       'speedup-learning-8h',
@@ -245,12 +250,12 @@ describe('items of the activity bar of the Daily Missions', () => {
     }
   });
 
-  it('has 54 items without an icon in all', () => {
+  it('has 53 items without an icon in all', () => {
     expect(
       items()
         .get()
         .filter((i) => i.img === ''),
-    ).toHaveLength(54);
+    ).toHaveLength(53);
   });
 });
 

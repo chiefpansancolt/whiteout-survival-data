@@ -72,9 +72,13 @@ Functional items are in this module, and cosmetic skins are in `skins()`.
 
 `Speedups` holds the 30 general and type-specific speedup items (1m to 8h). Their icons are cropped
 from in-game Backpack screenshots. Each of the six types (general, construction, research, troop,
-learning, and healing) has a 1m, 5m, 1h, 3h, and 8h item. Nine items have no icon yet, so their
+learning, and healing) has a 1m, 5m, 1h, 3h, and 8h item. Eight items have no icon yet, so their
 `img` is an empty string and their `sources` are empty: the 3h and 8h speedups of construction,
-troop, research, and healing, and the 8h speedup of learning. They are placeholders.
+research, and healing, the 3h speedup of troop, and the 8h speedup of learning. They are
+placeholders.
+
+The icon of the 8h Troop Training Speedup is cropped from an album screen, the reward of the puzzle
+Canyon Clash, and the amount on it is painted out.
 
 Three items of the activity bar of the Daily Missions have no icon yet, so their `img` is an empty
 string: Alliance XP, Authority XP, and Activity Triumph Points. The four resource packs of the bar,

@@ -2700,7 +2700,7 @@
   {
     "id": "speedup-troop-8h",
     "name": "8h Troop Training Speedup",
-    "img": "",
+    "img": "/images/items/speedups/speedup-troop-8h.png",
     "category": "Speedups",
     "speedup": {
       "type": "troop",

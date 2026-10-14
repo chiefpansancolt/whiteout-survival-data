@@ -200,9 +200,9 @@ This is what the data does not hold yet. Each module README gives the detail.
   [Heroes](src/modules/heroes/README.md).
 - **Experts.** Justus is announced and not released, so he has a name, an icon, and an unlock
   requirement only. See [Experts](src/modules/experts/README.md).
-- **Items.** 54 items have no icon: the 9 speedups of 3h and 8h for construction, troop, research,
-  and healing and of 8h for learning, the 42 Furniture items, and 3 items of the activity bar of the
-  Daily Missions. See [Items](src/modules/items/README.md).
+- **Items.** 53 items have no icon: the 8 speedups of 3h and 8h for construction, research, and
+  healing, of 3h for troop, and of 8h for learning, the 42 Furniture items, and 3 items of the
+  activity bar of the Daily Missions. See [Items](src/modules/items/README.md).
 - **Skins.** The 24 newest skins have no `img`. See [Skins](src/modules/skins/README.md).
 - **Buildings.** The nine entertainment buildings have no `img`. See
   [Buildings](src/modules/buildings/README.md).
