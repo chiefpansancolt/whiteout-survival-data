@@ -13,6 +13,7 @@ export * from './hero-gear';
 export * from './alliance-territory';
 export * from './alliance-tech';
 export * from './alliance-facility';
+export * from './alliance-prestige';
 export * from './tundra-album';
 export * from './alliance-fortress';
 export * from './event-buff';

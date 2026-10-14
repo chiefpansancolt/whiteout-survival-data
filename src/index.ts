@@ -18,6 +18,7 @@ export * from './modules/hero-gear-stats';
 export * from './modules/alliance/territory';
 export * from './modules/alliance/tech';
 export * from './modules/alliance/facility';
+export * from './modules/alliance/prestige';
 export * from './modules/tundra-album';
 export * from './modules/alliance/fortress';
 export * from './modules/event-buff';

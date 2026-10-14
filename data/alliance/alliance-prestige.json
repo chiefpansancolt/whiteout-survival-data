@@ -1,0 +1,355 @@
+[
+  {
+    "id": "championship-statue",
+    "name": "Championship Statue",
+    "source": {
+      "event": "Alliance Championship",
+      "eventId": "alliance-championship",
+      "requirement": "Reach Silver III"
+    },
+    "levels": [
+      {
+        "name": "Silver",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+3%",
+            "amount": 3,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Gold",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+5%",
+            "amount": 5,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Diamond",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+7%",
+            "amount": 7,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Ultimate",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+10%",
+            "amount": 10,
+            "unit": "percent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "source": {
+      "event": "Alliance Mobilization",
+      "eventId": "alliance-mobilization",
+      "requirement": "Reach Senior Tier"
+    },
+    "levels": [
+      {
+        "name": "Tier 1",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+3%",
+            "amount": 3,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 2",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+5%",
+            "amount": 5,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 3",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+7%",
+            "amount": 7,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 4",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+10%",
+            "amount": 10,
+            "unit": "percent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "foundry-rewards",
+    "name": "Foundry Rewards",
+    "source": {
+      "event": "Foundry Battle",
+      "eventId": "foundry-battle",
+      "requirement": "S-rated"
+    },
+    "levels": [
+      {
+        "name": "Tier 1",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+3%",
+            "amount": 3,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 2",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+5%",
+            "amount": 5,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 3",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+7%",
+            "amount": 7,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 4",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+10%",
+            "amount": 10,
+            "unit": "percent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "battle-horn",
+    "name": "Battle Horn",
+    "source": {
+      "event": "Alliance Showdown",
+      "eventId": "alliance-showdown",
+      "requirement": "5-Star"
+    },
+    "levels": [
+      {
+        "name": "Tier 1",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+3%",
+            "amount": 3,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 2",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+5%",
+            "amount": 5,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 3",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+7%",
+            "amount": 7,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 4",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+10%",
+            "amount": 10,
+            "unit": "percent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "weapons-master",
+    "name": "Weapons Master",
+    "source": {
+      "event": "Tundra Arms League",
+      "eventId": "tundra-arms-league",
+      "requirement": "Advance to Championships"
+    },
+    "levels": [
+      {
+        "name": "Tier 1",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+3%",
+            "amount": 3,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 2",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+5%",
+            "amount": 5,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 3",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+7%",
+            "amount": 7,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 4",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+10%",
+            "amount": 10,
+            "unit": "percent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "siege-herald",
+    "name": "Siege Herald",
+    "source": {
+      "event": "Winter Siege",
+      "requirement": "Reach Pioneer Tier"
+    },
+    "levels": [
+      {
+        "name": "Tier 1",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+3%",
+            "amount": 3,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 2",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+5%",
+            "amount": 5,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 3",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+7%",
+            "amount": 7,
+            "unit": "percent"
+          }
+        ]
+      },
+      {
+        "name": "Tier 4",
+        "bonuses": [
+          {
+            "stat": "Resource Gathering Speed",
+            "statKey": "resource-gathering-speed",
+            "value": "+10%",
+            "amount": 10,
+            "unit": "percent"
+          }
+        ]
+      }
+    ]
+  }
+]
