@@ -347,11 +347,40 @@ The pieces, the star levels, and the reward amounts of the 14 albums are read fr
 of the game, and the images are cut from the same screens. The package owner names the items of the
 album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
 Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The
-items of the other rewards are read from the icons of the screens. The reward of Fiery Crystal is 7
-of the Enhancement XP Component with the 100 on its icon, as the screen shows it. The item
-`enhancement-xp-component` covers both the 10 and the 100 component.
+items of the other rewards are read from the icons of the screens. The item
+`enhancement-xp-component` covers both the 10 and the 100 component, so a reward of it has a `size`,
+read from the number on the icon. Seven rewards of 7 and the 100 of the Explore the World completion
+are the 100 component. The 45 of Dauntless Heroes and of City Founding are the 10 component.
+
+Nine albums were not complete when their screens were taken: Tundra Alliance (8 of 9 puzzles),
+Battlefield Epic (6 of 9), Spectacular Adventures (5 of 9), Divine Weapons (8 of 9), The Labyrinth
+(4 of 9), Nature's Strength (8 of 9), Ballad of Wind and Cold (4 of 9), Infernal Power (3 of 9), and
+Kings of Combat (0 of 9). A piece that the player did not own shows as a grey tile. The `img` of
+such a piece is that grey tile, as a placeholder until the picture is added. A grey tile draws grey
+stars, and the star level of the piece is the number of those stars. These are the pieces with a
+grey tile in the first four albums: Orichalcum 15, Canyon Clash 14 and 15, and Grand Banquet 17 and
+18 of Battlefield Epic, Snowbusters 15, Bounty Hunter 14 and 15, Wandering Merchant 16, and Tundra
+Adventure 12 of Spectacular Adventures, Horn of Command 15 of Tundra Alliance, and Essence Stones 18
+of Divine Weapons. The other five albums have 9 (The Labyrinth), 1 (Nature's Strength), 9 (Ballad of
+Wind and Cold), 28 (Infernal Power), and 115 (Kings of Combat) pieces with a grey tile. The picture
+of a puzzle that is not complete is blurred, as the game shows it.
+
+The items of these rewards are read from icons that a check mark partly covers, so they are less
+certain: Canyon Clash (2 8h Troop Training Speedup, by the helmet badge), Hero's Glory (15 Charm
+Design), Grand Banquet (3 Mythic General Hero Shard), Children of the "New World" (5 Chief Gear
+Materials Chest), Twisted Obsession (2 Mythic General Hero Shard), Battlefield Epic (3 Mythic
+General Hero Shard), A "Queen" Arises (2 Mythic General Hero Shard), and Wandering Merchant (3
+Mythic General Hero Shard). The brown fragment without a house mark is the Mythic General Hero
+Shard.
+
+The icons of the later albums are read the same way. These are less certain: Beast Unleashed (2
+Mythic General Hero Shard), The Project (6 Lucky Hero Gear Chest), Underworld Mysteries and Honor
+and Glory (3 General Speedup of 3 hours, because the check mark hides where the helmet badge of a
+Troop Training Speedup would be), and the 40 Mythic General Hero Shard that Kings of Combat gives on
+completion. The dark stone with orange claw marks of Master Tamer and Superhuman Strength is the
+Advanced Wild Mark.
 
 These parts are not in the data yet:
 
-- The other albums of the event. The [Events](../events/README.md) module lists the buff of each of
-  them.
+- The other 2 albums of the event, Prerogative of the Flame and Frostdragon Empire. The
+  [Events](../events/README.md) module lists the buff of each of them.
