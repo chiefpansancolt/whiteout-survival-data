@@ -840,6 +840,29 @@ const NEW_ALBUMS = [
       ['the-guardians', 'The Guardians', [1, 2, 3, 6, 6], 'fire-crystal', 30],
     ],
   },
+  {
+    id: 'kings-of-combat',
+    name: 'Kings of Combat',
+    stat: 'Troops Defense',
+    statKey: 'troops-defense',
+    eventNote: '+2% troops defense',
+    completion: [
+      ['mythic-general-hero-shard', 40],
+      ['fire-crystal', 200],
+    ],
+    pieces: 144,
+    puzzles: [
+      ['league-of-honor', 'League of Honor', [3, 3, 3, 3, 0], 'polishing-solution', 35],
+      ['a-tournament-of-heroes', 'A Tournament of Heroes', [2, 2, 4, 6, 1], 'essence-stones', 3],
+      ['duel-of-greatness', 'Duel of Greatness', [2, 2, 4, 6, 1], 'charm-guide', 10],
+      ['callisto', 'Callisto', [3, 4, 4, 2, 2], 'charm-design', 8],
+      ['kings-of-combat', 'Kings of Combat', [3, 3, 3, 3, 3], 'mythic-general-hero-shard', 2],
+      ['the-arena-gamers', 'The Arena Gamers', [2, 3, 3, 5, 5], 'lucky-hero-gear-chest', 6],
+      ['the-helios-cannon', 'The Helios Cannon', [2, 3, 3, 5, 5], 'essence-stones', 5],
+      ['behemoth', 'Behemoth', [0, 2, 2, 7, 7], 'mythic-general-hero-shard', 3],
+      ['the-bell-tolls', 'The Bell Tolls', [1, 2, 3, 6, 6], 'chief-gear-materials-chest', 5],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {

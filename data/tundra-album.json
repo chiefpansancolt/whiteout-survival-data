@@ -12268,5 +12268,991 @@
         ]
       }
     ]
+  },
+  {
+    "id": "kings-of-combat",
+    "name": "Kings of Combat",
+    "buff": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 40
+      },
+      {
+        "itemId": "fire-crystal",
+        "amount": 200
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "league-of-honor",
+        "name": "League of Honor",
+        "img": "/images/tundra-album/kings-of-combat/league-of-honor.png",
+        "reward": {
+          "itemId": "polishing-solution",
+          "amount": 35
+        },
+        "pieces": [
+          {
+            "id": "league-of-honor-1",
+            "name": "League of Honor - 1",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-1.png",
+            "stars": 1
+          },
+          {
+            "id": "league-of-honor-2",
+            "name": "League of Honor - 2",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-2.png",
+            "stars": 1
+          },
+          {
+            "id": "league-of-honor-3",
+            "name": "League of Honor - 3",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-3.png",
+            "stars": 1
+          },
+          {
+            "id": "league-of-honor-4",
+            "name": "League of Honor - 4",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-4.png",
+            "stars": 2
+          },
+          {
+            "id": "league-of-honor-5",
+            "name": "League of Honor - 5",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-5.png",
+            "stars": 2
+          },
+          {
+            "id": "league-of-honor-6",
+            "name": "League of Honor - 6",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-6.png",
+            "stars": 2
+          },
+          {
+            "id": "league-of-honor-7",
+            "name": "League of Honor - 7",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-7.png",
+            "stars": 3
+          },
+          {
+            "id": "league-of-honor-8",
+            "name": "League of Honor - 8",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-8.png",
+            "stars": 3
+          },
+          {
+            "id": "league-of-honor-9",
+            "name": "League of Honor - 9",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-9.png",
+            "stars": 3
+          },
+          {
+            "id": "league-of-honor-10",
+            "name": "League of Honor - 10",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-10.png",
+            "stars": 4
+          },
+          {
+            "id": "league-of-honor-11",
+            "name": "League of Honor - 11",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-11.png",
+            "stars": 4
+          },
+          {
+            "id": "league-of-honor-12",
+            "name": "League of Honor - 12",
+            "img": "/images/tundra-album/kings-of-combat/league-of-honor-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "a-tournament-of-heroes",
+        "name": "A Tournament of Heroes",
+        "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "a-tournament-of-heroes-1",
+            "name": "A Tournament of Heroes - 1",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-1.png",
+            "stars": 1
+          },
+          {
+            "id": "a-tournament-of-heroes-2",
+            "name": "A Tournament of Heroes - 2",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-2.png",
+            "stars": 1
+          },
+          {
+            "id": "a-tournament-of-heroes-3",
+            "name": "A Tournament of Heroes - 3",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-3.png",
+            "stars": 2
+          },
+          {
+            "id": "a-tournament-of-heroes-4",
+            "name": "A Tournament of Heroes - 4",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-4.png",
+            "stars": 2
+          },
+          {
+            "id": "a-tournament-of-heroes-5",
+            "name": "A Tournament of Heroes - 5",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-5.png",
+            "stars": 3
+          },
+          {
+            "id": "a-tournament-of-heroes-6",
+            "name": "A Tournament of Heroes - 6",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-6.png",
+            "stars": 3
+          },
+          {
+            "id": "a-tournament-of-heroes-7",
+            "name": "A Tournament of Heroes - 7",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-7.png",
+            "stars": 3
+          },
+          {
+            "id": "a-tournament-of-heroes-8",
+            "name": "A Tournament of Heroes - 8",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-8.png",
+            "stars": 3
+          },
+          {
+            "id": "a-tournament-of-heroes-9",
+            "name": "A Tournament of Heroes - 9",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-9.png",
+            "stars": 4
+          },
+          {
+            "id": "a-tournament-of-heroes-10",
+            "name": "A Tournament of Heroes - 10",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-10.png",
+            "stars": 4
+          },
+          {
+            "id": "a-tournament-of-heroes-11",
+            "name": "A Tournament of Heroes - 11",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-11.png",
+            "stars": 4
+          },
+          {
+            "id": "a-tournament-of-heroes-12",
+            "name": "A Tournament of Heroes - 12",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-12.png",
+            "stars": 4
+          },
+          {
+            "id": "a-tournament-of-heroes-13",
+            "name": "A Tournament of Heroes - 13",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-13.png",
+            "stars": 4
+          },
+          {
+            "id": "a-tournament-of-heroes-14",
+            "name": "A Tournament of Heroes - 14",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-14.png",
+            "stars": 4
+          },
+          {
+            "id": "a-tournament-of-heroes-15",
+            "name": "A Tournament of Heroes - 15",
+            "img": "/images/tundra-album/kings-of-combat/a-tournament-of-heroes-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "duel-of-greatness",
+        "name": "Duel of Greatness",
+        "img": "/images/tundra-album/kings-of-combat/duel-of-greatness.png",
+        "reward": {
+          "itemId": "charm-guide",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "duel-of-greatness-1",
+            "name": "Duel of Greatness - 1",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-1.png",
+            "stars": 1
+          },
+          {
+            "id": "duel-of-greatness-2",
+            "name": "Duel of Greatness - 2",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-2.png",
+            "stars": 1
+          },
+          {
+            "id": "duel-of-greatness-3",
+            "name": "Duel of Greatness - 3",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-3.png",
+            "stars": 2
+          },
+          {
+            "id": "duel-of-greatness-4",
+            "name": "Duel of Greatness - 4",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-4.png",
+            "stars": 2
+          },
+          {
+            "id": "duel-of-greatness-5",
+            "name": "Duel of Greatness - 5",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-5.png",
+            "stars": 3
+          },
+          {
+            "id": "duel-of-greatness-6",
+            "name": "Duel of Greatness - 6",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-6.png",
+            "stars": 3
+          },
+          {
+            "id": "duel-of-greatness-7",
+            "name": "Duel of Greatness - 7",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-7.png",
+            "stars": 3
+          },
+          {
+            "id": "duel-of-greatness-8",
+            "name": "Duel of Greatness - 8",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-8.png",
+            "stars": 3
+          },
+          {
+            "id": "duel-of-greatness-9",
+            "name": "Duel of Greatness - 9",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-9.png",
+            "stars": 4
+          },
+          {
+            "id": "duel-of-greatness-10",
+            "name": "Duel of Greatness - 10",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-10.png",
+            "stars": 4
+          },
+          {
+            "id": "duel-of-greatness-11",
+            "name": "Duel of Greatness - 11",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-11.png",
+            "stars": 4
+          },
+          {
+            "id": "duel-of-greatness-12",
+            "name": "Duel of Greatness - 12",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-12.png",
+            "stars": 4
+          },
+          {
+            "id": "duel-of-greatness-13",
+            "name": "Duel of Greatness - 13",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-13.png",
+            "stars": 4
+          },
+          {
+            "id": "duel-of-greatness-14",
+            "name": "Duel of Greatness - 14",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-14.png",
+            "stars": 4
+          },
+          {
+            "id": "duel-of-greatness-15",
+            "name": "Duel of Greatness - 15",
+            "img": "/images/tundra-album/kings-of-combat/duel-of-greatness-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "callisto",
+        "name": "Callisto",
+        "img": "/images/tundra-album/kings-of-combat/callisto.png",
+        "reward": {
+          "itemId": "charm-design",
+          "amount": 8
+        },
+        "pieces": [
+          {
+            "id": "callisto-1",
+            "name": "Callisto - 1",
+            "img": "/images/tundra-album/kings-of-combat/callisto-1.png",
+            "stars": 1
+          },
+          {
+            "id": "callisto-2",
+            "name": "Callisto - 2",
+            "img": "/images/tundra-album/kings-of-combat/callisto-2.png",
+            "stars": 1
+          },
+          {
+            "id": "callisto-3",
+            "name": "Callisto - 3",
+            "img": "/images/tundra-album/kings-of-combat/callisto-3.png",
+            "stars": 1
+          },
+          {
+            "id": "callisto-4",
+            "name": "Callisto - 4",
+            "img": "/images/tundra-album/kings-of-combat/callisto-4.png",
+            "stars": 2
+          },
+          {
+            "id": "callisto-5",
+            "name": "Callisto - 5",
+            "img": "/images/tundra-album/kings-of-combat/callisto-5.png",
+            "stars": 2
+          },
+          {
+            "id": "callisto-6",
+            "name": "Callisto - 6",
+            "img": "/images/tundra-album/kings-of-combat/callisto-6.png",
+            "stars": 2
+          },
+          {
+            "id": "callisto-7",
+            "name": "Callisto - 7",
+            "img": "/images/tundra-album/kings-of-combat/callisto-7.png",
+            "stars": 2
+          },
+          {
+            "id": "callisto-8",
+            "name": "Callisto - 8",
+            "img": "/images/tundra-album/kings-of-combat/callisto-8.png",
+            "stars": 3
+          },
+          {
+            "id": "callisto-9",
+            "name": "Callisto - 9",
+            "img": "/images/tundra-album/kings-of-combat/callisto-9.png",
+            "stars": 3
+          },
+          {
+            "id": "callisto-10",
+            "name": "Callisto - 10",
+            "img": "/images/tundra-album/kings-of-combat/callisto-10.png",
+            "stars": 3
+          },
+          {
+            "id": "callisto-11",
+            "name": "Callisto - 11",
+            "img": "/images/tundra-album/kings-of-combat/callisto-11.png",
+            "stars": 3
+          },
+          {
+            "id": "callisto-12",
+            "name": "Callisto - 12",
+            "img": "/images/tundra-album/kings-of-combat/callisto-12.png",
+            "stars": 4
+          },
+          {
+            "id": "callisto-13",
+            "name": "Callisto - 13",
+            "img": "/images/tundra-album/kings-of-combat/callisto-13.png",
+            "stars": 4
+          },
+          {
+            "id": "callisto-14",
+            "name": "Callisto - 14",
+            "img": "/images/tundra-album/kings-of-combat/callisto-14.png",
+            "stars": 5
+          },
+          {
+            "id": "callisto-15",
+            "name": "Callisto - 15",
+            "img": "/images/tundra-album/kings-of-combat/callisto-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "kings-of-combat",
+        "name": "Kings of Combat",
+        "img": "/images/tundra-album/kings-of-combat/kings-of-combat.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "kings-of-combat-1",
+            "name": "Kings of Combat - 1",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-1.png",
+            "stars": 1
+          },
+          {
+            "id": "kings-of-combat-2",
+            "name": "Kings of Combat - 2",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-2.png",
+            "stars": 1
+          },
+          {
+            "id": "kings-of-combat-3",
+            "name": "Kings of Combat - 3",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-3.png",
+            "stars": 1
+          },
+          {
+            "id": "kings-of-combat-4",
+            "name": "Kings of Combat - 4",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-4.png",
+            "stars": 2
+          },
+          {
+            "id": "kings-of-combat-5",
+            "name": "Kings of Combat - 5",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-5.png",
+            "stars": 2
+          },
+          {
+            "id": "kings-of-combat-6",
+            "name": "Kings of Combat - 6",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-6.png",
+            "stars": 2
+          },
+          {
+            "id": "kings-of-combat-7",
+            "name": "Kings of Combat - 7",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-7.png",
+            "stars": 3
+          },
+          {
+            "id": "kings-of-combat-8",
+            "name": "Kings of Combat - 8",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-8.png",
+            "stars": 3
+          },
+          {
+            "id": "kings-of-combat-9",
+            "name": "Kings of Combat - 9",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-9.png",
+            "stars": 3
+          },
+          {
+            "id": "kings-of-combat-10",
+            "name": "Kings of Combat - 10",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-10.png",
+            "stars": 4
+          },
+          {
+            "id": "kings-of-combat-11",
+            "name": "Kings of Combat - 11",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-11.png",
+            "stars": 4
+          },
+          {
+            "id": "kings-of-combat-12",
+            "name": "Kings of Combat - 12",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-12.png",
+            "stars": 4
+          },
+          {
+            "id": "kings-of-combat-13",
+            "name": "Kings of Combat - 13",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-13.png",
+            "stars": 5
+          },
+          {
+            "id": "kings-of-combat-14",
+            "name": "Kings of Combat - 14",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-14.png",
+            "stars": 5
+          },
+          {
+            "id": "kings-of-combat-15",
+            "name": "Kings of Combat - 15",
+            "img": "/images/tundra-album/kings-of-combat/kings-of-combat-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-arena-gamers",
+        "name": "The Arena Gamers",
+        "img": "/images/tundra-album/kings-of-combat/the-arena-gamers.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 6
+        },
+        "pieces": [
+          {
+            "id": "the-arena-gamers-1",
+            "name": "The Arena Gamers - 1",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-arena-gamers-2",
+            "name": "The Arena Gamers - 2",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-arena-gamers-3",
+            "name": "The Arena Gamers - 3",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-arena-gamers-4",
+            "name": "The Arena Gamers - 4",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-arena-gamers-5",
+            "name": "The Arena Gamers - 5",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-arena-gamers-6",
+            "name": "The Arena Gamers - 6",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-6.png",
+            "stars": 3
+          },
+          {
+            "id": "the-arena-gamers-7",
+            "name": "The Arena Gamers - 7",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-arena-gamers-8",
+            "name": "The Arena Gamers - 8",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-arena-gamers-9",
+            "name": "The Arena Gamers - 9",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-arena-gamers-10",
+            "name": "The Arena Gamers - 10",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-arena-gamers-11",
+            "name": "The Arena Gamers - 11",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-arena-gamers-12",
+            "name": "The Arena Gamers - 12",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-arena-gamers-13",
+            "name": "The Arena Gamers - 13",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-13.png",
+            "stars": 4
+          },
+          {
+            "id": "the-arena-gamers-14",
+            "name": "The Arena Gamers - 14",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-arena-gamers-15",
+            "name": "The Arena Gamers - 15",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-arena-gamers-16",
+            "name": "The Arena Gamers - 16",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-arena-gamers-17",
+            "name": "The Arena Gamers - 17",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-arena-gamers-18",
+            "name": "The Arena Gamers - 18",
+            "img": "/images/tundra-album/kings-of-combat/the-arena-gamers-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-helios-cannon",
+        "name": "The Helios Cannon",
+        "img": "/images/tundra-album/kings-of-combat/the-helios-cannon.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        "pieces": [
+          {
+            "id": "the-helios-cannon-1",
+            "name": "The Helios Cannon - 1",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-helios-cannon-2",
+            "name": "The Helios Cannon - 2",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-helios-cannon-3",
+            "name": "The Helios Cannon - 3",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-helios-cannon-4",
+            "name": "The Helios Cannon - 4",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-helios-cannon-5",
+            "name": "The Helios Cannon - 5",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-helios-cannon-6",
+            "name": "The Helios Cannon - 6",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-6.png",
+            "stars": 3
+          },
+          {
+            "id": "the-helios-cannon-7",
+            "name": "The Helios Cannon - 7",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-helios-cannon-8",
+            "name": "The Helios Cannon - 8",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-helios-cannon-9",
+            "name": "The Helios Cannon - 9",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-helios-cannon-10",
+            "name": "The Helios Cannon - 10",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-helios-cannon-11",
+            "name": "The Helios Cannon - 11",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-helios-cannon-12",
+            "name": "The Helios Cannon - 12",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-helios-cannon-13",
+            "name": "The Helios Cannon - 13",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-13.png",
+            "stars": 4
+          },
+          {
+            "id": "the-helios-cannon-14",
+            "name": "The Helios Cannon - 14",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-helios-cannon-15",
+            "name": "The Helios Cannon - 15",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-helios-cannon-16",
+            "name": "The Helios Cannon - 16",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-helios-cannon-17",
+            "name": "The Helios Cannon - 17",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-helios-cannon-18",
+            "name": "The Helios Cannon - 18",
+            "img": "/images/tundra-album/kings-of-combat/the-helios-cannon-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "behemoth",
+        "name": "Behemoth",
+        "img": "/images/tundra-album/kings-of-combat/behemoth.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "behemoth-1",
+            "name": "Behemoth - 1",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-1.png",
+            "stars": 2
+          },
+          {
+            "id": "behemoth-2",
+            "name": "Behemoth - 2",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-2.png",
+            "stars": 2
+          },
+          {
+            "id": "behemoth-3",
+            "name": "Behemoth - 3",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-3.png",
+            "stars": 3
+          },
+          {
+            "id": "behemoth-4",
+            "name": "Behemoth - 4",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-4.png",
+            "stars": 3
+          },
+          {
+            "id": "behemoth-5",
+            "name": "Behemoth - 5",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-5.png",
+            "stars": 4
+          },
+          {
+            "id": "behemoth-6",
+            "name": "Behemoth - 6",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-6.png",
+            "stars": 4
+          },
+          {
+            "id": "behemoth-7",
+            "name": "Behemoth - 7",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-7.png",
+            "stars": 4
+          },
+          {
+            "id": "behemoth-8",
+            "name": "Behemoth - 8",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-8.png",
+            "stars": 4
+          },
+          {
+            "id": "behemoth-9",
+            "name": "Behemoth - 9",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-9.png",
+            "stars": 4
+          },
+          {
+            "id": "behemoth-10",
+            "name": "Behemoth - 10",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-10.png",
+            "stars": 4
+          },
+          {
+            "id": "behemoth-11",
+            "name": "Behemoth - 11",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-11.png",
+            "stars": 4
+          },
+          {
+            "id": "behemoth-12",
+            "name": "Behemoth - 12",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-12.png",
+            "stars": 5
+          },
+          {
+            "id": "behemoth-13",
+            "name": "Behemoth - 13",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-13.png",
+            "stars": 5
+          },
+          {
+            "id": "behemoth-14",
+            "name": "Behemoth - 14",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-14.png",
+            "stars": 5
+          },
+          {
+            "id": "behemoth-15",
+            "name": "Behemoth - 15",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-15.png",
+            "stars": 5
+          },
+          {
+            "id": "behemoth-16",
+            "name": "Behemoth - 16",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-16.png",
+            "stars": 5
+          },
+          {
+            "id": "behemoth-17",
+            "name": "Behemoth - 17",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-17.png",
+            "stars": 5
+          },
+          {
+            "id": "behemoth-18",
+            "name": "Behemoth - 18",
+            "img": "/images/tundra-album/kings-of-combat/behemoth-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-bell-tolls",
+        "name": "The Bell Tolls",
+        "img": "/images/tundra-album/kings-of-combat/the-bell-tolls.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 5
+        },
+        "pieces": [
+          {
+            "id": "the-bell-tolls-1",
+            "name": "The Bell Tolls - 1",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-bell-tolls-2",
+            "name": "The Bell Tolls - 2",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-2.png",
+            "stars": 2
+          },
+          {
+            "id": "the-bell-tolls-3",
+            "name": "The Bell Tolls - 3",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-bell-tolls-4",
+            "name": "The Bell Tolls - 4",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-4.png",
+            "stars": 3
+          },
+          {
+            "id": "the-bell-tolls-5",
+            "name": "The Bell Tolls - 5",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-5.png",
+            "stars": 3
+          },
+          {
+            "id": "the-bell-tolls-6",
+            "name": "The Bell Tolls - 6",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-6.png",
+            "stars": 3
+          },
+          {
+            "id": "the-bell-tolls-7",
+            "name": "The Bell Tolls - 7",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-7.png",
+            "stars": 4
+          },
+          {
+            "id": "the-bell-tolls-8",
+            "name": "The Bell Tolls - 8",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-8.png",
+            "stars": 4
+          },
+          {
+            "id": "the-bell-tolls-9",
+            "name": "The Bell Tolls - 9",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-bell-tolls-10",
+            "name": "The Bell Tolls - 10",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-bell-tolls-11",
+            "name": "The Bell Tolls - 11",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-bell-tolls-12",
+            "name": "The Bell Tolls - 12",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-bell-tolls-13",
+            "name": "The Bell Tolls - 13",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-13.png",
+            "stars": 5
+          },
+          {
+            "id": "the-bell-tolls-14",
+            "name": "The Bell Tolls - 14",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-bell-tolls-15",
+            "name": "The Bell Tolls - 15",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-bell-tolls-16",
+            "name": "The Bell Tolls - 16",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-bell-tolls-17",
+            "name": "The Bell Tolls - 17",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-bell-tolls-18",
+            "name": "The Bell Tolls - 18",
+            "img": "/images/tundra-album/kings-of-combat/the-bell-tolls-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]

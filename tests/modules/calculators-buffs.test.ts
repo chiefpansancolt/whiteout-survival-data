@@ -474,6 +474,7 @@ describe('calculateBuffs Tundra Albums', () => {
     ['natures-strength', 'troops-defense', 2],
     ['ballad-of-wind-and-cold', 'troops-defense', 2],
     ['infernal-power', 'troops-attack', 2],
+    ['kings-of-combat', 'troops-defense', 2],
   ])('gives %s the stat %s with %d percent', (id, statKey, amount) => {
     expect(category(calculateBuffs({ tundraAlbums: [id] }), statKey)!.total).toBe(amount);
   });

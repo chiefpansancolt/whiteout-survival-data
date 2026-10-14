@@ -4,10 +4,10 @@ The albums of the Tundra Album event. An album has 9 puzzles. A puzzle is built 
 5 stars, gives a reward when it is done, and the album gives a buff when all 9 puzzles are done. Use
 it to see what an album holds and what finishing it gives.
 
-The package holds 13 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
+The package holds 14 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
 of Heroes, Rekindled Flames, Tundra Alliance, Battlefield Epic, Spectacular Adventures, Divine
-Weapons, The Labyrinth, Nature's Strength, Ballad of Wind and Cold, and Infernal Power. More albums
-are added later.
+Weapons, The Labyrinth, Nature's Strength, Ballad of Wind and Cold, Infernal Power, and Kings of
+Combat. More albums are added later.
 
 ## Usage
 
@@ -321,9 +321,29 @@ Crystal.
 The album has 144 pieces: 19 at 1 star, 27 at 2 stars, 29 at 3 stars, 39 at 4 stars, and 30 at 5
 stars.
 
+### Kings of Combat
+
+The buff is Troops Defense +2%. The completion rewards are 40 Mythic General Hero Shard and 200 Fire
+Crystal.
+
+| Puzzle                 | Pieces | 1 star | 2 stars | 3 stars | 4 stars | 5 stars | Reward                       |
+| ---------------------- | ------ | ------ | ------- | ------- | ------- | ------- | ---------------------------- |
+| League of Honor        | 12     | 3      | 3       | 3       | 3       | 0       | 35 Polishing Solution        |
+| A Tournament of Heroes | 15     | 2      | 2       | 4       | 6       | 1       | 3 Essence Stones             |
+| Duel of Greatness      | 15     | 2      | 2       | 4       | 6       | 1       | 10 Charm Guide               |
+| Callisto               | 15     | 3      | 4       | 4       | 2       | 2       | 8 Charm Design               |
+| Kings of Combat        | 15     | 3      | 3       | 3       | 3       | 3       | 2 Mythic General Hero Shard  |
+| The Arena Gamers       | 18     | 2      | 3       | 3       | 5       | 5       | 6 Lucky Hero Gear Chest      |
+| The Helios Cannon      | 18     | 2      | 3       | 3       | 5       | 5       | 5 Essence Stones             |
+| Behemoth               | 18     | 0      | 2       | 2       | 7       | 7       | 3 Mythic General Hero Shard  |
+| The Bell Tolls         | 18     | 1      | 2       | 3       | 6       | 6       | 5 Chief Gear Materials Chest |
+
+The album has 144 pieces: 18 at 1 star, 24 at 2 stars, 29 at 3 stars, 43 at 4 stars, and 30 at 5
+stars.
+
 ## Notes
 
-The pieces, the star levels, and the reward amounts of the 13 albums are read from the album screens
+The pieces, the star levels, and the reward amounts of the 14 albums are read from the album screens
 of the game, and the images are cut from the same screens. The package owner names the items of the
 album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
 Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The
