@@ -24,8 +24,8 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 326 items across 12 categories', () => {
-    expect(items().count()).toBe(326);
+  it('tracks 334 items across 12 categories', () => {
+    expect(items().count()).toBe(334);
     expect(items().byCategory('Hero Items').count()).toBe(23);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
@@ -34,7 +34,7 @@ describe('Item catalog', () => {
     expect(items().byCategory('Fire Crystal').count()).toBe(4);
     expect(items().byCategory('Experts').count()).toBe(17);
     expect(items().byCategory('Teleporter').count()).toBe(4);
-    expect(items().byCategory('Others').count()).toBe(41);
+    expect(items().byCategory('Others').count()).toBe(49);
     expect(items().byCategory('Event').count()).toBe(58);
     expect(items().byCategory('Speedups').count()).toBe(30);
     expect(items().byCategory('Furniture').count()).toBe(42);
@@ -212,5 +212,57 @@ describe('expert sigils', () => {
       name: 'Gareth Sigil',
       img: '/images/items/gareth-sigil.png',
     });
+  });
+});
+
+describe('items of the activity bar of the Daily Missions', () => {
+  const withoutIcon = ['alliance-xp', 'authority-xp', 'activity-triumph-points'];
+  const packs = {
+    'meat-10k': ['10k Meat', '/images/items/meat.png'],
+    'wood-10k': ['10k Wood', '/images/items/wood.png'],
+    'coal-1k': ['1k Coal', '/images/items/coal.png'],
+    'iron-1k': ['1k Iron', '/images/items/iron.png'],
+  };
+
+  it('has 3 items of the Others category with an empty img and the Daily Missions as the source', () => {
+    for (const id of withoutIcon) {
+      const item = items().find(id)!;
+      expect(item.category).toBe('Others');
+      expect(item.img).toBe('');
+      expect(item.sources).toEqual(['Daily Missions']);
+    }
+  });
+
+  it('gives the 4 resource packs the icon of their resource, and the Daily Missions as the source', () => {
+    for (const [id, [name, img]] of Object.entries(packs)) {
+      const item = items().find(id)!;
+      expect(item.name).toBe(name);
+      expect(item.category).toBe('Others');
+      expect(item.img).toBe(img);
+      expect(item.img).toBe(items().find(id.split('-')[0])!.img);
+      expect(existsSync(join(__dirname, '../..', item.img))).toBe(true);
+      expect(item.sources).toEqual(['Daily Missions']);
+    }
+  });
+
+  it('has 54 items without an icon in all', () => {
+    expect(
+      items()
+        .get()
+        .filter((i) => i.img === ''),
+    ).toHaveLength(54);
+  });
+});
+
+describe('Activeness', () => {
+  it('is an item of the Others category, with an icon, for the activeness of the Daily Missions', () => {
+    const activeness = items().find('activeness')!;
+    expect(activeness).toMatchObject({
+      name: 'Activeness',
+      category: 'Others',
+      img: '/images/items/activeness.png',
+      sources: ['Daily Missions'],
+    });
+    expect(existsSync(join(__dirname, '../../images/items/activeness.png'))).toBe(true);
   });
 });

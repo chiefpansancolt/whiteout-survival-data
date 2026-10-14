@@ -14,6 +14,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Every level of every hero skill has `effects`: the name, the amount, and the unit of each number
   in the skill text, so a value such as the Stamina Cost Reduction of Gina can be read without
   parsing the description.
+- `dailyMissions()`: the 21 in-game Daily Missions with their levels, the task and the rewards of
+  each level. The activeness is the first reward, and `dailyMissionRewardLevels()` gives the reward
+  levels of the activity bar with their rewards. The items Activeness, Alliance XP, Authority XP,
+  Activity Triumph Points, and four resource packs are new in `items()`.
 
 #### Calculators
 

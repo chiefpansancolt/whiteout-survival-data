@@ -1,0 +1,862 @@
+[
+  {
+    "id": "alliance-help",
+    "name": "Take part in Alliance Help 1 time(s)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Take part in Alliance Help 1 time(s)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Take part in Alliance Help 10 time(s)",
+        "target": 10,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "task": "Take part in Alliance Help 20 time(s)",
+        "target": 20,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 15
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alliance-contribution",
+    "name": "Make 5 Alliance Contribution(s)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Make 5 Alliance Contribution(s)",
+        "target": 5,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Make 20 Alliance Contribution(s)",
+        "target": 20,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "task": "Make 40 Alliance Contribution(s)",
+        "target": 40,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 15
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "recruit-hero",
+    "name": "Recruit 1 Hero(es)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Recruit 1 Hero(es)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Recruit 3 Hero(es)",
+        "target": 3,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 15
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "train-infantry",
+    "name": "Train 10 Infantry",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Train 10 Infantry",
+        "target": 10,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Train 30 Infantry",
+        "target": 30,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "train-lancers",
+    "name": "Train 10 Lancers",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Train 10 Lancers",
+        "target": 10,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Train 30 Lancers",
+        "target": 30,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "train-marksmen",
+    "name": "Train 10 Marksmen",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Train 10 Marksmen",
+        "target": 10,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Train 30 Marksmen",
+        "target": 30,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "intel-mission",
+    "name": "Carry out 1 Intel Mission(s)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Carry out 1 Intel Mission(s)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Carry out 5 Intel Mission(s)",
+        "target": 5,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 15
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "task": "Carry out 10 Intel Mission(s)",
+        "target": 10,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 30
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "online-reward",
+    "name": "Claim 1 Online Reward(s)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Claim 1 Online Reward(s)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Claim 5 Online Reward(s)",
+        "target": 5,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "heal-injured-soldiers",
+    "name": "Heal 10 injured soldiers",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Heal 10 injured soldiers",
+        "target": 10,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gather-meat",
+    "name": "Gather 50,000 Meat",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Gather 50,000 Meat",
+        "target": 50000,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Gather 250,000 Meat",
+        "target": 250000,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gather-wood",
+    "name": "Gather 50,000 Wood",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Gather 50,000 Wood",
+        "target": 50000,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Gather 250,000 Wood",
+        "target": 250000,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gather-coal",
+    "name": "Gather 10,000 Coal",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Gather 10,000 Coal",
+        "target": 10000,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Gather 50,000 Coal",
+        "target": 50000,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gather-iron",
+    "name": "Gather 3,000 Iron",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Gather 3,000 Iron",
+        "target": 3000,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Gather 15,000 Iron",
+        "target": 15000,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "upgrade-building",
+    "name": "Upgrade 1 building(s)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Upgrade 1 building(s)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 30
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "research-technology",
+    "name": "Research 1 technology(ies)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Research 1 technology(ies)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 30
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gather",
+    "name": "Gather 1 time(s)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Gather 1 time(s)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Gather 2 time(s)",
+        "target": 2,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "task": "Gather 4 time(s)",
+        "target": 4,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 15
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "defeat-polar-terror",
+    "name": "Defeat Polar Terror 1 time(s)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Defeat Polar Terror 1 time(s)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Defeat Polar Terror 2 time(s)",
+        "target": 2,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "task": "Defeat Polar Terror 3 time(s)",
+        "target": 3,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arena-challenge",
+    "name": "Fight in 1 Arena Challenge(s)",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Fight in 1 Arena Challenge(s)",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Fight in 4 Arena Challenge(s)",
+        "target": 4,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 25
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "labyrinth-challenge",
+    "name": "Complete 1 challenges in The Labyrinth",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Complete 1 challenges in The Labyrinth",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 15
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pet-adventure",
+    "name": "Dispatch Pets to hunt for treasure 1 times in Pet Adventure",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Dispatch Pets to hunt for treasure 1 times in Pet Adventure",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "task": "Dispatch Pets to hunt for treasure 4 times in Pet Adventure",
+        "target": 4,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "wood",
+            "amount": 4000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "log-in",
+    "name": "Log in",
+    "levels": [
+      {
+        "level": 1,
+        "task": "Log in",
+        "target": 1,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 10
+          },
+          {
+            "itemId": "meat",
+            "amount": 4000
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      }
+    ]
+  }
+]

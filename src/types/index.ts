@@ -26,6 +26,7 @@ export * from './fire-crystal-table';
 export * from './fire-crystal-shard-table';
 export * from './research-tree';
 export * from './daily-task';
+export * from './daily-mission';
 export * from './chief-order';
 export * from './castle-appointment';
 export * from './president-skill';

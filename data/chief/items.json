@@ -2145,6 +2145,70 @@
     "sources": []
   },
   {
+    "id": "activeness",
+    "name": "Activeness",
+    "img": "/images/items/activeness.png",
+    "category": "Others",
+    "description": "The activeness that the Daily Missions give. The total of the activeness of a day decides which rewards of the activity bar you get.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "alliance-xp",
+    "name": "Alliance XP",
+    "img": "",
+    "category": "Others",
+    "description": "A reward of the activity bar of the Daily Missions.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "authority-xp",
+    "name": "Authority XP",
+    "img": "",
+    "category": "Others",
+    "description": "A reward of the activity bar of the Daily Missions.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "activity-triumph-points",
+    "name": "Activity Triumph Points",
+    "img": "",
+    "category": "Others",
+    "description": "A reward of the activity bar of the Daily Missions.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "meat-10k",
+    "name": "10k Meat",
+    "img": "/images/items/meat.png",
+    "category": "Others",
+    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 10,000 Meat.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "wood-10k",
+    "name": "10k Wood",
+    "img": "/images/items/wood.png",
+    "category": "Others",
+    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 10,000 Wood.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "coal-1k",
+    "name": "1k Coal",
+    "img": "/images/items/coal.png",
+    "category": "Others",
+    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 1,000 Coal.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "iron-1k",
+    "name": "1k Iron",
+    "img": "/images/items/iron.png",
+    "category": "Others",
+    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 1,000 Iron.",
+    "sources": ["Daily Missions"]
+  },
+  {
     "id": "island-prosperity",
     "name": "Island Prosperity",
     "img": "/images/items/island-prosperity.png",

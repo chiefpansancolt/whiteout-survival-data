@@ -1,0 +1,201 @@
+[
+  {
+    "activeness": 40,
+    "rewards": [
+      {
+        "itemId": "gems",
+        "amount": 175
+      },
+      {
+        "itemId": "speedup-healing-5m",
+        "amount": 2
+      },
+      {
+        "itemId": "alliance-xp",
+        "amount": 10
+      },
+      {
+        "itemId": "authority",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "activeness": 80,
+    "rewards": [
+      {
+        "itemId": "speedup-construction-5m",
+        "amount": 13
+      },
+      {
+        "itemId": "speedup-research-5m",
+        "amount": 13
+      },
+      {
+        "itemId": "speedup-healing-5m",
+        "amount": 2
+      },
+      {
+        "itemId": "alliance-xp",
+        "amount": 20
+      },
+      {
+        "itemId": "authority",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "activeness": 120,
+    "rewards": [
+      {
+        "itemId": "meat-10k",
+        "amount": 660
+      },
+      {
+        "itemId": "speedup-troop-5m",
+        "amount": 13
+      },
+      {
+        "itemId": "speedup-healing-5m",
+        "amount": 2
+      },
+      {
+        "itemId": "alliance-xp",
+        "amount": 30
+      },
+      {
+        "itemId": "authority",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "activeness": 160,
+    "rewards": [
+      {
+        "itemId": "hero-xp",
+        "amount": 15000
+      },
+      {
+        "itemId": "wood-10k",
+        "amount": 660
+      },
+      {
+        "itemId": "speedup-healing-5m",
+        "amount": 3
+      },
+      {
+        "itemId": "alliance-xp",
+        "amount": 40
+      },
+      {
+        "itemId": "authority",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "activeness": 215,
+    "rewards": [
+      {
+        "itemId": "platinum-key",
+        "amount": 1
+      },
+      {
+        "itemId": "coal-1k",
+        "amount": 1320
+      },
+      {
+        "itemId": "speedup-healing-5m",
+        "amount": 3
+      },
+      {
+        "itemId": "alliance-xp",
+        "amount": 60
+      },
+      {
+        "itemId": "authority",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "activeness": 270,
+    "rewards": [
+      {
+        "itemId": "fire-crystal",
+        "amount": 5
+      },
+      {
+        "itemId": "mythic-exploration-skill-manual",
+        "amount": 3
+      },
+      {
+        "itemId": "iron-1k",
+        "amount": 330
+      },
+      {
+        "itemId": "speedup-healing-5m",
+        "amount": 5
+      },
+      {
+        "itemId": "alliance-xp",
+        "amount": 80
+      },
+      {
+        "itemId": "authority",
+        "amount": 10
+      },
+      {
+        "itemId": "activity-triumph-points",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "activeness": 325,
+    "rewards": [
+      {
+        "itemId": "mythic-general-scene-fragment-pack",
+        "amount": 1
+      },
+      {
+        "itemId": "skin-token",
+        "amount": 30
+      },
+      {
+        "itemId": "fire-crystal",
+        "amount": 5
+      },
+      {
+        "itemId": "mystery-badge",
+        "amount": 80
+      },
+      {
+        "itemId": "mythic-expedition-skill-manual",
+        "amount": 3
+      },
+      {
+        "itemId": "speedup-healing-5m",
+        "amount": 8
+      },
+      {
+        "itemId": "authority-xp",
+        "amount": 100
+      },
+      {
+        "itemId": "authority",
+        "amount": 15
+      },
+      {
+        "itemId": "activity-triumph-points",
+        "amount": 500
+      },
+      {
+        "itemId": "gold-key",
+        "amount": 1
+      }
+    ]
+  }
+]

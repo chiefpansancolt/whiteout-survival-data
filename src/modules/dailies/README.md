@@ -50,5 +50,8 @@ Daily Missions list, so for example "Complete Daily Missions" is a step of the r
 mission. "Participate in Alliance Events When Scheduled" is a step of the routine, but not every
 important activity is daily.
 
+The [Daily Missions](../daily-missions/README.md) module has the in-game missions with their
+targets, activity points, and rewards.
+
 The package has no daily reset time. The Lighthouse Intel refresh times are commonly 00:00, 08:00,
 and 16:00 server time, which is not a daily reset time.

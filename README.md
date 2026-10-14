@@ -131,13 +131,14 @@ notes on where the data came from. The counts below are the number of entries ea
 | ---------------------- | ------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | `events()`             | 65      | Game events with scoring, rewards, and tips                                               | [README](src/modules/events/README.md)              |
 | `eventBuff()`          | 14      | Buff sources that apply in each game mode                                                 | [README](src/modules/event-buff/README.md)          |
-| `items()`              | 326     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
+| `items()`              | 334     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
 | `skins()`              | 191     | Cosmetic skins                                                                            | [README](src/modules/skins/README.md)               |
 | `serverTimeline()`     | 33      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`           | [README](src/modules/server-timeline/README.md)     |
 | `chiefOrders()`        | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                    | [README](src/modules/chief-orders/README.md)        |
 | `castleAppointments()` | 8       | Castle positions and the buffs they give                                                  | [README](src/modules/castle-appointments/README.md) |
 | `presidentSkills()`    | 9       | The President's skills: global perks, Receive Tribute, and the skills that act on a Chief | [README](src/modules/president-skills/README.md)    |
 | `dailies()`            | 21      | Default daily tasks: in-game missions and a daily routine, a partial list                 | [README](src/modules/dailies/README.md)             |
+| `dailyMissions()`      | 21      | The in-game Daily Missions, with the task and rewards of each, and the activeness         | [README](src/modules/daily-missions/README.md)      |
 | `vip()`                | 12      | VIP 1 to 12 progression                                                                   | [README](src/modules/vip/README.md)                 |
 
 ## Calculators
@@ -196,13 +197,15 @@ This is what the data does not hold yet. Each module README gives the detail.
   [Heroes](src/modules/heroes/README.md).
 - **Experts.** Justus is announced and not released, so he has a name, an icon, and an unlock
   requirement only. See [Experts](src/modules/experts/README.md).
-- **Items.** 51 items have no icon: the 9 speedups of 3h and 8h for construction, troop, research,
-  and healing and of 8h for learning, and the 42 Furniture items. See
-  [Items](src/modules/items/README.md).
+- **Items.** 54 items have no icon: the 9 speedups of 3h and 8h for construction, troop, research,
+  and healing and of 8h for learning, the 42 Furniture items, and 3 items of the activity bar of the
+  Daily Missions. See [Items](src/modules/items/README.md).
 - **Buildings.** The nine entertainment buildings have no `img`. See
   [Buildings](src/modules/buildings/README.md).
-- **Daily tasks.** The list of in-game daily missions is not complete, and the daily reset time is
-  not stored. See [Dailies](src/modules/dailies/README.md).
+- **Daily tasks.** The list of in-game daily missions in `dailies()` is not complete. The missions
+  in `dailyMissions()` have only the levels known so far, and the daily reset time is not stored.
+  See [Daily Missions](src/modules/daily-missions/README.md) and
+  [Dailies](src/modules/dailies/README.md).
 - **Pets.** Only the maximum refinement percent of each pet is stored. The steps and the quality
   ranges are not. See [Pets](src/modules/pets/README.md).
 

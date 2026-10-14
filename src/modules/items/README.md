@@ -1,6 +1,6 @@
 # Items
 
-The 326 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 334 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -45,7 +45,7 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | -------------- | ----- |
 | Chest          | 60    |
 | Event          | 58    |
-| Others         | 41    |
+| Others         | 49    |
 | Buff           | 31    |
 | Hero Items     | 23    |
 | Speedups       | 30    |
@@ -75,6 +75,11 @@ from in-game Backpack screenshots. Each of the six types (general, construction,
 learning, and healing) has a 1m, 5m, 1h, 3h, and 8h item. Nine items have no icon yet, so their
 `img` is an empty string and their `sources` are empty: the 3h and 8h speedups of construction,
 troop, research, and healing, and the 8h speedup of learning. They are placeholders.
+
+Three items of the activity bar of the Daily Missions have no icon yet, so their `img` is an empty
+string: Alliance XP, Authority XP, and Activity Triumph Points. The four resource packs of the bar,
+10k Meat, 10k Wood, 1k Coal, and 1k Iron, use the icon of their resource. The names are as the game
+words them.
 
 Five items fit more than one category, all of them involving Chest. Seeker's Chest fits both `Chest`
 and `Experts`. `Chest` wins in every case because it is the more specific category.
