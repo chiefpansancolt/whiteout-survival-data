@@ -1,0 +1,937 @@
+[
+  {
+    "level": 1,
+    "medallionId": "bronze-medallion-1",
+    "rewards": []
+  },
+  {
+    "level": 2,
+    "medallionId": "bronze-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 100
+      },
+      {
+        "itemId": "gems",
+        "amount": 1000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "medallionId": "bronze-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 100
+      },
+      {
+        "itemId": "gems",
+        "amount": 1000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 4,
+    "medallionId": "bronze-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 100
+      },
+      {
+        "itemId": "gems",
+        "amount": 1000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 5,
+    "medallionId": "bronze-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 100
+      },
+      {
+        "itemId": "gems",
+        "amount": 1000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 6,
+    "medallionId": "bronze-medallion-2",
+    "rewards": []
+  },
+  {
+    "level": 7,
+    "medallionId": "bronze-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 200
+      },
+      {
+        "itemId": "gems",
+        "amount": 2000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 8,
+    "medallionId": "bronze-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 200
+      },
+      {
+        "itemId": "gems",
+        "amount": 2000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 9,
+    "medallionId": "bronze-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 200
+      },
+      {
+        "itemId": "gems",
+        "amount": 2000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 10,
+    "medallionId": "bronze-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 200
+      },
+      {
+        "itemId": "gems",
+        "amount": 2000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 11,
+    "medallionId": "silver-medallion-1",
+    "rewards": []
+  },
+  {
+    "level": 12,
+    "medallionId": "silver-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 13,
+    "medallionId": "silver-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 14,
+    "medallionId": "silver-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 15,
+    "medallionId": "silver-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 16,
+    "medallionId": "silver-medallion-2",
+    "rewards": []
+  },
+  {
+    "level": 17,
+    "medallionId": "silver-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 18,
+    "medallionId": "silver-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 19,
+    "medallionId": "silver-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 20,
+    "medallionId": "silver-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 21,
+    "medallionId": "gold-medallion-1",
+    "rewards": []
+  },
+  {
+    "level": 22,
+    "medallionId": "gold-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 23,
+    "medallionId": "gold-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 24,
+    "medallionId": "gold-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 25,
+    "medallionId": "gold-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 26,
+    "medallionId": "gold-medallion-2",
+    "rewards": []
+  },
+  {
+    "level": 27,
+    "medallionId": "gold-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 28,
+    "medallionId": "gold-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 29,
+    "medallionId": "gold-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 30,
+    "medallionId": "gold-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 31,
+    "medallionId": "gold-medallion-3",
+    "rewards": []
+  },
+  {
+    "level": 32,
+    "medallionId": "gold-medallion-3",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 33,
+    "medallionId": "gold-medallion-3",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 34,
+    "medallionId": "gold-medallion-3",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 35,
+    "medallionId": "gold-medallion-3",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 36,
+    "medallionId": "light-medallion-1",
+    "rewards": []
+  },
+  {
+    "level": 37,
+    "medallionId": "light-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 38,
+    "medallionId": "light-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 39,
+    "medallionId": "light-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 40,
+    "medallionId": "light-medallion-1",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 41,
+    "medallionId": "light-medallion-2",
+    "rewards": []
+  },
+  {
+    "level": 42,
+    "medallionId": "light-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 43,
+    "medallionId": "light-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 44,
+    "medallionId": "light-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 45,
+    "medallionId": "light-medallion-2",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 46,
+    "medallionId": "light-medallion-3",
+    "rewards": []
+  },
+  {
+    "level": 47,
+    "medallionId": "light-medallion-3",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 48,
+    "medallionId": "light-medallion-3",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 49,
+    "medallionId": "light-medallion-3",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 50,
+    "medallionId": "light-medallion-3",
+    "rewards": [
+      {
+        "itemId": "skin-token",
+        "amount": 300
+      },
+      {
+        "itemId": "gems",
+        "amount": 3000
+      },
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 2
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "level": 51,
+    "medallionId": "light-medallion-4",
+    "rewards": []
+  }
+]

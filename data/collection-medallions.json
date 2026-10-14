@@ -1,0 +1,356 @@
+[
+  {
+    "id": "bronze-medallion-1",
+    "name": "Bronze Medallion I",
+    "img": "/images/collection-medallions/bronze-medallion-1.png",
+    "unlockLevel": 1,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "bronze-medallion-2",
+    "name": "Bronze Medallion II",
+    "img": "/images/collection-medallions/bronze-medallion-2.png",
+    "unlockLevel": 6,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "silver-medallion-1",
+    "name": "Silver Medallion I",
+    "img": "/images/collection-medallions/silver-medallion-1.png",
+    "unlockLevel": 11,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "silver-medallion-2",
+    "name": "Silver Medallion II",
+    "img": "/images/collection-medallions/silver-medallion-2.png",
+    "unlockLevel": 16,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Health",
+        "statKey": "troops-health",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "gold-medallion-1",
+    "name": "Gold Medallion I",
+    "img": "/images/collection-medallions/gold-medallion-1.png",
+    "unlockLevel": 21,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Health",
+        "statKey": "troops-health",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "gold-medallion-2",
+    "name": "Gold Medallion II",
+    "img": "/images/collection-medallions/gold-medallion-2.png",
+    "unlockLevel": 26,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Health",
+        "statKey": "troops-health",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "gold-medallion-3",
+    "name": "Gold Medallion III",
+    "img": "/images/collection-medallions/gold-medallion-3.png",
+    "unlockLevel": 31,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Health",
+        "statKey": "troops-health",
+        "value": "+2.0%",
+        "amount": 2,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "light-medallion-1",
+    "name": "Light Medallion I",
+    "img": "/images/collection-medallions/light-medallion-1.png",
+    "unlockLevel": 36,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Health",
+        "statKey": "troops-health",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "light-medallion-2",
+    "name": "Light Medallion II",
+    "img": "/images/collection-medallions/light-medallion-2.png",
+    "unlockLevel": 41,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+6.0%",
+        "amount": 6,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Health",
+        "statKey": "troops-health",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "light-medallion-3",
+    "name": "Light Medallion III",
+    "img": "/images/collection-medallions/light-medallion-3.png",
+    "unlockLevel": 46,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+6.0%",
+        "amount": 6,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+6.0%",
+        "amount": 6,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Health",
+        "statKey": "troops-health",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      }
+    ]
+  },
+  {
+    "id": "light-medallion-4",
+    "name": "Light Medallion IV",
+    "img": "/images/collection-medallions/light-medallion-4.png",
+    "unlockLevel": 51,
+    "buffs": [
+      {
+        "stat": "Troops' Attack",
+        "statKey": "troops-attack",
+        "value": "+6.0%",
+        "amount": 6,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Defense",
+        "statKey": "troops-defense",
+        "value": "+6.0%",
+        "amount": 6,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Lethality",
+        "statKey": "troops-lethality",
+        "value": "+6.0%",
+        "amount": 6,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops' Health",
+        "statKey": "troops-health",
+        "value": "+4.0%",
+        "amount": 4,
+        "unit": "percent"
+      }
+    ]
+  }
+]

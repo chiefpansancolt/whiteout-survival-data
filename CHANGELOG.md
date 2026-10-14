@@ -21,6 +21,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   of every piece, the reward of each puzzle, and the buff of the album. It holds 14 of the 16
   albums. `tundraAlbumPieceRewards()` gives the 80 tiers of rewards for the total of pieces that you
   collect.
+- `collectionRewardLevels()`: the 51 levels of the collection with the rewards of each, and
+  `collectionMedallions()` with the 11 medallions, their pictures, and the troop buffs that each
+  gives.
 - `alliancePrestige()`: the six prestige buildings of an alliance, the event that gives each one,
   and their Resource Gathering Speed bonus by tier.
 - 24 more skins, including the new skin type `Chat`. They have a bonus and sources where the package

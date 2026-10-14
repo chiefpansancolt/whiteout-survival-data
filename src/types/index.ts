@@ -15,6 +15,7 @@ export * from './alliance-tech';
 export * from './alliance-facility';
 export * from './alliance-prestige';
 export * from './tundra-album';
+export * from './collection';
 export * from './alliance-fortress';
 export * from './event-buff';
 export * from './event';
