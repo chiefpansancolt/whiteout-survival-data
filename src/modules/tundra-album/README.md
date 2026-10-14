@@ -4,8 +4,8 @@ The albums of the Tundra Album event. An album has 9 puzzles. A puzzle is built 
 5 stars, gives a reward when it is done, and the album gives a buff when all 9 puzzles are done. Use
 it to see what an album holds and what finishing it gives.
 
-The package holds 6 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
-of Heroes, Rekindled Flames, and Tundra Alliance. More albums are added later.
+The package holds 7 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
+of Heroes, Rekindled Flames, Tundra Alliance, and Battlefield Epic. More albums are added later.
 
 ## Usage
 
@@ -180,9 +180,29 @@ Stones.
 The album has 141 pieces: 21 at 1 star, 30 at 2 stars, 30 at 3 stars, 33 at 4 stars, and 27 at 5
 stars.
 
+### Battlefield Epic
+
+The buff is Troops Defense +2%. The completion rewards are 80 Chief Gear Materials Chest and 100
+Design Plans.
+
+| Puzzle                  | Pieces | 1 star | 2 stars | 3 stars | 4 stars | 5 stars | Reward                       |
+| ----------------------- | ------ | ------ | ------- | ------- | ------- | ------- | ---------------------------- |
+| Imperial Foundry        | 12     | 3      | 3       | 3       | 3       | 0       | 3 3h General Speedup         |
+| King of the Battlefield | 15     | 3      | 5       | 4       | 2       | 1       | 3 Essence Stones             |
+| Orichalcum              | 15     | 3      | 5       | 4       | 2       | 1       | 3 Chief Gear Materials Chest |
+| City of Kings           | 15     | 3      | 4       | 4       | 2       | 2       | 4 Lucky Hero Gear Chest      |
+| Pilot's Paradise        | 15     | 3      | 3       | 3       | 3       | 3       | 10 Design Plans              |
+| Great Contest           | 18     | 2      | 4       | 4       | 4       | 4       | 6 Lucky Hero Gear Chest      |
+| Canyon Clash            | 18     | 2      | 3       | 3       | 5       | 5       | 2 8h Troop Training Speedup  |
+| Hero's Glory            | 18     | 0      | 2       | 2       | 7       | 7       | 15 Charm Design              |
+| Grand Banquet           | 18     | 0      | 2       | 2       | 7       | 7       | 3 Mythic General Hero Shard  |
+
+The album has 144 pieces: 19 at 1 star, 31 at 2 stars, 29 at 3 stars, 35 at 4 stars, and 30 at 5
+stars.
+
 ## Notes
 
-The pieces, the star levels, and the reward amounts of the 6 albums are read from the album screens
+The pieces, the star levels, and the reward amounts of the 7 albums are read from the album screens
 of the game, and the images are cut from the same screens. The package owner names the items of the
 album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
 Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The

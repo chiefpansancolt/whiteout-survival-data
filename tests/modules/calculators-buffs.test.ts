@@ -467,6 +467,7 @@ describe('calculateBuffs Tundra Albums', () => {
     ['song-of-heroes', 'meat-gathering-speed', 5],
     ['rekindled-flames', 'resource-production-speed', 5],
     ['tundra-alliance', 'troops-attack', 2],
+    ['battlefield-epic', 'troops-defense', 2],
   ])('gives %s the stat %s with %d percent', (id, statKey, amount) => {
     expect(category(calculateBuffs({ tundraAlbums: [id] }), statKey)!.total).toBe(amount);
   });

@@ -631,6 +631,29 @@ const NEW_ALBUMS = [
       ['battlefield-epic', 'Battlefield Epic', [0, 2, 2, 7, 7], 'mythic-general-hero-shard', 3],
     ],
   },
+  {
+    id: 'battlefield-epic',
+    name: 'Battlefield Epic',
+    stat: 'Troops Defense',
+    statKey: 'troops-defense',
+    eventNote: '+2% troops defense',
+    completion: [
+      ['chief-gear-materials-chest', 80],
+      ['design-plans', 100],
+    ],
+    pieces: 144,
+    puzzles: [
+      ['imperial-foundry', 'Imperial Foundry', [3, 3, 3, 3, 0], 'speedup-general-3h', 3],
+      ['king-of-the-battlefield', 'King of the Battlefield', [3, 5, 4, 2, 1], 'essence-stones', 3],
+      ['orichalcum', 'Orichalcum', [3, 5, 4, 2, 1], 'chief-gear-materials-chest', 3],
+      ['city-of-kings', 'City of Kings', [3, 4, 4, 2, 2], 'lucky-hero-gear-chest', 4],
+      ['pilots-paradise', "Pilot's Paradise", [3, 3, 3, 3, 3], 'design-plans', 10],
+      ['great-contest', 'Great Contest', [2, 4, 4, 4, 4], 'lucky-hero-gear-chest', 6],
+      ['canyon-clash', 'Canyon Clash', [2, 3, 3, 5, 5], 'speedup-troop-8h', 2],
+      ['heros-glory', "Hero's Glory", [0, 2, 2, 7, 7], 'charm-design', 15],
+      ['grand-banquet', 'Grand Banquet', [0, 2, 2, 7, 7], 'mythic-general-hero-shard', 3],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {

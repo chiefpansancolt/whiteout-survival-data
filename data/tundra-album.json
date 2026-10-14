@@ -5365,5 +5365,991 @@
         ]
       }
     ]
+  },
+  {
+    "id": "battlefield-epic",
+    "name": "Battlefield Epic",
+    "buff": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "chief-gear-materials-chest",
+        "amount": 80
+      },
+      {
+        "itemId": "design-plans",
+        "amount": 100
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "imperial-foundry",
+        "name": "Imperial Foundry",
+        "img": "/images/tundra-album/battlefield-epic/imperial-foundry.png",
+        "reward": {
+          "itemId": "speedup-general-3h",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "imperial-foundry-1",
+            "name": "Imperial Foundry - 1",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-1.png",
+            "stars": 1
+          },
+          {
+            "id": "imperial-foundry-2",
+            "name": "Imperial Foundry - 2",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-2.png",
+            "stars": 1
+          },
+          {
+            "id": "imperial-foundry-3",
+            "name": "Imperial Foundry - 3",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-3.png",
+            "stars": 1
+          },
+          {
+            "id": "imperial-foundry-4",
+            "name": "Imperial Foundry - 4",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-4.png",
+            "stars": 2
+          },
+          {
+            "id": "imperial-foundry-5",
+            "name": "Imperial Foundry - 5",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-5.png",
+            "stars": 2
+          },
+          {
+            "id": "imperial-foundry-6",
+            "name": "Imperial Foundry - 6",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-6.png",
+            "stars": 2
+          },
+          {
+            "id": "imperial-foundry-7",
+            "name": "Imperial Foundry - 7",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-7.png",
+            "stars": 3
+          },
+          {
+            "id": "imperial-foundry-8",
+            "name": "Imperial Foundry - 8",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-8.png",
+            "stars": 3
+          },
+          {
+            "id": "imperial-foundry-9",
+            "name": "Imperial Foundry - 9",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-9.png",
+            "stars": 3
+          },
+          {
+            "id": "imperial-foundry-10",
+            "name": "Imperial Foundry - 10",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-10.png",
+            "stars": 4
+          },
+          {
+            "id": "imperial-foundry-11",
+            "name": "Imperial Foundry - 11",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-11.png",
+            "stars": 4
+          },
+          {
+            "id": "imperial-foundry-12",
+            "name": "Imperial Foundry - 12",
+            "img": "/images/tundra-album/battlefield-epic/imperial-foundry-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "king-of-the-battlefield",
+        "name": "King of the Battlefield",
+        "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "king-of-the-battlefield-1",
+            "name": "King of the Battlefield - 1",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-1.png",
+            "stars": 1
+          },
+          {
+            "id": "king-of-the-battlefield-2",
+            "name": "King of the Battlefield - 2",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-2.png",
+            "stars": 1
+          },
+          {
+            "id": "king-of-the-battlefield-3",
+            "name": "King of the Battlefield - 3",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-3.png",
+            "stars": 1
+          },
+          {
+            "id": "king-of-the-battlefield-4",
+            "name": "King of the Battlefield - 4",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-4.png",
+            "stars": 2
+          },
+          {
+            "id": "king-of-the-battlefield-5",
+            "name": "King of the Battlefield - 5",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-5.png",
+            "stars": 2
+          },
+          {
+            "id": "king-of-the-battlefield-6",
+            "name": "King of the Battlefield - 6",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-6.png",
+            "stars": 2
+          },
+          {
+            "id": "king-of-the-battlefield-7",
+            "name": "King of the Battlefield - 7",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-7.png",
+            "stars": 2
+          },
+          {
+            "id": "king-of-the-battlefield-8",
+            "name": "King of the Battlefield - 8",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-8.png",
+            "stars": 2
+          },
+          {
+            "id": "king-of-the-battlefield-9",
+            "name": "King of the Battlefield - 9",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-9.png",
+            "stars": 3
+          },
+          {
+            "id": "king-of-the-battlefield-10",
+            "name": "King of the Battlefield - 10",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-10.png",
+            "stars": 3
+          },
+          {
+            "id": "king-of-the-battlefield-11",
+            "name": "King of the Battlefield - 11",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-11.png",
+            "stars": 3
+          },
+          {
+            "id": "king-of-the-battlefield-12",
+            "name": "King of the Battlefield - 12",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-12.png",
+            "stars": 3
+          },
+          {
+            "id": "king-of-the-battlefield-13",
+            "name": "King of the Battlefield - 13",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-13.png",
+            "stars": 4
+          },
+          {
+            "id": "king-of-the-battlefield-14",
+            "name": "King of the Battlefield - 14",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-14.png",
+            "stars": 4
+          },
+          {
+            "id": "king-of-the-battlefield-15",
+            "name": "King of the Battlefield - 15",
+            "img": "/images/tundra-album/battlefield-epic/king-of-the-battlefield-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "orichalcum",
+        "name": "Orichalcum",
+        "img": "/images/tundra-album/battlefield-epic/orichalcum.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "orichalcum-1",
+            "name": "Orichalcum - 1",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-1.png",
+            "stars": 1
+          },
+          {
+            "id": "orichalcum-2",
+            "name": "Orichalcum - 2",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-2.png",
+            "stars": 1
+          },
+          {
+            "id": "orichalcum-3",
+            "name": "Orichalcum - 3",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-3.png",
+            "stars": 1
+          },
+          {
+            "id": "orichalcum-4",
+            "name": "Orichalcum - 4",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-4.png",
+            "stars": 2
+          },
+          {
+            "id": "orichalcum-5",
+            "name": "Orichalcum - 5",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-5.png",
+            "stars": 2
+          },
+          {
+            "id": "orichalcum-6",
+            "name": "Orichalcum - 6",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-6.png",
+            "stars": 2
+          },
+          {
+            "id": "orichalcum-7",
+            "name": "Orichalcum - 7",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-7.png",
+            "stars": 2
+          },
+          {
+            "id": "orichalcum-8",
+            "name": "Orichalcum - 8",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-8.png",
+            "stars": 2
+          },
+          {
+            "id": "orichalcum-9",
+            "name": "Orichalcum - 9",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-9.png",
+            "stars": 3
+          },
+          {
+            "id": "orichalcum-10",
+            "name": "Orichalcum - 10",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-10.png",
+            "stars": 3
+          },
+          {
+            "id": "orichalcum-11",
+            "name": "Orichalcum - 11",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-11.png",
+            "stars": 3
+          },
+          {
+            "id": "orichalcum-12",
+            "name": "Orichalcum - 12",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-12.png",
+            "stars": 3
+          },
+          {
+            "id": "orichalcum-13",
+            "name": "Orichalcum - 13",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-13.png",
+            "stars": 4
+          },
+          {
+            "id": "orichalcum-14",
+            "name": "Orichalcum - 14",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-14.png",
+            "stars": 4
+          },
+          {
+            "id": "orichalcum-15",
+            "name": "Orichalcum - 15",
+            "img": "/images/tundra-album/battlefield-epic/orichalcum-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "city-of-kings",
+        "name": "City of Kings",
+        "img": "/images/tundra-album/battlefield-epic/city-of-kings.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 4
+        },
+        "pieces": [
+          {
+            "id": "city-of-kings-1",
+            "name": "City of Kings - 1",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-1.png",
+            "stars": 1
+          },
+          {
+            "id": "city-of-kings-2",
+            "name": "City of Kings - 2",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-2.png",
+            "stars": 1
+          },
+          {
+            "id": "city-of-kings-3",
+            "name": "City of Kings - 3",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-3.png",
+            "stars": 1
+          },
+          {
+            "id": "city-of-kings-4",
+            "name": "City of Kings - 4",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-4.png",
+            "stars": 2
+          },
+          {
+            "id": "city-of-kings-5",
+            "name": "City of Kings - 5",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-5.png",
+            "stars": 2
+          },
+          {
+            "id": "city-of-kings-6",
+            "name": "City of Kings - 6",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-6.png",
+            "stars": 2
+          },
+          {
+            "id": "city-of-kings-7",
+            "name": "City of Kings - 7",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-7.png",
+            "stars": 2
+          },
+          {
+            "id": "city-of-kings-8",
+            "name": "City of Kings - 8",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-8.png",
+            "stars": 3
+          },
+          {
+            "id": "city-of-kings-9",
+            "name": "City of Kings - 9",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-9.png",
+            "stars": 3
+          },
+          {
+            "id": "city-of-kings-10",
+            "name": "City of Kings - 10",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-10.png",
+            "stars": 3
+          },
+          {
+            "id": "city-of-kings-11",
+            "name": "City of Kings - 11",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-11.png",
+            "stars": 3
+          },
+          {
+            "id": "city-of-kings-12",
+            "name": "City of Kings - 12",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-12.png",
+            "stars": 4
+          },
+          {
+            "id": "city-of-kings-13",
+            "name": "City of Kings - 13",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-13.png",
+            "stars": 4
+          },
+          {
+            "id": "city-of-kings-14",
+            "name": "City of Kings - 14",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-14.png",
+            "stars": 5
+          },
+          {
+            "id": "city-of-kings-15",
+            "name": "City of Kings - 15",
+            "img": "/images/tundra-album/battlefield-epic/city-of-kings-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "pilots-paradise",
+        "name": "Pilot's Paradise",
+        "img": "/images/tundra-album/battlefield-epic/pilots-paradise.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "pilots-paradise-1",
+            "name": "Pilot's Paradise - 1",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-1.png",
+            "stars": 1
+          },
+          {
+            "id": "pilots-paradise-2",
+            "name": "Pilot's Paradise - 2",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-2.png",
+            "stars": 1
+          },
+          {
+            "id": "pilots-paradise-3",
+            "name": "Pilot's Paradise - 3",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-3.png",
+            "stars": 1
+          },
+          {
+            "id": "pilots-paradise-4",
+            "name": "Pilot's Paradise - 4",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-4.png",
+            "stars": 2
+          },
+          {
+            "id": "pilots-paradise-5",
+            "name": "Pilot's Paradise - 5",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-5.png",
+            "stars": 2
+          },
+          {
+            "id": "pilots-paradise-6",
+            "name": "Pilot's Paradise - 6",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-6.png",
+            "stars": 2
+          },
+          {
+            "id": "pilots-paradise-7",
+            "name": "Pilot's Paradise - 7",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-7.png",
+            "stars": 3
+          },
+          {
+            "id": "pilots-paradise-8",
+            "name": "Pilot's Paradise - 8",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-8.png",
+            "stars": 3
+          },
+          {
+            "id": "pilots-paradise-9",
+            "name": "Pilot's Paradise - 9",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-9.png",
+            "stars": 3
+          },
+          {
+            "id": "pilots-paradise-10",
+            "name": "Pilot's Paradise - 10",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-10.png",
+            "stars": 4
+          },
+          {
+            "id": "pilots-paradise-11",
+            "name": "Pilot's Paradise - 11",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-11.png",
+            "stars": 4
+          },
+          {
+            "id": "pilots-paradise-12",
+            "name": "Pilot's Paradise - 12",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-12.png",
+            "stars": 4
+          },
+          {
+            "id": "pilots-paradise-13",
+            "name": "Pilot's Paradise - 13",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-13.png",
+            "stars": 5
+          },
+          {
+            "id": "pilots-paradise-14",
+            "name": "Pilot's Paradise - 14",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-14.png",
+            "stars": 5
+          },
+          {
+            "id": "pilots-paradise-15",
+            "name": "Pilot's Paradise - 15",
+            "img": "/images/tundra-album/battlefield-epic/pilots-paradise-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "great-contest",
+        "name": "Great Contest",
+        "img": "/images/tundra-album/battlefield-epic/great-contest.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 6
+        },
+        "pieces": [
+          {
+            "id": "great-contest-1",
+            "name": "Great Contest - 1",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-1.png",
+            "stars": 1
+          },
+          {
+            "id": "great-contest-2",
+            "name": "Great Contest - 2",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-2.png",
+            "stars": 1
+          },
+          {
+            "id": "great-contest-3",
+            "name": "Great Contest - 3",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-3.png",
+            "stars": 2
+          },
+          {
+            "id": "great-contest-4",
+            "name": "Great Contest - 4",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-4.png",
+            "stars": 2
+          },
+          {
+            "id": "great-contest-5",
+            "name": "Great Contest - 5",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-5.png",
+            "stars": 2
+          },
+          {
+            "id": "great-contest-6",
+            "name": "Great Contest - 6",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-6.png",
+            "stars": 2
+          },
+          {
+            "id": "great-contest-7",
+            "name": "Great Contest - 7",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-7.png",
+            "stars": 3
+          },
+          {
+            "id": "great-contest-8",
+            "name": "Great Contest - 8",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-8.png",
+            "stars": 3
+          },
+          {
+            "id": "great-contest-9",
+            "name": "Great Contest - 9",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-9.png",
+            "stars": 3
+          },
+          {
+            "id": "great-contest-10",
+            "name": "Great Contest - 10",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-10.png",
+            "stars": 3
+          },
+          {
+            "id": "great-contest-11",
+            "name": "Great Contest - 11",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-11.png",
+            "stars": 4
+          },
+          {
+            "id": "great-contest-12",
+            "name": "Great Contest - 12",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-12.png",
+            "stars": 4
+          },
+          {
+            "id": "great-contest-13",
+            "name": "Great Contest - 13",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-13.png",
+            "stars": 4
+          },
+          {
+            "id": "great-contest-14",
+            "name": "Great Contest - 14",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-14.png",
+            "stars": 4
+          },
+          {
+            "id": "great-contest-15",
+            "name": "Great Contest - 15",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-15.png",
+            "stars": 5
+          },
+          {
+            "id": "great-contest-16",
+            "name": "Great Contest - 16",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-16.png",
+            "stars": 5
+          },
+          {
+            "id": "great-contest-17",
+            "name": "Great Contest - 17",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-17.png",
+            "stars": 5
+          },
+          {
+            "id": "great-contest-18",
+            "name": "Great Contest - 18",
+            "img": "/images/tundra-album/battlefield-epic/great-contest-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "canyon-clash",
+        "name": "Canyon Clash",
+        "img": "/images/tundra-album/battlefield-epic/canyon-clash.png",
+        "reward": {
+          "itemId": "speedup-troop-8h",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "canyon-clash-1",
+            "name": "Canyon Clash - 1",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-1.png",
+            "stars": 1
+          },
+          {
+            "id": "canyon-clash-2",
+            "name": "Canyon Clash - 2",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-2.png",
+            "stars": 1
+          },
+          {
+            "id": "canyon-clash-3",
+            "name": "Canyon Clash - 3",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-3.png",
+            "stars": 2
+          },
+          {
+            "id": "canyon-clash-4",
+            "name": "Canyon Clash - 4",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-4.png",
+            "stars": 2
+          },
+          {
+            "id": "canyon-clash-5",
+            "name": "Canyon Clash - 5",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-5.png",
+            "stars": 2
+          },
+          {
+            "id": "canyon-clash-6",
+            "name": "Canyon Clash - 6",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-6.png",
+            "stars": 3
+          },
+          {
+            "id": "canyon-clash-7",
+            "name": "Canyon Clash - 7",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-7.png",
+            "stars": 3
+          },
+          {
+            "id": "canyon-clash-8",
+            "name": "Canyon Clash - 8",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-8.png",
+            "stars": 3
+          },
+          {
+            "id": "canyon-clash-9",
+            "name": "Canyon Clash - 9",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-9.png",
+            "stars": 4
+          },
+          {
+            "id": "canyon-clash-10",
+            "name": "Canyon Clash - 10",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-10.png",
+            "stars": 4
+          },
+          {
+            "id": "canyon-clash-11",
+            "name": "Canyon Clash - 11",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-11.png",
+            "stars": 4
+          },
+          {
+            "id": "canyon-clash-12",
+            "name": "Canyon Clash - 12",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-12.png",
+            "stars": 4
+          },
+          {
+            "id": "canyon-clash-13",
+            "name": "Canyon Clash - 13",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-13.png",
+            "stars": 4
+          },
+          {
+            "id": "canyon-clash-14",
+            "name": "Canyon Clash - 14",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-14.png",
+            "stars": 5
+          },
+          {
+            "id": "canyon-clash-15",
+            "name": "Canyon Clash - 15",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-15.png",
+            "stars": 5
+          },
+          {
+            "id": "canyon-clash-16",
+            "name": "Canyon Clash - 16",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-16.png",
+            "stars": 5
+          },
+          {
+            "id": "canyon-clash-17",
+            "name": "Canyon Clash - 17",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-17.png",
+            "stars": 5
+          },
+          {
+            "id": "canyon-clash-18",
+            "name": "Canyon Clash - 18",
+            "img": "/images/tundra-album/battlefield-epic/canyon-clash-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "heros-glory",
+        "name": "Hero's Glory",
+        "img": "/images/tundra-album/battlefield-epic/heros-glory.png",
+        "reward": {
+          "itemId": "charm-design",
+          "amount": 15
+        },
+        "pieces": [
+          {
+            "id": "heros-glory-1",
+            "name": "Hero's Glory - 1",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-1.png",
+            "stars": 2
+          },
+          {
+            "id": "heros-glory-2",
+            "name": "Hero's Glory - 2",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-2.png",
+            "stars": 2
+          },
+          {
+            "id": "heros-glory-3",
+            "name": "Hero's Glory - 3",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-3.png",
+            "stars": 3
+          },
+          {
+            "id": "heros-glory-4",
+            "name": "Hero's Glory - 4",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-4.png",
+            "stars": 3
+          },
+          {
+            "id": "heros-glory-5",
+            "name": "Hero's Glory - 5",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-5.png",
+            "stars": 4
+          },
+          {
+            "id": "heros-glory-6",
+            "name": "Hero's Glory - 6",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-6.png",
+            "stars": 4
+          },
+          {
+            "id": "heros-glory-7",
+            "name": "Hero's Glory - 7",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-7.png",
+            "stars": 4
+          },
+          {
+            "id": "heros-glory-8",
+            "name": "Hero's Glory - 8",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-8.png",
+            "stars": 4
+          },
+          {
+            "id": "heros-glory-9",
+            "name": "Hero's Glory - 9",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-9.png",
+            "stars": 4
+          },
+          {
+            "id": "heros-glory-10",
+            "name": "Hero's Glory - 10",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-10.png",
+            "stars": 4
+          },
+          {
+            "id": "heros-glory-11",
+            "name": "Hero's Glory - 11",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-11.png",
+            "stars": 4
+          },
+          {
+            "id": "heros-glory-12",
+            "name": "Hero's Glory - 12",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-12.png",
+            "stars": 5
+          },
+          {
+            "id": "heros-glory-13",
+            "name": "Hero's Glory - 13",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-13.png",
+            "stars": 5
+          },
+          {
+            "id": "heros-glory-14",
+            "name": "Hero's Glory - 14",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-14.png",
+            "stars": 5
+          },
+          {
+            "id": "heros-glory-15",
+            "name": "Hero's Glory - 15",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-15.png",
+            "stars": 5
+          },
+          {
+            "id": "heros-glory-16",
+            "name": "Hero's Glory - 16",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-16.png",
+            "stars": 5
+          },
+          {
+            "id": "heros-glory-17",
+            "name": "Hero's Glory - 17",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-17.png",
+            "stars": 5
+          },
+          {
+            "id": "heros-glory-18",
+            "name": "Hero's Glory - 18",
+            "img": "/images/tundra-album/battlefield-epic/heros-glory-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "grand-banquet",
+        "name": "Grand Banquet",
+        "img": "/images/tundra-album/battlefield-epic/grand-banquet.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "grand-banquet-1",
+            "name": "Grand Banquet - 1",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-1.png",
+            "stars": 2
+          },
+          {
+            "id": "grand-banquet-2",
+            "name": "Grand Banquet - 2",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-2.png",
+            "stars": 2
+          },
+          {
+            "id": "grand-banquet-3",
+            "name": "Grand Banquet - 3",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-3.png",
+            "stars": 3
+          },
+          {
+            "id": "grand-banquet-4",
+            "name": "Grand Banquet - 4",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-4.png",
+            "stars": 3
+          },
+          {
+            "id": "grand-banquet-5",
+            "name": "Grand Banquet - 5",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-5.png",
+            "stars": 4
+          },
+          {
+            "id": "grand-banquet-6",
+            "name": "Grand Banquet - 6",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-6.png",
+            "stars": 4
+          },
+          {
+            "id": "grand-banquet-7",
+            "name": "Grand Banquet - 7",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-7.png",
+            "stars": 4
+          },
+          {
+            "id": "grand-banquet-8",
+            "name": "Grand Banquet - 8",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-8.png",
+            "stars": 4
+          },
+          {
+            "id": "grand-banquet-9",
+            "name": "Grand Banquet - 9",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-9.png",
+            "stars": 4
+          },
+          {
+            "id": "grand-banquet-10",
+            "name": "Grand Banquet - 10",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-10.png",
+            "stars": 4
+          },
+          {
+            "id": "grand-banquet-11",
+            "name": "Grand Banquet - 11",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-11.png",
+            "stars": 4
+          },
+          {
+            "id": "grand-banquet-12",
+            "name": "Grand Banquet - 12",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-12.png",
+            "stars": 5
+          },
+          {
+            "id": "grand-banquet-13",
+            "name": "Grand Banquet - 13",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-13.png",
+            "stars": 5
+          },
+          {
+            "id": "grand-banquet-14",
+            "name": "Grand Banquet - 14",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-14.png",
+            "stars": 5
+          },
+          {
+            "id": "grand-banquet-15",
+            "name": "Grand Banquet - 15",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-15.png",
+            "stars": 5
+          },
+          {
+            "id": "grand-banquet-16",
+            "name": "Grand Banquet - 16",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-16.png",
+            "stars": 5
+          },
+          {
+            "id": "grand-banquet-17",
+            "name": "Grand Banquet - 17",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-17.png",
+            "stars": 5
+          },
+          {
+            "id": "grand-banquet-18",
+            "name": "Grand Banquet - 18",
+            "img": "/images/tundra-album/battlefield-epic/grand-banquet-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]
