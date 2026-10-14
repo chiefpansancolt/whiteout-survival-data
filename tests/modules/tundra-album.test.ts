@@ -654,6 +654,29 @@ const NEW_ALBUMS = [
       ['grand-banquet', 'Grand Banquet', [0, 2, 2, 7, 7], 'mythic-general-hero-shard', 3],
     ],
   },
+  {
+    id: 'spectacular-adventures',
+    name: 'Spectacular Adventures',
+    stat: 'Troops Attack',
+    statKey: 'troops-attack',
+    eventNote: '+2% troops attack',
+    completion: [
+      ['random-chief-charm-material-chest', 70],
+      ['charm-design', 100],
+    ],
+    pieces: 144,
+    puzzles: [
+      ['fishing-tournament', 'Fishing Tournament', [3, 3, 3, 3, 0], 'polishing-solution', 35],
+      ['snowbusters', 'Snowbusters', [3, 5, 4, 2, 1], 'essence-stones', 3],
+      ['bandit', 'Bandit', [3, 5, 4, 2, 1], 'chief-gear-materials-chest', 3],
+      ['red-haired-joe', 'Red-Haired Joe', [3, 4, 4, 2, 2], 'charm-guide', 8],
+      ['a-queen-arises', 'A "Queen" Arises', [3, 3, 3, 3, 3], 'mythic-general-hero-shard', 2],
+      ['the-eagles', 'The Eagles', [2, 4, 4, 4, 4], 'lucky-hero-gear-chest', 6],
+      ['bounty-hunter', 'Bounty Hunter', [2, 3, 3, 5, 5], 'speedup-general-8h', 2],
+      ['wandering-merchant', 'Wandering Merchant', [0, 2, 2, 7, 7], 'mythic-general-hero-shard', 3],
+      ['tundra-adventure', 'Tundra Adventure', [0, 2, 2, 7, 7], 'design-plans', 15],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {

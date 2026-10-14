@@ -6351,5 +6351,991 @@
         ]
       }
     ]
+  },
+  {
+    "id": "spectacular-adventures",
+    "name": "Spectacular Adventures",
+    "buff": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "random-chief-charm-material-chest",
+        "amount": 70
+      },
+      {
+        "itemId": "charm-design",
+        "amount": 100
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "fishing-tournament",
+        "name": "Fishing Tournament",
+        "img": "/images/tundra-album/spectacular-adventures/fishing-tournament.png",
+        "reward": {
+          "itemId": "polishing-solution",
+          "amount": 35
+        },
+        "pieces": [
+          {
+            "id": "fishing-tournament-1",
+            "name": "Fishing Tournament - 1",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-1.png",
+            "stars": 1
+          },
+          {
+            "id": "fishing-tournament-2",
+            "name": "Fishing Tournament - 2",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-2.png",
+            "stars": 1
+          },
+          {
+            "id": "fishing-tournament-3",
+            "name": "Fishing Tournament - 3",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-3.png",
+            "stars": 1
+          },
+          {
+            "id": "fishing-tournament-4",
+            "name": "Fishing Tournament - 4",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-4.png",
+            "stars": 2
+          },
+          {
+            "id": "fishing-tournament-5",
+            "name": "Fishing Tournament - 5",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-5.png",
+            "stars": 2
+          },
+          {
+            "id": "fishing-tournament-6",
+            "name": "Fishing Tournament - 6",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-6.png",
+            "stars": 2
+          },
+          {
+            "id": "fishing-tournament-7",
+            "name": "Fishing Tournament - 7",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-7.png",
+            "stars": 3
+          },
+          {
+            "id": "fishing-tournament-8",
+            "name": "Fishing Tournament - 8",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-8.png",
+            "stars": 3
+          },
+          {
+            "id": "fishing-tournament-9",
+            "name": "Fishing Tournament - 9",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-9.png",
+            "stars": 3
+          },
+          {
+            "id": "fishing-tournament-10",
+            "name": "Fishing Tournament - 10",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-10.png",
+            "stars": 4
+          },
+          {
+            "id": "fishing-tournament-11",
+            "name": "Fishing Tournament - 11",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-11.png",
+            "stars": 4
+          },
+          {
+            "id": "fishing-tournament-12",
+            "name": "Fishing Tournament - 12",
+            "img": "/images/tundra-album/spectacular-adventures/fishing-tournament-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "snowbusters",
+        "name": "Snowbusters",
+        "img": "/images/tundra-album/spectacular-adventures/snowbusters.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "snowbusters-1",
+            "name": "Snowbusters - 1",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-1.png",
+            "stars": 1
+          },
+          {
+            "id": "snowbusters-2",
+            "name": "Snowbusters - 2",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-2.png",
+            "stars": 1
+          },
+          {
+            "id": "snowbusters-3",
+            "name": "Snowbusters - 3",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-3.png",
+            "stars": 1
+          },
+          {
+            "id": "snowbusters-4",
+            "name": "Snowbusters - 4",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-4.png",
+            "stars": 2
+          },
+          {
+            "id": "snowbusters-5",
+            "name": "Snowbusters - 5",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-5.png",
+            "stars": 2
+          },
+          {
+            "id": "snowbusters-6",
+            "name": "Snowbusters - 6",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-6.png",
+            "stars": 2
+          },
+          {
+            "id": "snowbusters-7",
+            "name": "Snowbusters - 7",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-7.png",
+            "stars": 2
+          },
+          {
+            "id": "snowbusters-8",
+            "name": "Snowbusters - 8",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-8.png",
+            "stars": 2
+          },
+          {
+            "id": "snowbusters-9",
+            "name": "Snowbusters - 9",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-9.png",
+            "stars": 3
+          },
+          {
+            "id": "snowbusters-10",
+            "name": "Snowbusters - 10",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-10.png",
+            "stars": 3
+          },
+          {
+            "id": "snowbusters-11",
+            "name": "Snowbusters - 11",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-11.png",
+            "stars": 3
+          },
+          {
+            "id": "snowbusters-12",
+            "name": "Snowbusters - 12",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-12.png",
+            "stars": 3
+          },
+          {
+            "id": "snowbusters-13",
+            "name": "Snowbusters - 13",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-13.png",
+            "stars": 4
+          },
+          {
+            "id": "snowbusters-14",
+            "name": "Snowbusters - 14",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-14.png",
+            "stars": 4
+          },
+          {
+            "id": "snowbusters-15",
+            "name": "Snowbusters - 15",
+            "img": "/images/tundra-album/spectacular-adventures/snowbusters-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "bandit",
+        "name": "Bandit",
+        "img": "/images/tundra-album/spectacular-adventures/bandit.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "bandit-1",
+            "name": "Bandit - 1",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-1.png",
+            "stars": 1
+          },
+          {
+            "id": "bandit-2",
+            "name": "Bandit - 2",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-2.png",
+            "stars": 1
+          },
+          {
+            "id": "bandit-3",
+            "name": "Bandit - 3",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-3.png",
+            "stars": 1
+          },
+          {
+            "id": "bandit-4",
+            "name": "Bandit - 4",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-4.png",
+            "stars": 2
+          },
+          {
+            "id": "bandit-5",
+            "name": "Bandit - 5",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-5.png",
+            "stars": 2
+          },
+          {
+            "id": "bandit-6",
+            "name": "Bandit - 6",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-6.png",
+            "stars": 2
+          },
+          {
+            "id": "bandit-7",
+            "name": "Bandit - 7",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-7.png",
+            "stars": 2
+          },
+          {
+            "id": "bandit-8",
+            "name": "Bandit - 8",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-8.png",
+            "stars": 2
+          },
+          {
+            "id": "bandit-9",
+            "name": "Bandit - 9",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-9.png",
+            "stars": 3
+          },
+          {
+            "id": "bandit-10",
+            "name": "Bandit - 10",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-10.png",
+            "stars": 3
+          },
+          {
+            "id": "bandit-11",
+            "name": "Bandit - 11",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-11.png",
+            "stars": 3
+          },
+          {
+            "id": "bandit-12",
+            "name": "Bandit - 12",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-12.png",
+            "stars": 3
+          },
+          {
+            "id": "bandit-13",
+            "name": "Bandit - 13",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-13.png",
+            "stars": 4
+          },
+          {
+            "id": "bandit-14",
+            "name": "Bandit - 14",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-14.png",
+            "stars": 4
+          },
+          {
+            "id": "bandit-15",
+            "name": "Bandit - 15",
+            "img": "/images/tundra-album/spectacular-adventures/bandit-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "red-haired-joe",
+        "name": "Red-Haired Joe",
+        "img": "/images/tundra-album/spectacular-adventures/red-haired-joe.png",
+        "reward": {
+          "itemId": "charm-guide",
+          "amount": 8
+        },
+        "pieces": [
+          {
+            "id": "red-haired-joe-1",
+            "name": "Red-Haired Joe - 1",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-1.png",
+            "stars": 1
+          },
+          {
+            "id": "red-haired-joe-2",
+            "name": "Red-Haired Joe - 2",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-2.png",
+            "stars": 1
+          },
+          {
+            "id": "red-haired-joe-3",
+            "name": "Red-Haired Joe - 3",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-3.png",
+            "stars": 1
+          },
+          {
+            "id": "red-haired-joe-4",
+            "name": "Red-Haired Joe - 4",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-4.png",
+            "stars": 2
+          },
+          {
+            "id": "red-haired-joe-5",
+            "name": "Red-Haired Joe - 5",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-5.png",
+            "stars": 2
+          },
+          {
+            "id": "red-haired-joe-6",
+            "name": "Red-Haired Joe - 6",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-6.png",
+            "stars": 2
+          },
+          {
+            "id": "red-haired-joe-7",
+            "name": "Red-Haired Joe - 7",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-7.png",
+            "stars": 2
+          },
+          {
+            "id": "red-haired-joe-8",
+            "name": "Red-Haired Joe - 8",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-8.png",
+            "stars": 3
+          },
+          {
+            "id": "red-haired-joe-9",
+            "name": "Red-Haired Joe - 9",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-9.png",
+            "stars": 3
+          },
+          {
+            "id": "red-haired-joe-10",
+            "name": "Red-Haired Joe - 10",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-10.png",
+            "stars": 3
+          },
+          {
+            "id": "red-haired-joe-11",
+            "name": "Red-Haired Joe - 11",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-11.png",
+            "stars": 3
+          },
+          {
+            "id": "red-haired-joe-12",
+            "name": "Red-Haired Joe - 12",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-12.png",
+            "stars": 4
+          },
+          {
+            "id": "red-haired-joe-13",
+            "name": "Red-Haired Joe - 13",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-13.png",
+            "stars": 4
+          },
+          {
+            "id": "red-haired-joe-14",
+            "name": "Red-Haired Joe - 14",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-14.png",
+            "stars": 5
+          },
+          {
+            "id": "red-haired-joe-15",
+            "name": "Red-Haired Joe - 15",
+            "img": "/images/tundra-album/spectacular-adventures/red-haired-joe-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "a-queen-arises",
+        "name": "A \"Queen\" Arises",
+        "img": "/images/tundra-album/spectacular-adventures/a-queen-arises.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "a-queen-arises-1",
+            "name": "A \"Queen\" Arises - 1",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-1.png",
+            "stars": 1
+          },
+          {
+            "id": "a-queen-arises-2",
+            "name": "A \"Queen\" Arises - 2",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-2.png",
+            "stars": 1
+          },
+          {
+            "id": "a-queen-arises-3",
+            "name": "A \"Queen\" Arises - 3",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-3.png",
+            "stars": 1
+          },
+          {
+            "id": "a-queen-arises-4",
+            "name": "A \"Queen\" Arises - 4",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-4.png",
+            "stars": 2
+          },
+          {
+            "id": "a-queen-arises-5",
+            "name": "A \"Queen\" Arises - 5",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-5.png",
+            "stars": 2
+          },
+          {
+            "id": "a-queen-arises-6",
+            "name": "A \"Queen\" Arises - 6",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-6.png",
+            "stars": 2
+          },
+          {
+            "id": "a-queen-arises-7",
+            "name": "A \"Queen\" Arises - 7",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-7.png",
+            "stars": 3
+          },
+          {
+            "id": "a-queen-arises-8",
+            "name": "A \"Queen\" Arises - 8",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-8.png",
+            "stars": 3
+          },
+          {
+            "id": "a-queen-arises-9",
+            "name": "A \"Queen\" Arises - 9",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-9.png",
+            "stars": 3
+          },
+          {
+            "id": "a-queen-arises-10",
+            "name": "A \"Queen\" Arises - 10",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-10.png",
+            "stars": 4
+          },
+          {
+            "id": "a-queen-arises-11",
+            "name": "A \"Queen\" Arises - 11",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-11.png",
+            "stars": 4
+          },
+          {
+            "id": "a-queen-arises-12",
+            "name": "A \"Queen\" Arises - 12",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-12.png",
+            "stars": 4
+          },
+          {
+            "id": "a-queen-arises-13",
+            "name": "A \"Queen\" Arises - 13",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-13.png",
+            "stars": 5
+          },
+          {
+            "id": "a-queen-arises-14",
+            "name": "A \"Queen\" Arises - 14",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-14.png",
+            "stars": 5
+          },
+          {
+            "id": "a-queen-arises-15",
+            "name": "A \"Queen\" Arises - 15",
+            "img": "/images/tundra-album/spectacular-adventures/a-queen-arises-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-eagles",
+        "name": "The Eagles",
+        "img": "/images/tundra-album/spectacular-adventures/the-eagles.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 6
+        },
+        "pieces": [
+          {
+            "id": "the-eagles-1",
+            "name": "The Eagles - 1",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-eagles-2",
+            "name": "The Eagles - 2",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-eagles-3",
+            "name": "The Eagles - 3",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-eagles-4",
+            "name": "The Eagles - 4",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-eagles-5",
+            "name": "The Eagles - 5",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-eagles-6",
+            "name": "The Eagles - 6",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-6.png",
+            "stars": 2
+          },
+          {
+            "id": "the-eagles-7",
+            "name": "The Eagles - 7",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-eagles-8",
+            "name": "The Eagles - 8",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-eagles-9",
+            "name": "The Eagles - 9",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-9.png",
+            "stars": 3
+          },
+          {
+            "id": "the-eagles-10",
+            "name": "The Eagles - 10",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-10.png",
+            "stars": 3
+          },
+          {
+            "id": "the-eagles-11",
+            "name": "The Eagles - 11",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-eagles-12",
+            "name": "The Eagles - 12",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-eagles-13",
+            "name": "The Eagles - 13",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-13.png",
+            "stars": 4
+          },
+          {
+            "id": "the-eagles-14",
+            "name": "The Eagles - 14",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-14.png",
+            "stars": 4
+          },
+          {
+            "id": "the-eagles-15",
+            "name": "The Eagles - 15",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-eagles-16",
+            "name": "The Eagles - 16",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-eagles-17",
+            "name": "The Eagles - 17",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-eagles-18",
+            "name": "The Eagles - 18",
+            "img": "/images/tundra-album/spectacular-adventures/the-eagles-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "bounty-hunter",
+        "name": "Bounty Hunter",
+        "img": "/images/tundra-album/spectacular-adventures/bounty-hunter.png",
+        "reward": {
+          "itemId": "speedup-general-8h",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "bounty-hunter-1",
+            "name": "Bounty Hunter - 1",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-1.png",
+            "stars": 1
+          },
+          {
+            "id": "bounty-hunter-2",
+            "name": "Bounty Hunter - 2",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-2.png",
+            "stars": 1
+          },
+          {
+            "id": "bounty-hunter-3",
+            "name": "Bounty Hunter - 3",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-3.png",
+            "stars": 2
+          },
+          {
+            "id": "bounty-hunter-4",
+            "name": "Bounty Hunter - 4",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-4.png",
+            "stars": 2
+          },
+          {
+            "id": "bounty-hunter-5",
+            "name": "Bounty Hunter - 5",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-5.png",
+            "stars": 2
+          },
+          {
+            "id": "bounty-hunter-6",
+            "name": "Bounty Hunter - 6",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-6.png",
+            "stars": 3
+          },
+          {
+            "id": "bounty-hunter-7",
+            "name": "Bounty Hunter - 7",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-7.png",
+            "stars": 3
+          },
+          {
+            "id": "bounty-hunter-8",
+            "name": "Bounty Hunter - 8",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-8.png",
+            "stars": 3
+          },
+          {
+            "id": "bounty-hunter-9",
+            "name": "Bounty Hunter - 9",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-9.png",
+            "stars": 4
+          },
+          {
+            "id": "bounty-hunter-10",
+            "name": "Bounty Hunter - 10",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-10.png",
+            "stars": 4
+          },
+          {
+            "id": "bounty-hunter-11",
+            "name": "Bounty Hunter - 11",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-11.png",
+            "stars": 4
+          },
+          {
+            "id": "bounty-hunter-12",
+            "name": "Bounty Hunter - 12",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-12.png",
+            "stars": 4
+          },
+          {
+            "id": "bounty-hunter-13",
+            "name": "Bounty Hunter - 13",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-13.png",
+            "stars": 4
+          },
+          {
+            "id": "bounty-hunter-14",
+            "name": "Bounty Hunter - 14",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-14.png",
+            "stars": 5
+          },
+          {
+            "id": "bounty-hunter-15",
+            "name": "Bounty Hunter - 15",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-15.png",
+            "stars": 5
+          },
+          {
+            "id": "bounty-hunter-16",
+            "name": "Bounty Hunter - 16",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-16.png",
+            "stars": 5
+          },
+          {
+            "id": "bounty-hunter-17",
+            "name": "Bounty Hunter - 17",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-17.png",
+            "stars": 5
+          },
+          {
+            "id": "bounty-hunter-18",
+            "name": "Bounty Hunter - 18",
+            "img": "/images/tundra-album/spectacular-adventures/bounty-hunter-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "wandering-merchant",
+        "name": "Wandering Merchant",
+        "img": "/images/tundra-album/spectacular-adventures/wandering-merchant.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "wandering-merchant-1",
+            "name": "Wandering Merchant - 1",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-1.png",
+            "stars": 2
+          },
+          {
+            "id": "wandering-merchant-2",
+            "name": "Wandering Merchant - 2",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-2.png",
+            "stars": 2
+          },
+          {
+            "id": "wandering-merchant-3",
+            "name": "Wandering Merchant - 3",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-3.png",
+            "stars": 3
+          },
+          {
+            "id": "wandering-merchant-4",
+            "name": "Wandering Merchant - 4",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-4.png",
+            "stars": 3
+          },
+          {
+            "id": "wandering-merchant-5",
+            "name": "Wandering Merchant - 5",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-5.png",
+            "stars": 4
+          },
+          {
+            "id": "wandering-merchant-6",
+            "name": "Wandering Merchant - 6",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-6.png",
+            "stars": 4
+          },
+          {
+            "id": "wandering-merchant-7",
+            "name": "Wandering Merchant - 7",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-7.png",
+            "stars": 4
+          },
+          {
+            "id": "wandering-merchant-8",
+            "name": "Wandering Merchant - 8",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-8.png",
+            "stars": 4
+          },
+          {
+            "id": "wandering-merchant-9",
+            "name": "Wandering Merchant - 9",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-9.png",
+            "stars": 4
+          },
+          {
+            "id": "wandering-merchant-10",
+            "name": "Wandering Merchant - 10",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-10.png",
+            "stars": 4
+          },
+          {
+            "id": "wandering-merchant-11",
+            "name": "Wandering Merchant - 11",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-11.png",
+            "stars": 4
+          },
+          {
+            "id": "wandering-merchant-12",
+            "name": "Wandering Merchant - 12",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-12.png",
+            "stars": 5
+          },
+          {
+            "id": "wandering-merchant-13",
+            "name": "Wandering Merchant - 13",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-13.png",
+            "stars": 5
+          },
+          {
+            "id": "wandering-merchant-14",
+            "name": "Wandering Merchant - 14",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-14.png",
+            "stars": 5
+          },
+          {
+            "id": "wandering-merchant-15",
+            "name": "Wandering Merchant - 15",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-15.png",
+            "stars": 5
+          },
+          {
+            "id": "wandering-merchant-16",
+            "name": "Wandering Merchant - 16",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-16.png",
+            "stars": 5
+          },
+          {
+            "id": "wandering-merchant-17",
+            "name": "Wandering Merchant - 17",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-17.png",
+            "stars": 5
+          },
+          {
+            "id": "wandering-merchant-18",
+            "name": "Wandering Merchant - 18",
+            "img": "/images/tundra-album/spectacular-adventures/wandering-merchant-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "tundra-adventure",
+        "name": "Tundra Adventure",
+        "img": "/images/tundra-album/spectacular-adventures/tundra-adventure.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 15
+        },
+        "pieces": [
+          {
+            "id": "tundra-adventure-1",
+            "name": "Tundra Adventure - 1",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-1.png",
+            "stars": 2
+          },
+          {
+            "id": "tundra-adventure-2",
+            "name": "Tundra Adventure - 2",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-2.png",
+            "stars": 2
+          },
+          {
+            "id": "tundra-adventure-3",
+            "name": "Tundra Adventure - 3",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-3.png",
+            "stars": 3
+          },
+          {
+            "id": "tundra-adventure-4",
+            "name": "Tundra Adventure - 4",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-4.png",
+            "stars": 3
+          },
+          {
+            "id": "tundra-adventure-5",
+            "name": "Tundra Adventure - 5",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-5.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-adventure-6",
+            "name": "Tundra Adventure - 6",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-6.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-adventure-7",
+            "name": "Tundra Adventure - 7",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-7.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-adventure-8",
+            "name": "Tundra Adventure - 8",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-8.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-adventure-9",
+            "name": "Tundra Adventure - 9",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-9.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-adventure-10",
+            "name": "Tundra Adventure - 10",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-10.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-adventure-11",
+            "name": "Tundra Adventure - 11",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-11.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-adventure-12",
+            "name": "Tundra Adventure - 12",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-12.png",
+            "stars": 5
+          },
+          {
+            "id": "tundra-adventure-13",
+            "name": "Tundra Adventure - 13",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-13.png",
+            "stars": 5
+          },
+          {
+            "id": "tundra-adventure-14",
+            "name": "Tundra Adventure - 14",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-14.png",
+            "stars": 5
+          },
+          {
+            "id": "tundra-adventure-15",
+            "name": "Tundra Adventure - 15",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-15.png",
+            "stars": 5
+          },
+          {
+            "id": "tundra-adventure-16",
+            "name": "Tundra Adventure - 16",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-16.png",
+            "stars": 5
+          },
+          {
+            "id": "tundra-adventure-17",
+            "name": "Tundra Adventure - 17",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-17.png",
+            "stars": 5
+          },
+          {
+            "id": "tundra-adventure-18",
+            "name": "Tundra Adventure - 18",
+            "img": "/images/tundra-album/spectacular-adventures/tundra-adventure-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]
