@@ -677,6 +677,35 @@ const NEW_ALBUMS = [
       ['tundra-adventure', 'Tundra Adventure', [0, 2, 2, 7, 7], 'design-plans', 15],
     ],
   },
+  {
+    id: 'divine-weapons',
+    name: 'Divine Weapons',
+    stat: 'Troops Defense',
+    statKey: 'troops-defense',
+    eventNote: '+2% troops defense',
+    completion: [
+      ['essence-stones', 80],
+      ['custom-mythic-hero-gear-chest', 1],
+    ],
+    pieces: 144,
+    puzzles: [
+      ['master-blacksmith', 'Master Blacksmith', [3, 3, 3, 3, 0], 'enhancement-xp-component', 7],
+      ['legendary-divine-weapon', 'Legendary Divine Weapon', [3, 5, 4, 2, 1], 'essence-stones', 3],
+      [
+        'tundra-trade-route',
+        'Tundra Trade Route',
+        [3, 5, 4, 2, 1],
+        'chief-gear-materials-chest',
+        3,
+      ],
+      ['merchant-escort', 'Merchant Escort', [3, 4, 4, 2, 2], 'lucky-hero-gear-chest', 4],
+      ['cryptid-invasion', 'Cryptid Invasion', [3, 3, 3, 3, 3], 'design-plans', 10],
+      ['steam-rhapsody', 'Steam Rhapsody', [2, 4, 4, 4, 4], 'essence-stones', 5],
+      ['ice-journey', 'Ice Journey', [2, 3, 3, 5, 5], 'random-chief-charm-material-chest', 4],
+      ['essence-stones', 'Essence Stones', [0, 2, 2, 7, 7], 'charm-design', 15],
+      ['exotic-charm', 'Exotic Charm', [0, 2, 2, 7, 7], 'design-plans', 15],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {
@@ -781,7 +810,7 @@ describe('the size of an Enhancement XP Component reward', () => {
 
   it('is the 10 component for 45 of them and the 100 component for the rest', () => {
     const components = rewards.filter((r) => r.size !== undefined);
-    expect(components).toHaveLength(9);
+    expect(components).toHaveLength(10);
     for (const reward of components) expect(reward.size).toBe(reward.amount === 45 ? 10 : 100);
     expect(components.filter((r) => r.size === 10)).toHaveLength(2);
   });

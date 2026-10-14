@@ -7337,5 +7337,992 @@
         ]
       }
     ]
+  },
+  {
+    "id": "divine-weapons",
+    "name": "Divine Weapons",
+    "buff": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "essence-stones",
+        "amount": 80
+      },
+      {
+        "itemId": "custom-mythic-hero-gear-chest",
+        "amount": 1
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "master-blacksmith",
+        "name": "Master Blacksmith",
+        "img": "/images/tundra-album/divine-weapons/master-blacksmith.png",
+        "reward": {
+          "itemId": "enhancement-xp-component",
+          "amount": 7,
+          "size": 100
+        },
+        "pieces": [
+          {
+            "id": "master-blacksmith-1",
+            "name": "Master Blacksmith - 1",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-1.png",
+            "stars": 1
+          },
+          {
+            "id": "master-blacksmith-2",
+            "name": "Master Blacksmith - 2",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-2.png",
+            "stars": 1
+          },
+          {
+            "id": "master-blacksmith-3",
+            "name": "Master Blacksmith - 3",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-3.png",
+            "stars": 1
+          },
+          {
+            "id": "master-blacksmith-4",
+            "name": "Master Blacksmith - 4",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-4.png",
+            "stars": 2
+          },
+          {
+            "id": "master-blacksmith-5",
+            "name": "Master Blacksmith - 5",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-5.png",
+            "stars": 2
+          },
+          {
+            "id": "master-blacksmith-6",
+            "name": "Master Blacksmith - 6",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-6.png",
+            "stars": 2
+          },
+          {
+            "id": "master-blacksmith-7",
+            "name": "Master Blacksmith - 7",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-7.png",
+            "stars": 3
+          },
+          {
+            "id": "master-blacksmith-8",
+            "name": "Master Blacksmith - 8",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-8.png",
+            "stars": 3
+          },
+          {
+            "id": "master-blacksmith-9",
+            "name": "Master Blacksmith - 9",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-9.png",
+            "stars": 3
+          },
+          {
+            "id": "master-blacksmith-10",
+            "name": "Master Blacksmith - 10",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-10.png",
+            "stars": 4
+          },
+          {
+            "id": "master-blacksmith-11",
+            "name": "Master Blacksmith - 11",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-11.png",
+            "stars": 4
+          },
+          {
+            "id": "master-blacksmith-12",
+            "name": "Master Blacksmith - 12",
+            "img": "/images/tundra-album/divine-weapons/master-blacksmith-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "legendary-divine-weapon",
+        "name": "Legendary Divine Weapon",
+        "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "legendary-divine-weapon-1",
+            "name": "Legendary Divine Weapon - 1",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-1.png",
+            "stars": 1
+          },
+          {
+            "id": "legendary-divine-weapon-2",
+            "name": "Legendary Divine Weapon - 2",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-2.png",
+            "stars": 1
+          },
+          {
+            "id": "legendary-divine-weapon-3",
+            "name": "Legendary Divine Weapon - 3",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-3.png",
+            "stars": 1
+          },
+          {
+            "id": "legendary-divine-weapon-4",
+            "name": "Legendary Divine Weapon - 4",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-4.png",
+            "stars": 2
+          },
+          {
+            "id": "legendary-divine-weapon-5",
+            "name": "Legendary Divine Weapon - 5",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-5.png",
+            "stars": 2
+          },
+          {
+            "id": "legendary-divine-weapon-6",
+            "name": "Legendary Divine Weapon - 6",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-6.png",
+            "stars": 2
+          },
+          {
+            "id": "legendary-divine-weapon-7",
+            "name": "Legendary Divine Weapon - 7",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-7.png",
+            "stars": 2
+          },
+          {
+            "id": "legendary-divine-weapon-8",
+            "name": "Legendary Divine Weapon - 8",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-8.png",
+            "stars": 2
+          },
+          {
+            "id": "legendary-divine-weapon-9",
+            "name": "Legendary Divine Weapon - 9",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-9.png",
+            "stars": 3
+          },
+          {
+            "id": "legendary-divine-weapon-10",
+            "name": "Legendary Divine Weapon - 10",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-10.png",
+            "stars": 3
+          },
+          {
+            "id": "legendary-divine-weapon-11",
+            "name": "Legendary Divine Weapon - 11",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-11.png",
+            "stars": 3
+          },
+          {
+            "id": "legendary-divine-weapon-12",
+            "name": "Legendary Divine Weapon - 12",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-12.png",
+            "stars": 3
+          },
+          {
+            "id": "legendary-divine-weapon-13",
+            "name": "Legendary Divine Weapon - 13",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-13.png",
+            "stars": 4
+          },
+          {
+            "id": "legendary-divine-weapon-14",
+            "name": "Legendary Divine Weapon - 14",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-14.png",
+            "stars": 4
+          },
+          {
+            "id": "legendary-divine-weapon-15",
+            "name": "Legendary Divine Weapon - 15",
+            "img": "/images/tundra-album/divine-weapons/legendary-divine-weapon-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "tundra-trade-route",
+        "name": "Tundra Trade Route",
+        "img": "/images/tundra-album/divine-weapons/tundra-trade-route.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "tundra-trade-route-1",
+            "name": "Tundra Trade Route - 1",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-1.png",
+            "stars": 1
+          },
+          {
+            "id": "tundra-trade-route-2",
+            "name": "Tundra Trade Route - 2",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-2.png",
+            "stars": 1
+          },
+          {
+            "id": "tundra-trade-route-3",
+            "name": "Tundra Trade Route - 3",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-3.png",
+            "stars": 1
+          },
+          {
+            "id": "tundra-trade-route-4",
+            "name": "Tundra Trade Route - 4",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-4.png",
+            "stars": 2
+          },
+          {
+            "id": "tundra-trade-route-5",
+            "name": "Tundra Trade Route - 5",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-5.png",
+            "stars": 2
+          },
+          {
+            "id": "tundra-trade-route-6",
+            "name": "Tundra Trade Route - 6",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-6.png",
+            "stars": 2
+          },
+          {
+            "id": "tundra-trade-route-7",
+            "name": "Tundra Trade Route - 7",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-7.png",
+            "stars": 2
+          },
+          {
+            "id": "tundra-trade-route-8",
+            "name": "Tundra Trade Route - 8",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-8.png",
+            "stars": 2
+          },
+          {
+            "id": "tundra-trade-route-9",
+            "name": "Tundra Trade Route - 9",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-9.png",
+            "stars": 3
+          },
+          {
+            "id": "tundra-trade-route-10",
+            "name": "Tundra Trade Route - 10",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-10.png",
+            "stars": 3
+          },
+          {
+            "id": "tundra-trade-route-11",
+            "name": "Tundra Trade Route - 11",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-11.png",
+            "stars": 3
+          },
+          {
+            "id": "tundra-trade-route-12",
+            "name": "Tundra Trade Route - 12",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-12.png",
+            "stars": 3
+          },
+          {
+            "id": "tundra-trade-route-13",
+            "name": "Tundra Trade Route - 13",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-13.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-trade-route-14",
+            "name": "Tundra Trade Route - 14",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-14.png",
+            "stars": 4
+          },
+          {
+            "id": "tundra-trade-route-15",
+            "name": "Tundra Trade Route - 15",
+            "img": "/images/tundra-album/divine-weapons/tundra-trade-route-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "merchant-escort",
+        "name": "Merchant Escort",
+        "img": "/images/tundra-album/divine-weapons/merchant-escort.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 4
+        },
+        "pieces": [
+          {
+            "id": "merchant-escort-1",
+            "name": "Merchant Escort - 1",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-1.png",
+            "stars": 1
+          },
+          {
+            "id": "merchant-escort-2",
+            "name": "Merchant Escort - 2",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-2.png",
+            "stars": 1
+          },
+          {
+            "id": "merchant-escort-3",
+            "name": "Merchant Escort - 3",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-3.png",
+            "stars": 1
+          },
+          {
+            "id": "merchant-escort-4",
+            "name": "Merchant Escort - 4",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-4.png",
+            "stars": 2
+          },
+          {
+            "id": "merchant-escort-5",
+            "name": "Merchant Escort - 5",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-5.png",
+            "stars": 2
+          },
+          {
+            "id": "merchant-escort-6",
+            "name": "Merchant Escort - 6",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-6.png",
+            "stars": 2
+          },
+          {
+            "id": "merchant-escort-7",
+            "name": "Merchant Escort - 7",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-7.png",
+            "stars": 2
+          },
+          {
+            "id": "merchant-escort-8",
+            "name": "Merchant Escort - 8",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-8.png",
+            "stars": 3
+          },
+          {
+            "id": "merchant-escort-9",
+            "name": "Merchant Escort - 9",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-9.png",
+            "stars": 3
+          },
+          {
+            "id": "merchant-escort-10",
+            "name": "Merchant Escort - 10",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-10.png",
+            "stars": 3
+          },
+          {
+            "id": "merchant-escort-11",
+            "name": "Merchant Escort - 11",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-11.png",
+            "stars": 3
+          },
+          {
+            "id": "merchant-escort-12",
+            "name": "Merchant Escort - 12",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-12.png",
+            "stars": 4
+          },
+          {
+            "id": "merchant-escort-13",
+            "name": "Merchant Escort - 13",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-13.png",
+            "stars": 4
+          },
+          {
+            "id": "merchant-escort-14",
+            "name": "Merchant Escort - 14",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-14.png",
+            "stars": 5
+          },
+          {
+            "id": "merchant-escort-15",
+            "name": "Merchant Escort - 15",
+            "img": "/images/tundra-album/divine-weapons/merchant-escort-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "cryptid-invasion",
+        "name": "Cryptid Invasion",
+        "img": "/images/tundra-album/divine-weapons/cryptid-invasion.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "cryptid-invasion-1",
+            "name": "Cryptid Invasion - 1",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-1.png",
+            "stars": 1
+          },
+          {
+            "id": "cryptid-invasion-2",
+            "name": "Cryptid Invasion - 2",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-2.png",
+            "stars": 1
+          },
+          {
+            "id": "cryptid-invasion-3",
+            "name": "Cryptid Invasion - 3",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-3.png",
+            "stars": 1
+          },
+          {
+            "id": "cryptid-invasion-4",
+            "name": "Cryptid Invasion - 4",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-4.png",
+            "stars": 2
+          },
+          {
+            "id": "cryptid-invasion-5",
+            "name": "Cryptid Invasion - 5",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-5.png",
+            "stars": 2
+          },
+          {
+            "id": "cryptid-invasion-6",
+            "name": "Cryptid Invasion - 6",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-6.png",
+            "stars": 2
+          },
+          {
+            "id": "cryptid-invasion-7",
+            "name": "Cryptid Invasion - 7",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-7.png",
+            "stars": 3
+          },
+          {
+            "id": "cryptid-invasion-8",
+            "name": "Cryptid Invasion - 8",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-8.png",
+            "stars": 3
+          },
+          {
+            "id": "cryptid-invasion-9",
+            "name": "Cryptid Invasion - 9",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-9.png",
+            "stars": 3
+          },
+          {
+            "id": "cryptid-invasion-10",
+            "name": "Cryptid Invasion - 10",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-10.png",
+            "stars": 4
+          },
+          {
+            "id": "cryptid-invasion-11",
+            "name": "Cryptid Invasion - 11",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-11.png",
+            "stars": 4
+          },
+          {
+            "id": "cryptid-invasion-12",
+            "name": "Cryptid Invasion - 12",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-12.png",
+            "stars": 4
+          },
+          {
+            "id": "cryptid-invasion-13",
+            "name": "Cryptid Invasion - 13",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-13.png",
+            "stars": 5
+          },
+          {
+            "id": "cryptid-invasion-14",
+            "name": "Cryptid Invasion - 14",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-14.png",
+            "stars": 5
+          },
+          {
+            "id": "cryptid-invasion-15",
+            "name": "Cryptid Invasion - 15",
+            "img": "/images/tundra-album/divine-weapons/cryptid-invasion-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "steam-rhapsody",
+        "name": "Steam Rhapsody",
+        "img": "/images/tundra-album/divine-weapons/steam-rhapsody.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        "pieces": [
+          {
+            "id": "steam-rhapsody-1",
+            "name": "Steam Rhapsody - 1",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-1.png",
+            "stars": 1
+          },
+          {
+            "id": "steam-rhapsody-2",
+            "name": "Steam Rhapsody - 2",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-2.png",
+            "stars": 1
+          },
+          {
+            "id": "steam-rhapsody-3",
+            "name": "Steam Rhapsody - 3",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-3.png",
+            "stars": 2
+          },
+          {
+            "id": "steam-rhapsody-4",
+            "name": "Steam Rhapsody - 4",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-4.png",
+            "stars": 2
+          },
+          {
+            "id": "steam-rhapsody-5",
+            "name": "Steam Rhapsody - 5",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-5.png",
+            "stars": 2
+          },
+          {
+            "id": "steam-rhapsody-6",
+            "name": "Steam Rhapsody - 6",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-6.png",
+            "stars": 2
+          },
+          {
+            "id": "steam-rhapsody-7",
+            "name": "Steam Rhapsody - 7",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-7.png",
+            "stars": 3
+          },
+          {
+            "id": "steam-rhapsody-8",
+            "name": "Steam Rhapsody - 8",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-8.png",
+            "stars": 3
+          },
+          {
+            "id": "steam-rhapsody-9",
+            "name": "Steam Rhapsody - 9",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-9.png",
+            "stars": 3
+          },
+          {
+            "id": "steam-rhapsody-10",
+            "name": "Steam Rhapsody - 10",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-10.png",
+            "stars": 3
+          },
+          {
+            "id": "steam-rhapsody-11",
+            "name": "Steam Rhapsody - 11",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-11.png",
+            "stars": 4
+          },
+          {
+            "id": "steam-rhapsody-12",
+            "name": "Steam Rhapsody - 12",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-12.png",
+            "stars": 4
+          },
+          {
+            "id": "steam-rhapsody-13",
+            "name": "Steam Rhapsody - 13",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-13.png",
+            "stars": 4
+          },
+          {
+            "id": "steam-rhapsody-14",
+            "name": "Steam Rhapsody - 14",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-14.png",
+            "stars": 4
+          },
+          {
+            "id": "steam-rhapsody-15",
+            "name": "Steam Rhapsody - 15",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-15.png",
+            "stars": 5
+          },
+          {
+            "id": "steam-rhapsody-16",
+            "name": "Steam Rhapsody - 16",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-16.png",
+            "stars": 5
+          },
+          {
+            "id": "steam-rhapsody-17",
+            "name": "Steam Rhapsody - 17",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-17.png",
+            "stars": 5
+          },
+          {
+            "id": "steam-rhapsody-18",
+            "name": "Steam Rhapsody - 18",
+            "img": "/images/tundra-album/divine-weapons/steam-rhapsody-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "ice-journey",
+        "name": "Ice Journey",
+        "img": "/images/tundra-album/divine-weapons/ice-journey.png",
+        "reward": {
+          "itemId": "random-chief-charm-material-chest",
+          "amount": 4
+        },
+        "pieces": [
+          {
+            "id": "ice-journey-1",
+            "name": "Ice Journey - 1",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-1.png",
+            "stars": 1
+          },
+          {
+            "id": "ice-journey-2",
+            "name": "Ice Journey - 2",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-2.png",
+            "stars": 1
+          },
+          {
+            "id": "ice-journey-3",
+            "name": "Ice Journey - 3",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-3.png",
+            "stars": 2
+          },
+          {
+            "id": "ice-journey-4",
+            "name": "Ice Journey - 4",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-4.png",
+            "stars": 2
+          },
+          {
+            "id": "ice-journey-5",
+            "name": "Ice Journey - 5",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-5.png",
+            "stars": 2
+          },
+          {
+            "id": "ice-journey-6",
+            "name": "Ice Journey - 6",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-6.png",
+            "stars": 3
+          },
+          {
+            "id": "ice-journey-7",
+            "name": "Ice Journey - 7",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-7.png",
+            "stars": 3
+          },
+          {
+            "id": "ice-journey-8",
+            "name": "Ice Journey - 8",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-8.png",
+            "stars": 3
+          },
+          {
+            "id": "ice-journey-9",
+            "name": "Ice Journey - 9",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-9.png",
+            "stars": 4
+          },
+          {
+            "id": "ice-journey-10",
+            "name": "Ice Journey - 10",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-10.png",
+            "stars": 4
+          },
+          {
+            "id": "ice-journey-11",
+            "name": "Ice Journey - 11",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-11.png",
+            "stars": 4
+          },
+          {
+            "id": "ice-journey-12",
+            "name": "Ice Journey - 12",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-12.png",
+            "stars": 4
+          },
+          {
+            "id": "ice-journey-13",
+            "name": "Ice Journey - 13",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-13.png",
+            "stars": 4
+          },
+          {
+            "id": "ice-journey-14",
+            "name": "Ice Journey - 14",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-14.png",
+            "stars": 5
+          },
+          {
+            "id": "ice-journey-15",
+            "name": "Ice Journey - 15",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-15.png",
+            "stars": 5
+          },
+          {
+            "id": "ice-journey-16",
+            "name": "Ice Journey - 16",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-16.png",
+            "stars": 5
+          },
+          {
+            "id": "ice-journey-17",
+            "name": "Ice Journey - 17",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-17.png",
+            "stars": 5
+          },
+          {
+            "id": "ice-journey-18",
+            "name": "Ice Journey - 18",
+            "img": "/images/tundra-album/divine-weapons/ice-journey-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "essence-stones",
+        "name": "Essence Stones",
+        "img": "/images/tundra-album/divine-weapons/essence-stones.png",
+        "reward": {
+          "itemId": "charm-design",
+          "amount": 15
+        },
+        "pieces": [
+          {
+            "id": "essence-stones-1",
+            "name": "Essence Stones - 1",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-1.png",
+            "stars": 2
+          },
+          {
+            "id": "essence-stones-2",
+            "name": "Essence Stones - 2",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-2.png",
+            "stars": 2
+          },
+          {
+            "id": "essence-stones-3",
+            "name": "Essence Stones - 3",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-3.png",
+            "stars": 3
+          },
+          {
+            "id": "essence-stones-4",
+            "name": "Essence Stones - 4",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-4.png",
+            "stars": 3
+          },
+          {
+            "id": "essence-stones-5",
+            "name": "Essence Stones - 5",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-5.png",
+            "stars": 4
+          },
+          {
+            "id": "essence-stones-6",
+            "name": "Essence Stones - 6",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-6.png",
+            "stars": 4
+          },
+          {
+            "id": "essence-stones-7",
+            "name": "Essence Stones - 7",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-7.png",
+            "stars": 4
+          },
+          {
+            "id": "essence-stones-8",
+            "name": "Essence Stones - 8",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-8.png",
+            "stars": 4
+          },
+          {
+            "id": "essence-stones-9",
+            "name": "Essence Stones - 9",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-9.png",
+            "stars": 4
+          },
+          {
+            "id": "essence-stones-10",
+            "name": "Essence Stones - 10",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-10.png",
+            "stars": 4
+          },
+          {
+            "id": "essence-stones-11",
+            "name": "Essence Stones - 11",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-11.png",
+            "stars": 4
+          },
+          {
+            "id": "essence-stones-12",
+            "name": "Essence Stones - 12",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-12.png",
+            "stars": 5
+          },
+          {
+            "id": "essence-stones-13",
+            "name": "Essence Stones - 13",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-13.png",
+            "stars": 5
+          },
+          {
+            "id": "essence-stones-14",
+            "name": "Essence Stones - 14",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-14.png",
+            "stars": 5
+          },
+          {
+            "id": "essence-stones-15",
+            "name": "Essence Stones - 15",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-15.png",
+            "stars": 5
+          },
+          {
+            "id": "essence-stones-16",
+            "name": "Essence Stones - 16",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-16.png",
+            "stars": 5
+          },
+          {
+            "id": "essence-stones-17",
+            "name": "Essence Stones - 17",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-17.png",
+            "stars": 5
+          },
+          {
+            "id": "essence-stones-18",
+            "name": "Essence Stones - 18",
+            "img": "/images/tundra-album/divine-weapons/essence-stones-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "exotic-charm",
+        "name": "Exotic Charm",
+        "img": "/images/tundra-album/divine-weapons/exotic-charm.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 15
+        },
+        "pieces": [
+          {
+            "id": "exotic-charm-1",
+            "name": "Exotic Charm - 1",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-1.png",
+            "stars": 2
+          },
+          {
+            "id": "exotic-charm-2",
+            "name": "Exotic Charm - 2",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-2.png",
+            "stars": 2
+          },
+          {
+            "id": "exotic-charm-3",
+            "name": "Exotic Charm - 3",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-3.png",
+            "stars": 3
+          },
+          {
+            "id": "exotic-charm-4",
+            "name": "Exotic Charm - 4",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-4.png",
+            "stars": 3
+          },
+          {
+            "id": "exotic-charm-5",
+            "name": "Exotic Charm - 5",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-5.png",
+            "stars": 4
+          },
+          {
+            "id": "exotic-charm-6",
+            "name": "Exotic Charm - 6",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-6.png",
+            "stars": 4
+          },
+          {
+            "id": "exotic-charm-7",
+            "name": "Exotic Charm - 7",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-7.png",
+            "stars": 4
+          },
+          {
+            "id": "exotic-charm-8",
+            "name": "Exotic Charm - 8",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-8.png",
+            "stars": 4
+          },
+          {
+            "id": "exotic-charm-9",
+            "name": "Exotic Charm - 9",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-9.png",
+            "stars": 4
+          },
+          {
+            "id": "exotic-charm-10",
+            "name": "Exotic Charm - 10",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-10.png",
+            "stars": 4
+          },
+          {
+            "id": "exotic-charm-11",
+            "name": "Exotic Charm - 11",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-11.png",
+            "stars": 4
+          },
+          {
+            "id": "exotic-charm-12",
+            "name": "Exotic Charm - 12",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-12.png",
+            "stars": 5
+          },
+          {
+            "id": "exotic-charm-13",
+            "name": "Exotic Charm - 13",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-13.png",
+            "stars": 5
+          },
+          {
+            "id": "exotic-charm-14",
+            "name": "Exotic Charm - 14",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-14.png",
+            "stars": 5
+          },
+          {
+            "id": "exotic-charm-15",
+            "name": "Exotic Charm - 15",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-15.png",
+            "stars": 5
+          },
+          {
+            "id": "exotic-charm-16",
+            "name": "Exotic Charm - 16",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-16.png",
+            "stars": 5
+          },
+          {
+            "id": "exotic-charm-17",
+            "name": "Exotic Charm - 17",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-17.png",
+            "stars": 5
+          },
+          {
+            "id": "exotic-charm-18",
+            "name": "Exotic Charm - 18",
+            "img": "/images/tundra-album/divine-weapons/exotic-charm-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]
