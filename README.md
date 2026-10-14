@@ -132,7 +132,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | ---------------------- | ------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------- |
 | `events()`             | 65      | Game events with scoring, rewards, and tips                                               | [README](src/modules/events/README.md)              |
 | `eventBuff()`          | 14      | Buff sources that apply in each game mode                                                 | [README](src/modules/event-buff/README.md)          |
-| `items()`              | 328     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
+| `items()`              | 331     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
 | `skins()`              | 215     | Cosmetic skins                                                                            | [README](src/modules/skins/README.md)               |
 | `serverTimeline()`     | 33      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`           | [README](src/modules/server-timeline/README.md)     |
 | `chiefOrders()`        | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                    | [README](src/modules/chief-orders/README.md)        |
@@ -200,7 +200,8 @@ This is what the data does not hold yet. Each module README gives the detail.
   [Heroes](src/modules/heroes/README.md).
 - **Experts.** Justus is announced and not released, so he has a name, an icon, and an unlock
   requirement only. See [Experts](src/modules/experts/README.md).
-- **Items.** 42 items have no icon: the 42 Furniture items. See
+- **Items.** 28 items have no icon: the shared Blueprint and the furniture of the six entertainment
+  buildings other than the Farm, the Climbing Gym, and the Yoga Studio. See
   [Items](src/modules/items/README.md).
 - **Skins.** The 24 newest skins have no `img`. See [Skins](src/modules/skins/README.md).
 - **Buildings.** The nine entertainment buildings have no `img`. See

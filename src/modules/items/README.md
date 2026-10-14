@@ -1,6 +1,6 @@
 # Items
 
-The 328 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 331 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -54,7 +54,7 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | Pet            | 6     |
 | Fire Crystal   | 4     |
 | Teleporter     | 4     |
-| Furniture      | 42    |
+| Furniture      | 45    |
 
 `id` is a unique slug, not a slug made from the name alone. Several names repeat across categories.
 The Skins module has the same rule.
@@ -94,13 +94,21 @@ The other chests describe rewards in prose only and get no `rewardRates`.
 
 ### Furniture
 
-The 42 furniture items are the pieces that the nine entertainment buildings need, plus the Blueprint
-that each of them needs. They come from the in-game data of the package owner. The owner states that
+The 45 furniture items are the pieces that the nine entertainment buildings need, plus a Blueprint
+for each building. They come from the in-game data of the package owner. The owner states that
 furniture is bought with Wish Sigils in the Wish Shop, so `sources` is `Wish Shop` for all of them.
-The Wish Sigil is its own item, `wish-sigil`. No icon exists, so `img` is an empty string. A piece
-that several buildings use is one item: the Blueprint (`furniture-blueprint`), the Counter, and the
-Table & Chair Set. Its price can differ by building, so the `pricePerItem` stays on the cost of the
-building and not on the item.
+The Wish Sigil is its own item, `wish-sigil`. The Farm, the Climbing Gym, and the Yoga Studio each
+have their own Blueprint item (`farm-blueprint`, `climbing-gym-blueprint`, and
+`yoga-studio-blueprint`), because the game shows a different picture for each building. The other
+six buildings still share one Blueprint, `furniture-blueprint`. A Blueprint is named `Blueprint`, as
+in the costs of the buildings.
+
+The 17 items of the Farm, the Climbing Gym, and the Yoga Studio have an icon in
+`images/items/furniture/`. The icons are cropped from the Wish Shop screens with their frame, as the
+game shows them, including the amount. The other 28 items have none yet, so their `img` is an empty
+string. A piece that several buildings use is one item: the Counter and the Table & Chair Set. Its
+price can differ by building, so the `pricePerItem` stays on the cost of the building and not on the
+item.
 
 ### Wish Sigil
 

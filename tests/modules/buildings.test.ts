@@ -536,10 +536,35 @@ describe('building cost item ids', () => {
     }
   });
 
+  it('gives the Farm, the Climbing Gym, and the Yoga Studio a Blueprint item of their own', () => {
+    for (const [building, itemId] of [
+      ['farm', 'farm-blueprint'],
+      ['climbing-gym', 'climbing-gym-blueprint'],
+      ['yoga-studio', 'yoga-studio-blueprint'],
+    ]) {
+      const blueprint = buildings()
+        .find(building)!
+        .levels[0].cost!.find((c) => c.name === 'Blueprint')!;
+      expect(blueprint.itemId).toBe(itemId);
+    }
+    for (const building of buildings().get()) {
+      if (['farm', 'climbing-gym', 'yoga-studio'].includes(building.id)) continue;
+      const blueprint = building.levels[0].cost?.find((c) => c.name === 'Blueprint');
+      if (blueprint) expect(blueprint.itemId).toBe('furniture-blueprint');
+    }
+  });
+
   it('uses one furniture item for the pieces that several buildings share', () => {
     const idsOf = (name: string) =>
       new Set(costs.filter((c) => c.name === name).map((c) => c.itemId));
-    expect(idsOf('Blueprint')).toEqual(new Set(['furniture-blueprint']));
+    expect(idsOf('Blueprint')).toEqual(
+      new Set([
+        'furniture-blueprint',
+        'farm-blueprint',
+        'climbing-gym-blueprint',
+        'yoga-studio-blueprint',
+      ]),
+    );
     expect(idsOf('Counter')).toEqual(new Set(['counter']));
     expect(idsOf('Table & Chair Set')).toEqual(new Set(['table-and-chair-set']));
   });

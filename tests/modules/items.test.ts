@@ -24,8 +24,8 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 328 items across 12 categories', () => {
-    expect(items().count()).toBe(328);
+  it('tracks 331 items across 12 categories', () => {
+    expect(items().count()).toBe(331);
     expect(items().byCategory('Hero Items').count()).toBe(23);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
@@ -37,7 +37,7 @@ describe('Item catalog', () => {
     expect(items().byCategory('Others').count()).toBe(48);
     expect(items().byCategory('Event').count()).toBe(58);
     expect(items().byCategory('Speedups').count()).toBe(25);
-    expect(items().byCategory('Furniture').count()).toBe(42);
+    expect(items().byCategory('Furniture').count()).toBe(45);
   });
 
   it('has the Wish Sigil, the currency of the Wish Shop, with an icon file', () => {
@@ -51,11 +51,77 @@ describe('Item catalog', () => {
     expect(existsSync(join(__dirname, '../..', sigil.img))).toBe(true);
   });
 
-  it('buys every furniture item in the Wish Shop and has no icon for it', () => {
+  it('buys every furniture item in the Wish Shop', () => {
     for (const item of items().byCategory('Furniture').get()) {
       expect(item.sources).toEqual(['Wish Shop']);
-      expect(item.img).toBe('');
     }
+  });
+
+  it('has an icon file for the furniture and the Blueprint of the Farm, the Climbing Gym, and the Yoga Studio only', () => {
+    const withIcon = [
+      'farm-blueprint',
+      'climbing-gym-blueprint',
+      'yoga-studio-blueprint',
+      'fertile-soil',
+      'seed-pack',
+      'fertigation-unit',
+      'underfloor-heating',
+      'storage-box',
+      'indoor-training-wall',
+      'protective-mat',
+      'outdoor-climbing-wall',
+      'indoor-climbing-wall',
+      'rope-and-belay-set',
+      'yoga-mat',
+      'yoga-wall-rope',
+      'yoga-equipment',
+      'meditation-equipment',
+    ];
+    const furniture = items().byCategory('Furniture').get();
+    expect(furniture.filter((i) => i.img !== '').map((i) => i.id)).toEqual(
+      furniture.filter((i) => withIcon.includes(i.id)).map((i) => i.id),
+    );
+    for (const id of withIcon) {
+      const item = items().find(id)!;
+      expect(item.img).toBe(`/images/items/furniture/${id}.png`);
+      expect(existsSync(join(__dirname, '../..', item.img))).toBe(true);
+    }
+    expect(furniture.filter((i) => i.img === '')).toHaveLength(28);
+  });
+
+  it('resolves items tagged under both Chest and another tab to Chest', () => {
+    const arenaStarChest = items().find('arena-star-chest')!;
+    const seekersChest = items().find('seekers-chest')!;
+    expect(arenaStarChest.category).toBe('Chest');
+    expect(seekersChest.category).toBe('Chest');
+  });
+
+  it('has a parsed rewardRates loot table on some chests but not others', () => {
+    const splendidLabyrinthTreasure = items().find('splendid-labyrinth-treasure')!;
+    expect(splendidLabyrinthTreasure.rewardRates).toHaveLength(5);
+    expect(
+      splendidLabyrinthTreasure.rewardRates!.reduce((sum, r) => sum + r.probabilityPercent, 0),
+    ).toBeCloseTo(100, 1);
+
+    const frostseaHeroChest = items().find('frostsea-hero-chest')!;
+    expect(frostseaHeroChest.rewardRates).toBeUndefined();
+  });
+
+  it('carries forward the rowspan-grouped item name for table-shaped reward rates', () => {
+    const chefGearVarietyChest = items().find('chief-gear-variety-chest')!;
+    expect(chefGearVarietyChest.rewardRates).toHaveLength(12);
+    expect(new Set(chefGearVarietyChest.rewardRates!.map((r) => r.reward)).size).toBe(3);
+  });
+
+  it('has an empty sources array rather than a missing field when no sources are listed', () => {
+    const wood = items().find('wood')!;
+    expect(wood.sources).toEqual([]);
+  });
+
+  it('parses the French-spelled Resource Chest slug correctly', () => {
+    const resourceChest = items().find('ressource-chest')!;
+    expect(resourceChest.name).toBe('Resource Chest');
+    expect(resourceChest.description).toBeDefined();
   });
 
   it('has an icon file for every Speedups item', () => {
@@ -212,12 +278,12 @@ describe('items of the activity bar of the Daily Missions', () => {
     }
   });
 
-  it('has 42 items without an icon in all', () => {
+  it('has 28 items without an icon in all', () => {
     expect(
       items()
         .get()
         .filter((i) => i.img === ''),
-    ).toHaveLength(42);
+    ).toHaveLength(28);
   });
 });
 

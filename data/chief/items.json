@@ -3033,7 +3033,7 @@
     "name": "Blueprint",
     "img": "",
     "category": "Furniture",
-    "description": "Needed by each of the nine entertainment buildings. Bought with Wish Sigils.",
+    "description": "The Blueprint of an entertainment building. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
   },
   {
@@ -3253,9 +3253,17 @@
     "sources": ["Wish Shop"]
   },
   {
+    "id": "farm-blueprint",
+    "name": "Blueprint",
+    "img": "/images/items/furniture/farm-blueprint.png",
+    "category": "Furniture",
+    "description": "The Blueprint of the Farm. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
     "id": "fertile-soil",
     "name": "Fertile Soil",
-    "img": "",
+    "img": "/images/items/furniture/fertile-soil.png",
     "category": "Furniture",
     "description": "A furniture piece for Farm. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3263,7 +3271,7 @@
   {
     "id": "seed-pack",
     "name": "Seed Pack",
-    "img": "",
+    "img": "/images/items/furniture/seed-pack.png",
     "category": "Furniture",
     "description": "A furniture piece for Farm. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3271,7 +3279,7 @@
   {
     "id": "fertigation-unit",
     "name": "Fertigation Unit",
-    "img": "",
+    "img": "/images/items/furniture/fertigation-unit.png",
     "category": "Furniture",
     "description": "A furniture piece for Farm. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3279,7 +3287,7 @@
   {
     "id": "underfloor-heating",
     "name": "Underfloor Heating",
-    "img": "",
+    "img": "/images/items/furniture/underfloor-heating.png",
     "category": "Furniture",
     "description": "A furniture piece for Farm. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3287,15 +3295,23 @@
   {
     "id": "storage-box",
     "name": "Storage Box",
-    "img": "",
+    "img": "/images/items/furniture/storage-box.png",
     "category": "Furniture",
     "description": "A furniture piece for Farm. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
   },
   {
+    "id": "yoga-studio-blueprint",
+    "name": "Blueprint",
+    "img": "/images/items/furniture/yoga-studio-blueprint.png",
+    "category": "Furniture",
+    "description": "The Blueprint of the Yoga Studio. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
     "id": "yoga-mat",
     "name": "Yoga Mat",
-    "img": "",
+    "img": "/images/items/furniture/yoga-mat.png",
     "category": "Furniture",
     "description": "A furniture piece for Yoga Studio. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3303,7 +3319,7 @@
   {
     "id": "yoga-wall-rope",
     "name": "Yoga Wall Rope",
-    "img": "",
+    "img": "/images/items/furniture/yoga-wall-rope.png",
     "category": "Furniture",
     "description": "A furniture piece for Yoga Studio. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3311,7 +3327,7 @@
   {
     "id": "yoga-equipment",
     "name": "Yoga Equipment",
-    "img": "",
+    "img": "/images/items/furniture/yoga-equipment.png",
     "category": "Furniture",
     "description": "A furniture piece for Yoga Studio. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3319,15 +3335,23 @@
   {
     "id": "meditation-equipment",
     "name": "Meditation Equipment",
-    "img": "",
+    "img": "/images/items/furniture/meditation-equipment.png",
     "category": "Furniture",
     "description": "A furniture piece for Yoga Studio. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
   },
   {
+    "id": "climbing-gym-blueprint",
+    "name": "Blueprint",
+    "img": "/images/items/furniture/climbing-gym-blueprint.png",
+    "category": "Furniture",
+    "description": "The Blueprint of the Climbing Gym. Bought with Wish Sigils.",
+    "sources": ["Wish Shop"]
+  },
+  {
     "id": "indoor-training-wall",
     "name": "Indoor Training Wall",
-    "img": "",
+    "img": "/images/items/furniture/indoor-training-wall.png",
     "category": "Furniture",
     "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3335,7 +3359,7 @@
   {
     "id": "protective-mat",
     "name": "Protective Mat",
-    "img": "",
+    "img": "/images/items/furniture/protective-mat.png",
     "category": "Furniture",
     "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3343,7 +3367,7 @@
   {
     "id": "outdoor-climbing-wall",
     "name": "Outdoor Climbing Wall",
-    "img": "",
+    "img": "/images/items/furniture/outdoor-climbing-wall.png",
     "category": "Furniture",
     "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3351,7 +3375,7 @@
   {
     "id": "indoor-climbing-wall",
     "name": "Indoor Climbing Wall",
-    "img": "",
+    "img": "/images/items/furniture/indoor-climbing-wall.png",
     "category": "Furniture",
     "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
@@ -3359,7 +3383,7 @@
   {
     "id": "rope-and-belay-set",
     "name": "Rope & Belay Set",
-    "img": "",
+    "img": "/images/items/furniture/rope-and-belay-set.png",
     "category": "Furniture",
     "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
