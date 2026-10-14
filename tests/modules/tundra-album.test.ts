@@ -389,6 +389,112 @@ describe('Explore the World', () => {
   });
 });
 
+describe('Song of Heroes', () => {
+  const album = tundraAlbum().find('song-of-heroes')!;
+  const exists = (img: string) => existsSync(join(__dirname, '../..', img));
+
+  it('has the buff and the completion rewards of the album', () => {
+    expect(album.name).toBe('Song of Heroes');
+    expect(album.buff).toEqual({
+      stat: 'Resource Gathering Speed',
+      statKey: 'resource-gathering-speed',
+      value: '+5%',
+      amount: 5,
+      unit: 'percent',
+    });
+    expect(album.completionRewards).toEqual([
+      { itemId: 'mythic-general-hero-shard', amount: 40 },
+      { itemId: 'lucky-hero-gear-chest', amount: 50 },
+    ]);
+  });
+
+  it('gives the same buff as the Tundra Album event lists for it', () => {
+    const reward = events()
+      .find('tundra-album-2')!
+      .rewards!.find((r) => r.name === 'Song of Heroes buff')!;
+    expect(reward.note).toBe('+5% resource gathering speed');
+  });
+
+  it('has the 9 puzzles of the album in the order of the game', () => {
+    expect(album.puzzles).toHaveLength(TUNDRA_ALBUM_PUZZLES_PER_ALBUM);
+    expect(album.puzzles.map((p) => p.name)).toEqual([
+      'Dauntless Heroes',
+      'Snow Angel',
+      'Everyday Champions',
+      "Arcadia's Legacy",
+      '"I Am the Fire."',
+      'Artisan Architect',
+      'Life Vs Death',
+      'The Icebreakers',
+      'Epic of a New World',
+    ]);
+  });
+
+  it.each([
+    ['dauntless-heroes', [5, 3, 1, 0, 0]],
+    ['snow-angel', [4, 3, 2, 0, 0]],
+    ['everyday-champions', [4, 4, 3, 1, 0]],
+    ['arcadias-legacy', [3, 3, 4, 2, 0]],
+    ['i-am-the-fire', [3, 3, 3, 3, 0]],
+    ['artisan-architect', [3, 5, 4, 2, 1]],
+    ['life-vs-death', [3, 4, 4, 2, 2]],
+    ['the-icebreakers', [3, 3, 3, 3, 3]],
+    ['epic-of-a-new-world', [2, 4, 4, 4, 4]],
+  ])('has the pieces of %s at each star level: %j', (id, counts) => {
+    const puzzle = album.puzzles.find((p) => p.id === id)!;
+    expect(Object.values(tundraPuzzlePieceCounts(puzzle))).toEqual(counts);
+    expect(puzzle.pieces).toHaveLength(counts.reduce((a, b) => a + b, 0));
+  });
+
+  it('has 117 pieces, named and numbered by puzzle, in order of stars', () => {
+    const all = album.puzzles.flatMap((p) => p.pieces);
+    expect(all).toHaveLength(117);
+    expect(new Set(all.map((p) => p.id)).size).toBe(117);
+    for (const puzzle of album.puzzles) {
+      puzzle.pieces.forEach((piece, i) => {
+        expect(piece.id).toBe(`${puzzle.id}-${i + 1}`);
+        expect(piece.name).toBe(`${puzzle.name} - ${i + 1}`);
+      });
+      const stars = puzzle.pieces.map((p) => p.stars);
+      expect(stars).toEqual([...stars].sort((a, b) => a - b));
+    }
+    const totals = [1, 2, 3, 4, 5].map((s) => all.filter((p) => p.stars === s).length);
+    expect(totals).toEqual([30, 32, 28, 17, 10]);
+  });
+
+  it('gives each puzzle its reward, linked to an item of items()', () => {
+    expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
+      ['dauntless-heroes', 'enhancement-xp-component', 45],
+      ['snow-angel', 'coal', 2500],
+      ['everyday-champions', 'polishing-solution', 30],
+      ['arcadias-legacy', 'enhancement-xp-component', 7],
+      ['i-am-the-fire', 'speedup-general-3h', 3],
+      ['artisan-architect', 'chief-gear-materials-chest', 3],
+      ['life-vs-death', 'lucky-hero-gear-chest', 4],
+      ['the-icebreakers', 'design-plans', 10],
+      ['epic-of-a-new-world', 'lucky-hero-gear-chest', 6],
+    ]);
+    const rewards = [...album.completionRewards, ...album.puzzles.map((p) => p.reward)];
+    for (const reward of rewards) expect(items().find(reward.itemId!)).toBeDefined();
+  });
+
+  it('has an image file for every puzzle and piece, named after its id, and none unused', () => {
+    const images = album.puzzles.flatMap((p) => [p.img, ...p.pieces.map((piece) => piece.img)]);
+    expect(images).toHaveLength(9 + 117);
+    for (const puzzle of album.puzzles) {
+      expect(puzzle.img).toBe(`/images/tundra-album/${album.id}/${puzzle.id}.png`);
+      for (const piece of puzzle.pieces) {
+        expect(piece.img).toBe(`/images/tundra-album/${album.id}/${piece.id}.png`);
+      }
+    }
+    for (const img of images) expect(exists(img!)).toBe(true);
+    const folder = join(__dirname, '../../images/tundra-album', album.id);
+    const files = readdirSync(folder).map((f) => `/images/tundra-album/${album.id}/${f}`);
+    expect(files.filter((f) => !images.includes(f))).toEqual([]);
+    expect(files).toHaveLength(126);
+  });
+});
+
 describe('tundraPuzzlePieceCounts', () => {
   it('counts the pieces of a puzzle by stars', () => {
     const puzzle = tundraAlbum().find('crystalline-mysteries')!.puzzles[1];

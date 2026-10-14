@@ -4,8 +4,8 @@ The albums of the Tundra Album event. An album has 9 puzzles. A puzzle is built 
 5 stars, gives a reward when it is done, and the album gives a buff when all 9 puzzles are done. Use
 it to see what an album holds and what finishing it gives.
 
-The package holds three albums so far, Crystalline Mysteries, Daybreak Island, and Explore the
-World. More albums are added later.
+The package holds four albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, and
+Song of Heroes. More albums are added later.
 
 ## Usage
 
@@ -27,7 +27,7 @@ console.log(mining?.pieces[14].name); // 'Mining the Fire - 15'
 const reward = mining?.reward;
 console.log(reward?.amount, reward?.itemId && items().find(reward.itemId)?.name); // 3 'Essence Stones'
 
-console.log(tundraAlbum().count()); // 3
+console.log(tundraAlbum().count()); // 4
 ```
 
 ## Functions
@@ -119,9 +119,30 @@ Enhancement XP Component.
 The album has 126 pieces: 27 at 1 star, 32 at 2 stars, 30 at 3 stars, 22 at 4 stars, and 15 at 5
 stars.
 
+### Song of Heroes
+
+The buff is Resource Gathering Speed +5%. The completion rewards are 40 Mythic General Hero Shard
+and 50 Lucky Hero Gear Chest.
+
+| Puzzle              | Pieces | 1 star | 2 stars | 3 stars | 4 stars | 5 stars | Reward                       |
+| ------------------- | ------ | ------ | ------- | ------- | ------- | ------- | ---------------------------- |
+| Dauntless Heroes    | 9      | 5      | 3       | 1       | 0       | 0       | 45 Enhancement XP Component  |
+| Snow Angel          | 9      | 4      | 3       | 2       | 0       | 0       | 2,500 Coal                   |
+| Everyday Champions  | 12     | 4      | 4       | 3       | 1       | 0       | 30 Polishing Solution        |
+| Arcadia's Legacy    | 12     | 3      | 3       | 4       | 2       | 0       | 7 Enhancement XP Component   |
+| "I Am the Fire."    | 12     | 3      | 3       | 3       | 3       | 0       | 3 3h General Speedup         |
+| Artisan Architect   | 15     | 3      | 5       | 4       | 2       | 1       | 3 Chief Gear Materials Chest |
+| Life Vs Death       | 15     | 3      | 4       | 4       | 2       | 2       | 4 Lucky Hero Gear Chest      |
+| The Icebreakers     | 15     | 3      | 3       | 3       | 3       | 3       | 10 Design Plans              |
+| Epic of a New World | 18     | 2      | 4       | 4       | 4       | 4       | 6 Lucky Hero Gear Chest      |
+
+The album has 117 pieces: 30 at 1 star, 32 at 2 stars, 28 at 3 stars, 17 at 4 stars, and 10 at 5
+stars. The reward of Dauntless Heroes is 45 of the Enhancement XP Component, with the 10 on its
+icon.
+
 ## Notes
 
-The pieces, the star levels, and the reward amounts of the three albums are read from the album
+The pieces, the star levels, and the reward amounts of the four albums are read from the album
 screens of the game, and the images are cut from the same screens. The package owner names the items
 of the album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP
 Component), of Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero

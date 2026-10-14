@@ -2794,5 +2794,829 @@
         ]
       }
     ]
+  },
+  {
+    "id": "song-of-heroes",
+    "name": "Song of Heroes",
+    "buff": {
+      "stat": "Resource Gathering Speed",
+      "statKey": "resource-gathering-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "mythic-general-hero-shard",
+        "amount": 40
+      },
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 50
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "dauntless-heroes",
+        "name": "Dauntless Heroes",
+        "img": "/images/tundra-album/song-of-heroes/dauntless-heroes.png",
+        "reward": {
+          "itemId": "enhancement-xp-component",
+          "amount": 45
+        },
+        "pieces": [
+          {
+            "id": "dauntless-heroes-1",
+            "name": "Dauntless Heroes - 1",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-1.png",
+            "stars": 1
+          },
+          {
+            "id": "dauntless-heroes-2",
+            "name": "Dauntless Heroes - 2",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-2.png",
+            "stars": 1
+          },
+          {
+            "id": "dauntless-heroes-3",
+            "name": "Dauntless Heroes - 3",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-3.png",
+            "stars": 1
+          },
+          {
+            "id": "dauntless-heroes-4",
+            "name": "Dauntless Heroes - 4",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-4.png",
+            "stars": 1
+          },
+          {
+            "id": "dauntless-heroes-5",
+            "name": "Dauntless Heroes - 5",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-5.png",
+            "stars": 1
+          },
+          {
+            "id": "dauntless-heroes-6",
+            "name": "Dauntless Heroes - 6",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-6.png",
+            "stars": 2
+          },
+          {
+            "id": "dauntless-heroes-7",
+            "name": "Dauntless Heroes - 7",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-7.png",
+            "stars": 2
+          },
+          {
+            "id": "dauntless-heroes-8",
+            "name": "Dauntless Heroes - 8",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-8.png",
+            "stars": 2
+          },
+          {
+            "id": "dauntless-heroes-9",
+            "name": "Dauntless Heroes - 9",
+            "img": "/images/tundra-album/song-of-heroes/dauntless-heroes-9.png",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "id": "snow-angel",
+        "name": "Snow Angel",
+        "img": "/images/tundra-album/song-of-heroes/snow-angel.png",
+        "reward": {
+          "itemId": "coal",
+          "amount": 2500
+        },
+        "pieces": [
+          {
+            "id": "snow-angel-1",
+            "name": "Snow Angel - 1",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-1.png",
+            "stars": 1
+          },
+          {
+            "id": "snow-angel-2",
+            "name": "Snow Angel - 2",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-2.png",
+            "stars": 1
+          },
+          {
+            "id": "snow-angel-3",
+            "name": "Snow Angel - 3",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-3.png",
+            "stars": 1
+          },
+          {
+            "id": "snow-angel-4",
+            "name": "Snow Angel - 4",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-4.png",
+            "stars": 1
+          },
+          {
+            "id": "snow-angel-5",
+            "name": "Snow Angel - 5",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-5.png",
+            "stars": 2
+          },
+          {
+            "id": "snow-angel-6",
+            "name": "Snow Angel - 6",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-6.png",
+            "stars": 2
+          },
+          {
+            "id": "snow-angel-7",
+            "name": "Snow Angel - 7",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-7.png",
+            "stars": 2
+          },
+          {
+            "id": "snow-angel-8",
+            "name": "Snow Angel - 8",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-8.png",
+            "stars": 3
+          },
+          {
+            "id": "snow-angel-9",
+            "name": "Snow Angel - 9",
+            "img": "/images/tundra-album/song-of-heroes/snow-angel-9.png",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "id": "everyday-champions",
+        "name": "Everyday Champions",
+        "img": "/images/tundra-album/song-of-heroes/everyday-champions.png",
+        "reward": {
+          "itemId": "polishing-solution",
+          "amount": 30
+        },
+        "pieces": [
+          {
+            "id": "everyday-champions-1",
+            "name": "Everyday Champions - 1",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-1.png",
+            "stars": 1
+          },
+          {
+            "id": "everyday-champions-2",
+            "name": "Everyday Champions - 2",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-2.png",
+            "stars": 1
+          },
+          {
+            "id": "everyday-champions-3",
+            "name": "Everyday Champions - 3",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-3.png",
+            "stars": 1
+          },
+          {
+            "id": "everyday-champions-4",
+            "name": "Everyday Champions - 4",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-4.png",
+            "stars": 1
+          },
+          {
+            "id": "everyday-champions-5",
+            "name": "Everyday Champions - 5",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-5.png",
+            "stars": 2
+          },
+          {
+            "id": "everyday-champions-6",
+            "name": "Everyday Champions - 6",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-6.png",
+            "stars": 2
+          },
+          {
+            "id": "everyday-champions-7",
+            "name": "Everyday Champions - 7",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-7.png",
+            "stars": 2
+          },
+          {
+            "id": "everyday-champions-8",
+            "name": "Everyday Champions - 8",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-8.png",
+            "stars": 2
+          },
+          {
+            "id": "everyday-champions-9",
+            "name": "Everyday Champions - 9",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-9.png",
+            "stars": 3
+          },
+          {
+            "id": "everyday-champions-10",
+            "name": "Everyday Champions - 10",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-10.png",
+            "stars": 3
+          },
+          {
+            "id": "everyday-champions-11",
+            "name": "Everyday Champions - 11",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-11.png",
+            "stars": 3
+          },
+          {
+            "id": "everyday-champions-12",
+            "name": "Everyday Champions - 12",
+            "img": "/images/tundra-album/song-of-heroes/everyday-champions-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "arcadias-legacy",
+        "name": "Arcadia's Legacy",
+        "img": "/images/tundra-album/song-of-heroes/arcadias-legacy.png",
+        "reward": {
+          "itemId": "enhancement-xp-component",
+          "amount": 7
+        },
+        "pieces": [
+          {
+            "id": "arcadias-legacy-1",
+            "name": "Arcadia's Legacy - 1",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-1.png",
+            "stars": 1
+          },
+          {
+            "id": "arcadias-legacy-2",
+            "name": "Arcadia's Legacy - 2",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-2.png",
+            "stars": 1
+          },
+          {
+            "id": "arcadias-legacy-3",
+            "name": "Arcadia's Legacy - 3",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-3.png",
+            "stars": 1
+          },
+          {
+            "id": "arcadias-legacy-4",
+            "name": "Arcadia's Legacy - 4",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-4.png",
+            "stars": 2
+          },
+          {
+            "id": "arcadias-legacy-5",
+            "name": "Arcadia's Legacy - 5",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-5.png",
+            "stars": 2
+          },
+          {
+            "id": "arcadias-legacy-6",
+            "name": "Arcadia's Legacy - 6",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-6.png",
+            "stars": 2
+          },
+          {
+            "id": "arcadias-legacy-7",
+            "name": "Arcadia's Legacy - 7",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-7.png",
+            "stars": 3
+          },
+          {
+            "id": "arcadias-legacy-8",
+            "name": "Arcadia's Legacy - 8",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-8.png",
+            "stars": 3
+          },
+          {
+            "id": "arcadias-legacy-9",
+            "name": "Arcadia's Legacy - 9",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-9.png",
+            "stars": 3
+          },
+          {
+            "id": "arcadias-legacy-10",
+            "name": "Arcadia's Legacy - 10",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-10.png",
+            "stars": 3
+          },
+          {
+            "id": "arcadias-legacy-11",
+            "name": "Arcadia's Legacy - 11",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-11.png",
+            "stars": 4
+          },
+          {
+            "id": "arcadias-legacy-12",
+            "name": "Arcadia's Legacy - 12",
+            "img": "/images/tundra-album/song-of-heroes/arcadias-legacy-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "i-am-the-fire",
+        "name": "\"I Am the Fire.\"",
+        "img": "/images/tundra-album/song-of-heroes/i-am-the-fire.png",
+        "reward": {
+          "itemId": "speedup-general-3h",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "i-am-the-fire-1",
+            "name": "\"I Am the Fire.\" - 1",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-1.png",
+            "stars": 1
+          },
+          {
+            "id": "i-am-the-fire-2",
+            "name": "\"I Am the Fire.\" - 2",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-2.png",
+            "stars": 1
+          },
+          {
+            "id": "i-am-the-fire-3",
+            "name": "\"I Am the Fire.\" - 3",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-3.png",
+            "stars": 1
+          },
+          {
+            "id": "i-am-the-fire-4",
+            "name": "\"I Am the Fire.\" - 4",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-4.png",
+            "stars": 2
+          },
+          {
+            "id": "i-am-the-fire-5",
+            "name": "\"I Am the Fire.\" - 5",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-5.png",
+            "stars": 2
+          },
+          {
+            "id": "i-am-the-fire-6",
+            "name": "\"I Am the Fire.\" - 6",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-6.png",
+            "stars": 2
+          },
+          {
+            "id": "i-am-the-fire-7",
+            "name": "\"I Am the Fire.\" - 7",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-7.png",
+            "stars": 3
+          },
+          {
+            "id": "i-am-the-fire-8",
+            "name": "\"I Am the Fire.\" - 8",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-8.png",
+            "stars": 3
+          },
+          {
+            "id": "i-am-the-fire-9",
+            "name": "\"I Am the Fire.\" - 9",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-9.png",
+            "stars": 3
+          },
+          {
+            "id": "i-am-the-fire-10",
+            "name": "\"I Am the Fire.\" - 10",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-10.png",
+            "stars": 4
+          },
+          {
+            "id": "i-am-the-fire-11",
+            "name": "\"I Am the Fire.\" - 11",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-11.png",
+            "stars": 4
+          },
+          {
+            "id": "i-am-the-fire-12",
+            "name": "\"I Am the Fire.\" - 12",
+            "img": "/images/tundra-album/song-of-heroes/i-am-the-fire-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "artisan-architect",
+        "name": "Artisan Architect",
+        "img": "/images/tundra-album/song-of-heroes/artisan-architect.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "artisan-architect-1",
+            "name": "Artisan Architect - 1",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-1.png",
+            "stars": 1
+          },
+          {
+            "id": "artisan-architect-2",
+            "name": "Artisan Architect - 2",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-2.png",
+            "stars": 1
+          },
+          {
+            "id": "artisan-architect-3",
+            "name": "Artisan Architect - 3",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-3.png",
+            "stars": 1
+          },
+          {
+            "id": "artisan-architect-4",
+            "name": "Artisan Architect - 4",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-4.png",
+            "stars": 2
+          },
+          {
+            "id": "artisan-architect-5",
+            "name": "Artisan Architect - 5",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-5.png",
+            "stars": 2
+          },
+          {
+            "id": "artisan-architect-6",
+            "name": "Artisan Architect - 6",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-6.png",
+            "stars": 2
+          },
+          {
+            "id": "artisan-architect-7",
+            "name": "Artisan Architect - 7",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-7.png",
+            "stars": 2
+          },
+          {
+            "id": "artisan-architect-8",
+            "name": "Artisan Architect - 8",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-8.png",
+            "stars": 2
+          },
+          {
+            "id": "artisan-architect-9",
+            "name": "Artisan Architect - 9",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-9.png",
+            "stars": 3
+          },
+          {
+            "id": "artisan-architect-10",
+            "name": "Artisan Architect - 10",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-10.png",
+            "stars": 3
+          },
+          {
+            "id": "artisan-architect-11",
+            "name": "Artisan Architect - 11",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-11.png",
+            "stars": 3
+          },
+          {
+            "id": "artisan-architect-12",
+            "name": "Artisan Architect - 12",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-12.png",
+            "stars": 3
+          },
+          {
+            "id": "artisan-architect-13",
+            "name": "Artisan Architect - 13",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-13.png",
+            "stars": 4
+          },
+          {
+            "id": "artisan-architect-14",
+            "name": "Artisan Architect - 14",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-14.png",
+            "stars": 4
+          },
+          {
+            "id": "artisan-architect-15",
+            "name": "Artisan Architect - 15",
+            "img": "/images/tundra-album/song-of-heroes/artisan-architect-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "life-vs-death",
+        "name": "Life Vs Death",
+        "img": "/images/tundra-album/song-of-heroes/life-vs-death.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 4
+        },
+        "pieces": [
+          {
+            "id": "life-vs-death-1",
+            "name": "Life Vs Death - 1",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-1.png",
+            "stars": 1
+          },
+          {
+            "id": "life-vs-death-2",
+            "name": "Life Vs Death - 2",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-2.png",
+            "stars": 1
+          },
+          {
+            "id": "life-vs-death-3",
+            "name": "Life Vs Death - 3",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-3.png",
+            "stars": 1
+          },
+          {
+            "id": "life-vs-death-4",
+            "name": "Life Vs Death - 4",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-4.png",
+            "stars": 2
+          },
+          {
+            "id": "life-vs-death-5",
+            "name": "Life Vs Death - 5",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-5.png",
+            "stars": 2
+          },
+          {
+            "id": "life-vs-death-6",
+            "name": "Life Vs Death - 6",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-6.png",
+            "stars": 2
+          },
+          {
+            "id": "life-vs-death-7",
+            "name": "Life Vs Death - 7",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-7.png",
+            "stars": 2
+          },
+          {
+            "id": "life-vs-death-8",
+            "name": "Life Vs Death - 8",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-8.png",
+            "stars": 3
+          },
+          {
+            "id": "life-vs-death-9",
+            "name": "Life Vs Death - 9",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-9.png",
+            "stars": 3
+          },
+          {
+            "id": "life-vs-death-10",
+            "name": "Life Vs Death - 10",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-10.png",
+            "stars": 3
+          },
+          {
+            "id": "life-vs-death-11",
+            "name": "Life Vs Death - 11",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-11.png",
+            "stars": 3
+          },
+          {
+            "id": "life-vs-death-12",
+            "name": "Life Vs Death - 12",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-12.png",
+            "stars": 4
+          },
+          {
+            "id": "life-vs-death-13",
+            "name": "Life Vs Death - 13",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-13.png",
+            "stars": 4
+          },
+          {
+            "id": "life-vs-death-14",
+            "name": "Life Vs Death - 14",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-14.png",
+            "stars": 5
+          },
+          {
+            "id": "life-vs-death-15",
+            "name": "Life Vs Death - 15",
+            "img": "/images/tundra-album/song-of-heroes/life-vs-death-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-icebreakers",
+        "name": "The Icebreakers",
+        "img": "/images/tundra-album/song-of-heroes/the-icebreakers.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "the-icebreakers-1",
+            "name": "The Icebreakers - 1",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-icebreakers-2",
+            "name": "The Icebreakers - 2",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-icebreakers-3",
+            "name": "The Icebreakers - 3",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-3.png",
+            "stars": 1
+          },
+          {
+            "id": "the-icebreakers-4",
+            "name": "The Icebreakers - 4",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-icebreakers-5",
+            "name": "The Icebreakers - 5",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-icebreakers-6",
+            "name": "The Icebreakers - 6",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-6.png",
+            "stars": 2
+          },
+          {
+            "id": "the-icebreakers-7",
+            "name": "The Icebreakers - 7",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-icebreakers-8",
+            "name": "The Icebreakers - 8",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-icebreakers-9",
+            "name": "The Icebreakers - 9",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-9.png",
+            "stars": 3
+          },
+          {
+            "id": "the-icebreakers-10",
+            "name": "The Icebreakers - 10",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-icebreakers-11",
+            "name": "The Icebreakers - 11",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-icebreakers-12",
+            "name": "The Icebreakers - 12",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-icebreakers-13",
+            "name": "The Icebreakers - 13",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-13.png",
+            "stars": 5
+          },
+          {
+            "id": "the-icebreakers-14",
+            "name": "The Icebreakers - 14",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-icebreakers-15",
+            "name": "The Icebreakers - 15",
+            "img": "/images/tundra-album/song-of-heroes/the-icebreakers-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "epic-of-a-new-world",
+        "name": "Epic of a New World",
+        "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 6
+        },
+        "pieces": [
+          {
+            "id": "epic-of-a-new-world-1",
+            "name": "Epic of a New World - 1",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-1.png",
+            "stars": 1
+          },
+          {
+            "id": "epic-of-a-new-world-2",
+            "name": "Epic of a New World - 2",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-2.png",
+            "stars": 1
+          },
+          {
+            "id": "epic-of-a-new-world-3",
+            "name": "Epic of a New World - 3",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-3.png",
+            "stars": 2
+          },
+          {
+            "id": "epic-of-a-new-world-4",
+            "name": "Epic of a New World - 4",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-4.png",
+            "stars": 2
+          },
+          {
+            "id": "epic-of-a-new-world-5",
+            "name": "Epic of a New World - 5",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-5.png",
+            "stars": 2
+          },
+          {
+            "id": "epic-of-a-new-world-6",
+            "name": "Epic of a New World - 6",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-6.png",
+            "stars": 2
+          },
+          {
+            "id": "epic-of-a-new-world-7",
+            "name": "Epic of a New World - 7",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-7.png",
+            "stars": 3
+          },
+          {
+            "id": "epic-of-a-new-world-8",
+            "name": "Epic of a New World - 8",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-8.png",
+            "stars": 3
+          },
+          {
+            "id": "epic-of-a-new-world-9",
+            "name": "Epic of a New World - 9",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-9.png",
+            "stars": 3
+          },
+          {
+            "id": "epic-of-a-new-world-10",
+            "name": "Epic of a New World - 10",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-10.png",
+            "stars": 3
+          },
+          {
+            "id": "epic-of-a-new-world-11",
+            "name": "Epic of a New World - 11",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-11.png",
+            "stars": 4
+          },
+          {
+            "id": "epic-of-a-new-world-12",
+            "name": "Epic of a New World - 12",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-12.png",
+            "stars": 4
+          },
+          {
+            "id": "epic-of-a-new-world-13",
+            "name": "Epic of a New World - 13",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-13.png",
+            "stars": 4
+          },
+          {
+            "id": "epic-of-a-new-world-14",
+            "name": "Epic of a New World - 14",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-14.png",
+            "stars": 4
+          },
+          {
+            "id": "epic-of-a-new-world-15",
+            "name": "Epic of a New World - 15",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-15.png",
+            "stars": 5
+          },
+          {
+            "id": "epic-of-a-new-world-16",
+            "name": "Epic of a New World - 16",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-16.png",
+            "stars": 5
+          },
+          {
+            "id": "epic-of-a-new-world-17",
+            "name": "Epic of a New World - 17",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-17.png",
+            "stars": 5
+          },
+          {
+            "id": "epic-of-a-new-world-18",
+            "name": "Epic of a New World - 18",
+            "img": "/images/tundra-album/song-of-heroes/epic-of-a-new-world-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]
