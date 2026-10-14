@@ -139,7 +139,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `presidentSkills()`    | 9       | The President's skills: global perks, Receive Tribute, and the skills that act on a Chief | [README](src/modules/president-skills/README.md)    |
 | `dailies()`            | 21      | Default daily tasks: in-game missions and a daily routine, a partial list                 | [README](src/modules/dailies/README.md)             |
 | `dailyMissions()`      | 21      | The in-game Daily Missions, with the task and rewards of each, and the activeness         | [README](src/modules/daily-missions/README.md)      |
-| `tundraAlbum()`        | 2       | Tundra Album albums, with the puzzles, pieces, rewards, and buff of each                  | [README](src/modules/tundra-album/README.md)        |
+| `tundraAlbum()`        | 3       | Tundra Album albums, with the puzzles, pieces, rewards, and buff of each                  | [README](src/modules/tundra-album/README.md)        |
 | `vip()`                | 12      | VIP 1 to 12 progression                                                                   | [README](src/modules/vip/README.md)                 |
 
 ## Calculators
@@ -203,8 +203,8 @@ This is what the data does not hold yet. Each module README gives the detail.
   Daily Missions. See [Items](src/modules/items/README.md).
 - **Buildings.** The nine entertainment buildings have no `img`. See
   [Buildings](src/modules/buildings/README.md).
-- **Tundra Album.** Only the albums Crystalline Mysteries and Daybreak Island are in. See
-  [Tundra Album](src/modules/tundra-album/README.md).
+- **Tundra Album.** Only the albums Crystalline Mysteries, Daybreak Island, and Explore the World
+  are in. See [Tundra Album](src/modules/tundra-album/README.md).
 - **Daily tasks.** The list of in-game daily missions in `dailies()` is not complete. The missions
   in `dailyMissions()` have only the levels known so far, and the daily reset time is not stored.
   See [Daily Missions](src/modules/daily-missions/README.md) and
