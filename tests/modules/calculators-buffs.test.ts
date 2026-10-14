@@ -470,6 +470,7 @@ describe('calculateBuffs Tundra Albums', () => {
     ['battlefield-epic', 'troops-defense', 2],
     ['spectacular-adventures', 'troops-attack', 2],
     ['divine-weapons', 'troops-defense', 2],
+    ['the-labyrinth', 'troops-attack', 2],
   ])('gives %s the stat %s with %d percent', (id, statKey, amount) => {
     expect(category(calculateBuffs({ tundraAlbums: [id] }), statKey)!.total).toBe(amount);
   });

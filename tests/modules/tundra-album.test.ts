@@ -706,6 +706,35 @@ const NEW_ALBUMS = [
       ['exotic-charm', 'Exotic Charm', [0, 2, 2, 7, 7], 'design-plans', 15],
     ],
   },
+  {
+    id: 'the-labyrinth',
+    name: 'The Labyrinth',
+    stat: 'Troops Attack',
+    statKey: 'troops-attack',
+    eventNote: '+2% troops attack',
+    completion: [
+      ['lucky-hero-gear-chest', 100],
+      ['fire-crystal', 200],
+    ],
+    pieces: 144,
+    puzzles: [
+      ['underworld-mysteries', 'Underworld Mysteries', [3, 3, 3, 3, 0], 'speedup-general-3h', 3],
+      ['the-world-below', 'The World Below', [2, 2, 4, 6, 1], 'mythic-general-hero-shard', 2],
+      ['digging-to-danger', 'Digging To Danger', [3, 5, 4, 2, 1], 'chief-gear-materials-chest', 3],
+      ['fungal-forest', 'Fungal Forest', [3, 4, 4, 2, 2], 'lucky-hero-gear-chest', 4],
+      ['great-furnace', 'Great Furnace', [3, 3, 3, 3, 3], 'design-plans', 10],
+      [
+        'the-undergrounders',
+        'The Undergrounders',
+        [2, 4, 4, 4, 4],
+        'random-chief-charm-material-chest',
+        4,
+      ],
+      ['the-project', 'The Project', [1, 2, 3, 6, 6], 'lucky-hero-gear-chest', 6],
+      ['gaia-heart', 'Gaia Heart', [1, 2, 3, 6, 6], 'speedup-general-8h', 2],
+      ['the-deepest-echo', 'The Deepest Echo', [0, 2, 2, 7, 7], 'essence-stones', 6],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {

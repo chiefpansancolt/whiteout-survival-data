@@ -8324,5 +8324,991 @@
         ]
       }
     ]
+  },
+  {
+    "id": "the-labyrinth",
+    "name": "The Labyrinth",
+    "buff": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 100
+      },
+      {
+        "itemId": "fire-crystal",
+        "amount": 200
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "underworld-mysteries",
+        "name": "Underworld Mysteries",
+        "img": "/images/tundra-album/the-labyrinth/underworld-mysteries.png",
+        "reward": {
+          "itemId": "speedup-general-3h",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "underworld-mysteries-1",
+            "name": "Underworld Mysteries - 1",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-1.png",
+            "stars": 1
+          },
+          {
+            "id": "underworld-mysteries-2",
+            "name": "Underworld Mysteries - 2",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-2.png",
+            "stars": 1
+          },
+          {
+            "id": "underworld-mysteries-3",
+            "name": "Underworld Mysteries - 3",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-3.png",
+            "stars": 1
+          },
+          {
+            "id": "underworld-mysteries-4",
+            "name": "Underworld Mysteries - 4",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-4.png",
+            "stars": 2
+          },
+          {
+            "id": "underworld-mysteries-5",
+            "name": "Underworld Mysteries - 5",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-5.png",
+            "stars": 2
+          },
+          {
+            "id": "underworld-mysteries-6",
+            "name": "Underworld Mysteries - 6",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-6.png",
+            "stars": 2
+          },
+          {
+            "id": "underworld-mysteries-7",
+            "name": "Underworld Mysteries - 7",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-7.png",
+            "stars": 3
+          },
+          {
+            "id": "underworld-mysteries-8",
+            "name": "Underworld Mysteries - 8",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-8.png",
+            "stars": 3
+          },
+          {
+            "id": "underworld-mysteries-9",
+            "name": "Underworld Mysteries - 9",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-9.png",
+            "stars": 3
+          },
+          {
+            "id": "underworld-mysteries-10",
+            "name": "Underworld Mysteries - 10",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-10.png",
+            "stars": 4
+          },
+          {
+            "id": "underworld-mysteries-11",
+            "name": "Underworld Mysteries - 11",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-11.png",
+            "stars": 4
+          },
+          {
+            "id": "underworld-mysteries-12",
+            "name": "Underworld Mysteries - 12",
+            "img": "/images/tundra-album/the-labyrinth/underworld-mysteries-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "the-world-below",
+        "name": "The World Below",
+        "img": "/images/tundra-album/the-labyrinth/the-world-below.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "the-world-below-1",
+            "name": "The World Below - 1",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-world-below-2",
+            "name": "The World Below - 2",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-world-below-3",
+            "name": "The World Below - 3",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-world-below-4",
+            "name": "The World Below - 4",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-world-below-5",
+            "name": "The World Below - 5",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-5.png",
+            "stars": 3
+          },
+          {
+            "id": "the-world-below-6",
+            "name": "The World Below - 6",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-6.png",
+            "stars": 3
+          },
+          {
+            "id": "the-world-below-7",
+            "name": "The World Below - 7",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-world-below-8",
+            "name": "The World Below - 8",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-world-below-9",
+            "name": "The World Below - 9",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-world-below-10",
+            "name": "The World Below - 10",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-world-below-11",
+            "name": "The World Below - 11",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-world-below-12",
+            "name": "The World Below - 12",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-world-below-13",
+            "name": "The World Below - 13",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-13.png",
+            "stars": 4
+          },
+          {
+            "id": "the-world-below-14",
+            "name": "The World Below - 14",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-14.png",
+            "stars": 4
+          },
+          {
+            "id": "the-world-below-15",
+            "name": "The World Below - 15",
+            "img": "/images/tundra-album/the-labyrinth/the-world-below-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "digging-to-danger",
+        "name": "Digging To Danger",
+        "img": "/images/tundra-album/the-labyrinth/digging-to-danger.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "digging-to-danger-1",
+            "name": "Digging To Danger - 1",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-1.png",
+            "stars": 1
+          },
+          {
+            "id": "digging-to-danger-2",
+            "name": "Digging To Danger - 2",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-2.png",
+            "stars": 1
+          },
+          {
+            "id": "digging-to-danger-3",
+            "name": "Digging To Danger - 3",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-3.png",
+            "stars": 1
+          },
+          {
+            "id": "digging-to-danger-4",
+            "name": "Digging To Danger - 4",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-4.png",
+            "stars": 2
+          },
+          {
+            "id": "digging-to-danger-5",
+            "name": "Digging To Danger - 5",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-5.png",
+            "stars": 2
+          },
+          {
+            "id": "digging-to-danger-6",
+            "name": "Digging To Danger - 6",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-6.png",
+            "stars": 2
+          },
+          {
+            "id": "digging-to-danger-7",
+            "name": "Digging To Danger - 7",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-7.png",
+            "stars": 2
+          },
+          {
+            "id": "digging-to-danger-8",
+            "name": "Digging To Danger - 8",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-8.png",
+            "stars": 2
+          },
+          {
+            "id": "digging-to-danger-9",
+            "name": "Digging To Danger - 9",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-9.png",
+            "stars": 3
+          },
+          {
+            "id": "digging-to-danger-10",
+            "name": "Digging To Danger - 10",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-10.png",
+            "stars": 3
+          },
+          {
+            "id": "digging-to-danger-11",
+            "name": "Digging To Danger - 11",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-11.png",
+            "stars": 3
+          },
+          {
+            "id": "digging-to-danger-12",
+            "name": "Digging To Danger - 12",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-12.png",
+            "stars": 3
+          },
+          {
+            "id": "digging-to-danger-13",
+            "name": "Digging To Danger - 13",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-13.png",
+            "stars": 4
+          },
+          {
+            "id": "digging-to-danger-14",
+            "name": "Digging To Danger - 14",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-14.png",
+            "stars": 4
+          },
+          {
+            "id": "digging-to-danger-15",
+            "name": "Digging To Danger - 15",
+            "img": "/images/tundra-album/the-labyrinth/digging-to-danger-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "fungal-forest",
+        "name": "Fungal Forest",
+        "img": "/images/tundra-album/the-labyrinth/fungal-forest.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 4
+        },
+        "pieces": [
+          {
+            "id": "fungal-forest-1",
+            "name": "Fungal Forest - 1",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-1.png",
+            "stars": 1
+          },
+          {
+            "id": "fungal-forest-2",
+            "name": "Fungal Forest - 2",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-2.png",
+            "stars": 1
+          },
+          {
+            "id": "fungal-forest-3",
+            "name": "Fungal Forest - 3",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-3.png",
+            "stars": 1
+          },
+          {
+            "id": "fungal-forest-4",
+            "name": "Fungal Forest - 4",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-4.png",
+            "stars": 2
+          },
+          {
+            "id": "fungal-forest-5",
+            "name": "Fungal Forest - 5",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-5.png",
+            "stars": 2
+          },
+          {
+            "id": "fungal-forest-6",
+            "name": "Fungal Forest - 6",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-6.png",
+            "stars": 2
+          },
+          {
+            "id": "fungal-forest-7",
+            "name": "Fungal Forest - 7",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-7.png",
+            "stars": 2
+          },
+          {
+            "id": "fungal-forest-8",
+            "name": "Fungal Forest - 8",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-8.png",
+            "stars": 3
+          },
+          {
+            "id": "fungal-forest-9",
+            "name": "Fungal Forest - 9",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-9.png",
+            "stars": 3
+          },
+          {
+            "id": "fungal-forest-10",
+            "name": "Fungal Forest - 10",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-10.png",
+            "stars": 3
+          },
+          {
+            "id": "fungal-forest-11",
+            "name": "Fungal Forest - 11",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-11.png",
+            "stars": 3
+          },
+          {
+            "id": "fungal-forest-12",
+            "name": "Fungal Forest - 12",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-12.png",
+            "stars": 4
+          },
+          {
+            "id": "fungal-forest-13",
+            "name": "Fungal Forest - 13",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-13.png",
+            "stars": 4
+          },
+          {
+            "id": "fungal-forest-14",
+            "name": "Fungal Forest - 14",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-14.png",
+            "stars": 5
+          },
+          {
+            "id": "fungal-forest-15",
+            "name": "Fungal Forest - 15",
+            "img": "/images/tundra-album/the-labyrinth/fungal-forest-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "great-furnace",
+        "name": "Great Furnace",
+        "img": "/images/tundra-album/the-labyrinth/great-furnace.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "great-furnace-1",
+            "name": "Great Furnace - 1",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-1.png",
+            "stars": 1
+          },
+          {
+            "id": "great-furnace-2",
+            "name": "Great Furnace - 2",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-2.png",
+            "stars": 1
+          },
+          {
+            "id": "great-furnace-3",
+            "name": "Great Furnace - 3",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-3.png",
+            "stars": 1
+          },
+          {
+            "id": "great-furnace-4",
+            "name": "Great Furnace - 4",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-4.png",
+            "stars": 2
+          },
+          {
+            "id": "great-furnace-5",
+            "name": "Great Furnace - 5",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-5.png",
+            "stars": 2
+          },
+          {
+            "id": "great-furnace-6",
+            "name": "Great Furnace - 6",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-6.png",
+            "stars": 2
+          },
+          {
+            "id": "great-furnace-7",
+            "name": "Great Furnace - 7",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-7.png",
+            "stars": 3
+          },
+          {
+            "id": "great-furnace-8",
+            "name": "Great Furnace - 8",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-8.png",
+            "stars": 3
+          },
+          {
+            "id": "great-furnace-9",
+            "name": "Great Furnace - 9",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-9.png",
+            "stars": 3
+          },
+          {
+            "id": "great-furnace-10",
+            "name": "Great Furnace - 10",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-10.png",
+            "stars": 4
+          },
+          {
+            "id": "great-furnace-11",
+            "name": "Great Furnace - 11",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-11.png",
+            "stars": 4
+          },
+          {
+            "id": "great-furnace-12",
+            "name": "Great Furnace - 12",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-12.png",
+            "stars": 4
+          },
+          {
+            "id": "great-furnace-13",
+            "name": "Great Furnace - 13",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-13.png",
+            "stars": 5
+          },
+          {
+            "id": "great-furnace-14",
+            "name": "Great Furnace - 14",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-14.png",
+            "stars": 5
+          },
+          {
+            "id": "great-furnace-15",
+            "name": "Great Furnace - 15",
+            "img": "/images/tundra-album/the-labyrinth/great-furnace-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-undergrounders",
+        "name": "The Undergrounders",
+        "img": "/images/tundra-album/the-labyrinth/the-undergrounders.png",
+        "reward": {
+          "itemId": "random-chief-charm-material-chest",
+          "amount": 4
+        },
+        "pieces": [
+          {
+            "id": "the-undergrounders-1",
+            "name": "The Undergrounders - 1",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-undergrounders-2",
+            "name": "The Undergrounders - 2",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-undergrounders-3",
+            "name": "The Undergrounders - 3",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-undergrounders-4",
+            "name": "The Undergrounders - 4",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-undergrounders-5",
+            "name": "The Undergrounders - 5",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-undergrounders-6",
+            "name": "The Undergrounders - 6",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-6.png",
+            "stars": 2
+          },
+          {
+            "id": "the-undergrounders-7",
+            "name": "The Undergrounders - 7",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-undergrounders-8",
+            "name": "The Undergrounders - 8",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-undergrounders-9",
+            "name": "The Undergrounders - 9",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-9.png",
+            "stars": 3
+          },
+          {
+            "id": "the-undergrounders-10",
+            "name": "The Undergrounders - 10",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-10.png",
+            "stars": 3
+          },
+          {
+            "id": "the-undergrounders-11",
+            "name": "The Undergrounders - 11",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-undergrounders-12",
+            "name": "The Undergrounders - 12",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-undergrounders-13",
+            "name": "The Undergrounders - 13",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-13.png",
+            "stars": 4
+          },
+          {
+            "id": "the-undergrounders-14",
+            "name": "The Undergrounders - 14",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-14.png",
+            "stars": 4
+          },
+          {
+            "id": "the-undergrounders-15",
+            "name": "The Undergrounders - 15",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-undergrounders-16",
+            "name": "The Undergrounders - 16",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-undergrounders-17",
+            "name": "The Undergrounders - 17",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-undergrounders-18",
+            "name": "The Undergrounders - 18",
+            "img": "/images/tundra-album/the-labyrinth/the-undergrounders-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-project",
+        "name": "The Project",
+        "img": "/images/tundra-album/the-labyrinth/the-project.png",
+        "reward": {
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 6
+        },
+        "pieces": [
+          {
+            "id": "the-project-1",
+            "name": "The Project - 1",
+            "img": "/images/tundra-album/the-labyrinth/the-project-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-project-2",
+            "name": "The Project - 2",
+            "img": "/images/tundra-album/the-labyrinth/the-project-2.png",
+            "stars": 2
+          },
+          {
+            "id": "the-project-3",
+            "name": "The Project - 3",
+            "img": "/images/tundra-album/the-labyrinth/the-project-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-project-4",
+            "name": "The Project - 4",
+            "img": "/images/tundra-album/the-labyrinth/the-project-4.png",
+            "stars": 3
+          },
+          {
+            "id": "the-project-5",
+            "name": "The Project - 5",
+            "img": "/images/tundra-album/the-labyrinth/the-project-5.png",
+            "stars": 3
+          },
+          {
+            "id": "the-project-6",
+            "name": "The Project - 6",
+            "img": "/images/tundra-album/the-labyrinth/the-project-6.png",
+            "stars": 3
+          },
+          {
+            "id": "the-project-7",
+            "name": "The Project - 7",
+            "img": "/images/tundra-album/the-labyrinth/the-project-7.png",
+            "stars": 4
+          },
+          {
+            "id": "the-project-8",
+            "name": "The Project - 8",
+            "img": "/images/tundra-album/the-labyrinth/the-project-8.png",
+            "stars": 4
+          },
+          {
+            "id": "the-project-9",
+            "name": "The Project - 9",
+            "img": "/images/tundra-album/the-labyrinth/the-project-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-project-10",
+            "name": "The Project - 10",
+            "img": "/images/tundra-album/the-labyrinth/the-project-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-project-11",
+            "name": "The Project - 11",
+            "img": "/images/tundra-album/the-labyrinth/the-project-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-project-12",
+            "name": "The Project - 12",
+            "img": "/images/tundra-album/the-labyrinth/the-project-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-project-13",
+            "name": "The Project - 13",
+            "img": "/images/tundra-album/the-labyrinth/the-project-13.png",
+            "stars": 5
+          },
+          {
+            "id": "the-project-14",
+            "name": "The Project - 14",
+            "img": "/images/tundra-album/the-labyrinth/the-project-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-project-15",
+            "name": "The Project - 15",
+            "img": "/images/tundra-album/the-labyrinth/the-project-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-project-16",
+            "name": "The Project - 16",
+            "img": "/images/tundra-album/the-labyrinth/the-project-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-project-17",
+            "name": "The Project - 17",
+            "img": "/images/tundra-album/the-labyrinth/the-project-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-project-18",
+            "name": "The Project - 18",
+            "img": "/images/tundra-album/the-labyrinth/the-project-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "gaia-heart",
+        "name": "Gaia Heart",
+        "img": "/images/tundra-album/the-labyrinth/gaia-heart.png",
+        "reward": {
+          "itemId": "speedup-general-8h",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "gaia-heart-1",
+            "name": "Gaia Heart - 1",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-1.png",
+            "stars": 1
+          },
+          {
+            "id": "gaia-heart-2",
+            "name": "Gaia Heart - 2",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-2.png",
+            "stars": 2
+          },
+          {
+            "id": "gaia-heart-3",
+            "name": "Gaia Heart - 3",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-3.png",
+            "stars": 2
+          },
+          {
+            "id": "gaia-heart-4",
+            "name": "Gaia Heart - 4",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-4.png",
+            "stars": 3
+          },
+          {
+            "id": "gaia-heart-5",
+            "name": "Gaia Heart - 5",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-5.png",
+            "stars": 3
+          },
+          {
+            "id": "gaia-heart-6",
+            "name": "Gaia Heart - 6",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-6.png",
+            "stars": 3
+          },
+          {
+            "id": "gaia-heart-7",
+            "name": "Gaia Heart - 7",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-7.png",
+            "stars": 4
+          },
+          {
+            "id": "gaia-heart-8",
+            "name": "Gaia Heart - 8",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-8.png",
+            "stars": 4
+          },
+          {
+            "id": "gaia-heart-9",
+            "name": "Gaia Heart - 9",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-9.png",
+            "stars": 4
+          },
+          {
+            "id": "gaia-heart-10",
+            "name": "Gaia Heart - 10",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-10.png",
+            "stars": 4
+          },
+          {
+            "id": "gaia-heart-11",
+            "name": "Gaia Heart - 11",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-11.png",
+            "stars": 4
+          },
+          {
+            "id": "gaia-heart-12",
+            "name": "Gaia Heart - 12",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-12.png",
+            "stars": 4
+          },
+          {
+            "id": "gaia-heart-13",
+            "name": "Gaia Heart - 13",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-13.png",
+            "stars": 5
+          },
+          {
+            "id": "gaia-heart-14",
+            "name": "Gaia Heart - 14",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-14.png",
+            "stars": 5
+          },
+          {
+            "id": "gaia-heart-15",
+            "name": "Gaia Heart - 15",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-15.png",
+            "stars": 5
+          },
+          {
+            "id": "gaia-heart-16",
+            "name": "Gaia Heart - 16",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-16.png",
+            "stars": 5
+          },
+          {
+            "id": "gaia-heart-17",
+            "name": "Gaia Heart - 17",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-17.png",
+            "stars": 5
+          },
+          {
+            "id": "gaia-heart-18",
+            "name": "Gaia Heart - 18",
+            "img": "/images/tundra-album/the-labyrinth/gaia-heart-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-deepest-echo",
+        "name": "The Deepest Echo",
+        "img": "/images/tundra-album/the-labyrinth/the-deepest-echo.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 6
+        },
+        "pieces": [
+          {
+            "id": "the-deepest-echo-1",
+            "name": "The Deepest Echo - 1",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-1.png",
+            "stars": 2
+          },
+          {
+            "id": "the-deepest-echo-2",
+            "name": "The Deepest Echo - 2",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-2.png",
+            "stars": 2
+          },
+          {
+            "id": "the-deepest-echo-3",
+            "name": "The Deepest Echo - 3",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-3.png",
+            "stars": 3
+          },
+          {
+            "id": "the-deepest-echo-4",
+            "name": "The Deepest Echo - 4",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-4.png",
+            "stars": 3
+          },
+          {
+            "id": "the-deepest-echo-5",
+            "name": "The Deepest Echo - 5",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-5.png",
+            "stars": 4
+          },
+          {
+            "id": "the-deepest-echo-6",
+            "name": "The Deepest Echo - 6",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-6.png",
+            "stars": 4
+          },
+          {
+            "id": "the-deepest-echo-7",
+            "name": "The Deepest Echo - 7",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-7.png",
+            "stars": 4
+          },
+          {
+            "id": "the-deepest-echo-8",
+            "name": "The Deepest Echo - 8",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-8.png",
+            "stars": 4
+          },
+          {
+            "id": "the-deepest-echo-9",
+            "name": "The Deepest Echo - 9",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-deepest-echo-10",
+            "name": "The Deepest Echo - 10",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-deepest-echo-11",
+            "name": "The Deepest Echo - 11",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-deepest-echo-12",
+            "name": "The Deepest Echo - 12",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-12.png",
+            "stars": 5
+          },
+          {
+            "id": "the-deepest-echo-13",
+            "name": "The Deepest Echo - 13",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-13.png",
+            "stars": 5
+          },
+          {
+            "id": "the-deepest-echo-14",
+            "name": "The Deepest Echo - 14",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-deepest-echo-15",
+            "name": "The Deepest Echo - 15",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-deepest-echo-16",
+            "name": "The Deepest Echo - 16",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-deepest-echo-17",
+            "name": "The Deepest Echo - 17",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-deepest-echo-18",
+            "name": "The Deepest Echo - 18",
+            "img": "/images/tundra-album/the-labyrinth/the-deepest-echo-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]
