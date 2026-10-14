@@ -9,7 +9,6 @@ export interface AllianceFacilityLevel {
   heavilyInjuredPercent: number;
   lossesPercent: number;
   ownLimit: number;
-  /** Equals `locations.length`. */
   available: number;
   locations: AllianceFacilityLocation[];
 }

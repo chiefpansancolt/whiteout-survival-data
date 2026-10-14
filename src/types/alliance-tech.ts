@@ -29,7 +29,6 @@ export interface AllianceTechNode {
   category: AllianceTechCategory;
   tier: number;
   description: string;
-  /** Not set for the three nodes that have no stat effect. */
   stat?: string;
   statKey?: string;
   levels: AllianceTechLevel[];

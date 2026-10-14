@@ -8,7 +8,6 @@ export interface GameEventPhase {
 export interface GameEventReward {
   name: string;
   itemId?: string;
-  /** Set when the reward is a decoration and not an item. */
   decorationId?: string;
   skinId?: string;
   amount?: number;
@@ -16,7 +15,6 @@ export interface GameEventReward {
 }
 
 export interface GameEventStageLevel {
-  /** From 1 to 50. */
   level: number;
   tier: number;
   power: number;
@@ -24,13 +22,11 @@ export interface GameEventStageLevel {
   troops: { infantry: number; lancer: number; marksman: number };
   totalTroops: number;
   rewards: GameEventReward[];
-  /** Set when the source table looks wrong for this level. The values are kept as printed. */
   note?: string;
 }
 
 export interface GameEventRanking {
   groupRanking: string;
-  /** Negative when the player loses stars. */
   starChange?: number;
   rewards: GameEventReward[];
   levels?: GameEventStageLevel[];
@@ -70,7 +66,6 @@ export interface GameEventZone {
 export interface GameEventRefresh {
   refresh: number;
   gemCost?: number;
-  /** Percent, keyed by quality name. */
   chances: Record<string, number>;
 }
 
@@ -94,12 +89,9 @@ export interface GameEventMissionLevel {
 export interface GameEventMission {
   group: string;
   name: string;
-  /** Exclusive missions give a bonus on top of this. */
   points: number;
-  /** Set when more than one level gives the same rewards. */
   levels?: number;
   levelRequirements?: GameEventMissionLevel[];
-  /** In addition to `points`, for each level. */
   rewards?: GameEventReward[];
   note?: string;
 }
@@ -123,7 +115,6 @@ export interface GameEventDay {
   name: string;
   victoryPoints?: number;
   scoring: GameEventScoringAction[];
-  /** A tier omits `scoreTotal` until the points needed are known. */
   milestones?: GameEventTier[];
   allianceMilestones?: GameEventTier[];
   note?: string;
@@ -212,9 +203,7 @@ export interface GameEvent {
   name: string;
   img: string;
   category: EventCategory;
-  /** Not set on the four Core events. */
   resultShape?: GameEventResultShape;
-  /** What `scoreTotal` counts, for events whose targets are not points. */
   scoreUnit?: string;
   description: string;
   frequency?: string;
@@ -222,29 +211,21 @@ export interface GameEvent {
   schedule?: EventSchedule;
   expertTiers?: GameEventExpertTier[];
   requirements?: string[];
-  /** Ordered from lowest to highest. */
   tiers?: GameEventTier[];
-  /** Placement is the placement of the first legion of the alliance. */
   allianceRankings?: GameEventRanking[];
-  /** Later reward lists that replace `allianceRankings`, in the order the game replaced them. */
   allianceRankingUpdates?: GameEventRankingVersion[];
   pointLevels?: GameEventPointLevels;
   personalRankings?: GameEventRankingTable[];
   phases?: GameEventPhase[];
-  /** Also holds the separate versions of an event, such as Armament Competition. */
   days?: GameEventDay[];
   waves?: GameEventWave[];
   missions?: GameEventMission[];
-  /** Holds the missions and tiers of an event that differ by the age of the state. */
   versions?: GameEventVersion[];
-  /** Set only when the points are a currency. */
   missionPointsLabel?: string;
   shopCurrencyItemId?: string;
-  /** Set only when the currency is not in `items()`. */
   shopCurrencyName?: string;
   refreshes?: GameEventRefresh[];
   shop?: GameEventShopOffer[];
-  /** Set when the event has one shop for each group, such as each hero generation. */
   shops?: GameEventShop[];
   heroByGeneration?: GameEventGenerationHero[];
   zones?: GameEventZone[];

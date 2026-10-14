@@ -22,9 +22,5 @@ export interface ChiefCharmLevel {
   materials: ChiefCharmMaterial[];
   statTotalPercent: number;
   powerTotal: number;
-  /**
-   * Charm score that the upgrade step to this entry adds. A level score is split evenly over its
-   * steps, and the remainder goes to the first steps.
-   */
   score: number;
 }

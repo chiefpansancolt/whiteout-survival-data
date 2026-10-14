@@ -36,7 +36,6 @@ export interface PetLevel {
   level: number;
   petFoodCost: number;
   advancementMaterials?: PetAdvancementMaterial[];
-  /** Pet advancement score that the advancement at this level adds. Set only with `advancementMaterials`. */
   advancementScore?: number;
   troopAttack: PetStatValue;
   troopDefense: PetStatValue;

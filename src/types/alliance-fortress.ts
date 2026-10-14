@@ -11,6 +11,5 @@ export interface AllianceFortress {
   kind: AllianceFortressKind;
   x: number;
   y: number;
-  /** Empty for the castle, because its rewards are not documented. */
   rewards: AllianceFortressReward[];
 }

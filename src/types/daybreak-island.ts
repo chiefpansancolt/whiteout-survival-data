@@ -59,9 +59,7 @@ export interface Decoration {
   cost?: DecorationCost[];
   lifeEssenceCost?: number;
   limit?: number;
-  /** Common and Uncommon only. These decorations cannot be upgraded, so the value is fixed. */
   prosperityAtMaxLevel?: number;
-  /** Rare, Epic, Mythic, and Unique only. A level without known buff data has a blank buff. */
   levels?: DecorationLevel[];
   limited?: boolean;
 }

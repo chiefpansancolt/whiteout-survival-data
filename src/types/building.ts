@@ -12,11 +12,8 @@ export interface BuildingLevel {
   label: string;
   order: number;
   tier: 'standard' | 'fireCrystal';
-  /** 0 for the `30-1` to `30-4` levels. Fire Crystal levels only. */
   fcStage?: number;
-  /** Omitted on a stage base row. */
   fcSubLevel?: number;
-  /** Derived for Fire Crystal levels, because the wikis list none. */
   prerequisites?: BuildingRequirement[];
   cost: Resource[];
   buildTimeSeconds: number;
@@ -24,10 +21,8 @@ export interface BuildingLevel {
   rallyCapacity?: number;
   marchCapacity?: number;
   trainingCapacity?: number;
-  /** Set on every standard level, then only on Fire Crystal stage base rows. */
   trainingSpeedBonusPercent?: number;
   researchSpeedBonusPercent?: number;
-  /** Set on every standard level, then only on Fire Crystal stage base rows. */
   infirmaryCapacity?: number;
   allyAssists?: number;
   allyHelpTimeSeconds?: number;

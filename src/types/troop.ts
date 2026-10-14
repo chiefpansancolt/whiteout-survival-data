@@ -17,12 +17,7 @@ export interface TroopTier {
   unlockCampLevel?: number;
   unlockRequirements?: ResearchRequirement[];
   cost: TroopMaterial[];
-  /** Seconds to train one troop with no training speed bonus. */
   trainingTimeSeconds: number;
-  /**
-   * Resources to promote one troop from the tier below to this tier. This is not the difference of
-   * the two training costs. Set on tier 12 only.
-   */
   promotionCost?: TroopMaterial[];
 }
 

@@ -8,7 +8,6 @@ export interface AlliancePrestigeBonus {
   unit: BonusUnit;
 }
 
-/** A tier of a prestige building, such as `Silver`. */
 export interface AlliancePrestigeLevel {
   name: string;
   bonuses: AlliancePrestigeBonus[];
@@ -16,9 +15,7 @@ export interface AlliancePrestigeLevel {
 
 export interface AlliancePrestigeSource {
   event: string;
-  /** The id of the event in `events()`. Left out when the package has no data for the event. */
   eventId?: string;
-  /** What the alliance must reach in the event to build the building. */
   requirement?: string;
 }
 
