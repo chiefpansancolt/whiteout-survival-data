@@ -81,7 +81,7 @@
           "value": 0.25
         },
         "troopsPower": {
-          "value": 1800
+          "value": 18000
         }
       },
       {
@@ -288,8 +288,7 @@
           "refinedValue": 1.85
         },
         "troopsPower": {
-          "value": 102960,
-          "refinedValue": 0
+          "value": 102960
         },
         "advancementMaterials": [
           {
