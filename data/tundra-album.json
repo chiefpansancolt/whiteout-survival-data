@@ -4396,5 +4396,974 @@
         ]
       }
     ]
+  },
+  {
+    "id": "tundra-alliance",
+    "name": "Tundra Alliance",
+    "buff": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "lucky-hero-gear-chest",
+        "amount": 100
+      },
+      {
+        "itemId": "essence-stones",
+        "amount": 40
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "alliance-building",
+        "name": "Alliance-Building",
+        "img": "/images/tundra-album/tundra-alliance/alliance-building.png",
+        "reward": {
+          "itemId": "polishing-solution",
+          "amount": 35
+        },
+        "pieces": [
+          {
+            "id": "alliance-building-1",
+            "name": "Alliance-Building - 1",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-1.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-building-2",
+            "name": "Alliance-Building - 2",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-2.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-building-3",
+            "name": "Alliance-Building - 3",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-3.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-building-4",
+            "name": "Alliance-Building - 4",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-4.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-building-5",
+            "name": "Alliance-Building - 5",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-5.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-building-6",
+            "name": "Alliance-Building - 6",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-6.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-building-7",
+            "name": "Alliance-Building - 7",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-7.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-building-8",
+            "name": "Alliance-Building - 8",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-8.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-building-9",
+            "name": "Alliance-Building - 9",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-9.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-building-10",
+            "name": "Alliance-Building - 10",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-10.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-building-11",
+            "name": "Alliance-Building - 11",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-11.png",
+            "stars": 4
+          },
+          {
+            "id": "alliance-building-12",
+            "name": "Alliance-Building - 12",
+            "img": "/images/tundra-album/tundra-alliance/alliance-building-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "one-heart",
+        "name": "One Heart",
+        "img": "/images/tundra-album/tundra-alliance/one-heart.png",
+        "reward": {
+          "itemId": "enhancement-xp-component",
+          "amount": 7,
+          "size": 100
+        },
+        "pieces": [
+          {
+            "id": "one-heart-1",
+            "name": "One Heart - 1",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-1.png",
+            "stars": 1
+          },
+          {
+            "id": "one-heart-2",
+            "name": "One Heart - 2",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-2.png",
+            "stars": 1
+          },
+          {
+            "id": "one-heart-3",
+            "name": "One Heart - 3",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-3.png",
+            "stars": 1
+          },
+          {
+            "id": "one-heart-4",
+            "name": "One Heart - 4",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-4.png",
+            "stars": 2
+          },
+          {
+            "id": "one-heart-5",
+            "name": "One Heart - 5",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-5.png",
+            "stars": 2
+          },
+          {
+            "id": "one-heart-6",
+            "name": "One Heart - 6",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-6.png",
+            "stars": 2
+          },
+          {
+            "id": "one-heart-7",
+            "name": "One Heart - 7",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-7.png",
+            "stars": 3
+          },
+          {
+            "id": "one-heart-8",
+            "name": "One Heart - 8",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-8.png",
+            "stars": 3
+          },
+          {
+            "id": "one-heart-9",
+            "name": "One Heart - 9",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-9.png",
+            "stars": 3
+          },
+          {
+            "id": "one-heart-10",
+            "name": "One Heart - 10",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-10.png",
+            "stars": 4
+          },
+          {
+            "id": "one-heart-11",
+            "name": "One Heart - 11",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-11.png",
+            "stars": 4
+          },
+          {
+            "id": "one-heart-12",
+            "name": "One Heart - 12",
+            "img": "/images/tundra-album/tundra-alliance/one-heart-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "heroes-aid",
+        "name": "Heroes' Aid",
+        "img": "/images/tundra-album/tundra-alliance/heroes-aid.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "heroes-aid-1",
+            "name": "Heroes' Aid - 1",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-1.png",
+            "stars": 1
+          },
+          {
+            "id": "heroes-aid-2",
+            "name": "Heroes' Aid - 2",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-2.png",
+            "stars": 1
+          },
+          {
+            "id": "heroes-aid-3",
+            "name": "Heroes' Aid - 3",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-3.png",
+            "stars": 1
+          },
+          {
+            "id": "heroes-aid-4",
+            "name": "Heroes' Aid - 4",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-4.png",
+            "stars": 2
+          },
+          {
+            "id": "heroes-aid-5",
+            "name": "Heroes' Aid - 5",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-5.png",
+            "stars": 2
+          },
+          {
+            "id": "heroes-aid-6",
+            "name": "Heroes' Aid - 6",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-6.png",
+            "stars": 2
+          },
+          {
+            "id": "heroes-aid-7",
+            "name": "Heroes' Aid - 7",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-7.png",
+            "stars": 2
+          },
+          {
+            "id": "heroes-aid-8",
+            "name": "Heroes' Aid - 8",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-8.png",
+            "stars": 2
+          },
+          {
+            "id": "heroes-aid-9",
+            "name": "Heroes' Aid - 9",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-9.png",
+            "stars": 3
+          },
+          {
+            "id": "heroes-aid-10",
+            "name": "Heroes' Aid - 10",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-10.png",
+            "stars": 3
+          },
+          {
+            "id": "heroes-aid-11",
+            "name": "Heroes' Aid - 11",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-11.png",
+            "stars": 3
+          },
+          {
+            "id": "heroes-aid-12",
+            "name": "Heroes' Aid - 12",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-12.png",
+            "stars": 3
+          },
+          {
+            "id": "heroes-aid-13",
+            "name": "Heroes' Aid - 13",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-13.png",
+            "stars": 4
+          },
+          {
+            "id": "heroes-aid-14",
+            "name": "Heroes' Aid - 14",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-14.png",
+            "stars": 4
+          },
+          {
+            "id": "heroes-aid-15",
+            "name": "Heroes' Aid - 15",
+            "img": "/images/tundra-album/tundra-alliance/heroes-aid-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "alliance-resources",
+        "name": "Alliance Resources",
+        "img": "/images/tundra-album/tundra-alliance/alliance-resources.png",
+        "reward": {
+          "itemId": "charm-guide",
+          "amount": 8
+        },
+        "pieces": [
+          {
+            "id": "alliance-resources-1",
+            "name": "Alliance Resources - 1",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-1.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-resources-2",
+            "name": "Alliance Resources - 2",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-2.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-resources-3",
+            "name": "Alliance Resources - 3",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-3.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-resources-4",
+            "name": "Alliance Resources - 4",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-4.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-resources-5",
+            "name": "Alliance Resources - 5",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-5.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-resources-6",
+            "name": "Alliance Resources - 6",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-6.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-resources-7",
+            "name": "Alliance Resources - 7",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-7.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-resources-8",
+            "name": "Alliance Resources - 8",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-8.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-resources-9",
+            "name": "Alliance Resources - 9",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-9.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-resources-10",
+            "name": "Alliance Resources - 10",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-10.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-resources-11",
+            "name": "Alliance Resources - 11",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-11.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-resources-12",
+            "name": "Alliance Resources - 12",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-12.png",
+            "stars": 4
+          },
+          {
+            "id": "alliance-resources-13",
+            "name": "Alliance Resources - 13",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-13.png",
+            "stars": 4
+          },
+          {
+            "id": "alliance-resources-14",
+            "name": "Alliance Resources - 14",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-14.png",
+            "stars": 5
+          },
+          {
+            "id": "alliance-resources-15",
+            "name": "Alliance Resources - 15",
+            "img": "/images/tundra-album/tundra-alliance/alliance-resources-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "twisted-obsession",
+        "name": "Twisted Obsession",
+        "img": "/images/tundra-album/tundra-alliance/twisted-obsession.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "twisted-obsession-1",
+            "name": "Twisted Obsession - 1",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-1.png",
+            "stars": 1
+          },
+          {
+            "id": "twisted-obsession-2",
+            "name": "Twisted Obsession - 2",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-2.png",
+            "stars": 1
+          },
+          {
+            "id": "twisted-obsession-3",
+            "name": "Twisted Obsession - 3",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-3.png",
+            "stars": 1
+          },
+          {
+            "id": "twisted-obsession-4",
+            "name": "Twisted Obsession - 4",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-4.png",
+            "stars": 2
+          },
+          {
+            "id": "twisted-obsession-5",
+            "name": "Twisted Obsession - 5",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-5.png",
+            "stars": 2
+          },
+          {
+            "id": "twisted-obsession-6",
+            "name": "Twisted Obsession - 6",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-6.png",
+            "stars": 2
+          },
+          {
+            "id": "twisted-obsession-7",
+            "name": "Twisted Obsession - 7",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-7.png",
+            "stars": 3
+          },
+          {
+            "id": "twisted-obsession-8",
+            "name": "Twisted Obsession - 8",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-8.png",
+            "stars": 3
+          },
+          {
+            "id": "twisted-obsession-9",
+            "name": "Twisted Obsession - 9",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-9.png",
+            "stars": 3
+          },
+          {
+            "id": "twisted-obsession-10",
+            "name": "Twisted Obsession - 10",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-10.png",
+            "stars": 4
+          },
+          {
+            "id": "twisted-obsession-11",
+            "name": "Twisted Obsession - 11",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-11.png",
+            "stars": 4
+          },
+          {
+            "id": "twisted-obsession-12",
+            "name": "Twisted Obsession - 12",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-12.png",
+            "stars": 4
+          },
+          {
+            "id": "twisted-obsession-13",
+            "name": "Twisted Obsession - 13",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-13.png",
+            "stars": 5
+          },
+          {
+            "id": "twisted-obsession-14",
+            "name": "Twisted Obsession - 14",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-14.png",
+            "stars": 5
+          },
+          {
+            "id": "twisted-obsession-15",
+            "name": "Twisted Obsession - 15",
+            "img": "/images/tundra-album/tundra-alliance/twisted-obsession-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "virtues-and-crimes",
+        "name": "Virtues and Crimes",
+        "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes.png",
+        "reward": {
+          "itemId": "speedup-general-8h",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "virtues-and-crimes-1",
+            "name": "Virtues and Crimes - 1",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-1.png",
+            "stars": 1
+          },
+          {
+            "id": "virtues-and-crimes-2",
+            "name": "Virtues and Crimes - 2",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-2.png",
+            "stars": 1
+          },
+          {
+            "id": "virtues-and-crimes-3",
+            "name": "Virtues and Crimes - 3",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-3.png",
+            "stars": 2
+          },
+          {
+            "id": "virtues-and-crimes-4",
+            "name": "Virtues and Crimes - 4",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-4.png",
+            "stars": 2
+          },
+          {
+            "id": "virtues-and-crimes-5",
+            "name": "Virtues and Crimes - 5",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-5.png",
+            "stars": 2
+          },
+          {
+            "id": "virtues-and-crimes-6",
+            "name": "Virtues and Crimes - 6",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-6.png",
+            "stars": 2
+          },
+          {
+            "id": "virtues-and-crimes-7",
+            "name": "Virtues and Crimes - 7",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-7.png",
+            "stars": 3
+          },
+          {
+            "id": "virtues-and-crimes-8",
+            "name": "Virtues and Crimes - 8",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-8.png",
+            "stars": 3
+          },
+          {
+            "id": "virtues-and-crimes-9",
+            "name": "Virtues and Crimes - 9",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-9.png",
+            "stars": 3
+          },
+          {
+            "id": "virtues-and-crimes-10",
+            "name": "Virtues and Crimes - 10",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-10.png",
+            "stars": 3
+          },
+          {
+            "id": "virtues-and-crimes-11",
+            "name": "Virtues and Crimes - 11",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-11.png",
+            "stars": 4
+          },
+          {
+            "id": "virtues-and-crimes-12",
+            "name": "Virtues and Crimes - 12",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-12.png",
+            "stars": 4
+          },
+          {
+            "id": "virtues-and-crimes-13",
+            "name": "Virtues and Crimes - 13",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-13.png",
+            "stars": 4
+          },
+          {
+            "id": "virtues-and-crimes-14",
+            "name": "Virtues and Crimes - 14",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-14.png",
+            "stars": 4
+          },
+          {
+            "id": "virtues-and-crimes-15",
+            "name": "Virtues and Crimes - 15",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-15.png",
+            "stars": 5
+          },
+          {
+            "id": "virtues-and-crimes-16",
+            "name": "Virtues and Crimes - 16",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-16.png",
+            "stars": 5
+          },
+          {
+            "id": "virtues-and-crimes-17",
+            "name": "Virtues and Crimes - 17",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-17.png",
+            "stars": 5
+          },
+          {
+            "id": "virtues-and-crimes-18",
+            "name": "Virtues and Crimes - 18",
+            "img": "/images/tundra-album/tundra-alliance/virtues-and-crimes-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "children-of-the-new-world",
+        "name": "Children of the \"New World\"",
+        "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 5
+        },
+        "pieces": [
+          {
+            "id": "children-of-the-new-world-1",
+            "name": "Children of the \"New World\" - 1",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-1.png",
+            "stars": 1
+          },
+          {
+            "id": "children-of-the-new-world-2",
+            "name": "Children of the \"New World\" - 2",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-2.png",
+            "stars": 1
+          },
+          {
+            "id": "children-of-the-new-world-3",
+            "name": "Children of the \"New World\" - 3",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-3.png",
+            "stars": 2
+          },
+          {
+            "id": "children-of-the-new-world-4",
+            "name": "Children of the \"New World\" - 4",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-4.png",
+            "stars": 2
+          },
+          {
+            "id": "children-of-the-new-world-5",
+            "name": "Children of the \"New World\" - 5",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-5.png",
+            "stars": 2
+          },
+          {
+            "id": "children-of-the-new-world-6",
+            "name": "Children of the \"New World\" - 6",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-6.png",
+            "stars": 3
+          },
+          {
+            "id": "children-of-the-new-world-7",
+            "name": "Children of the \"New World\" - 7",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-7.png",
+            "stars": 3
+          },
+          {
+            "id": "children-of-the-new-world-8",
+            "name": "Children of the \"New World\" - 8",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-8.png",
+            "stars": 3
+          },
+          {
+            "id": "children-of-the-new-world-9",
+            "name": "Children of the \"New World\" - 9",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-9.png",
+            "stars": 4
+          },
+          {
+            "id": "children-of-the-new-world-10",
+            "name": "Children of the \"New World\" - 10",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-10.png",
+            "stars": 4
+          },
+          {
+            "id": "children-of-the-new-world-11",
+            "name": "Children of the \"New World\" - 11",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-11.png",
+            "stars": 4
+          },
+          {
+            "id": "children-of-the-new-world-12",
+            "name": "Children of the \"New World\" - 12",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-12.png",
+            "stars": 4
+          },
+          {
+            "id": "children-of-the-new-world-13",
+            "name": "Children of the \"New World\" - 13",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-13.png",
+            "stars": 4
+          },
+          {
+            "id": "children-of-the-new-world-14",
+            "name": "Children of the \"New World\" - 14",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-14.png",
+            "stars": 5
+          },
+          {
+            "id": "children-of-the-new-world-15",
+            "name": "Children of the \"New World\" - 15",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-15.png",
+            "stars": 5
+          },
+          {
+            "id": "children-of-the-new-world-16",
+            "name": "Children of the \"New World\" - 16",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-16.png",
+            "stars": 5
+          },
+          {
+            "id": "children-of-the-new-world-17",
+            "name": "Children of the \"New World\" - 17",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-17.png",
+            "stars": 5
+          },
+          {
+            "id": "children-of-the-new-world-18",
+            "name": "Children of the \"New World\" - 18",
+            "img": "/images/tundra-album/tundra-alliance/children-of-the-new-world-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "horn-of-command",
+        "name": "Horn of Command",
+        "img": "/images/tundra-album/tundra-alliance/horn-of-command.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        "pieces": [
+          {
+            "id": "horn-of-command-1",
+            "name": "Horn of Command - 1",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-1.png",
+            "stars": 1
+          },
+          {
+            "id": "horn-of-command-2",
+            "name": "Horn of Command - 2",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-2.png",
+            "stars": 1
+          },
+          {
+            "id": "horn-of-command-3",
+            "name": "Horn of Command - 3",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-3.png",
+            "stars": 2
+          },
+          {
+            "id": "horn-of-command-4",
+            "name": "Horn of Command - 4",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-4.png",
+            "stars": 2
+          },
+          {
+            "id": "horn-of-command-5",
+            "name": "Horn of Command - 5",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-5.png",
+            "stars": 2
+          },
+          {
+            "id": "horn-of-command-6",
+            "name": "Horn of Command - 6",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-6.png",
+            "stars": 3
+          },
+          {
+            "id": "horn-of-command-7",
+            "name": "Horn of Command - 7",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-7.png",
+            "stars": 3
+          },
+          {
+            "id": "horn-of-command-8",
+            "name": "Horn of Command - 8",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-8.png",
+            "stars": 3
+          },
+          {
+            "id": "horn-of-command-9",
+            "name": "Horn of Command - 9",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-9.png",
+            "stars": 4
+          },
+          {
+            "id": "horn-of-command-10",
+            "name": "Horn of Command - 10",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-10.png",
+            "stars": 4
+          },
+          {
+            "id": "horn-of-command-11",
+            "name": "Horn of Command - 11",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-11.png",
+            "stars": 4
+          },
+          {
+            "id": "horn-of-command-12",
+            "name": "Horn of Command - 12",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-12.png",
+            "stars": 4
+          },
+          {
+            "id": "horn-of-command-13",
+            "name": "Horn of Command - 13",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-13.png",
+            "stars": 4
+          },
+          {
+            "id": "horn-of-command-14",
+            "name": "Horn of Command - 14",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-14.png",
+            "stars": 5
+          },
+          {
+            "id": "horn-of-command-15",
+            "name": "Horn of Command - 15",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-15.png",
+            "stars": 5
+          },
+          {
+            "id": "horn-of-command-16",
+            "name": "Horn of Command - 16",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-16.png",
+            "stars": 5
+          },
+          {
+            "id": "horn-of-command-17",
+            "name": "Horn of Command - 17",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-17.png",
+            "stars": 5
+          },
+          {
+            "id": "horn-of-command-18",
+            "name": "Horn of Command - 18",
+            "img": "/images/tundra-album/tundra-alliance/horn-of-command-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "battlefield-epic",
+        "name": "Battlefield Epic",
+        "img": "/images/tundra-album/tundra-alliance/battlefield-epic.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "battlefield-epic-1",
+            "name": "Battlefield Epic - 1",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-1.png",
+            "stars": 2
+          },
+          {
+            "id": "battlefield-epic-2",
+            "name": "Battlefield Epic - 2",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-2.png",
+            "stars": 2
+          },
+          {
+            "id": "battlefield-epic-3",
+            "name": "Battlefield Epic - 3",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-3.png",
+            "stars": 3
+          },
+          {
+            "id": "battlefield-epic-4",
+            "name": "Battlefield Epic - 4",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-4.png",
+            "stars": 3
+          },
+          {
+            "id": "battlefield-epic-5",
+            "name": "Battlefield Epic - 5",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-5.png",
+            "stars": 4
+          },
+          {
+            "id": "battlefield-epic-6",
+            "name": "Battlefield Epic - 6",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-6.png",
+            "stars": 4
+          },
+          {
+            "id": "battlefield-epic-7",
+            "name": "Battlefield Epic - 7",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-7.png",
+            "stars": 4
+          },
+          {
+            "id": "battlefield-epic-8",
+            "name": "Battlefield Epic - 8",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-8.png",
+            "stars": 4
+          },
+          {
+            "id": "battlefield-epic-9",
+            "name": "Battlefield Epic - 9",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-9.png",
+            "stars": 4
+          },
+          {
+            "id": "battlefield-epic-10",
+            "name": "Battlefield Epic - 10",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-10.png",
+            "stars": 4
+          },
+          {
+            "id": "battlefield-epic-11",
+            "name": "Battlefield Epic - 11",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-11.png",
+            "stars": 4
+          },
+          {
+            "id": "battlefield-epic-12",
+            "name": "Battlefield Epic - 12",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-12.png",
+            "stars": 5
+          },
+          {
+            "id": "battlefield-epic-13",
+            "name": "Battlefield Epic - 13",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-13.png",
+            "stars": 5
+          },
+          {
+            "id": "battlefield-epic-14",
+            "name": "Battlefield Epic - 14",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-14.png",
+            "stars": 5
+          },
+          {
+            "id": "battlefield-epic-15",
+            "name": "Battlefield Epic - 15",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-15.png",
+            "stars": 5
+          },
+          {
+            "id": "battlefield-epic-16",
+            "name": "Battlefield Epic - 16",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-16.png",
+            "stars": 5
+          },
+          {
+            "id": "battlefield-epic-17",
+            "name": "Battlefield Epic - 17",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-17.png",
+            "stars": 5
+          },
+          {
+            "id": "battlefield-epic-18",
+            "name": "Battlefield Epic - 18",
+            "img": "/images/tundra-album/tundra-alliance/battlefield-epic-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]

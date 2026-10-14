@@ -4,8 +4,8 @@ The albums of the Tundra Album event. An album has 9 puzzles. A puzzle is built 
 5 stars, gives a reward when it is done, and the album gives a buff when all 9 puzzles are done. Use
 it to see what an album holds and what finishing it gives.
 
-The package holds 5 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
-of Heroes, and Rekindled Flames. More albums are added later.
+The package holds 6 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
+of Heroes, Rekindled Flames, and Tundra Alliance. More albums are added later.
 
 ## Usage
 
@@ -160,9 +160,29 @@ Mythic General Hero Shard.
 The album has 108 pieces: 35 at 1 star, 30 at 2 stars, 24 at 3 stars, 13 at 4 stars, and 6 at 5
 stars.
 
+### Tundra Alliance
+
+The buff is Troops Attack +2%. The completion rewards are 100 Lucky Hero Gear Chest and 40 Essence
+Stones.
+
+| Puzzle                      | Pieces | 1 star | 2 stars | 3 stars | 4 stars | 5 stars | Reward                           |
+| --------------------------- | ------ | ------ | ------- | ------- | ------- | ------- | -------------------------------- |
+| Alliance-Building           | 12     | 3      | 3       | 4       | 2       | 0       | 35 Polishing Solution            |
+| One Heart                   | 12     | 3      | 3       | 3       | 3       | 0       | 7 Enhancement XP Component (100) |
+| Heroes' Aid                 | 15     | 3      | 5       | 4       | 2       | 1       | 3 Essence Stones                 |
+| Alliance Resources          | 15     | 3      | 4       | 4       | 2       | 2       | 8 Charm Guide                    |
+| Twisted Obsession           | 15     | 3      | 3       | 3       | 3       | 3       | 2 Mythic General Hero Shard      |
+| Virtues and Crimes          | 18     | 2      | 4       | 4       | 4       | 4       | 2 8h General Speedup             |
+| Children of the "New World" | 18     | 2      | 3       | 3       | 5       | 5       | 5 Chief Gear Materials Chest     |
+| Horn of Command             | 18     | 2      | 3       | 3       | 5       | 5       | 5 Essence Stones                 |
+| Battlefield Epic            | 18     | 0      | 2       | 2       | 7       | 7       | 3 Mythic General Hero Shard      |
+
+The album has 141 pieces: 21 at 1 star, 30 at 2 stars, 30 at 3 stars, 33 at 4 stars, and 27 at 5
+stars.
+
 ## Notes
 
-The pieces, the star levels, and the reward amounts of the 5 albums are read from the album screens
+The pieces, the star levels, and the reward amounts of the 6 albums are read from the album screens
 of the game, and the images are cut from the same screens. The package owner names the items of the
 album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
 Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The

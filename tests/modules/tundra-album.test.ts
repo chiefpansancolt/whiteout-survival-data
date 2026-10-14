@@ -601,7 +601,37 @@ describe('Rekindled Flames', () => {
   });
 });
 
-const NEW_ALBUMS = [];
+const NEW_ALBUMS = [
+  {
+    id: 'tundra-alliance',
+    name: 'Tundra Alliance',
+    stat: 'Troops Attack',
+    statKey: 'troops-attack',
+    eventNote: '+2% troops attack',
+    completion: [
+      ['lucky-hero-gear-chest', 100],
+      ['essence-stones', 40],
+    ],
+    pieces: 141,
+    puzzles: [
+      ['alliance-building', 'Alliance-Building', [3, 3, 4, 2, 0], 'polishing-solution', 35],
+      ['one-heart', 'One Heart', [3, 3, 3, 3, 0], 'enhancement-xp-component', 7],
+      ['heroes-aid', "Heroes' Aid", [3, 5, 4, 2, 1], 'essence-stones', 3],
+      ['alliance-resources', 'Alliance Resources', [3, 4, 4, 2, 2], 'charm-guide', 8],
+      ['twisted-obsession', 'Twisted Obsession', [3, 3, 3, 3, 3], 'mythic-general-hero-shard', 2],
+      ['virtues-and-crimes', 'Virtues and Crimes', [2, 4, 4, 4, 4], 'speedup-general-8h', 2],
+      [
+        'children-of-the-new-world',
+        'Children of the "New World"',
+        [2, 3, 3, 5, 5],
+        'chief-gear-materials-chest',
+        5,
+      ],
+      ['horn-of-command', 'Horn of Command', [2, 3, 3, 5, 5], 'essence-stones', 5],
+      ['battlefield-epic', 'Battlefield Epic', [0, 2, 2, 7, 7], 'mythic-general-hero-shard', 3],
+    ],
+  },
+];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {
   const album = tundraAlbum().find(spec.id)!;
@@ -705,7 +735,7 @@ describe('the size of an Enhancement XP Component reward', () => {
 
   it('is the 10 component for 45 of them and the 100 component for the rest', () => {
     const components = rewards.filter((r) => r.size !== undefined);
-    expect(components).toHaveLength(8);
+    expect(components).toHaveLength(9);
     for (const reward of components) expect(reward.size).toBe(reward.amount === 45 ? 10 : 100);
     expect(components.filter((r) => r.size === 10)).toHaveLength(2);
   });
