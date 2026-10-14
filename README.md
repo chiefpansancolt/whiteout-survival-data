@@ -19,6 +19,8 @@
 
 ## Installation
 
+The package needs Node 24 or later.
+
 ```bash
 npm install whiteout-survival-data
 # or
@@ -35,7 +37,7 @@ Every module exports a **factory function** that returns a chainable query build
 import { buildings } from "whiteout-survival-data";
 
 const furnace = buildings().findByName("Furnace");
-furnace.levels.find((l) => l.label === "FC 10");
+furnace?.levels.find((l) => l.label === "FC 10");
 ```
 
 ---

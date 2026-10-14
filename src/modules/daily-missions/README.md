@@ -71,30 +71,29 @@ day decides which reward levels of the activity bar you get. The reward levels a
 `data/daily-mission-reward-levels.json`. A reward level has `activeness`, the activeness that it
 needs, and its `rewards`.
 
-| Mission                                                     | Target                        | Activeness | Other rewards                  |
-| ----------------------------------------------------------- | ----------------------------- | ---------- | ------------------------------ |
-| Take part in Alliance Help 1 time(s)                        | 1                             | 5          | 4,000 Meat                     |
-| Make 5 Alliance Contribution(s)                             | 5                             | 5          | 4,000 Wood                     |
-| Recruit 1 Hero(es)                                          | 1                             | 10         | 800 Coal, 200 Iron             |
-| Train 10 Infantry                                           | 10                            | 10         | 4,000 Meat, 4,000 Wood         |
-| Train 10 Lancers                                            | 10                            | 10         | 4,000 Meat, 4,000 Wood         |
-| Train 10 Marksmen                                           | 10                            | 10         | 4,000 Meat, 4,000 Wood         |
-| Carry out 1 Intel Mission(s)                                | 1                             | 10         | 800 Coal, 200 Iron             |
-| Claim 1 Online Reward(s)                                    | 1                             | 5          | 800 Coal, 200 Iron             |
-| Heal 10 injured soldiers                                    | 10                            | 10         | 4,000 Meat, 200 Iron           |
-| Gather 50,000 Meat                                          | 50,000                        | 5          | 4,000 Meat                     |
-| Gather 50,000 Wood                                          | 50,000                        | 5          | 4,000 Wood                     |
-| Gather 10,000 Coal                                          | 10,000                        | 5          | 800 Coal                       |
-| Gather 3,000 Iron                                           | 3,000                         | 5          | 200 Iron                       |
-| Fight in 1 Arena Challenge(s)                               | Fight in 4 Arena Challenge(s) | 4          | 25                             | 4,000 Wood, 200 Iron |
-| Upgrade 1 building(s)                                       | 1                             | 30         | 800 Coal, 200 Iron             |
-| Research 1 technology(ies)                                  | 1                             | 30         | 800 Coal, 200 Iron             |
-| Gather 1 time(s)                                            | 1                             | 5          | 4,000 Meat, 4,000 Wood         |
-| Defeat Polar Terror 1 time(s)                               | 1                             | 10         | 800 Coal                       |
-| Fight in 1 Arena Challenge(s)                               | 1                             | 10         | 4,000 Wood, 200 Iron           |
-| Complete 1 challenges in The Labyrinth                      | 1                             | 15         | 800 Coal, 200 Iron             |
-| Dispatch Pets to hunt for treasure 1 times in Pet Adventure | 1                             | 5          | 4,000 Meat, 4,000 Wood         |
-| Log in                                                      | 1                             | 10         | 4,000 Meat, 800 Coal, 200 Iron |
+| Mission                                                     | Target | Activeness | Other rewards                  |
+| ----------------------------------------------------------- | ------ | ---------- | ------------------------------ |
+| Take part in Alliance Help 1 time(s)                        | 1      | 5          | 4,000 Meat                     |
+| Make 5 Alliance Contribution(s)                             | 5      | 5          | 4,000 Wood                     |
+| Recruit 1 Hero(es)                                          | 1      | 10         | 800 Coal, 200 Iron             |
+| Train 10 Infantry                                           | 10     | 10         | 4,000 Meat, 4,000 Wood         |
+| Train 10 Lancers                                            | 10     | 10         | 4,000 Meat, 4,000 Wood         |
+| Train 10 Marksmen                                           | 10     | 10         | 4,000 Meat, 4,000 Wood         |
+| Carry out 1 Intel Mission(s)                                | 1      | 10         | 800 Coal, 200 Iron             |
+| Claim 1 Online Reward(s)                                    | 1      | 5          | 800 Coal, 200 Iron             |
+| Heal 10 injured soldiers                                    | 10     | 10         | 4,000 Meat, 200 Iron           |
+| Gather 50,000 Meat                                          | 50,000 | 5          | 4,000 Meat                     |
+| Gather 50,000 Wood                                          | 50,000 | 5          | 4,000 Wood                     |
+| Gather 10,000 Coal                                          | 10,000 | 5          | 800 Coal                       |
+| Gather 3,000 Iron                                           | 3,000  | 5          | 200 Iron                       |
+| Upgrade 1 building(s)                                       | 1      | 30         | 800 Coal, 200 Iron             |
+| Research 1 technology(ies)                                  | 1      | 30         | 800 Coal, 200 Iron             |
+| Gather 1 time(s)                                            | 1      | 5          | 4,000 Meat, 4,000 Wood         |
+| Defeat Polar Terror 1 time(s)                               | 1      | 10         | 800 Coal                       |
+| Fight in 1 Arena Challenge(s)                               | 1      | 10         | 4,000 Wood, 200 Iron           |
+| Complete 1 challenges in The Labyrinth                      | 1      | 15         | 800 Coal, 200 Iron             |
+| Dispatch Pets to hunt for treasure 1 times in Pet Adventure | 1      | 5          | 4,000 Meat, 4,000 Wood         |
+| Log in                                                      | 1      | 10         | 4,000 Meat, 800 Coal, 200 Iron |
 
 Level 2 of the other missions:
 
@@ -111,6 +110,7 @@ Level 2 of the other missions:
 | Gather 50,000 Wood                                          | Gather 250,000 Wood                                         | 250000 | 5          | 4,000 Wood             |
 | Gather 10,000 Coal                                          | Gather 50,000 Coal                                          | 50000  | 5          | 800 Coal               |
 | Gather 3,000 Iron                                           | Gather 15,000 Iron                                          | 15000  | 5          | 200 Iron               |
+| Fight in 1 Arena Challenge(s)                               | Fight in 4 Arena Challenge(s)                               | 4      | 25         | 4,000 Wood, 200 Iron   |
 
 Levels 2 and 3 of Gather are `Gather 2 time(s)` and `Gather 4 time(s)`, with targets of 2 and 4.
 They give 5 and 15 Activeness, and both give 4,000 Meat and 4,000 Wood.

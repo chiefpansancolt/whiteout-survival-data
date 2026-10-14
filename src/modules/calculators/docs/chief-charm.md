@@ -23,8 +23,9 @@ result.eventPoints.svs; // 131250
 | `ranges` | `UpgradeRange[]` | One range for each charm to upgrade. Defaults to `[]`, which costs nothing. |
 
 Each range is `{ from, to }`. Both are level `id` values from `chiefCharm()`, such as `level-1` or
-`level-17-stage-8`. Use `from: null` for a charm that has no level yet, so the first level counts as
-a step. A range with the same `from` and `to` costs nothing.
+`level-17-stage-8`. From level 4 on, an id ends in a stage, such as `level-4-stage-0`. Use
+`from: null` for a charm that has no level yet, so the first level counts as a step. A range with
+the same `from` and `to` costs nothing.
 
 ## Result
 

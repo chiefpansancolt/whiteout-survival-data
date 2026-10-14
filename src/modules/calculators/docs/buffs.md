@@ -141,9 +141,9 @@ Each group has an `id`, a `name`, and its `categories`.
 | `Alliance`        | `alliance`        | Every stat whose key starts with `alliance-` or `enemy-alliance-`, and Ally Assists, Ally Help Time, and Rally Governor Cap, in the order of the names                                                                                                                                                |
 | `Other`           | `other`           | Every stat that is in none of the groups above, in the order of the names                                                                                                                                                                                                                             |
 
-`BUFF_GROUPS` holds the groups and the stats that each lists, and `buffGroupOf(statKey)` returns the
-group of a stat. The stats in `Other` have no group yet. Move one into a group by adding its key to
-the list of that group.
+`BUFF_GROUPS` holds the groups and the `statKeys` that each lists, and `buffGroupOf(statKey)`
+returns the group of a stat. The stats in `Other` have no group yet. Move one into a group by adding
+its key to the list of that group.
 
 ## Sources
 
@@ -272,7 +272,7 @@ Experts give only the skills and talents whose text states a stat that always ap
 Porcupine, Undefeated Will, Fearsome Reputation, and the talent Rallying Cry of Gareth, and Last
 Line, One Heart, Spirit of Aeetis, and the talent Commander's Crest of Romulus, and Project
 Management of Agnes. Rallying Cry gives Healing Speed and Infirmary Capacity, so Gareth at talent
-level 3 adds 10% Healing Speed and 80,000 Infirmary Capacity. Last Line gives Troops Attack and
+level 3 adds 10% Healing Speed and 70,000 Infirmary Capacity. Last Line gives Troops Attack and
 Defense, and Spirit of Aeetis gives Troops Lethality and Health, each at the same amount.
 Commander's Crest gives 300 to 10,000 Troops Deployment Capacity. One Heart gives 5,000 to 100,000
 Rally Capacity. Project Management gives Research Speed from 1% to 5%, and the hours that it saves
@@ -301,8 +301,9 @@ research.
 Chief Orders and President skills last for a limited time. The calculator adds one only when you
 list it, so list the ones that are active when you want the buffs of now.
 
-`BUFF_VIP_MAX_LEVEL`, `BUFF_TREE_OF_LIFE_MAX_LEVEL`, and `BUFF_CHARMS_PER_GEAR_SLOT` are exported
-and hold 12, 10, and 3.
+`BUFF_VIP_MAX_LEVEL`, `BUFF_TREE_OF_LIFE_MAX_LEVEL`, `BUFF_EXPERT_MAX_AFFINITY_LEVEL`,
+`BUFF_COLLECTION_MAX_LEVEL`, `BUFF_EXPERT_ADVANCEMENT_INTERVAL`, and `BUFF_CHARMS_PER_GEAR_SLOT` are
+exported and hold 12, 10, 100, 51, 10, and 3.
 
 ## Errors
 
@@ -313,6 +314,7 @@ of the pet.
 
 ## Data and assumptions
 
-The affinity bonuses of experts and the skills that only apply in an event are not in the result.
-The troop attack and defense of a pet is a percent. The buffs of two sources of one stat add up, and
-the calculator does not model a cap or a rule that only the highest source counts.
+The affinity bonuses of experts count only for the experts that you list in `expertAffinity`. The
+skills that only apply in an event are not in the result. The troop attack and defense of a pet is a
+percent. The buffs of two sources of one stat add up, and the calculator does not model a cap or a
+rule that only the highest source counts.

@@ -37,9 +37,10 @@ a slot for a level from 1 to 18.
 `images` is an array of 18 icons, so the icon of level `n` is `images[n - 1]`.
 
 `chiefCharm()` holds 75 steps from `data/chief/charm-levels.json`. The table has the same shape as
-the Chief Gear table, without deployment capacity. A step has `order` (its position in the table,
-from 1), `level`, `stage`, `materials` (item ids from `items()` with amounts), `statTotalPercent`,
-`powerTotal`, and `score`.
+the Chief Gear table, without deployment capacity. A step has `id` and `name` (such as
+`level-4-stage-0` and `Level 4 Stage 0`), `order` (its position in the table, from 1), `level`,
+`stage`, `materials` (item ids from `items()` with amounts), `statTotalPercent`, `powerTotal`, and
+`score`.
 
 ## Notes
 

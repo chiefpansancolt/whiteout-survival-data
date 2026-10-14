@@ -1,6 +1,6 @@
 # Skins
 
-The 191 cosmetic skins of the game: avatar frames, nameplates, and march, city, and teleport skins.
+The 215 cosmetic skins of the game: avatar frames, nameplates, and march, city, and teleport skins.
 Use it to look up a skin, its source, and the stat bonus it grants.
 
 ## Usage

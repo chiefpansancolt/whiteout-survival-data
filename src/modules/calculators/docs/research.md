@@ -58,8 +58,8 @@ nothing. The calculator adds the cost, power, and time of those levels.
 
 The time is the base time of all levels of all goals added together, divided by 1 plus the research
 speed, and rounded down. The speed is `researchSpeedPercent` plus `stateBuff` and `vicePresident`.
-`RESEARCH_CALCULATOR` is exported and holds the two buffs (`stateBuffSpeedPercent` 10 and
-`vicePresidentSpeedPercent`).
+`RESEARCH_CALCULATOR` is exported and holds the two buffs: `stateBuffSpeedPercent` (10) and
+`vicePresidentSpeedPercent` (`{ regular: 10, supreme: 15 }`).
 
 A level can need another research line at a level. The calculator takes the highest of the `current`
 and `goal` levels you gave for that line as the planned level, and 0 when the line is not in the

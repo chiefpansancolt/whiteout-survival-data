@@ -114,4 +114,4 @@ a goal below the current level, or an advanced flag on a level with no advanceme
 The numbers come from the data behind `experts()`. One minute of learning is 60 EXP. At level 2 of
 Fabian's Crisis Rescue, `experts()` has 33,053 EXP, so the learning minutes of that level round up
 to 551. The talent costs nothing, because it levels with the relationship, so it is not in the
-result. The result has no event points. `EXPERT_MAX_LEVEL` exports the 100.
+result. `EXPERT_MAX_LEVEL` exports the 100.

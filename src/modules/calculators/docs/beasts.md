@@ -32,7 +32,7 @@ result.events[0].beastPoints; // 606000
 | ---------------- | ------------ | ----------------------------------------------------------------------------------------- |
 | `stamina`        | `number`     | Stamina that you have. A whole number of 0 or more. Defaults to 0.                        |
 | `staminaCans`    | `number`     | Stamina cans that you have, 10 stamina each. A whole number. Defaults to 0.               |
-| `beastLevel`     | `number`     | Level 1 to 30 of the beasts that the stamina left after the planned hunts hunts.          |
+| `beastLevel`     | `number`     | Level 1 to 30 of the beasts that the stamina left after the planned hunts.                |
 | `beastRuns`      | `BeastRun[]` | Beast hunts that you plan, as `{ level, count }`. The level is 1 to 30. Defaults to none. |
 | `polarTerrors`   | `number`     | Polar Terror hunts that you plan. A whole number of 0 or more. Defaults to 0.             |
 | `ginaSkillLevel` | `number`     | Level 1 to 5 of Gina's Endurance Training skill. Leave out when Gina is not used.         |

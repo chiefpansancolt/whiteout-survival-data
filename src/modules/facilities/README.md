@@ -52,6 +52,5 @@ Every facility has an `unlockFurnaceLevel`:
 | Beast Cage        | 18            |
 | Dawn Academy      | 25            |
 
-The Furnace level 2 of the Suggestion Box is the statement of the package owner, from the game. The
-level of Dawn Academy is in its own description. The pets list Furnace 18 for the Beast Cage as
-well.
+The package owner gave the Furnace level 2 of the Suggestion Box from the game. The description of
+Dawn Academy states its level. The pets module also lists Furnace level 18 for the Beast Cage.

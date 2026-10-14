@@ -116,8 +116,8 @@ Mission, `Labyrinth Cores` for The Labyrinth, `recycle tokens` for Tundra Album,
 
 The four Core events have no `resultShape`. Six events are `milestones` only because they list
 missions: Alliance Mobilization, Beast Whisperer, Flame and Fang, Symphony of Change, Vision of
-Dawn, and Wild Brawl. The site plan counts 14 and 20 for the last two shapes, so check these six if
-a different form fits better. A `resultShape` is data, and an edit in the event file changes it.
+Dawn, and Wild Brawl. Check these six if a different form fits better. A `resultShape` is data, and
+an edit in the event file changes it.
 
 ## Schedule
 

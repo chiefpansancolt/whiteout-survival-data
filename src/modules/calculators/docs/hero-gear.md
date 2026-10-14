@@ -58,15 +58,16 @@ to 40, and so on) also cost Mithril. The empowerment power continues from the po
 level 100.
 
 Mastery forging past `level-10-stage-0` and empowerment need enhancement at level 100.
-`HERO_GEAR_ENHANCEMENT_REQUIREMENT` exports this rule. Empowerment also needs mastery forging at
-Level 10, the row `level-10-stage-0`. `HERO_GEAR_EMPOWERMENT_REQUIREMENT` exports both parts: the
-`enhancementLevel` and the `masteryForgingRowId`. The calculator does not throw for these rules. It
-lists the unmet ones in `unmetRequirements`. An entry with an `enhancementLevel` is the enhancement
-rule, and it appears when the goal has an `enhancement` range that ends below 100. An entry with a
-`masteryForgingRowId` is the mastery forging rule for empowerment, and it appears when the goal has
-an `empowerment` goal above 0 and a `masteryForging` range that ends below `level-10-stage-0`. A
-goal with no `enhancement` range, or no `masteryForging` range, is not checked for that rule,
-because the calculator does not know that state of the piece.
+`HERO_GEAR_ENHANCEMENT_REQUIREMENT` exports this rule as `{ afterRowId, enhancementLevel }`.
+Empowerment also needs mastery forging at Level 10, the row `level-10-stage-0`.
+`HERO_GEAR_EMPOWERMENT_REQUIREMENT` exports both parts: the `enhancementLevel` and the
+`masteryForgingRowId`. The calculator does not throw for these rules. It lists the unmet ones in
+`unmetRequirements`. An entry with an `enhancementLevel` is the enhancement rule, and it appears
+when the goal has an `enhancement` range that ends below 100. An entry with a `masteryForgingRowId`
+is the mastery forging rule for empowerment, and it appears when the goal has an `empowerment` goal
+above 0 and a `masteryForging` range that ends below `level-10-stage-0`. A goal with no
+`enhancement` range, or no `masteryForging` range, is not checked for that rule, because the
+calculator does not know that state of the piece.
 
 `eventPoints` scores the Essence Stones and the Mithril, read from the scoring rows of each event.
 

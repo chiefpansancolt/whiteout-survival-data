@@ -70,6 +70,7 @@ table, so the rows are upgrade steps, not named items. A row has these fields.
 
 | Field                      | Meaning                                                                                          |
 | -------------------------- | ------------------------------------------------------------------------------------------------ |
+| `id`, `name`               | Slug and label of the row, such as `common-star-0` and `Common Star 0`                           |
 | `order`                    | Position in the table, from 1 in row order                                                       |
 | `tier`                     | Tier label, for example `Epic` or `LegendaryT3`                                                  |
 | `tierId`                   | The tier in kebab case, such as `epic-t1`. It is the `id` of the tier in `chiefGearSetBonuses()` |

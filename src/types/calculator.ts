@@ -591,7 +591,7 @@ export interface BeastCalculatorInput {
   stamina?: number;
   /** Stamina cans, 10 stamina each. Defaults to 0. */
   staminaCans?: number;
-  /** The level of the beasts that the stamina left after the planned runs hunts, from 1 to 30. */
+  /** The level of the beasts that the stamina left after the planned hunts, from 1 to 30. */
   beastLevel: number;
   /** Beast hunts that you plan, such as the beasts of Intel missions. Defaults to none. */
   beastRuns?: BeastRun[];

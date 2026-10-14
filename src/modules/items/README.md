@@ -60,7 +60,7 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 The Skins module has the same rule.
 
 `sources` is a plain list of where an item drops from, such as shops, events, and activities. It is
-empty for 100 items.
+empty for 95 items.
 
 `rewardRates` is a loot table, a list of `{ reward, amount, probabilityPercent }`. Only chests carry
 it, and only 12 of the 60 chests do.
