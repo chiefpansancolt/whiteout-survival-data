@@ -674,6 +674,7 @@ export type BuffSourceType =
   | 'building'
   | 'skin'
   | 'tundraAlbum'
+  | 'collection'
   | 'decoration'
   | 'treeOfLife'
   | 'castleAppointment'
@@ -766,6 +767,11 @@ export interface BuffProfile {
   skins?: string[];
   /** Ids of the Tundra Albums that are complete. The buff of an album counts when it is complete. */
   tundraAlbums?: string[];
+  /**
+   * Your collection level, from 0 to 51. The buffs of the medallion that you hold at this level
+   * count. A level of 0 adds nothing.
+   */
+  collectionLevel?: number;
   /** List a decoration once for each copy that you have placed. */
   decorations?: BuffDecoration[];
   /** From 0 to 10. */

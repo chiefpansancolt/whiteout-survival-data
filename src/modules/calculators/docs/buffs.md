@@ -57,6 +57,7 @@ profile gives one category, `march-queue`.
 | `buildingLevels`     | `Record<buildingId, levelLabel>`         | The level label of a building, such as `"30"` or `"FC 10"`.                                                                                                                    |
 | `skins`              | `string[]`                               | Ids of the skins that you own.                                                                                                                                                 |
 | `tundraAlbums`       | `string[]`                               | Ids of the Tundra Albums that are complete, such as `['crystalline-mysteries']`. The buff of an album counts when it is complete.                                              |
+| `collectionLevel`    | `number`                                 | Your collection level, 0 to 51. The buffs of the medallion that you hold at this level count.                                                                                  |
 | `decorations`        | `{ id, level }[]`                        | Island decorations. List a decoration once for each copy that you have placed.                                                                                                 |
 | `treeOfLifeLevel`    | `number`                                 | Level of the Tree of Life, 0 to 10. It adds the buffs of all levels up to it.                                                                                                  |
 | `castleAppointment`  | `string`                                 | The id of the castle position that you hold.                                                                                                                                   |
@@ -115,6 +116,7 @@ split in two, and the Tree of Life and the island decorations are one entry.
 | `pet`                | Pets                        |
 | `skin`               | Skins                       |
 | `tundraAlbum`        | Tundra Album                |
+| `collection`         | Collection                  |
 | `chiefGear`          | Chief Gear                  |
 | `chiefGearSet`       | Chief Gear set bonus        |
 | `chiefCharm`         | Chief Charms                |
@@ -162,6 +164,7 @@ the list of that group.
 | `pet`               | The troop attack and defense of a pet at its level, and its refinement.                                                     |
 | `skin`              | The bonus of a skin.                                                                                                        |
 | `tundraAlbum`       | The buff of a complete Tundra Album: Troops Attack, Troops Defense, Resource Gathering Speed, or Resource Production Speed. |
+| `collection`        | The Troops Attack, Defense, Lethality, and Health of the medallion that you hold at your collection level.                  |
 | `chiefGear`         | The Attack and Defense of a Chief Gear piece, for the troop type of its slot.                                               |
 | `chiefGearSet`      | The 3 piece Defense and 6 piece Attack set bonuses of the gear that is worn.                                                |
 | `chiefCharm`        | The Lethality and Health of a Chief Charm, for the troop type of the gear slot that holds it.                               |
@@ -197,6 +200,13 @@ Mysteries and Explore the World give 2% Troops Attack, Daybreak Island gives 2% 
 of Heroes gives 5% Resource Gathering Speed, and Rekindled Flames gives 5% Resource Production
 Speed. The Resource Gathering Speed counts in each of the four resources, as above. An id that is
 not an album throws an `Error`.
+
+The collection gives the buffs of the medallion that you hold at your `collectionLevel`, from level
+1 to level 51. The level picks the medallion in `collectionMedallionAt()`, and the buffs of a
+medallion are the totals that the game lists for it, so the buffs of the medallions before it do not
+add on top. Bronze Medallion I gives 2% Troops Attack, and Light Medallion IV gives 6% Troops
+Attack, Defense, and Lethality and 4% Troops Health. A level of 0 adds nothing. A level that is not
+a whole number from 0 to 51 throws a `RangeError`.
 
 An expert also gives a base bonus that grows with the affinity level. The bonus is the `statBonus`
 of that level in `experts()`, from 3% at level 1 up to 30% at level 100 for Gareth, and it goes to

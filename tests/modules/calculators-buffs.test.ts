@@ -508,6 +508,68 @@ describe('calculateBuffs Tundra Albums', () => {
   });
 });
 
+describe('calculateBuffs collection level', () => {
+  const stats = ['troops-attack', 'troops-defense', 'troops-lethality', 'troops-health'];
+  const totalsOf = (level: number) =>
+    stats.map((s) => category(calculateBuffs({ collectionLevel: level }), s)?.total ?? 0);
+
+  it('adds nothing at level 0 or when the level is left out', () => {
+    expect(calculateBuffs({ collectionLevel: 0 }).categories).toEqual([]);
+    expect(calculateBuffs({}).categories).toEqual([]);
+  });
+
+  it.each([
+    [1, [2, 0, 0, 0]],
+    [5, [2, 0, 0, 0]],
+    [6, [2, 2, 0, 0]],
+    [10, [2, 2, 0, 0]],
+    [11, [2, 2, 2, 0]],
+    [16, [2, 2, 2, 2]],
+    [21, [4, 2, 2, 2]],
+    [26, [4, 4, 2, 2]],
+    [31, [4, 4, 4, 2]],
+    [36, [4, 4, 4, 4]],
+    [41, [6, 4, 4, 4]],
+    [46, [6, 6, 4, 4]],
+    [50, [6, 6, 4, 4]],
+    [51, [6, 6, 6, 4]],
+  ])('gives the buffs of the medallion at level %d', (level, totals) => {
+    expect(totalsOf(level)).toEqual(totals);
+  });
+
+  it('gives the total of the medallion and not the sum of the medallions before it', () => {
+    const result = calculateBuffs({ collectionLevel: 51 });
+    expect(category(result, 'troops-attack')!.sources).toEqual([
+      {
+        type: 'collection',
+        id: 'light-medallion-4',
+        label: 'Collection: Light Medallion IV',
+        amount: 6,
+      },
+    ]);
+  });
+
+  it('adds up with the other sources of the same stat', () => {
+    const result = calculateBuffs({ collectionLevel: 7, tundraAlbums: ['crystalline-mysteries'] });
+    expect(category(result, 'troops-attack')!.total).toBe(4);
+    const types = category(result, 'troops-attack')!.sources.map((s) => s.type);
+    expect(types).toEqual(['tundraAlbum', 'collection']);
+  });
+
+  it('lists the collection under its own source group', () => {
+    const result = calculateBuffs({ collectionLevel: 12 });
+    expect(result.bySource.map((g) => g.name)).toEqual(['Collection']);
+  });
+
+  it('throws for a level that is not a whole number from 0 to 51', () => {
+    for (const level of [52, -1, 1.5]) {
+      expect(() => calculateBuffs({ collectionLevel: level })).toThrow(
+        new RangeError('collectionLevel must be a whole number from 0 to 51'),
+      );
+    }
+  });
+});
+
 describe('calculateBuffs general Resource Gathering Speed', () => {
   it('counts a general gathering speed in each of the four resources and has no category of its own', () => {
     const skin = skins()

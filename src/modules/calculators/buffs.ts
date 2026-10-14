@@ -12,6 +12,7 @@ import {
   chiefGearSlots,
 } from '@/modules/chief-gear';
 import { chiefOrders } from '@/modules/chief-orders';
+import { COLLECTION_MAX_LEVEL, collectionMedallionAt } from '@/modules/collection-reward-levels';
 import { decoration, treeOfLife } from '@/modules/daybreak-island';
 import { experts } from '@/modules/experts';
 import { heroes } from '@/modules/heroes';
@@ -39,6 +40,7 @@ import {
 export const BUFF_VIP_MAX_LEVEL = 12;
 export const BUFF_TREE_OF_LIFE_MAX_LEVEL = 10;
 export const BUFF_EXPERT_MAX_AFFINITY_LEVEL = 100;
+export const BUFF_COLLECTION_MAX_LEVEL = COLLECTION_MAX_LEVEL;
 export const BUFF_EXPERT_ADVANCEMENT_INTERVAL = 10;
 export const BUFF_CHARMS_PER_GEAR_SLOT = 3;
 export const BUFF_STARTING_MARCH_QUEUE = 1;
@@ -340,6 +342,7 @@ const SOURCE_ORDER: BuffSourceType[] = [
   'pet',
   'skin',
   'tundraAlbum',
+  'collection',
   'chiefGear',
   'chiefGearSet',
   'chiefCharm',
@@ -363,6 +366,7 @@ const SOURCE_GROUP_NAMES: Record<string, string> = {
   pet: 'Pets',
   skin: 'Skins',
   tundraAlbum: 'Tundra Album',
+  collection: 'Collection',
   chiefGear: 'Chief Gear',
   chiefGearSet: 'Chief Gear set bonus',
   chiefCharm: 'Chief Charms',
@@ -845,6 +849,23 @@ function tundraAlbumEntries(profile: BuffProfile): BuffEntry[] {
   });
 }
 
+function collectionEntries(profile: BuffProfile): BuffEntry[] {
+  const level = profile.collectionLevel ?? 0;
+  checkLevel('collectionLevel', level, BUFF_COLLECTION_MAX_LEVEL);
+  const medallion = collectionMedallionAt(level);
+  if (medallion === undefined) return [];
+  return medallion.buffs.map((buff) =>
+    entry(
+      'collection',
+      medallion.id,
+      `Collection: ${medallion.name}`,
+      buff.statKey,
+      buff.unit as BuffUnit,
+      buff.amount,
+    ),
+  );
+}
+
 function chiefOrderEntries(profile: BuffProfile): BuffEntry[] {
   return (profile.chiefOrders ?? []).flatMap((id) => {
     const order = found('Chief Order', id, chiefOrders().find(id));
@@ -887,7 +908,7 @@ const round = (value: number): number => Math.round(value * 10000) / 10000;
  *
  * @param profile What you have: hero skill levels, research and Alliance Tech levels, the VIP level,
  * building levels, skins, decorations, the Tree of Life level, a castle position, active Chief
- * Orders and President skills, pets, and completed Tundra Albums. A section that is left out adds nothing.
+ * Orders and President skills, pets, completed Tundra Albums, and the collection level. A section that is left out adds nothing.
  * @throws Error when an id or a skill name is not in the data.
  * @throws RangeError when a level is not a whole number from 0 to the top level of the source.
  */
@@ -909,6 +930,7 @@ export function calculateBuffs(profile: BuffProfile = {}): BuffCalculation {
     ...petEntries(profile),
     ...skinEntries(profile),
     ...tundraAlbumEntries(profile),
+    ...collectionEntries(profile),
     ...chiefGearEntries(profile),
     ...chiefCharmEntries(profile),
     ...chiefOrderEntries(profile),
