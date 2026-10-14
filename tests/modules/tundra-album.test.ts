@@ -3,6 +3,8 @@ import { items } from '@/modules/items';
 import {
   TUNDRA_ALBUM_PUZZLES_PER_ALBUM,
   tundraAlbum,
+  tundraAlbumPieceRewards,
+  tundraAlbumPieceRewardsReached,
   TundraAlbumQuery,
   tundraPuzzlePieceCounts,
 } from '@/modules/tundra-album';
@@ -970,5 +972,93 @@ describe('the size of an Enhancement XP Component reward', () => {
     expect(components).toHaveLength(10);
     for (const reward of components) expect(reward.size).toBe(reward.amount === 45 ? 10 : 100);
     expect(components.filter((r) => r.size === 10)).toHaveLength(2);
+  });
+});
+
+describe('tundraAlbumPieceRewards', () => {
+  const tiers = tundraAlbumPieceRewards();
+
+  it('has 80 tiers, numbered from 1, with a higher count of pieces at each tier', () => {
+    expect(tiers).toHaveLength(80);
+    expect(tiers.map((t) => t.tier)).toEqual(Array.from({ length: 80 }, (_, i) => i + 1));
+    tiers.slice(1).forEach((tier, i) => expect(tier.pieces).toBeGreaterThan(tiers[i].pieces));
+  });
+
+  it('gives every tier two rewards, linked to an item, with Gems first', () => {
+    for (const tier of tiers) {
+      expect(tier.rewards).toHaveLength(2);
+      expect(tier.rewards[0].itemId).toBe('gems');
+      for (const reward of tier.rewards) expect(items().find(reward.itemId!)).toBeDefined();
+    }
+  });
+
+  it('gives the rewards of the first tiers and of the last tier', () => {
+    const rewardsOf = (n: number) => tiers[n - 1].rewards.map((r) => [r.itemId, r.amount, r.size]);
+    expect([tiers[0].pieces, rewardsOf(1)]).toEqual([
+      25,
+      [
+        ['gems', 100, undefined],
+        ['speedup-general-3h', 2, undefined],
+      ],
+    ]);
+    expect([tiers[1].pieces, rewardsOf(2)[1]]).toEqual([50, ['enhancement-xp-component', 5, 100]]);
+    expect([tiers[3].pieces, rewardsOf(4)]).toEqual([
+      100,
+      [
+        ['gems', 1000, undefined],
+        ['essence-stones', 16, undefined],
+      ],
+    ]);
+    expect([tiers[6].pieces, rewardsOf(7)[1]]).toEqual([
+      175,
+      ['speedup-research-3h', 2, undefined],
+    ]);
+    expect([tiers[9].pieces, rewardsOf(10)[1]]).toEqual([250, ['speedup-troop-3h', 2, undefined]]);
+    expect([tiers[24].pieces, rewardsOf(25)[1]]).toEqual([
+      625,
+      ['lucky-hero-gear-chest', 25, undefined],
+    ]);
+    expect([tiers[79].pieces, rewardsOf(80)]).toEqual([
+      1920,
+      [
+        ['gems', 1000, undefined],
+        ['essence-stones', 24, undefined],
+      ],
+    ]);
+  });
+
+  it('sets the size only on the Enhancement XP Component, and always to 100', () => {
+    for (const reward of tiers.flatMap((t) => t.rewards)) {
+      expect(reward.size).toBe(reward.itemId === 'enhancement-xp-component' ? 100 : undefined);
+    }
+  });
+
+  it('needs no more pieces than the albums hold', () => {
+    const total = tundraAlbum()
+      .get()
+      .flatMap((a) => a.puzzles)
+      .reduce((sum, p) => sum + p.pieces.length, 0);
+    expect(total).toBe(1923);
+    expect(tiers[tiers.length - 1].pieces).toBeLessThanOrEqual(total);
+  });
+
+  it('sorts the tiers of a source by pieces', () => {
+    const [first, second] = tiers;
+    expect(tundraAlbumPieceRewards([second, first])).toEqual([first, second]);
+  });
+});
+
+describe('tundraAlbumPieceRewardsReached', () => {
+  it('gives the tiers that a total of pieces reaches', () => {
+    expect(tundraAlbumPieceRewardsReached(24)).toEqual([]);
+    expect(tundraAlbumPieceRewardsReached(25).map((t) => t.tier)).toEqual([1]);
+    expect(tundraAlbumPieceRewardsReached(99).map((t) => t.tier)).toEqual([1, 2, 3]);
+    expect(tundraAlbumPieceRewardsReached(1749)).toHaveLength(71);
+    expect(tundraAlbumPieceRewardsReached(1923)).toHaveLength(80);
+  });
+
+  it('reads a source when one is given', () => {
+    const source = tundraAlbumPieceRewards().slice(0, 4);
+    expect(tundraAlbumPieceRewardsReached(10000, source)).toEqual(source);
   });
 });

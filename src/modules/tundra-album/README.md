@@ -12,7 +12,12 @@ Combat. More albums are added later.
 ## Usage
 
 ```ts
-import { items, tundraAlbum, tundraPuzzlePieceCounts } from "whiteout-survival-data";
+import {
+  items,
+  tundraAlbum,
+  tundraAlbumPieceRewardsReached,
+  tundraPuzzlePieceCounts,
+} from "whiteout-survival-data";
 
 const album = tundraAlbum().find("crystalline-mysteries");
 console.log(album?.buff); // { stat: 'Troops Attack', statKey: 'troops-attack', value: '+2%', amount: 2, unit: 'percent' }
@@ -29,16 +34,21 @@ console.log(mining?.pieces[14].name); // 'Mining the Fire - 15'
 const reward = mining?.reward;
 console.log(reward?.amount, reward?.itemId && items().find(reward.itemId)?.name); // 3 'Essence Stones'
 
-console.log(tundraAlbum().count()); // 9
+// The piece count tiers that 1,749 collected pieces reach
+console.log(tundraAlbumPieceRewardsReached(1749).length); // 71
+
+console.log(tundraAlbum().count()); // 14
 ```
 
 ## Functions
 
-| Function                          | Returns                                 | Description                                              |
-| --------------------------------- | --------------------------------------- | -------------------------------------------------------- |
-| `tundraAlbum(source?)`            | `TundraAlbumQuery`                      | The albums. `source` defaults to the data of the package |
-| `tundraPuzzlePieceCounts(puzzle)` | `Record<1 \| 2 \| 3 \| 4 \| 5, number>` | The number of pieces of a puzzle at each star level      |
-| `TUNDRA_ALBUM_PUZZLES_PER_ALBUM`  | `9`                                     | The number of puzzles in an album                        |
+| Function                                          | Returns                                 | Description                                               |
+| ------------------------------------------------- | --------------------------------------- | --------------------------------------------------------- |
+| `tundraAlbum(source?)`                            | `TundraAlbumQuery`                      | The albums. `source` defaults to the data of the package  |
+| `tundraPuzzlePieceCounts(puzzle)`                 | `Record<1 \| 2 \| 3 \| 4 \| 5, number>` | The number of pieces of a puzzle at each star level       |
+| `tundraAlbumPieceRewards(source?)`                | `TundraAlbumPieceRewardTier[]`          | The 80 piece count tiers, from the lowest count of pieces |
+| `tundraAlbumPieceRewardsReached(pieces, source?)` | `TundraAlbumPieceRewardTier[]`          | The tiers that a total of pieces reaches                  |
+| `TUNDRA_ALBUM_PUZZLES_PER_ALBUM`                  | `9`                                     | The number of puzzles in an album                         |
 
 The shared terminal methods (`get`, `first`, `find`, `findByName`, `search`, `count`) are described
 in [How It Works](../../../README.md#how-it-works).
@@ -341,6 +351,97 @@ Crystal.
 The album has 144 pieces: 18 at 1 star, 24 at 2 stars, 29 at 3 stars, 43 at 4 stars, and 30 at 5
 stars.
 
+## Piece count rewards
+
+The Tundra Album gives a reward for the total of pieces that you have collected over all albums. The
+progress bar at the top of the album screen counts them. There are 80 tiers, and each tier gives 2
+rewards. The first reward is always Gems. The tiers are in `data/tundra-album-piece-rewards.json`. A
+tier has `tier`, `pieces`, and `rewards`, a list of `{ itemId, amount }` as in the rewards of the
+puzzles. The Enhancement XP Component has a `size` of 100.
+
+| Tier | Pieces | Rewards                                           |
+| ---- | ------ | ------------------------------------------------- |
+| 1    | 25     | 100 Gems, 2 3h General Speedup                    |
+| 2    | 50     | 100 Gems, 5 Enhancement XP Component (100)        |
+| 3    | 75     | 100 Gems, 2 3h General Speedup                    |
+| 4    | 100    | 1,000 Gems, 16 Essence Stones                     |
+| 5    | 125    | 100 Gems, 2 3h Construction Speedup               |
+| 6    | 150    | 100 Gems, 5 Enhancement XP Component (100)        |
+| 7    | 175    | 100 Gems, 2 3h Research Speedup                   |
+| 8    | 200    | 100 Gems, 5 Enhancement XP Component (100)        |
+| 9    | 225    | 1,000 Gems, 8 Mythic General Hero Shard           |
+| 10   | 250    | 100 Gems, 2 3h Troop Training Speedup             |
+| 11   | 275    | 100 Gems, 5 Enhancement XP Component (100)        |
+| 12   | 300    | 100 Gems, 2 3h General Speedup                    |
+| 13   | 325    | 100 Gems, 5 Enhancement XP Component (100)        |
+| 14   | 350    | 1,000 Gems, 16 Essence Stones                     |
+| 15   | 375    | 100 Gems, 2 3h General Speedup                    |
+| 16   | 400    | 100 Gems, 2 3h General Speedup                    |
+| 17   | 425    | 100 Gems, 2 3h General Speedup                    |
+| 18   | 450    | 100 Gems, 2 3h General Speedup                    |
+| 19   | 475    | 1,000 Gems, 4 Mythic General Decoration Component |
+| 20   | 500    | 100 Gems, 2 Essence Stones                        |
+| 21   | 525    | 100 Gems, 2 Essence Stones                        |
+| 22   | 550    | 100 Gems, 2 Essence Stones                        |
+| 23   | 575    | 100 Gems, 2 Essence Stones                        |
+| 24   | 600    | 100 Gems, 2 Essence Stones                        |
+| 25   | 625    | 1,000 Gems, 25 Lucky Hero Gear Chest              |
+| 26   | 650    | 100 Gems, 3,000 Hardened Alloy                    |
+| 27   | 675    | 100 Gems, 2 Chief Gear Variety Chest              |
+| 28   | 700    | 100 Gems, 30 Polishing Solution                   |
+| 29   | 728    | 100 Gems, 2 Chief Gear Variety Chest              |
+| 30   | 750    | 100 Gems, 6 Design Plans                          |
+| 31   | 775    | 1,000 Gems, 20 Chief Gear Materials Chest         |
+| 32   | 815    | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 33   | 855    | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 34   | 895    | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 35   | 935    | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 36   | 975    | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 37   | 1,015  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 38   | 1,059  | 1,000 Gems, 60 Charm Design                       |
+| 39   | 1,080  | 100 Gems, 12 Fire Crystal                         |
+| 40   | 1,100  | 100 Gems, 12 Fire Crystal                         |
+| 41   | 1,120  | 100 Gems, 12 Fire Crystal                         |
+| 42   | 1,140  | 100 Gems, 12 Fire Crystal                         |
+| 43   | 1,160  | 100 Gems, 12 Fire Crystal                         |
+| 44   | 1,180  | 100 Gems, 12 Fire Crystal                         |
+| 45   | 1,200  | 1,000 Gems, 30 Lucky Hero Gear Chest              |
+| 46   | 1,220  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 47   | 1,240  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 48   | 1,260  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 49   | 1,280  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 50   | 1,300  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 51   | 1,320  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 52   | 1,340  | 1,000 Gems, 24 Essence Stones                     |
+| 53   | 1,360  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 54   | 1,380  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 55   | 1,400  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 56   | 1,420  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 57   | 1,440  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 58   | 1,460  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 59   | 1,480  | 1,000 Gems, 60 Charm Guide                        |
+| 60   | 1,500  | 100 Gems, 3,000 Hardened Alloy                    |
+| 61   | 1,520  | 100 Gems, 2 Chief Gear Variety Chest              |
+| 62   | 1,540  | 100 Gems, 30 Polishing Solution                   |
+| 63   | 1,560  | 100 Gems, 2 Chief Gear Variety Chest              |
+| 64   | 1,580  | 100 Gems, 6 Design Plans                          |
+| 65   | 1,600  | 100 Gems, 2 Chief Gear Variety Chest              |
+| 66   | 1,635  | 1,000 Gems, 24 Chief Gear Materials Chest         |
+| 67   | 1,660  | 100 Gems, 12 Fire Crystal                         |
+| 68   | 1,680  | 100 Gems, 12 Fire Crystal                         |
+| 69   | 1,700  | 100 Gems, 12 Fire Crystal                         |
+| 70   | 1,720  | 100 Gems, 12 Fire Crystal                         |
+| 71   | 1,740  | 100 Gems, 12 Fire Crystal                         |
+| 72   | 1,760  | 100 Gems, 12 Fire Crystal                         |
+| 73   | 1,780  | 1,000 Gems, 30 Lucky Hero Gear Chest              |
+| 74   | 1,800  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 75   | 1,820  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 76   | 1,840  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 77   | 1,860  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 78   | 1,880  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 79   | 1,900  | 100 Gems, 6 Enhancement XP Component (100)        |
+| 80   | 1,920  | 1,000 Gems, 24 Essence Stones                     |
+
 ## Notes
 
 The pieces, the star levels, and the reward amounts of the 14 albums are read from the album screens
@@ -379,6 +480,11 @@ and Glory (3 General Speedup of 3 hours, because the check mark hides where the 
 Troop Training Speedup would be), and the 40 Mythic General Hero Shard that Kings of Combat gives on
 completion. The dark stone with orange claw marks of Master Tamer and Superhuman Strength is the
 Advanced Wild Mark.
+
+The piece count tiers are read from the reward tooltips of the progress bar on the album screen, and
+the package owner gave the amounts. The counter on the screen read 1,749 of 1,923 pieces, and the 14
+albums of the package hold 1,923 pieces. The 3h Training Speedup of tier 10 is the 3h Troop Training
+Speedup.
 
 These parts are not in the data yet:
 

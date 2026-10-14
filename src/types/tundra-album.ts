@@ -48,3 +48,12 @@ export interface TundraAlbum {
   completionRewards: TundraAlbumReward[];
   puzzles: TundraAlbumPuzzle[];
 }
+
+export interface TundraAlbumPieceRewardTier {
+  /** The position of the tier, from 1 for the lowest count of pieces. */
+  tier: number;
+  /** The total of pieces collected, over all albums, that the tier needs. */
+  pieces: number;
+  /** The two rewards of the tier. */
+  rewards: TundraAlbumReward[];
+}
