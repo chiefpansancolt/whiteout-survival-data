@@ -945,13 +945,16 @@ describe('calculateBuffs experts', () => {
         },
       ],
     });
-    expect(category(result, 'infirmary-capacity', 'flat')!.total).toBe(80000);
+    expect(category(result, 'infirmary-capacity', 'flat')!.total).toBe(70000);
   });
 
   it('reads every level of the talent from its progressions', () => {
     const healing = progression('Healing Speed');
     const capacity = progression('Infirmary Capacity');
     expect(healing).toEqual([3, 6, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+    expect(capacity).toEqual([
+      50000, 60000, 70000, 80000, 90000, 100000, 120000, 140000, 160000, 180000, 200000,
+    ]);
     for (let level = 1; level <= talent.maxLevel; level++) {
       const result = calculateBuffs({
         experts: [{ expertId: 'gareth', skills: { 'Rallying Cry': level } }],
