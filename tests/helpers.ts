@@ -1,4 +1,5 @@
 import { QueryBase } from '@/common/query-base';
+import { BuffCalculation, BuffCategory } from '@/types';
 
 export function testQueryBaseContract<T extends { id: string; name: string }>(
   factoryName: string,
@@ -43,4 +44,25 @@ export function testQueryBaseContract<T extends { id: string; name: string }>(
       expect(results.some((r) => r.id === item.id)).toBe(true);
     });
   });
+}
+
+const round4 = (value: number): number => Math.round(value * 10000) / 10000;
+
+/**
+ * Removes the sources of the account (the starting March Queue and the pack) from a result, so that a
+ * test of another source sees only that source.
+ */
+export function withoutAccountSources(result: BuffCalculation): BuffCalculation {
+  const strip = (category: BuffCategory): BuffCategory => {
+    const sources = category.sources.filter((s) => s.type !== 'account');
+    return { ...category, sources, total: sources.reduce((sum, s) => round4(sum + s.amount), 0) };
+  };
+  const keep = (category: BuffCategory) => category.sources.length > 0;
+  return {
+    categories: result.categories.map(strip).filter(keep),
+    groups: result.groups
+      .map((group) => ({ ...group, categories: group.categories.map(strip).filter(keep) }))
+      .filter((group) => group.categories.length > 0),
+    bySource: result.bySource.filter((group) => group.id !== 'account'),
+  };
 }

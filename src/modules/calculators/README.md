@@ -37,6 +37,7 @@ calculator names its constants.
 | Calculator                    | Document                                       | What it calculates                                                         |
 | ----------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------- |
 | `calculateSvs()`              | [svs](docs/svs.md)                             | State of Power points for each day and phase, with Valeria's bonus.        |
+| `calculateBuffs()`            | [buffs](docs/buffs.md)                         | Speed boosts and other buffs added up by stat, with every source listed.   |
 | `calculateBeasts()`           | [beasts](docs/beasts.md)                       | Beasts or Polar Terrors that stamina pays for, with Gina and event points. |
 | `calculateAllianceShowdown()` | [alliance-showdown](docs/alliance-showdown.md) | Alliance Showdown personal points for each day, with Baldur's bonus.       |
 | `calculateKingOfIcefield()`   | [king-of-icefield](docs/king-of-icefield.md)   | King of Icefield points for each day.                                      |

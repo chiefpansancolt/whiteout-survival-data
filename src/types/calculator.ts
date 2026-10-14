@@ -655,3 +655,180 @@ export interface BeastCalculation {
   polarTerrors: BeastHunts;
   events: BeastEventPoints[];
 }
+
+/** `hours` and `seconds` are a time that is saved each time, such as the 8 hours of Agnes. */
+export type BuffUnit = 'percent' | 'flat' | 'hours' | 'seconds';
+
+export type BuffGroupId =
+  'military' | 'resources' | 'resource-output' | 'growth' | 'alliance' | 'other';
+
+export type BuffSourceType =
+  | 'account'
+  | 'hero'
+  | 'expert'
+  | 'research'
+  | 'allianceTech'
+  | 'allianceFacility'
+  | 'alliancePrestige'
+  | 'vip'
+  | 'building'
+  | 'skin'
+  | 'tundraAlbum'
+  | 'decoration'
+  | 'treeOfLife'
+  | 'castleAppointment'
+  | 'chiefOrder'
+  | 'presidentSkill'
+  | 'pet'
+  | 'chiefGear'
+  | 'chiefGearSet'
+  | 'chiefCharm';
+
+export interface BuffHeroSkills {
+  heroId: string;
+  /** The level of each skill that the hero has, by skill name. A level of 0 adds nothing. */
+  skills: Record<string, number>;
+}
+
+export interface BuffExpertSkills {
+  expertId: string;
+  /** The level of each skill or talent that the expert has, by name. A level of 0 adds nothing. */
+  skills: Record<string, number>;
+}
+
+export interface BuffDecoration {
+  id: string;
+  /** The level of the decoration. */
+  level: number;
+}
+
+export type BuffPetRefinementStatKey =
+  | 'infantry-lethality'
+  | 'infantry-health'
+  | 'lancer-lethality'
+  | 'lancer-health'
+  | 'marksman-lethality'
+  | 'marksman-health';
+
+export interface BuffPet {
+  id: string;
+  level: number;
+  /** Use the refined value of the level when it has one. Defaults to false. */
+  refined?: boolean;
+  /**
+   * The refinement of the pet, in percent, for each stat that it rolled. A value is from 0 to the
+   * maximum refinement of the pet. A stat that is left out counts as 0.
+   */
+  refinement?: Partial<Record<BuffPetRefinementStatKey, number>>;
+}
+
+export interface BuffProfile {
+  /** True when the March Queue pack was bought. It adds 1 March Queue. */
+  marchQueuePack?: boolean;
+  heroSkills?: BuffHeroSkills[];
+  experts?: BuffExpertSkills[];
+  /** Research level by node id. A level of 0 adds nothing. */
+  researchLevels?: Record<string, number>;
+  /** Alliance Tech level by node id. A level of 0 adds nothing. */
+  allianceTech?: Record<string, number>;
+  /**
+   * The levels of each Alliance Facility that your alliance holds, by facility id. Each level must be
+   * one of the levels of the facility and can be listed once. The boosters of the levels add up.
+   */
+  allianceFacilities?: Record<string, number[]>;
+  /**
+   * The tier of each Alliance Prestige Building that your alliance holds, by building id, such as
+   * `{ 'championship-statue': 'Gold' }`. One tier for each building. The tier must be one of the
+   * tiers of the building.
+   */
+  alliancePrestige?: Record<string, string>;
+  /** From 0 to 12. */
+  vipLevel?: number;
+  /** Level label by building id, such as `"30"` or `"FC 10"`. */
+  buildingLevels?: Record<string, string>;
+  /** Ids of the skins that you own. */
+  skins?: string[];
+  /** Ids of the Tundra Albums that are complete. The buff of an album counts when it is complete. */
+  tundraAlbums?: string[];
+  /** List a decoration once for each copy that you have placed. */
+  decorations?: BuffDecoration[];
+  /** From 0 to 10. */
+  treeOfLifeLevel?: number;
+  /** The id of the castle position that you hold. */
+  castleAppointment?: string;
+  /** Ids of the Chief Orders that are active. */
+  chiefOrders?: string[];
+  /** Ids of the President skills that are active. */
+  presidentSkills?: string[];
+  pets?: BuffPet[];
+  /** The id of the Chief Gear level of the piece worn in each slot, by slot id such as `cap`. */
+  chiefGear?: Record<string, string>;
+  /** The ids of the Chief Charm levels in each gear slot, by slot id such as `cap`. A slot holds up to 3 charms. */
+  chiefCharms?: Record<string, string[]>;
+}
+
+export interface BuffSource {
+  type: BuffSourceType;
+  /** The id of the hero, research node, building, and so on that gives the buff. */
+  id: string;
+  /** For example `Hero: Ling Xue, Skill: Total Control Lv 4`. */
+  label: string;
+  amount: number;
+}
+
+export interface BuffCategory {
+  /** For example `training-speed`. */
+  statKey: string;
+  /** The group of the stat; such as `military`. */
+  group: BuffGroupId;
+  /** For example `Training Speed`. */
+  name: string;
+  unit: BuffUnit;
+  /** The sum of the amounts of all sources. */
+  total: number;
+  sources: BuffSource[];
+}
+
+export interface BuffGroup {
+  id: BuffGroupId;
+  /** For example `Military`. */
+  name: string;
+  categories: BuffCategory[];
+}
+
+/** The total of one stat from one source group. */
+export interface BuffSourceStat {
+  /** For example `training-speed`. */
+  statKey: string;
+  /** For example `Training Speed`. */
+  name: string;
+  unit: BuffUnit;
+  /** The sum of the amounts of the sources of the group for this stat. */
+  total: number;
+}
+
+/** Everything that one kind of source gives, such as all research or all heroes. */
+export interface BuffSourceGroup {
+  /**
+   * For example `hero`. It is a source type, with three differences: research is split in
+   * `research` (Research Center) and `warAcademyResearch`, and the Tree of Life and the island
+   * decorations are one group, `island`.
+   */
+  id: string;
+  /** For example `Heroes`. */
+  name: string;
+  /** In the order of the stat groups. */
+  stats: BuffSourceStat[];
+}
+
+export interface BuffCalculation {
+  /** One category for each stat key and unit that a source gives, in the order of the names. */
+  categories: BuffCategory[];
+  /** The same categories in groups, in the order of the groups. A group with no category is left out. */
+  groups: BuffGroup[];
+  /**
+   * The same numbers by source: one entry for each kind of source that gives something, with the
+   * total of each stat that it gives. It has no source lists. A source group with nothing is left out.
+   */
+  bySource: BuffSourceGroup[];
+}
