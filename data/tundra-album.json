@@ -10296,5 +10296,991 @@
         ]
       }
     ]
+  },
+  {
+    "id": "ballad-of-wind-and-cold",
+    "name": "Ballad of Wind and Cold",
+    "buff": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "chief-gear-materials-chest",
+        "amount": 80
+      },
+      {
+        "itemId": "fire-crystal",
+        "amount": 200
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "honor-and-glory",
+        "name": "Honor and Glory",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory.png",
+        "reward": {
+          "itemId": "speedup-general-3h",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "honor-and-glory-1",
+            "name": "Honor and Glory - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-1.png",
+            "stars": 1
+          },
+          {
+            "id": "honor-and-glory-2",
+            "name": "Honor and Glory - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-2.png",
+            "stars": 1
+          },
+          {
+            "id": "honor-and-glory-3",
+            "name": "Honor and Glory - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-3.png",
+            "stars": 1
+          },
+          {
+            "id": "honor-and-glory-4",
+            "name": "Honor and Glory - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-4.png",
+            "stars": 2
+          },
+          {
+            "id": "honor-and-glory-5",
+            "name": "Honor and Glory - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-5.png",
+            "stars": 2
+          },
+          {
+            "id": "honor-and-glory-6",
+            "name": "Honor and Glory - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-6.png",
+            "stars": 2
+          },
+          {
+            "id": "honor-and-glory-7",
+            "name": "Honor and Glory - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-7.png",
+            "stars": 3
+          },
+          {
+            "id": "honor-and-glory-8",
+            "name": "Honor and Glory - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-8.png",
+            "stars": 3
+          },
+          {
+            "id": "honor-and-glory-9",
+            "name": "Honor and Glory - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-9.png",
+            "stars": 3
+          },
+          {
+            "id": "honor-and-glory-10",
+            "name": "Honor and Glory - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-10.png",
+            "stars": 4
+          },
+          {
+            "id": "honor-and-glory-11",
+            "name": "Honor and Glory - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-11.png",
+            "stars": 4
+          },
+          {
+            "id": "honor-and-glory-12",
+            "name": "Honor and Glory - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/honor-and-glory-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "frostwind-track",
+        "name": "Frostwind Track",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "frostwind-track-1",
+            "name": "Frostwind Track - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-1.png",
+            "stars": 1
+          },
+          {
+            "id": "frostwind-track-2",
+            "name": "Frostwind Track - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-2.png",
+            "stars": 1
+          },
+          {
+            "id": "frostwind-track-3",
+            "name": "Frostwind Track - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-3.png",
+            "stars": 2
+          },
+          {
+            "id": "frostwind-track-4",
+            "name": "Frostwind Track - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-4.png",
+            "stars": 2
+          },
+          {
+            "id": "frostwind-track-5",
+            "name": "Frostwind Track - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-5.png",
+            "stars": 3
+          },
+          {
+            "id": "frostwind-track-6",
+            "name": "Frostwind Track - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-6.png",
+            "stars": 3
+          },
+          {
+            "id": "frostwind-track-7",
+            "name": "Frostwind Track - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-7.png",
+            "stars": 3
+          },
+          {
+            "id": "frostwind-track-8",
+            "name": "Frostwind Track - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-8.png",
+            "stars": 3
+          },
+          {
+            "id": "frostwind-track-9",
+            "name": "Frostwind Track - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-9.png",
+            "stars": 4
+          },
+          {
+            "id": "frostwind-track-10",
+            "name": "Frostwind Track - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-10.png",
+            "stars": 4
+          },
+          {
+            "id": "frostwind-track-11",
+            "name": "Frostwind Track - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-11.png",
+            "stars": 4
+          },
+          {
+            "id": "frostwind-track-12",
+            "name": "Frostwind Track - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-12.png",
+            "stars": 4
+          },
+          {
+            "id": "frostwind-track-13",
+            "name": "Frostwind Track - 13",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-13.png",
+            "stars": 4
+          },
+          {
+            "id": "frostwind-track-14",
+            "name": "Frostwind Track - 14",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-14.png",
+            "stars": 4
+          },
+          {
+            "id": "frostwind-track-15",
+            "name": "Frostwind Track - 15",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/frostwind-track-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "words-of-the-forgotten",
+        "name": "Words of the Forgotten",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "words-of-the-forgotten-1",
+            "name": "Words of the Forgotten - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-1.png",
+            "stars": 1
+          },
+          {
+            "id": "words-of-the-forgotten-2",
+            "name": "Words of the Forgotten - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-2.png",
+            "stars": 1
+          },
+          {
+            "id": "words-of-the-forgotten-3",
+            "name": "Words of the Forgotten - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-3.png",
+            "stars": 2
+          },
+          {
+            "id": "words-of-the-forgotten-4",
+            "name": "Words of the Forgotten - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-4.png",
+            "stars": 2
+          },
+          {
+            "id": "words-of-the-forgotten-5",
+            "name": "Words of the Forgotten - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-5.png",
+            "stars": 3
+          },
+          {
+            "id": "words-of-the-forgotten-6",
+            "name": "Words of the Forgotten - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-6.png",
+            "stars": 3
+          },
+          {
+            "id": "words-of-the-forgotten-7",
+            "name": "Words of the Forgotten - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-7.png",
+            "stars": 3
+          },
+          {
+            "id": "words-of-the-forgotten-8",
+            "name": "Words of the Forgotten - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-8.png",
+            "stars": 3
+          },
+          {
+            "id": "words-of-the-forgotten-9",
+            "name": "Words of the Forgotten - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-9.png",
+            "stars": 4
+          },
+          {
+            "id": "words-of-the-forgotten-10",
+            "name": "Words of the Forgotten - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-10.png",
+            "stars": 4
+          },
+          {
+            "id": "words-of-the-forgotten-11",
+            "name": "Words of the Forgotten - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-11.png",
+            "stars": 4
+          },
+          {
+            "id": "words-of-the-forgotten-12",
+            "name": "Words of the Forgotten - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-12.png",
+            "stars": 4
+          },
+          {
+            "id": "words-of-the-forgotten-13",
+            "name": "Words of the Forgotten - 13",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-13.png",
+            "stars": 4
+          },
+          {
+            "id": "words-of-the-forgotten-14",
+            "name": "Words of the Forgotten - 14",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-14.png",
+            "stars": 4
+          },
+          {
+            "id": "words-of-the-forgotten-15",
+            "name": "Words of the Forgotten - 15",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/words-of-the-forgotten-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "monument-to-the-flame",
+        "name": "Monument to the Flame",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame.png",
+        "reward": {
+          "itemId": "charm-design",
+          "amount": 8
+        },
+        "pieces": [
+          {
+            "id": "monument-to-the-flame-1",
+            "name": "Monument to the Flame - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-1.png",
+            "stars": 1
+          },
+          {
+            "id": "monument-to-the-flame-2",
+            "name": "Monument to the Flame - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-2.png",
+            "stars": 1
+          },
+          {
+            "id": "monument-to-the-flame-3",
+            "name": "Monument to the Flame - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-3.png",
+            "stars": 1
+          },
+          {
+            "id": "monument-to-the-flame-4",
+            "name": "Monument to the Flame - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-4.png",
+            "stars": 2
+          },
+          {
+            "id": "monument-to-the-flame-5",
+            "name": "Monument to the Flame - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-5.png",
+            "stars": 2
+          },
+          {
+            "id": "monument-to-the-flame-6",
+            "name": "Monument to the Flame - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-6.png",
+            "stars": 2
+          },
+          {
+            "id": "monument-to-the-flame-7",
+            "name": "Monument to the Flame - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-7.png",
+            "stars": 2
+          },
+          {
+            "id": "monument-to-the-flame-8",
+            "name": "Monument to the Flame - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-8.png",
+            "stars": 3
+          },
+          {
+            "id": "monument-to-the-flame-9",
+            "name": "Monument to the Flame - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-9.png",
+            "stars": 3
+          },
+          {
+            "id": "monument-to-the-flame-10",
+            "name": "Monument to the Flame - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-10.png",
+            "stars": 3
+          },
+          {
+            "id": "monument-to-the-flame-11",
+            "name": "Monument to the Flame - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-11.png",
+            "stars": 3
+          },
+          {
+            "id": "monument-to-the-flame-12",
+            "name": "Monument to the Flame - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-12.png",
+            "stars": 4
+          },
+          {
+            "id": "monument-to-the-flame-13",
+            "name": "Monument to the Flame - 13",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-13.png",
+            "stars": 4
+          },
+          {
+            "id": "monument-to-the-flame-14",
+            "name": "Monument to the Flame - 14",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-14.png",
+            "stars": 5
+          },
+          {
+            "id": "monument-to-the-flame-15",
+            "name": "Monument to the Flame - 15",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/monument-to-the-flame-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "alliance-showdown",
+        "name": "Alliance Showdown",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown.png",
+        "reward": {
+          "itemId": "mythic-general-hero-shard",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "alliance-showdown-1",
+            "name": "Alliance Showdown - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-1.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-showdown-2",
+            "name": "Alliance Showdown - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-2.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-showdown-3",
+            "name": "Alliance Showdown - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-3.png",
+            "stars": 1
+          },
+          {
+            "id": "alliance-showdown-4",
+            "name": "Alliance Showdown - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-4.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-showdown-5",
+            "name": "Alliance Showdown - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-5.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-showdown-6",
+            "name": "Alliance Showdown - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-6.png",
+            "stars": 2
+          },
+          {
+            "id": "alliance-showdown-7",
+            "name": "Alliance Showdown - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-7.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-showdown-8",
+            "name": "Alliance Showdown - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-8.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-showdown-9",
+            "name": "Alliance Showdown - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-9.png",
+            "stars": 3
+          },
+          {
+            "id": "alliance-showdown-10",
+            "name": "Alliance Showdown - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-10.png",
+            "stars": 4
+          },
+          {
+            "id": "alliance-showdown-11",
+            "name": "Alliance Showdown - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-11.png",
+            "stars": 4
+          },
+          {
+            "id": "alliance-showdown-12",
+            "name": "Alliance Showdown - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-12.png",
+            "stars": 4
+          },
+          {
+            "id": "alliance-showdown-13",
+            "name": "Alliance Showdown - 13",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-13.png",
+            "stars": 5
+          },
+          {
+            "id": "alliance-showdown-14",
+            "name": "Alliance Showdown - 14",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-14.png",
+            "stars": 5
+          },
+          {
+            "id": "alliance-showdown-15",
+            "name": "Alliance Showdown - 15",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/alliance-showdown-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "state-versus-state",
+        "name": "State Versus State",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state.png",
+        "reward": {
+          "itemId": "random-chief-charm-material-chest",
+          "amount": 4
+        },
+        "pieces": [
+          {
+            "id": "state-versus-state-1",
+            "name": "State Versus State - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-1.png",
+            "stars": 1
+          },
+          {
+            "id": "state-versus-state-2",
+            "name": "State Versus State - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-2.png",
+            "stars": 1
+          },
+          {
+            "id": "state-versus-state-3",
+            "name": "State Versus State - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-3.png",
+            "stars": 2
+          },
+          {
+            "id": "state-versus-state-4",
+            "name": "State Versus State - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-4.png",
+            "stars": 2
+          },
+          {
+            "id": "state-versus-state-5",
+            "name": "State Versus State - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-5.png",
+            "stars": 2
+          },
+          {
+            "id": "state-versus-state-6",
+            "name": "State Versus State - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-6.png",
+            "stars": 2
+          },
+          {
+            "id": "state-versus-state-7",
+            "name": "State Versus State - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-7.png",
+            "stars": 3
+          },
+          {
+            "id": "state-versus-state-8",
+            "name": "State Versus State - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-8.png",
+            "stars": 3
+          },
+          {
+            "id": "state-versus-state-9",
+            "name": "State Versus State - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-9.png",
+            "stars": 3
+          },
+          {
+            "id": "state-versus-state-10",
+            "name": "State Versus State - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-10.png",
+            "stars": 3
+          },
+          {
+            "id": "state-versus-state-11",
+            "name": "State Versus State - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-11.png",
+            "stars": 4
+          },
+          {
+            "id": "state-versus-state-12",
+            "name": "State Versus State - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-12.png",
+            "stars": 4
+          },
+          {
+            "id": "state-versus-state-13",
+            "name": "State Versus State - 13",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-13.png",
+            "stars": 4
+          },
+          {
+            "id": "state-versus-state-14",
+            "name": "State Versus State - 14",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-14.png",
+            "stars": 4
+          },
+          {
+            "id": "state-versus-state-15",
+            "name": "State Versus State - 15",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-15.png",
+            "stars": 5
+          },
+          {
+            "id": "state-versus-state-16",
+            "name": "State Versus State - 16",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-16.png",
+            "stars": 5
+          },
+          {
+            "id": "state-versus-state-17",
+            "name": "State Versus State - 17",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-17.png",
+            "stars": 5
+          },
+          {
+            "id": "state-versus-state-18",
+            "name": "State Versus State - 18",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/state-versus-state-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-summit-of-battle",
+        "name": "The Summit of Battle",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle.png",
+        "reward": {
+          "itemId": "speedup-general-8h",
+          "amount": 2
+        },
+        "pieces": [
+          {
+            "id": "the-summit-of-battle-1",
+            "name": "The Summit of Battle - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-summit-of-battle-2",
+            "name": "The Summit of Battle - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-2.png",
+            "stars": 2
+          },
+          {
+            "id": "the-summit-of-battle-3",
+            "name": "The Summit of Battle - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-summit-of-battle-4",
+            "name": "The Summit of Battle - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-4.png",
+            "stars": 3
+          },
+          {
+            "id": "the-summit-of-battle-5",
+            "name": "The Summit of Battle - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-5.png",
+            "stars": 3
+          },
+          {
+            "id": "the-summit-of-battle-6",
+            "name": "The Summit of Battle - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-6.png",
+            "stars": 3
+          },
+          {
+            "id": "the-summit-of-battle-7",
+            "name": "The Summit of Battle - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-7.png",
+            "stars": 4
+          },
+          {
+            "id": "the-summit-of-battle-8",
+            "name": "The Summit of Battle - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-8.png",
+            "stars": 4
+          },
+          {
+            "id": "the-summit-of-battle-9",
+            "name": "The Summit of Battle - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-summit-of-battle-10",
+            "name": "The Summit of Battle - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-summit-of-battle-11",
+            "name": "The Summit of Battle - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-summit-of-battle-12",
+            "name": "The Summit of Battle - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-summit-of-battle-13",
+            "name": "The Summit of Battle - 13",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-13.png",
+            "stars": 5
+          },
+          {
+            "id": "the-summit-of-battle-14",
+            "name": "The Summit of Battle - 14",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-summit-of-battle-15",
+            "name": "The Summit of Battle - 15",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-summit-of-battle-16",
+            "name": "The Summit of Battle - 16",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-summit-of-battle-17",
+            "name": "The Summit of Battle - 17",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-summit-of-battle-18",
+            "name": "The Summit of Battle - 18",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/the-summit-of-battle-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "castle-of-conflict",
+        "name": "Castle of Conflict",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 5
+        },
+        "pieces": [
+          {
+            "id": "castle-of-conflict-1",
+            "name": "Castle of Conflict - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-1.png",
+            "stars": 1
+          },
+          {
+            "id": "castle-of-conflict-2",
+            "name": "Castle of Conflict - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-2.png",
+            "stars": 2
+          },
+          {
+            "id": "castle-of-conflict-3",
+            "name": "Castle of Conflict - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-3.png",
+            "stars": 2
+          },
+          {
+            "id": "castle-of-conflict-4",
+            "name": "Castle of Conflict - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-4.png",
+            "stars": 3
+          },
+          {
+            "id": "castle-of-conflict-5",
+            "name": "Castle of Conflict - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-5.png",
+            "stars": 3
+          },
+          {
+            "id": "castle-of-conflict-6",
+            "name": "Castle of Conflict - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-6.png",
+            "stars": 3
+          },
+          {
+            "id": "castle-of-conflict-7",
+            "name": "Castle of Conflict - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-7.png",
+            "stars": 4
+          },
+          {
+            "id": "castle-of-conflict-8",
+            "name": "Castle of Conflict - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-8.png",
+            "stars": 4
+          },
+          {
+            "id": "castle-of-conflict-9",
+            "name": "Castle of Conflict - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-9.png",
+            "stars": 4
+          },
+          {
+            "id": "castle-of-conflict-10",
+            "name": "Castle of Conflict - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-10.png",
+            "stars": 4
+          },
+          {
+            "id": "castle-of-conflict-11",
+            "name": "Castle of Conflict - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-11.png",
+            "stars": 4
+          },
+          {
+            "id": "castle-of-conflict-12",
+            "name": "Castle of Conflict - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-12.png",
+            "stars": 4
+          },
+          {
+            "id": "castle-of-conflict-13",
+            "name": "Castle of Conflict - 13",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-13.png",
+            "stars": 5
+          },
+          {
+            "id": "castle-of-conflict-14",
+            "name": "Castle of Conflict - 14",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-14.png",
+            "stars": 5
+          },
+          {
+            "id": "castle-of-conflict-15",
+            "name": "Castle of Conflict - 15",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-15.png",
+            "stars": 5
+          },
+          {
+            "id": "castle-of-conflict-16",
+            "name": "Castle of Conflict - 16",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-16.png",
+            "stars": 5
+          },
+          {
+            "id": "castle-of-conflict-17",
+            "name": "Castle of Conflict - 17",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-17.png",
+            "stars": 5
+          },
+          {
+            "id": "castle-of-conflict-18",
+            "name": "Castle of Conflict - 18",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/castle-of-conflict-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "remaker-of-order",
+        "name": "Remaker of Order",
+        "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 6
+        },
+        "pieces": [
+          {
+            "id": "remaker-of-order-1",
+            "name": "Remaker of Order - 1",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-1.png",
+            "stars": 2
+          },
+          {
+            "id": "remaker-of-order-2",
+            "name": "Remaker of Order - 2",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-2.png",
+            "stars": 2
+          },
+          {
+            "id": "remaker-of-order-3",
+            "name": "Remaker of Order - 3",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-3.png",
+            "stars": 3
+          },
+          {
+            "id": "remaker-of-order-4",
+            "name": "Remaker of Order - 4",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-4.png",
+            "stars": 3
+          },
+          {
+            "id": "remaker-of-order-5",
+            "name": "Remaker of Order - 5",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-5.png",
+            "stars": 4
+          },
+          {
+            "id": "remaker-of-order-6",
+            "name": "Remaker of Order - 6",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-6.png",
+            "stars": 4
+          },
+          {
+            "id": "remaker-of-order-7",
+            "name": "Remaker of Order - 7",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-7.png",
+            "stars": 4
+          },
+          {
+            "id": "remaker-of-order-8",
+            "name": "Remaker of Order - 8",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-8.png",
+            "stars": 4
+          },
+          {
+            "id": "remaker-of-order-9",
+            "name": "Remaker of Order - 9",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-9.png",
+            "stars": 4
+          },
+          {
+            "id": "remaker-of-order-10",
+            "name": "Remaker of Order - 10",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-10.png",
+            "stars": 4
+          },
+          {
+            "id": "remaker-of-order-11",
+            "name": "Remaker of Order - 11",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-11.png",
+            "stars": 4
+          },
+          {
+            "id": "remaker-of-order-12",
+            "name": "Remaker of Order - 12",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-12.png",
+            "stars": 5
+          },
+          {
+            "id": "remaker-of-order-13",
+            "name": "Remaker of Order - 13",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-13.png",
+            "stars": 5
+          },
+          {
+            "id": "remaker-of-order-14",
+            "name": "Remaker of Order - 14",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-14.png",
+            "stars": 5
+          },
+          {
+            "id": "remaker-of-order-15",
+            "name": "Remaker of Order - 15",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-15.png",
+            "stars": 5
+          },
+          {
+            "id": "remaker-of-order-16",
+            "name": "Remaker of Order - 16",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-16.png",
+            "stars": 5
+          },
+          {
+            "id": "remaker-of-order-17",
+            "name": "Remaker of Order - 17",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-17.png",
+            "stars": 5
+          },
+          {
+            "id": "remaker-of-order-18",
+            "name": "Remaker of Order - 18",
+            "img": "/images/tundra-album/ballad-of-wind-and-cold/remaker-of-order-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]

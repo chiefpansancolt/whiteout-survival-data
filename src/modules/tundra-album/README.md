@@ -4,9 +4,9 @@ The albums of the Tundra Album event. An album has 9 puzzles. A puzzle is built 
 5 stars, gives a reward when it is done, and the album gives a buff when all 9 puzzles are done. Use
 it to see what an album holds and what finishing it gives.
 
-The package holds 11 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
+The package holds 12 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
 of Heroes, Rekindled Flames, Tundra Alliance, Battlefield Epic, Spectacular Adventures, Divine
-Weapons, The Labyrinth, and Nature's Strength. More albums are added later.
+Weapons, The Labyrinth, Nature's Strength, and Ballad of Wind and Cold. More albums are added later.
 
 ## Usage
 
@@ -280,9 +280,29 @@ The buff is Troops Defense +2%. The completion rewards are 80 Essence Stones and
 The album has 144 pieces: 19 at 1 star, 27 at 2 stars, 29 at 3 stars, 39 at 4 stars, and 30 at 5
 stars.
 
+### Ballad of Wind and Cold
+
+The buff is Troops Defense +2%. The completion rewards are 80 Chief Gear Materials Chest and 200
+Fire Crystal.
+
+| Puzzle                 | Pieces | 1 star | 2 stars | 3 stars | 4 stars | 5 stars | Reward                              |
+| ---------------------- | ------ | ------ | ------- | ------- | ------- | ------- | ----------------------------------- |
+| Honor and Glory        | 12     | 3      | 3       | 3       | 3       | 0       | 3 3h General Speedup                |
+| Frostwind Track        | 15     | 2      | 2       | 4       | 6       | 1       | 10 Design Plans                     |
+| Words of the Forgotten | 15     | 2      | 2       | 4       | 6       | 1       | 3 Chief Gear Materials Chest        |
+| Monument to the Flame  | 15     | 3      | 4       | 4       | 2       | 2       | 8 Charm Design                      |
+| Alliance Showdown      | 15     | 3      | 3       | 3       | 3       | 3       | 2 Mythic General Hero Shard         |
+| State Versus State     | 18     | 2      | 4       | 4       | 4       | 4       | 4 Random Chief Charm Material Chest |
+| The Summit of Battle   | 18     | 1      | 2       | 3       | 6       | 6       | 2 8h General Speedup                |
+| Castle of Conflict     | 18     | 1      | 2       | 3       | 6       | 6       | 5 Chief Gear Materials Chest        |
+| Remaker of Order       | 18     | 0      | 2       | 2       | 7       | 7       | 6 Essence Stones                    |
+
+The album has 144 pieces: 17 at 1 star, 24 at 2 stars, 30 at 3 stars, 43 at 4 stars, and 30 at 5
+stars.
+
 ## Notes
 
-The pieces, the star levels, and the reward amounts of the 11 albums are read from the album screens
+The pieces, the star levels, and the reward amounts of the 12 albums are read from the album screens
 of the game, and the images are cut from the same screens. The package owner names the items of the
 album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
 Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The

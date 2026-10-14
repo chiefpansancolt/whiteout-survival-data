@@ -770,6 +770,47 @@ const NEW_ALBUMS = [
       ],
     ],
   },
+  {
+    id: 'ballad-of-wind-and-cold',
+    name: 'Ballad of Wind and Cold',
+    stat: 'Troops Defense',
+    statKey: 'troops-defense',
+    eventNote: '+2% troops defense',
+    completion: [
+      ['chief-gear-materials-chest', 80],
+      ['fire-crystal', 200],
+    ],
+    pieces: 144,
+    puzzles: [
+      ['honor-and-glory', 'Honor and Glory', [3, 3, 3, 3, 0], 'speedup-general-3h', 3],
+      ['frostwind-track', 'Frostwind Track', [2, 2, 4, 6, 1], 'design-plans', 10],
+      [
+        'words-of-the-forgotten',
+        'Words of the Forgotten',
+        [2, 2, 4, 6, 1],
+        'chief-gear-materials-chest',
+        3,
+      ],
+      ['monument-to-the-flame', 'Monument to the Flame', [3, 4, 4, 2, 2], 'charm-design', 8],
+      ['alliance-showdown', 'Alliance Showdown', [3, 3, 3, 3, 3], 'mythic-general-hero-shard', 2],
+      [
+        'state-versus-state',
+        'State Versus State',
+        [2, 4, 4, 4, 4],
+        'random-chief-charm-material-chest',
+        4,
+      ],
+      ['the-summit-of-battle', 'The Summit of Battle', [1, 2, 3, 6, 6], 'speedup-general-8h', 2],
+      [
+        'castle-of-conflict',
+        'Castle of Conflict',
+        [1, 2, 3, 6, 6],
+        'chief-gear-materials-chest',
+        5,
+      ],
+      ['remaker-of-order', 'Remaker of Order', [0, 2, 2, 7, 7], 'essence-stones', 6],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {
