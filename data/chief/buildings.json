@@ -9336,7 +9336,9 @@
         ],
         "buildTimeSeconds": 72570,
         "power": 221326,
-        "developmentIndex": 29500
+        "developmentIndex": 29500,
+        "marchCapacity": 67000,
+        "rallyCapacity": 840000
       },
       {
         "id": "command-center-30-2",
@@ -9388,7 +9390,9 @@
         ],
         "buildTimeSeconds": 72570,
         "power": 229362,
-        "developmentIndex": 30500
+        "developmentIndex": 30500,
+        "marchCapacity": 67000,
+        "rallyCapacity": 840000
       },
       {
         "id": "command-center-30-3",
@@ -9440,7 +9444,9 @@
         ],
         "buildTimeSeconds": 72570,
         "power": 237398,
-        "developmentIndex": 31500
+        "developmentIndex": 31500,
+        "marchCapacity": 67000,
+        "rallyCapacity": 840000
       },
       {
         "id": "command-center-30-4",
@@ -9492,7 +9498,9 @@
         ],
         "buildTimeSeconds": 72570,
         "power": 245434,
-        "developmentIndex": 32500
+        "developmentIndex": 32500,
+        "marchCapacity": 67000,
+        "rallyCapacity": 840000
       },
       {
         "id": "command-center-fc1",
@@ -9543,7 +9551,9 @@
         ],
         "buildTimeSeconds": 72570,
         "power": 253470,
-        "developmentIndex": 33500
+        "developmentIndex": 33500,
+        "marchCapacity": 70500,
+        "rallyCapacity": 865000
       },
       {
         "id": "command-center-fc1-1",
@@ -9595,7 +9605,9 @@
         ],
         "buildTimeSeconds": 93300,
         "power": 261506,
-        "developmentIndex": 34500
+        "developmentIndex": 34500,
+        "marchCapacity": 70500,
+        "rallyCapacity": 865000
       },
       {
         "id": "command-center-fc1-2",
@@ -9647,7 +9659,9 @@
         ],
         "buildTimeSeconds": 93300,
         "power": 269542,
-        "developmentIndex": 35500
+        "developmentIndex": 35500,
+        "marchCapacity": 70500,
+        "rallyCapacity": 865000
       },
       {
         "id": "command-center-fc1-3",
@@ -9699,7 +9713,9 @@
         ],
         "buildTimeSeconds": 93300,
         "power": 277578,
-        "developmentIndex": 36500
+        "developmentIndex": 36500,
+        "marchCapacity": 70500,
+        "rallyCapacity": 865000
       },
       {
         "id": "command-center-fc1-4",
@@ -9751,7 +9767,9 @@
         ],
         "buildTimeSeconds": 93300,
         "power": 285614,
-        "developmentIndex": 37500
+        "developmentIndex": 37500,
+        "marchCapacity": 70500,
+        "rallyCapacity": 865000
       },
       {
         "id": "command-center-fc2",
@@ -9802,7 +9820,9 @@
         ],
         "buildTimeSeconds": 93300,
         "power": 293650,
-        "developmentIndex": 38500
+        "developmentIndex": 38500,
+        "marchCapacity": 74000,
+        "rallyCapacity": 890000
       },
       {
         "id": "command-center-fc2-1",
@@ -9854,7 +9874,9 @@
         ],
         "buildTimeSeconds": 114000,
         "power": 301686,
-        "developmentIndex": 39500
+        "developmentIndex": 39500,
+        "marchCapacity": 74000,
+        "rallyCapacity": 890000
       },
       {
         "id": "command-center-fc2-2",
@@ -9906,7 +9928,9 @@
         ],
         "buildTimeSeconds": 114000,
         "power": 309722,
-        "developmentIndex": 40500
+        "developmentIndex": 40500,
+        "marchCapacity": 74000,
+        "rallyCapacity": 890000
       },
       {
         "id": "command-center-fc2-3",
@@ -9958,7 +9982,9 @@
         ],
         "buildTimeSeconds": 114000,
         "power": 317758,
-        "developmentIndex": 41500
+        "developmentIndex": 41500,
+        "marchCapacity": 74000,
+        "rallyCapacity": 890000
       },
       {
         "id": "command-center-fc2-4",
@@ -10010,7 +10036,9 @@
         ],
         "buildTimeSeconds": 114000,
         "power": 325794,
-        "developmentIndex": 42500
+        "developmentIndex": 42500,
+        "marchCapacity": 74000,
+        "rallyCapacity": 890000
       },
       {
         "id": "command-center-fc3",
@@ -10061,7 +10089,9 @@
         ],
         "buildTimeSeconds": 114000,
         "power": 333830,
-        "developmentIndex": 43500
+        "developmentIndex": 43500,
+        "marchCapacity": 77500,
+        "rallyCapacity": 915000
       },
       {
         "id": "command-center-fc3-1",
@@ -10113,7 +10143,9 @@
         ],
         "buildTimeSeconds": 124380,
         "power": 342678,
-        "developmentIndex": 44600
+        "developmentIndex": 44600,
+        "marchCapacity": 77500,
+        "rallyCapacity": 915000
       },
       {
         "id": "command-center-fc3-2",
@@ -10165,7 +10197,9 @@
         ],
         "buildTimeSeconds": 124380,
         "power": 351526,
-        "developmentIndex": 45700
+        "developmentIndex": 45700,
+        "marchCapacity": 77500,
+        "rallyCapacity": 915000
       },
       {
         "id": "command-center-fc3-3",
@@ -10217,7 +10251,9 @@
         ],
         "buildTimeSeconds": 124380,
         "power": 360374,
-        "developmentIndex": 46800
+        "developmentIndex": 46800,
+        "marchCapacity": 77500,
+        "rallyCapacity": 915000
       },
       {
         "id": "command-center-fc3-4",
@@ -10269,7 +10305,9 @@
         ],
         "buildTimeSeconds": 124380,
         "power": 369222,
-        "developmentIndex": 47900
+        "developmentIndex": 47900,
+        "marchCapacity": 77500,
+        "rallyCapacity": 915000
       },
       {
         "id": "command-center-fc4",
@@ -10320,7 +10358,9 @@
         ],
         "buildTimeSeconds": 124380,
         "power": 378070,
-        "developmentIndex": 49000
+        "developmentIndex": 49000,
+        "marchCapacity": 81000,
+        "rallyCapacity": 940000
       },
       {
         "id": "command-center-fc4-1",
@@ -10372,7 +10412,9 @@
         ],
         "buildTimeSeconds": 145140,
         "power": 386918,
-        "developmentIndex": 50100
+        "developmentIndex": 50100,
+        "marchCapacity": 81000,
+        "rallyCapacity": 940000
       },
       {
         "id": "command-center-fc4-2",
@@ -10424,7 +10466,9 @@
         ],
         "buildTimeSeconds": 145140,
         "power": 395766,
-        "developmentIndex": 51200
+        "developmentIndex": 51200,
+        "marchCapacity": 81000,
+        "rallyCapacity": 940000
       },
       {
         "id": "command-center-fc4-3",
@@ -10476,7 +10520,9 @@
         ],
         "buildTimeSeconds": 145140,
         "power": 404614,
-        "developmentIndex": 52300
+        "developmentIndex": 52300,
+        "marchCapacity": 81000,
+        "rallyCapacity": 940000
       },
       {
         "id": "command-center-fc4-4",
@@ -10528,7 +10574,9 @@
         ],
         "buildTimeSeconds": 145140,
         "power": 413462,
-        "developmentIndex": 53400
+        "developmentIndex": 53400,
+        "marchCapacity": 81000,
+        "rallyCapacity": 940000
       },
       {
         "id": "command-center-fc5",
@@ -10579,7 +10627,9 @@
         ],
         "buildTimeSeconds": 145140,
         "power": 422310,
-        "developmentIndex": 54500
+        "developmentIndex": 54500,
+        "marchCapacity": 84500,
+        "rallyCapacity": 965000
       },
       {
         "id": "command-center-fc5-1",
@@ -10636,7 +10686,9 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 431774,
-        "developmentIndex": 55700
+        "developmentIndex": 55700,
+        "marchCapacity": 84500,
+        "rallyCapacity": 965000
       },
       {
         "id": "command-center-fc5-2",
@@ -10693,7 +10745,9 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 441238,
-        "developmentIndex": 56850
+        "developmentIndex": 56850,
+        "marchCapacity": 84500,
+        "rallyCapacity": 965000
       },
       {
         "id": "command-center-fc5-3",
@@ -10750,7 +10804,9 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 450702,
-        "developmentIndex": 58050
+        "developmentIndex": 58050,
+        "marchCapacity": 84500,
+        "rallyCapacity": 965000
       },
       {
         "id": "command-center-fc5-4",
@@ -10807,7 +10863,9 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 460166,
-        "developmentIndex": 59200
+        "developmentIndex": 59200,
+        "marchCapacity": 84500,
+        "rallyCapacity": 965000
       },
       {
         "id": "command-center-fc6",
@@ -10863,7 +10921,9 @@
         ],
         "buildTimeSeconds": 155520,
         "power": 469630,
-        "developmentIndex": 60400
+        "developmentIndex": 60400,
+        "marchCapacity": 88000,
+        "rallyCapacity": 990000
       },
       {
         "id": "command-center-fc6-1",
@@ -10920,7 +10980,9 @@
         ],
         "buildTimeSeconds": 186600,
         "power": 479094,
-        "developmentIndex": 61550
+        "developmentIndex": 61550,
+        "marchCapacity": 88000,
+        "rallyCapacity": 990000
       },
       {
         "id": "command-center-fc6-2",
@@ -10977,7 +11039,9 @@
         ],
         "buildTimeSeconds": 186600,
         "power": 488558,
-        "developmentIndex": 62750
+        "developmentIndex": 62750,
+        "marchCapacity": 88000,
+        "rallyCapacity": 990000
       },
       {
         "id": "command-center-fc6-3",
@@ -11034,7 +11098,9 @@
         ],
         "buildTimeSeconds": 186600,
         "power": 498022,
-        "developmentIndex": 63900
+        "developmentIndex": 63900,
+        "marchCapacity": 88000,
+        "rallyCapacity": 990000
       },
       {
         "id": "command-center-fc6-4",
@@ -11091,7 +11157,9 @@
         ],
         "buildTimeSeconds": 186600,
         "power": 507486,
-        "developmentIndex": 65100
+        "developmentIndex": 65100,
+        "marchCapacity": 88000,
+        "rallyCapacity": 990000
       },
       {
         "id": "command-center-fc7",
@@ -11147,7 +11215,9 @@
         ],
         "buildTimeSeconds": 186600,
         "power": 516950,
-        "developmentIndex": 66250
+        "developmentIndex": 66250,
+        "marchCapacity": 91500,
+        "rallyCapacity": 1015000
       },
       {
         "id": "command-center-fc7-1",
@@ -11204,7 +11274,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 526414,
-        "developmentIndex": 67450
+        "developmentIndex": 67450,
+        "marchCapacity": 91500,
+        "rallyCapacity": 1015000
       },
       {
         "id": "command-center-fc7-2",
@@ -11261,7 +11333,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 535878,
-        "developmentIndex": 68650
+        "developmentIndex": 68650,
+        "marchCapacity": 91500,
+        "rallyCapacity": 1015000
       },
       {
         "id": "command-center-fc7-3",
@@ -11318,7 +11392,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 545342,
-        "developmentIndex": 69800
+        "developmentIndex": 69800,
+        "marchCapacity": 91500,
+        "rallyCapacity": 1015000
       },
       {
         "id": "command-center-fc7-4",
@@ -11375,7 +11451,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 554806,
-        "developmentIndex": 71000
+        "developmentIndex": 71000,
+        "marchCapacity": 91500,
+        "rallyCapacity": 1015000
       },
       {
         "id": "command-center-fc8",
@@ -11431,7 +11509,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 564270,
-        "developmentIndex": 72150
+        "developmentIndex": 72150,
+        "marchCapacity": 95000,
+        "rallyCapacity": 1040000
       },
       {
         "id": "command-center-fc8-1",
@@ -11488,7 +11568,9 @@
         ],
         "buildTimeSeconds": 134760,
         "power": 574406,
-        "developmentIndex": 73400
+        "developmentIndex": 73400,
+        "marchCapacity": 95000,
+        "rallyCapacity": 1040000
       },
       {
         "id": "command-center-fc8-2",
@@ -11545,7 +11627,9 @@
         ],
         "buildTimeSeconds": 134760,
         "power": 584542,
-        "developmentIndex": 74700
+        "developmentIndex": 74700,
+        "marchCapacity": 95000,
+        "rallyCapacity": 1040000
       },
       {
         "id": "command-center-fc8-3",
@@ -11602,7 +11686,9 @@
         ],
         "buildTimeSeconds": 134760,
         "power": 594678,
-        "developmentIndex": 75950
+        "developmentIndex": 75950,
+        "marchCapacity": 95000,
+        "rallyCapacity": 1040000
       },
       {
         "id": "command-center-fc8-4",
@@ -11659,7 +11745,9 @@
         ],
         "buildTimeSeconds": 134760,
         "power": 604814,
-        "developmentIndex": 77200
+        "developmentIndex": 77200,
+        "marchCapacity": 95000,
+        "rallyCapacity": 1040000
       },
       {
         "id": "command-center-fc9",
@@ -11715,7 +11803,9 @@
         ],
         "buildTimeSeconds": 134760,
         "power": 614950,
-        "developmentIndex": 78450
+        "developmentIndex": 78450,
+        "marchCapacity": 98500,
+        "rallyCapacity": 1065000
       },
       {
         "id": "command-center-fc9-1",
@@ -11772,7 +11862,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 625086,
-        "developmentIndex": 79700
+        "developmentIndex": 79700,
+        "marchCapacity": 98500,
+        "rallyCapacity": 1065000
       },
       {
         "id": "command-center-fc9-2",
@@ -11829,7 +11921,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 635222,
-        "developmentIndex": 81000
+        "developmentIndex": 81000,
+        "marchCapacity": 98500,
+        "rallyCapacity": 1065000
       },
       {
         "id": "command-center-fc9-3",
@@ -11886,7 +11980,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 645358,
-        "developmentIndex": 82250
+        "developmentIndex": 82250,
+        "marchCapacity": 98500,
+        "rallyCapacity": 1065000
       },
       {
         "id": "command-center-fc9-4",
@@ -11943,7 +12039,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 655494,
-        "developmentIndex": 83500
+        "developmentIndex": 83500,
+        "marchCapacity": 98500,
+        "rallyCapacity": 1065000
       },
       {
         "id": "command-center-fc10",
@@ -11999,7 +12097,9 @@
         ],
         "buildTimeSeconds": 207360,
         "power": 665630,
-        "developmentIndex": 84750
+        "developmentIndex": 84750,
+        "marchCapacity": 102000,
+        "rallyCapacity": 1090000
       }
     ]
   },

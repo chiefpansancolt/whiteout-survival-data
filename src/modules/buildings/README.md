@@ -98,11 +98,12 @@ Lv.9, then it tracks the Furnace level from level 10. It has `researchSpeedBonus
 level.
 
 Command Center raises Rally and March troop capacity (`rallyCapacity` and `marchCapacity`) as well
-as power. Every standard level requires both the Furnace (Lv.10 minimum, then matching from
-level 11) and the Embassy at the matching level. Its Fire Crystal levels also have a cross-building
-gate. Every level in a group of five (a tier's four sub-levels plus the next tier's base row)
-requires Furnace and Embassy at a matching Fire Crystal tier. This is in addition to the derived
-same-building chain.
+as power. Both are given on all 80 levels. A Fire Crystal sub-level, such as `30-1` or `FC 3-2`, has
+the same value as the full level before it. Every standard level requires both the Furnace (Lv.10
+minimum, then matching from level 11) and the Embassy at the matching level. Its Fire Crystal levels
+also have a cross-building gate. Every level in a group of five (a tier's four sub-levels plus the
+next tier's base row) requires Furnace and Embassy at a matching Fire Crystal tier. This is in
+addition to the derived same-building chain.
 
 Infantry Camp, Marksman Camp, and Lancer Camp train their troop type. They have identical cost,
 power, and Fire Crystal progression and differ only in the Furnace prerequisite floor (Lv.7, Lv.8,

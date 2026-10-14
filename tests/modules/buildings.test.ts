@@ -216,6 +216,17 @@ describe('Command Center levels', () => {
     expect(level1.marchCapacity).toBe(400);
   });
 
+  it('gives every Fire Crystal sub-level the capacity of the full level before it', () => {
+    let full = commandCenter.levels[0];
+    for (const level of commandCenter.levels) {
+      if (level.fcSubLevel === undefined) full = level;
+      expect(level.marchCapacity).toBe(full.marchCapacity);
+      expect(level.rallyCapacity).toBe(full.rallyCapacity);
+    }
+    expect(commandCenter.levels.find((l) => l.label === '30-3')!.marchCapacity).toBe(67000);
+    expect(commandCenter.levels.find((l) => l.label === 'FC 3-2')!.rallyCapacity).toBe(915000);
+  });
+
   it('requires both Furnace and Embassy at standard levels', () => {
     const level1 = commandCenter.levels.find((l) => l.label === '1')!;
     expect(level1.prerequisites).toEqual([
