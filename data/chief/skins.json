@@ -15,6 +15,20 @@
     "sources": ["Thanksgiving Event Pack"]
   },
   {
+    "id": "adventurous-trip",
+    "name": "Adventurous Trip",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Adventurous Trip Avatar Frame]. Bonus: Troops Defense +1.5%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events", "Adventure Caravan"]
+  },
+  {
     "id": "autumn-reverie",
     "name": "Autumn Reverie",
     "img": "/images/skins/autumn-reverie.png",
@@ -53,12 +67,40 @@
     "sources": ["Birthday Gift Pack"]
   },
   {
+    "id": "blooming-starlight",
+    "name": "Blooming Starlight",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Blooming Starlight Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
+  },
+  {
     "id": "blue-flame-avatar-frame",
     "name": "Blue Flame Avatar Frame",
     "img": "/images/skins/blue-flame-avatar-frame.png",
     "skinType": "Avatar Frame",
     "description": "Grants the [Blue Flame Avatar Frame](14 Days). Awarded to players who rank in the top 5 in Frostfire Mine Event.",
     "sources": ["Frostfire Mine"]
+  },
+  {
+    "id": "bodkins-crowns",
+    "name": "Bodkins & Crowns",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Bodkins & Crowns Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
   },
   {
     "id": "budding-life",
@@ -149,6 +191,20 @@
       "unit": "percent"
     },
     "sources": ["Ramadan Event 2025 (Purchase Pack)"]
+  },
+  {
+    "id": "crystal-starlight",
+    "name": "Crystal Starlight",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Crystal Starlight Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
   },
   {
     "id": "cupids-arrow-avatar-frame",
@@ -384,6 +440,20 @@
     "sources": ["Ramadan 2024 Pack"]
   },
   {
+    "id": "goal-time",
+    "name": "Goal Time!",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Goal Time! Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
+  },
+  {
     "id": "golden-symphony",
     "name": "Golden Symphony",
     "img": "/images/skins/golden-symphony.png",
@@ -458,6 +528,20 @@
     "skinType": "Avatar Frame",
     "description": "Can be obtained through Social Media events, Discord activities, or Content Creator rewards. Bonus: Without Bonus",
     "sources": []
+  },
+  {
+    "id": "joyous-surge",
+    "name": "Joyous Surge",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Joyous Surge Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
   },
   {
     "id": "jubilee-pact",
@@ -596,6 +680,20 @@
     "sources": []
   },
   {
+    "id": "moon-bloom",
+    "name": "Moon Bloom",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Moon Bloom Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
+  },
+  {
     "id": "moonlight-milkyway",
     "name": "Moonlight Milkyway",
     "img": "/images/skins/moonlight-milkyway.png",
@@ -692,6 +790,20 @@
       "unit": "percent"
     },
     "sources": ["Eid al-Adha 2025 (Purchase Pack)"]
+  },
+  {
+    "id": "primal-vibe",
+    "name": "Primal Vibe",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Primal Vibe Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
   },
   {
     "id": "pumpkin-head-2",
@@ -944,6 +1056,62 @@
     "sources": ["Christmas event 2024 (Curiosity Shop)"]
   },
   {
+    "id": "frigid-night",
+    "name": "Frigid Night",
+    "skinType": "Chat",
+    "description": "Grants the [Frigid Night Chat]. Bonus: Troops Health +1.5%.",
+    "bonus": {
+      "stat": "Troops Health",
+      "statKey": "troops-health",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events", "Frozen Radiance Bonus"]
+  },
+  {
+    "id": "ocean-exploration",
+    "name": "Ocean Exploration",
+    "skinType": "Chat",
+    "description": "Grants the [Ocean Exploration Chat]. Bonus: Troops Health +1.5%.",
+    "bonus": {
+      "stat": "Troops Health",
+      "statKey": "troops-health",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
+    },
+    "sources": ["Fishing Tournament"]
+  },
+  {
+    "id": "safe-haven",
+    "name": "Safe Haven",
+    "skinType": "Chat",
+    "description": "Grants the [Safe Haven Chat]. Bonus: Troops Health +1.5%.",
+    "bonus": {
+      "stat": "Troops Health",
+      "statKey": "troops-health",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
+  },
+  {
+    "id": "starburst-sky",
+    "name": "Starburst Sky",
+    "skinType": "Chat",
+    "description": "Grants the [Starburst Sky Chat]. Bonus: Troops Health +1.5%.",
+    "bonus": {
+      "stat": "Troops Health",
+      "statKey": "troops-health",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
+  },
+  {
     "id": "dragon-dominion",
     "name": "Dragon Dominion",
     "img": "/images/skins/dragon-dominion.png",
@@ -1002,6 +1170,20 @@
       "unit": "percent"
     },
     "sources": ["Thanksgiving 2025 Event"]
+  },
+  {
+    "id": "celestial-wonders",
+    "name": "Celestial Wonders",
+    "skinType": "City Skin",
+    "description": "Grants the [Celestial Wonders City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
   },
   {
     "id": "cloud-fantasy",
@@ -1274,6 +1456,13 @@
     "sources": ["Dream Miracle (Silverfrost Shop) may 2026"]
   },
   {
+    "id": "helios-outpost",
+    "name": "Helios Outpost",
+    "skinType": "City Skin",
+    "description": "Grants the [Helios Outpost City Skin].",
+    "sources": ["Special Events"]
+  },
+  {
     "id": "high-diver",
     "name": "High Diver",
     "img": "/images/skins/high-diver.png",
@@ -1325,6 +1514,20 @@
       "unit": "percent"
     },
     "sources": ["Adventure Caravan Shop"]
+  },
+  {
+    "id": "mushroom-haven",
+    "name": "Mushroom Haven",
+    "skinType": "City Skin",
+    "description": "Grants the [Mushroom Haven City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Skin Shop"]
   },
   {
     "id": "pyrois",
@@ -1438,6 +1641,20 @@
       "unit": "percent"
     },
     "sources": ["Fishing Event"]
+  },
+  {
+    "id": "wave-raider",
+    "name": "Wave Raider",
+    "skinType": "City Skin",
+    "description": "Grants the [Wave Raider City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Fishing Tournament"]
   },
   {
     "id": "windmill-village",
@@ -1635,6 +1852,20 @@
     "sources": ["Tundra Games Event"]
   },
   {
+    "id": "dribble-wild",
+    "name": "Dribble Wild",
+    "skinType": "March Skin",
+    "description": "Grants the [Dribble Wild March Skin]. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
+  },
+  {
     "id": "egg-pert",
     "name": "Egg-pert",
     "img": "/images/skins/egg-pert.png",
@@ -1693,6 +1924,20 @@
       "unit": "percent"
     },
     "sources": ["Frostdragon Tyrant"]
+  },
+  {
+    "id": "fungal-sprite",
+    "name": "Fungal Sprite",
+    "skinType": "March Skin",
+    "description": "Grants the [Fungal Sprite March Skin]. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "sources": ["Skin Shop"]
   },
   {
     "id": "honeymoon-trip",
@@ -1838,6 +2083,20 @@
     "sources": ["Tundra Adventure 2025"]
   },
   {
+    "id": "metal-storm",
+    "name": "Metal Storm",
+    "skinType": "March Skin",
+    "description": "Grants the [Metal Storm March Skin]. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
+  },
+  {
     "id": "moonlight-serenade",
     "name": "Moonlight Serenade",
     "img": "/images/skins/moonlight-serenade.png",
@@ -1936,6 +2195,20 @@
     "sources": ["Sunfire Castle Battle"]
   },
   {
+    "id": "pixel-jet",
+    "name": "Pixel Jet",
+    "skinType": "March Skin",
+    "description": "Grants the [Pixel Jet March Skin]. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
+  },
+  {
     "id": "rainbow-unicorn",
     "name": "Rainbow Unicorn",
     "img": "/images/skins/rainbow-unicorn.png",
@@ -1964,6 +2237,20 @@
       "unit": "percent"
     },
     "sources": ["Christmas Festival 2025"]
+  },
+  {
+    "id": "sky-strider",
+    "name": "Sky Strider",
+    "skinType": "March Skin",
+    "description": "Grants the [Sky Strider March Skin]. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
   },
   {
     "id": "snow-sovereign",
@@ -2057,10 +2344,10 @@
   },
   {
     "id": "tundra-adventure",
-    "name": "Tundra Adventure",
+    "name": "Tundra Adventurer",
     "img": "/images/skins/tundra-adventure.png",
     "skinType": "March Skin",
-    "description": "Grants [Tundra Adventure March Skin] (Permanent). Can be obtained from the Adventure Caravan Shop during the Tundra Adventure event. Bonus: Hunting March Speed +5%.",
+    "description": "Grants [Tundra Adventurer March Skin] (Permanent). Can be obtained from the Adventure Caravan Shop during the Tundra Adventure event. Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
       "statKey": "hunting-march-speed",
@@ -2162,10 +2449,10 @@
   },
   {
     "id": "wing-of-the-icy-wind",
-    "name": "Wing of the Icy Wind",
+    "name": "Wings of the Icy Wind",
     "img": "/images/skins/wing-of-the-icy-wind.png",
     "skinType": "March Skin",
-    "description": "50,000 Top-up points Grants the [Wing of the Icy Wind March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
+    "description": "50,000 Top-up points Grants the [Wings of the Icy Wind March Skin] (Permanent). Bonus: Hunting March Speed +5%.",
     "bonus": {
       "stat": "Hunting March Speed",
       "statKey": "hunting-march-speed",
@@ -2251,6 +2538,20 @@
     "sources": ["2nd Anniversary"]
   },
   {
+    "id": "froststar-radiance-name-card",
+    "name": "Froststar Radiance Name Card",
+    "skinType": "Name Card",
+    "description": "Grants the [Froststar Radiance Name Card]. Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
+    },
+    "sources": ["Frost Star Shop"]
+  },
+  {
     "id": "garden-of-delights",
     "name": "Garden of Delights",
     "img": "/images/skins/garden-of-delights.png",
@@ -2294,6 +2595,20 @@
       "unit": "percent"
     },
     "sources": ["Blessing of Daylight"]
+  },
+  {
+    "id": "moon-bloom-name-card",
+    "name": "Moon Bloom Name Card",
+    "skinType": "Name Card",
+    "description": "Grants the [Moon Bloom Name Card]. Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
+    },
+    "sources": ["Special Events"]
   },
   {
     "id": "perpetual-treads",
@@ -2499,6 +2814,20 @@
     "skinType": "Nameplate",
     "description": "Gives the [Sun Crown Nameplate] for (7/14/30) days. Obtained by ranking Top 300 in the King of Icefield event.",
     "sources": ["King of Icefield"]
+  },
+  {
+    "id": "dancing-frostglow",
+    "name": "Dancing Frostglow",
+    "skinType": "Teleport Skin",
+    "description": "Grants the [Dancing Frostglow Teleport Skin]. Bonus: Troops Lethality +2%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "statKey": "troops-lethality",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Special Events", "Frozen Supreme Bonus"]
   },
   {
     "id": "gate-of-time",

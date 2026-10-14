@@ -2,6 +2,7 @@ import { BonusUnit } from './common';
 
 export type SkinType =
   | 'Avatar Frame'
+  | 'Chat'
   | 'Nameplate'
   | 'March Skin'
   | 'City Skin'
@@ -20,7 +21,7 @@ export interface SkinBonus {
 export interface Skin {
   id: string;
   name: string;
-  img: string;
+  img?: string;
   skinType: SkinType;
   description: string;
   bonus?: SkinBonus;

@@ -124,6 +124,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `allianceTech()`     | 59      | Alliance technology tree              | [README](src/modules/alliance/tech/README.md)      |
 | `allianceFacility()` | 8       | Map-based alliance facilities         | [README](src/modules/alliance/facility/README.md)  |
 | `allianceFortress()` | 17      | Castle, strongholds, and fortresses   | [README](src/modules/alliance/fortress/README.md)  |
+| `alliancePrestige()` | 6       | Prestige buildings and their bonuses  | [README](src/modules/alliance/prestige/README.md)  |
 
 ### Events, items, and account
 
@@ -132,7 +133,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `events()`             | 65      | Game events with scoring, rewards, and tips                                               | [README](src/modules/events/README.md)              |
 | `eventBuff()`          | 14      | Buff sources that apply in each game mode                                                 | [README](src/modules/event-buff/README.md)          |
 | `items()`              | 334     | Item catalog with icons and sources                                                       | [README](src/modules/items/README.md)               |
-| `skins()`              | 191     | Cosmetic skins                                                                            | [README](src/modules/skins/README.md)               |
+| `skins()`              | 215     | Cosmetic skins                                                                            | [README](src/modules/skins/README.md)               |
 | `serverTimeline()`     | 33      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`           | [README](src/modules/server-timeline/README.md)     |
 | `chiefOrders()`        | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                    | [README](src/modules/chief-orders/README.md)        |
 | `castleAppointments()` | 8       | Castle positions and the buffs they give                                                  | [README](src/modules/castle-appointments/README.md) |
@@ -152,6 +153,7 @@ calculator has its own guide.
 | Function                      | What it calculates                                                 | Details                                                    |
 | ----------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------- |
 | `calculateSvs()`              | State of Power score by day, phase, and event                      | [Guide](src/modules/calculators/docs/svs.md)               |
+| `calculateBuffs()`            | Speed boosts and other buffs by stat, with every source            | [Guide](src/modules/calculators/docs/buffs.md)             |
 | `calculateBeasts()`           | Beasts or Polar Terrors that stamina pays for, with event points   | [Guide](src/modules/calculators/docs/beasts.md)            |
 | `calculateAllianceShowdown()` | Alliance Showdown score, with the Dawn Hymn bonus                  | [Guide](src/modules/calculators/docs/alliance-showdown.md) |
 | `calculateKingOfIcefield()`   | King of Icefield score                                             | [Guide](src/modules/calculators/docs/king-of-icefield.md)  |
@@ -201,10 +203,14 @@ This is what the data does not hold yet. Each module README gives the detail.
 - **Items.** 54 items have no icon: the 9 speedups of 3h and 8h for construction, troop, research,
   and healing and of 8h for learning, the 42 Furniture items, and 3 items of the activity bar of the
   Daily Missions. See [Items](src/modules/items/README.md).
+- **Skins.** The 24 newest skins have no `img`. See [Skins](src/modules/skins/README.md).
 - **Buildings.** The nine entertainment buildings have no `img`. See
   [Buildings](src/modules/buildings/README.md).
-- **Tundra Album.** Only the albums Crystalline Mysteries, Daybreak Island, Explore the World, Song
-  of Heroes, and Rekindled Flames are in. See [Tundra Album](src/modules/tundra-album/README.md).
+- **Alliance prestige buildings.** The tiers of five of the six buildings are numbered, because
+  their names are not known, and the cost to build one is not stored. See
+  [Alliance Prestige Buildings](src/modules/alliance/prestige/README.md).
+- **Tundra Album.** Only the albums Crystalline Mysteries, Daybreak Island, and Explore the World
+  are in. See [Tundra Album](src/modules/tundra-album/README.md).
 - **Daily tasks.** The list of in-game daily missions in `dailies()` is not complete. The missions
   in `dailyMissions()` have only the levels known so far, and the daily reset time is not stored.
   See [Daily Missions](src/modules/daily-missions/README.md) and

@@ -33,23 +33,29 @@ described in [How It Works](../../../README.md#how-it-works).
 
 ## Data
 
-Skins are in `data/chief/skins.json`. Each entry has `id`, `name`, `img`, `skinType`, `description`,
-an optional `bonus`, and a list of `sources`. As in the Items module, `id` is a URL slug.
+Skins are in `data/chief/skins.json`. Each entry has `id`, `name`, an optional `img`, `skinType`,
+`description`, an optional `bonus`, and a list of `sources`. As in the Items module, `id` is a URL
+slug.
 
 | Skin type     | Skins |
 | ------------- | ----- |
-| Avatar Frame  | 69    |
-| March Skin    | 48    |
-| City Skin     | 37    |
+| Avatar Frame  | 77    |
+| March Skin    | 53    |
+| City Skin     | 41    |
 | Nameplate     | 20    |
-| Name Card     | 10    |
-| Teleport Skin | 5     |
+| Name Card     | 12    |
+| Teleport Skin | 6     |
+| Chat          | 4     |
 | Chief Profile | 2     |
 
-`bonus` is a `{ stat, value }` pair, for example `Troops Defense` and `+2%`. It is set on 153 of the
-191 skins. It is `undefined` when a skin grants no stat bonus. The `value` is a string.
+`bonus` is a `{ stat, value }` pair, for example `Troops Defense` and `+2%`. It is set on 176 of the
+215 skins. It is `undefined` when a skin grants no stat bonus. The `value` is a string.
 
 ## Notes
+
+The 24 skins added most recently have no `img`, because no icon exists for them yet. The skins
+`tundra-adventure` and `wing-of-the-icy-wind` keep their ids and icons. Their names are
+`Tundra Adventurer` and `Wings of the Icy Wind`.
 
 This module is the cosmetic half of the item catalog described in the [Items](../items/README.md)
 module.
