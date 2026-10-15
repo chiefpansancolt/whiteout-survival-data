@@ -173,7 +173,10 @@ describe('Embassy levels', () => {
     const fc10 = embassy.levels.find((l) => l.label === 'FC 10')!;
     expect(fc10.tier).toBe('fireCrystal');
     expect(fc10.fcStage).toBe(10);
-    expect(fc10.prerequisites).toEqual([{ building: 'Embassy', level: 'FC 9-4' }]);
+    expect(fc10.prerequisites).toEqual([
+      { building: 'Embassy', level: 'FC 9-4' },
+      { building: 'Furnace', level: 'FC 10' },
+    ]);
   });
 
   it('tracks Ally Assists, Ally Help Time, and Reinforce Capacity at every level', () => {

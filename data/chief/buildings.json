@@ -4590,6 +4590,10 @@
           {
             "building": "Embassy",
             "level": 30
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 1"
           }
         ],
         "developmentIndex": 44250,
@@ -4637,6 +4641,10 @@
           {
             "building": "Embassy",
             "level": "30-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 1"
           }
         ],
         "developmentIndex": 45750,
@@ -4684,6 +4692,10 @@
           {
             "building": "Embassy",
             "level": "30-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 1"
           }
         ],
         "developmentIndex": 47250,
@@ -4731,6 +4743,10 @@
           {
             "building": "Embassy",
             "level": "30-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 1"
           }
         ],
         "developmentIndex": 48750,
@@ -4777,6 +4793,10 @@
           {
             "building": "Embassy",
             "level": "30-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 1"
           }
         ],
         "developmentIndex": 50250,
@@ -4824,6 +4844,10 @@
           {
             "building": "Embassy",
             "level": 30
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
           }
         ],
         "developmentIndex": 51750,
@@ -4871,6 +4895,10 @@
           {
             "building": "Embassy",
             "level": "FC 1-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
           }
         ],
         "developmentIndex": 53250,
@@ -4918,6 +4946,10 @@
           {
             "building": "Embassy",
             "level": "FC 1-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
           }
         ],
         "developmentIndex": 54750,
@@ -4965,6 +4997,10 @@
           {
             "building": "Embassy",
             "level": "FC 1-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
           }
         ],
         "developmentIndex": 56250,
@@ -5011,6 +5047,10 @@
           {
             "building": "Embassy",
             "level": "FC 1-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 2"
           }
         ],
         "developmentIndex": 57750,
@@ -5058,6 +5098,10 @@
           {
             "building": "Embassy",
             "level": "FC 1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 3"
           }
         ],
         "developmentIndex": 59250,
@@ -5105,6 +5149,10 @@
           {
             "building": "Embassy",
             "level": "FC 2-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 3"
           }
         ],
         "developmentIndex": 60750,
@@ -5152,6 +5200,10 @@
           {
             "building": "Embassy",
             "level": "FC 2-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 3"
           }
         ],
         "developmentIndex": 62250,
@@ -5199,6 +5251,10 @@
           {
             "building": "Embassy",
             "level": "FC 2-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 3"
           }
         ],
         "developmentIndex": 63750,
@@ -5245,6 +5301,10 @@
           {
             "building": "Embassy",
             "level": "FC 2-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 3"
           }
         ],
         "developmentIndex": 65250,
@@ -5292,6 +5352,10 @@
           {
             "building": "Embassy",
             "level": "FC 2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 4"
           }
         ],
         "developmentIndex": 66900,
@@ -5339,6 +5403,10 @@
           {
             "building": "Embassy",
             "level": "FC 3-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 4"
           }
         ],
         "developmentIndex": 68550,
@@ -5386,6 +5454,10 @@
           {
             "building": "Embassy",
             "level": "FC 3-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 4"
           }
         ],
         "developmentIndex": 70200,
@@ -5433,6 +5505,10 @@
           {
             "building": "Embassy",
             "level": "FC 3-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 4"
           }
         ],
         "developmentIndex": 71850,
@@ -5479,6 +5555,10 @@
           {
             "building": "Embassy",
             "level": "FC 3-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 4"
           }
         ],
         "developmentIndex": 73500,
@@ -5526,6 +5606,10 @@
           {
             "building": "Embassy",
             "level": "FC 3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 5"
           }
         ],
         "developmentIndex": 75150,
@@ -5573,6 +5657,10 @@
           {
             "building": "Embassy",
             "level": "FC 4-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 5"
           }
         ],
         "developmentIndex": 76800,
@@ -5620,6 +5708,10 @@
           {
             "building": "Embassy",
             "level": "FC 4-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 5"
           }
         ],
         "developmentIndex": 78450,
@@ -5667,6 +5759,10 @@
           {
             "building": "Embassy",
             "level": "FC 4-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 5"
           }
         ],
         "developmentIndex": 80100,
@@ -5713,6 +5809,10 @@
           {
             "building": "Embassy",
             "level": "FC 4-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 5"
           }
         ],
         "developmentIndex": 81750,
@@ -5765,6 +5865,10 @@
           {
             "building": "Embassy",
             "level": "FC 4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 6"
           }
         ],
         "developmentIndex": 83500,
@@ -5817,6 +5921,10 @@
           {
             "building": "Embassy",
             "level": "FC 5-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 6"
           }
         ],
         "developmentIndex": 85300,
@@ -5869,6 +5977,10 @@
           {
             "building": "Embassy",
             "level": "FC 5-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 6"
           }
         ],
         "developmentIndex": 87050,
@@ -5921,6 +6033,10 @@
           {
             "building": "Embassy",
             "level": "FC 5-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 6"
           }
         ],
         "developmentIndex": 88800,
@@ -5972,6 +6088,10 @@
           {
             "building": "Embassy",
             "level": "FC 5-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 6"
           }
         ],
         "developmentIndex": 90600,
@@ -6024,6 +6144,10 @@
           {
             "building": "Embassy",
             "level": "FC 5"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 7"
           }
         ],
         "developmentIndex": 92350,
@@ -6076,6 +6200,10 @@
           {
             "building": "Embassy",
             "level": "FC 6-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 7"
           }
         ],
         "developmentIndex": 94100,
@@ -6128,6 +6256,10 @@
           {
             "building": "Embassy",
             "level": "FC 6-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 7"
           }
         ],
         "developmentIndex": 95900,
@@ -6180,6 +6312,10 @@
           {
             "building": "Embassy",
             "level": "FC 6-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 7"
           }
         ],
         "developmentIndex": 97650,
@@ -6231,6 +6367,10 @@
           {
             "building": "Embassy",
             "level": "FC 6-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 7"
           }
         ],
         "developmentIndex": 99400,
@@ -6283,6 +6423,10 @@
           {
             "building": "Embassy",
             "level": "FC 6"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 8"
           }
         ],
         "developmentIndex": 101150,
@@ -6335,6 +6479,10 @@
           {
             "building": "Embassy",
             "level": "FC 7-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 8"
           }
         ],
         "developmentIndex": 102950,
@@ -6387,6 +6535,10 @@
           {
             "building": "Embassy",
             "level": "FC 7-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 8"
           }
         ],
         "developmentIndex": 104700,
@@ -6439,6 +6591,10 @@
           {
             "building": "Embassy",
             "level": "FC 7-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 8"
           }
         ],
         "developmentIndex": 106450,
@@ -6490,6 +6646,10 @@
           {
             "building": "Embassy",
             "level": "FC 7-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 8"
           }
         ],
         "developmentIndex": 108250,
@@ -6542,6 +6702,10 @@
           {
             "building": "Embassy",
             "level": "FC 7"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 9"
           }
         ],
         "developmentIndex": 110150,
@@ -6594,6 +6758,10 @@
           {
             "building": "Embassy",
             "level": "FC 8-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 9"
           }
         ],
         "developmentIndex": 112000,
@@ -6646,6 +6814,10 @@
           {
             "building": "Embassy",
             "level": "FC 8-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 9"
           }
         ],
         "developmentIndex": 113900,
@@ -6698,6 +6870,10 @@
           {
             "building": "Embassy",
             "level": "FC 8-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 9"
           }
         ],
         "developmentIndex": 115800,
@@ -6749,6 +6925,10 @@
           {
             "building": "Embassy",
             "level": "FC 8-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 9"
           }
         ],
         "developmentIndex": 117700,
@@ -6801,6 +6981,10 @@
           {
             "building": "Embassy",
             "level": "FC 8"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 10"
           }
         ],
         "developmentIndex": 119600,
@@ -6853,6 +7037,10 @@
           {
             "building": "Embassy",
             "level": "FC 9-1"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 10"
           }
         ],
         "developmentIndex": 121450,
@@ -6905,6 +7093,10 @@
           {
             "building": "Embassy",
             "level": "FC 9-2"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 10"
           }
         ],
         "developmentIndex": 123350,
@@ -6957,6 +7149,10 @@
           {
             "building": "Embassy",
             "level": "FC 9-3"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 10"
           }
         ],
         "developmentIndex": 125250,
@@ -7008,6 +7204,10 @@
           {
             "building": "Embassy",
             "level": "FC 9-4"
+          },
+          {
+            "building": "Furnace",
+            "level": "FC 10"
           }
         ],
         "developmentIndex": 127150,
