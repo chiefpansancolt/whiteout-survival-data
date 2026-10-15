@@ -33839,7 +33839,7 @@
             "totalAmount": 12000
           }
         ],
-        "power": 120000,
+        "power": 24000,
         "researchTimeSeconds": 120000
       },
       {
@@ -33883,7 +33883,7 @@
             "totalAmount": 24000
           }
         ],
-        "power": 180000,
+        "power": 24000,
         "researchTimeSeconds": 180000
       },
       {
@@ -33927,7 +33927,7 @@
             "totalAmount": 40000
           }
         ],
-        "power": 480000,
+        "power": 32000,
         "researchTimeSeconds": 480000
       }
     ]
@@ -36566,7 +36566,7 @@
             "totalAmount": 8.5
           }
         ],
-        "power": 103200,
+        "power": 102300,
         "researchTimeSeconds": 122652
       },
       {
@@ -37108,7 +37108,7 @@
             "totalAmount": 8.5
           }
         ],
-        "power": 103200,
+        "power": 102300,
         "researchTimeSeconds": 122652
       },
       {
@@ -40772,7 +40772,7 @@
             "totalAmount": 8.5
           }
         ],
-        "power": 103200,
+        "power": 102300,
         "researchTimeSeconds": 122652
       },
       {
@@ -41314,7 +41314,7 @@
             "totalAmount": 8.5
           }
         ],
-        "power": 103200,
+        "power": 102300,
         "researchTimeSeconds": 122652
       },
       {
@@ -45176,7 +45176,7 @@
             "totalAmount": 8.5
           }
         ],
-        "power": 103200,
+        "power": 102300,
         "researchTimeSeconds": 122652
       },
       {
@@ -45718,7 +45718,7 @@
             "totalAmount": 8.5
           }
         ],
-        "power": 103200,
+        "power": 102300,
         "researchTimeSeconds": 122652
       },
       {

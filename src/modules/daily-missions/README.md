@@ -4,11 +4,11 @@ The in-game Daily Missions: the task of each mission, the activeness and the res
 gives, and the reward levels of the activity bar at the top of the screen. Use it to show what a
 mission asks for and what it gives, and to add up the activeness of a day.
 
-Every mission has level 1. Level 2 is in for Recruit Hero(es), Claim Online Reward(s), Dispatch
-Pets, Arena Challenge, the three Train missions, and the four Gather missions of one resource. Take
-part in Alliance Help, Make Alliance Contribution(s), Carry out Intel Mission(s), Defeat Polar
-Terror, and Gather have levels 2 and 3. The other levels of the missions are added later. A level
-changes the task and what it gives.
+Every mission has level 1. Level 2 is in for Recruit Hero(es), Dispatch Pets, Arena Challenge, the
+three Train missions, and the four Gather missions of one resource. Take part in Alliance Help, Make
+Alliance Contribution(s), Carry out Intel Mission(s), Claim Online Reward(s), Defeat Polar Terror,
+and Gather have levels 2 and 3. The other levels of the missions are added later. A level changes
+the task and what it gives.
 
 ## Usage
 

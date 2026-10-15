@@ -29,7 +29,7 @@ const KNOWN_LEVELS: Record<string, number[]> = {
   'train-infantry': [1, 2],
   'train-lancers': [1, 2],
   'train-marksmen': [1, 2],
-  'online-reward': [1, 2],
+  'online-reward': [1, 2, 3],
   'defeat-polar-terror': [1, 2, 3],
   'intel-mission': [1, 2, 3],
   'pet-adventure': [1, 2],
@@ -392,17 +392,32 @@ describe('daily missions', () => {
     expect(dailyMissionActivenessThrough(dailyMissions().find('gather')!, 3)).toBe(25);
   });
 
-  it('has 42 levels in all: 21 of level 1, 16 of level 2, and 5 of level 3', () => {
+  it('has 43 levels in all: 21 of level 1, 16 of level 2, and 6 of level 3', () => {
     const levels = dailyMissions()
       .get()
       .flatMap((m) => m.levels);
-    expect(levels).toHaveLength(42);
-    expect([1, 2, 3].map((n) => levels.filter((l) => l.level === n).length)).toEqual([21, 16, 5]);
+    expect(levels).toHaveLength(43);
+    expect([1, 2, 3].map((n) => levels.filter((l) => l.level === n).length)).toEqual([21, 16, 6]);
     const withMore = dailyMissions()
       .get()
       .filter((m) => m.levels.length > 1)
       .map((m) => m.id);
     expect(withMore.sort()).toEqual(Object.keys(KNOWN_LEVELS).sort());
+  });
+
+  it('has level 3 of Online Reward: 5 times for 10 activeness, 800 Coal, and 200 Iron', () => {
+    const mission = dailyMissions().find('online-reward')!;
+    expect(mission.levels[2]).toEqual({
+      level: 3,
+      task: 'Claim 5 Online Reward(s)',
+      target: 5,
+      rewards: [
+        { itemId: 'activeness', amount: 10 },
+        { itemId: 'coal', amount: 800 },
+        { itemId: 'iron', amount: 200 },
+      ],
+    });
+    expect(dailyMissionActivenessThrough(mission, 3)).toBe(20);
   });
 
   it('has levels 2 and 3 of Carry out Intel Mission: 5 and 10 times', () => {
@@ -458,14 +473,14 @@ describe('daily missions', () => {
     ],
     [
       'online-reward',
-      'Claim 5 Online Reward(s)',
-      5,
+      'Claim 3 Online Reward(s)',
+      3,
       [
-        ['activeness', 10],
+        ['activeness', 5],
         ['coal', 800],
         ['iron', 200],
       ],
-      15,
+      10,
     ],
     [
       'pet-adventure',
