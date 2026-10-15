@@ -502,7 +502,7 @@ describe('Generation 1-17 heroes (Legendary)', () => {
     for (let gen = 1; gen <= 5; gen++) {
       heroes()
         .get()
-        .filter((h) => h.generation === gen && h.name !== 'Jeronimo')
+        .filter((h) => h.generation === gen && h.name !== 'Jeronimo' && h.name !== 'Natalia')
         .forEach((h) => {
           expect(h.levels[79].power).toBe(maxPowerByGen[gen]);
           for (let i = 1; i < h.levels.length; i++) {
@@ -511,12 +511,20 @@ describe('Generation 1-17 heroes (Legendary)', () => {
         });
     }
 
-    // Jeronimo is an exception: Level 80 total is 233,250 (start 6,250).
-    // The shared Generation 1 total is 186,600 (start 5,000).
+    // Jeronimo and Natalia are exceptions: Level 80 totals are 233,250 (start 6,250) and 205,260
+    // (start 5,500). The shared Generation 1 total is 186,600 (start 5,000).
     const jeronimo = heroes().findByName('Jeronimo')!;
     expect(jeronimo.levels[79].power).toBe(233250);
     for (let i = 1; i < jeronimo.levels.length; i++) {
       expect(jeronimo.levels[i].power).toBeGreaterThan(jeronimo.levels[i - 1].power);
+    }
+    const natalia = heroes().findByName('Natalia')!;
+    expect([1, 2, 10, 40, 80].map((level) => natalia.levels[level - 1].power)).toEqual([
+      5500, 6710, 16830, 71390, 205260,
+    ]);
+    expect(natalia.powerAtStarZero).toBe(natalia.levels[0].power * 2);
+    for (let i = 1; i < natalia.levels.length; i++) {
+      expect(natalia.levels[i].power).toBeGreaterThan(natalia.levels[i - 1].power);
     }
     for (let gen = 6; gen <= 17; gen++) {
       heroes()

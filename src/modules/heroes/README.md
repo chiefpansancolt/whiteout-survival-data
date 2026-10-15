@@ -167,8 +167,7 @@ not the gain of that star alone.
 star Power: Rare and Epic heroes and Legendary heroes through Generation 5. It is 6,500 for Rare and
 8,000 for Epic heroes, 10,000 for Molly and Zinman, 11,000 for Natalia, 12,000 for Generation 2,
 12,500 for Jeronimo, 15,000 for Generation 3, 18,500 for Generation 4, and 22,200 for Generation 5.
-For most heroes it is twice the level 1 Power. Natalia is the exception, with a level 1 Power of
-5,000.
+It is twice the level 1 Power of the hero.
 
 The Star Power at a label is `powerAtStarZero` times a multiplier of the label. The multipliers are
 the same for every hero and are listed under [Star multipliers](#star-multipliers). The `power` of a
@@ -254,6 +253,6 @@ The values reproduce the known checkpoints for every covered rarity and generati
 186,600. Legendary Generations 6 to 17 have no confirmed start value, so extrapolating one would be
 a guess. Their level `power` is a `0` placeholder.
 
-Jeronimo is a confirmed exception to his generation. His start is 6,250 and not the 5,000 of
-Generation 1, so his level 80 total is 233,250 and not 186,600. The curve and the formula are the
-same.
+Jeronimo and Natalia are confirmed exceptions to their generation. The start of Jeronimo is 6,250
+and not the 5,000 of Generation 1, so his level 80 total is 233,250 and not 186,600. The start of
+Natalia is 5,500, so her level 80 total is 205,260. The curve and the formula are the same.

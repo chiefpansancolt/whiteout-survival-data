@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-10-15
+
+### Fixed
+
+#### Game Data
+
+- `heroes()`: fix the level Power of Natalia, whose level 80 total is 205,260.
+
 ## [0.4.0] - 2026-10-15
 
 ### Added
