@@ -19,6 +19,7 @@ export interface HeroGearEmpowermentLevel {
   level: number;
   cost: HeroGearCost[];
   power: number;
+  milestonePower?: number;
 }
 
 export interface HeroGearMasteryForgingLevel {

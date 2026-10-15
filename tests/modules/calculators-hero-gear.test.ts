@@ -1,5 +1,7 @@
 import {
   calculateHeroGear,
+  HERO_GEAR_BASE_POWER,
+  HERO_GEAR_BASE_POWER_BY_QUALITY,
   HERO_GEAR_EMPOWERMENT_REQUIREMENT,
   HERO_GEAR_ENHANCEMENT_REQUIREMENT,
   HERO_GEAR_MAX_EMPOWERMENT_LEVEL,
@@ -18,8 +20,8 @@ describe('calculateHeroGear', () => {
       empowerment: { steps: 0, resources: [], power: 0 },
       resources: [],
       power: 0,
-      currentPower: 0,
-      goalPower: 0,
+      currentPower: 2500,
+      goalPower: 2500,
       eventPoints: { svs: 0, allianceShowdown: 0, kingOfIcefield: 0 },
       unmetRequirements: [],
       stats: null,
@@ -46,7 +48,7 @@ describe('calculateHeroGear', () => {
       statsUpPercent: 10,
     });
     expect(result.resources).toEqual([{ itemId: 'essence-stones', amount: 60 }]);
-    expect(result.power).toBe(0);
+    expect(result.power).toBe(250);
   });
 
   it('costs all of mastery forging from a piece that has none', () => {
@@ -64,14 +66,14 @@ describe('calculateHeroGear', () => {
     expect(result.enhancement).toEqual({
       steps: 20,
       resources: [{ itemId: 'enhancement-xp-component', amount: 1150 }],
-      power: 56500,
+      power: 11625,
     });
-    expect(result.power).toBe(56500);
+    expect(result.power).toBe(11625);
   });
 
   it('costs the whole of enhancement', () => {
     const result = calculateHeroGear({ enhancement: { current: 0, goal: 100 } });
-    expect(result.enhancement.power).toBe(1086700);
+    expect(result.enhancement.power).toBe(269175);
     expect(amount(result.resources, 'enhancement-xp-component')).toBe(73320);
     expect(result.unmetRequirements).toEqual([]);
   });
@@ -86,12 +88,150 @@ describe('calculateHeroGear', () => {
 
   it('starts the empowerment power at the power of enhancement level 100', () => {
     const first = calculateHeroGear({ empowerment: { current: 0, goal: 1 } });
-    expect(first.empowerment.power).toBe(1118000 - 1086700);
+    expect(first.empowerment.power).toBe(7825);
     expect(amount(first.resources, 'custom-mythic-hero-gear-chest')).toBe(2);
     const first20 = calculateHeroGear({ empowerment: { current: 0, goal: 20 } });
-    expect(first20.empowerment.power).toBe(1712700 - 1086700);
+    expect(first20.empowerment.power).toBe(156500);
     expect(amount(first20.resources, 'mithril')).toBe(10);
     expect(amount(first20.resources, 'enhancement-xp-component')).toBe(52650);
+  });
+
+  describe('power with mastery forging', () => {
+    const forgedPower = (forging: string, enhancement: number) =>
+      calculateHeroGear({
+        masteryForging: { current: forging, goal: forging },
+        enhancement: { current: enhancement, goal: enhancement },
+      }).currentPower;
+
+    it('exports the unforged power of a piece at level 0 for each quality', () => {
+      expect(HERO_GEAR_BASE_POWER).toBe(2500);
+      expect(HERO_GEAR_BASE_POWER_BY_QUALITY).toEqual({
+        common: 1000,
+        uncommon: 1375,
+        rare: 1750,
+        epic: 2000,
+        mythic: 2500,
+      });
+    });
+
+    it('gives a piece of each quality its base power at level 0', () => {
+      const base = (quality: 'common' | 'uncommon' | 'rare' | 'epic' | 'mythic') =>
+        calculateHeroGear({ quality, enhancement: { current: 0, goal: 0 } }).currentPower;
+      expect([
+        base('common'),
+        base('uncommon'),
+        base('rare'),
+        base('epic'),
+        base('mythic'),
+      ]).toEqual([1000, 1375, 1750, 2000, 2500]);
+    });
+
+    it('adds the gain of the Mythic table to the base power of the quality', () => {
+      const result = calculateHeroGear({
+        quality: 'epic',
+        enhancement: { current: 0, goal: 1 },
+      });
+      expect(result.currentPower).toBe(2000);
+      expect(result.goalPower).toBe(2400);
+      expect(result.power).toBe(400);
+      expect(result.enhancement.power).toBe(400);
+    });
+
+    it('lists mastery forging and empowerment as unmet for a quality below Mythic', () => {
+      const result = calculateHeroGear({
+        quality: 'rare',
+        masteryForging: { current: null, goal: 'level-10-stage-0' },
+        enhancement: { current: 100, goal: 100 },
+        empowerment: { current: 0, goal: 1 },
+      });
+      expect(result.unmetRequirements).toEqual([
+        { track: 'masteryForging', quality: 'mythic' },
+        { track: 'empowerment', quality: 'mythic' },
+      ]);
+    });
+
+    it('lists nothing for a quality below Mythic with enhancement only, or for a Mythic goal', () => {
+      expect(
+        calculateHeroGear({ quality: 'epic', enhancement: { current: 0, goal: 100 } })
+          .unmetRequirements,
+      ).toEqual([]);
+      expect(
+        calculateHeroGear({
+          quality: 'mythic',
+          masteryForging: { current: null, goal: 'level-1' },
+        }).unmetRequirements,
+      ).toEqual([]);
+    });
+
+    it('gives the power read in the game for a piece with mastery forging level 4, levels 0 to 40', () => {
+      const readings = [
+        3500, 4060, 4655, 5285, 5915, 6580, 7245, 7945, 8680, 9450, 10255, 11060, 11900, 12775,
+        13685, 14595, 15575, 16555, 17605, 18655, 19775, 20895, 22085, 23275, 24535, 25830, 27160,
+        28560, 29995, 31465, 32970, 34545, 36155, 37800, 39515, 41300, 43120, 45010, 46935, 48930,
+        50995,
+      ];
+      readings.forEach((power, level) => {
+        expect(forgedPower('level-4-stage-0', level)).toBe(power);
+      });
+    });
+
+    it('gives the power read in the game for a belt at enhancement 100 with mastery forging 7-4', () => {
+      expect(forgedPower('level-7-stage-4', 100)).toBe(483581);
+    });
+
+    it('leaves the power unforged when the piece has no mastery forging', () => {
+      expect(calculateHeroGear({ enhancement: { current: 1, goal: 1 } }).currentPower).toBe(2900);
+      expect(calculateHeroGear({ enhancement: { current: 100, goal: 100 } }).goalPower).toBe(
+        271675,
+      );
+    });
+
+    it('adds the power of the forging to the gain of the plan', () => {
+      const result = calculateHeroGear({
+        masteryForging: { current: 'level-4-stage-0', goal: 'level-5-stage-0' },
+        enhancement: { current: 1, goal: 2 },
+      });
+      expect(result.currentPower).toBe(4060);
+      expect(result.goalPower).toBe(4987);
+      expect(result.power).toBe(927);
+    });
+
+    it('gives the power read in the game for empowered pieces at enhancement 100', () => {
+      const power = (forging: string, empowerment: number) =>
+        calculateHeroGear({
+          masteryForging: { current: forging, goal: forging },
+          enhancement: { current: 100, goal: 100 },
+          empowerment: { current: empowerment, goal: empowerment },
+        }).currentPower;
+      expect(power('level-10-stage-0', 19)).toBe(840700);
+      expect(power('level-11-stage-0', 20)).toBe(1099167);
+      expect(power('level-12-stage-0', 40)).toBe(1686285);
+      expect(power('level-13-stage-1', 60)).toBe(2319526);
+      expect(power('level-16-stage-0', 100)).toBe(3740855);
+    });
+
+    it('adds 200,000 for each empowerment milestone reached, without the forging', () => {
+      const power = (empowerment: number) =>
+        calculateHeroGear({
+          enhancement: { current: 100, goal: 100 },
+          empowerment: { current: empowerment, goal: empowerment },
+        }).currentPower;
+      expect(power(19)).toBe(420350);
+      expect(power(20)).toBe(428175 + 200000);
+      expect(power(39)).toBe(584675 - 7825 + 200000);
+      expect(power(40)).toBe(584675 + 400000);
+      expect(power(100)).toBe(1054175 + 1000000);
+    });
+
+    it('continues the power of empowerment from enhancement level 100, with the forging applied', () => {
+      const result = calculateHeroGear({
+        masteryForging: { current: 'level-10-stage-0', goal: 'level-10-stage-0' },
+        enhancement: { current: 100, goal: 100 },
+        empowerment: { current: 0, goal: 1 },
+      });
+      expect(result.currentPower).toBe(543350);
+      expect(result.goalPower).toBe(559000);
+    });
   });
 
   it('adds all three tracks and scores Essence Stones and Mithril in each event', () => {
@@ -104,7 +244,7 @@ describe('calculateHeroGear', () => {
     expect(amount(result.resources, 'mithril')).toBe(150);
     expect(amount(result.resources, 'custom-mythic-hero-gear-chest')).toBe(90);
     expect(amount(result.resources, 'enhancement-xp-component')).toBe(574370);
-    expect(result.power).toBe(4216700);
+    expect(result.power).toBe(4160025);
     expect(result.eventPoints).toEqual({
       svs: 2100 * 4000 + 150 * 144000,
       allianceShowdown: 2100 * 1875 + 150 * 67500,
@@ -332,17 +472,17 @@ describe('calculateHeroGear', () => {
   });
 
   describe('power before and after', () => {
-    it('has the power of the level for enhancement and none at level 0', () => {
+    it('has the unforged power of the level for enhancement and the base power at level 0', () => {
       const result = calculateHeroGear({ enhancement: { current: 0, goal: 20 } });
-      expect(result.currentPower).toBe(0);
-      expect(result.goalPower).toBe(56500);
+      expect(result.currentPower).toBe(2500);
+      expect(result.goalPower).toBe(14125);
       expect(result.goalPower - result.currentPower).toBe(result.power);
     });
 
     it('uses the empowerment power once the piece is empowered', () => {
       const result = calculateHeroGear({ empowerment: { current: 19, goal: 60 } });
-      expect(result.currentPower).toBe(1681400);
-      expect(result.goalPower).toBe(2964700);
+      expect(result.currentPower).toBe(420350);
+      expect(result.goalPower).toBe(1341175);
       expect(result.goalPower - result.currentPower).toBe(result.power);
     });
 
@@ -351,9 +491,9 @@ describe('calculateHeroGear', () => {
         enhancement: { current: 50, goal: 100 },
         empowerment: { current: 0, goal: 50 },
       });
-      expect(result.currentPower).toBe(215300);
-      expect(result.goalPower).toBe(2651700);
-      expect(result.power).toBe(2436400);
+      expect(result.currentPower).toBe(53825);
+      expect(result.goalPower).toBe(1062925);
+      expect(result.power).toBe(1009100);
     });
   });
 });

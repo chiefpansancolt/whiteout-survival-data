@@ -31,6 +31,7 @@ out adds nothing.
 | `masteryForging` | `{ current, goal }`   | Row `id` values from `heroGearMasteryForging()`. `current` is `null` for a piece with no mastery forging. |
 | `enhancement`    | `{ current, goal }`   | Levels 0 to 100, from `heroGearEnhancement()`.                                                            |
 | `empowerment`    | `{ current, goal }`   | Levels 0 to 100, from `heroGearEmpowerment()`. Starts after enhancement level 100.                        |
+| `quality`        | quality name          | `common`, `uncommon`, `rare`, `epic`, or `mythic`. Mythic is the default. Sets the base Power.            |
 | `piece`          | `{ slot, troopType }` | Adds the stats gain to the result. The slot is `goggles`, `gloves`, `belt`, or `boots`.                   |
 
 ## Result
@@ -38,11 +39,11 @@ out adds nothing.
 | Field                       | Meaning                                                                                                                                   |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `masteryForging`            | `steps`, `resources`, and `statsUpPercent` of the track.                                                                                  |
-| `enhancement`               | `steps`, `resources`, and `power` of the track.                                                                                           |
-| `empowerment`               | `steps`, `resources`, and `power` of the track.                                                                                           |
+| `enhancement`               | `steps`, `resources`, and `power` of the track, which is the gain before mastery forging.                                                 |
+| `empowerment`               | `steps`, `resources`, and `power` of the track, which is the gain before mastery forging.                                                 |
 | `resources`                 | Essence Stones, Custom Mythic Hero Gear Chests, Enhancement XP Components, and Mithril as `itemId` amounts, for all tracks.               |
-| `power`                     | Power gained from enhancement and empowerment.                                                                                            |
-| `currentPower`, `goalPower` | Power of the piece before and after the plan. Level 0 has no power.                                                                       |
+| `power`                     | Power gained by the plan, with mastery forging. It is `goalPower` minus `currentPower`.                                                   |
+| `currentPower`, `goalPower` | Power of the piece before and after the plan, with mastery forging. Level 0 has `HERO_GEAR_BASE_POWER`.                                   |
 | `eventPoints`               | Points in `svs`, `allianceShowdown`, and `kingOfIcefield`.                                                                                |
 | `unmetRequirements`         | Requirements that the plan does not meet: tracks that need enhancement level 100, and empowerment that needs mastery forging at level 10. |
 | `stats`                     | Stats of the piece, or `null` when the goal has no `piece`.                                                                               |
@@ -56,6 +57,18 @@ Enhancement costs Enhancement XP Components. After enhancement level 100 the pie
 Empowerment level 1 costs Mythic chests. Levels 20, 40, 60, 80, and 100 (the step from 19 to 20, 39
 to 40, and so on) also cost Mithril. The empowerment power continues from the power of enhancement
 level 100.
+
+The Power of a piece is the unforged Power of its level times 1 plus the `statsUpPercent` of its
+mastery forging row, rounded down. A Mythic piece at level 0 has 2,500 Power, exported as
+`HERO_GEAR_BASE_POWER`, and a piece with mastery forging level 4 (+40%) has 3,500. At enhancement
+level 100 with mastery forging 7-4 (+78%), the unforged 271,675 gives 483,581. The `currentPower`
+uses the `current` row of the mastery forging range, and `goalPower` uses the `goal` row. A goal
+with no `masteryForging` range has no forging. Mastery forging adds Power, so a plan that only
+forges has a `power` above 0.
+
+Each empowerment milestone (levels 20, 40, 60, 80, and 100) adds a flat 200,000 Power after the
+forging, from `milestonePower` of the row. The Power read in the game at empowerment 20 with mastery
+forging 11 is 1,099,167, which is 428,175 times 2.1 rounded down, plus 200,000.
 
 Mastery forging past `level-10-stage-0` and empowerment need enhancement at level 100.
 `HERO_GEAR_ENHANCEMENT_REQUIREMENT` exports this rule as `{ afterRowId, enhancementLevel }`.
@@ -90,13 +103,22 @@ whole number from 0 to 100, or a goal below the current state, throws `RangeErro
 
 `HERO_GEAR_MAX_ENHANCEMENT_LEVEL` and `HERO_GEAR_MAX_EMPOWERMENT_LEVEL` export the two 100s.
 
+`HERO_GEAR_BASE_POWER_BY_QUALITY` exports the Power of a piece at level 0: Common 1,000, Uncommon
+1,375, Rare 1,750, Epic 2,000, and Mythic 2,500. `HERO_GEAR_BASE_POWER` is the Mythic value. Epic
+gear and below can only be enhanced. A goal with another `quality` and a mastery forging range or an
+empowerment goal lists `{ track, quality: 'mythic' }` in `unmetRequirements`. The enhancement tables
+are the Mythic tables. For the other qualities the calculator adds the gain of each level to the
+base Power of the quality. This is not confirmed in the game, so check the Power of an Epic or lower
+piece before you rely on it.
+
 Empowerment needs a Mythic piece at Enhancement Level 100 and Mastery Level 10. Mastery Level 10 is
 the row `level-10-stage-0`, which has a `statsUpPercent` of 100. The server must also be old enough
 for the ascension, and the gear must be Mythic. The calculator checks neither of these. The
 enhancement requirement comes from in-game play. Empowerment is Ascended +1 to +100 on a single 0 to
 200 enhancement scale.
 
-The `power` values are cumulative from enhancement level 1 through empowerment level 100.
+The `power` values of the tables are unforged and continue from enhancement level 1 through
+empowerment level 100.
 
 Widgets are not part of this calculator. [calculateHeroUpgrade](hero-upgrade.md) plans the Widgets
 for the exclusive weapon of a hero.

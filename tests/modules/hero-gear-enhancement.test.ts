@@ -34,6 +34,12 @@ describe('Hero Gear Enhancement table', () => {
     ).toBe(true);
   });
 
+  it('gives the unforged power read in the game at levels 1 and 100', () => {
+    expect(heroGearEnhancement().find('level-1')!.power).toBe(2900);
+    expect(heroGearEnhancement().find('level-2')!.power).toBe(3325);
+    expect(heroGearEnhancement().find('level-100')!.power).toBe(271675);
+  });
+
   it('resolves every cost itemId against a real cataloged item', () => {
     const allItemIds = heroGearEnhancement()
       .get()

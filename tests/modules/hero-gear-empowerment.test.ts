@@ -33,6 +33,19 @@ describe('Hero Gear Empowerment table', () => {
     expect(allItemIds.every((id) => items().find(id) !== undefined)).toBe(true);
   });
 
+  it('continues the unforged power from enhancement level 100 up to 1,054,175', () => {
+    expect(heroGearEmpowerment().find('level-1')!.power).toBe(279500);
+    expect(heroGearEmpowerment().find('level-100')!.power).toBe(1054175);
+  });
+
+  it('has a milestone power of 200,000 at levels 20, 40, 60, 80, and 100 only', () => {
+    const withMilestone = heroGearEmpowerment()
+      .get()
+      .filter((l) => l.milestonePower !== undefined);
+    expect(withMilestone.map((l) => l.level)).toEqual([20, 40, 60, 80, 100]);
+    withMilestone.forEach((l) => expect(l.milestonePower).toBe(200000));
+  });
+
   it('costs a chest item at level 1, XP Component through the middle, and a chest plus Mithril at level 100', () => {
     const level1 = heroGearEmpowerment().find('level-1')!;
     expect(level1.cost).toEqual([{ itemId: 'custom-mythic-hero-gear-chest', amount: 2 }]);

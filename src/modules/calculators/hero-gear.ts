@@ -14,6 +14,7 @@ import {
   HeroGearMasteryForgingRange,
   HeroGearMasteryForgingResult,
   HeroGearPiece,
+  HeroGearQuality,
   HeroGearRequirement,
   HeroGearStatsResult,
   HeroGearStatValues,
@@ -21,6 +22,16 @@ import {
 } from '@/types';
 
 export const HERO_GEAR_MAX_ENHANCEMENT_LEVEL = heroGearEnhancement().get().length;
+
+export const HERO_GEAR_BASE_POWER_BY_QUALITY: Record<HeroGearQuality, number> = {
+  common: 1000,
+  uncommon: 1375,
+  rare: 1750,
+  epic: 2000,
+  mythic: 2500,
+};
+
+export const HERO_GEAR_BASE_POWER = HERO_GEAR_BASE_POWER_BY_QUALITY.mythic;
 
 export const HERO_GEAR_MAX_EMPOWERMENT_LEVEL = heroGearEmpowerment().get().length;
 
@@ -102,6 +113,11 @@ function levelResult(
 function unmetRequirements(goal: HeroGearGoal): HeroGearRequirement[] {
   const unmet: HeroGearRequirement[] = [];
   const empowering = goal.empowerment !== undefined && goal.empowerment.goal > 0;
+  if (goal.quality !== undefined && goal.quality !== 'mythic') {
+    if (goal.masteryForging !== undefined)
+      unmet.push({ track: 'masteryForging', quality: 'mythic' });
+    if (empowering) unmet.push({ track: 'empowerment', quality: 'mythic' });
+  }
   const { enhancementLevel, afterRowId } = HERO_GEAR_ENHANCEMENT_REQUIREMENT;
   if (goal.enhancement !== undefined && goal.enhancement.goal < enhancementLevel) {
     if (
@@ -132,16 +148,26 @@ function stateLevel(enhancement: number, empowerment: number): number {
   return empowerment > 0 ? HERO_GEAR_MAX_ENHANCEMENT_LEVEL + empowerment : enhancement;
 }
 
+function masteryPercent(id: string | null | undefined): number {
+  if (id == null) return 0;
+  return heroGearMasteryForging().get()[masteryForgingRowIndex(id)].statsUpPercent;
+}
+
+function masteryPercents(goal: HeroGearGoal): { current: number; goal: number } {
+  const current = masteryPercent(goal.masteryForging?.current);
+  return {
+    current,
+    goal: goal.masteryForging === undefined ? current : masteryPercent(goal.masteryForging.goal),
+  };
+}
+
 function pieceStats(piece: HeroGearPiece, goal: HeroGearGoal): HeroGearStatsResult {
   const stats = heroGearStats().find(`${piece.slot}-${piece.troopType}`)!;
-  const rows = heroGearMasteryForging().get();
-  const multiplier = (id: string | null | undefined) =>
-    id == null ? 1 : 1 + rows[masteryForgingRowIndex(id)].statsUpPercent / 100;
   const currentLevel = stateLevel(goal.enhancement?.current ?? 0, goal.empowerment?.current ?? 0);
   const goalLevel = stateLevel(goal.enhancement?.goal ?? 0, goal.empowerment?.goal ?? 0);
-  const currentMultiplier = multiplier(goal.masteryForging?.current);
-  const goalMultiplier =
-    goal.masteryForging === undefined ? currentMultiplier : multiplier(goal.masteryForging.goal);
+  const percents = masteryPercents(goal);
+  const currentMultiplier = 1 + percents.current / 100;
+  const goalMultiplier = 1 + percents.goal / 100;
   const valueAt = (level: number, mastery: number): HeroGearStatValues => {
     if (level === 0) return { combatStat: 0, health: 0, percentStat: 0 };
     const row = stats.levels[level - 1];
@@ -198,6 +224,15 @@ function eventPoints(resources: UpgradeMaterial[]): HeroGearEventPoints {
  * below that row. When the goal names a
  * `piece`, the result has the `stats` of the piece. Widgets are not included.
  *
+ * Mastery forging and empowerment are for Mythic gear. A goal with another `quality` lists them in
+ * `unmetRequirements` with `quality: 'mythic'`. The unforged power of a level is the base power of the
+ * quality plus the gain of the Mythic table. The gain is not confirmed for the other qualities.
+ *
+ * The `power` of an enhancement or empowerment track is the unforged gain. `currentPower`,
+ * `goalPower`, and `power` use the mastery forging of the piece: the unforged power of the level times
+ * 1 plus the `statsUpPercent` of the row, rounded down, plus the `milestonePower` of the empowerment
+ * levels reached. A piece at level 0 has `HERO_GEAR_BASE_POWER`.
+ *
  * @param goal The mastery forging, enhancement, and empowerment ranges of one piece.
  * @throws Error when the mastery forging range names a row that does not exist.
  * @throws RangeError when an enhancement or empowerment level is not a whole number from 0 to 100,
@@ -208,7 +243,12 @@ export function calculateHeroGear(goal: HeroGearGoal = {}): HeroGearCalculation 
   const masteryForging = masteryForgingResult(goal.masteryForging);
   const enhancementLevels = heroGearEnhancement().get();
   const empowermentLevels = heroGearEmpowerment().get();
-  const enhancement = levelResult('enhancement', enhancementLevels, 0, goal.enhancement);
+  const enhancement = levelResult(
+    'enhancement',
+    enhancementLevels,
+    HERO_GEAR_BASE_POWER,
+    goal.enhancement,
+  );
   const empowerment = levelResult(
     'empowerment',
     empowermentLevels,
@@ -220,24 +260,42 @@ export function calculateHeroGear(goal: HeroGearGoal = {}): HeroGearCalculation 
     enhancement.resources,
     empowerment.resources,
   ]);
-  const powerAt = (range: { enhancement?: number; empowerment?: number }) => {
-    if (range.empowerment) return empowermentLevels[range.empowerment - 1].power;
-    return range.enhancement ? enhancementLevels[range.enhancement - 1].power : 0;
+  const qualityOffset =
+    HERO_GEAR_BASE_POWER_BY_QUALITY[goal.quality ?? 'mythic'] - HERO_GEAR_BASE_POWER;
+  const unforgedPowerAt = (range: { enhancement?: number; empowerment?: number }) => {
+    if (range.empowerment) return empowermentLevels[range.empowerment - 1].power + qualityOffset;
+    return (
+      (range.enhancement ? enhancementLevels[range.enhancement - 1].power : HERO_GEAR_BASE_POWER) +
+      qualityOffset
+    );
   };
+  const percents = masteryPercents(goal);
+  const milestonePowerAt = (empowerment = 0) =>
+    empowermentLevels
+      .slice(0, empowerment)
+      .reduce((sum, level) => sum + (level.milestonePower ?? 0), 0);
+  const pieceStatePower = (
+    range: { enhancement?: number; empowerment?: number },
+    percent: number,
+  ) =>
+    Math.floor((unforgedPowerAt(range) * (100 + percent)) / 100) +
+    milestonePowerAt(range.empowerment);
+  const currentPower = pieceStatePower(
+    { enhancement: goal.enhancement?.current, empowerment: goal.empowerment?.current },
+    percents.current,
+  );
+  const goalPower = pieceStatePower(
+    { enhancement: goal.enhancement?.goal, empowerment: goal.empowerment?.goal },
+    percents.goal,
+  );
   return {
     masteryForging,
     enhancement,
     empowerment,
     resources,
-    power: enhancement.power + empowerment.power,
-    currentPower: powerAt({
-      enhancement: goal.enhancement?.current,
-      empowerment: goal.empowerment?.current,
-    }),
-    goalPower: powerAt({
-      enhancement: goal.enhancement?.goal,
-      empowerment: goal.empowerment?.goal,
-    }),
+    power: goalPower - currentPower,
+    currentPower,
+    goalPower,
     eventPoints: eventPoints(resources),
     unmetRequirements: unmetRequirements(goal),
     stats: goal.piece === undefined ? null : pieceStats(goal.piece, goal),

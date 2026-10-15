@@ -7,6 +7,22 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game Data
+
+- `heroGearEmpowerment()`: the flat Power of each empowerment milestone, 200,000 at levels 20, 40,
+  60, 80, and 100.
+- `calculateHeroGear()`: a `quality` of the piece, with the base Power of Common, Uncommon, Rare,
+  Epic, and Mythic gear. Gear below Mythic can only be enhanced.
+
+### Fixed
+
+#### Game Data
+
+- `calculateHeroGear()`: the Power of a piece, and the Power gained by a plan, include the flat
+  Power of the empowerment milestones.
+
 ## [0.4.1] - 2026-10-15
 
 ### Fixed
@@ -14,6 +30,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 #### Game Data
 
 - `heroes()`: fix the level Power of Natalia, whose level 80 total is 205,260.
+- `heroGearEnhancement()` and `heroGearEmpowerment()`: the Power per level is now the Power of a
+  piece with no mastery forging, a quarter of the earlier values.
+- `calculateHeroGear()`: the Power of a piece, and the Power gained by a plan, include the mastery
+  forging bonus, and a piece at level 0 has 2,500 Power.
 
 ## [0.4.0] - 2026-10-15
 

@@ -361,7 +361,10 @@ export interface HeroGearPiece {
   troopType: TroopType;
 }
 
+export type HeroGearQuality = 'common' | 'uncommon' | 'rare' | 'epic' | 'mythic';
+
 export interface HeroGearGoal {
+  quality?: HeroGearQuality;
   piece?: HeroGearPiece;
   masteryForging?: HeroGearMasteryForgingRange;
   enhancement?: HeroGearLevelRange;
@@ -391,8 +394,13 @@ export interface HeroGearMasteryForgingRequirement {
   masteryForgingRowId: string;
 }
 
+export interface HeroGearQualityRequirement {
+  track: 'masteryForging' | 'empowerment';
+  quality: 'mythic';
+}
+
 export type HeroGearRequirement =
-  HeroGearEnhancementRequirement | HeroGearMasteryForgingRequirement;
+  HeroGearEnhancementRequirement | HeroGearMasteryForgingRequirement | HeroGearQualityRequirement;
 
 export interface HeroGearEventPoints {
   svs: number;
