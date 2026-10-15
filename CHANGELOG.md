@@ -7,11 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-14
+
 ### Fixed
 
 #### Game Data
 
 - `buildings()`: fix furnace level requirement for FC area Embassy Levels.
+- `research()`: fix the power values of several research levels.
 
 ## [0.2.2] - 2026-10-14
 
