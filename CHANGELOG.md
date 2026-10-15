@@ -7,6 +7,27 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game Data
+
+- `heroes()` and `items()`: shard icons and shard items for 17 more heroes, which makes 30 heroes
+  with a shard icon.
+
+### Changed
+
+#### Game Data
+
+- `heroes()` and `items()`: the shard icons of the earlier heroes use the same size and no longer
+  show the shard count.
+
+### Fixed
+
+#### Game Data
+
+- `tundraAlbum()`: update the image of The Bell Tolls piece 7, and the cover and piece 12 images of
+  Tundra Adventure.
+
 ## [0.3.0] - 2026-10-14
 
 ### Fixed

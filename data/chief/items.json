@@ -2857,7 +2857,7 @@
     "name": "Gwen Shard",
     "img": "/images/heroes/Gwen/Gwen-Shard.png",
     "category": "Hero Items",
-    "description": "A shard of Gwen, the Generation 5 marksman hero sold in the Hall of Heroes. The name is matched from the portrait and a community guide, and is not confirmed.",
+    "description": "A shard of Gwen, the Generation 5 marksman hero sold in the Hall of Heroes.",
     "sources": ["Hall of Heroes"]
   },
   {
@@ -2929,7 +2929,7 @@
     "name": "Molly Shard",
     "img": "/images/heroes/Molly/Molly-Shard.png",
     "category": "Hero Items",
-    "description": "A shard of Molly, a Generation 1 hero sold in the Hall of Heroes. The name is matched from the portrait and is not confirmed.",
+    "description": "A shard of Molly, a Generation 1 hero sold in the Hall of Heroes.",
     "sources": ["Hall of Heroes"]
   },
   {
@@ -2937,7 +2937,7 @@
     "name": "Zinman Shard",
     "img": "/images/heroes/Zinman/Zinman-Shard.png",
     "category": "Hero Items",
-    "description": "A shard of Zinman, a Generation 1 hero sold in the Hall of Heroes. The name is matched from the portrait and is not confirmed.",
+    "description": "A shard of Zinman, a Generation 1 hero sold in the Hall of Heroes.",
     "sources": ["Hall of Heroes"]
   },
   {
@@ -2969,7 +2969,7 @@
     "name": "Logan Shard",
     "img": "/images/heroes/Logan/Logan-Shard.png",
     "category": "Hero Items",
-    "description": "A shard of Logan, a Generation 3 hero sold in the Hall of Heroes. The name is matched from the portrait and is not confirmed.",
+    "description": "A shard of Logan, a Generation 3 hero sold in the Hall of Heroes.",
     "sources": ["Hall of Heroes"]
   },
   {
@@ -3387,5 +3387,141 @@
     "category": "Furniture",
     "description": "A furniture piece for Climbing Gym. Bought with Wish Sigils.",
     "sources": ["Wish Shop"]
+  },
+  {
+    "id": "norah-shard",
+    "name": "Norah Shard",
+    "img": "/images/heroes/Norah/Norah-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Norah, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "lynn-shard",
+    "name": "Lynn Shard",
+    "img": "/images/heroes/Lynn/Lynn-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Lynn, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "greg-shard",
+    "name": "Greg Shard",
+    "img": "/images/heroes/Greg/Greg-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Greg, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "mia-shard",
+    "name": "Mia Shard",
+    "img": "/images/heroes/Mia/Mia-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Mia, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "natalia-shard",
+    "name": "Natalia Shard",
+    "img": "/images/heroes/Natalia/Natalia-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Natalia, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "lumak-bokan-shard",
+    "name": "Lumak Bokan Shard",
+    "img": "/images/heroes/LumakBokan/LumakBokan-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Lumak Bokan, a Epic hero.",
+    "sources": []
+  },
+  {
+    "id": "jasser-shard",
+    "name": "Jasser Shard",
+    "img": "/images/heroes/Jasser/Jasser-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Jasser, a Epic hero.",
+    "sources": []
+  },
+  {
+    "id": "seo-yoon-shard",
+    "name": "Seo-yoon Shard",
+    "img": "/images/heroes/SeoYoon/SeoYoon-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Seo-yoon, a Epic hero.",
+    "sources": []
+  },
+  {
+    "id": "jessie-shard",
+    "name": "Jessie Shard",
+    "img": "/images/heroes/Jessie/Jessie-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Jessie, a Epic hero.",
+    "sources": []
+  },
+  {
+    "id": "bahiti-shard",
+    "name": "Bahiti Shard",
+    "img": "/images/heroes/Bahiti/Bahiti-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Bahiti, a Epic hero.",
+    "sources": []
+  },
+  {
+    "id": "patrick-shard",
+    "name": "Patrick Shard",
+    "img": "/images/heroes/Patrick/Patrick-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Patrick, a Epic hero.",
+    "sources": []
+  },
+  {
+    "id": "sergey-shard",
+    "name": "Sergey Shard",
+    "img": "/images/heroes/Sergey/Sergey-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Sergey, a Epic hero.",
+    "sources": []
+  },
+  {
+    "id": "ling-xue-shard",
+    "name": "Ling Xue Shard",
+    "img": "/images/heroes/LingXue/LingXue-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Ling Xue, a Epic hero.",
+    "sources": []
+  },
+  {
+    "id": "cloris-shard",
+    "name": "Cloris Shard",
+    "img": "/images/heroes/Cloris/Cloris-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Cloris, a Rare hero.",
+    "sources": []
+  },
+  {
+    "id": "charlie-shard",
+    "name": "Charlie Shard",
+    "img": "/images/heroes/Charlie/Charlie-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Charlie, a Rare hero.",
+    "sources": []
+  },
+  {
+    "id": "smith-shard",
+    "name": "Smith Shard",
+    "img": "/images/heroes/Smith/Smith-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Smith, a Rare hero.",
+    "sources": []
+  },
+  {
+    "id": "eugene-shard",
+    "name": "Eugene Shard",
+    "img": "/images/heroes/Eugene/Eugene-Shard.png",
+    "category": "Hero Items",
+    "description": "A shard of Eugene, a Rare hero.",
+    "sources": []
   }
 ]

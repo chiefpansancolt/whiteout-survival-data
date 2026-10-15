@@ -24,9 +24,9 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 331 items across 12 categories', () => {
-    expect(items().count()).toBe(331);
-    expect(items().byCategory('Hero Items').count()).toBe(23);
+  it('tracks 348 items across 12 categories', () => {
+    expect(items().count()).toBe(348);
+    expect(items().byCategory('Hero Items').count()).toBe(40);
     expect(items().byCategory('Pet').count()).toBe(6);
     expect(items().byCategory('Gear Materials').count()).toBe(10);
     expect(items().byCategory('Chest').count()).toBe(60);

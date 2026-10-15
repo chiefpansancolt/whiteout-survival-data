@@ -65,7 +65,7 @@ The data is in `data/chief/heroes.json`. Each hero has these fields.
 | `exclusiveWeapon` | Legendary heroes only: bonus stats, `power`, and two skills                |
 | `shardCosts`      | 5 stars of 6 tier costs, with `total` and cumulative `power`               |
 | `shardSources`    | Where the shards come from                                                 |
-| `shardImg`        | Shard icon, set for 13 heroes                                              |
+| `shardImg`        | Shard icon, set for 30 heroes                                              |
 | `levels`          | 80 entries of `furnaceLevelRequired`, `xpRequired`, and cumulative `power` |
 
 The data holds 65 heroes. Generation 0 has 13 pre-Legendary heroes (4 Rare, 9 Epic). Legendary
@@ -185,9 +185,10 @@ checked in the game.
 `["Hall of Heroes", "Daily Deals"]`. It is empty for Ling Xue, the one Generation 0 hero with no
 listed sources.
 
-`shardImg` is set for Gina, Molly, Zinman, Flint, Philly, Alonso, Logan, Reina, Gwen, Wu Ming,
-Gordon, Hendrik, and Magnus. The file is `<Name>-Shard.png` in the image folder of the hero. The
-matching hero shard item in `items()` points to the same file.
+`shardImg` is set for Smith, Eugene, Charlie, Cloris, Sergey, Jessie, Patrick, Lumak Bokan, Ling
+Xue, Gina, Bahiti, Jasser, Seo-yoon, Natalia, Molly, Zinman, Flint, Philly, Alonso, Logan, Mia,
+Greg, Reina, Lynn, Norah, Gwen, Wu Ming, Gordon, Hendrik, and Magnus. The file is `<Name>-Shard.png`
+in the image folder of the hero. The matching hero shard item in `items()` points to the same file.
 
 ### Level power
 

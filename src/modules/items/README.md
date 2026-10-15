@@ -1,6 +1,6 @@
 # Items
 
-The 331 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 348 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -47,7 +47,7 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | Event          | 58    |
 | Others         | 48    |
 | Buff           | 31    |
-| Hero Items     | 23    |
+| Hero Items     | 40    |
 | Speedups       | 25    |
 | Experts        | 17    |
 | Gear Materials | 10    |
