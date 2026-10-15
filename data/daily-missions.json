@@ -365,6 +365,25 @@
       },
       {
         "level": 2,
+        "task": "Claim 3 Online Reward(s)",
+        "target": 3,
+        "rewards": [
+          {
+            "itemId": "activeness",
+            "amount": 5
+          },
+          {
+            "itemId": "coal",
+            "amount": 800
+          },
+          {
+            "itemId": "iron",
+            "amount": 200
+          }
+        ]
+      },
+      {
+        "level": 3,
         "task": "Claim 5 Online Reward(s)",
         "target": 5,
         "rewards": [
