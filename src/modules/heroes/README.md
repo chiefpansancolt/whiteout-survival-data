@@ -62,8 +62,9 @@ The data is in `data/chief/heroes.json`. Each hero has these fields.
 | `generation`      | 0 for the pre-Legendary heroes, 1 to 17 for Legendary heroes               |
 | `stats`           | Level 80, 5-star stats: `exploration` and `expedition`                     |
 | `skills`          | `exploration[]`, `expedition[]`, and an optional `talent`                  |
-| `exclusiveWeapon` | Legendary heroes only: bonus stats, `power`, and two skills                |
-| `shardCosts`      | 5 stars of 6 tier costs, with `total` and cumulative `power`               |
+| `exclusiveWeapon` | Legendary heroes only: bonus stats, `power`, `levels`, and two skills      |
+| `shardCosts`      | 5 stars of 6 tier costs, with `total`, `power`, and `tierPower`            |
+| `powerAtStarZero` | Star Power at star 0, set for 29 heroes                                    |
 | `shardSources`    | Where the shards come from                                                 |
 | `shardImg`        | Shard icon, set for 30 heroes                                              |
 | `levels`          | 80 entries of `furnaceLevelRequired`, `xpRequired`, and cumulative `power` |
@@ -122,8 +123,8 @@ level.
 
 `starRequired` is the hero star needed to unlock the skill level. It depends on the skill slot and
 not on the skill. A 1st Exploration skill unlocks its levels at stars 0/1/2/3/4. A 3rd Exploration
-skill or a 2nd Expedition skill needs stars 2/2/2/3/4. A star does gate the Talent skill, but the
-curve is not known. `starRequired` is a `0` placeholder for Jeronimo and Natalia.
+skill or a 2nd Expedition skill needs stars 2/2/2/3/4. The Talent skill of Jeronimo and Natalia
+needs the star of the same number as the level: stars 1/2/3/4/5.
 
 `powerGain` is the same for every skill of a rarity, in every slot.
 
@@ -140,46 +141,90 @@ skills", which excludes Talent.
 
 `exclusiveWeapon` is set on Legendary heroes only. It is also called the Special item. Its
 Expedition bonus uses `lethality` and `health` percents, a different stat pair than the Expedition
-stats of the hero. It also has a `power` rating and two skills of
-`{ name, img, description, unlockLevel? }`. These skills do not scale over 5 levels. Each has one
-fixed effect that activates at `unlockLevel`. Most heroes state it as a "(Lv. N)" suffix. Some newer
-heroes omit it, so `unlockLevel` is not set for them. The Widgets that each weapon level costs are
-in [`heroWidgets()`](../hero-widgets/README.md).
+stats of the hero. It also has a `power` rating, which is the Power at weapon level 10, `levels`,
+and two skills of `{ name, img, description, unlockLevel? }`. These skills do not scale over 5
+levels. Each has one fixed effect that activates at `unlockLevel`. Most heroes state it as a "(Lv.
+N)" suffix. Some newer heroes omit it, so `unlockLevel` is not set for them. The Widgets that each
+weapon level costs are in [`heroWidgets()`](../hero-widgets/README.md).
+
+`levels` has the 10 weapon levels as `{ level, power }`, and the Power rises with each level. Level
+10 is `power`. The package owner gave the Power at levels 1, 2, and 3 of the Generation 2 weapons
+(36,000, 61,200, and 86,400 of 270,000) and at levels 3, 4, and 6 of the Generation 4 weapons
+(133,200, 172,050, and 249,750 of 416,250). Both sets follow one share of the level 10 Power: 2/15,
+17/75, 8/25, 31/75, and 3/5 at levels 1, 2, 3, 4, and 6. Every weapon uses these shares. Levels 5,
+7, 8, and 9 are not confirmed. They continue the line between the confirmed levels: 38/75 at level
+5, and 7/10, 4/5, and 9/10 at levels 7, 8, and 9.
 
 ### Shard costs and shard power
 
 `shardCosts` has 5 stars of 6 tier costs for every hero. The tier costs are the same for every
-rarity, and so are the `total` values, which equal the sum of the tier costs of the star. Each star
-also has a `power` field. It is the total Power once the star is reached, not the gain of that star
-alone.
+rarity, and so are the `total` values, which equal the sum of the tier costs of the star. Paying the
+6 tier costs of a star moves the hero through the labels `star.1` to `star.5` and then to the next
+whole star. Each star also has a `power` field. It is the Star Power once the whole star is reached,
+not the gain of that star alone.
 
-`power` is confirmed for Rare and Epic heroes and for every Legendary hero through Generation 4.
-Only the total Power at the maximum star is known. Each star's `power` is that total spread
-cumulatively by its share of the shards needed to reach the maximum star, on the assumption that
-every shard adds the same Power. The standard total is 1,065 shards. Cumulative Power for stars 1 to
-5:
+`powerAtStarZero` is the Star Power at star 0. It is set for every hero with a confirmed maximum
+star Power: Rare and Epic heroes and Legendary heroes through Generation 5. It is 6,500 for Rare and
+8,000 for Epic heroes, 10,000 for Molly and Zinman, 11,000 for Natalia, 12,000 for Generation 2,
+12,500 for Jeronimo, 15,000 for Generation 3, 18,500 for Generation 4, and 22,200 for Generation 5.
+For most heroes it is twice the level 1 Power. Natalia is the exception, with a level 1 Power of
+5,000.
 
-| Rarity / hero  | Star 1 | Star 2 | Star 3  | Star 4  | Star 5 (max) |
-| -------------- | ------ | ------ | ------- | ------- | ------------ |
-| Rare           | 4,222  | 21,111 | 69,667  | 196,335 | 449,670      |
-| Epic           | 5,197  | 25,983 | 85,744  | 241,643 | 553,440      |
-| Molly / Zinman | 6,496  | 32,479 | 107,180 | 302,054 | 691,800      |
-| Natalia        | 7,145  | 35,727 | 117,898 | 332,259 | 760,980      |
-| Jeronimo       | 8,120  | 40,599 | 133,975 | 377,567 | 864,750      |
-| Generation 2   | 7,795  | 38,975 | 128,616 | 362,464 | 830,160      |
-| Generation 3   | 9,744  | 48,718 | 160,770 | 453,080 | 1,037,700    |
-| Generation 4   | 12,017 | 60,086 | 198,284 | 558,799 | 1,279,830    |
+The Star Power at a label is `powerAtStarZero` times a multiplier of the label. The multipliers are
+the same for every hero and are listed under [Star multipliers](#star-multipliers). The `power` of a
+star is the Star Power at the whole-star label: the multipliers 4.18, 9.98, 20.26, 38.22, and 69.18
+at stars 1 to 5. The Star Power at the maximum star is the confirmed value of the hero. For
+Generation 2 it is 12,000 times 69.18, which is 830,160. Stars 1 to 5 of a Generation 2 hero are
+50,160, 119,760, 243,120, 458,640, and 830,160.
 
-Legendary Generations 5 to 17 have no confirmed maximum star Power. Their shard `power` is a `0`
-placeholder.
+Legendary Generations 6 to 17 have no confirmed maximum star Power and no `powerAtStarZero`. Their
+shard `power` is a `0` placeholder.
 
-Hector, Norah, and Gwen (Generation 5) also have Hero Power read in the game, which is not part of
-the table above. `powerAtStarZero` is the Power at star 0 (22,200, twice the level 1 Power of
-11,100). `tierPower` on stars 1 to 3 lists the Power at each of the six tiers, 1.1 to 3.6, ending at
-449,772. Stars 4 and 5 are not read yet. These readings show that Power per tier is not spread
-evenly over the shards, so the cumulative `power` values above are a projection. The reading at tier
-3.4 was entered as 352,258. It does not fit the other readings, so 352,314 is stored until it is
-checked in the game.
+`tierPower` lists the Star Power after each of the six tier costs of a star: the labels `star.1` to
+`star.5`, and then the next whole star. The last entry is the `power` of the star. Every hero that
+has a `powerAtStarZero` has the stored values. They are the Power at star 0 times the multiplier of
+the label, rounded. Read the Star Power of a label from `tierPower`. The multipliers below explain
+where the values come from.
+
+#### Star multipliers
+
+A label is `star.tier`, such as 3.2 for star 3, tier 2. The tier is 0 to 5, and it is 0 at 5 stars.
+The multipliers are the same for every Legendary hero of Generations 1 to 5. Rare and Epic heroes
+use them too, but this is confirmed at 5.0 only.
+
+| Label | Multiplier | Label | Multiplier | Label | Multiplier | Label | Multiplier |
+| ----- | ---------- | ----- | ---------- | ----- | ---------- | ----- | ---------- |
+| 0.0   | 1          | 0.1   | 1.34       | 0.2   | 1.8        | 0.3   | 2.29       |
+| 0.4   | 2.7        | 0.5   | 3.25       | 1.0   | 4.18       | 1.1   | 4.92       |
+| 1.2   | 5.7        | 1.3   | 6.52       | 1.4   | 7.39       | 1.5   | 8.44       |
+| 2.0   | 9.98       | 2.1   | 11.31      | 2.2   | 12.71      | 2.3   | 14.33      |
+| 2.4   | 15.87      | 2.5   | 17.52      | 3.0   | 20.26      | 3.1   | 22.62      |
+| 3.2   | 25.29      | 3.3*  | 27.97      | 3.4   | 30.66      | 3.5   | 33.55      |
+| 4.0   | 38.22      | 4.1   | 42.29      | 4.2   | 46.8       | 4.3*  | 51.44      |
+| 4.4*  | 56.22      | 4.5*  | 61.13      | 5.0   | 69.18      |       |            |
+
+Labels marked with `*` are predicted, not read in the game.
+
+The labels 0.1 to 3.0 come from the Hero Power that the package owner read in the game for Hector,
+Norah, and Gwen (Generation 5), ending at 449,772 at 3.0. The reading at 2.4 was entered as 352,258.
+It is not a multiple of 22,200 by hundredths like the other readings, so 352,314 is stored. The
+owner read the Star Power of 15 more heroes of Generations 1 to 5 at 3.0, 3.1, 3.2, 3.4, 3.5, 4.0,
+4.1, and 4.2. Heroes that share a label gave the same multiplier, for example 25.29 at 3.2 for
+Zinman, Natalia, and Hector. The multiplier at 5.0 is 69.18 for every group of heroes.
+
+The labels 3.3, 4.3, 4.4, and 4.5 are predicted. The prediction uses the step between two labels,
+which is the gain of the multiplier for one tier. Inside a star the steps grow by a constant ratio,
+and the ratio is solved so that the steps add up to the next label that was read.
+
+- 3.3: the step from 3.2 grows by 1.0037, so the step to 3.3 is 2.68 and the multiplier is 27.97.
+  The labels 3.2 and 3.4 were read.
+- 4.3 to 4.5: the last step of a star is larger than the step before it, by 1.66 from 2.5 to 3.0 and
+  by 1.62 from 3.5 to 4.0. The step from 4.5 to 5.0 is 1.64 times the step to 4.5. With the steps of
+  4.1 and 4.2 and the multiplier 69.18 at 5.0, the steps grow by 1.029. The multipliers are 51.44,
+  56.22, and 61.13, and the step from 4.5 to 5.0 is 8.05.
+
+A predicted label can differ from the game by a small amount. Replace its values in `tierPower` when
+you have a reading.
 
 `shardSources` lists where the shards of each hero come from, for example `["VIP Packs"]` or
 `["Hall of Heroes", "Daily Deals"]`. It is empty for Ling Xue, the one Generation 0 hero with no

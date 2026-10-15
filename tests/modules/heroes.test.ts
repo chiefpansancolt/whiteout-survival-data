@@ -85,9 +85,12 @@ describe('Generation 0 heroes', () => {
     'Ahmose',
     'Reina',
     'Lynn',
+    'Hector',
+    'Norah',
+    'Gwen',
   ];
 
-  it('carries a power placeholder on every Legendary shard tier, except the confirmed Generation 1-4 curves', () => {
+  it('carries a power placeholder on every Legendary shard tier, except the confirmed Generation 1-5 curves', () => {
     heroes()
       .get()
       .filter((h) => h.rarity === 'Legendary' && !CONFIRMED_LEGENDARY_STAR_POWER.includes(h.name))
@@ -98,88 +101,76 @@ describe('Generation 0 heroes', () => {
       });
   });
 
-  it('accumulates Molly and Zinman shard tier power, weighted by shard count, up to the confirmed 691,800 at max star', () => {
-    const cumulativePowerByStar = { 1: 6496, 2: 32479, 3: 107180, 4: 302054, 5: 691800 };
-    ['Molly', 'Zinman'].forEach((name) => {
-      const h = heroes().findByName(name)!;
-      h.shardCosts.forEach((tier) => {
-        expect(tier.power).toBe(
-          cumulativePowerByStar[tier.star as keyof typeof cumulativePowerByStar],
+  describe('star power', () => {
+    const BASE_POWER_BY_HERO: Record<string, number> = {
+      Smith: 6500,
+      Eugene: 6500,
+      Charlie: 6500,
+      Cloris: 6500,
+      Sergey: 8000,
+      Jessie: 8000,
+      Patrick: 8000,
+      'Lumak Bokan': 8000,
+      'Ling Xue': 8000,
+      Gina: 8000,
+      Bahiti: 8000,
+      Jasser: 8000,
+      'Seo-yoon': 8000,
+      Molly: 10000,
+      Zinman: 10000,
+      Natalia: 11000,
+      Flint: 12000,
+      Philly: 12000,
+      Alonso: 12000,
+      Jeronimo: 12500,
+      Logan: 15000,
+      Mia: 15000,
+      Greg: 15000,
+      Ahmose: 18500,
+      Reina: 18500,
+      Lynn: 18500,
+      Hector: 22200,
+      Norah: 22200,
+      Gwen: 22200,
+    };
+
+    it('stores the Power at star 0 of every hero with a confirmed maximum star Power', () => {
+      Object.entries(BASE_POWER_BY_HERO).forEach(([name, base]) => {
+        expect(heroes().findByName(name)!.powerAtStarZero).toBe(base);
+      });
+      expect(
+        heroes()
+          .get()
+          .filter((h) => h.powerAtStarZero !== undefined),
+      ).toHaveLength(29);
+    });
+
+    it('gives the Power at stars 1 to 5 as the Power at star 0 times 4.18, 9.98, 20.26, 38.22, and 69.18', () => {
+      Object.entries(BASE_POWER_BY_HERO).forEach(([name, base]) => {
+        const hero = heroes().findByName(name)!;
+        expect(hero.shardCosts.map((t) => t.power)).toEqual(
+          [4.18, 9.98, 20.26, 38.22, 69.18].map((multiplier) => Math.round(base * multiplier)),
         );
       });
-      expect(h.shardCosts[h.shardCosts.length - 1].power).toBe(691800);
     });
-  });
 
-  it('accumulates Jeronimo shard tier power, weighted by shard count, up to the confirmed 864,750 at max star', () => {
-    const cumulativePowerByStar = { 1: 8120, 2: 40599, 3: 133975, 4: 377567, 5: 864750 };
-    const jeronimo = heroes().findByName('Jeronimo')!;
-    jeronimo.shardCosts.forEach((tier) => {
-      expect(tier.power).toBe(
-        cumulativePowerByStar[tier.star as keyof typeof cumulativePowerByStar],
-      );
+    it('gives the Generation 2 heroes the Power of each star confirmed in the game', () => {
+      expect(
+        heroes()
+          .findByName('Flint')!
+          .shardCosts.map((t) => t.power),
+      ).toEqual([50160, 119760, 243120, 458640, 830160]);
     });
-    expect(jeronimo.shardCosts[jeronimo.shardCosts.length - 1].power).toBe(864750);
-  });
 
-  it('accumulates Natalia shard tier power, weighted by shard count, up to the confirmed 760,980 at max star', () => {
-    const cumulativePowerByStar = { 1: 7145, 2: 35727, 3: 117898, 4: 332259, 5: 760980 };
-    const natalia = heroes().findByName('Natalia')!;
-    natalia.shardCosts.forEach((tier) => {
-      expect(tier.power).toBe(
-        cumulativePowerByStar[tier.star as keyof typeof cumulativePowerByStar],
-      );
+    it('gives the confirmed maximum star Power of each group of heroes', () => {
+      const max = (name: string) => heroes().findByName(name)!.shardCosts[4].power;
+      expect([max('Smith'), max('Sergey'), max('Molly'), max('Natalia'), max('Jeronimo')]).toEqual([
+        449670, 553440, 691800, 760980, 864750,
+      ]);
+      expect([max('Flint'), max('Logan'), max('Reina'), max('Gwen')]).toEqual([
+        830160, 1037700, 1279830, 1535796,
+      ]);
     });
-    expect(natalia.shardCosts[natalia.shardCosts.length - 1].power).toBe(760980);
-  });
-
-  it('accumulates Generation 2-4 shard tier power, weighted by shard count, up to each generation’s confirmed max star', () => {
-    const cumulativePowerByGenAndStar: Record<number, Record<number, number>> = {
-      2: { 1: 7795, 2: 38975, 3: 128616, 4: 362464, 5: 830160 },
-      3: { 1: 9744, 2: 48718, 3: 160770, 4: 453080, 5: 1037700 },
-      4: { 1: 12017, 2: 60086, 3: 198284, 4: 558799, 5: 1279830 },
-    };
-    Object.entries(cumulativePowerByGenAndStar).forEach(([gen, cumulativePowerByStar]) => {
-      heroes()
-        .get()
-        .filter((h) => h.generation === Number(gen))
-        .forEach((h) => {
-          h.shardCosts.forEach((tier) => {
-            expect(tier.power).toBe(cumulativePowerByStar[tier.star]);
-          });
-          expect(h.shardCosts[h.shardCosts.length - 1].power).toBe(cumulativePowerByStar[5]);
-        });
-    });
-  });
-
-  it('accumulates Rare shard tier power, weighted by shard count, up to the confirmed 449,670 at max star', () => {
-    const cumulativePowerByStar = { 1: 4222, 2: 21111, 3: 69667, 4: 196335, 5: 449670 };
-    heroes()
-      .byRarity('Rare')
-      .get()
-      .forEach((h) => {
-        h.shardCosts.forEach((tier) => {
-          expect(tier.power).toBe(
-            cumulativePowerByStar[tier.star as keyof typeof cumulativePowerByStar],
-          );
-        });
-        expect(h.shardCosts[h.shardCosts.length - 1].power).toBe(449670);
-      });
-  });
-
-  it('accumulates Epic shard tier power, weighted by shard count, up to the confirmed 553,440 at max star', () => {
-    const cumulativePowerByStar = { 1: 5197, 2: 25983, 3: 85744, 4: 241643, 5: 553440 };
-    heroes()
-      .byRarity('Epic')
-      .get()
-      .forEach((h) => {
-        h.shardCosts.forEach((tier) => {
-          expect(tier.power).toBe(
-            cumulativePowerByStar[tier.star as keyof typeof cumulativePowerByStar],
-          );
-        });
-        expect(h.shardCosts[h.shardCosts.length - 1].power).toBe(553440);
-      });
   });
 
   it('covers 80 hero levels with the shared Furnace/XP curve, identical across every hero', () => {
@@ -309,6 +300,13 @@ describe('Generation 0 heroes', () => {
     });
   });
 
+  it('gates each level of the Talent skill behind the star of the same number', () => {
+    ['Jeronimo', 'Natalia'].forEach((name) => {
+      const talent = heroes().findByName(name)!.skills.talent!;
+      expect(talent.levels.map((l) => l.starRequired)).toEqual([1, 2, 3, 4, 5]);
+    });
+  });
+
   it('gates each exploration/expedition skill slot behind its own star requirement per level', () => {
     const starByGroupAndSlot = {
       exploration: [
@@ -382,6 +380,48 @@ describe('Generation 1-17 heroes (Legendary)', () => {
       });
   });
 
+  describe('exclusive weapon power by level', () => {
+    const weapons = () =>
+      heroes()
+        .get()
+        .filter((h) => h.exclusiveWeapon !== undefined);
+
+    it('has 10 levels on every weapon, and level 10 is the power of the weapon', () => {
+      weapons().forEach((h) => {
+        const { levels, power } = h.exclusiveWeapon!;
+        expect(levels.map((l) => l.level)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+        expect(levels[9].power).toBe(power);
+        levels.slice(1).forEach((l, i) => expect(l.power).toBeGreaterThan(levels[i].power));
+      });
+    });
+
+    it('gives the Generation 2 weapons the confirmed power at levels 1, 2, and 3', () => {
+      ['Flint', 'Philly', 'Alonso'].forEach((name) => {
+        const { levels, power } = heroes().findByName(name)!.exclusiveWeapon!;
+        expect(power).toBe(270000);
+        expect(levels.slice(0, 3).map((l) => l.power)).toEqual([36000, 61200, 86400]);
+      });
+    });
+
+    it('gives the Generation 4 weapons the confirmed power at levels 3, 4, and 6', () => {
+      ['Ahmose', 'Reina', 'Lynn'].forEach((name) => {
+        const { levels, power } = heroes().findByName(name)!.exclusiveWeapon!;
+        expect(power).toBe(416250);
+        expect([levels[2].power, levels[3].power, levels[5].power]).toEqual([
+          133200, 172050, 249750,
+        ]);
+      });
+    });
+
+    it('scales every weapon with the same share of the level 10 power', () => {
+      const shares = [20, 34, 48, 62, 76, 90, 105, 120, 135, 150];
+      weapons().forEach((h) => {
+        const { levels, power } = h.exclusiveWeapon!;
+        levels.forEach((l, i) => expect(l.power).toBe(Math.round((power * shares[i]) / 150)));
+      });
+    });
+  });
+
   it('every Legendary hero has 3 exploration + 3 expedition skills, but only Jeronimo and Natalia have a Talent skill', () => {
     heroes()
       .byRarity('Legendary')
@@ -436,7 +476,8 @@ describe('Generation 1-17 heroes (Legendary)', () => {
       star: 1,
       tierCosts: [1, 1, 2, 2, 2, 2],
       total: 10,
-      power: 8120,
+      power: 52250,
+      tierPower: [16750, 22500, 28625, 33750, 40625, 52250],
     });
     expect(jeronimo.shardCosts[4].total).toBe(600);
     expect(jeronimo.shardCosts[4].power).toBe(864750);
@@ -529,23 +570,32 @@ describe('Generation 1-17 heroes (Legendary)', () => {
   });
 
   describe('star tier power', () => {
-    const generation5 = () =>
+    const withStarPower = () =>
       heroes()
         .get()
-        .filter((h) => h.generation === 5);
+        .filter((h) => h.powerAtStarZero !== undefined);
 
-    it('has the Hero Power at star 0 and at each tier of stars 1 to 3 on every Generation 5 hero', () => {
-      expect(generation5().map((h) => h.name)).toEqual(['Hector', 'Norah', 'Gwen']);
-      generation5().forEach((hero) => {
+    it('has six tier powers on every star of the 29 heroes with a Power at star 0', () => {
+      expect(withStarPower()).toHaveLength(29);
+      withStarPower().forEach((hero) => {
+        hero.shardCosts.forEach((t) => expect(t.tierPower).toHaveLength(6));
+      });
+    });
+
+    it('has no tier power on heroes without a Power at star 0', () => {
+      heroes()
+        .get()
+        .filter((h) => h.powerAtStarZero === undefined)
+        .forEach((hero) => {
+          hero.shardCosts.forEach((t) => expect(t.tierPower).toBeUndefined());
+        });
+    });
+
+    it('gives the Generation 5 heroes the Hero Power read in the game on stars 1 to 3', () => {
+      ['Hector', 'Norah', 'Gwen'].forEach((name) => {
+        const hero = heroes().findByName(name)!;
         expect(hero.powerAtStarZero).toBe(22200);
         expect(hero.powerAtStarZero).toBe(hero.levels[0].power * 2);
-        expect(hero.shardCosts.map((t) => t.tierPower?.length)).toEqual([
-          6,
-          6,
-          6,
-          undefined,
-          undefined,
-        ]);
         expect(hero.shardCosts[0].tierPower).toEqual([29748, 39960, 50838, 59940, 72150, 92796]);
         expect(hero.shardCosts[1].tierPower).toEqual([
           109224, 126540, 144744, 164058, 187368, 221556,
@@ -556,21 +606,57 @@ describe('Generation 1-17 heroes (Legendary)', () => {
       });
     });
 
-    it('rises with every tier', () => {
-      generation5().forEach((hero) => {
-        const all = [hero.powerAtStarZero!, ...hero.shardCosts.flatMap((t) => t.tierPower ?? [])];
-        all.slice(1).forEach((power, i) => expect(power).toBeGreaterThan(all[i]));
+    it('gives the Generation 2 heroes the Star Power on stars 4 and 5, with 3.3, 4.3, 4.4, and 4.5 predicted', () => {
+      ['Flint', 'Philly', 'Alonso'].forEach((name) => {
+        const hero = heroes().findByName(name)!;
+        expect(hero.shardCosts[3].tierPower).toEqual([
+          271440, 303480, 335640, 367920, 402600, 458640,
+        ]);
+        expect(hero.shardCosts[4].tierPower).toEqual([
+          507480, 561600, 617280, 674640, 733560, 830160,
+        ]);
       });
     });
 
-    it('leaves heroes of other generations without tier power', () => {
-      heroes()
-        .get()
-        .filter((h) => h.generation !== 5)
-        .forEach((hero) => {
-          expect(hero.powerAtStarZero).toBeUndefined();
-          hero.shardCosts.forEach((t) => expect(t.tierPower).toBeUndefined());
-        });
+    it('matches the Star Power read in the game for each hero at its label', () => {
+      const starPower = (name: string, label: string) => {
+        const [star, tier] = label.split('.').map(Number);
+        const hero = heroes().findByName(name)!;
+        return tier === 0
+          ? hero.shardCosts[star - 1].power
+          : hero.shardCosts[star].tierPower![tier - 1];
+      };
+      const readings: [string, string, number][] = [
+        ['Philly', '3.5', 402600],
+        ['Flint', '4.2', 561600],
+        ['Alonso', '4.1', 507480],
+        ['Zinman', '3.2', 252900],
+        ['Natalia', '3.2', 278190],
+        ['Jeronimo', '3.1', 282750],
+        ['Logan', '3.4', 459900],
+        ['Norah', '3.0', 449772],
+        ['Greg', '4.0', 573300],
+        ['Gwen', '3.1', 502164],
+        ['Mia', '4.2', 702000],
+        ['Ahmose', '4.0', 707070],
+        ['Lynn', '4.1', 782365],
+        ['Reina', '4.0', 707070],
+        ['Hector', '3.2', 561438],
+      ];
+      readings.forEach(([name, label, power]) => expect(starPower(name, label)).toBe(power));
+    });
+
+    it('ends every star on the Power of the whole star', () => {
+      withStarPower().forEach((hero) => {
+        hero.shardCosts.forEach((t) => expect(t.tierPower![5]).toBe(t.power));
+      });
+    });
+
+    it('rises with every tier', () => {
+      withStarPower().forEach((hero) => {
+        const all = [hero.powerAtStarZero!, ...hero.shardCosts.flatMap((t) => t.tierPower!)];
+        all.slice(1).forEach((power, i) => expect(power).toBeGreaterThan(all[i]));
+      });
     });
   });
 });

@@ -13,6 +13,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `heroes()` and `items()`: shard icons and shard items for 17 more heroes, which makes 30 heroes
   with a shard icon.
+- `heroes()`: the Star Power at each star label, such as 3.2, in the `tierPower` of every star for
+  heroes with a confirmed maximum star Power. Four labels are predicted with a formula.
+- `heroes()`: the Power of each of the 10 exclusive weapon levels.
+- `heroes()`: the star that each level of the Talent skill of Jeronimo and Natalia needs.
 
 ### Changed
 
@@ -27,6 +31,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `tundraAlbum()`: update the image of The Bell Tolls piece 7, and the cover and piece 12 images of
   Tundra Adventure.
+- `heroes()`: fix the exclusive weapon power of Philly, which was 27,000 and is now 270,000.
+- `heroes()`: fix the Star Power at stars 1 to 4 of Rare, Epic, and Legendary heroes through
+  Generation 5, and add the Star Power at star 0.
 
 ## [0.3.0] - 2026-10-14
 

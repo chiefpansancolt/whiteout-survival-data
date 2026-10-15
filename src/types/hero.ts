@@ -66,10 +66,16 @@ export interface ExclusiveWeaponSkill {
   unlockLevel?: number;
 }
 
+export interface ExclusiveWeaponLevel {
+  level: number;
+  power: number;
+}
+
 export interface ExclusiveWeapon {
   name: string;
   img: string;
   power: number;
+  levels: ExclusiveWeaponLevel[];
   stats: ExclusiveWeaponStats;
   skills: ExclusiveWeaponSkill[];
 }

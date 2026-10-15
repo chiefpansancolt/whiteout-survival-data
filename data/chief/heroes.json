@@ -4,6 +4,7 @@
     "name": "Smith",
     "img": "/images/heroes/Smith/Smith.png",
     "shardImg": "/images/heroes/Smith/Smith-Shard.png",
+    "powerAtStarZero": 6500,
     "rarity": "Rare",
     "class": "Infantry",
     "subClass": "Growth",
@@ -318,31 +319,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 4222
+        "power": 27170,
+        "tierPower": [8710, 11700, 14885, 17550, 21125, 27170]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 21111
+        "power": 64870,
+        "tierPower": [31980, 37050, 42380, 48035, 54860, 64870]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 69667
+        "power": 131690,
+        "tierPower": [73515, 82615, 93145, 103155, 113880, 131690]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 196335
+        "power": 248430,
+        "tierPower": [147030, 164385, 181805, 199290, 218075, 248430]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 449670
+        "power": 449670,
+        "tierPower": [274885, 304200, 334360, 365430, 397345, 449670]
       }
     ],
     "levels": [
@@ -834,6 +840,7 @@
     "name": "Eugene",
     "img": "/images/heroes/Eugene/Eugene.png",
     "shardImg": "/images/heroes/Eugene/Eugene-Shard.png",
+    "powerAtStarZero": 6500,
     "rarity": "Rare",
     "class": "Infantry",
     "subClass": "Growth",
@@ -1148,31 +1155,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 4222
+        "power": 27170,
+        "tierPower": [8710, 11700, 14885, 17550, 21125, 27170]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 21111
+        "power": 64870,
+        "tierPower": [31980, 37050, 42380, 48035, 54860, 64870]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 69667
+        "power": 131690,
+        "tierPower": [73515, 82615, 93145, 103155, 113880, 131690]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 196335
+        "power": 248430,
+        "tierPower": [147030, 164385, 181805, 199290, 218075, 248430]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 449670
+        "power": 449670,
+        "tierPower": [274885, 304200, 334360, 365430, 397345, 449670]
       }
     ],
     "levels": [
@@ -1664,6 +1676,7 @@
     "name": "Charlie",
     "img": "/images/heroes/Charlie/Charlie.png",
     "shardImg": "/images/heroes/Charlie/Charlie-Shard.png",
+    "powerAtStarZero": 6500,
     "rarity": "Rare",
     "class": "Lancer",
     "subClass": "Growth",
@@ -2003,31 +2016,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 4222
+        "power": 27170,
+        "tierPower": [8710, 11700, 14885, 17550, 21125, 27170]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 21111
+        "power": 64870,
+        "tierPower": [31980, 37050, 42380, 48035, 54860, 64870]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 69667
+        "power": 131690,
+        "tierPower": [73515, 82615, 93145, 103155, 113880, 131690]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 196335
+        "power": 248430,
+        "tierPower": [147030, 164385, 181805, 199290, 218075, 248430]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 449670
+        "power": 449670,
+        "tierPower": [274885, 304200, 334360, 365430, 397345, 449670]
       }
     ],
     "levels": [
@@ -2519,6 +2537,7 @@
     "name": "Cloris",
     "img": "/images/heroes/Cloris/Cloris.png",
     "shardImg": "/images/heroes/Cloris/Cloris-Shard.png",
+    "powerAtStarZero": 6500,
     "rarity": "Rare",
     "class": "Marksman",
     "subClass": "Growth",
@@ -2833,31 +2852,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 4222
+        "power": 27170,
+        "tierPower": [8710, 11700, 14885, 17550, 21125, 27170]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 21111
+        "power": 64870,
+        "tierPower": [31980, 37050, 42380, 48035, 54860, 64870]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 69667
+        "power": 131690,
+        "tierPower": [73515, 82615, 93145, 103155, 113880, 131690]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 196335
+        "power": 248430,
+        "tierPower": [147030, 164385, 181805, 199290, 218075, 248430]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 449670
+        "power": 449670,
+        "tierPower": [274885, 304200, 334360, 365430, 397345, 449670]
       }
     ],
     "levels": [
@@ -3349,6 +3373,7 @@
     "name": "Sergey",
     "img": "/images/heroes/Sergey/Sergey.png",
     "shardImg": "/images/heroes/Sergey/Sergey-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Infantry",
     "subClass": "Combat",
@@ -3735,31 +3760,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -4251,6 +4281,7 @@
     "name": "Jessie",
     "img": "/images/heroes/Jessie/Jessie.png",
     "shardImg": "/images/heroes/Jessie/Jessie-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Lancer",
     "subClass": "Combat",
@@ -4637,31 +4668,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -5153,6 +5189,7 @@
     "name": "Patrick",
     "img": "/images/heroes/Patrick/Patrick.png",
     "shardImg": "/images/heroes/Patrick/Patrick-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Lancer",
     "subClass": "Combat",
@@ -5564,31 +5601,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -6080,6 +6122,7 @@
     "name": "Lumak Bokan",
     "img": "/images/heroes/LumakBokan/LumakBokan.png",
     "shardImg": "/images/heroes/LumakBokan/LumakBokan-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Lancer",
     "subClass": "Combat",
@@ -6466,31 +6509,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -6982,6 +7030,7 @@
     "name": "Ling Xue",
     "img": "/images/heroes/LingXue/LingXue.jpg",
     "shardImg": "/images/heroes/LingXue/LingXue-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Lancer",
     "subClass": "Growth",
@@ -7368,31 +7417,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -7884,6 +7938,7 @@
     "name": "Gina",
     "img": "/images/heroes/Gina/Gina.png",
     "shardImg": "/images/heroes/Gina/Gina-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Marksman",
     "subClass": "Combat",
@@ -8295,31 +8350,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -8811,6 +8871,7 @@
     "name": "Bahiti",
     "img": "/images/heroes/Bahiti/Bahiti.png",
     "shardImg": "/images/heroes/Bahiti/Bahiti-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Marksman",
     "subClass": "Combat",
@@ -9197,31 +9258,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -9713,6 +9779,7 @@
     "name": "Jasser",
     "img": "/images/heroes/Jasser/Jasser.jpg",
     "shardImg": "/images/heroes/Jasser/Jasser-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Marksman",
     "subClass": "Growth",
@@ -10149,31 +10216,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -10665,6 +10737,7 @@
     "name": "Seo-yoon",
     "img": "/images/heroes/SeoYoon/SeoYoon.jpg",
     "shardImg": "/images/heroes/SeoYoon/SeoYoon-Shard.png",
+    "powerAtStarZero": 8000,
     "rarity": "Epic",
     "class": "Marksman",
     "subClass": "Growth",
@@ -11076,31 +11149,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 5197
+        "power": 33440,
+        "tierPower": [10720, 14400, 18320, 21600, 26000, 33440]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 25983
+        "power": 79840,
+        "tierPower": [39360, 45600, 52160, 59120, 67520, 79840]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 85744
+        "power": 162080,
+        "tierPower": [90480, 101680, 114640, 126960, 140160, 162080]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 241643
+        "power": 305760,
+        "tierPower": [180960, 202320, 223760, 245280, 268400, 305760]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 553440
+        "power": 553440,
+        "tierPower": [338320, 374400, 411520, 449760, 489040, 553440]
       }
     ],
     "levels": [
@@ -11591,6 +11669,7 @@
     "id": "jeronimo",
     "name": "Jeronimo",
     "img": "/images/heroes/Jeronimo/Jeronimo.png",
+    "powerAtStarZero": 12500,
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -12052,7 +12131,7 @@
             "level": 1,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 1,
             "effects": [
               {
                 "name": "Lethality and Health",
@@ -12065,7 +12144,7 @@
             "level": 2,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 2,
             "effects": [
               {
                 "name": "Lethality and Health",
@@ -12078,7 +12157,7 @@
             "level": 3,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 3,
             "effects": [
               {
                 "name": "Lethality and Health",
@@ -12091,7 +12170,7 @@
             "level": 4,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 4,
             "effects": [
               {
                 "name": "Lethality and Health",
@@ -12104,7 +12183,7 @@
             "level": 5,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 5,
             "effects": [
               {
                 "name": "Lethality and Health",
@@ -12120,6 +12199,48 @@
       "name": "Dawnbreak",
       "img": "/images/heroes/Jeronimo/weapons/Jeronimo-Dawnbreak.png",
       "power": 281250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 37500
+        },
+        {
+          "level": 2,
+          "power": 63750
+        },
+        {
+          "level": 3,
+          "power": 90000
+        },
+        {
+          "level": 4,
+          "power": 116250
+        },
+        {
+          "level": 5,
+          "power": 142500
+        },
+        {
+          "level": 6,
+          "power": 168750
+        },
+        {
+          "level": 7,
+          "power": 196875
+        },
+        {
+          "level": 8,
+          "power": 225000
+        },
+        {
+          "level": 9,
+          "power": 253125
+        },
+        {
+          "level": 10,
+          "power": 281250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 431,
@@ -12151,31 +12272,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 8120
+        "power": 52250,
+        "tierPower": [16750, 22500, 28625, 33750, 40625, 52250]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 40599
+        "power": 124750,
+        "tierPower": [61500, 71250, 81500, 92375, 105500, 124750]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 133975
+        "power": 253250,
+        "tierPower": [141375, 158875, 179125, 198375, 219000, 253250]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 377567
+        "power": 477750,
+        "tierPower": [282750, 316125, 349625, 383250, 419375, 477750]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 864750
+        "power": 864750,
+        "tierPower": [528625, 585000, 643000, 702750, 764125, 864750]
       }
     ],
     "shardSources": ["VIP Packs"],
@@ -12667,6 +12793,7 @@
     "name": "Natalia",
     "img": "/images/heroes/Natalia/Natalia.png",
     "shardImg": "/images/heroes/Natalia/Natalia-Shard.png",
+    "powerAtStarZero": 11000,
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -13128,7 +13255,7 @@
             "level": 1,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 1,
             "effects": [
               {
                 "name": "Attack and Defense",
@@ -13141,7 +13268,7 @@
             "level": 2,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 2,
             "effects": [
               {
                 "name": "Attack and Defense",
@@ -13154,7 +13281,7 @@
             "level": 3,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 3,
             "effects": [
               {
                 "name": "Attack and Defense",
@@ -13167,7 +13294,7 @@
             "level": 4,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 4,
             "effects": [
               {
                 "name": "Attack and Defense",
@@ -13180,7 +13307,7 @@
             "level": 5,
             "manualsRequired": 0,
             "powerGain": 0,
-            "starRequired": 0,
+            "starRequired": 5,
             "effects": [
               {
                 "name": "Attack and Defense",
@@ -13196,6 +13323,48 @@
       "name": "Gale Force",
       "img": "/images/heroes/Natalia/weapons/Natalia-GaleForce.png",
       "power": 247500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 33000
+        },
+        {
+          "level": 2,
+          "power": 56100
+        },
+        {
+          "level": 3,
+          "power": 79200
+        },
+        {
+          "level": 4,
+          "power": 102300
+        },
+        {
+          "level": 5,
+          "power": 125400
+        },
+        {
+          "level": 6,
+          "power": 148500
+        },
+        {
+          "level": 7,
+          "power": 173250
+        },
+        {
+          "level": 8,
+          "power": 198000
+        },
+        {
+          "level": 9,
+          "power": 222750
+        },
+        {
+          "level": 10,
+          "power": 247500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 379,
@@ -13227,31 +13396,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 7145
+        "power": 45980,
+        "tierPower": [14740, 19800, 25190, 29700, 35750, 45980]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 35727
+        "power": 109780,
+        "tierPower": [54120, 62700, 71720, 81290, 92840, 109780]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 117898
+        "power": 222860,
+        "tierPower": [124410, 139810, 157630, 174570, 192720, 222860]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 332259
+        "power": 420420,
+        "tierPower": [248820, 278190, 307670, 337260, 369050, 420420]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 760980
+        "power": 760980,
+        "tierPower": [465190, 514800, 565840, 618420, 672430, 760980]
       }
     ],
     "shardSources": ["1st Purchase", "VIP Packs"],
@@ -13743,6 +13917,7 @@
     "name": "Molly",
     "img": "/images/heroes/Molly/Molly.png",
     "shardImg": "/images/heroes/Molly/Molly-Shard.png",
+    "powerAtStarZero": 10000,
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -14200,6 +14375,48 @@
       "name": "Yeti Spirit",
       "img": "/images/heroes/Molly/weapons/Molly-YetiSpirit.png",
       "power": 225000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 30000
+        },
+        {
+          "level": 2,
+          "power": 51000
+        },
+        {
+          "level": 3,
+          "power": 72000
+        },
+        {
+          "level": 4,
+          "power": 93000
+        },
+        {
+          "level": 5,
+          "power": 114000
+        },
+        {
+          "level": 6,
+          "power": 135000
+        },
+        {
+          "level": 7,
+          "power": 157500
+        },
+        {
+          "level": 8,
+          "power": 180000
+        },
+        {
+          "level": 9,
+          "power": 202500
+        },
+        {
+          "level": 10,
+          "power": 225000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 450,
@@ -14231,31 +14448,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 6496
+        "power": 41800,
+        "tierPower": [13400, 18000, 22900, 27000, 32500, 41800]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 32479
+        "power": 99800,
+        "tierPower": [49200, 57000, 65200, 73900, 84400, 99800]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 107180
+        "power": 202600,
+        "tierPower": [113100, 127100, 143300, 158700, 175200, 202600]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 302054
+        "power": 382200,
+        "tierPower": [226200, 252900, 279700, 306600, 335500, 382200]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 691800
+        "power": 691800,
+        "tierPower": [422900, 468000, 514400, 562200, 611300, 691800]
       }
     ],
     "shardSources": [
@@ -14753,6 +14975,7 @@
     "name": "Zinman",
     "img": "/images/heroes/Zinman/Zinman.png",
     "shardImg": "/images/heroes/Zinman/Zinman-Shard.png",
+    "powerAtStarZero": 10000,
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Growth",
@@ -15260,6 +15483,48 @@
       "name": "Woodpecker",
       "img": "/images/heroes/Zinman/weapons/Zinman-Woodpecker.png",
       "power": 225000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 30000
+        },
+        {
+          "level": 2,
+          "power": 51000
+        },
+        {
+          "level": 3,
+          "power": 72000
+        },
+        {
+          "level": 4,
+          "power": 93000
+        },
+        {
+          "level": 5,
+          "power": 114000
+        },
+        {
+          "level": 6,
+          "power": 135000
+        },
+        {
+          "level": 7,
+          "power": 157500
+        },
+        {
+          "level": 8,
+          "power": 180000
+        },
+        {
+          "level": 9,
+          "power": 202500
+        },
+        {
+          "level": 10,
+          "power": 225000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 546,
@@ -15291,31 +15556,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 6496
+        "power": 41800,
+        "tierPower": [13400, 18000, 22900, 27000, 32500, 41800]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 32479
+        "power": 99800,
+        "tierPower": [49200, 57000, 65200, 73900, 84400, 99800]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 107180
+        "power": 202600,
+        "tierPower": [113100, 127100, 143300, 158700, 175200, 202600]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 302054
+        "power": 382200,
+        "tierPower": [226200, 252900, 279700, 306600, 335500, 382200]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 691800
+        "power": 691800,
+        "tierPower": [422900, 468000, 514400, 562200, 611300, 691800]
       }
     ],
     "shardSources": ["Lucky Wheel", "Daily Deals", "Mythic General Hero Shard"],
@@ -15807,6 +16077,7 @@
     "name": "Flint",
     "img": "/images/heroes/Flint/Flint.png",
     "shardImg": "/images/heroes/Flint/Flint-Shard.png",
+    "powerAtStarZero": 12000,
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -16289,6 +16560,48 @@
       "name": "Dragonbane",
       "img": "/images/heroes/Flint/weapons/Flint-Dragonbane.png",
       "power": 270000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 36000
+        },
+        {
+          "level": 2,
+          "power": 61200
+        },
+        {
+          "level": 3,
+          "power": 86400
+        },
+        {
+          "level": 4,
+          "power": 111600
+        },
+        {
+          "level": 5,
+          "power": 136800
+        },
+        {
+          "level": 6,
+          "power": 162000
+        },
+        {
+          "level": 7,
+          "power": 189000
+        },
+        {
+          "level": 8,
+          "power": 216000
+        },
+        {
+          "level": 9,
+          "power": 243000
+        },
+        {
+          "level": 10,
+          "power": 270000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 414,
@@ -16320,31 +16633,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 7795
+        "power": 50160,
+        "tierPower": [16080, 21600, 27480, 32400, 39000, 50160]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 38975
+        "power": 119760,
+        "tierPower": [59040, 68400, 78240, 88680, 101280, 119760]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 128616
+        "power": 243120,
+        "tierPower": [135720, 152520, 171960, 190440, 210240, 243120]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 362464
+        "power": 458640,
+        "tierPower": [271440, 303480, 335640, 367920, 402600, 458640]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 830160
+        "power": 830160,
+        "tierPower": [507480, 561600, 617280, 674640, 733560, 830160]
       }
     ],
     "shardSources": ["Lucky Wheel"],
@@ -16836,6 +17154,7 @@
     "name": "Philly",
     "img": "/images/heroes/Philly/Philly.png",
     "shardImg": "/images/heroes/Philly/Philly-Shard.png",
+    "powerAtStarZero": 12000,
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -17317,7 +17636,49 @@
     "exclusiveWeapon": {
       "name": "Pharmacologica",
       "img": "/images/heroes/Philly/weapons/Philly-Pharmacologica.png",
-      "power": 27000,
+      "power": 270000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 36000
+        },
+        {
+          "level": 2,
+          "power": 61200
+        },
+        {
+          "level": 3,
+          "power": 86400
+        },
+        {
+          "level": 4,
+          "power": 111600
+        },
+        {
+          "level": 5,
+          "power": 136800
+        },
+        {
+          "level": 6,
+          "power": 162000
+        },
+        {
+          "level": 7,
+          "power": 189000
+        },
+        {
+          "level": 8,
+          "power": 216000
+        },
+        {
+          "level": 9,
+          "power": 243000
+        },
+        {
+          "level": 10,
+          "power": 270000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 540,
@@ -17349,31 +17710,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 7795
+        "power": 50160,
+        "tierPower": [16080, 21600, 27480, 32400, 39000, 50160]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 38975
+        "power": 119760,
+        "tierPower": [59040, 68400, 78240, 88680, 101280, 119760]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 128616
+        "power": 243120,
+        "tierPower": [135720, 152520, 171960, 190440, 210240, 243120]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 362464
+        "power": 458640,
+        "tierPower": [271440, 303480, 335640, 367920, 402600, 458640]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 830160
+        "power": 830160,
+        "tierPower": [507480, 561600, 617280, 674640, 733560, 830160]
       }
     ],
     "shardSources": ["King of Icefield", "State of Power", "Daily Deals"],
@@ -17865,6 +18231,7 @@
     "name": "Alonso",
     "img": "/images/heroes/Alonso/Alonso.png",
     "shardImg": "/images/heroes/Alonso/Alonso-Shard.png",
+    "powerAtStarZero": 12000,
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Combat",
@@ -18347,6 +18714,48 @@
       "name": "Captain Ahab",
       "img": "/images/heroes/Alonso/weapons/Alonso-CaptainAhab.png",
       "power": 270000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 36000
+        },
+        {
+          "level": 2,
+          "power": 61200
+        },
+        {
+          "level": 3,
+          "power": 86400
+        },
+        {
+          "level": 4,
+          "power": 111600
+        },
+        {
+          "level": 5,
+          "power": 136800
+        },
+        {
+          "level": 6,
+          "power": 162000
+        },
+        {
+          "level": 7,
+          "power": 189000
+        },
+        {
+          "level": 8,
+          "power": 216000
+        },
+        {
+          "level": 9,
+          "power": 243000
+        },
+        {
+          "level": 10,
+          "power": 270000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 655,
@@ -18378,31 +18787,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 7795
+        "power": 50160,
+        "tierPower": [16080, 21600, 27480, 32400, 39000, 50160]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 38975
+        "power": 119760,
+        "tierPower": [59040, 68400, 78240, 88680, 101280, 119760]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 128616
+        "power": 243120,
+        "tierPower": [135720, 152520, 171960, 190440, 210240, 243120]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 362464
+        "power": 458640,
+        "tierPower": [271440, 303480, 335640, 367920, 402600, 458640]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 830160
+        "power": 830160,
+        "tierPower": [507480, 561600, 617280, 674640, 733560, 830160]
       }
     ],
     "shardSources": ["Hall of Heroes", "Daily Deals"],
@@ -18894,6 +19308,7 @@
     "name": "Logan",
     "img": "/images/heroes/Logan/Logan.png",
     "shardImg": "/images/heroes/Logan/Logan-Shard.png",
+    "powerAtStarZero": 15000,
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -19376,6 +19791,48 @@
       "name": "First of Steel",
       "img": "/images/heroes/Logan/weapons/Logan-FirstOfSteel.png",
       "power": 315000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 42000
+        },
+        {
+          "level": 2,
+          "power": 71400
+        },
+        {
+          "level": 3,
+          "power": 100800
+        },
+        {
+          "level": 4,
+          "power": 130200
+        },
+        {
+          "level": 5,
+          "power": 159600
+        },
+        {
+          "level": 6,
+          "power": 189000
+        },
+        {
+          "level": 7,
+          "power": 220500
+        },
+        {
+          "level": 8,
+          "power": 252000
+        },
+        {
+          "level": 9,
+          "power": 283500
+        },
+        {
+          "level": 10,
+          "power": 315000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 482,
@@ -19407,31 +19864,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 9744
+        "power": 62700,
+        "tierPower": [20100, 27000, 34350, 40500, 48750, 62700]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 48718
+        "power": 149700,
+        "tierPower": [73800, 85500, 97800, 110850, 126600, 149700]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 160770
+        "power": 303900,
+        "tierPower": [169650, 190650, 214950, 238050, 262800, 303900]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 453080
+        "power": 573300,
+        "tierPower": [339300, 379350, 419550, 459900, 503250, 573300]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 1037700
+        "power": 1037700,
+        "tierPower": [634350, 702000, 771600, 843300, 916950, 1037700]
       }
     ],
     "shardSources": ["Hall of Heroes", "Daily Deals"],
@@ -19923,6 +20385,7 @@
     "name": "Mia",
     "img": "/images/heroes/Mia/Mia.png",
     "shardImg": "/images/heroes/Mia/Mia-Shard.png",
+    "powerAtStarZero": 15000,
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -20380,6 +20843,48 @@
       "name": "Fate Crystal",
       "img": "/images/heroes/Mia/weapons/Mia-FateCrystal.png",
       "power": 315000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 42000
+        },
+        {
+          "level": 2,
+          "power": 71400
+        },
+        {
+          "level": 3,
+          "power": 100800
+        },
+        {
+          "level": 4,
+          "power": 130200
+        },
+        {
+          "level": 5,
+          "power": 159600
+        },
+        {
+          "level": 6,
+          "power": 189000
+        },
+        {
+          "level": 7,
+          "power": 220500
+        },
+        {
+          "level": 8,
+          "power": 252000
+        },
+        {
+          "level": 9,
+          "power": 283500
+        },
+        {
+          "level": 10,
+          "power": 315000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 630,
@@ -20411,31 +20916,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 9744
+        "power": 62700,
+        "tierPower": [20100, 27000, 34350, 40500, 48750, 62700]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 48718
+        "power": 149700,
+        "tierPower": [73800, 85500, 97800, 110850, 126600, 149700]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 160770
+        "power": 303900,
+        "tierPower": [169650, 190650, 214950, 238050, 262800, 303900]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 453080
+        "power": 573300,
+        "tierPower": [339300, 379350, 419550, 459900, 503250, 573300]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 1037700
+        "power": 1037700,
+        "tierPower": [634350, 702000, 771600, 843300, 916950, 1037700]
       }
     ],
     "shardSources": ["Lucky Wheel", "Daily Deals"],
@@ -20927,6 +21437,7 @@
     "name": "Greg",
     "img": "/images/heroes/Greg/Greg.png",
     "shardImg": "/images/heroes/Greg/Greg-Shard.png",
+    "powerAtStarZero": 15000,
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Combat",
@@ -21384,6 +21895,48 @@
       "name": "State Edict",
       "img": "/images/heroes/Greg/weapons/Greg-StateEdict.png",
       "power": 315000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 42000
+        },
+        {
+          "level": 2,
+          "power": 71400
+        },
+        {
+          "level": 3,
+          "power": 100800
+        },
+        {
+          "level": 4,
+          "power": 130200
+        },
+        {
+          "level": 5,
+          "power": 159600
+        },
+        {
+          "level": 6,
+          "power": 189000
+        },
+        {
+          "level": 7,
+          "power": 220500
+        },
+        {
+          "level": 8,
+          "power": 252000
+        },
+        {
+          "level": 9,
+          "power": 283500
+        },
+        {
+          "level": 10,
+          "power": 315000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 764,
@@ -21415,31 +21968,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 9744
+        "power": 62700,
+        "tierPower": [20100, 27000, 34350, 40500, 48750, 62700]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 48718
+        "power": 149700,
+        "tierPower": [73800, 85500, 97800, 110850, 126600, 149700]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 160770
+        "power": 303900,
+        "tierPower": [169650, 190650, 214950, 238050, 262800, 303900]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 453080
+        "power": 573300,
+        "tierPower": [339300, 379350, 419550, 459900, 503250, 573300]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 1037700
+        "power": 1037700,
+        "tierPower": [634350, 702000, 771600, 843300, 916950, 1037700]
       }
     ],
     "shardSources": ["King of Icefield", "State of Power", "Daily Deals"],
@@ -21930,6 +22488,7 @@
     "id": "ahmose",
     "name": "Ahmose",
     "img": "/images/heroes/Ahmose/Ahmose.png",
+    "powerAtStarZero": 18500,
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -22437,6 +22996,48 @@
       "name": "Guardian's Relic",
       "img": "/images/heroes/Ahmose/weapons/Ahmose-GuardianSRelic.png",
       "power": 416250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 55500
+        },
+        {
+          "level": 2,
+          "power": 94350
+        },
+        {
+          "level": 3,
+          "power": 133200
+        },
+        {
+          "level": 4,
+          "power": 172050
+        },
+        {
+          "level": 5,
+          "power": 210900
+        },
+        {
+          "level": 6,
+          "power": 249750
+        },
+        {
+          "level": 7,
+          "power": 291375
+        },
+        {
+          "level": 8,
+          "power": 333000
+        },
+        {
+          "level": 9,
+          "power": 374625
+        },
+        {
+          "level": 10,
+          "power": 416250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 638,
@@ -22468,31 +23069,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 12017
+        "power": 77330,
+        "tierPower": [24790, 33300, 42365, 49950, 60125, 77330]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 60086
+        "power": 184630,
+        "tierPower": [91020, 105450, 120620, 136715, 156140, 184630]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 198284
+        "power": 374810,
+        "tierPower": [209235, 235135, 265105, 293595, 324120, 374810]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 558799
+        "power": 707070,
+        "tierPower": [418470, 467865, 517445, 567210, 620675, 707070]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 1279830
+        "power": 1279830,
+        "tierPower": [782365, 865800, 951640, 1040070, 1130905, 1279830]
       }
     ],
     "shardSources": ["King of Icefield", "State of Power", "Daily Deals"],
@@ -22984,6 +23590,7 @@
     "name": "Reina",
     "img": "/images/heroes/Reina/Reina.jpg",
     "shardImg": "/images/heroes/Reina/Reina-Shard.png",
+    "powerAtStarZero": 18500,
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -23441,6 +24048,48 @@
       "name": "Ninjaken - Raikiri",
       "img": "/images/heroes/Reina/weapons/Reina-NinjakenRaikiri.png",
       "power": 416250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 55500
+        },
+        {
+          "level": 2,
+          "power": 94350
+        },
+        {
+          "level": 3,
+          "power": 133200
+        },
+        {
+          "level": 4,
+          "power": 172050
+        },
+        {
+          "level": 5,
+          "power": 210900
+        },
+        {
+          "level": 6,
+          "power": 249750
+        },
+        {
+          "level": 7,
+          "power": 291375
+        },
+        {
+          "level": 8,
+          "power": 333000
+        },
+        {
+          "level": 9,
+          "power": 374625
+        },
+        {
+          "level": 10,
+          "power": 416250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 832,
@@ -23472,31 +24121,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 12017
+        "power": 77330,
+        "tierPower": [24790, 33300, 42365, 49950, 60125, 77330]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 60086
+        "power": 184630,
+        "tierPower": [91020, 105450, 120620, 136715, 156140, 184630]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 198284
+        "power": 374810,
+        "tierPower": [209235, 235135, 265105, 293595, 324120, 374810]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 558799
+        "power": 707070,
+        "tierPower": [418470, 467865, 517445, 567210, 620675, 707070]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 1279830
+        "power": 1279830,
+        "tierPower": [782365, 865800, 951640, 1040070, 1130905, 1279830]
       }
     ],
     "shardSources": ["Hall of Heroes", "Daily Deals"],
@@ -23988,6 +24642,7 @@
     "name": "Lynn",
     "img": "/images/heroes/Lynn/Lynn.jpg",
     "shardImg": "/images/heroes/Lynn/Lynn-Shard.png",
+    "powerAtStarZero": 18500,
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Combat",
@@ -24495,6 +25150,48 @@
       "name": "Ella's Tear",
       "img": "/images/heroes/Lynn/weapons/Lynn-EllaSTear.png",
       "power": 416250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 55500
+        },
+        {
+          "level": 2,
+          "power": 94350
+        },
+        {
+          "level": 3,
+          "power": 133200
+        },
+        {
+          "level": 4,
+          "power": 172050
+        },
+        {
+          "level": 5,
+          "power": 210900
+        },
+        {
+          "level": 6,
+          "power": 249750
+        },
+        {
+          "level": 7,
+          "power": 291375
+        },
+        {
+          "level": 8,
+          "power": 333000
+        },
+        {
+          "level": 9,
+          "power": 374625
+        },
+        {
+          "level": 10,
+          "power": 416250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1010,
@@ -24526,31 +25223,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 12017
+        "power": 77330,
+        "tierPower": [24790, 33300, 42365, 49950, 60125, 77330]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 60086
+        "power": 184630,
+        "tierPower": [91020, 105450, 120620, 136715, 156140, 184630]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 198284
+        "power": 374810,
+        "tierPower": [209235, 235135, 265105, 293595, 324120, 374810]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 558799
+        "power": 707070,
+        "tierPower": [418470, 467865, 517445, 567210, 620675, 707070]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 1279830
+        "power": 1279830,
+        "tierPower": [782365, 865800, 951640, 1040070, 1130905, 1279830]
       }
     ],
     "shardSources": ["Lucky Wheel"],
@@ -25041,6 +25743,7 @@
     "id": "hector",
     "name": "Hector",
     "img": "/images/heroes/Hector/Hector.jpg",
+    "powerAtStarZero": 22200,
     "rarity": "Legendary",
     "class": "Infantry",
     "subClass": "Combat",
@@ -25523,6 +26226,48 @@
       "name": "Steel Fangs",
       "img": "/images/heroes/Hector/weapons/Hector-SteelFangs.png",
       "power": 499500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 66600
+        },
+        {
+          "level": 2,
+          "power": 113220
+        },
+        {
+          "level": 3,
+          "power": 159840
+        },
+        {
+          "level": 4,
+          "power": 206460
+        },
+        {
+          "level": 5,
+          "power": 253080
+        },
+        {
+          "level": 6,
+          "power": 299700
+        },
+        {
+          "level": 7,
+          "power": 349650
+        },
+        {
+          "level": 8,
+          "power": 399600
+        },
+        {
+          "level": 9,
+          "power": 449550
+        },
+        {
+          "level": 10,
+          "power": 499500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 765,
@@ -25554,34 +26299,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0,
+        "power": 92796,
         "tierPower": [29748, 39960, 50838, 59940, 72150, 92796]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0,
+        "power": 221556,
         "tierPower": [109224, 126540, 144744, 164058, 187368, 221556]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0,
+        "power": 449772,
         "tierPower": [251082, 282162, 318126, 352314, 388944, 449772]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 848484,
+        "tierPower": [502164, 561438, 620934, 680652, 744810, 848484]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1535796,
+        "tierPower": [938838, 1038960, 1141968, 1248084, 1357086, 1535796]
       }
     ],
     "shardSources": ["Lucky Wheel", "Hall of Heroes", "Daily Deals", "Mythic General Hero Shard"],
@@ -26066,14 +26813,14 @@
         "xpRequired": 2400000,
         "power": 414252
       }
-    ],
-    "powerAtStarZero": 22200
+    ]
   },
   {
     "id": "norah",
     "name": "Norah",
     "img": "/images/heroes/Norah/Norah.jpg",
     "shardImg": "/images/heroes/Norah/Norah-Shard.png",
+    "powerAtStarZero": 22200,
     "rarity": "Legendary",
     "class": "Lancer",
     "subClass": "Combat",
@@ -26581,6 +27328,48 @@
       "name": "Snow Cruiser",
       "img": "/images/heroes/Norah/weapons/Norah-SnowCruiser.png",
       "power": 499500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 66600
+        },
+        {
+          "level": 2,
+          "power": 113220
+        },
+        {
+          "level": 3,
+          "power": 159840
+        },
+        {
+          "level": 4,
+          "power": 206460
+        },
+        {
+          "level": 5,
+          "power": 253080
+        },
+        {
+          "level": 6,
+          "power": 299700
+        },
+        {
+          "level": 7,
+          "power": 349650
+        },
+        {
+          "level": 8,
+          "power": 399600
+        },
+        {
+          "level": 9,
+          "power": 449550
+        },
+        {
+          "level": 10,
+          "power": 499500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 999,
@@ -26612,34 +27401,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0,
+        "power": 92796,
         "tierPower": [29748, 39960, 50838, 59940, 72150, 92796]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0,
+        "power": 221556,
         "tierPower": [109224, 126540, 144744, 164058, 187368, 221556]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0,
+        "power": 449772,
         "tierPower": [251082, 282162, 318126, 352314, 388944, 449772]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 848484,
+        "tierPower": [502164, 561438, 620934, 680652, 744810, 848484]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1535796,
+        "tierPower": [938838, 1038960, 1141968, 1248084, 1357086, 1535796]
       }
     ],
     "shardSources": [
@@ -27129,14 +27920,14 @@
         "xpRequired": 2400000,
         "power": 414252
       }
-    ],
-    "powerAtStarZero": 22200
+    ]
   },
   {
     "id": "gwen",
     "name": "Gwen",
     "img": "/images/heroes/Gwen/Gwen.jpg",
     "shardImg": "/images/heroes/Gwen/Gwen-Shard.png",
+    "powerAtStarZero": 22200,
     "rarity": "Legendary",
     "class": "Marksman",
     "subClass": "Combat",
@@ -27619,6 +28410,48 @@
       "name": "Wings of Hope",
       "img": "/images/heroes/Gwen/weapons/Gwen-WingsOfHope.png",
       "power": 499500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 66600
+        },
+        {
+          "level": 2,
+          "power": 113220
+        },
+        {
+          "level": 3,
+          "power": 159840
+        },
+        {
+          "level": 4,
+          "power": 206460
+        },
+        {
+          "level": 5,
+          "power": 253080
+        },
+        {
+          "level": 6,
+          "power": 299700
+        },
+        {
+          "level": 7,
+          "power": 349650
+        },
+        {
+          "level": 8,
+          "power": 399600
+        },
+        {
+          "level": 9,
+          "power": 449550
+        },
+        {
+          "level": 10,
+          "power": 499500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1212,
@@ -27650,34 +28483,36 @@
         "star": 1,
         "tierCosts": [1, 1, 2, 2, 2, 2],
         "total": 10,
-        "power": 0,
+        "power": 92796,
         "tierPower": [29748, 39960, 50838, 59940, 72150, 92796]
       },
       {
         "star": 2,
         "tierCosts": [5, 5, 5, 5, 5, 15],
         "total": 40,
-        "power": 0,
+        "power": 221556,
         "tierPower": [109224, 126540, 144744, 164058, 187368, 221556]
       },
       {
         "star": 3,
         "tierCosts": [15, 15, 15, 15, 15, 40],
         "total": 115,
-        "power": 0,
+        "power": 449772,
         "tierPower": [251082, 282162, 318126, 352314, 388944, 449772]
       },
       {
         "star": 4,
         "tierCosts": [40, 40, 40, 40, 40, 100],
         "total": 300,
-        "power": 0
+        "power": 848484,
+        "tierPower": [502164, 561438, 620934, 680652, 744810, 848484]
       },
       {
         "star": 5,
         "tierCosts": [100, 100, 100, 100, 100, 100],
         "total": 600,
-        "power": 0
+        "power": 1535796,
+        "tierPower": [938838, 1038960, 1141968, 1248084, 1357086, 1535796]
       }
     ],
     "shardSources": ["Hall of Heroes", "Daily Deals", "Mythic General Hero Shard"],
@@ -28162,8 +28997,7 @@
         "xpRequired": 2400000,
         "power": 414252
       }
-    ],
-    "powerAtStarZero": 22200
+    ]
   },
   {
     "id": "wu-ming",
@@ -28677,6 +29511,48 @@
       "name": "Dragonslayer",
       "img": "/images/heroes/WuMing/weapons/WuMing-Dragonslayer.png",
       "power": 600750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 80100
+        },
+        {
+          "level": 2,
+          "power": 136170
+        },
+        {
+          "level": 3,
+          "power": 192240
+        },
+        {
+          "level": 4,
+          "power": 248310
+        },
+        {
+          "level": 5,
+          "power": 304380
+        },
+        {
+          "level": 6,
+          "power": 360450
+        },
+        {
+          "level": 7,
+          "power": 420525
+        },
+        {
+          "level": 8,
+          "power": 480600
+        },
+        {
+          "level": 9,
+          "power": 540675
+        },
+        {
+          "level": 10,
+          "power": 600750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 921,
@@ -29730,6 +30606,48 @@
       "name": "Illusion Magiball",
       "img": "/images/heroes/Renee/weapons/Renee-IllusionMagiball.png",
       "power": 600750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 80100
+        },
+        {
+          "level": 2,
+          "power": 136170
+        },
+        {
+          "level": 3,
+          "power": 192240
+        },
+        {
+          "level": 4,
+          "power": 248310
+        },
+        {
+          "level": 5,
+          "power": 304380
+        },
+        {
+          "level": 6,
+          "power": 360450
+        },
+        {
+          "level": 7,
+          "power": 420525
+        },
+        {
+          "level": 8,
+          "power": 480600
+        },
+        {
+          "level": 9,
+          "power": 540675
+        },
+        {
+          "level": 10,
+          "power": 600750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1201,
@@ -30758,6 +31676,48 @@
       "name": "Power Boomerang",
       "img": "/images/heroes/Wayne/weapons/Wayne-PowerBoomerang.png",
       "power": 600750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 80100
+        },
+        {
+          "level": 2,
+          "power": 136170
+        },
+        {
+          "level": 3,
+          "power": 192240
+        },
+        {
+          "level": 4,
+          "power": 248310
+        },
+        {
+          "level": 5,
+          "power": 304380
+        },
+        {
+          "level": 6,
+          "power": 360450
+        },
+        {
+          "level": 7,
+          "power": 420525
+        },
+        {
+          "level": 8,
+          "power": 480600
+        },
+        {
+          "level": 9,
+          "power": 540675
+        },
+        {
+          "level": 10,
+          "power": 600750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1457,
@@ -31817,6 +32777,48 @@
       "name": "Charm Toolkit",
       "img": "/images/heroes/Edith/weapons/Edith-CharmToolkit.png",
       "power": 722250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 96300
+        },
+        {
+          "level": 2,
+          "power": 163710
+        },
+        {
+          "level": 3,
+          "power": 231120
+        },
+        {
+          "level": 4,
+          "power": 298530
+        },
+        {
+          "level": 5,
+          "power": 365940
+        },
+        {
+          "level": 6,
+          "power": 433350
+        },
+        {
+          "level": 7,
+          "power": 505575
+        },
+        {
+          "level": 8,
+          "power": 577800
+        },
+        {
+          "level": 9,
+          "power": 650025
+        },
+        {
+          "level": 10,
+          "power": 722250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1107,
@@ -32927,6 +33929,48 @@
       "name": "Bonecrux Venom",
       "img": "/images/heroes/Gordon/weapons/Gordon-BonecruxVenom.png",
       "power": 722250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 96300
+        },
+        {
+          "level": 2,
+          "power": 163710
+        },
+        {
+          "level": 3,
+          "power": 231120
+        },
+        {
+          "level": 4,
+          "power": 298530
+        },
+        {
+          "level": 5,
+          "power": 365940
+        },
+        {
+          "level": 6,
+          "power": 433350
+        },
+        {
+          "level": 7,
+          "power": 505575
+        },
+        {
+          "level": 8,
+          "power": 577800
+        },
+        {
+          "level": 9,
+          "power": 650025
+        },
+        {
+          "level": 10,
+          "power": 722250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1444,
@@ -33980,6 +35024,48 @@
       "name": "Thunder Cannon",
       "img": "/images/heroes/Bradley/weapons/Bradley-ThunderCannon.png",
       "power": 722250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 96300
+        },
+        {
+          "level": 2,
+          "power": 163710
+        },
+        {
+          "level": 3,
+          "power": 231120
+        },
+        {
+          "level": 4,
+          "power": 298530
+        },
+        {
+          "level": 5,
+          "power": 365940
+        },
+        {
+          "level": 6,
+          "power": 433350
+        },
+        {
+          "level": 7,
+          "power": 505575
+        },
+        {
+          "level": 8,
+          "power": 577800
+        },
+        {
+          "level": 9,
+          "power": 650025
+        },
+        {
+          "level": 10,
+          "power": 722250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1752,
@@ -35033,6 +36119,48 @@
       "name": "Golden Fang",
       "img": "/images/heroes/Gatot/weapons/Gatot-GoldenFang.png",
       "power": 868500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 115800
+        },
+        {
+          "level": 2,
+          "power": 196860
+        },
+        {
+          "level": 3,
+          "power": 277920
+        },
+        {
+          "level": 4,
+          "power": 358980
+        },
+        {
+          "level": 5,
+          "power": 440040
+        },
+        {
+          "level": 6,
+          "power": 521100
+        },
+        {
+          "level": 7,
+          "power": 607950
+        },
+        {
+          "level": 8,
+          "power": 694800
+        },
+        {
+          "level": 9,
+          "power": 781650
+        },
+        {
+          "level": 10,
+          "power": 868500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1331,
@@ -36061,6 +37189,48 @@
       "name": "Mangrove Frog",
       "img": "/images/heroes/Sonya/weapons/Sonya-MangroveFrog.png",
       "power": 868500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 115800
+        },
+        {
+          "level": 2,
+          "power": 196860
+        },
+        {
+          "level": 3,
+          "power": 277920
+        },
+        {
+          "level": 4,
+          "power": 358980
+        },
+        {
+          "level": 5,
+          "power": 440040
+        },
+        {
+          "level": 6,
+          "power": 521100
+        },
+        {
+          "level": 7,
+          "power": 607950
+        },
+        {
+          "level": 8,
+          "power": 694800
+        },
+        {
+          "level": 9,
+          "power": 781650
+        },
+        {
+          "level": 10,
+          "power": 868500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1737,
@@ -37072,6 +38242,48 @@
       "name": "Abyss Driver",
       "img": "/images/heroes/Hendrik/weapons/Hendrik-AbyssDriver.png",
       "power": 868500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 115800
+        },
+        {
+          "level": 2,
+          "power": 196860
+        },
+        {
+          "level": 3,
+          "power": 277920
+        },
+        {
+          "level": 4,
+          "power": 358980
+        },
+        {
+          "level": 5,
+          "power": 440040
+        },
+        {
+          "level": 6,
+          "power": 521100
+        },
+        {
+          "level": 7,
+          "power": 607950
+        },
+        {
+          "level": 8,
+          "power": 694800
+        },
+        {
+          "level": 9,
+          "power": 781650
+        },
+        {
+          "level": 10,
+          "power": 868500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 2107,
@@ -38151,6 +39363,48 @@
       "name": "Storm Axe",
       "img": "/images/heroes/Magnus/weapons/Magnus-StormAxe.png",
       "power": 1044000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 139200
+        },
+        {
+          "level": 2,
+          "power": 236640
+        },
+        {
+          "level": 3,
+          "power": 334080
+        },
+        {
+          "level": 4,
+          "power": 431520
+        },
+        {
+          "level": 5,
+          "power": 528960
+        },
+        {
+          "level": 6,
+          "power": 626400
+        },
+        {
+          "level": 7,
+          "power": 730800
+        },
+        {
+          "level": 8,
+          "power": 835200
+        },
+        {
+          "level": 9,
+          "power": 939600
+        },
+        {
+          "level": 10,
+          "power": 1044000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1600,
@@ -39204,6 +40458,48 @@
       "name": "Blazebearer",
       "img": "/images/heroes/Fred/weapons/Fred-Blazebearer.png",
       "power": 1044000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 139200
+        },
+        {
+          "level": 2,
+          "power": 236640
+        },
+        {
+          "level": 3,
+          "power": 334080
+        },
+        {
+          "level": 4,
+          "power": 431520
+        },
+        {
+          "level": 5,
+          "power": 528960
+        },
+        {
+          "level": 6,
+          "power": 626400
+        },
+        {
+          "level": 7,
+          "power": 730800
+        },
+        {
+          "level": 8,
+          "power": 835200
+        },
+        {
+          "level": 9,
+          "power": 939600
+        },
+        {
+          "level": 10,
+          "power": 1044000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 2088,
@@ -40257,6 +41553,48 @@
       "name": "Witch Mask",
       "img": "/images/heroes/Xura/weapons/Xura-WitchMask.png",
       "power": 1044000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 139200
+        },
+        {
+          "level": 2,
+          "power": 236640
+        },
+        {
+          "level": 3,
+          "power": 334080
+        },
+        {
+          "level": 4,
+          "power": 431520
+        },
+        {
+          "level": 5,
+          "power": 528960
+        },
+        {
+          "level": 6,
+          "power": 626400
+        },
+        {
+          "level": 7,
+          "power": 730800
+        },
+        {
+          "level": 8,
+          "power": 835200
+        },
+        {
+          "level": 9,
+          "power": 939600
+        },
+        {
+          "level": 10,
+          "power": 1044000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 2533,
@@ -41285,6 +42623,48 @@
       "name": "Solarsword",
       "img": "/images/heroes/Gregory/weapons/Gregory-Solarsword.png",
       "power": 1253250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 167100
+        },
+        {
+          "level": 2,
+          "power": 284070
+        },
+        {
+          "level": 3,
+          "power": 401040
+        },
+        {
+          "level": 4,
+          "power": 518010
+        },
+        {
+          "level": 5,
+          "power": 634980
+        },
+        {
+          "level": 6,
+          "power": 751950
+        },
+        {
+          "level": 7,
+          "power": 877275
+        },
+        {
+          "level": 8,
+          "power": 1002600
+        },
+        {
+          "level": 9,
+          "power": 1127925
+        },
+        {
+          "level": 10,
+          "power": 1253250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 1921,
@@ -42370,6 +43750,48 @@
       "name": "Blood Moon Scythe",
       "img": "/images/heroes/Freya/weapons/Freya-BloodMoonScythe.png",
       "power": 1253250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 167100
+        },
+        {
+          "level": 2,
+          "power": 284070
+        },
+        {
+          "level": 3,
+          "power": 401040
+        },
+        {
+          "level": 4,
+          "power": 518010
+        },
+        {
+          "level": 5,
+          "power": 634980
+        },
+        {
+          "level": 6,
+          "power": 751950
+        },
+        {
+          "level": 7,
+          "power": 877275
+        },
+        {
+          "level": 8,
+          "power": 1002600
+        },
+        {
+          "level": 9,
+          "power": 1127925
+        },
+        {
+          "level": 10,
+          "power": 1253250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 2506,
@@ -43398,6 +44820,48 @@
       "name": "Wolf Hunter",
       "img": "/images/heroes/Blanchette/weapons/Blanchette-WolfHunter.png",
       "power": 1253250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 167100
+        },
+        {
+          "level": 2,
+          "power": 284070
+        },
+        {
+          "level": 3,
+          "power": 401040
+        },
+        {
+          "level": 4,
+          "power": 518010
+        },
+        {
+          "level": 5,
+          "power": 634980
+        },
+        {
+          "level": 6,
+          "power": 751950
+        },
+        {
+          "level": 7,
+          "power": 877275
+        },
+        {
+          "level": 8,
+          "power": 1002600
+        },
+        {
+          "level": 9,
+          "power": 1127925
+        },
+        {
+          "level": 10,
+          "power": 1253250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 3041,
@@ -44526,6 +45990,48 @@
       "name": "Scepter of Solaris",
       "img": "/images/heroes/Eleonora/weapons/Eleonora-ScepterOfSolaris.png",
       "power": 1505250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 200700
+        },
+        {
+          "level": 2,
+          "power": 341190
+        },
+        {
+          "level": 3,
+          "power": 481680
+        },
+        {
+          "level": 4,
+          "power": 622170
+        },
+        {
+          "level": 5,
+          "power": 762660
+        },
+        {
+          "level": 6,
+          "power": 903150
+        },
+        {
+          "level": 7,
+          "power": 1053675
+        },
+        {
+          "level": 8,
+          "power": 1204200
+        },
+        {
+          "level": 9,
+          "power": 1354725
+        },
+        {
+          "level": 10,
+          "power": 1505250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 2308,
@@ -45579,6 +47085,48 @@
       "name": "Mastercraft Treasure",
       "img": "/images/heroes/Lloyd/weapons/Lloyd-MastercraftTreasure.png",
       "power": 1505250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 200700
+        },
+        {
+          "level": 2,
+          "power": 341190
+        },
+        {
+          "level": 3,
+          "power": 481680
+        },
+        {
+          "level": 4,
+          "power": 622170
+        },
+        {
+          "level": 5,
+          "power": 762660
+        },
+        {
+          "level": 6,
+          "power": 903150
+        },
+        {
+          "level": 7,
+          "power": 1053675
+        },
+        {
+          "level": 8,
+          "power": 1204200
+        },
+        {
+          "level": 9,
+          "power": 1354725
+        },
+        {
+          "level": 10,
+          "power": 1505250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 3010,
@@ -46665,6 +48213,48 @@
       "name": "Meteor Blaster",
       "img": "/images/heroes/Rufus/weapons/Rufus-MeteorBlaster.png",
       "power": 1505250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 200700
+        },
+        {
+          "level": 2,
+          "power": 341190
+        },
+        {
+          "level": 3,
+          "power": 481680
+        },
+        {
+          "level": 4,
+          "power": 622170
+        },
+        {
+          "level": 5,
+          "power": 762660
+        },
+        {
+          "level": 6,
+          "power": 903150
+        },
+        {
+          "level": 7,
+          "power": 1053675
+        },
+        {
+          "level": 8,
+          "power": 1204200
+        },
+        {
+          "level": 9,
+          "power": 1354725
+        },
+        {
+          "level": 10,
+          "power": 1505250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 3652,
@@ -47743,6 +49333,48 @@
       "name": "Hammer of Sathla",
       "img": "/images/heroes/Hervor/weapons/Hervor-HammerOfSathla.png",
       "power": 1806750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 240900
+        },
+        {
+          "level": 2,
+          "power": 409530
+        },
+        {
+          "level": 3,
+          "power": 578160
+        },
+        {
+          "level": 4,
+          "power": 746790
+        },
+        {
+          "level": 5,
+          "power": 915420
+        },
+        {
+          "level": 6,
+          "power": 1084050
+        },
+        {
+          "level": 7,
+          "power": 1264725
+        },
+        {
+          "level": 8,
+          "power": 1445400
+        },
+        {
+          "level": 9,
+          "power": 1626075
+        },
+        {
+          "level": 10,
+          "power": 1806750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 2770,
@@ -48846,6 +50478,48 @@
       "name": "Spirit of Winterwind",
       "img": "/images/heroes/Karol/weapons/Karol-SpiritOfWinterwind.png",
       "power": 1806750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 240900
+        },
+        {
+          "level": 2,
+          "power": 409530
+        },
+        {
+          "level": 3,
+          "power": 578160
+        },
+        {
+          "level": 4,
+          "power": 746790
+        },
+        {
+          "level": 5,
+          "power": 915420
+        },
+        {
+          "level": 6,
+          "power": 1084050
+        },
+        {
+          "level": 7,
+          "power": 1264725
+        },
+        {
+          "level": 8,
+          "power": 1445400
+        },
+        {
+          "level": 9,
+          "power": 1626075
+        },
+        {
+          "level": 10,
+          "power": 1806750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 3613,
@@ -49949,6 +51623,48 @@
       "name": "Fateweaver",
       "img": "/images/heroes/Ligeia/weapons/Ligeia-Fateweaver.png",
       "power": 1806750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 240900
+        },
+        {
+          "level": 2,
+          "power": 409530
+        },
+        {
+          "level": 3,
+          "power": 578160
+        },
+        {
+          "level": 4,
+          "power": 746790
+        },
+        {
+          "level": 5,
+          "power": 915420
+        },
+        {
+          "level": 6,
+          "power": 1084050
+        },
+        {
+          "level": 7,
+          "power": 1264725
+        },
+        {
+          "level": 8,
+          "power": 1445400
+        },
+        {
+          "level": 9,
+          "power": 1626075
+        },
+        {
+          "level": 10,
+          "power": 1806750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 4384,
@@ -51010,6 +52726,48 @@
       "name": "Helacore",
       "img": "/images/heroes/Gisela/weapons/Gisela-Helacore.png",
       "power": 2169000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 289200
+        },
+        {
+          "level": 2,
+          "power": 491640
+        },
+        {
+          "level": 3,
+          "power": 694080
+        },
+        {
+          "level": 4,
+          "power": 896520
+        },
+        {
+          "level": 5,
+          "power": 1098960
+        },
+        {
+          "level": 6,
+          "power": 1301400
+        },
+        {
+          "level": 7,
+          "power": 1518300
+        },
+        {
+          "level": 8,
+          "power": 1735200
+        },
+        {
+          "level": 9,
+          "power": 1952100
+        },
+        {
+          "level": 10,
+          "power": 2169000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 3325,
@@ -52121,6 +53879,48 @@
       "name": "Kernel of Plenty",
       "img": "/images/heroes/Flora/weapons/Flora-KernelOfPlenty.png",
       "power": 2169000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 289200
+        },
+        {
+          "level": 2,
+          "power": 491640
+        },
+        {
+          "level": 3,
+          "power": 694080
+        },
+        {
+          "level": 4,
+          "power": 896520
+        },
+        {
+          "level": 5,
+          "power": 1098960
+        },
+        {
+          "level": 6,
+          "power": 1301400
+        },
+        {
+          "level": 7,
+          "power": 1518300
+        },
+        {
+          "level": 8,
+          "power": 1735200
+        },
+        {
+          "level": 9,
+          "power": 1952100
+        },
+        {
+          "level": 10,
+          "power": 2169000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 4338,
@@ -53199,6 +54999,48 @@
       "name": "Doom Sigil",
       "img": "/images/heroes/Vulcanus/weapons/Vulcanus-DoomSigil.png",
       "power": 2169000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 289200
+        },
+        {
+          "level": 2,
+          "power": 491640
+        },
+        {
+          "level": 3,
+          "power": 694080
+        },
+        {
+          "level": 4,
+          "power": 896520
+        },
+        {
+          "level": 5,
+          "power": 1098960
+        },
+        {
+          "level": 6,
+          "power": 1301400
+        },
+        {
+          "level": 7,
+          "power": 1518300
+        },
+        {
+          "level": 8,
+          "power": 1735200
+        },
+        {
+          "level": 9,
+          "power": 1952100
+        },
+        {
+          "level": 10,
+          "power": 2169000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 5263,
@@ -54252,6 +56094,48 @@
       "name": "Moonscar Lv.10",
       "img": "/images/heroes/Elif/weapons/Elif-MoonscarLv10.png",
       "power": 2603250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 347100
+        },
+        {
+          "level": 2,
+          "power": 590070
+        },
+        {
+          "level": 3,
+          "power": 833040
+        },
+        {
+          "level": 4,
+          "power": 1076010
+        },
+        {
+          "level": 5,
+          "power": 1318980
+        },
+        {
+          "level": 6,
+          "power": 1561950
+        },
+        {
+          "level": 7,
+          "power": 1822275
+        },
+        {
+          "level": 8,
+          "power": 2082600
+        },
+        {
+          "level": 9,
+          "power": 2342925
+        },
+        {
+          "level": 10,
+          "power": 2603250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 3991,
@@ -55328,6 +57212,48 @@
       "name": "Exobox",
       "img": "/images/heroes/Dominic/weapons/Dominic-Exobox.png",
       "power": 2603250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 347100
+        },
+        {
+          "level": 2,
+          "power": 590070
+        },
+        {
+          "level": 3,
+          "power": 833040
+        },
+        {
+          "level": 4,
+          "power": 1076010
+        },
+        {
+          "level": 5,
+          "power": 1318980
+        },
+        {
+          "level": 6,
+          "power": 1561950
+        },
+        {
+          "level": 7,
+          "power": 1822275
+        },
+        {
+          "level": 8,
+          "power": 2082600
+        },
+        {
+          "level": 9,
+          "power": 2342925
+        },
+        {
+          "level": 10,
+          "power": 2603250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 5206,
@@ -56386,6 +58312,48 @@
       "name": "Velocomet",
       "img": "/images/heroes/Cara/weapons/Cara-Velocomet.png",
       "power": 2603250,
+      "levels": [
+        {
+          "level": 1,
+          "power": 347100
+        },
+        {
+          "level": 2,
+          "power": 590070
+        },
+        {
+          "level": 3,
+          "power": 833040
+        },
+        {
+          "level": 4,
+          "power": 1076010
+        },
+        {
+          "level": 5,
+          "power": 1318980
+        },
+        {
+          "level": 6,
+          "power": 1561950
+        },
+        {
+          "level": 7,
+          "power": 1822275
+        },
+        {
+          "level": 8,
+          "power": 2082600
+        },
+        {
+          "level": 9,
+          "power": 2342925
+        },
+        {
+          "level": 10,
+          "power": 2603250
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 6317,
@@ -57462,6 +59430,48 @@
       "name": "Roaring Rage",
       "img": "/images/heroes/Hank/weapons/Hank-RoaringRage.png",
       "power": 3123000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 416400
+        },
+        {
+          "level": 2,
+          "power": 707880
+        },
+        {
+          "level": 3,
+          "power": 999360
+        },
+        {
+          "level": 4,
+          "power": 1290840
+        },
+        {
+          "level": 5,
+          "power": 1582320
+        },
+        {
+          "level": 6,
+          "power": 1873800
+        },
+        {
+          "level": 7,
+          "power": 2186100
+        },
+        {
+          "level": 8,
+          "power": 2498400
+        },
+        {
+          "level": 9,
+          "power": 2810700
+        },
+        {
+          "level": 10,
+          "power": 3123000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 4788,
@@ -58563,6 +60573,48 @@
       "name": "Dreamscape Painting",
       "img": "/images/heroes/Estrella/weapons/Estrella-DreamscapePainting.png",
       "power": 3123000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 416400
+        },
+        {
+          "level": 2,
+          "power": 707880
+        },
+        {
+          "level": 3,
+          "power": 999360
+        },
+        {
+          "level": 4,
+          "power": 1290840
+        },
+        {
+          "level": 5,
+          "power": 1582320
+        },
+        {
+          "level": 6,
+          "power": 1873800
+        },
+        {
+          "level": 7,
+          "power": 2186100
+        },
+        {
+          "level": 8,
+          "power": 2498400
+        },
+        {
+          "level": 9,
+          "power": 2810700
+        },
+        {
+          "level": 10,
+          "power": 3123000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 6246,
@@ -59639,6 +61691,48 @@
       "name": "Dark Star",
       "img": "/images/heroes/Viveca/weapons/Viveca-DarkStar.png",
       "power": 3123000,
+      "levels": [
+        {
+          "level": 1,
+          "power": 416400
+        },
+        {
+          "level": 2,
+          "power": 707880
+        },
+        {
+          "level": 3,
+          "power": 999360
+        },
+        {
+          "level": 4,
+          "power": 1290840
+        },
+        {
+          "level": 5,
+          "power": 1582320
+        },
+        {
+          "level": 6,
+          "power": 1873800
+        },
+        {
+          "level": 7,
+          "power": 2186100
+        },
+        {
+          "level": 8,
+          "power": 2498400
+        },
+        {
+          "level": 9,
+          "power": 2810700
+        },
+        {
+          "level": 10,
+          "power": 3123000
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 7578,
@@ -60773,6 +62867,48 @@
       "name": "Blacklight Halberd",
       "img": "/images/heroes/Seigel/weapons/Seigel-BlacklightHalberd.png",
       "power": 3748500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 499800
+        },
+        {
+          "level": 2,
+          "power": 849660
+        },
+        {
+          "level": 3,
+          "power": 1199520
+        },
+        {
+          "level": 4,
+          "power": 1549380
+        },
+        {
+          "level": 5,
+          "power": 1899240
+        },
+        {
+          "level": 6,
+          "power": 2249100
+        },
+        {
+          "level": 7,
+          "power": 2623950
+        },
+        {
+          "level": 8,
+          "power": 2998800
+        },
+        {
+          "level": 9,
+          "power": 3373650
+        },
+        {
+          "level": 10,
+          "power": 3748500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 5747,
@@ -61855,6 +63991,48 @@
       "name": "Progenitor Spear",
       "img": "/images/heroes/Ursar/weapons/Ursar-ProgenitorSpear.png",
       "power": 3748500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 499800
+        },
+        {
+          "level": 2,
+          "power": 849660
+        },
+        {
+          "level": 3,
+          "power": 1199520
+        },
+        {
+          "level": 4,
+          "power": 1549380
+        },
+        {
+          "level": 5,
+          "power": 1899240
+        },
+        {
+          "level": 6,
+          "power": 2249100
+        },
+        {
+          "level": 7,
+          "power": 2623950
+        },
+        {
+          "level": 8,
+          "power": 2998800
+        },
+        {
+          "level": 9,
+          "power": 3373650
+        },
+        {
+          "level": 10,
+          "power": 3748500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 7497,
@@ -62881,6 +65059,48 @@
       "name": "Cord of Destiny",
       "img": "/images/heroes/Aisling/weapons/Aisling-CordOfDestiny.png",
       "power": 3748500,
+      "levels": [
+        {
+          "level": 1,
+          "power": 499800
+        },
+        {
+          "level": 2,
+          "power": 849660
+        },
+        {
+          "level": 3,
+          "power": 1199520
+        },
+        {
+          "level": 4,
+          "power": 1549380
+        },
+        {
+          "level": 5,
+          "power": 1899240
+        },
+        {
+          "level": 6,
+          "power": 2249100
+        },
+        {
+          "level": 7,
+          "power": 2623950
+        },
+        {
+          "level": 8,
+          "power": 2998800
+        },
+        {
+          "level": 9,
+          "power": 3373650
+        },
+        {
+          "level": 10,
+          "power": 3748500
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 9096,
@@ -63957,6 +66177,48 @@
       "name": "Burning Fist",
       "img": "/images/heroes/Aiden/weapons/Aiden-BurningFist.png",
       "power": 4497750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 599700
+        },
+        {
+          "level": 2,
+          "power": 1019490
+        },
+        {
+          "level": 3,
+          "power": 1439280
+        },
+        {
+          "level": 4,
+          "power": 1859070
+        },
+        {
+          "level": 5,
+          "power": 2278860
+        },
+        {
+          "level": 6,
+          "power": 2698650
+        },
+        {
+          "level": 7,
+          "power": 3148425
+        },
+        {
+          "level": 8,
+          "power": 3598200
+        },
+        {
+          "level": 9,
+          "power": 4047975
+        },
+        {
+          "level": 10,
+          "power": 4497750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 6896,
@@ -65033,6 +67295,48 @@
       "name": "Adjudicator",
       "img": "/images/heroes/Bertha/weapons/Bertha-Adjudicator.png",
       "power": 4497750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 599700
+        },
+        {
+          "level": 2,
+          "power": 1019490
+        },
+        {
+          "level": 3,
+          "power": 1439280
+        },
+        {
+          "level": 4,
+          "power": 1859070
+        },
+        {
+          "level": 5,
+          "power": 2278860
+        },
+        {
+          "level": 6,
+          "power": 2698650
+        },
+        {
+          "level": 7,
+          "power": 3148425
+        },
+        {
+          "level": 8,
+          "power": 3598200
+        },
+        {
+          "level": 9,
+          "power": 4047975
+        },
+        {
+          "level": 10,
+          "power": 4497750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 8995,
@@ -66116,6 +68420,48 @@
       "name": "The Warden",
       "img": "/images/heroes/Eleanor/weapons/Eleanor-TheWarden.png",
       "power": 4497750,
+      "levels": [
+        {
+          "level": 1,
+          "power": 599700
+        },
+        {
+          "level": 2,
+          "power": 1019490
+        },
+        {
+          "level": 3,
+          "power": 1439280
+        },
+        {
+          "level": 4,
+          "power": 1859070
+        },
+        {
+          "level": 5,
+          "power": 2278860
+        },
+        {
+          "level": 6,
+          "power": 2698650
+        },
+        {
+          "level": 7,
+          "power": 3148425
+        },
+        {
+          "level": 8,
+          "power": 3598200
+        },
+        {
+          "level": 9,
+          "power": 4047975
+        },
+        {
+          "level": 10,
+          "power": 4497750
+        }
+      ],
       "stats": {
         "exploration": {
           "attack": 10914,
