@@ -14,8 +14,8 @@
     "fireCrystalLevelIds": [],
     "unlocks": [
       {
-        "name": "Mythic T4 Chief Gear Unlocks",
-        "key": "chief-gear-mythic-t4",
+        "name": "Mythic Chief Gear Unlocks",
+        "key": "chief-gear-mythic",
         "images": [
           "/images/chief-gear/Cap-Mythic.png",
           "/images/chief-gear/Watch-Mythic.png",
