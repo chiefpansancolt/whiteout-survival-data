@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.6.3] - 2026-10-16
+
+### Fixed
+
+#### Game Data
+
+- `serverTimeline()`: added Gareth who was missing
+- `experts()`: added proper unlock days to Gareth and Justus.
+
 ## [0.6.2] - 2026-10-16
 
 ### Fixed

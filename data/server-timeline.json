@@ -300,7 +300,7 @@
       "norah": ["king-of-icefield", "svs-state-of-power"],
       "gwen": ["hall-of-heroes"]
     },
-    "expertIds": [],
+    "expertIds": ["gareth"],
     "petIds": [],
     "eventIds": [],
     "fireCrystalLevelIds": [],

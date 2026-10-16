@@ -10067,6 +10067,9 @@
     "title": "Ironthorn Chief",
     "specialty": "Troop Survivability",
     "generation": 3,
+    "unlockRequirement": {
+      "daysRequired": 270
+    },
     "baseBonuses": [
       {
         "stat": "Troops Lethality",
@@ -11281,7 +11284,7 @@
     "img": "/images/experts/Justus/Justus.png",
     "unreleased": true,
     "unlockRequirement": {
-      "heroGeneration": 6
+      "daysRequired": 360
     }
   }
 ]
