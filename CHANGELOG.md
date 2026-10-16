@@ -7,6 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game Data
+
+- `serverTimeline()`: the server age at which Chief Gear tiers, Chief Charm levels, and the Chief
+  Gear and Chief Charm converters unlock, with icons of the highest gear and charms.
+
 ## [0.5.0] - 2026-10-15
 
 ### Added

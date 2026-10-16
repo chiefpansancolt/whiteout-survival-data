@@ -88,16 +88,16 @@ the age itself is unlocked.
 The module holds 33 milestones from `data/server-timeline.json`, from day 0 to day 1240. Each
 milestone has these fields.
 
-| Field                 | Meaning                                                                                             |
-| --------------------- | --------------------------------------------------------------------------------------------------- |
-| `day`                 | Server age in days at which the content unlocks. Day 0 is the server start date                     |
-| `heroIds`             | Ids of the heroes that unlock. Resolve with `heroes()`                                              |
-| `heroShardEventIds`   | Ids of the events that give shards of each hero, by hero id. A hero with no listed event has no key |
-| `expertIds`           | Ids of the experts that unlock. Resolve with `experts()`                                            |
-| `petIds`              | Ids of the pets that unlock. Resolve with `pets()`                                                  |
-| `eventIds`            | Ids of the events that unlock. Resolve with `events()`                                              |
-| `fireCrystalLevelIds` | Ids of the Fire Crystal levels that unlock, such as `fc-5`. Resolve with `resolve()`                |
-| `unlocks`             | Everything else that unlocks, as `name`, an optional `key`, and an optional `itemId`                |
+| Field                 | Meaning                                                                                                                            |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `day`                 | Server age in days at which the content unlocks. Day 0 is the server start date                                                    |
+| `heroIds`             | Ids of the heroes that unlock. Resolve with `heroes()`                                                                             |
+| `heroShardEventIds`   | Ids of the events that give shards of each hero, by hero id. A hero with no listed event has no key                                |
+| `expertIds`           | Ids of the experts that unlock. Resolve with `experts()`                                                                           |
+| `petIds`              | Ids of the pets that unlock. Resolve with `pets()`                                                                                 |
+| `eventIds`            | Ids of the events that unlock. Resolve with `events()`                                                                             |
+| `fireCrystalLevelIds` | Ids of the Fire Crystal levels that unlock, such as `fc-5`. Resolve with `resolve()`                                               |
+| `unlocks`             | Everything else that unlocks, as `name`, an optional `key`, an optional `itemId`, optional `images`, and an optional `requirement` |
 
 ## Notes
 
@@ -133,6 +133,24 @@ and one for the other three events. Generation 1 and Generations 10 to 17 use `s
 
 Hall of Chief is listed only for Philly (Generation 2). It is left out for Generation 3 and later by
 choice.
+
+Chief Gear and Chief Charms unlock by server age. Mythic T4 Chief Gear and Chief Charm levels 1 to
+11 are on day 0. Legendary T4 Chief Gear is on day 180. Chief Charm levels 12 to 16 are on day 440,
+and Legendary T5 and T6 Chief Gear and Chief Charm levels 17 and 18 are on day 520. The keys are
+`chief-gear-mythic-t4`, `chief-gear-legendary-t4`, `chief-gear-legendary-t5-t6`,
+`chief-charm-levels-1-11`, `chief-charm-levels-12-16`, and `chief-charm-levels-17-18`.
+
+The Chief Gear unlocks have `images` with the six gear pieces of the highest quality: Mythic on day
+0 and Legendary on days 180 and 520. The Chief Charm unlocks have `images` with the charm of each
+troop type at the highest level of the unlock: level 11, 16, and 18. The paths come from
+[`chiefGearSlots()`](../chief-gear/README.md) and [`chiefCharmSlots()`](../chief-charm/README.md).
+
+The two converters have a `requirement`. The Chief Gear converter (`chief-gear-converter`) unlocks
+on day 180 and needs 1 Legendary Chief Gear. The Chief Charm converter (`chief-charm-converter`)
+unlocks with the generation 7 heroes on day 440 and needs 1 level 11 Chief Charm. The rates of the
+converters are in [`chiefGearConverter()`](../chief-gear-converter/README.md) and
+[`chiefCharmConverter()`](../chief-charm-converter/README.md). The earlier "Legendary Chief Gear
+Unlocks" line on day 180 is now the Legendary T4 entry.
 
 The Fire Crystal level badges come from `data/fire-crystal-levels.json`. Each has a `level` from 1
 to 10 and an `img` in `images/fire-crystal/`. The images are 52 by 52 pixel crops, so they are small

@@ -9,12 +9,16 @@ export interface ServerTimelineUnlock {
   name: string;
   key?: string;
   itemId?: string;
+  images?: string[];
+  requirement?: string;
 }
 
 export interface ResolvedServerTimelineUnlock {
   name: string;
   key?: string;
   item?: Item;
+  images?: string[];
+  requirement?: string;
 }
 
 export interface ServerTimelineMilestone {

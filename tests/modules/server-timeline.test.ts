@@ -1,3 +1,5 @@
+import { chiefCharmSlots } from '@/modules/chief-charm';
+import { chiefGearSlots } from '@/modules/chief-gear';
 import { events } from '@/modules/events';
 import { experts, unreleasedExperts } from '@/modules/experts';
 import { heroes } from '@/modules/heroes';
@@ -354,6 +356,94 @@ describe('unlock keys', () => {
   it('marks the War Academy unlock on day 220 and the T12 research unlock on day 680', () => {
     expect(dayOfKey('war-academy')).toBe(220);
     expect(dayOfKey('t12-research')).toBe(680);
+  });
+
+  it('unlocks Chief Gear by server age: Mythic T4 on day 0, Legendary T4 on day 180, T5 and T6 on day 520', () => {
+    expect(dayOfKey('chief-gear-mythic-t4')).toBe(0);
+    expect(dayOfKey('chief-gear-legendary-t4')).toBe(180);
+    expect(dayOfKey('chief-gear-legendary-t5-t6')).toBe(520);
+  });
+
+  it('unlocks Chief Charm levels by server age: 1 to 11 on day 0, 12 to 16 on day 440, 17 and 18 on day 520', () => {
+    expect(dayOfKey('chief-charm-levels-1-11')).toBe(0);
+    expect(dayOfKey('chief-charm-levels-12-16')).toBe(440);
+    expect(dayOfKey('chief-charm-levels-17-18')).toBe(520);
+  });
+
+  it('unlocks the Chief Gear converter on day 180 and the Chief Charm converter with the generation 7 heroes', () => {
+    expect(dayOfKey('chief-gear-converter')).toBe(180);
+    const generation7 = serverTimeline()
+      .get()
+      .find((m) => m.heroIds.includes('edith'))!;
+    expect(dayOfKey('chief-charm-converter')).toBe(generation7.day);
+    expect(generation7.day).toBe(440);
+  });
+
+  it('states what a piece must have for a converter to unlock', () => {
+    const requirement = (key: string) =>
+      serverTimeline()
+        .get()
+        .flatMap((m) => m.unlocks)
+        .find((u) => u.key === key)?.requirement;
+    expect(requirement('chief-gear-converter')).toBe('Own 1 Legendary Chief Gear');
+    expect(requirement('chief-charm-converter')).toContain('level 11 Chief Charm');
+  });
+
+  it('keeps the requirement on the resolved unlock', () => {
+    const [resolved] = new ServerTimelineQuery([serverTimeline().find('day-180')!]).resolve();
+    expect(resolved.unlocks[1]).toEqual({
+      name: 'Chief Gear Converter Unlocks',
+      key: 'chief-gear-converter',
+      requirement: 'Own 1 Legendary Chief Gear',
+    });
+  });
+
+  describe('icons of the highest gear and charms', () => {
+    const imagesOfKey = (key: string) =>
+      serverTimeline()
+        .get()
+        .flatMap((m) => m.unlocks)
+        .find((u) => u.key === key)?.images;
+    const gearImages = (quality: 'Mythic' | 'Legendary') =>
+      chiefGearSlots()
+        .get()
+        .map((slot) => slot.images[quality]);
+    const charmImages = (level: number) =>
+      chiefCharmSlots()
+        .get()
+        .map((slot) => slot.images[level - 1]);
+
+    it('shows the six gear pieces of the highest quality of the unlock', () => {
+      expect(imagesOfKey('chief-gear-mythic-t4')).toEqual(gearImages('Mythic'));
+      expect(imagesOfKey('chief-gear-legendary-t4')).toEqual(gearImages('Legendary'));
+      expect(imagesOfKey('chief-gear-legendary-t5-t6')).toEqual(gearImages('Legendary'));
+      expect(imagesOfKey('chief-gear-mythic-t4')).toHaveLength(6);
+    });
+
+    it('shows the charm of each troop type at the highest level of the unlock', () => {
+      expect(imagesOfKey('chief-charm-levels-1-11')).toEqual(charmImages(11));
+      expect(imagesOfKey('chief-charm-levels-12-16')).toEqual(charmImages(16));
+      expect(imagesOfKey('chief-charm-levels-17-18')).toEqual(charmImages(18));
+      expect(imagesOfKey('chief-charm-levels-17-18')).toHaveLength(3);
+    });
+
+    it('points at image files that exist, and has no images on the converters', () => {
+      serverTimeline()
+        .get()
+        .flatMap((m) => m.unlocks)
+        .forEach((u) => {
+          (u.images ?? []).forEach((img) =>
+            expect(existsSync(join(__dirname, '../..', img))).toBe(true),
+          );
+        });
+      expect(imagesOfKey('chief-gear-converter')).toBeUndefined();
+      expect(imagesOfKey('chief-charm-converter')).toBeUndefined();
+    });
+
+    it('keeps the images on the resolved unlock', () => {
+      const [resolved] = new ServerTimelineQuery([serverTimeline().find('day-0')!]).resolve();
+      expect(resolved.unlocks[0].images).toEqual(gearImages('Mythic'));
+    });
   });
 
   it('keeps the key on the resolved unlock', () => {

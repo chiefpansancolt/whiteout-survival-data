@@ -12,7 +12,29 @@
     "petIds": [],
     "eventIds": [],
     "fireCrystalLevelIds": [],
-    "unlocks": []
+    "unlocks": [
+      {
+        "name": "Mythic T4 Chief Gear Unlocks",
+        "key": "chief-gear-mythic-t4",
+        "images": [
+          "/images/chief-gear/Cap-Mythic.png",
+          "/images/chief-gear/Watch-Mythic.png",
+          "/images/chief-gear/Coat-Mythic.png",
+          "/images/chief-gear/Pants-Mythic.png",
+          "/images/chief-gear/Ring-Mythic.png",
+          "/images/chief-gear/Weapon-Mythic.png"
+        ]
+      },
+      {
+        "name": "Chief Charm Levels 1 to 11 Unlock",
+        "key": "chief-charm-levels-1-11",
+        "images": [
+          "/images/chief-charm/Infantry-11.png",
+          "/images/chief-charm/Lancer-11.png",
+          "/images/chief-charm/Marksman-11.png"
+        ]
+      }
+    ]
   },
   {
     "id": "day-40",
@@ -180,7 +202,21 @@
     "fireCrystalLevelIds": [],
     "unlocks": [
       {
-        "name": "Legendary Chief Gear Unlocks"
+        "name": "Legendary T4 Chief Gear Unlocks",
+        "key": "chief-gear-legendary-t4",
+        "images": [
+          "/images/chief-gear/Cap-Legendary.png",
+          "/images/chief-gear/Watch-Legendary.png",
+          "/images/chief-gear/Coat-Legendary.png",
+          "/images/chief-gear/Pants-Legendary.png",
+          "/images/chief-gear/Ring-Legendary.png",
+          "/images/chief-gear/Weapon-Legendary.png"
+        ]
+      },
+      {
+        "name": "Chief Gear Converter Unlocks",
+        "key": "chief-gear-converter",
+        "requirement": "Own 1 Legendary Chief Gear"
       }
     ]
   },
@@ -343,7 +379,22 @@
     "petIds": [],
     "eventIds": [],
     "fireCrystalLevelIds": [],
-    "unlocks": []
+    "unlocks": [
+      {
+        "name": "Chief Charm Levels 12 to 16 Unlock",
+        "key": "chief-charm-levels-12-16",
+        "images": [
+          "/images/chief-charm/Infantry-16.png",
+          "/images/chief-charm/Lancer-16.png",
+          "/images/chief-charm/Marksman-16.png"
+        ]
+      },
+      {
+        "name": "Chief Charm Converter Unlocks",
+        "key": "chief-charm-converter",
+        "requirement": "Own 1 level 11 Chief Charm. Unlocks with the generation 7 heroes"
+      }
+    ]
   },
   {
     "id": "day-500",
@@ -371,7 +422,29 @@
     "petIds": [],
     "eventIds": [],
     "fireCrystalLevelIds": [],
-    "unlocks": []
+    "unlocks": [
+      {
+        "name": "Legendary T5 and T6 Chief Gear Unlock",
+        "key": "chief-gear-legendary-t5-t6",
+        "images": [
+          "/images/chief-gear/Cap-Legendary.png",
+          "/images/chief-gear/Watch-Legendary.png",
+          "/images/chief-gear/Coat-Legendary.png",
+          "/images/chief-gear/Pants-Legendary.png",
+          "/images/chief-gear/Ring-Legendary.png",
+          "/images/chief-gear/Weapon-Legendary.png"
+        ]
+      },
+      {
+        "name": "Chief Charm Levels 17 and 18 Unlock",
+        "key": "chief-charm-levels-17-18",
+        "images": [
+          "/images/chief-charm/Infantry-18.png",
+          "/images/chief-charm/Lancer-18.png",
+          "/images/chief-charm/Marksman-18.png"
+        ]
+      }
+    ]
   },
   {
     "id": "day-600",
