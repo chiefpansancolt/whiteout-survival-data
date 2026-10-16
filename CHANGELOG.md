@@ -22,7 +22,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
-- `serverTimeline()`: fix Chief Gear text to say Mythic Level instead of T4 since T2 is the highest before Legendary.
+- `serverTimeline()`: fix Chief Gear text to say Mythic Level instead of T4 since T2 is the highest
+  before Legendary.
 
 ## [0.6.1] - 2026-10-16
 
