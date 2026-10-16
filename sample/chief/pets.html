@@ -150,6 +150,14 @@
   .stat-divider { width: 1px; align-self: stretch; background: var(--panel-border); }
 
   .section { margin-bottom: 24px; }
+  .power-controls { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: flex-end; margin-bottom: 12px; }
+  .power-controls label { display: flex; flex-direction: column; gap: 4px; font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+  .power-controls input[type="number"] { width: 96px; background: var(--bg); border: 1px solid var(--panel-border); color: var(--text); border-radius: 6px; padding: 6px 8px; font-size: 0.9rem; }
+  .power-controls label.check { flex-direction: row; align-items: center; gap: 6px; padding-bottom: 8px; }
+  .power-results { display: flex; flex-wrap: wrap; gap: 10px; }
+  .power-results .card { min-width: 150px; }
+  .power-results .card.sum { border-color: var(--accent); }
+  .power-results .card.sum .value { color: var(--accent); }
   .section-note { color: var(--text-dim); font-size: 0.78rem; margin: -4px 0 12px; }
 
   .skill {
@@ -317,7 +325,7 @@
           "value": 0.25
         },
         "troopsPower": {
-          "value": 1800
+          "value": 18000
         }
       },
       {
@@ -524,8 +532,7 @@
           "refinedValue": 1.85
         },
         "troopsPower": {
-          "value": 102960,
-          "refinedValue": 0
+          "value": 102960
         },
         "advancementMaterials": [
           {
@@ -2771,9 +2778,10 @@
     "maxLevel": 70,
     "maxRefinementPercent": 20.11,
     "unlockRequirement": {
-      "daysRequired": 90,
+      "daysRequired": 54,
       "prerequisitePet": {
         "name": "Musk Ox",
+        "petId": "musk-ox",
         "level": 15
       }
     },
@@ -3814,9 +3822,10 @@
     "maxLevel": 70,
     "maxRefinementPercent": 20.11,
     "unlockRequirement": {
-      "daysRequired": 90,
+      "daysRequired": 54,
       "prerequisitePet": {
         "name": "Giant Tapir",
+        "petId": "giant-tapir",
         "level": 15
       }
     },
@@ -4857,9 +4866,10 @@
     "maxLevel": 80,
     "maxRefinementPercent": 29.05,
     "unlockRequirement": {
-      "daysRequired": 140,
+      "daysRequired": 90,
       "prerequisitePet": {
         "name": "Titan Roc",
+        "petId": "titan-roc",
         "level": 15
       }
     },
@@ -6059,9 +6069,10 @@
     "maxLevel": 80,
     "maxRefinementPercent": 29.05,
     "unlockRequirement": {
-      "daysRequired": 140,
+      "daysRequired": 90,
       "prerequisitePet": {
         "name": "Giant Elk",
+        "petId": "giant-elk",
         "level": 15
       }
     },
@@ -7253,9 +7264,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 44.69,
     "unlockRequirement": {
-      "daysRequired": 200,
+      "daysRequired": 140,
       "prerequisitePet": {
         "name": "Snow Leopard",
+        "petId": "snow-leopard",
         "level": 15
       }
     },
@@ -8745,9 +8757,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 44.69,
     "unlockRequirement": {
-      "daysRequired": 200,
+      "daysRequired": 140,
       "prerequisitePet": {
         "name": "Cave Lion",
+        "petId": "cave-lion",
         "level": 30
       }
     },
@@ -10237,9 +10250,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 49.16,
     "unlockRequirement": {
-      "daysRequired": 280,
+      "daysRequired": 200,
       "prerequisitePet": {
         "name": "Snow Ape",
+        "petId": "snow-ape",
         "level": 30
       }
     },
@@ -11729,9 +11743,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 49.16,
     "unlockRequirement": {
-      "daysRequired": 280,
+      "daysRequired": 200,
       "prerequisitePet": {
         "name": "Iron Rhino",
+        "petId": "iron-rhino",
         "level": 30
       }
     },
@@ -13221,9 +13236,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 49.16,
     "unlockRequirement": {
-      "daysRequired": 370,
+      "daysRequired": 280,
       "prerequisitePet": {
         "name": "Saber-tooth Tiger",
+        "petId": "saber-tooth-tiger",
         "level": 30
       }
     },
@@ -14713,9 +14729,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 49.16,
     "unlockRequirement": {
-      "daysRequired": 370,
+      "daysRequired": 280,
       "prerequisitePet": {
         "name": "Mammoth",
+        "petId": "mammoth",
         "level": 30
       }
     },
@@ -16204,9 +16221,10 @@
     "maxLevel": 100,
     "maxRefinementPercent": 58.1,
     "unlockRequirement": {
-      "daysRequired": 450,
+      "daysRequired": 370,
       "prerequisitePet": {
         "name": "Frost Gorilla",
+        "petId": "frost-gorilla",
         "level": 30
       }
     },
@@ -17718,6 +17736,10 @@
     const counts = {};
     DATA.forEach((p) => (counts[p.rarity] = (counts[p.rarity] || 0) + 1));
     const maxLevel = Math.max(...DATA.map((p) => p.maxLevel));
+    const maxPowerSums = DATA.map(maxPower).reduce(
+      (sum, m) => ({ levelAndAdvancement: sum.levelAndAdvancement + m.levelAndAdvancement, refining: sum.refining + m.refining, total: sum.total + m.total }),
+      { levelAndAdvancement: 0, refining: 0, total: 0 },
+    );
     const cards = [
       `<div class="card total"><div class="value">${fmt(DATA.length)}</div><div class="label">Total Pets</div></div>`,
       ...Object.keys(counts).map(
@@ -17725,6 +17747,9 @@
           `<div class="card"><div class="value">${fmt(counts[rarity])}</div><div class="label">${rarity}</div></div>`,
       ),
       `<div class="card"><div class="value">${fmt(maxLevel)}</div><div class="label">Max Level Tracked</div></div>`,
+      `<div class="card"><div class="value">${fmt(maxPowerSums.levelAndAdvancement)}</div><div class="label">Max Level + Advancement Power, all pets</div></div>`,
+      `<div class="card"><div class="value">${fmt(maxPowerSums.refining)}</div><div class="label">Max Refining Power, all pets</div></div>`,
+      `<div class="card total"><div class="value">${fmt(maxPowerSums.total)}</div><div class="label">Max Pet Power, all pets</div></div>`,
     ];
     el.innerHTML = cards.join('');
   }
@@ -17762,6 +17787,89 @@
         renderDetail();
       });
     });
+  }
+
+  const REFINEMENT_STATS = [
+    ['Infantry Lethality', 'infantry-lethality'],
+    ['Infantry Health', 'infantry-health'],
+    ['Lancer Lethality', 'lancer-lethality'],
+    ['Lancer Health', 'lancer-health'],
+    ['Marksman Lethality', 'marksman-lethality'],
+    ['Marksman Health', 'marksman-health'],
+  ];
+  const REFINING_POWER_PER_PERCENT = 12000;
+  const powerState = {};
+
+  function petPowerState(pet) {
+    if (!powerState[pet.id]) powerState[pet.id] = { level: pet.maxLevel, advanced: true, refine: REFINEMENT_STATS.map(() => 0) };
+    return powerState[pet.id];
+  }
+
+  function refiningPower(percents) {
+    const hundredths = percents.reduce((sum, percent) => sum + Math.round(percent * 100), 0);
+    return (hundredths * REFINING_POWER_PER_PERCENT) / 100;
+  }
+
+  function levelAndAdvancementPower(pet, state) {
+    const stat = pet.levels[state.level - 1].troopsPower;
+    return state.advanced && stat.refinedValue !== undefined ? stat.refinedValue : stat.value;
+  }
+
+  function maxPower(pet) {
+    const row = pet.levels[pet.levels.length - 1].troopsPower;
+    const levelAndAdvancement = row.refinedValue !== undefined ? row.refinedValue : row.value;
+    const refining = refiningPower(REFINEMENT_STATS.map(() => pet.maxRefinementPercent));
+    return { levelAndAdvancement, refining, total: levelAndAdvancement + refining };
+  }
+
+  function maxPowerCards(pet) {
+    const max = maxPower(pet);
+    const card = (label, value, cls) => `<div class="card${cls ? ' ' + cls : ''}"><div class="value">${fmt(value)}</div><div class="label">${label}</div></div>`;
+    return card('Max Level + Advancement Power', max.levelAndAdvancement) + card('Max Refining Power', max.refining) + card('Max Pet Power', max.total, 'sum');
+  }
+
+  function powerSection(pet) {
+    const state = petPowerState(pet);
+    const inputs = REFINEMENT_STATS.map(
+      ([label], i) => `<label>${label} %<input type="number" step="0.01" min="0" max="${pet.maxRefinementPercent}" data-refine="${i}" value="${state.refine[i]}"></label>`,
+    ).join('');
+    return `<div class="section">
+      <h3>Pet Power</h3>
+      <p class="section-note">Level and Advancement Power are stored as one total. Refining Power is 120 for each 0.01% of the six refined stats added up. Each stat is at most ${pet.maxRefinementPercent}%.</p>
+      <div class="power-controls">
+        <label>Level<input type="number" min="1" max="${pet.maxLevel}" id="power-level" value="${state.level}"></label>
+        <label class="check"><input type="checkbox" id="power-advanced" ${state.advanced ? 'checked' : ''}> Advanced at this level</label>
+        ${inputs}
+      </div>
+      <div class="power-results" id="power-results"></div>
+      <h3 style="margin-top:16px">Max Pet Power (level ${pet.maxLevel}, advanced, all six stats at ${pet.maxRefinementPercent}%)</h3>
+      <div class="power-results">${maxPowerCards(pet)}</div>
+    </div>`;
+  }
+
+  function renderPower(pet) {
+    const state = petPowerState(pet);
+    const level = Math.min(pet.maxLevel, Math.max(1, Math.floor(Number(document.getElementById('power-level').value) || 1)));
+    state.level = level;
+    state.advanced = document.getElementById('power-advanced').checked;
+    document.querySelectorAll('[data-refine]').forEach((input) => {
+      const percent = Math.min(pet.maxRefinementPercent, Math.max(0, Number(input.value) || 0));
+      state.refine[Number(input.dataset.refine)] = percent;
+    });
+    const row = pet.levels[level - 1].troopsPower;
+    document.getElementById('power-advanced').disabled = row.refinedValue === undefined;
+    const levelAndAdvancement = levelAndAdvancementPower(pet, state);
+    const refining = refiningPower(state.refine);
+    const card = (label, value, cls) => `<div class="card${cls ? ' ' + cls : ''}"><div class="value">${fmt(value)}</div><div class="label">${label}</div></div>`;
+    document.getElementById('power-results').innerHTML =
+      card('Level + Advancement Power', levelAndAdvancement) +
+      card('Refining Power', refining) +
+      card('Total Pet Power', levelAndAdvancement + refining, 'sum');
+  }
+
+  function bindPower(pet) {
+    document.querySelectorAll('#power-level, #power-advanced, [data-refine]').forEach((input) => input.addEventListener('input', () => renderPower(pet)));
+    renderPower(pet);
   }
 
   function unlockRequirementText(req) {
@@ -17845,7 +17953,7 @@
       )
       .join('');
     return `<div class="levels-table-wrap"><table>
-      <thead><tr><th>Level</th><th>Pet Food</th><th>Troop Attack</th><th>Troop Defense</th><th>Troops Power</th><th>Advancement Materials</th><th>Advancement Score</th></tr></thead>
+      <thead><tr><th>Level</th><th>Pet Food</th><th>Troop Attack</th><th>Troop Defense</th><th>Pet Power</th><th>Advancement Materials</th><th>Advancement Score</th></tr></thead>
       <tbody>${rows}</tbody>
     </table></div>`;
   }
@@ -17874,8 +17982,13 @@
         </div>
         <div class="stat-group">
           <div class="stat-block">
-            <div class="value">${fmt(maxLevelRow.troopsPower.value)}</div>
-            <div class="label">Troops Power at Max</div>
+            <div class="value">${fmt(maxLevelRow.troopsPower.refinedValue ?? maxLevelRow.troopsPower.value)}</div>
+            <div class="label">Pet Power at Max (advanced)</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <div class="value">${fmt(maxPower(pet).total)}</div>
+            <div class="label">Max Pet Power (with max refining)</div>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-block">
@@ -17884,6 +17997,8 @@
           </div>
         </div>
       </div>
+
+      ${powerSection(pet)}
 
       <div class="section">
         <h3>Unlock Requirement</h3>
@@ -17906,6 +18021,7 @@
         ${levelsTable(pet)}
       </div>
     `;
+    bindPower(pet);
   }
 
   document.getElementById('search').addEventListener('input', (e) => {
