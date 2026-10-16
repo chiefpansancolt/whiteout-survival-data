@@ -1,5 +1,11 @@
 import { items } from '@/modules/items';
-import { PET_REFINEMENT_STATS, PetQuery, pets } from '@/modules/pets';
+import {
+  PET_REFINEMENT_STATS,
+  PET_REFINING_POWER_PER_PERCENT,
+  PetQuery,
+  petRefiningPower,
+  pets,
+} from '@/modules/pets';
 import { research } from '@/modules/research';
 import { testQueryBaseContract } from '../helpers';
 
@@ -144,5 +150,42 @@ describe('pet refinement stats', () => {
       expect(statKey).toBe(stat.toLowerCase().replace(/ /g, '-'));
       expect(researchKeys.has(statKey)).toBe(true);
     }
+  });
+});
+
+describe('petRefiningPower', () => {
+  const readings: [string, number[], number][] = [
+    ['Cave Hyena', [2.56, 2.8, 2.39, 2.48, 2.39, 2.78], 184800],
+    ['Arctic Wolf', [4.2, 3.56, 3.63, 3.88, 3.7, 3.71], 272160],
+    ['Musk Ox', [3.09, 3.41, 3.24, 3.31, 2.57, 3.44], 228720],
+    ['Giant Tapir', [4.97, 4.38, 4, 4.32, 4.52, 4.44], 319560],
+    ['Titan Roc', [4.45, 4.18, 5.23, 4.16, 4.63, 4.06], 320520],
+    ['Giant Elk', [6.76, 6.08, 6.23, 4.77, 6.26, 6.36], 437520],
+    ['Snow Leopard', [6.56, 5.78, 7.57, 5.6, 6.23, 5.63], 448440],
+    ['Cave Lion', [9.43, 9.25, 9.34, 8.04, 8.13, 8.11], 627600],
+    ['Snow Ape', [9.36, 8.19, 7.54, 7.68, 7.95, 8.15], 586440],
+    ['Iron Rhino', [8.09, 7.65, 7.42, 8.67, 7.51, 7.73], 564840],
+    ['Saber-tooth Tiger', [9.45, 9.18, 9.16, 9.58, 11.15, 8.68], 686400],
+    ['Mammoth', [7.89, 7.55, 7.61, 8.48, 7.65, 7.53], 560520],
+    ['Frost Gorilla', [7.81, 7.37, 7.55, 7.4, 7.94, 7.95], 552240],
+  ];
+
+  it.each(readings)(
+    'gives the Refining Power read in the game for %s',
+    (_name, percents, power) => {
+      expect(petRefiningPower(percents)).toBe(power);
+    },
+  );
+
+  it('gives 120 Power for each 0.01 percent and 12,000 for each percent', () => {
+    expect(PET_REFINING_POWER_PER_PERCENT).toBe(12000);
+    expect(petRefiningPower([0.01])).toBe(120);
+    expect(petRefiningPower([1])).toBe(12000);
+    expect(petRefiningPower([])).toBe(0);
+  });
+
+  it('throws RangeError for a percent that is negative or not a number', () => {
+    expect(() => petRefiningPower([-1])).toThrow(RangeError);
+    expect(() => petRefiningPower([Number.NaN])).toThrow(RangeError);
   });
 });

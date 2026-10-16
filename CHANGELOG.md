@@ -11,6 +11,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `pets()`: `petRefiningPower()` and `PET_REFINING_POWER_PER_PERCENT`, the Refining Power of a pet
+  from its six refined percents.
 - `serverTimeline()`: the server age at which Chief Gear tiers, Chief Charm levels, and the Chief
   Gear and Chief Charm converters unlock, with icons of the highest gear and charms.
 

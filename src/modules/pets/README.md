@@ -6,7 +6,7 @@ read pet unlock rules, skill values, and the cost and bonus of each pet level.
 ## Usage
 
 ```ts
-import { PET_REFINEMENT_STATS, pets } from "whiteout-survival-data";
+import { PET_REFINEMENT_STATS, petRefiningPower, pets } from "whiteout-survival-data";
 
 // The Legendary pets
 const legendary = pets().byRarity("Legendary").get();
@@ -14,6 +14,9 @@ const legendary = pets().byRarity("Legendary").get();
 // The six stats that pet refinement rolls
 console.log(PET_REFINEMENT_STATS.map((s) => s.stat));
 // ['Infantry Lethality', 'Infantry Health', 'Lancer Lethality', 'Lancer Health', 'Marksman Lethality', 'Marksman Health']
+
+// The Refining Power of the six refined percents of a pet
+console.log(petRefiningPower([2.56, 2.8, 2.39, 2.48, 2.39, 2.78])); // 184800
 
 // What the first pets need to unlock
 const hyena = pets().find("cave-hyena");
@@ -79,6 +82,14 @@ type, which are Infantry Lethality, Infantry Health, Lancer Lethality, Lancer He
 Lethality, and Marksman Health. `PET_REFINEMENT_STATS` lists them with the `statKey` that
 `research()` and the other modules use for the same stat. The package owner gave these six stats,
 from the game.
+
+A pet has three groups of Power: Level Power, Advancement Power, and Refining Power. The Refining
+Power is 120 for each 0.01 percent of the six refined stats added up, so 12,000 for each 1 percent.
+`PET_REFINING_POWER_PER_PERCENT` exports the 12,000 and `petRefiningPower(percents)` adds the six
+percents of a pet in the order of `PET_REFINEMENT_STATS`. The rate is the same for every pet and
+every rarity. The package owner read the Refining Power of 13 pets in the game, and all 13 match to
+the unit. For example, Cave Hyena has 15.40 percent in all and 184,800 Power. `petRefiningPower`
+throws `RangeError` for a percent that is negative or not a number.
 
 The package stores the maximum refinement of each pet. The percent range of each quality (None,
 Green, Blue, Purple, and Gold), the size of a step, and the Wild Mark cost of a roll are not stored.

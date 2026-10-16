@@ -42,7 +42,7 @@ The result has one entry in `items` for each goal, and the same fields summed ov
 | `resources`        | `itemId` and `amount` pairs: pet food and the advancement items.               |
 | `troopAttack`      | Gain in Troop Attack in percent, rounded to 2 decimals.                        |
 | `troopDefense`     | Gain in Troop Defense in percent, rounded to 2 decimals.                       |
-| `power`            | Gain in troops power.                                                          |
+| `power`            | Gain in pet power.                                                             |
 | `advancementScore` | Pet advancement score of the advancements paid for.                            |
 | `eventPoints`      | Event points of the score for `svs`, `allianceShowdown`, and `kingOfIcefield`. |
 
