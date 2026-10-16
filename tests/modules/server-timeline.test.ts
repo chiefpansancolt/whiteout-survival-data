@@ -257,13 +257,10 @@ describe('timeline data', () => {
     }
   });
 
-  it('puts each unreleased expert on the milestone of the hero generation that it needs', () => {
+  it('puts each unreleased expert on the milestone of the day that it needs', () => {
     for (const m of serverTimeline().get()) {
       for (const id of m.expertIds.filter((expertId) => unreleasedExperts().find(expertId))) {
-        const { heroGeneration } = unreleasedExperts().find(id)!.unlockRequirement;
-        expect(m.heroIds.length).toBeGreaterThan(0);
-        expect(heroGenerationAt(m.day)).toBe(heroGeneration);
-        expect(heroGenerationAt(m.day - 1)).toBe(heroGeneration - 1);
+        expect(unreleasedExperts().find(id)!.unlockRequirement).toEqual({ daysRequired: m.day });
       }
     }
   });
@@ -358,8 +355,8 @@ describe('unlock keys', () => {
     expect(dayOfKey('t12-research')).toBe(680);
   });
 
-  it('unlocks Chief Gear by server age: Mythic T4 on day 0, Legendary T4 on day 180, T5 and T6 on day 520', () => {
-    expect(dayOfKey('chief-gear-mythic-t4')).toBe(0);
+  it('unlocks Chief Gear by server age: Mythic on day 0, Legendary T4 on day 180, T5 and T6 on day 520', () => {
+    expect(dayOfKey('chief-gear-mythic')).toBe(0);
     expect(dayOfKey('chief-gear-legendary-t4')).toBe(180);
     expect(dayOfKey('chief-gear-legendary-t5-t6')).toBe(520);
   });
@@ -414,10 +411,10 @@ describe('unlock keys', () => {
         .map((slot) => slot.images[level - 1]);
 
     it('shows the six gear pieces of the highest quality of the unlock', () => {
-      expect(imagesOfKey('chief-gear-mythic-t4')).toEqual(gearImages('Mythic'));
+      expect(imagesOfKey('chief-gear-mythic')).toEqual(gearImages('Mythic'));
       expect(imagesOfKey('chief-gear-legendary-t4')).toEqual(gearImages('Legendary'));
       expect(imagesOfKey('chief-gear-legendary-t5-t6')).toEqual(gearImages('Legendary'));
-      expect(imagesOfKey('chief-gear-mythic-t4')).toHaveLength(6);
+      expect(imagesOfKey('chief-gear-mythic')).toHaveLength(6);
     });
 
     it('shows the charm of each troop type at the highest level of the unlock', () => {
@@ -531,23 +528,24 @@ describe('expert unlock days', () => {
       .filter((m) => m.expertIds.length > 0)
       .map((m) => [m.day, m.expertIds]);
 
-  it('unlocks the experts on the days that the wiki timeline lists, and Justus with generation 6', () => {
+  it('unlocks the experts on the days that the wiki timeline lists, Gareth on day 270, and Justus on day 360', () => {
     expect(expertDays()).toEqual([
       [120, ['holger', 'agnes', 'cyrille']],
       [160, ['romulus']],
       [200, ['valeria', 'baldur', 'fabian']],
       [230, ['kathy', 'ronne']],
+      [270, ['gareth']],
       [360, ['justus']],
     ]);
   });
 
-  it('lists each expert once and leaves Gareth off, because no source gives a day for him', () => {
+  it('lists each expert once, with Gareth on day 270', () => {
     const ids = serverTimeline()
       .get()
       .flatMap((m) => m.expertIds);
     expect(new Set(ids).size).toBe(ids.length);
-    expect(ids).toHaveLength(10);
-    expect(ids).not.toContain('gareth');
+    expect(ids).toHaveLength(11);
+    expect(ids).toContain('gareth');
   });
 
   it('resolves the experts of a milestone', () => {

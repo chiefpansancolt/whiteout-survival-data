@@ -60,7 +60,7 @@ export interface ExpertUnlockRequirement {
 }
 
 export interface UnreleasedExpertUnlockRequirement {
-  heroGeneration: number;
+  daysRequired: number;
 }
 
 export interface UnreleasedExpert {

@@ -525,7 +525,7 @@ describe('expert unlock days', () => {
       ['valeria', 200],
       ['ronne', 230],
       ['kathy', 230],
-      ['gareth', undefined],
+      ['gareth', 270],
     ]);
   });
 });
@@ -539,13 +539,13 @@ describe('unreleased experts', () => {
     expect(new UnreleasedExpertQuery().count()).toBe(1);
   });
 
-  it('lists Justus with a name, an icon, and the unlock of generation 6 heroes', () => {
+  it('lists Justus with a name, an icon, and the unlock on day 360', () => {
     expect(unreleasedExperts().find('justus')).toEqual({
       id: 'justus',
       name: 'Justus',
       img: '/images/experts/Justus/Justus.png',
       unreleased: true,
-      unlockRequirement: { heroGeneration: 6 },
+      unlockRequirement: { daysRequired: 360 },
     });
   });
 
@@ -572,10 +572,10 @@ describe('unreleased experts', () => {
     }
   });
 
-  it('names a hero generation that the server timeline has', () => {
-    const { heroGeneration } = unreleasedExperts().find('justus')!.unlockRequirement;
-    expect(heroGenerationAt(359)).toBe(heroGeneration - 1);
-    expect(heroGenerationAt(360)).toBe(heroGeneration);
+  it('unlocks Justus on the day of the generation 6 heroes', () => {
+    const { daysRequired } = unreleasedExperts().find('justus')!.unlockRequirement;
+    expect(heroGenerationAt(daysRequired - 1)).toBe(5);
+    expect(heroGenerationAt(daysRequired)).toBe(6);
   });
 });
 

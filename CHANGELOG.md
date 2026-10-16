@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.6.4] - 2026-10-16
+
+### Fixed
+
+- test failures and typed for experts
+
 ## [0.6.3] - 2026-10-16
 
 ### Fixed
