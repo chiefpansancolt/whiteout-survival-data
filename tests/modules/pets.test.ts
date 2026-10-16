@@ -189,3 +189,28 @@ describe('petRefiningPower', () => {
     expect(() => petRefiningPower([Number.NaN])).toThrow(RangeError);
   });
 });
+
+describe('pet level tables', () => {
+  it('gives the pets of one rarity the same level table', () => {
+    (['Common', 'Uncommon', 'Rare', 'Epic', 'Legendary'] as const).forEach((rarity) => {
+      const [first, ...others] = pets().byRarity(rarity).get();
+      others.forEach((pet) => expect(pet.levels).toEqual(first.levels));
+    });
+  });
+
+  it('gives Giant Tapir the Level and Advancement Power read in the game at level 70', () => {
+    const level70 = pets().find('giant-tapir')!.levels[69].troopsPower;
+    expect(level70.refinedValue).toBe(542880 + 542880);
+    expect(level70.value).toBe(995040);
+  });
+
+  it('keeps the troop attack of every pet rising at each level', () => {
+    pets()
+      .get()
+      .forEach((pet) => {
+        pet.levels.slice(1).forEach((level, i) => {
+          expect(level.troopAttack.value).toBeGreaterThan(pet.levels[i].troopAttack.value);
+        });
+      });
+  });
+});

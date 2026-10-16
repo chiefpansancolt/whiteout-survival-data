@@ -7,6 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Fixed
+
+#### Game Data
+
+- `pets()`: fix the Pet Power of Giant Tapir at level 29 and levels 61 to 70, the Troop Attack and
+  Troop Defense of Musk Ox at level 57, and those of Frost Gorilla at level 58.
+
 ## [0.6.0] - 2026-10-16
 
 ### Added

@@ -2437,10 +2437,10 @@
         "level": 57,
         "petFoodCost": 3240,
         "troopAttack": {
-          "value": 880.0
+          "value": 8.8
         },
         "troopDefense": {
-          "value": 880.0
+          "value": 8.8
         },
         "troopsPower": {
           "value": 633600
@@ -2921,7 +2921,7 @@
           "value": 4.8
         },
         "troopsPower": {
-          "value": 645600
+          "value": 345600
         }
       },
       {
@@ -3401,7 +3401,7 @@
           "value": 12.85
         },
         "troopsPower": {
-          "value": 1145520
+          "value": 925200
         }
       },
       {
@@ -3414,7 +3414,7 @@
           "value": 12.96
         },
         "troopsPower": {
-          "value": 1154880
+          "value": 933120
         }
       },
       {
@@ -3427,7 +3427,7 @@
           "value": 13.07
         },
         "troopsPower": {
-          "value": 1164960
+          "value": 941040
         }
       },
       {
@@ -3440,7 +3440,7 @@
           "value": 13.18
         },
         "troopsPower": {
-          "value": 1175040
+          "value": 948960
         }
       },
       {
@@ -3453,7 +3453,7 @@
           "value": 13.28
         },
         "troopsPower": {
-          "value": 1184400
+          "value": 956160
         }
       },
       {
@@ -3466,7 +3466,7 @@
           "value": 13.39
         },
         "troopsPower": {
-          "value": 1194480
+          "value": 964080
         }
       },
       {
@@ -3479,7 +3479,7 @@
           "value": 13.5
         },
         "troopsPower": {
-          "value": 1203840
+          "value": 972000
         }
       },
       {
@@ -3492,7 +3492,7 @@
           "value": 13.61
         },
         "troopsPower": {
-          "value": 1213920
+          "value": 979920
         }
       },
       {
@@ -3505,7 +3505,7 @@
           "value": 13.71
         },
         "troopsPower": {
-          "value": 1224000
+          "value": 987120
         }
       },
       {
@@ -3520,8 +3520,8 @@
           "refinedValue": 15.08
         },
         "troopsPower": {
-          "value": 1233360,
-          "refinedValue": 1342800
+          "value": 995040,
+          "refinedValue": 1085760
         },
         "advancementMaterials": [
           {
@@ -15197,10 +15197,10 @@
         "level": 58,
         "petFoodCost": 8350,
         "troopAttack": {
-          "value": 13.78
+          "value": 16.78
         },
         "troopDefense": {
-          "value": 13.78
+          "value": 16.78
         },
         "troopsPower": {
           "value": 1208160
