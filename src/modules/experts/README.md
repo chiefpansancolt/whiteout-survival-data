@@ -60,6 +60,34 @@ The `generation` and the unlock day do not line up for two experts. Romulus is g
 unlocks on day 160, after the other generation 1 experts on day 120. Kathy is generation 3 and
 unlocks on day 230, together with Ronne of generation 2. The data keeps both as they are.
 
+A skill unlocks as the affinity level rises, and some skills have a cap on the level that an expert
+can learn at an affinity level. The first skill unlocks at affinity level 10, and the next three at
+20, 30, and 40. These fields are on a skill. A talent has neither, because it levels with the
+affinity.
+
+| Field                 | Meaning                                                                                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `unlockAffinityLevel` | The affinity level at which the skill unlocks, after the advancement of that level. 10, 20, 30, and 40 for the four skills in order.                        |
+| `levelCaps`           | `{ affinityLevel, maxLevel }` rows in ascending order. A row applies from its affinity level up to the next row. Only 12 skills of eight experts have them. |
+
+The caps are the ones the data holds. The package owner confirmed in game the caps of Crowd Pleaser,
+Call of War, Cartographic Memory, Salvager, Radiant Honor, and Gifts of Iron, and the unlock levels
+of Undefeated Will and Fearsome Reputation. A skill without `levelCaps` has no known cap, and so has
+a skill at an affinity level below its first row or above its last row. Gareth's Undefeated Will has
+rows at 10 and 20, below its unlock at 30, and they have no effect until the skill is unlocked.
+
+`expertSkillMaxLevel(skill, affinityLevel)` gives the highest level that an expert can learn of a
+skill at an affinity level. It is 0 while the skill is locked. Affinity levels count in steps of 10,
+so level 19 counts as 10, and the function returns the `maxLevel` of a talent.
+
+```ts
+import { experts, expertSkillMaxLevel } from "whiteout-survival-data";
+
+const entrapment = experts().find("cyrille")!.skills[0];
+expertSkillMaxLevel(entrapment, 15); // 10, no cap is known below affinity level 20
+expertSkillMaxLevel(entrapment, 25); // 4
+```
+
 A skill or talent covers three mechanics. Most have `progressions`, which are named values that
 scale per level, and a `costs` table of EXP and books per level. Agnes's talent has two independent
 progressions, `Chest Gain` and `Daily Cap`. Baldur and Valeria have `milestoneRewards`, a flat base
