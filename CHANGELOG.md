@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game Data
+
+- `experts()`: each skill has the affinity level that unlocks it, and 12 skills have the known caps
+  on the skill level by affinity level. `expertSkillMaxLevel()` gives the highest level of a skill
+  at an affinity level.
+
 ## [0.6.4] - 2026-10-16
 
 ### Fixed

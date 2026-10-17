@@ -32,11 +32,22 @@ export interface ExpertMilestoneReward {
   }[];
 }
 
+export interface ExpertSkillLevelCap {
+  /** The affinity level from which the cap applies. */
+  affinityLevel: number;
+  /** The highest skill level that the expert can learn at this affinity level. */
+  maxLevel: number;
+}
+
 export interface ExpertSkill {
   name: string;
   img: string;
   description: string;
   maxLevel: number;
+  /** The affinity level at which a skill unlocks. A talent has none, because it levels with the affinity. */
+  unlockAffinityLevel?: number;
+  /** Known caps below `maxLevel`, from the lowest affinity level up. Only some skills have them. */
+  levelCaps?: ExpertSkillLevelCap[];
   progressions: ExpertProgression[];
   costs: ExpertLevelCost[];
   milestoneRewards?: ExpertMilestoneReward[];

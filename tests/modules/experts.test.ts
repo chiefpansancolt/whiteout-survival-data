@@ -4,6 +4,7 @@ import {
   ExpertRelationshipQuery,
   expertRelationships,
   experts,
+  expertSkillMaxLevel,
   UnreleasedExpertQuery,
   unreleasedExperts,
 } from '@/modules/experts';
@@ -629,5 +630,110 @@ describe('expert progressions', () => {
     expect(last('fabian', 'Heightened Firepower', 'Troop Lethality')).toBe(30);
     expect(last('fabian', 'Heightened Firepower', 'Troop Health')).toBe(30);
     expect(last('gareth', 'Fearsome Reputation', 'Lethality Down')).toBe(5);
+  });
+});
+
+describe('skill unlocks and caps', () => {
+  const skillOf = (expertId: string, name: string) =>
+    experts()
+      .find(expertId)!
+      .skills.find((skill) => skill.name === name)!;
+
+  it('unlocks the four skills of every expert at affinity levels 10, 20, 30, and 40 in order', () => {
+    for (const expert of experts().get()) {
+      expect(expert.skills.map((skill) => skill.unlockAffinityLevel)).toEqual([10, 20, 30, 40]);
+    }
+  });
+
+  it('gives a talent no unlock level and no caps', () => {
+    for (const expert of experts().get()) {
+      expect(expert.talent.unlockAffinityLevel).toBeUndefined();
+      expect(expert.talent.levelCaps).toBeUndefined();
+    }
+  });
+
+  it('lists caps in ascending affinity order, in steps of 10, never above the max level', () => {
+    for (const expert of experts().get()) {
+      for (const skill of expert.skills) {
+        const caps = skill.levelCaps ?? [];
+        caps.forEach((cap, index) => {
+          expect(cap.affinityLevel % 10).toBe(0);
+          expect(cap.maxLevel).toBeGreaterThan(0);
+          expect(cap.maxLevel).toBeLessThanOrEqual(skill.maxLevel);
+          if (index > 0) expect(cap.affinityLevel).toBeGreaterThan(caps[index - 1].affinityLevel);
+        });
+      }
+    }
+  });
+
+  it('has caps on twelve skills of eight experts', () => {
+    const capped = experts()
+      .get()
+      .flatMap((expert) =>
+        expert.skills
+          .filter((skill) => skill.levelCaps)
+          .map((skill) => `${expert.id}:${skill.name}`),
+      );
+    expect(capped).toEqual([
+      'cyrille:Entrapment',
+      'cyrille:Scavenging',
+      'holger:Crowd Pleaser',
+      'holger:Arena Star',
+      'romulus:Call of War',
+      'baldur:Blazing Sunrise',
+      'fabian:Salvager',
+      'valeria:Radiant Honor',
+      'ronne:Cartographic Memory',
+      'ronne:Treasure Scent',
+      'gareth:Gifts of Iron',
+      'gareth:Undefeated Will',
+    ]);
+  });
+
+  describe('expertSkillMaxLevel()', () => {
+    const entrapment = skillOf('cyrille', 'Entrapment');
+    const scavenging = skillOf('cyrille', 'Scavenging');
+    const weaponMaster = skillOf('cyrille', 'Weapon Master');
+
+    it('returns 0 while the skill is locked', () => {
+      expect(expertSkillMaxLevel(entrapment, 9)).toBe(0);
+      expect(expertSkillMaxLevel(scavenging, 19)).toBe(0);
+      expect(expertSkillMaxLevel(weaponMaster, 29)).toBe(0);
+    });
+
+    it('returns the max level of a skill without caps once it is unlocked', () => {
+      expect(expertSkillMaxLevel(weaponMaster, 30)).toBe(weaponMaster.maxLevel);
+      expect(expertSkillMaxLevel(weaponMaster, 100)).toBe(weaponMaster.maxLevel);
+    });
+
+    it('returns the max level below the first cap, where the data states no cap', () => {
+      expect(expertSkillMaxLevel(entrapment, 10)).toBe(entrapment.maxLevel);
+      expect(expertSkillMaxLevel(entrapment, 19)).toBe(entrapment.maxLevel);
+    });
+
+    it('applies a cap from its affinity level up to the next one', () => {
+      expect(expertSkillMaxLevel(entrapment, 20)).toBe(4);
+      expect(expertSkillMaxLevel(entrapment, 29)).toBe(4);
+      expect(expertSkillMaxLevel(entrapment, 30)).toBe(7);
+      expect(expertSkillMaxLevel(entrapment, 40)).toBe(7);
+    });
+
+    it('returns the max level above the last cap, where the data states no cap', () => {
+      expect(expertSkillMaxLevel(entrapment, 50)).toBe(entrapment.maxLevel);
+      expect(expertSkillMaxLevel(entrapment, 100)).toBe(entrapment.maxLevel);
+    });
+
+    it("steps through the caps of Gareth's Undefeated Will after it unlocks at 30", () => {
+      const will = skillOf('gareth', 'Undefeated Will');
+      expect(expertSkillMaxLevel(will, 20)).toBe(0);
+      expect(expertSkillMaxLevel(will, 30)).toBe(14);
+      expect(expertSkillMaxLevel(will, 40)).toBe(19);
+      expect(expertSkillMaxLevel(will, 50)).toBe(20);
+    });
+
+    it('returns the max level of a talent at any affinity level', () => {
+      const talent = experts().find('cyrille')!.talent;
+      expect(expertSkillMaxLevel(talent, 1)).toBe(talent.maxLevel);
+    });
   });
 });
