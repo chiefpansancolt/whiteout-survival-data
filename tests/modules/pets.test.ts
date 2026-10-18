@@ -214,3 +214,11 @@ describe('pet level tables', () => {
       });
   });
 });
+
+describe('pet skills', () => {
+  it('gives the Giant Tapir skill the Pet Food found at each of its seven skill levels', () => {
+    const { skill } = pets().find('giant-tapir')!;
+    expect(skill.values).toEqual([300, 500, 700, 900, 1100, 1300, 1500]);
+    expect(skill.description).toContain('300 / 500 / 700 / 900 / 1100 / 1300 / 1500 Pet Food');
+  });
+});
