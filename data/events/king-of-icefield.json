@@ -829,7 +829,7 @@
             },
             {
               "name": "Lv. 2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 200,
               "note": "Blue tile resource chest"
             }
@@ -850,7 +850,7 @@
             },
             {
               "name": "Lv. 2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 150,
               "note": "Blue tile resource chest"
             }
@@ -871,7 +871,7 @@
             },
             {
               "name": "Lv. 2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 100,
               "note": "Blue tile resource chest"
             }
@@ -893,7 +893,7 @@
             },
             {
               "name": "Lv. 2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 75,
               "note": "Blue tile resource chest"
             }

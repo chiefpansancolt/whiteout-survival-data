@@ -65,7 +65,7 @@ describe('calculateHeroGear', () => {
     const result = calculateHeroGear({ enhancement: { current: 0, goal: 20 } });
     expect(result.enhancement).toEqual({
       steps: 20,
-      resources: [{ itemId: 'enhancement-xp-component', amount: 1150 }],
+      resources: [{ itemId: 'enhancement-xp', amount: 1150 }],
       power: 11625,
     });
     expect(result.power).toBe(11625);
@@ -74,7 +74,7 @@ describe('calculateHeroGear', () => {
   it('costs the whole of enhancement', () => {
     const result = calculateHeroGear({ enhancement: { current: 0, goal: 100 } });
     expect(result.enhancement.power).toBe(269175);
-    expect(amount(result.resources, 'enhancement-xp-component')).toBe(73320);
+    expect(amount(result.resources, 'enhancement-xp')).toBe(73320);
     expect(result.unmetRequirements).toEqual([]);
   });
 
@@ -83,7 +83,7 @@ describe('calculateHeroGear', () => {
     expect(result.empowerment.steps).toBe(1);
     expect(amount(result.resources, 'mithril')).toBe(10);
     expect(amount(result.resources, 'custom-mythic-hero-gear-chest')).toBe(3);
-    expect(amount(result.resources, 'enhancement-xp-component')).toBeUndefined();
+    expect(amount(result.resources, 'enhancement-xp')).toBeUndefined();
   });
 
   it('starts the empowerment power at the power of enhancement level 100', () => {
@@ -93,7 +93,7 @@ describe('calculateHeroGear', () => {
     const first20 = calculateHeroGear({ empowerment: { current: 0, goal: 20 } });
     expect(first20.empowerment.power).toBe(156500);
     expect(amount(first20.resources, 'mithril')).toBe(10);
-    expect(amount(first20.resources, 'enhancement-xp-component')).toBe(52650);
+    expect(amount(first20.resources, 'enhancement-xp')).toBe(52650);
   });
 
   describe('power with mastery forging', () => {
@@ -243,7 +243,7 @@ describe('calculateHeroGear', () => {
     expect(amount(result.resources, 'essence-stones')).toBe(2100);
     expect(amount(result.resources, 'mithril')).toBe(150);
     expect(amount(result.resources, 'custom-mythic-hero-gear-chest')).toBe(90);
-    expect(amount(result.resources, 'enhancement-xp-component')).toBe(574370);
+    expect(amount(result.resources, 'enhancement-xp')).toBe(574370);
     expect(result.power).toBe(4160025);
     expect(result.eventPoints).toEqual({
       svs: 2100 * 4000 + 150 * 144000,

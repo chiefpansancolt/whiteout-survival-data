@@ -121,7 +121,7 @@ describe('Crystalline Mysteries', () => {
   it('gives each puzzle its reward item and amount', () => {
     const rewards = album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount]);
     expect(rewards).toEqual([
-      ['fiery-crystal', 'enhancement-xp-component', 7],
+      ['fiery-crystal', 'enhancement-xp-component-100', 7],
       ['mining-the-fire', 'essence-stones', 3],
       ['heirs-of-empire', 'chief-gear-materials-chest', 3],
       ['sins-of-empire', 'essence-stones', 3],
@@ -250,7 +250,7 @@ describe('Daybreak Island', () => {
   it('gives each puzzle its reward', () => {
     expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
       ['daybreak-island-legend', 'polishing-solution', 30],
-      ['island-of-dreams', 'enhancement-xp-component', 7],
+      ['island-of-dreams', 'enhancement-xp-component-100', 7],
       ['tree-of-life', 'speedup-general-3h', 3],
       ['call-of-the-sea', 'chief-gear-materials-chest', 3],
       ['distant-resonance', 'lucky-hero-gear-chest', 4],
@@ -300,7 +300,7 @@ describe('Explore the World', () => {
     });
     expect(album.completionRewards).toEqual([
       { itemId: 'speedup-troop-8h', amount: 30 },
-      { itemId: 'enhancement-xp-component', amount: 100, size: 100 },
+      { itemId: 'enhancement-xp-component-100', amount: 100 },
     ]);
   });
 
@@ -362,7 +362,7 @@ describe('Explore the World', () => {
     expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
       ['war-on-winter', 'hardened-alloy', 2500],
       ['exploration-journal', 'polishing-solution', 30],
-      ['hunting-guild', 'enhancement-xp-component', 7],
+      ['hunting-guild', 'enhancement-xp-component-100', 7],
       ['the-raging-bear', 'speedup-general-3h', 3],
       ['treasure-kingdom', 'essence-stones', 3],
       ['wealth-is-knowledge', 'charm-guide', 8],
@@ -466,10 +466,10 @@ describe('Song of Heroes', () => {
 
   it('gives each puzzle its reward, linked to an item of items()', () => {
     expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
-      ['dauntless-heroes', 'enhancement-xp-component', 45],
+      ['dauntless-heroes', 'enhancement-xp-component-10', 45],
       ['snow-angel', 'hardened-alloy', 2500],
       ['everyday-champions', 'polishing-solution', 30],
-      ['arcadias-legacy', 'enhancement-xp-component', 7],
+      ['arcadias-legacy', 'enhancement-xp-component-100', 7],
       ['i-am-the-fire', 'speedup-general-3h', 3],
       ['artisan-architect', 'chief-gear-materials-chest', 3],
       ['life-vs-death', 'lucky-hero-gear-chest', 4],
@@ -573,10 +573,10 @@ describe('Rekindled Flames', () => {
   it('gives each puzzle its reward, linked to an item of items()', () => {
     expect(album.puzzles.map((p) => [p.id, p.reward.itemId, p.reward.amount])).toEqual([
       ['furnace', 'hardened-alloy', 2000],
-      ['city-founding', 'enhancement-xp-component', 45],
+      ['city-founding', 'enhancement-xp-component-10', 45],
       ['dawn-alliance', 'speedup-general-1h', 6],
       ['decisions', 'polishing-solution', 30],
-      ['menace-afoot', 'enhancement-xp-component', 7],
+      ['menace-afoot', 'enhancement-xp-component-100', 7],
       ['heroes', 'speedup-general-3h', 3],
       ['food-power', 'essence-stones', 3],
       ['a-new-order', 'charm-guide', 8],
@@ -617,7 +617,7 @@ const NEW_ALBUMS = [
     pieces: 141,
     puzzles: [
       ['alliance-building', 'Alliance-Building', [3, 3, 4, 2, 0], 'polishing-solution', 35],
-      ['one-heart', 'One Heart', [3, 3, 3, 3, 0], 'enhancement-xp-component', 7],
+      ['one-heart', 'One Heart', [3, 3, 3, 3, 0], 'enhancement-xp-component-100', 7],
       ['heroes-aid', "Heroes' Aid", [3, 5, 4, 2, 1], 'essence-stones', 3],
       ['alliance-resources', 'Alliance Resources', [3, 4, 4, 2, 2], 'charm-guide', 8],
       ['twisted-obsession', 'Twisted Obsession', [3, 3, 3, 3, 3], 'mythic-general-hero-shard', 2],
@@ -691,7 +691,13 @@ const NEW_ALBUMS = [
     ],
     pieces: 144,
     puzzles: [
-      ['master-blacksmith', 'Master Blacksmith', [3, 3, 3, 3, 0], 'enhancement-xp-component', 7],
+      [
+        'master-blacksmith',
+        'Master Blacksmith',
+        [3, 3, 3, 3, 0],
+        'enhancement-xp-component-100',
+        7,
+      ],
       ['legendary-divine-weapon', 'Legendary Divine Weapon', [3, 5, 4, 2, 1], 'essence-stones', 3],
       [
         'tundra-trade-route',
@@ -956,22 +962,24 @@ describe('tundraPuzzlePieceCounts', () => {
   });
 });
 
-describe('the size of an Enhancement XP Component reward', () => {
+describe('the Enhancement XP Component rewards', () => {
   const rewards = tundraAlbum()
     .get()
     .flatMap((album) => [...album.completionRewards, ...album.puzzles.map((p) => p.reward)]);
+  const components = rewards.filter((r) => r.itemId?.startsWith('enhancement-xp-component'));
 
-  it('is set on every Enhancement XP Component reward and on no other reward', () => {
-    for (const reward of rewards) {
-      expect(reward.size !== undefined).toBe(reward.itemId === 'enhancement-xp-component');
+  it('are the 10 component for 45 of them and the 100 component for the rest', () => {
+    expect(components).toHaveLength(10);
+    for (const reward of components) {
+      expect(reward.itemId).toBe(
+        reward.amount === 45 ? 'enhancement-xp-component-10' : 'enhancement-xp-component-100',
+      );
     }
+    expect(components.filter((r) => r.itemId === 'enhancement-xp-component-10')).toHaveLength(2);
   });
 
-  it('is the 10 component for 45 of them and the 100 component for the rest', () => {
-    const components = rewards.filter((r) => r.size !== undefined);
-    expect(components).toHaveLength(10);
-    for (const reward of components) expect(reward.size).toBe(reward.amount === 45 ? 10 : 100);
-    expect(components.filter((r) => r.size === 10)).toHaveLength(2);
+  it('have no size field', () => {
+    for (const reward of rewards) expect(reward).not.toHaveProperty('size');
   });
 });
 
@@ -993,44 +1001,38 @@ describe('tundraAlbumPieceRewards', () => {
   });
 
   it('gives the rewards of the first tiers and of the last tier', () => {
-    const rewardsOf = (n: number) => tiers[n - 1].rewards.map((r) => [r.itemId, r.amount, r.size]);
+    const rewardsOf = (n: number) => tiers[n - 1].rewards.map((r) => [r.itemId, r.amount]);
     expect([tiers[0].pieces, rewardsOf(1)]).toEqual([
       25,
       [
-        ['gems', 100, undefined],
-        ['speedup-general-3h', 2, undefined],
+        ['gems', 100],
+        ['speedup-general-3h', 2],
       ],
     ]);
-    expect([tiers[1].pieces, rewardsOf(2)[1]]).toEqual([50, ['enhancement-xp-component', 5, 100]]);
+    expect([tiers[1].pieces, rewardsOf(2)[1]]).toEqual([50, ['enhancement-xp-component-100', 5]]);
     expect([tiers[3].pieces, rewardsOf(4)]).toEqual([
       100,
       [
-        ['gems', 1000, undefined],
-        ['essence-stones', 16, undefined],
+        ['gems', 1000],
+        ['essence-stones', 16],
       ],
     ]);
-    expect([tiers[6].pieces, rewardsOf(7)[1]]).toEqual([
-      175,
-      ['speedup-research-3h', 2, undefined],
-    ]);
-    expect([tiers[9].pieces, rewardsOf(10)[1]]).toEqual([250, ['speedup-troop-3h', 2, undefined]]);
-    expect([tiers[24].pieces, rewardsOf(25)[1]]).toEqual([
-      625,
-      ['lucky-hero-gear-chest', 25, undefined],
-    ]);
+    expect([tiers[6].pieces, rewardsOf(7)[1]]).toEqual([175, ['speedup-research-3h', 2]]);
+    expect([tiers[9].pieces, rewardsOf(10)[1]]).toEqual([250, ['speedup-troop-3h', 2]]);
+    expect([tiers[24].pieces, rewardsOf(25)[1]]).toEqual([625, ['lucky-hero-gear-chest', 25]]);
     expect([tiers[79].pieces, rewardsOf(80)]).toEqual([
       1920,
       [
-        ['gems', 1000, undefined],
-        ['essence-stones', 24, undefined],
+        ['gems', 1000],
+        ['essence-stones', 24],
       ],
     ]);
   });
 
-  it('sets the size only on the Enhancement XP Component, and always to 100', () => {
-    for (const reward of tiers.flatMap((t) => t.rewards)) {
-      expect(reward.size).toBe(reward.itemId === 'enhancement-xp-component' ? 100 : undefined);
-    }
+  it('gives the 100 component, and never the 10 component, as the Enhancement XP Component', () => {
+    const ids = tiers.flatMap((t) => t.rewards).map((r) => r.itemId);
+    expect(ids).not.toContain('enhancement-xp-component-10');
+    expect(ids).toContain('enhancement-xp-component-100');
   });
 
   it('needs no more pieces than the albums hold', () => {

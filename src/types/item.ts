@@ -1,8 +1,10 @@
 export type ItemCategory =
   | 'Hero Items'
   | 'Pet'
-  | 'Gear Materials'
+  | 'Chief Material'
+  | 'Hero Gear Material'
   | 'Chest'
+  | 'Resources'
   | 'Buff'
   | 'Fire Crystal'
   | 'Experts'

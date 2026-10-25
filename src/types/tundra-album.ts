@@ -11,7 +11,6 @@ export interface TundraAlbumBuff {
 export interface TundraAlbumReward {
   itemId?: string;
   amount: number;
-  size?: 10 | 100;
 }
 
 export type TundraAlbumStars = 1 | 2 | 3 | 4 | 5;

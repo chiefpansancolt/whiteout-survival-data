@@ -442,9 +442,16 @@
     "id": "custom-mythic-hero-gear-chest",
     "name": "Custom Mythic Hero Gear Chest",
     "img": "/images/items/custom-mythic-hero-gear-chest.png",
-    "category": "Chest",
+    "category": "Hero Gear Material",
     "description": "Grants a Mythic Hero Gear of your choice",
     "sources": ["Arena Shop"]
+  },
+  {
+    "id": "mythic-hero-gear",
+    "name": "Mythic Hero Gear",
+    "img": "",
+    "category": "Hero Gear Material",
+    "sources": []
   },
   {
     "id": "custom-teleport-skin-chest",
@@ -692,27 +699,320 @@
     "sources": ["Foundry"]
   },
   {
-    "id": "lv-1-custom-ressource-chest",
-    "name": "Lv.1 Custom Ressource Chest",
+    "id": "lv-1-custom-resource-chest",
+    "name": "Lv.1 Custom Resource Chest",
     "img": "/images/items/ressource-chest.png",
-    "category": "Chest",
+    "category": "Resources",
     "description": "Grants your choice of 10K Meat, 10K Wood, 2K Coal or 500 Iron",
     "sources": []
   },
   {
-    "id": "lv-2-custom-ressource-chest",
-    "name": "Lv.2 Custom Ressource Chest",
+    "id": "lv-2-custom-resource-chest",
+    "name": "Lv.2 Custom Resource Chest",
     "img": "/images/items/lv-1-custom-ressource-chest.png",
-    "category": "Chest",
+    "category": "Resources",
     "description": "Grants your choice of 10K Meat, 100K Wood, 20K Coal or 5K Iron.",
     "sources": []
   },
   {
-    "id": "lv-3-custom-ressource-chest",
-    "name": "Lv.3 Custom Ressource Chest",
+    "id": "lv-3-custom-resource-chest",
+    "name": "Lv.3 Custom Resource Chest",
     "img": "/images/items/lv-3-custom-ressource-chest.png",
-    "category": "Chest",
+    "category": "Resources",
     "description": "Grant your choice of 1M Meat, 1M Wood, 200K Coal or 50K Iron.",
+    "sources": []
+  },
+  {
+    "id": "lv-1-custom-secured-resource-chest",
+    "name": "Lv.1 Custom Secured Resource Chest",
+    "img": "/images/items/ressource-chest.png",
+    "category": "Resources",
+    "sources": []
+  },
+  {
+    "id": "lv-2-custom-secured-resource-chest",
+    "name": "Lv.2 Custom Secured Resource Chest",
+    "img": "/images/items/lv-1-custom-ressource-chest.png",
+    "category": "Resources",
+    "sources": []
+  },
+  {
+    "id": "lv-3-custom-secured-resource-chest",
+    "name": "Lv.3 Custom Secured Resource Chest",
+    "img": "/images/items/lv-3-custom-ressource-chest.png",
+    "category": "Resources",
+    "sources": []
+  },
+  {
+    "id": "meat-1k",
+    "name": "1k Meat",
+    "img": "/images/items/resources/meat-1k.png",
+    "category": "Resources",
+    "description": "A pack of 1,000 Meat.",
+    "sources": []
+  },
+  {
+    "id": "meat-1k-secured",
+    "name": "1k Meat (Secured)",
+    "img": "/images/items/resources/meat-1k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 1,000 Meat.",
+    "sources": []
+  },
+  {
+    "id": "meat-10k",
+    "name": "10k Meat",
+    "img": "/images/items/resources/meat-10k.png",
+    "category": "Resources",
+    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 10,000 Meat.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "meat-10k-secured",
+    "name": "10k Meat (Secured)",
+    "img": "/images/items/resources/meat-10k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 10,000 Meat.",
+    "sources": []
+  },
+  {
+    "id": "meat-100k",
+    "name": "100k Meat",
+    "img": "/images/items/resources/meat-100k.png",
+    "category": "Resources",
+    "description": "A pack of 100,000 Meat.",
+    "sources": []
+  },
+  {
+    "id": "meat-100k-secured",
+    "name": "100k Meat (Secured)",
+    "img": "/images/items/resources/meat-100k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 100,000 Meat.",
+    "sources": []
+  },
+  {
+    "id": "meat-1m",
+    "name": "1M Meat",
+    "img": "/images/items/resources/meat-1m.png",
+    "category": "Resources",
+    "description": "A pack of 1,000,000 Meat.",
+    "sources": []
+  },
+  {
+    "id": "meat-1m-secured",
+    "name": "1M Meat (Secured)",
+    "img": "/images/items/resources/meat-1m-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 1,000,000 Meat.",
+    "sources": []
+  },
+  {
+    "id": "wood-1k",
+    "name": "1k Wood",
+    "img": "/images/items/resources/wood-1k.png",
+    "category": "Resources",
+    "description": "A pack of 1,000 Wood.",
+    "sources": []
+  },
+  {
+    "id": "wood-1k-secured",
+    "name": "1k Wood (Secured)",
+    "img": "/images/items/resources/wood-1k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 1,000 Wood.",
+    "sources": []
+  },
+  {
+    "id": "wood-10k",
+    "name": "10k Wood",
+    "img": "/images/items/resources/wood-10k.png",
+    "category": "Resources",
+    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 10,000 Wood.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "wood-10k-secured",
+    "name": "10k Wood (Secured)",
+    "img": "/images/items/resources/wood-10k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 10,000 Wood.",
+    "sources": []
+  },
+  {
+    "id": "wood-100k",
+    "name": "100k Wood",
+    "img": "/images/items/resources/wood-100k.png",
+    "category": "Resources",
+    "description": "A pack of 100,000 Wood.",
+    "sources": []
+  },
+  {
+    "id": "wood-100k-secured",
+    "name": "100k Wood (Secured)",
+    "img": "/images/items/resources/wood-100k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 100,000 Wood.",
+    "sources": []
+  },
+  {
+    "id": "wood-1m",
+    "name": "1M Wood",
+    "img": "/images/items/resources/wood-1m.png",
+    "category": "Resources",
+    "description": "A pack of 1,000,000 Wood.",
+    "sources": []
+  },
+  {
+    "id": "wood-1m-secured",
+    "name": "1M Wood (Secured)",
+    "img": "/images/items/resources/wood-1m-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 1,000,000 Wood.",
+    "sources": []
+  },
+  {
+    "id": "coal-100",
+    "name": "100 Coal",
+    "img": "/images/items/resources/coal-100.png",
+    "category": "Resources",
+    "description": "A pack of 100 Coal.",
+    "sources": []
+  },
+  {
+    "id": "coal-1k",
+    "name": "1k Coal",
+    "img": "/images/items/resources/coal-1k.png",
+    "category": "Resources",
+    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 1,000 Coal.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "coal-1k-secured",
+    "name": "1k Coal (Secured)",
+    "img": "/images/items/resources/coal-1k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 1,000 Coal.",
+    "sources": []
+  },
+  {
+    "id": "coal-10k",
+    "name": "10k Coal",
+    "img": "/images/items/resources/coal-10k.png",
+    "category": "Resources",
+    "description": "A pack of 10,000 Coal.",
+    "sources": []
+  },
+  {
+    "id": "coal-10k-secured",
+    "name": "10k Coal (Secured)",
+    "img": "/images/items/resources/coal-10k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 10,000 Coal.",
+    "sources": []
+  },
+  {
+    "id": "coal-100k",
+    "name": "100k Coal",
+    "img": "/images/items/resources/coal-100k.png",
+    "category": "Resources",
+    "description": "A pack of 100,000 Coal.",
+    "sources": []
+  },
+  {
+    "id": "coal-100k-secured",
+    "name": "100k Coal (Secured)",
+    "img": "/images/items/resources/coal-100k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 100,000 Coal.",
+    "sources": []
+  },
+  {
+    "id": "coal-1m",
+    "name": "1M Coal",
+    "img": "/images/items/resources/coal-1m.png",
+    "category": "Resources",
+    "description": "A pack of 1,000,000 Coal.",
+    "sources": []
+  },
+  {
+    "id": "coal-1m-secured",
+    "name": "1M Coal (Secured)",
+    "img": "/images/items/resources/coal-1m-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 1,000,000 Coal.",
+    "sources": []
+  },
+  {
+    "id": "iron-100",
+    "name": "100 Iron",
+    "img": "/images/items/resources/iron-100.png",
+    "category": "Resources",
+    "description": "A pack of 100 Iron.",
+    "sources": []
+  },
+  {
+    "id": "iron-1k",
+    "name": "1k Iron",
+    "img": "/images/items/resources/iron-1k.png",
+    "category": "Resources",
+    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 1,000 Iron.",
+    "sources": ["Daily Missions"]
+  },
+  {
+    "id": "iron-1k-secured",
+    "name": "1k Iron (Secured)",
+    "img": "/images/items/resources/iron-1k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 1,000 Iron.",
+    "sources": []
+  },
+  {
+    "id": "iron-10k",
+    "name": "10k Iron",
+    "img": "/images/items/resources/iron-10k.png",
+    "category": "Resources",
+    "description": "A pack of 10,000 Iron.",
+    "sources": []
+  },
+  {
+    "id": "iron-10k-secured",
+    "name": "10k Iron (Secured)",
+    "img": "/images/items/resources/iron-10k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 10,000 Iron.",
+    "sources": []
+  },
+  {
+    "id": "iron-100k",
+    "name": "100k Iron",
+    "img": "/images/items/resources/iron-100k.png",
+    "category": "Resources",
+    "description": "A pack of 100,000 Iron.",
+    "sources": []
+  },
+  {
+    "id": "iron-100k-secured",
+    "name": "100k Iron (Secured)",
+    "img": "/images/items/resources/iron-100k-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 100,000 Iron.",
+    "sources": []
+  },
+  {
+    "id": "iron-1m",
+    "name": "1M Iron",
+    "img": "/images/items/resources/iron-1m.png",
+    "category": "Resources",
+    "description": "A pack of 1,000,000 Iron.",
+    "sources": []
+  },
+  {
+    "id": "iron-1m-secured",
+    "name": "1M Iron (Secured)",
+    "img": "/images/items/resources/iron-1m-secured.png",
+    "category": "Resources",
+    "description": "A secured pack of 1,000,000 Iron.",
     "sources": []
   },
   {
@@ -767,7 +1067,7 @@
     "id": "pet-advancement-materials-custom-chest",
     "name": "Pet Advancement Materials Custom Chest",
     "img": "/images/items/pet-advancement-materials-custom-chest.png",
-    "category": "Chest",
+    "category": "Pet",
     "description": "Gives one of the following rewards of your choice: Taming Manual *7, Energizing Potion *2, Strengthening Serum *1.",
     "sources": ["Mystery Shop", "Alliance Shop", "Stronghold"]
   },
@@ -1367,7 +1667,9 @@
       "Officer Project",
       "Defeat nearby Beasts",
       "Frostfire Mine",
-      "foundry battle"
+      "Foundry Battle",
+      "Dead Shot (Sign-in Rewards)",
+      "Castle Battle"
     ]
   },
   {
@@ -1683,7 +1985,7 @@
     "id": "charm-design",
     "name": "Charm Design",
     "img": "/images/items/charm-design.png",
-    "category": "Gear Materials",
+    "category": "Chief Material",
     "description": "After hitting Furnace 25, the Chief Gear Charm feature will be unlocked. The Charm Guide is used to upgrade Chief Charm.",
     "sources": [
       "Intel Missions",
@@ -1702,7 +2004,7 @@
     "id": "charm-guide",
     "name": "Charm Guide",
     "img": "/images/items/charm-guide.png",
-    "category": "Gear Materials",
+    "category": "Chief Material",
     "description": "After hitting Furnace 25, the Chief Gear Charm feature will be unlocked. The Charm Guide is used to upgrade Chief Charm.",
     "sources": [
       "Intel Missions",
@@ -1721,7 +2023,7 @@
     "id": "charm-secrets",
     "name": "Charm Secrets",
     "img": "/images/items/charm-secrets.png",
-    "category": "Gear Materials",
+    "category": "Chief Material",
     "description": "used to upgrade Chief Charm after Level 11. Exchange Ratio: 40 Charm Guide = 1 Charm Secrets , 40 Charm Design = 1 Charm Secrets",
     "sources": ["Chief Charm Material Exchange", "Purchase Packs"]
   },
@@ -1729,7 +2031,7 @@
     "id": "design-plans",
     "name": "Design Plans",
     "img": "/images/items/design-plans.png",
-    "category": "Gear Materials",
+    "category": "Chief Material",
     "description": "After hitting Furnace 22, the Chief Gear feature will be unlocked. The Design Plans are used to upgrade Chief Gears.",
     "sources": [
       "Intel Missions",
@@ -1744,32 +2046,26 @@
     ]
   },
   {
-    "id": "enhancement-xp-component",
-    "name": "Enhancement XP Component",
+    "id": "enhancement-xp-component-10",
+    "name": "10 Enhancement XP Component",
     "img": "/images/items/enhancement-xp-component.png",
-    "category": "Gear Materials",
-    "description": "10 & 100 Enhancement XP Components are used to upgrade hero gears. After hitting Furnace 15, the hero gear will be unlocked.",
-    "sources": [
-      "Bear Trap",
-      "Intel Missions",
-      "Frostdragon Tyrant",
-      "VIP Shop",
-      "Foundry Shop",
-      "Labyrinth Shop",
-      "Canyon Shop",
-      "Tundra Trading Station",
-      "Frosty Fortune",
-      "Mia Fortune",
-      "Journey of Light",
-      "Chests",
-      "Packs"
-    ]
+    "category": "Hero Gear Material",
+    "description": "A 10 Enhancement XP Component, used to upgrade hero gears.",
+    "sources": []
+  },
+  {
+    "id": "enhancement-xp-component-100",
+    "name": "100 Enhancement XP Component",
+    "img": "/images/items/enhancement-xp-component.png",
+    "category": "Hero Gear Material",
+    "description": "A 100 Enhancement XP Component, used to upgrade hero gears.",
+    "sources": []
   },
   {
     "id": "essence-stones",
     "name": "Essence Stones",
     "img": "/images/items/essence-stones.png",
-    "category": "Gear Materials",
+    "category": "Hero Gear Material",
     "description": "After hitting Furnace 20, the Mastery Forging feature will be unlocked. The essence stone it's used to levels up Mythic Hero Gear Mastery for an added gear boost. (Level up beyond Lv.20 to unlock Mastery Forging)",
     "sources": [
       "Bear Hunt",
@@ -1792,7 +2088,7 @@
     "id": "hardened-alloy",
     "name": "Hardened Alloy",
     "img": "/images/items/hardened-alloy.png",
-    "category": "Gear Materials",
+    "category": "Chief Material",
     "description": "A chief Gear upgrade material. For more details, look in the category Chief Gear",
     "sources": [
       "Polar Terror",
@@ -1811,7 +2107,7 @@
     "id": "lunar-amber",
     "name": "Lunar Amber",
     "img": "/images/items/lunar-amber.png",
-    "category": "Gear Materials",
+    "category": "Chief Material",
     "description": "An emblem of celestial elegance capable of enhancing Legendary Chief Gear.",
     "sources": ["Chief Gear Exchange Shop", "Packs"]
   },
@@ -1819,7 +2115,7 @@
     "id": "mithril",
     "name": "Mithril",
     "img": "/images/items/mithril.png",
-    "category": "Gear Materials",
+    "category": "Hero Gear Material",
     "description": "A mysterious metal that imbues Hero gear with extraordinary power. You will need Mithril to continue leveling up your hero gear. How much will you need? Mythril is used for Hero gear ascension. After your hero gear reaches level 100 and level 10 mastery forging you can spend 2 mythic gear to make it red. After its red you have to enhance it to level 19 and level 11 mastery forging . then you can make the first enhancement with mythril. It will cost 10 mithril and 3 mythic gear . The first enhancement will give you 20 percent attack or defense in expedition depening on which hero gear you decide to upgrade. After you upgrade your gear will be level 20 . You then have to bring it to level 39 and mastery forging level 12 to enhance it again with mythril. Upgarde will cost 5 mythic gear and 20 mithril . The next upgrade will either give you 7.5% hero health or lethality for exploration depending on which gear you chose. After your upgrade your gear will be level 40 and you have to bring it to level 59 and mastery forging level 13 to enhance it again with Mythril. The upgrade will cost 30 mithril and 5 mythic gear . Your upgrade will either give you 30 percent defense or attack depending on which gear you chose. After your upgrade your gear will be level 60 and you have to bring it to level 79 and mastery forging level 14 to enhance it again with mythril. Your upgrade will cost 40 mithril and 10 mythic gear . If you decide to upgrade it further with mythril your upgrade will give you either 15 % hero attack or defense for exploration. After your upgrade your gear will be level 80 . You have to again enhance it to level 99 and mastery forging level 15 to make your next upgrade with myhril. The upgrade will cost 50 mithril and 10 mythic gear . It will either give you 50 percent attack or defense for expedition . After your upgrade the gear will be level 100 and maxed out for mythril upgrades How to get Mithril? Mithril is one of the most expensive items in the game. You can get 3 Mithril each week in the Arena and Labyrinth shops. Prioritize obtaining this item over others. You can also obtain it through certain events that appear on your calendar. We recommend prioritizing obtaining Mithril through these events. There are packs available in the store where you can purchase 1 Mithril from 5,99€ and the following packs will scale in the usual way. Packages are reset weekly Tips: Everyone can follow their own strategy, but we recommend first upgrade the hero gear that each hero is designed for. Infantry will play a significant role in defense, so increasing their defense and health stats will be a priority. In the case of Markmen and Lancers, we recommend increasing lethality first. The order to carry out these increases, our recommendation is to start with the infantry, then markmen and finally lancers. Infantry: gauntlets, belt , Marksmen: goggles, boots , Lancer: goggles, boots",
     "sources": [
       "Frostdragon Tyrant",
@@ -1834,7 +2130,7 @@
     "id": "polishing-solution",
     "name": "Polishing Solution",
     "img": "/images/items/polishing-solution.png",
-    "category": "Gear Materials",
+    "category": "Chief Material",
     "description": "After hitting Furnace 22, the Chief Gear feature will be unlocked. The Polishing Solution is used to upgrade Chief Gears.",
     "sources": [
       "Intel Missions",
@@ -2049,7 +2345,7 @@
     "id": "coal",
     "name": "Coal",
     "img": "/images/items/coal.png",
-    "category": "Others",
+    "category": "Resources",
     "description": "The coal will be used to improve your buildings, do research and train your troops. You can obtain it by gathering, in events or by purchasing it. In your bag you will be able to see your different packs of coal available.",
     "sources": []
   },
@@ -2140,7 +2436,7 @@
     "id": "iron",
     "name": "Iron",
     "img": "/images/items/iron.png",
-    "category": "Others",
+    "category": "Resources",
     "description": "The iron will be used to improve your buildings, do research and train your troops. You can obtain it by gathering, in events or by purchasing it. In your bag you will be able to see your different packs of iron available.",
     "sources": []
   },
@@ -2166,38 +2462,6 @@
     "img": "/images/items/activity-triumph-points.png",
     "category": "Others",
     "description": "A reward of the activity bar of the Daily Missions.",
-    "sources": ["Daily Missions"]
-  },
-  {
-    "id": "meat-10k",
-    "name": "10k Meat",
-    "img": "/images/items/meat.png",
-    "category": "Others",
-    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 10,000 Meat.",
-    "sources": ["Daily Missions"]
-  },
-  {
-    "id": "wood-10k",
-    "name": "10k Wood",
-    "img": "/images/items/wood.png",
-    "category": "Others",
-    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 10,000 Wood.",
-    "sources": ["Daily Missions"]
-  },
-  {
-    "id": "coal-1k",
-    "name": "1k Coal",
-    "img": "/images/items/coal.png",
-    "category": "Others",
-    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 1,000 Coal.",
-    "sources": ["Daily Missions"]
-  },
-  {
-    "id": "iron-1k",
-    "name": "1k Iron",
-    "img": "/images/items/iron.png",
-    "category": "Others",
-    "description": "A reward of the activity bar of the Daily Missions. It is a pack of 1,000 Iron.",
     "sources": ["Daily Missions"]
   },
   {
@@ -2270,7 +2534,7 @@
     "id": "meat",
     "name": "Meat",
     "img": "/images/items/meat.png",
-    "category": "Others",
+    "category": "Resources",
     "description": "The meat will be used to improve your buildings, do research and train your troops. You can obtain it by gathering, in events or by purchasing it. In your bag you will be able to see your different packs of meat available.",
     "sources": []
   },
@@ -2330,20 +2594,6 @@
     "sources": ["Album Missions", "Recycle Shop"]
   },
   {
-    "id": "short-token",
-    "name": "Shot Token",
-    "img": "/images/items/short-token.png",
-    "category": "Others",
-    "description": "Used in the [Dead Shot] event.",
-    "sources": [
-      "Dead Shot (Sign-in Rewards)",
-      "Foundry Battle",
-      "King of Icefield",
-      "Officer Project",
-      "Castle Battle"
-    ]
-  },
-  {
     "id": "starry-lighthouse-blueprint",
     "name": "Starry Lighthouse Blueprint",
     "img": "/images/items/starry-lighthouse-blueprint.png",
@@ -2355,7 +2605,7 @@
     "id": "steel",
     "name": "Steel",
     "img": "/images/items/steel.png",
-    "category": "Others",
+    "category": "Resources",
     "description": "Essential material for upgrading furniture and technology. Obtained from Exploration.",
     "sources": []
   },
@@ -2387,7 +2637,7 @@
     "id": "wood",
     "name": "Wood",
     "img": "/images/items/wood.png",
-    "category": "Others",
+    "category": "Resources",
     "description": "The wood will be used to improve your buildings, do research and train your troops. You can obtain it by gathering, in events or by purchasing it. In your bag you will be able to see your different packs of wood available.",
     "sources": []
   },
@@ -3522,6 +3772,286 @@
     "img": "/images/heroes/Eugene/Eugene-Shard.png",
     "category": "Hero Items",
     "description": "A shard of Eugene, a Rare hero.",
+    "sources": []
+  },
+  {
+    "id": "jeronimo-shard",
+    "name": "Jeronimo Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Jeronimo, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "ahmose-shard",
+    "name": "Ahmose Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Ahmose, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "hector-shard",
+    "name": "Hector Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Hector, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "renee-shard",
+    "name": "Renee Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Renee, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "wayne-shard",
+    "name": "Wayne Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Wayne, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "edith-shard",
+    "name": "Edith Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Edith, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "bradley-shard",
+    "name": "Bradley Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Bradley, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "gatot-shard",
+    "name": "Gatot Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Gatot, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "sonya-shard",
+    "name": "Sonya Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Sonya, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "fred-shard",
+    "name": "Fred Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Fred, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "xura-shard",
+    "name": "Xura Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Xura, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "gregory-shard",
+    "name": "Gregory Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Gregory, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "freya-shard",
+    "name": "Freya Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Freya, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "blanchette-shard",
+    "name": "Blanchette Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Blanchette, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "eleonora-shard",
+    "name": "Eleonora Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Eleonora, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "lloyd-shard",
+    "name": "Lloyd Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Lloyd, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "rufus-shard",
+    "name": "Rufus Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Rufus, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "hervor-shard",
+    "name": "Hervor Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Hervor, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "karol-shard",
+    "name": "Karol Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Karol, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "ligeia-shard",
+    "name": "Ligeia Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Ligeia, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "gisela-shard",
+    "name": "Gisela Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Gisela, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "flora-shard",
+    "name": "Flora Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Flora, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "vulcanus-shard",
+    "name": "Vulcanus Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Vulcanus, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "elif-shard",
+    "name": "Elif Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Elif, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "dominic-shard",
+    "name": "Dominic Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Dominic, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "cara-shard",
+    "name": "Cara Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Cara, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "hank-shard",
+    "name": "Hank Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Hank, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "estrella-shard",
+    "name": "Estrella Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Estrella, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "viveca-shard",
+    "name": "Viveca Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Viveca, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "seigel-shard",
+    "name": "Seigel Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Seigel, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "ursar-shard",
+    "name": "Ursar Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Ursar, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "aisling-shard",
+    "name": "Aisling Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Aisling, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "aiden-shard",
+    "name": "Aiden Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Aiden, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "bertha-shard",
+    "name": "Bertha Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Bertha, a Legendary hero.",
+    "sources": []
+  },
+  {
+    "id": "eleanor-shard",
+    "name": "Eleanor Shard",
+    "img": "",
+    "category": "Hero Items",
+    "description": "A shard of Eleanor, a Legendary hero.",
     "sources": []
   }
 ]

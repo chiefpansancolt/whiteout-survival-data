@@ -26,11 +26,11 @@ describe('Hero Gear Enhancement table', () => {
     expect(heroGearEnhancement().count()).toBe(100);
   });
 
-  it('costs Enhancement XP Component at every level', () => {
+  it('costs Enhancement XP at every level', () => {
     expect(
       heroGearEnhancement()
         .get()
-        .every((l) => l.cost.length === 1 && l.cost[0].itemId === 'enhancement-xp-component'),
+        .every((l) => l.cost.length === 1 && l.cost[0].itemId === 'enhancement-xp'),
     ).toBe(true);
   });
 
@@ -40,10 +40,11 @@ describe('Hero Gear Enhancement table', () => {
     expect(heroGearEnhancement().find('level-100')!.power).toBe(271675);
   });
 
-  it('resolves every cost itemId against a real cataloged item', () => {
+  it('resolves every cost itemId except the XP against a real cataloged item', () => {
     const allItemIds = heroGearEnhancement()
       .get()
-      .flatMap((l) => l.cost.map((c) => c.itemId));
+      .flatMap((l) => l.cost.map((c) => c.itemId))
+      .filter((id) => id !== 'enhancement-xp');
     expect(allItemIds.every((id) => items().find(id) !== undefined)).toBe(true);
   });
 });

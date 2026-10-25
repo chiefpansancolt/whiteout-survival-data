@@ -215,11 +215,11 @@ describe('Events data', () => {
       name: 'Tier 1',
       scoreTotal: 10000,
       rewards: [
-        { name: '100 Enhancement XP Component', itemId: 'enhancement-xp-component', amount: 2 },
+        { name: '100 Enhancement XP Component', itemId: 'enhancement-xp-component-100', amount: 2 },
         { name: 'Alliance Tokens', itemId: 'alliance-token', amount: 5000 },
         {
           name: 'Lv. 3 Custom Secured Resource Chest',
-          itemId: 'lv-3-custom-ressource-chest',
+          itemId: 'lv-3-custom-resource-chest',
           amount: 50,
         },
       ],
@@ -453,8 +453,8 @@ describe('Events data', () => {
       amount: 10,
     });
     expect(last[2].rewards[4]).toEqual({
-      name: 'Lv.2 Custom Ressource Chest',
-      itemId: 'lv-2-custom-ressource-chest',
+      name: 'Lv.2 Custom Resource Chest',
+      itemId: 'lv-2-custom-resource-chest',
       amount: 20,
     });
     const [, result] = event.personalRankings!;
@@ -728,7 +728,7 @@ describe('Events data', () => {
     expect(tiers.map((t) => t.rankings!.length)).toEqual([10, 10, 10, 7, 7, 7, 5]);
     expect(tiers[0].rankings![0].rewards[3]).toEqual({
       name: 'Lv.2 Custom Resource Chest',
-      itemId: 'lv-2-custom-ressource-chest',
+      itemId: 'lv-2-custom-resource-chest',
       amount: 150,
     });
     const [, total, battle, , , battleAlliance] = tiers;
@@ -759,7 +759,7 @@ describe('Events data', () => {
     });
     expect(tiers[4].rankings![0].rewards[3]).toEqual({
       name: 'Lv.2 Custom Resource Chest',
-      itemId: 'lv-2-custom-ressource-chest',
+      itemId: 'lv-2-custom-resource-chest',
       amount: 200,
     });
   });
@@ -897,7 +897,7 @@ describe('Events data', () => {
       ],
       [
         ['gems', 5000],
-        ['lv-1-custom-ressource-chest', 1],
+        ['lv-1-custom-resource-chest', 1],
         ['meat', 280],
         ['wood', 70],
       ],
@@ -919,7 +919,7 @@ describe('Events data', () => {
     expect(fishing.tiers!.map((t) => t.scoreTotal)).toEqual([250, 500, 1000, 1500, 2000]);
     expect(fishing.tiers![4].rewards![0]).toMatchObject({ itemId: 'lucky-hero-gear-chest' });
     expect(fishing.tiers![0].rewards!.map((r) => r.itemId)).toEqual([
-      'enhancement-xp-component',
+      'enhancement-xp-component-100',
       'hero-xp',
       'speedup-general-5m',
     ]);
@@ -961,7 +961,7 @@ describe('Events data', () => {
       'charm-guide',
       'shot-token',
       'gems',
-      'lv-2-custom-ressource-chest',
+      'lv-2-custom-resource-chest',
     ]);
     const league = events().find('icefire-warhymn-league')!;
     expect(league.personalRankings![1].rankings.map((r) => r.groupRanking)).toEqual([
@@ -976,7 +976,7 @@ describe('Events data', () => {
     ]);
     expect(league.personalRankings![1].rankings[4].rewards.map((r) => r.itemId)).toEqual([
       'fire-crystal',
-      'enhancement-xp-component',
+      'enhancement-xp-component-100',
       'treasure-box',
     ]);
     const season = league.personalRankings![0].rankings;
@@ -1033,7 +1033,7 @@ describe('Events data', () => {
       'advanced-wild-mark',
       'fire-crystal',
       'speedup-general-1h',
-      'lv-3-custom-ressource-chest',
+      'lv-3-custom-resource-chest',
     ]);
     expect(league.shop![0].reward).toMatchObject({ decorationId: 'icefire-way' });
     expect(league.missionPointsLabel).toBe('Warhymn Testaments');
@@ -1077,8 +1077,8 @@ describe('Events data', () => {
     expect(league.missions![3].rewards![0]).toMatchObject({ itemId: 'lucky-hero-gear-chest' });
     expect(league.missions![4].rewards!.map((r) => r.itemId)).toEqual([
       'fire-crystal',
-      'enhancement-xp-component',
-      'lv-3-custom-ressource-chest',
+      'enhancement-xp-component-100',
+      'lv-3-custom-resource-chest',
     ]);
     expect(league.phases!.map((p) => p.name)).toEqual([
       'Preview',
@@ -1460,7 +1460,7 @@ describe('Events data', () => {
         ['chief-stamina', 5],
       ],
       [
-        ['enhancement-xp-component', 5],
+        ['enhancement-xp-component-100', 5],
         ['chief-stamina', 5],
       ],
       [
@@ -1498,7 +1498,7 @@ describe('Events data', () => {
         ['iron', 5],
       ],
       [
-        ['enhancement-xp-component', 3],
+        ['enhancement-xp-component-100', 3],
         ['speedup-general-5m', 5],
         ['speedup-research-5m', 5],
       ],
@@ -1520,7 +1520,7 @@ describe('Events data', () => {
       [
         ['mythic-general-hero-shard', 2],
         ['fire-crystal', 5],
-        ['lv-2-custom-ressource-chest', 10],
+        ['lv-2-custom-resource-chest', 10],
       ],
       [
         ['hero-xp', 2],
@@ -2136,7 +2136,7 @@ describe('expert extra tiers', () => {
     ]);
     expect(rewards('alliance-mobilization', 2)).toEqual([
       ['essence-stones', 10],
-      ['enhancement-xp-component', 10],
+      ['enhancement-xp-component-100', 10],
     ]);
     expect(rewards('alliance-showdown', 1)).toEqual([
       ['sail-of-conquest', 1],

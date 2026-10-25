@@ -25,9 +25,8 @@
         "name": "Fiery Crystal",
         "img": "/images/tundra-album/crystalline-mysteries/fiery-crystal.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 7,
-          "size": 100
+          "itemId": "enhancement-xp-component-100",
+          "amount": 7
         },
         "pieces": [
           {
@@ -1095,9 +1094,8 @@
         "name": "Island of Dreams",
         "img": "/images/tundra-album/daybreak-island/island-of-dreams.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 7,
-          "size": 100
+          "itemId": "enhancement-xp-component-100",
+          "amount": 7
         },
         "pieces": [
           {
@@ -1935,9 +1933,8 @@
         "amount": 30
       },
       {
-        "itemId": "enhancement-xp-component",
-        "amount": 100,
-        "size": 100
+        "itemId": "enhancement-xp-component-100",
+        "amount": 100
       }
     ],
     "puzzles": [
@@ -2094,9 +2091,8 @@
         "name": "Hunting Guild",
         "img": "/images/tundra-album/explore-the-world/hunting-guild.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 7,
-          "size": 100
+          "itemId": "enhancement-xp-component-100",
+          "amount": 7
         },
         "pieces": [
           {
@@ -2825,9 +2821,8 @@
         "name": "Dauntless Heroes",
         "img": "/images/tundra-album/song-of-heroes/dauntless-heroes.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 45,
-          "size": 10
+          "itemId": "enhancement-xp-component-10",
+          "amount": 45
         },
         "pieces": [
           {
@@ -3039,9 +3034,8 @@
         "name": "Arcadia's Legacy",
         "img": "/images/tundra-album/song-of-heroes/arcadias-legacy.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 7,
-          "size": 100
+          "itemId": "enhancement-xp-component-100",
+          "amount": 7
         },
         "pieces": [
           {
@@ -3716,9 +3710,8 @@
         "name": "City Founding",
         "img": "/images/tundra-album/rekindled-flames/city-founding.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 45,
-          "size": 10
+          "itemId": "enhancement-xp-component-10",
+          "amount": 45
         },
         "pieces": [
           {
@@ -3930,9 +3923,8 @@
         "name": "Menace Afoot",
         "img": "/images/tundra-album/rekindled-flames/menace-afoot.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 7,
-          "size": 100
+          "itemId": "enhancement-xp-component-100",
+          "amount": 7
         },
         "pieces": [
           {
@@ -4506,9 +4498,8 @@
         "name": "One Heart",
         "img": "/images/tundra-album/tundra-alliance/one-heart.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 7,
-          "size": 100
+          "itemId": "enhancement-xp-component-100",
+          "amount": 7
         },
         "pieces": [
           {
@@ -7364,9 +7355,8 @@
         "name": "Master Blacksmith",
         "img": "/images/tundra-album/divine-weapons/master-blacksmith.png",
         "reward": {
-          "itemId": "enhancement-xp-component",
-          "amount": 7,
-          "size": 100
+          "itemId": "enhancement-xp-component-100",
+          "amount": 7
         },
         "pieces": [
           {
