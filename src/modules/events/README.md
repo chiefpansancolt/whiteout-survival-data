@@ -295,5 +295,5 @@ Vision of Dawn has two `versions`, Before Fire Crystal age and Fire Crystal age.
 missions with their Hope points and rewards, and the five Hope chests in `tiers`. The Fire Crystal
 age version has the Hope points of each chest in `scoreTotal` (10, 30, 50, 80, and 110). The Before
 Fire Crystal age version does not have them yet. The missions of the Fire Crystal age version give
-54 Hope points a day. The Lv.2 Custom Ressource Chest of the Epic Recruitment 30 mission is read
-from the icon of the screen.
+54 Hope points a day. The Lv.2 Custom Resource Chest of the Epic Recruitment 30 mission is read from
+the icon of the screen.

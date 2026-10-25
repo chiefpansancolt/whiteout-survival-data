@@ -31,7 +31,8 @@ The data is in `data/chief/hero-gear-empowerment.json`. It has 100 rows, one for
 to 100. Each row has an `id`, a `name`, the `level`, a `cost` list of `{ itemId, amount }`, and
 `power`. The rows of levels 20, 40, 60, 80, and 100 also have `milestonePower`. Level 1 costs 2
 Custom Mythic Hero Gear Chests. Levels 20, 40, 60, 80, and 100 cost Custom Mythic Hero Gear Chests
-and Mithril. Every other level costs Enhancement XP Component.
+and Mithril. Every other level costs Enhancement XP, with the `itemId` `enhancement-xp`, which is
+not in `items()`.
 
 | Level | Chests | Mithril |
 | ----- | ------ | ------- |
@@ -43,7 +44,7 @@ and Mithril. Every other level costs Enhancement XP Component.
 
 ## Notes
 
-The cost items match `items()`.
+The cost items match `items()`, except `enhancement-xp`.
 
 An empowered piece has reached enhancement level 100. The `power` values are the Power of a piece
 with no mastery forging. They continue from the power of enhancement level 100, and mastery forging

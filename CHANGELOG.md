@@ -7,6 +7,31 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game Data
+
+- `items()`: new `Resources` category with the Custom Resource Chests, the Custom Secured Resource
+  Chests, Meat, Wood, Coal, Iron, and Steel, and the packs of the first four, each with a Secured
+  version where the game has one.
+- `items()`: the duplicate Shot Token entry is removed. `shot-token` keeps the sources of both.
+- `items()`: a Shard item for each of the 35 heroes that had none, with no icon yet.
+- `items()`: new Mythic Hero Gear item in `Hero Gear Material`, with no icon yet.
+
+### Changed
+
+#### Game Data
+
+- `items()`: the Custom Resource Chests and the four Daily Missions resource packs move out of
+  `Chest` and `Others` into `Resources`. The ids of the chests now use the spelling `resource`.
+- `items()`: the `Gear Materials` category is split into `Chief Material` and `Hero Gear Material`.
+  The Enhancement XP Component also has an item for the 10 and one for the 100. Tundra Album rewards
+  link to the item of their size, and a reward no longer has a `size`. The generic Enhancement XP
+  Component item is removed. Hero gear upgrade costs and the hero gear calculator use the id
+  `enhancement-xp`, which counts XP and is not an item.
+- `items()`: the Custom Mythic Hero Gear Chest moves from `Chest` to `Hero Gear Material`.
+- `items()`: the Pet Advancement Materials Custom Chest moves from `Chest` to `Pet`.
+
 ## [0.7.1] - 2026-10-18
 
 ### Fixed

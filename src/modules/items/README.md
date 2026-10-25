@@ -1,6 +1,6 @@
 # Items
 
-The 348 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 417 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -39,31 +39,33 @@ Items are in `data/chief/items.json`. Each entry has `id`, `name`, `img`, `categ
 `speedup` with its `type` (`general`, `construction`, `troop`, `research`, `learning`, or `healing`)
 and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minutes).
 
-`category` is one of 12 values.
+`category` is one of 14 values.
 
-| Category       | Items |
-| -------------- | ----- |
-| Chest          | 60    |
-| Event          | 58    |
-| Others         | 48    |
-| Buff           | 31    |
-| Hero Items     | 40    |
-| Speedups       | 25    |
-| Experts        | 17    |
-| Gear Materials | 10    |
-| Pet            | 6     |
-| Fire Crystal   | 4     |
-| Teleporter     | 4     |
-| Furniture      | 45    |
+| Category           | Items |
+| ------------------ | ----- |
+| Chest              | 55    |
+| Resources          | 45    |
+| Event              | 58    |
+| Others             | 38    |
+| Buff               | 31    |
+| Hero Items         | 75    |
+| Speedups           | 25    |
+| Experts            | 17    |
+| Chief Material     | 7     |
+| Hero Gear Material | 6     |
+| Pet                | 7     |
+| Fire Crystal       | 4     |
+| Teleporter         | 4     |
+| Furniture          | 45    |
 
 `id` is a unique slug, not a slug made from the name alone. Several names repeat across categories.
 The Skins module has the same rule.
 
 `sources` is a plain list of where an item drops from, such as shops, events, and activities. It is
-empty for 95 items.
+empty for 183 items.
 
 `rewardRates` is a loot table, a list of `{ reward, amount, probabilityPercent }`. Only chests carry
-it, and only 12 of the 60 chests do.
+it, and only 12 of the 55 chests do.
 
 ## Notes
 
@@ -82,8 +84,8 @@ Album.
 
 The icons of Alliance XP and Activity Triumph Points, two items of the activity bar of the Daily
 Missions, are cropped from the tooltip of a reward level of the bar, and the frame is removed. The
-four resource packs of the bar, 10k Meat, 10k Wood, 1k Coal, and 1k Iron, use the icon of their
-resource. The names are as the game words them.
+four resource packs of the bar, 10k Meat, 10k Wood, 1k Coal, and 1k Iron, are in `Resources`. The
+names are as the game words them.
 
 Five items fit more than one category, all of them involving Chest. Seeker's Chest fits both `Chest`
 and `Experts`. `Chest` wins in every case because it is the more specific category.
@@ -91,6 +93,50 @@ and `Experts`. `Chest` wins in every case because it is the more specific catego
 Chest rewards come in two structured shapes: a "Reward Rates" bullet list, and an `Item`,
 `Quantity`, `Chance` table in which the item name cell spans several tiers. The parser reads both.
 The other chests describe rewards in prose only and get no `rewardRates`.
+
+### Enhancement XP Component
+
+Hero gear upgrades use the Enhancement XP Component in two sizes, so `Hero Gear Material` has
+`enhancement-xp-component-10` and `enhancement-xp-component-100`, named
+`10 Enhancement XP Component` and `100 Enhancement XP Component`. They share one icon. A reward with
+no size in its source links to the 100 item. The upgrade costs of hero gear are plain XP and do not
+link to an item. Their id is `enhancement-xp`, which is not in `items()`.
+
+### Custom Mythic Hero Gear Chest
+
+The Custom Mythic Hero Gear Chest is in `Hero Gear Material` and not in `Chest`, because hero gear
+empowerment spends it as a material, with Mithril.
+
+### Hero Shards
+
+Every hero has a Shard item in `Hero Items`, named `<Hero> Shard`. 30 of them have an icon, which is
+also the `shardImg` of the hero. The shards of the other 35 heroes, Jeronimo to Eleanor, have no
+icon yet, so their `img` is an empty string. The id of these 35 is the id of the hero plus `-shard`,
+such as `jeronimo-shard`. The shards of the first 30 keep their older ids, such as
+`hero-shard-gen-1a`. The package has no sources for the 35 new shards.
+
+### Mythic Hero Gear
+
+The Mythic Hero Gear is in `Hero Gear Material`. It has no icon yet, so its `img` is an empty
+string.
+
+### Resources
+
+The 45 items of `Resources` are the three Custom Resource Chests, the three Custom Secured Resource
+Chests, the plain `meat`, `wood`, `coal`, `iron`, and `steel` items, and the resource packs of Meat,
+Wood, Coal, and Iron. They match the Resources tab of the in-game Backpack. Meat and Wood have packs
+of 1k, 10k, 100k, and 1M. Coal and Iron have packs of 100, 1k, 10k, 100k, and 1M. Every pack from 1k
+up also has a Secured version, which the game marks with a shield.
+
+An id is the resource and the size, such as `meat-10k`, with `-secured` added for the Secured
+version, such as `meat-10k-secured`. A Custom Secured Resource Chest uses the icon of the Custom
+Resource Chest of the same level.
+
+The pack icons are cropped from Backpack screenshots in `images/items/resources/`, with their frame,
+and the amount on each is painted out. The screenshots had no 1M Secured Coal and no 1M Secured
+Iron. Their icons are the 1M icon with the shield of the 1M Secured Wood added. The package has no
+loot, source, or content data for the Secured chests and packs, so they only have a name, an icon,
+and for the packs a description.
 
 ### Furniture
 

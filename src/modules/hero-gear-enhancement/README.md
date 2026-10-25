@@ -9,7 +9,7 @@ and the unforged power of an enhancement level.
 import { heroGearEnhancement } from "whiteout-survival-data";
 
 const levelOne = heroGearEnhancement().find("level-1");
-console.log(levelOne?.cost); // [{ itemId: 'enhancement-xp-component', amount: 10 }]
+console.log(levelOne?.cost); // [{ itemId: 'enhancement-xp', amount: 10 }]
 
 const levelHundred = heroGearEnhancement().byLevel(100).first();
 console.log(levelHundred?.power); // 271675
@@ -28,8 +28,9 @@ in [How It Works](../../../README.md#how-it-works).
 
 The data is in `data/chief/hero-gear-enhancement.json`. It has 100 rows, one for each level from 1
 to 100. Each row has an `id` such as `level-1`, a `name`, the `level`, a `cost` list of
-`{ itemId, amount }`, and `power`. Every level costs Enhancement XP Component
-(`enhancement-xp-component` in `items()`).
+`{ itemId, amount }`, and `power`. Every level costs Enhancement XP. The amount is XP, so the
+`itemId` is `enhancement-xp`, which is not in `items()`. A 100 Enhancement XP Component gives 100 XP
+and a 10 Enhancement XP Component gives 10 XP.
 
 ## Notes
 
