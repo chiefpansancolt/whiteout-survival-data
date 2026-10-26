@@ -149,10 +149,9 @@ only where it is clear:
 - Alliance Mobilization is set to once a month, as the text says, although it runs twice a month
   until about 13 weeks of state age.
 
-Seven events have a repeat rule or a run that the text of `frequency` and `duration` does not give.
-Foundry Battle is every two weeks for 60 minutes. SvS is every four weeks. Canyon Clash is every
-month. Armament Competition and Officer Project are every two weeks, and Officer Project is "usually
-two days". Mercenary Prestige is every month. Hero Rally is 14 days.
+Three events have a repeat rule or a run that the text of `frequency` and `duration` does not give.
+Armament Competition and Officer Project are every two weeks, and Officer Project is "usually two
+days". Hero Rally is 14 days.
 
 Fifteen events have no schedule, because their text gives no usable one: Deadshot, Develop New Tech
 and its second version, Dreamscape Memory, Frostdragon Tyrant, Frosty Fortune, Home Beyond, Return

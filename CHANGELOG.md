@@ -31,6 +31,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `events()`: Canyon Clash, Mercenary Prestige, Tundra Trade Route, and Wild Brawl repeat every four
+  weeks, SvS has the frequency text for it, Lucky Wheel repeats every two weeks, and Foundry Battle
+  has the frequency "Every 2 weeks" and the duration "60 minutes". Mercenary Prestige lasts 3 days.
 - `experts()`: Entrapment is available from affinity level 1, and the level caps of Call of War,
   Radiant Honor, and Undefeated Will follow the requirements of the skills.
 - `chiefOrders()`: the cooldown of Rush Job, Dawn Alliance Commendation, and Advanced Training is 1
