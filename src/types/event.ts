@@ -50,6 +50,12 @@ export interface GameEventTier {
   scoreTotal?: number;
   rewards?: GameEventReward[];
   rankings?: GameEventRanking[];
+  /** The personal rewards of this tier, by score. */
+  milestones?: GameEventTier[];
+  /** The alliance rewards of this tier, by score. */
+  allianceMilestones?: GameEventTier[];
+  personalRankings?: GameEventRanking[];
+  allianceRankings?: GameEventRanking[];
 }
 
 export type GameEventWaveTarget = 'city' | 'headquarters';

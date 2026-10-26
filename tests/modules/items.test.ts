@@ -25,8 +25,8 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 417 items across 14 categories', () => {
-    expect(items().count()).toBe(417);
+  it('tracks 418 items across 14 categories', () => {
+    expect(items().count()).toBe(418);
     expect(items().byCategory('Hero Items').count()).toBe(75);
     expect(items().byCategory('Pet').count()).toBe(7);
     expect(items().byCategory('Chief Material').count()).toBe(7);
@@ -37,7 +37,7 @@ describe('Item catalog', () => {
     expect(items().byCategory('Fire Crystal').count()).toBe(4);
     expect(items().byCategory('Experts').count()).toBe(17);
     expect(items().byCategory('Teleporter').count()).toBe(4);
-    expect(items().byCategory('Others').count()).toBe(38);
+    expect(items().byCategory('Others').count()).toBe(39);
     expect(items().byCategory('Event').count()).toBe(58);
     expect(items().byCategory('Speedups').count()).toBe(25);
     expect(items().byCategory('Furniture').count()).toBe(45);
@@ -344,12 +344,12 @@ describe('items of the activity bar of the Daily Missions', () => {
     }
   });
 
-  it('has 64 items without an icon in all', () => {
+  it('has 65 items without an icon in all', () => {
     expect(
       items()
         .get()
         .filter((i) => i.img === ''),
-    ).toHaveLength(64);
+    ).toHaveLength(65);
   });
 
   it('has a Shard item for every hero, named after the hero', () => {
@@ -374,6 +374,14 @@ describe('items of the activity bar of the Daily Missions', () => {
       'Dead Shot (Sign-in Rewards)',
       'Castle Battle',
     ]);
+  });
+
+  it('has the Gift Strength in Unity of Alliance Mobilization with no icon yet', () => {
+    expect(items().find('gift-strength-in-unity')).toMatchObject({
+      name: 'Gift Strength in Unity',
+      category: 'Others',
+      img: '',
+    });
   });
 
   it('has the Mythic Hero Gear as a Hero Gear Material with no icon yet', () => {

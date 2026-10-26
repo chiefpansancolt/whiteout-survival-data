@@ -32,7 +32,1045 @@
       "name": "Senior"
     },
     {
-      "name": "Elite"
+      "name": "Elite",
+      "milestones": [
+        {
+          "name": "Tier 1",
+          "scoreTotal": 600,
+          "rewards": [
+            {
+              "name": "Gift Strength in Unity",
+              "itemId": "gift-strength-in-unity",
+              "amount": 1
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood-10k",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "name": "Tier 2",
+          "scoreTotal": 1200,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 100
+            },
+            {
+              "name": "10K Iron",
+              "itemId": "iron-10k",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "name": "Tier 3",
+          "scoreTotal": 2000,
+          "rewards": [
+            {
+              "name": "Gift Strength in Unity",
+              "itemId": "gift-strength-in-unity",
+              "amount": 1
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Tier 4",
+          "scoreTotal": 3000,
+          "rewards": [
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 1
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat-10k",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "name": "Tier 5",
+          "scoreTotal": 4000,
+          "rewards": [
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 2
+            },
+            {
+              "name": "Custom Mission Voucher",
+              "itemId": "custom-mission-voucher",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 6",
+          "scoreTotal": 5000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 300
+            },
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Tier 7",
+          "scoreTotal": 6000,
+          "rewards": [
+            {
+              "name": "10K Meat",
+              "itemId": "meat-10k",
+              "amount": 20
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Tier 8",
+          "scoreTotal": 7000,
+          "rewards": [
+            {
+              "name": "Gift Strength in Unity",
+              "itemId": "gift-strength-in-unity",
+              "amount": 1
+            },
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Tier 9",
+          "scoreTotal": 8000,
+          "rewards": [
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 15
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat-10k",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Tier 10",
+          "scoreTotal": 9000,
+          "rewards": [
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            },
+            {
+              "name": "10K Meat",
+              "itemId": "meat-10k",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "name": "Tier 11",
+          "scoreTotal": 10000,
+          "rewards": [
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 2
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood-10k",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "name": "Tier 12",
+          "scoreTotal": 12000,
+          "rewards": [
+            {
+              "name": "Gift Strength in Unity",
+              "itemId": "gift-strength-in-unity",
+              "amount": 2
+            },
+            {
+              "name": "10K Coal",
+              "itemId": "coal-10k",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "name": "Tier 13",
+          "scoreTotal": 14000,
+          "rewards": [
+            {
+              "name": "10K Iron",
+              "itemId": "iron-10k",
+              "amount": 40
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Tier 14",
+          "scoreTotal": 16000,
+          "rewards": [
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 9
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Tier 15",
+          "scoreTotal": 20000,
+          "rewards": [
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 25
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "name": "Tier 16",
+          "scoreTotal": 25000,
+          "rewards": [
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 5
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "name": "Tier 17",
+          "scoreTotal": 30000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1200
+            },
+            {
+              "name": "Custom Mission Voucher",
+              "itemId": "custom-mission-voucher",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 18",
+          "scoreTotal": 35000,
+          "rewards": [
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 8
+            },
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 19",
+          "scoreTotal": 42000,
+          "rewards": [
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 3
+            },
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "name": "Tier 20",
+          "scoreTotal": 49000,
+          "rewards": [
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 8
+            },
+            {
+              "name": "Epic General Hero Shard",
+              "itemId": "epic-general-hero-shard",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Tier 21",
+          "scoreTotal": 56000,
+          "rewards": [
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 7
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "name": "Tier 22",
+          "scoreTotal": 63000,
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 9
+            }
+          ]
+        },
+        {
+          "name": "Tier 23",
+          "scoreTotal": 70000,
+          "rewards": [
+            {
+              "name": "Gift Strength in Unity",
+              "itemId": "gift-strength-in-unity",
+              "amount": 2
+            },
+            {
+              "name": "10K Wood",
+              "itemId": "wood-10k",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "name": "Tier 24",
+          "scoreTotal": 80000,
+          "rewards": [
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 3
+            },
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "name": "Tier 25",
+          "scoreTotal": 90000,
+          "rewards": [
+            {
+              "name": "1h General Speedup",
+              "itemId": "speedup-general-1h",
+              "amount": 11
+            },
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            }
+          ]
+        }
+      ],
+      "allianceMilestones": [
+        {
+          "name": "Tier 1",
+          "scoreTotal": 600,
+          "rewards": [
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 2",
+          "scoreTotal": 1200,
+          "rewards": [
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 3",
+          "scoreTotal": 2000,
+          "rewards": [
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 4",
+          "scoreTotal": 3000,
+          "rewards": [
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 5",
+          "scoreTotal": 4000,
+          "rewards": [
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 6",
+          "scoreTotal": 5000,
+          "rewards": [
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Tier 7",
+          "scoreTotal": 6000,
+          "rewards": [
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Tier 8",
+          "scoreTotal": 7000,
+          "rewards": [
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 9",
+          "scoreTotal": 8000,
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "name": "Tier 10",
+          "scoreTotal": 9000,
+          "rewards": [
+            {
+              "name": "Mythic Exploration Skill Manual",
+              "itemId": "mythic-exploration-skill-manual",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Tier 11",
+          "scoreTotal": 10000,
+          "rewards": [
+            {
+              "name": "5K Hero XP",
+              "itemId": "hero-xp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "name": "Tier 12",
+          "scoreTotal": 12000,
+          "rewards": [
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Tier 13",
+          "scoreTotal": 14000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            }
+          ]
+        },
+        {
+          "name": "Tier 14",
+          "scoreTotal": 16000,
+          "rewards": [
+            {
+              "name": "Mythic Expedition Skill Manual",
+              "itemId": "mythic-expedition-skill-manual",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "name": "Tier 15",
+          "scoreTotal": 20000,
+          "rewards": [
+            {
+              "name": "Epic General Hero Shard",
+              "itemId": "epic-general-hero-shard",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "name": "Tier 16",
+          "scoreTotal": 25000,
+          "rewards": [
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "name": "Tier 17",
+          "scoreTotal": 30000,
+          "rewards": [
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "name": "Tier 18",
+          "scoreTotal": 35000,
+          "rewards": [
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "name": "Tier 19",
+          "scoreTotal": 42000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            }
+          ]
+        },
+        {
+          "name": "Tier 20",
+          "scoreTotal": 49000,
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "name": "Tier 21",
+          "scoreTotal": 56000,
+          "rewards": [
+            {
+              "name": "Essence Stones",
+              "itemId": "essence-stones",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "name": "Tier 22",
+          "scoreTotal": 63000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            }
+          ]
+        },
+        {
+          "name": "Tier 23",
+          "scoreTotal": 70000,
+          "rewards": [
+            {
+              "name": "Fire Crystal",
+              "itemId": "fire-crystal",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "name": "Tier 24",
+          "scoreTotal": 80000,
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2000
+            }
+          ]
+        },
+        {
+          "name": "Tier 25",
+          "scoreTotal": 90000,
+          "rewards": [
+            {
+              "name": "Gold Key",
+              "itemId": "gold-key",
+              "amount": 2
+            }
+          ]
+        }
+      ],
+      "personalRankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 20
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 8000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 10
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 10
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 15
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 6000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 7
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 10
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 4000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "4",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 8
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 3000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "5",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 6
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 2000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            }
+          ]
+        }
+      ],
+      "allianceRankings": [
+        {
+          "groupRanking": "1",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 5
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1500
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 5
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "groupRanking": "2",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 4
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1200
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 4
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "groupRanking": "3",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 3
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 1000
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 3
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "groupRanking": "4",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 800
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "5",
+          "rewards": [
+            {
+              "name": "Mythic General Hero Shard",
+              "itemId": "mythic-general-hero-shard",
+              "amount": 2
+            },
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 600
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 2
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "groupRanking": "6-10",
+          "rewards": [
+            {
+              "name": "Gems",
+              "itemId": "gems",
+              "amount": 500
+            },
+            {
+              "name": "1h Construction Speedup",
+              "itemId": "speedup-construction-1h",
+              "amount": 1
+            },
+            {
+              "name": "1h Troop Training Speedup",
+              "itemId": "speedup-troop-1h",
+              "amount": 1
+            },
+            {
+              "name": "1h Research Speedup",
+              "itemId": "speedup-research-1h",
+              "amount": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Legendary"
@@ -227,18 +1265,10 @@
   ],
   "rewards": [
     {
-      "name": "Alliance Monument gathering speed bonus",
-      "note": "From +3% (Junior) up to +10% (Legendary)."
-    },
-    {
       "name": "Custom Mission Voucher",
       "itemId": "custom-mission-voucher",
       "amount": 2,
       "note": "2 free per event, as a reward from the Alliance Monuments."
-    },
-    {
-      "name": "Personal ranking, alliance ranking, and monument rewards",
-      "note": "Rewards depend on the tier. The wiki gives the amounts in images only."
     }
   ],
   "expertTiers": [

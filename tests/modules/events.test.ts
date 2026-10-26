@@ -197,6 +197,12 @@ describe('Events data', () => {
         ...(e.damageRewards ?? []).flatMap((r) => r.rewards),
         ...(e.tiers ?? []).flatMap((t) => [
           ...(t.rewards ?? []),
+          ...[...(t.milestones ?? []), ...(t.allianceMilestones ?? [])].flatMap(
+            (m) => m.rewards ?? [],
+          ),
+          ...[...(t.personalRankings ?? []), ...(t.allianceRankings ?? [])].flatMap(
+            (r) => r.rewards,
+          ),
           ...(t.rankings ?? []).flatMap((r) => [
             ...r.rewards,
             ...(r.levels ?? []).flatMap((l) => l.rewards),
@@ -236,6 +242,82 @@ describe('Events data', () => {
     tiers
       .slice(1)
       .forEach((tier, i) => expect(tier.scoreTotal!).toBeGreaterThan(tiers[i].scoreTotal!));
+  });
+
+  describe('Alliance Mobilization, Elite tier', () => {
+    const elite = () =>
+      events()
+        .find('alliance-mobilization')!
+        .tiers!.find((t) => t.name === 'Elite')!;
+    const pairs = (rewards: { itemId?: string; amount?: number }[]) =>
+      rewards.map((r) => [r.itemId, r.amount]);
+
+    it('has 25 milestones by alliance points, with a personal and an alliance reward each', () => {
+      const personal = elite().milestones!;
+      const alliance = elite().allianceMilestones!;
+      expect(personal.map((m) => m.scoreTotal)).toEqual([
+        600, 1200, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 12000, 14000, 16000,
+        20000, 25000, 30000, 35000, 42000, 49000, 56000, 63000, 70000, 80000, 90000,
+      ]);
+      expect(alliance.map((m) => m.scoreTotal)).toEqual(personal.map((m) => m.scoreTotal));
+      expect(personal.map((m) => m.name)).toEqual(alliance.map((m) => m.name));
+      expect(personal.map((m) => m.name)).toEqual(
+        Array.from({ length: 25 }, (_, i) => `Tier ${i + 1}`),
+      );
+      expect(personal.every((m) => m.rewards!.length === 2)).toBe(true);
+      expect(alliance.every((m) => m.rewards!.length === 1)).toBe(true);
+    });
+
+    it('gives the rewards of the first, a middle, and the last milestone', () => {
+      const personal = (n: number) => pairs(elite().milestones![n - 1].rewards!);
+      const alliance = (n: number) => pairs(elite().allianceMilestones![n - 1].rewards!);
+      expect([personal(1), alliance(1)]).toEqual([
+        [
+          ['gift-strength-in-unity', 1],
+          ['wood-10k', 10],
+        ],
+        [['speedup-construction-1h', 1]],
+      ]);
+      expect([personal(14), alliance(14)]).toEqual([
+        [
+          ['speedup-general-1h', 9],
+          ['speedup-troop-1h', 4],
+        ],
+        [['mythic-expedition-skill-manual', 1]],
+      ]);
+      expect([personal(25), alliance(25)]).toEqual([
+        [
+          ['speedup-general-1h', 11],
+          ['mythic-general-hero-shard', 3],
+        ],
+        [['gold-key', 2]],
+      ]);
+    });
+
+    it('has the personal and alliance rankings of ranks 1 to 5 and 6 to 10', () => {
+      const ranks = (list: { groupRanking: string }[]) => list.map((r) => r.groupRanking);
+      expect(ranks(elite().personalRankings!)).toEqual(['1', '2', '3', '4', '5', '6-10']);
+      expect(ranks(elite().allianceRankings!)).toEqual(['1', '2', '3', '4', '5', '6-10']);
+      expect(pairs(elite().personalRankings![0].rewards)).toEqual([
+        ['mythic-general-hero-shard', 20],
+        ['gems', 8000],
+        ['speedup-construction-1h', 10],
+        ['speedup-troop-1h', 10],
+        ['speedup-research-1h', 10],
+      ]);
+      expect(pairs(elite().allianceRankings![5].rewards)).toEqual([
+        ['gems', 500],
+        ['speedup-construction-1h', 1],
+        ['speedup-troop-1h', 1],
+        ['speedup-research-1h', 1],
+      ]);
+    });
+
+    it('gives the other tiers no rewards yet', () => {
+      for (const tier of events().find('alliance-mobilization')!.tiers!) {
+        if (tier.name !== 'Elite') expect(tier).toEqual({ name: tier.name });
+      }
+    });
   });
 
   it('lists the 27 Bear Hunt damage ranges, each starting where the one before it ends', () => {
@@ -1912,6 +1994,17 @@ describe('eventRankingTables', () => {
   it('skips tiers that hold no rankings', () => {
     expect(events().find('lucky-wheel')!.tiers!.length).toBeGreaterThan(0);
     expect(tablesOf('lucky-wheel')).toEqual([]);
+  });
+
+  it('lists the personal and alliance ranking tables of a tier with their scope', () => {
+    const tables = tablesOf('alliance-mobilization');
+    expect(tables.map((t) => [t.id, t.scope, t.name])).toEqual([
+      ['tier-4-personal', 'personal', 'Elite'],
+      ['tier-4-alliance', 'alliance', 'Elite'],
+    ]);
+    const elite = events().find('alliance-mobilization')!.tiers![3];
+    expect(tables[0].rankings).toBe(elite.personalRankings);
+    expect(tables[1].rankings).toBe(elite.allianceRankings);
   });
 
   it('gives an empty array for an event with no ranking', () => {
