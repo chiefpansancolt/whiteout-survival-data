@@ -22,6 +22,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `events()`: Bear Hunt has 18 more score tiers, up to 2 trillion, and `damageRewards`, the 27
+  personal damage ranges and the rewards that a player gains on every run.
 - `items()`: the Custom Resource Chests and the four Daily Missions resource packs move out of
   `Chest` and `Others` into `Resources`. The ids of the chests now use the spelling `resource`.
 - `items()`: the `Gear Materials` category is split into `Chief Material` and `Hero Gear Material`.

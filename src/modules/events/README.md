@@ -66,6 +66,7 @@ The event fields that hold more than text:
 | Field                                                     | Holds                                                                                                                                            |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `tiers`                                                   | Ranking tiers from lowest to highest. A tier can have `scoreTotal`, tier-wide `rewards`, and per-placement `rankings` (star change and rewards). |
+| `damageRewards`                                           | Personal damage ranges that a player gains on every run, each with `minDamage`, an optional `maxDamage`, and `rewards`. Bear Hunt only.          |
 | `allianceRankings`, `allianceRankingUpdates`              | Alliance rewards by placement. The updates are later reward lists, in the order the game replaced them.                                          |
 | `personalRankings`                                        | Personal rewards by placement, one table for each thing a placement is based on.                                                                 |
 | `pointLevels`                                             | Reward levels that need both personal and alliance points.                                                                                       |
@@ -212,6 +213,11 @@ items. The categories of the solo events can be corrected.
 Alliance events:
 
 - Alliance Championship has all 6 tiers, with rewards for each of its 4 placement groups.
+- Bear Hunt has 69 achievement tiers in `tiers`, which a player gains one time. `damageRewards` has
+  the 27 personal damage ranges, which a player gains on every run. A range has `minDamage`, a
+  `maxDamage` that the last range does not have, and `rewards`. Each range starts where the range
+  before it ends. The source does not say whether the boundary value belongs to the lower or the
+  higher range.
 - Canyon Clash uses `tiers` for personal merit ranges, with rewards per legion rank, and
   `allianceRankings` for alliance rewards.
 - Frostdragon Tyrant has `personalRankings` (one table for each basis, such as capital occupation
