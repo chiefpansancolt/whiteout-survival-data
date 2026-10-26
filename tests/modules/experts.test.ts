@@ -619,16 +619,22 @@ describe('Justus', () => {
     }
   });
 
-  it('caps Glorious Gains and Treasure Seeker by affinity level', () => {
-    const skill = (name: string) => justus().skills.find((s) => s.name === name)!;
-    const gains = skill('Glorious Gains');
-    expect([9, 10, 29, 30, 49, 50, 100].map((l) => expertSkillMaxLevel(gains, l))).toEqual([
-      0, 2, 2, 4, 4, 5, 5,
+  it('gates the levels of Glorious Gains and Treasure Seeker by affinity level', () => {
+    const gates = (name: string) =>
+      justus()
+        .skills.find((s) => s.name === name)!
+        .affinityRequirements!.map((r) => [r.level, r.affinityLevel]);
+    expect(gates('Glorious Gains')).toEqual([
+      [1, 10],
+      [3, 30],
+      [5, 50],
     ]);
-    const seeker = skill('Treasure Seeker');
-    expect([19, 20, 39, 40, 59, 60].map((l) => expertSkillMaxLevel(seeker, l))).toEqual([
-      0, 2, 2, 4, 4, 5,
+    expect(gates('Treasure Seeker')).toEqual([
+      [1, 20],
+      [3, 40],
+      [5, 60],
     ]);
+    expect(justus().skills.some((s) => s.levelCaps)).toBe(false);
   });
 
   it('needs a total skill level for the upper levels of Master Diplomat and Fortune Wayfarer', () => {
@@ -755,9 +761,11 @@ describe('skill unlocks and caps', () => {
       .find(expertId)!
       .skills.find((skill) => skill.name === name)!;
 
-  it('unlocks the four skills of every expert at affinity levels 10, 20, 30, and 40 in order', () => {
+  it('unlocks the four skills of every expert at affinity levels 10, 20, 30, and 40 in order, except Entrapment at 1', () => {
     for (const expert of experts().get()) {
-      expect(expert.skills.map((skill) => skill.unlockAffinityLevel)).toEqual([10, 20, 30, 40]);
+      expect(expert.skills.map((skill) => skill.unlockAffinityLevel)).toEqual(
+        expert.id === 'cyrille' ? [1, 20, 30, 40] : [10, 20, 30, 40],
+      );
     }
   });
 
@@ -782,7 +790,7 @@ describe('skill unlocks and caps', () => {
     }
   });
 
-  it('has caps on fourteen skills of nine experts', () => {
+  it('has caps on ten skills of six experts', () => {
     const capped = experts()
       .get()
       .flatMap((expert) =>
@@ -795,16 +803,12 @@ describe('skill unlocks and caps', () => {
       'cyrille:Scavenging',
       'holger:Crowd Pleaser',
       'holger:Arena Star',
-      'romulus:Call of War',
       'baldur:Blazing Sunrise',
       'fabian:Salvager',
-      'valeria:Radiant Honor',
       'ronne:Cartographic Memory',
       'ronne:Treasure Scent',
       'gareth:Gifts of Iron',
       'gareth:Undefeated Will',
-      'justus:Glorious Gains',
-      'justus:Treasure Seeker',
     ]);
   });
 
@@ -814,9 +818,13 @@ describe('skill unlocks and caps', () => {
     const weaponMaster = skillOf('cyrille', 'Weapon Master');
 
     it('returns 0 while the skill is locked', () => {
-      expect(expertSkillMaxLevel(entrapment, 9)).toBe(0);
       expect(expertSkillMaxLevel(scavenging, 19)).toBe(0);
       expect(expertSkillMaxLevel(weaponMaster, 29)).toBe(0);
+    });
+
+    it('unlocks Entrapment from the first affinity level, even below a step of 10', () => {
+      expect(expertSkillMaxLevel(entrapment, 1)).toBe(entrapment.maxLevel);
+      expect(expertSkillMaxLevel(entrapment, 9)).toBe(entrapment.maxLevel);
     });
 
     it('returns the max level of a skill without caps once it is unlocked', () => {
@@ -841,17 +849,101 @@ describe('skill unlocks and caps', () => {
       expect(expertSkillMaxLevel(entrapment, 100)).toBe(entrapment.maxLevel);
     });
 
-    it("steps through the caps of Gareth's Undefeated Will after it unlocks at 30", () => {
+    it("unlocks Gareth's Undefeated Will at 30, and the data states no cap from there", () => {
       const will = skillOf('gareth', 'Undefeated Will');
-      expect(expertSkillMaxLevel(will, 20)).toBe(0);
-      expect(expertSkillMaxLevel(will, 30)).toBe(14);
-      expect(expertSkillMaxLevel(will, 40)).toBe(19);
-      expect(expertSkillMaxLevel(will, 50)).toBe(20);
+      expect(expertSkillMaxLevel(will, 29)).toBe(0);
+      expect(expertSkillMaxLevel(will, 30)).toBe(will.maxLevel);
+      expect(expertSkillMaxLevel(will, 50)).toBe(will.maxLevel);
     });
 
     it('returns the max level of a talent at any affinity level', () => {
       const talent = experts().find('cyrille')!.talent;
       expect(expertSkillMaxLevel(talent, 1)).toBe(talent.maxLevel);
     });
+  });
+});
+
+describe('expert skill requirements', () => {
+  const skills = () =>
+    experts()
+      .get()
+      .flatMap((expert) => expert.skills.map((skill) => ({ expert, skill })));
+
+  it('lists the affinity requirements of all 44 skills, from level 1 up to the maximum level', () => {
+    expect(skills()).toHaveLength(44);
+    for (const { expert, skill } of skills()) {
+      const gates = skill.affinityRequirements!;
+      const owner = `${expert.id} ${skill.name}`;
+      expect([owner, gates[0].level]).toEqual([owner, 1]);
+      gates.slice(1).forEach((gate, i) => {
+        expect(gate.level).toBeGreaterThan(gates[i].level);
+        expect(gate.affinityLevel).toBeGreaterThan(gates[i].affinityLevel);
+      });
+      expect(gates[gates.length - 1].level).toBeLessThanOrEqual(skill.maxLevel);
+    }
+  });
+
+  it('unlocks every skill at the affinity level of its level 1 requirement', () => {
+    for (const { expert, skill } of skills()) {
+      expect([expert.id, skill.name, skill.affinityRequirements![0].affinityLevel]).toEqual([
+        expert.id,
+        skill.name,
+        skill.unlockAffinityLevel,
+      ]);
+    }
+  });
+
+  it('needs a total skill level for the upper levels of the third and fourth skill of every expert', () => {
+    for (const expert of experts().get()) {
+      expect(expert.skills.map((s) => s.totalSkillRequirements !== undefined)).toEqual([
+        false,
+        false,
+        true,
+        true,
+      ]);
+      for (const skill of expert.skills.filter((s) => s.totalSkillRequirements)) {
+        const gates = skill.totalSkillRequirements!;
+        gates.slice(1).forEach((gate, i) => {
+          expect(gate.level).toBeGreaterThan(gates[i].level);
+          expect(gate.totalSkillLevel).toBeGreaterThan(gates[i].totalSkillLevel);
+        });
+        expect(gates[gates.length - 1].level).toBe(skill.maxLevel);
+      }
+    }
+  });
+
+  it('has the requirements that the game files list for a skill of each kind', () => {
+    const find = (id: string, name: string) =>
+      experts()
+        .find(id)!
+        .skills.find((s) => s.name === name)!;
+    const pairs = (list: { level: number }[], key: 'affinityLevel' | 'totalSkillLevel') =>
+      (list as unknown as Record<string, number>[]).map((r) => [r.level, r[key]]);
+    expect(pairs(find('gareth', 'Gifts of Iron').affinityRequirements!, 'affinityLevel')).toEqual([
+      [1, 10],
+      [5, 30],
+      [8, 50],
+      [10, 70],
+    ]);
+    expect(
+      pairs(find('gareth', 'Fearsome Reputation').totalSkillRequirements!, 'totalSkillLevel'),
+    ).toEqual([
+      [6, 30],
+      [11, 45],
+      [16, 55],
+      [20, 69],
+    ]);
+    expect(pairs(find('holger', 'Legacy').totalSkillRequirements!, 'totalSkillLevel')).toEqual([
+      [5, 22],
+      [8, 30],
+      [10, 39],
+    ]);
+    expect(
+      pairs(find('cyrille', "Ursa's Bane").totalSkillRequirements!, 'totalSkillLevel'),
+    ).toEqual([
+      [5, 18],
+      [8, 24],
+      [10, 29],
+    ]);
   });
 });

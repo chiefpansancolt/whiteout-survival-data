@@ -12,16 +12,16 @@ const AFFINITY_STEP = 10;
 
 /**
  * Returns the highest level that an expert can learn of a skill at an affinity level. The skill is
- * locked, so the result is 0, below its `unlockAffinityLevel`. Affinity levels count in steps of
- * 10, so level 19 counts as 10. A cap of `levelCaps` applies from its affinity level up to the last
+ * locked, so the result is 0, below its `unlockAffinityLevel`. The caps count affinity levels in
+ * steps of 10, so level 19 counts as 10. A cap of `levelCaps` applies from its affinity level up to the last
  * one that the data lists. Below the first cap, above the last cap, and for a skill without caps,
  * the data states no cap and the result is the `maxLevel` of the skill. A talent levels with the
  * affinity and always returns its `maxLevel`.
  */
 export function expertSkillMaxLevel(skill: ExpertSkill, affinityLevel: number): number {
   if (skill.unlockAffinityLevel === undefined) return skill.maxLevel;
+  if (affinityLevel < skill.unlockAffinityLevel) return 0;
   const step = AFFINITY_STEP * Math.floor(affinityLevel / AFFINITY_STEP);
-  if (step < skill.unlockAffinityLevel) return 0;
   const caps = skill.levelCaps ?? [];
   const reached = caps.filter((cap) => cap.affinityLevel <= step);
   const isInsideCaps = reached.length > 0 && step <= caps[caps.length - 1].affinityLevel;

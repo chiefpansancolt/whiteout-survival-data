@@ -24,7 +24,7 @@
         "img": "/images/experts/Cyrille/skills/Cyrille-Entrapment.png",
         "description": "Cyrille's incredible group hunting skills allow her to call many more to the hunters' fest, increasing Bear Hunt Rally Capacity by 30,000 → 300,000.",
         "maxLevel": 10,
-        "unlockAffinityLevel": 10,
+        "unlockAffinityLevel": 1,
         "levelCaps": [
           {
             "affinityLevel": 20,
@@ -37,6 +37,24 @@
           {
             "affinityLevel": 40,
             "maxLevel": 7
+          }
+        ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 1
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
           }
         ],
         "progressions": [
@@ -118,6 +136,20 @@
             "maxLevel": 2
           }
         ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 3,
+            "affinityLevel": 40
+          },
+          {
+            "level": 5,
+            "affinityLevel": 80
+          }
+        ],
         "progressions": [
           {
             "label": "Item Quantity",
@@ -162,6 +194,22 @@
         "description": "Cyrille's knowledge extends to hero gear expertise, increasing Essence Stone rewards obtained in Bear Hunt by 1 → 5.",
         "maxLevel": 5,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 3,
+            "totalSkillLevel": 10
+          },
+          {
+            "level": 5,
+            "totalSkillLevel": 15
+          }
+        ],
         "progressions": [
           {
             "label": "Essence Stones",
@@ -206,6 +254,26 @@
         "description": "Cyrille's command skills transfer well into the hunting realm, increasing Bear Hunt Troops Deployment capacity by 3,000 → 30,000.",
         "maxLevel": 10,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 18
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 24
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 29
+          }
+        ],
         "progressions": [
           {
             "label": "Deployment Capacity",
@@ -1038,6 +1106,20 @@
         "description": "Not all spymaster plans are created equal, and Agnes is a master of enhanced Lighthouse scouting, giving 2 → 8 extra Intel missions per day.",
         "maxLevel": 5,
         "unlockAffinityLevel": 10,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 3,
+            "affinityLevel": 30
+          },
+          {
+            "level": 5,
+            "affinityLevel": 50
+          }
+        ],
         "progressions": [
           {
             "label": "Intel Gain",
@@ -1082,6 +1164,20 @@
         "description": "Improved can production efficiency boosts Storehouse Chief Stamina gain by 10 → 40.",
         "maxLevel": 5,
         "unlockAffinityLevel": 20,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 3,
+            "affinityLevel": 40
+          },
+          {
+            "level": 5,
+            "affinityLevel": 60
+          }
+        ],
         "progressions": [
           {
             "label": "Chief Stamina",
@@ -1126,6 +1222,22 @@
         "description": "Good project management is a precursor to efficient construction. Agnes speeds up construction by 2 → 8 hours on every new build.",
         "maxLevel": 5,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 3,
+            "totalSkillLevel": 8
+          },
+          {
+            "level": 5,
+            "totalSkillLevel": 12
+          }
+        ],
         "progressions": [
           {
             "label": "Speed Boost (Hours)",
@@ -1174,6 +1286,26 @@
         "description": "The wisdom of the ancients has not been forgotten by Agnes, giving 20 → 120 additional Mystery Badge(s) upon daily mission completion and 1 → 4 more free refreshes at the Mystery Shop.",
         "maxLevel": 10,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 15
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 20
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 24
+          }
+        ],
         "progressions": [
           {
             "label": "Item Gain",
@@ -2055,6 +2187,24 @@
         "description": "Tough training gets tough trainee results. Holger's rigorous program increases Arena heroes' Attack and Health by 2% → 20%.",
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Escort Boost",
@@ -2128,6 +2278,24 @@
           {
             "affinityLevel": 50,
             "maxLevel": 7
+          }
+        ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 5,
+            "affinityLevel": 40
+          },
+          {
+            "level": 8,
+            "affinityLevel": 60
+          },
+          {
+            "level": 10,
+            "affinityLevel": 80
           }
         ],
         "progressions": [
@@ -2205,6 +2373,26 @@
             "maxLevel": 10
           }
         ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 14
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 20
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 28
+          }
+        ],
         "progressions": [
           {
             "label": "Shop Items",
@@ -2278,6 +2466,26 @@
         "description": "Holger is in the Arena legend-creation process, giving heroes 2% → 20% additional Attack and Health in the Arena. Level Hero Stats Up Lvl.1 2% Lvl.2 4% Lvl.3 6% Lvl.4 8% Lvl.5 10% Lvl.6 12% Lvl.7 14% Lvl.8 16% Lvl.9 18% Lvl.10 20%",
         "maxLevel": 10,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 22
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 30
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 39
+          }
+        ],
         "progressions": [
           {
             "label": "Hero Stats Up",
@@ -3147,10 +3355,22 @@
         "description": "Romulus mobilizes to win, allowing free recruitment of 150 → 600 additional high-level troops from any Camp per day as well as an additional 1 → 10 Loyalty Tag(s) from the Enlistment Office.",
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
-        "levelCaps": [
+        "affinityRequirements": [
           {
-            "affinityLevel": 50,
-            "maxLevel": 7
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
           }
         ],
         "progressions": [
@@ -3226,6 +3446,24 @@
         "description": "Solaris' tactics didn't save the empire, but Romulus can rework them to protect you. Troops' Attack and Defense +0.5% → 10%.",
         "maxLevel": 20,
         "unlockAffinityLevel": 20,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 6,
+            "affinityLevel": 30
+          },
+          {
+            "level": 11,
+            "affinityLevel": 50
+          },
+          {
+            "level": 16,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Troop Attack",
@@ -3351,6 +3589,30 @@
         "description": "The Aeetes may be gone, but their spirit lives on in Romulus and his men. Troops' Lethality and Health +0.5% → 10%.",
         "maxLevel": 20,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 6,
+            "totalSkillLevel": 20
+          },
+          {
+            "level": 11,
+            "totalSkillLevel": 30
+          },
+          {
+            "level": 16,
+            "totalSkillLevel": 40
+          },
+          {
+            "level": 20,
+            "totalSkillLevel": 50
+          }
+        ],
         "progressions": [
           {
             "label": "Troop Lethality",
@@ -3476,6 +3738,30 @@
         "description": "Romulus has commanded armies far greater than those of today, enhancing your Rally Capacity by 5,000 → 100,000.",
         "maxLevel": 20,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 6,
+            "totalSkillLevel": 30
+          },
+          {
+            "level": 11,
+            "totalSkillLevel": 45
+          },
+          {
+            "level": 16,
+            "totalSkillLevel": 55
+          },
+          {
+            "level": 20,
+            "totalSkillLevel": 69
+          }
+        ],
         "progressions": [
           {
             "label": "Rally Capacity",
@@ -4383,6 +4669,24 @@
             "maxLevel": 10
           }
         ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Point Boost",
@@ -4497,6 +4801,24 @@
         "description": "Baldur has crafted more badges to showcase outstanding Alliance contributors. +50% Alliance Championship Badges in Alliance Championship and +3 Alliance Championship Shop bonus items.",
         "maxLevel": 10,
         "unlockAffinityLevel": 20,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 5,
+            "affinityLevel": 40
+          },
+          {
+            "level": 8,
+            "affinityLevel": 60
+          },
+          {
+            "level": 10,
+            "affinityLevel": 80
+          }
+        ],
         "progressions": [
           {
             "label": "Reward Boost (%)",
@@ -4599,6 +4921,26 @@
         "description": "Baldur has added of his fortune to the sizeable bounty on Crazy Joe and her underlings, earning +50% Crazy Joe point rewards and a bonus Chest per 200,000 points (limit of 10 per season).",
         "maxLevel": 10,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 14
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 20
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 28
+          }
+        ],
         "progressions": [
           {
             "label": "Point Boost (%)",
@@ -4698,6 +5040,26 @@
         "description": "Baldur is a master strategist particularly around points, gaining +50% Alliance Showdown points (except Tundra Trade Route) and +3 bonus tier(s) for the daily milestone reward.",
         "maxLevel": 10,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 22
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 30
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 39
+          }
+        ],
         "progressions": [
           {
             "label": "Point Boost (%)",
@@ -5616,6 +5978,24 @@
             "maxLevel": 7
           }
         ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Arsenal Tokens Up",
@@ -5685,6 +6065,24 @@
         "description": "Fabian is a medically-minded armorer. His first aid team allows instant recovery of 100,000 → 1,000,000 troops each Foundry Battle and Tundra Hellfire.",
         "maxLevel": 10,
         "unlockAffinityLevel": 20,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 5,
+            "affinityLevel": 40
+          },
+          {
+            "level": 8,
+            "affinityLevel": 60
+          },
+          {
+            "level": 10,
+            "affinityLevel": 80
+          }
+        ],
         "progressions": [
           {
             "label": "Free Heals",
@@ -5756,6 +6154,30 @@
         "description": "Fabian's custom gear grants Foundry Battle and Tundra Hellfire troops +1.5% → 30% Lethality and +1.5% → 30% Health.",
         "maxLevel": 20,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 6,
+            "totalSkillLevel": 16
+          },
+          {
+            "level": 11,
+            "totalSkillLevel": 24
+          },
+          {
+            "level": 16,
+            "totalSkillLevel": 32
+          },
+          {
+            "level": 20,
+            "totalSkillLevel": 40
+          }
+        ],
         "progressions": [
           {
             "label": "Troop Lethality",
@@ -5888,6 +6310,30 @@
         "description": "Weapons production is subset of Fabian's expertise, giving squads greater focus in Foundry Battle and Tundra Hellfire with +7,500 → 150,000 Rally Capacity.",
         "maxLevel": 20,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 6,
+            "totalSkillLevel": 24
+          },
+          {
+            "level": 11,
+            "totalSkillLevel": 36
+          },
+          {
+            "level": 16,
+            "totalSkillLevel": 48
+          },
+          {
+            "level": 20,
+            "totalSkillLevel": 59
+          }
+        ],
         "progressions": [
           {
             "label": "Rally Capacity",
@@ -6787,6 +7233,24 @@
         "description": "Valeria pays meticulous attention to every detail during battle preparation, gaining +20% State of Power's Preparation Phase Point gains, and +3 bonus tier for daily Personal Point rewards.",
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Preparation Phase Point gains (%)",
@@ -6925,10 +7389,22 @@
         "description": "Valeria's rally ignites the troops' desire for glory, increasing Sunfire Tokens earned when claiming Medal Rewards by 50 and adding 3 extra items to the State of Power Shop.",
         "maxLevel": 10,
         "unlockAffinityLevel": 20,
-        "levelCaps": [
+        "affinityRequirements": [
           {
-            "affinityLevel": 30,
-            "maxLevel": 3
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 5,
+            "affinityLevel": 40
+          },
+          {
+            "level": 8,
+            "affinityLevel": 60
+          },
+          {
+            "level": 10,
+            "affinityLevel": 80
           }
         ],
         "progressions": [
@@ -7033,6 +7509,30 @@
         "description": "Valeria demonstrates exceptional tactical mastery, all troops' Lethality and Health +30% during State of Power's Battle Phase.",
         "maxLevel": 20,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 6,
+            "totalSkillLevel": 16
+          },
+          {
+            "level": 11,
+            "totalSkillLevel": 24
+          },
+          {
+            "level": 16,
+            "totalSkillLevel": 32
+          },
+          {
+            "level": 20,
+            "totalSkillLevel": 40
+          }
+        ],
         "progressions": [
           {
             "label": "Troop Lethality",
@@ -7166,6 +7666,30 @@
         "description": "Valeria's remarkable leadership increases Rally Capacity in State of Power Battle Phase by 150,000 .",
         "maxLevel": 20,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 6,
+            "totalSkillLevel": 24
+          },
+          {
+            "level": 11,
+            "totalSkillLevel": 36
+          },
+          {
+            "level": 16,
+            "totalSkillLevel": 48
+          },
+          {
+            "level": 20,
+            "totalSkillLevel": 59
+          }
+        ],
         "progressions": [
           {
             "label": "Rally Capacity",
@@ -8073,6 +8597,24 @@
             "maxLevel": 7
           }
         ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Rapid Travel Free",
@@ -8152,6 +8694,24 @@
             "maxLevel": 4
           }
         ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 5,
+            "affinityLevel": 40
+          },
+          {
+            "level": 8,
+            "affinityLevel": 60
+          },
+          {
+            "level": 10,
+            "affinityLevel": 80
+          }
+        ],
         "progressions": [
           {
             "label": "Reward Chance",
@@ -8221,6 +8781,26 @@
         "description": "Ronne retaliates with even greater strength when raided, gaining a 5% → 50% chance of recovering 1 cargo (Ronne escorts 0 → 2 \"Elite Guardbox\" cannot be raided.)",
         "maxLevel": 10,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 14
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 20
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 28
+          }
+        ],
         "progressions": [
           {
             "label": "Recovery Chance",
@@ -8294,6 +8874,26 @@
         "description": "An escort guard of Ronne's renown is always highly sought after, ensuring a \"Legendary\" escort mission after each 12 → 4 completed missions that remains even if refreshed. Legendary Trucks will have better rewards, especially for 3 of its cargo. (Ronne escorts 1 extra truck daily when this skill reaches Lv. 10).",
         "maxLevel": 10,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 22
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 30
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 39
+          }
+        ],
         "progressions": [
           {
             "label": "Completions",
@@ -9143,6 +9743,24 @@
         "description": "Kathy's deft guidance in Frostfire Mine grants our troops 5% → 50% additional XP from defeating Mine Patrols for Frostfire Skill upgrades.",
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Extra XP",
@@ -9212,6 +9830,24 @@
         "description": "Kathy's leadership skills honed in the burning cold of Frostfire allow 5,000 → 50,000 extra troop capacity and shorten hero recovery after defeat by 6% → 60%.",
         "maxLevel": 10,
         "unlockAffinityLevel": 20,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 5,
+            "affinityLevel": 40
+          },
+          {
+            "level": 8,
+            "affinityLevel": 60
+          },
+          {
+            "level": 10,
+            "affinityLevel": 80
+          }
+        ],
         "progressions": [
           {
             "label": "Deployment Capacity",
@@ -9285,6 +9921,26 @@
         "description": "The art of Orichalcum cutting transfers well to Charms. Kathy will obtain 6 → 60 additional Charm Designs on obtaining 200,000 Orichalcum in the Frostfire Mine event.",
         "maxLevel": 10,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 14
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 20
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 28
+          }
+        ],
         "progressions": [
           {
             "label": "Item Gain",
@@ -9356,6 +10012,26 @@
         "description": "Kathy's efficient mining teams never waste a moment even between battles. Kathy earns 500 → 5,000 Orichalcum per minute once the Frostfire Mine battle phase begins. Kathy will obtain 10 → 100 additional Charm Guides on obtaining 200,000 Orichalcum in the Frostfire Mine event.",
         "maxLevel": 10,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 22
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 30
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 39
+          }
+        ],
         "progressions": [
           {
             "label": "Income Per Minute",
@@ -10211,6 +10887,24 @@
             "maxLevel": 4
           }
         ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 10
+          },
+          {
+            "level": 5,
+            "affinityLevel": 30
+          },
+          {
+            "level": 8,
+            "affinityLevel": 50
+          },
+          {
+            "level": 10,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Daily Cap",
@@ -10284,6 +10978,24 @@
         "description": "Jarnvid's mercenaries faces enemies with close formations and iron discipline, resulting in +1% → +50% Troops' Defense.",
         "maxLevel": 20,
         "unlockAffinityLevel": 20,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 20
+          },
+          {
+            "level": 6,
+            "affinityLevel": 30
+          },
+          {
+            "level": 11,
+            "affinityLevel": 50
+          },
+          {
+            "level": 16,
+            "affinityLevel": 70
+          }
+        ],
         "progressions": [
           {
             "label": "Troops' Defense",
@@ -10409,24 +11121,32 @@
         "unlockAffinityLevel": 30,
         "levelCaps": [
           {
-            "affinityLevel": 10,
-            "maxLevel": 5
-          },
-          {
-            "affinityLevel": 20,
-            "maxLevel": 10
-          },
-          {
-            "affinityLevel": 30,
-            "maxLevel": 14
-          },
-          {
-            "affinityLevel": 40,
-            "maxLevel": 19
-          },
-          {
             "affinityLevel": 50,
             "maxLevel": 20
+          }
+        ],
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 6,
+            "totalSkillLevel": 20
+          },
+          {
+            "level": 11,
+            "totalSkillLevel": 30
+          },
+          {
+            "level": 16,
+            "totalSkillLevel": 40
+          },
+          {
+            "level": 20,
+            "totalSkillLevel": 50
           }
         ],
         "progressions": [
@@ -10552,6 +11272,30 @@
         "description": "Fear of the \"Spiked Commander\" is the end for weakened enemies, reducing Enemy Troop's Lethality by 0.25% → 5%.",
         "maxLevel": 20,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
+        "totalSkillRequirements": [
+          {
+            "level": 6,
+            "totalSkillLevel": 30
+          },
+          {
+            "level": 11,
+            "totalSkillLevel": 45
+          },
+          {
+            "level": 16,
+            "totalSkillLevel": 55
+          },
+          {
+            "level": 20,
+            "totalSkillLevel": 69
+          }
+        ],
         "progressions": [
           {
             "label": "Lethality Down",
@@ -11455,18 +12199,18 @@
         "description": "Increases Glowstones obtained from Labyrinth Raids: +4% per level, up to +20% at Lv. 5.",
         "maxLevel": 5,
         "unlockAffinityLevel": 10,
-        "levelCaps": [
+        "affinityRequirements": [
           {
-            "affinityLevel": 10,
-            "maxLevel": 2
+            "level": 1,
+            "affinityLevel": 10
           },
           {
-            "affinityLevel": 30,
-            "maxLevel": 4
+            "level": 3,
+            "affinityLevel": 30
           },
           {
-            "affinityLevel": 50,
-            "maxLevel": 5
+            "level": 5,
+            "affinityLevel": 50
           }
         ],
         "progressions": [
@@ -11509,18 +12253,18 @@
         "description": "Grants extra daily Pet Adventure attempts with a chance of double rewards: +1 attempt and 15% at Lv. 1, +5% per level, up to +2 attempts and 35% at Lv. 5.",
         "maxLevel": 5,
         "unlockAffinityLevel": 20,
-        "levelCaps": [
+        "affinityRequirements": [
           {
-            "affinityLevel": 20,
-            "maxLevel": 2
+            "level": 1,
+            "affinityLevel": 20
           },
           {
-            "affinityLevel": 40,
-            "maxLevel": 4
+            "level": 3,
+            "affinityLevel": 40
           },
           {
-            "affinityLevel": 60,
-            "maxLevel": 5
+            "level": 5,
+            "affinityLevel": 60
           }
         ],
         "progressions": [
@@ -11563,6 +12307,12 @@
         "description": "Earns Dynasty Honor Chests from each beast rally: 1 per rally (up to 3 a day) at Lv. 1, rising to 5 per rally (up to 10 a day) at Lv. 5.",
         "maxLevel": 5,
         "unlockAffinityLevel": 30,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 30
+          }
+        ],
         "totalSkillRequirements": [
           {
             "level": 3,
@@ -11608,6 +12358,12 @@
         "description": "Earns Dynasty Honor Chests from Trek Encounters: 1 chest every 12 encounters (up to 3 a day) at Lv. 1, rising to 4 chests every 4 encounters (up to 20 a day) at Lv. 10.",
         "maxLevel": 10,
         "unlockAffinityLevel": 40,
+        "affinityRequirements": [
+          {
+            "level": 1,
+            "affinityLevel": 40
+          }
+        ],
         "totalSkillRequirements": [
           {
             "level": 5,

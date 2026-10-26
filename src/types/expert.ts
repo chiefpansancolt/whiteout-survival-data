@@ -39,6 +39,13 @@ export interface ExpertSkillLevelCap {
   maxLevel: number;
 }
 
+export interface ExpertAffinityRequirement {
+  /** The skill level that the requirement gates. Level 1 is the unlock of the skill. */
+  level: number;
+  /** The affinity level that the expert needs, after the advancement of that level. */
+  affinityLevel: number;
+}
+
 export interface ExpertTotalSkillRequirement {
   /** The skill level that the requirement gates. */
   level: number;
@@ -55,6 +62,8 @@ export interface ExpertSkill {
   unlockAffinityLevel?: number;
   /** Known caps below `maxLevel`, from the lowest affinity level up. Only some skills have them. */
   levelCaps?: ExpertSkillLevelCap[];
+  /** The affinity levels that unlock the skill and gate its upper levels, as the game files list them. */
+  affinityRequirements?: ExpertAffinityRequirement[];
   /** Levels that need a total skill level of the expert before the upgrade. */
   totalSkillRequirements?: ExpertTotalSkillRequirement[];
   progressions: ExpertProgression[];
