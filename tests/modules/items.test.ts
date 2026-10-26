@@ -1,4 +1,5 @@
 import { experts } from '@/modules/experts';
+import { heroes } from '@/modules/heroes';
 import { ItemQuery, items } from '@/modules/items';
 import { existsSync } from 'fs';
 import { join } from 'path';
@@ -18,26 +19,88 @@ describe('ItemQuery', () => {
 
   it('byCategory() filters to the given category', () => {
     const chests = items().byCategory('Chest');
-    expect(chests.count()).toBe(60);
+    expect(chests.count()).toBe(55);
     expect(chests.get().every((i) => i.category === 'Chest')).toBe(true);
   });
 });
 
 describe('Item catalog', () => {
-  it('tracks 348 items across 12 categories', () => {
-    expect(items().count()).toBe(348);
-    expect(items().byCategory('Hero Items').count()).toBe(40);
-    expect(items().byCategory('Pet').count()).toBe(6);
-    expect(items().byCategory('Gear Materials').count()).toBe(10);
-    expect(items().byCategory('Chest').count()).toBe(60);
+  it('tracks 418 items across 14 categories', () => {
+    expect(items().count()).toBe(418);
+    expect(items().byCategory('Hero Items').count()).toBe(75);
+    expect(items().byCategory('Pet').count()).toBe(7);
+    expect(items().byCategory('Chief Material').count()).toBe(7);
+    expect(items().byCategory('Hero Gear Material').count()).toBe(6);
+    expect(items().byCategory('Chest').count()).toBe(55);
+    expect(items().byCategory('Resources').count()).toBe(45);
     expect(items().byCategory('Buff').count()).toBe(31);
     expect(items().byCategory('Fire Crystal').count()).toBe(4);
     expect(items().byCategory('Experts').count()).toBe(17);
     expect(items().byCategory('Teleporter').count()).toBe(4);
-    expect(items().byCategory('Others').count()).toBe(48);
+    expect(items().byCategory('Others').count()).toBe(39);
     expect(items().byCategory('Event').count()).toBe(58);
     expect(items().byCategory('Speedups').count()).toBe(25);
     expect(items().byCategory('Furniture').count()).toBe(45);
+  });
+
+  it('has the Custom Resource Chests and their Secured versions in Resources', () => {
+    for (const level of [1, 2, 3]) {
+      const chest = items().find(`lv-${level}-custom-resource-chest`)!;
+      const secured = items().find(`lv-${level}-custom-secured-resource-chest`)!;
+      expect(chest.name).toBe(`Lv.${level} Custom Resource Chest`);
+      expect(secured.name).toBe(`Lv.${level} Custom Secured Resource Chest`);
+      expect(chest.category).toBe('Resources');
+      expect(secured.category).toBe('Resources');
+      expect(secured.img).toBe(chest.img);
+      expect(existsSync(join(__dirname, '../..', secured.img))).toBe(true);
+    }
+  });
+
+  it('has a pack of each size and a Secured version for Meat, Wood, Coal, and Iron', () => {
+    const sizes = {
+      meat: ['1k', '10k', '100k', '1m'],
+      wood: ['1k', '10k', '100k', '1m'],
+      coal: ['100', '1k', '10k', '100k', '1m'],
+      iron: ['100', '1k', '10k', '100k', '1m'],
+    };
+    for (const [resource, list] of Object.entries(sizes)) {
+      for (const size of list) {
+        const id = `${resource}-${size}`;
+        const pack = items().find(id)!;
+        expect(pack.category).toBe('Resources');
+        expect(pack.img).toBe(`/images/items/resources/${id}.png`);
+        expect(existsSync(join(__dirname, '../..', pack.img))).toBe(true);
+        if (size !== '100') {
+          const secured = items().find(`${id}-secured`)!;
+          expect(secured.name).toBe(`${pack.name} (Secured)`);
+          expect(secured.category).toBe('Resources');
+          expect(existsSync(join(__dirname, '../..', secured.img))).toBe(true);
+        }
+      }
+    }
+    expect(items().find('coal-100-secured')).toBeUndefined();
+    expect(items().find('1k-meat-secured')).toBeUndefined();
+    expect(items().find('meat-1k-secured')!.name).toBe('1k Meat (Secured)');
+    expect(items().find('meat-1m')!.name).toBe('1M Meat');
+  });
+
+  it('has the plain Meat, Wood, Coal, Iron, and Steel in Resources, with the icon of their resource', () => {
+    for (const id of ['meat', 'wood', 'coal', 'iron', 'steel']) {
+      const item = items().find(id)!;
+      expect(item.category).toBe('Resources');
+      expect(item.img).toBe(`/images/items/${id}.png`);
+      expect(existsSync(join(__dirname, '../..', item.img))).toBe(true);
+    }
+  });
+
+  it('has an Enhancement XP Component item for the 10 and one for the 100, with one icon', () => {
+    for (const size of [10, 100]) {
+      const item = items().find(`enhancement-xp-component-${size}`)!;
+      expect(item.name).toBe(`${size} Enhancement XP Component`);
+      expect(item.category).toBe('Hero Gear Material');
+      expect(item.img).toBe('/images/items/enhancement-xp-component.png');
+      expect(existsSync(join(__dirname, '../..', item.img))).toBe(true);
+    }
   });
 
   it('has the Wish Sigil, the currency of the Wish Shop, with an icon file', () => {
@@ -221,8 +284,10 @@ describe('expert sigils', () => {
   const sigilId = (expertId: string) =>
     expertId === 'baldur' ? 'baldurs-sigil' : `${expertId}-sigil`;
 
-  it('has a sigil item with an icon file for every expert', () => {
-    for (const expert of experts().get()) {
+  it('has a sigil item with an icon file for every expert except Justus', () => {
+    for (const expert of experts()
+      .get()
+      .filter((e) => e.id !== 'justus')) {
       const sigil = items().find(sigilId(expert.id));
       expect(sigil).toBeDefined();
       expect(sigil!.category).toBe('Experts');
@@ -231,7 +296,9 @@ describe('expert sigils', () => {
   });
 
   it('gives the sigils of the experts one description pattern and the same sources', () => {
-    for (const expert of experts().get()) {
+    for (const expert of experts()
+      .get()
+      .filter((e) => e.id !== 'justus')) {
       const sigil = items().find(sigilId(expert.id))!;
       expect(sigil.description).toBe(
         `Advances your relationship with Expert ${expert.name}. Once maxed, it can be used for Expert Research.`,
@@ -250,10 +317,10 @@ describe('expert sigils', () => {
 
 describe('items of the activity bar of the Daily Missions', () => {
   const packs = {
-    'meat-10k': ['10k Meat', '/images/items/meat.png'],
-    'wood-10k': ['10k Wood', '/images/items/wood.png'],
-    'coal-1k': ['1k Coal', '/images/items/coal.png'],
-    'iron-1k': ['1k Iron', '/images/items/iron.png'],
+    'meat-10k': ['10k Meat', '/images/items/resources/meat-10k.png'],
+    'wood-10k': ['10k Wood', '/images/items/resources/wood-10k.png'],
+    'coal-1k': ['1k Coal', '/images/items/resources/coal-1k.png'],
+    'iron-1k': ['1k Iron', '/images/items/resources/iron-1k.png'],
   };
 
   it('gives Alliance XP and Activity Triumph Points an icon file, and the Daily Missions as the source', () => {
@@ -266,24 +333,63 @@ describe('items of the activity bar of the Daily Missions', () => {
     }
   });
 
-  it('gives the 4 resource packs the icon of their resource, and the Daily Missions as the source', () => {
+  it('puts the 4 resource packs in Resources with an icon file, and the Daily Missions as the source', () => {
     for (const [id, [name, img]] of Object.entries(packs)) {
       const item = items().find(id)!;
       expect(item.name).toBe(name);
-      expect(item.category).toBe('Others');
+      expect(item.category).toBe('Resources');
       expect(item.img).toBe(img);
-      expect(item.img).toBe(items().find(id.split('-')[0])!.img);
       expect(existsSync(join(__dirname, '../..', item.img))).toBe(true);
       expect(item.sources).toEqual(['Daily Missions']);
     }
   });
 
-  it('has 28 items without an icon in all', () => {
+  it('has 65 items without an icon in all', () => {
     expect(
       items()
         .get()
         .filter((i) => i.img === ''),
-    ).toHaveLength(28);
+    ).toHaveLength(65);
+  });
+
+  it('has a Shard item for every hero, named after the hero', () => {
+    for (const hero of heroes().get()) {
+      const shard = items().findByName(`${hero.name} Shard`);
+      expect(shard).toBeDefined();
+      expect(shard!.category).toBe('Hero Items');
+    }
+  });
+
+  it('has one Shot Token item, with the sources of both former entries', () => {
+    expect(items().find('short-token')).toBeUndefined();
+    expect(items().findByName('Shot Token')!.id).toBe('shot-token');
+    expect(items().find('shot-token')!.sources).toEqual([
+      'State of Power',
+      'King of Icefield',
+      'Armament Competition',
+      'Officer Project',
+      'Defeat nearby Beasts',
+      'Frostfire Mine',
+      'Foundry Battle',
+      'Dead Shot (Sign-in Rewards)',
+      'Castle Battle',
+    ]);
+  });
+
+  it('has the Gift Strength in Unity of Alliance Mobilization with no icon yet', () => {
+    expect(items().find('gift-strength-in-unity')).toMatchObject({
+      name: 'Gift Strength in Unity',
+      category: 'Others',
+      img: '',
+    });
+  });
+
+  it('has the Mythic Hero Gear as a Hero Gear Material with no icon yet', () => {
+    expect(items().find('mythic-hero-gear')).toMatchObject({
+      name: 'Mythic Hero Gear',
+      category: 'Hero Gear Material',
+      img: '',
+    });
   });
 });
 

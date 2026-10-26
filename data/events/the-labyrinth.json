@@ -113,7 +113,7 @@
       "rewards": [
         {
           "name": "Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 5,
           "note": "Each is a 100 Enhancement XP component"
         }
@@ -331,7 +331,7 @@
     {
       "reward": {
         "name": "Enhancement XP Component",
-        "itemId": "enhancement-xp-component",
+        "itemId": "enhancement-xp-component-100",
         "amount": 1,
         "note": "Each is a 100 Enhancement XP component"
       },

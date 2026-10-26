@@ -15,7 +15,7 @@ const result = calculateHeroGear({
   empowerment: { current: 0, goal: 20 },
 });
 
-result.resources; // essence-stones 60, enhancement-xp-component 125970, mithril 10, and more
+result.resources; // essence-stones 60, enhancement-xp 125970, mithril 10, and more
 result.power; // 1712700
 result.eventPoints.svs; // 1680000
 result.stats?.goal; // { combatStat: 538, health: 5265, percentStat: 78 }

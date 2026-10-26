@@ -26,10 +26,11 @@ describe('Hero Gear Empowerment table', () => {
     expect(heroGearEmpowerment().count()).toBe(100);
   });
 
-  it('resolves every cost itemId against a real cataloged item', () => {
+  it('resolves every cost itemId except the XP against a real cataloged item', () => {
     const allItemIds = heroGearEmpowerment()
       .get()
-      .flatMap((l) => l.cost.map((c) => c.itemId));
+      .flatMap((l) => l.cost.map((c) => c.itemId))
+      .filter((id) => id !== 'enhancement-xp');
     expect(allItemIds.every((id) => items().find(id) !== undefined)).toBe(true);
   });
 
@@ -52,7 +53,7 @@ describe('Hero Gear Empowerment table', () => {
 
     const level50 = heroGearEmpowerment().find('level-50')!;
     expect(level50.cost).toHaveLength(1);
-    expect(level50.cost[0].itemId).toBe('enhancement-xp-component');
+    expect(level50.cost[0].itemId).toBe('enhancement-xp');
 
     const level100 = heroGearEmpowerment().find('level-100')!;
     expect(level100.cost.map((c) => c.itemId)).toEqual([

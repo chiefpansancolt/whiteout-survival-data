@@ -1,4 +1,3 @@
-import expertFile from '@/data/chief/experts.json';
 import {
   ExpertQuery,
   ExpertRelationshipQuery,
@@ -9,13 +8,27 @@ import {
   unreleasedExperts,
 } from '@/modules/experts';
 import { heroGenerationAt } from '@/modules/server-timeline';
+import { UnreleasedExpert } from '@/types';
 import { existsSync } from 'fs';
 import { join } from 'path';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('experts', () => experts());
 testQueryBaseContract('expertRelationships', () => expertRelationships());
-testQueryBaseContract('unreleasedExperts', () => unreleasedExperts());
+const announcedExpert: UnreleasedExpert = {
+  id: 'new-expert',
+  name: 'New Expert',
+  img: '/images/experts/New/New.png',
+  unreleased: true,
+  unlockRequirement: { daysRequired: 400 },
+};
+
+const withSkillPower = () =>
+  experts()
+    .get()
+    .filter((e) => e.id !== 'justus');
+
+testQueryBaseContract('unreleasedExperts', () => unreleasedExperts([announcedExpert]));
 
 describe('ExpertQuery', () => {
   it('accepts an explicit source array', () => {
@@ -35,11 +48,11 @@ describe('ExpertQuery', () => {
 });
 
 describe('Expert roster', () => {
-  it('tracks all 10 experts across 3 generations', () => {
-    expect(experts().count()).toBe(10);
+  it('tracks all 11 experts across 3 generations', () => {
+    expect(experts().count()).toBe(11);
     expect(experts().byGeneration(1).count()).toBe(4);
     expect(experts().byGeneration(2).count()).toBe(4);
-    expect(experts().byGeneration(3).count()).toBe(2);
+    expect(experts().byGeneration(3).count()).toBe(3);
   });
 
   it('has a 100-level affinity table for every expert', () => {
@@ -475,9 +488,8 @@ describe('expertRelationships', () => {
     expect(power(gareth.skills[3])[19]).toBe(29040000);
   });
 
-  it('has power on every skill and talent of every expert', () => {
-    experts()
-      .get()
+  it('has power on every skill and talent of every expert except Justus', () => {
+    withSkillPower()
       .flatMap((e) => [...e.skills, e.talent])
       .forEach((skill) => {
         const power = skill.progressions.find((p) => p.label === 'Power');
@@ -527,56 +539,166 @@ describe('expert unlock days', () => {
       ['ronne', 230],
       ['kathy', 230],
       ['gareth', 270],
+      ['justus', 360],
     ]);
   });
 });
 
 describe('unreleased experts', () => {
   it('accepts an explicit source array', () => {
-    expect(new UnreleasedExpertQuery(unreleasedExperts().get().slice(0, 1)).count()).toBe(1);
+    expect(new UnreleasedExpertQuery([announcedExpert]).count()).toBe(1);
   });
 
-  it('uses default data when constructed without arguments', () => {
-    expect(new UnreleasedExpertQuery().count()).toBe(1);
-  });
-
-  it('lists Justus with a name, an icon, and the unlock on day 360', () => {
-    expect(unreleasedExperts().find('justus')).toEqual({
-      id: 'justus',
-      name: 'Justus',
-      img: '/images/experts/Justus/Justus.png',
-      unreleased: true,
-      unlockRequirement: { daysRequired: 360 },
-    });
-  });
-
-  it('reads the unreleased experts from the flag in experts.json', () => {
-    const flagged = expertFile.filter((e) => 'unreleased' in e).map((e) => e.id);
-    expect(flagged).toEqual(['justus']);
-    expect(
-      unreleasedExperts()
-        .get()
-        .map((e) => e.id),
-    ).toEqual(flagged);
-    expect(expertFile).toHaveLength(experts().count() + unreleasedExperts().count());
-  });
-
-  it('has an icon file for each unreleased expert', () => {
-    for (const expert of unreleasedExperts().get()) {
-      expect(existsSync(join(__dirname, '../..', expert.img))).toBe(true);
-    }
+  it('is empty while the file has no expert with the unreleased flag', () => {
+    expect(new UnreleasedExpertQuery().count()).toBe(0);
+    expect(unreleasedExperts().get()).toEqual([]);
   });
 
   it('keeps unreleased experts out of experts()', () => {
-    for (const expert of unreleasedExperts().get()) {
-      expect(experts().find(expert.id)).toBeUndefined();
+    expect(experts().find(announcedExpert.id)).toBeUndefined();
+    expect(unreleasedExperts([announcedExpert]).find(announcedExpert.id)).toEqual(announcedExpert);
+  });
+});
+
+describe('Justus', () => {
+  const justus = () => experts().find('justus')!;
+
+  it('has the title, specialty, generation, and unlock day of the data', () => {
+    expect(justus()).toMatchObject({
+      name: 'Justus',
+      title: 'Royal Counselor',
+      specialty: 'Expert Growth',
+      generation: 3,
+      unlockRequirement: { daysRequired: 360 },
+    });
+    expect(existsSync(join(__dirname, '../..', justus().img))).toBe(true);
+  });
+
+  it('unlocks on the day of the generation 6 heroes', () => {
+    const { daysRequired } = justus().unlockRequirement!;
+    expect(heroGenerationAt(daysRequired - 1)).toBe(5);
+    expect(heroGenerationAt(daysRequired)).toBe(6);
+  });
+
+  it('has a base bonus of 15 percent Troops Attack and Defense', () => {
+    expect(justus().baseBonuses!.map((b) => [b.statKey, b.amount, b.unit])).toEqual([
+      ['troops-attack', 15, 'percent'],
+      ['troops-defense', 15, 'percent'],
+    ]);
+  });
+
+  it('has four skills with their unlock levels and maximum levels', () => {
+    expect(justus().skills.map((s) => [s.name, s.unlockAffinityLevel, s.maxLevel])).toEqual([
+      ['Glorious Gains', 10, 5],
+      ['Treasure Seeker', 20, 5],
+      ['Master Diplomat', 30, 5],
+      ['Fortune Wayfarer', 40, 10],
+    ]);
+  });
+
+  it('costs 73,500 Books of Knowledge to max all four skills', () => {
+    const books = justus().skills.map((s) => s.costs.reduce((sum, c) => sum + c.books, 0));
+    expect(books).toEqual([12000, 15000, 15000, 31500]);
+    expect(books.reduce((sum, b) => sum + b, 0)).toBe(73500);
+  });
+
+  it('gives the first level of every skill for free and the other levels the EXP of the learning time', () => {
+    const exp = justus().skills.map((s) => s.costs.map((c) => c.exp));
+    expect(exp).toEqual([
+      [0, 103200, 207000, 310800, 414600],
+      [0, 181200, 362400, 544200, 725400],
+      [0, 207000, 414600, 621600, 829200],
+      [0, 108600, 217200, 326400, 435000, 544200, 652800, 762000, 870600, 979800],
+    ]);
+    expect(exp.flat().reduce((sum, e) => sum + e, 0)).toBe(9817800);
+    for (const skill of justus().skills) {
+      expect(skill.costs[0]).toEqual({ level: 1, exp: 0, books: 0 });
+      expect(skill.costs.map((c) => c.level)).toEqual(
+        Array.from({ length: skill.maxLevel }, (_, i) => i + 1),
+      );
     }
   });
 
-  it('unlocks Justus on the day of the generation 6 heroes', () => {
-    const { daysRequired } = unreleasedExperts().find('justus')!.unlockRequirement;
-    expect(heroGenerationAt(daysRequired - 1)).toBe(5);
-    expect(heroGenerationAt(daysRequired)).toBe(6);
+  it('gates the levels of Glorious Gains and Treasure Seeker by affinity level', () => {
+    const gates = (name: string) =>
+      justus()
+        .skills.find((s) => s.name === name)!
+        .affinityRequirements!.map((r) => [r.level, r.affinityLevel]);
+    expect(gates('Glorious Gains')).toEqual([
+      [1, 10],
+      [3, 30],
+      [5, 50],
+    ]);
+    expect(gates('Treasure Seeker')).toEqual([
+      [1, 20],
+      [3, 40],
+      [5, 60],
+    ]);
+    expect(justus().skills.some((s) => s.levelCaps)).toBe(false);
+  });
+
+  it('needs a total skill level for the upper levels of Master Diplomat and Fortune Wayfarer', () => {
+    const requirements = (name: string) =>
+      justus()
+        .skills.find((s) => s.name === name)!
+        .totalSkillRequirements!.map((r) => [r.level, r.totalSkillLevel]);
+    expect(requirements('Master Diplomat')).toEqual([
+      [3, 8],
+      [5, 12],
+    ]);
+    expect(requirements('Fortune Wayfarer')).toEqual([
+      [5, 15],
+      [8, 20],
+      [10, 24],
+    ]);
+  });
+
+  it('has the progressions that the data states and no others', () => {
+    const labels = justus().skills.map((s) => s.progressions.map((p) => p.label));
+    expect(labels).toEqual([['Glowstones from Labyrinth Raids'], ['Double Reward Chance'], [], []]);
+    expect(justus().skills[0].progressions[0].values).toEqual([4, 8, 12, 16, 20]);
+    expect(justus().skills[1].progressions[0].values).toEqual([15, 20, 25, 30, 35]);
+  });
+
+  it('has the Former Glory talent with the drop table of the Dynasty Honor Chest', () => {
+    const { talent } = justus();
+    expect(talent).toMatchObject({ name: 'Former Glory', maxLevel: 11, costs: [] });
+    expect(talent.lootTable!.reduce((sum, e) => sum + e.probabilityPercent, 0)).toBeCloseTo(100, 5);
+    expect(talent.lootTable![0]).toEqual({ reward: 'CompassX6', probabilityPercent: 48 });
+  });
+
+  it('has the affinity table of Holger and Ronne, with 440 sigils and 513,070 affinity in all', () => {
+    const rows = justus().affinityLevels;
+    const table = (id: string) =>
+      experts()
+        .find(id)!
+        .affinityLevels.map((l) => l.affinityRequired);
+    expect(rows.map((l) => l.affinityRequired)).toEqual(table('holger'));
+    expect(rows.map((l) => l.affinityRequired)).toEqual(table('ronne'));
+    expect(rows.reduce((sum, l) => sum + l.affinityRequired, 0)).toBe(513070);
+    expect(
+      rows.filter((l) => l.advancementCost !== undefined).map((l) => [l.level, l.advancementCost]),
+    ).toEqual([
+      [10, 8],
+      [20, 16],
+      [30, 24],
+      [40, 32],
+      [50, 40],
+      [60, 48],
+      [70, 56],
+      [80, 64],
+      [90, 72],
+      [100, 80],
+    ]);
+    expect(rows.reduce((sum, l) => sum + (l.advancementCost ?? 0), 0)).toBe(440);
+  });
+
+  it('has no stat bonus and no power on its affinity levels, which the data does not hold yet', () => {
+    for (const row of justus().affinityLevels) {
+      expect(row.statBonus).toBeUndefined();
+      expect(row.levelPower).toBeUndefined();
+      expect(row.affinityPower).toBeUndefined();
+    }
   });
 });
 
@@ -639,9 +761,11 @@ describe('skill unlocks and caps', () => {
       .find(expertId)!
       .skills.find((skill) => skill.name === name)!;
 
-  it('unlocks the four skills of every expert at affinity levels 10, 20, 30, and 40 in order', () => {
+  it('unlocks the four skills of every expert at affinity levels 10, 20, 30, and 40 in order, except Entrapment at 1', () => {
     for (const expert of experts().get()) {
-      expect(expert.skills.map((skill) => skill.unlockAffinityLevel)).toEqual([10, 20, 30, 40]);
+      expect(expert.skills.map((skill) => skill.unlockAffinityLevel)).toEqual(
+        expert.id === 'cyrille' ? [1, 20, 30, 40] : [10, 20, 30, 40],
+      );
     }
   });
 
@@ -666,7 +790,7 @@ describe('skill unlocks and caps', () => {
     }
   });
 
-  it('has caps on twelve skills of eight experts', () => {
+  it('has caps on ten skills of six experts', () => {
     const capped = experts()
       .get()
       .flatMap((expert) =>
@@ -679,10 +803,8 @@ describe('skill unlocks and caps', () => {
       'cyrille:Scavenging',
       'holger:Crowd Pleaser',
       'holger:Arena Star',
-      'romulus:Call of War',
       'baldur:Blazing Sunrise',
       'fabian:Salvager',
-      'valeria:Radiant Honor',
       'ronne:Cartographic Memory',
       'ronne:Treasure Scent',
       'gareth:Gifts of Iron',
@@ -696,9 +818,13 @@ describe('skill unlocks and caps', () => {
     const weaponMaster = skillOf('cyrille', 'Weapon Master');
 
     it('returns 0 while the skill is locked', () => {
-      expect(expertSkillMaxLevel(entrapment, 9)).toBe(0);
       expect(expertSkillMaxLevel(scavenging, 19)).toBe(0);
       expect(expertSkillMaxLevel(weaponMaster, 29)).toBe(0);
+    });
+
+    it('unlocks Entrapment from the first affinity level, even below a step of 10', () => {
+      expect(expertSkillMaxLevel(entrapment, 1)).toBe(entrapment.maxLevel);
+      expect(expertSkillMaxLevel(entrapment, 9)).toBe(entrapment.maxLevel);
     });
 
     it('returns the max level of a skill without caps once it is unlocked', () => {
@@ -723,17 +849,101 @@ describe('skill unlocks and caps', () => {
       expect(expertSkillMaxLevel(entrapment, 100)).toBe(entrapment.maxLevel);
     });
 
-    it("steps through the caps of Gareth's Undefeated Will after it unlocks at 30", () => {
+    it("unlocks Gareth's Undefeated Will at 30, and the data states no cap from there", () => {
       const will = skillOf('gareth', 'Undefeated Will');
-      expect(expertSkillMaxLevel(will, 20)).toBe(0);
-      expect(expertSkillMaxLevel(will, 30)).toBe(14);
-      expect(expertSkillMaxLevel(will, 40)).toBe(19);
-      expect(expertSkillMaxLevel(will, 50)).toBe(20);
+      expect(expertSkillMaxLevel(will, 29)).toBe(0);
+      expect(expertSkillMaxLevel(will, 30)).toBe(will.maxLevel);
+      expect(expertSkillMaxLevel(will, 50)).toBe(will.maxLevel);
     });
 
     it('returns the max level of a talent at any affinity level', () => {
       const talent = experts().find('cyrille')!.talent;
       expect(expertSkillMaxLevel(talent, 1)).toBe(talent.maxLevel);
     });
+  });
+});
+
+describe('expert skill requirements', () => {
+  const skills = () =>
+    experts()
+      .get()
+      .flatMap((expert) => expert.skills.map((skill) => ({ expert, skill })));
+
+  it('lists the affinity requirements of all 44 skills, from level 1 up to the maximum level', () => {
+    expect(skills()).toHaveLength(44);
+    for (const { expert, skill } of skills()) {
+      const gates = skill.affinityRequirements!;
+      const owner = `${expert.id} ${skill.name}`;
+      expect([owner, gates[0].level]).toEqual([owner, 1]);
+      gates.slice(1).forEach((gate, i) => {
+        expect(gate.level).toBeGreaterThan(gates[i].level);
+        expect(gate.affinityLevel).toBeGreaterThan(gates[i].affinityLevel);
+      });
+      expect(gates[gates.length - 1].level).toBeLessThanOrEqual(skill.maxLevel);
+    }
+  });
+
+  it('unlocks every skill at the affinity level of its level 1 requirement', () => {
+    for (const { expert, skill } of skills()) {
+      expect([expert.id, skill.name, skill.affinityRequirements![0].affinityLevel]).toEqual([
+        expert.id,
+        skill.name,
+        skill.unlockAffinityLevel,
+      ]);
+    }
+  });
+
+  it('needs a total skill level for the upper levels of the third and fourth skill of every expert', () => {
+    for (const expert of experts().get()) {
+      expect(expert.skills.map((s) => s.totalSkillRequirements !== undefined)).toEqual([
+        false,
+        false,
+        true,
+        true,
+      ]);
+      for (const skill of expert.skills.filter((s) => s.totalSkillRequirements)) {
+        const gates = skill.totalSkillRequirements!;
+        gates.slice(1).forEach((gate, i) => {
+          expect(gate.level).toBeGreaterThan(gates[i].level);
+          expect(gate.totalSkillLevel).toBeGreaterThan(gates[i].totalSkillLevel);
+        });
+        expect(gates[gates.length - 1].level).toBe(skill.maxLevel);
+      }
+    }
+  });
+
+  it('has the requirements that the game files list for a skill of each kind', () => {
+    const find = (id: string, name: string) =>
+      experts()
+        .find(id)!
+        .skills.find((s) => s.name === name)!;
+    const pairs = (list: { level: number }[], key: 'affinityLevel' | 'totalSkillLevel') =>
+      (list as unknown as Record<string, number>[]).map((r) => [r.level, r[key]]);
+    expect(pairs(find('gareth', 'Gifts of Iron').affinityRequirements!, 'affinityLevel')).toEqual([
+      [1, 10],
+      [5, 30],
+      [8, 50],
+      [10, 70],
+    ]);
+    expect(
+      pairs(find('gareth', 'Fearsome Reputation').totalSkillRequirements!, 'totalSkillLevel'),
+    ).toEqual([
+      [6, 30],
+      [11, 45],
+      [16, 55],
+      [20, 69],
+    ]);
+    expect(pairs(find('holger', 'Legacy').totalSkillRequirements!, 'totalSkillLevel')).toEqual([
+      [5, 22],
+      [8, 30],
+      [10, 39],
+    ]);
+    expect(
+      pairs(find('cyrille', "Ursa's Bane").totalSkillRequirements!, 'totalSkillLevel'),
+    ).toEqual([
+      [5, 18],
+      [8, 24],
+      [10, 29],
+    ]);
   });
 });

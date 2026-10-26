@@ -98,9 +98,9 @@ notes on where the data came from. The counts below are the number of entries ea
 | `heroGearMasteryForging()` | 84      | Hero gear mastery forging rows                                                  | [README](src/modules/hero-gear-mastery-forging/README.md) |
 | `heroGearSlots()`          | 4       | The four Hero Gear slots with an icon for each troop type                       | [README](src/modules/hero-gear-slots/README.md)           |
 | `heroGearStats()`          | 12      | Hero gear stats per slot, troop type, and level                                 | [README](src/modules/hero-gear-stats/README.md)           |
-| `experts()`                | 10      | Dawn Academy experts with skills, talents, and affinity levels                  | [README](src/modules/experts/README.md)                   |
+| `experts()`                | 11      | Dawn Academy experts with skills, talents, and affinity levels                  | [README](src/modules/experts/README.md)                   |
 | `expertRelationships()`    | 11      | Expert relationship statuses by affinity level                                  | [README](src/modules/experts/README.md)                   |
-| `unreleasedExperts()`      | 1       | Experts that are announced and not released: name, icon, and unlock requirement | [README](src/modules/experts/README.md)                   |
+| `unreleasedExperts()`      | 0       | Experts that are announced and not released: name, icon, and unlock requirement | [README](src/modules/experts/README.md)                   |
 | `pets()`                   | 14      | Beast Cage pets with skills and level tables                                    | [README](src/modules/pets/README.md)                      |
 
 ### Gear, troops, and research
@@ -134,7 +134,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | -------------------------- | ------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
 | `events()`                 | 65      | Game events with scoring, rewards, and tips                                                | [README](src/modules/events/README.md)                   |
 | `eventBuff()`              | 14      | Buff sources that apply in each game mode                                                  | [README](src/modules/event-buff/README.md)               |
-| `items()`                  | 348     | Item catalog with icons and sources                                                        | [README](src/modules/items/README.md)                    |
+| `items()`                  | 418     | Item catalog with icons and sources                                                        | [README](src/modules/items/README.md)                    |
 | `skins()`                  | 215     | Cosmetic skins                                                                             | [README](src/modules/skins/README.md)                    |
 | `serverTimeline()`         | 33      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`            | [README](src/modules/server-timeline/README.md)          |
 | `chiefOrders()`            | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                     | [README](src/modules/chief-orders/README.md)             |
@@ -145,6 +145,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `collectionRewardLevels()` | 51      | The collection levels, with the medallion and the rewards of each, and the medallion buffs | [README](src/modules/collection-reward-levels/README.md) |
 | `tundraAlbum()`            | 14      | Tundra Album albums, with the puzzles, pieces, rewards, and buff of each                   | [README](src/modules/tundra-album/README.md)             |
 | `vip()`                    | 12      | VIP 1 to 12 progression                                                                    | [README](src/modules/vip/README.md)                      |
+| `vipSignInRewards()`       | 5       | VIP points of the daily sign-in by streak day, with `vipSignInPoints()`                    | [README](src/modules/vip/README.md#daily-sign-in-streak) |
 
 ## Calculators
 
@@ -201,8 +202,9 @@ This is what the data does not hold yet. Each module README gives the detail.
   39 heroes of Generations 5 to 17 have a shard `power` of 0. Stars 4 and 5 of Generation 5 are not
   read. The Talent of Jeronimo and Natalia has no star requirement and no power gain. See
   [Heroes](src/modules/heroes/README.md).
-- **Experts.** Justus is announced and not released, so he has a name, an icon, and an unlock
-  requirement only. See [Experts](src/modules/experts/README.md).
+- **Experts.** Justus has no stat bonus or power on his affinity levels, no power on his skills, and
+  no skill icons. The buff calculator rejects his affinity. See
+  [Experts](src/modules/experts/README.md).
 - **Items.** 28 items have no icon: the shared Blueprint and the furniture of the six entertainment
   buildings other than the Farm, the Climbing Gym, and the Yoga Studio. See
   [Items](src/modules/items/README.md).

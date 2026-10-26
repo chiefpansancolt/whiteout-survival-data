@@ -65,12 +65,11 @@ The data is in `data/tundra-album.json`. An album has these fields.
 | `puzzles`           | The 9 puzzles                                                           |
 
 A puzzle has `id`, `name`, `img`, `reward`, and `pieces`. A reward is `{ amount }` with an optional
-`itemId`, an id from `items()`, and a `size` of 10 or 100 on the Enhancement XP Component, the
-number on its icon. A piece has `id`, `name`, `img`, and `stars` (1 to 5). The id of a piece is the
-id of its puzzle and its position, such as `fiery-crystal-1`. The name of a piece is the name of its
-puzzle, a dash, and its position, such as `Fiery Crystal - 1`. The pieces are in the order of the
-album, from 1 star up. `img` is the path of an image in `images/tundra-album/`: the picture of a
-puzzle, and the tile of a piece as the game shows it, with its stars.
+`itemId`, an id from `items()`. A piece has `id`, `name`, `img`, and `stars` (1 to 5). The id of a
+piece is the id of its puzzle and its position, such as `fiery-crystal-1`. The name of a piece is
+the name of its puzzle, a dash, and its position, such as `Fiery Crystal - 1`. The pieces are in the
+order of the album, from 1 star up. `img` is the path of an image in `images/tundra-album/`: the
+picture of a puzzle, and the tile of a piece as the game shows it, with its stars.
 
 ### Crystalline Mysteries
 
@@ -357,7 +356,7 @@ The Tundra Album gives a reward for the total of pieces that you have collected 
 progress bar at the top of the album screen counts them. There are 80 tiers, and each tier gives 2
 rewards. The first reward is always Gems. The tiers are in `data/tundra-album-piece-rewards.json`. A
 tier has `tier`, `pieces`, and `rewards`, a list of `{ itemId, amount }` as in the rewards of the
-puzzles. The Enhancement XP Component has a `size` of 100.
+puzzles. The Enhancement XP Component reward is `enhancement-xp-component-100`.
 
 | Tier | Pieces | Rewards                                           |
 | ---- | ------ | ------------------------------------------------- |
@@ -448,22 +447,23 @@ The pieces, the star levels, and the reward amounts of the 14 albums are read fr
 of the game, and the images are cut from the same screens. The package owner names the items of the
 album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
 Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The
-items of the other rewards are read from the icons of the screens. The item
-`enhancement-xp-component` covers both the 10 and the 100 component, so a reward of it has a `size`,
-read from the number on the icon. Seven rewards of 7 and the 100 of the Explore the World completion
-are the 100 component. The 45 of Dauntless Heroes and of City Founding are the 10 component.
+items of the other rewards are read from the icons of the screens. The item The 10 and the 100
+Enhancement XP Component are two items, `enhancement-xp-component-10` and
+`enhancement-xp-component-100`, and the number on the icon picks one. Seven rewards of 7 and the 100
+of the Explore the World completion are the 100 component. The 45 of Dauntless Heroes and of City
+Founding are the 10 component.
 
 Nine albums were not complete when their screens were taken: Tundra Alliance (8 of 9 puzzles),
 Battlefield Epic (6 of 9), Spectacular Adventures (5 of 9), Divine Weapons (8 of 9), The Labyrinth
-(4 of 9), Nature's Strength (8 of 9), Ballad of Wind and Cold (4 of 9), Infernal Power (3 of 9), and
+(4 of 9), Nature's Strength (8 of 9), Ballad of Wind and Cold (5 of 9), Infernal Power (3 of 9), and
 Kings of Combat (0 of 9). A piece that the player did not own shows as a grey tile. The `img` of
 such a piece is that grey tile, as a placeholder until the picture is added. A grey tile draws grey
 stars, and the star level of the piece is the number of those stars. These are the pieces with a
-grey tile in the first four albums: Orichalcum 15, Canyon Clash 14 and 15, and Grand Banquet 17 and
-18 of Battlefield Epic, Snowbusters 15, Bounty Hunter 14 and 15, Wandering Merchant 16, and Tundra
+grey tile in the first four albums: Orichalcum 15, Canyon Clash 15, and Grand Banquet 17 and 18 of
+Battlefield Epic, Snowbusters 15, Bounty Hunter 14 and 15, Wandering Merchant 16, and Tundra
 Adventure 12 of Spectacular Adventures, Horn of Command 15 of Tundra Alliance, and Essence Stones 18
-of Divine Weapons. The other five albums have 9 (The Labyrinth), 1 (Nature's Strength), 9 (Ballad of
-Wind and Cold), 28 (Infernal Power), and 115 (Kings of Combat) pieces with a grey tile. The picture
+of Divine Weapons. The other five albums have 9 (The Labyrinth), 1 (Nature's Strength), 7 (Ballad of
+Wind and Cold), 19 (Infernal Power), and 111 (Kings of Combat) pieces with a grey tile. The picture
 of a puzzle that is not complete is blurred, as the game shows it.
 
 The items of these rewards are read from icons that a check mark partly covers, so they are less

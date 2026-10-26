@@ -163,7 +163,9 @@ function scopeFromName(name: string): GameEventRankingScope | undefined {
  * Returns every ranking table of an event in one shape. The order is the personal ranking tables,
  * the alliance ranking table, the later alliance reward lists, then the tiers that hold rankings.
  * A personal table has `basedOn` and no `name`. A tier table has the `name` of the tier, and a
- * `scope` only when that name says `personal` or `alliance`. The array is empty when the event has
+ * `scope` only when that name says `personal` or `alliance`. The `personalRankings` and
+ * `allianceRankings` of a tier give a table each, with the ids `tier-N-personal` and
+ * `tier-N-alliance` and that scope. The array is empty when the event has
  * no ranking.
  */
 export function eventRankingTables(event: GameEvent): GameEventRankingTableView[] {
@@ -182,8 +184,8 @@ export function eventRankingTables(event: GameEvent): GameEventRankingTableView[
     name: version.name,
     rankings: version.rankings,
   }));
-  const tiers = (event.tiers ?? []).flatMap((tier, index) =>
-    tier.rankings
+  const tiers = (event.tiers ?? []).flatMap((tier, index) => [
+    ...(tier.rankings
       ? [
           {
             id: `tier-${index + 1}`,
@@ -192,7 +194,27 @@ export function eventRankingTables(event: GameEvent): GameEventRankingTableView[
             rankings: tier.rankings,
           },
         ]
-      : [],
-  );
+      : []),
+    ...(tier.personalRankings
+      ? [
+          {
+            id: `tier-${index + 1}-personal`,
+            scope: 'personal' as const,
+            name: tier.name,
+            rankings: tier.personalRankings,
+          },
+        ]
+      : []),
+    ...(tier.allianceRankings
+      ? [
+          {
+            id: `tier-${index + 1}-alliance`,
+            scope: 'alliance' as const,
+            name: tier.name,
+            rankings: tier.allianceRankings,
+          },
+        ]
+      : []),
+  ]);
   return [...personal, ...alliance, ...updates, ...tiers];
 }

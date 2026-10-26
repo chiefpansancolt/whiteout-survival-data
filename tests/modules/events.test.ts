@@ -146,7 +146,10 @@ describe('Events data', () => {
       'Diamond',
       'Ultimate',
     ]);
-    expect(events().find('foundry-battle')!.frequency).toBeUndefined();
+    expect(events().find('foundry-battle')).toMatchObject({
+      frequency: 'Every 2 weeks',
+      duration: '60 minutes',
+    });
   });
 
   it('lists 4 group rankings per Alliance Championship tier with speedup, chest, and badge rewards', () => {
@@ -194,8 +197,15 @@ describe('Events data', () => {
           .flatMap((d) => [...(d.milestones ?? []), ...(d.allianceMilestones ?? [])])
           .flatMap((m) => m.rewards ?? []),
         ...(e.personalRankings ?? []).flatMap((t) => t.rankings).flatMap((r) => r.rewards),
+        ...(e.damageRewards ?? []).flatMap((r) => r.rewards),
         ...(e.tiers ?? []).flatMap((t) => [
           ...(t.rewards ?? []),
+          ...[...(t.milestones ?? []), ...(t.allianceMilestones ?? [])].flatMap(
+            (m) => m.rewards ?? [],
+          ),
+          ...[...(t.personalRankings ?? []), ...(t.allianceRankings ?? [])].flatMap(
+            (r) => r.rewards,
+          ),
           ...(t.rankings ?? []).flatMap((r) => [
             ...r.rewards,
             ...(r.levels ?? []).flatMap((l) => l.rewards),
@@ -210,24 +220,151 @@ describe('Events data', () => {
 
   it('lists Bear Hunt score tiers in ascending order with their rewards', () => {
     const tiers = events().find('bear-hunt')!.tiers!;
-    expect(tiers).toHaveLength(51);
+    expect(tiers).toHaveLength(69);
     expect(tiers[0]).toEqual({
       name: 'Tier 1',
       scoreTotal: 10000,
       rewards: [
-        { name: '100 Enhancement XP Component', itemId: 'enhancement-xp-component', amount: 2 },
+        { name: '100 Enhancement XP Component', itemId: 'enhancement-xp-component-100', amount: 2 },
         { name: 'Alliance Tokens', itemId: 'alliance-token', amount: 5000 },
         {
           name: 'Lv. 3 Custom Secured Resource Chest',
-          itemId: 'lv-3-custom-ressource-chest',
+          itemId: 'lv-3-custom-resource-chest',
           amount: 50,
         },
       ],
     });
     expect(tiers[50].scoreTotal).toBe(72000000000);
+    expect(tiers.slice(51).map((t) => t.scoreTotal)).toEqual([
+      87000000000, 102000000000, 117000000000, 150000000000, 200000000000, 250000000000,
+      300000000000, 350000000000, 400000000000, 500000000000, 600000000000, 700000000000,
+      800000000000, 900000000000, 1200000000000, 1600000000000, 1800000000000, 2000000000000,
+    ]);
+    expect(tiers[68].name).toBe('Tier 69');
+    for (const tier of tiers.slice(51)) expect(tier.rewards).toEqual(tiers[50].rewards);
     tiers
       .slice(1)
       .forEach((tier, i) => expect(tier.scoreTotal!).toBeGreaterThan(tiers[i].scoreTotal!));
+  });
+
+  describe('Alliance Mobilization, Elite tier', () => {
+    const elite = () =>
+      events()
+        .find('alliance-mobilization')!
+        .tiers!.find((t) => t.name === 'Elite')!;
+    const pairs = (rewards: { itemId?: string; amount?: number }[]) =>
+      rewards.map((r) => [r.itemId, r.amount]);
+
+    it('has 25 milestones by alliance points, with a personal and an alliance reward each', () => {
+      const personal = elite().milestones!;
+      const alliance = elite().allianceMilestones!;
+      expect(personal.map((m) => m.scoreTotal)).toEqual([
+        600, 1200, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 12000, 14000, 16000,
+        20000, 25000, 30000, 35000, 42000, 49000, 56000, 63000, 70000, 80000, 90000,
+      ]);
+      expect(alliance.map((m) => m.scoreTotal)).toEqual(personal.map((m) => m.scoreTotal));
+      expect(personal.map((m) => m.name)).toEqual(alliance.map((m) => m.name));
+      expect(personal.map((m) => m.name)).toEqual(
+        Array.from({ length: 25 }, (_, i) => `Tier ${i + 1}`),
+      );
+      expect(personal.every((m) => m.rewards!.length === 2)).toBe(true);
+      expect(alliance.every((m) => m.rewards!.length === 1)).toBe(true);
+    });
+
+    it('gives the rewards of the first, a middle, and the last milestone', () => {
+      const personal = (n: number) => pairs(elite().milestones![n - 1].rewards!);
+      const alliance = (n: number) => pairs(elite().allianceMilestones![n - 1].rewards!);
+      expect([personal(1), alliance(1)]).toEqual([
+        [
+          ['gift-strength-in-unity', 1],
+          ['wood-10k', 10],
+        ],
+        [['speedup-construction-1h', 1]],
+      ]);
+      expect([personal(14), alliance(14)]).toEqual([
+        [
+          ['speedup-general-1h', 9],
+          ['speedup-troop-1h', 4],
+        ],
+        [['mythic-expedition-skill-manual', 1]],
+      ]);
+      expect([personal(25), alliance(25)]).toEqual([
+        [
+          ['speedup-general-1h', 11],
+          ['mythic-general-hero-shard', 3],
+        ],
+        [['gold-key', 2]],
+      ]);
+    });
+
+    it('has the personal and alliance rankings of ranks 1 to 5 and 6 to 10', () => {
+      const ranks = (list: { groupRanking: string }[]) => list.map((r) => r.groupRanking);
+      expect(ranks(elite().personalRankings!)).toEqual(['1', '2', '3', '4', '5', '6-10']);
+      expect(ranks(elite().allianceRankings!)).toEqual(['1', '2', '3', '4', '5', '6-10']);
+      expect(pairs(elite().personalRankings![0].rewards)).toEqual([
+        ['mythic-general-hero-shard', 20],
+        ['gems', 8000],
+        ['speedup-construction-1h', 10],
+        ['speedup-troop-1h', 10],
+        ['speedup-research-1h', 10],
+      ]);
+      expect(pairs(elite().allianceRankings![5].rewards)).toEqual([
+        ['gems', 500],
+        ['speedup-construction-1h', 1],
+        ['speedup-troop-1h', 1],
+        ['speedup-research-1h', 1],
+      ]);
+    });
+
+    it('gives the other tiers no rewards yet', () => {
+      for (const tier of events().find('alliance-mobilization')!.tiers!) {
+        if (tier.name !== 'Elite') expect(tier).toEqual({ name: tier.name });
+      }
+    });
+  });
+
+  it('lists the 27 Bear Hunt damage ranges, each starting where the one before it ends', () => {
+    const ranges = events().find('bear-hunt')!.damageRewards!;
+    expect(ranges).toHaveLength(27);
+    expect(ranges[0].minDamage).toBe(1);
+    ranges.slice(1).forEach((range, i) => expect(range.minDamage).toBe(ranges[i].maxDamage));
+    expect(ranges.slice(0, -1).every((r) => r.maxDamage !== undefined)).toBe(true);
+    expect(ranges[26].maxDamage).toBeUndefined();
+    expect(ranges.every((r) => r.rewards.length === 8)).toBe(true);
+  });
+
+  it('gives the Bear Hunt damage ranges the rewards of the first, a middle, and the last range', () => {
+    const ranges = events().find('bear-hunt')!.damageRewards!;
+    const rewardsOf = (n: number) => ranges[n - 1].rewards.map((r) => [r.itemId, r.amount]);
+    expect([ranges[0].maxDamage, rewardsOf(1)]).toEqual([
+      2500,
+      [
+        ['essence-stones', 1],
+        ['lucky-hero-gear-chest', 1],
+        ['enhancement-xp-component-10', 2],
+        ['alliance-token', 5500],
+        ['meat', 495500],
+        ['wood', 495500],
+        ['coal', 99000],
+        ['iron', 25000],
+      ],
+    ]);
+    expect([ranges[12].minDamage, ranges[12].maxDamage, rewardsOf(13)[2]]).toEqual([
+      8900000,
+      20500000,
+      ['enhancement-xp-component-100', 1],
+    ]);
+    expect([ranges[25].minDamage, ranges[25].maxDamage]).toEqual([76800000000, 153600000000]);
+    expect(rewardsOf(27)).toEqual([
+      ['essence-stones', 20],
+      ['lucky-hero-gear-chest', 4],
+      ['enhancement-xp-component-100', 6],
+      ['alliance-token', 110000],
+      ['meat', 45600000],
+      ['wood', 45600000],
+      ['coal', 9100000],
+      ['iron', 2200000],
+    ]);
   });
 
   it('lists Canyon Clash personal rewards by merit range and legion rank', () => {
@@ -453,8 +590,8 @@ describe('Events data', () => {
       amount: 10,
     });
     expect(last[2].rewards[4]).toEqual({
-      name: 'Lv.2 Custom Ressource Chest',
-      itemId: 'lv-2-custom-ressource-chest',
+      name: 'Lv.2 Custom Resource Chest',
+      itemId: 'lv-2-custom-resource-chest',
       amount: 20,
     });
     const [, result] = event.personalRankings!;
@@ -728,7 +865,7 @@ describe('Events data', () => {
     expect(tiers.map((t) => t.rankings!.length)).toEqual([10, 10, 10, 7, 7, 7, 5]);
     expect(tiers[0].rankings![0].rewards[3]).toEqual({
       name: 'Lv.2 Custom Resource Chest',
-      itemId: 'lv-2-custom-ressource-chest',
+      itemId: 'lv-2-custom-resource-chest',
       amount: 150,
     });
     const [, total, battle, , , battleAlliance] = tiers;
@@ -759,7 +896,7 @@ describe('Events data', () => {
     });
     expect(tiers[4].rankings![0].rewards[3]).toEqual({
       name: 'Lv.2 Custom Resource Chest',
-      itemId: 'lv-2-custom-ressource-chest',
+      itemId: 'lv-2-custom-resource-chest',
       amount: 200,
     });
   });
@@ -897,7 +1034,7 @@ describe('Events data', () => {
       ],
       [
         ['gems', 5000],
-        ['lv-1-custom-ressource-chest', 1],
+        ['lv-1-custom-resource-chest', 1],
         ['meat', 280],
         ['wood', 70],
       ],
@@ -919,7 +1056,7 @@ describe('Events data', () => {
     expect(fishing.tiers!.map((t) => t.scoreTotal)).toEqual([250, 500, 1000, 1500, 2000]);
     expect(fishing.tiers![4].rewards![0]).toMatchObject({ itemId: 'lucky-hero-gear-chest' });
     expect(fishing.tiers![0].rewards!.map((r) => r.itemId)).toEqual([
-      'enhancement-xp-component',
+      'enhancement-xp-component-100',
       'hero-xp',
       'speedup-general-5m',
     ]);
@@ -961,7 +1098,7 @@ describe('Events data', () => {
       'charm-guide',
       'shot-token',
       'gems',
-      'lv-2-custom-ressource-chest',
+      'lv-2-custom-resource-chest',
     ]);
     const league = events().find('icefire-warhymn-league')!;
     expect(league.personalRankings![1].rankings.map((r) => r.groupRanking)).toEqual([
@@ -976,7 +1113,7 @@ describe('Events data', () => {
     ]);
     expect(league.personalRankings![1].rankings[4].rewards.map((r) => r.itemId)).toEqual([
       'fire-crystal',
-      'enhancement-xp-component',
+      'enhancement-xp-component-100',
       'treasure-box',
     ]);
     const season = league.personalRankings![0].rankings;
@@ -1033,7 +1170,7 @@ describe('Events data', () => {
       'advanced-wild-mark',
       'fire-crystal',
       'speedup-general-1h',
-      'lv-3-custom-ressource-chest',
+      'lv-3-custom-resource-chest',
     ]);
     expect(league.shop![0].reward).toMatchObject({ decorationId: 'icefire-way' });
     expect(league.missionPointsLabel).toBe('Warhymn Testaments');
@@ -1077,8 +1214,8 @@ describe('Events data', () => {
     expect(league.missions![3].rewards![0]).toMatchObject({ itemId: 'lucky-hero-gear-chest' });
     expect(league.missions![4].rewards!.map((r) => r.itemId)).toEqual([
       'fire-crystal',
-      'enhancement-xp-component',
-      'lv-3-custom-ressource-chest',
+      'enhancement-xp-component-100',
+      'lv-3-custom-resource-chest',
     ]);
     expect(league.phases!.map((p) => p.name)).toEqual([
       'Preview',
@@ -1460,7 +1597,7 @@ describe('Events data', () => {
         ['chief-stamina', 5],
       ],
       [
-        ['enhancement-xp-component', 5],
+        ['enhancement-xp-component-100', 5],
         ['chief-stamina', 5],
       ],
       [
@@ -1498,7 +1635,7 @@ describe('Events data', () => {
         ['iron', 5],
       ],
       [
-        ['enhancement-xp-component', 3],
+        ['enhancement-xp-component-100', 3],
         ['speedup-general-5m', 5],
         ['speedup-research-5m', 5],
       ],
@@ -1520,7 +1657,7 @@ describe('Events data', () => {
       [
         ['mythic-general-hero-shard', 2],
         ['fire-crystal', 5],
-        ['lv-2-custom-ressource-chest', 10],
+        ['lv-2-custom-resource-chest', 10],
       ],
       [
         ['hero-xp', 2],
@@ -1862,6 +1999,17 @@ describe('eventRankingTables', () => {
     expect(tablesOf('lucky-wheel')).toEqual([]);
   });
 
+  it('lists the personal and alliance ranking tables of a tier with their scope', () => {
+    const tables = tablesOf('alliance-mobilization');
+    expect(tables.map((t) => [t.id, t.scope, t.name])).toEqual([
+      ['tier-4-personal', 'personal', 'Elite'],
+      ['tier-4-alliance', 'alliance', 'Elite'],
+    ]);
+    const elite = events().find('alliance-mobilization')!.tiers![3];
+    expect(tables[0].rankings).toBe(elite.personalRankings);
+    expect(tables[1].rankings).toBe(elite.allianceRankings);
+  });
+
   it('gives an empty array for an event with no ranking', () => {
     expect(tablesOf('wild-brawl')).toEqual([]);
   });
@@ -1939,7 +2087,14 @@ describe('event schedules', () => {
   });
 
   it('matches the repeat rule to a frequency text that says every two weeks', () => {
-    const twoWeeks = ['hall-of-chief', 'hall-of-heroes', 'heros-mission', 'sunfire-castle'];
+    const twoWeeks = [
+      'foundry-battle',
+      'hall-of-chief',
+      'hall-of-heroes',
+      'heros-mission',
+      'lucky-wheel',
+      'sunfire-castle',
+    ];
     for (const id of twoWeeks) {
       expect(events().find(id)!.frequency).toMatch(/two weeks|2 weeks/i);
       expect(events().find(id)!.schedule!.repeat).toEqual({
@@ -1948,6 +2103,34 @@ describe('event schedules', () => {
         unit: 'weeks',
       });
     }
+  });
+
+  it('matches the repeat rule to a frequency text that says every 4 weeks', () => {
+    const fourWeeks = [
+      'canyon-clash',
+      'mercenary-prestige',
+      'svs-state-of-power',
+      'tundra-trade-route',
+      'wild-brawl',
+    ];
+    for (const id of fourWeeks) {
+      expect(events().find(id)!.frequency).toMatch(/4 weeks/i);
+      expect(events().find(id)!.schedule!.repeat).toEqual({
+        kind: 'every',
+        every: 4,
+        unit: 'weeks',
+      });
+    }
+  });
+
+  it('gives Mercenary Prestige a run of 3 days, and Lucky Wheel 3 days from Tuesday', () => {
+    expect(events().find('mercenary-prestige')).toMatchObject({
+      duration: '3 days',
+      schedule: { runs: [{ length: 3, unit: 'days' }] },
+    });
+    expect(events().find('lucky-wheel')!.schedule!.runs).toEqual([
+      { length: 3, unit: 'days', startWeekday: 'tuesday' },
+    ]);
   });
 
   it('gives Hall of Chief two runs, one for each season', () => {
@@ -2000,6 +2183,15 @@ describe('event schedules', () => {
     expect(events().find('beast-whisperer')!.schedule).toEqual({
       repeat: { kind: 'none' },
       runs: [{ length: 7, unit: 'days' }],
+    });
+  });
+
+  it('repeats Canyon Clash every four weeks, as its frequency text says', () => {
+    expect(events().find('canyon-clash')!.frequency).toBe('Every 4 weeks');
+    expect(events().find('canyon-clash')!.schedule!.repeat).toEqual({
+      kind: 'every',
+      every: 4,
+      unit: 'weeks',
     });
   });
 
@@ -2136,7 +2328,7 @@ describe('expert extra tiers', () => {
     ]);
     expect(rewards('alliance-mobilization', 2)).toEqual([
       ['essence-stones', 10],
-      ['enhancement-xp-component', 10],
+      ['enhancement-xp-component-100', 10],
     ]);
     expect(rewards('alliance-showdown', 1)).toEqual([
       ['sail-of-conquest', 1],

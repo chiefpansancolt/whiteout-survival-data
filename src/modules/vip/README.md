@@ -49,6 +49,31 @@ example `"+16%"`, `"+1"`, or `"+1.1M"`. `amount` and `unit` are the parsed form:
 expanded to the full number. Use `amount` and `unit` to add up or compare bonuses, and `value` to
 display them.
 
+## Daily sign-in streak
+
+The daily sign-in gives VIP points, and the points grow with the streak. `vipSignInRewards()`
+returns the five rows from `data/vip-sign-in.json`, and `vipSignInPoints(streakDay)` gives the
+points of one day.
+
+| Streak day | VIP points |
+| ---------- | ---------- |
+| 1          | 100        |
+| 2          | 200        |
+| 3          | 300        |
+| 4          | 400        |
+| 5 or more  | 500        |
+
+```ts
+import { vipSignInPoints } from "whiteout-survival-data";
+
+console.log(vipSignInPoints(3)); // 300
+console.log(vipSignInPoints(12)); // 500
+```
+
+A row has `streakDay` and `points`. The last row has `orMore` set, because it also applies to every
+later day. `vipSignInPoints` throws `RangeError` for a day that is not a whole number of 1 or more.
+The points are the same unit as the XP of the levels.
+
 ## Notes
 
 The data is a single official infographic image, and it is complete and precise for all 12 levels.

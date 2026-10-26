@@ -51,7 +51,7 @@ wording of the game, a `contentmentCost`, and a `cooldownSeconds`. An order can 
 | Order               | Contentment cost | Cooldown |
 | ------------------- | ---------------- | -------- |
 | Double Time         | 800,000          | 23 hours |
-| Rush Job            | 150,000          | 24 hours |
+| Rush Job            | 150,000          | 23 hours |
 | Productivity Day    | 50,000           | 12 hours |
 | Urgent Mobilization | 50,000           | 8 hours  |
 | Festivities         | 50,000           | 24 hours |
@@ -71,9 +71,9 @@ has `unlockFireCrystalLevel` 1, and its `replaces` field holds the `id` of the o
 
 | Order                      | Replaces            | Contentment cost | Cooldown |
 | -------------------------- | ------------------- | ---------------- | -------- |
-| Dawn Alliance Commendation | Festivities         | 800,000          | 2 days   |
+| Dawn Alliance Commendation | Festivities         | 800,000          | 47 hours |
 | Crunch Time                | Urgent Mobilization | 100,000          | 12 hours |
-| Advanced Training          | Productivity Day    | 150,000          | 2 days   |
+| Advanced Training          | Productivity Day    | 150,000          | 47 hours |
 
 Dawn Alliance Commendation gives one random reward from the Dawn Alliance vault. Its `rewards` list
 has ten entries, and each has an `itemId` from `items()`, a `quantity`, and a `chance` of 10

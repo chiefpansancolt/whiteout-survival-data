@@ -69,7 +69,7 @@
     },
     {
       "name": "Enhancement XP Component (10)",
-      "itemId": "enhancement-xp-component",
+      "itemId": "enhancement-xp-component-10",
       "amount": 5,
       "note": "Per Qualifier defeat"
     },
@@ -93,7 +93,7 @@
     },
     {
       "name": "Enhancement XP Component (100)",
-      "itemId": "enhancement-xp-component",
+      "itemId": "enhancement-xp-component-100",
       "amount": 1,
       "note": "Win-count chest"
     },
@@ -354,7 +354,7 @@
             },
             {
               "name": "Enhancement XP Component",
-              "itemId": "enhancement-xp-component",
+              "itemId": "enhancement-xp-component-100",
               "amount": 5,
               "note": "Each is a 100 Enhancement XP component"
             },
@@ -380,7 +380,7 @@
             },
             {
               "name": "Enhancement XP Component",
-              "itemId": "enhancement-xp-component",
+              "itemId": "enhancement-xp-component-100",
               "amount": 4,
               "note": "Each is a 100 Enhancement XP component"
             },
@@ -406,7 +406,7 @@
             },
             {
               "name": "Enhancement XP Component",
-              "itemId": "enhancement-xp-component",
+              "itemId": "enhancement-xp-component-100",
               "amount": 3,
               "note": "Each is a 100 Enhancement XP component"
             },
@@ -427,7 +427,7 @@
             },
             {
               "name": "Enhancement XP Component",
-              "itemId": "enhancement-xp-component",
+              "itemId": "enhancement-xp-component-100",
               "amount": 2,
               "note": "Each is a 100 Enhancement XP component"
             },
@@ -448,7 +448,7 @@
             },
             {
               "name": "Enhancement XP Component",
-              "itemId": "enhancement-xp-component",
+              "itemId": "enhancement-xp-component-100",
               "amount": 1,
               "note": "Each is a 100 Enhancement XP component"
             },
@@ -602,7 +602,7 @@
     {
       "reward": {
         "name": "Lv. 3 Custom Resource Chest",
-        "itemId": "lv-3-custom-ressource-chest",
+        "itemId": "lv-3-custom-resource-chest",
         "amount": 1
       },
       "cost": 10,
@@ -877,13 +877,13 @@
         },
         {
           "name": "Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 1,
           "note": "Each is a 100 Enhancement XP component"
         },
         {
           "name": "Lv. 3 Custom Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 10
         }
       ]

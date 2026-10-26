@@ -6,9 +6,14 @@
   "resultShape": "milestones",
   "scoreUnit": "spins",
   "description": "A spin event for the hero shards of your current generation. Spin to get shards, with bonus shards at set spin counts.",
-  "frequency": "Tuesday to Thursday",
+  "frequency": "Every 2 weeks, from Tuesday to Thursday",
   "duration": "3 days",
   "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 2,
+      "unit": "weeks"
+    },
     "runs": [
       {
         "length": 3,

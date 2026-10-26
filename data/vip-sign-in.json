@@ -1,0 +1,7 @@
+[
+  { "streakDay": 1, "points": 100 },
+  { "streakDay": 2, "points": 200 },
+  { "streakDay": 3, "points": 300 },
+  { "streakDay": 4, "points": 400 },
+  { "streakDay": 5, "points": 500, "orMore": true }
+]

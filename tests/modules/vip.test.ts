@@ -1,4 +1,4 @@
-import { vip, VipQuery } from '@/modules/vip';
+import { vip, VipQuery, vipSignInPoints, vipSignInRewards } from '@/modules/vip';
 import { testQueryBaseContract } from '../helpers';
 
 testQueryBaseContract('vip', () => vip());
@@ -151,5 +151,39 @@ describe('VIP progression', () => {
         .find('vip-9')!
         .bonuses.map((b) => b.stat),
     ).toContain('Troops Defense');
+  });
+});
+
+describe('VIP sign-in streak', () => {
+  it('gives 100 VIP points for 1 day and 100 more for each day up to 500 on day 5', () => {
+    expect(vipSignInRewards().map((r) => [r.streakDay, r.points])).toEqual([
+      [1, 100],
+      [2, 200],
+      [3, 300],
+      [4, 400],
+      [5, 500],
+    ]);
+  });
+
+  it('marks only the last row as applying to every later day', () => {
+    expect(vipSignInRewards().map((r) => r.orMore)).toEqual([
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      true,
+    ]);
+  });
+
+  it('gives the points of a streak day, and 500 from day 5 on', () => {
+    expect([1, 2, 3, 4, 5, 6, 30].map(vipSignInPoints)).toEqual([
+      100, 200, 300, 400, 500, 500, 500,
+    ]);
+  });
+
+  it('rejects a streak day that is not a whole number of 1 or more', () => {
+    for (const day of [0, -1, 1.5, Number.NaN]) {
+      expect(() => vipSignInPoints(day)).toThrow(RangeError);
+    }
   });
 });

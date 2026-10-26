@@ -7,6 +7,56 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-10-26
+
+### Added
+
+#### Game Data
+
+- `vipSignInRewards()` and `vipSignInPoints()`: the VIP points of the daily sign-in by day of the
+  streak, from 100 on day 1 up to 500 on day 5 and after.
+- `events()`: the Elite tier of Alliance Mobilization has its 25 milestone rewards by alliance
+  points, for the alliance and for the members, and its personal and alliance ranking rewards.
+- `items()`: new Gift Strength in Unity item in `Others`, with no icon yet.
+- `experts()`: every skill has `affinityRequirements`, the affinity levels that unlock it and gate
+  its upper levels, and the third and fourth skill of each expert have `totalSkillRequirements`.
+- `experts()`: Justus, the Royal Counselor, with his base bonus, four skills with their EXP and
+  Books of Knowledge for each level, the Former Glory talent, the level requirements, and his 100
+  affinity levels with their affinity and sigils. His stat bonus and power values are not in the
+  data yet, so `calculateBuffs` rejects his affinity. `unreleasedExperts()` is empty.
+- `items()`: new `Resources` category with the Custom Resource Chests, the Custom Secured Resource
+  Chests, Meat, Wood, Coal, Iron, and Steel, and the packs of the first four, each with a Secured
+  version where the game has one.
+- `items()`: a Shard item for each of the 35 heroes that had none, with no icon yet.
+- `items()`: new Mythic Hero Gear item in `Hero Gear Material`, with no icon yet.
+
+### Changed
+
+#### Game Data
+
+- `items()`: the duplicate Shot Token entry is removed. `shot-token` keeps the sources of both.
+- `events()`: Canyon Clash, Mercenary Prestige, Tundra Trade Route, and Wild Brawl repeat every four
+  weeks, SvS has the frequency text for it, Lucky Wheel repeats every two weeks, and Foundry Battle
+  has the frequency "Every 2 weeks" and the duration "60 minutes". Mercenary Prestige lasts 3 days.
+- `experts()`: Entrapment is available from affinity level 1, and the level caps of Call of War,
+  Radiant Honor, and Undefeated Will follow the requirements of the skills.
+- `chiefOrders()`: the cooldown of Rush Job, Dawn Alliance Commendation, and Advanced Training is 1
+  hour shorter.
+- `tundraAlbum()`: pictures for nine more Infernal Power pieces, three of Ballad of Wind and Cold,
+  one of Battlefield Epic, and four of Kings of Combat, and the picture of the completed Monument to
+  the Flame puzzle. Pieces 1 to 3 of The Guardians no longer show a game banner.
+- `events()`: Bear Hunt has 18 more score tiers, up to 2 trillion, and `damageRewards`, the 27
+  personal damage ranges and the rewards that a player gains on every run.
+- `items()`: the Custom Resource Chests and the four Daily Missions resource packs move out of
+  `Chest` and `Others` into `Resources`. The ids of the chests now use the spelling `resource`.
+- `items()`: the `Gear Materials` category is split into `Chief Material` and `Hero Gear Material`.
+  The Enhancement XP Component also has an item for the 10 and one for the 100. Tundra Album rewards
+  link to the item of their size, and a reward no longer has a `size`. The generic Enhancement XP
+  Component item is removed. Hero gear upgrade costs and the hero gear calculator use the id
+  `enhancement-xp`, which counts XP and is not an item.
+- `items()`: the Custom Mythic Hero Gear Chest moves from `Chest` to `Hero Gear Material`.
+- `items()`: the Pet Advancement Materials Custom Chest moves from `Chest` to `Pet`.
+
 ## [0.7.1] - 2026-10-18
 
 ### Fixed

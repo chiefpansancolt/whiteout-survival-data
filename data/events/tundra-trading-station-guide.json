@@ -265,7 +265,7 @@
     {
       "reward": {
         "name": "Enhancement XP Component",
-        "itemId": "enhancement-xp-component",
+        "itemId": "enhancement-xp-component-100",
         "amount": 1,
         "note": "Each is a 100 Enhancement XP component"
       },
@@ -284,7 +284,7 @@
     {
       "reward": {
         "name": "Lv. 2 Custom Resource Chest",
-        "itemId": "lv-2-custom-ressource-chest",
+        "itemId": "lv-2-custom-resource-chest",
         "amount": 1
       },
       "cost": 10,
@@ -307,7 +307,7 @@
     },
     {
       "name": "Lv. 2 Custom Resource Chest",
-      "itemId": "lv-2-custom-ressource-chest"
+      "itemId": "lv-2-custom-resource-chest"
     }
   ],
   "tips": [

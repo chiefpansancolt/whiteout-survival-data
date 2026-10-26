@@ -66,6 +66,7 @@ The event fields that hold more than text:
 | Field                                                     | Holds                                                                                                                                            |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `tiers`                                                   | Ranking tiers from lowest to highest. A tier can have `scoreTotal`, tier-wide `rewards`, and per-placement `rankings` (star change and rewards). |
+| `damageRewards`                                           | Personal damage ranges that a player gains on every run, each with `minDamage`, an optional `maxDamage`, and `rewards`. Bear Hunt only.          |
 | `allianceRankings`, `allianceRankingUpdates`              | Alliance rewards by placement. The updates are later reward lists, in the order the game replaced them.                                          |
 | `personalRankings`                                        | Personal rewards by placement, one table for each thing a placement is based on.                                                                 |
 | `pointLevels`                                             | Reward levels that need both personal and alliance points.                                                                                       |
@@ -148,10 +149,9 @@ only where it is clear:
 - Alliance Mobilization is set to once a month, as the text says, although it runs twice a month
   until about 13 weeks of state age.
 
-Seven events have a repeat rule or a run that the text of `frequency` and `duration` does not give.
-Foundry Battle is every two weeks for 60 minutes. SvS is every four weeks. Canyon Clash is every
-month. Armament Competition and Officer Project are every two weeks, and Officer Project is "usually
-two days". Mercenary Prestige is every month. Hero Rally is 14 days.
+Three events have a repeat rule or a run that the text of `frequency` and `duration` does not give.
+Armament Competition and Officer Project are every two weeks, and Officer Project is "usually two
+days". Hero Rally is 14 days.
 
 Fifteen events have no schedule, because their text gives no usable one: Deadshot, Develop New Tech
 and its second version, Dreamscape Memory, Frostdragon Tyrant, Frosty Fortune, Home Beyond, Return
@@ -212,6 +212,11 @@ items. The categories of the solo events can be corrected.
 Alliance events:
 
 - Alliance Championship has all 6 tiers, with rewards for each of its 4 placement groups.
+- Bear Hunt has 69 achievement tiers in `tiers`, which a player gains one time. `damageRewards` has
+  the 27 personal damage ranges, which a player gains on every run. A range has `minDamage`, a
+  `maxDamage` that the last range does not have, and `rewards`. Each range starts where the range
+  before it ends. The source does not say whether the boundary value belongs to the lower or the
+  higher range.
 - Canyon Clash uses `tiers` for personal merit ranges, with rewards per legion rank, and
   `allianceRankings` for alliance rewards.
 - Frostdragon Tyrant has `personalRankings` (one table for each basis, such as capital occupation
@@ -228,7 +233,13 @@ Alliance events:
 - Alliance Showdown has `days` (the actions that score points each day, and the personal point
   milestones with rewards for that day) and `tiers` by star rating for the star and ranking rewards.
 - Alliance Mobilization has `missions` (name, group, and base points) The 120% and 200% exclusive
-  columns and the gem purchase missions are left out.
+  columns and the gem purchase missions are left out. The five `tiers` are the tiers of the event,
+  and only the Elite tier has rewards in the data. It has 25 `milestones` with the personal reward
+  and 25 `allianceMilestones` with the alliance reward, both by the alliance points of the tier, and
+  `personalRankings` and `allianceRankings` with the rewards of rank 1 to 5 and rank 6 to 10. The
+  amounts come from the package owner. A tier has the milestone and ranking lists in the same shape
+  as a day of Alliance Showdown and as the rankings of the event. `eventRankingTables()` returns the
+  two ranking lists of the tier as `tier-4-personal` and `tier-4-alliance`.
 - Tundra Arms League uses `allianceRankings`, `personalRankings` (legion ranking and legion result),
   and `tiers` by Personal Arsenal Points, with Winner and Defeat rankings for the Elimination and
   Championship phases. The rewards come from in-game screenshots.
@@ -295,5 +306,5 @@ Vision of Dawn has two `versions`, Before Fire Crystal age and Fire Crystal age.
 missions with their Hope points and rewards, and the five Hope chests in `tiers`. The Fire Crystal
 age version has the Hope points of each chest in `scoreTotal` (10, 30, 50, 80, and 110). The Before
 Fire Crystal age version does not have them yet. The missions of the Fire Crystal age version give
-54 Hope points a day. The Lv.2 Custom Ressource Chest of the Epic Recruitment 30 mission is read
-from the icon of the screen.
+54 Hope points a day. The Lv.2 Custom Resource Chest of the Epic Recruitment 30 mission is read from
+the icon of the screen.

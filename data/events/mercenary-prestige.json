@@ -5,12 +5,20 @@
   "category": "alliance",
   "resultShape": "tier",
   "description": "Phaethon Mercenaries have seized a nearby mining region and enslaved the locals. Gina's Eagles accepted a contract to remove them, but she worries they are overmatched. The event has Personal Challenges and Alliance Challenges.",
+  "frequency": "Every 4 weeks",
+  "duration": "3 days",
   "schedule": {
     "repeat": {
       "kind": "every",
-      "every": 1,
-      "unit": "months"
-    }
+      "every": 4,
+      "unit": "weeks"
+    },
+    "runs": [
+      {
+        "length": 3,
+        "unit": "days"
+      }
+    ]
   },
   "requirements": [
     "Select a difficulty tier (Champions, Epic, Legends, or Fearless) and a level (Easy, Normal, Hard, Nightmare, or Insane)",
@@ -48,7 +56,7 @@
             },
             {
               "name": "Lv.1 Custom Resource Chest",
-              "itemId": "lv-1-custom-ressource-chest",
+              "itemId": "lv-1-custom-resource-chest",
               "amount": 500
             }
           ],
@@ -433,7 +441,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 24
                 },
                 {
@@ -823,7 +831,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 24
                 },
                 {
@@ -1213,7 +1221,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 24
                 },
                 {
@@ -1603,7 +1611,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 24
                 },
                 {
@@ -1993,7 +2001,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 24
                 },
                 {
@@ -2030,7 +2038,7 @@
             },
             {
               "name": "Lv.1 Custom Resource Chest",
-              "itemId": "lv-1-custom-ressource-chest",
+              "itemId": "lv-1-custom-resource-chest",
               "amount": 1000
             }
           ],
@@ -2415,7 +2423,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 48
                 },
                 {
@@ -2805,7 +2813,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 48
                 },
                 {
@@ -3195,7 +3203,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 48
                 },
                 {
@@ -3585,7 +3593,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 48
                 },
                 {
@@ -3975,7 +3983,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 48
                 },
                 {
@@ -4012,7 +4020,7 @@
             },
             {
               "name": "Lv.1 Custom Resource Chest",
-              "itemId": "lv-1-custom-ressource-chest",
+              "itemId": "lv-1-custom-resource-chest",
               "amount": 1500
             }
           ],
@@ -4397,7 +4405,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 72
                 },
                 {
@@ -4787,7 +4795,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 72
                 },
                 {
@@ -5177,7 +5185,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 72
                 },
                 {
@@ -5567,7 +5575,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 72
                 },
                 {
@@ -5957,7 +5965,7 @@
                 },
                 {
                   "name": "Lv.1 Custom Resource Chest",
-                  "itemId": "lv-1-custom-ressource-chest",
+                  "itemId": "lv-1-custom-resource-chest",
                   "amount": 72
                 },
                 {
@@ -5999,7 +6007,7 @@
             },
             {
               "name": "Lv.1 Custom Resource Chest",
-              "itemId": "lv-1-custom-ressource-chest",
+              "itemId": "lv-1-custom-resource-chest",
               "amount": 2000
             }
           ],
@@ -6384,7 +6392,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 10
                 },
                 {
@@ -6774,7 +6782,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 10
                 },
                 {
@@ -7164,7 +7172,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 10
                 },
                 {
@@ -7554,7 +7562,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 10
                 },
                 {
@@ -7944,7 +7952,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 10
                 },
                 {
@@ -7987,7 +7995,7 @@
             },
             {
               "name": "Lv.1 Custom Resource Chest",
-              "itemId": "lv-1-custom-ressource-chest",
+              "itemId": "lv-1-custom-resource-chest",
               "amount": 2500
             }
           ],
@@ -8372,7 +8380,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 12
                 },
                 {
@@ -8762,7 +8770,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 12
                 },
                 {
@@ -9152,7 +9160,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 12
                 },
                 {
@@ -9542,7 +9550,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 12
                 },
                 {
@@ -9932,7 +9940,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 12
                 },
                 {
@@ -9984,7 +9992,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 300
             }
           ],
@@ -10369,7 +10377,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 14
                 },
                 {
@@ -10759,7 +10767,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 14
                 },
                 {
@@ -11149,7 +11157,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 14
                 },
                 {
@@ -11539,7 +11547,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 14
                 },
                 {
@@ -11929,7 +11937,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 14
                 },
                 {
@@ -11976,7 +11984,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 350
             }
           ],
@@ -12361,7 +12369,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 16
                 },
                 {
@@ -12751,7 +12759,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 16
                 },
                 {
@@ -13141,7 +13149,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 16
                 },
                 {
@@ -13531,7 +13539,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 16
                 },
                 {
@@ -13921,7 +13929,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 16
                 },
                 {
@@ -13968,7 +13976,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 400
             }
           ],
@@ -14353,7 +14361,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 18
                 },
                 {
@@ -14743,7 +14751,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 18
                 },
                 {
@@ -15133,7 +15141,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 18
                 },
                 {
@@ -15523,7 +15531,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 18
                 },
                 {
@@ -15913,7 +15921,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 18
                 },
                 {
@@ -15960,7 +15968,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 450
             }
           ],
@@ -16345,7 +16353,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 20
                 },
                 {
@@ -16736,7 +16744,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 20
                 },
                 {
@@ -17126,7 +17134,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 20
                 },
                 {
@@ -17516,7 +17524,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 20
                 },
                 {
@@ -17906,7 +17914,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 20
                 },
                 {
@@ -17953,7 +17961,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 500
             }
           ],
@@ -18338,7 +18346,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 22
                 },
                 {
@@ -18728,7 +18736,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 22
                 },
                 {
@@ -19118,7 +19126,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 22
                 },
                 {
@@ -19508,7 +19516,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 22
                 },
                 {
@@ -19898,7 +19906,7 @@
                 },
                 {
                   "name": "Lv.2 Custom Resource Chest",
-                  "itemId": "lv-2-custom-ressource-chest",
+                  "itemId": "lv-2-custom-resource-chest",
                   "amount": 22
                 },
                 {
@@ -19955,7 +19963,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 550
             }
           ]
@@ -20000,7 +20008,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 600
             }
           ]
@@ -20045,7 +20053,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 650
             }
           ]
@@ -20090,7 +20098,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 700
             }
           ]
@@ -20135,7 +20143,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 750
             }
           ]
@@ -20185,7 +20193,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 800
             }
           ]
@@ -20230,7 +20238,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 850
             }
           ]
@@ -20275,7 +20283,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 900
             }
           ]
@@ -20320,7 +20328,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "amount": 950
             }
           ]
@@ -20365,7 +20373,7 @@
             },
             {
               "name": "Lv.2 Custom Resource Chest",
-              "itemId": "lv-2-custom-ressource-chest",
+              "itemId": "lv-2-custom-resource-chest",
               "note": "The wiki page does not state this amount."
             }
           ]
@@ -20399,7 +20407,7 @@
         },
         {
           "name": "Lv.1 Custom Resource Chest",
-          "itemId": "lv-1-custom-ressource-chest",
+          "itemId": "lv-1-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -20429,7 +20437,7 @@
         },
         {
           "name": "Lv.1 Custom Resource Chest",
-          "itemId": "lv-1-custom-ressource-chest",
+          "itemId": "lv-1-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -20459,7 +20467,7 @@
         },
         {
           "name": "Lv.2 Custom Resource Chest",
-          "itemId": "lv-2-custom-ressource-chest",
+          "itemId": "lv-2-custom-resource-chest",
           "amount": 15
         }
       ]
@@ -20489,7 +20497,7 @@
         },
         {
           "name": "Lv.2 Custom Resource Chest",
-          "itemId": "lv-2-custom-ressource-chest",
+          "itemId": "lv-2-custom-resource-chest",
           "amount": 20
         }
       ]
@@ -20519,7 +20527,7 @@
         },
         {
           "name": "Lv.2 Custom Resource Chest",
-          "itemId": "lv-2-custom-ressource-chest",
+          "itemId": "lv-2-custom-resource-chest",
           "amount": 30
         }
       ]

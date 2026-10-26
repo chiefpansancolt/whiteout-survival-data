@@ -512,6 +512,11 @@ function expertAffinityEntries(profile: BuffProfile): BuffEntry[] {
     if (level === 0) return [];
     const awaitsAdvancement = level % BUFF_EXPERT_ADVANCEMENT_INTERVAL === 0 && !advanced;
     const { statBonus } = expert.affinityLevels[(awaitsAdvancement ? level - 1 : level) - 1];
+    if (statBonus === undefined) {
+      throw new Error(
+        `The stat bonus of ${expertId} at affinity level ${level} is not in the data yet`,
+      );
+    }
     const label = `Expert: ${expert.name}, Affinity Lv ${level}${awaitsAdvancement ? ', not advanced' : ''}`;
     return expert.baseBonuses.map((bonus) =>
       entry('expert', expertId, label, bonus.statKey, bonus.unit as BuffUnit, statBonus),

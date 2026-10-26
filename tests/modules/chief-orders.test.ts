@@ -27,7 +27,7 @@ describe('chief orders', () => {
         .map((o) => [o.name, o.contentmentCost, o.cooldownSeconds / 3600]),
     ).toEqual([
       ['Double Time', 800000, 23],
-      ['Rush Job', 150000, 24],
+      ['Rush Job', 150000, 23],
       ['Productivity Day', 50000, 12],
       ['Urgent Mobilization', 50000, 8],
       ['Festivities', 50000, 24],
@@ -60,9 +60,9 @@ describe('chief orders', () => {
 
 describe('orders of the Fire Crystal Age', () => {
   const newOrders = [
-    ['dawn-alliance-commendation', 'Dawn Alliance Commendation', 'festivities', 800000, 48],
+    ['dawn-alliance-commendation', 'Dawn Alliance Commendation', 'festivities', 800000, 47],
     ['crunch-time', 'Crunch Time', 'urgent-mobilization', 100000, 12],
-    ['advanced-training', 'Advanced Training', 'productivity-day', 150000, 48],
+    ['advanced-training', 'Advanced Training', 'productivity-day', 150000, 47],
   ] as const;
 
   it('replaces three orders from Fire Crystal level 1', () => {

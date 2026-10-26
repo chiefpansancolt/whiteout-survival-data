@@ -32,7 +32,7 @@
       "rewards": [
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 2
         },
         {
@@ -42,7 +42,7 @@
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -53,7 +53,7 @@
       "rewards": [
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 4
         },
         {
@@ -63,7 +63,7 @@
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -74,7 +74,7 @@
       "rewards": [
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 6
         },
         {
@@ -84,7 +84,7 @@
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -95,7 +95,7 @@
       "rewards": [
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 8
         },
         {
@@ -105,7 +105,7 @@
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -116,7 +116,7 @@
       "rewards": [
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
@@ -126,7 +126,7 @@
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -142,12 +142,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -168,12 +168,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -194,12 +194,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -220,12 +220,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -246,12 +246,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -272,12 +272,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -298,12 +298,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -324,12 +324,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -350,12 +350,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -376,12 +376,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -402,12 +402,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -428,12 +428,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -454,12 +454,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -480,12 +480,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -506,12 +506,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -532,12 +532,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -558,12 +558,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -584,12 +584,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -610,12 +610,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -636,12 +636,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -662,12 +662,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -688,12 +688,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -714,12 +714,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -740,12 +740,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -766,12 +766,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -792,12 +792,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -818,12 +818,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -844,12 +844,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -870,12 +870,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -896,12 +896,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -922,12 +922,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -948,12 +948,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -974,12 +974,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1000,12 +1000,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1026,12 +1026,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1052,12 +1052,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1078,12 +1078,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1104,12 +1104,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1130,12 +1130,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1156,12 +1156,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1182,12 +1182,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1208,12 +1208,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1234,12 +1234,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1260,12 +1260,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1286,12 +1286,12 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
         }
       ]
@@ -1312,13 +1312,1724 @@
         },
         {
           "name": "100 Enhancement XP Component",
-          "itemId": "enhancement-xp-component",
+          "itemId": "enhancement-xp-component-100",
           "amount": 10
         },
         {
           "name": "Lv. 3 Custom Secured Resource Chest",
-          "itemId": "lv-3-custom-ressource-chest",
+          "itemId": "lv-3-custom-resource-chest",
           "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 52",
+      "scoreTotal": 87000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 53",
+      "scoreTotal": 102000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 54",
+      "scoreTotal": 117000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 55",
+      "scoreTotal": 150000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 56",
+      "scoreTotal": 200000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 57",
+      "scoreTotal": 250000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 58",
+      "scoreTotal": 300000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 59",
+      "scoreTotal": 350000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 60",
+      "scoreTotal": 400000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 61",
+      "scoreTotal": 500000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 62",
+      "scoreTotal": 600000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 63",
+      "scoreTotal": 700000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 64",
+      "scoreTotal": 800000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 65",
+      "scoreTotal": 900000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 66",
+      "scoreTotal": 1200000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 67",
+      "scoreTotal": 1600000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 68",
+      "scoreTotal": 1800000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Tier 69",
+      "scoreTotal": 2000000000000,
+      "rewards": [
+        {
+          "name": "Essence Stones",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 5
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 10
+        },
+        {
+          "name": "Lv. 3 Custom Secured Resource Chest",
+          "itemId": "lv-3-custom-resource-chest",
+          "amount": 50
+        }
+      ]
+    }
+  ],
+  "damageRewards": [
+    {
+      "minDamage": 1,
+      "maxDamage": 2500,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 1
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 2
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 5500
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 495500
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 495500
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 99000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 25000
+        }
+      ]
+    },
+    {
+      "minDamage": 2500,
+      "maxDamage": 5000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 1
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 2
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 7000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 991500
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 991500
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 198500
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 50000
+        }
+      ]
+    },
+    {
+      "minDamage": 5000,
+      "maxDamage": 8000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 1
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 2
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 8000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 1400000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 1400000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 297500
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 75000
+        }
+      ]
+    },
+    {
+      "minDamage": 8000,
+      "maxDamage": 12000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 1
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 3
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 9000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 1900000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 1900000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 396500
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 100000
+        }
+      ]
+    },
+    {
+      "minDamage": 12000,
+      "maxDamage": 27500,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 1
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 3
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 10000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 2400000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 2500000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 495500
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 125000
+        }
+      ]
+    },
+    {
+      "minDamage": 27500,
+      "maxDamage": 62500,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 1
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 4
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 14500
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 4300000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 4300000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 867500
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 218500
+        }
+      ]
+    },
+    {
+      "minDamage": 62500,
+      "maxDamage": 145000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 2
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 4
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 18500
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 6100000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 6100000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 1200000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 312500
+        }
+      ]
+    },
+    {
+      "minDamage": 145000,
+      "maxDamage": 325000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 2
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 5
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 22000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 8000000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 8000000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 1600000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 406000
+        }
+      ]
+    },
+    {
+      "minDamage": 325000,
+      "maxDamage": 745000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 1
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 6
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 26000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 9900000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 9900000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 1900000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 499500
+        }
+      ]
+    },
+    {
+      "minDamage": 745000,
+      "maxDamage": 1700000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 7
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 30000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 11700000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 11700000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 2300000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 593500
+        }
+      ]
+    },
+    {
+      "minDamage": 1700000,
+      "maxDamage": 3900000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 4
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 8
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 35000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 13800000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 13800000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 2700000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 687000
+        }
+      ]
+    },
+    {
+      "minDamage": 3900000,
+      "maxDamage": 8900000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 5
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "10 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-10",
+          "amount": 9
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 40000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 15400000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 15400000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 3000000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 781000
+        }
+      ]
+    },
+    {
+      "minDamage": 8900000,
+      "maxDamage": 20500000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 6
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 1
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 43000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 17300000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 17300000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 3400000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 874500
+        }
+      ]
+    },
+    {
+      "minDamage": 20500000,
+      "maxDamage": 47000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 7
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 1
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 47000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 19200000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 19200000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 3800000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 968500
+        }
+      ]
+    },
+    {
+      "minDamage": 47000000,
+      "maxDamage": 90000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 8
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 1
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 50000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 21000000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 21000000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 4200000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1000000
+        }
+      ]
+    },
+    {
+      "minDamage": 90000000,
+      "maxDamage": 175000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 9
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 2
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 55000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 23200000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 23200000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 4600000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1100000
+        }
+      ]
+    },
+    {
+      "minDamage": 175000000,
+      "maxDamage": 330000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 10
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 2
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 60000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 25500000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 25500000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5100000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1200000
+        }
+      ]
+    },
+    {
+      "minDamage": 330000000,
+      "maxDamage": 635000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 11
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 2
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 65000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 27700000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 27700000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5500000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1300000
+        }
+      ]
+    },
+    {
+      "minDamage": 635000000,
+      "maxDamage": 1200000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 12
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 2
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 3
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 70000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 29900000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 29900000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 5900000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1500000
+        }
+      ]
+    },
+    {
+      "minDamage": 1200000000,
+      "maxDamage": 2400000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 13
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 3
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 3
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 75600
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 32200000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 32200000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 6400000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1600000
+        }
+      ]
+    },
+    {
+      "minDamage": 2400000000,
+      "maxDamage": 4800000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 14
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 3
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 4
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 80000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 34100000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 34100000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 6800000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1700000
+        }
+      ]
+    },
+    {
+      "minDamage": 4800000000,
+      "maxDamage": 9600000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 15
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 3
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 4
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 85000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 35800000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 35800000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 7100000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1700000
+        }
+      ]
+    },
+    {
+      "minDamage": 9600000000,
+      "maxDamage": 19200000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 16
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 3
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 5
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 90000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 37500000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 37500000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 7500000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1800000
+        }
+      ]
+    },
+    {
+      "minDamage": 19200000000,
+      "maxDamage": 38400000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 17
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 3
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 5
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 95000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 39400000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 39400000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 7800000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 1900000
+        }
+      ]
+    },
+    {
+      "minDamage": 38400000000,
+      "maxDamage": 76800000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 18
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 3
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 6
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 100000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 41400000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 41400000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 8200000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2000000
+        }
+      ]
+    },
+    {
+      "minDamage": 76800000000,
+      "maxDamage": 153600000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 19
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 4
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 6
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 105000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 43400000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 43400000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 8700000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2100000
+        }
+      ]
+    },
+    {
+      "minDamage": 153600000000,
+      "rewards": [
+        {
+          "name": "Essence Stone",
+          "itemId": "essence-stones",
+          "amount": 20
+        },
+        {
+          "name": "Lucky Hero Gear Chest",
+          "itemId": "lucky-hero-gear-chest",
+          "amount": 4
+        },
+        {
+          "name": "100 Enhancement XP Component",
+          "itemId": "enhancement-xp-component-100",
+          "amount": 6
+        },
+        {
+          "name": "Alliance Token",
+          "itemId": "alliance-token",
+          "amount": 110000
+        },
+        {
+          "name": "Meat",
+          "itemId": "meat",
+          "amount": 45600000
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood",
+          "amount": 45600000
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal",
+          "amount": 9100000
+        },
+        {
+          "name": "Iron",
+          "itemId": "iron",
+          "amount": 2200000
         }
       ]
     }
