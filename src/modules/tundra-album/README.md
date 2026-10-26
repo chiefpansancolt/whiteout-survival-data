@@ -455,15 +455,15 @@ Founding are the 10 component.
 
 Nine albums were not complete when their screens were taken: Tundra Alliance (8 of 9 puzzles),
 Battlefield Epic (6 of 9), Spectacular Adventures (5 of 9), Divine Weapons (8 of 9), The Labyrinth
-(4 of 9), Nature's Strength (8 of 9), Ballad of Wind and Cold (4 of 9), Infernal Power (3 of 9), and
+(4 of 9), Nature's Strength (8 of 9), Ballad of Wind and Cold (5 of 9), Infernal Power (3 of 9), and
 Kings of Combat (0 of 9). A piece that the player did not own shows as a grey tile. The `img` of
 such a piece is that grey tile, as a placeholder until the picture is added. A grey tile draws grey
 stars, and the star level of the piece is the number of those stars. These are the pieces with a
-grey tile in the first four albums: Orichalcum 15, Canyon Clash 14 and 15, and Grand Banquet 17 and
-18 of Battlefield Epic, Snowbusters 15, Bounty Hunter 14 and 15, Wandering Merchant 16, and Tundra
+grey tile in the first four albums: Orichalcum 15, Canyon Clash 15, and Grand Banquet 17 and 18 of
+Battlefield Epic, Snowbusters 15, Bounty Hunter 14 and 15, Wandering Merchant 16, and Tundra
 Adventure 12 of Spectacular Adventures, Horn of Command 15 of Tundra Alliance, and Essence Stones 18
-of Divine Weapons. The other five albums have 9 (The Labyrinth), 1 (Nature's Strength), 9 (Ballad of
-Wind and Cold), 28 (Infernal Power), and 115 (Kings of Combat) pieces with a grey tile. The picture
+of Divine Weapons. The other five albums have 9 (The Labyrinth), 1 (Nature's Strength), 7 (Ballad of
+Wind and Cold), 19 (Infernal Power), and 111 (Kings of Combat) pieces with a grey tile. The picture
 of a puzzle that is not complete is blurred, as the game shows it.
 
 The items of these rewards are read from icons that a check mark partly covers, so they are less

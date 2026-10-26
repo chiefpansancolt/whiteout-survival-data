@@ -24,6 +24,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `chiefOrders()`: the cooldown of Rush Job, Dawn Alliance Commendation, and Advanced Training is 1
   hour shorter.
+- `tundraAlbum()`: pictures for nine more Infernal Power pieces, three of Ballad of Wind and Cold,
+  one of Battlefield Epic, and four of Kings of Combat, and the picture of the completed Monument to
+  the Flame puzzle. Pieces 1 to 3 of The Guardians no longer show a game banner.
 - `events()`: Bear Hunt has 18 more score tiers, up to 2 trillion, and `damageRewards`, the 27
   personal damage ranges and the rewards that a player gains on every run.
 - `items()`: the Custom Resource Chests and the four Daily Missions resource packs move out of
