@@ -11,6 +11,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `experts()`: every skill has `affinityRequirements`, the affinity levels that unlock it and gate
+  its upper levels, and the third and fourth skill of each expert have `totalSkillRequirements`.
 - `experts()`: Justus, the Royal Counselor, with his base bonus, four skills with their EXP and
   Books of Knowledge for each level, the Former Glory talent, the level requirements, and his 100
   affinity levels with their affinity and sigils. His stat bonus and power values are not in the
@@ -26,6 +28,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `experts()`: Entrapment is available from affinity level 1, and the level caps of Call of War,
+  Radiant Honor, and Undefeated Will follow the requirements of the skills.
 - `chiefOrders()`: the cooldown of Rush Job, Dawn Alliance Commendation, and Advanced Training is 1
   hour shorter.
 - `tundraAlbum()`: pictures for nine more Infernal Power pieces, three of Ballad of Wind and Cold,

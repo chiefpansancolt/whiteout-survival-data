@@ -62,19 +62,20 @@ unlocks on day 230, together with Ronne of generation 2. The data keeps both as 
 
 A skill unlocks as the affinity level rises, and some skills have a cap on the level that an expert
 can learn at an affinity level. The first skill unlocks at affinity level 10, and the next three at
-20, 30, and 40. These fields are on a skill. A talent has neither, because it levels with the
-affinity.
+20, 30, and 40. Entrapment of Cyrille is available from affinity level 1. These fields are on a
+skill. A talent has none of them, because it levels with the affinity.
 
-| Field                 | Meaning                                                                                                                                                     |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `unlockAffinityLevel` | The affinity level at which the skill unlocks, after the advancement of that level. 10, 20, 30, and 40 for the four skills in order.                        |
-| `levelCaps`           | `{ affinityLevel, maxLevel }` rows in ascending order. A row applies from its affinity level up to the next row. Only 12 skills of eight experts have them. |
+| Field                    | Meaning                                                                                                                                                    |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `unlockAffinityLevel`    | The affinity level at which the skill unlocks, after the advancement of that level. 10, 20, 30, and 40 for the four skills in order, and 1 for Entrapment. |
+| `affinityRequirements`   | `{ level, affinityLevel }` rows. Level 1 is the unlock of the skill. The other rows are the skill levels that need a higher affinity level to learn.       |
+| `totalSkillRequirements` | `{ level, totalSkillLevel }` rows, on the third and fourth skill of every expert. The level needs that total of the four skill levels before the upgrade.  |
+| `levelCaps`              | `{ affinityLevel, maxLevel }` rows in ascending order. A row applies from its affinity level up to the next row. Only 10 skills of six experts have them.  |
 
-The caps are the ones the data holds. The package owner confirmed in game the caps of Crowd Pleaser,
-Call of War, Cartographic Memory, Salvager, Radiant Honor, and Gifts of Iron, and the unlock levels
-of Undefeated Will and Fearsome Reputation. A skill without `levelCaps` has no known cap, and so has
-a skill at an affinity level below its first row or above its last row. Gareth's Undefeated Will has
-rows at 10 and 20, below its unlock at 30, and they have no effect until the skill is unlocked.
+The requirements are the ones that the game files list, level by level, for all 44 skills. The
+package owner confirmed in game the caps of Crowd Pleaser, Cartographic Memory, Salvager, and Gifts
+of Iron. A skill without `levelCaps` has no known cap, and so has a skill at an affinity level below
+its first row or above its last row.
 
 `expertSkillMaxLevel(skill, affinityLevel)` gives the highest level that an expert can learn of a
 skill at an affinity level. It is 0 while the skill is locked. Affinity levels count in steps of 10,
@@ -149,11 +150,6 @@ The data does not hold all values of Justus yet, so the entry has these gaps:
   states. Master Diplomat, Fortune Wayfarer, and the talent have no `progressions`, and no skill has
   power.
 - The skills have an empty `img`, because the package has no icons for them.
-
-`levelCaps` of Glorious Gains and Treasure Seeker hold the affinity levels that raise the highest
-skill level that can be learned, with the last cap equal to the `maxLevel`. Master Diplomat and
-Fortune Wayfarer need a total of skill levels before some upgrades. `totalSkillRequirements` has the
-level that is gated and the total `totalSkillLevel` of all four skills that it needs.
 
 ### Relationships
 
