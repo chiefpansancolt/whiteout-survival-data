@@ -22,7 +22,7 @@
     "img": "/images/chief-orders/rush-job.png",
     "effect": "Instantly grants five days of resources from all city worksites in Survivor Time.",
     "contentmentCost": 150000,
-    "cooldownSeconds": 86400
+    "cooldownSeconds": 82800
   },
   {
     "id": "productivity-day",
@@ -62,7 +62,7 @@
     "name": "Dawn Alliance Commendation",
     "effect": "Entitle you to a random reward from the Dawn Alliance vault.",
     "contentmentCost": 800000,
-    "cooldownSeconds": 172800,
+    "cooldownSeconds": 169200,
     "replaces": "festivities",
     "unlockFireCrystalLevel": 1,
     "rewards": [
@@ -132,7 +132,7 @@
     "name": "Advanced Training",
     "effect": "Increases troop training speed by 20% for 2 hours.",
     "contentmentCost": 150000,
-    "cooldownSeconds": 172800,
+    "cooldownSeconds": 169200,
     "bonus": {
       "stat": "Training Speed",
       "statKey": "training-speed",
