@@ -11,6 +11,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `events()`: the Elite tier of Alliance Mobilization has its 25 milestone rewards by alliance
+  points, for the alliance and for the members, and its personal and alliance ranking rewards.
+- `items()`: new Gift Strength in Unity item in `Others`, with no icon yet.
 - `experts()`: every skill has `affinityRequirements`, the affinity levels that unlock it and gate
   its upper levels, and the third and fourth skill of each expert have `totalSkillRequirements`.
 - `experts()`: Justus, the Royal Counselor, with his base bonus, four skills with their EXP and

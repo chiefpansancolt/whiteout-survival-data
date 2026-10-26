@@ -1,6 +1,6 @@
 # Items
 
-The 417 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 418 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -46,7 +46,7 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | Chest              | 55    |
 | Resources          | 45    |
 | Event              | 58    |
-| Others             | 38    |
+| Others             | 39    |
 | Buff               | 31    |
 | Hero Items         | 75    |
 | Speedups           | 25    |
@@ -62,7 +62,7 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 The Skins module has the same rule.
 
 `sources` is a plain list of where an item drops from, such as shops, events, and activities. It is
-empty for 183 items.
+empty for 184 items.
 
 `rewardRates` is a loot table, a list of `{ reward, amount, probabilityPercent }`. Only chests carry
 it, and only 12 of the 55 chests do.
@@ -114,6 +114,11 @@ also the `shardImg` of the hero. The shards of the other 35 heroes, Jeronimo to 
 icon yet, so their `img` is an empty string. The id of these 35 is the id of the hero plus `-shard`,
 such as `jeronimo-shard`. The shards of the first 30 keep their older ids, such as
 `hero-shard-gen-1a`. The package has no sources for the 35 new shards.
+
+### Gift Strength in Unity
+
+The Gift Strength in Unity is a reward of Alliance Mobilization. It is in `Others` and has no icon
+yet, so its `img` is an empty string.
 
 ### Mythic Hero Gear
 

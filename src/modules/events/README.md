@@ -234,7 +234,13 @@ Alliance events:
 - Alliance Showdown has `days` (the actions that score points each day, and the personal point
   milestones with rewards for that day) and `tiers` by star rating for the star and ranking rewards.
 - Alliance Mobilization has `missions` (name, group, and base points) The 120% and 200% exclusive
-  columns and the gem purchase missions are left out.
+  columns and the gem purchase missions are left out. The five `tiers` are the tiers of the event,
+  and only the Elite tier has rewards in the data. It has 25 `milestones` with the personal reward
+  and 25 `allianceMilestones` with the alliance reward, both by the alliance points of the tier, and
+  `personalRankings` and `allianceRankings` with the rewards of rank 1 to 5 and rank 6 to 10. The
+  amounts come from the package owner. A tier has the milestone and ranking lists in the same shape
+  as a day of Alliance Showdown and as the rankings of the event. `eventRankingTables()` returns the
+  two ranking lists of the tier as `tier-4-personal` and `tier-4-alliance`.
 - Tundra Arms League uses `allianceRankings`, `personalRankings` (legion ranking and legion result),
   and `tiers` by Personal Arsenal Points, with Winner and Defeat rankings for the Elimination and
   Championship phases. The rewards come from in-game screenshots.
