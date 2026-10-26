@@ -106,9 +106,8 @@ The experts unlock on five days: day 120 (Holger, Agnes, Cyrille), day 160 (Romu
 other content, so their milestones hold only experts. Ronne and Kathy unlock on day 230 together.
 The day of each expert is also `unlockRequirement.daysRequired` in `experts()`.
 
-Justus, an expert that the game has not released, is on day 360, the day of the generation 6 heroes.
-He unlocks "after Gen 6 Heroes unlock in your state", and `unlockRequirement.daysRequired` is 360.
-`resolve()` returns him in `experts`, with `unreleased` set to `true`.
+Justus is on day 360, the day of the generation 6 heroes. He unlocks "after Gen 6 Heroes unlock in
+your state", and `unlockRequirement.daysRequired` is 360. `resolve()` returns him in `experts`.
 
 Generation 17 (Aiden, Bertha, and Eleanor) is on day 1240. The package owner states that the day is
 accurate, because the heroes of every generation from generation 6 on unlock 80 days after the

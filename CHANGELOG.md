@@ -11,6 +11,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `experts()`: Justus, the Royal Counselor, with his base bonus, four skills with their EXP and
+  Books of Knowledge for each level, the Former Glory talent, the level requirements, and his 100
+  affinity levels with their affinity and sigils. His stat bonus and power values are not in the
+  data yet, so `calculateBuffs` rejects his affinity. `unreleasedExperts()` is empty.
 - `items()`: new `Resources` category with the Custom Resource Chests, the Custom Secured Resource
   Chests, Meat, Wood, Coal, Iron, and Steel, and the packs of the first four, each with a Secured
   version where the game has one.

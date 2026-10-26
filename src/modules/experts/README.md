@@ -1,6 +1,6 @@
 # Experts
 
-The 10 Dawn Academy Experts, recruited during Tundra Trek, with their skills, talent, and affinity
+The 11 Dawn Academy Experts, recruited during Tundra Trek, with their skills, talent, and affinity
 table. This module also holds the 11 relationship statuses an expert goes through. Use it to read
 expert skill levels, costs, power, and affinity rewards. An expert that is announced and not yet
 released is in `unreleasedExperts()`, with a name, an icon, and the unlock requirement only.
@@ -43,7 +43,7 @@ and `count`. They are described in [How It Works](../../../README.md#how-it-work
 
 ## Data
 
-Experts are in `data/chief/experts.json`. There are 10 experts across 3 generations (4, 4, and 2).
+Experts are in `data/chief/experts.json`. There are 11 experts across 3 generations (4, 4, and 3).
 Each expert has these fields.
 
 | Field               | Meaning                                                                                                                                                         |
@@ -104,11 +104,11 @@ column gives the "Total Sigils" figure (Agnes: 5 + 10 + ... + 50 = 275), so the 
 separate recruitment cost.
 
 Each row also has `levelPower` and `affinityPower`, the two power parts the Experts screen shows.
-`affinityPowerAfterAdvancement` is set on rows with an `advancementCost`. All 10 experts have these
-values on all 100 levels. They come from readings taken in the game and follow one rule. Affinity
-power is the expert's gain times the advancement stage (levels 1 to 10 are stage 1, levels 11 to 20
-are stage 2, and so on). `affinityPowerAfterAdvancement` uses the next stage. Level power is the
-gain divided by 8, times the level plus 12. The gains are:
+`affinityPowerAfterAdvancement` is set on rows with an `advancementCost`. All 10 experts with
+affinity levels have these values on all 100 levels. They come from readings taken in the game and
+follow one rule. Affinity power is the expert's gain times the advancement stage (levels 1 to 10 are
+stage 1, levels 11 to 20 are stage 2, and so on). `affinityPowerAfterAdvancement` uses the next
+stage. Level power is the gain divided by 8, times the level plus 12. The gains are:
 
 | Expert           | Gain    |
 | ---------------- | ------- |
@@ -122,28 +122,38 @@ gain divided by 8, times the level plus 12. The gains are:
 ### Unreleased experts
 
 An expert that is announced and not yet released is in `experts.json` with `unreleased` set to
-`true`. `unreleasedExperts()` returns these entries, and `experts()` leaves them out, so `experts()`
-only has experts with skills, a talent, and affinity levels. An unreleased expert has an `id`, a
-`name`, an `img`, the flag, and `unlockRequirement`, which holds `daysRequired`, the day since
-server start at which the expert unlocks. The file has one, Justus, who unlocks after the generation
-6 heroes, on day 360.
+`true`. `unreleasedExperts()` returns these entries, and `experts()` leaves them out. An unreleased
+expert has an `id`, a `name`, an `img`, the flag, and `unlockRequirement`, which holds
+`daysRequired`, the day since server start at which the expert unlocks. The file has no such expert
+at present, so `unreleasedExperts()` is empty. When the game releases an expert with its values, add
+the values to the entry and remove the `unreleased` flag. The entry then moves to `experts()`.
 
-```ts
-import { unreleasedExperts } from "whiteout-survival-data";
+### Justus
 
-const justus = unreleasedExperts().find("justus");
-console.log(justus?.name); // 'Justus'
-console.log(justus?.unlockRequirement); // { daysRequired: 360 }
-```
+Justus is generation 3, Royal Counselor, with the specialty Expert Growth. His base bonus is 15
+percent Troops Attack and Defense. His `unlockRequirement` is day 360, the day of the generation 6
+heroes. The four skills are Glorious Gains, Treasure Seeker, Master Diplomat, and Fortune Wayfarer,
+and the talent is Former Glory. All four skills have a free first level, and all their levels cost
+73,500 Books of Knowledge and 9,817,800 EXP in all. Master Diplomat and Fortune Wayfarer pay Dynasty
+Honor Chests. The talent has the drop table of one chest.
 
-An unreleased expert has no skills, talent, bonuses, or affinity levels, and the calculator does not
-accept its `id`. When the game releases the expert with its values, add the values to the entry and
-remove the `unreleased` flag. The entry then moves to `experts()`.
+His 100 affinity rows have the affinity and the sigils of each level. The affinity of each level and
+the sigils of the 10 advancement levels are the same as for Holger and Ronne, 513,070 affinity and
+440 sigils in all. The skill EXP of a level is the learning time of the level in seconds.
 
-Justus is expected in October 2026, after the generation 6 heroes unlock. The package does not hold
-his skill names until the game states the values. The server timeline of this package has him on day
-360, the day of the generation 6 heroes, and `unlockRequirement` has that day. The icon is scaled to
-350 by 350 pixels like the other experts.
+The data does not hold all values of Justus yet, so the entry has these gaps:
+
+- The affinity rows have no `statBonus`, `levelPower`, or `affinityPower`. `calculateBuffs` throws
+  `Error` for his affinity, because it needs the stat bonus.
+- Glorious Gains and Treasure Seeker have a `progressions` entry for the values that the data
+  states. Master Diplomat, Fortune Wayfarer, and the talent have no `progressions`, and no skill has
+  power.
+- The skills have an empty `img`, because the package has no icons for them.
+
+`levelCaps` of Glorious Gains and Treasure Seeker hold the affinity levels that raise the highest
+skill level that can be learned, with the last cap equal to the `maxLevel`. Master Diplomat and
+Fortune Wayfarer need a total of skill levels before some upgrades. `totalSkillRequirements` has the
+level that is gated and the total `totalSkillLevel` of all four skills that it needs.
 
 ### Relationships
 

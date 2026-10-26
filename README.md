@@ -98,9 +98,9 @@ notes on where the data came from. The counts below are the number of entries ea
 | `heroGearMasteryForging()` | 84      | Hero gear mastery forging rows                                                  | [README](src/modules/hero-gear-mastery-forging/README.md) |
 | `heroGearSlots()`          | 4       | The four Hero Gear slots with an icon for each troop type                       | [README](src/modules/hero-gear-slots/README.md)           |
 | `heroGearStats()`          | 12      | Hero gear stats per slot, troop type, and level                                 | [README](src/modules/hero-gear-stats/README.md)           |
-| `experts()`                | 10      | Dawn Academy experts with skills, talents, and affinity levels                  | [README](src/modules/experts/README.md)                   |
+| `experts()`                | 11      | Dawn Academy experts with skills, talents, and affinity levels                  | [README](src/modules/experts/README.md)                   |
 | `expertRelationships()`    | 11      | Expert relationship statuses by affinity level                                  | [README](src/modules/experts/README.md)                   |
-| `unreleasedExperts()`      | 1       | Experts that are announced and not released: name, icon, and unlock requirement | [README](src/modules/experts/README.md)                   |
+| `unreleasedExperts()`      | 0       | Experts that are announced and not released: name, icon, and unlock requirement | [README](src/modules/experts/README.md)                   |
 | `pets()`                   | 14      | Beast Cage pets with skills and level tables                                    | [README](src/modules/pets/README.md)                      |
 
 ### Gear, troops, and research
@@ -201,8 +201,9 @@ This is what the data does not hold yet. Each module README gives the detail.
   39 heroes of Generations 5 to 17 have a shard `power` of 0. Stars 4 and 5 of Generation 5 are not
   read. The Talent of Jeronimo and Natalia has no star requirement and no power gain. See
   [Heroes](src/modules/heroes/README.md).
-- **Experts.** Justus is announced and not released, so he has a name, an icon, and an unlock
-  requirement only. See [Experts](src/modules/experts/README.md).
+- **Experts.** Justus has no stat bonus or power on his affinity levels, no power on his skills, and
+  no skill icons. The buff calculator rejects his affinity. See
+  [Experts](src/modules/experts/README.md).
 - **Items.** 28 items have no icon: the shared Blueprint and the furniture of the six entertainment
   buildings other than the Farm, the Climbing Gym, and the Yoga Studio. See
   [Items](src/modules/items/README.md).
