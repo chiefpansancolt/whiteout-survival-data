@@ -11,6 +11,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `vipSignInRewards()` and `vipSignInPoints()`: the VIP points of the daily sign-in by day of the
+  streak, from 100 on day 1 up to 500 on day 5 and after.
 - `events()`: the Elite tier of Alliance Mobilization has its 25 milestone rewards by alliance
   points, for the alliance and for the members, and its personal and alliance ranking rewards.
 - `items()`: new Gift Strength in Unity item in `Others`, with no icon yet.

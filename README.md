@@ -145,6 +145,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `collectionRewardLevels()` | 51      | The collection levels, with the medallion and the rewards of each, and the medallion buffs | [README](src/modules/collection-reward-levels/README.md) |
 | `tundraAlbum()`            | 14      | Tundra Album albums, with the puzzles, pieces, rewards, and buff of each                   | [README](src/modules/tundra-album/README.md)             |
 | `vip()`                    | 12      | VIP 1 to 12 progression                                                                    | [README](src/modules/vip/README.md)                      |
+| `vipSignInRewards()`       | 5       | VIP points of the daily sign-in by streak day, with `vipSignInPoints()`                    | [README](src/modules/vip/README.md#daily-sign-in-streak) |
 
 ## Calculators
 
