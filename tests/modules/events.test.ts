@@ -194,6 +194,7 @@ describe('Events data', () => {
           .flatMap((d) => [...(d.milestones ?? []), ...(d.allianceMilestones ?? [])])
           .flatMap((m) => m.rewards ?? []),
         ...(e.personalRankings ?? []).flatMap((t) => t.rankings).flatMap((r) => r.rewards),
+        ...(e.damageRewards ?? []).flatMap((r) => r.rewards),
         ...(e.tiers ?? []).flatMap((t) => [
           ...(t.rewards ?? []),
           ...(t.rankings ?? []).flatMap((r) => [
@@ -210,7 +211,7 @@ describe('Events data', () => {
 
   it('lists Bear Hunt score tiers in ascending order with their rewards', () => {
     const tiers = events().find('bear-hunt')!.tiers!;
-    expect(tiers).toHaveLength(51);
+    expect(tiers).toHaveLength(69);
     expect(tiers[0]).toEqual({
       name: 'Tier 1',
       scoreTotal: 10000,
@@ -225,9 +226,60 @@ describe('Events data', () => {
       ],
     });
     expect(tiers[50].scoreTotal).toBe(72000000000);
+    expect(tiers.slice(51).map((t) => t.scoreTotal)).toEqual([
+      87000000000, 102000000000, 117000000000, 150000000000, 200000000000, 250000000000,
+      300000000000, 350000000000, 400000000000, 500000000000, 600000000000, 700000000000,
+      800000000000, 900000000000, 1200000000000, 1600000000000, 1800000000000, 2000000000000,
+    ]);
+    expect(tiers[68].name).toBe('Tier 69');
+    for (const tier of tiers.slice(51)) expect(tier.rewards).toEqual(tiers[50].rewards);
     tiers
       .slice(1)
       .forEach((tier, i) => expect(tier.scoreTotal!).toBeGreaterThan(tiers[i].scoreTotal!));
+  });
+
+  it('lists the 27 Bear Hunt damage ranges, each starting where the one before it ends', () => {
+    const ranges = events().find('bear-hunt')!.damageRewards!;
+    expect(ranges).toHaveLength(27);
+    expect(ranges[0].minDamage).toBe(1);
+    ranges.slice(1).forEach((range, i) => expect(range.minDamage).toBe(ranges[i].maxDamage));
+    expect(ranges.slice(0, -1).every((r) => r.maxDamage !== undefined)).toBe(true);
+    expect(ranges[26].maxDamage).toBeUndefined();
+    expect(ranges.every((r) => r.rewards.length === 8)).toBe(true);
+  });
+
+  it('gives the Bear Hunt damage ranges the rewards of the first, a middle, and the last range', () => {
+    const ranges = events().find('bear-hunt')!.damageRewards!;
+    const rewardsOf = (n: number) => ranges[n - 1].rewards.map((r) => [r.itemId, r.amount]);
+    expect([ranges[0].maxDamage, rewardsOf(1)]).toEqual([
+      2500,
+      [
+        ['essence-stones', 1],
+        ['lucky-hero-gear-chest', 1],
+        ['enhancement-xp-component-10', 2],
+        ['alliance-token', 5500],
+        ['meat', 495500],
+        ['wood', 495500],
+        ['coal', 99000],
+        ['iron', 25000],
+      ],
+    ]);
+    expect([ranges[12].minDamage, ranges[12].maxDamage, rewardsOf(13)[2]]).toEqual([
+      8900000,
+      20500000,
+      ['enhancement-xp-component-100', 1],
+    ]);
+    expect([ranges[25].minDamage, ranges[25].maxDamage]).toEqual([76800000000, 153600000000]);
+    expect(rewardsOf(27)).toEqual([
+      ['essence-stones', 20],
+      ['lucky-hero-gear-chest', 4],
+      ['enhancement-xp-component-100', 6],
+      ['alliance-token', 110000],
+      ['meat', 45600000],
+      ['wood', 45600000],
+      ['coal', 9100000],
+      ['iron', 2200000],
+    ]);
   });
 
   it('lists Canyon Clash personal rewards by merit range and legion rank', () => {

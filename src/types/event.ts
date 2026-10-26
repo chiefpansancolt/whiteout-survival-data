@@ -1,5 +1,12 @@
 export type EventCategory = 'solo' | 'alliance' | 'rookie' | 'holiday';
 
+export interface GameEventDamageRange {
+  minDamage: number;
+  /** Absent for the last range, which has no upper limit. */
+  maxDamage?: number;
+  rewards: GameEventReward[];
+}
+
 export interface GameEventPhase {
   name: string;
   description?: string;
@@ -212,6 +219,7 @@ export interface GameEvent {
   expertTiers?: GameEventExpertTier[];
   requirements?: string[];
   tiers?: GameEventTier[];
+  damageRewards?: GameEventDamageRange[];
   allianceRankings?: GameEventRanking[];
   allianceRankingUpdates?: GameEventRankingVersion[];
   pointLevels?: GameEventPointLevels;
