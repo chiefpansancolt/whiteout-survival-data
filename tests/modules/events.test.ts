@@ -146,7 +146,10 @@ describe('Events data', () => {
       'Diamond',
       'Ultimate',
     ]);
-    expect(events().find('foundry-battle')!.frequency).toBeUndefined();
+    expect(events().find('foundry-battle')).toMatchObject({
+      frequency: 'Every 2 weeks',
+      duration: '60 minutes',
+    });
   });
 
   it('lists 4 group rankings per Alliance Championship tier with speedup, chest, and badge rewards', () => {
@@ -2084,7 +2087,14 @@ describe('event schedules', () => {
   });
 
   it('matches the repeat rule to a frequency text that says every two weeks', () => {
-    const twoWeeks = ['hall-of-chief', 'hall-of-heroes', 'heros-mission', 'sunfire-castle'];
+    const twoWeeks = [
+      'foundry-battle',
+      'hall-of-chief',
+      'hall-of-heroes',
+      'heros-mission',
+      'lucky-wheel',
+      'sunfire-castle',
+    ];
     for (const id of twoWeeks) {
       expect(events().find(id)!.frequency).toMatch(/two weeks|2 weeks/i);
       expect(events().find(id)!.schedule!.repeat).toEqual({
@@ -2093,6 +2103,34 @@ describe('event schedules', () => {
         unit: 'weeks',
       });
     }
+  });
+
+  it('matches the repeat rule to a frequency text that says every 4 weeks', () => {
+    const fourWeeks = [
+      'canyon-clash',
+      'mercenary-prestige',
+      'svs-state-of-power',
+      'tundra-trade-route',
+      'wild-brawl',
+    ];
+    for (const id of fourWeeks) {
+      expect(events().find(id)!.frequency).toMatch(/4 weeks/i);
+      expect(events().find(id)!.schedule!.repeat).toEqual({
+        kind: 'every',
+        every: 4,
+        unit: 'weeks',
+      });
+    }
+  });
+
+  it('gives Mercenary Prestige a run of 3 days, and Lucky Wheel 3 days from Tuesday', () => {
+    expect(events().find('mercenary-prestige')).toMatchObject({
+      duration: '3 days',
+      schedule: { runs: [{ length: 3, unit: 'days' }] },
+    });
+    expect(events().find('lucky-wheel')!.schedule!.runs).toEqual([
+      { length: 3, unit: 'days', startWeekday: 'tuesday' },
+    ]);
   });
 
   it('gives Hall of Chief two runs, one for each season', () => {
@@ -2145,6 +2183,15 @@ describe('event schedules', () => {
     expect(events().find('beast-whisperer')!.schedule).toEqual({
       repeat: { kind: 'none' },
       runs: [{ length: 7, unit: 'days' }],
+    });
+  });
+
+  it('repeats Canyon Clash every four weeks, as its frequency text says', () => {
+    expect(events().find('canyon-clash')!.frequency).toBe('Every 4 weeks');
+    expect(events().find('canyon-clash')!.schedule!.repeat).toEqual({
+      kind: 'every',
+      every: 4,
+      unit: 'weeks',
     });
   });
 

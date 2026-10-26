@@ -5,12 +5,13 @@
   "category": "alliance",
   "resultShape": "tier",
   "description": "Three alliances take part in cross-state matchmaking and fight a three-way battle in Lost Canyon. Players occupy buildings and fight for neutral structures to earn points, and the alliance with the most points wins.",
+  "frequency": "Every 4 weeks",
   "duration": "The battle lasts 60 minutes",
   "schedule": {
     "repeat": {
       "kind": "every",
-      "every": 1,
-      "unit": "months"
+      "every": 4,
+      "unit": "weeks"
     },
     "runs": [
       { "label": "Voting", "length": 2, "unit": "days", "startWeekday": "monday" },

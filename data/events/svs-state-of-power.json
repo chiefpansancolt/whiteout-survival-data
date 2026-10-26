@@ -4,6 +4,7 @@
   "img": "/images/events/svs-state-of-power.png",
   "category": "alliance",
   "description": "States with similar or very close power are paired together for cross-state battles that include castle sieges, troop combat, and changes to the presidency.",
+  "frequency": "Every 4 weeks",
   "duration": "About 2 weeks: 2 days of matchmaking, 6 days of preparation, then the battle phase and the field triage phase.",
   "schedule": {
     "repeat": {

@@ -5,9 +5,14 @@
   "category": "solo",
   "resultShape": "milestones",
   "description": "A free-for-all where 10 chiefs fight in a match to earn points from buildings, supply crates, and airdropped items.",
-  "frequency": "Recurring, once the state has reached the required age",
+  "frequency": "Every 4 weeks, once the state has reached the required age",
   "duration": "2 days",
   "schedule": {
+    "repeat": {
+      "kind": "every",
+      "every": 4,
+      "unit": "weeks"
+    },
     "runs": [
       {
         "length": 2,
