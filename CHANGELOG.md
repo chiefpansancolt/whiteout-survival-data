@@ -7,6 +7,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-10-26
+
 ### Added
 
 #### Game Data
@@ -25,7 +27,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `items()`: new `Resources` category with the Custom Resource Chests, the Custom Secured Resource
   Chests, Meat, Wood, Coal, Iron, and Steel, and the packs of the first four, each with a Secured
   version where the game has one.
-- `items()`: the duplicate Shot Token entry is removed. `shot-token` keeps the sources of both.
 - `items()`: a Shard item for each of the 35 heroes that had none, with no icon yet.
 - `items()`: new Mythic Hero Gear item in `Hero Gear Material`, with no icon yet.
 
@@ -33,6 +34,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `items()`: the duplicate Shot Token entry is removed. `shot-token` keeps the sources of both.
 - `events()`: Canyon Clash, Mercenary Prestige, Tundra Trade Route, and Wild Brawl repeat every four
   weeks, SvS has the frequency text for it, Lucky Wheel repeats every two weeks, and Foundry Battle
   has the frequency "Every 2 weeks" and the duration "60 minutes". Mercenary Prestige lasts 3 days.
