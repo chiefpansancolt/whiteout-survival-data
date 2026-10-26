@@ -22,6 +22,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 #### Game Data
 
+- `chiefOrders()`: the cooldown of Rush Job, Dawn Alliance Commendation, and Advanced Training is 1
+  hour shorter.
 - `events()`: Bear Hunt has 18 more score tiers, up to 2 trillion, and `damageRewards`, the 27
   personal damage ranges and the rewards that a player gains on every run.
 - `items()`: the Custom Resource Chests and the four Daily Missions resource packs move out of
