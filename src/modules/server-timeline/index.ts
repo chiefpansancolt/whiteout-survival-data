@@ -1,7 +1,7 @@
 import { QueryBase } from '@/common/query-base';
 import data from '@/data/server-timeline.json';
 import { events } from '@/modules/events';
-import { experts, unreleasedExperts } from '@/modules/experts';
+import { experts } from '@/modules/experts';
 import { fireCrystalLevels } from '@/modules/fire-crystal-table';
 import { heroes } from '@/modules/heroes';
 import { items } from '@/modules/items';
@@ -57,11 +57,7 @@ function resolveMilestone(milestone: ServerTimelineMilestone): ResolvedServerTim
         findEntries(heroShardEventIds[id] ?? [], (eventId) => events().find(eventId), 'event'),
       ]),
     ),
-    experts: findEntries(
-      expertIds,
-      (id) => experts().find(id) ?? unreleasedExperts().find(id),
-      'expert',
-    ),
+    experts: findEntries(expertIds, (id) => experts().find(id), 'expert'),
     pets: findEntries(petIds, (id) => pets().find(id), 'pet'),
     events: findEntries(eventIds, (id) => events().find(id), 'event'),
     fireCrystalLevels: findEntries(

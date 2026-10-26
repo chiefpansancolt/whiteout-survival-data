@@ -39,6 +39,13 @@ export interface ExpertSkillLevelCap {
   maxLevel: number;
 }
 
+export interface ExpertTotalSkillRequirement {
+  /** The skill level that the requirement gates. */
+  level: number;
+  /** The sum of the levels of all skills of the expert that is needed before the upgrade. */
+  totalSkillLevel: number;
+}
+
 export interface ExpertSkill {
   name: string;
   img: string;
@@ -48,6 +55,8 @@ export interface ExpertSkill {
   unlockAffinityLevel?: number;
   /** Known caps below `maxLevel`, from the lowest affinity level up. Only some skills have them. */
   levelCaps?: ExpertSkillLevelCap[];
+  /** Levels that need a total skill level of the expert before the upgrade. */
+  totalSkillRequirements?: ExpertTotalSkillRequirement[];
   progressions: ExpertProgression[];
   costs: ExpertLevelCost[];
   milestoneRewards?: ExpertMilestoneReward[];
@@ -60,7 +69,8 @@ export interface ExpertAffinityLevel {
   level: number;
   affinityRequired: number;
   advancementCost?: number;
-  statBonus: number;
+  /** Absent when the data does not state the stat bonus of the level. */
+  statBonus?: number;
   levelPower?: number;
   affinityPower?: number;
   affinityPowerAfterAdvancement?: number;

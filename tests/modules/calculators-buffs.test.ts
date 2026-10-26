@@ -321,10 +321,15 @@ describe('calculateBuffs expert affinity', () => {
   const affinity = (expertId: string, level: number, advanced?: boolean) =>
     calculateBuffs({ expertAffinity: { [expertId]: { level, advanced } } });
 
+  const withStatBonus = () =>
+    experts()
+      .get()
+      .filter((e) => e.affinityLevels[0].statBonus !== undefined);
+
   it('gives the base bonus of every expert at levels that are not a multiple of 10', () => {
     expect(BUFF_EXPERT_MAX_AFFINITY_LEVEL).toBe(100);
     expect(BUFF_EXPERT_ADVANCEMENT_INTERVAL).toBe(10);
-    for (const expert of experts().get()) {
+    for (const expert of withStatBonus()) {
       for (const level of [1, 2, 9, 11, 55, 99]) {
         const result = affinity(expert.id, level);
         const amount = expert.affinityLevels[level - 1].statBonus;
@@ -348,8 +353,14 @@ describe('calculateBuffs expert affinity', () => {
     }
   });
 
+  it('rejects the affinity of Justus, whose stat bonus the data does not hold yet', () => {
+    expect(() => affinity('justus', 5)).toThrow(
+      'The stat bonus of justus at affinity level 5 is not in the data yet',
+    );
+  });
+
   it('gives the bonus of the level before until the expert advances at a multiple of 10', () => {
-    for (const expert of experts().get()) {
+    for (const expert of withStatBonus()) {
       for (let level = 10; level <= 100; level += 10) {
         const rows = expert.affinityLevels;
         const before = affinity(expert.id, level);
@@ -366,7 +377,7 @@ describe('calculateBuffs expert affinity', () => {
           total: rows[level - 1].statBonus,
           sources: [{ label: `Expert: ${expert.name}, Affinity Lv ${level}` }],
         });
-        expect(rows[level - 1].statBonus).toBeGreaterThan(rows[level - 2].statBonus);
+        expect(rows[level - 1].statBonus!).toBeGreaterThan(rows[level - 2].statBonus!);
       }
     }
   });

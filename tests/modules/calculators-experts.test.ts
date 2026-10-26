@@ -127,6 +127,26 @@ describe('calculateExperts', () => {
       });
   });
 
+  it('calculates the affinity, sigils, skill EXP, and learning time of Justus', () => {
+    const result = calculateExperts([
+      {
+        id: 'justus',
+        level: { current: 1, goal: 10, goalAdvanced: true },
+        skills: [{ name: 'Glorious Gains', current: 1, goal: 5 }],
+      },
+    ]);
+    expect(result).toMatchObject({
+      levels: 9,
+      advancements: 1,
+      sigils: 8,
+      affinity: 6780,
+      skillLevels: 4,
+      books: 12000,
+      exp: 1035600,
+      learningMinutes: 17260,
+    });
+  });
+
   it('rejects unknown experts and skills, levels out of range, goals below the current level, and advanced flags with no cost', () => {
     expect(() => calculateExperts([{ id: 'nope' }])).toThrow('Unknown expert: nope');
     expect(() =>

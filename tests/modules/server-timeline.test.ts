@@ -1,7 +1,7 @@
 import { chiefCharmSlots } from '@/modules/chief-charm';
 import { chiefGearSlots } from '@/modules/chief-gear';
 import { events } from '@/modules/events';
-import { experts, unreleasedExperts } from '@/modules/experts';
+import { experts } from '@/modules/experts';
 import { heroes } from '@/modules/heroes';
 import { items } from '@/modules/items';
 import { pets } from '@/modules/pets';
@@ -253,14 +253,6 @@ describe('timeline data', () => {
     for (const m of serverTimeline().get()) {
       for (const id of m.expertIds.filter((expertId) => experts().find(expertId))) {
         expect(experts().find(id)!.unlockRequirement).toEqual({ daysRequired: m.day });
-      }
-    }
-  });
-
-  it('puts each unreleased expert on the milestone of the day that it needs', () => {
-    for (const m of serverTimeline().get()) {
-      for (const id of m.expertIds.filter((expertId) => unreleasedExperts().find(expertId))) {
-        expect(unreleasedExperts().find(id)!.unlockRequirement).toEqual({ daysRequired: m.day });
       }
     }
   });

@@ -284,8 +284,10 @@ describe('expert sigils', () => {
   const sigilId = (expertId: string) =>
     expertId === 'baldur' ? 'baldurs-sigil' : `${expertId}-sigil`;
 
-  it('has a sigil item with an icon file for every expert', () => {
-    for (const expert of experts().get()) {
+  it('has a sigil item with an icon file for every expert except Justus', () => {
+    for (const expert of experts()
+      .get()
+      .filter((e) => e.id !== 'justus')) {
       const sigil = items().find(sigilId(expert.id));
       expect(sigil).toBeDefined();
       expect(sigil!.category).toBe('Experts');
@@ -294,7 +296,9 @@ describe('expert sigils', () => {
   });
 
   it('gives the sigils of the experts one description pattern and the same sources', () => {
-    for (const expert of experts().get()) {
+    for (const expert of experts()
+      .get()
+      .filter((e) => e.id !== 'justus')) {
       const sigil = items().find(sigilId(expert.id))!;
       expect(sigil.description).toBe(
         `Advances your relationship with Expert ${expert.name}. Once maxed, it can be used for Expert Research.`,

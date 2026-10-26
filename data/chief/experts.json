@@ -26,9 +26,18 @@
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
         "levelCaps": [
-          { "affinityLevel": 20, "maxLevel": 4 },
-          { "affinityLevel": 30, "maxLevel": 7 },
-          { "affinityLevel": 40, "maxLevel": 7 }
+          {
+            "affinityLevel": 20,
+            "maxLevel": 4
+          },
+          {
+            "affinityLevel": 30,
+            "maxLevel": 7
+          },
+          {
+            "affinityLevel": 40,
+            "maxLevel": 7
+          }
         ],
         "progressions": [
           {
@@ -100,8 +109,14 @@
         "maxLevel": 5,
         "unlockAffinityLevel": 20,
         "levelCaps": [
-          { "affinityLevel": 20, "maxLevel": 2 },
-          { "affinityLevel": 30, "maxLevel": 2 }
+          {
+            "affinityLevel": 20,
+            "maxLevel": 2
+          },
+          {
+            "affinityLevel": 30,
+            "maxLevel": 2
+          }
         ],
         "progressions": [
           {
@@ -2109,7 +2124,12 @@
         "description": "Holger knows how to put on a show and so will his heroes. Holger's classic crowd-pleasers increase both daily and weekly Arena Tokens earned by 5% → 50%. Level Arena Token Gain Lvl.1 5% Lvl.2 10% Lvl.3 15% Lvl.4 20% Lvl.5 25% Lvl.6 30% Lvl.7 35% Lvl.8 40% Lvl.9 45% Lvl.10 50%",
         "maxLevel": 10,
         "unlockAffinityLevel": 20,
-        "levelCaps": [{ "affinityLevel": 50, "maxLevel": 7 }],
+        "levelCaps": [
+          {
+            "affinityLevel": 50,
+            "maxLevel": 7
+          }
+        ],
         "progressions": [
           {
             "label": "Arena Token Gain",
@@ -2179,7 +2199,12 @@
         "description": "Holger is a true Ace of the Arena and that means his Chief's and heroes get the star treatment: 0 → 3 more items in the Arena Shop at an 5% → 50% discount.",
         "maxLevel": 10,
         "unlockAffinityLevel": 30,
-        "levelCaps": [{ "affinityLevel": 50, "maxLevel": 10 }],
+        "levelCaps": [
+          {
+            "affinityLevel": 50,
+            "maxLevel": 10
+          }
+        ],
         "progressions": [
           {
             "label": "Shop Items",
@@ -3122,7 +3147,12 @@
         "description": "Romulus mobilizes to win, allowing free recruitment of 150 → 600 additional high-level troops from any Camp per day as well as an additional 1 → 10 Loyalty Tag(s) from the Enlistment Office.",
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
-        "levelCaps": [{ "affinityLevel": 50, "maxLevel": 7 }],
+        "levelCaps": [
+          {
+            "affinityLevel": 50,
+            "maxLevel": 7
+          }
+        ],
         "progressions": [
           {
             "label": "Troops",
@@ -4344,8 +4374,14 @@
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
         "levelCaps": [
-          { "affinityLevel": 60, "maxLevel": 9 },
-          { "affinityLevel": 70, "maxLevel": 10 }
+          {
+            "affinityLevel": 60,
+            "maxLevel": 9
+          },
+          {
+            "affinityLevel": 70,
+            "maxLevel": 10
+          }
         ],
         "progressions": [
           {
@@ -5574,7 +5610,12 @@
         "description": "Metals from the filed of war can be salvaged into coinage. Arsenal Tokens +10% → 100%.",
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
-        "levelCaps": [{ "affinityLevel": 40, "maxLevel": 7 }],
+        "levelCaps": [
+          {
+            "affinityLevel": 40,
+            "maxLevel": 7
+          }
+        ],
         "progressions": [
           {
             "label": "Arsenal Tokens Up",
@@ -6884,7 +6925,12 @@
         "description": "Valeria's rally ignites the troops' desire for glory, increasing Sunfire Tokens earned when claiming Medal Rewards by 50 and adding 3 extra items to the State of Power Shop.",
         "maxLevel": 10,
         "unlockAffinityLevel": 20,
-        "levelCaps": [{ "affinityLevel": 30, "maxLevel": 3 }],
+        "levelCaps": [
+          {
+            "affinityLevel": 30,
+            "maxLevel": 3
+          }
+        ],
         "progressions": [
           {
             "label": "Sunfire Tokens",
@@ -8021,7 +8067,12 @@
         "description": "Ronne’s photographic route memory accelerates arrival times by +2% → +20%. Her storied reputation with clients allows 1 → 3 more free refreshes per truck.",
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
-        "levelCaps": [{ "affinityLevel": 40, "maxLevel": 7 }],
+        "levelCaps": [
+          {
+            "affinityLevel": 40,
+            "maxLevel": 7
+          }
+        ],
         "progressions": [
           {
             "label": "Rapid Travel Free",
@@ -8095,7 +8146,12 @@
         "description": "Ronne’s nose for sniffing out hidden truck treasure is second to none, granting a 10% → 100% chance of raiding 1 extra cargo.",
         "maxLevel": 10,
         "unlockAffinityLevel": 20,
-        "levelCaps": [{ "affinityLevel": 30, "maxLevel": 4 }],
+        "levelCaps": [
+          {
+            "affinityLevel": 30,
+            "maxLevel": 4
+          }
+        ],
         "progressions": [
           {
             "label": "Reward Chance",
@@ -10149,7 +10205,12 @@
         "description": "Gareth enjoys great prestige among tribesmen. For every 100 troops trained, Gareth is granted with 1 → 3 Ironwrought Chest, up to 6 → 30 per day.",
         "maxLevel": 10,
         "unlockAffinityLevel": 10,
-        "levelCaps": [{ "affinityLevel": 20, "maxLevel": 4 }],
+        "levelCaps": [
+          {
+            "affinityLevel": 20,
+            "maxLevel": 4
+          }
+        ],
         "progressions": [
           {
             "label": "Daily Cap",
@@ -10347,11 +10408,26 @@
         "maxLevel": 20,
         "unlockAffinityLevel": 30,
         "levelCaps": [
-          { "affinityLevel": 10, "maxLevel": 5 },
-          { "affinityLevel": 20, "maxLevel": 10 },
-          { "affinityLevel": 30, "maxLevel": 14 },
-          { "affinityLevel": 40, "maxLevel": 19 },
-          { "affinityLevel": 50, "maxLevel": 20 }
+          {
+            "affinityLevel": 10,
+            "maxLevel": 5
+          },
+          {
+            "affinityLevel": 20,
+            "maxLevel": 10
+          },
+          {
+            "affinityLevel": 30,
+            "maxLevel": 14
+          },
+          {
+            "affinityLevel": 40,
+            "maxLevel": 19
+          },
+          {
+            "affinityLevel": 50,
+            "maxLevel": 20
+          }
         ],
         "progressions": [
           {
@@ -11350,9 +11426,706 @@
     "id": "justus",
     "name": "Justus",
     "img": "/images/experts/Justus/Justus.png",
-    "unreleased": true,
+    "title": "Royal Counselor",
+    "specialty": "Expert Growth",
+    "generation": 3,
     "unlockRequirement": {
       "daysRequired": 360
-    }
+    },
+    "baseBonuses": [
+      {
+        "stat": "Troops Attack",
+        "statKey": "troops-attack",
+        "value": 15,
+        "amount": 15,
+        "unit": "percent"
+      },
+      {
+        "stat": "Troops Defense",
+        "statKey": "troops-defense",
+        "value": 15,
+        "amount": 15,
+        "unit": "percent"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Glorious Gains",
+        "img": "",
+        "description": "Increases Glowstones obtained from Labyrinth Raids: +4% per level, up to +20% at Lv. 5.",
+        "maxLevel": 5,
+        "unlockAffinityLevel": 10,
+        "levelCaps": [
+          {
+            "affinityLevel": 10,
+            "maxLevel": 2
+          },
+          {
+            "affinityLevel": 30,
+            "maxLevel": 4
+          },
+          {
+            "affinityLevel": 50,
+            "maxLevel": 5
+          }
+        ],
+        "progressions": [
+          {
+            "label": "Glowstones from Labyrinth Raids",
+            "values": [4, 8, 12, 16, 20]
+          }
+        ],
+        "costs": [
+          {
+            "level": 1,
+            "exp": 0,
+            "books": 0
+          },
+          {
+            "level": 2,
+            "exp": 103200,
+            "books": 1200
+          },
+          {
+            "level": 3,
+            "exp": 207000,
+            "books": 2400
+          },
+          {
+            "level": 4,
+            "exp": 310800,
+            "books": 3600
+          },
+          {
+            "level": 5,
+            "exp": 414600,
+            "books": 4800
+          }
+        ]
+      },
+      {
+        "name": "Treasure Seeker",
+        "img": "",
+        "description": "Grants extra daily Pet Adventure attempts with a chance of double rewards: +1 attempt and 15% at Lv. 1, +5% per level, up to +2 attempts and 35% at Lv. 5.",
+        "maxLevel": 5,
+        "unlockAffinityLevel": 20,
+        "levelCaps": [
+          {
+            "affinityLevel": 20,
+            "maxLevel": 2
+          },
+          {
+            "affinityLevel": 40,
+            "maxLevel": 4
+          },
+          {
+            "affinityLevel": 60,
+            "maxLevel": 5
+          }
+        ],
+        "progressions": [
+          {
+            "label": "Double Reward Chance",
+            "values": [15, 20, 25, 30, 35]
+          }
+        ],
+        "costs": [
+          {
+            "level": 1,
+            "exp": 0,
+            "books": 0
+          },
+          {
+            "level": 2,
+            "exp": 181200,
+            "books": 1500
+          },
+          {
+            "level": 3,
+            "exp": 362400,
+            "books": 3000
+          },
+          {
+            "level": 4,
+            "exp": 544200,
+            "books": 4500
+          },
+          {
+            "level": 5,
+            "exp": 725400,
+            "books": 6000
+          }
+        ]
+      },
+      {
+        "name": "Master Diplomat",
+        "img": "",
+        "description": "Earns Dynasty Honor Chests from each beast rally: 1 per rally (up to 3 a day) at Lv. 1, rising to 5 per rally (up to 10 a day) at Lv. 5.",
+        "maxLevel": 5,
+        "unlockAffinityLevel": 30,
+        "totalSkillRequirements": [
+          {
+            "level": 3,
+            "totalSkillLevel": 8
+          },
+          {
+            "level": 5,
+            "totalSkillLevel": 12
+          }
+        ],
+        "progressions": [],
+        "costs": [
+          {
+            "level": 1,
+            "exp": 0,
+            "books": 0
+          },
+          {
+            "level": 2,
+            "exp": 207000,
+            "books": 1500
+          },
+          {
+            "level": 3,
+            "exp": 414600,
+            "books": 3000
+          },
+          {
+            "level": 4,
+            "exp": 621600,
+            "books": 4500
+          },
+          {
+            "level": 5,
+            "exp": 829200,
+            "books": 6000
+          }
+        ]
+      },
+      {
+        "name": "Fortune Wayfarer",
+        "img": "",
+        "description": "Earns Dynasty Honor Chests from Trek Encounters: 1 chest every 12 encounters (up to 3 a day) at Lv. 1, rising to 4 chests every 4 encounters (up to 20 a day) at Lv. 10.",
+        "maxLevel": 10,
+        "unlockAffinityLevel": 40,
+        "totalSkillRequirements": [
+          {
+            "level": 5,
+            "totalSkillLevel": 15
+          },
+          {
+            "level": 8,
+            "totalSkillLevel": 20
+          },
+          {
+            "level": 10,
+            "totalSkillLevel": 24
+          }
+        ],
+        "progressions": [],
+        "costs": [
+          {
+            "level": 1,
+            "exp": 0,
+            "books": 0
+          },
+          {
+            "level": 2,
+            "exp": 108600,
+            "books": 700
+          },
+          {
+            "level": 3,
+            "exp": 217200,
+            "books": 1400
+          },
+          {
+            "level": 4,
+            "exp": 326400,
+            "books": 2100
+          },
+          {
+            "level": 5,
+            "exp": 435000,
+            "books": 2800
+          },
+          {
+            "level": 6,
+            "exp": 544200,
+            "books": 3500
+          },
+          {
+            "level": 7,
+            "exp": 652800,
+            "books": 4200
+          },
+          {
+            "level": 8,
+            "exp": 762000,
+            "books": 4900
+          },
+          {
+            "level": 9,
+            "exp": 870600,
+            "books": 5600
+          },
+          {
+            "level": 10,
+            "exp": 979800,
+            "books": 6300
+          }
+        ]
+      }
+    ],
+    "talent": {
+      "name": "Former Glory",
+      "img": "",
+      "description": "Earns Dynasty Honor Chests as Exploration rewards: 1 every 180 minutes (up to 3 a day) at Lv. 1, up to 3 every 60 minutes (up to 10 a day) at Lv. 11. Each chest holds mostly Compasses and Learning Speedups, with a 5% chance of 100 Books of Knowledge, 3.5% of a Common Expert Sigil and 1.8% of 2 Sails of Conquest.",
+      "maxLevel": 11,
+      "progressions": [],
+      "costs": [],
+      "lootTable": [
+        {
+          "reward": "CompassX6",
+          "probabilityPercent": 48
+        },
+        {
+          "reward": "5m Learning SpeedupX5",
+          "probabilityPercent": 30
+        },
+        {
+          "reward": "1h Learning SpeedupX1",
+          "probabilityPercent": 11
+        },
+        {
+          "reward": "Book of KnowledgeX100",
+          "probabilityPercent": 5
+        },
+        {
+          "reward": "Common Expert SigilX1",
+          "probabilityPercent": 3.5
+        },
+        {
+          "reward": "Sail of ConquestX2",
+          "probabilityPercent": 1.8
+        },
+        {
+          "reward": "8h Learning SpeedupX1",
+          "probabilityPercent": 0.7
+        }
+      ]
+    },
+    "affinityLevels": [
+      {
+        "level": 1,
+        "affinityRequired": 1000
+      },
+      {
+        "level": 2,
+        "affinityRequired": 600
+      },
+      {
+        "level": 3,
+        "affinityRequired": 630
+      },
+      {
+        "level": 4,
+        "affinityRequired": 660
+      },
+      {
+        "level": 5,
+        "affinityRequired": 690
+      },
+      {
+        "level": 6,
+        "affinityRequired": 720
+      },
+      {
+        "level": 7,
+        "affinityRequired": 780
+      },
+      {
+        "level": 8,
+        "affinityRequired": 840
+      },
+      {
+        "level": 9,
+        "affinityRequired": 900
+      },
+      {
+        "level": 10,
+        "affinityRequired": 960,
+        "advancementCost": 8
+      },
+      {
+        "level": 11,
+        "affinityRequired": 1020
+      },
+      {
+        "level": 12,
+        "affinityRequired": 1080
+      },
+      {
+        "level": 13,
+        "affinityRequired": 1140
+      },
+      {
+        "level": 14,
+        "affinityRequired": 1200
+      },
+      {
+        "level": 15,
+        "affinityRequired": 1260
+      },
+      {
+        "level": 16,
+        "affinityRequired": 1320
+      },
+      {
+        "level": 17,
+        "affinityRequired": 1380
+      },
+      {
+        "level": 18,
+        "affinityRequired": 1440
+      },
+      {
+        "level": 19,
+        "affinityRequired": 1500
+      },
+      {
+        "level": 20,
+        "affinityRequired": 1560,
+        "advancementCost": 16
+      },
+      {
+        "level": 21,
+        "affinityRequired": 1620
+      },
+      {
+        "level": 22,
+        "affinityRequired": 1680
+      },
+      {
+        "level": 23,
+        "affinityRequired": 1740
+      },
+      {
+        "level": 24,
+        "affinityRequired": 1800
+      },
+      {
+        "level": 25,
+        "affinityRequired": 1860
+      },
+      {
+        "level": 26,
+        "affinityRequired": 1920
+      },
+      {
+        "level": 27,
+        "affinityRequired": 1980
+      },
+      {
+        "level": 28,
+        "affinityRequired": 2040
+      },
+      {
+        "level": 29,
+        "affinityRequired": 2100
+      },
+      {
+        "level": 30,
+        "affinityRequired": 2190,
+        "advancementCost": 24
+      },
+      {
+        "level": 31,
+        "affinityRequired": 2280
+      },
+      {
+        "level": 32,
+        "affinityRequired": 2370
+      },
+      {
+        "level": 33,
+        "affinityRequired": 2460
+      },
+      {
+        "level": 34,
+        "affinityRequired": 2550
+      },
+      {
+        "level": 35,
+        "affinityRequired": 2640
+      },
+      {
+        "level": 36,
+        "affinityRequired": 2730
+      },
+      {
+        "level": 37,
+        "affinityRequired": 2820
+      },
+      {
+        "level": 38,
+        "affinityRequired": 2910
+      },
+      {
+        "level": 39,
+        "affinityRequired": 3000
+      },
+      {
+        "level": 40,
+        "affinityRequired": 3120,
+        "advancementCost": 32
+      },
+      {
+        "level": 41,
+        "affinityRequired": 3240
+      },
+      {
+        "level": 42,
+        "affinityRequired": 3360
+      },
+      {
+        "level": 43,
+        "affinityRequired": 3480
+      },
+      {
+        "level": 44,
+        "affinityRequired": 3600
+      },
+      {
+        "level": 45,
+        "affinityRequired": 3720
+      },
+      {
+        "level": 46,
+        "affinityRequired": 3840
+      },
+      {
+        "level": 47,
+        "affinityRequired": 3960
+      },
+      {
+        "level": 48,
+        "affinityRequired": 4080
+      },
+      {
+        "level": 49,
+        "affinityRequired": 4200
+      },
+      {
+        "level": 50,
+        "affinityRequired": 4350,
+        "advancementCost": 40
+      },
+      {
+        "level": 51,
+        "affinityRequired": 4500
+      },
+      {
+        "level": 52,
+        "affinityRequired": 4650
+      },
+      {
+        "level": 53,
+        "affinityRequired": 4800
+      },
+      {
+        "level": 54,
+        "affinityRequired": 4950
+      },
+      {
+        "level": 55,
+        "affinityRequired": 5100
+      },
+      {
+        "level": 56,
+        "affinityRequired": 5250
+      },
+      {
+        "level": 57,
+        "affinityRequired": 5400
+      },
+      {
+        "level": 58,
+        "affinityRequired": 5550
+      },
+      {
+        "level": 59,
+        "affinityRequired": 5700
+      },
+      {
+        "level": 60,
+        "affinityRequired": 5850,
+        "advancementCost": 48
+      },
+      {
+        "level": 61,
+        "affinityRequired": 6000
+      },
+      {
+        "level": 62,
+        "affinityRequired": 6150
+      },
+      {
+        "level": 63,
+        "affinityRequired": 6300
+      },
+      {
+        "level": 64,
+        "affinityRequired": 6450
+      },
+      {
+        "level": 65,
+        "affinityRequired": 6600
+      },
+      {
+        "level": 66,
+        "affinityRequired": 6750
+      },
+      {
+        "level": 67,
+        "affinityRequired": 6900
+      },
+      {
+        "level": 68,
+        "affinityRequired": 7050
+      },
+      {
+        "level": 69,
+        "affinityRequired": 7200
+      },
+      {
+        "level": 70,
+        "affinityRequired": 7350,
+        "advancementCost": 56
+      },
+      {
+        "level": 71,
+        "affinityRequired": 7500
+      },
+      {
+        "level": 72,
+        "affinityRequired": 7650
+      },
+      {
+        "level": 73,
+        "affinityRequired": 7800
+      },
+      {
+        "level": 74,
+        "affinityRequired": 7950
+      },
+      {
+        "level": 75,
+        "affinityRequired": 8100
+      },
+      {
+        "level": 76,
+        "affinityRequired": 8250
+      },
+      {
+        "level": 77,
+        "affinityRequired": 8400
+      },
+      {
+        "level": 78,
+        "affinityRequired": 8550
+      },
+      {
+        "level": 79,
+        "affinityRequired": 8700
+      },
+      {
+        "level": 80,
+        "affinityRequired": 8850,
+        "advancementCost": 64
+      },
+      {
+        "level": 81,
+        "affinityRequired": 9000
+      },
+      {
+        "level": 82,
+        "affinityRequired": 9150
+      },
+      {
+        "level": 83,
+        "affinityRequired": 9300
+      },
+      {
+        "level": 84,
+        "affinityRequired": 9450
+      },
+      {
+        "level": 85,
+        "affinityRequired": 9600
+      },
+      {
+        "level": 86,
+        "affinityRequired": 9750
+      },
+      {
+        "level": 87,
+        "affinityRequired": 9900
+      },
+      {
+        "level": 88,
+        "affinityRequired": 10050
+      },
+      {
+        "level": 89,
+        "affinityRequired": 10200
+      },
+      {
+        "level": 90,
+        "affinityRequired": 10350,
+        "advancementCost": 72
+      },
+      {
+        "level": 91,
+        "affinityRequired": 10500
+      },
+      {
+        "level": 92,
+        "affinityRequired": 10650
+      },
+      {
+        "level": 93,
+        "affinityRequired": 10800
+      },
+      {
+        "level": 94,
+        "affinityRequired": 10950
+      },
+      {
+        "level": 95,
+        "affinityRequired": 11100
+      },
+      {
+        "level": 96,
+        "affinityRequired": 11250
+      },
+      {
+        "level": 97,
+        "affinityRequired": 11400
+      },
+      {
+        "level": 98,
+        "affinityRequired": 11550
+      },
+      {
+        "level": 99,
+        "affinityRequired": 11700
+      },
+      {
+        "level": 100,
+        "affinityRequired": 11850,
+        "advancementCost": 80
+      }
+    ]
   }
 ]
