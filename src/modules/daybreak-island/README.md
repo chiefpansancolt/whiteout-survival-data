@@ -57,7 +57,7 @@ The data is in `data/daybreak-island/`. The three factories are exported from th
 | -------------- | ------- | ------------------- | --------------------------------------------------------- |
 | `lumberCamp()` | 10      | `lumber-camp.json`  | Lumber Camp levels: workers, rate, and requirements       |
 | `treeOfLife()` | 10      | `tree-of-life.json` | Tree of Life levels: requirements, essence rate, and buff |
-| `decoration()` | 103     | `decoration.json`   | Every decoration, in 8 categories                         |
+| `decoration()` | 104     | `decoration.json`   | Every decoration, in 8 categories                         |
 
 A Tree of Life `buff` has `stat` and `value` for display, for example `"Troops Deployment Capacity"`
 and `"+1K"`. It also has a parsed `amount` and `unit`, for example `1000` and `'flat'`, so that a
@@ -112,8 +112,8 @@ not `false`, on all other decorations. Limited decorations have no `lifeEssenceC
 have confirmed `cost` and `prosperity` for each level but no buff data yet. Those levels carry a
 blank buff (`stat: ''`, `value: '+0'`, `amount: 0`, `unit: 'flat'`) and are not left out.
 
-The two Unique decorations do not follow a standard rarity progression, so `limited` does not apply
-to them. Starry Lighthouse is a single decoration that unlocks at Tree of Life level 10 with a
+The three Unique decorations do not follow a standard rarity progression, so `limited` does not
+apply to them. Starry Lighthouse is a single decoration that unlocks at Tree of Life level 10 with a
 50,000 Life Essence blueprint, and it upgrades to level 10. Its `cost` is General Accessory
 Construction Contracts (0 to 180) and not Life Essence. Its `buff` combines two stats,
 `"Troops' Lethality, Troops' Health"`, at +1% per level, like the four-stat buff of Serpent

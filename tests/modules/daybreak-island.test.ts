@@ -107,8 +107,8 @@ describe('Tree of Life', () => {
 });
 
 describe('Decorations', () => {
-  it('covers all 103 decorations across 8 categories', () => {
-    expect(decoration().count()).toBe(103);
+  it('covers all 104 decorations across 8 categories', () => {
+    expect(decoration().count()).toBe(104);
     const counts: [string, number][] = [
       ['Basic', 9],
       ['Vegetation', 5],
@@ -273,7 +273,7 @@ describe('Decorations', () => {
       .byCategory('Unique')
       .get()
       .map((d) => d.id);
-    expect(unique.sort()).toEqual(['harbor-of-hope', 'starry-lighthouse']);
+    expect(unique.sort()).toEqual(['celestial-journey', 'harbor-of-hope', 'starry-lighthouse']);
   });
 
   it('has an icon file for every decoration that has an img', () => {
