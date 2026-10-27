@@ -1119,7 +1119,7 @@
     },
     {
       "group": "Use speedups",
-      "name": "900m construction / research / training",
+      "name": "900m construction / research / training / learning",
       "points": 110
     },
     {
@@ -1129,7 +1129,7 @@
     },
     {
       "group": "Use speedups",
-      "name": "1800m construction / research / training",
+      "name": "1800m construction / research / training / learning",
       "points": 180
     },
     {
@@ -1139,7 +1139,7 @@
     },
     {
       "group": "Use speedups",
-      "name": "3600m construction / research / training",
+      "name": "3600m construction / research / training / learning",
       "points": 300
     },
     {
@@ -1149,7 +1149,7 @@
     },
     {
       "group": "Use speedups",
-      "name": "7200m construction / research / training",
+      "name": "7200m construction / research / training / learning",
       "points": 450
     },
     {
@@ -1261,6 +1261,111 @@
       "group": "Mythic shards (not general)",
       "name": "Use 68 Mythic shards",
       "points": 490
+    },
+    {
+      "group": "Fire Crystal Points",
+      "name": "Get 2500 Fire Crystal Points",
+      "points": 720
+    },
+    {
+      "group": "Fire Crystal Points",
+      "name": "Get 1500 Fire Crystal Points",
+      "points": 600
+    },
+    {
+      "group": "Fire Crystal Points",
+      "name": "Get 1200 Fire Crystal Points",
+      "points": 570
+    },
+    {
+      "group": "Fire Crystal Points",
+      "name": "Get 750 Fire Crystal Points",
+      "points": 440
+    },
+    {
+      "group": "Fire Crystal To upgrade build",
+      "name": "Get 150 Fire Crystal Points",
+      "points": 450
+    },
+    {
+      "group": "Fire Crystal To upgrade build",
+      "name": "Get 100 Fire Crystal Points",
+      "points": 400
+    },
+    {
+      "group": "Fire Crystal To upgrade build",
+      "name": "Get 80 Fire Crystal Points",
+      "points": 380
+    },
+    {
+      "group": "Fire Crystal To upgrade build",
+      "name": "Get 50 Fire Crystal Points",
+      "points": 290
+    },
+    {
+      "group": "Top Up Points",
+      "name": "Obtain 50000 top up points",
+      "points": 1050
+    },
+    {
+      "group": "Top Up Points",
+      "name": "Obtain 25000 top up points",
+      "points": 750
+    },
+    {
+      "group": "Top Up Points",
+      "name": "Obtain 12500 top up points",
+      "points": 500
+    },
+    {
+      "group": "Top Up Points",
+      "name": "Obtain 7500 top up points",
+      "points": 380
+    },
+    {
+      "group": "Pet Items",
+      "name": "Use 10 Advanced Wild Marks",
+      "points": 610
+    },
+    {
+      "group": "Pet Items",
+      "name": "Pet Advancement score increase by 6800",
+      "points": 440
+    },
+    {
+      "group": "Pet Items",
+      "name": "Use 5 Advanced Wild Marks",
+      "points": 400
+    },
+    {
+      "group": "Pet Items",
+      "name": "Pet Advancement score increase by 3500",
+      "points": 300
+    },
+    {
+      "group": "Expert Items",
+      "name": "Use any 35 expert sigils",
+      "points": 490
+    },
+    {
+      "group": "Expert Items",
+      "name": "Use 3600 Books of Knowledge",
+      "points": 450
+    },
+    {
+      "group": "Expert Items",
+      "name": "Use any 15 expert sigils",
+      "points": 300
+    },
+    {
+      "group": "Expert Items",
+      "name": "Use 1800 Books of Knowledge",
+      "points": 300
+    },
+    {
+      "group": "Expert Items",
+      "name": "Use any 5 expert sigils",
+      "points": 100
     }
   ],
   "rewards": [

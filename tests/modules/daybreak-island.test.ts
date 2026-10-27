@@ -117,7 +117,7 @@ describe('Decorations', () => {
       ['Rare', 12],
       ['Epic', 11],
       ['Mythic', 48],
-      ['Unique', 2],
+      ['Unique', 3],
     ];
     counts.forEach(([category, count]) => {
       expect(

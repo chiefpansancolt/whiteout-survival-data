@@ -633,9 +633,9 @@ describe('Events data', () => {
     ).toEqual(['Matchmaking', 'Preparation', 'Battle', 'Field Triage']);
   });
 
-  it('lists the 37 Alliance Mobilization missions with their base points', () => {
+  it('lists the 58 Alliance Mobilization missions with their base points', () => {
     const missions = events().find('alliance-mobilization')!.missions!;
-    expect(missions).toHaveLength(37);
+    expect(missions).toHaveLength(58);
     expect([...new Set(missions.map((m) => m.group))]).toEqual([
       'Gather resources',
       'Train troops',
@@ -646,11 +646,23 @@ describe('Events data', () => {
       'Chief Gear',
       'Chief gear charms',
       'Mythic shards (not general)',
+      'Fire Crystal Points',
+      'Fire Crystal To upgrade build',
+      'Top Up Points',
+      'Pet Items',
+      'Expert Items',
     ]);
     expect(missions[0]).toEqual({ group: 'Gather resources', name: 'Gather 10M', points: 30 });
     expect(missions.find((m) => m.name === 'Train 120K power')!.points).toBe(430);
     expect(missions.find((m) => m.name === 'Use 50K gems')!.points).toBe(670);
     expect(missions.find((m) => m.name === 'Defeat 5 polar terrors')!.points).toBe(80);
+    expect(
+      missions.find((m) => m.name === '900m construction / research / training / learning')!.points,
+    ).toBe(110);
+    expect(missions.find((m) => m.name === 'Get 2500 Fire Crystal Points')!.points).toBe(720);
+    expect(missions.find((m) => m.name === 'Obtain 50000 top up points')!.points).toBe(1050);
+    expect(missions.find((m) => m.name === 'Use 10 Advanced Wild Marks')!.points).toBe(610);
+    expect(missions.find((m) => m.name === 'Use any 5 expert sigils')!.points).toBe(100);
     expect(missions.some((m) => /gems >|pack/i.test(m.name))).toBe(false);
   });
 

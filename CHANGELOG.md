@@ -15,6 +15,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `daybreakIsland()`: add Celestial Journey Unique Item
 
+### Changed
+
+#### Game Data
+
+- `events()`: Alliance Mobilization lists five more mission groups: Fire Crystal Points, Fire Crystal
+  to upgrade a building, Top Up Points, Pet Items, and Expert Items. The speedup missions now name
+  learning.
+
 ### Fixed
 
 #### Game Data
@@ -214,7 +222,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 
-#### Game data
+#### Game Data
 
 - `pets()`: the troops power of Cave Hyena at level 5 is corrected, and the invalid refined troops
   power at level 20 is removed.
@@ -223,7 +231,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
-#### Game data
+#### Game Data
 
 - `dailyMissions()`: the 21 in-game Daily Missions with their levels, the task and the rewards of
   each level. The activeness is the first reward, and `dailyMissionRewardLevels()` gives the reward
@@ -374,7 +382,7 @@ shared `QueryBase<T>` query builder.
 
 ### Added
 
-#### Game data
+#### Game Data
 
 - `buildings()` and `facilities()`: every building's upgrade progression with cost, build time,
   power, prerequisites, and capacity bonuses, the Fire Crystal levels, the entertainment buildings,
