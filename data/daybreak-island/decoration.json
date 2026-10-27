@@ -7438,7 +7438,7 @@
       {
         "level": 1,
         "cost": 1,
-        "prosperity": 1000,
+        "prosperity": 2000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+1%",
@@ -7449,7 +7449,7 @@
       {
         "level": 2,
         "cost": 2,
-        "prosperity": 2000,
+        "prosperity": 4000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+2%",
@@ -7460,7 +7460,7 @@
       {
         "level": 3,
         "cost": 3,
-        "prosperity": 3000,
+        "prosperity": 6000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+3%",
@@ -7471,7 +7471,7 @@
       {
         "level": 4,
         "cost": 4,
-        "prosperity": 4000,
+        "prosperity": 8000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+4%",
@@ -7482,7 +7482,7 @@
       {
         "level": 5,
         "cost": 5,
-        "prosperity": 5000,
+        "prosperity": 10000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+5%",
@@ -7493,7 +7493,7 @@
       {
         "level": 6,
         "cost": 6,
-        "prosperity": 6000,
+        "prosperity": 12000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+6%",
@@ -7504,7 +7504,7 @@
       {
         "level": 7,
         "cost": 7,
-        "prosperity": 7000,
+        "prosperity": 14000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+7%",
@@ -7515,7 +7515,7 @@
       {
         "level": 8,
         "cost": 8,
-        "prosperity": 8000,
+        "prosperity": 16000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+8%",
@@ -7526,7 +7526,7 @@
       {
         "level": 9,
         "cost": 10,
-        "prosperity": 9000,
+        "prosperity": 18000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+9%",
@@ -7537,7 +7537,7 @@
       {
         "level": 10,
         "cost": 12,
-        "prosperity": 10000,
+        "prosperity": 20000,
         "buff": {
           "stat": "Troops’ Lethality & Health",
           "value": "+10%",
@@ -7658,6 +7658,124 @@
         "prosperity": 20000,
         "buff": {
           "stat": "Troops' Lethality, Troops' Health",
+          "value": "+10%",
+          "amount": 10,
+          "unit": "percent"
+        }
+      }
+    ]
+  },
+  {
+    "id": "celestial-journey",
+    "name": "Celestial Journey",
+    "category": "Unique",
+    "limit": 1,
+    "levels": [
+      {
+        "level": 1,
+        "cost": 1,
+        "prosperity": 2000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+1%",
+          "amount": 1,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 2,
+        "cost": 2,
+        "prosperity": 4000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+2%",
+          "amount": 2,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 3,
+        "cost": 3,
+        "prosperity": 6000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+3%",
+          "amount": 3,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 4,
+        "cost": 4,
+        "prosperity": 8000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+4%",
+          "amount": 4,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 5,
+        "cost": 5,
+        "prosperity": 10000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+5%",
+          "amount": 5,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 6,
+        "cost": 6,
+        "prosperity": 12000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+6%",
+          "amount": 6,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 7,
+        "cost": 7,
+        "prosperity": 14000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+7%",
+          "amount": 7,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 8,
+        "cost": 8,
+        "prosperity": 16000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+8%",
+          "amount": 8,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 9,
+        "cost": 10,
+        "prosperity": 18000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
+          "value": "+9%",
+          "amount": 9,
+          "unit": "percent"
+        }
+      },
+      {
+        "level": 10,
+        "cost": 12,
+        "prosperity": 20000,
+        "buff": {
+          "stat": "Troops’ Lethality & Health",
           "value": "+10%",
           "amount": 10,
           "unit": "percent"

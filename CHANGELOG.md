@@ -7,6 +7,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-10-27
+
+### Added
+
+#### Game Data
+
+- `daybreakIsland()`: add Celestial Journey Unique Item
+
+### Fixed
+
+#### Game Data
+
+- `daybreakIsland()`: fix Harbor of Hope Prosperity Score to count properly
+
 ## [0.8.0] - 2026-10-26
 
 ### Added
