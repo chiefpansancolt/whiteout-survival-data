@@ -74,7 +74,7 @@ A `Decoration` has `category`, and then only the fields that fit its category.
 | Rare       | 12    | `levels`, `limit`, `lifeEssenceCost` (3,000)                    |
 | Epic       | 11    | `levels`, `limit`, `lifeEssenceCost` (5,000), 4 are `limited`   |
 | Mythic     | 48    | `levels`, `limit`, `lifeEssenceCost` (10,000), 42 are `limited` |
-| Unique     | 2     | `levels` and `limit`. No standard rarity progression            |
+| Unique     | 3     | `levels` and `limit`. No standard rarity progression            |
 
 `levels` is a list of `{ level, cost, prosperity, buff }`. `cost` is the number needed to reach that
 level. For Starry Lighthouse it counts contracts, as the Notes explain.

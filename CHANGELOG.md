@@ -14,14 +14,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 #### Game Data
 
 - `daybreakIsland()`: add Celestial Journey Unique Item
+- `skins()`: eight Nocturnal skins: the Nocturnal Rider Avatar Frame, Nameplate, and Name Card, the
+  Beyond Midnight March Skin, and four City Skins. They come from the Halloween Special Event and
+  have no icons yet.
 
 ### Changed
 
 #### Game Data
 
-- `events()`: Alliance Mobilization lists five more mission groups: Fire Crystal Points, Fire Crystal
-  to upgrade a building, Top Up Points, Pet Items, and Expert Items. The speedup missions now name
-  learning.
+- `events()`: Alliance Mobilization lists five more mission groups: Fire Crystal Points, Fire
+  Crystal to upgrade a building, Top Up Points, Pet Items, and Expert Items. The speedup missions
+  now name learning.
 
 ### Fixed
 

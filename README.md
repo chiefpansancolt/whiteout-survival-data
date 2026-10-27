@@ -135,7 +135,7 @@ notes on where the data came from. The counts below are the number of entries ea
 | `events()`                 | 65      | Game events with scoring, rewards, and tips                                                | [README](src/modules/events/README.md)                   |
 | `eventBuff()`              | 14      | Buff sources that apply in each game mode                                                  | [README](src/modules/event-buff/README.md)               |
 | `items()`                  | 418     | Item catalog with icons and sources                                                        | [README](src/modules/items/README.md)                    |
-| `skins()`                  | 215     | Cosmetic skins                                                                             | [README](src/modules/skins/README.md)                    |
+| `skins()`                  | 223     | Cosmetic skins                                                                             | [README](src/modules/skins/README.md)                    |
 | `serverTimeline()`         | 33      | Server age timeline of unlocks, with `serverAge()` and `serverTimelineStatus()`            | [README](src/modules/server-timeline/README.md)          |
 | `chiefOrders()`            | 9       | The Chief Orders, with the three that replace others at Fire Crystal 1                     | [README](src/modules/chief-orders/README.md)             |
 | `castleAppointments()`     | 8       | Castle positions and the buffs they give                                                   | [README](src/modules/castle-appointments/README.md)      |
@@ -208,7 +208,7 @@ This is what the data does not hold yet. Each module README gives the detail.
 - **Items.** 28 items have no icon: the shared Blueprint and the furniture of the six entertainment
   buildings other than the Farm, the Climbing Gym, and the Yoga Studio. See
   [Items](src/modules/items/README.md).
-- **Skins.** The 24 newest skins have no `img`. See [Skins](src/modules/skins/README.md).
+- **Skins.** The 32 newest skins have no `img`. See [Skins](src/modules/skins/README.md).
 - **Buildings.** The nine entertainment buildings have no `img`. See
   [Buildings](src/modules/buildings/README.md).
 - **Alliance prestige buildings.** The tiers of five of the six buildings are numbered, because

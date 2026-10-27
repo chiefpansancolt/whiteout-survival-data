@@ -2926,5 +2926,110 @@
       "unit": "percent"
     },
     "sources": ["Icefire Warhymn League"]
+  },
+  {
+    "id": "nocturnal-rider-3",
+    "name": "Nocturnal Rider",
+    "skinType": "Name Card",
+    "description": "Grants the [Nocturnal Rider Name Card]. Bonus: Troops Lethality +1.5%.",
+    "bonus": {
+      "stat": "Troops Lethality",
+      "statKey": "troops-lethality",
+      "value": "+1.5%",
+      "amount": 1.5,
+      "unit": "percent"
+    },
+    "sources": ["Halloween Special Event"]
+  },
+  {
+    "id": "nocturnal-rider-2",
+    "name": "Nocturnal Rider",
+    "skinType": "Nameplate",
+    "description": "Grants the [Nocturnal Rider Nameplate].",
+    "sources": ["Halloween Special Event"]
+  },
+  {
+    "id": "nocturnal-rider",
+    "name": "Nocturnal Rider",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Nocturnal Rider Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Halloween Special Event"]
+  },
+  {
+    "id": "beyond-midnight",
+    "name": "Beyond Midnight",
+    "skinType": "March Skin",
+    "description": "Grants the [Beyond Midnight March Skin]. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "sources": ["Halloween Special Event"]
+  },
+  {
+    "id": "mystic-waltz",
+    "name": "Mystic Waltz",
+    "skinType": "City Skin",
+    "description": "Grants the [Mystic Waltz City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Halloween Special Event"]
+  },
+  {
+    "id": "umbral-laybrinth",
+    "name": "Umbral Laybrinth",
+    "skinType": "City Skin",
+    "description": "Grants the [Umbral Laybrinth City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Halloween Special Event"]
+  },
+  {
+    "id": "phantom-waltz",
+    "name": "Phantom Waltz",
+    "skinType": "City Skin",
+    "description": "Grants the [Phantom Waltz City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Halloween Special Event"]
+  },
+  {
+    "id": "nightmare-mansion",
+    "name": "Nightmare Mansion",
+    "skinType": "City Skin",
+    "description": "Grants the [Nightmare Mansion City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": ["Halloween Special Event"]
   }
 ]
