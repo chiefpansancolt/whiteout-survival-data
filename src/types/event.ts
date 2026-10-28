@@ -71,6 +71,7 @@ export interface GameEventZone {
   name: string;
   days: string[];
   statSources: string;
+  troops?: string;
   unlock?: string;
   stages?: number;
   note?: string;

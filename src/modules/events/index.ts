@@ -139,6 +139,8 @@ const eventsData: GameEvent[] = [
   vaultOfEnigma,
 ] as GameEvent[];
 
+export const LABYRINTH_GLOWSTONE_PER_STAGE = 10;
+
 export class EventsQuery extends QueryBase<GameEvent> {
   constructor(data: GameEvent[] = eventsData) {
     super(data);

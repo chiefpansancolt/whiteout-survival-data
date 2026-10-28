@@ -1,6 +1,11 @@
 import { decoration } from '@/modules/daybreak-island';
 import { eventBuff } from '@/modules/event-buff';
-import { eventRankingTables, events, EventsQuery } from '@/modules/events';
+import {
+  eventRankingTables,
+  events,
+  EventsQuery,
+  LABYRINTH_GLOWSTONE_PER_STAGE,
+} from '@/modules/events';
 import { experts } from '@/modules/experts';
 import { heroes as heroData } from '@/modules/heroes';
 import { items } from '@/modules/items';
@@ -1277,8 +1282,20 @@ describe('Events data', () => {
       ['Charm Mine', 'Wednesday and Thursday', 250],
       ['Research Center', 'Friday and Saturday', 300],
       ['Gear Forge', 'Friday and Saturday', 250],
-      ['Gaia Heart', 'Sunday', 700],
+      ['Gaia Heart', 'Sunday', 750],
     ]);
+    expect(labyrinth.zones!.reduce((sum, z) => sum + z.stages!, 0)).toBe(2350);
+    expect(labyrinth.zones!.map((z) => z.troops)).toEqual([
+      'Labyrinth Explorers',
+      'Labyrinth Explorers with Apex Infantry, Apex Lancers, and Apex Marksmen at Lv. 10',
+      'Labyrinth Explorers with Apex Infantry, Apex Lancers, and Apex Marksmen at Lv. 10',
+      'Labyrinth Explorers, with troops above Lv. 10 once unlocked',
+      'Labyrinth Explorers',
+      'Your own troops',
+    ]);
+    const gaiaHeart = labyrinth.zones!.find((z) => z.name === 'Gaia Heart')!;
+    expect(gaiaHeart.statSources.split(', ')).toHaveLength(16);
+    expect(LABYRINTH_GLOWSTONE_PER_STAGE).toBe(10);
     expect(labyrinth.tiers!.map((t) => t.scoreTotal)).toEqual([
       10, 30, 60, 100, 150, 200, 300, 400, 500, 700, 900, 1200, 1500, 1800,
     ]);

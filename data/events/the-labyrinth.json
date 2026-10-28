@@ -36,6 +36,7 @@
       "name": "Land of Heroes",
       "days": ["Monday", "Tuesday"],
       "statSources": "Heroes, Hero Gear, Hero Exclusive Gear",
+      "troops": "Labyrinth Explorers",
       "unlock": "Unlocked right away",
       "stages": 600
     },
@@ -43,20 +44,25 @@
       "name": "Cave of Monsters",
       "days": ["Wednesday", "Thursday"],
       "statSources": "Pets, Pet Skills",
+      "troops": "Labyrinth Explorers with Apex Infantry, Apex Lancers, and Apex Marksmen at Lv. 10",
       "unlock": "Unlocked with Pets (server age of about 54 days)",
-      "stages": 200
+      "stages": 200,
+      "note": "Heroes are blocked. Pet Skills are on by default and their effects do not stack."
     },
     {
       "name": "Charm Mine",
       "days": ["Wednesday", "Thursday"],
       "statSources": "Chief Charms",
+      "troops": "Labyrinth Explorers with Apex Infantry, Apex Lancers, and Apex Marksmen at Lv. 10",
       "unlock": "Unlocked at Furnace Level 25 with Chief Charm",
-      "stages": 250
+      "stages": 250,
+      "note": "Heroes are blocked."
     },
     {
       "name": "Research Center",
       "days": ["Friday", "Saturday"],
       "statSources": "Research Center Tech, War Academy Tech",
+      "troops": "Labyrinth Explorers, with troops above Lv. 10 once unlocked",
       "unlock": "Unlocked right away",
       "stages": 300
     },
@@ -64,15 +70,17 @@
       "name": "Gear Forge",
       "days": ["Friday", "Saturday"],
       "statSources": "Chief Gear",
+      "troops": "Labyrinth Explorers",
       "unlock": "Unlocked at Furnace Level 22 with Chief Gear",
       "stages": 250
     },
     {
       "name": "Gaia Heart",
       "days": ["Sunday"],
-      "statSources": "All possible stat sources",
+      "statSources": "Heroes, Hero Gear, Hero Exclusive Gear, Pets, Pet Skills, Chief Charms, Tech, Fire Crystal Tech, Chief Gear, Skins, Daybreak Island, VIP level, Buildings, Tundra Album, Collection Gallery, Expert stats",
+      "troops": "Your own troops",
       "unlock": "Unlocked right away",
-      "stages": 700,
+      "stages": 750,
       "note": "Castle battle positions and buffs, alliance tech, territory, gem buffs, and facilities do not work here. You use your own troops without affecting your wilderness deployment or suffering casualties."
     }
   ],
@@ -372,6 +380,7 @@
     "A stage reset does not affect leaderboard ranking.",
     "Raid unlocks after you clear stages 1 to 10 of a zone. The more stages you clear in a zone, the greater the raid rewards.",
     "Some zones are named differently in the troop text of the wiki: Land of the Brave, Glowstone Mine, Earthlab, and Dark Forge.",
-    "If your troop level is too low or your deployment capacity is too small, the Labyrinth Explorers supply extra troops."
+    "If your troop level is too low or your deployment capacity is too small, the Labyrinth Explorers supply extra troops.",
+    "Each first clear of a stage gives 1 Labyrinth Core."
   ]
 }
