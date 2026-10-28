@@ -270,9 +270,11 @@ Solo events:
   UTC schedule, and the tips list which buffs apply.
 - King of Icefield has the scoring list of each of its 7 days in `days` and four ranking tables in
   `personalRankings`. The tables hold only the first rows because the images are cropped.
-- The Labyrinth has its 6 zones with their open days in `zones`, its 14 Labyrinth Core milestone
-  rewards in `tiers`, and its Glowstone shop in `shop`, with `shopCurrencyItemId` naming the shop
-  currency.
+- The Labyrinth has its 6 zones in `zones`, with their open days, the stat sources that count, the
+  troops, and the stage count. Gaia Heart uses your own troops and counts 16 stat sources. Every
+  cleared stage gives `LABYRINTH_GLOWSTONE_PER_STAGE` (10) Glowstone each time its zone opens. It
+  has its 14 Labyrinth Core milestone rewards in `tiers`, and its Glowstone shop in `shop`, with
+  `shopCurrencyItemId` naming the shop currency.
 - Treasure Hunter has its 4 daily pickaxe missions in `missions`, its 21 total search milestones in
   `tiers`, its common and supreme Ultimate Treasure options in `personalRankings`, and the Treasure
   Preview rewards in `rewards`.

@@ -7,6 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game Data
+
+- `events()`: The Labyrinth zones list the troops that fight in each zone. Gaia Heart lists all of
+  its stat sources. `LABYRINTH_GLOWSTONE_PER_STAGE` gives the Glowstone of a cleared stage.
+
 ## [0.9.0] - 2026-10-27
 
 ### Added
