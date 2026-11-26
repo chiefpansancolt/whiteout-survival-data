@@ -13244,5 +13244,991 @@
         ]
       }
     ]
+  },
+  {
+    "id": "prerogative-of-the-flame",
+    "name": "Prerogative of the Flame",
+    "buff": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "completionRewards": [
+      {
+        "itemId": "essence-stones",
+        "amount": 80
+      },
+      {
+        "itemId": "fire-crystal",
+        "amount": 200
+      }
+    ],
+    "puzzles": [
+      {
+        "id": "whispers-of-the-world",
+        "name": "Whispers of the World",
+        "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world.png",
+        "reward": {
+          "itemId": "enhancement-xp-component-100",
+          "amount": 7
+        },
+        "pieces": [
+          {
+            "id": "whispers-of-the-world-1",
+            "name": "Whispers of the World - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-1.png",
+            "stars": 1
+          },
+          {
+            "id": "whispers-of-the-world-2",
+            "name": "Whispers of the World - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-2.png",
+            "stars": 1
+          },
+          {
+            "id": "whispers-of-the-world-3",
+            "name": "Whispers of the World - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-3.png",
+            "stars": 1
+          },
+          {
+            "id": "whispers-of-the-world-4",
+            "name": "Whispers of the World - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-4.png",
+            "stars": 2
+          },
+          {
+            "id": "whispers-of-the-world-5",
+            "name": "Whispers of the World - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-5.png",
+            "stars": 2
+          },
+          {
+            "id": "whispers-of-the-world-6",
+            "name": "Whispers of the World - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-6.png",
+            "stars": 2
+          },
+          {
+            "id": "whispers-of-the-world-7",
+            "name": "Whispers of the World - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-7.png",
+            "stars": 3
+          },
+          {
+            "id": "whispers-of-the-world-8",
+            "name": "Whispers of the World - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-8.png",
+            "stars": 3
+          },
+          {
+            "id": "whispers-of-the-world-9",
+            "name": "Whispers of the World - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-9.png",
+            "stars": 3
+          },
+          {
+            "id": "whispers-of-the-world-10",
+            "name": "Whispers of the World - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-10.png",
+            "stars": 4
+          },
+          {
+            "id": "whispers-of-the-world-11",
+            "name": "Whispers of the World - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-11.png",
+            "stars": 4
+          },
+          {
+            "id": "whispers-of-the-world-12",
+            "name": "Whispers of the World - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/whispers-of-the-world-12.png",
+            "stars": 4
+          }
+        ]
+      },
+      {
+        "id": "temptations-of-power",
+        "name": "Temptations of Power",
+        "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power.png",
+        "reward": {
+          "itemId": "essence-stones",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "temptations-of-power-1",
+            "name": "Temptations of Power - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-1.png",
+            "stars": 1
+          },
+          {
+            "id": "temptations-of-power-2",
+            "name": "Temptations of Power - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-2.png",
+            "stars": 1
+          },
+          {
+            "id": "temptations-of-power-3",
+            "name": "Temptations of Power - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-3.png",
+            "stars": 1
+          },
+          {
+            "id": "temptations-of-power-4",
+            "name": "Temptations of Power - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-4.png",
+            "stars": 2
+          },
+          {
+            "id": "temptations-of-power-5",
+            "name": "Temptations of Power - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-5.png",
+            "stars": 2
+          },
+          {
+            "id": "temptations-of-power-6",
+            "name": "Temptations of Power - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-6.png",
+            "stars": 2
+          },
+          {
+            "id": "temptations-of-power-7",
+            "name": "Temptations of Power - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-7.png",
+            "stars": 2
+          },
+          {
+            "id": "temptations-of-power-8",
+            "name": "Temptations of Power - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-8.png",
+            "stars": 2
+          },
+          {
+            "id": "temptations-of-power-9",
+            "name": "Temptations of Power - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-9.png",
+            "stars": 3
+          },
+          {
+            "id": "temptations-of-power-10",
+            "name": "Temptations of Power - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-10.png",
+            "stars": 3
+          },
+          {
+            "id": "temptations-of-power-11",
+            "name": "Temptations of Power - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-11.png",
+            "stars": 3
+          },
+          {
+            "id": "temptations-of-power-12",
+            "name": "Temptations of Power - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-12.png",
+            "stars": 3
+          },
+          {
+            "id": "temptations-of-power-13",
+            "name": "Temptations of Power - 13",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-13.png",
+            "stars": 4
+          },
+          {
+            "id": "temptations-of-power-14",
+            "name": "Temptations of Power - 14",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-14.png",
+            "stars": 4
+          },
+          {
+            "id": "temptations-of-power-15",
+            "name": "Temptations of Power - 15",
+            "img": "/images/tundra-album/prerogative-of-the-flame/temptations-of-power-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "doomsday-man",
+        "name": "Doomsday Man",
+        "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man.png",
+        "reward": {
+          "itemId": "chief-gear-materials-chest",
+          "amount": 3
+        },
+        "pieces": [
+          {
+            "id": "doomsday-man-1",
+            "name": "Doomsday Man - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-1.png",
+            "stars": 1
+          },
+          {
+            "id": "doomsday-man-2",
+            "name": "Doomsday Man - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-2.png",
+            "stars": 1
+          },
+          {
+            "id": "doomsday-man-3",
+            "name": "Doomsday Man - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-3.png",
+            "stars": 2
+          },
+          {
+            "id": "doomsday-man-4",
+            "name": "Doomsday Man - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-4.png",
+            "stars": 2
+          },
+          {
+            "id": "doomsday-man-5",
+            "name": "Doomsday Man - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-5.png",
+            "stars": 3
+          },
+          {
+            "id": "doomsday-man-6",
+            "name": "Doomsday Man - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-6.png",
+            "stars": 3
+          },
+          {
+            "id": "doomsday-man-7",
+            "name": "Doomsday Man - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-7.png",
+            "stars": 3
+          },
+          {
+            "id": "doomsday-man-8",
+            "name": "Doomsday Man - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-8.png",
+            "stars": 3
+          },
+          {
+            "id": "doomsday-man-9",
+            "name": "Doomsday Man - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-9.png",
+            "stars": 4
+          },
+          {
+            "id": "doomsday-man-10",
+            "name": "Doomsday Man - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-10.png",
+            "stars": 4
+          },
+          {
+            "id": "doomsday-man-11",
+            "name": "Doomsday Man - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-11.png",
+            "stars": 4
+          },
+          {
+            "id": "doomsday-man-12",
+            "name": "Doomsday Man - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-12.png",
+            "stars": 4
+          },
+          {
+            "id": "doomsday-man-13",
+            "name": "Doomsday Man - 13",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-13.png",
+            "stars": 4
+          },
+          {
+            "id": "doomsday-man-14",
+            "name": "Doomsday Man - 14",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-14.png",
+            "stars": 4
+          },
+          {
+            "id": "doomsday-man-15",
+            "name": "Doomsday Man - 15",
+            "img": "/images/tundra-album/prerogative-of-the-flame/doomsday-man-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-hunters",
+        "name": "The Hunters",
+        "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters.png",
+        "reward": {
+          "itemId": "charm-guide",
+          "amount": 8
+        },
+        "pieces": [
+          {
+            "id": "the-hunters-1",
+            "name": "The Hunters - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-hunters-2",
+            "name": "The Hunters - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-hunters-3",
+            "name": "The Hunters - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-3.png",
+            "stars": 1
+          },
+          {
+            "id": "the-hunters-4",
+            "name": "The Hunters - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-hunters-5",
+            "name": "The Hunters - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-hunters-6",
+            "name": "The Hunters - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-6.png",
+            "stars": 2
+          },
+          {
+            "id": "the-hunters-7",
+            "name": "The Hunters - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-7.png",
+            "stars": 2
+          },
+          {
+            "id": "the-hunters-8",
+            "name": "The Hunters - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-hunters-9",
+            "name": "The Hunters - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-9.png",
+            "stars": 3
+          },
+          {
+            "id": "the-hunters-10",
+            "name": "The Hunters - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-10.png",
+            "stars": 3
+          },
+          {
+            "id": "the-hunters-11",
+            "name": "The Hunters - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-11.png",
+            "stars": 3
+          },
+          {
+            "id": "the-hunters-12",
+            "name": "The Hunters - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-hunters-13",
+            "name": "The Hunters - 13",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-13.png",
+            "stars": 4
+          },
+          {
+            "id": "the-hunters-14",
+            "name": "The Hunters - 14",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-hunters-15",
+            "name": "The Hunters - 15",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-hunters-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-mad-king",
+        "name": "The Mad King",
+        "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king.png",
+        "reward": {
+          "itemId": "design-plans",
+          "amount": 10
+        },
+        "pieces": [
+          {
+            "id": "the-mad-king-1",
+            "name": "The Mad King - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-mad-king-2",
+            "name": "The Mad King - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-mad-king-3",
+            "name": "The Mad King - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-3.png",
+            "stars": 1
+          },
+          {
+            "id": "the-mad-king-4",
+            "name": "The Mad King - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-mad-king-5",
+            "name": "The Mad King - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-mad-king-6",
+            "name": "The Mad King - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-6.png",
+            "stars": 2
+          },
+          {
+            "id": "the-mad-king-7",
+            "name": "The Mad King - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-mad-king-8",
+            "name": "The Mad King - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-mad-king-9",
+            "name": "The Mad King - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-9.png",
+            "stars": 3
+          },
+          {
+            "id": "the-mad-king-10",
+            "name": "The Mad King - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-mad-king-11",
+            "name": "The Mad King - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-mad-king-12",
+            "name": "The Mad King - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-mad-king-13",
+            "name": "The Mad King - 13",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-13.png",
+            "stars": 5
+          },
+          {
+            "id": "the-mad-king-14",
+            "name": "The Mad King - 14",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-mad-king-15",
+            "name": "The Mad King - 15",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-mad-king-15.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-last-empress",
+        "name": "The Last Empress",
+        "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress.png",
+        "reward": {
+          "itemId": "fire-crystal",
+          "amount": 24
+        },
+        "pieces": [
+          {
+            "id": "the-last-empress-1",
+            "name": "The Last Empress - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-last-empress-2",
+            "name": "The Last Empress - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-last-empress-3",
+            "name": "The Last Empress - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-last-empress-4",
+            "name": "The Last Empress - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-last-empress-5",
+            "name": "The Last Empress - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-last-empress-6",
+            "name": "The Last Empress - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-6.png",
+            "stars": 2
+          },
+          {
+            "id": "the-last-empress-7",
+            "name": "The Last Empress - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-last-empress-8",
+            "name": "The Last Empress - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-last-empress-9",
+            "name": "The Last Empress - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-9.png",
+            "stars": 3
+          },
+          {
+            "id": "the-last-empress-10",
+            "name": "The Last Empress - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-10.png",
+            "stars": 3
+          },
+          {
+            "id": "the-last-empress-11",
+            "name": "The Last Empress - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-empress-12",
+            "name": "The Last Empress - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-empress-13",
+            "name": "The Last Empress - 13",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-13.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-empress-14",
+            "name": "The Last Empress - 14",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-14.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-empress-15",
+            "name": "The Last Empress - 15",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-last-empress-16",
+            "name": "The Last Empress - 16",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-last-empress-17",
+            "name": "The Last Empress - 17",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-last-empress-18",
+            "name": "The Last Empress - 18",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-empress-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "the-last-collapse",
+        "name": "The Last Collapse",
+        "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse.png",
+        "reward": {
+          "itemId": "fire-crystal",
+          "amount": 24
+        },
+        "pieces": [
+          {
+            "id": "the-last-collapse-1",
+            "name": "The Last Collapse - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-1.png",
+            "stars": 1
+          },
+          {
+            "id": "the-last-collapse-2",
+            "name": "The Last Collapse - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-2.png",
+            "stars": 1
+          },
+          {
+            "id": "the-last-collapse-3",
+            "name": "The Last Collapse - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-3.png",
+            "stars": 2
+          },
+          {
+            "id": "the-last-collapse-4",
+            "name": "The Last Collapse - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-4.png",
+            "stars": 2
+          },
+          {
+            "id": "the-last-collapse-5",
+            "name": "The Last Collapse - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-5.png",
+            "stars": 2
+          },
+          {
+            "id": "the-last-collapse-6",
+            "name": "The Last Collapse - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-6.png",
+            "stars": 3
+          },
+          {
+            "id": "the-last-collapse-7",
+            "name": "The Last Collapse - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-7.png",
+            "stars": 3
+          },
+          {
+            "id": "the-last-collapse-8",
+            "name": "The Last Collapse - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-8.png",
+            "stars": 3
+          },
+          {
+            "id": "the-last-collapse-9",
+            "name": "The Last Collapse - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-9.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-collapse-10",
+            "name": "The Last Collapse - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-10.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-collapse-11",
+            "name": "The Last Collapse - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-11.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-collapse-12",
+            "name": "The Last Collapse - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-12.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-collapse-13",
+            "name": "The Last Collapse - 13",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-13.png",
+            "stars": 4
+          },
+          {
+            "id": "the-last-collapse-14",
+            "name": "The Last Collapse - 14",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-14.png",
+            "stars": 5
+          },
+          {
+            "id": "the-last-collapse-15",
+            "name": "The Last Collapse - 15",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-15.png",
+            "stars": 5
+          },
+          {
+            "id": "the-last-collapse-16",
+            "name": "The Last Collapse - 16",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-16.png",
+            "stars": 5
+          },
+          {
+            "id": "the-last-collapse-17",
+            "name": "The Last Collapse - 17",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-17.png",
+            "stars": 5
+          },
+          {
+            "id": "the-last-collapse-18",
+            "name": "The Last Collapse - 18",
+            "img": "/images/tundra-album/prerogative-of-the-flame/the-last-collapse-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "a-long-slumber",
+        "name": "A Long Slumber",
+        "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber.png",
+        "reward": {
+          "itemId": "fire-crystal",
+          "amount": 30
+        },
+        "pieces": [
+          {
+            "id": "a-long-slumber-1",
+            "name": "A Long Slumber - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-1.png",
+            "stars": 2
+          },
+          {
+            "id": "a-long-slumber-2",
+            "name": "A Long Slumber - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-2.png",
+            "stars": 2
+          },
+          {
+            "id": "a-long-slumber-3",
+            "name": "A Long Slumber - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-3.png",
+            "stars": 3
+          },
+          {
+            "id": "a-long-slumber-4",
+            "name": "A Long Slumber - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-4.png",
+            "stars": 3
+          },
+          {
+            "id": "a-long-slumber-5",
+            "name": "A Long Slumber - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-5.png",
+            "stars": 4
+          },
+          {
+            "id": "a-long-slumber-6",
+            "name": "A Long Slumber - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-6.png",
+            "stars": 4
+          },
+          {
+            "id": "a-long-slumber-7",
+            "name": "A Long Slumber - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-7.png",
+            "stars": 4
+          },
+          {
+            "id": "a-long-slumber-8",
+            "name": "A Long Slumber - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-8.png",
+            "stars": 4
+          },
+          {
+            "id": "a-long-slumber-9",
+            "name": "A Long Slumber - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-9.png",
+            "stars": 4
+          },
+          {
+            "id": "a-long-slumber-10",
+            "name": "A Long Slumber - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-10.png",
+            "stars": 4
+          },
+          {
+            "id": "a-long-slumber-11",
+            "name": "A Long Slumber - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-11.png",
+            "stars": 4
+          },
+          {
+            "id": "a-long-slumber-12",
+            "name": "A Long Slumber - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-12.png",
+            "stars": 5
+          },
+          {
+            "id": "a-long-slumber-13",
+            "name": "A Long Slumber - 13",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-13.png",
+            "stars": 5
+          },
+          {
+            "id": "a-long-slumber-14",
+            "name": "A Long Slumber - 14",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-14.png",
+            "stars": 5
+          },
+          {
+            "id": "a-long-slumber-15",
+            "name": "A Long Slumber - 15",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-15.png",
+            "stars": 5
+          },
+          {
+            "id": "a-long-slumber-16",
+            "name": "A Long Slumber - 16",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-16.png",
+            "stars": 5
+          },
+          {
+            "id": "a-long-slumber-17",
+            "name": "A Long Slumber - 17",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-17.png",
+            "stars": 5
+          },
+          {
+            "id": "a-long-slumber-18",
+            "name": "A Long Slumber - 18",
+            "img": "/images/tundra-album/prerogative-of-the-flame/a-long-slumber-18.png",
+            "stars": 5
+          }
+        ]
+      },
+      {
+        "id": "sky-city",
+        "name": "Sky City",
+        "img": "/images/tundra-album/prerogative-of-the-flame/sky-city.png",
+        "reward": {
+          "itemId": "fire-crystal",
+          "amount": 30
+        },
+        "pieces": [
+          {
+            "id": "sky-city-1",
+            "name": "Sky City - 1",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-1.png",
+            "stars": 2
+          },
+          {
+            "id": "sky-city-2",
+            "name": "Sky City - 2",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-2.png",
+            "stars": 2
+          },
+          {
+            "id": "sky-city-3",
+            "name": "Sky City - 3",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-3.png",
+            "stars": 3
+          },
+          {
+            "id": "sky-city-4",
+            "name": "Sky City - 4",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-4.png",
+            "stars": 3
+          },
+          {
+            "id": "sky-city-5",
+            "name": "Sky City - 5",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-5.png",
+            "stars": 4
+          },
+          {
+            "id": "sky-city-6",
+            "name": "Sky City - 6",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-6.png",
+            "stars": 4
+          },
+          {
+            "id": "sky-city-7",
+            "name": "Sky City - 7",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-7.png",
+            "stars": 4
+          },
+          {
+            "id": "sky-city-8",
+            "name": "Sky City - 8",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-8.png",
+            "stars": 4
+          },
+          {
+            "id": "sky-city-9",
+            "name": "Sky City - 9",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-9.png",
+            "stars": 4
+          },
+          {
+            "id": "sky-city-10",
+            "name": "Sky City - 10",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-10.png",
+            "stars": 4
+          },
+          {
+            "id": "sky-city-11",
+            "name": "Sky City - 11",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-11.png",
+            "stars": 4
+          },
+          {
+            "id": "sky-city-12",
+            "name": "Sky City - 12",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-12.png",
+            "stars": 5
+          },
+          {
+            "id": "sky-city-13",
+            "name": "Sky City - 13",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-13.png",
+            "stars": 5
+          },
+          {
+            "id": "sky-city-14",
+            "name": "Sky City - 14",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-14.png",
+            "stars": 5
+          },
+          {
+            "id": "sky-city-15",
+            "name": "Sky City - 15",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-15.png",
+            "stars": 5
+          },
+          {
+            "id": "sky-city-16",
+            "name": "Sky City - 16",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-16.png",
+            "stars": 5
+          },
+          {
+            "id": "sky-city-17",
+            "name": "Sky City - 17",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-17.png",
+            "stars": 5
+          },
+          {
+            "id": "sky-city-18",
+            "name": "Sky City - 18",
+            "img": "/images/tundra-album/prerogative-of-the-flame/sky-city-18.png",
+            "stars": 5
+          }
+        ]
+      }
+    ]
   }
 ]

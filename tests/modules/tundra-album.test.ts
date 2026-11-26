@@ -871,6 +871,35 @@ const NEW_ALBUMS = [
       ['the-bell-tolls', 'The Bell Tolls', [1, 2, 3, 6, 6], 'chief-gear-materials-chest', 5],
     ],
   },
+  {
+    id: 'prerogative-of-the-flame',
+    name: 'Prerogative of the Flame',
+    stat: 'Troops Defense',
+    statKey: 'troops-defense',
+    eventNote: '+2% troops defense',
+    completion: [
+      ['essence-stones', 80],
+      ['fire-crystal', 200],
+    ],
+    pieces: 144,
+    puzzles: [
+      [
+        'whispers-of-the-world',
+        'Whispers of the World',
+        [3, 3, 3, 3, 0],
+        'enhancement-xp-component-100',
+        7,
+      ],
+      ['temptations-of-power', 'Temptations of Power', [3, 5, 4, 2, 1], 'essence-stones', 3],
+      ['doomsday-man', 'Doomsday Man', [2, 2, 4, 6, 1], 'chief-gear-materials-chest', 3],
+      ['the-hunters', 'The Hunters', [3, 4, 4, 2, 2], 'charm-guide', 8],
+      ['the-mad-king', 'The Mad King', [3, 3, 3, 3, 3], 'design-plans', 10],
+      ['the-last-empress', 'The Last Empress', [2, 4, 4, 4, 4], 'fire-crystal', 24],
+      ['the-last-collapse', 'The Last Collapse', [2, 3, 3, 5, 5], 'fire-crystal', 24],
+      ['a-long-slumber', 'A Long Slumber', [0, 2, 2, 7, 7], 'fire-crystal', 30],
+      ['sky-city', 'Sky City', [0, 2, 2, 7, 7], 'fire-crystal', 30],
+    ],
+  },
 ];
 
 describe.each(NEW_ALBUMS)('$name', (spec) => {
@@ -969,7 +998,7 @@ describe('the Enhancement XP Component rewards', () => {
   const components = rewards.filter((r) => r.itemId?.startsWith('enhancement-xp-component'));
 
   it('are the 10 component for 45 of them and the 100 component for the rest', () => {
-    expect(components).toHaveLength(10);
+    expect(components).toHaveLength(11);
     for (const reward of components) {
       expect(reward.itemId).toBe(
         reward.amount === 45 ? 'enhancement-xp-component-10' : 'enhancement-xp-component-100',
@@ -986,9 +1015,9 @@ describe('the Enhancement XP Component rewards', () => {
 describe('tundraAlbumPieceRewards', () => {
   const tiers = tundraAlbumPieceRewards();
 
-  it('has 80 tiers, numbered from 1, with a higher count of pieces at each tier', () => {
-    expect(tiers).toHaveLength(80);
-    expect(tiers.map((t) => t.tier)).toEqual(Array.from({ length: 80 }, (_, i) => i + 1));
+  it('has 87 tiers, numbered from 1, with a higher count of pieces at each tier', () => {
+    expect(tiers).toHaveLength(87);
+    expect(tiers.map((t) => t.tier)).toEqual(Array.from({ length: 87 }, (_, i) => i + 1));
     tiers.slice(1).forEach((tier, i) => expect(tier.pieces).toBeGreaterThan(tiers[i].pieces));
   });
 
@@ -1029,6 +1058,21 @@ describe('tundraAlbumPieceRewards', () => {
     ]);
   });
 
+  it('gives tiers 81 to 87 for 1,940 to 2,060 pieces, in steps of 20', () => {
+    const later = tiers.slice(80);
+    expect(later.map((t) => t.pieces)).toEqual([1940, 1960, 1980, 2000, 2020, 2040, 2060]);
+    later.slice(0, 6).forEach((tier) =>
+      expect(tier.rewards.map((r) => [r.itemId, r.amount])).toEqual([
+        ['gems', 100],
+        ['random-chief-charm-material-chest', 2],
+      ]),
+    );
+    expect(later[6].rewards.map((r) => [r.itemId, r.amount])).toEqual([
+      ['gems', 1000],
+      ['charm-guide', 60],
+    ]);
+  });
+
   it('gives the 100 component, and never the 10 component, as the Enhancement XP Component', () => {
     const ids = tiers.flatMap((t) => t.rewards).map((r) => r.itemId);
     expect(ids).not.toContain('enhancement-xp-component-10');
@@ -1040,7 +1084,7 @@ describe('tundraAlbumPieceRewards', () => {
       .get()
       .flatMap((a) => a.puzzles)
       .reduce((sum, p) => sum + p.pieces.length, 0);
-    expect(total).toBe(1923);
+    expect(total).toBe(2067);
     expect(tiers[tiers.length - 1].pieces).toBeLessThanOrEqual(total);
   });
 
@@ -1057,6 +1101,7 @@ describe('tundraAlbumPieceRewardsReached', () => {
     expect(tundraAlbumPieceRewardsReached(99).map((t) => t.tier)).toEqual([1, 2, 3]);
     expect(tundraAlbumPieceRewardsReached(1749)).toHaveLength(71);
     expect(tundraAlbumPieceRewardsReached(1923)).toHaveLength(80);
+    expect(tundraAlbumPieceRewardsReached(2060)).toHaveLength(87);
   });
 
   it('reads a source when one is given', () => {

@@ -1118,5 +1118,103 @@
         "amount": 24
       }
     ]
+  },
+  {
+    "tier": 81,
+    "pieces": 1940,
+    "rewards": [
+      {
+        "itemId": "gems",
+        "amount": 100
+      },
+      {
+        "itemId": "random-chief-charm-material-chest",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "tier": 82,
+    "pieces": 1960,
+    "rewards": [
+      {
+        "itemId": "gems",
+        "amount": 100
+      },
+      {
+        "itemId": "random-chief-charm-material-chest",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "tier": 83,
+    "pieces": 1980,
+    "rewards": [
+      {
+        "itemId": "gems",
+        "amount": 100
+      },
+      {
+        "itemId": "random-chief-charm-material-chest",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "tier": 84,
+    "pieces": 2000,
+    "rewards": [
+      {
+        "itemId": "gems",
+        "amount": 100
+      },
+      {
+        "itemId": "random-chief-charm-material-chest",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "tier": 85,
+    "pieces": 2020,
+    "rewards": [
+      {
+        "itemId": "gems",
+        "amount": 100
+      },
+      {
+        "itemId": "random-chief-charm-material-chest",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "tier": 86,
+    "pieces": 2040,
+    "rewards": [
+      {
+        "itemId": "gems",
+        "amount": 100
+      },
+      {
+        "itemId": "random-chief-charm-material-chest",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "tier": 87,
+    "pieces": 2060,
+    "rewards": [
+      {
+        "itemId": "gems",
+        "amount": 1000
+      },
+      {
+        "itemId": "charm-guide",
+        "amount": 60
+      }
+    ]
   }
 ]
