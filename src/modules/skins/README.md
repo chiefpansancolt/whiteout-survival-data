@@ -1,6 +1,6 @@
 # Skins
 
-The 223 cosmetic skins of the game: avatar frames, nameplates, and march, city, and teleport skins.
+The 234 cosmetic skins of the game: avatar frames, nameplates, and march, city, and teleport skins.
 Use it to look up a skin, its source, and the stat bonus it grants.
 
 ## Usage
@@ -39,21 +39,21 @@ slug.
 
 | Skin type     | Skins |
 | ------------- | ----- |
-| Avatar Frame  | 77    |
-| March Skin    | 53    |
-| City Skin     | 41    |
-| Nameplate     | 20    |
-| Name Card     | 12    |
+| Avatar Frame  | 80    |
+| March Skin    | 56    |
+| City Skin     | 49    |
+| Nameplate     | 23    |
+| Name Card     | 14    |
 | Teleport Skin | 6     |
 | Chat          | 4     |
 | Chief Profile | 2     |
 
-`bonus` is a `{ stat, value }` pair, for example `Troops Defense` and `+2%`. It is set on 176 of the
-223 skins. It is `undefined` when a skin grants no stat bonus. The `value` is a string.
+`bonus` is a `{ stat, value }` pair, for example `Troops Defense` and `+2%`. It is set on 191 of the
+234 skins. It is `undefined` when a skin grants no stat bonus. The `value` is a string.
 
 ## Notes
 
-The 32 skins added most recently have no `img`, because no icon exists for them yet. The skins
+The 43 skins added most recently have no `img`, because no icon exists for them yet. The skins
 `tundra-adventure` and `wing-of-the-icy-wind` keep their ids and icons. Their names are
 `Tundra Adventurer` and `Wings of the Icy Wind`.
 

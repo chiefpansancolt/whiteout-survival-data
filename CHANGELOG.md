@@ -13,6 +13,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `daybreakIsland()`: three new limited Mythic decorations: Hope’s Villa and Sojourner Caravan for
   Troops’ Attack, and Pumpkin Rhapsody for Troops’ Defense.
+- `skins()`: eleven new skins: four City Skins and two March Skins, plus Bees VS Beavers (Avatar
+  Frame, Nameplate, Name Card) and Starlight Haste (Avatar Frame, Nameplate). They have no icons
+  yet.
 
 ## [0.10.0] - 2026-10-27
 
