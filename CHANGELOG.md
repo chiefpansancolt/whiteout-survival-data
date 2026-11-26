@@ -7,6 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+#### Game Data
+
+- `daybreakIsland()`: three new limited Mythic decorations: Hope’s Villa and Sojourner Caravan for
+  Troops’ Attack, and Pumpkin Rhapsody for Troops’ Defense.
+
 ## [0.10.0] - 2026-10-27
 
 ### Added

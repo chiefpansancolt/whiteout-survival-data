@@ -57,7 +57,7 @@ The data is in `data/daybreak-island/`. The three factories are exported from th
 | -------------- | ------- | ------------------- | --------------------------------------------------------- |
 | `lumberCamp()` | 10      | `lumber-camp.json`  | Lumber Camp levels: workers, rate, and requirements       |
 | `treeOfLife()` | 10      | `tree-of-life.json` | Tree of Life levels: requirements, essence rate, and buff |
-| `decoration()` | 104     | `decoration.json`   | Every decoration, in 8 categories                         |
+| `decoration()` | 107     | `decoration.json`   | Every decoration, in 8 categories                         |
 
 A Tree of Life `buff` has `stat` and `value` for display, for example `"Troops Deployment Capacity"`
 and `"+1K"`. It also has a parsed `amount` and `unit`, for example `1000` and `'flat'`, so that a
@@ -73,7 +73,7 @@ A `Decoration` has `category`, and then only the fields that fit its category.
 | Uncommon   | 6     | `prosperityAtMaxLevel`, `limit`, `lifeEssenceCost` (2,000)      |
 | Rare       | 12    | `levels`, `limit`, `lifeEssenceCost` (3,000)                    |
 | Epic       | 11    | `levels`, `limit`, `lifeEssenceCost` (5,000), 4 are `limited`   |
-| Mythic     | 48    | `levels`, `limit`, `lifeEssenceCost` (10,000), 42 are `limited` |
+| Mythic     | 51    | `levels`, `limit`, `lifeEssenceCost` (10,000), 45 are `limited` |
 | Unique     | 3     | `levels` and `limit`. No standard rarity progression            |
 
 `levels` is a list of `{ level, cost, prosperity, buff }`. `cost` is the number needed to reach that
