@@ -26,6 +26,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `items()`: Common, Uncommon, Rare, and Epic Hero Gear in `Hero Gear Material`, and an icon for the
   Mythic Hero Gear.
 
+#### Calculators
+
+- `calculateHeroGear()`: `combos` lists the items that cover the Custom Mythic Hero Gear Chests
+  (also the Mythic Hero Gear) and the Enhancement XP (the 10 and 100 XP Components and the Common,
+  Uncommon, Rare, and Epic Hero Gear), with what each item is worth.
+
 ## [0.10.0] - 2026-10-27
 
 ### Added

@@ -19,6 +19,7 @@ result.resources; // essence-stones 60, enhancement-xp 125970, mithril 10, and m
 result.power; // 1712700
 result.eventPoints.svs; // 1680000
 result.stats?.goal; // { combatStat: 538, health: 5265, percentStat: 78 }
+result.combos[1]; // { resourceId: 'enhancement-xp', amount: 125970, sources: [...] }
 ```
 
 ## Input
@@ -42,6 +43,7 @@ out adds nothing.
 | `enhancement`               | `steps`, `resources`, and `power` of the track, which is the gain before mastery forging.                                                 |
 | `empowerment`               | `steps`, `resources`, and `power` of the track, which is the gain before mastery forging.                                                 |
 | `resources`                 | Essence Stones, Custom Mythic Hero Gear Chests, Enhancement XP Components, and Mithril as `itemId` amounts, for all tracks.               |
+| `combos`                    | The chests and the XP of `resources`, with the items that can be mixed to cover each. See Combos.                                         |
 | `power`                     | Power gained by the plan, with mastery forging. It is `goalPower` minus `currentPower`.                                                   |
 | `currentPower`, `goalPower` | Power of the piece before and after the plan, with mastery forging. Level 0 has `HERO_GEAR_BASE_POWER`.                                   |
 | `eventPoints`               | Points in `svs`, `allianceShowdown`, and `kingOfIcefield`.                                                                                |
@@ -93,6 +95,31 @@ come from `heroGearStats()`, multiplied by the mastery forging (1 plus the `stat
 row) and rounded down. Level 0 has no stats. A track that is not in the goal counts as level 0 with
 no mastery forging. Give `enhancement: { current: 100, goal: 100 }` to get the stats of a mastery
 forging only plan.
+
+## Combos
+
+`resources` counts Custom Mythic Hero Gear Chests and Enhancement XP, which are the costs in the
+data. A player can pay each with a mix of items, so `combos` lists one entry for each of the two
+that the plan needs, the chests first. An entry has the `resourceId`, the `amount` needed, and
+`sources`, a list of `{ itemId, value }`. The `value` is how much of the amount one item covers. Any
+mix of the sources that adds up to the amount covers it.
+
+| Resource                        | Source                          | Value |
+| ------------------------------- | ------------------------------- | ----- |
+| `custom-mythic-hero-gear-chest` | `custom-mythic-hero-gear-chest` | 1     |
+|                                 | `mythic-hero-gear`              | 1     |
+| `enhancement-xp`                | `enhancement-xp-component-10`   | 10    |
+|                                 | `enhancement-xp-component-100`  | 100   |
+|                                 | `common-hero-gear`              | 10    |
+|                                 | `uncommon-hero-gear`            | 30    |
+|                                 | `rare-hero-gear`                | 60    |
+|                                 | `epic-hero-gear`                | 150   |
+
+A Custom Mythic Hero Gear Chest gives one Mythic Hero Gear of your choice, so one Mythic Hero Gear
+covers one chest. `HERO_GEAR_MYTHIC_SOURCES` and `HERO_GEAR_XP_SOURCES` export the two lists. An
+entry is left out when the plan does not need that resource. The calculator does not take the items
+that the player owns, and it does not pick a mix. The `value` of the XP sources is the XP that the
+package owner gave for each item.
 
 ## Errors
 
