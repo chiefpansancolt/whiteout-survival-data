@@ -1,6 +1,6 @@
 # Items
 
-The 418 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
+The 422 functional items of the game: resources, currencies, chests, buffs, speedups, and more. Use
 it to look up an item by id, to resolve the item ids that other modules use for rewards and costs,
 or to read the loot table of a chest.
 
@@ -52,7 +52,7 @@ and its length in `minutes`, read from the id (`speedup-general-1h` is 60 minute
 | Speedups           | 25    |
 | Experts            | 17    |
 | Chief Material     | 7     |
-| Hero Gear Material | 6     |
+| Hero Gear Material | 10    |
 | Pet                | 7     |
 | Fire Crystal       | 4     |
 | Teleporter         | 4     |
@@ -120,10 +120,11 @@ such as `jeronimo-shard`. The shards of the first 30 keep their older ids, such 
 The Gift Strength in Unity is a reward of Alliance Mobilization. It is in `Others` and has no icon
 yet, so its `img` is an empty string.
 
-### Mythic Hero Gear
+### Hero Gear
 
-The Mythic Hero Gear is in `Hero Gear Material`. It has no icon yet, so its `img` is an empty
-string.
+Common, Uncommon, Rare, Epic, and Mythic Hero Gear are in `Hero Gear Material`, with the ids
+`common-hero-gear` to `mythic-hero-gear`. Each has one icon, the goggles tile of its rarity colour
+from the backpack, which stands for the whole rarity. The package has no sources for them.
 
 ### Resources
 

@@ -23,6 +23,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `tundraAlbum()`: new album Prerogative of the Flame, with its 9 puzzles, 144 pieces, and rewards.
   Pieces that were not collected yet show as grey tiles.
 - `tundraAlbumPieceRewards()`: seven more piece count tiers, from 1,940 to 2,060 pieces.
+- `items()`: Common, Uncommon, Rare, and Epic Hero Gear in `Hero Gear Material`, and an icon for the
+  Mythic Hero Gear.
 
 ## [0.10.0] - 2026-10-27
 
