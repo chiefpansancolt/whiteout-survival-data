@@ -25,12 +25,12 @@ describe('ItemQuery', () => {
 });
 
 describe('Item catalog', () => {
-  it('tracks 418 items across 14 categories', () => {
-    expect(items().count()).toBe(418);
+  it('tracks 422 items across 14 categories', () => {
+    expect(items().count()).toBe(422);
     expect(items().byCategory('Hero Items').count()).toBe(75);
     expect(items().byCategory('Pet').count()).toBe(7);
     expect(items().byCategory('Chief Material').count()).toBe(7);
-    expect(items().byCategory('Hero Gear Material').count()).toBe(6);
+    expect(items().byCategory('Hero Gear Material').count()).toBe(10);
     expect(items().byCategory('Chest').count()).toBe(55);
     expect(items().byCategory('Resources').count()).toBe(45);
     expect(items().byCategory('Buff').count()).toBe(31);
@@ -344,12 +344,12 @@ describe('items of the activity bar of the Daily Missions', () => {
     }
   });
 
-  it('has 65 items without an icon in all', () => {
+  it('has 64 items without an icon in all', () => {
     expect(
       items()
         .get()
         .filter((i) => i.img === ''),
-    ).toHaveLength(65);
+    ).toHaveLength(64);
   });
 
   it('has a Shard item for every hero, named after the hero', () => {
@@ -384,12 +384,16 @@ describe('items of the activity bar of the Daily Missions', () => {
     });
   });
 
-  it('has the Mythic Hero Gear as a Hero Gear Material with no icon yet', () => {
-    expect(items().find('mythic-hero-gear')).toMatchObject({
-      name: 'Mythic Hero Gear',
-      category: 'Hero Gear Material',
-      img: '',
-    });
+  it('has one Hero Gear Material item for each hero gear rarity, with an icon', () => {
+    const rarities = ['common', 'uncommon', 'rare', 'epic', 'mythic'];
+    for (const rarity of rarities) {
+      const item = items().find(`${rarity}-hero-gear`)!;
+      expect(item.name).toBe(`${rarity[0].toUpperCase()}${rarity.slice(1)} Hero Gear`);
+      expect(item.category).toBe('Hero Gear Material');
+      expect(item.img).toBe(`/images/items/${rarity}-hero-gear.png`);
+      expect(existsSync(join(__dirname, '../..', item.img))).toBe(true);
+      expect(item.sources).toEqual([]);
+    }
   });
 });
 

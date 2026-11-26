@@ -447,9 +447,37 @@
     "sources": ["Arena Shop"]
   },
   {
+    "id": "common-hero-gear",
+    "name": "Common Hero Gear",
+    "img": "/images/items/common-hero-gear.png",
+    "category": "Hero Gear Material",
+    "sources": []
+  },
+  {
+    "id": "uncommon-hero-gear",
+    "name": "Uncommon Hero Gear",
+    "img": "/images/items/uncommon-hero-gear.png",
+    "category": "Hero Gear Material",
+    "sources": []
+  },
+  {
+    "id": "rare-hero-gear",
+    "name": "Rare Hero Gear",
+    "img": "/images/items/rare-hero-gear.png",
+    "category": "Hero Gear Material",
+    "sources": []
+  },
+  {
+    "id": "epic-hero-gear",
+    "name": "Epic Hero Gear",
+    "img": "/images/items/epic-hero-gear.png",
+    "category": "Hero Gear Material",
+    "sources": []
+  },
+  {
     "id": "mythic-hero-gear",
     "name": "Mythic Hero Gear",
-    "img": "",
+    "img": "/images/items/mythic-hero-gear.png",
     "category": "Hero Gear Material",
     "sources": []
   },
