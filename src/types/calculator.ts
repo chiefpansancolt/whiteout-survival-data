@@ -423,11 +423,23 @@ export interface HeroGearStatsResult {
   milestones: HeroGearMilestone[];
 }
 
+export interface HeroGearComboSource {
+  itemId: string;
+  value: number;
+}
+
+export interface HeroGearCombo {
+  resourceId: string;
+  amount: number;
+  sources: HeroGearComboSource[];
+}
+
 export interface HeroGearCalculation {
   masteryForging: HeroGearMasteryForgingResult;
   enhancement: HeroGearLevelResult;
   empowerment: HeroGearLevelResult;
   resources: UpgradeMaterial[];
+  combos: HeroGearCombo[];
   power: number;
   currentPower: number;
   goalPower: number;

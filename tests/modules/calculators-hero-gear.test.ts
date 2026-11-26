@@ -6,8 +6,11 @@ import {
   HERO_GEAR_ENHANCEMENT_REQUIREMENT,
   HERO_GEAR_MAX_EMPOWERMENT_LEVEL,
   HERO_GEAR_MAX_ENHANCEMENT_LEVEL,
+  HERO_GEAR_MYTHIC_SOURCES,
+  HERO_GEAR_XP_SOURCES,
 } from '@/modules/calculators';
 import { heroGearMasteryForging } from '@/modules/hero-gear-mastery-forging';
+import { items } from '@/modules/items';
 
 const amount = (resources: { itemId: string; amount: number }[], itemId: string) =>
   resources.find((r) => r.itemId === itemId)?.amount;
@@ -19,6 +22,7 @@ describe('calculateHeroGear', () => {
       enhancement: { steps: 0, resources: [], power: 0 },
       empowerment: { steps: 0, resources: [], power: 0 },
       resources: [],
+      combos: [],
       power: 0,
       currentPower: 2500,
       goalPower: 2500,
@@ -59,6 +63,66 @@ describe('calculateHeroGear', () => {
     expect(result.masteryForging.statsUpPercent).toBe(200);
     expect(amount(result.resources, 'essence-stones')).toBe(2100);
     expect(amount(result.resources, 'custom-mythic-hero-gear-chest')).toBe(55);
+  });
+
+  describe('combos', () => {
+    it('lists the items that cover the Enhancement XP and what each is worth', () => {
+      const result = calculateHeroGear({ enhancement: { current: 0, goal: 100 } });
+      expect(result.combos).toEqual([
+        {
+          resourceId: 'enhancement-xp',
+          amount: 73320,
+          sources: [
+            { itemId: 'enhancement-xp-component-10', value: 10 },
+            { itemId: 'enhancement-xp-component-100', value: 100 },
+            { itemId: 'common-hero-gear', value: 10 },
+            { itemId: 'uncommon-hero-gear', value: 30 },
+            { itemId: 'rare-hero-gear', value: 60 },
+            { itemId: 'epic-hero-gear', value: 150 },
+          ],
+        },
+      ]);
+    });
+
+    it('lets a Mythic Hero Gear cover a Custom Mythic Hero Gear Chest, one for one', () => {
+      const result = calculateHeroGear({
+        masteryForging: { current: null, goal: 'level-20-stage-0' },
+      });
+      expect(result.combos).toEqual([
+        {
+          resourceId: 'custom-mythic-hero-gear-chest',
+          amount: 55,
+          sources: [
+            { itemId: 'custom-mythic-hero-gear-chest', value: 1 },
+            { itemId: 'mythic-hero-gear', value: 1 },
+          ],
+        },
+      ]);
+    });
+
+    it('lists the chests first, then the XP, when a plan needs both', () => {
+      const result = calculateHeroGear({ empowerment: { current: 0, goal: 20 } });
+      expect(result.combos.map((c) => [c.resourceId, c.amount])).toEqual([
+        [
+          'custom-mythic-hero-gear-chest',
+          amount(result.resources, 'custom-mythic-hero-gear-chest'),
+        ],
+        ['enhancement-xp', 52650],
+      ]);
+    });
+
+    it('has no combo for a resource that the plan does not need', () => {
+      expect(
+        calculateHeroGear({ masteryForging: { current: null, goal: 'level-1' } }).combos,
+      ).toEqual([]);
+    });
+
+    it('links every source to an item, and its sources do not repeat', () => {
+      for (const sources of [HERO_GEAR_XP_SOURCES, HERO_GEAR_MYTHIC_SOURCES]) {
+        for (const source of sources) expect(items().find(source.itemId)).toBeDefined();
+        expect(new Set(sources.map((s) => s.itemId)).size).toBe(sources.length);
+      }
+    });
   });
 
   it('costs enhancement levels and the power gained', () => {

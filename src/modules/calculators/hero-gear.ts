@@ -5,6 +5,8 @@ import { heroGearMasteryForging } from '@/modules/hero-gear-mastery-forging';
 import { heroGearStats } from '@/modules/hero-gear-stats';
 import {
   HeroGearCalculation,
+  HeroGearCombo,
+  HeroGearComboSource,
   HeroGearEmpowermentLevel,
   HeroGearEnhancementLevel,
   HeroGearEventPoints,
@@ -45,6 +47,25 @@ export const HERO_GEAR_EMPOWERMENT_REQUIREMENT = {
   masteryForgingRowId: 'level-10-stage-0',
 } as const;
 
+export const HERO_GEAR_XP_SOURCES: readonly HeroGearComboSource[] = [
+  { itemId: 'enhancement-xp-component-10', value: 10 },
+  { itemId: 'enhancement-xp-component-100', value: 100 },
+  { itemId: 'common-hero-gear', value: 10 },
+  { itemId: 'uncommon-hero-gear', value: 30 },
+  { itemId: 'rare-hero-gear', value: 60 },
+  { itemId: 'epic-hero-gear', value: 150 },
+];
+
+export const HERO_GEAR_MYTHIC_SOURCES: readonly HeroGearComboSource[] = [
+  { itemId: 'custom-mythic-hero-gear-chest', value: 1 },
+  { itemId: 'mythic-hero-gear', value: 1 },
+];
+
+const COMBO_SOURCES: [string, readonly HeroGearComboSource[]][] = [
+  ['custom-mythic-hero-gear-chest', HERO_GEAR_MYTHIC_SOURCES],
+  ['enhancement-xp', HERO_GEAR_XP_SOURCES],
+];
+
 const EVENT_IDS: Record<keyof HeroGearEventPoints, string> = {
   svs: 'svs-state-of-power',
   allianceShowdown: 'alliance-showdown',
@@ -55,6 +76,13 @@ function addResources(lists: { itemId: string; amount: number }[][]): UpgradeMat
   const totals = new Map<string, number>();
   lists.flat().forEach((m) => totals.set(m.itemId, (totals.get(m.itemId) ?? 0) + m.amount));
   return [...totals].map(([itemId, amount]) => ({ itemId, amount }));
+}
+
+function combos(resources: UpgradeMaterial[]): HeroGearCombo[] {
+  return COMBO_SOURCES.flatMap(([resourceId, sources]) => {
+    const amount = resources.find((r) => r.itemId === resourceId)?.amount;
+    return amount === undefined ? [] : [{ resourceId, amount, sources: [...sources] }];
+  });
 }
 
 function masteryForgingRowIndex(id: string): number {
@@ -224,6 +252,9 @@ function eventPoints(resources: UpgradeMaterial[]): HeroGearEventPoints {
  * below that row. When the goal names a
  * `piece`, the result has the `stats` of the piece. Widgets are not included.
  *
+ * The Custom Mythic Hero Gear Chests and the Enhancement XP of `resources` can each be paid with a mix
+ * of items. `combos` lists the amount of each and the items that cover it, with the `value` of one item.
+ *
  * Mastery forging and empowerment are for Mythic gear. A goal with another `quality` lists them in
  * `unmetRequirements` with `quality: 'mythic'`. The unforged power of a level is the base power of the
  * quality plus the gain of the Mythic table. The gain is not confirmed for the other qualities.
@@ -293,6 +324,7 @@ export function calculateHeroGear(goal: HeroGearGoal = {}): HeroGearCalculation 
     enhancement,
     empowerment,
     resources,
+    combos: combos(resources),
     power: goalPower - currentPower,
     currentPower,
     goalPower,
