@@ -3031,5 +3031,138 @@
       "unit": "percent"
     },
     "sources": ["Halloween Special Event"]
+  },
+  {
+    "id": "miracle-wanderer",
+    "name": "Miracle Wanderer",
+    "skinType": "City Skin",
+    "description": "Grants the [Miracle Wanderer City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": []
+  },
+  {
+    "id": "golden-kingdom-ruins",
+    "name": "Golden Kingdom Ruins",
+    "skinType": "City Skin",
+    "description": "Grants the [Golden Kingdom Ruins City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": []
+  },
+  {
+    "id": "abundance-farm",
+    "name": "Abundance Farm",
+    "skinType": "City Skin",
+    "description": "Grants the [Abundance Farm City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": []
+  },
+  {
+    "id": "bountiful-banqueter",
+    "name": "Bountiful Banqueter",
+    "skinType": "City Skin",
+    "description": "Grants the [Bountiful Banqueter City Skin]. Bonus: Troops Attack +2%.",
+    "bonus": {
+      "stat": "Troops Attack",
+      "statKey": "troops-attack",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": []
+  },
+  {
+    "id": "star-cruiser",
+    "name": "Star Cruiser",
+    "skinType": "March Skin",
+    "description": "Grants the [Star Cruiser March Skin]. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "sources": []
+  },
+  {
+    "id": "autumn-beaver-trails",
+    "name": "Autumn Beaver Trails",
+    "skinType": "March Skin",
+    "description": "Grants the [Autumn Beaver Trails March Skin]. Bonus: Hunting March Speed +5%.",
+    "bonus": {
+      "stat": "Hunting March Speed",
+      "statKey": "hunting-march-speed",
+      "value": "+5%",
+      "amount": 5,
+      "unit": "percent"
+    },
+    "sources": []
+  },
+  {
+    "id": "bees-vs-beavers",
+    "name": "Bees VS Beavers",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Bees VS Beavers Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": []
+  },
+  {
+    "id": "bees-vs-beavers-2",
+    "name": "Bees VS Beavers",
+    "skinType": "Nameplate",
+    "description": "Grants the [Bees VS Beavers Nameplate].",
+    "sources": []
+  },
+  {
+    "id": "bees-vs-beavers-3",
+    "name": "Bees VS Beavers",
+    "skinType": "Name Card",
+    "description": "Grants the [Bees VS Beavers Name Card].",
+    "sources": []
+  },
+  {
+    "id": "starlight-haste",
+    "name": "Starlight Haste",
+    "skinType": "Avatar Frame",
+    "description": "Grants the [Starlight Haste Avatar Frame]. Bonus: Troops Defense +2%.",
+    "bonus": {
+      "stat": "Troops Defense",
+      "statKey": "troops-defense",
+      "value": "+2%",
+      "amount": 2,
+      "unit": "percent"
+    },
+    "sources": []
+  },
+  {
+    "id": "starlight-haste-2",
+    "name": "Starlight Haste",
+    "skinType": "Nameplate",
+    "description": "Grants the [Starlight Haste Nameplate].",
+    "sources": []
   }
 ]

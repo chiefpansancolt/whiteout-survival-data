@@ -17,21 +17,21 @@ describe('SkinQuery', () => {
 
   it('bySkinType() filters to the given skin type', () => {
     const avatarFrames = skins().bySkinType('Avatar Frame');
-    expect(avatarFrames.count()).toBe(78);
+    expect(avatarFrames.count()).toBe(80);
     expect(avatarFrames.get().every((s) => s.skinType === 'Avatar Frame')).toBe(true);
   });
 });
 
 describe('Skin catalog', () => {
-  it('tracks 223 skins across 8 skin types', () => {
-    expect(skins().count()).toBe(223);
-    expect(skins().bySkinType('Avatar Frame').count()).toBe(78);
+  it('tracks 234 skins across 8 skin types', () => {
+    expect(skins().count()).toBe(234);
+    expect(skins().bySkinType('Avatar Frame').count()).toBe(80);
     expect(skins().bySkinType('Chat').count()).toBe(4);
-    expect(skins().bySkinType('Nameplate').count()).toBe(21);
-    expect(skins().bySkinType('March Skin').count()).toBe(54);
-    expect(skins().bySkinType('City Skin').count()).toBe(45);
+    expect(skins().bySkinType('Nameplate').count()).toBe(23);
+    expect(skins().bySkinType('March Skin').count()).toBe(56);
+    expect(skins().bySkinType('City Skin').count()).toBe(49);
     expect(skins().bySkinType('Teleport Skin').count()).toBe(6);
-    expect(skins().bySkinType('Name Card').count()).toBe(13);
+    expect(skins().bySkinType('Name Card').count()).toBe(14);
     expect(skins().bySkinType('Chief Profile').count()).toBe(2);
   });
 
@@ -80,6 +80,32 @@ describe('Skins from the Halloween Special Event', () => {
     expect(skin.bonus?.amount).toBe(amount);
     expect(skin.sources).toEqual(['Halloween Special Event']);
     expect(skin.description).toContain(`[${skin.name}`);
+  });
+});
+
+const newSkins: [string, string, string, number | undefined][] = [
+  ['miracle-wanderer', 'City Skin', 'troops-attack', 2],
+  ['golden-kingdom-ruins', 'City Skin', 'troops-attack', 2],
+  ['abundance-farm', 'City Skin', 'troops-attack', 2],
+  ['bountiful-banqueter', 'City Skin', 'troops-attack', 2],
+  ['star-cruiser', 'March Skin', 'hunting-march-speed', 5],
+  ['autumn-beaver-trails', 'March Skin', 'hunting-march-speed', 5],
+  ['bees-vs-beavers', 'Avatar Frame', 'troops-defense', 2],
+  ['bees-vs-beavers-2', 'Nameplate', '', undefined],
+  ['bees-vs-beavers-3', 'Name Card', '', undefined],
+  ['starlight-haste', 'Avatar Frame', 'troops-defense', 2],
+  ['starlight-haste-2', 'Nameplate', '', undefined],
+];
+const newSkinIds = newSkins.map((s) => s[0]);
+
+describe('Skins added with a stat and no source', () => {
+  it.each(newSkins)('has %s with its type and stat', (id, skinType, statKey, amount) => {
+    const skin = skins().find(id)!;
+    expect(skin.skinType).toBe(skinType);
+    expect(skin.bonus?.statKey ?? '').toBe(statKey);
+    expect(skin.bonus?.amount).toBe(amount);
+    expect(skin.sources).toEqual([]);
+    expect(skin.description).toContain(`[${skin.name} ${skinType}]`);
   });
 });
 
@@ -136,12 +162,12 @@ describe('Skins with the stat and source stated by the package owner', () => {
     },
   );
 
-  it('has no icon for the 32 new skins and an icon file for every other skin', () => {
+  it('has no icon for the 43 new skins and an icon file for every other skin', () => {
     const withoutImg = skins()
       .get()
       .filter((s) => s.img === undefined);
     expect(withoutImg.map((s) => s.id).sort()).toEqual(
-      [...stated.map((s) => s[0]), ...nocturnalIds].sort(),
+      [...stated.map((s) => s[0]), ...nocturnalIds, ...newSkinIds].sort(),
     );
     for (const skin of skins()
       .get()
