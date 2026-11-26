@@ -107,8 +107,8 @@ describe('Tree of Life', () => {
 });
 
 describe('Decorations', () => {
-  it('covers all 104 decorations across 8 categories', () => {
-    expect(decoration().count()).toBe(104);
+  it('covers all 107 decorations across 8 categories', () => {
+    expect(decoration().count()).toBe(107);
     const counts: [string, number][] = [
       ['Basic', 9],
       ['Vegetation', 5],
@@ -116,7 +116,7 @@ describe('Decorations', () => {
       ['Uncommon', 6],
       ['Rare', 12],
       ['Epic', 11],
-      ['Mythic', 48],
+      ['Mythic', 51],
       ['Unique', 3],
     ];
     counts.forEach(([category, count]) => {
@@ -132,7 +132,7 @@ describe('Decorations', () => {
     const limited = decoration()
       .get()
       .filter((d) => d.limited);
-    expect(limited).toHaveLength(46);
+    expect(limited).toHaveLength(49);
     expect(limited.every((d) => d.category === 'Epic' || d.category === 'Mythic')).toBe(true);
 
     const epicLimited = limited.filter((d) => d.category === 'Epic');
@@ -140,7 +140,7 @@ describe('Decorations', () => {
     expect(epicLimited.every((d) => d.levels?.length === 5)).toBe(true);
 
     const mythicLimited = limited.filter((d) => d.category === 'Mythic');
-    expect(mythicLimited).toHaveLength(42);
+    expect(mythicLimited).toHaveLength(45);
     expect(mythicLimited.every((d) => d.levels?.length === 10)).toBe(true);
 
     const blacksmith = decoration().find('blacksmith')!;
