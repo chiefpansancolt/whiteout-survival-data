@@ -412,15 +412,19 @@ describe('Events data', () => {
     expect(waves[0]).toEqual({ wave: 1, target: 'city', rule: 'Regular city-defense wave' });
   });
 
-  it('lists the 21 Crazy Joe difficulties with the points required to unlock each', () => {
+  it('lists the 31 Crazy Joe difficulties with the points required to unlock the first 21', () => {
     const tiers = events().find('crazy-joe')!.tiers!;
-    expect(tiers).toHaveLength(21);
+    expect(tiers).toHaveLength(31);
     expect(tiers[0]).toEqual({ name: 'Difficulty 1', scoreTotal: 0 });
     expect(tiers[1].scoreTotal).toBe(12726000);
     expect(tiers[20]).toEqual({ name: 'Difficulty 21', scoreTotal: 37851450 });
     tiers
-      .slice(1)
+      .slice(1, 21)
       .forEach((tier, i) => expect(tier.scoreTotal!).toBeGreaterThan(tiers[i].scoreTotal!));
+    expect(tiers.slice(21).map((t) => t.name)).toEqual(
+      Array.from({ length: 10 }, (_, i) => `Difficulty ${i + 22}`),
+    );
+    expect(tiers.slice(21).every((t) => t.scoreTotal === undefined)).toBe(true);
   });
 
   it('lists Crazy Joe alliance ranking rewards for ranks 1 to 10', () => {
