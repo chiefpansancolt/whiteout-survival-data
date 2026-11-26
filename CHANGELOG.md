@@ -16,6 +16,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `skins()`: eleven new skins: four City Skins and two March Skins, plus Bees VS Beavers (Avatar
   Frame, Nameplate, Name Card) and Starlight Haste (Avatar Frame, Nameplate). They have no icons
   yet.
+- `events()`: Crazy Joe lists difficulties 22 to 31. They have no unlock scores yet.
 
 ## [0.10.0] - 2026-10-27
 

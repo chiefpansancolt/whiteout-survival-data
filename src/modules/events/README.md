@@ -248,7 +248,8 @@ Alliance events:
   `personalRankings` has 21 rank groups, from 1 to 501-1000. Its `pointLevels` lists the 30 defense
   point levels. Each level needs both personal points (blue coin) and alliance points (gold coin)
   and has one reward. `waves` holds the target, rule, and details of its 20 waves. `tiers` holds its
-  21 difficulties with the Alliance Defense Points needed to unlock each.
+  31 difficulties. Difficulty 1 to 21 have the Alliance Defense Points needed to unlock each.
+  Difficulty 22 to 31 have no score yet.
 
 Solo events:
 
