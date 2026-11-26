@@ -17,6 +17,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Frame, Nameplate, Name Card) and Starlight Haste (Avatar Frame, Nameplate). They have no icons
   yet.
 - `events()`: Crazy Joe lists difficulties 22 to 31. They have no unlock scores yet.
+- `tundraAlbum()`: pictures for 57 more pieces in Kings of Combat, Infernal Power, Battlefield Epic,
+  The Labyrinth, and Nature’s Strength, and full cover pictures for Canyon Clash, Fungal Forest, and
+  Master Tamer.
+- `tundraAlbum()`: new album Prerogative of the Flame, with its 9 puzzles, 144 pieces, and rewards.
+  Pieces that were not collected yet show as grey tiles.
+- `tundraAlbumPieceRewards()`: seven more piece count tiers, from 1,940 to 2,060 pieces.
 
 ## [0.10.0] - 2026-10-27
 

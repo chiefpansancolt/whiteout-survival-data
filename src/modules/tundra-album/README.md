@@ -4,10 +4,10 @@ The albums of the Tundra Album event. An album has 9 puzzles. A puzzle is built 
 5 stars, gives a reward when it is done, and the album gives a buff when all 9 puzzles are done. Use
 it to see what an album holds and what finishing it gives.
 
-The package holds 14 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
+The package holds 15 albums so far, Crystalline Mysteries, Daybreak Island, Explore the World, Song
 of Heroes, Rekindled Flames, Tundra Alliance, Battlefield Epic, Spectacular Adventures, Divine
-Weapons, The Labyrinth, Nature's Strength, Ballad of Wind and Cold, Infernal Power, and Kings of
-Combat. More albums are added later.
+Weapons, The Labyrinth, Nature's Strength, Ballad of Wind and Cold, Infernal Power, Kings of Combat,
+and Prerogative of the Flame. More albums are added later.
 
 ## Usage
 
@@ -37,7 +37,7 @@ console.log(reward?.amount, reward?.itemId && items().find(reward.itemId)?.name)
 // The piece count tiers that 1,749 collected pieces reach
 console.log(tundraAlbumPieceRewardsReached(1749).length); // 71
 
-console.log(tundraAlbum().count()); // 14
+console.log(tundraAlbum().count()); // 15
 ```
 
 ## Functions
@@ -46,7 +46,7 @@ console.log(tundraAlbum().count()); // 14
 | ------------------------------------------------- | --------------------------------------- | --------------------------------------------------------- |
 | `tundraAlbum(source?)`                            | `TundraAlbumQuery`                      | The albums. `source` defaults to the data of the package  |
 | `tundraPuzzlePieceCounts(puzzle)`                 | `Record<1 \| 2 \| 3 \| 4 \| 5, number>` | The number of pieces of a puzzle at each star level       |
-| `tundraAlbumPieceRewards(source?)`                | `TundraAlbumPieceRewardTier[]`          | The 80 piece count tiers, from the lowest count of pieces |
+| `tundraAlbumPieceRewards(source?)`                | `TundraAlbumPieceRewardTier[]`          | The 87 piece count tiers, from the lowest count of pieces |
 | `tundraAlbumPieceRewardsReached(pieces, source?)` | `TundraAlbumPieceRewardTier[]`          | The tiers that a total of pieces reaches                  |
 | `TUNDRA_ALBUM_PUZZLES_PER_ALBUM`                  | `9`                                     | The number of puzzles in an album                         |
 
@@ -350,10 +350,29 @@ Crystal.
 The album has 144 pieces: 18 at 1 star, 24 at 2 stars, 29 at 3 stars, 43 at 4 stars, and 30 at 5
 stars.
 
+### Prerogative of the Flame
+
+The buff is Troops Defense +2%. The completion rewards are 80 Essence Stones and 200 Fire Crystal.
+
+| Puzzle                | Pieces | 1 star | 2 stars | 3 stars | 4 stars | 5 stars | Reward                           |
+| --------------------- | ------ | ------ | ------- | ------- | ------- | ------- | -------------------------------- |
+| Whispers of the World | 12     | 3      | 3       | 3       | 3       | 0       | 7 Enhancement XP Component (100) |
+| Temptations of Power  | 15     | 3      | 5       | 4       | 2       | 1       | 3 Essence Stones                 |
+| Doomsday Man          | 15     | 2      | 2       | 4       | 6       | 1       | 3 Chief Gear Materials Chest     |
+| The Hunters           | 15     | 3      | 4       | 4       | 2       | 2       | 8 Charm Guide                    |
+| The Mad King          | 15     | 3      | 3       | 3       | 3       | 3       | 10 Design Plans                  |
+| The Last Empress      | 18     | 2      | 4       | 4       | 4       | 4       | 24 Fire Crystal                  |
+| The Last Collapse     | 18     | 2      | 3       | 3       | 5       | 5       | 24 Fire Crystal                  |
+| A Long Slumber        | 18     | 0      | 2       | 2       | 7       | 7       | 30 Fire Crystal                  |
+| Sky City              | 18     | 0      | 2       | 2       | 7       | 7       | 30 Fire Crystal                  |
+
+The album has 144 pieces: 18 at 1 star, 28 at 2 stars, 29 at 3 stars, 39 at 4 stars, and 30 at 5
+stars.
+
 ## Piece count rewards
 
 The Tundra Album gives a reward for the total of pieces that you have collected over all albums. The
-progress bar at the top of the album screen counts them. There are 80 tiers, and each tier gives 2
+progress bar at the top of the album screen counts them. There are 87 tiers, and each tier gives 2
 rewards. The first reward is always Gems. The tiers are in `data/tundra-album-piece-rewards.json`. A
 tier has `tier`, `pieces`, and `rewards`, a list of `{ itemId, amount }` as in the rewards of the
 puzzles. The Enhancement XP Component reward is `enhancement-xp-component-100`.
@@ -440,31 +459,39 @@ puzzles. The Enhancement XP Component reward is `enhancement-xp-component-100`.
 | 78   | 1,880  | 100 Gems, 6 Enhancement XP Component (100)        |
 | 79   | 1,900  | 100 Gems, 6 Enhancement XP Component (100)        |
 | 80   | 1,920  | 1,000 Gems, 24 Essence Stones                     |
+| 81   | 1,940  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 82   | 1,960  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 83   | 1,980  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 84   | 2,000  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 85   | 2,020  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 86   | 2,040  | 100 Gems, 2 Random Chief Charm Material Chest     |
+| 87   | 2,060  | 1,000 Gems, 60 Charm Guide                        |
 
 ## Notes
 
-The pieces, the star levels, and the reward amounts of the 14 albums are read from the album screens
+The pieces, the star levels, and the reward amounts of the 15 albums are read from the album screens
 of the game, and the images are cut from the same screens. The package owner names the items of the
 album reward (Random Chief Charm Material Chest), of Fiery Crystal (Enhancement XP Component), of
 Heirs of Empire (Chief Gear Materials Chest), and of Fire Reborn (Mythic General Hero Shard). The
 items of the other rewards are read from the icons of the screens. The item The 10 and the 100
 Enhancement XP Component are two items, `enhancement-xp-component-10` and
-`enhancement-xp-component-100`, and the number on the icon picks one. Seven rewards of 7 and the 100
+`enhancement-xp-component-100`, and the number on the icon picks one. Eight rewards of 7 and the 100
 of the Explore the World completion are the 100 component. The 45 of Dauntless Heroes and of City
 Founding are the 10 component.
 
-Nine albums were not complete when their screens were taken: Tundra Alliance (8 of 9 puzzles),
+Ten albums were not complete when their screens were taken: Tundra Alliance (8 of 9 puzzles),
 Battlefield Epic (6 of 9), Spectacular Adventures (5 of 9), Divine Weapons (8 of 9), The Labyrinth
 (4 of 9), Nature's Strength (8 of 9), Ballad of Wind and Cold (5 of 9), Infernal Power (3 of 9), and
-Kings of Combat (0 of 9). A piece that the player did not own shows as a grey tile. The `img` of
-such a piece is that grey tile, as a placeholder until the picture is added. A grey tile draws grey
-stars, and the star level of the piece is the number of those stars. These are the pieces with a
-grey tile in the first four albums: Orichalcum 15, Canyon Clash 15, and Grand Banquet 17 and 18 of
-Battlefield Epic, Snowbusters 15, Bounty Hunter 14 and 15, Wandering Merchant 16, and Tundra
-Adventure 12 of Spectacular Adventures, Horn of Command 15 of Tundra Alliance, and Essence Stones 18
-of Divine Weapons. The other five albums have 9 (The Labyrinth), 1 (Nature's Strength), 7 (Ballad of
-Wind and Cold), 19 (Infernal Power), and 111 (Kings of Combat) pieces with a grey tile. The picture
-of a puzzle that is not complete is blurred, as the game shows it.
+Kings of Combat (0 of 9), and Prerogative of the Flame (0 of 9). A piece that the player did not own
+shows as a grey tile. The `img` of such a piece is that grey tile, as a placeholder until the
+picture is added. A grey tile draws grey stars, and the star level of the piece is the number of
+those stars. These are the pieces with a grey tile in the first four albums: Orichalcum 15, Canyon
+Clash 15, and Grand Banquet 17 and 18 of Battlefield Epic, Snowbusters 15, Bounty Hunter 14 and 15,
+Wandering Merchant 16, and Tundra Adventure 12 of Spectacular Adventures, Horn of Command 15 of
+Tundra Alliance, and Essence Stones 18 of Divine Weapons. The other six albums have 9 (The
+Labyrinth), 1 (Nature's Strength), 7 (Ballad of Wind and Cold), 19 (Infernal Power), 111 (Kings of
+Combat), and 87 (Prerogative of the Flame) pieces with a grey tile. The picture of a puzzle that is
+not complete is blurred, as the game shows it.
 
 The items of these rewards are read from icons that a check mark partly covers, so they are less
 certain: Canyon Clash (2 8h Troop Training Speedup, by the helmet badge), Hero's Glory (15 Charm
@@ -482,9 +509,9 @@ completion. The dark stone with orange claw marks of Master Tamer and Superhuman
 Advanced Wild Mark.
 
 The piece count tiers are read from the reward tooltips of the progress bar on the album screen, and
-the package owner gave the amounts. The counter on the screen read 1,749 of 1,923 pieces, and the 14
-albums of the package hold 1,923 pieces. The 3h Training Speedup of tier 10 is the 3h Troop Training
-Speedup.
+the package owner gave the amounts. The counter on the screen read 1,749 of 1,923 pieces when the
+package held 14 albums. The 15 albums of the package hold 2,067 pieces. The 3h Training Speedup of
+tier 10 is the 3h Troop Training Speedup.
 
 These parts are not in the data yet:
 
